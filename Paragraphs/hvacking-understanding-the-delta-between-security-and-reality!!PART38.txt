@@ -1,0 +1,6 @@
+
+Thus, we could use system to execute Netcat to listen on some port and execute a shell when a connection is made.
+Before writing shell code to execute system with this command, we first tested various Netcat commands on the device directly to determine the shortest Netcat command that would still give us a shell.
+After a few iterations, we were able to shorten the Netcat command to 13 bytes: nc -llp9
+-esh
+Since the instructions must be 4-byte-aligned and we have 32 bytes to work with, we are only concerned with the length of the string rounded up to the nearest multiple of 4, so in this case 16 bytes.

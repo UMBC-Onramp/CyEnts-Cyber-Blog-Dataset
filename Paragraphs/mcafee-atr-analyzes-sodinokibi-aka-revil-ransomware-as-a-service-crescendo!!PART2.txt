@@ -1,0 +1,7 @@
+
+We were aware of the lively underground trade market of RDP credentials and were curious about what someone would do with a compromised machine.
+Would they distribute the Sodinokibi ransomware?
+Would they execute the DejaBlue or BlueKeep exploits?
+Our specially designed and built RDP honeypots would give us those insights.
+Like Moths to a Flame From June until September 2019, we observed several groups compromise our honey pots and conduct activities related to Sodinokibi; we were able to fully monitor attackers and their actions without their knowledge.
+It is important to note the golden rule we operated under: the moment criminal actions were prepared or about to be executed, the actor would be disconnected and the machine would be restored to its original settings with a new IP address.

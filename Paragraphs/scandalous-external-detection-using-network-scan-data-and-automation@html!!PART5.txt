@@ -1,0 +1,5 @@
+
+We used this established profile and others to illuminate dozens of servers we later attributed to APT39 , often before they were used against a target.
+APT34 QUADAGENT
+In February 2018, an independent researcher shared a sample of what would later be named QUADAGENT.
+We had not observed it in an intrusion yet; however, by analyzing the characteristics of the C2, we were able to develop a strong profile of the servers to track over time.

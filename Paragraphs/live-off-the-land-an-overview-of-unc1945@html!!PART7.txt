@@ -1,0 +1,10 @@
+
+A day later, the threat actor positioned a custom Linux backdoor, which Mandiant named LEMONSTICK, on the same workstation.
+LEMONSTICK capabilities include command execution, file transfer and execution, and the ability to establish tunnel connections.
+(see Figure 2).
+FileItem:changed | /usr/lib64/security/pam_unix,so [57720] Audit log | [audit_type: USER_END] user pid=10080 uid=0
+auid=0 msg='PAM: session close acct=root\" : exe=\"/usr/sbin/sshd\" (hostname=1.239.171.32, addr=1.239.171.32, terminal=ssh res=success)'\" FileItem:
+Accessed | /var/tmp/.cache/ocb_static Figure 2: UNC1945 emplacement of SLAPSTICK UNC1945 obtained and maintained access to their external infrastructure using an SSH Port Forwarding mechanism despite the host lacking accessibility to the internet directly.
+SSH Port Forwarding is a mechanism implemented in SSH protocol for transporting arbitrary networking data over an encrypted SSH connection (tunneling).
+This feature can be used for adding encryption to legacy applications traversing firewalls or with malicious intent to access internal networks from the the internet.
+The UNC1945 configurations we observed are similarly structured with respect to the host alias, specified options, and option order (see Figure 3).

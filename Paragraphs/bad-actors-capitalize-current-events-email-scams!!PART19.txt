@@ -1,0 +1,8 @@
+
+FortiEDR detects both the Excel file and Emotet-related files as malicious based on behavior.
+All relevant URIs to campaigns mentioned in the blog are blocked by the FortiGuard Web Filtering service.
+The malicious Excel sample and associated downloaded files are detected as: “XML/Dloader.802!tr, “W32/Emotet.C!tr\", “W32/Emotet.
+CV!tr”, and “W32/Emotet.1150!tr” are blocked by the FortiGuard AntiVirus service.
+The IRS phishing email targeting nonresident aliens is detected as: IRS PDF/Fraud.10F1!phish Ukraine Related Scams URGENT RESPONSE REQUIRED!
+(UKRAINE) campaign ecres231[.]servconfig[.]com Is classified as a spam server and is blocked by our Web Filtering client.
+URGENT DONATION RESPONSE FOR WAR REFUGEE CAMP IN UKRAINE campaign seca[.]cam is classified as a spam sender and is blocked by the Web Filtering client.

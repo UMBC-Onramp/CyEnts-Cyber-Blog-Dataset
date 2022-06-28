@@ -1,0 +1,10 @@
+
+We will also introduce a new tool that extracts Kerberos tickets from domain-joined systems that utilize the System Security Services Daemon Kerberos Cache Manager (SSSD KCM).
+What is Kerberos Kerberos is a standardized authentication protocol that was originally created by MIT in the 1980s.
+The protocol has evolved over time.
+Today, Kerberos Version 5 is implemented by numerous products, including Microsoft Active Directory.
+ Kerberos was originally designed to mutually authenticate identities over an unsecured communication line.
+The Microsoft implementation of Kerberos is used in Active Directory environments to securely authenticate users to various services, such as the domain (LDAP), database servers (MSSQL) and file shares (SMB/CIFS).
+While other authentication protocols exist within Active Directory, Kerberos is one of the most popular methods.
+Technical documentation on how Microsoft implemented Kerberos Protocol Extensions within Active Directory can be found in the MS-KILE standards published on MSDN.
+Short Example of Kerberos Authentication in Active Directory To illustrate how Kerberos works, we have selected a common scenario where a user John Smith with the account

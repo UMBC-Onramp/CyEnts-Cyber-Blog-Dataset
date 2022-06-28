@@ -1,0 +1,4 @@
+
+In contrast to format 1 messages, format 2 messages are only used for a handful of <message_type> values.
+<message_type> Response desired s_comm
+The server sends a non-empty response if a screenshot request is pending m_comm

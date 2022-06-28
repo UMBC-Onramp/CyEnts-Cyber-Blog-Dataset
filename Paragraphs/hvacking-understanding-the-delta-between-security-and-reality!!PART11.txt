@@ -1,0 +1,10 @@
+
+We could also see the fuzzer recognized the max acceptable size for the BACnet application layer as only 1476 bytes.
+Additional testing showed that sending only this packet did not produce the same results; only when all 97 packets were sent did the crash occur.
+Analyzing the Crash Since the system provides a core dump upon crashing, it was logical to analyze it for further information.
+From the core dump (reproduced in Figure 7), we could see the device encountered a segmentation fault .
+We also saw that register R0 contained what looked like data copied from our malformed packet, along with the backtrace being potentially corrupted.
+Figure 7
+The core dump also provided us the precise location of the crash.
+Using the memory map from the device, it was possible to determine that address 0x4026e580 is located in memcpy .
+Since the device does not deploy Address Space Layout Randomization (ASLR), the memory address did not change throughout our testing.

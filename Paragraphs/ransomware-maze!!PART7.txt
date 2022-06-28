@@ -1,0 +1,4 @@
+
+The malware will kill the process with the function “TerminateProcess” that it gets from the EAT (Export Address Table) of the module “kernel32.dll” to increase obfuscation, comparing the name with a custom hash taken from the name in high caps.
+FIGURE 9.
+CALL TO TERMINATEPROCESS IN A DYNAMIC WAY TO OBFUSCATE THIS CALL The malware calls Windows functions in a unique way to aid obfuscation, i.e. getting the first process in the system to use the function “Process32FirstW”.

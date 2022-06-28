@@ -1,0 +1,12 @@
+
+The strings are stored as PowerShell script variables and no files are created on disk.
+Microsoft has provided multiple ways of interacting with the .NET framework in PowerShell to enhance it through custom-developed features.
+These .NET integrations with PowerShell are particularly attractive to attackers due to the limited visibility that traditional security monitoring tools have around the runtime behaviors of .NET processes.
+For this reason, exploit frameworks such as CobaltStrike and Metasploit have options to generate their implants in .NET assembly code.
+Here, the attackers have used the Load method from the System.
+Reflection.
+Assembly .NET
+Framework class.
+After the assembly is loaded as an instance of System.
+Reflection.
+Assembly , the members can be accessed through that object similarly to C#, as shown in Figure 7.

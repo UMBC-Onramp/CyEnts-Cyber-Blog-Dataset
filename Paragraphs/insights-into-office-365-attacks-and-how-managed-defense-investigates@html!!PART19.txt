@@ -1,0 +1,4 @@
+
+We’ll review OAuth activity too, which is especially important if something more nefarious than a financially motivated BEC is suspected.
+Any FireEye gear available to us—such as FireEye Helix and Email Security —will be leveraged to augment the data available to us from Office 365.
+The following are a few initial scoping queries we’d typically run at the beginning of a Managed Defense engagement.

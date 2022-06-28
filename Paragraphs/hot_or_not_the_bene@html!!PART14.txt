@@ -1,0 +1,8 @@
+
+Figure 15.
+JavaScript code that access the Photo Library Figure 16.
+Corresponding output of the above JavaScript in Figure 15 Example 5: Access to Pasteboard in real time a .
+     Example Framework: /System/Library/Frameworks/UIKit.framework b .
+     APIs: [UIPasteboard strings], [UIPasteboard items], [UIPasteboard string]
+iOS pasteboard is one of the mechanisms that allows a user to transfer data between apps.
+Some security researchers have raised concerns regarding its security , since pasteboard can be used to transfer sensitive data such as accounts and credentials.

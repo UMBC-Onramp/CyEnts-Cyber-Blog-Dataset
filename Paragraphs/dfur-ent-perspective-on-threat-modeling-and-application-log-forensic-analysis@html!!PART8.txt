@@ -1,0 +1,7 @@
+
+The log archival settings needed to be modified .
+DFUR analysts needed to configure their Splunk ES instance data retirement policy to maintain indexed data for a longer time period and archive historical data for quick restoration.
+Source IP addresses of users logging into the portal were masked by a load balancer.
+The DFUR analysts realized that the source IP address for every user logon was a load balancer, which made attribution even more difficult.
+The X-Forwarded-For (XFF) field in their appliances needed to be enabled.
+Analysis Problems Identified The DFUR infosec team reviewed how previous incidents involving the DFUR application were handled.

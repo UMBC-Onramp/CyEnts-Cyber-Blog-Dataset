@@ -1,0 +1,5 @@
+
+Using this technique, the check process is more obfuscated.
+Figure 14.
+Remove extension and check the process name In our analysis, we saw how the ransomware dynamically uses the function “IsWow64Process” to check if the victim OS is running a x64 system and then uses the functions “Wow64DisableWow64FsRedirection” and “Wow64RevertWow64FsResdirection”.
+If the malware can access the functions, it will use the first to destroy all shadow volumes and the protections of the OS in the next boot and, later, will recover the redirection with the other function.

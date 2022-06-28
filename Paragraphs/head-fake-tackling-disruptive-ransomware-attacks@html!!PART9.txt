@@ -1,0 +1,7 @@
+
+In this case, via analysis of the obfuscated code on disk, FireEye identified that the Age header correlates to a scripted “auth header” parameter; likely used by the C2 server to validate the request.
+The first HTTP POST request also contains an XOR-encoded HTTP payload variable “ a=” .
+The C2 server responds to the initial HTTP request with encoded JavaScript.
+When the code is decoded and subsequently executed, system and user information is collected using wscript.exe.
+The information collected from the victim system included: The malicious script that initialized the callback System hostname Current user account Active Directory domain Hardware details, such as manufacturer Anti-virus software details Running processes This activity is nearly identical to the steps observed in our April 2018 post, indicating only minor changes in data collection during this stage.
+For example, in the earlier iteration of this campaign, we did not observe the collection of the script responsible for the C2 communication.

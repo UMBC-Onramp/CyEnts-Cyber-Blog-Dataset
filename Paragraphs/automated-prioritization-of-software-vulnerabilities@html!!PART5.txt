@@ -1,0 +1,7 @@
+
+Figure 1:
+Tweet showing social commentary on a vulnerability that reflects severity Model Overview Figure 2 illustrates the overall process that starts with analyzing the content of a tweet and concludes with two forecasting evaluations.
+First, we run Named Entity Recognition (NER) on tweet contents to extract named entities.
+Second, we use two classifiers to test the relevancy and severity towards the pre-identified entities.
+Finally, we match the relevant and severe tweets to the corresponding CVE.
+Figure 2: Process overview of the steps in our CVE score forecasting Each tweet is associated to CVEs by inspecting URLs or the contents hosted at a URL.

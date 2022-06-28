@@ -1,0 +1,5 @@
+
+This effort produced a list of high-priority logging issues that needed to be addressed before the security team could move forward with developing methods for detection and analysis: Local logs were not forwarded to their Splunk ES instance .
+Only a limited subset of logging was forwarded to their Splunk ES instance, so DFUR analysts couldn't search for the actions performed by users who were authenticated to the application portal.
+Inaccurate field mapping .
+DFUR analysts identified extracted field values that were mapped to incorrect field names.

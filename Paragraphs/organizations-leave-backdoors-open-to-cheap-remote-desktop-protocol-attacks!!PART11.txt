@@ -1,0 +1,5 @@
+
+As we’ve observed from previous breaching of retailers leveraging unpatched or vulnerable POS systems, the damage extends far beyond financial only, including customer perception and long-term brand reputation.
+  
+In regard to the current affected systems we discovered, McAfee has notified the identified victims and is working to learn further detail on why and how these identical Windows systems were compromised.
+Government and health care institutions: We also came across multiple government systems being sold worldwide, including those linked to the United States, and dozens of connections linked to health care institutions, from hospitals and nursing homes to suppliers of medical equipment.

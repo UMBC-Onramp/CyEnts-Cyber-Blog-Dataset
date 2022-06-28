@@ -1,0 +1,8 @@
+
+In this blog post, we highlight how our cycle of identification, expansion, and discovery was used to track a financially motivated actor across FireEye’s global data sets.
+Identification On January 29, 2020, FireEye Managed Defense investigated multiple TRICKBOT deployments against a U.S. based client.
+Shortly after initial deployment, TRICKBOT’s networkDll module ran the following network reconnaissance commands (Figure 1).
+ipconfig /all net config workstation net view /all
+net view /all /domain
+nltest /domain_trusts
+nltest /domain_trusts /all_trusts

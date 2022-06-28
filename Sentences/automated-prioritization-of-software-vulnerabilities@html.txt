@@ -1,0 +1,219 @@
+Introduction If a software vulnerability can be detected and remedied, then a potential intrusion is prevented.
+
+While not all software vulnerabilities are known, 86 percent of vulnerabilities leading to a data breach were patchable , though there is s o m e risk of inadvertent damage when applying software patches.
+
+When new vulnerabilities are identified they are published in the Common Vulnerabilities and Exposures (CVE) dictionary by vulnerability databases , such as the National Vulnerability Database (NVD).
+
+The Common Vulnerabilities Scoring System (CVSS) provides a metric for prioritization that is meant to capture the potential severity of a vulnerability.
+
+However, it has been criticized for a lack of timeliness, vulnerable population representation, normalization, rescoring and broader expert consensus that can lead to disagreements .
+
+For example, some of the worst exploits have been assigned low CVSS scores.
+
+Additionally, CVSS does not measure the vulnerable population size, which many practitioners have stated they expect it to score.
+
+The design of the current CVSS system leads to too many severe vulnerabilities, which causes user fatigue.
+
+­ To provide a more timely and broad approach, we use machine learning to analyze users’ opinions about the severity of vulnerabilities by examining relevant tweets.
+
+The model predicts whether users believe a vulnerability is likely to affect a large number of people, or if the vulnerability is less dangerous and unlikely to be exploited.
+
+The predictions from our model are then used to score vulnerabilities faster than traditional approaches, like CVSS, while providing a different method for measuring severity, which better reflects real-world impact.
+
+Our work uses nowcasting to address this important gap of prioritizing early-stage CVEs to know if they are urgent or not.
+
+Nowcasting is the economic discipline of determining a trend or a trend reversal objectively in real time.
+
+In this case, we are recognizing the value of linking social media responses to the release of a CVE after it is released, but before it is scored by CVSS.
+
+Scores of CVEs should ideally be available as soon as possible after the CVE is released, while the current process often hampers prioritization of triage events and ultimately slows response to severe vulnerabilities.
+
+This crowdsourced approach reflects numerous practitioner observations about the size and widespread nature of the vulnerable population, as shown in Figure 1.
+
+For example, in the Mirai botnet incident in 2017 a massive number of vulnerable IoT devices were compromised leading to the largest Denial of Service (DoS) attack on the internet at the time.
+
+Figure 1:
+
+Tweet showing social commentary on a vulnerability that reflects severity Model Overview Figure 2 illustrates the overall process that starts with analyzing the content of a tweet and concludes with two forecasting evaluations.
+
+First, we run Named Entity Recognition (NER) on tweet contents to extract named entities.
+
+Second, we use two classifiers to test the relevancy and severity towards the pre-identified entities.
+
+Finally, we match the relevant and severe tweets to the corresponding CVE.
+
+Figure 2: Process overview of the steps in our CVE score forecasting Each tweet is associated to CVEs by inspecting URLs or the contents hosted at a URL.
+
+Specifically, we link a CVE to a tweet if it contains a CVE number in the message body, or if the URL content contains a CVE.
+
+Each tweet must be associated with a single CVE and must be classified as relevant to security-related topics to be scored.
+
+The first forecasting task considers how well our model can predict the CVSS rankings ahead of time.
+
+The second task is predicting future exploitation of the vulnerability for a CVE based on Symantec Antivirus Signatures and Exploit DB.
+
+The rationale is that eventual presence in these lists indicates not just that exploits can exist or that they do exist, but that they also are publicly available.
+
+Modeling Approach Predicting the CVSS scores and exploitability from Twitter data involves multiple steps.
+
+First, we need to find appropriate representations (or features) for our natural language to be processed by machine learning models.
+
+In this work, we use two natural language processing methods in natural language processing for extracting features from text: (1) N-grams features, and (2) Word embeddings.
+
+Second, we use these features to predict if the tweet is relevant to the cyber security field using a classification model.
+
+Third, we use these features to predict if the relevant tweets are making strong statements indicative of severity.
+
+Finally, we match the severe and relevant tweets up to the corresponding CVE.
+
+N-grams are word sequences, such as word pairs for 2-gram or word triples for 3-grams.
+
+In other words, they are contiguous sequence of n words from a text.
+
+After we extract these n-grams, we can represent original text as a bag-of-ngrams.
+
+Consider the sentence: A criticial vulnerability was found in Linux.
+
+If we consider all 2-gram features, then the bag-of-ngrams representation contains “A critical”, “critical vulnerability”, etc.
+
+Word embeddings are a way to learn the meaning of a word by how it was used in previous contexts, and then represent that meaning in a vector space.
+
+Word embeddings know the meaning of a word by the company it keeps, more formally known as the distribution hypothesis .
+
+These word embedding representations are machine friendly, and similar words are often assigned similar representations.
+
+Word embeddings are domain specific.
+
+In our work, we additionally train terminology specific to cyber security topics, such as related words to threats are defenses , cyberrisk , cybersecurity , threat , and iot-based .
+
+The embedding would allow a classifier to implicitly combine the knowledge of similar words and the meaning of how concepts differ.
+
+Conceptually, word embeddings may help a classifier use these embeddings to implicitly associate relationships such as: device + infected = zombie where an entity called device has a mechanism applied called infected (malicious software infecting it) then it becomes a zombie .
+
+To address issues where social media tweets differ linguistically from natural language, we leverage previous research and software from the Natural Language Processing (NLP) community.
+
+This addresses specific nuances like less consistent capitalization, and stemming to account for a variety of special characters like ‘@’ and ‘#’.
+
+Figure 3:
+
+Tweet demonstrating value of identifying named entities in tweets in order to gauge severity Named Entity Recognition (NER) identifies the words that construct nouns based on their context within a sentence, and benefits from our embeddings incorporating cyber security words.
+
+Correctly identifying the nouns using NER is important to how we parse a sentence.
+
+In Figure 3, for instance, NER facilitates Windows 10 to be understood as an entity while October 2018 is treated as elements of a date.
+
+Without this ability, the text in Figure 3 may be confused with the physical notion of windows in a building.
+
+Once NER tokens are identified, they are used to test if a vulnerability affects them.
+
+In the Windows 10 example, Windows 10 is the entity and the classifier will predict whether the user believes there is a serious vulnerability affecting Windows 10 .
+
+One prediction is made per entity, even if a tweet contains multiple entities.
+
+Filtering tweets that do not contain named entities reduces tweets to only those relevant to expressing observations on a software vulnerability.
+
+From these normalized tweets, we can gain insight into how strongly users are emphasizing the importance of the vulnerability by observing their choice of words.
+
+The choice of adjective is instrumental in the classifier capturing the strong opinions.
+
+Twitter users often use strong adjectives and superlatives to convey magnitude in a tweet or when stressing the importance of something related to a vulnerability like in Figure 4.
+
+This magnitude often indicates to the model when a vulnerability’s exploitation is widespread.
+
+Table 1 shows our analysis of important adjectives that tend to indicate a more severe vulnerability.
+
+Figure 4:
+
+Tweet showing strong adjective use Table 1: Log-odds ratios for words correlated with highly-severe CVEs Finally, the processed features are evaluated with two different classifiers to output scores to predict relevancy and severity.
+
+When a named entity is identified all words comprising it are replaced with a single token to prevent the model from biasing toward that entity.
+
+The first model uses an n-gram approach where sequences of two, three, and four tokens are input into a logistic regression model.
+
+The second approach uses a one-dimensional Convolutional Neural Network (CNN), comprised of an embedding layer, a dropout layer then a fully connected layer, to extract features from the tweets.
+
+Evaluating Data To evaluate the performance of our approach, we curated a dataset of 6,000 tweets containing the keywords vulnerability or ddos from Dec 2017 to July 2018.
+
+Workers on Amazon’s Mechanical Turk platform were asked to judge whether a user believed a vulnerability they were discussing was severe.
+
+For all labeling, multiple users must independently agree on a label, and multiple statistical and expert-oriented techniques are used to eliminate spurious annotations.
+
+Five annotators were used for the labels in the relevancy classifier and ten annotators were used for the severity annotation task.
+
+Heuristics were used to remove unserious respondents; for example, when users did not agree with other annotators for a majority of the tweets.
+
+A subset of tweets were expert-annotated and used to measure the quality of the remaining annotations.
+
+Using the features extracted from tweet contents, including word embeddings and n-grams, we built a model using the annotated data from Amazon Mechanical Turk as labels.
+
+First, our model learns if tweets are relevant to a security threat using the annotated data as ground truth.
+
+This would remove a statement like “here is how you can #exploit tax loopholes” from being confused with a cyber security-related discussion about a user exploiting a software vulnerability as a malicious tool.
+
+Second, a forecasting model scores the vulnerability based on whether annotators perceived the threat to be severe.
+
+CVSS Forecasting Results Both the relevancy classifier and the severity classifier were applied to various datasets.
+
+Data was collected from December 2017 to July 2018.
+
+Most notably 1,000 tweets were held-out from the original 6,000 to be used for the relevancy classifier and 466 tweets were held-out for the severity classifier.
+
+To measure the performance, we use the Area Under the precision-recall Curve (AUC), which is a correctness score that summarizes the tradeoffs of minimizing the two types of errors (false positive vs false negative), with scores near 1 indicating better performance.
+
+The relevancy classifier scored 0.85 The severity classifier using the CNN scored 0.65 The severity classifier using a Logistic Regression model, without embeddings, scored 0.54 Next, we evaluate how well this approach can be used to forecast CVSS ratings.
+
+In this evaluation, all tweets must occur a minimum of five days ahead of CVSS scores.
+
+The severity forecast score for a CVE is defined as the maximum severity score among the tweets which are relevant and associated with the CVE.
+
+Table 1 shows the results of three models: randomly guessing the severity, modeling based on the volume of tweets covering a CVE, and the ML-based approach described earlier in the post.
+
+The scoring metric in Table 2 is precision at top K using our logistic regression model.
+
+For example, where K=100, this is a way for us to identify what percent of the 100 most severe vulnerabilities were correctly predicted.
+
+The random model would predicted 59, while our model predicted 78 of the top 100 and all ten of the most severe vulnerabilities.
+
+Table 2:
+
+Comparison of random simulated predictions, a model based just on quantitative features like “likes”, and the results of our model Exploit Forecasting Results
+
+We also measured the practical ability of our model to identify the exploitability of a CVE in the wild, since this is one of the motivating factors for tracking.
+
+To do this, we collected severe vulnerabilities that have known exploits by their presence in the following data sources: Symantec Antivirus signatures Symantec Intrusion Prevention System signatures ExploitDB catalog The dataset for exploit forecasting was comprised of 377,468 tweets gathered from January 2016 to November 2017.
+
+Of the 1,409 CVEs used in our forecasting evaluation, 134 publicly weaponized vulnerabilities were found across all three data sources.
+
+Using CVEs from the aforementioned sources as ground truth, we find our CVE classification model is more predictive of detecting operationalized exploits from the vulnerabilities than CVSS.
+
+Table 3 shows precision scores illustrating seven of the top ten most severe CVEs and 21 of the top 100 vulnerabilities were found to have been exploited in the wild.
+
+Compare that to one of the top ten and 16 of the top 100 from using the CVSS score itself.
+
+The recall scores show the percentage of our 134 weaponized vulnerabilities found in our K examples.
+
+In our top ten vulnerabilities, seven were found to be in the 134 (5.2%), while the CVSS scoring’s top ten included only one (0.7%) CVE being exploited.
+
+Table 3: Precision and recall scores for the top 10, 50 and 100 vulnerabilities when comparing CVSS scoring, our simplistic volume model and our NLP model Conclusion Preventing vulnerabilities is critical to an organization’s information security posture, as it effectively mitigates some cyber security breaches.
+
+In our work, we found that social media content that pre-dates CVE scoring releases can be effectively used by machine learning models to forecast vulnerability scores and prioritize vulnerabilities days before they are made available.
+
+Our approach incorporates a novel social sentiment component, which CVE scores do not, and it allows scores to better predict real-world exploitation of vulnerabilities.
+
+Finally, our approach allows for a more practical prioritization of software vulnerabilities effectively indicating the few that are likely to be weaponized by attackers.
+
+NIST has acknowledged that the current CVSS methodology is insufficient.
+
+The current process of scoring CVSS is expected to be replaced by ML-based solutions by October 2019, with limited human involvement.
+
+However, there is no indication of utilizing a social component in the scoring effort.
+
+This work was led by researchers at Ohio State under the IARPA CAUSE program, with support from Leidos and FireEye.
+
+This work was originally presented at NAACL in June 2019, our paper describes this work in more detail and was also covered by Wired .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

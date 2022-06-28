@@ -1,0 +1,5 @@
+
+To summarize the post, for functions that have simple arguments with widths <= sizeof(uint32_t) the WOW64 layer will directly widen these arguments to 64 bits via zero or sign-extension and then perform a direct syscall into the kernel.
+This all occurs within wow64cpu, rather than executing a more complex path detailed as follows.
+This acts as an optimization.
+For more complex functions that do not support TurboThunks the TurboDispatchJumpAddressEnd stub is used which dispatches to wow64!SystemServiceEx to perform the system call as shown in Figure 10.

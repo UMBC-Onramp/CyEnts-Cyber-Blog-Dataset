@@ -1,0 +1,3 @@
+
+The result is a fundamental CPU flaw whose only fix is to disable branch prediction completely, thus seriously affecting performance.
+That said, Specter attacks do have many limitations: The attacker must be able to execute program code on the target computer or mobile device; The attack requires a specific target program coded so as to create the conditions for a successful attack; Even if the attack is successful, data extraction is extremely slow — tens or hundreds of bytes per second — and read errors are far from impossible;

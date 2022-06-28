@@ -1,0 +1,8 @@
+
+By leveraging the\nVPN plugin vulnerability, it is possible to jailbreak an iOS device\nwith 8.1.2 or before over-the-air directly with other kernel\nexploits.
+This vulnerability is related to CVE-2014-4493 and was\npatched in iOS 8.1.3.
+We first disclose and demonstrate this attack in\nthe Jailbreak Security Summit [7] in April 2015.
+This vulnerability is related to CVE-2014-4493 and was patched in\niOS 8.1.3.
+We first disclosed and demonstrated this attack in the\nJailbreak Security Summit [7] in April 2015.
+Here is a demo for the untrusted code execution attack.
+In this\ndemo, the in-house app containing a malicious VPN plugin is installed\non victim’s device.

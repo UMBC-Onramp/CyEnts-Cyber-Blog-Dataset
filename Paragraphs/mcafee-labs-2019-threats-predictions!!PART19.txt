@@ -1,0 +1,9 @@
+
+Is it phishing 2.0?
+Is it stegware?
+Is it fileless and “living off the land”?
+Cryptojacking?
+Ransomware?
+It is everything at the same time.
+This sophisticated but feasible example demonstrates that focusing on one threat may not be enough to detect or remediate an attack.
+When you aim to classify the attack into a single category, you might lose the big picture and thus be less effective mitigating it.

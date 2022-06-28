@@ -1,0 +1,5 @@
+
+Mindful of that, we revisited the case of the harmful Minecraft modpacks in Google Play to find out whether reporting had helped.
+To that end, we launched a search for similar apps — and found some.
+New, improved versions First, we found several apps using the abovementioned approach, but with some improvements.
+In a basic scenario the apps accept push message commands from the attackers to show full-screen ads (no user interaction required).

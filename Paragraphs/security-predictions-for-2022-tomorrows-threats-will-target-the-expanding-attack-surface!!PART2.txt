@@ -1,0 +1,5 @@
+
+In addition to redoubled efforts on the left-hand side of the attack chain, we will also see a significant increase in the rate at which new attacks can be launched on the right due to the expanding Crime-as-a-Service market.
+In addition to the sale of ransomware- and other malware-as-a-service offerings, we will likely see new criminal solutions, including phishing- and botnets-as-a-service, as well as an increase in the sale of access to pre-compromised targets.
+We will also see an increase in new attacks.
+Organizations should prepare for the targeting of new attack vectors, such as Linux platforms.

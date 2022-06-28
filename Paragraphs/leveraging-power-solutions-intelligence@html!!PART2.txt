@@ -1,0 +1,5 @@
+
+This post will briefly explore what that means for our customers, prospects, and the public.
+By itself, Mandiant generates threat intelligence in a fairly unique manner from three primary sources.
+First, our professional services division learns about adversary tools, tactics, and procedures (TTPs) by assisting intrusion victims.
+This \"boots on the ground\" offering is unlike any other, in terms of efficiency (a small number of personnel required), speed (days or weeks onsite, instead of weeks or months), and effectiveness (we know how to remove advanced foes).

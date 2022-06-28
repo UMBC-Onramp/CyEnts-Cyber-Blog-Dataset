@@ -1,0 +1,7 @@
+
+We predict in 2019, due to the ease with which criminals can now outsource key components of their attacks, evasion techniques will become more agile due to the application of artificial intelligence.
+Think the counter-AV industry is pervasive now?
+ 
+This is just the beginning.
+In 2018 we saw new process-injection techniques such as “process doppelgänging” with the SynAck ransomware, and PROPagate injection delivered by the RigExploit Kit.
+ By adding technologies such as artificial intelligence, evasion techniques will be able to further circumvent protections.

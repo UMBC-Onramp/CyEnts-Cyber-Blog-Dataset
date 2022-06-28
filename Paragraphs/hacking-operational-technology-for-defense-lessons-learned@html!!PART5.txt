@@ -1,0 +1,5 @@
+
+Figure 1:
+Targeted OT attack from a public network Thinking Like an Adversary: How to Turn Off Smart Energy Meters
+The ideal scenario for an attacker targeting OT systems is to achieve their objective while remaining undetected.
+Mandiant’s Red Team works with clients across critical infrastructure industries to simulate attack scenarios in which actors can accomplish this goal by gaining access to OT systems via compromise of external facing IT networks.

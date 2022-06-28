@@ -1,0 +1,4 @@
+
+During the past week, we have observed a new variant attacking several sectors, including oil, gas, energy, telecom, and government organizations in the Middle East and southern Europe.
+Similar to the previous wave, Shamoon Version 3 uses several mechanisms as evasion techniques to bypass security as well to circumvent analysis and achieve its ends.
+However, its overall behavior remains the same as in previous versions, rendering detection straightforward for most antimalware engines.

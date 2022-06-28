@@ -1,0 +1,5 @@
+
+With the aid of a companion IDAPython plugin , additional navigation commands are supported.
+Commands that allow the user to move the cursor to the beginning or end of the current function, to the next or previous “call” instruction, to the previous or next instruction containing the highlighted token, or to a specified number of bytes forward or backwards from the current cursor position help to make voice-controlled navigation easier.
+These cursor movement and navigation commands enable users to have full control of IDA Pro without the use of their hands.
+While this is true and an important goal for the profile, it is not practical for people who have full use of their hands to go completely hands-free.

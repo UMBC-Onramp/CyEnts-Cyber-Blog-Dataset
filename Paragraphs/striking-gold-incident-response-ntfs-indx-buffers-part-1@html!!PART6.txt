@@ -1,0 +1,5 @@
+
+The information returned for the attribute list includes the index root - $I30 (144-6) - and an index allocation - $I30 (160-7).
+The attribute identifier is the integer listed after the dash.
+Therefore, the index root attribute 144 has an identifier of 6, and the index allocation attribute 160 has an identifier of 7.
+With this information, we can gather the content of the attributes with the SleuthKit commands: icat -f ntfs ntfs.dd 49-144-6 >

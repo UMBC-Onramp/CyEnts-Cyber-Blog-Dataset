@@ -1,0 +1,5 @@
+
+The most common types of actions to be taken include key presses, mouse movement and clicks, and clipboard manipulation.
+However, there are many other more advanced features available that provide a lot of flexibility to users including variables, loops, and conditionals.
+You can even have the computer speak to you in response to your commands!
+VoiceAttack requires an internet connection, but only during the registration process, after which the network adapter can be disabled or configured to a network that cannot reach the internet without issue.

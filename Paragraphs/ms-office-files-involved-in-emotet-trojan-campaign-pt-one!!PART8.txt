@@ -1,0 +1,10 @@
+
+Finally, puihoud.dll!DllRegisterServer calls X.dll!
+DllRegisterServer() (step 4 in Figure 3.3).
+This is also pretty much the way rundll32.exe loads and runs a dll file with an export function.
+X.dll!DllRegisterServer() is the real starting point for executing malicious things on the victim’s device.
+Anti-Analysis Techniques To protect its code from being analyzed, Emotet uses anti-analysis techniques.
+In this section I will explain what kinds of such techniques this variant uses.
+Code Flow is Obfuscated In most functions, it mixes the code flow with lots of “goto” statements.
+It has a local variable, called “switch_number” by me, that holds a dynamic number to control how it executes the code.
+The logic is that all codes are enclosed in a “while infinite loop” statement, which determines which code flow to enter (“goto”) according to the value of “switch_number”.

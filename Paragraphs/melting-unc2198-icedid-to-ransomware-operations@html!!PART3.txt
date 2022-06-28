@@ -1,0 +1,10 @@
+
+Between July and December 2020, an ICEDID phishing infection chain consisted of a multi-stage process involving MOUSEISLAND and PHOTOLOADER (Figure 1).
+Figure 1:
+Example UNC2420 MOUSEISLAND to ICEDID Infection Chain MOUSEISLAND is a Microsoft Word macro downloader used as the first infection stage and is delivered inside a password-protected zip attached to a phishing email (Figure 2).
+Based on our intrusion data from responding to ICEDID related incidents, the secondary payload delivered by MOUSEISLAND has been PHOTOLOADER, which acts as an intermediary downloader to install ICEDID.
+Mandiant attributes the MOUSEISLAND distribution of PHOTOLOADER and other payloads to UNC2420 , a distribution threat cluster created by Mandiant’s Threat Pursuit team.
+UNC2420 activity shares overlaps with the publicly reported nomenclature of “ Shathak ” or “ TA551 ”.
+Figure 2: UNC2420 MOUSEISLAND Phishing Email Ice, Ice, BEACON...UNC2198
+Although analysis is always ongoing, at the time of publishing this blog post, Mandiant tracks multiple distinct threat clusters (UNC groups) of various sizes that have used ICEDID as a foothold to enable intrusion operations.
+The most prominent of these threat clusters is UNC2198 , a group that has targeted organizations in North America across a breadth of industries.

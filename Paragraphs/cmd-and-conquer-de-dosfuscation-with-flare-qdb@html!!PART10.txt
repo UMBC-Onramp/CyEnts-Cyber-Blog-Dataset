@@ -1,0 +1,7 @@
+
+The script comes with the latest version of flare-qdb and is installed as a Python entry point named dedosfuscator.exe.
+De-DOSfuscator relies on the location of the non-exported Dispatch function to log commands, and its location varies per system.
+For convenience, if an Internet connection is available, De-DOSfuscator automatically retrieves this function’s offset using Microsoft’s symbol server.
+To allow offline use, you can supply the path to a copy of cmd.exe from your offline machine to the --getoff switch to obtain this offset.
+You can then supply that output as the argument to the --useoff switch in your offline machine to inform De-DOSfuscator where the function is located.
+Alternately, you can use De-DOSfuscator with a downloaded PDB or a local symbol cache containing the correct symbols.

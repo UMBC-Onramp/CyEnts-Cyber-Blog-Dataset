@@ -1,0 +1,5 @@
+
+Analysis is ongoing to determine the extent of the activity.
+Mandiant continues to collaborate with the Ivanti and Pulse Secure teams, Microsoft Threat Intelligence Center (MSTIC), and relevant government and law enforcement agencies to investigate the threat, as well as develop recommendations and mitigations for affected Pulse Secure VPN appliance owners.
+As part of their investigation, Ivanti has released mitigations for a vulnerability exploited in relation to this campaign as well as the Pulse Connect Secure Integrity Tool to assist with determining if systems have been impacted.
+Details Early this year, Mandiant investigated multiple intrusions at defense, government, and financial organizations around the world.

@@ -1,0 +1,6 @@
+
+Payloads associated with the latter include Monero CPU miners that are surreptitiously installed on victims' computers.
+In January 2018, Check Point researchers discovered a malvertising campaign leading to the Rig Exploit Kit, which served the XMRig Monero miner utility to unsuspecting victims.
+Mobile Cryptojacking
+In addition to targeting enterprise servers and user machines, threat actors have also targeted mobile devices for cryptojacking operations.
+While this technique is less common, likely due to the limited processing power afforded by mobile devices, cryptojacking on mobile devices remains a threat as sustained power consumption can damage the device and dramatically shorten the battery life.

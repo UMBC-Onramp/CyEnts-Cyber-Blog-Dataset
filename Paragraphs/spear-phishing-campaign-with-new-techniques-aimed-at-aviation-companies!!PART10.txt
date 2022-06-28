@@ -1,0 +1,12 @@
+
+It is likely to have come from a different author.
+After loading the .NET loader assembly, the function Execute() of the class ProjFUD.PA is called with the arguments payloadBytes (RAT payload) and RegSvcs.exe (the path of the victim process).
+The .NET assembly ProjFUD.dll acts as a RunPE loader as it hollows and injects the final payload, AsyncRAT, into the victim process.
+RegSvcs, a Windows command line utility for registering .NET
+Component Object Model (COM) assemblies, is used by an adversary to hide malicious payload.
+RegSvcs.exe is digitally signed by Microsoft and can be used to help bypass a process-based whitelist.
+(See Mitre ATT&CK technique – Process Injection: Process Hollowing .)
+CreateProcessA is first called to create the victim process RegSvcs.exe in a suspended state, with flags set to 134217732U (0x08000004) (i.e., CREATE_SUSPENDED and CREATE_NO_WINDOW are set to True.)
+This process does not run until the thread is resumed.
+While the process is suspended, ZwUnmapViewOfSection is called to unmap (hollow) the code from the process memory.
+This routine unmaps the entire view of the section containing buffer1 from the virtual address space, and on successful return, the virtual-address region occupied by the view is no longer reserved and available to map other views.

@@ -1,0 +1,12 @@
+
+It then resets the callback for SetPropA, which was modified by malware during PROPagate injection.
+Figure 17 shows the code snippet of the injected shellcode.
+Figure 17:
+Assembly view of injected shellcode Analysis of Third Stage Payload Before executing the malicious code, the malware performs anti-analysis checks to make sure no analysis tool is running in the system.
+It creates two infinitely running threads that contain code to implement anti-analysis checks.
+The first thread enumerates the processes using CreateToolhelp32Snapshot and checks for the process names generally used in analysis.
+It generates a DWORD hash value from the process name using a custom operation and compares it with the array of hardcoded DWORD values.
+If the generated value matches any value in the array, it terminates the corresponding process.
+The second thread enumerates the windows using EnumWindows.
+It uses GetClassNameA function to extract the class name associated with the corresponding window.
+Like the first thread, it generates a DWORD hash value from the class name using a custom operation and compares it with the array of hardcoded DWORD values.

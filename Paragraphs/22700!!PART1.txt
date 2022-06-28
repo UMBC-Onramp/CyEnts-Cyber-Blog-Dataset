@@ -1,0 +1,5 @@
+If you follow information security, you have probably heard a lot about ransomware in recent years.
+You may even have had the misfortune of being on the receiving end of an attack.
+It is perhaps no exaggeration to describe ransomware as the most dangerous malware of our time.
+But did you know that such malicious programs have been around for more than 30 years, and that researchers predicted many features of modern-day attacks back in the mid-1990s?
+Do you want to know why cryptors replaced blockers, what the largest ransom in history was, and what AIDS has to do with it all?

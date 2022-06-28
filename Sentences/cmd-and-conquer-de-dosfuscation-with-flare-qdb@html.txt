@@ -1,0 +1,181 @@
+When Daniel Bohannon released his excellent DOSfuscation paper, I was fascinated to see how tricks I used as a systems engineer could help attackers evade detection.
+
+I didn’t have much to contribute to this conversation until I had to analyze a hideously obfuscated batch file as part of my job on the FLARE malware queue.
+
+Previously, I released flare-qdb , which is a command-line and Python-scriptable debugger based on Vivisect.
+
+I previously wrote about how to use flare-qdb to instrument and modify malware behavior.
+
+Flare-qdb also made a guest appearance in Austin Baker and Jacob Christie’s SANS DFIR Summit 2017 briefing , inducing the Windows event log service to exclude process creation events.
+
+In this blog post, I will show how I used flare-qdb to bring “script block logging” to the Windows command interpreter.
+
+I will also share an Easter Egg that I found by flipping only a single bit in the process address space of cmd.exe.
+
+Finally, I will share the script that I added to flare-qdb so you can de-obfuscate malicious command scripts yourself by executing them (in a safe environment, of course).
+
+But first, I’ll talk about the analysis that led me to this solution.
+
+At First Glance Figure 1 shows a batch script (MD5 hash 6C8129086ECB5CF2874DA7E0C855F2F6) that has been obfuscated using the BatchEncryption tool referenced in Daniel Bohannon’s paper.
+
+This file does not appear in VirusTotal as of this writing, but its dropper does (the MD5 hash is ABD0A49FDA67547639EEACED7955A01A).
+
+My goal was to de-obfuscate this script and report on what the attacker was doing.
+
+Figure 1: Contents of XYNT.bat
+
+This 165k batch file is dropped as C:\\Windows\\Temp\\XYNT.bat and executed by its dropper.
+
+Its commands are built from environment variable substrings.
+
+Figure 2 shows how to use the ECHO command to decode the first command.
+
+Figure 2: Partial command decoding via the ECHO command The script uses hundreds of commands to set environment variables that are ultimately expanded to de-obfuscate malicious commands.
+
+A tedious approach to de-obfuscating this script would be to de-fang each command by prepending an ECHO statement to print each de-obfuscated command to the console.
+
+Unfortunately, although the ECHO command can “decode” each command, BatchEncryption needs the SET commands to be executed to decode future commands.
+
+To decode this script while allowing the full malicious functionality to run as expected, you would have to iteratively and carefully echo and selectively execute a few hundred obfuscated SET commands.
+
+The irony of BatchEncryption is that batch scripts are viewed as being easy to de-obfuscate, making binary code the safer place to hide logic from the prying eyes of network defenders.
+
+But BatchEncryption adds a formidable barrier to analysis by its extensive, layered use of environment variables to rebuild the original commands.
+
+Taking Cmd of the Situation I decided to see if it would be easier to instrument cmd.exe to log commands rather than de-obfuscating the script myself.
+
+To begin, I debugged cmd.exe, set a breakpoint on CreateProcessW, and executed a program from the command prompt.
+
+Figure 3 shows the call stack for CreateProcessW as cmd.exe executes notepad.
+
+Figure 3:
+
+Call stack for CreateProcessW in cmd.exe Starting from cmd!ExecPgm, I reviewed the disassembly of the above functions in cmd.exe to trace the origin of the command string up the call stack.
+
+I discovered cmd!Dispatch, which receives not a string but a structure with pointers to the command, arguments, and any I/O redirection information (such as redirecting the standard output or error streams of a program to a file or device).
+
+Testing revealed that these strings had all their environment variables expanded, which means we should be able to read the de-obfuscated commands from here.
+
+Figure 4 is an exploration of this structure in WinDbg after running the command \"echo hai > nul\".
+
+This command prints the word hai to the standard output stream but uses the right-angle bracket to redirect standard output to the NUL device, which discards all data.
+
+The orange boxes highlight non-null pointers that got my attention during analysis, and the arrows point to the commands I used to discover their contents.
+
+Figure 4: Exploring the interesting pointers in 2nd argument to cmd!Dispatch Because users can redirect multiple
+
+I/O streams in a single command, cmd.exe represents I/O redirection with a linked list.
+
+For example, the command in Listing 1 shows redirection of standard output (stream #1 is implicit) to shares.txt and standard error (stream #2 is explicitly referenced) to errors.txt.
+
+net use > shares.txt 2>errors.txt
+
+Listing 1: Command-line I/O redirection example Figure 5 shows the command data structure and the I/O redirection linked list in block diagram format.
+
+Figure 5: Command data structure diagram By inspection, I found that cmd!Dispatch is responsible for executing both shell built-ins and executable programs, so unlike breaking on CreateProcess, it will not miss commands that do not result in process creation.
+
+Based on these findings, I wrote a flare-qdb script to parse and dump commands as they are executed.
+
+Introducing De-DOSfuscator De-DOSfuscator uses flare-qdb and Vivisect to hook the Dispatch function in cmd.exe and parse commands from memory.
+
+The De-DOSfuscator script runs in a 64-bit Python 2 interpreter and dumps commands to both the console and a log file.
+
+The script comes with the latest version of flare-qdb and is installed as a Python entry point named dedosfuscator.exe.
+
+De-DOSfuscator relies on the location of the non-exported Dispatch function to log commands, and its location varies per system.
+
+For convenience, if an Internet connection is available, De-DOSfuscator automatically retrieves this function’s offset using Microsoft’s symbol server.
+
+To allow offline use, you can supply the path to a copy of cmd.exe from your offline machine to the --getoff switch to obtain this offset.
+
+You can then supply that output as the argument to the --useoff switch in your offline machine to inform De-DOSfuscator where the function is located.
+
+Alternately, you can use De-DOSfuscator with a downloaded PDB or a local symbol cache containing the correct symbols.
+
+Figure 6 demonstrates getting and using the offset in a single session.
+
+Note that for this to work in an isolated VM, you would instead specify the path to a copy of the guest’s command interpreter specific to that VM.
+
+Figure 6: Getting and using offsets and testing De-DOSfuscator
+
+This works great on the BatchEncrypted script in Figure 1.
+
+Let’s have a look.
+
+Results Figure 7 shows the log created by De-DOSfuscator after running XYNT.bat.
+
+Hundreds of lines of SET statements progressively build environment variables for composing further commands.
+
+Keen eyes will also note a misspelling of the endlocal command-line extension keyword.
+
+Figure 7:
+
+Beginning of dumped commands These environment variable manipulations give way to real commands as shown in Figure 8.
+
+One of the script’s first actions is to use reg.exe to check the NUMBER_OF_PROCESSORS environment variable.
+
+This analysis system only had one vCPU, which can be seen in the set \"a=1\" output on line 620.
+
+After this, the script executes goto del, which branches to a batch label that ultimately deletes the script and other dropped files.
+
+Figure 8: Anti-sandbox measure This is a batch-oriented spin on a common sandbox evasion trick.
+
+It works because many malware analysis sandboxes run with a single CPU to minimize hypervisor resources, whereas most modern systems have at least two CPU cores.
+
+Now that we can easily read the script’s commands, it is trivial to circumvent this evasion by, for example, increasing the number of vCPUs available to the VM.
+
+Figure 9 shows De-DOSfuscator log after inducing the rest of the code to run.
+
+Figure 9:
+
+After circumventing anti-sandbox measure XYNT.bat calls a dropped binary to create and start a Windows service for persistence.
+
+The largest dropped binary is a variant of the XMRig cryptocurrency miner, and many of the services and executables referenced by the script also appear to be cryptocurrency-related.
+
+Happy Easter Easter is a long way off, but I must present you with a very early Easter Egg because it is such a neat little find.
+
+During my journey through cmd.exe, I noticed a variable named fDumpParse having only one cross-reference that seemed to control an interesting behavior.
+
+The lone cross-reference and the relevant code are shown in Figure 10.
+
+Although fDumpParse is inaccessible anywhere else in the code, it controls whether a function is called to dump information about the command that has been parsed.
+
+Figure 10: fDumpParse evaluation and cross-refs (EDI is NULL)
+
+To experiment with this, you can use De-DOSfuscator’s --fDumpParse switch.
+
+You will then be greeted with a command prompt that is more transparent about what it has parsed.
+
+Figure 11 shows an example along with a graphical representation of the abstract syntax tree (AST) of parsed command tokens.
+
+Figure 11:
+
+Command interpreter with fDumpParse set Microsoft probably inserted the fDumpParse flag so developers could debug issues with cmd.exe.
+
+Unfortunately, as nifty as this is, it has drawbacks for bulk de-obfuscation: This output is harder to read than plain commands, because it dumps the tree in preorder traversal rather than inorder like it was typed.
+
+Output copied from the console may contain extraneous line breaks depending on the console host program’s text wrapping behavior.
+
+Scrolling in the command interpreter to read or copy output can be tedious.
+
+The console buffer is limited, so not everything may be captured.
+
+Malicious script authors can still use the CLS command to clear the screen and make all the fDumpParse output disappear.
+
+Gratuitous joining of commands with command separators (as found in XYNT.bat) yields unreadable ASTs that exceed the console width and wrap around, as in Figure 12.
+
+Figure 12: fDumpParse result exceeding console width Consequently, fDumpParse is not ideal for de-obfuscating large, malicious batch files; however, it is still interesting and useful for de-obfuscating short scripts or one-off commands.
+
+You can get the offset De-DOSfuscator needs for offline use via --getoff and use it via --useoff, as with normal operation.
+
+Wrapping Up I have given you an example of a heavily obfuscated command script and I have shared a useful tool for de-obfuscating it, along with the analytical steps that I followed to synthesize it.
+
+The De-DOSfuscator script code comes with the latest version of flare-qdb and is accessible as a script entry point (dedosfuscator.exe) when you install flare-qdb.
+
+It is my hope that this not only helps you to conveniently analyze malicious batch scripts, but also inspires you to devise your own creative ways to employ flare-qdb against malware.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

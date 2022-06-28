@@ -1,0 +1,5 @@
+
+The team would also like to thank Scott Henderson, Kelli Vanderlee, Jacqueline O'Leary, Michelle Cantos, and all the analysts who worked on Mandiant’s Red Line Redrawn project.
+The team would also like to thank Mike Dockry, Josh Villanueva, Keith Knapp, and all the incident responders who worked on these engagements.
+Additional Resources CISA Alert (AA21-110A): Exploitation of Pulse Connect Secure Vulnerabilities Pulse Secure Advisory SA44101: Multiple vulnerabilities resolved in Pulse Connect Secure / Pulse Policy Secure 9.0RX
+Pulse Secure Advisory SA44784: Multiple Vulnerabilities Resolved in Pulse Connect Secure 9.1R11.4 Pulse Secure Customer FAQ KB44764: PCS Security Integrity Tool Enhancements Pulse Secure

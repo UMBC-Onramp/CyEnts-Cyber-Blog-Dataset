@@ -1,0 +1,6 @@
+
+Web application security assessment - A review of custom web\napplication code for security vulnerabilities such as access\ncontrol issues, SQL injection, cross-site scripting (XSS) and\nothers.
+These are best done in a test or development environment\nto minimize impact to the production environment.
+Social\nengineering - Using deceptive email, phone calls, and/or physical\nentry to gain access to systems.
+Wireless penetration\ntest - A detailed security assessment of wireless network(s) at\none or more of your locations.
+This typically includes a survey of\nthe location looking for unauthorized (\"rogue\") wireless\naccess points that have been connected to the corporate network\nand are often insecurely configured.

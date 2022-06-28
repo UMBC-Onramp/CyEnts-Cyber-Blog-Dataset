@@ -1,0 +1,4 @@
+
+Applying an upgrade to an impacted box could potentially overwrite forensic evidence as well as leave any additional backdoors on the system.
+In addition, SolarWinds has released additional mitigation and hardening instructions here .
+In the event you are unable to follow SolarWinds’ recommendations, the following are immediate mitigation techniques that could be deployed as first steps to address the risk of trojanized SolarWinds software in an environment.

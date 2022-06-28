@@ -1,0 +1,7 @@
+
+The following are the parameters for method R: Path to InstallUtil.exe (or other .NET framework tools)
+Decoded NETWIRE trojan When we observed the list of processes spawned during the attack (Figure 8), we did not see the payload spawned as a separate process.
+Figure 8:
+Processes spawned during attack We observed that the InstallUtil.exe process was being created in suspended mode.
+Once it started execution, we compared its memory artifacts to a benign execution of InstallUtil.exe and concluded that the malicious payload is being injected into the memory of the newly spawned InstallUtil.exe process.
+We also observed that no arguments are passed to InstallUtil, which would cause an error under normal execution since InstallUtil always expects at least one argument.

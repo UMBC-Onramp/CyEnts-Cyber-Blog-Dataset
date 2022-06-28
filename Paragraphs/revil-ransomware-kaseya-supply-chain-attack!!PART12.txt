@@ -1,0 +1,12 @@
+
+The ‘double extortion’ strategy has become a common practice among organized cybercrime groups that deploy ransomware targeting organizational networks.
+IOCs Analysis provided by Kaseya also provides relevant IOCs.
+Those can be accessed here .
+Remaining Vigilant X-Force is advising organizations to be on alert of the growing risk of ransomware attacks and to be prepared with incident response plans and a team that can escalate issues.
+It is also recommended to be mindful of having offline backups, segmenting networks to limit the reach of attackers, encrypting data , and applying critical patches in a timely manner to reduce the overall risk of attacks.
+Companies can benefit from testing their detection capabilities with adversary simulation and red teaming, as well as rehearse and test incident response plans to identify gaps, so they can limit the spread of an attack if and when one happens.
+For ongoing updates on this situation visit the X-Force Exchange Collection .
+Visit these resources with additional questions or to schedule a one-on-one consultation with an IBM subject matter expert or download the IBM Ransomware response guide .
+If your organization requires immediate assistance with incident response, please contact IBM Security X-Force’s US hotline 1-888-241-9812 | Global hotline (+001) 312-212-8034.
+
+

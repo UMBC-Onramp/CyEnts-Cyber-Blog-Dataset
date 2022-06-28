@@ -1,0 +1,221 @@
+By John Fokker on Jul 11, 2018 Thanks to my colleague Christiaan Beek for his advice and contributions.
+
+While researching underground hacker marketplaces, the McAfee Advanced Threat Research team has discovered that access linked to security and building automation systems of a major international airport could be bought for only US$10.
+
+The dark web contains RDP shops, online platforms selling remote desktop protocol (RDP) access to hacked machines, from which one can buy logins to computer systems to potentially cripple cities and bring down major companies.
+
+RDP, a proprietary protocol developed by Microsoft that allows a user to access another computer through a graphical interface, is a powerful tool for systems administrators.
+
+In the wrong hands, RDP can be used to devastating effect.
+
+The recent SamSam ransomware attacks on several American institutions demonstrate how RDP access serves as an entry point.
+
+Attacking a high-value network can be as easy and cheap as going underground and making a simple purchase.
+
+Cybercriminals like the SamSam group only have to spend an initial $10 dollars to get access and are charging $40K ransom for decryption, not a bad return on investment.
+
+A screenshot of Blackpass.bz, one of the most popular RDP-shops, largely due to the variety of services offered.
+
+Shops explained Security maven Brian Krebs wrote the article “Really Dumb Passwords” in 2013.
+
+That short phrase encapsulates the vulnerability of RDP systems.
+
+Attackers simply scan the Internet for systems that accept RDP connections and launch a brute-force attack with popular tools such as, Hydra, NLBrute or RDP Forcer to gain access.
+
+These tools combine password dictionaries with the vast number of credentials stolen in recent large data breaches.
+
+Five years later, RDP shops are even larger and easier to access.
+
+The McAfee Advanced Threat Research team looked at several RDP shops, ranging in size from 15 to more than 40,000 RDP connections for sale at Ultimate Anonymity Service (UAS), a Russian business and the largest active shop we researched.
+
+We also looked at smaller shops found through forum searches and chats.
+
+During the course of our research we noticed that the size of the bigger shops varies from day to day with about 10%.
+
+The goal of our research was not to create a definitive list of RDP shops; rather, we sought a better understanding of the general modus operandi, products offered, and potential victims.
+
+The number of compromised systems claimed to be available for sale by several RDP shops.
+
+A single compromised system can appear on more than one shop’s list.
+
+RDP access by cybercriminals How do cybercriminals (mis)use RDP access?
+
+RDP was designed to be an efficient way to access a network.
+
+By leveraging RDP, an attacker need not create a sophisticated phishing campaign, invest in malware obfuscation, use an exploit kit, or worry about antimalware defenses.
+
+Once attackers gain access, they are in the system.
+
+Scouring the criminal underground, we found the top uses of hacked RDP machines promoted by RDP shops.
+
+False flags: Using RDP access to create misdirection is one of the most common applications.
+
+While preserving anonymity, an attacker can make it appear as if his illegal activity originates from the victim’s machine, effectively planting a false flag for investigators and security researchers.
+
+Attackers can plant this flag by compiling malicious code on the victim’s machine, purposely creating false debugging paths and changing compiler environment traces.
+
+Spam: Just as spammers use giant botnets such as Necrus and Kelihos, RDP access is popular among a subset of spammers.
+
+Some of the systems we found for sale are actively promoted for mass-mailing campaigns, and almost all the shops offer a free blacklist check, to see if the systems were flagged by SpamHaus and other antispam organizations.
+
+Account abuse, credential harvesting, and extortion: By accessing a system via RDP, attackers can obtain almost all data stored on a system.
+
+This information can be used for identity theft, account takeovers, credit card fraud, and extortion, etc.
+
+Cryptomining: In the latest McAfee Labs Threats Report , we wrote about the increase in illegal cryptocurrency mining due to the rising market value of digital currencies.
+
+We found several criminal forums actively advertising Monero mining as a use for compromised RDP machines.
+
+Monero mining via RDP advertised on a cybercriminal forum.
+
+Ransomware:
+
+The large majority of ransomware is still spread by phishing emails and exploit kits.
+
+However, specialized criminal groups such as SamSam are known to use RDP to easily enter their victims’ networks almost undetected.
+
+RDP shop overview Systems for sale: The advertised systems ranged from Windows XP through Windows 10.
+
+Windows 2008 and 2012 Server were the most abundant systems, with around 11,000 and 6,500, respectively, for sale.
+
+Prices ranged from around US $3 for a simple configuration to $19 for a high-bandwidth system that offered access with administrator rights.
+
+Third-party resellers: When comparing “stock” among several RDP shops, we found that the same RDP machines were sold at different shops, indicating that these shops act as resellers.
+
+Windows Embedded Standard: Windows Embedded Standard, now called Windows IOT, is used in a wide variety of systems that require a small footprint.
+
+These systems can range from thin clients to hotel kiosk systems, announcement boards, point-of-sale (POS) systems, and even parking meters among others.
+
+Among the thousands of RDP-access systems offered, some configurations stood out.
+
+We found hundreds of identically configured Windows Embedded Standard machines for sale at UAS Shop and BlackPass; all these machines were in the Netherlands.
+
+This configuration was equipped with a 1-GHz VIA Eden processor.
+
+An open-source search of this configuration revealed that it is most commonly used in thin clients and some POS systems.
+
+The configurations are associated with several municipalities, housing associations, and health care institutions in the Netherlands.
+
+Thin client and POS systems are often overlooked and not commonly updated, making them an ideal backdoor target for an attacker.
+
+Although these systems have a small physical footprint, the business impact of having such a system compromised should not be underestimated.
+
+As we’ve observed from previous breaching of retailers leveraging unpatched or vulnerable POS systems, the damage extends far beyond financial only, including customer perception and long-term brand reputation.
+
+  
+
+In regard to the current affected systems we discovered, McAfee has notified the identified victims and is working to learn further detail on why and how these identical Windows systems were compromised.
+
+Government and health care institutions: We also came across multiple government systems being sold worldwide, including those linked to the United States, and dozens of connections linked to health care institutions, from hospitals and nursing homes to suppliers of medical equipment.
+
+In a March blog post, the Advanced Threat Research team showed the possible consequences of ill-secured medical data and what can happen when an attacker gains access to medical systems.
+
+It is very troublesome to see that RDP shops offer an easy way in.
+
+Additional products for sale Services offered by our researched RDP shops.
+
+In addition to selling RDP, some of these shops offer a lively trade in social security numbers, credit card data, and logins to online shops.
+
+The second-largest RDP shop we researched, BlackPass, offered the widest variety of products.
+
+The most prolific of these brokers provide one-stop access to all the tools used to commit fraud: RDP access into computers, social security numbers and other integral data to set up loans or open bank accounts.
+
+For legal and ethical reasons, we did not purchase any of the products offered.
+
+Therefore, we cannot determine the quality of the services.
+
+RDP ransomware attack scenario Is it possible to find a high-value victim using an RDP shop?
+
+The Advanced Threat Research team put this theory to the test.
+
+By leveraging the vast amounts of connections offered by the RDP shops, we were able to quickly identify a victim that fits the profile of a high-value target in the United States.
+
+We found a newly posted (on April 16)
+
+Windows Server 2008 R2 Standard machine on the UAS Shop.
+
+According to the shop details, it belonged to a city in the United States and for a mere $10 we could get administrator rights to this system.
+
+RDP access offered for sale.
+
+UAS Shop hides the last two octets the of the IP addresses of the systems it offers for sale and charges a small fee for the complete address.
+
+(We did not pay for any services offered by UAS or any other shop.)
+
+To locate the system being sold, we used shodan.io to search for any open RDP ports at that specific organization using this query: org:”City  XXX” port:”3389” The results were far more alarming than we anticipated.
+
+The Shodan search narrowed 65,536 possible IPs to just three that matched our query.
+
+By obtaining a complete IP address we could now look up the WHOIS information, which revealed that all the addresses belonged to a major International airport.
+
+This is definitely not something you want to discover on a Russian underground RDP shop, but the story gets worse.
+
+From bad to worse Two of the IP addresses presented a screenshot of the accessible login screens.
+
+A login screen that matches the configuration offered in the RDP shop.
+
+A closer look at the screenshots shows that the Windows configuration (preceding screen) is identical to the system offered in the RDP shop.
+
+There are three user accounts available on this system, one of which is the administrator account.
+
+The names of the other accounts seemed unimportant at first but after performing several open-source searches we found that the accounts were associated with two companies specializing in airport security; one in security and building automation, the other in camera surveillance and video analytics.
+
+We did not explore the full level of access of these accounts, but a compromise could offer a great foothold and lateral movement through the network using tools such as Mimikatz.
+
+The login screen of a second system on the same network.
+
+Looking at the other login account (preceding screen), we saw it is part of the domain with a very specific abbreviation.
+
+We performed the same kind of search on the other login account and found the domain is most likely associated with the airport’s automated transit system, the passenger transport system that connects terminals.
+
+It is troublesome that a system with such significant public impact might be openly accessible from the Internet.
+
+Now we know that attackers, like the SamSam group, can indeed use an RDP shop to gain access to a potential high-value ransomware victim.
+
+We found that access to a system associated with a major international airport can be bought for only $10—with no zero-day exploit, elaborate phishing campaign, or watering hole attack.
+
+Anonymization To publish our findings, we have anonymized the data to prevent any disclosure of sensitive security information.
+
+Basic forensic and security advice Playing hide and seek Besides selling countless connections, RDP shops offer tips on how to remain undetected when an attacker wants to use the freshly bought RDP access.
+
+This screen from the UAS Shop’s FAQ section explains how to add several registry keys to hide user accounts.
+
+The UAS Shop offers a zip file with a patch to allow multiuser RDP access, although it is not possible by default on some Windows versions.
+
+The zip file contains two .reg files that alter the Windows registry and a patch file that alters termsvrl.dll to allow concurrent remote desktop connections.
+
+These alterations to the registry and files leave obvious traces on a system.
+
+Those indicators can be helpful when investigating misuse of RDP access.
+
+In addition to checking for these signs, it is good practice to check the Windows event and security logs for unusual logon types and RDP use.
+
+The following screen, from the well-known SANS Digital Forensics and Incident Response poster, explains where the logs can be found.
+
+Source: SANS DFIR
+
+Poster 2015.
+
+Basic RDP security measures Outside access to a network can be necessary, but it always comes with risk.
+
+We have summarized some basic RDP security measures: Using complex passwords and two-factor authentication will make brute-force RDP attacks harder to succeed Do not allow RDP connections over the open Internet Lock out users and block or timeout IPs that have too many failed login attempts Regularly check event logs for unusual login attempts Consider using an account-naming convention that does not reveal organizational information Enumerate all systems on the network and list how they are connected and through which protocols.
+
+This also applies for Internet of Things and POS systems.
+
+Conclusion Remotely accessing systems is essential for system administrators to perform their duties.
+
+Yet they must take the time to set up remote access in a way that is secure and not easily exploitable.
+
+RPD shops are stockpiling addresses of vulnerable machines and have reduced the effort of selecting victims by hackers to a simple online purchase.
+
+Governments and organizations spend billions of dollars every year to secure the computer systems we trust.
+
+But even a state-of-the-art solution cannot provide security when the backdoor is left open or carries only a simple padlock.
+
+Just as we check the doors and windows when we leave our homes, organizations must regularly check which services are accessible from the outside and how they are secured.
+
+Protecting systems requires an integrated approach of defense in depth and proactive attitudes from every employee.
+
+
+
+

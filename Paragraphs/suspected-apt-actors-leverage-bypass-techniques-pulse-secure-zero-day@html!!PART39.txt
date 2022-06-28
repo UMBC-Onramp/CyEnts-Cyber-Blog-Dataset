@@ -1,0 +1,6 @@
+
+SLOWPULSE Variant 4
+UnPatcher As part of our investigation into the SLOWPULSE family we were able to recover the utility used by the attacker to remove the malicious logic into the original libdsplibs.so file for SLOWPULSE V4.
+The attacker chose to remove the patches applied to libdsplibs.so .
+The file with SHA256: b2350954b9484ae4eac42b95fae6edf7a126169d0b93d79f49d36c5e6497062a is the unpatcher utility for SLOWPULSE V4.
+This sample is also a simple bash script, in full it is: printf '\\xE8' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B31)) printf '\\xE2' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B32)) printf '\\x08' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B33))

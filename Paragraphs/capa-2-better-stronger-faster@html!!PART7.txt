@@ -1,0 +1,11 @@
+
+For example, highly optimized C/C++ runtime routines and open-source library code enable a programmer to quickly build a product but are not the product itself .
+Therefore, capa results should reflect the programmer’s intent for the program rather than a categorization of every byte in the program.
+Compare the capa v1.6 results in Figure 5 versus capa v2.0 results in Figure 6.
+capa v2.0 identifies and skips almost 200 library functions and produces more relevant results.
+Figure 5: capa v1.6 results without library code recognition Figure 6: capa v2.0 results ignoring library code functions
+So, we searched for a way to differentiate a programmer’s code from library code.
+After experimenting with a few strategies, we landed upon the Fast Library Identification and Recognition Technology (FLIRT) developed by Hex-Rays .
+Notably, this technique has remained stable and effective since 1996, is fast, requires very limited code analysis, and enjoys a wide community in the IDA Pro userbase.
+We figured out how IDA Pro matches FLIRT signatures and re-implemented a matching engine in Rust with Python bindings .
+Then, we built an open-source signature set that covers many of the library routines encountered in modern malware.

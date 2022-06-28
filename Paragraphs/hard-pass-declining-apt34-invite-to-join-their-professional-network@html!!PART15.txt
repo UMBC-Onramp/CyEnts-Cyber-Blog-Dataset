@@ -1,0 +1,5 @@
+
+One such bug involves determining the length of a command response string without accounting for Unicode strings.
+As a result, a single command response byte is sent when, for example, the malware executes a shell command that returns Unicode output.
+Additionally, within the malware, an unused string contained the address 185[.]15[.]247[.]154.
+VALUEVAULT VALUEVAULT is a Golang compiled version of the “Windows Vault Password Dumper” browser credential theft tool from Massimiliano Montoro, the developer of Cain & Abel.

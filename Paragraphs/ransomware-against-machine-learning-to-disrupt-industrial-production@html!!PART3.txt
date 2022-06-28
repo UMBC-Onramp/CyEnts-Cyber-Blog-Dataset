@@ -1,0 +1,4 @@
+
+The traditional approach to ransomware attacks predominantly relies on a “shotgun” methodology that consists of indiscriminate campaigns spreading malware to encrypt files and data from a variety of victims.
+Actors following this model will extort victims for an average of $500 to $1,000 USD and hope to receive payments from as many individuals as possible.
+While early ransomware campaigns adopting this approach were often considered out of scope for OT security, recent campaigns targeting entire industrial and critical infrastructure organizations have moved toward adopting a more operationally complex post-compromise approach.

@@ -1,0 +1,5 @@
+
+The CRC32 check avoids the possibility that somebody can change the crypted data with another config and does not update the CRC32 value in the malware.
+After decryption of the JSON file, the malware will parse it with a code of a full JSON parser and extract all fields and save the values of these fields in the memory.
+FIGURE 5.
+PARTIAL EXAMPLE OF THE CONFIG DECRYPTED AND CLEANED Let us explain all the fields in the config and their meanings: pk ->

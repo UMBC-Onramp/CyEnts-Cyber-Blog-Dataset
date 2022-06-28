@@ -1,0 +1,4 @@
+
+Once installed and executed, the app behaves as expected (QR code reader, ring tones, etc.).
+However, in the background and without the user’s knowledge, Sonvpay listens for incoming push notifications that contain the data to perform mobile billing fraud.
+Background Push Notification and Fake Update Screen Sonvpay employs the onesignal push notification service to get the information to subscribe users to premium-rate services.

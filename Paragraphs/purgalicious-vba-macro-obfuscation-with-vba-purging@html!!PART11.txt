@@ -1,0 +1,9 @@
+
+0xe011cfd0 and (\nuint32(@vba_proj[1] + 0x78) ==
+0x07 ) }
+Searching with this logic on VirusTotal reveals a large number of\nmalicious documents, meaning this is very prevalent in the wild and in\nuse by attackers.
+This rule should identify most publicly documented\nexamples of VBA purging, such as 9fd864e578d8bb985cf71a24089f5e2f ( HornetSecurity ).\nHowever, it may also identify some false positives.
+As previously\nidentified by Didier\nStevens , some public libraries such as EPPlus may generate benign\ndocuments without PerformanceCache data and\nappear to be purged.
+Another important limitation of this rule is that the _VBA_PROJECT stream data doesn’t have to be\ncompletely removed.
+So while the stream size is 7 in all publicly\ndocumented examples of this technique
+, it doesn’t have to be exactly 7.

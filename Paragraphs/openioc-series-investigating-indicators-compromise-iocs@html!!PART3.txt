@@ -1,0 +1,9 @@
+
+A member of the security operations staff, John Johnson, was present during the seminar and quickly initiated an investigation of Bob's system using the Mandiant Redline™ host investigation tool.
+John used Redline to create a portable collectors configured to obtain live response data from Bob's system which included file system metadata, the contents of the registry, event logs, web browser history, as well as service information.
+John ran the collectors on Bob's system and brought the data back to his analysis workstation for review.
+Through discussions with Bob, John learned that the suspicious e-mail likely arrived on October 13, 2013.
+After initial review of the evidence, John assembled the following timeline of suspicious activity on the system.
+Table 1: Summary of significant artifacts Based on this analysis, John pieced together a preliminary narrative:
+The attacker sent a spear-phishing email to Bob which contained a malicious PDF attachment, \"Ultrawidget.pdf\", which Bob saved to the desktop on October 10, 2013, at 20:19:07 UTC.
+Approximately five minutes later, at 20:24:44 UTC, the file \"C:WINDOWSSysWOW64acmCleanup.exe\" was created as well as a Run key used for persistence.

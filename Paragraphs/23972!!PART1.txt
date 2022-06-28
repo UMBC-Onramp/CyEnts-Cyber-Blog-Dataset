@@ -1,0 +1,5 @@
+Cryptocurrency scams have long been around.
+In the hope of getting hold of cryptocurrency in others’ accounts, cybercriminals tempt victims with free transfers , bitcoin giveaways , other people’s credentials and scarce mining equipment .
+Today we look at another fraudulent scheme, this time targeting owners of MetaMask cryptowallets.
+What is MetaMask?
+MetaMask is a wallet for the Ethereum blockchain that supports all types of tokens based on it (both regular and non-fungible ones, aka NFTs).

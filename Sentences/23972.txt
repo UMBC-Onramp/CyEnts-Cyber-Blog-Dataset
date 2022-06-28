@@ -1,0 +1,75 @@
+Cryptocurrency scams have long been around.
+
+In the hope of getting hold of cryptocurrency in others’ accounts, cybercriminals tempt victims with free transfers , bitcoin giveaways , other people’s credentials and scarce mining equipment .
+
+Today we look at another fraudulent scheme, this time targeting owners of MetaMask cryptowallets.
+
+What is MetaMask?
+
+MetaMask is a wallet for the Ethereum blockchain that supports all types of tokens based on it (both regular and non-fungible ones, aka NFTs).
+
+The wallet works as an extension for Google Chrome, Firefox, Microsoft Edge and Brave desktop browsers, and there are also apps for iOS and Android.
+
+MetaMask can be used to make purchases and create and monetize content on a decentralized network.
+
+As with similar wallets, access is secured by a user password created at registration, and an app-generated private key consisting of 64 alphanumerical characters, plus a seed phrase — a series of 12 (less often 24) words.
+
+And whereas nearly all cryptowallet owners understand that the password and private key must not be shared with anyone, some, especially cryptocurrency newbies, underestimate the need to keep the seed phrase secret.
+
+Keep in mind however that the seed phrase is essentially a verbal representation of the private key, allowing you to restore access to the account.
+
+In other words, if someone gets hold of your seed phrase, they will be able to log in to your account and get their hands on your cryptocurrency.
+
+Hence the interest on the part of scammers.
+
+E-mail threatening to block your account
+
+The scam starts with a mass e-mail that exploits one of the favorite psychological tricks of cybercriminals: intimidation.
+
+Victims are threatened that if they do not urgently verify their MetaMask account, it will be suspended.
+
+To make the message appear more convincing, the cybercriminals add the company’s name and logo, and indicate its support service as the sender.
+
+Suspicion is raised only by taking a closer look at the address the e-mail came from.
+
+The scammers ask the victim to verify their account
+
+The first sign it’s a fake is the typo in the company name in the e-mail address (metamasks instead of metamask).
+
+Another red flag is the domain, (the part of the address after the @ symbol).
+
+Respectable companies usually use their name as the domain, for example, account-security-noreply@microsoft.com.
+
+In this case, however, the domain has no relation at all to MetaMask.
+
+Lastly, .de indicates that the address is registered in Germany, which is also strange, since MetaMask is an American company.
+
+To verify the account, the scammers prompt their victim to follow a link in the e-mail.
+
+This, too, does not inspire confidence: the incorrect domain with extra words and the names of foreign brands clearly suggest something is wrong with the message.
+
+Enter the seed If the victim fails to spot these tell-tale signs and still follows the link, they are taken to a fake login page that resembles the official MetaMask website.
+
+The victim is asked to enter their wallet seed phrase The scammers prompt the victim to enter their seed phrase into the form, supposedly to unlock the wallet.
+
+If the user is taken in and enters the secret phrase, they are redirected to the real MetaMask site, however, their wallet is now in cybercriminal hands.
+
+How to protect your wallet Attackers are constantly coming up with new and increasingly sophisticated ways of defrauding cryptoinvestors.
+
+However, most scams have common signs that give them away.
+
+And to guard against intruders, it’s usually enough to follow these simple security rules: Be wary of e-mails and messages asking for payment or threatening to block an account, or, on the contrary, offering a get-rich-quick scheme.
+
+Pay attention to the sender’s address.
+
+If the company’s name is spelled incorrectly, or the domain is just a set of random characters, it’s almost certainly a scam.
+
+Treat data and credentials used to access your account and money with extreme care.
+
+Learn how the cryptowallet security system works, what information the support service may require from you, and what you should never share with anyone.
+
+Use a reliable solution with protection against online fraud and phishing to help keep your money safe from all sorts of scam.
+
+
+
+

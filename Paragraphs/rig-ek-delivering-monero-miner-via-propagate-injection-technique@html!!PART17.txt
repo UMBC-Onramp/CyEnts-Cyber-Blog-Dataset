@@ -1,0 +1,13 @@
+
+It creates a MD5 hash value using Microsoft CryptoAPIs from the computer name and the volume information and sends the hash to the server in a POST request.
+Figure 18 shows the network communication.
+Figure 18:
+Network communication The malware then downloads the final payload, the Monero miner, from the server and installs it in the system.
+Conclusion Although we have been observing a decline in Exploit Kit activity, attackers are not abandoning them altogether.
+In this blog post, we explored how RIG EK is being used with various exploits to compromise endpoints.
+We have also shown how the NSIS Loader leverages the lesser known PROPagate process injection technique, possibly in an attempt to evade security products.
+FireEye MVX and the FireEye Endpoint Security (HX) platform detect this attack at several stages of the attack chain.
+Acknowledgement We would like to thank Sudeep Singh and Alex Berry for their contributions to this blog post.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

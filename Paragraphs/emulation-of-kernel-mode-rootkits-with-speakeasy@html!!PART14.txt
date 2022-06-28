@@ -1,0 +1,5 @@
+
+At the time of this writing, all threads within the emulator present themselves as alertable by default.
+Figure 7: Event logged when the tcprelay.sys malware confirmed a thread was alertable
+Next, the malware can execute any user mode code it wants using this thread object.
+The undocumented functions KeInitializeApc and KeInsertQueueApc will initialize and execute a user mode APC respectively.

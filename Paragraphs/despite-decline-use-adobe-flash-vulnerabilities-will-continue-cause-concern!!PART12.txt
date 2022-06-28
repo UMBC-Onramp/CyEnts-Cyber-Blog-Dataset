@@ -1,0 +1,10 @@
+
+Just when researchers were digging deeper and harder into the code base, Adobe’s software security change required not just chasing vulnerability fixes, but also generating protective code and designs—all of which take time to implement.
+This typical situation explains the influx of critical new issues in 2015, and their subsequent continuous reductions.
+Still, no single or collection of security techniques is perfect.
+In 2017, Flash marked 70 new issues.
+So far in 2018, three have been discovered.
+The most recent, CVE-2018-4878, is technically challenging and appears to be within protections that Adobe has placed within byte arrays to prevent these memory structures from being misused.
+“[CVE-2018-4878] bypassed the byte array mitigation feature that was introduced to prevent ‘length corruption’ attacks in Flash,” wrote McAfee’s Hardik Shah in “How Hackers Bypassed an Adobe Flash Protection Mechanism.”
+It is just as possible to unwittingly add an exploitation opportunity when implementing software protections as when writing any other code.
+Of the 73 vulnerabilities discovered in 2017 and 2018, there is no method, without tracking code changes, to know when each of the flaws was introduced.

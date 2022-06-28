@@ -1,0 +1,6 @@
+
+Figure 2: Underground keyword mentions Monero Is King The majority of recent cryptojacking operations have overwhelmingly focused on mining Monero, an open-source cryptocurrency based on the CryptoNote protocol, as a fork of Bytecoin.
+Unlike many cryptocurrencies, Monero uses a unique technology called \"ring signatures,\" which shuffles users' public keys to eliminate the possibility of identifying a particular user, ensuring it is untraceable.
+Monero also employs a protocol that generates multiple, unique single-use addresses that can only be associated with the payment recipient and are unfeasible to be revealed through blockchain analysis, ensuring that Monero transactions are unable to be linked while also being cryptographically secure.
+The Monero blockchain also uses what's called a \"memory-hard\" hashing algorithm called CryptoNight and, unlike Bitcoin's SHA-256 algorithm, it deters application-specific integrated circuit (ASIC) chip mining.
+This feature is critical to the Monero developers and allows for CPU mining to remain feasible and profitable.

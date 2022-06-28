@@ -1,0 +1,4 @@
+On July 14, FireEye researchers discovered attacks exploiting the Adobe Flash vulnerability CVE-2015-5122, just four days after Adobe released a patch.
+CVE-2015-5122 was the second Adobe Flash zero-day revealed in the leak of HackingTeam’s internal data.
+The campaign targeted Japanese organizations by using at least two legitimate Japanese websites to host a strategic web compromise (SWC), where victims ultimately downloaded a variant of the SOGU malware.
+Strategic Web Compromise At least two different Japanese websites were compromised to host the exploit framework and malicious downloads: Japan’s International Hospitality and Conference Service Association (IHCSA) website (hxxp://www.ihcsa[.]or[.]jp) in Figure 1 Figure 1: IHCSA website Japan’s Cosmetech Inc. website (hxxp://cosmetech[.]co[.]jp)

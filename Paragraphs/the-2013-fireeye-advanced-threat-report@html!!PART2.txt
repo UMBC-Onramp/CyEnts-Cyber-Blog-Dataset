@@ -1,0 +1,3 @@
+
+The data contained in this report is gleaned from the FireEye Dynamic Threat Intelligence (DTI) cloud , and is based on attack metrics shared by FireEye customers around the world.
+Its insight is derived from: 39,504 cyber security incidents 17,995 malware infections 4,192 APT incidents 22 million command and control (CnC) communications 159 APT-associated malware families CnC infrastructure in 206 countries and territories Based on our data, the U.S., South Korea, and Canada were the top APT targets in 2013; the U.S., Canada, and Germany were targeted by the highest number of unique malware families.

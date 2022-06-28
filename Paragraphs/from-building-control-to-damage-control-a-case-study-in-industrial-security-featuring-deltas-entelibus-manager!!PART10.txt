@@ -1,0 +1,5 @@
+
+Before we leave you with “all’s well that ends well”, we want to stress that there is a lesson to be learned here: it doesn’t take much to make a critical system vulnerable.
+Thus, it is important that companies extend proper security practices to all network-connected devices – not just PCs.
+Such practices might include placing all internet-connected devices behind a firewall, monitoring traffic to these devices, segregating them from the rest of the network using VLANs, and staying on top of security updates.
+For critical systems that cannot afford significant downtime, updates are often pulled instead of pushed, putting the onus on end users to keep these devices up to date.

@@ -1,0 +1,4 @@
+
+Notably, in some cases, actors may be hired on a salary basis (vs commission) to perform specific tasks such as determining the victim organization and its annual revenues.
+This allows for specialization within the cyber criminal ecosystem, ultimately increasing efficiency, while still allowing all parties involved to profit.
+Figure 2: MAZE ransomware panel MAZE Initially Distributed via Exploit Kits and Spam Campaigns MAZE ransomware was initially distributed directly via exploit kits and spam campaigns through late 2019.

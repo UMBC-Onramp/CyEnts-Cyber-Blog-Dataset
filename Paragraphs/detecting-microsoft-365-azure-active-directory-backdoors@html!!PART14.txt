@@ -1,0 +1,7 @@
+
+This will allow an attacker to login as that user without the need for a valid certificate or a legitimate IssuerURI.
+Fortunately for defenders, this method will generate a number of events in the unified audit log, which can be leveraged for monitoring and alerting.
+Mitigation and Detection Once persistence is established, it can be extremely difficult to detect login activity that is utilizing one of the previously described methods.
+In lieu of this, it is recommended to monitor and alert on M365 unified audit logs and Azure AD sign-in activity to detect anomalous activity.
+Detection in FireEye Helix Being that Mandiant has seen this methodology being used in the wild, we felt it was necessary to build these detections into our FireEye Helix security platform.
+Helix engineers have created sever new detection rules that monitor for detectable activity of an attacker making use of the AADInternals PowerShell module.

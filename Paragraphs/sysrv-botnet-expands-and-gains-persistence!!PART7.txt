@@ -1,0 +1,9 @@
+
+sysrv malware main routine Inside the binary, we found the exploits it used to spread.
+Exploits include: Exploit Software CVE-2021-3129 Laravel CVE-2020-14882 Oracle Weblogic CVE-2019-3396 Widget Connector macro in Atlassian Confluence Server CVE-2019-10758 Mongo Express CVE-2019-0193 Apache Solr CVE-2017-9841 PHPUnit CVE-2017-12149 Jboss Application Server CVE-2017-11610 Supervisor (XML-RPC)
+Apache Hadoop Unauthenticated Command Execution via YARN
+ResourceManager (No CVE) Apache Hadoop Brute force Jenkins Jenkins Jupyter Notebook Command Execution (No CVE)
+Jupyter Notebook Server CVE-2019-7238 Sonatype Nexus Repository Manager Tomcat Manager Unauth Upload Command Execution (No CVE) Tomcat Manager WordPress Bruteforce WordPress XMRig
+Miner
+The second component of the payload is a cryptominer that mines Monero.
+In the early malware samples, the miner is in a separate binary.

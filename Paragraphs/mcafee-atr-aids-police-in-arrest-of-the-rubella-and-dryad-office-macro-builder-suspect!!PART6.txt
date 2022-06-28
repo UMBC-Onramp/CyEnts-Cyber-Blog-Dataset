@@ -1,0 +1,4 @@
+
+The actor Rubella was actually promoting a variety of different, some self-written, products and services, ranging from (stolen) credit card data, a crypto wallet stealer and a malicious loader software to a newly pitched product called Tantalus ransomware-as-a-service.
+During our research we were able to link different nicknames used by the actor on several forums across a timespan of many years.
+Piecing it all together, Rubella showed a classic growth pattern of an aspiring cybercriminal, started by gaining technical security knowledge on beginner forums with low op-sec and gradually moved to some of the bigger, exclusive forums to offer products and services.

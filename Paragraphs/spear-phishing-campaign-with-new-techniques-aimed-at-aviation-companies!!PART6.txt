@@ -1,0 +1,10 @@
+
+This payload is encoded using Server.
+URLEncode() and obfuscated to evade detection.
+Antonin Foller's VBS decode function from PSTRUH Software ( http://www.motobit.com ) is used to decrypt the payload.
+After decryption, \"Good.xml\" is written to the victim's Temp directory, where it is launched using MSBuild.exe.
+If you’re not aware of this executable, it is present on all Windows machines with the .NET framework installed.
+It’s a trusted developer utility used to speed up the process of creating .NET applications.
+Because it is a trusted utility, adversaries use the tool in an effort to evade detection.
+(See Mitre ATT&CK technique – Trusted Developer Utilities Proxy Execution: MSBuild .)
+In the script below, the payload bytes are first substituted for de-obfuscation, then decoded before being written to the Temp directory.

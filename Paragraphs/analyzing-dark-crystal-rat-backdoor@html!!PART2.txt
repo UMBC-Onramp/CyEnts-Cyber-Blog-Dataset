@@ -1,0 +1,13 @@
+
+Using sandbox testing, we found that this sample produced two executables, and in turn, one of those two executables produced three more.
+Figure 1 shows the relationships between the malicious executables discovered via sandbox testing.
+Figure 1:
+The first sample we began analyzing ultimately produced five executables.
+Armed with the sandbox results, our next step was to perform a triage analysis on each executable.
+We found that the original sample and mnb.exe were droppers, that dal.exe was a clean-up utility to delete the dropped files, and that daaca.exe and fsdffc.exe were variants of Plurox, a family with existing reporting.
+Then we moved to analyzing the final dropped sample, which was dfsds.exe.
+We found brief public reporting by @ James_inthe_box on the same sample, identifying it as DCRat and as a RAT and credential stealer .
+We also found a public sandbox run that included the same sample.
+Other public reporting described DCRat, but actually analyzed the daaca.exe Plurox component bundled along with DCRat in the initial sample.
+Satisfied that dfsds.exe was a RAT lacking detailed public reporting, we decided to perform a deeper analysis.
+Analyzing Dark Crystal RAT Initial Analysis Shifting aside from our sandbox for a moment, we performed static analysis on dfsds.exe.

@@ -1,0 +1,15 @@
+
+ASCIIEncoding Security.
+Cryptography.
+FromBase64Transform IO.MemoryStream
+Runtime.
+Serialization.
+Formatters.
+Binary.
+BinaryFormatter Collections.
+ArrayList
+Now, let’s return to the JavaScript code we saw in Figure 2.
+The function base64ToStream()converts the Base64-encoded serialized object to a stream.
+Before we can fully understand the logic behind the JavaScript code, we need to examine the functionality of the Base64-encoded serialized object.
+Thus our next step is to reverse engineer the embedded serialized object and recreate the class definition.
+Once that was done, the class definition looks like the following code, which is responsible for executing the malicious shellcode.

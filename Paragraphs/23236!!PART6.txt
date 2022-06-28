@@ -1,0 +1,6 @@
+
+Website spoofing is a common phishing technique; Don’t trust links in e-mails.
+Instead, bookmark the URLs of cryptocurrency wallets, exchanges, and other important services, and open them using your bookmarks; Use a unique password for each cryptocurrency service (and for all other sites and services as well) so that a hack or data leak on one resource won’t affect your other accounts; Install a reliable antivirus solution to protect against phishing.
+For example, Kaspersky Internet Security ‘s built-in antiphishing and antifraud modules warn users about potentially dangerous sites in good time.
+
+

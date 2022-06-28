@@ -1,0 +1,6 @@
+
+REvil has code built into the malware that prevents it from being installed on Russian language machines, which may suggest the developers reside within a Russian-speaking country and/or operate with impunity in one of these countries.
+Since its debut two years ago, REvil/Sodinokibi has gained considerable momentum, locking up and even auctioning off data that belonged to companies like Travelex, Gunnebo, Brown-Forman, and the pan-Asian retail giant “The Dairy Farm Group”, to name a few.
+The demand in each case is often exorbitant, asking victims for multi-million-dollar ransoms for their data: Leading cosmetics group Pierre Fabre: $25,000,000 The Dairy Farm Group: $30,000,000 New York-based law firm Grubman Shire Meiselas & Sacks: $42,000,000 Apple MacBook supplier: $50,000,000 With pressure tactics going beyond data encryption, Sodinokibi operators often steal data in advance, exfiltrate it, and then resort to extortion tactics.
+Those who refuse to pay up, hoping to rely on their ability to recover data will receive threats to have sensitive, confidential data exposed publicly on the group’s Dark Web site dubbed “The Happy Blog”.
+That’s also where it names and shames its victims, offering their data up for sale to the highest bidder.

@@ -1,0 +1,7 @@
+
+Supervisor Mode Execution Prevention (SMEP) blocks the attacker’s user-mode callback from executing within kernel-mode and causes the exploits to fail.
+Exploits Tool History The exploits are implemented as a command line tool that accepts a single command line argument – a shell command to execute with SYSTEM privileges.
+This tool appears to be an updated version of an earlier tool.
+The earlier tool exploited CVE-2011-1249, and displays the following usage message to stdout when run: Usage:system_exp.exe cmd Windows Kernel Local Privilege Exploits The vast majority of samples of the earlier tool have compile dates in December 2009.
+  Only two samples were discovered with compile dates in March 2011.
+Although the two samples exploit the same CVE, they carry a slightly modified usage message of: Usage:local.exe cmd Windows local Exploits The most recent version of the tool, which implements CVE-2014-4113, eliminates all usage messages.

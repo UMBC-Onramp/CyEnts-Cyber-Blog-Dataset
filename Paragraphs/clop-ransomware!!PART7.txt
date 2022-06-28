@@ -1,0 +1,8 @@
+
+This thread’s first action is to create a file called “Favorite” in the same folder as the malware.
+Later, it will check the last error with “GetLastError” and, if the last error was 0,  it will wait with the function “Sleep” for 5 seconds.
+Later the thread will make a dummy call to the function “EraseTape” with a handle of 0, perhaps to disturb the emulators because the handle is put at 0 in a hardcoded opcode, and later a call to the function “DefineDosDeviceA” with an invalid name that returns another error.
+These operations will make a loop for 666000 times.
+FIGURE 6.
+Loop to disturb the analysis The next action is to search for some processes with these names: SBAMTray.exe (Vipre antivirus product) SBPIMSvc.exe
+(Sunbelt AntiMalware antivirus product) SBAMSvc.exe (GFI AntiMalware antivirus product) VipreAAPSvc.exe (Vipre antivirus product)

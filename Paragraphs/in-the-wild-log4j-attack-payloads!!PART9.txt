@@ -1,0 +1,18 @@
+
+For instance, we have seen attacks that attempt to dump AWS credentials.
+Benign Scanning W e have also seen a significant amount of scanning that looks just like a test or done by security researchers or organizations.
+Binaryedge.io LeakIX Just a test where the callback is on localhost and only interested in the version of JAVA the target is using.
+Kryptoslogic Shifting to RMI and IIOP Most of the attacks we have seen used LDAP but recently, attackers are shifting to RMI and IIOP.
+We have detailed a complete chain using RMI infection in our previous blog .
+Attackers used the RMI protocol to install Monero Cryptominer Attackers used the IIOP protocol.
+Juniper Threat Labs continues to monitor attacks related to the Log4j vulnerability to share IOCs with th e community and add mitigations and protections across the suite of Juniper Networks security products.
+Indicators of Compromise IP Address 45[.]83.193.150 68[.]183.165.105
+172[.]105.241.146 54[.]210.230.186
+18[.]228.7.109 45[.]130.229.168 92[.]242.40.21 82[.]118.18.201 152[.]67.63.150 135[.]148.143.217 182[.]131.31.122 209[.]141.58.149 185[.]250.148.157 167[.]99.32.139 176[.]32.33.14 128[.]90.61.199 134[.]209.163.248 135[.]148.143.217 139[.]59.175.247 14[.]192.5.36 14[.]215.128.148 159[.]223.5.30 163[.]172.157.143 167[.]172.44.255 167[.]71.13.196 167[.]99.32.139 176[.]32.33.14 178[.]79.157.186 182[.]131.31.122 185[.]224.139.151 185[.]244.214.217 185[.]250.148.157 193[.]3.19.1 193[.]3.19.159 195[.]54.160.149 205[.]185.115.217 209[.]141.58.149 45[.]130.229.168 45[.]137.21.9 45[.]155.205.233 45[.]83.193.150 45[.]83.64.1 51[.]38.92.223 62[.]182.80.168 80[.]71.158.44 82[.]118.18.201 85[.]10.195.175 92[.]242.40.21 URL https://c6td5me2vtc0000aq690gdpg14eyyyyyb[.]interactsh.com
+Files c39eb055c5f71ebfd6881ff04e876f49495c0be5560687586fc47bf5faee0c84  pty1 33dd6c0af99455a0ca3908c0117e16a513b39fabbf9c52ba24c7b09226ad8626
+  pty2 4c97321bcd291d2ca82c68b02cde465371083dace28502b7eb3a88558d7e190c  pty3 b0a8b2259c00d563aa387d7e1a1f1527405da19bf4741053f5822071699795e2  pty4 2752deb9f9f9602ca0c7bd41c3171d1560b929b6a4221ab07b0bf872d042f7e7  pty5
+A290b6f956ecdb3d2d2019088f0b01a93a9f680c82a4680c0fb87eb5e3e64897
+  log C70e6f8edfca4be3ca0dc2cfac8fddd14804b7e1e3c496214d09c6798b4620c5  s.cmd 3ba2c4ae64be8d03747dffd5e4dc98730a54fdbb4aad50516428dc2507fdbfcf  lh.sh 9691061f778674bb4e28fb6a2d88a2fe72711ae71f3d2f4137654e1b5e91c9d2   py 6e25ad03103a1a972b78c642bac09060fa79c460011dc5748cbb433cc459938b  kinsing 68cc0ae1ca1e26d5f1dba19d065291ae6c5c69c9f37b9f384245d6fa070f1d69  kinsing 8ad160ddb9d617cf61ff0a7af0fa6d12ae26cf85a5d6e551c617f6c6bb770299 Exploit.class 9691061f778674bb4e28fb6a2d88a2fe72711ae71f3d2f4137654e1b5e91c9d2  mirai 70ffac4b8f2cf00a6876b3aa622c0efa87b53b681791302eea27692dd81f273d  ExecTemplateJDK8.class 85e88e7bdd4657422a121146600c71250d68b44a82b9677856ffda9dbec07d98  log4tst.exe f42915a2c76a29edd58fc2e1f7fde4c15d369e141d384064203ac57d53c41d5e  aa0 7ef631659c6f66719a18330ca3a79e89a9297681087659b8aa903c23c9e98be2
+  lz_coinminer e7c5b3de93a3184dc99c98c7f45e6ff5f6881b15d4a56c144e2e53e96dcc0e82  coinminer Monero Wallet 46QBumovWy4dLJ4R8wq8JwhHKWMhCaDyNDEzvxHFmAHn92EyKrttq6LfV6if5UYDAyCzh3egWXMhnfJJrEhWkMzqTPzGzsE
+
+

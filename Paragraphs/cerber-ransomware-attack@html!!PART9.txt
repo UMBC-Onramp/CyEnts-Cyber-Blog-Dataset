@@ -1,0 +1,14 @@
+
+Figure 4.
+   Interface provided to the victim to pay ransom supports 12 languages Encryption Cerber targets 294 different file extensions for encryption, including .doc
+(typically Microsoft Word documents), .ppt
+(generally Microsoft PowerPoint slideshows), .jpg and other images.
+It also targets financial file formats such as.
+ibank (used with certain personal finance management software) and .wallet (used for Bitcoin).
+Selective Targeting Selective targeting was used in this campaign.
+The attackers were observed checking the country code of a host machine’s public IP address against a list of blacklisted countries in the JSON configuration, utilizing online services such as ipinfo.io to verify the information.
+Blacklisted (protected) countries include: Armenia, Azerbaijan, Belarus, Georgia, Kyrgyzstan, Kazakhstan, Moldova, Russia, Turkmenistan, Tajikistan, Ukraine, and Uzbekistan .
+The attack also checked a system's keyboard layout to further ensure it avoided infecting machines in the attackers geography: 1049—Russian, ¨ 1058—Ukrainian, 1059—Belarusian, 1064—Tajik, 1067—Armenian, 1068—Azeri, (Latin), 1079—Georgian, 1087—Kazakh, 1088—Kyrgyz (Cyrillic), 1090—Turkmen, 1091—Uzbek (Latin), 2072—Romanian (Moldova), 2073—Russian (Moldova), 2092—Azeri (Cyrillic), 2115—Uzbek (Cyrillic).
+Selective targeting has historically been used to keep malware from infecting endpoints within the author’s geographical region, thus protecting them from the wrath of local authorities.
+The actor also controls their exposure using this technique.
+In this case, there is reason to suspect the attackers are based in Russia or the surrounding region.

@@ -1,0 +1,6 @@
+
+The campaign involved the use of VBScript, PowerShell and the .NET framework to perform a code injection attack using a process hollowing technique.
+The attacker abused the functionality of loading .NET assembly directly into memory of PowerShell to execute malicious code without creating any PE files on the disk.
+Activity Summary
+The user is prompted to open a document stored on Google Drive.
+The name of the file, shown in Figure 1, suggests that the actor was targeting members of the airline industry that use a particular aircraft model.

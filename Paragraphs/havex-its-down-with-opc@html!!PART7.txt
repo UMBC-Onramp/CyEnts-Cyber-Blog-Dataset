@@ -1,0 +1,8 @@
+
+The results of a capability scan of an OPC server is stored in %TEMP%\\OPCServer[random].txt.
+Files are not encrypted or deleted once the scanning process is complete.
+Once the scanning completes, the log is deleted and the contents are encrypted and stored into a file named %TEMP%\\[random].tmp.yls.
+  
+The encryption process uses an RSA public key obtained from the PE resource TYU.
+  
+The RSA key is used to protect a randomly generated 168-bit 3DES key that is used to encrypt the contents of the log.

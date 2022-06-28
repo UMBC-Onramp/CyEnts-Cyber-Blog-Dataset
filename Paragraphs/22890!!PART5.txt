@@ -1,0 +1,8 @@
+
+The remote accepts (and executes) commands sent in plain text marked “encryption disabled.”
+The remote’s requests are still encrypted and therefore cannot be deciphered, but simply understanding the communication mechanism makes it possible to effectively guess what the remote is asking and to give the right response.
+It goes something like this: “YdvJhd8w@a&hW*wy5TOxn3B*El06%D7?”
+“Sure, there’s a firmware update available for you to download.”
+“Cj@EDkjGL01L^NgW@Fryp1unc1GTZIYM.”
+“Sending the file; accept it.”
+Third, it is quite easy to trigger an error in the firmware module that handles communication with the remote, causing the module to crash and reboot.

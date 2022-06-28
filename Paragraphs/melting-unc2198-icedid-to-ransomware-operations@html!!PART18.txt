@@ -1,0 +1,34 @@
+
+SYSTEMBC is a proxy malware that beacons to its C2 and opens new proxy connections between the C2 and remote hosts as indicated by the C2.
+Proxied communications are encrypted with RC4.
+The malware receives commands via HTTP and creates new proxy connections as directed.
+Underground sales advertisements refer to the software as a “ socks5 backconnect system” .
+The malware is typically used to hide the malicious traffic associated with other malware.
+Appendix:
+Detecting the Techniques FireEye security solutions detect these threats across email, endpoint, and network levels.
+The following is a snapshot of existing detections related to activity outlined in this blog post.
+Platform Detection Name FireEye Network Security Downloader.
+Macro.
+MOUSEISLAND Downloader.
+Win.
+PHOTOLOADER Trojan.
+PHOTOLOADER Downloader.
+IcedID Trojan.
+IcedID Malicious.
+SSL.IcedID Malicious.
+SSL.IcedIdCert Trojan.
+Malicious.
+Certificate Backdoor.
+BEACON Trojan.
+Generic Trojan.
+CobaltStrike FireEye Endpoint Security Real-Time (IOC) BLOODHOUND ATTACK PATH MAPPING (UTILITY) BLOODHOUND ATTACK PATH MAPPING A (UTILITY)
+COBALT STRIKE (BACKDOOR) COBALT STRIKE
+DEFAULT DLL EXPORT (BACKDOOR) COBALT STRIKE
+NAMED PIPE ECHO (BACKDOOR)
+EGREGOR RANSOMWARE (FAMILY) ICEDID (FAMILY) MAZE RANSOMWARE (FAMILY) MAZE RANSOMWARE
+A (FAMILY) METASPLOIT SERVICE ABUSE (UTILITY) MOUSEISLAND (DOWNLOADER)
+MOUSEISLAND A (DOWNLOADER) MOUSEISLAND B (DOWNLOADER) POWERSHELL DOWNLOADER (METHODOLOGY)
+POWERSHELL DOWNLOADER D (METHODOLOGY)
+SCHTASK CREATION FROM PROGRAMDATA (COLLECTION)
+SUSPICIOUS BITSADMIN USAGE
+A (METHODOLOGY) SUSPICIOUS POWERSHELL USAGE (METHODOLOGY)

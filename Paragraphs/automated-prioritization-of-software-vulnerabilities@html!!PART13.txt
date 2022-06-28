@@ -1,0 +1,8 @@
+
+One prediction is made per entity, even if a tweet contains multiple entities.
+Filtering tweets that do not contain named entities reduces tweets to only those relevant to expressing observations on a software vulnerability.
+From these normalized tweets, we can gain insight into how strongly users are emphasizing the importance of the vulnerability by observing their choice of words.
+The choice of adjective is instrumental in the classifier capturing the strong opinions.
+Twitter users often use strong adjectives and superlatives to convey magnitude in a tweet or when stressing the importance of something related to a vulnerability like in Figure 4.
+This magnitude often indicates to the model when a vulnerability’s exploitation is widespread.
+Table 1 shows our analysis of important adjectives that tend to indicate a more severe vulnerability.

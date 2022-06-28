@@ -1,0 +1,6 @@
+
+The next function called is parse_logical_name, whose second parameter is an upper limit for the string being passed.
+This field has a maximum length of 0x20, or 32, bytes.
+The subsequent code handles whether this information is empty and stores the data in the format logical_name.
+This review again helps confirm what we see in real time with Wireshark.
+Now that we understand the devices’ separate network traffic, we can look at how they interact.

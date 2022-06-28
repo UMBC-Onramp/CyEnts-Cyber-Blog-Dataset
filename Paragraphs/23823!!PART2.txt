@@ -1,0 +1,5 @@
+
+In addition, turning off or restarting a smartphone is one of the most reliable ways to fight such infections; in many cases, spyware “lives” only until the next reboot because it cannot gain a permanent foothold in the operating system.
+At the same time, the vulnerabilities that allow malware to work even after a reboot are rare and expensive to exploit.
+However, this tactic might not work forever.
+Researchers have come up with a technique to bypass it using a method they have named NoReboot.

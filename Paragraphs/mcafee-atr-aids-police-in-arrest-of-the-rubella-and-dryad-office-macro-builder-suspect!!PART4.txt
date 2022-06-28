@@ -1,0 +1,6 @@
+
+Additional techniques can be found in other builders.
+Dutch Language OpSec fail….
+Rubella Macro Builder is such a toolkit and was offered by an actor by the same nickname “Rubella”.
+The toolkit was marketed with colorful banners on different underground forums.
+For the price of 500 US Dollars per month you could use his toolkit to weaponize Office documents that bypass end-point security systems and deliver a malicious payload or run a PowerShell Code of your choice.

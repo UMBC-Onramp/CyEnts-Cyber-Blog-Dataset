@@ -1,0 +1,41 @@
+By Steve Povolny on Aug 22, 2018
+
+McAfee’s Advanced Threat Research team has operated from several locations around the world for many years.
+
+Today we are pleased to announce the grand opening of our dedicated research lab in the Hillsboro, Oregon, office near Portland.
+
+Although we have smaller labs in other locations, the new McAfee Advanced Threat Research Lab was created to serve two purposes.
+
+First, it gives our talented researchers an appropriate work space with access to high-end hardware and electronics for discovery, analysis, automation, and exploitation of vulnerabilities in software, firmware, and hardware.
+
+Second, the lab will serve as a demo facility, where the Advanced Threat Research team can showcase current research and live demos to customers or potential customers, law enforcement partners, academia, and even vendors.
+
+The lab has been a labor of love for the past year, with many of the team members directly contributing to the final product.
+
+Visitors will have the unique opportunity to experience live and recorded demos in key industry research areas, including medical devices, autonomous and connected vehicles, software-defined radio, home and business IoT, blockchain attacks, and even lock picking!
+
+ Our goal is to make vulnerability research a tangible and relatable concept, and to shed light on the many security issues that plague nearly every industry in the world.
+
+Much of the research highlighted in the lab has been disclosed by McAfee.
+
+Links to recent disclosures from the Advanced Threat Research team: Articles 80 to 0 in Under 5 Seconds: Falsifying a Medical Patient’s Vitals Examining Code Reuse Reveals Undiscovered Links Among North Korea’s Malware Families Want to Break Into a Locked Windows 10 Device?
+
+Ask Cortana (CVE-2018-8140)
+
+Microsoft Cortana Allows Browser Navigation Without Login: CVE-2018-8253 Organizations Leave Backdoors Open to Cheap Remote Desktop Protocol Attacks ‘Insight’ into Home Automation Reveals Vulnerability in Simple IoT Product Podcasts McAfee’s Steve Povolny Leads Threat Research Cortana voice assistant lets you in.
+
+—
+
+Research Saturday “Hackable?”
+
+By McAfee Security researcher Douglas McKee prepares his demo of hacking a medical patient’s vitals.
+
+Onsite visitors will have the opportunity to solve a unique, multipart cryptographic challenge, painted on our custom mural wall in the lab.
+
+Those who are successful will receive an Advanced Threat Research team challenge coin!
+
+We will soon have an official video from the lab’s opening event online.
+
+
+
+

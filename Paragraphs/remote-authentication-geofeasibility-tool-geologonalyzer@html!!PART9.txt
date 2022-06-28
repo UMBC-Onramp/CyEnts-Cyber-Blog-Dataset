@@ -1,0 +1,4 @@
+
+Due to the various VPN log formats exported from VPN server manufacturers, version 1.0 of GeoLogonalyzer does not include support for raw VPN server logs.
+GeoLogonalyzer Usage Example Input Figure 1 represents an example input VPNLogs.csv file that recorded eight authentication events for the two user accounts Meghan and Harry.
+The input data is commonly derived from logs exported directly from an application administration console or SIEM.

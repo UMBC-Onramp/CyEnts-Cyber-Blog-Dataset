@@ -1,0 +1,5 @@
+
+Dynamic Analysis When we ran the application, it asked us to enter a login and password in order to run.
+We also noticed a number-generated HWID (Hardware-ID) that was always the same when running the app.
+The HWID number is a unique identifier specific to the machine it was running on and was used to register the app.
+When trying to enter a random name we detected a remote connection to the website ‘hxxps://tailoredtaboo.com/auth/check.php’ to verify the license.

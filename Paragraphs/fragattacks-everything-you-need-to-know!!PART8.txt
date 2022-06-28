@@ -1,0 +1,9 @@
+
+Raise awareness that home devices, like smart TVs and home IoT devices, are open to attack.
+Peruse Vanhoef’s Github information and tools.
+These include descriptions of each FragAttack vulnerability, a research paper on the issue, examples that show the vulnerabilities, their practical exploitation and tools for testing for vulnerabilities.
+The content also includes advice from companies that have addressed the issue.
+FragAttacks are new and rare and in some cases, highly theoretical.
+But they’re still out there, so it’s vital as always to follow good Wi-Fi security measures.
+
+

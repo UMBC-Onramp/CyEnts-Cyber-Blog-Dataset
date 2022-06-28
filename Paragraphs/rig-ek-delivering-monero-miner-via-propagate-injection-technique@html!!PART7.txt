@@ -1,0 +1,6 @@
+
+Figure 11 shows the complete malware activity flow chart.
+Figure 11:
+Malware activity flow chart Analysis of NSIS Loader (SmokeLoader)
+The first payload dropped by the RIG EK is a compiled NSIS executable famously known as SmokeLoader.
+Apart from NSIS files, the payload has two components: a DLL, and a data file (named ‘kumar.dll’ and ‘abaram.dat’ in our analysis case).

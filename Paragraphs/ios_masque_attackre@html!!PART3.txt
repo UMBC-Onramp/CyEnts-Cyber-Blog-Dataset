@@ -1,0 +1,10 @@
+
+We describe these two parts of Masque Attack II in the following sections.
+Bypassing Prompt for Trust When the user clicks to open an enterprise-signed app for the first time, iOS asks whether the user trusts the signing party.
+The app won’t launch unless the user chooses “Trust”.
+  Apple suggested defending against Masque Attack by the aid of this “Don’t Trust” prompt [8].
+We notified Apple that this was inadequate.
+We find that when calling an iOS URL scheme, iOS launches the enterprise-signed app registered to handle the URL scheme without prompting for trust.
+It doesn’t matter whether the user has launched that enterprise-signed app before.
+Even if the user has always clicked “Don’t Trust”, iOS still launches that enterprise-signed app directly upon calling its URL scheme.
+In other words, when the user clicks on a link in SMS, iOS Mail or Google Inbox, iOS launches the target enterprise-signed app without asking for user’s “Trust” or even ignores user’s “Don’t Trust”.

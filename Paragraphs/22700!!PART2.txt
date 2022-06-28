@@ -1,0 +1,10 @@
+
+Then read on, for we have compiled a history of ransomware with the answers to these and many more questions.
+Together, let’s trace the development of blockers, cryptors, wipers, and other ransomware nasties over the past few decades.
+Ransomware dictionary The following terms appear frequently in the text.
+Cryptography — the science of preventing outsiders from reading confidential information.
+Encryption is one aspect of cryptography.
+Symmetric encryption — a data encryption method in which one key is used both to encrypt and to decrypt the information.
+Asymmetric encryption — a data encryption method that involves the use of two keys: one public to encrypt the information, and one private to decrypt it.
+Knowing the public key does not help with decryption; that requires the private key.
+RSA — a commonly used asymmetric encryption algorithm.

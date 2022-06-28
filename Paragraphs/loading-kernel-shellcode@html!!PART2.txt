@@ -1,0 +1,6 @@
+
+A common triage step is to load the sample in a shellcode loader and debug it in user space.
+With kernel shellcode, this can have unexpected results such as the access violation in Figure 1.
+Figure 1: Access violation from shellcode dereferencing null pointer The kernel environment is a world apart from user mode: various registers take on different meanings and point to totally different structures.
+For instance, while the gs segment register in 64-bit Windows user mode points to the Thread Information Block (TIB) whose size is only 0x38 bytes, in kernel mode it points to the Processor Control Region (KPCR) which is much larger.
+In Figure 1 at address 0x2e07d9, the shellcode is attempting to access the IdtBase member of the KPCR, but because it is running in user mode, the value at offset 0x38 from the gs segment is null.

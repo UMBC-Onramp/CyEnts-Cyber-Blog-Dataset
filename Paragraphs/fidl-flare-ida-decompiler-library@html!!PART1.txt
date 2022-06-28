@@ -1,0 +1,6 @@
+IDA Pro and the Hex Rays decompiler are a core part of any toolkit for reverse engineering and vulnerability research.
+In a previous blog post we discussed how the Hex-Rays API can be used to solve small, well-defined problems commonly seen as part of malware analysis.
+Having access to a higher-level representation of binary code makes the Hex-Rays decompiler a powerful tool for reverse engineering.
+However, interacting with the HexRays API and its underlying data sources can be daunting, making the creation of generic analysis scripts difficult or tedious.
+This blog post introduces the FLARE IDA Decompiler Library (FIDL) , FireEye’s open source library which provides a wrapper layer around the Hex-Rays API.
+Background Output from the Hex-Rays decompiler is exposed to analysts via an Abstract Syntax Tree (AST).

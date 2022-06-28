@@ -1,0 +1,10 @@
+
+rule Ransomware_Win_DARKSIDE_v1__1 { meta: author = “FireEye” date_created = “2021-03-22” description =
+“Detection for early versions of DARKSIDE ransomware samples based on the encryption mode configuration values.”
+md5 = “1a700f845849e573ab3148daef1a3b0b” strings: $consts = { 80 3D [4] 01
+[1-10] 03 00 00 00
+[1-10] 03 00 00 00
+[1-10] 00 00 04 00
+[1-10] 00 00 00 00
+[1-30] 80 3D [4] 02 [1-10] 03 00 00 00
+[1-10] 03 00 00 00

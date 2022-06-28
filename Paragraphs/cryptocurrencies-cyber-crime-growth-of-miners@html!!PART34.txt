@@ -1,0 +1,6 @@
+
+ZIP Filenames california_540_tax_form_2013_instructions.exe
+state_bank_of_india_money_transfer_agency.exe format_transfer_sms_banking_bni_ke_bca.exe confirmation_receipt_letter_sample.exe sbi_online_apply_2015_po.exe estimated_tax_payment_coupon_irs.exe how_to_add_a_non_us_bank_account_to_paypal.exe western_union_money_transfer_from_uk_to_bangladesh.exe can_i_transfer_money_from_bank_of_ireland_to_aib_online.exe how_to_open_a_business_bank_account_with_bad_credit_history.exe apply_for_sbi_credit_card_online.exe list_of_lucky_winners_in_dda_housing_scheme_2014.exe Table 2:
+Sampling of observed ZIP filenames delivering cryptocurrency miner Cryptojacking Worms Following the WannaCry attacks, actors began to increasingly incorporate self-propagating functionality within their malware.
+Some of the observed self-spreading techniques have included copying to removable drives, brute forcing SSH logins, and leveraging the leaked NSA exploit EternalBlue .
+Cryptocurrency mining operations significantly benefit from this functionality since wider distribution of the malware multiplies the amount of CPU resources available to them for mining.

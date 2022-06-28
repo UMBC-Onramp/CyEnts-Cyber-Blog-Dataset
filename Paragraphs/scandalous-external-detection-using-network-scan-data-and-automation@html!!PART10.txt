@@ -1,0 +1,9 @@
+
+The data we collect not only helps us track things we aren’t seeing at our clients, it allows us to provide timely and historical context to our incident responders and security analysts.
+Taking observations from Mandiant Incident Response or Managed Defense and distilling them into knowledge we can carry forward has always been our bread and butter.
+Now, with SCANdalous in the mix, we can project that knowledge out onto the Internet as a whole.
+Collection Metrics
+Looking back on where we started with our manual efforts, we’re pleased to see how far this project has come, and is perhaps best illustrated by examining the numbers.
+Today (and as we write these continue to grow), SCANdalous holds over five thousand signatures across multiple sources, covering dozens of named malware families and threat groups.
+Since its inception, SCANdalous has produced over two million hits.
+Every single one of those, a piece of contextualized data that helps our team make analytical decisions.

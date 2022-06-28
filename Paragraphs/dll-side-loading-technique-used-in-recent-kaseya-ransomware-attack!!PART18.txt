@@ -1,0 +1,4 @@
+
+T1036.005
+Masquerading: Match Legitimate Name or Location T1027.001 Obfuscated Files or Information: Binary Padding T1027.004 Obfuscated Files or Information: Compile After Delivery T1218
+Signed Binary Proxy Execution T1553.002 Subvert Trust Controls: Code Signing T1486 Data Encrypted for Impact Appendix B: IOCs File Hashes (SHA256) d55f983c994caa160ec63a59f6b4250fe67fb3e8c43a388aec60a4a6978e9f1e (ransomware)

@@ -1,0 +1,4 @@
+
+Conclusion In this post we have walked through the malicious Macro within a captured Excel file, which downloads Emotet via two extracted files, \"uidpjewl.bat\" and \"tjspowj.vbs\".
+We then went through how the downloaded Emotet Dll file is run in a rundll32.exe process as well as how it extracts the Emotet core X.dll from its “Resource”.
+I also explained what kinds of anti-analysis techniques this Emotet uses to protect its code from being analyzed.

@@ -1,0 +1,3 @@
+By McAfee Labs on Dec 04, 2019 With 2019’s headlines of ransomware, malware, and RDP attacks almost behind us, we shift our focus to the cybercrime threats ahead.
+Cybercriminals are increasing the complexity and volume of their attacks and campaigns, always looking for ways to stay one step ahead of cybersecurity practices – and more often using the world’s evolving technology against us.
+Continuing advancements in artificial intelligence and machine learning have led to invaluable technological gains, but threat actors are also learning to leverage AI and ML in increasingly sinister ways.

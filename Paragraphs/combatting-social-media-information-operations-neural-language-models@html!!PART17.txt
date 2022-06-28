@@ -1,0 +1,8 @@
+
+These indicators can be used to pivot between suspect social media accounts based on shared lexical patterns, help identify common narratives, and even to perform more proactive threat hunting.
+While the above example only scratches the surface of this complex, 355 million parameter model, qualitatively visualizing attention to understand the information learned by Transformers can help provide analysts insights into linguistic patterns being deployed as part of broader information operations activity.
+Detecting Information Operations Activity by Fine-Tuning GPT-2 for Classification In order to further support FireEye Threat Analysts’ work in discovering and triaging information operations activity on social media, we next fine-tuned a detection model to perform classification.
+Just like when we adapted GPT-2 for a new language modeling task in the previous section, we did not need to make any drastic architectural changes or parameter updates to fine-tune the model for the classification task.
+However, we did need to provide the model with a labeled dataset, so we grouped together social media posts based on whether they were leveraged in information operations (class label CLS = 1 ) or were benign ( CLS = 0 ).
+Benign, English-language posts were gathered from verified social media accounts, which generally corresponded to public figures and other prominent individuals or organizations whose posts contained diverse, innocuous content.
+For the purposes of this blog post, information operations-related posts were obtained from the previously mentioned open source IRA datasets.

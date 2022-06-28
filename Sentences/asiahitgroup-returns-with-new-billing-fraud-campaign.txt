@@ -1,0 +1,43 @@
+By Raj Samani on Jun 27, 2018 Are you tired yet of the music track “Despacito”?
+
+If you downloaded this ringtone app from Google Play, chances are your answer is a resounding
+
+Yes.
+
+But it gets worse: The McAfee Mobile Research team recently found 15 apps on Google Play that were uploaded by the AsiaHitGroup Gang.
+
+The ringtone app was one of them—downloaded 50,000 times from the official app store—that were designed to steal money from their victims.
+
+The AsiaHitGroup Gang has been active since at least 2016, attempting to charge 20,000 victims for the download of popular mobile applications containing the fake-installer app Sonvpay.
+
+A.
+
+For more analysis, see the Mobile Research team’s post.
+
+Ordinarily we advise users to review the requested permissions before installing a mobile app, and normally this is enough.
+
+In this case, the only permission requested was access to SMS messages, and once installed the app behaved as expected.
+
+In the background, however, Sonvpay silently used the push notification service to subscribe users to premium-rate services.
+
+This campaign displays a significant level of customization.
+
+The criminals can tailor their fraud to the country of their choosing.
+
+In our analysis we looked at mobile billing fraud targeting users in Kazakhstan, Malaysia, and Russia.
+
+In Kazakhstan victims are subscribed to a premium-rate service whereas in Malaysia and Russia they are connected to a WAP billing service.
+
+Further, the criminals recognize that in Malaysia the mobile operator sends a PIN code, so the attackers include functionality to intercept the SMS.
+
+Once intercepted, the app communicates with the mobile operator to subscribe to the service.
+
+This group began targeting users in Asia, but the move to Russia shows its increasing ambition.
+
+The goal of the AsiaHitGroup Gang remains the same, but the manner in which they attempt to achieve their ends differs per campaign, and their techniques are improving.
+
+Although the security industry focuses much attention on “loud” and destructive attacks, many campaigns quietly steal funds from unsuspecting victims or those who have little visibility into what is happening.
+
+
+
+

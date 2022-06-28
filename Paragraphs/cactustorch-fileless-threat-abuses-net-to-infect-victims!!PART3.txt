@@ -1,0 +1,14 @@
+
+The only component created is the output JavaScript file, which is executed on the target system by the script host (wscript.exe).
+For our analysis, we ran some basic deobfuscation and found CactusTorch , which had been hidden by some online tools: Figure 2:
+CactusTorch code.
+Before we dive into this code, we need to understand .NET
+and its COM exposure.
+When we install the .NET framework on any system, several .NET libraries are exposed via Microsoft’s Component Object Model (COM).
+Figure 3: COM exposing the .NET library System.
+Security.
+Cryptography.
+FromBase64Transform.
+If we look at the exposed interfaces, we can see IDispatch, which allows the COM object to be accessed from the script host or a browser.
+Figure 4: Exposed interfaces in a .NET library.
+To execute malicious code using the DotNetToJScript vector, an attack uses the following COM objects: Text.

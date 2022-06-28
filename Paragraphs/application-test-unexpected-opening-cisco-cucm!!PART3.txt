@@ -1,0 +1,8 @@
+
+The Findings During the pen test, we first tried to use the least possible privilege to pinpoint the vulnerabilities that the least trusted users can reach.
+Then, we created a replica of the appliance in a lab environment.
+Using several reverse engineering techniques, we extracted the source code of the web application used to manage the appliance.
+Through both dynamic testing and analysis of the source code, we found the following vulnerabilities: 3 x Structured Query Language (SQL) injection (CVE-2021-1355, CVE-2021-1364, CVE-2021-1282) SQL injection leads to arbitrary code execution (CVE-2021-1363, CVE-2021-1365)
+Path traversal (CVE-2021-1357)
+Cross-site scripting (CVE-2021-1407, CVE-2021-1408)
+The main objective was to find vulnerabilities that attackers could exploit to elevate their privilege on the appliance.

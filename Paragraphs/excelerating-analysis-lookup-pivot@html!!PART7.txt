@@ -1,0 +1,8 @@
+
+We will use the following formula to reference the “Latitude” values for a given IP address: Figure 4: VLOOKUP formula for Latitude There are four parts to this formula: Value to look up: This dictates what cell value we are going to look up more information for.
+In this case, it is cell G2, which is the IP address.
+Table array:
+This defines the entire array in which we will look up our value and return data from.
+The first column in the array must contain the value being looked up.
+In the aforementioned example, we are searching in ‘IP Address Intel’!$A$2:$D:$15.
+In other words, we are looking in the other sheet in this workbook we created earlier titled “IP Address Intel”, then in that sheet, search in the cell range of A2 to D15.

@@ -1,0 +1,9 @@
+
+If the password matches, then the EAX register is overwritten to 1.
+This puts the program in the same state as if DsSecID_checkLogin had successfully executed, but unlike SLOWPULSE VARIANT 1 the original authentication routine is not called at all.
+The malicious logic then rejoins execution before DSAuth::AceAuthServer::handleACEAuthResult which will now pass.
+This forces the application down the execution path of successful authentication, even though in reality authentication would have failed.
+SLOWPULSE Variant 4
+RealmSignin Two Factor Auth Bypass We identified a fourth variant of SLOWPULSE responsible for bypassing what may be the two-factor authentication step of the DSAuth::RealmSignin process.
+The backdoor is present within the function
+DSAuth::RealmSignin::runSigninStep .This routine is responsible for multiple steps of the login procedure and is implemented as a large switch statement.

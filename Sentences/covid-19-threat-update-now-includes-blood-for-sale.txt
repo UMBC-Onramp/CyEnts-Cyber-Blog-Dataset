@@ -1,0 +1,47 @@
+By Christiaan Beek and Raj Samani on Apr 07, 2020 Although the use of global events as a vehicle to drive digital crime is hardly surprising, the current outbreak of COVID-19 has revealed a multitude of vectors, including one in particular that is somewhat out of the ordinary.
+
+In a sea of offers for face masks, a recent posting on a dark web forum reveals the sale of blood from an individual claiming to have recovered from Coronavirus .
+
+What are we doing?
+
+Putting our customers at the core is what McAfee does.
+
+Daily updates are provided to products across the McAfee portfolio, with vetted information to secure your valuable assets in company or working from home.
+
+The volume of threats related to COVID-19 has been significant, with lures used in all manner of attacks.
+
+Tracking these campaigns reveals the most targeted sector is healthcare, followed by finance, and then education.
+
+Mobile Threats In March 2020 alone, McAfee Labs identified several malicious Android applications abusing keywords connected to the pandemic.
+
+The apps range from ransomware samples to spy-agents that spy on the victim’s device.
+
+For example, statically analyzing an app called “Corona Safety Mask,” we observe that the amount of permissions is suspicious: Full Internet access that allows the app to create network sockets Read contact data from the victim’s device Send SMS messages When the user downloads the app, it can order a facemask from the following site: “ coronasafetymask.tk. ”
+
+The SMS send permission is abused to send the scam to the victim’s contact list.
+
+Although attribution will clearly be a key concern it is not the primary focus of our research, however there appears to be APT groups incorporating  the COVID-19 theme into their campaigns.
+
+For example, spreading documents that talk about the pandemic and are weaponized with malicious macro-code to download malware to the victim’s system.
+
+Underground Marketplaces and scams We have seen many examples of major events being abused by people whose interest is only financial gain and current global events are no exception.
+
+We conducted a short survey on some underground markets and Telegram channels offering protective masks and more.
+
+Two examples are shown below: Onion-site offering masks Telegram channel with multiple sellers of masks The use of COVID-19 as a lure does not appear to show any sign of slowing down, indeed there are more campaigns being regularly identified using the global concern for selfish gain.
+
+Our focus will be to ensure detection remains up to date, and data points relevant for investigation are shared with authorities.
+
+In the meantime, we will continue to disseminate relevant threat information.
+
+To be kept up-to-date as we publish more content,  stay connected to the McAfee Labs Twitter feed .
+
+Finally, while COVID-19 related threats are on the rise, from phishing emails name-dropping the disease to malware named after popular video conferencing services, cybercrime in all aspects continues, and we must remain vigilant to other, traditional threats as well.
+
+For example, tips to secure the newly massive mobile workforce can be found here .
+
+Please stay safe.
+
+
+
+

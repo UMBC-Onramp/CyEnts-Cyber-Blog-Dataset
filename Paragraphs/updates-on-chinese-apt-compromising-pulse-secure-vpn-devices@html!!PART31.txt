@@ -1,0 +1,5 @@
+
+WebRequest completed, IP: %s,
+User: %s, Realm: %s, Roles: %s, %s to %s://%s:%s/%s from %s BLOODBANK BLOODBANK is a credential theft utility that parses two LMDB (an in memory database) files and expects an output file to be given at the command prompt.
+BLOODBANK takes advantage of a legitimate process that supports Single Sign On functionality and looks for plaintext passwords when they are briefly loaded in memory.
+The utility parses the following two files containing password hashes or plaintext passwords: /home/runtime/mtmp/lmdb/data0/data.mdb /home/runtime/mtmp/system BLOODBANK expects an output file as a command line parameter, otherwise it prints file open error.

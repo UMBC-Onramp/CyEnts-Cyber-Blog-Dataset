@@ -1,0 +1,6 @@
+
+From a detection evasion perspective, the attacker has chosen an interesting approach.
+Even if the PowerShell process creation is detected, InstallUtil.exe is executed from its original path.
+Furthermore, InstallUtil.exe is a benign file often used by internal automations.
+To an unsuspecting system administrator, this might not seem malicious.
+When we disassembled the .NET code and removed the obfuscation to understand how code injection was performed, we were able to identify Windows win32 API calls associated with process hollowing (Figure 9).

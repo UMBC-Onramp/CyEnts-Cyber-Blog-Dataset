@@ -1,0 +1,6 @@
+
+Notably, the malicious advertisements can be placed on legitimate sites and visitors can become infected with little to no user interaction.
+This distribution tactic is commonly used by threat actors to widely distribute malware and has been employed in various cryptocurrency mining operations.
+The following are some real-world examples of this activity: In early 2018, researchers with Trend Micro reported that a modified miner script was being disseminated across YouTube via Google's DoubleClick ad delivery platform.
+The script was configured to generate a random number variable between 1 and 100, and when the variable was above 10 it would launch the Coinhive script coinhive.min.js , which harnessed 80 percent of the CPU power to mine Monero.
+When the variable was below 10 it launched a modified Coinhive script that was also configured to harness 80 percent CPU power to mine Monero.

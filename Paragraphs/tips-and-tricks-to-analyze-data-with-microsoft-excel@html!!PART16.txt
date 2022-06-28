@@ -1,0 +1,6 @@
+
+This Excel formula counts how many times a value exists in a range of cells.
+$B$2:$B2
+This is the range of cells, B2 through B2, that we want to start with.
+Since we want to increase our range as we go through the rows of the log data, the ending cell row number (2 in this example) is not made absolute.
+As we fill this formula down through the rest of our log data, it will automatically expand the range to include the current log record and all previous logs.

@@ -1,0 +1,14 @@
+
+TSAA is a protocol developed by the same company as TriStation.
+Unlike TriStation, the TSAA protocol structure is described within official documentation.
+CSL assessed similarities between the two protocols would exist and they leveraged TSAA to better understand TriStation.
+The team's overall research and analysis of the general packet structure aligns with our TRITON-sourced packet structure.
+There are some awesome blog posts and whitepapers out there that support our findings in one way or another.
+Writeups by Midnight Blue Labs , Accenture , and US-CERT each explain how the TRITON framework relates to the TriStation protocol in superb detail.
+TriStation's Reverse Engineering and TRITON's Development When TRITON was discovered, we began to wonder how the TRITON actor reverse engineered TriStation and implemented it into the framework.
+We have a lot of theories, all of which seemed plausible: Did they build, buy, borrow, or steal?
+Or some combination thereof?
+Our initial theory was that the threat actor purchased a Triconex controller and software for their own testing and reverse engineering from the \"ground up\", although if this was the case we do not believe they had a controller with the exact vulnerable firmware version, else they would have had fewer problems with TRITON in practice at the victim site.
+They may have bought or used a demo version of the TriStation 1131 software, allowing them to reverse engineer enough of TriStation for the framework.
+They may have stolen TriStation Python libraries from ICS companies, subsidiaries or system integrators and used the stolen material as a base for TriStation and TRITON development.
+But then again, it is possible that they borrowed TriStation software, Triconex hardware and Python connectors from government-owned utility that was using them legitimately.

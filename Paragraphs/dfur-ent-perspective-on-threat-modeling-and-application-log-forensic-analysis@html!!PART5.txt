@@ -1,0 +1,3 @@
+
+The DFUR security team discussed how they could identify threats using their currently available logs, and, well, the findings were not purr-ty.
+Logging Problems Identified The DFUR team used their threat model to determine what log sources were relevant to their security mission, and then they dug into each one to confirm the log events were valid, normalized, and accessible.

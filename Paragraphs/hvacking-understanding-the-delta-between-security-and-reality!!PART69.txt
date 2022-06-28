@@ -1,0 +1,3 @@
+
+If we include other Delta Controls devices using the same firmware and assume a high likelihood they are vulnerable to the same exploit, the total number of potential targets balloons to over 1600.
+We tracked 119 new internet connected eBMGR devices since February 2019; however, these were outpaced by the 216 devices that have subsequently gone offline.

@@ -1,0 +1,8 @@
+
+This\nconcept is illustrated by the text-based detection experiments we\nconducted in Figure 6.
+After releasing GPT-2, OpenAI\nreleased source code along with a fine-tuned classifier based on\nRoBERTa , which does not share the same architecture or tokenizer\nas GPT-2, that can reliably discriminate between GPT-2's own output\ngenerations and its original pre-training data of high-Karma Reddit posts.
+We used this RoBERTa model first to verify the findings that one can reliably differentiate\nbetween fabricated, GPT-2 generated text and the authentic GPT-2\npre-training dataset.
+When we performed the same exercise using the\nclassifier to try to differentiate our fine-tuned IO text generations\n(i.e.
+those previously discussed in Figure 4), the accuracy\nsignificantly dropped.
+The fact that the pre-trained score\ndistribution is skewed towards 1 means the detection model for\npre-trained generations, with a classification threshold of 0.5, can\neasily classify the generations as “fake.”
+This results in an accuracy\nscore of over 97% for the detection model, as shown in blue in Figure\n6.

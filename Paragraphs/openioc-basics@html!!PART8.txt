@@ -1,0 +1,5 @@
+
+The previous example shows how this type of logic can be used.
+This type of IOC describes three possible scenarios: The name of a service is \"MS 1atent time services\" - OR - The ServiceDLL name for any service contains \"evil.exe\" - OR - The filename is \"bad.exe\" AND the filesize attribute of that file is within the range 4096 to 10240 bytes.
+When you use Boolean logic, remember the following:
+An AND requires that both sides of the expression are true An OR requires that one side of the expression is true Understanding that the Boolean statements, such as 'The name of a service is \"MS 1atent time services\", OR \"filename is \"bad.exe\" AND the filesize attribute of that file is within the range 4096 to 10240 bytes\"', are evaluated separately is an important aspect understanding how the logic within an IOC works.

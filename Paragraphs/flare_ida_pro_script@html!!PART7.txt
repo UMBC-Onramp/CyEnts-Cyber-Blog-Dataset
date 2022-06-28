@@ -1,0 +1,8 @@
+
+In this example,\nthe function that decodes the strings has the function prototype shown\nin Figure 4.
+The function has a non-standard calling convention, and\nwe are using IDA’s __ usercall annotation to\nallow us to specify that it takes two parameters on the stack ( inptr and tempPtr ), and\nthree arguments in registers ( outPtr in ecx , strLen in edi , and key in eax ).
+Note: setting a function prototype in this way is not necessary for argracker , and is merely done here for\nillustrative purposes.
+Figure 4:
+Example function prototype The examples/ argtracker_example2.py in\nour flare-ida GitHub repo shows how argtracker can be used in this situation.
+In this\nexample we really only care about three of these parameters: i nptr, strLen, and key .
+  Figure 5 shows basic initialization of the\nVivisect workspace using a helper function in the jayutils file (also in our GitHub rep).

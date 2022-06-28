@@ -1,0 +1,5 @@
+
+Here we enter the world of C++ operator overloading.
+With these tasks complete, porting existing code from libemu over to Unicorn should be a pretty straightforward task.
+In Figure 1 we see an initial test, we put together that includes the Win32 environment, shim layer, several API hooks and a hard coded payload.
+Figure 1: Initial test of the libemu Win32 environment and hooks running under Unicorn With this working, the next stage was to try it out against a larger code base.

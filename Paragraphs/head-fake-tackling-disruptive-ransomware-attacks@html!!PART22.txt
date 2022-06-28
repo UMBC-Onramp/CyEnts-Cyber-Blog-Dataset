@@ -1,0 +1,8 @@
+
+Ransomware also raises the stakes for unprepared organizations as it levels the playing field for all areas of your enterprise.
+Ransomware proves that threat actors don’t need to get access to the most sensitive parts of your organization – they need to get access to the ones that will disrupt business processes.
+This widens your attack surface, but luckily, also gives you more opportunity for detection and response.
+Mandiant recently published an in depth white paper on Ransomware Protection and Containment Strategies , which may help organizations mitigate the risk of ransomware events.
+Indicators The following indicator set is a collective representation of artifacts identified during investigations into multiple customer compromises.
+Type Indicator(s)
+FakeUpdates Files 0e470395b2de61f6d975c92dea899b4f 7503da20d1f83ec2ef2382ac13e238a8 102ae3b46ddcb3d1d947d4f56c9bf88c aaca5e8e163503ff5fadb764433f8abb 2c444002be9847e38ec0da861f3a702b 62eaef72d9492a8c8d6112f250c7c4f2 175dcf0bd1674478fb7d82887a373174 10eefc485a42fac3b928f960a98dc451 a2ac7b9c0a049ceecc1f17022f16fdc6 FakeUpdates Domains & IP Addresses <8-Characters>.green.mattingsolutions[.]co <8-Characters>.www2.haciendarealhoa[.]com <8-Characters>.user3.altcoinfan[.]com 93.95.100[.]178 130.0.233[.]178 185.243.115[.]84 gnf6.ruscacademy[.]in backup.awarfaregaming[.]com click.clickanalytics208[.]com track.amishbrand[.]com track.positiverefreshment[.]org link.easycounter210[.]com nircmdc.exe 8136d84d47cb62b4a4fe1f48eb64166e Dridex 7239da273d3a3bfd8d169119670bb745 72fe19810a9089cd1ec3ac5ddda22d3f 07b0ce2dd0370392eedb0fc161c99dc7 c8bb08283e55aed151417a9ad1bc7ad9 6e05e84c7a993880409d7a0324c10e74 63d4834f453ffd63336f0851a9d4c632 0ef5c94779cd7861b5e872cd5e922311 Empire C2 185.122.59[.]78 109.94.110[.]136

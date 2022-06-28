@@ -1,0 +1,87 @@
+The pandemic has left tens of millions of people around the world effectively jobless, and scammers, never ones to miss an opening, have been targeting freelancers and job seekers more frequently.
+
+Today, we look at an unusually sophisticated scam aimed at artists and designers.
+
+Job hunting on ArtStation
+
+The story begins with ArtStation, a site where artists publish their portfolios in categories such as game art, anime, comics, media, and film production.
+
+It is normal for site users to receive personal e-mails from potential customers.
+
+Since last year, however, ArtStation freelancers have found themselves targeted by highly professional cybercriminals posing as employees of major game developers including 2K, Big Fish, Bluepoint, and Riot Games.
+
+The story of a scam One user, a US-based concept artist, received what looked like an invitation for an interview with 2K, publisher of such titles as BioShock, Mafia, Sid Meier’s Civilization, NBA 2K , and Borderlands .
+
+The position came with a good salary and the option to work remotely.
+
+The e-mail was well crafted and included many details that are usually indicative of an HR professional.
+
+Fake e-mail about a work-from-home job The contractor carefully studied the message, which looked nothing like ordinary spam.
+
+Even the sender’s domain appeared legitimate: @2kgamesjobs.com.
+
+In between the terms of employment and links to LinkedIn profiles, the alleged employer stated that the interview would be held on Telegram and included a link to download and install the app.
+
+The artist downloaded the messaging app and contacted the alleged recruiter.
+
+At this point most scammers would pivot straight to extortion, but these ones remained in character for quite a while longer.
+
+They conducted a long and in-depth interview with the artist, but not over a video or even voice call, which is what we’d expect from a legitimate company, but rather in text using Telegram’s secret chat mode .
+
+Still, not for one second did the artist get the sense it was all a sham.
+
+The fake recruiter’s questions required professional knowledge of perspective, color theory, and shading.
+
+The test seemed real, and the artist was relieved to pass it.
+
+Now all that stood between the artist and the perfect job was a couple of formal procedures: some software and hardware requirements including a MacBook Pro with certain specs, a graphic-design package, a screen-calibration tool, and a time-tracking system — nothing implausible, but the equipment had to be purchased from a particular vendor.
+
+In return, the artist could expect an advance payment check.
+
+However, the mandatory purchase of equipment was enough to make the artist suspect that something was amiss.
+
+The artist found a warning on 2K’s website about “bad actors posing as company HR personnel” and stopped communicating with the scammers.
+
+That was the end of the story for this artist, but not all targets were as vigilant.
+
+Denouement If the artist had continued to communicate with the fraudsters after the phony interview, they would indeed receive a check, which would appear to come from 2K’s finance department and be delivered by a real FedEx courier, which again shows how much effort the scammers put into the operation.
+
+The check looks real, but it’s fake However, the check does not stand up to scrutiny.
+
+It looks real; the lettering on the stub even suggests the presence of a watermark on the back.
+
+But it’s just a piece of paper printed on an ordinary color printer.
+
+The scammers try to time its arrival for late on a Friday afternoon so the recipient won’t have time to go to the bank and verify its authenticity.
+
+The timing may be linked to something more, however.
+
+Checks go through a process called clearing , which can take several days.
+
+Most banks do not work on weekends, so the scammers figure the new “employee” will simply pay for the equipment out of their own pocket that very weekend, assuming the check will clear.
+
+If the victim confirms their willingness to do so, the attackers reveal the identity of their authorized supplier, which turns out to be an individual with a Venmo or Zelle account, two US money transfer services.
+
+The bogus recruitment scheme is designed to get the jobseeker to send to this unknown party a sum equal to the cost of a MacBook and other “required software and equipment” — more than US$3,500 in total.
+
+How to protect yourself The scheme is big enough for the implicated companies to draw attention to it.
+
+ArtStation, for its part, posted an in-depth article about the scam.
+
+Some game developers and publishers have also posted warnings on their websites for potential candidates.
+
+Some studios warn artists to be careful Here are some tips to help you avoid falling victim to this kind of scam: Limit job searches to official sources.
+
+ArtStation’s job board , for example, shows only vetted listings.
+
+Be wary of offers to discuss a job or hold an interview in secret chats, in which messages are encrypted and cannot be forwarded, and which alert participants if anyone takes a screenshot.
+
+Check contact information on companies’ official websites, which usually provide addresses and communication channels for HR personnel.
+
+If necessary, e-mail a general inquiry to the company asking if the person who contacted you actually works there.
+
+Use a reliable security solution with fraud and phishing protection.
+
+
+
+

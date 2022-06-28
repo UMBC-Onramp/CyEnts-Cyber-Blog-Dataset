@@ -1,0 +1,53 @@
+By Christiaan Beek on Sep 24, 2018 As we look over some of the key issues from the newly released McAfee Labs Threats Report, we read terms such as voice assistant, blockchain, billing fraud, and cryptojacking.
+
+Although voice assistants fall in a different category, the other three are closely linked and driven by the goal of fast, profitable attacks that result in a quick return on a cybercriminal’s investment.
+
+One of the most significant shifts we see is that cryptojacking is still on the rise, while traditional ransomware attacks—aka “shoot and pray they pay”—are decreasing.
+
+Ransomware attacks are becoming more targeted as actors conduct their research to pick likely victims, breach their networks, and launch the malware followed by a high-pressure demand to pay the ransom.
+
+Although the total number of ransomware samples has fallen for two quarters, one family continues to spawn new variants.
+
+The Scarab ransomware family, which entered the threat landscape in June 2017, developed a dozen new variants in Q2.
+
+These variants combined make up more than 50% of the total number of Scarab samples to date.
+
+What spiked the movement, starting in fall 2017, toward cryptojacking?
+
+The first reason is the value of cryptocurrency.
+
+If attacker can steal Bitcoins, for example, from a victim’s system, that’s enough.
+
+If direct theft is not possible, why not mine coins using a large number of hijacked systems.
+
+There’s no need to pay for hardware, electricity, or CPU cycles; it’s an easy way for criminals to earn money.
+
+We once thought that CPUs in routers and video-recording devices were useless for mining, but default or missing passwords wipe away this view.
+
+If an attacker can hijack enough systems, mining in high volume can be profitable.
+
+Not only individuals struggle with protecting against these attacks; companies suffer from them as well.
+
+Securing cloud environments can be a challenge.
+
+Building applications in the cloud with container technology is effective and fast, but we also need to create the right amount of security controls.
+
+We have seen breaches in which bad actors uploaded their own containers and added them to a company’s cloud environment—which started to mine cryptocurrency.
+
+New technologies and improvements to current ones are great, but we need to find the balance of securing them appropriately.
+
+Who would guess to use an embedded voice assistant to hack a computer?
+
+Who looks for potential attack vectors in new technologies and starts a dialog with the industry?
+
+One of those is the McAfee Advanced Threat Research team, which provides most of the analysis behind our threats reports.
+
+With a mix of the world’s best researchers in their key areas, they take on the challenge of making the (cyber) world safer.
+
+From testing vulnerabilities in new technologies to examining malware and the techniques of nation-state campaigns, we responsibly disclose our research to organizations and the industry.
+
+We take what we learn from analyzing attacks to evaluate, adapt, and innovate to improve our technology.
+
+
+
+

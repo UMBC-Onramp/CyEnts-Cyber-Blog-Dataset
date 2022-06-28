@@ -1,0 +1,20 @@
+
+It first finds possible paths from function start to function end.
+The tool then forces the emulation down all identified code paths independent from the actual program state.
+This extensive code coverage allows ironstrings to recover strings constructed from many different emulation runs.
+A key feature of flare-emu are the various hook functions that get triggered by different emulation events.
+These hooks, or callbacks, enable the development of very powerful automation tasks.
+The available hooks are a combination of Unicorn’s standard hooks, e.g., to hook memory access events, and multiple convenience hooks provided by flare-emu .
+The following section briefly describes the available callbacks in flare-emu and illustrates how the ironstrings script uses them to recover obfuscated strings.
+instructionHook:
+This Unicorn standard hook is triggered before an instruction is emulated.
+ironstrings uses this hook to initiate the stackstrings extraction if a basic block contained enough memory writes, for example.
+memAccessHook: This Unicorn standard hook is triggered when memory read or write events occur during emulation.
+In the stackstrings script this function stores data about all memory writes.
+callHook:
+This flare-emu hook is activated before each function call.
+The hook’s return value is ignored.
+In the stackstrings script this hook triggers the extraction of stackstrings.
+preEmuCallback:
+This flare-emu hook is called before each emulation run.
+It is only available in the iterate and the iterateAllPaths functions.

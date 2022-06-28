@@ -1,0 +1,13 @@
+
+Sample Advertisement #1 (Smart Miner + Builder)
+In early April 2018, actor \"Mon£y\" was observed by FireEye iSIGHT Intelligence selling a Monero miner for $80 USD – payable via Bitcoin, Bitcoin Cash, Ether, Litecoin, or Monero – that included unlimited builds, free automatic updates, and 24/7 support.
+The tool, dubbed Monero Madness (Figure 3), featured a setting called Madness Mode that configures the miner to only run when the infected machine is idle for at least 60 seconds.
+This allows the miner to work at its full potential without running the risk of being identified by the user.
+According to the actor, Monero Madness also provides the following features: Unlimited builds Builder GUI (Figure 4) Written in AutoIT (no dependencies) FUD Safer error handling Uses most recent XMRig code Customizable pool/port Packed with UPX Works on all Windows OS (32- and 64-bit) Madness Mode option Figure 3:
+Monero Madness Figure 4:
+Monero Madness builder Sample Advertisement #2 (Miner + Telegram Bot Builder)
+In March 2018, FireEye iSIGHT Intelligence observed actor \"kent9876\" advertising a Monero cryptocurrency miner called Goldig Miner (Figure 5).
+The actor requested payment of $23 USD for either CPU or GPU build or $50 USD for both.
+Payments could be made with Bitcoin, Ether, Litecoin, Dash, or PayPal.
+The miner ostensibly offers the following features: Written in C/C++ Build size is small (about 100–150 kB)
+Hides miner process from popular task managers Can run without Administrator privileges (user-mode) Auto-update ability All data encoded with 256-bit key Access to Telegram bot-builder Lifetime support (24/7) via Telegram Figure 5: Goldig Miner advertisement Sample Advertisement #3 (Miner + Credential Stealer)

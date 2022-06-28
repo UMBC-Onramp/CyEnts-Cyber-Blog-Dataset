@@ -1,0 +1,4 @@
+Written by Will Gibb & Devon Kerr One challenge investigators face during incident response is finding a way to organize information about an attackers' activity, utilities, malware and other indicators of compromise, called IOCs.
+The OpenIOC format addresses this challenge head-on.
+OpenIOC provides a standard format and terms for describing the artifacts encountered during the course of an investigation.
+In this post we're going to provide a high-level overview of IOCs, including IOC use cases, the structure of an IOC and IOC logic.

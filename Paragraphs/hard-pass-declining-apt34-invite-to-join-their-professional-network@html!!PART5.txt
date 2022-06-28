@@ -1,0 +1,4 @@
+
+Industries Targeted The activities observed by Managed Defense, and described in this post, were primarily targeting the following industries: Energy and Utilities Government Oil and Gas Utilizing Cambridge University to Establish Trust On June 19, 2019, Mandiant Managed Defense Security Operations Center received an exploit detection alert on one of our FireEye Endpoint Security appliances.
+The offending application was identified as Microsoft Excel and was stopped immediately by FireEye Endpoint Security’s ExploitGuard engine.
+ExploitGuard is our behavioral monitoring, detection, and prevention capability that monitors application behavior, looking for various anomalies that threat actors use to subvert traditional detection mechanisms.

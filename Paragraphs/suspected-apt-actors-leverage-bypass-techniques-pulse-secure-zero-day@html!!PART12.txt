@@ -1,0 +1,5 @@
+
+We believe that this may be a two-factor authentication bypass.
+Figure 5: RealmSignIn 2FA Auth Bypass Attribution We are in the early stages of gathering evidence and making attribution assessments and there are a number of gaps in our understanding of UNC2630, UNC2717, and these 12 code families.
+Nevertheless, the Mandiant and Ivanti teams are proactively releasing this analysis to assist network defenders in triaging and identifying malicious activity on affected appliances.
+Mandiant is able to assess that: UNC2630 targeted U.S. DIB companies with SLOWPULSE, RADIALPULSE, THINBLOOD, ATRIUM, PACEMAKER, SLIGHTPULSE, and PULSECHECK as early as August 2020 until March 2021.

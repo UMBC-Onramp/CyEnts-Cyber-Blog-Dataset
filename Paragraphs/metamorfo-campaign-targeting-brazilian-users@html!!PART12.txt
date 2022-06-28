@@ -1,0 +1,10 @@
+
+The URL shortener redirects the user to an online storage site, such as Google Drive, Github, or Dropbox, that hosts a malicious ZIP file.
+ A sample phishing email is shown in Figure 15.
+Figure 15:
+Example Phishing Email
+The ZIP file contains a malicious executable written in AutoIt (contents of this executable are shown in Figur 16).
+When executed by the user, it drops a VBS file to a randomly created and named directory (such as C:\\mYPdr\\TkCJLQPX\\HwoC\\mYPdr.vbs) and fetches contents from the C2 server.
+Figure 16:
+Contents of Malicious AutoIt Executable Two files are downloaded from the C2 server.
+One is a legitimate Microsoft tool and the other is a malicious DLL: https[:]//panel-dark[.]com/w3af/img2.jpg https[:]//panel-dark[.]com/w3af/img1.jpg

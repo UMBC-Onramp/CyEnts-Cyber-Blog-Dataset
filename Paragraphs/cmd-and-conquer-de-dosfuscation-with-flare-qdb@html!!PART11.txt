@@ -1,0 +1,12 @@
+
+Figure 6 demonstrates getting and using the offset in a single session.
+Note that for this to work in an isolated VM, you would instead specify the path to a copy of the guest’s command interpreter specific to that VM.
+Figure 6: Getting and using offsets and testing De-DOSfuscator
+This works great on the BatchEncrypted script in Figure 1.
+Let’s have a look.
+Results Figure 7 shows the log created by De-DOSfuscator after running XYNT.bat.
+Hundreds of lines of SET statements progressively build environment variables for composing further commands.
+Keen eyes will also note a misspelling of the endlocal command-line extension keyword.
+Figure 7:
+Beginning of dumped commands These environment variable manipulations give way to real commands as shown in Figure 8.
+One of the script’s first actions is to use reg.exe to check the NUMBER_OF_PROCESSORS environment variable.

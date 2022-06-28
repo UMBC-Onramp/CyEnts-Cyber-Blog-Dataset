@@ -1,0 +1,10 @@
+
+At the end of the day, John authored three new IOCs based on his current investigation.
+He knows that if he records the artifacts he identified from his investigation into the \"ACM-BOBBO\" system, he can apply that knowledge to the investigation of the host at 10.20.30.101.
+Once he collects information on 10.20.30.101 with his Redline portable collector, he'll be able to match IOCs against the Live Response data, which will let him identify known artifacts quickly prior to beginning Live Response analysis.
+Although John is using these IOCs to search systems individually, these same IOCs could be used to search for evidence of attacker activity across the enterprise.
+Armed with this set of IOCs, John sets out to hunt for evil on the host at \"10.20.30.101\".
+Stay tuned for our next blog post, seeing how this investigation develops.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

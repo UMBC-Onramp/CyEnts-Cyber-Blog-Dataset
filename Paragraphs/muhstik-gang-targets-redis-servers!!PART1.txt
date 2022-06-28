@@ -1,0 +1,3 @@
+Juniper Threat Labs has uncovered an attack that targets Redis Servers using a recently disclosed vulnerability, namely CVE-2022-0543.
+This vulnerability exists in some Redis Debian packages.
+The attack started on March 11, 2022 from the same threat actor we’ve seen targeting confluence servers back in September 2021 and the same group targeting Log4j back in December.

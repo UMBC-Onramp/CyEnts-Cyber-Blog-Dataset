@@ -1,0 +1,4 @@
+
+More importantly, APT41 is known to use its access to production environments to inject malicious code into legitimate files which are later distributed to victim organizations.
+These supply chain compromise tactics have also been characteristic of APT41’s best known and most recent espionage campaigns.
+Interestingly, despite the significant effort required to execute supply chain compromises and the large number of affected organizations, APT41 limits the deployment of follow-on malware to specific victim systems by matching against individual system identifiers.

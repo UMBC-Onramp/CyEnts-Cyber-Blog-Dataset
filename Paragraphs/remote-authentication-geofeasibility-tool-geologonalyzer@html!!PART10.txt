@@ -1,0 +1,5 @@
+
+ Note that this example dataset was created entirely for demonstration purposes.
+Figure 1: Example GeoLogonalyzer input Example Windows Executable Command GeoLogonalyzer.exe --csv VPNLogs.csv --output GeoLogonalyzedVPNLogs.csv
+Example Python Script Execution Command python GeoLogonalyzer.py --csv VPNLogs.csv --output GeoLogonalyzedVPNLogs.csv
+Example Output Figure 2 represents the example output GeoLogonalyzedVPNLogs.csv file, which shows relevant data from the authentication source changes (highlights have been added for emphasis and some columns have been removed for brevity):

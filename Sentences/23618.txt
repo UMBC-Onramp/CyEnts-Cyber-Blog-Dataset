@@ -1,0 +1,75 @@
+Have you disabled annoying e-mail notifications from social networks?
+
+We think that’s great!
+
+We even periodically offer advice on how to cut down on digital noise .
+
+But LinkedIn is a special case.
+
+People really do expect messages from the social network for professionals — one could be from a prospective employer or business partner, after all.
+
+But a message from LinkedIn might just as easily come from a scammer pretending to represent a legitimate company.
+
+In this post, we’re taking apart some phishing e-mails masquerading as LinkedIn notifications.
+
+“I am a bussinessman and am interested in doing business with you” On the face of it, this type of e-mail looks like a typical partnership proposal.
+
+It includes the photo, position, and company name of the potential “partner,” and even a LinkedIn logo.
+
+The message is too short, though, and one might expect the word “businessman” to be spelled correctly in a legitimate message.
+
+You may also see that the message came from “LinkediinContact” — note the extra “i” — and the sender’s address has nothing to do with LinkedIn.
+
+E-mail purportedly from LinkedIn proposing cooperation with an Arab businessman The link in the e-mail leads to a website that looks similar to the real LinkedIn login page.
+
+Phishing LinkedIn login page
+
+But the URL is far removed from LinkedIn’s, and the domain is the Turkish .tr
+
+, not .com.
+
+If the victim enters their credentials on this site, the account will soon be in the hands of the scammers.
+
+“Please send me a qoute” A similar case is this message seemingly from an importer in Beijing, asking for a quote for the delivery of goods.
+
+The notification looks convincing; the message footer includes links to view help and unsubscribe from notifications, a copyright notice, and even the actual postal address of LinkedIn’s China office.
+
+Even the sender’s address looks like the real deal.
+
+Nevertheless, we see some red flags.
+
+E-mail purportedly from LinkedIn in which a Chinese buyer requests a quote.
+
+The sender’s address looks clean, but that doesn’t mean everything’s in order
+
+For example, an article is missing in front of the word “message” in the subject line.
+
+The author may not speak fluent English, but the platform generates the subject of LinkedIn notifications automatically, so the subject can’t contain errors.
+
+If you smell a rat and do a search for the company (UVLEID), you won’t find it because it doesn’t exist.
+
+And most important, the links in the e-mail point to a suspicious address in which random words, numbers and letters have been added to the name of the social network.
+
+The domain is again wrong, as well.
+
+This time it’s .app, which app developers use.
+
+The button points to a phishing site The “LinkedIn login page,” which the link opens, has issues: a blue square covering part of the last letter in the logo, and Linkedin instead of LinkedIn (under the username and password fields).
+
+arefully check the URL of the site and the name of the social network “You appeared in 2 search this week”
+
+Links in fake notifications don’t always open fake login pages — sometimes they can lead to more unexpected places.
+
+For example, this message saying that the recipient’s profile has been viewed twice — common information for LinkedIn users to see — obviously uses bad English, but even if you miss that, a few other details should catch your attention: Unknown sender address and link to a site in a Brazilian domain With this kind of deception, if the victim misses the strange set of letters in the sender’s address or the Brazilian domain, they may well click the button and get to an unexpected site — in our case, a “how to become a millionaire” online survey.
+
+After a few redirects, we ended up at a form asking for contact information, including phone numbers.
+
+The scammers most likely use the collected numbers for phone fraud .
+
+Online survey with redirect for further data harvesting How to tell if a message from a potential partner or employer is fake Cybercriminals use phishing to steal accounts, personal data, and money, but that is no reason to stop using LinkedIn or other services.
+
+Instead, learn how to guard against phishing , and always keep these basic tips at the ready: Watch out for unexpected messages from well-known companies; Look for inconsistencies in the names and addresses of senders, as well as typos in links, the subject line, and the e-mail body; Check notifications using official apps or websites, and in the latter case, manually type in the address or open it from your bookmarks; Enter contact information, card numbers, or login credentials only after double-checking you are on the real site; Use a reliable security solution that warns you of danger and blocks phishing and fraudulent sites.
+
+
+
+

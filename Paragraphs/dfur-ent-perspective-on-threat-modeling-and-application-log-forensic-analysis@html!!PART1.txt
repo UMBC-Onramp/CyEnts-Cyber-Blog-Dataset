@@ -1,0 +1,3 @@
+Many organizations operating in e-commerce, hospitality, healthcare, managed services, and other service industries rely on web applications.
+And buried within the application logs may be the potential discovery of fraudulent use and/or compromise!
+But, let's face it, finding evil in application logs can be difficult and overwhelming for a few reasons, including: The wide variety of web applications with unique functionality The lack of a standard logging format Logging formats that were designed for troubleshooting application issues and not security investigations The need for a centralized log analysis solution or SIEM to process and investigate a large amount of application log data

@@ -1,0 +1,6 @@
+
+The malware developers are active on social media sites, such as Twitter, and they are familiar with the work of malware researchers.
+They also know how to provoke them perfectly and they like to play cat and the mouse with them.
+We recommend making periodic backups of files and keeping them isolated off the network and having an always updated antivirus in place.
+The latest software patch should also be applied.
+Remote Desktop Connections that are not needed should be avoided.

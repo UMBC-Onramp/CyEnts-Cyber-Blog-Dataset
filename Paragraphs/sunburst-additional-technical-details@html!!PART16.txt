@@ -1,0 +1,15 @@
+
+SUNBURST starts a thread to handle command execution and further C2 HTTP(S) callouts.
+As an investigator, if you see CNAME resolutions for subdomains of avsvmcloud[.]com, it‘s possible that UNC2452 initiated follow-on C2 within the environment.
+Note, the malware must receive a DNS A record response pointing to one of the following subnets immediately prior to receiving a DNS CNAME response.
+Otherwise, the CNAME resolution will be ignored and treated as an error.
+In addition, for these subnets, the least-significant bytes from the A record IP address are parsed to obtain configuration data such as the proxy method to use, the URI scheme to use, and a delay value used in the HTTP thread.
+18.130.0.0/16 99.79.0.0/16 184.72.0.0/15
+Subsequent DNS A record responses in the following subnet ranges cause the DGA beaconing to continue.
+8.18.144.0/23 18.130.0.0/16 71.152.53.0/24 99.79.0.0/16 87.238.80.0/21 199.201.117.0/24 184.72.0.0/15
+Otherwise, subsequent DNS A record responses in the following subnet ranges cause SUNBURST to terminate and update the configuration key ReportWatcherRetry to a value that prevents further execution.
+This is the killswitch.
+10.0.0.0/8
+fc00:: - fe00:: 96.31.172.0/24 172.16.0.0/12 fec0:: - ffc0::
+131.228.12.0/22 192.168.0.0/16 ff00:: - ff00:: 144.86.226.0/24 224.0.0.0/3 20.140.0.0/15
+While in “active” mode, the DGA subdomain encoding does not include victim machine domain name information.

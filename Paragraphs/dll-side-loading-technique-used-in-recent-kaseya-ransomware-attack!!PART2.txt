@@ -1,0 +1,7 @@
+
+Fortunately, FortiEDR detects and blocks the DLL side-loading event when the ransomware executes the valid application, such as MsMpEng.exe, while it loads the malicious payload, mpsvc.dll.
+As a result, customers will not be able to see all of the related IOCs because the malware is prevented from running.
+Ransom Note and Visible IOCs One common element of most ransomware is the ransom note.
+Once its infection routine is completed, this ransomware variant replaces the desktop wallpaper with a dropped .bmp
+file notifying the victim to look for a file containing instructions, as shown in Figure 1a.
+All accessible folders have a copy of the ransom note file inserted.

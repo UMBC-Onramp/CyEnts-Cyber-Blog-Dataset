@@ -1,0 +1,5 @@
+
+Only the spreading module has been observed being served in the wild.
+No attack or disruptive modules have been observed, and Hajime has never been associated with any disruption attacks.
+Furthermore, part of its behavior is to block access to ports that are commonly targeted by other IoT malware, thereby inadvertently (or not) somewhat protecting the infected device from further infections.
+Lastly, it delivers the following message to the device’s terminal: Just a white hat, securing some systems.

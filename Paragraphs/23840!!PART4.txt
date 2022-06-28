@@ -1,0 +1,4 @@
+
+Their concern is totally understandable — no one wants a recurrence of last year’s wave of exploited Exchange vulnerabilities.
+Vulnerabilities with PoCs Some of the fixed vulnerabilities were already known to the security community.
+Furthermore, someone has already published proofs of concept for them: CVE-2022-21836 — Windows certificate spoofing vulnerability; CVE-2022-21839 — Windows event tracing discretionary access control list denial of service vulnerability; CVE-2022-21919 — Windows user profile service elevation of privilege vulnerability.

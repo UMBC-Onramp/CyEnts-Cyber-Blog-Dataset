@@ -1,0 +1,4 @@
+
+The decoding of the chunk key in Figure 9 allowed us to find all the information to derive the virtual address of our compressed page.
+The retrieved REGION_KEY ( 0xf72397 , in our case) is also a compound value that encodes the index within the SMKM_STORE ’s region pointer array, as well as the offset within the region of pages.
+To calculate this data, we parse the region key with the help of two fields inside the ST_DATA_MGR structure – dwRegionIndexMask and dwRegionSizeMask .

@@ -1,0 +1,7 @@
+
+a1:6e:bf, which is actually the Kali virtual machine.
+Wireshark recognizes two MACs with the same IP address assigned and highlights them, showing the ARP spoof.
+Next the attacker from the virtual machine at address 126.4.153.153 sends false information to the central monitoring station, still at address 126.1.1.1.
+In this example, offset 0x71 has been changed to 0x78, or 120.
+(The attacker could choose any value; the following demo videos use the heartbeat value 180 because it is more alarming.)
+Also notice the IP address stored in the payload, which we discovered during the reconnaissance phase.

@@ -1,0 +1,13 @@
+
+According to information from the FBI , he kept a secret account through which he sabotaged his former colleagues’ work.
+It was reported in January 2021 that he had been sentenced to a year in prison.
+COVID-themed phishing While governments around the world have been battling COVID-19 and developing measures to support businesses and citizens, cybercriminals have tried to capitalize on fear of the virus and people’s need for help.
+According to our survey, a quarter of users received malicious e-mails about COVID-19-related topics.
+Fake correspondence from clients and government departments For example, scammers sent fake e-mails pretending to be from the US Centers for Disease Control and Prevention (CDC) .
+Victims were asked to fill out a summary of recent cases of coronavirus among their neighbors, which involved clicking a link and entering their e-mail login and password.
+Their account details ended up in the hands of criminals.
+During the wave of lockdowns, the number of e-mails masquerading as customer requests for product shipments grew.
+To give them credibility, attackers complained about “logistics problems due to COVID-19” or demanded expedited delivery, citing problems with Chinese counterparties.
+These messages usually included an attachment containing a Trojan or backdoor that would give the criminals remote control over the infected machine.
+Fake COVID-19 payments According to our data, scammers sent five times as many malicious e-mails about welfare benefits in 2020 as they had in the previous year.
+The messages again purported to come from government departments, the International Monetary Fund, and even the World Health Organization .

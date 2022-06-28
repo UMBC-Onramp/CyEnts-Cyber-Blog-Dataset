@@ -1,0 +1,4 @@
+
+The Android version of Angry Birds in the Google Play store, updated on March 4, continues to share personal information.
+In fact, more than a quarter billion users who create Rovio accounts to save their game progress across multiple devices might be unwittingly sharing all kinds of information—age, gender, and more — with multiple parties.
+And many more users who play the game without a Rovio account are sharing their device information without realizing it.

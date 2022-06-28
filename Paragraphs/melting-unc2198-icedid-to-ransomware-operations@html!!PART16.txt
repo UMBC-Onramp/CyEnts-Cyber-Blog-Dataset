@@ -1,0 +1,6 @@
+
+Our unparalleled understanding of groups like UNC2198 is translated into Mandiant Advantage .
+Accessing our holdings in Mandiant Advantage aids defenders in recognizing TTPs used by threat actors, assessing organizational risk, and taking action.
+Initial investments made into rapidly assessing a group’s modus operandi pays dividends when they inevitably evolve and swap out components of their toolset.
+Whether it be MAZE or EGREGOR, something icy or hot, Advanced Practices will continue to pursue these unchill threat actors.
+Acknowledgements Thank you to Dan Perez, Andrew Thompson, Nick Richard, Cian Lynch and Jeremy Kennelly for technical review of this content.

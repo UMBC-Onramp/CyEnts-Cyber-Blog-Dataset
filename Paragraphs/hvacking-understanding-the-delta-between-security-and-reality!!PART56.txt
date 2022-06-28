@@ -1,0 +1,5 @@
+
+  As previously seen, the Delta binaries all have symbols included.
+  
+Thus, we can use the function names provided in the binaries to help reduce the code surface we need to look at – IDA tells us there are only 28 functions with “canio” as the first part of their name.
+Second, we can assume that since changing the state of a BO requires a call to physical hardware, a Linux system call is needed to make that change.

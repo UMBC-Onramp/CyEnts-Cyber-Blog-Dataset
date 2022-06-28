@@ -1,0 +1,7 @@
+
+After comparing data from IBM’s own research with TTPs from previously reported Outlaw attacks, X-Force found similarities in the threat actors’ TTPs to those in the Blackcat and Pola servers.
+A screenshot of the Perl script had previously appeared in an article by TrendMicro and is identical to one of the samples used for the infections in the cases IBM saw.
+Another identical script is the Pola script applied to bots that graduated the Blackcat server.
+A malware analysis conducted by Yoroi on a 2020 Outlaw campaign mentions the same bash scripts, run and upd, which X-Force found in the cryptominers distributed on the Pola server.
+Lastly, TrendMicro published an article on Outlaw campaigns, which discovered the use of an old process hider, XHide, to mask the mining process XMrig.
+The hash of the XHide binaries, h32 and h64, contained in the cryptominer matched up to the ones used in one of the Outlaw campaigns.

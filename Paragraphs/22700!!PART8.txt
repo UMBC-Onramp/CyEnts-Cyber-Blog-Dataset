@@ -1,0 +1,4 @@
+
+They came up with the concept of ransomware that uses asymmetric encryption.
+Instead of using one key, which would have to be added to the program code, to encrypt the files, their model used two, public and private, which kept the decryption key secret.
+What is more, Young and Yung hypothesized that the victim would have to pay using electronic money, which did not yet exist.

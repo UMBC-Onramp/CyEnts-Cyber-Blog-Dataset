@@ -1,0 +1,3 @@
+
+The convergence of the losses to low values, together with a high Area Under the ROC Curve (i.e. AUC), illustrates that transfer learning allowed this model to accurately detect social media posts associated with IRA information operations activity versus benign ones.
+Taken together, these metrics indicate that the fine-tuned classifier should generalize well to newly ingested social media posts, providing analysts a capability they can use to separate signal from noise.

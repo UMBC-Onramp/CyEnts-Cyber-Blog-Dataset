@@ -1,0 +1,17 @@
+
+Fortinet Protections and Recommendations FortiGuard Labs has the following AV coverage in place for the malware associated with this blog: FortiGuard Labs has the following AV coverage in place for malware associated with this blog: W32/Ransom.
+REVIL!tr W32/Ransom_Revil.
+R03BC0DHU20 W32/DarkSide.
+B!tr.ransom W32/Darkside.
+AO!tr.ransom ELF/Darkside.
+A9B5!tr.ransom W32/Darkside.50B7!tr.ransom W32/Darkside.
+B7D5!tr.ransom W32/Filecoder.
+NYO!tr.ransom W32/Zudochka.
+DLR!tr.ransom W32/DoppelPaymer.
+BM!tr PossibleThreat.
+PALLASNET.H W32/PossibleThreat W32/RanumBox.
+X!tr W32/Agent.
+BMGF!tr.dldr JS/Miner.
+BP!tr W32/Swizzor.
+B!tr JS/Cryxos.
+DEB1!tr FortiGuard Labs has the following IPS coverage in place for the malware associated with this blog: Telerik.

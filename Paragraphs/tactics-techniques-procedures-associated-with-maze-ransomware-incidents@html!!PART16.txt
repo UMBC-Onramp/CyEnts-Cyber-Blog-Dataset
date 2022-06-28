@@ -1,0 +1,11 @@
+
+An actor collected directory listings from file servers across an impacted environment.
+Evidence of data exfiltration was observed approximately one month later, suggesting that the creation of these directory listings may have been precursor activity, providing the actors with data they may have used to identify sensitive data for future exfiltration.
+Lateral Movement Across the majority of MAZE ransomware incidents lateral movement was accomplished via Cobalt Strike BEACON and using previously harvested credentials.
+Despite this uniformity, some alternative tools and approaches were also observed.
+Attackers relied heavily on Cobalt Strike BEACON to move laterally across the impacted environment, though they also tunneled RDP using the ngrok utility, and employed tscon to hijack legitimate rdp sessions to enable both lateral movement and privilege escalation.
+The actor moved laterally throughout some networks leveraging compromised service and user accounts obtained from the system on which they gained their initial foothold.
+This allowed them to obtain immediate access to additional systems.
+Stolen credentials were then used to move laterally across the network via RDP and to install BEACON payloads providing the actors with access to nearly one hundred hosts.
+An actor moved laterally using Metasploit and later deployed a Cobalt Strike payload to a system using a local administrator account.
+At least one actor attempted to perform lateral movement using EternalBlue in early and late 2019; however, there is no evidence that these attempts were successful.

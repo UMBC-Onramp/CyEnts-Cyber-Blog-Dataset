@@ -1,0 +1,6 @@
+
+Table 1: Domain registration information Looking closer at our malicious domain detection system, we observed that the system had been seeing similar domains at an increasing frequency.
+Analyzing the registration information, we found some interesting patterns.
+Since January 2016 to the time of writing, the system marked around 240 unique domains that have something to do with Apple ID, iCloud or iTunes.
+From these 240 domains , we identified 154 unique email registrants with 64 unique emails pointing to qq[.]com, 36 unique Gmail email accounts, and 18 unique email addresses each belonging to 163[.]com and 126[.]com, and a couple more registered with 139[.]com.
+This information is vital, as it could be used in following different ways: The domain list provided here could be used by Apple customers as a blacklist; they can avoid browsing to such domains and providing credentials to any of the listed domains, whether they receive them via SMS, email or via any instant messaging service.

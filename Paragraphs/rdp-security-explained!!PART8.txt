@@ -1,0 +1,6 @@
+
+The TOP 15 used passwords on vulnerable RDP systems [no password] 123456 P@ssw0rd 123 Password1 1234 password 1 12345 Password123 admin test test123 Welcome1
+scan Use Multi-Factor Authentication
+In addition to a complex password, it is best practice use multi-factor authentication.
+Even with great care and diligence, a username and password can still be compromised.
+If legitimate credentials have been compromised, multi-factor authentication adds an additional layer of protection by requiring the user to provide a security token, e.g. a code received by notification or a biometric verification.

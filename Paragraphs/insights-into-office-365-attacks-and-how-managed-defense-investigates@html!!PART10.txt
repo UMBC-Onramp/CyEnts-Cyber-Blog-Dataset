@@ -1,0 +1,12 @@
+
+Message Traces Message traces record the emails sent and received by a user.
+During an investigation, run reports on any email addresses of interest.
+The message trace report will contain detailed mail flow information as well as subject lines, original client IP addresses, and message sizes.
+Message traces are useful for identifying emails sent by attackers from compromised accounts, and can also aid in identifying initial phishing emails if phishing was used for initial access.
+To obtain the actual emails, use the Content Search tool.
+Only the past 10 days of activity is available with the Get-MessageTrace PowerShell cmdlet.
+Historical searches for older messages can be run with the Get-HistoricalSearch cmdlet (up to 90 days by default), but historical searches typically take hours for the report to be available.
+Historical reports can also be generated within the Security and Compliance Center.
+eDiscovery Content Searches The Content Search tool allows investigators to query for emails, documents, and instant message conversations stored in an Office 365 tenant.
+We frequently run Content Search queries to find and acquire copies of emails sent by attackers.
+Content searches are limited to what has been indexed by Microsoft, so recent activity may not immediately appear.

@@ -1,0 +1,14 @@
+
+Three of these vulnerabilities exist in the form of flaws in the Wi-Fi standard itself.
+The rest result from programming errors made by Wi-Fi makers.
+These enable attackers to compromise devices on the network and steal data.
+What Can FragAttacks Do?
+When attackers exploit FragAttacks, they could run malicious code, take control of devices, capture data and use the devices to launch other attacks.
+The good news is these attacks aren’t easy, or even possible at scale.
+In order to exploit FragAttacks, the attackers must be in radio range of the network.
+They also require users to take action or unusual network settings.
+As such, FragAttacks aren’t practical as large-scale attacks.
+Researchers have never found FragAttacks being exploited in the wild.
+However, cyber attackers now know they exist.
+And the clock is ticking.
+A Closer Look Attackers can exploit FragAttacks to steal data via a Wi-Fi network, bypassing Wi-Fi encryption that should be protecting the data.

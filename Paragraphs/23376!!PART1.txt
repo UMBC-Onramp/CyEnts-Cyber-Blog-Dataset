@@ -1,0 +1,2 @@
+In March this year, our experts discovered an ad on an underground forum for a piece of malware dubbed BloodyStealer by its creators.
+The ad states that it steals following data from infected devices: Passwords, cookies , bank card details, browser autofill data; Device data; Screenshots; Desktop and uTorrent client files; Bethesda, Epic Games, GOG, Origin, Steam, Telegram, and VimeWorld client sessions ; Logs.

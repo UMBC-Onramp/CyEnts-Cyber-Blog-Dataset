@@ -1,0 +1,3 @@
+
+If attacker activity is discovered in an environment, we recommend conducting a comprehensive investigation and designing and executing a remediation strategy driven by the investigative findings and details of the impacted environment.
+Ensure that SolarWinds servers are isolated / contained until a further review and investigation is conducted.

@@ -1,0 +1,9 @@
+
+Another difference with other ransomware families is that Clop will only cipher the disk that is a physical attached/embedded disk (type 3, FIXED or removable (type 2)).
+The malware ignores the REMOTE type (4)).
+Anyways, the shares can be affected using the “MPR.DLL” functions without any problem.
+FIGURE 11.
+Filemark in the crypted file and key used ciphered After encrypting, the file will try to open in the same folder the ransom note and, if it exists, it will continue without overwriting it to save time, but if the ransom note does not exist it will access one resource in the malware called “OFFNESTOP”.
+This resource is crypted with the same XOR operation as the first resource: the .bat file, after decrypting, will write the ransom note in the folder of the file.
+FIGURE 12.
+Creation of the ransom note from a crypted resource Here is a sample of the ransom note of the first version of this malware: FIGURE 13.

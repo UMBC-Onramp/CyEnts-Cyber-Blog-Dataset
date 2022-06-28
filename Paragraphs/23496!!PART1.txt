@@ -1,0 +1,6 @@
+A recent review of five entry-level mobile phones retailing for about $10–$20 examined their security in detail .
+Commonly referred to as “feature phones” or “granny phones” — and often procured for elderly relatives either unwilling or unable to get used to smartphones — such phones can also be “just in case” spares.
+Some people also believe they are safer than Android-powered smartphones.
+Well, the reviewer refuted that last bit.
+He discovered hidden functions in four out of the five phones: Two transmit data at first power up (leaking the new owner’s personal information), and the other two not only leak private data, but can also subscribe the user to paid content by secretly communicating over the Internet with a command server.
+Infected granny phones The study author offers information about the methods used to analyze these simple devices’ firmware, the technicalities of which may be interesting to those willing to repeat the same analysis.

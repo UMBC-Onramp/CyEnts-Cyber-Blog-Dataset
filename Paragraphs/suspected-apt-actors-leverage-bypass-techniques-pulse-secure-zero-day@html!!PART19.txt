@@ -1,0 +1,12 @@
+
+POST HTTP_X_KEY <
+BackdoorKey> HTTP_X_CNT
+<RC4Key> HTTP_X_CMD <RC4Command> 1ab50b77dd9515f6cd9ed07d1d3176ba4627a292dc4a21b16ac9d211353818bd SLOWPULSE VARIANT 2 writes ACE logon credentials to the file /home/perl/PAUS.pm in a+ (append) mode, using the format string %s:%s\\n .
+68743e17f393d1f85ee937dffacc91e081b5f6f43477111ac96aa9d44826e4d2 PACEMAKER is saved at filepath /home/bin/memread Executed with commandline flags –t , -m , -s
+Attaches to victim processes with PTRACE and opens subfiles in /proc/
+88170125598a4fb801102ad56494a773895059ac8550a983fdd2ef429653f079 THINBLOOD creates the files: /home/runtime/logs/log.events.vc1 /home/runtime/logs/log.events.vc2 /home
+/runtime/logs/log.access.vc1 /home
+/runtime/logs/log.access.vc2 Executes the system API with the mv command specifying one of the files above, targeting: /home
+/runtime/logs/log.access.vc0 /home/runtime/logs/log.events.vc0 Executes the rm command specify one of the .vc1 files above 133631957d41eed9496ac2774793283ce26f8772de226e7f520d26667b51481a SLIGHTPULSE uses /tmp/1 as command execution log All POST requests to meeting_testjs.cgi are suspicious POST parameters: cert , img , name are used by malicious logic Responses to the endpoint with the name parameter respond with no-cache and image/gif
+1741dc0a491fcc8d078220ac9628152668d3370b92a8eae258e34ba28c6473b9 THINBLOOD execution of sed on the files: log.events.vc0 log.access.vc0 Log.admin.vc0 Sed patterns used: s/.\\x00[^\\x00]*<regex_string>[^\\x00]*\\x09.\\x00//g s/\\x<hex_char>\\x00[^\\x00]*<regex_string>[^\\x00]*\\x09\\x<hex_char>\\x00//g
+06c56bd272b19bf7d7207443693cd1fc774408c4ca56744577b11fee550c23f7 The sample accepts an input and output file as its first and second arguments, then writes a patched version of the input out.

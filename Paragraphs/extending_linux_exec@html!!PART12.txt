@@ -1,0 +1,9 @@
+
+o   An account under an archive service group attempting to execute something out of /tmp
+Checking specific parent executables and processes for unusual execution.
+For example: o   Communication broker executing directory traversal commands o   Apache process executing netcat Configuration options for both IMA and auditd are extensive so, if this post is of interest to your organization, I highly recommend reading the documentation for both IMA and auditd
+so they can be further customized to your needs.
+This post isn’t meant to be an all-inclusive guide to IMA, but our hope is that it introduces you to this capability so that you can dive in and make it useful for improving your visibility into Linux process execution and aid you in finding more evil in your network.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

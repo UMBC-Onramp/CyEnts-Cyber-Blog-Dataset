@@ -1,0 +1,4 @@
+
+Artifacts do not all appear at once; a new piece of evidence unearthed years after an attack can shine a different light on an investigation and introduce new challenges to current assumptions.
+Ryuk attack: putting the pieces together In October 2017, we investigated an attack on a Taiwanese bank .
+We discovered the actors used a clever tactic to distract the IT staff: a ransomware outbreak timed for the same moment that the thieves were stealing money.

@@ -1,0 +1,16 @@
+
+Repeat for the remaining command handler grouped nodes.
+Config You can tweak some of the configuration by entering data in a file named %IDAUSR%/SimplifyGraph.cfg, where %IDAUSR% is typically %APPDATA%/Hex-Rays/IDA Pro/ unless explicitly set to something else.
+All of the config applies to the isolated subgraph component.
+Options: * SUBGRAPH_HIGHLIGHT_COLOR:
+Default 0xb3ffb3:
+The color to apply to nodes when you double click/press enter in the chooser to show nodes that make up the currently selected isolated subgraph.
+Not everyone agrees that my IDA color scheme is best, so you can set your own highlight color here.
+* MINIMUM_SUBGRAPH_NODE_COUNT:
+Default 3:
+The minimum number of nodes for a valid isolated subgraph.
+If a discovered subgraph has fewer nodes than this number it is not included in the shown list.
+This prevents trivial two-node subgraphs from being shown.
+* MAXIMUM_SUBGRAPH_NODE_PERCENTAGE: Default 95:
+The maximum percent of group nodes (100.0 *(subgroup_node_count / total_function_node_count)) allowed.
+This filters out isolated subgraphs that make up (nearly) the entire function, which are typically not interesting.

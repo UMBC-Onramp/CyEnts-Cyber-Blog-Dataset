@@ -1,0 +1,5 @@
+
+If the malware gets this error, it means that the mutex already exists in the system but, for some reason, the malware cannot access it (perhaps privileges, policies, etcetera).
+0xb7 -> ERROR_ALREADY_EXISTS.
+If the malware gets this error, it means that the mutex already exists in the system and can be accessed.
+If either of the above occur, the malware remains in execution but does not crypt any files in the system or use any resources of the machine.

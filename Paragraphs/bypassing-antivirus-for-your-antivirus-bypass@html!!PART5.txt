@@ -1,0 +1,6 @@
+
+Yes, yes it does….
+So, is this only Windows Defender sucking?
+No, no it is not… As you can see, it’s not only Windows Defender that is using a poorly chosen detection string – our small change detection went across several AV products.
+This begs some questions: How well does AV hold up to other techniques?
+Is that ok because you are covered elsewhere?

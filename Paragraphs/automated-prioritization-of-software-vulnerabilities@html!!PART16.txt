@@ -1,0 +1,8 @@
+
+Workers on Amazon’s Mechanical Turk platform were asked to judge whether a user believed a vulnerability they were discussing was severe.
+For all labeling, multiple users must independently agree on a label, and multiple statistical and expert-oriented techniques are used to eliminate spurious annotations.
+Five annotators were used for the labels in the relevancy classifier and ten annotators were used for the severity annotation task.
+Heuristics were used to remove unserious respondents; for example, when users did not agree with other annotators for a majority of the tweets.
+A subset of tweets were expert-annotated and used to measure the quality of the remaining annotations.
+Using the features extracted from tweet contents, including word embeddings and n-grams, we built a model using the annotated data from Amazon Mechanical Turk as labels.
+First, our model learns if tweets are relevant to a security threat using the annotated data as ground truth.

@@ -1,0 +1,5 @@
+
+Recovery Going back to the real-life case, there were no recent offline backups.
+So, with the backup servers (including the backups) encrypted as well and a complete rebuild not being an option, there was no way for a successful and swift recovery other than by paying the ransom.
+Both McAfee’s and Northwave’s perspective is that ransoms should not be paid.
+Paying does not only support the criminal business model, but as we have shown in our research , it also finances other forms of crime, such as the online drug trade.

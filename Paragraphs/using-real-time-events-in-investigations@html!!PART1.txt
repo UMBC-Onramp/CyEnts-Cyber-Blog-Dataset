@@ -1,0 +1,10 @@
+To understand what a threat actor did on a Windows system, analysts often turn to the tried and true sources of historical endpoint artifacts such as the Master File Table (MFT), registry hives, and Application Compatibility Cache (AppCompat).
+However, these evidence sources were not designed with detection or incident response in mind; crucial details may be omitted or cleared through anti-forensic methods.
+By looking at historical evidence alone, an analyst may not see the full story.
+Real-time events can be thought of as forensic artifacts specifically designed for detection and incident response, implemented through Enterprise Detection and Response (EDR) solutions or enhanced logging implementations like Sysmon .
+During active-attacker endpoint investigations, FireEye Mandiant has found real-time events to be useful in filling in the gaps of what an attacker did.
+These events record different types of system activities such as process execution, file write activity, network connections, and more.
+During incident response engagements, Mandiant uses FireEye Endpoint Security to track endpoint system events in real-time.
+This feature allows investigators to track an attacker on any system by alerting on and reviewing these real-time events.
+An analyst can use our solution’s built-in Audit Viewer or Redline to review real-time events.
+Let’s look at some examples of Windows real-time events available on our solution and how they can be leveraged during an investigation.

@@ -1,0 +1,9 @@
+
+Without the new RSA private key, we cannot decrypt the Salsa20 key and IV that are appended to the file.
+Finally, the ransomware deletes all shadow volumes on the infected machine and deletes itself.
+Version 4.1 This version retains the Salsa20 algorithm, fixes some bugs, and adds a new function.
+This function, in a random procedure from a big list of domains, creates a final path and sends the encrypted information gathered from the infected machine.
+We do not know why the malware does this; the random procedure usually creates paths to remote sites that do not exist.
+For example, one sample of this version has the following hardcoded list of encrypted domains.
+(This is only a small part of this list.)
+The ransomware selects one domain from the list and creates a random path with one of these words: Later it randomly chooses another word to add to the URL it creates: Afterward it makes a file name, randomly choosing three or four combinations from the following list: Finally the malware concatenates the filename with a randomly chosen extension: At this point, the malware sends the encrypted information using POST to the newly generated URL for all domains in the embedded list, repeating the process of generating a path and name for each domain.

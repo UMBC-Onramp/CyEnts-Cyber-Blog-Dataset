@@ -1,0 +1,3 @@
+
+If this was the case, reboot and try again, this time first confirming that the debugger is in control by clicking D ebug -> B reak in WinDbg.
+Once you know you have control, you can issue the g command to let execution continue (you may need to disable driver load notifications to get it to finish the boot process without further intervention: sxd ld).

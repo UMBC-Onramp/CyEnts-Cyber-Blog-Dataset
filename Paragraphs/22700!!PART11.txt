@@ -1,0 +1,15 @@
+
+There were even automatic generators.
+Sometimes, the malware placed a pornographic banner on the desktop and alleged the victim had viewed prohibited content (a tactic still used today).
+With the ransom demand being manageable, many preferred not to seek help, but simply to pay.
+2010:
+Cryptomalware with asymmetric encryption In 2011, cryptomalware developers stepped up their game considerably and, as Yung and Young predicted, began using asymmetric encryption.
+A modification of the GpCode cryptor, for example, was based on the RSA algorithm .
+2013:
+CryptoLocker hybrid ransomware Late 2013 marked the appearance of hybrid ransomware combining a blocker with cryptomalware.
+The concept increased cybercriminals’ chances of receiving payment, because even removing the malware, and thus removing the block, did not restore victims’ access to their files.
+Perhaps the most notorious of these hybrids is CryptoLocker .
+This malware was distributed in spam e-mails, and the cybercriminals behind it accepted ransom payment in Bitcoin.
+2015
+:
+Cryptors replace blockers In 2015, Kaspersky observed a snowballing number of cryptomalware infection attempts, with the number of attacks growing by a factor of 5.5.

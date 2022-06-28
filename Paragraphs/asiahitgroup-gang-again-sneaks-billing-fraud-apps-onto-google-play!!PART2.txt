@@ -1,0 +1,9 @@
+
+A, which attempted to charge at least 20,000 victims from primarily Thailand and Malaysia for the download of copies of popular applications.
+One year later, in November 2017, a new campaign was discovered on Google Play , Sonvpay.
+B, used IP address geolocation to confirm the country of the victim and added Russian victims to the WAP billing fraud to increase its potential to steal money from unsuspected users.
+In January 2018, the AsiaHitGroup Gang returned to Google Play with the repackaged app, Sonvpay.
+C, which uses silent background push notifications to trigger a fake update dialog.
+When victims start the “update” they instead subscribe to a premium-rate service.
+The subscription operates primarily via WAP billing, which does not require sending SMS messages to premium-rate numbers.
+Instead it requires only that users employ the mobile network to access a specific website and automatically click on a button to initiate the subscription process.

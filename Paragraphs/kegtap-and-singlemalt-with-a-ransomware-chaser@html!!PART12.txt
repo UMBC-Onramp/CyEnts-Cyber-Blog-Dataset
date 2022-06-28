@@ -1,0 +1,5 @@
+
+ Observed PowerShell cmdlets include: Get-GPPPassword Invoke-AllChecks Invoke-BloodHound Invoke-EternalBlue Invoke-FileFinder Invoke-HostRecon Invoke-Inveigh Invoke-Kerberoast Invoke-LoginPrompt Invoke-mimikittenz Invoke-ShareFinder Invoke-UserHunter Mandiant has observed actors using POWERTRICK to execute built-in system commands on the initial victim host, including ipconfig , findstr , and cmd.exe.
+The actors leveraged publicly available utilities Adfind, BLOODHOUND, SHARPHOUND, and KERBRUTE on victim networks to collect Active Directory information and credentials.
+WMIC commands have been used to perform host reconnaissance, including listing installed software, listing running processes, and identifying operating system and system architecture.
+The actors have used a batch script to ping all servers identified during Active Directory enumeration and output the results to res.txt .

@@ -1,0 +1,7 @@
+On July 2, 2021, Kaseya customers were notified of a compromise affecting the company’s VSA product in a way that poisoned the product’s update mechanism with malicious code.
+VSA is a remote monitoring and management tool for networks and endpoints intended for use by enterprise customers and managed service providers (MSPs).
+According to Kaseya, it urged customers to shut down the VSA to prevent attackers from gaining remote access to further assets.
+Kaseya also shut down the cloud version of VSA and all SaaS servers as a precautionary measure.
+Although it was initially believed that only 50 companies using VSA on-premises were targeted, the evolving situation reveals more potential victims as numbers climb to the tune of 1,500-2,000 companies likely exposed to downstream impact by this major attack.
+The number of potential victims can be so much larger because Kaseya’s customers themselves are MSPs who serve a customer base of their own.
+Consequently, those who rely on VSA to deliver remote-monitoring services can also be impacted by the attack.

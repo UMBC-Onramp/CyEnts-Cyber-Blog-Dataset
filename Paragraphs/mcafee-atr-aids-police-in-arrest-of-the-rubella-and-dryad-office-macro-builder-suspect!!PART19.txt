@@ -1,0 +1,6 @@
+
+It seems the author left this tab to create another one.
+Rubella Similarities Dryad is very similar to the Rubella Builder; many hints present in the code confirm the conversation we had with Rubella.
+Unlike Rubella, Dryad did have a scrubbed PDB path.
+Both Rubella builder and Dryad Builder are using the Bunifu framework for the graphic design.
+The license check is also the same function, using the domain tailoredtaboo.com, Below is the license check function from the Rubella builder: Tailoredtaboo.com Analysis We analyzed the server used to register the builder and discovered additional samples: Most of these samples were Word documents generated with the builder.

@@ -1,0 +1,6 @@
+
+The next action is to write this batch file in the same folder where the malware stays with the function “CreateFileA”.
+ The file created has the name “clearsystems-11-11.bat”.
+Later will launch it with “ShellExecuteA”, wait for 5 seconds to finish and delete the file with the function “DeleteFileA”.
+It is clear that the authors are not experienced programmers because they are using a .bat file for the next actions: Delete the shadow volumes with vssadmin (“vssadmin Delete Shadows /all /quiet”).
+Resize the shadow storage for all units starting from C to H units’ letters (hardcoded letters) to avoid the shadow volumes being made again.

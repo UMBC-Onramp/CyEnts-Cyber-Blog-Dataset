@@ -1,0 +1,8 @@
+
+What’s Next The next phase of our Attack Flow Project with the Center will focus on building tools and a dataset library of attacker flows.
+These items can then be used by organizations worldwide to assist in better defending against cyberattacks.
+This is much like the other research projects that Center has done over the years, like the adversary emulation plans—but on steroids.
+Learn more about FortiGuard Labs threat research and the FortiGuard Security Subscriptions and Services portfolio .
+Learn more about the Fortinet free cybersecurity training initiative , the Fortinet NSE Training program , Security Academy program , and Veterans program .
+
+

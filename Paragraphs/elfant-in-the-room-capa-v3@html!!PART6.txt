@@ -1,0 +1,12 @@
+
+Figure 4: capa rule using the substring feature to identify persistence on Linux systems Conclusion The newest improvements add ELF file analysis support to capa and make its rules even more expressive.
+We thank the community and notably Intezer for their continued support.
+We love the collaboration and are excited for future opportunities.
+The v3 capa release also includes bug fixes, improvements to the IDAPython plugin capa explorer , and more than 50 new rules.
+See the capa changelog for all update details.
+The new capa release is available on the release page and on PyPI .
+capa’s code and rules are available on GitHub.
+If you have any questions or feedback, please open an issue or discussion in the respective repository.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

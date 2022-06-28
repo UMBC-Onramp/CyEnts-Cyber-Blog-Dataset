@@ -1,0 +1,5 @@
+
+More than that, it said that it would continue to provide coverage for responding to and recovering from a ransomware infection so long as the victim didn’t pay the ransom.
+Organizations don’t want to rely on an insurer when it comes to a ransomware attack.
+Cyber insurance companies could pressure them into paying the ransom and thereby contributing to the ransomware business model more broadly.
+The only answer is for organizations to prevent a ransomware infection from occurring in the first place.

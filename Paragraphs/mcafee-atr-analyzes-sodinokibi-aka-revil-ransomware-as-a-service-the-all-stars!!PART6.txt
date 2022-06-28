@@ -1,0 +1,7 @@
+
+Mutual trust between the developer and the affiliate plays a huge role in joining a RaaS system.
+It is very much like the expression: “Trust, hard to build, and easy to lose” and this largely explains the general skepticism that cybercriminal forum members display when a new RaaS system is announced.
+For the RaaS service to grow and maintain their trust, proper administration of infections/earnings per affiliate plays an important part.
+Through this, the developers can ensure that everyone gets an honest piece of the proverbial “pie”.
+So how can this administration be achieved?
+One way is having hardcoded values in the ransomware.

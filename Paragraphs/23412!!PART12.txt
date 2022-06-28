@@ -1,0 +1,4 @@
+
+The attack doesn’t work on AMD processors or in Mozilla Firefox, whose JavaScript engine works differently.
+The researchers aren’t ruling out the possibility of a successful attack on AMD chips and Firefox browser, but verifying that will require more study.
+Finally, an attack requires uploading malicious code to a page with the same domain name, such as in the case of collective blogs or hosting.

@@ -1,0 +1,6 @@
+
+TTR is not a perfect quantification, as external factors such as an organization’s security posture can drastically affect the measurement.
+In this post, the TTR of UNC2198 is measured between ICEDID activity to the deployment of ransomware.
+In July 2020, UNC2198 deployed MAZE ransomware using PSEXEC, and the TTR was 5.5 days.
+In October 2020, UNC2198 deployed EGREGOR ransomware using forced GPO updates, and the TTR was 1.5 days.
+Looking Forward Threat actors leveraging access obtained through mass malware campaigns to deploy ransomware is a growing trend.

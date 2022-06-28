@@ -1,0 +1,5 @@
+Introduction We’re proud to release a new plug-in for IDA Pro users – SimplifyGraph – to help automate creation of groups of nodes in the IDA’s disassembly graph view.
+Code and binaries are available from the FireEye GitHub repo .
+Prior to this release we submitted it in the 2017 Hex-Rays plugin contest , where it placed third overall.
+My personal preference is to use IDA’s graph mode when doing the majority of my reverse engineering.
+It provides a graphical representation of the control flow graph and gives visual cues about the structure of the current function that helps me better understand the disassembly.

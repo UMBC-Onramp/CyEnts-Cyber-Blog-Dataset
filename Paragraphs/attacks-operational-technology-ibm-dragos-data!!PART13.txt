@@ -1,0 +1,7 @@
+
+Ransomware groups continue to attempt to exploit the sensitive nature of OT networks and increasingly blend data theft and leaks with traditional ransomware.
+  The battle with ransomware is likely to continue into the foreseeable future.
+To better prepare for potential attacks, encrypting company data so it is less valuable to adversaries and safely storing backups are two protective measures organizations can take to insulate networks from double ransomware attacks that are becoming increasingly common.
+It is also necessary to validate and potentially re-architect systems that bridge IT and OT networks and potentially re-architect the OT network itself.
+Over the years many changes have occurred that are not tracked in OT networks, leading to system and network weaknesses and attack paths that significantly increase the impact of these attacks.
+A key effort should be to get visibility in the OT networks, looking for weak segmentation, remote connections and interconnections with vendors and integrators.

@@ -1,0 +1,6 @@
+
+TsLow also exposes the connect method used to check connectivity to the target controller.
+If invoked with no targets, it runs the device discovery function detect_ip.
+This leverages a \"ping\" message over the TriStation protocol using IP broadcast to find controllers that are reachable via a router from where the script is invoked.
+Indicators Filename Hash trilog.exe MD5: 6c39c3f4a08d3d78f2eb973a94bd7718 SHA-256:
+e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230 imain.bin MD5: 437f135ba179959a580412e564d3107f SHA-256: 08c34c6ac9186b61d9f29a77ef5e618067e0bc9fe85cab1ad25dc6049c376949

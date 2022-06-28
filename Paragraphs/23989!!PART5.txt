@@ -1,0 +1,9 @@
+
+Small injections of malicious code are hard to detect during moderation, which cybercriminals constantly try to exploit.
+One of the apps in Google Play that contained Joker Trojan Bankers — creative theft For several years now, banking Trojans have been hunting, not just for bank accounts but also for accounts in online stores and other digital services.
+In 2021, their area of interest widened even further: our experts discovered the Gamethief malware, which steals login data for the mobile version of the game PlayerUnknown’s Battlegrounds (PUBG).
+This is the first mobile Trojan that specializes in stealing gaming accounts — just a few years ago, this type of malware was exclusive to desktop computers.
+Cybercriminals also improved the functionality of their creations.
+For example, the Fakecalls banking Trojan is capable of dropping the call if the user tries to contact their bank, and replacing it with a pre-recorded response of a fake bank representative.
+That way, the malware lulls the victim into thinking that a bank employee answered the call.
+How to protect your smartphone from malware Cybercriminals are resourceful and take every opportunity to prey on mobile device users.

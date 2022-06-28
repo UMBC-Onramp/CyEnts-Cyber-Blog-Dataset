@@ -1,0 +1,10 @@
+
+Each sample of the malware uses different strings as PDB to send messages or to make the sample unique, for example: C:\\somerandomsh**\\sh**\\obama.pdb C:\\kill\\yourself\\<nickname>\\chinese\\idio*.pdb (In these examples some things were removed or changed to remove sensitive information in the report).
+The new samples discovered in January 2020 make these connections to the C2 (or try to make them): FIGURE 34.
+CONNECTIONS TO C2 IP OF THE NEW SAMPLES As we can see, they are the same IPs as seen in the previous versions of the malware.
+The samples’ compile dates are from the 24th of January 2020 (the first version with the strings that provoked the researchers) to the 28th of January 2020 (the version with the answers to the researchers), meaning they were made on the same day the responses to the previous version were published on Twitter.
+Another interesting fact from the later sample is that, besides it saying that the language code used to program it was Korean, the IPs where it connects belong to the Russian Federation as before, as can be seen in the next two images.
+FIGURE 35.
+LANGUAGE CODE “USED” IN THE PACKER SAMPLE, NOT THE MALWARE FIGURE 36.
+ALL C2 DOMAINS BELONG TO THE RUSSIAN FEDERATION
+It is impossible to know the truth, but this could be a trick to try misleading researchers into thinking that the malware comes from some country when in truth it originates in another.

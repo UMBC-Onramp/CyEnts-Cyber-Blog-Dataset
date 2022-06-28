@@ -1,0 +1,5 @@
+
+The aforementioned code attempts to download a second-stage payload from \"hxxp[://[DOMAIN]/d/dl[.]asp\" when executed.
+Since the WMI buffer is involved, this attack vector opens the door to gaining a persistent foothold in the victim environment.
+During this research period we also found an open-sourced project titled \"bmfdec\" that also decompiled BMOF files.
+Uncovering the Exploit The attackers were active on September 22, and as such the majority of the investigation was conducted around this timeframe.

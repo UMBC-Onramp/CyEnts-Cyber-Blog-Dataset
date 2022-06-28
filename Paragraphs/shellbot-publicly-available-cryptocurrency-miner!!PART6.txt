@@ -1,0 +1,4 @@
+
+IBM X-Force saw quite a bit of activity every month, as shown in the figure below.
+Figure 3: ShellBot activity by month, January to June 2021 (Source: IBM X-Force) Infect and Control ShellBot is dropped as a payload to systems and devices where a password was brute-forced.
+Immediately after a successful login, the infected machine/device receives a list of commands to execute; those include sending back system information, downloading and executing a PERL script, removing logs, removing the command history and deleting the payload itself.

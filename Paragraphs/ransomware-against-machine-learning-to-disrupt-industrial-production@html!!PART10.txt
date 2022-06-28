@@ -1,0 +1,4 @@
+
+At first glance, the SNAKEHOSE kill list appeared to be specifically tailored to OT environments due to the relatively small number of processes (yet high number of OT-related processes) identified with automated tools for initial triage.
+However, after manually extracting the list from the function that was terminating the processes, we determined that the kill list utilized by SNAKEHOSE actually targets over 1,000 processes.
+In fact, we have observed very similar process kill lists deployed alongside samples from other ransomware families, including LockerGoga, MegaCortex, and Maze.

@@ -1,0 +1,5 @@
+
+○
+Consequences : 1) Ad SDK can exfiltrate data from the app sandbox; 2) Ad SDK can change the behavior of the host app; 3) Ad SDK can perform actions on behalf of the host app against the OS.
+○      This attack scenario is shown in Figure 20: Figure 20.
+Threat model for JSPatch used by a third-party library provider The FireEye discovery of iBackdoor in 2015 is an alarming example of displaced trust within the iOS development community, and serves as a sneak peek into this type of overlooked threat.

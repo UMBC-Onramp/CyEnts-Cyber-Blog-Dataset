@@ -1,0 +1,6 @@
+
+This will log all reads, writes and executes to memory.
+Since the emulator tags all allocated memory chunks, it is possible to glean much more context from this data.
+If malware hooks a critical data structure or pivots execution to dynamically mapped memory this will be revealed and can be useful for debugging or attribution.
+This feature comes at a great speed cost, however, and is not enabled by default.
+The emulated environment presented to malware includes common data structures that shellcode uses to locate and execute exported Windows system functions.

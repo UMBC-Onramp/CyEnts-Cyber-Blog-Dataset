@@ -1,0 +1,7 @@
+
+The phishing emails observed in this campaign were sent to multiple aviation companies.
+They all appear to be coming from the federal aviation authority using a spoofed sender address that matches with a “foreign operators affairs” email address for enquiries/approvals.
+The email goes through the extra step of having a signature and a logo to impersonate a federal authority.
+Also, the content is carefully crafted to create a sense of urgency by making it to look like a Reporting of Safety Incident (ROSI) from Air Traffic Control.
+In addition, the email contains malicious Google Drive links disguised as a pdf attachment.
+Most of the emails in this campaign contain the strings ROSI, AOP, Incident Report, as well as the attachment name “ROSI-AOP Incident Report Details, <date>”.pdf.

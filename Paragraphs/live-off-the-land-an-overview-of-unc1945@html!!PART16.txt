@@ -1,0 +1,4 @@
+
+At this time, it is likely that access to the victim environment was sold to another group.
+Conclusion The ease and breadth of exploitation in which UNC1945 conducted this campaign suggests a sophisticated, persistent actor comfortable exploiting various operating systems, and access to resources and numerous toolsets.
+Given the aforementioned factors, use of zero-day exploits and virtual machines, and ability to traverse multiple third-party networks, Mandiant expects this motivated threat actor to continue targeted operations against key industries while taking advantage of operating systems that likely have inadequate security visibility.

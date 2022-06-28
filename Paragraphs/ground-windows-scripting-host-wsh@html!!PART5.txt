@@ -1,0 +1,6 @@
+
+Here's what that looks like: This script connected to a remote system that provided command and control (C2) functionality , which included collecting system information from the infected machine and providing the attacker with the ability to execute commands via the command console, \"cmd.exe\".
+During analysis of the affected system, we found significant evidence in URL History for the Internet Explorer browser that depicted requests to the malicious URL.
+The requests for URLs looked like \"http://hostname-4.
+legitcloudservice .com/?action
+=get&mt= =\".

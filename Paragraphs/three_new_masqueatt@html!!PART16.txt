@@ -1,0 +1,11 @@
+
+After the user configures VPN use the original\nJunos Pulse app, the PoC code of the malicious VPN plugin is loaded\nand executed by neagent .
+while(1) { syslog(LOG_ERR, \"[+] =========
+**
+**** PoC DYLIB
+LOADED\n*
+***** =========
+=
+\"); sleep(3); } Table 2.
+PoC code of the malicious VPN Plugin Note that successfully launching this attack doesn’t require the\nuser to touch/trust the in-house app.
+Even if the user force\nuninstalling the VPN app being attacked, the app will come back again\nafter reboot.

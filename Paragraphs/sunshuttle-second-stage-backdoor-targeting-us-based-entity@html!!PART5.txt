@@ -1,0 +1,10 @@
+
+Lexicon.exe (MD5: 9466c865f7498a35e4e1a8f48ef1dffd)
+C2:
+reyweb[.]com UNAVAILABLE (MD5: 86e89349fefcbdd9d2c80ca30fa85511) Unpacked version of 9466c865f7498a35e4e1a8f48ef1dffd Infection Vector For the samples analyzed, the infection vector is not known.
+Execution Execution Summary SUNSHUTTLE is a backdoor written in GoLang.
+Once SUNSHUTTLE is executed, a high-level description of the execution is the following: Configuration settings determined Request a “session key” from the C2 Retrieve the “session key” from the C2
+Once a session key is retrieved, SUNSHUTTLE begins command request beaconing loop Begin command request beaconing Resolve command and perform action The SUNSHUTTLE sample analyzed retains the names of the routines used by the malware, which include the following: main.request_session_key main.define_internal_settings main.send_file_part main.clean_file main.send_command_result main.retrieve_session_key main.save_internal_settings main.resolve_command main.write_file main.beaconing main.wget_file main.fileExists main.encrypt main.decrypt main.random main.removeBase64Padding main.addBase64Padding main.delete_empty main.
+Unpad main.
+GetMD5Hash main.
+Pad Note: Throughout the SUNSHUTTLE backdoor, unique string identifiers are used to indicate the operation being performed to the C2 via a Cookie header, and unique string identifiers are also used to validate and parse response content from the C2.

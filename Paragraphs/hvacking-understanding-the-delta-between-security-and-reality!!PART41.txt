@@ -1,0 +1,5 @@
+
+While we do have 4 instructions to play with, we also need at least one instruction to load the address of our command string into R0, the register used as the first parameter for system, and at least one instruction to branch to the address, requiring a total of 6 instructions.
+One way to reduce the number of instructions needed is to start by copying a register already containing a value close to the address we want at the time the shellcode executes.
+Whether this is feasible depends on the value of the address we want to jump to compared to the addresses we have available in the registers right before our shell code is executed.
+Starting with the address we need to call, we discovered three address we could jump to that would call system .

@@ -1,0 +1,5 @@
+
+Queries for attacker User-Agent strings usually generate more noise to sift through than IP address searches.
+In practice, User-Agent queries are only beneficial if the attackers are using an uncommon browser or version of a browser.
+Due to limitations of the Search-UnifiedAuditLog cmdlet, we’ve had the most success using the FreeText parameter and searching for simple strings.
+In Helix: class=ms_office365 (srcipv4:[1.2.3.4, 2.3.4.0/24] OR useragent:Opera) | table [createdtime, action, username, srcipv4, srccountry, srcregion, useragent, rawmsg] | groupby username Querying the UAL for IPs and user agents in PowerShell: Search-UnifiedAuditLog

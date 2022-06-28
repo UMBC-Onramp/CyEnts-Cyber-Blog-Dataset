@@ -1,0 +1,10 @@
+
+LAPSUS$ claims that they did not steal any data from the company itself, and that their targets were mainly Okta’s customers.
+Judging by the dates on the screenshots, the attackers had access to the systems as early as January 2022.
+What is Okta and why could the breach be so dangerous?
+Okta develops and maintains identity and access management systems.
+In particular, they provide a single sign-on solution.
+A huge number of large companies employ Okta’s solutions.
+Kaspersky Lab experts believe that the hacker’s access to Okta’s systems can explain a number of the rather high-profile data leaks from large companies, for which hackers from LAPSUS$ have already claimed responsibility.
+How cybercriminals gain access to Okta’s systems?
+At the moment there is no conclusive evidence that the hackers really gained access.

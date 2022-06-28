@@ -1,0 +1,4 @@
+By Thomas Roccia , Jessica Saavedra-Morales and Christiaan Beek on Dec 19, 2018 Last week the McAfee Advanced Threat Research team posted an analysis of a new wave of Shamoon “wiper” malware attacks that struck several companies in the Middle East and Europe.
+In that analysis we discussed one difference to previous Shamoon campaigns.
+The latest version has a modular approach that allows the wiper to be used as a standalone threat.
+After further analysis of the three versions of Shamoon and based on the evidence we describe here, we conclude that the Iranian hacker group APT33—or a group masquerading as APT33—is likely responsible for these attacks.

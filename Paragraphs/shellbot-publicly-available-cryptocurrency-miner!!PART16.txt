@@ -1,0 +1,9 @@
+
+For servers that can be accessed remotely, it is wise to add multifactor authentication and disable the option to run CLI commands remotely if that is a requirement the business needs.
+In addition, all outbound IRC traffic should be monitored or entirely blocked, as this may be an indicator of a ShellBot infection and potential data exfiltration that is not related to business needs.
+Network system monitoring should be implemented to detect excessive resource utilization and users should be educated about the risk and signs of cryptojacking on their devices.
+Indicators of Compromise IRC servers: Blackcat: 128.199.111.21 Same operator as on Blackcat: 68.183.180.36, 159.203.14.2 Pola: 159.89.7.123 Pola script download: hxxp://209.97.132.66/pola XMRig
+download: hxxp://162.243.166.183/miner3.tgz Recent Shellbot attacks detected on IBM’s honeypots: Attacker IPs (brute-forcing): 5.181.80.157 14/06/2021 193.232.68.71 12/06/2021 195.203.90.161 02/06/2021 142.93.169.146 16/05/2021 162.144.233.29 15/042021
+Shellbot download URLs hxxp://51.38.105.98/a
+hxxp://5.253.86.50/div hxxps://gsmboss.clan.su/zn.jpg hxxp://142.93.127.16/wp-includes/images/media/.x/px.txt hxxp://58.135.80.99/a/div
+

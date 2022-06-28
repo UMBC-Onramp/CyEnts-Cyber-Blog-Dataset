@@ -1,0 +1,5 @@
+
+Centralized management will also help ensure that policies are enforced consistently, configurations and updates are delivered promptly, and that suspicious events that may occur anywhere across the network—including to, between, and within cloud environments—are centrally collected and correlated.
+Organizations are strongly urged to extend their efforts by hardening their Linux and other traditionally lower-profile devices.
+They should also have tools in place designed to protect, detect, and respond to threats targeting these devices.
+Similarly, organizations need to take a security-first approach when adopting new technologies, whether upgrading your Windows-based systems or adding satellite-based connectivity, to ensure that protections are in place before adding them to your network.

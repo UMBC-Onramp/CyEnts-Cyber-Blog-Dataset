@@ -1,0 +1,8 @@
+
+A JSON payload is present for all HTTP POST and PUT requests and contains the keys “userId”, “sessionId”, and “steps”.
+The “steps” field contains a list of objects with the following keys: “Timestamp”, “Index”, “EventType”, “EventName”, “DurationMs”, “Succeeded”, and “Message”.
+The JSON key “EventType” is hardcoded to the value “Orion”, and the “EventName” is hardcoded to “EventManager”.
+Malware response messages to send to the server are DEFLATE compressed and single-byte-XOR encoded, then split among the “Message” fields in the “steps” array.
+Each “Message” value is Base64 encoded separately.
+Not all objects in the “steps” array contribute to the malware message – the integer in the “Timestamp” field must have the 0x2 bit set to indicate that the contents of the “Message” field are used in the malware message.
+Step objects whose bit 0x2 is clear in the Timestamp field contain random data and are discarded when assembling the malware response.

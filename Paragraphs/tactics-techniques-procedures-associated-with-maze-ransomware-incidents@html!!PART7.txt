@@ -1,0 +1,3 @@
+
+On November 18 and 19, a Maze campaign targeted individuals operating in a range of industries in the United States and Canada with macro documents using phone bill and package delivery themes (Figure 4 and Figure 5).
+These emails used the subjects “Missed package delivery” and \"Your AT&T wireless bill is ready to view\" and were sent using a number of malicious domains with the registrant address abusereceive@hitler.rocks.

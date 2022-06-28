@@ -1,0 +1,8 @@
+
+Another important change in this version is the attempt to obfuscate the calls to functions such as VirtualAlloc and VirtualFree.
+Figure 3.
+New functions to obfuscate the code.
+Version 4.1.2
+This version has appeared with some variants.
+Two security companies revealed a vaccine to prevent infections by previous versions.
+The vaccine involved making a special file in a folder with a special name before the ransomware infects the system.

@@ -1,0 +1,5 @@
+
+values.\nThen the Synthesizer, which\nis based on Google’s TacoTron2 , takes text as input and returns\na mel spectrogram , a\nnumerical representation of an individual’s voice.
+Lastly, the\nvocoder, based\non DeepMind’s WaveNet , takes the mel spectrogram and converts it\ninto an output waveform that can be heard and comprehended.
+While pre-trained SV2TTS can be used to generate speech using\narbitrary text from one of a few hundred or so voices, as shown in\nFigure 3 it can also be fine-tuned to generate speech in an\narbitrary voice using arbitrary text.
+All we need to do is\ncollect some audio samples, which are freely available to record via\nthe Internet, load up a few of the resulting M4A files into the\npre-trained SV2TTS model, and use it as a feature extractor to\nsynthesize new speech waveforms.

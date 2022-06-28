@@ -1,0 +1,16 @@
+
+Therefore, they can expose the laptop to other users with previous access.
+Vacation rental home networks typically do not adhere to the same security protocols as businesses.
+In business environments, routers are usually under an administrator’s control.
+That admin also likely limits IoT devices.
+The network isn’t open and insecure protocols are off.
+Many businesses apply the zero-trust model to their networks.
+Home and vacation rental home networks, on the other hand, typically do not have that kind of commercial-grade security.
+Ree refuses to even charge a phone in vacation rental homes for that reason.
+Protecting Against Loose Internet of Things Rules
+So how can you protect your own devices the next time you stay in a vacation rental home?
+The easiest step is to immediately connect to the corporate virtual private network.
+Savvier technology users may want to go an extra step and run their own port scans.
+Laurie applies those kinds of extra security measures when he rents homes and cars.
+In a rental car, he always checks the Bluetooth history and conducts a factory reset before and after using the vehicle.
+You could do the same in a vacation rental home, although it may create a conflict with homeowners if they set up their own rules.

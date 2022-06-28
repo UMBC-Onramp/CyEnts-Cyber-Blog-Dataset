@@ -1,0 +1,21 @@
+
+B2 This cell contains the value we want to search for and provides a count of occurrences found in our defined range.
+ Note that this parameter B2 is not an absolute reference with a preceding \"$\".
+This allows us to fill the formula down through all rows and ensure that we are counting the applicable user name.
+To summarize, this formula will search the username column of all logon data before and including the current log and count how many times the user of each logon has logged on up to that point in time.
+The following example illustrates how Excel automatically updated the range for D15 to $B$2:$B15 using the fill handle .
+To help visualize a large data set, let's add color scale conditional formatting to each row individually.
+To do so: Select only the cells we want to compare with the color scale (such as D2 to D25).
+On the Home menu, click the Conditional Formatting button in the Styles area.
+Click Color Scales.
+Click the type of color scale we would like to use.
+The following examples set the lowest values to red and the highest values to green.
+We can see how: Users with lower authentication counts contrast against users with more authentications.
+The first authentication times of users stand out in red.
+Whichever colors are used, be careful not to assume that one color, such as green, implies safety and another color, such as red, implies maliciousness.
+Conclusion The techniques described in this post are just a few ways to utilize Excel to perform analysis on arbitrary data.
+While these techniques may not leverage some of the more powerful features of Excel, as with any variety of skill set, mastering the fundamentals enables us to perform at a higher level.
+Employing fundamental Excel analysis techniques can empower an investigator to work through analysis of any presented data type as efficiently as possible.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

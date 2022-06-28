@@ -1,0 +1,6 @@
+
+Conclusion FakeNet-NG now brings the convenience of a modern, Python-based, malware-oriented network simulation tool to Linux, supporting the full complement of listeners that are available on FakeNet-NG for Windows.
+Users of REMnux can make use of FakeNet-NG already, while users of other Linux distributions can download and install it using standard package management tools.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,10 @@
+
+The name Sodinokibi was discovered in the hash ccfde149220e87e97198c23fb8115d5a where ‘Sodinokibi.exe’ was mentioned as the internal file name; it is also known by the name of REvil.
+At first, Sodinokibi ransomware was observed propagating itself by exploiting a vulnerability in Oracle’s WebLogic server.
+However, similar to some other ransomware families, Sodinokibi is what we call a Ransomware-as-a-Service (RaaS), where a group of people maintain the code and another group, known as affiliates, spread the ransomware.
+This model allows affiliates to distribute the ransomware any way they like.
+Some affiliates prefer mass-spread attacks using phishing-campaigns and exploit-kits, where other affiliates adopt a more targeted approach by brute-forcing RDP access and uploading tools and scripts to gain more rights and execute the ransomware in the internal network of a victim.
+We have investigated several campaigns spreading Sodinokibi, most of which had different modus operandi but we did notice many started with a breach of an RDP server.
+Who and Where is Sodinokibi Hitting?
+Based on visibility from MVISION Insights we were able to generate the below picture of infections observed from May through August 23 rd , 2019: Who is the target?
+Mostly organizations, though it really depends on the skills and expertise from the different affiliate groups on who, and in which geo, they operate.

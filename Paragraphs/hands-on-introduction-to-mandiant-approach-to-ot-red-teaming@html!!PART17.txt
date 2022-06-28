@@ -1,0 +1,4 @@
+
+At this point of the intrusion, the attacker would have already obtained complete control over Big Steam Works' OPC clients and servers, gaining visibility and access to the DCS environment.
+Before defining the path to follow, the attacker would likely have to perform further reconnaissance (e.g., compromising additional systems, data, and credentials within the Big Steam Works DCS environment).
+Specifically, the attacker could: Gain access to the DCS configuration software/engineering workstation Obtain configuration/control logic files Determine the type/function of the different DCS nodes in the environment Use native DCS tools for system overview, graphics display, and point drill down Identify alarms/alerts monitored by operators via remote HMI screens and map them to defined points Map the flow of the physical process based on data collection and review Our next step was to develop the custom scenario.

@@ -1,0 +1,8 @@
+
+The malware creates a pipe that the DLL reads later and prepares strings as the mutex string for the DLL.
+Preparing the string for the DLL.
+The DLL has dummy strings for these strings.
+Creating the new mutex and relaunching the process.
+This mutex is checked when the malware starts.
+The function returns a 1 or 0, depending on whether it can open the mutex.
+Later, this result is checked and if the mutex can be opened the malware will avoid checking the version and will not use the two new exploits to elevate privileges.

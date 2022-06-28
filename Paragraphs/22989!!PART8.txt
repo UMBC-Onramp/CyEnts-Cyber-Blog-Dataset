@@ -1,0 +1,7 @@
+
+How to avoid becoming a victim, and what to do if you have been robbed Scammers rightly believe players will need some time to realize they are being cheated at the Auction House (controlled by Blizzard), or that the source of the problem is a script that never caused them any trouble before.
+Instead of relying on the game, be proactive and keep yourself safe.
+Update the WeakAuras add-on During the discussion on Reddit, an expert analyzed the victim’s installed add-ons and scripts, found the malicious one, and reported the finding to WeakAuras’ developers.
+The developers fixed the problem, so even if you have the malicious script installed, updating WeakAuras to the latest version should remove it automatically.
+That measure is unlikely to be effective against yet-unknown malicious auras.
+To protect WeakAuras from dangerous scripts reliably, its developers would need to implement a basic antivirus engine, regularly check existing auras, and add any malicious ones to a database.

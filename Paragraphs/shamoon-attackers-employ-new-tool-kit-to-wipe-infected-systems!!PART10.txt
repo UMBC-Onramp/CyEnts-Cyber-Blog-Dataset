@@ -1,0 +1,13 @@
+
+It changes the creation, write, and access date and time to 01/01/3000 at 12:01:01 for each file.
+The malware rewrites each file two times with random strings.
+It starts to delete the files using the API CreateFile with the ACCESS_MASK DELETE flag.
+Then it uses FILE_DISPOSITION_INFORMATION to delete the files.
+The function ProcessTracker has been coded to track the destruction.
+Conclusion In the 2017 wave of Shamoon attacks, we saw two wipers; we see a similar feature in the December 2018 attacks.
+Using the “tool kit” approach, the attackers can spread the wiper module through the victims’ networks.
+The wiper is not obfuscated and is written in .Net code, unlike the Shamoon Version 3 code, which is encrypted to mask its hidden features.
+Attributing this attack is difficult because we do not have all the pieces of the puzzle.
+We do see that this attack is in line with the Shamoon Version 2 techniques.
+Political statements have been a part of every Shamoon attack.
+In Version 1, the image of a burning American flag was used to overwrite the files.

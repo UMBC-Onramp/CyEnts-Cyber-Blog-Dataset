@@ -1,0 +1,8 @@
+
+The authors didn’t remove the path to the debugging information file, unfortunately it didn’t divulge sensitive or incriminating details about the ransomware authors:
+D:\\Development\\Master\\onion\\locker.divided\\LockMainDIB\\Release\\LockMainDIB.pdb While Diavol is not packed nor has any anti-disassembly tricks, it does use an interesting anti-analysis technique to obfuscate its code.
+Its main routines are kept in bitmap images, which are stored in the PE resource section.
+Before calling each routine, it copies the bytes from the bitmap to a global buffer that has execute permissions.
+The imports used by each routine are also stored in the resource section under \" OFFSET \", with the same names as the bitmaps.
+Diavol has 14 different routines stored as bitmaps.
+They are called in the following order: · Create an identifier for the victim: The GENBOTID routine creates a unique identifier of the infected machine.

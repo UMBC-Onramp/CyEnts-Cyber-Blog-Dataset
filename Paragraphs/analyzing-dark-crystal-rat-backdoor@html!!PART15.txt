@@ -1,0 +1,13 @@
+
+The malware takes the MD5 hash of the still-base64-encoded configuration string, and creates the mutex whose name is the hexadecimal representation of that hash.
+For this sample, the malware creates the mutex bc2dc004028c4f0303f5e49984983352 .
+If this fails because another instance is running, the malware exits.
+The malware then beacons, which also allows it to determine whether to use the main host (MHost) or backup host (BHost).
+To do so, the malware constructs a beacon URL based on the MHost URL, makes a request to the beacon URL, and then checks to see if the server responds with the HTTP response body “ok.”
+If the server does not send this response, then the malware unconditionally uses the BHost; this code is shown in Figure 13.
+Note that since this sample has the same MHost and BHost value (from Figure 11), the malware uses the same C2 endpoint regardless of whether the check succeeds or fails.
+Figure 13:
+The malware makes an HTTP request based on the MHost URL to determine whether to use the MHost or BHost The full algorithm to obtain the beacon URL is as follows:
+Obtain the MHost URL, i.e., hxxp://domalo[.]online/ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91dueu3qa54 /46kqbjvyklunp1z56txzkhen7gjci3cyx8ggkptx25i74mo6myqpx9klvv3/akcii239my zon0xwjlxqnn3b34w .
+Calculate the SHA1 hash of the full MHost URL, i.e., 56743785cf97084d3a49a8bf0956f2c744a4a3e0.
+Remove the last path component from the MHost URL, and then append the SHA1 hash from above, and ?

@@ -1,0 +1,5 @@
+
+Historical Context
+In the Red Line Drawn report, Mandiant documented a significant decline in the volume of Chinese cyberespionage activity in 2014 and assessed that the restructuring of China's military and civilian intelligence agencies significantly impacted Chinese cyber operations.
+Then, in September 2015, President Xi of China concluded a bilateral agreement with U.S. President Obama to prohibit state-sponsored theft of intellectual property for the purpose of providing commercial advantage.
+Commercial IP theft has historically been a prominent characteristic of Chinese cyber espionage activity.

@@ -1,0 +1,6 @@
+
+Other routes to market include social media promotions.
+I and/or My Company Owns Intellectual Property that is Being Infringed?
+What Can I Do?
+Outside of consulting your own legal counsel (if you have the budget or have in-house counsel), you will have to rely on the registrars of the domain to take action.
+Due to the anonymity of WHOIS records, along with the anonymity of the true IP address of the bad actor due to their use of CDN, it can be very difficult to figure out who or what is behind the domain in question.

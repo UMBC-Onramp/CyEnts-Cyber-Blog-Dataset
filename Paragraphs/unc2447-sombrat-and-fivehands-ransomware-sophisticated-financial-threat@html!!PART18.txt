@@ -1,0 +1,5 @@
+
+This NTRU key is SHA512 hashed and the first 32 bytes are used as the victim ID within the ransom note.
+This NTRU pubic key is also used to encrypt each file's symmetric key.
+For the symmetric key, FIVEHANDS uses an embedded generation routine to produce 16 random bytes used for an AES key to encrypt each file.
+After each file is encrypted, the original file size, magic value of DE C0 AD BA, and AES key are encrypted with the public NTRU key and appended to the file.

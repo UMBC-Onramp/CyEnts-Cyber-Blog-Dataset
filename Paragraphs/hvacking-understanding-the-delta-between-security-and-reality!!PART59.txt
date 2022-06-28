@@ -1,0 +1,3 @@
+
+ When canioWriteOutput is called, our function will be called first, creating an output file in the “opt” directory and giving us a place to write text, proving that our hook is working.
+Then, we search the symbol table for the original “canioWriteObject” and call it with the same parameters passed into our hook, essentially creating a passthrough function.

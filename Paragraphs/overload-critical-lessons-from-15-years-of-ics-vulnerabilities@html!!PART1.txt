@@ -1,0 +1,2 @@
+In the past several years, a flood of vulnerabilities has hit industrial control systems (ICS) – the technological backbone of electric grids, water supplies, and production lines.
+These vulnerabilities affect the reliable operation of sensors, programmable controllers, software and networking equipment used to automate and monitor the physical processes that keep our modern world running.

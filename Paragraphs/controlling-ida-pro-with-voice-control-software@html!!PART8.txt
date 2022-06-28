@@ -1,0 +1,3 @@
+
+There are several other macros in the profile that are like this and save you a lot of time navigating menus and dialogs to perform simple actions.
+Cursor Movement, Dialogs, and Navigation The cursor movement commands allow the user to move the cursor up, down, left, or right, one or more times, in specified increments.

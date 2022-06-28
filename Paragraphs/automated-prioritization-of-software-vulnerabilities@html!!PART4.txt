@@ -1,0 +1,4 @@
+
+Scores of CVEs should ideally be available as soon as possible after the CVE is released, while the current process often hampers prioritization of triage events and ultimately slows response to severe vulnerabilities.
+This crowdsourced approach reflects numerous practitioner observations about the size and widespread nature of the vulnerable population, as shown in Figure 1.
+For example, in the Mirai botnet incident in 2017 a massive number of vulnerable IoT devices were compromised leading to the largest Denial of Service (DoS) attack on the internet at the time.

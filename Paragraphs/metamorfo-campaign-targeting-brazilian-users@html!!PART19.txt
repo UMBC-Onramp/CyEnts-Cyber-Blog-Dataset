@@ -1,0 +1,7 @@
+
+Figure 25: Partial List of Victims This sample contains most of the important strings encrypted.
+We provide the following script (Figure 26) in order to decrypt them.
+Figure 26:
+String Decryption Script Conclusion
+The use of multi-stage infection chains makes it challenging to research these types of campaigns all the way through.
+As demonstrated by our research, the attackers are using various techniques to evade detection and infect unsuspecting Portuguese-speaking users with banking Trojans.

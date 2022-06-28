@@ -1,0 +1,5 @@
+
+How to avoid CVE-2021-28310 exploitation It’s critical to act quickly.
+Here’s what you can do: Install the patches Microsoft released on April 13 , immediately and on all vulnerable computers; Protect all of your devices with a robust security solution such as Kaspersky Endpoint Security for Business , whose advanced exploit prevention component blocks attempts to exploit CVE-2021-28310.
+
+

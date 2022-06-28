@@ -1,0 +1,4 @@
+
+Figure 10 provides an example command used to capture the desktop screenshots.
+\"C:\\Users\\User\\AppData\\Local\\Temp\\nircmdc.exe\" savescreenshot \"C:\\Users\\User\\AppData\\Local\\Temp\\6206a2e3dc14a3d91.png\" Figure 10:
+Sample command used to executed the Nircmd tool to take desktop screenshots The PNG screenshots of the infected systems are then transferred to the C2 server, after which they are deleted from the system.

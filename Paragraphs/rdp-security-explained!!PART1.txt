@@ -1,0 +1,3 @@
+By Darren Fitzpatrick , John Fokker and Eamonn Ryan on Jun 24, 2019 RDP on the Radar Recently, McAfee released a blog related to the wormable RDP vulnerability referred to as CVE-2019-0708 or “Bluekeep.”
+The blog highlights a particular vulnerability in RDP which was deemed critical by Microsoft due to the fact that it exploitable over a network connection without authentication.
+These attributes make it particularly ‘wormable’ – it can easily be coded to spread itself by reaching out to other accessible networked hosts, similar to the famous EternalBlue exploit of 2017.

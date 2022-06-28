@@ -1,0 +1,8 @@
+
+As we had successfully extracted the firmware, we used IDA Pro to attempt to learn more about why this crash was occurring.
+The developers did not strip the binaries during compiling time, which helped simplify the reversing process in IDA.
+Figure 8 The disassembly told us that memcpy was attempting to write what was in R3 to the “address” stored in R0.
+In this case, however, we had corrupted that address, causing the segmentation fault.
+The contents of several other registers also provided additional information.
+The value 0x81 in R3 was potentially the first byte of a BACnet packet from the BACnet Virtual Link Control (BVLC) layer, identifying the packet as BACnet.
+By looking at R3 and the values at the address in R5 together, we confirmed with more certainty that this was in fact the BVLC layer.

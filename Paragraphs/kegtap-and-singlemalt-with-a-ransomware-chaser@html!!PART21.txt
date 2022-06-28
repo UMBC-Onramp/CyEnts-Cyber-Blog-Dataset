@@ -1,0 +1,5 @@
+
+Ensure that critical patches are installed on Windows systems as well as network infrastructure.
+We have observed attackers exploiting well-known vulnerabilities such as Zerologon (CVE-2020-1472) to escalate privileges in an environment prior to deploying ransomware.
+In other cases, possibly unrelated to UNC1878, we have observed threat actors gain access to an environment through vulnerable VPN infrastructure before deploying ransomware.
+For more intelligence on ransomware and other threats, please register for Mandiant Advantage Free , a no-cost version of our threat intelligence platform.

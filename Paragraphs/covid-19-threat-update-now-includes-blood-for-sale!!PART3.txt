@@ -1,0 +1,9 @@
+
+The volume of threats related to COVID-19 has been significant, with lures used in all manner of attacks.
+Tracking these campaigns reveals the most targeted sector is healthcare, followed by finance, and then education.
+Mobile Threats In March 2020 alone, McAfee Labs identified several malicious Android applications abusing keywords connected to the pandemic.
+The apps range from ransomware samples to spy-agents that spy on the victim’s device.
+For example, statically analyzing an app called “Corona Safety Mask,” we observe that the amount of permissions is suspicious: Full Internet access that allows the app to create network sockets Read contact data from the victim’s device Send SMS messages When the user downloads the app, it can order a facemask from the following site: “ coronasafetymask.tk. ”
+The SMS send permission is abused to send the scam to the victim’s contact list.
+Although attribution will clearly be a key concern it is not the primary focus of our research, however there appears to be APT groups incorporating  the COVID-19 theme into their campaigns.
+For example, spreading documents that talk about the pandemic and are weaponized with malicious macro-code to download malware to the victim’s system.

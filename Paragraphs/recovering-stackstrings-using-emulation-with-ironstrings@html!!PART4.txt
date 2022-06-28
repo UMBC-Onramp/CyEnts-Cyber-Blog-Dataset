@@ -1,0 +1,6 @@
+
+While I could have tried to feed my patches in IDA Pro back to vivisect or to create a modified binary, I instead created a new IDAPython script that does not depend on vivisect.
+Thus, circumventing the mentioned shortcomings.
+It uses IDA Pro’s program analysis and Unicorn’s emulation engine.
+The easy integration of these two tools is powered by flare-emu .
+Using IDA Pro instead of vivisect resolves multiple limitations of our previous implementations.

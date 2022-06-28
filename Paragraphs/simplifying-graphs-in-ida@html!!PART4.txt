@@ -1,0 +1,10 @@
+
+By combining these together it’s possible to isolate parts of a control flow graph for in-depth reverse engineering, allowing you to look at Figure 3 instead of Figure 1.
+Figure 3: Isolated subgraph to focus on Create Unique-Reachable (UR)
+Subgraph Unique-Reachable nodes are all nodes reachable in the graph from a given start node and that are not reachable from any nodes not currently in the UR set.
+For example, in Figure 4, all of the Unique-Reachable nodes starting at the green node are highlighted in blue.
+The grey node is reachable from the green node, but because it is reachable from other nodes not in the current UR set it is pruned prior to group creation.
+Figure 4:
+Example Unique Reachable selection The plug-in allows you to easily create a new group based on the UR definition.
+Select a node in IDA's graph view to be the start of the reachable search.
+Right click and select \"SimplifyGraph -> Create unique-reachable group\".

@@ -1,0 +1,11 @@
+
+The request is made using the service's Service Principal Name (“SPN”).
+In this case, the SPN would be cifs/SQLSERVER.ACMENET.CORP.
+Windows builds the service ticket request in a TGS-REQ packet.
+Within the TGS-REQ packet, Windows places a copy of the TGT previously obtained from the Domain Controller.
+This time, the Authenticator is encrypted with the TGT session key previously obtained from the domain controller.
+An example TGS-REQ packet is shown in Figure 7.
+Figure 7: TGS-REQ
+Once the Domain Controller receives the TGS-REQ packet, it extracts the TGT from the request and decrypts it with the krbtgt Kerberos key.
+The Domain Controller verifies that the TGT is valid and extracts the session key field from the TGT.
+The Domain Controller then attempts to decrypt the Authenticator in the TGS-REQ packet with the session key.

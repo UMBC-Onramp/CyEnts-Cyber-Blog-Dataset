@@ -1,0 +1,8 @@
+
+Substring(2 *$_,2))};iex $s\" root/cimv2 WQL SELECT * FROM Win32_ShadowCopy ID Win32_ShadowCopy.
+ID='%s' .exe
+LOG%s.
+TXT README%s.
+TXT Software\\Classes\\exefile\\shell\\open\\command \\slui.exe runas Elevation:Administrator!new: {3E5FC7F9-9A51-4367-9063-A120244FBEC7} explorer.exe Figure 19: Decrypted strings Appendix B: Indicators for Detection and Hunting Yara Detections
+The following YARA rules are not intended to be used on production systems or to inform blocking rules without first being validated through an organization's own internal testing processes to ensure appropriate performance and limit the risk of false positives.
+These rules are intended to serve as a starting point for hunting efforts to identify related activity; however, they may need adjustment over time if the malware family changes.

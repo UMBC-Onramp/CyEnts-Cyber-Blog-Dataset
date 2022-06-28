@@ -1,0 +1,6 @@
+
+Additionally, Logon Tracker provides investigators the ability to: Filter logon data for activity originating from user-provided IP ranges Search for logon data for activity by specific privileged accounts, including “Domain Administrators” and “Enterprise Administrators” Search for any privileged logon using the “Privileged” logon type Provide alerting and definition of custom rules (coming soon!)
+Case Background In mid-July, the Managed Defense Security Operations Center identified potential credential harvesting activity on a Windows server.
+The activity included the creation of a scheduled task configured to execute the built-in Windows utility, NTDSUTIL to take a snapshot of the active NTDS.dit file and save it locally to a text file as shown in Figure 2: \"schtasks  /s
+<redacted> /create /tn ntbackup /tr
+\\\"ntdsutil snapshot \\\\\\\"activate instance ntds\\\\\\\" create quit quit >c:\\\\Users\\\\admin\\\\AppData\\\\Local\\\\Temp\\\\ntds.log\\\" /sc

@@ -1,0 +1,8 @@
+
+It is ultimately executed by “PowerShell.exe”.
+The decoded PE file is a .Net program that contains a function named “Run()” belonging to class “ClassLibrary3.Class1”.
+Below is a piece of PowerShell code used to call this function.
+The “$fuUN” variable contains the base64-decoded .Net
+PE file, from which it calls GetType() and GetMethod() to obtain the function “ClassLibrary3.Class1.Run()”.
+Next, it calls the “Run()” function through Invoke() and passes a parameter with a reversed URL.
+The URL is “hxxps[:]//bitbucket[.]org/!api/2.0/snippets/hogya/nxq8od/c73df176f221868c33d4b3033ec04dc173d4ba4c/files/divine1-1”.

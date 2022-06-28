@@ -1,0 +1,10 @@
+
+Identifying and detecting websites that have embedded coin mining code can be difficult since not all coin mining scripts are authorized by website publishers, such as in the case of a compromised website.
+Further, in cases where coin mining scripts were authorized by a website owner, they are not always clearly communicated to site visitors.
+At the time of reporting, the most popular script being deployed in the wild is Coinhive.
+Coinhive is an open-source JavaScript library that, when loaded on a vulnerable website, can mine Monero using the site visitor's CPU resources, unbeknownst to the user, as they browse the site.
+The following are some real-world examples of Coinhive being deployed in the wild: In September 2017, Bleeping Computer reported that the authors of SafeBrowse, a Chrome extension with more than 140,000 users, had embedded the Coinhive script in the extension's code that allowed for the mining of Monero using users' computers and without getting their consent.
+During mid-September 2017, users on Reddit began complaining about increased CPU usage when they navigated to a popular torrent site, The Pirate Bay (TPB).
+The spike in CPU usage was a result of Coinhive's script being embedded within the site's footer.
+According to TPB operators, it was implemented as a test to generate passive revenue for the site (Figure 8).
+In December 2017, researchers with Sucuri reported on the presence of the Coinhive script being hosted on GitHub.io, which allows users to publish web pages directly from GitHub repositories.

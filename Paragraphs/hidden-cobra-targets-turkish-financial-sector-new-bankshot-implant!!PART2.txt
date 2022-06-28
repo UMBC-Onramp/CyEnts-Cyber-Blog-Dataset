@@ -1,0 +1,8 @@
+
+Bankshot is designed to persist on a victim’s network for further exploitation; thus the Advanced Threat Research team believes this operation is intended to gain access to specific financial organizations.
+Based on our analysis, financial organizations in Turkey were targeted via spear phishing emails containing a malicious Microsoft Word document.
+The document contains an embedded Adobe Flash exploit, which was recently announced by the Korean Internet Security agency.
+The exploit, which takes advantage of CVE-2018-4878, allows an attacker to execute arbitrary code such as an implant.
+the Further investigation into this campaign and analysis of McAfee product telemetry shows that the infection occurred on March 2 and 3.
+The implant’s first target was a major government-controlled financial organization.
+It next appeared in another Turkish government organization involved in finance and trade.

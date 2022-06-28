@@ -1,0 +1,6 @@
+
+This means that the vulnerability cannot be used on its own to compromise a customer’s security.
+An attacker would first need to gain access to a remote system running any of the above operating systems before they could execute code within the context of the Windows Kernel.
+Investigation by FireEye Labs has revealed evidence that attackers have likely used variations of these exploits for a while.
+Windows 8 and Windows Server 2012 and later do not have these same vulnerabilities.
+Information on the companies affected, as well as threat actors, is not available at this time.

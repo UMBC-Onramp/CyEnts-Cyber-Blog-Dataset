@@ -1,0 +1,7 @@
+
+We now assess that espionage activity by UNC2630 and UNC2717 supports key Chinese government priorities.
+Many compromised organizations operate in verticals and industries aligned with Beijing’s strategic objectives outlined in China’s recent 14th Five Year Plan.
+While there is evidence of data theft at many organizations, we have not directly observed the staging or exfiltration of any data by Chinese espionage actors that could be considered a violation of the Obama-Xi agreement .
+Mandiant Threat Intelligence assesses that Chinese cyber espionage activity has demonstrated a higher tolerance for risk and is less constrained by diplomatic pressures than previously characterized.
+Figure 1:
+Organizations with compromised Pulse Secure devices by vertical and geographic location Pulse Secure continues to work closely with Mandiant, affected customers, government partners, and other forensic experts to address these issues.

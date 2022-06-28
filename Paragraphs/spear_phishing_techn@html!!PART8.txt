@@ -1,0 +1,11 @@
+
+Figure 11:
+PowerShell registry persistence Fourth Stage PowerShell Inject-LocalShellCode
+The HKCU\\Console\\FontSecurity registry contains the fourth stage PowerShell script, shown decoded in Figure 12.
+This script borrows from the publicly available Inject-LocalShellCode PowerShell script from PowerSploit to inject shellcode.
+Figure 12:
+Code to inject shellcode Shellcode Analysis The shellcode has a custom XOR based decryption loop that uses a single byte key (0xD4), as seen in Figure 13.
+Figure 13:
+Decryption loop and call to decrypted shellcode After the shellcode is decrypted and run, it injects a Poison Ivy backdoor into the userinit.exe as shown in Figure 14.
+Figure 14:
+Code injection in userinit.exe and attempt to access Poison Ivy related DAT files In the decrypted shellcode, we also observed content and configuration related to Poison Ivy.

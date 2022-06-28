@@ -1,0 +1,11 @@
+
+The relationship between these different authors is still unclear.
+What we are certain about is that this variant is being actively operated, as also shown by recently updated binaries found in one of its download servers.
+SORA - The Surviving Member of the Wicked Family
+It is also interesting to see Mirai variants that were authored by the threat actor known as Wicked that we covered three years ago.
+These variants include Owari, Omni, Wicked, and SORA.
+Based on an interview at that time, the author stated he was going to focus on Owari and Omni while abandoning the other two variants, including SORA.
+Based on our observastions, it seems that SORA has more successfully survived than its siblings.
+Mirai Variant MANGA
+Actively Updates its List of Targeted Vulnerabilities Aside from the honeypot, we have also been monitoring Mirai variants from other sources.
+In particular, we have been closely monitoring the developments of the MANGA variant because it is one of the most active in terms of adding new exploit vectors to its list.

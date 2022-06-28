@@ -1,0 +1,8 @@
+
+It downloads the shortcut file and places it into the Startup folder, as shown in Figure 11.
+Figure 11:
+Downloading Shortcut File
+The target command for the shortcut file points to the remote application “client32.exe,” which was dropped in %AppData%, to start the application on startup.
+LogList.rtf
+Although the file extension is .rtf, the file is actually a 7zipped archive.
+This archive file is password-protected and contains the NetSupport Manager RAT.

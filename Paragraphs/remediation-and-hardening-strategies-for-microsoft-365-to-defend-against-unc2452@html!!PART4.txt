@@ -1,0 +1,4 @@
+
+Attacker Tactics, Techniques and Procedures (TTPs) Mandiant has observed UNC2452 and other threat actors moving laterally to the Microsoft 365 cloud using a combination of four primary techniques: Steal the Active Directory Federation Services (AD FS) token-signing certificate and use it to forge tokens for arbitrary users (sometimes described as Golden SAML ).
+This would allow the attacker to authenticate into a federated resource provider (such as Microsoft 365) as any user, without the need for that user’s password or their corresponding multi-factor authentication (MFA) mechanism.
+Modify or add trusted domains in Azure AD to add a new federated Identity Provider (IdP) that the attacker controls.

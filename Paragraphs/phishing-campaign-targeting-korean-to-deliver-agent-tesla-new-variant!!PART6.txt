@@ -1,0 +1,6 @@
+
+Figure 2.2 is a screenshot of a proxy tool, allowing you to see the URL redirection and escaped VBScript code in the response packet.
+The escaped VBScript code is executed within the current HTML document using “mshat.exe”.
+I will refer to this kind of VBScript as VBScript-embedded-in-HTML in this analysis.
+Click here to view the entire un-escaped code of the VBScript-embedded-in-HTML.
+VBScript, PowerShell scripts for multiple tasks The developer uses a wide variety of scripts, including VBScript-embedded-in-HTML, standalone VBScript, and PowerShell, during the process of delivering Agent Tesla to protect it from being easily analyzed.

@@ -1,0 +1,5 @@
+
+As the malware source codes of those three botnets are readily available, the education sector is a potential target of both serious and novice botnet attackers.
+The following graphs show the top five AV detection observed in the education sector in the US and worldwide, from August 11 th to September 10 th , 2021.
+This data indicates which malware was blocked during that period.
+Cryxos was to most common malware triggered in the US as well as worldwide.

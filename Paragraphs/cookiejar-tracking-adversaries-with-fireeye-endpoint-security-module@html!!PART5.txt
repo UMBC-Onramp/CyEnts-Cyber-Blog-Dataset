@@ -1,0 +1,4 @@
+
+once /st 05:38:00 /sd
+07-12-2020 /f Figure 2: Scheduled task creation for NTDS.DIT harvesting The NTDS.dit file is a database that contains Active Directory data such as user objects, group memberships, groups, and—more useful to an adversary—password hashes for all users in the domain.
+Leveraging Logon Tracker and simple timeline analysis, Managed Defense quickly determined an adversary had accessed this system to create a scheduled task from a system with a hostname that did not match the naming convention used within the environment.

@@ -1,0 +1,4 @@
+
+While Mandiant does not suspect many victims were compromised, this technique is being reported for broader awareness.
+Software supply chain attacks can vary greatly in sophistication, from the recent FireEye-discovered SolarWinds attacks to attacks such as this targeting smaller providers.
+A software supply chain attack allows a single intrusion to obtain the benefit of access to all of the organizations that run that victim company’s software; in this case, an installer, rather than the software itself, was modified by UNC2465.

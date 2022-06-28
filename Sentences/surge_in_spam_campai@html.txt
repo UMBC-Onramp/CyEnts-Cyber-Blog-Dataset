@@ -1,0 +1,119 @@
+FireEye Labs is detecting a significant spike in Locky ransomware downloaders due to a pair of concurrent email spam campaigns impacting users in over 50 countries.
+
+Some of the top affected countries are depicted in Figure 1.
+
+Figure 1.
+
+Affected countries As seen in Figure 2, the steep spike starts on March 21, 2016, where Locky is running campaigns that coincide with the new Dridex campaigns that were discussed in the blog, “Stop Scanning My Macro”.
+
+Figure 2.
+
+Detection on spam delivered malware Prior to Locky’s emergence in February 2016, Dridex was known to be responsible for a relatively higher volume of email spam campaigns.
+
+However, as shown in Figure 3, we can see that Locky is catching up with Dridex’s spam activities.
+
+This is especially true for this week, as we are seeing more Locky-related spam themes than Dridex.
+
+On top of that, we also are seeing Dridex and Locky running campaigns on the same day, which resulted in an abnormal detection spike.
+
+Figure 3.
+
+Dridex versus Locky spam campaign over time Locky Ransomware spam The new Locky spam campaign uses several themes such as “invoice notice”, “attached image”, and “attached document themes”.
+
+See Figure 4 and Figure 5 for example campaign emails.
+
+Figure 4.
+
+Urgent Invoice Campaign Figure 5.
+
+Other Campaigns The ZIP attachment as depicted in Figure 6 contains a malicious JavaScript downloader that downloads and installs the Locky ransomware.
+
+Figure 6.
+
+Zipped Content In Figure 7, it is interesting to see that the recent Locky campaign seems to prefer using a JavaScript-based downloader in comparison to Microsoft Word and Excel macro-based downloaders, which were seen being used in its early days.
+
+Figure 7.
+
+Locky Downloader Mechanism The preference for JavaScript downloaders could be due to the ease to transform or obfuscate the script via automation to generate new variants as depicted in Figure 8.
+
+As a result, the traditional signature-based solution may not keep up with the variants where its behavioral intent is the same.
+
+At the time of discovery, most of the samples that we see are being detected by only one vendor, according to VirusTotal.
+
+Figure 8.
+
+Obfuscated JavaScript code
+
+Conclusions The volume of Locky ransomware downloaders observed is increasing and it may potentially replace the Dridex downloader as the top spammer.
+
+One of the latest victims of Locky is Methodist Hospital [1], where the victim was reportedly forced to pay a ransom to retrieve their encrypted data.
+
+This suggests that the cybercriminals are earning more from ransomware and this drives their aggressive campaigns.
+
+On top of that, JavaScript downloaders seem to be the preferred medium for delivering its payload as it could be easily obfuscated to create new variants.
+
+Technical Analysis of a Locky Payload Sample MD5 Sum: 3F118D0B888430AB9F58FC2589207988 (First seen on 2016-02-24 in VirusTotal) Persistence Mechanism
+
+The malware does not contain a persistence mechanism.
+
+An external tool or installer is required if the attacker desires persistence.
+
+The malware contains the ability to install the following registry key for persistence; this functionality is disabled in this variant.
+
+HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Locky <path_to_malware
+
+> File System Artifacts
+
+The malware encrypts files on the system and creates new files with the encrypted contents in the same directory with the following naming convention: <system identifier><16 random hex
+
+digits>.locky The <system identifier> value is the ASCII hexadecimal representation of the first eight bytes of the MD5 hash of the GUID of the system volume.
+
+The malware drops a ransom note provided by the C2 server in all directories with encrypted files and on the desktop of the current user: _Locky_recover_instructions.txt
+
+The malware drops an image on the desktop of the current user: _
+
+Locky_recover_instructions.bmp
+
+Registry Artifacts
+
+The malware creates the registry key HKCU\\Software\\Locky.
+
+id is set to a unique identifier generated for the compromised system.
+
+pubkey is set to a binary buffer that contains a public RSA key.
+
+paytext is set to a binary buffer containing the recovery instructions.
+
+completed is set to 1.
+
+The malware changes the desktop background to a bitmap containing the ransom instructions.
+
+HKCU\\Control Panel\\Desktop\\Wallpaper is set to: %CSIDL_DESKTOPDIRECTORY%\\_Locky_recover_instructions.bmp Network-Based Signatures Command and Control (CnC)
+
+The malware communicates with the following hard-coded hosts using HTTP over TCP port 80.
+
+The malware also uses a domain name generation algorithm as described below.
+
+188.138.88.184 31.41.47.37 5.34.183.136 91.121.97.170 Beacon Packet The malware beacon builds a HTTP POST request to /main.php as shown in Figure 9.
+
+The POST data is encoded using a custom algorithm.
+
+Figure 9.
+
+HTTP POST request polling packet (general packet structure)
+
+Domain Generation Algorithm (DGA)
+
+This sample contains a domain name generation algorithm that is based on the current month, day and year.
+
+There are eight possible domains per day and the domains change on the first of the month and on even numbered days.
+
+Figure 10 contains Python code to generate the eight possible domain names for the current date.
+
+Figure 10.
+
+Locky Domain Generation Algorithm [1] http://arstechnica.com/security/2016/03/kentucky-hospital-hit-by-ransomware-attack/ Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

@@ -1,0 +1,11 @@
+
+The benefits from this service greatly outweigh the risks.
+Being able to use global and custom banned passwords lists , for both the cloud and on-premises , is a tremendous benefit.
+Forward all M365 unified audit logs and Azure logs to a SIEM and build detections.
+Ensure you are forwarding the logs recommended in this post and building the appropriate detections and playbooks within your security operations teams.
+Specifically monitor for: Set-AcceptedDomain Set-MsolDomainFederationSettings Add-FederatedDomain New-Accepted Domain Remove-Accepted Domain Remove-FederatedDomain Periodically review all identity providers and custom domains configured in the M365 tenant.
+If an attacker is successful at gaining global administrative privileges, they may choose to add their own identity provider and custom domain to maintain persistence.
+Acknowledgements I want to give a special thanks to Daniel Taylor, Roberto Bamberger and Jennifer Kendall at Microsoft for collaborating with Mandiant on the creation of this blog post.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

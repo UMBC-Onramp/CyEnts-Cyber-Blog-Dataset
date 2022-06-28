@@ -1,0 +1,2 @@
+
+The report covers several technical recommendations to help organizations mitigate the risk of and contain ransomware events including: Endpoint segmentation Hardening against common exploitation methods Reducing the exposure of privileged and service accounts Cleartext password protections If you are reading this report to aid your organization’s response to an existing ransomware event, it is important to understand how the ransomware was deployed through the environment and design your ransomware response appropriately.

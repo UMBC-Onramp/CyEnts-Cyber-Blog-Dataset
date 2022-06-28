@@ -1,0 +1,7 @@
+
+Here is what an initial IOC looks like: Figure 1: Initial IOC for acmCleanup.exe (BACKDOOR)
+As analysis continues, these IOCs are updated and improved - incorporating indicator terms from malware and intelligence analysis as well as being refined based on the environment.
+In this sense, the IOC is a living document.
+For example, additional analysis may reveal more registry key information, additional files which may be written to disk, or information for identifying the malware in memory.
+Here is the same IOC, after augmenting it with the results of malware analysis:
+Figure 2: Augmented IOC for acmCleanup.exe (BACKDOOR)

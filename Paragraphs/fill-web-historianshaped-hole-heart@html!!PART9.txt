@@ -1,0 +1,9 @@
+
+With Redline, you are not simply restricted to Web History related data; you can investigate security incidents with the scope and context of the full system.
+If your favorite feature from Web Historian has not yet been included in Redline (Graphing, Complex Filtering, etc.), feel free to make a request using one of the contact methods specified below.
+We will be taking feedback into consideration when choosing what the Redline team works on in the future.
+As always, feel free to contact us with send any additional questions.
+And just in case you do not already have it, the latest version of Redline (v1.10 as of the time of this writing) can always be found here .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

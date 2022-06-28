@@ -1,0 +1,7 @@
+
+Next year we expect that cybercriminals will repurpose these campaigns to extort companies by threatening to damage their brands.
+Organizations face a serious danger.
+Data Exfiltration Attacks to Target the Cloud
+In the past two years, enterprises have widely adopted the Software-as-a-Service model, such as Office 365, as well as Infrastructure- and Platform-as-a-Service cloud models, such as AWS and Azure.
+With this move, far more corporate data now resides in the cloud.
+In 2019, we expect a significant increase in attacks that follow the data to the cloud.

@@ -1,0 +1,5 @@
+
+Next, we would try to recreate those conditions by running that code manually, thus replaying the previously observed event.
+This strategy proved effective in granting us control over every category of device the eBMGR supports.
+Moreover, this method remains agnostic to the specific hardware attached to the building manager.
+Hypothetically, this sort of attack would work without any prior knowledge of the device’s configuration.

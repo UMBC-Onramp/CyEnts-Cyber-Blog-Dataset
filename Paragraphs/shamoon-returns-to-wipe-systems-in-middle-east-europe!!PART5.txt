@@ -1,0 +1,14 @@
+
+Shamoon is modular malware:
+The wiper component can be reused as a standalone file and weaponized in other attacks, making this threat a high risk.
+The post presents our findings, including a detailed analysis and indicators of compromise.
+Analysis Shamoon is a dropper that carries three resources.
+The dropper is responsible for collecting data as well as embedding evasion techniques such as obfuscation, antidebugging, or antiforensic tricks.
+The dropper requires an argument to run.
+It decrypts the three resources and installs them on the system in the %System% folder.
+It also creates the service MaintenaceSrv, which runs the wiper.
+The typo in the service name eases detection.
+The Advanced Threat Research team has watched this service evolve over the years.
+The following tables highlight the differences: The wiper uses ElRawDisk.sys to access the user’s raw disk and overwrites all data in all folders and disk sectors, causing a critical state of the infected machine before it finally reboots.
+The result is either a blue screen or driver error that renders the machine unusable.
+Overview Dropper Executable summary The dropper contains other malicious components masked as encrypted files embedded in PE section.

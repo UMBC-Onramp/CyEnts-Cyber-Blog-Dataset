@@ -1,0 +1,6 @@
+
+They cooperated with us in investigating the vulnerabilities and taking appropriate actions to fix the issues.
+But why should we spend so much time and effort in researching vulnerabilities when there are many other ways to retrieve medical images from the Internet?
+Medical Image Formats The medical world uses several image formats for different purposes.
+Each format has different requirements and works with different equipment, protocols, etc.
+A few format examples: NifTi Neuroimaging Informatics Technology Initiative Dicom Digital Imaging and Communications in Medicine MINC Medical Imaging NetCDF

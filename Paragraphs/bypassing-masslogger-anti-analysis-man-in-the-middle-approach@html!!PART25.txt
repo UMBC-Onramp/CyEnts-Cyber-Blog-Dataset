@@ -1,0 +1,5 @@
+
+Use addsection.py to add section.bin into Bin-123.exe and save the data into a new file, e.g. Bin-123.fixed.exe .
+Use pydnet.py to parse Bin-123.fixed.exe and update the RVA field of each method entry in the MethodDef table to point to the correct RVA into the new section.
+The final result is a partially reconstructed .NET assembly.
+Although additional work is necessary to get this assembly to run correctly, it is good enough to perform static analysis to understand the malware’s high-level functionalities.

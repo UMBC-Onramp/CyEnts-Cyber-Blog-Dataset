@@ -1,0 +1,7 @@
+
+And if you simply don’t know who the sender is, check with colleagues; Prohibit macros by default, and treat documents that require you to enable macros or other content with suspicion.
+Never run a macro unless you’re absolutely sure the file needs it — and is safe; Install a reliable security solution .
+If you work on a personal device, or your employer is lax when it comes to workstation protection, make sure it’s protected.
+Our products detect both IcedID and Qbot.
+
+

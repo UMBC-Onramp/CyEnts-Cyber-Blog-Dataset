@@ -1,0 +1,5 @@
+
+It then tries to encrypt as many files as it can, giving encrypted files an extension name similar to the random string in the ransom note file name.
+It also uses the Windows Defender executable, MsMpEng.exe, to avoid detection, but it side-loads the malicious library, “mpsvc.dll”, to employ its payload.
+The future variant of this ransomware might use a different valid executable, but so far, we have only observed MsMpEng.exe.
+There are different variants of this ransomware where the strings, including the ransom note and C&Cs, are encrypted using randomized keys within its code.

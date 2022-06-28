@@ -1,0 +1,7 @@
+
+The threat actor has exfiltrated data over SFTP using Rclone to systems in cloud hosting environments.
+Rclone is a command line utility to manage files for cloud storage applications.
+Notably, the infrastructure used for data exfiltration has been reused across multiple intrusions.
+In one case, the data exfiltration occurred on the same day that the intrusion began.
+UNC2628 deploys DARKSIDE ransomware encryptors using PsExec to a list of hosts contained in multiple text files.
+The threat actor has used the following directories, placing copies of backdoors, ransomware binaries, copies of PsExec, and lists of victim hosts within them.

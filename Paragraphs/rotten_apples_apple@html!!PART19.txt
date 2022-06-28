@@ -1,0 +1,5 @@
+
+We witnessed a high frequency of these targeted phishing attacks in the first quarter of 2016.
+A few phishing campaigns were particularly interesting because of their sophisticated evasion techniques (using code encoding and obfuscation), geographical targets, and because the same content was being served across multiple domains, which indicates the same phishing kits were being used.
+One campaign we detected in March used sophisticated encoding/encryption techniques to evade phishing detection systems and provided a realistic looking Apple/iCloud interface.
+The majority of these domains were registered by individuals having email addresses pointing to Chinese services – registrant email, contact and address information points to China.

@@ -1,0 +1,11 @@
+
+On Google Play, our mobile antivirus app is currently called Kaspersky Mobile Antivirus: Applock & Web Security .
+Ironically, users who downloaded the fake antivirus app received a banking Trojan known as TeaBot, which our security products detect as HEUR: Trojan-Banker.
+AndroidOS.Teaban or HEUR:
+Trojan-Banker.
+AndroidOS.Regon.
+Why is this especially problematic in the case of antivirus apps?
+It’s because the user not only downloads and installs a banking Trojan disguised like this, but also grants it all of the permissions it requests.
+After all, an authentic antivirus app needs a lot of permissions, including very powerful access such as Accessibility services .
+Worse, in the absence of actual antivirus protection, the device cannot detect the malware.
+Completing installation and granting all requested permissions gives the TeaBot Trojan the ability to do almost anything on the Android device.

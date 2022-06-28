@@ -1,0 +1,12 @@
+
+Since the device is making a change to an IO device, it is highly likely that the Linux system call used is “ioctl”.
+When cross-referencing the functions that start with “canio” and that call “ioctl”, our prior search space of 28 drops to 14.
+One function name stood out above the rest: “canioWriteOutput”.
+The decompiled version of the function has been reproduced in Figure 29.
+Figure 29 Using this hypothesis, we set a break point on the call to “ioctl” inside canioWriteOutput and use the touchscreen to change the state of one of the binary outputs from “off” to “on”.
+Our breakpoint was hit!
+Single stepping over the breakpoint, we were able to see the correct LED light up, indicating the output was now on.
+Now knowing the function we needed to hook, the question quickly became: How do we hook it?
+There are several methods to accomplish this task, but one of the simplest and most stable is to write a library that the main binary will load into memory during its startup process, using an environment variable called LD_PRELOAD.
+If a path or multiple paths to shared objects or libraries are set in LD_PRELOAD before executing a program, that program will load those libraries into its memory space before any other shared libraries.
+This is significant, because when Linux resolves a function call, it looks for function names in the order in which the libraries are loaded into memory.

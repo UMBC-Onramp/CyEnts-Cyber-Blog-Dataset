@@ -1,0 +1,10 @@
+
+This variant inserts a check against the backdoor password after the bind routine so that the return value can be conditionally stomped to spoof successful authentication.
+Figure 1: LDAP Auth Bypass RADIUS Two Factor Auth Bypass The routine DSAuth::RadiusAuthServer::checkUsernamePassword begins the RADIUS-2FA authentication procedure.
+This variant inserts checks against the backdoor password after the RADIUS authentication packet is received back from the authentication server.
+If the backdoor password is provided by the attacker, the packet type and successful authentication status flags are overwritten to spoof successful authentication.
+Figure 2: Radius-2FA Bypass SLOWPULSE Variant 2 ACE Two Factor Auth Credential Logging This variant logs credentials used during the ACE-2FA authentication procedure DSAuth::AceAuthServer::checkUsernamePassword .
+Rather than bypassing authentication, this variant logs the username and password to a file for later use by the attacker.
+Figure 3:
+ACE Auth Credential Log SLOWPULSE Variant 3 ACE Two Factor Auth Bypass This variant is responsible for bypassing the ACE-2FA logon procedure starting with DSAuth::AceAuthServer::checkUsernamePassword .
+The flow of the authentication procedure is modified to bypass the routine responsible for verifying the username and password if the backdoor password is provided.

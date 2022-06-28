@@ -1,0 +1,13 @@
+
+With the information retrieved from our honeypot investigations, it might give us a hypothesis that the Persian language is present due to the involvement of Persian-speaking affiliates.
+Time and evidence will tell.
+We observed many affiliates using different sets of tools and skills to gain profit and, across the series, we highlighted different aspects of this massive ongoing operation.
+To protect your organization against Sodinokibi, make sure your defense is layered.
+As demonstrated, the actors we are facing either buy, brute-force or spear-phish themselves into your company or use a trusted-third party that has access to your network.
+Some guidelines for organizations to protect themselves include employing sandboxing, backing up data, educating their users, and restricting access.
+As long as we support the ransomware model, ransomware will exist as it has for the last four years.
+We cannot fight alone against ransomware and have to unite as public and private parties.
+McAfee is one of the founding partners of NoMoreRansom.org and are supporting Law Enforcement agencies around the globe in fighting ransomware.
+We hope you enjoyed reading this series of blogs about Sodinokibi.
+
+

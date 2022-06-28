@@ -1,0 +1,6 @@
+
+In addition, security awareness is more than just important.
+In particular, we recommend: Raising employee awareness about modern cyberthreats and the role all staff play in cybersecurity; Avoiding remote connections to internal networks to the extent possible; Maintaining a strict password policy requiring all passwords be unique, complex, and secure; Installing security patches and updates promptly; Using robust security solutions on all devices with access to the Internet, including medical equipment and information kiosks and panels ; Protecting corporate mail servers , through which a fair number of threats enter company infrastructure.
+Additionally, Endpoint Detection and Response –class solutions can help detect ransomware threats in their early stages, simplifying response actions and investigation.
+
+

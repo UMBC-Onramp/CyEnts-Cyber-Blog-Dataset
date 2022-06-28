@@ -1,0 +1,5 @@
+
+In 2018, IoT devices are being used to spy – but not by corporations.
+Cybercriminals are continuing to use vulnerable IoT devices to their advantage, swooping data and spying on families as a result of device vulnerabilities.
+From smart TVs to baby monitors , the handful of IoT attacks in 2018 have proved that these devices still have ways to go when it comes to a solid security posture.
+The Next Six Months Serverless Apps: New Opportunities for Friend and Foe The Prediction Cybercriminals will take advantage of convenient opportunities as they arise, which is precisely why our team predicted that threat actors will jump on serverless apps this year, using their greater granularity as a chance to increase the attack surface and steal data in transit across a network.

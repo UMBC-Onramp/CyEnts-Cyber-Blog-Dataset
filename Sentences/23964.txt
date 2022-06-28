@@ -1,0 +1,67 @@
+On this blog, you will often see posts that discuss how cybercriminals will take every advantage that is at their disposal to make a quick buck or gain a foothold into a corporate infrastructure.
+
+In the past, we’ve seen targeting focused on the coronavirus , World Cups, Olympics , elections and basically any other major event.
+
+And the reason is simple — these items are passionate topics that people resonate with.
+
+Passion, at times, will undermine the usual cautiousness that people have in terms of questioning what they see or click on or share with their friends, family, co-workers and just about anybody on social media.
+
+Fast forward to today and we are seeing the eyes of the world turned toward the geopolitical conflict in Ukraine.
+
+The increased focus on this conflict has seen a growth in people looking at how to get involved – including cybercriminals looking to make a quick buck.
+
+If you’re on any social network, you have probably seen people jumping on hashtags or flooding feeds with information on the current events.
+
+In some areas, it will seem like friends you’ve known for years have turned into bots blindly sharing.
+
+However, there are those that want to do more and join the cause.
+
+In particular, there are some folks who look to joining hacktivism groups even if they don’t particularly have the technical skills to carry out hacks.
+
+More technically savvy hacktivists have made it easy for their less-techy brethren with links to easily join up and have scripts run for them.
+
+While we understand that people want to get involved and support these efforts, we have to point out that depending on where you live, or what you are doing, these activities are illegal.
+
+If you are someone that wants to join into these efforts, please make sure that you understand what you are doing from both the ethical and legal angles, as well as those in your heart.
+
+What’s more, you should keep in mind security concerns.
+
+Unfortunately, this trend has been taken up by crooks as well: our colleagues over at Talos recently conducted research on how malefactors were creating similar packages that were, in fact, malware.
+
+Aside from that, some activists are also calling for their supporters to bombard commercial organizations with demands to provide some sort of assistance, or, conversely, to abandon some types of activities.
+
+Among these calls are also quite dangerous ones — for example, to replace security software with less effective products.
+
+These calls to action in hacktivist groups are also ripe for impersonation for criminals that are opportunistic.
+
+These targeted campaigns may also lead to spear phishing attacks .
+
+Tips to stay safe Think for yourself.
+
+We can’t tell you what to do, but we have to remind you that any decision you make has to be based on solid facts, not on fake news .
+
+Always do your own research and try to figure out the full consequences of your actions as best as you can.
+
+Check e-mail senders.
+
+One of the first things to do when it comes to avoiding falling victim to a malicious e-mail is to look at who the sender is.
+
+While the name may seem familiar, make sure that the e-mail is from a trusted source or legitimate company/person reaching out to you.
+
+Confirm links.
+
+Similar to looking at the sender, take a look and make sure that the links are from legitimate sites and tied to the sender when clicking through.
+
+As mentioned earlier, acting with emotions can cloud judgement, so be sure to keep your security vigilance up when clicking e-mail links.
+
+Don’t install suspicious packages.
+
+Growing up, we all heard not to take candy from strangers.
+
+Similarly, you shouldn’t download things from an e-mail or site that you are not sure if it is trustworthy.
+
+And if you’re going to download it anyway, at the very least scan it with a reliable antivirus.
+
+
+
+

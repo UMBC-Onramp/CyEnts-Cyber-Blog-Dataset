@@ -1,0 +1,3 @@
+
+For example, in November 2019, Mandiant observed multiple email campaigns delivering Maze ransomware primarily to individuals at organizations in Germany and the United States, although a significant number of emails were also delivered to entities in Canada, Italy, and South Korea.
+These emails used tax, invoice, and package delivery themes with document attachments or inline links to documents which download and execute Maze ransomware.

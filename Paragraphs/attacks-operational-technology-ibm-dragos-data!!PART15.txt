@@ -1,0 +1,12 @@
+
+Border devices on the OT networks that bridge them to IT networks including firewalls, VPNs and data historians are at high risk.
+Vulnerability management programs can assist organizations in identifying which vulnerabilities deserve the most attention and should be prioritized in a patch management program.
+For example, adversaries frequently exploited CVE-2019-19781 — a Citrix server path traversal flaw — in 2020, providing adversaries access to critical servers and sensitive data.
+Adversaries all but ignored many other vulnerabilities, as exploitation is too complicated or would not provide the access necessary to fulfill objectives.
+X-Force data from 2020 also indicates that organizations’ widespread and successful implementation of MFA may be positively impacting the threat landscape — forcing adversaries to abandon credential theft and brute force attacks as initial infection vectors.
+These trends suggest that aggressive implementation of MFA has the potential to alter the threat landscape over time, shoring up RDP access points as a common initial infection vector, and decreasing the use of credential theft to gain access to OT organizations’ networks.
+Dragos tracks multiple ICS-targeting threat groups that target remote access technologies like RDP, including PARISITE, MAGNALLIUM, ALLANITE (associated with ITG15 or Dragonfly) and XENOTIME (the activity behind TRISIS).
+Identifying and prioritizing crown jewels , or the assets that exercise control over the safety of an industrial process, can prevent adversaries from gaining RDP access and modifying existing configurations to assets that could cause major impact to an organization.
+To learn more about our findings, check out the 2021 IBM Security X-Force Threat Intelligence Index and Dragos 2020 ICS Cybersecurity Year in Review .
+
+

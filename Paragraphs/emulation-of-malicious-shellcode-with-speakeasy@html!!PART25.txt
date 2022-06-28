@@ -1,0 +1,6 @@
+
+Note: even though we are emulating code and not actually executing it, these are still attacker generated binaries.
+It may still be wise to emulate malicious code within a virtual machine in the event a vulnerability is discovered in whatever native CPU emulation engine is used.
+After emulation, a report will be generated named “report.json”.
+In addition, a full memory dump of the emulation environment will be compressed and written to “memory_dump.zip”.
+The malware will get loaded into emulated memory inside of a fake container process to simulate a real execution environment that shellcode would expect to be running in.

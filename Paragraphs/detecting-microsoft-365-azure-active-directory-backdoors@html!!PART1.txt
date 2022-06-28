@@ -1,0 +1,6 @@
+Mandiant has seen an uptick in incidents involving Microsoft 365 (M365) and Azure Active Directory (Azure AD).
+Most of these incidents are the result of a phishing email coercing a user to enter their credentials used for accessing M365 into a phishing site.
+Other incidents have been a result of password spraying, password stuffing, or simple brute force attempts against M365 tenants.
+In almost all of these incidents, the user or account was not protected by multi-factor authentication (MFA).
+These opportunistic attacks are certainly the most common form of compromise for M365 and Azure AD, and are usually the initial vector to establish persistence.
+During both incident response (IR) engagements and proactive cloud assessments we are often asked: What are some other types of attacks that Mandiant is seeing against M365 and Azure AD?

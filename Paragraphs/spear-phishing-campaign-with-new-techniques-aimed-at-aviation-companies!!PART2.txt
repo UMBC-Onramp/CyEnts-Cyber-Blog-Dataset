@@ -1,0 +1,9 @@
+
+Spear Phishing Campaign Overview
+The infection cycle begins with phishing emails sent to aviation companies that contain malicious links disguised as pdf attachments.
+The link in the email directs the user to VB Script hosting sites, from which the initial payload (.vbs) is delivered.
+The .vbs script then drops the second stage payload, an xml file containing inline C# .NET assembly code that acts as a RAT loader.
+The loader hollows and injects the final payload, AsyncRAT, into the victim process (RegSvcs.exe).
+AsyncRAT, also known as RevengeRAT, connects to its C2 server, takes control of the compromised machine, and introduces additional payload.
+I will now dive into each of these steps in a bit more detail.
+Spear Phishing Email Spear phishing is a highly targeted attack resulting from extensive research on targeted users and their organizations conducted by threat actors.

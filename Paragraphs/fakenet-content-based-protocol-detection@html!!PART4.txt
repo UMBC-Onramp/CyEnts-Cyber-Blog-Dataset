@@ -1,0 +1,8 @@
+
+The first challenge was to maintain Listener functionality.
+The original architecture relied on Python libraries that interact with the socket.
+Therefore, we needed to maintain “socket autonomy” in the Listener, so we added a “taste()” function for each Listener.
+The routine returns a confidence score based on the likelihood that the packet is associated with the protocol.
+Figure 1 demonstrates the taste() routine for HTTP, which looks for the request method string at the beginning of the packet data.
+It gives an additional point if the packet is on a common HTTP port.
+There were several choices for how these scores were to be tabulated.

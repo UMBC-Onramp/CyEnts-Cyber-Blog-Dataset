@@ -1,0 +1,5 @@
+
+Main function The main function launches the interface with the pre-configuration options.
+We can see here the link to putty.exe (also visible in the screenshots) for the payload that needs to be changed by the user.
+Instead of running an executable, it is also possible to run a command.
+By default, the path for the stub is the following: We can clearly see here a link with Rubella.

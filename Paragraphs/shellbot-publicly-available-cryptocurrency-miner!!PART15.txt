@@ -1,0 +1,7 @@
+
+Is this evidence that the servers IBM infiltrated were associated with the Outlaw group itself?
+It’s possible, and it’s also plausible that other threat actors in this space copied the TTPs or bought the scripts from someone else.
+Mitigating the Risk of Cryptojacking Malware Cryptojacking malware can be an insidious and long-term attack that’s often hard to detect but can be damaging in a number of ways: impaired server performance, accumulation of electricity costs and overheating devices, to name a few.
+What puts companies at greater risk is the residence of malware on networked assets and devices, which can allow attackers to strengthen their foothold down the line.
+That risk can become any other type of attack given the time and the motivation of the attackers.
+In order to minimize the risk of a ShellBot infection, it is vital to properly configure all public-facing devices with strong credentials and ensure that logging is in place.

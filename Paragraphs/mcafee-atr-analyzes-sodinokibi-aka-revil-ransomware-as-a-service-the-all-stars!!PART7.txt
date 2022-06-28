@@ -1,0 +1,3 @@
+
+Linking the Ransomware to Affiliates Through our technical malware analysis, we established that, starting from version 4, GandCrab included certain hardcoded values in the ransomware source code: id – The affiliate id number.
+sub_id – The Sub ID of the affiliate ID; A tracking number for the affiliate for sub-renting infections or it tracks their own campaign, identifiable via the sub_id number.

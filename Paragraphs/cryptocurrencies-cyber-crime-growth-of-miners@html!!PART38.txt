@@ -1,0 +1,3 @@
+
+In addition to using proxies, actors may also establish their own self-hosted miner apps, either on private servers or cloud-based servers that supports Node.js.
+Although private servers may provide some benefit over using a commercial mining service, they are still subject to easy blacklisting and require more operational effort to maintain.

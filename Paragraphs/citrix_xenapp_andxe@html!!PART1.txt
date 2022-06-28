@@ -1,0 +1,3 @@
+A Joint Whitepaper from Mandiant and Citrix Throughout the course of Mandiant’s Red Team and Incident Response engagements, we frequently identify a wide array of misconfigured technology solutions, including Citrix XenApp and XenDesktop.
+We often see attackers leveraging stolen credentials from third parties, accessing Citrix solutions, breaking out of published applications, accessing the underlying operating systems, and moving laterally to further compromise the environment.
+Our experience shows that attackers are increasingly using Citrix solutions to remotely access victim environments post-compromise, instead of using traditional backdoors, remote access tools, or other types of malware.

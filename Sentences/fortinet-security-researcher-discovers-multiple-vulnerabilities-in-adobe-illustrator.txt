@@ -1,0 +1,93 @@
+FortiGuard Labs Threat Research Report Affected platforms: Windows Impacted parties: Users of Adobe Illustrator 2021, versions 25.4.1 and earlier Impact: Multiple Vulnerabilities leading to Arbitrary Code Execution, Memory Leak and Application Denial of Service Severity level: Critical
+
+In August of 2021, I discovered and reported multiple zero-day vulnerabilities in Adobe Illustrator to Adobe, Inc.
+
+On Tuesday, October 26, 2021, Adobe released several security patches that fixed these vulnerabilities.
+
+They are identified as CVE-2021-40718, CVE-2021-40746, CVE-2021-40747, CVE-2021-40748 and CVE-2021-40749.
+
+All these vulnerabilities have similar root causes related to a single Illustrator Plugin.
+
+We suggest users apply the Adobe patches as soon as possible.
+
+Following are some details on these vulnerabilities.
+
+More information can be found on the related Fortinet Zero Day Advisory pages by clicking on the CVE links, below: CVE-2021-40718:
+
+This is a Memory Leak vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.
+
+Specifically, the vulnerability is caused by a malformed DWG file, which causes an Out of Bounds Read memory access due to an improper bounds check.
+
+Attackers can exploit this vulnerability for unintended memory reads, potentially leading to a memory data leak.
+
+Fortinet previously released IPS signature Adobe.
+
+Illustrator.
+
+CVE-2021-40718.Memory.
+
+Leak for this specific vulnerability to proactively protect our customers.
+
+CVE-2021-40746 : This is an Arbitrary Code Execution vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.
+
+Specifically, the vulnerability is caused by a malformed DWG file, which causes an Out of Bounds memory access due to an improper bounds check.
+
+Attackers can exploit this vulnerability to execute arbitrary code within the context of the application via a crafted DWG file.
+
+Fortinet previously released IPS signature Adobe.
+
+Illustrator.
+
+CVE-2021-40746.Arbitrary.
+
+Code.
+
+Execution for this specific vulnerability to proactively protect our customers.
+
+CVE-2021-40747 :
+
+This is a Memory Corruption vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.
+
+Specifically, the vulnerability is caused by a malformed DWG file, which causes a NULL pointer dereference.
+
+Attackers can exploit this vulnerability with a crafted DWG file, potentially leading to an application denial of service.
+
+Fortinet previously released IPS signature Adobe.
+
+Illustrator.
+
+CVE-2021-40747.DoS for this specific vulnerability to proactively protect our customers CVE-2021-40748 :
+
+This is a Memory Corruption vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.
+
+Specifically, the vulnerability is caused by a malformed DWG file, which causes a NULL pointer dereference.
+
+Attackers can exploit this vulnerability with a crafted DWG file, potentially leading to an application denial of service.
+
+Fortinet previously released IPS signature Adobe.
+
+Illustrator.
+
+CVE-2021-40748.DoS for this specific vulnerability to proactively protect our customers CVE-2021-40749 :
+
+This is a Memory Corruption vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.
+
+Specifically, the vulnerability is caused by a malformed DWG file, which causes a NULL pointer dereference.
+
+Attackers can exploit this vulnerability with a crafted DWG file, potentially leading to an application denial of service.
+
+Fortinet previously released IPS signature Adobe.
+
+Illustrator.
+
+CVE-2021-40749.DoS for this specific vulnerability to proactively protect our customers.
+
+Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+
+
+

@@ -1,0 +1,6 @@
+
+To be clear, even “clean” proxyware is not much better.
+A sound security policy should not allow anyone to install proxyware or any other questionable software on employees’ computers, regardless of whether the computers are in the office or employees are connecting to the organization’s VPN.
+As a rule, most employees do not need, and should not be allowed, to install software on their computers independently.
+
+

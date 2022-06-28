@@ -1,0 +1,14 @@
+
+As shown in Figure 14, the Cookie field is set with ID=17, which is the response for the previous command.
+In the received response, the next command is returned in field Set-Cookie.
+Table 4 shows the parameters of this POST request.
+Parameter Information E Initially set to 0 T Decimal form of the little-endian XOR key K The result of GetTickCount() Table 4: POST request parameters Create Process
+The malware creates a process with specified arguments.
+Figure 15 shows the operation.
+Figure 15: Command create process
+Delete File
+The malware deletes the file specified as an argument.
+Figure 16 show the operation.
+Figure 16:
+Delete file operation Get Directory Information
+The malware gets information for the provided directory address using the following WINAPI calls: FindFirstFileW FindNextFileW FileTimeToLocalFileTime FiletimeToSystemTime Figure 17 shows the API used for collecting information.

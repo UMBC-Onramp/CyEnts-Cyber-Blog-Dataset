@@ -1,0 +1,6 @@
+
+As for the mobile versions of FinSpy , they can listen and record calls (voice or VoIP), read text messages, and monitor user activity in instant messaging apps such as WhatsApp, WeChat, Viber, Skype, Line, Telegram, Signal, and Threema.
+The mobile spyware also sends the operators a list of the victim’s contacts, calls, calendar events, geolocation data, and much more.
+How to avoid FinSpy
+Unfortunately, it is not easy to protect yourself completely from government-level spyware.
+That said, you can take some precautions against FinSpy and other surveillance apps: Download apps only from trusted sources, whether for mobile or desktop or laptop programs.

@@ -1,0 +1,5 @@
+
+Using complex passwords will make brute-force RDP attacks harder to succeed.
+Below are the top 15 passwords used on vulnerable RDP systems.
+We built this list based on information on weak passwords shared by a friendly Law Enforcement Agency from taken down RDP shops.
+What is most shocking is the fact that there is such a large number of vulnerable RDP systems did not even have a password.

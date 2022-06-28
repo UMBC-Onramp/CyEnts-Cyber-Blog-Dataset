@@ -1,0 +1,7 @@
+
+NotPetya, also known as ExPetr . NotPetya devoured hard drives whole.
+Moreover, NotPetya encrypted the file table in such a way as to rule out decryption even after ransom payment.
+As a result, experts concluded that it was actually a wiper disguised as a cryptor.
+The total damage from NotPetya exceeded $10 billion .
+The WannaCry attack was so devastating that Microsoft released an urgent patch for operating systems it no longer supported.
+Updates for supported systems had been available long before both epidemics, but not everyone had installed them, allowing these two ransomware programs to make their presence felt for a long time to come.

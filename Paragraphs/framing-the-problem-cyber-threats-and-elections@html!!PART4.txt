@@ -1,0 +1,4 @@
+
+Lastly, FireEye has observed targeting of organizations that are involved in election campaigns and news coverage.
+Tactics we have witnessed include disinformation campaigns on adversary-maintained infrastructure and social media platforms.
+For example, in August 2017, we observed several inauthentic news websites created to mimic legitimate local and international media organizations ahead of a sub-Saharan African nation’s presidential election.

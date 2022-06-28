@@ -1,0 +1,8 @@
+
+If enabled, the malicious macro will download and execute a malicious executable from 80.242.123.155/exe/dro.exe .
+The cybercriminals behind this operation have been updating the payload.
+So far, we have observed: e6531d4c246ecf82a2fd959003d76cca  dro.exe
+600e5df303765ff73dccff1c3e37c03a  dro.exe
+These payloads beacon to the same server from which they are downloaded and receive instructions to download additional malware hosted on this server.
+This server contains a wide variety of malware: 6545d2528460884b24bf6d53b721bf9e  
+5dro.exe e339fce54e2ff6e9bd3a5c9fe6a214ea  AndroSpread.exe 9e208e9d516f27fd95e8d165bd7911e8  AndroSpread.exe abc69e0d444536e41016754cfee3ff90

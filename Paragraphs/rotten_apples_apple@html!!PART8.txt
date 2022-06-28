@@ -1,0 +1,35 @@
+
+Figure 3: Burp sessio n
+After the user enters a login and password, they are redirected and presented with the following Chinese Apple page, seen in Figure 4: http://iClouddd[.]top/ask2.asp?MNWTK=25077126670584.html Figure 4:
+Phishing pag e On this page, all the links correctly point towards Apple[.]com, as can be seen in the HTML:
+* Apple <http://www.Apple[.]com/
+cn/> *
+<http://www.Apple[.]com/cn/shop/goto/bag
+>
+* Apple <http://www.
+Apple[.]com/
+cn/
+>
+* Mac <http://www.Apple[.]com/cn/mac/> * iPad <http://www.
+Apple[.]com/cn/ipad/
+>
+* iPhone <http://www.Apple[.]com/
+cn/iphone/>
+* Watch <http://www.Apple[.]com/
+cn/watch/>
+* Music <http://www.
+Apple[.]com/cn/music/> * <http://www.
+Apple[.]com/
+cn/
+support/> * Apple[.]com <
+http://www.
+Apple[.]com/cn/search> * <http://www.Apple[.]com/cn/shop/goto/bag>
+Apple ID <https://Appleid.
+Apple[.]com/
+account/home> * <https://Appleid.
+Apple[.]com/zh_CN/signin>
+* Apple ID <https://Appleid.
+Apple[.]com/zh_CN/account> * <https://Appleid.
+Apple[.]com/
+zh_CN/#!faq>
+When translated using Google Translate, the Chinese text written in the middle of the page (Figure 4) reads: “Verify your birth date or your device screen lock to continue”.

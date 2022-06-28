@@ -1,0 +1,7 @@
+
+ 
+This component is designed to target a victim in physical proximity.
+The various options available in the Windows controller are shown in Figure
+12 below.
+Figure 12 - Windows Controller for Android Device The functionality and structure of the components on the victim’s device are described below in detail.
+Component 1 -  GlobalService.apk Components: a. Services Global Service b. Methods Sleeper ScreenCapturer ServiceActivity Main activity The app is started with an intent that is provided from the desktop android executable.

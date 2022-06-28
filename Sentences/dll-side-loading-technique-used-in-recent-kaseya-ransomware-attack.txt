@@ -1,0 +1,479 @@
+FortiGuard Labs Threat Research Report Affected Platforms : Windows Impacted parties : Windows Users Impact :
+
+Data encryption, Data destruction Threat Severity : Critical Introduction to the Kaseya Ransomware Attack
+
+In this article we examine the ransomware used in the recent Kaseya attack .
+
+We will see what happens when a machine is infected by this ransomware by looking at some of the visible Indicators of Compromise, such as modified wallpaper, several “<random string>-readme.txt” files in different folders, and changes in the filenames with < random string > extensions.
+
+We will also discuss in more details how DLL side-loading was implemented along with other malware tricks that the ransomware used.
+
+Fortunately, FortiEDR detects and blocks the DLL side-loading event when the ransomware executes the valid application, such as MsMpEng.exe, while it loads the malicious payload, mpsvc.dll.
+
+As a result, customers will not be able to see all of the related IOCs because the malware is prevented from running.
+
+Ransom Note and Visible IOCs One common element of most ransomware is the ransom note.
+
+Once its infection routine is completed, this ransomware variant replaces the desktop wallpaper with a dropped .bmp
+
+file notifying the victim to look for a file containing instructions, as shown in Figure 1a.
+
+All accessible folders have a copy of the ransom note file inserted.
+
+The ransom note is dropped as a text file using a random filename, such as “5f03r-readme.txt”.
+
+The filename format uses “<random string>-readme.txt”.
+
+Encrypted files in the folder have the extension name of “5f03r” or the <random string> added to the filename.
+
+The files used for DLL side-loading technique are also dropped in the same path as the wallpaper bmp file (Figure 1d).
+
+Technical Analysis Common Malware Tricks Over the years, a variety of malware tricks have been developed and employed differently by various malicious actors.
+
+These include anti-debugging, anti-analysis, anti-reversing, and virtually every “anti-everything” concept that malicious authors can think of.
+
+One of the most common malware tricks is hiding its APIs .
+
+The main purpose of this strategy is to avoid being detected by signature-based detection tools that looks for specific combinations of APIs used by malware.
+
+This trick also makes deeper analysis take longer because analysts are blind as to which APIs they need to be looking for.
+
+Looking deeper, these initial APIs are not very important to the malware.
+
+Instead, it resolves its needed APIs using a simple hashing computation.
+
+The malware includes a list of hash values that correspond to the APIs it needs.
+
+It first resolves the LoadLibraryA API to load the needed DLL file.
+
+It grabs the first available API name from the loaded library, calculates the hash, and then compares it to the current API hash.
+
+If it is the right hash, it gets the index of the API name and the API address pointed to by the index.
+
+If it is not the right hash, the malware gets the next API name and continues its calculations.
+
+The ransomware repeats this same process until it resolves the API addresses that the malware needs.
+
+This is quite a simple trick.
+
+Most malware hides its APIs and resolves the right addresses using different combinations of LoadLibraryA, GetProcAddress, and other APIs.
+
+They also use different combinations of encryption, calculations, and encodings.
+
+But at the end of the malware’s API addresses resolving algorithm we still get the list of APIs with their proper addresses.
+
+You can see them if you look in the right location in the malware code before it executes its infection routine.
+
+Decrypting the Ransom Note To extract the ransom note, REvil ransomware decrypts a large chunk of bytes using a simple RC4 algorithm to generate a base64 blob of string.
+
+This string is then decoded by calling the CryptStringToBinaryW API, as shown in Figure 4.
+
+The RC4 algorithm shown above is the same code that decrypts most of the strings that the malware needs, including the C&Cs used to exfiltrate information from the infected machine (Figure 5).
+
+The complete list of C&Cs can be found in Appendix B: IOCs.
+
+MITRE ATT&CK Framework Analysis The MITRE ATT&CK Framework is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations.
+
+ It provides threat researchers and responders with a system for examining cyberattacks, allowing techniques and events to be more easily analyzed by researchers and presented in a way that help victims to better understand where in the attack cycle certain events occur.
+
+Critical elements of this ransomware have been mapped to the MITRE ATT&CK Framework.
+
+Two of its key strategies tied to specific MITRE ATT&CK TTP (tactics, techniques, and procedures) IDs are detailed below.
+
+The full set of MITRE ATT&CK elements are listed in the Appendix.
+
+MITRE
+
+T1562.004 Disable or Modify System Firewall Technique
+
+The ransomware exposes the infected machine within the network by running “ netsh advfirewall firewall set rule group=\\\"Network Discovery\\\" new enable=Yes ”, using WinExec API.
+
+MITRE T1574.002 Hijack Execution Flow:
+
+DLL Side-Loading Technique While this ransomware has numerous tricks up its sleeves, for this article we will focus on its DLL Side-Loading trick.
+
+It uses MITRE technique T1574.002 Hijack Execution Flow: DLL Side-Loading.
+
+This technique is commonly employed by malware by dropping a malicious DLL within a search order of a valid application.
+
+This search order provides a Windows application with a list of locations where it can find a valid DLL or libraries.
+
+The application then uses the DLL that is available, whichever comes first.
+
+When the application executes it then loads the malicious DLL if it is available first rather than the valid DLL.
+
+However, this ransomware does a little more than that.
+
+Instead of just dropping the malicious “mpsvc.dll”, it also drops the valid application, MsMpEng.exe.
+
+This is a Windows Defender executable and normally not detected by security applications.
+
+After dropping both the executable and the DLL file, the ransomware executes MsMpEng.exe using CreateProcessW API.
+
+Walkthrough on How This Ransomware Uses the DLL Side-Loading Technique Both mpsvc.dll and MsMpEng.exe are found within the ransomware in the resource section of the file.
+
+To access the content of the resource section of the file, the ransomware uses FindResourceW, LoadResource, and LockResource APIs to grab the contents of the resource section.
+
+The resource section has two main elements, “MODLIS” and “SOFTIS”.
+
+These provide the contents for “mpsvc.dll” and “MsMpEng.exe”, respectively (Figure 7a).
+
+The ransomware tries to access “mpsvc.dll” in the “C:\\Windows” folder.
+
+If it fails, it will create “mpsvc.dll” in “AppData\\Local\\Temp”.
+
+Similar steps are taken to drop the MsMpEng.exe to the Temp folder.
+
+Afterwards, the malware initiates its DLL Side-Loading technique by executing MsMpEng.exe using the CreateProcessW API.
+
+Executing MsMpEng.exe on its own is not malicious, but MsMpEng loads the malicious “mpsvc.dll” as one of the needed libraries.
+
+The application is not able to tell whether the loaded library is malicious.
+
+So, once the malicious library is loaded, it executes the encryption of files along with the rest of its infection routines.
+
+Conclusion - Kaseya Ransomware Attack
+
+This ransomware variant drops a copy of its ransom note file, “<random string>-readme.txt”, in every accessible folder.
+
+It then tries to encrypt as many files as it can, giving encrypted files an extension name similar to the random string in the ransom note file name.
+
+It also uses the Windows Defender executable, MsMpEng.exe, to avoid detection, but it side-loads the malicious library, “mpsvc.dll”, to employ its payload.
+
+The future variant of this ransomware might use a different valid executable, but so far, we have only observed MsMpEng.exe.
+
+There are different variants of this ransomware where the strings, including the ransom note and C&Cs, are encrypted using randomized keys within its code.
+
+But once these strings are decrypted, they are nearly the same with some minor differences, such as the randomized string for the extension name of the encrypted files.
+
+Lastly, it is important to remind individuals and teams tasked with identifying and responding to threats that there are many evasion techniques that threat actors can use to circumvent security controls, and they continue to evolve.
+
+Organizations are advised to likewise evolve their security controls to ensure they can effectively fend off the latest threats.
+
+To that end, it is helpful to keep in mind that even though these threats are becoming increasingly sophisticated, they still tend to be noisy, and a good monitoring solution can go a long way towards interrupting the attack chain.
+
+Fortinet Protections FortiEDR detects and blocks the DLL side-loading event of this ransomware when agent.exe executes MsMpEng.exe (Windows Defender) and loads the mpsvc.dll (malicious library) payload.
+
+In addition, all published IOCs have been added to our Cloud intelligence service and will be blocked if executed on customer systems.
+
+The FortiGuard Responder team has published a Knowledge Base analysis on Kaseya: “ How FortiEDR detects Kaseya supply chain ransomware attack .”
+
+FortiGuard Labs has AV coverage for known publicly available samples as: W32/Sodinokibi.
+
+EAD4!tr.ransom W32/Sodinokibi.8859!tr.ransom W32/Sodinokibi.5421!tr.ransom The FortiGuard AntiVirus service is supported by FortiGate , FortiMail , FortiClient , and FortiEDR .
+
+The Fortinet AntiVirus engine is a part of each of those solutions as well.
+
+As a result, customers who have these products with up-to-date protections are protected.
+
+FortiGuard Labs has IPS coverage in place as: Kaseya.
+
+VSA.Remote.
+
+Code.
+
+Execution All known network IOCs are blocked by the WebFiltering client .
+
+For FortiSandbox , all publicly known ransomware samples are detected by our behavior-based protection.
+
+Additional Content FortiEDR KB Article How FortiEDR detects ransomware attack on Kaseya VSA (fortinet.com)
+
+FortiGuard Threat Signal Threat Signal Report | FortiGuard Fortinet Blog Post New Supply Chain Ransomware Attack Targets Kaseya Platform | FortiGuard Labs (fortinet.com) Appendix A: MITRE ATT&CK Techniques ID Description T1195.002 Supply Chain Compromise: Compromise Software Supply Chain T1059.001 Command and Scripting Interpreter: PowerShell T1059.003 Command and Scripting Interpreter: Windows Command Shell T1569.002 System Services: Service Execution T1574.002 Hijack Execution Flow: DLL Side-Loading T1068 Exploitation for Privilege Escalation T1562.004 Impair Defenses: Disable or Modify System Firewall T1562.001 Impair Defenses: Disable or Modify Tools T1070.004 Indicator Removal on Host: File Deletion T1036.003 Masquerading: Rename System Utilities
+
+T1036.005
+
+Masquerading: Match Legitimate Name or Location T1027.001 Obfuscated Files or Information: Binary Padding T1027.004 Obfuscated Files or Information: Compile After Delivery T1218
+
+Signed Binary Proxy Execution T1553.002 Subvert Trust Controls: Code Signing T1486 Data Encrypted for Impact Appendix B: IOCs File Hashes (SHA256) d55f983c994caa160ec63a59f6b4250fe67fb3e8c43a388aec60a4a6978e9f1e (ransomware)
+
+E2a24ab94f865caeacdf2c3ad015f31f23008ac6db8312c2cbfb32e4a5466ea2 (mpsvc.dll)
+
+Filenames mpsvc.dll <random string>-readme.txt <random string2>.bmp File Paths Users\\{username}AppData\\Local\\Temp Domains and C&Cs boisehosting[.]net fotoideaymedia[.]es juneauopioidworkgroup[.]org vancouver-print[.]ca olejack[.]ru i-trust[.]dk thenewrejuveme[.]com xn--singlebrsen-vergleich-nec[.]com
+
+cursoporcelanatoliquido[.]online marietteaernoudts[.]nl klimt2012[.]info accountancywijchen[.]nl vannesteconstruct[.]be
+
+wellplast[.]se facettenreich27[.]de balticdermatology[.]lt sofavietxinh[.]com jorgobe[.]at
+
+ruralarcoiris[.]com projetlyonturin[.]fr international-sound-awards[.]com krlosdavid[.]com i-arslan[.]de caribbeansunpoker[.]com kissit[.]ca dezatec[.]es hkr-reise[.]de id-vet[.]com bayoga[.]co[.]uk solhaug[.]tk boldcitydowntown[.]com
+
+homecomingstudio[.]com dushka[.]ua hiddencitysecrets[.]com[.]au no-plans[.]com schoolofpassivewealth[.]com
+
+talentwunder[.]com acomprarseguidores[.]com argos[.]wityu[.]fund dinslips[.]se foretprivee[.]ca nurturingwisdom[.]com lescomtesdemean[.]be firstpaymentservices[.]com lusak[.]at better[.]town id-et-d[.]fr sanaia[.]com
+
+gantungankunciakrilikbandung[.]com moveonnews[.]com littlebird[.]salon iyengaryogacharlotte[.]com body-guards[.]it calabasasdigest[.]com corola[.]es pomodori-pizzeria[.]de seagatesthreecharters[.]com copystar[.]co[.]uk koko-nora[.]dk jakekozmor[.]com precisionbevel[.]com boulderwelt-muenchen-west[.]de nosuchthingasgovernment[.]com neuschelectrical[.]co[.]za bunburyfreightservices[.]com[.]au edelman[.]jp smithmediastrategies[.]com enovos[.]de
+
+shhealthlaw[.]com freie-baugutachterpraxis[.]de deltacleta[.]cat financescorecard[.]com leoben[.]at pawsuppetlovers[.]com testcoreprohealthuk[.]com
+
+broseller[.]com
+
+notmissingout[.]com chavesdoareeiro[.]com imaginado[.]de craftleathermnl[.]com global-kids[.]info serce[.]info[.]pl fannmedias[.]com villa-marrakesch[.]de bowengroup[.]com[.]au sairaku[.]net alysonhoward[.]com sahalstore[.]com adoptioperheet[.]fi miriamgrimm[.]de live-your-life[.]jp mardenherefordshire-pc[.]gov[.]uk kojima-shihou[.]com nuzech[.]com
+
+gamesboard[.]info podsosnami[.]ru hmsdanmark[.]dk linnankellari[.]fi rozemondcoaching[.]nl lenreactiv-shop[.]ru love30-chanko[.]com smartypractice[.]com
+
+www1[.]proresult[.]no rhinosfootballacademy[.]com zimmerei-deboer[.]de ccpbroadband[.]com bimnapratica[.]com lachofikschiet[.]nl
+
+antiaginghealthbenefits[.]com simulatebrain[.]com helikoptervluchtnewyork[.]nl
+
+devlaur[.]com pelorus[.]group kedak[.]de anybookreader[.]de markelbroch[.]com latestmodsapks[.]com
+
+thedresserie[.]com thailandholic[.]com
+
+tophumanservicescourses[.]com forestlakeuca[.]org[.]au
+
+sporthamper[.]com colorofhorses[.]com
+
+iqbalscientific[.]com microcirc[.]net mbfagency[.]com
+
+peterstrobos[.]com consultaractadenacimiento[.]com despedidascostablanca[.]es alten-mebel63[.]ru rimborsobancario[.]net pasvenska[.]se pickanose[.]com licor43[.]de buymedical[.]biz oncarrot[.]com milsing[.]hr sotsioloogia[.]ee visiativ-industry[.]fr transliminaltribe[.]wordpress[.]com d2marketing[.]co[.]uk lapinlviasennus[.]fi
+
+songunceliptv[.]com baronloan[.]org bastutunnan[.]se blogdecachorros[.]com vanswigchemdesign[.]com gporf[.]fr itelagen[.]com transportesycementoshidalgo[.]es milltimber[.]aberdeen[.]sch[.]uk tinkoff-mobayl[.]ru newyou[.]at zenderthelender[.]com sweering[.]fr tux-espacios[.]com all-turtles[.]com coffreo[.]biz tennisclubetten[.]nl extraordinaryoutdoors[.]com verytycs[.]com manijaipur[.]com beautychance[.]se pocket-opera[.]de finediningweek[.]pl stampagrafica[.]es upplandsspar[.]se tradiematepro[.]com[.]au campus2day[.]de burkert-ideenreich[.]de eaglemeetstiger[.]de mountaintoptinyhomes[.]com biapi-coaching[.]fr art2gointerieurprojecten[.]nl abogadosaccidentetraficosevilla[.]es camsadviser[.]com schmalhorst[.]de bigler-hrconsulting[.]ch agence-chocolat-noir[.]com stormwall[.]se mooglee[.]com smart-light[.]co[.]uk wari[.]com[.]pe takeflat[.]com humanityplus[.]org otsu-bon[.]com 35-40konkatsu[.]net zzyjtsgls[.]com drnice[.]de
+
+lightair[.]com hotelsolbh[.]com[.]br julis-lsa[.]de educar[.]org kuntokeskusrok[.]fi autodemontagenijmegen[.]nl
+
+spylista[.]com micahkoleoso[.]de fairfriends18[.]de macabaneaupaysflechois[.]com osterberg[.]fi mirkoreisser[.]de tomoiyuma[.]com hardinggroup[.]com zso-mannheim[.]de pointos[.]com kenhnoithatgo[.]com werkkring[.]nl hotelzentral[.]at mrxermon[.]de
+
+bloggyboulga[.]net beyondmarcomdotcom[.]wordpress[.]com wraithco[.]com lucidinvestbank[.]com ncs-graphic-studio[.]com tongdaifpthaiphong[.]net solerluethi-allart[.]ch vibehouse[.]rw bridgeloanslenders[.]com pier40forall[.]org ostheimer[.]at jenniferandersonwriter[.]com marcuswhitten[.]site lebellevue[.]fr the-virtualizer[.]com myhealth[.]net[.]au helenekowalsky[.]com havecamerawilltravel2017[.]wordpress[.]com
+
+muamuadolls[.]com jandaonline[.]com
+
+datacenters-in-europe[.]com
+
+pv-design[.]de opatrovanie-ako[.]sk vloeren-nu[.]nl conasmanagement[.]de lykkeliv[.]net adultgamezone[.]com patrickfoundation[.]net tonelektro[.]nl body-armour[.]online nsec[.]se vihannesporssi[.]fi new[.]devon[.]gov[.]uk
+
+pogypneu[.]sk creative-waves[.]co[.]uk parkstreetauto[.]net sloverse[.]com diversiapsicologia[.]es unetica[.]fr n1-headache[.]com amerikansktgodis[.]se qualitaetstag[.]de kath-kirche-gera[.]de berlin-bamboo-bikes[.]org minipara[.]com
+
+ontrailsandboulevards[.]com babcockchurch[.]org mylolis[.]com fax-payday-loans[.]com calxplus[.]eu mountsoul[.]de fundaciongregal[.]org klusbeter[.]nl labobit[.]it romeguidedvisit[.]com theclubms[.]com
+
+whittier5k[.]com ravensnesthomegoods[.]com
+
+nhadatcanho247[.]com
+
+purposeadvisorsolutions[.]com faizanullah[.]com work2live[.]de stoneys[.]ch psa-sec[.]de hushavefritid[.]dk tecnojobsnet[.]com starsarecircular[.]org garage-lecompte-rouen[.]fr hypozentrum[.]com denovofoodsgroup[.]com planchaavapor[.]net aco-media[.]nl abogadoengijon[.]es thee[.]network stacyloeb[.]com milanonotai[.]it kevinjodea[.]com operaslovakia[.]sk corelifenutrition[.]com mastertechengineering[.]com
+
+pinkexcel[.]com katketytaanet[.]fi lascuola[.]nl ligiercenter-sachsen[.]de answerstest[.]ru dnepr-beskid[.]com[.]ua eco-southafrica[.]com bingonearme[.]org summitmarketingstrategies[.]com scenepublique[.]net monark[.]com spd-ehningen[.]de boosthybrid[.]com[.]au petnest[.]ir
+
+associacioesportivapolitg[.]cat sarbatkhalsafoundation[.]org solinegraphic[.]com mylovelybluesky[.]com run4study[.]com
+
+nicoleaeschbachorg[.]wordpress[.]com architekturbuero-wagner[.]net
+
+lukeshepley[.]wordpress[.]com igfap[.]com tinyagency[.]com familypark40[.]com architecturalfiberglass[.]org slupetzky[.]at groupe-frayssinet[.]fr synlab[.]lt insigniapmg[.]com arteservicefabbro[.]com
+
+rehabilitationcentersinhouston[.]net zervicethai[.]co[.]th comarenterprises[.]com courteney-cox[.]net noesis[.]tech urmasiimariiuniri[.]ro remcakram[.]com degroenetunnel[.]com ceid[.]info[.]tr gemeentehetkompas[.]nl ivivo[.]es braffinjurylawfirm[.]com ctrler[.]cn makeitcount[.]at nijaplay[.]com brandl-blumen[.]de apprendrelaudit[.]com securityfmm[.]com sla-paris[.]com figura[.]team handi-jack-llc[.]com
+
+femxarxa[.]cat admos-gleitlager[.]de liikelataamo[.]fi stefanpasch[.]me wacochamber[.]com ilive[.]lt fensterbau-ziegler[.]de botanicinnovations[.]com saxtec[.]com tarotdeseidel[.]com
+
+bildungsunderlebnis[.]haus digivod[.]de darrenkeslerministries[.]com galserwis[.]pl eraorastudio[.]com jyzdesign[.]com suncrestcabinets[.]ca thomas-hospital[.]de embracinghiscall[.]com richard-felix[.]co[.]uk sipstroysochi[.]ru bodyforwife[.]com katiekerr[.]co[.]uk slashdb[.]com selfoutlet[.]com d1franchise[.]com anthonystreetrimming[.]com journeybacktolife[.]com pferdebiester[.]de parks-nuernberg[.]de div-vertriebsforschung[.]de verbisonline[.]com onlybacklink[.]com waveneyrivercentre[.]co[.]uk
+
+mytechnoway[.]com maryloutaylor[.]com whyinterestingly[.]ru blumenhof-wegleitner[.]at punchbaby[.]com vermoote[.]de
+
+johnsonfamilyfarmblog[.]wordpress[.]com cwsitservices[.]co[.]uk hairstylesnow[.]site web[.]ion[.]ag simoneblum[.]de naturavetal[.]hr heliomotion[.]com mirjamholleman[.]nl baumkuchenexpo[.]jp porno-gringo[.]com penco[.]ie ftlc[.]es
+
+dutchbrewingcoffee[.]com c-a[.]co[.]in nokesvilledentistry[.]com berliner-versicherungsvergleich[.]de jsfg[.]com cerebralforce[.]net rota-installations[.]co[.]uk roygolden[.]com verifort-capital[.]de 1kbk[.]com[.]ua noixdecocom[.]fr danielblum[.]info thaysa[.]com charlesreger[.]com kaliber[.]co[.]jp ahouseforlease[.]com binder-buerotechnik[.]at zweerscreatives[.]nl
+
+dramagickcom[.]wordpress[.]com ogdenvision[.]com gadgetedges[.]com pridoxmaterieel[.]nl heidelbergartstudio[.]gallery meusharklinithome[.]wordpress[.]com xn--thucmctc-13a1357egba[.]com
+
+homesdollar[.]com ncuccr[.]org oslomf[.]no desert-trails[.]com vorotauu[.]ru lionware[.]de bptdmaluku[.]com bogdanpeptine[.]ro innote[.]fi 365questions[.]org teknoz[.]net layrshift[.]eu upmrkt[.]co modelmaking[.]nl sachnendoc[.]com thedad[.]com bauertree[.]com woodleyacademy[.]org jasonbaileystudio[.]com cheminpsy[.]fr bee4win[.]com fiscalsort[.]com fotoscondron[.]com DupontSellsHomes[.]com nacktfalter[.]de devok[.]info mrtour[.]site hannah-fink[.]de cuspdental[.]com philippedebroca[.]com delchacay[.]com[.]ar cortec-neuro[.]com fitnessingbyjessica[.]com
+
+dsl-ip[.]de mmgdouai[.]fr daniel-akermann-architektur-und-planung[.]ch executiveairllc[.]com allamatberedare[.]se
+
+henricekupper[.]com shsthepapercut[.]com dr-seleznev[.]com siliconbeach-realestate[.]com gratispresent[.]se softsproductkey[.]com marketingsulweb[.]com craigvalentineacademy[.]com pasivect[.]co[.]uk cyntox[.]com fizzl[.]ru oemands[.]dk sexandfessenjoon[.]wordpress[.]com first-2-aid-u[.]com celeclub[.]org urist-bogatyr[.]ru piajeppesen[.]dk joseconstela[.]com analiticapublica[.]es kariokids[.]com ai-spt[.]jp homng[.]net csgospeltips[.]se luxurytv[.]jp bbsmobler[.]se restaurantesszimmer[.]de
+
+chaotrang[.]com galleryartfair[.]com steampluscarpetandfloors[.]com
+
+waermetauscher-berechnen[.]de shiresresidential[.]com naswrrg[.]org triggi[.]de cityorchardhtx[.]com dubnew[.]com stallbyggen[.]se zewatchers[.]com bouquet-de-roses[.]com wasmachtmeinfonds[.]at appsformacpc[.]com sabel-bf[.]com seminoc[.]com
+
+tastewilliamsburg[.]com charlottepoudroux-photographie[.]fr creamery201[.]com rerekatu[.]com andersongilmour[.]co[.]uk bradynursery[.]com
+
+artige[.]com highlinesouthasc[.]com danskretursystem[.]dk higadograsoweb[.]com kidbucketlist[.]com[.]au
+
+harpershologram[.]wordpress[.]com durganews[.]com
+
+leather-factory[.]co[.]jp mir-na-iznanku[.]com ki-lowroermond[.]nl cite4me[.]org grelot-home[.]com gasolspecialisten[.]se vyhino-zhulebino-24[.]ru jadwalbolanet[.]info ncid[.]bc[.]ca sojamindbody[.]com castillobalduz[.]es
+
+danubecloud[.]com roadwarrior[.]app senson[.]fi denifl-consulting[.]at myzk[.]site theapifactory[.]com kalkulator-oszczednosci[.]pl wurmpower[.]at funjose[.]org[.]gt blgr[.]be malychanieruchomoscipremium[.]com
+
+travelffeine[.]com
+
+smessier[.]com kafu[.]ch
+
+prochain-voyage[.]net edrcreditservices[.]nl bhwlawfirm[.]com bigbaguettes[.]eu toponlinecasinosuk[.]co[.]uk zonamovie21[.]net elimchan[.]com herbstfeststaefa[.]ch controldekk[.]com
+
+lichencafe[.]com systemate[.]dk alsace-first[.]com mousepad-direkt[.]de iwelt[.]de chatizel-paysage[.]fr praxis-foerderdiagnostik[.]de schmalhorst[.]de mediaclan[.]info backstreetpub[.]com spsshomeworkhelp[.]com loprus[.]pl bsaship[.]com maxadams[.]london deprobatehelp[.]com maureenbreezedancetheater[.]org plv[.]media tuuliautio[.]fi paradicepacks[.]com iyahayki[.]nl
+
+lorenacarnero[.]com mezhdu-delom[.]ru hugoversichert[.]de sauschneider[.]info atalent[.]fi agence-referencement-naturel-geneve[.]net zimmerei-fl[.]de ulyssemarketing[.]com x-ray[.]ca southeasternacademyofprosthodontics[.]org modamilyon[.]com triactis[.]com panelsandwichmadrid[.]es filmstreamingvfcomplet[.]be kostenlose-webcams[.]com instatron[.]net mirjamholleman[.]nl basisschooldezonnewijzer[.]nl quemargrasa[.]net extensionmaison[.]info retroearthstudio[.]com
+
+schoellhammer[.]com elpa[.]se uranus[.]nl advokathuset[.]dk rebeccarisher[.]com cafemattmeera[.]com polychromelabs[.]com
+
+notsilentmd[.]org
+
+iwr[.]nl wychowanieprzedszkolne[.]pl
+
+memaag[.]com
+
+parking[.]netgateway[.]eu digi-talents[.]com
+
+hairnetty[.]wordpress[.]com cimanchesterescorts[.]co[.]uk
+
+houseofplus[.]com
+
+lapmangfpt[.]info[.]vn pivoineetc[.]fr celularity[.]com rafaut[.]com
+
+bigasgrup[.]com slimidealherbal[.]com aakritpatel[.]com navyfederalautooverseas[.]com psnacademy[.]in michaelsmeriglioracing[.]com cleliaekiko[.]online stemplusacademy[.]com theduke[.]de drinkseed[.]com
+
+huissier-creteil[.]com geoffreymeuli[.]com theadventureedge[.]com profectis[.]de tampaallen[.]com
+
+symphonyenvironmental[.]com aniblinova[.]wordpress[.]com ventti[.]com[.]ar nachhilfe-unterricht[.]com mapawood[.]com nativeformulas[.]com kirkepartner[.]dk chefdays[.]de cursosgratuitosnainternet[.]com miraclediet[.]fun bristolaeroclub[.]co[.]uk idemblogs[.]com eglectonk[.]online finde-deine-marke[.]de platformier[.]com pmc-services[.]de atmos-show[.]com gymnasedumanagement[.]com
+
+siluet-decor[.]ru expandet[.]dk rumahminangberdaya[.]com artallnightdc[.]com tomaso[.]gr ecopro-kanto[.]com spacecitysisters[.]org tandartspraktijkheesch[.]nl vietlawconsultancy[.]com crowcanyon[.]com classycurtainsltd[.]co[.]uk veybachcenter[.]de falcou[.]fr christ-michael[.]net vdberg-autoimport[.]nl naturalrapids[.]com ussmontanacommittee[.]us oneplusresource[.]org maasreusel[.]nl you-bysia[.]com[.]au mediaacademy-iraq[.]org stemenstilte[.]nl noskierrenteria[.]com
+
+corendonhotels[.]com ditog[.]fr
+
+limassoldriving[.]com worldhealthbasicinfo[.]com
+
+girlillamarketing[.]com xn--rumung-bua[.]online collaborativeclassroom[.]org baptisttabernacle[.]com fitovitaforum[.]com c2e-poitiers[.]com logopaedie-blomberg[.]de mrsplans[.]net onlyresultsmarketing[.]com interactcenter[.]org spectrmash[.]ru
+
+tenacitytenfold[.]com huesges-gruppe[.]de promalaga[.]es myteamgenius[.]com darnallwellbeing[.]org[.]uk truenyc[.]co comparatif-lave-linge[.]fr allfortheloveofyou[.]com ilso[.]net
+
+haremnick[.]com ecoledansemulhouse[.]fr surespark[.]org[.]uk stupbratt[.]no tigsltd[.]com manifestinglab[.]com yousay[.]site dublikator[.]com ausbeverage[.]com[.]au testzandbakmetmening[.]online vibethink[.]net 123vrachi[.]ru bouldercafe-wuppertal[.]de
+
+sobreholanda[.]com bookspeopleplaces[.]com montrium[.]com
+
+stingraybeach[.]com aglend[.]com[.]au
+
+coursio[.]com otto-bollmann[.]de erstatningsadvokaterne[.]dk resortmtn[.]com quickyfunds[.]com
+
+aminaboutique247[.]com
+
+mediaplayertest[.]net
+
+irinaverwer[.]com
+
+outcomeisincome[.]com gonzalezfornes[.]es xn--fn-kka[.]no withahmed[.]com balticdentists[.]com mank[.]de gw2guilds[.]org raschlosser[.]de ausair[.]com[.]au commonground-stories[.]com dlc[.]berlin liveottelut[.]com hexcreatives[.]co citymax-cr[.]com atozdistribution[.]co[.]uk urclan[.]net
+
+autopfand24[.]de syndikat-asphaltfieber[.]de teczowadolina[.]bytom[.]pl antonmack[.]de htchorst[.]nl xn--fnsterputssollentuna-39b[.]se candyhouseusa[.]com tsklogistik[.]eu drfoyle[.]com cranleighscoutgroup[.]org evangelische-pfarrgemeinde-tuniberg[.]de fransespiegels[.]nl alhashem[.]net schutting-info[.]nl blood-sports[.]net milestoneshows[.]com
+
+healthyyworkout[.]com plantag[.]de praxis-management-plus[.]de smokeysstoves[.]com dubscollective[.]com luckypatcher-apkz[.]com jobmap[.]at oldschoolfun[.]net carrybrands[.]nl people-biz[.]com jolly-events[.]com kisplanning[.]com[.]au vetapharma[.]fr hihaho[.]com directwindowco[.]com
+
+herbayupro[.]com
+
+webhostingsrbija[.]rs lange[.]host lloydconstruction[.]com ra-staudte[.]de twohourswithlena[.]wordpress[.]com stoeferlehalle[.]de nestor-swiss[.]ch
+
+thomasvicino[.]com dr-pipi[.]de qlog[.]de bestbet[.]com liliesandbeauties[.]org bundabergeyeclinic[.]com[.]au sandd[.]nl easytrans[.]com[.]au westdeptfordbuyrite[.]com hashkasolutindo[.]com
+
+compliancesolutionsstrategies[.]com cnoia[.]org aprepol[.]com assurancesalextrespaille[.]fr paymybill[.]guru airconditioning-waalwijk[.]nl pixelarttees[.]com
+
+dutchcoder[.]nl iphoneszervizbudapest[.]hu completeweddingkansas[.]com wolf-glas-und-kunst[.]de seitzdruck[.]com alvinschwartz[.]wordpress[.]com
+
+launchhubl[.]com revezlimage[.]com 12starhd[.]online jerling[.]de skiltogprint[.]no craigmccabe[.]fun pierrehale[.]com cactusthebrand[.]com
+
+mindpackstudios[.]com vitavia[.]lt bockamp[.]com levihotelspa[.]fi alfa-stroy72[.]com
+
+boompinoy[.]com sinal[.]org qualitus[.]com kamienny-dywan24[.]pl ilcdover[.]com team-montage[.]dk iviaggisonciliegie[.]it vickiegrayimages[.]com ziegler-praezisionsteile[.]de trapiantofue[.]it space[.]ua
+
+8449nohate[.]org xltyu[.]com strandcampingdoonbeg[.]com haar-spange[.]com
+
+stopilhan[.]com
+
+dareckleyministries[.]com pcprofessor[.]com bordercollie-nim[.]nl foryourhealth[.]live seproc[.]hn lubetkinmediacompanies[.]com
+
+ouryoungminds[.]wordpress[.]com geisterradler[.]de morawe-krueger[.]de vitalyscenter[.]es jvanvlietdichter[.]nl wsoil[.]com[.]sg xlarge[.]at
+
+sevenadvertising[.]com nancy-informatique[.]fr aurum-juweliere[.]de hatech[.]io zflas[.]com thefixhut[.]com tips[.]technology
+
+smalltownideamill[.]wordpress[.]com brevitempore[.]net imadarchid[.]com smhydro[.]com[.]pl echtveilig[.]nl faroairporttransfers[.]net connectedace[.]com offroadbeasts[.]com teresianmedia[.]org ralister[.]co[.]uk rosavalamedahr[.]com todocaracoles[.]com
+
+shiftinspiration[.]com sportsmassoren[.]com trystana[.]com
+
+personalenhancementcenter[.]com proudground[.]org forskolorna[.]org brawnmediany[.]com kao[.]at asteriag[.]com centromarysalud[.]com asiluxury[.]com radaradvies[.]nl daklesa[.]de fitnessbazaar[.]com fibrofolliculoma[.]info maratonaclubedeportugal[.]com maineemploymentlawyerblog[.]com wmiadmin[.]com
+
+bxdf[.]info plastidip[.]com[.]ar autofolierung-lu[.]de mymoneyforex[.]com victoriousfestival[.]co[.]uk carolinepenn[.]com blacksirius[.]de rollingrockcolumbia[.]com judithjansen[.]com insidegarage[.]pl irishmachineryauctions[.]com jacquin-maquettes[.]com anteniti[.]com behavioralmedicinespecialists[.]com socialonemedia[.]com
+
+chandlerpd[.]com aunexis[.]ch vesinhnha[.]com[.]vn joyeriaorindia[.]com presseclub-magdeburg[.]de
+
+yamalevents[.]com
+
+delawarecorporatelaw[.]com jiloc[.]com
+
+entopic[.]com hellohope[.]com mdk-mediadesign[.]de nataschawessels[.]com almosthomedogrescue[.]dog reddysbakery[.]com happyeasterimages[.]org dr-tremel-rednitzhembach[.]de commercialboatbuilding[.]com argenblogs[.]com[.]ar izzi360[.]com turkcaparbariatrics[.]com ftf[.]or[.]at kaminscy[.]com tstaffing[.]nl abogadosadomicilio[.]es caffeinternet[.]it abogados-en-alicante[.]es gastsicht[.]de nvwoodwerks[.]com bodyfulls[.]com myhostcloud[.]com perbudget[.]com strategicstatements[.]com sanyue119[.]com walter-lemm[.]de blog[.]solutionsarchitect[.]guru parkcf[.]nl nandistribution[.]nl ledmes[.]ru
+
+mercantedifiori[.]com artotelamsterdam[.]com dw-css[.]de leda-ukraine[.]com[.]ua devstyle[.]org kindersitze-vergleich[.]de jeanlouissibomana[.]com huehnerauge-entfernen[.]de brigitte-erler[.]com
+
+imperfectstore[.]com esope-formation[.]fr mariposapropaneaz[.]com bafuncs[.]org kampotpepper[.]gives abitur-undwieweiter[.]de hoteledenpadova[.]it theshungiteexperience[.]com[.]au deschl[.]net officehymy[.]com shadebarandgrillorlando[.]com xn--logopdie-leverkusen-kwb[.]de buroludo[.]nl servicegsm[.]net kingfamily[.]construction lbcframingelectrical[.]com ladelirante[.]fr tanzprojekt[.]com fatfreezingmachines[.]com marathonerpaolo[.]com gopackapp[.]com catholicmusicfest[.]com gaiam[.]nl
+
+advizewealth[.]com y-archive[.]com mrsfieldskc[.]com levdittliv[.]se simpkinsedwards[.]co[.]uk the-domain-trader[.]com lapinvihreat[.]fi ecpmedia[.]vn carlosja[.]com real-estate-experts[.]com leeuwardenstudentcity[.]nl psc[.]de em-gmbh[.]ch trulynolen[.]co[.]uk
+
+abuelos[.]com birnam-wood[.]com insp[.]bi besttechie[.]com 321play[.]com[.]hk saka[.]gr sterlingessay[.]com justinvieira[.]com spinheal[.]ru slimani[.]net narcert[.]com koken-voor-baby[.]nl smejump[.]co[.]th seevilla-dr-sturm[.]at dekkinngay[.]com
+
+friendsandbrgrs[.]com coastalbridgeadvisors[.]com ceres[.]org[.]au 2ekeus[.]nl aselbermachen[.]com physiofischer[.]de makeurvoiceheard[.]com krcove-zily[.]eu aarvorg[.]com longislandelderlaw[.]com crowd-patch[.]co[.]uk epwritescom[.]wordpress[.]com supportsumba[.]nl abl1[.]net ohidesign[.]com blossombeyond50[.]com coding-machine[.]com rostoncastings[.]co[.]uk promesapuertorico[.]com tulsawaterheaterinstallation[.]com
+
+musictreehouse[.]net pay4essays[.]net karacaoglu[.]nl baustb[.]de bricotienda[.]com mbxvii[.]com
+
+asgestion[.]com merzi[.]info newstap[.]com[.]ng kmbshipping[.]co[.]uk lmtprovisions[.]com lynsayshepherd[.]co[.]uk midmohandyman[.]com norovirus-ratgeber[.]de drugdevice[.]org americafirstcommittee[.]org readberserk[.]com carriagehousesalonvt[.]com latribuessentielle[.]com edgewoodestates[.]org ikads[.]org rieed[.]de yassir[.]pro xoabigail[.]com edv-live[.]de freie-gewerkschaften[.]de caribdoctor[.]org allentownpapershow[.]com
+
+thewellnessmimi[.]com
+
+employeesurveys[.]com lefumetdesdombes[.]com knowledgemuseumbd[.]com
+
+webmaster-peloton[.]com dontpassthepepper[.]com dirittosanitario[.]biz kaotikkustomz[.]com globedivers[.]wordpress[.]com puertamatic[.]es ihr-news[.]jp 101gowrie[.]com lillegrandpalais[.]com bouncingbonanza[.]com importardechina[.]info exenberger[.]at baylegacy[.]com mdacares[.]com winrace[.]no deepsouthclothingcompany[.]com 1team[.]es humancondition[.]com
+
+satyayoga[.]de austinlchurch[.]com jusibe[.]com crediacces[.]com conexa4papers[.]trade
+
+odiclinic[.]org augenta[.]com kikedeoliveira[.]com schraven[.]de pmcimpact[.]com pubweb[.]carnet[.]hr sportverein-tambach[.]de xn--vrftet-pua[.]biz hrabritelefon[.]hr deoudedorpskernnoordwijk[.]nl ianaswanson[.]com euro-trend[.]pl micro-automation[.]de actecfoundation[.]org nmiec[.]com polzine[.]net
+
+crosspointefellowship[.]church mooreslawngarden[.]com groupe-cets[.]com ora-it[.]de ateliergamila[.]com bargningavesta[.]se
+
+centuryrs[.]com makeflowers[.]ru
+
+goodgirlrecovery[.]com greenpark[.]ch pt-arnold[.]de tanzschule-kieber[.]de sportiomsportfondsen[.]nl samnewbyjax[.]com schlafsack-test[.]net rushhourappliances[.]com pcp-nc[.]com marchand-sloboda[.]com greenfieldoptimaldentalcare[.]com
+
+unim[.]su
+
+quizzingbee[.]com phantastyk[.]com campusoutreach[.]org wien-mitte[.]co[.]at ino-professional[.]ru jbbjw[.]com walkingdeadnj[.]com effortlesspromo[.]com uimaan[.]fi troegs[.]com hvccfloorcare[.]com skanah[.]com chrissieperry[.]com
+
+mepavex[.]nl
+
+sagadc[.]com
+
+videomarketing[.]pro fayrecreations[.]com hhcourier[.]com
+
+kosterra[.]com vox-surveys[.]com harveybp[.]com partnertaxi[.]sk
+
+highimpactoutdoors[.]net faronics[.]com
+
+farhaani[.]com jameskibbie[.]com trackyourconstruction[.]com
+
+christinarebuffetcourses[.]com poultrypartners[.]nl antenanavi[.]com intecwi[.]com danholzmann[.]com hebkft[.]hu
+
+gasbarre[.]com cirugiauretra[.]es polymedia[.]dk gmto[.]fr centrospgolega[.]com greenko[.]pl bierensgebakkramen[.]nl renergysolution[.]com deko4you[.]at
+
+icpcnj[.]org apolomarcas[.]com flexicloud[.]hk
+
+associationanalytics[.]com smale-opticiens[.]nl 4net[.]guru waynela[.]com beaconhealthsystem[.]org mikeramirezcpa[.]com
+
+aodaichandung[.]com heurigen-bauer[.]at xtptrack[.]com spargel-kochen[.]de ivfminiua[.]com filmvideoweb[.]com kadesignandbuild[.]co[.]uk igorbarbosa[.]com
+
+kojinsaisei[.]info evologic-technologies[.]com naturstein-hotte[.]de slwgs[.]org streamerzradio1[.]site amylendscrestview[.]com igrealestate[.]com
+
+simpliza[.]com mooshine[.]com cuppacap[.]com ungsvenskarna[.]se
+
+themadbotter[.]com torgbodenbollnas[.]se coding-marking[.]com paulisdogshop[.]de plotlinecreative[.]com refluxreducer[.]com destinationclients[.]fr frontierweldingllc[.]com
+
+live-con-arte[.]de corona-handles[.]com
+
+eadsmurraypugh[.]com blewback[.]com
+
+shonacox[.]com hokagestore[.]com sw1m[.]ru glennroberts[.]co[.]nz ampisolabergeggi[.]it oneheartwarriors[.]at tanciu[.]com grupocarvalhoerodrigues[.]com[.]br biortaggivaldelsa[.]com allure-cosmetics[.]at bargningharnosand[.]se smogathon[.]com ymca-cw[.]org[.]uk webcodingstudio[.]com nakupunafoundation[.]org lecantou-coworking[.]com clos-galant[.]com madinblack[.]com kamahouse[.]net socstrp[.]org manutouchmassage[.]com
+
+jobcenterkenya[.]com woodworkersolution[.]com stoeberstuuv[.]de saarland-thermen-resort[.]com kunze-immobilien[.]de rksbusiness[.]com simplyblessedbykeepingitreal[.]com rocketccw[.]com croftprecision[.]co[.]uk zieglerbrothers[.]de geekwork[.]pl toreria[.]es parebrise-tla[.]fr tetinfo[.]in 4youbeautysalon[.]com oceanastudios[.]com
+
+portoesdofarrobo[.]com theletter[.]company
+
+evergreen-fishing[.]com autodujos[.]lt yourobgyn[.]net tandartspraktijkhartjegroningen[.]nl dpo-as-a-service[.]com waywithwords[.]net norpol-yachting[.]com modestmanagement[.]com Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+
+
+

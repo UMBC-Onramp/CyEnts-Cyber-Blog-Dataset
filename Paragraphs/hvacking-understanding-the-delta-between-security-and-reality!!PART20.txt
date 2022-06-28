@@ -1,0 +1,4 @@
+
+Figure 14 With both a source and destination buffer allocated, “scNetMove” is called and subsequently memcpy is called, passing both buffers along with the size parameter taken from the socket read return value.
+Figure 15 This code path explains why and how the vulnerability occurs.
+For each packet sent, it is copied off the stack into memory; however, if the packet is longer than 1476 bytes, for each byte over 1476 and less than or equal to 1732, that many bytes in memory past the end of the destination buffer are overwritten.

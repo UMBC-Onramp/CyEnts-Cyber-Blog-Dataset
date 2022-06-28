@@ -1,0 +1,5 @@
+
+The next day, Microsoft fixed the same vulnerability in its Chromium-based Edge browser.
+Summing up the available information, it is reasonable to assume that an exploit for the vulnerability not only exists, but is actively being used by attackers.
+Another 28 new vulnerabilities Of the 28 vulnerabilities that the latest update addresses, most (20) were discovered by independent researchers, and the remaining eight by Google’s internal experts.
+Of the nine vulnerabilities with a high severity level, four (CVE-2022-1125, CVE-2022-1127, CVE-2022-1131, CVE-2022-1133) belong to the use-after-free class; three more (CVE-2022-1128, CVE-2022-1129, CVE-2022-1132) are related to inappropriate implementations in various components, another one (CVE-2022-1130) has to do with an insufficient validation of untrusted input in WebOTP and the remaining one (CVE-2022-1134), like the aforementioned CVE-2022-1096, is a Type Confusion problem in V8 engine.

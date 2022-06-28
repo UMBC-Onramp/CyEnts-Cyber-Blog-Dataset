@@ -1,0 +1,6 @@
+
+Even though compilers warn about some uninitialized variables, most of the complicated cases of uninitialized memory usage are not detected at compile time.
+For this, we can use a run-time detection mechanism.
+MemorySanitizer is a compiler instrumentation for both GCC and Clang, which detects uninitialized memory reads.
+A sample of how it works is given in Figure 1.
+$ cat sample.cc #include <stdio.h> int main() { int *arr = new int[10]; if(arr[3] == 0) { printf(\"Yay!\\n\"); } printf(\"%08x\\n\", arr[3]); return 0; } $ clang++ -fsanitize=memory -fno-omit-frame-pointer -g sample.cc $ ./a.out ==

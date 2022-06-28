@@ -1,0 +1,8 @@
+
+The server responds with information about the latest msageJS version, including a download URL, as shown in Figure 9.
+Note that since the request uses HTTP rather than HTTPS, the response can be hijacked easily by a network attacker, who could replace the download URL with a link to malicious JavaScript code that triggers the backdoors.
+Figure 9:
+Server response to msageJS update request via HTTP POST
+Conclusion In this blog, we described a high-risk ad library affecting thousands of iOS apps in the Apple App Store.
+We revealed the internals of backdoors which can be used to silently record audio, capture screenshots, prompt the user to side-load other high-risk apps, and read sensitive data from the app’s keychain, among other dubious capabilities.
+We also showed how these backdoors can be controlled remotely by JavaScript code fetched from the Internet in an insecure manner.

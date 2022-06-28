@@ -1,0 +1,6 @@
+
+A successful attack using this approach leaves almost no traces.
+Specter.js attack on LastPass The attack on the LastPass password manager was different in that the code to steal data using Spectre v1 was embedded in a malicious extension for Google Chrome.
+The LastPass extension was also running in the browser.
+In some cases, the extensions are also executed in a common browser process, making data theft possible.
+Specter.js attack on Google Cloud Storage Another example uses attacks on Google cloud storage: One browser tab contains a malicious page hosted on sites.google.com; another lets users upload images to their private storage in the G Suite service.

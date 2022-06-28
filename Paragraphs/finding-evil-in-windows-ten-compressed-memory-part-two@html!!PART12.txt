@@ -1,0 +1,15 @@
+
+The calculations are shown in Figure 10.
+Figure 10: Calculating the compressed page’s virtual address The virtual address 0x12f3970 calculated in Figure 10 contains the compressed page of interest.
+We can retrieve it from the MemCompression process space, as shown in Figure 11.
+To confirm that the compressed memory is located within MemCompression , check the SMKM_STORE structure’s StoreOwnerProcess field.
+Figure 11:
+Retrieving the compressed page from within MemCompression process space
+The compressed page can be decompressed with a call to the RtlDecompressBufferEx API or any other implementation that supports the XPRESS compression algorithm.
+Conclusion In this blog post, we shared a walkthrough in which we forced a known marker page into the compression store and manually retrieved it by walking through memory dumps using known structure offsets from Windows 10 1709 x64.
+The same techniques used here can be applied to Windows 10 1607 and onwards assuming correct structure offsets are known.
+In Part 3 of the series, Automating Undocumented Structure Extraction , we will look at how the FLARE team leveraged emulation via flare-emu to automate the extraction of the structures used in this walkthrough.
+Resources White paper Finding Evil in Windows 10 Compressed Memory, Part One: Volatility and Rekall Tools Finding Evil in Windows 10 Compressed Memory, Part Three: Automating Undocumented Structure Extraction FLARE Windows 10 Volatility Plugin FLARE
+Windows 10 Rekall Plugin Subscribe to Blogs Get email updates as new blog posts are added.
+
+

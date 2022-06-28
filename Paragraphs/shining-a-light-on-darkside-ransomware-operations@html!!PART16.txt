@@ -1,0 +1,7 @@
+
+C:\\run\\ C:\\home\\ C:\\tara\\
+C:\\Users\\[username]\\Music\\ C:\\Users\\Public UNC2659 UNC2659 has been active since at least January 2021.
+We have observed the threat actor move through the whole attack lifecycle in under 10 days.
+UNC2659 is notable given their use of an exploit in the SonicWall SMA100 SSL VPN product, which has since been patched by SonicWall.
+The threat actor appeared to download several tools used for various phases of the attack lifecycle directly from those tools’ legitimate public websites.
+The threat actor obtained initial access to their victim by exploiting CVE-2021-20016 , an exploit in the SonicWall SMA100 SSL VPN product, which has been patched by SonicWall.

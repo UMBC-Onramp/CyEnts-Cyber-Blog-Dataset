@@ -1,0 +1,4 @@
+
+The fake login page looks like the real one, although with an entirely different URL To keep the cryptoinvestor victim from suspecting anything is amiss, the scammers even set strict security requirements.
+For example, to log in to the fake site, you need to enter a strong password with the same strict requirements as the official platform.
+The password requirements on the fake exchange are as strict as on the real Luno site Next, if the victim enters their credentials and tries to log in, the screen will display a 403 Forbidden error, and that’s it, the attackers now have the password — and access to the victim’s cryptocurrency.

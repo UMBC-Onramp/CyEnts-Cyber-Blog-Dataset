@@ -1,0 +1,7 @@
+
+What is APKPure for?
+The most official of all Android app stores is, of course, Google Play.
+But it is available only on devices that use Google Mobile Services (GMS) and are firmly tied to Google’s infrastructure.
+Some vendors avoid GMS libraries to stay independent, and because Android is an open operating system, they can.
+For users, there are both advantages and disadvantages.
+One prominent disadvantage is a loss of access to Google’s app store, where Android users can download the usual apps.

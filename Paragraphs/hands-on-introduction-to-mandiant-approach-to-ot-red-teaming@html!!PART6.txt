@@ -1,0 +1,8 @@
+
+Once the active testing stops at the agreed safety threshold, we compile this information and perform additional research on the system and processes to develop realistic and target-specific attack scenarios based on our expertise of threat actor behaviors.
+Mandiant's OT red teaming can be scoped in different ways depending on the target environment, the organization's goals, and the asset owner's cyber security program maturity.
+For example, some organizations may test the full network architecture, while others prefer to sample only an attack on a single system or process.
+This type of sampling is useful for organizations that own a large number of processes and are unlikely to test them one by one, but instead they can learn from a single-use case that reflects target-specific weaknesses and vulnerabilities.
+Depending on the scope, the red teaming results can be tailored to: Model attack scenarios based on target-specific vulnerabilities and determine the scope and consequences if a threat actor were to exploit them in their environment.
+Model attack paths across the early stages of reconnaissance and lateral movement to identify low-hanging fruit that adversaries may exploit to enable further compromise of OT.
+Operationalize threat intelligence to model scenarios based on tactics, techniques, and procedures (TTPs) from known actors, such as advanced persistent threats (APTs).

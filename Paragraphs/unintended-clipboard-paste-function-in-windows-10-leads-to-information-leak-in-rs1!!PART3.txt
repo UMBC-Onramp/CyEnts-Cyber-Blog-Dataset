@@ -1,0 +1,11 @@
+
+ On all versions of Windows 10, the “paste” function appears to be intentionally forbidden from the Windows lock screen, including the “Hey Cortana” function.
+The original finding demonstrated CTRL+V could be used to paste clipboard contents.
+ 
+This is now disabled, even on RS1.
+ 
+However, we have found a way to bypass this restriction using the keyboard shortcut CTRL + SHIFT + INSERT, allowing us to access in plain text the clipboard contents, whatever they may be.
+ While we are continuing to explore this technique to force-copy functions (and access arbitrary content), for now we can access whatever happens to be copied.
+In the demo this is a password allowing login.
+
+

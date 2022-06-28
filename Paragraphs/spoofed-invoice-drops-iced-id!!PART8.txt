@@ -1,0 +1,13 @@
+
+HOTN!tr W64/Kryptik.
+CXY!tr W64/Kryptik.
+CXY!tr W64/Kryptik.
+CXY!tr LNK/IceID.AW!tr W64/Kryptik.
+CXY!tr All network based URI’s are blocked by the WebFiltering client.
+Fortinet has multiple solutions designed to help train users to understand and detect phishing threats: The FortiPhish Phishing Simulation Service uses real-world simulations to help organizations test user awareness and vigilance to phishing threats and to train and reinforce proper practices when users encounter targeted phishing attacks.
+In addition to these protections, we suggest that organizations also have their end users go through our FREE NSE training : NSE 1 – Information Security Awareness .
+It includes a module on Internet threats that is designed to help end users learn how to identify and protect themselves from various types of phishing attacks.
+IOCs Filename SHA256 invoice_15.zip 83bd20009107e1f60479016046b80d473436d3883ad6989e5d42bc08e142b5bb invoice_15.iso 3542d5179100a7644e0a747139d775dbc8d914245292209bc9038ad2413b3213 document.lnk a17e32b43f96c8db69c979865a8732f3784c7c42714197091866473bcfac8250 main.dll 698a0348c4bb8fffc806a1f915592b20193229568647807e88a39d2ab81cb4c2 Arur.exe 283d5eea1f9fc34e351deacc25006fc1997566932fae44db4597c84f1f1f3a30 Network IOCs: 160[.]153[.]32[.]99 160[.]90[.]198[.]40 yourgroceries[.]top ssddds1ssd2[.]com ip-160-153-32-99[.]ip[.]secureserver[.]net
+Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+
+

@@ -1,0 +1,5 @@
+
+As you create groups, rows in the chooser turn red indicating a group already exists, or can't be created because there is an overlap with an existing group.
+Another note: this calculation does not currently work on functions that do not return (those with an infinite loop).
+See the Appendix for details.
+Graph Complement Creating groups to simplify the overall control flow graph is nice, but it doesn’t help understand the details of a group that you create.

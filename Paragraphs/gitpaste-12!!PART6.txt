@@ -1,0 +1,10 @@
+
+But unfortunately for this threat actor, this implementation does not do what they expect it to do.
+Worming Capability The Gitpaste-12 malware also contains a script that launches attacks against other machines, in an attempt to replicate and spread.
+It chooses a random /8
+CIDR for attack and will try all addresses within that range, as demonstrated by this call: while true;do awk -va=\\$((\\$RANDOM%128))
+‘BEGIN{for(b=0;256>b;b++)
+for(c=0;256>c;c++) for(d=0;256
+>d;d++) system(\\”./sh \\”a\\”.\\”d\\”.\\”c\\”.\\”b\\”
+And here we can see the worm attempting to spread: Another version of the script also opens ports 30004 and 30005 for reverse shell commands: Gitpaste-12 Exploits Gitpaste-12 uses 11 vulnerabilities and a telnet brute forcer to spread.
+Known vulnerabilities include: CVE-2017-14135 Webadmin plugin for opendreambox CVE-2020-24217 HiSilicon based IPTV/H.264/H.265 video encoders CVE-2017-5638 Apache Struts CVE-2020-10987 Tenda router CVE-2014-8361 Miniigd SOAP service in Realtek SDK CVE-2020-15893 UPnP in dlink routers CVE-2013-5948

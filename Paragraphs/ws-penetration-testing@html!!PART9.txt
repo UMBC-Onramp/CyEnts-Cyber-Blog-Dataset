@@ -1,0 +1,6 @@
+
+If you have significant\nupgrades planned for the systems that will be tested, it is\ntypically best to schedule the test for a month or two after the\nupgrades are due to be finished.
+This will allow some time for the\ninevitable delays in deploying the upgrades as well give the\nupgraded systems (and their administrators) a bit of time to\n\"settle in\" and get fully configured before being\ntested.
+Who (part 2)
+The other \"who\" question to\nconsider is who will perform the penetration test?
+We recommend\nconsidering the following when selecting a penetration testing\nprovider: What are the qualifications of the organization\nand the individuals who will be performing the test?

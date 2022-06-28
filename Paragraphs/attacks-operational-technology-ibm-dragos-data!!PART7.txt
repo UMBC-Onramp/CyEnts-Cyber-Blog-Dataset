@@ -1,0 +1,9 @@
+
+PARISITE represents the first actions against ICS asset owners and operators to breach victim IT networks and establish persistence.
+PARISITE and MAGNALLIUM incorporate vulnerabilities into exploited items and weaponize disclosed vulnerabilities in critical products, showing the capability to move from Stage 1 to Stage 2.
+This access can be utilized to gather additional information for further penetration of the environment and possible ICS attacks.
+Ransomware and Remote Access Trojans: The Top Attack Types Further analysis of X-Force incident response data reveals that ransomware was the top attack type against organizations with connected OT networks in 2020 and 2021.
+Ransomware attacks made up nearly one-third of all attacks on OT-connected organizations last year, underscoring the interest ransomware adversaries are taking in industrial victims.
+Joint research by IBM X-Force and Dragos revealed that of all the ransomware attacks impacting industrial organizations, such as those found in the electric, oil and gas, manufacturing, rail and mining industries, between 2018 and 2020, 56% had an impact on operations.
+Even for ransomware strains that are not specifically designed to affect ICS systems, these intrusions end up impacting operations across the organization, often by necessitating a shutdown of the operational environment.
+Figure 1: Attack types against organizations connected to OT networks, January 2020 – June 2021 (Source: X-Force Incident Response Data)

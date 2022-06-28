@@ -1,0 +1,133 @@
+By William Ballenthin & Jeff Hamm On August 30, 2012, we presented a webinar on how to use INDX buffers to assist in an incident response investigation.
+
+During the Q&A portion of the webinar we received many questions; however, we were not able to answer all of them.
+
+We're going to attempt to answer the remaining questions by posting a four part series on this blog.
+
+This series will address:
+
+Part 1: Extracting an INDX Attribute Part 2:
+
+The Internal Structures of a File Name Attribute Part 3: A Step by Step Guide to Parse INDX
+
+Part 4:
+
+The Internal Structures of an INDX Structure Part 1: Extracting an INDX Record An INDX buffer in the NTFS file system tracks the contents of a folder.
+
+INDX buffers can be resident in the $MFT (Master File Table) as an index root attribute (attribute type 0x90) or non-resident as an index allocation attribute (attribute 0xA0) (non-resident meaning that the content of the attribute is in the data area on the volume.)
+
+INDX root attributes have a dynamic size in the MFT, so as the contents change, the size of the attributes change.
+
+When an INDX root attribute shrinks, the surrounding attributes shift and overwrite any old data.
+
+Therefore, it is not possible to recover slack entries from INDX root attributes.
+
+On the other hand, the file system driver allocates INDX allocation attributes in multiples of 4096, even though the records may only be 40 bytes.
+
+As file system activity adds and removes INDX records from an allocation attribute, old records may still be recoverable in the slack space found between the last valid entry and the end of the 4096 chunk.
+
+This is very interesting to a forensic investigator.
+
+Fortunately, many forensic tools support extracting the INDX allocation attributes from images of an NTFS file system.
+
+Scenario Let's say that during your investigation you identified a directory of interest that you want to examine further.
+
+In the scenario we used during the webinar, we identified a directory as being of interest because we did a keyword search for \"1.rar\".
+
+The results of the search indicated that the slack space of an INDX attribute contained the suspicious filename \"1.rar\".
+
+The INDX attribute had the $MFT record number 49.
+
+Before we can parse the data, we need to extract the valid index attribute's content.
+
+Using various forensic tools, we are capable of this as demonstrated below.
+
+The SleuthKit We can use the SleuthKit tools to extract both the INDX root and allocation data.
+
+To extract the INDX attribute using the SleuthKit, the first step is to identify the $MFT record IDs for the attributes of the inode.
+
+We want the content of the index root attribute (attribute type 0x90 or 144d) and the index allocation attribute (attribute type 0xA0 or 160d).
+
+To identify the attribute IDs, run the command: istat -f ntfs ntfs.dd 49 The istat command returns inode information from the $MFT.
+
+In the command we are specifying the NTFS file system with the \"-f\" switch.
+
+The tool reads a raw image named \"ntfs.dd\" and locates record number 49.
+
+The result of our output (truncated) was as follows: ....
+
+Attributes: Type: $STANDARD_INFORMATION (16-0)
+
+Name: Resident size: 72 ...
+
+Type: $I30 (144-6) Name: $I30 Resident size: 26 Type: $I30 (160-7) Name: $I30 Non-Resident size: 4096
+
+The information returned for the attribute list includes the index root - $I30 (144-6) - and an index allocation - $I30 (160-7).
+
+The attribute identifier is the integer listed after the dash.
+
+Therefore, the index root attribute 144 has an identifier of 6, and the index allocation attribute 160 has an identifier of 7.
+
+With this information, we can gather the content of the attributes with the SleuthKit commands: icat -f ntfs ntfs.dd 49-144-6 >
+
+INDX_ROOT.bin icat -f ntfs ntfs.dd 49-160-7 > INDX_ALLOCATION.bin
+
+The icat command uses the NTFS module to identify the record (49) attribute (144-6 and 144-7), and outputs the attribute data into the respective files INDX_ROOT.bin and INDX_ALLOCATION.bin.
+
+EnCase We can use EnCase to extract the INDX allocation data.
+
+To use EnCase version 6.x to gather the content of the INDX buffers, in the explorer tree, right click the folder icon.
+
+The \"Copy/UnErase...\" option applied to a directory will copy the content of the INDX buffer as a binary file.
+
+Specify a location to save the file.
+
+Note that the \"Copy Folders...\" option will copy the directory and its contents and will NOT extract the INDX structure.
+
+FTK We can use the Forensic Toolkit (FTK) to extract the INDX allocation data.
+
+Using FTK or FTK Imager, the INDX allocation attributes appear in the file list pane.
+
+These have the name \"$I30\" because the stream name is identified as $I30 in the index root and index allocation attributes.
+
+To extract the content of an index attribute, in the explorer pane, highlight the folder.
+
+In the file list pane, right click the relevant $I30 file and choose the option to \"export\".
+
+This will prompt you for a location to save the binary content.
+
+Mandiant Intelligent Response ® The Mandiant Intelligent Response ® (MIR) agent v.2.2 has the ability to extract INDX records natively.
+
+To generate a list of INDX buffers in MIR, run a RAW file audit.
+
+One of the options in the audit is to \"Parse NTFS INDX Buffers\".
+
+You can run this recursively, or you can target specific directories.
+
+We recommend the latter because this option will generate numerous entries when done recursively.
+
+To display a list of parsed INDX buffers, you can filter a file listing in MIR by choosing the \"FileAttributes\" are \"like\" \"*INDX*\".
+
+The MIR agent recognizes \"INDX\" as an attribute because the files listed in the indices may or may not be deleted.
+
+Results
+
+Regardless of which method is used, your binary file should begin with the string \"INDX\" if you grabbed the correct data stream.
+
+You can verify the results quickly in a hex editor.
+
+Ensure that the first four bytes of the binary data is the string \"INDX\".
+
+Conclusion This example demonstrates three ways to use various tools to extract INDX attribute content.
+
+Our next post will detail the internal structures of a file name attribute.
+
+A file name attribute will exist for each file tracked in a directory.
+
+These structures include the MACb (Modified, Accessed, Changed, and birth) times of a file and can be a valuable timeline source in an investigation.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

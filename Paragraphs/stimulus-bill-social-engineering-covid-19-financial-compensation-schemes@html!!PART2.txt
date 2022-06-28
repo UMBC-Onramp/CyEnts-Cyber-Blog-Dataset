@@ -1,0 +1,3 @@
+
+This is consistent with our expectations; malicious actors are typically quick to adapt their social engineering lures to exploit major flashpoints along with other recurrent events (e.g. holidays, Olympics).
+Security researchers at FireEye and in the broader community have already begun to identify and report on COVID-19 themed campaigns with grant, payment, or economic recovered themed emails and attachments.

@@ -1,0 +1,5 @@
+
+Along with the executable, two binary files, inject.bin (malicious function code) and imain.bin (malicious control logic) , were deployed as the controller’s payload.
+These file names were hard coded in the Py2EXE compiled python script.
+Trilog.exe took one option from the command line, which was a single IP address of the target Triconex device.
+It did not leverage the underlying TRITON library’s capability for Triconex device discovery, instead an instance of trilog.exe had to be invoked separately for each target controller in the environment.

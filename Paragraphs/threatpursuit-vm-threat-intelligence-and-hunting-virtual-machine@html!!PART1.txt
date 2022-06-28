@@ -1,0 +1,5 @@
+Skilled adversaries can deceive detection and often employ new measures in their tradecraft.
+Keeping a stringent focus on the lifecycle and evolution of adversaries allows analysts to devise new detection mechanisms and response processes.
+Access to the appropriate tooling and resources is critical to discover these threats within a timely and accurate manner.
+Therefore, we are actively compiling the most essential software packages into a Windows-based distribution: ThreatPursuit VM .
+ThreatPursuit Virtual Machine (VM) is a fully customizable, open-sourced Windows-based distribution focused on threat intelligence analysis and hunting designed for intel and malware analysts as well as threat hunters to get up and running quickly.

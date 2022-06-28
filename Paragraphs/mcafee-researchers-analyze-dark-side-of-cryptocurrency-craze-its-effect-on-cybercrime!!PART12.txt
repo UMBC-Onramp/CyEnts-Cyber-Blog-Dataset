@@ -1,0 +1,6 @@
+
+This shift reshaped and enabled retail targeting as it exists today.
+Cryptocurrency-based ransomware introduced: Outside of dark net markets, malware developers sought to acquire cryptocurrencies.
+Prior to 2013 the primary method to maliciously acquire coin was through mining.
+Less effective methods included scams, such as TOR-clone sites, fake markets, or Trojans designed to steal private keys to wallets.
+By late 2013 malware developers and botnet owners sold their malware at a premium by including mining software alongside the usual items such as credit cards and password scrapers.

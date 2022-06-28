@@ -1,0 +1,6 @@
+
+Block internet access for servers where possible.
+Often times there is no business need for servers, especially AD infrastructure systems, to access the Internet.
+The actors often choose high-uptime servers for the deployment of post-exploitation tools such as BEACON.
+Block uncategorized and newly registered domains using web proxies or DNS filters.
+Often the final payload delivered via phishing is hosted on a compromised third-party website that do not have a business categorization.

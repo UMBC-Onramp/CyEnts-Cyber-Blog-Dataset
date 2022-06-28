@@ -1,0 +1,5 @@
+FireEye’s Data Science and Information Operations Analysis teams released this blog post to coincide with our Black Hat USA 2020 Briefing , which details how open source, pre-trained neural networks can be leveraged to generate synthetic media for malicious purposes.
+To summarize our presentation, we first demonstrate three successive proof of concepts for how machine learning models can be fine-tuned in order to generate customizable synthetic media in the text, image, and audio domains.
+Next, we illustrate examples in which synthetically generated media have been weaponized for information operations (IO), as detected on the front lines by Mandiant Threat Intelligence.
+Finally, we outline challenges in detecting synthetically generated content, and lay out potential paths forward in a future where synthetically generated media will increasingly look, speak, and write like us.
+Highlights Open source, pre-trained natural language processing, computer vision, and speech recognition neural networks can be weaponized for offensive social media-driven IO campaigns.

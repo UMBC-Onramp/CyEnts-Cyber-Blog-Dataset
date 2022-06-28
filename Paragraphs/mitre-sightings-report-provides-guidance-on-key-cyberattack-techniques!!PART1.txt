@@ -1,0 +1,6 @@
+It’s common knowledge in the cybersecurity industry that attackers are evolving, and their attacks are becoming more sophisticated.
+As a result, the harm and cost to targeted victims and organizations are also steadily increasing.
+This situation demands a smart and innovative response from security practitioners because no organization can defend against every threat.
+Trying to protect against all the adversarial TTPs (tactics, techniques, and procedures) threat actors deploy would be extraordinarily costly and difficult to maintain for most enterprises.
+Perhaps the greatest challenge is scale.
+More than 370 attack techniques have been documented to date, and every quarter or so, another technique or implementation of a technique appears.

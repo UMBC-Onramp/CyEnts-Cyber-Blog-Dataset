@@ -1,0 +1,3 @@
+
+LockBit is actually using two persistence methods, CLSID and CurrentVersion\\Run .abcd extension used: The first version of LockBit uses the .abcd extension every time it encrypts a file; this is a unique difference between this version and the other versions found.
+Ransom note used: LockBit in this first version used a different ransom note with a different message: Figure 29:

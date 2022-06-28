@@ -1,0 +1,11 @@
+
+For example, our team identified the server 185.161.208\\.37 and domain rdppath\\.com within hours of it being established.
+A week later, we identified a QUADAGENT dropper with the previously identified C2.
+Additional examples of QUADAGENT are depicted in Figure 1.
+Figure 1:
+QUADAGENT C2 servers in the Shodan user interface Five days after the QUADAGENT dropper was identified, Mandiant was engaged by a victim that was targeted via the same C2.
+This activity was later attributed to APT34.
+During the investigation, Mandiant uncovered APT34 using RULER.HOMEPAGE.
+This was the first time our consultants observed the tool and technique used in the wild by a real threat actor.
+Our team developed a profile of servers hosting HOMEPAGE payloads and began tracking their deployment in the wild.
+Figure 2 shows a timeline of QUADAGENT C2 servers discovered between February and November of 2018.

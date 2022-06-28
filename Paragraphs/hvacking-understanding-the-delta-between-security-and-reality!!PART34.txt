@@ -1,0 +1,11 @@
+
+This meant it was possible to use the write-what-were condition to write the address of our shellcode in memory to the GOT, replacing a function pointer of a future function call.
+Once the replaced function pointer is called, our shellcode would be executed.
+But which function pointer should we replace?
+To ensure the highest probability of success, we decided it would be best to replace the pointer to a function that is called as close to the overwrite as possible.
+This is because we wanted to minimize changes to the memory layout during program execution.
+Examining the code again from the return of the “scNetMove” function, we see within just a few instructions “scDecodeBACnetUDP” is called.
+This therefore becomes the ideal choice of pointer to overwrite in the GOT.
+Figure 23
+Knowing what to write where, we next considered any conditions which needed to be met for the correct code path to be taken to trigger the vulnerability.
+Taking another look at the code in memcpy that allows the buffer overflow to occur, we noticed that the overwrite does indeed have a condition, as shown in Figure 24.

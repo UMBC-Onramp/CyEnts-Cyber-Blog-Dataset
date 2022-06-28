@@ -1,0 +1,6 @@
+
+The sender’s address looks clean, but that doesn’t mean everything’s in order
+For example, an article is missing in front of the word “message” in the subject line.
+The author may not speak fluent English, but the platform generates the subject of LinkedIn notifications automatically, so the subject can’t contain errors.
+If you smell a rat and do a search for the company (UVLEID), you won’t find it because it doesn’t exist.
+And most important, the links in the e-mail point to a suspicious address in which random words, numbers and letters have been added to the name of the social network.

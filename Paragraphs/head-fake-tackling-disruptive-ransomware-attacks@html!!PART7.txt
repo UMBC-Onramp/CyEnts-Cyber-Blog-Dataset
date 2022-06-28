@@ -1,0 +1,6 @@
+
+The payload delivered in step 2 is subsequently executed by the script process.
+The backdoor and banking-trojan payloads described above have been identified as Dridex, NetSupport Manager RAT, AZOrult, and Chthonic malware.
+The strategy behind the selective payload delivery is unclear; however, the most prevalent malware delivered during this phase of the infection chain were variants of the Dridex backdoor.
+FakeUpdates:
+More like FakeHTTP After the end user executes the FakeUpdates download, the victim system will send a custom HTTP POST request to a hard-coded Command and Control (C2) server.

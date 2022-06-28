@@ -1,0 +1,7 @@
+
+Figure 2: Start PowerShell as administrator Figure 3: Ready to install FLARE VM
+The rest of the installation process is fully automated.
+Depending upon your internet speed the entire installation may take up to one hour to finish.
+The VM also reboots multiple times due to the numerous software installations’ requirements.
+Once the installation completes, the PowerShell prompt remains open waiting for you to hit any key before exiting.
+After completing the installation, you will be presented with the following desktop environment: Figure 4: FLARE VM installation completes Congratulations!

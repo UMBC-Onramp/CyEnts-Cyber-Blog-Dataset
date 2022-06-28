@@ -1,0 +1,5 @@
+
+Core to the Edge We also predict that attacks will continue to span the network, including an increase in attacks targeting Operational Technology (OT) systems.
+According to a recent CISA (U.S. Cybersecurity & Infrastructure Security Agency) report, ransomware attacks are increasingly targeting critical infrastructure and \"have demonstrated the rising threat of ransomware to operational technology (OT) assets and control systems.\
+" This is being spurred by the near-universal convergence of IT and OT networks which has enabled some attacks to target OT systems through the compromised home networks and devices of remote workers.
+Traditionally, attacks on OT systems were the domain of highly specialized threat actors who knew their way around ICS and SCADA systems.

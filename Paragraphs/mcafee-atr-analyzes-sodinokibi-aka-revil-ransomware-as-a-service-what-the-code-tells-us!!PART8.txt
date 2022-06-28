@@ -1,0 +1,10 @@
+
+This value encoded in base64 is important later for the crypto process; it is the public key of the attacker.
+pid ->
+The affiliate number that belongs to the sample.
+sub ->
+The subaccount or campaign id for this sample that the affiliate uses to keep track of its payments.
+dbg -> Debug option.
+In the final version this is used to check if some things have been done or not; it is a development option that can be true or false.
+In the samples in the wild it is in the false state.
+If it is set, the keyboard check later will not happen.

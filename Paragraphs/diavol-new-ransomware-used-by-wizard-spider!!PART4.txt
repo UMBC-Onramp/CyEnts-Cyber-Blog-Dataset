@@ -1,0 +1,12 @@
+
+Technical Analysis locker.exe is a 32-bit executable compiled with Microsoft Visual C/C++ Compiler.
+The timestamp 2021-04-30 15:58:15 on the file supports the hypothesis that this ransomware is relatively new.
+Upon execution, Diavol starts by checking the command line arguments: \" -p \": path to a file with a list of paths to scan first for files.
+\" -log \": path to a log file.
+\" -m \": mode: net or local .
+net - encrypt network shares only.
+local - encrypt local drives only and ignore network shares.
+\" -h \": path to a file that contains specific hosts (names and IPs) to enumerate for shares.
+\" -s \": IP address that the initial register message will be sent to.
+Overrides the hardcoded address.
+The following command-line parameters were observed in the incident: -p \"C:\\b.txt\" -m local -log \"C:\\programdata\\log.txt\" The log file lists files that were encrypted.

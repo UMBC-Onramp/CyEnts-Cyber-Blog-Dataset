@@ -1,0 +1,14 @@
+
+We investigated relatively few open-source vendors, but it begs the question: What more could we have found if we had access to professional hardware and software?
+Default accounts, cross-site scripting, or vulnerabilities in the web server could lead to access to the systems.
+Our research demonstrates that once inside the systems, the data and pictures can be permanently altered.
+In May 2017, one report claimed that through artificial intelligence pictures could be studied to determine how long a person will live.
+What if criminals could obtain that information and use it for extortion?
+We understand the need for quickly sharing medical data for diagnosis and treatment and for storing medical images.
+We advise health care organizations to be careful when sharing images on open directories for research purposes and to at least scrape the PII data from the images.
+For organizations using a PACS, ask your vendor about its security features.
+Employ a proper network design in which the sharing systems are properly secured.
+Think not only about internal security but also about the use of VPNs and two-factor authentication when connecting with external systems.
+For more on the health care industry follow @McAfee_Labs and catch up on all threats statistics from Q417 in the March Threats Report .
+
+

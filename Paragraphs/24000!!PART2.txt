@@ -1,0 +1,6 @@
+
+CVE-2022-1096 vulnerability So far Google has not published details about any of the vulnerabilities — as per the company’s security policy, access to a detailed description of the bugs remains restricted until the majority of active users update their browser.
+But it is already clear that it is the CVE-2022-1096 vulnerability (the one that Google closed with a separate patch on Friday, March 25, just four days before the major update) that may cause real problems.
+CVE-2022-1096 belongs to the Type Confusion class, that means it is connected to some error in data types handling in the V8 engine.
+The vulnerability is pretty dangerous, judging by the fact that Google addressed this bug separately with an emergency patch.
+What’s more, according to the patch release notes, Google was aware that an exploit for this vulnerability already existed on March 25.

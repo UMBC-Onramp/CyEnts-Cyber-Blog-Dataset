@@ -1,0 +1,4 @@
+
+With disruption as an objective, these attacks managed to shut down both critical and personal services.
+As of June 2018, an Ohio police and fire department , a Minnesota psychiatric provider , and even a family planning clinic have all been victims of a ransomware attack, proving threat actors will stop at almost nothing in order to cause a bit of chaos.
+The Adversarial Machine Learning Arms Race Revs Up The Prediction Late last year, our Labs team discussed how the influence of machine learning will be felt on both sides of the equation – white hats will ramp up their AI/ML defenses, while cybercriminals will tap into the technology’s power to enact advanced attacks.

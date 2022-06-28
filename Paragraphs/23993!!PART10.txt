@@ -1,0 +1,9 @@
+
+Even if the backdoor creator does not plan to hack users of their mods, access to their GitHub account can be stolen or they can sell their account themselves (as often happens, for example, with browser extensions).
+Finally, if a mod is already installed, user will most likely need to remove it manually, but not everyone may get round to that.
+Fortunately, according to Cities: Skylines developers, only 50 people have been affected this time.
+How to protect yourself from dangerous game mods There are plenty of ways to get a user to download malware under the guise of an “official” program or game.
+But with custom extensions, things are more complicated: by definition, they are created in a “home-made” manner, and the developer of the game cannot control all the modifications.
+Therefore, as you expand the capabilities of your favorite game, be vigilant.
+Try to install mods from official sources, if possible.
+And if the mod creator advises you “in case of problems, disable your anti-virus,” think twice before doing so.

@@ -1,0 +1,4 @@
+
+Let’s look at the reconstructed method 0x0600043E that implements the decryption logic for the malware configuration.
+Compared to the original MSIL, the reconstructed MSIL now shows that the malware uses AES-256 in CBC mode with PKCS7 padding.
+With a combination of dynamic analysis and static analysis, we can also easily identify the key to be “ Vewgbprxvhvjktmyxofjvpzgazqszaoo ” and the IV to be part of the Base64 -encoded buffer passed in as its argument.

@@ -1,0 +1,14 @@
+
+FIVEHANDS
+Encrypted Dropper One significant change between DEATHRANSOM and FIVEHANDS is the use of a memory-only dropper, which upon execution, expects a command line switch of -key followed by the key value necessary to perform decryption of its payload.
+The payload is stored and encrypted with AES-128 using an IV of “85471kayecaxaubv”.
+The decrypted FIVEHANDS payload is immediately executed after decryption.
+To date, Mandiant has only observed encrypted droppers with a common imphash of 8517cf209c905e801241690648f36a97.
+CLI arguments FIVEHANDS can receive a CLI argument for a path, this limits the ransomware's file encryption activities to the specified directory.
+DEATHRANSOM and HELLOKITTY do not accept CLI arguments.
+Locale and Mutex checks DEATHRANSOM performs language ID and keyboard layout checks.
+If either of these match Russian, Kazakh, Belarusian, Ukrainian or Tatar it exits.
+Neither HELLOKITTY or FIVEHANDS perform language ID or keyboard checks.
+HELLOKITTY performs a mutex check while the other two do not perform mutex checks.
+File Exclusions DEATHRANSOM and HELLOKITTY both exclude the same directories and files: programdata, $recycle.bin, program files, windows, all users, appdata, read_me.txt, autoexec.bat, desktop.ini, autorun.inf, ntuser.dat, iconcache.db, bootsect.bak, boot.ini, ntuser.dat.log, or thumbs.db.
+The exclusions for FIVEHANDS are more extensive and contain additional files and directories to ignore.

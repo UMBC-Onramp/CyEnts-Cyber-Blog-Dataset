@@ -1,0 +1,6 @@
+
+Pairing a disassembler with an emulator allows you to pause emulation at key instructions and inspect the contents of registers and memory.
+This allows you to keep tabs on interesting data as it flows through a function.
+This can have several applications.
+As previously covered in other blogs in the FLARE script series, Automating Function Argument Extraction and Automating Obfuscated String Decoding , this technique can be used to track the arguments passed to a given function throughout an entire program.
+Function argument tracking is one of the techniques employed by the Objective-C code analysis tool introduced later in this post.

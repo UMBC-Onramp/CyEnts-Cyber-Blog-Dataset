@@ -1,0 +1,13 @@
+
+The call function sets up the stack, sets any specified register values, and executes the function.
+Once all strings are decoded, the final step is to get these strings back into our IDB.
+ The utils script contains utility functions to create IDA Python scripts.
+In this case, we output an IDA Python script that creates comments in the IDB.
+Running this debugger script produces the following output: The output IDA Python script creates repeatable comments on all encoded string locations, as shown in Figure 3.
+Figure 3.
+Decoded string as comment Conclusion Stay tuned for another debugger scripting series post that will focus on plugins!
+For now, head over to the flare-dbg github project page to get started.
+The project requires pykd , winappdbg , and vivisect .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

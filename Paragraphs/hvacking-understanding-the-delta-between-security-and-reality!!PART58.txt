@@ -1,0 +1,7 @@
+
+Therefore, if a function in the main Delta binary shares a name and signature with one defined in an attacker-generated library that is loaded first, the attacker-defined function will be executed in its place.
+As the attacker has a root shell on the device, it is possible for them to modify the init scripts to populate the LD_PRELOAD variable with a path to an attacker-generated library before starting the Delta software upon boot, essentially installing malware that executes upon reboot.
+Using the cross-compile toolchain created in the early stages of the project, it was simple to test this theory with the “library” shown in Figure 30.
+Figure 30 The code above doesn’t do anything meaningful, but it does confirm if hooking this method will work as expected.
+  
+We first defined a function pointer using the same function prototype we saw in IDA for canioWriteOutput.

@@ -1,0 +1,13 @@
+
+We can quickly identify two users logged in from IP addresses in the 203.0.113.0/24 range six times, and which applications they logged into from each of these IP addresses.
+While these are just a couple use cases, there are many ways to format and view evidence using PivotTables.
+We recommend trying PivotTables on any data set being reviewed with Excel and experimenting with the Rows, Columns, and Values parameters.
+We also recommend adjusting the PivotTable options , which can help reformat the table itself into a format that might fit requirements.
+Conclusion These Excel functions are used frequently during investigations at FireEye Mandiant and are considered important forensic analysis techniques.
+The examples we give here are just a glimpse into the utility of LOOKUP functions and PivotTables.
+LOOKUP functions can be used to reference a multitude of data sources and can be applied in other situations during investigations such as tracking remediation and analysis efforts.
+PivotTables may be used in a variety of ways as well, depending on what data is available, and what sort of information is being analyzed to identify suspicious activity.
+Employing these techniques, alongside the ones we highlighted previously, on a consistent basis will go a long way in \"excelerating\" forensic analysis skills and efficiency.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

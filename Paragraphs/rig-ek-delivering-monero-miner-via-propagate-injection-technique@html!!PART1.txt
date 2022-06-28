@@ -1,0 +1,4 @@
+Introduction Through FireEye Dynamic Threat Intelligence (DTI), we observed RIG Exploit Kit (EK) delivering a dropper that leverages the PROPagate injection technique to inject code that downloads and executes a Monero miner (similar activity has been reported by Trend Micro ).
+Apart from leveraging a relatively lesser known injection technique, the attack chain has some other interesting properties that we will touch on in this blog post.
+Attack Chain
+The attack chain starts when the user visits a compromised website that loads the RIG EK landing page in an iframe.

@@ -1,0 +1,5 @@
+
+Lan -> .net.zip
+Armed with the information gathered from de.py , we turned our attention to decoding and decompressing “ .net.zip ”
+(MD5: 0caf9be8fd7ba5b605b7a7b315ef17a0).
+Inside, we recovered five files, represented in Table 1: Filename Functionality MD5 x86.dll 32-bit Downloader 9aa67d856e584b4eefc4791d2634476a x64.dll 64-bit Downloader 55b40e0068429fbbb16f2113d6842ed2 scan.py Python socket scanner b0acb27273563a5a2a5f71165606808c xp_eternalblue.replay Exploit replay file 6cf1857e569432fcfc8e506c8b0db635 eternalblue.replay Exploit replay file 9e408d947ceba27259e2a9a5c71a75a8 Table 1: Contents of the ZIP file \".new.zip\", created by the script de.py The contents of the ZIP were explained via analysis of the file scan.py , a Python scanning script that would also automate exploitation of identified vulnerable system(s).

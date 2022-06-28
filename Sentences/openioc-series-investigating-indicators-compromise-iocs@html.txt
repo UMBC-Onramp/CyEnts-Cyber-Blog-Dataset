@@ -1,0 +1,131 @@
+Written by Devon Kerr & Will Gibb
+
+The Back to Basics: OpenIOC blog series previously discussed how Indicators of Compromise (IOCs) can be used to codify information about malware or utilities and describe an attacker's methodology.
+
+Also touched on were the parts of an IOC, such as the metadata, references, and definition sections.
+
+This blog post will focus on writing IOCs by providing a common investigation scenario, following along with an incident response team as they investigate a compromise and assemble IOCs.
+
+Our scenario involves a fictional organization, \"Acme Widgets Co.\", which designs, manufactures and distributes widgets.
+
+Last week, this organization held a mandatory security-awareness training that provided attendees with an overview of common security topics including password strength, safe browsing habits, email phishing and the risks of social media.
+
+During the section on phishing, one employee expressed concern that he may have been phished recently.
+
+Bob Bobson, an administrator, indicated that some time back he'd received a strange email about a competitor's widget and was surprised that the PDF attachment wouldn't open.
+
+A member of the security operations staff, John Johnson, was present during the seminar and quickly initiated an investigation of Bob's system using the Mandiant Redline™ host investigation tool.
+
+John used Redline to create a portable collectors configured to obtain live response data from Bob's system which included file system metadata, the contents of the registry, event logs, web browser history, as well as service information.
+
+John ran the collectors on Bob's system and brought the data back to his analysis workstation for review.
+
+Through discussions with Bob, John learned that the suspicious e-mail likely arrived on October 13, 2013.
+
+After initial review of the evidence, John assembled the following timeline of suspicious activity on the system.
+
+Table 1: Summary of significant artifacts Based on this analysis, John pieced together a preliminary narrative:
+
+The attacker sent a spear-phishing email to Bob which contained a malicious PDF attachment, \"Ultrawidget.pdf\", which Bob saved to the desktop on October 10, 2013, at 20:19:07 UTC.
+
+Approximately five minutes later, at 20:24:44 UTC, the file \"C:WINDOWSSysWOW64acmCleanup.exe\" was created as well as a Run key used for persistence.
+
+These events were likely the result of Bob opening the PDF.
+
+John sent the PDF to a malware analyst to determine the nature of the exploit used to infect Bob's PC.
+
+The first IOC John writes describes the malware identified on Bob's PC, \"acmCleanup.exe\", as well as the malicious PDF.
+
+IOCs sometimes start out as rudimentary - looking for the known file hashes, filenames and persistence mechanisms of the malware identified.
+
+Here is what an initial IOC looks like: Figure 1: Initial IOC for acmCleanup.exe (BACKDOOR)
+
+As analysis continues, these IOCs are updated and improved - incorporating indicator terms from malware and intelligence analysis as well as being refined based on the environment.
+
+In this sense, the IOC is a living document.
+
+For example, additional analysis may reveal more registry key information, additional files which may be written to disk, or information for identifying the malware in memory.
+
+Here is the same IOC, after augmenting it with the results of malware analysis:
+
+Figure 2: Augmented IOC for acmCleanup.exe (BACKDOOR)
+
+The augmented IOC will continue to identify the exact malware discovered on Bob's PC.
+
+This improved IOC will also identify malware which has things in common with that backdoor: Malware which uses the same Mutex, a process attribute that will prevent the machine from being infected multiple times with the same backdoor Malware which performs DNS queries for the malicious domain \"23vsx.evil.com\" Malware which has a specific set of import functions; in this case which correspond to reverse shell and keylogger functionality Beginning on October 11, the attacker accessed the system and executed the Windows command \"ipconfig\" at 20:24:00 UTC, resulting in the creation of a prefetch file.
+
+Approximately five minutes later, the attacker began uploading files to \"C:$RECYCLE.BIN\".
+
+Based on review of their MD5 hashes, three files (\"wce.exe\", \"getlsasrvaddr.exe\", \"update.exe\") were identified as known credential dumping utilities while others (\"filewalk32.exe\", \"rar.exe\") were tools for performing file system searches and creating WinRAR archives.
+
+These items should be recorded in an IOC, as a representation of an attacker's tools, techniques and procedures (TTPs).
+
+It is important to know that an attacker is likely to have interacted with many more systems than were infected with malware; for this reason it is crucial to look for evidence that an attacker has accessed systems.
+
+Some of the most common activities attackers perform on these systems include password-dumping, reconnaissance and data theft.
+
+Seeing that the attacker had staged file archives and utilities in the \"$Recycle.
+
+Bin\" folder, John also created an IOC to find artifacts present there.
+
+This IOC was designed to identify files in the root of the \"$Recycle.
+
+Bin\" directory; or to identify if a user (notably, the attacker) tried to access the \"$Recycle.
+
+Bin\" folder by manually typing it in the address bar of Explorer by checking TypedPaths in the Registry.
+
+This is an example of encapsulating an attacker's TTPs in an OpenIOC form.
+
+Figure 3: IOC for Unusual Files in \"C:RECYCLER\" and \"C:$RECYCLE.BIN\" (Methodology)
+
+On October 15, 2013, at 12:15:37 UTC, the Sysinternals PsExec utility was created in \"C:$RECYCLE.BIN\".
+
+Approximately four hours later, at 16:11:03 UTC, the attacker used the Internet Explorer browser to access text files located in \"C:$RECYCLE.BIN\".
+
+Between 16:11:03 UTC and 16:11:06 UTC, the attacker accessed two text files which were no longer present on the system.
+
+At 16:17:55 UTC, the attacker mounted the remote hidden share \"\\10.20.30.101C$\".
+
+At 16:20:29 UTC, the attacker executed the Windows \"tree\" command, resulting in the creation of a prefetch file, a command which produces a filesystem listing.
+
+At 17:37:37 UTC, the attacker created one WinRAR archive, \"C:$Recycle.
+
+Bina.rar\" which contained two text files, \"c.txt\" and \"a.txt\".
+
+These text files contained output from the Windows \"tree\" and \"ipconfig\" commands.
+
+No further evidence was present on the system.
+
+John noted that the earliest event log entries present on the system start approximately two minutes after the creation of \"a.rar\".
+
+It is likely that the attacker cleared the event logs before disconnecting from the system.
+
+John identified the lateral movement to the 10.20.30.101 host, from \"ACM-BOBBO\" through registry keys that recorded the mount of the hidden C$ share.
+
+By recording this type of artifact in an IOC, John will be able to quickly see if the attacker has pivoted to another part of the Acme Widgets Co. network when investigating 10.20.30.101.
+
+He included artifacts looking for other common hidden shares such as IPC$ and ADMIN$. The effectiveness of an IOC may be influenced by the environment the IOC was created for.
+
+This IOC, for example, may generate a significant number of false-positives in an environment where these hidden shares are legitimately used.
+
+At Acme Widgets Co., however, the use of hidden shares is considered highly suspicious.
+
+Figure 4 IOC for Lateral Movement (Methodology)
+
+At the end of the day, John authored three new IOCs based on his current investigation.
+
+He knows that if he records the artifacts he identified from his investigation into the \"ACM-BOBBO\" system, he can apply that knowledge to the investigation of the host at 10.20.30.101.
+
+Once he collects information on 10.20.30.101 with his Redline portable collector, he'll be able to match IOCs against the Live Response data, which will let him identify known artifacts quickly prior to beginning Live Response analysis.
+
+Although John is using these IOCs to search systems individually, these same IOCs could be used to search for evidence of attacker activity across the enterprise.
+
+Armed with this set of IOCs, John sets out to hunt for evil on the host at \"10.20.30.101\".
+
+Stay tuned for our next blog post, seeing how this investigation develops.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

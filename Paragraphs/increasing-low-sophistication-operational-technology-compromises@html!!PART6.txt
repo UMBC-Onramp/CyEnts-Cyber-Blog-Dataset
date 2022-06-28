@@ -1,0 +1,6 @@
+
+For example, we have seen hacktivist groups that frequently use anti-Israel/pro-Palestine rhetoric in social media posts share images indicating that they had compromised OT assets in Israel, including a solar energy asset and the webserver of a datalogger used for different applications such as mining exploration and dam surveillance (Figure 2).
+Figure 2:
+Screenshots of compromised web-interfaces supporting OT
+Some threat actors appear particularly eager to demonstrate their interaction with compromised control systems.
+One threat actor shared multiple screen recordings making arbitrary set point changes to compromised HMIs via remote connections from their own desktop.

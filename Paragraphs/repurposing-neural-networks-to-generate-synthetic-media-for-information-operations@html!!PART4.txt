@@ -1,0 +1,5 @@
+
+The pre-training required to produce models capable of synthetic media generation can cost thousands of dollars, take weeks or months of time, and require access to expensive GPU clusters.
+However, the application of transfer learning can drastically reduce the amount of time and effort involved.
+In transfer learning, we start from a large generic model that has been pre-trained for an initial task where copious data is available.
+We then leverage the model’s acquired knowledge to train it further on a different, smaller dataset so that it excels at a subsequent, related task.

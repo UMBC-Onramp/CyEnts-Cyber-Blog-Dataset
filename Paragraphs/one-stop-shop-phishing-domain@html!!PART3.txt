@@ -1,0 +1,8 @@
+
+PaymentConfirmation.aspx
+The next website requests the victim to enter their valid 10-digit mobile number and email ID (Figure 2), which makes the website appear more legitimate.
+Figure 2: Personal information being requested Step 3
+The victim will then be redirected to the spoofed online banking page of the bank they selected, which requests that they log in using their user name and password.
+Figure 3 shows a fake login page for State Bank of India.
+See the Appendix for more banks that have spoofed login pages.
+Figure 3: Fake login page for State Bank of India After entering their login credentials, the victim will be asked to key in their One Time Password (OTP), as seen in Figure 4.

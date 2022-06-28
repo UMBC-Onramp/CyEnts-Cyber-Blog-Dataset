@@ -1,0 +1,103 @@
+So long as gamers seek out free apps in the form of unlicensed copies, cracks, and other goodies, cybercriminals will continue to prey on them, and we will continue to spotlight the dangers gamers face.
+
+Here are some we’ve found over the past year.
+
+Cyberattacks on gamers Our experts took a look at how cybercriminals made money from gamers who skimped on both gaming and security, ending up with unexpected apps along with (or instead of) the games they thought they were downloading.
+
+Want some ads?
+
+Perhaps the most common surprise greedy gamers find in their popular games is adware.
+
+Although not usually too harmful, adware can be very annoying.
+
+With this uninvited guest on their computer or smartphone, users will constantly be closing banners, pop-up videos, and browser pages they didn’t open.
+
+Cryptomining, a timeless threat In the hierarchy of bad stuff users might get with pirated games, cryptominers rank far higher than adware.
+
+Gamers, with their souped-up computers and brawny video cards, make ideal targets for cryptocurrency freeloaders — and a miner concealed inside a game with high system requirements can go unnoticed for quite some time, during which the computer is working for a malicious third party.
+
+Swarez:
+
+Danger at the top of search results Most gamers know that the place to get official games is a specialized store such as Steam.
+
+But for a “Minecraft crack” or “virus-free FIFA,” they turn to search engines.
+
+Cybercriminals take advantage of this, creating websites offering free keys, cracks, and unlocked versions of games; adding Trojans; and pushing them onto the first page of search results.
+
+Alternatively, they can load infected, pirated copies onto existing warez sites.
+
+That is how the Swarez loader gets distributed.
+
+Users who try to download, say, cracks for Minecraft get sent through a long chain of redirects to a page with a ZIP archive, inside of which is another password-protected ZIP and a text file with a key.
+
+Unzipping the archive loads Swarez on the unfortunate gamer’s device, where it proceeds to download Taurus spyware, a Trojan that takes screenshots and steals cryptowallets, desktop files, and passwords and other data stored in browsers.
+
+Fake Minecraft targets Android users Minecraft remains very popular cyberattack bait, including on smartphones and tablets.
+
+Back in 2020, we found more than 20 malicious apps on Google Play disguised as mods for the game, and this year saw a repeat .
+
+The game also serves as a front for Hqwar malware, which reports an installation error and prompts the user to uninstall the app.
+
+In fact, that removes only the icon; the malware remains, working in stealth mode to harvest online bank credentials.
+
+Vesub Trojan disguised as Brawl Stars and PUBG
+
+Another example of cunning malware, Vesub, hides in pirated versions of Brawl Stars and PUBG for Android.
+
+When run, the malware appears to load very slowly — and then, nothing.
+
+The victim, seeing the game is not working, quits.
+
+The icon disappears from the screen at that point, but the Trojan remains on the device and gets to work.
+
+What’s actually happening during that fake startup is data collection:
+
+Vesub collects system data and receives further instructions.
+
+Then, running in the background, it can subscribe the victim to paid services, send text messages from their smartphone, play YouTube videos, visit app pages on Google Play, and open advertising websites.
+
+And then there’s phishing By now you should understand quite well that downloading pirated games is far more trouble than it’s worth.
+
+If so, your gaming experience just became a lot safer.
+
+However, you should know about another way cybercriminals exploit gamers’ quest for freebies: offering bundles of games at a 99% discount, promising mountains of free or near-free in-game currency, and inviting players to take part in nonexistent tournaments.
+
+Hiding behind famous titles — from FIFA 21 and Apex Legends to GTA Online and Pokemon Go — cybercriminals scoop up victims’ e-mail addresses, social network names and login credentials, and game info.
+
+Even without passwords, such information fetches a price on the dark web .
+
+Need we state that by entering your password on an unofficial site, you run the risk of losing your account?
+
+Even worse is if the victim, asked for payment card details for “verification,” agrees.
+
+What happens next, you know only too well.
+
+How to get games risk-free The risks gamers face are neither new nor particularly unusual.
+
+Although gamers appear to be a relatively risk-tolerant group, you can practice safe gaming by following some commonsense tips: Buy games (yes, buy them) from official stores only.
+
+You can still save money on video games , and you need not walk into traps.
+
+For example, publishers hold sales regularly and even host the occasional giveaway.
+
+By waiting for official discounts, you not only minimize the chance of a run-in with malware, but also support the developers and get the latest patches for your favorite games in good time.
+
+Be careful when downloading games.
+
+Cybercriminals often promote malicious pages that appear to be well-known online stores.
+
+Unfortunately, you cannot trust search engines completely, here.
+
+Just download the platform’s official app (if it has one), bookmark its website, or enter the URL manually.
+
+Follow our simple security guide for buying loot boxes or other virtual goods: One rule, for example, is never to trust shady sites offering cheap unique skins, weapons, and so forth.
+
+Check the security settings of services you use, and see our how-to guides for protecting accounts on Steam , Battle.net , Origin , Discord , Twitch , and other platforms .
+
+Install a reliable antivirus solution on your computer and smartphone, and never disable it.
+
+Contrary to popular myth, antivirus software does not cause game slowdown , especially if you configure it correctly.
+
+
+
+

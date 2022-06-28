@@ -1,0 +1,10 @@
+
+They are simply now leveraging the crisis as a means of social engineering.
+This pattern of behavior is familiar.
+Threat actors have always capitalized on major events and crises to entice users.
+Many of the actors who are now using this approach have been tracked for years.
+Ultimately, COVID-19 is being adopted broadly in social engineering approaches because it is has widespread, generic appeal, and there is a genuine thirst for information on the subject that encourages users to take actions when they might otherwise have been circumspect.
+We have seen it used by several cyber criminal and cyber espionage actors, and in underground communities some actors have created tools to enable effective social engineering exploiting the coronavirus pandemic.
+Nonetheless, COVID-19 content is still only used in two percent of malicious emails.
+For the time being, we do not believe this social engineering will be abetting.
+In fact, it is likely to take many forms as changes in policy, economics, and other unforeseen consequences manifest.

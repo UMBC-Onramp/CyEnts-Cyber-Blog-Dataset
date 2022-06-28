@@ -1,0 +1,10 @@
+
+Figure 6 shows a snippet from the file in which the Windows 10 1903 x86 profile is created.
+Figure 6: Structure definition found within w10_memcompression.py overlay Create a new profile dictionary (ex. win10_mem_comp_x86_1903 ) corresponding to the Windows build that you are targeting and populate the structure entries accordingly.
+Conclusion Undocumented structures pose a challenge to those who rely on them.
+This blog post covered how flare-emu can be leveraged to reduce the level of effort needed to analyze new files.
+We analyzed the extraction of an ST_DATA_MGR field used in page decompression by presenting the problem and then the code involved with automating the effort.
+The automation code is available on the FireEye GitHub with usage information and documentation available in both the README and code.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,7 @@
+
+ The result is good empirical data that indicates not only how attackers are moving through networks but also what assets they’re hitting in the process.
+The flow gives a clear view of where specific actions will take place so that IT leadership will know what defense strategies to prioritize.
+Without Attack Flow, it’s extremely difficult for executives to grasp how these attacks map to specific assets within their environments and under their responsibility, especially because multiple attack flows are possible.
+Cyber defenders also have a hard time understanding where to look after identifying specific TTPs in their networks.
+Our Attack Flow intelligence will shed light on these two common hurdles.
+What Is An Attack Flow?

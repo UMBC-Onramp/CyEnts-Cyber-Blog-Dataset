@@ -1,0 +1,7 @@
+
+What can we accomplish in such a small amount of space?
+One method that does not require extensive shellcode is to use a “return to libc” attack to execute the system command.
+For our exploit to work out of the box, whatever command or program we run with system must be present on the device by default.
+Additionally, the command string itself needs to be quite short to accommodate the limited number of bytes we have to work with.
+An ideal scenario would be executing code that would allow remote shell access to the device.
+Fortunately, Netcat is present on the device and this version of Netcat supports both the “-ll” flag, for persistent listening on a port for a connection, and the “-e” flag, for executing a command on connection.

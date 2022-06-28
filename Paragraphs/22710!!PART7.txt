@@ -1,0 +1,7 @@
+
+It is safe to use.
+How to guard against Trojanized APKPure If you don’t use APKPure, then don’t worry — today’s problem does not concern you.
+But to avoid similar issues in the future: Never download apps from unofficial sources, and block the installation of apps from third-party sources in Android’s settings; Use a reliable security solution that automatically scans all new files; Regularly update all apps and the operating system.
+If you do use APKPure, we additionally recommend that you: Update the APKPure app to the version in which the issue is fixed (that is, 3.17.19 or newer); Run a full antivirus scan of the device.
+
+

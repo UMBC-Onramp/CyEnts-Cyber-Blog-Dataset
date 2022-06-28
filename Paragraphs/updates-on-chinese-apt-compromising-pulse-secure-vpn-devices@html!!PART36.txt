@@ -1,0 +1,8 @@
+
+Based on status and error messages in nearby functions the executable dslogserver appears to be related to log event handling, and the purpose of the CLEANPULSE utility may be to prevent certain events from being logged.
+There are several un-referenced functions that appear to have been taken from the open source project PUPYRAT.
+It is likely that the actor re-purposed this open source code, using PUPYRAT as a simple template project.
+RAPIDPULSE RAPIDPULSE is a webshell capable of arbitrary file read.
+As is common with other webshells, RAPIDPULSE exists as a modification to a legitimate Pulse Secure file.
+The webshell modifies the legitimate file's main routine which compares the HTTP query parameter with key name: deviceid to a specific  key with value.
+If the parameter matches, then the sample uses an RC4 key  to decrypt HTTP query parameter with key name: hmacTime.

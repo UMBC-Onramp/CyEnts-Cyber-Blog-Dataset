@@ -1,0 +1,12 @@
+
+The VBA Macro code is self-executing and configured to execute when the OLE document (MS Word doc) is opened (via “Sub AutoOpen()”).
+The AutoOpen() function in the VBA Macro performs the following tasks in the sequence listed:
+Decodes the target file path of the second stage binary payload.
+This file path is calculated based on the current user’s Temp folder location: <temp_dir_path>\\.\\lsm.exe VB code to decrypt second stage filepath Decodes the second stage binary in memory and writes it to the %temp%\\.\\lsm.exe file location second stage binary (MZ) as an encrypted String Array in the VBA Macro second stage binary (MZ) decoded in memory by the VBA Macro After writing the second stage payload to disk the VBA code performs two important actions.
+Runs the second stage payload using cmd.exe.
+This is done so that the cmd.exe process exists as soon as the payload is launched.
+This way a process enumeration tool cannot find the parent process =
+>
+Smaller footprint.
+cmdline for executing the second stage binary: cmd.exe /c start /b <temp_dir_path>\\.\\lsm.exe /haobao
+Adds persistence on the system by creating a shortcut in the user’s Startup folder with the correct cmdline arguments: Link file command line: <temp_dir_path>\\.\\lsm.exe /haobao

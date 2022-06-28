@@ -1,0 +1,10 @@
+
+DoppelPaymer frequently targets government organizations worldwide , including healthcare, emergency, and education services.
+The group also made headlines after publishing voter information stolen from Hall County, Georgia, and receiving $500,000 from Delaware County, Pennsylvania, both in the United States.
+DoppelPaymer attacks continue to this day:
+In February of this year, a European research body announced that it had been hacked.
+Targeted attack methods Every targeted attack on a large company is the result of a long process of finding vulnerabilities in the infrastructure, devising a scenario, and selecting tools.
+Then the penetration occurs, spreading malware throughout the corporate infrastructure.
+Cybercriminals sometimes remain inside a corporate network for several months before encrypting files and issuing a demand.
+The main paths into the infrastructure are through: Poorly secured remote access connections.
+Vulnerable RDP (Remote Desktop Protocol) connections are such a common means of delivering malware that groups on the black market offer services to exploit them.

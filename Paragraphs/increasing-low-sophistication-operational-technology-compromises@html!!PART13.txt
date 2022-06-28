@@ -1,0 +1,6 @@
+
+Whenever feasible, remove OT assets from public-facing networks.
+If remote access is required, deploy access controls and monitor traffic for unusual activity to minimize unintended interaction and safeguard asset information.
+Apply common network-hardening techniques to remotely accessible and edge devices, such as disabling unused services, changing default credentials, reviewing asset configurations, and creating whitelists for access.
+Determine if relevant assets are discoverable using online scanners such as Shodan and Censys.
+Leverage support from knowledgeable security researchers to identify exposed assets and leaked information.

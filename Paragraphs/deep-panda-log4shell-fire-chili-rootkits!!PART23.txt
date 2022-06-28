@@ -1,0 +1,7 @@
+
+D87B!tr.rkit W32/Agent.69C1!tr.rkit
+In addition, as part of our membership in the Cyber Threat Alliance, details of this threat were shared in real-time with other Alliance members to help create better protections for customers.
+Appendix A:
+MITRE ATT&CK Techniques ID Description T1190
+Exploit Public-Facing Application T1569.002 System Services: Service Execution T1059.001 Command and Scripting Interpreter: PowerShell T1027 Obfuscated Files or Information: Software Packing T1041 Exfiltration Over C2 Channel T1082
+System Information Discovery T1036 Masquerading T1083 File and Directory Discovery T1059.003 Command and Scripting Interpreter:

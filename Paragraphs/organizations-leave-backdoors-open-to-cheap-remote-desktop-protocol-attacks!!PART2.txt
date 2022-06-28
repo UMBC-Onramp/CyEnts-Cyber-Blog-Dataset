@@ -1,0 +1,5 @@
+
+In the wrong hands, RDP can be used to devastating effect.
+The recent SamSam ransomware attacks on several American institutions demonstrate how RDP access serves as an entry point.
+Attacking a high-value network can be as easy and cheap as going underground and making a simple purchase.
+Cybercriminals like the SamSam group only have to spend an initial $10 dollars to get access and are charging $40K ransom for decryption, not a bad return on investment.

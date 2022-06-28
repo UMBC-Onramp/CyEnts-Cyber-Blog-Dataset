@@ -1,0 +1,3 @@
+
+Using bcedit program to disable the recovery options in the boot of the machine and set to ignore any failure in the boot warning the user.
+All these actions could have been performed in the malware code itself, without the need of an external file that can be detected and removed.

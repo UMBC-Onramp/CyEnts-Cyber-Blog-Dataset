@@ -1,0 +1,6 @@
+
+As financial crime actors have evolved their tactics from opportunistic to post-compromise ransomware deployment, we have observed an increase in adversaries’ internal reconnaissance that enables them to target systems that are vital to support the chain of production.
+As a result, ransomware infections—either affecting critical assets in corporate networks or reaching computers in OT networks—often result in the same outcome: insufficient or late supply of end products or services.
+Truly understanding the unique nuances of industrial sector ransomware distribution operations requires a combination of skillsets and visibility across both IT and OT systems.
+Using examples derived from our consulting engagements and threat research, we will explain how the shift to post-compromise ransomware operations is fueling adversaries’ ability to disrupt industrial operations.
+Industrial Sector Ransomware Distribution Poses Increasing Risk as Actors Move to Post-Compromise Deployment

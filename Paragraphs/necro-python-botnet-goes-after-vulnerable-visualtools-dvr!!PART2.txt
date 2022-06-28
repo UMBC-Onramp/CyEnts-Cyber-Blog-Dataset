@@ -1,0 +1,12 @@
+
+The script can run in both Windows and Linux environments.
+The script has its own polymorphic engine to morph itself every execution which can bypass signature-based defenses.
+This works by reading every string in its code and encrypting it using a hardcoded key.
+Necro Python’s polymorphism, before and after Domain Generation Algorithm Necro uses DGA for both its CnC and download server.
+It selects from a list of dynamic DNS services as its domain, e.g., ddns.net and prefixes that with 10-19 random characters.
+E.g., ‘ 3ood3dfcqchro.ddns.net’ The domains are pseudo-randomly generated using a hardcoded seed, 0xFAFFDED00001, and a counter is added until 0xFD (253 in decimal) before the counter is reset to 0.
+The seed controls the domain to be generated.
+  
+In effect, it can generate up to 253 unique domains.
+This seed is different from the previous campaigns.
+For instance, the sample used in the March attack used a different seed, 0x7774DEAD.

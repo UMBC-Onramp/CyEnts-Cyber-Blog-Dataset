@@ -1,0 +1,16 @@
+
+FireEye identified the use of WMI to create remote PowerShell processes, subsequently used to execute Empire stagers on domain-joined systems.
+In one specific case, the time delta between initial Empire backdoor and successful lateral movement was under 15 minutes.
+Another primary goal for the threat actor was internal reconnaissance of both the local system and domain the computer was joined to.
+Figure 13 provides a snippet of Active Directory reconnaissance commands issued by the attacker during one of our investigations.
+Figure 13:
+Attacker executed commands The threat actors used an Empire module named SessionGopher and the venerable Mimikatz to harvest endpoint session and credential information.
+Finally, we also identified the attackers utilized Empire’s Invoke-EventVwrBypass, a Windows bypass technique used to launch executables using eventvwr.exe, as shown in Figure 14.
+\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoP -NonI -c $x=$((gp HKCU:
+Software\\Microsoft\\Windows Update).Update); powershell -NoP -NonI -W Hidden -enc $x Figure 14: PowerShell event viewer bypass Ransomware Attacks & Operator Tactics Within these investigations, FireEye identified the deployment BitPaymer or DoppelPaymer ransomware.
+While these ransomware variants are highly similar, DoppelPaymer uses additional obfuscation techniques.
+It also has enhanced capabilities, including an updated network discovery mechanism and the requirement of specific command-line execution.
+DoppelPaymer also uses a different encryption and padding scheme.
+The ransomware and additional reconnaissance tools were downloaded through public sharing website repositories such as DropMeFiles and SendSpace.
+Irrespective of the ransomware deployed, the attacker used the SysInternals utlity PSEXEC to distribute and execute the ransomware.
+Notably, in the DoppelPaymer incident, FireEye identified that Dridex v2 with the Botnet ID 12333 was downloaded onto the same system previously impacted by an instance of Dridex v4 with Botnet ID 501.

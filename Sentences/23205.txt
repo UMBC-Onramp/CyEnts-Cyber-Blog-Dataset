@@ -1,0 +1,121 @@
+If you run a popular blog and promote your business through Instagram, an account ban simply isn’t in the plan.
+
+For responsible users, the idea of being banned for, say, displaying suicidal content or trying to impersonate someone else might seem like a bad dream or a cruel joke, but it’s quite real for victims of the new wave of so-called ban attacks.
+
+Here’s how these attacks work, how to defend against them, and what to do if your account has been hit.
+
+How cybercriminals block Instagram profiles It’s all quite simple: Detractors or competitors can pay a fee (the amount depends on the seller or even the number of followers) to have your profile blocked.
+
+Such attacks began last fall , but of late they’ve become particularly high-profile.
+
+Recently, online magazine Motherboard connected with a cybercriminal group and learned how they exploit Instagram’s policy to make money through ban-as-a-service offerings .
+
+The group’s favored tactic is the fake impersonation complaint, which involves verified accounts, identifiable by the blue check next to the username.
+
+The attackers use verified accounts to create a full copy of the victim’s profile, right down to the avatar and description.
+
+Then they file a complaint against the original, accusing the owner of impersonation.
+
+If the victim’s account is not verified, the support service bans the victim.
+
+The second blocking method is to inundate tech support with messages alleging that the victim’s profile contains images of suicide or self-mutilation.
+
+In many cases, Instagram takes the easier path, blocking accounts on the basis of such complaints without first checking their actual content.
+
+Unlike phishing and other similar schemes that still require action from the victim — clicking a dangerous link, for example — a ban attack works with no victim participation whatsoever.
+
+The target, who might never even dream of violating the terms of use, simply finds their account blocked.
+
+According to the Motherboard reporters, the service is inexpensive, running about $5 to $60, so the cybercriminals have no shortage of customers.
+
+However, not all users who abuse Instagram’s moderation practices are in it to make money.
+
+Malicious scripts are freely available, and any online hooligan can use them to settle a personal score or silence a disagreeable blogger.
+
+Instagram unblocking for a fee In fact, blocking Instagram accounts opens up another money-generating avenue: restoring them.
+
+Unblocking carries a far higher fee than blocking — reportedly up to $3,500–$4,000.
+
+Whether the same people are behind the banning and the unblocking services, or whether it’s an accidental symbiosis, remains unclear for now.
+
+Some users do receive an offer to reinstate their account just a few minutes after the blocking, however, and those offers often come from followers of the accounts from which the original complaints came.
+
+What to do if your Instagram profile gets blocked If you’re already the victim of a ban attack, contact Instagram support immediately with an explanation of what happened.
+
+Bans are appealable only through the app .
+
+To do so, you will need to enter your username and password, then follow the instructions.
+
+If anyone comes knocking with an offer to restore your account for money, don’t pay!
+
+First, you have no guarantee that anything will come of it.
+
+Second, doing so supports confirmed miscreants — perhaps even the ones who got your account banned in the first place.
+
+Third, the official recovery procedure through Instagram support is free.
+
+How to protect your Instagram profile Unfortunately, users tend to learn about a ban attack only after the fact.
+
+Instagram told Motherboard that it plans to sniff out cybercriminal accounts on the platform, and asks users to report any suspicious activity, but that approach is time-consuming.
+
+In the meantime, we suggest you take some measures to protect yourself.
+
+Verify your account
+
+The ban-attack business centers on accusations of impersonation, so the best way to protect yourself is to convince Instagram that you are you before anything happens.
+
+In other words, you should verify your account now.
+
+The social network won’t check every user, but you may have some points in your favor.
+
+For example, if you or your business has been mentioned in multiple news sources , that helps.
+
+To get the coveted blue check mark, you’ll want to complete your profile and delete any old accounts to avoid arousing suspicion.
+
+Naturally, the account must also be public and not violate Instagram’s terms of use.
+
+Once you’ve ensured your account is ready, send a verification request .
+
+You can do it directly through the app:
+
+Go to your profile settings; Select Account ; Select Request Verification ; Enter your full name and attach required documentation; Follow the subsequent instructions.
+
+Make your account private
+
+What if you’re not famous enough to pass blue-check verification?
+
+You can take the radical step of closing your account to the public.
+
+If you make your account private, then your posts, photos, and videos will be available only to subscribers, which means that an attacker won’t be able to copy them and accuse you of impersonation.
+
+Whether in the app or a browser, it is not difficult to make your account private.
+
+See our post on setting up Instagram security and privacy for detailed instructions.
+
+Be sure to take the trouble to clean up your list of followers as well, and check future follower requests before accepting them.
+
+Bots and other barely there accounts can hide attackers, and you’re under no obligation to let them in.
+
+Change your profile pic For business profiles that you cannot close but that aren’t well-known enough for verification — or that you feel you must keep open for any other reason — there’s another way to reduce the risk of ban attacks: Change your avatar.
+
+Fake impersonation complaints work best on profiles with a real photo of the owner.
+
+Some underground ban-attack services even refuse to target accounts with other avatars.
+
+That means putting up something that isn’t your portrait complicates attempts to do harm; every bit helps.
+
+Maintain a backup and update contact information Instagram admins do what they can to combat wrongful complaints, but they’re working against cybercriminals who continually improve their money-making schemes.
+
+In a perfect world you wouldn’t have to, but here and now, you should prepare an escape route.
+
+First, make sure you have access to the e-mail address and phone number linked to your profile.
+
+If your account is wrongfully blocked, you can use them for recovery.
+
+Second, save your content regularly.
+
+That way, if worse comes to worst, you can use it to migrate to a new account.
+
+
+
+

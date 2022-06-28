@@ -1,0 +1,4 @@
+
+It results in conceptual attack scenarios based on real attacker behaviors and specific knowledge about the target.
+While the scenarios may sometimes highlight weaknesses or vulnerabilities that cannot be patched, these provide defenders with the knowledge needed to define alternative mitigations to mitigate risks earlier in the lifecycle.
+It can help to identify real weaknesses that could be exploited by an actor at different stages of the attack lifecycle.

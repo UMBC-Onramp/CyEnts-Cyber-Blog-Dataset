@@ -1,0 +1,6 @@
+
+Packet “6”:
+It sends cookies files in a ZIP archive that are collected from browsers and included within the “data” part of the post.
+Conclusion In this analysis, I have shown how this phishing campaign began by targeting Korean users.
+I then explained how the macro in the PowerPoint is used to execute a piece of VBScript-embedded-in-HTML code.
+It also leverages a complicated standalone VBS and PowerShell script code to perform multiple tasks, like upgrading, maintaining persistence, and process-hollowing.

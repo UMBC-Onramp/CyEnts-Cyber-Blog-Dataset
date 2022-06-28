@@ -1,0 +1,6 @@
+Mandiant observed DARKSIDE affiliate UNC2465
+accessing at least one victim through a Trojanized software installer downloaded from a legitimate website.
+While this victim organization detected the intrusion, engaged Mandiant for incident response, and avoided ransomware, others may be at risk.
+As reported in the Mandiant post, \" Shining a Light on DARKSIDE Ransomware Operations ,\" Mandiant Consulting has investigated intrusions involving several DARKSIDE affiliates.
+UNC2465 is one of those DARKSIDE affiliates that Mandiant believes has been active since at least March 2020.
+The intrusion that is detailed in this post began on May 18, 2021, which occurred days after the publicly reported shutdown of the overall DARKSIDE program ( Mandiant Advantage background ).

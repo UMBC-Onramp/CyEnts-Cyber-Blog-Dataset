@@ -1,0 +1,6 @@
+
+Once you have downloaded and installed the WDK, browse to the Windows Driver Kits directory in the start menu on your development system and select the appropriate environment.
+Figure 6 shows the WDK program group on a Windows 7 system.
+The term “checked build” indicates that debugging checks will be included.
+I plan to load 64-bit kernel shellcode, and I like having Windows catch my mistakes early, so I’m using the x64 Checked Build Environment.
+Figure 6: Windows Driver Kits program group In the WDK command prompt, change to the directory where you downloaded the FLARE kernel shellcode loader and type ez.cmd.

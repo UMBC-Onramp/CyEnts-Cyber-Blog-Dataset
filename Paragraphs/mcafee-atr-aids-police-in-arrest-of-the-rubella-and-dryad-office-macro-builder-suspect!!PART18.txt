@@ -1,0 +1,7 @@
+
+It also uses a Junk Code function to add junk code into the document: For additional obfuscation it uses XOR encryption as well as Base64.
+Write Macro
+Finally, the function WriteMacro, writes the content previously configured: Under construction We did also notice that the builder uses additional functions that were still under development, as we can see with the “Script Generator” tab.
+A message is printed when we click on it and that indicates it is still a function in development.
+Additionally, we can see the “Decoy Option” tab which is just a template to create another tab.
+The tab does not show anything.

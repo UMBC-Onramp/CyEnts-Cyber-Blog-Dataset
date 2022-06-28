@@ -1,0 +1,10 @@
+
+Conclusion While there is increasing global awareness of threats to elections, election administrators and others continue to face challenges in ensuring the integrity of the vote.
+To properly counter threats to elections, individuals and organizations involved in the electoral process should: Learn the Playbook of the Adversary : Proactive organizations can learn from the activity of threat actors uncovered in other elections and implement security controls that adapt to new tools and TTPs.
+Political campaigns and others should also educate staff and contractors on common spear-phishing tactics used by some of the primary APT groups.
+Incorporate Threat Intelligence for Context : Operationally, security organizations can utilize threat intelligence to better differentiate and triage the most important alerts from untargeted commodity malware activity.
+Anticipate External Threats : Beyond the internal networks of county governments and political campaigns, election administrators and risk management professionals involved in elections should prepare plans for dealing with leaked and compromised data, understanding how threat actors may utilize this for disinformation campaigns.
+I will be speaking about cyber threats and elections during FireEye Virtual Summit , so register today to learn more.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

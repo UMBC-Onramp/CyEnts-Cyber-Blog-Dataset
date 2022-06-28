@@ -1,0 +1,4 @@
+
+And what did this mod do? — it switched the add-on update mechanism from standard (via Steam Workshop) to an alternative one, updating mods directly from the creator’s repository on GitHub.
+And this is a real backdoor: users who installed this modification along with a couple of other modifications by the same creator could’ve ended up downloading and running arbitrary code at any time.
+In a situation like this you can only rely on the conscience of the extension creator (although given the “enemies list,” this is clearly a bad idea).

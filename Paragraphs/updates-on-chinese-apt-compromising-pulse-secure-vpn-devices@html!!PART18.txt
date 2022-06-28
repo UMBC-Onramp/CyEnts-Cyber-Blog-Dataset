@@ -1,0 +1,3 @@
+
+all logs to a central log repository Review logs for unusual authentications and evidence of exploitation Regularly run the Integrity Checker Tool Apply patches as soon as they are made available Geopolitical Context and Implications for U.S.-China Relations In collaboration with intelligence analysts at BAE Systems Applied Intelligence, Mandiant has identified dozens of organizations across the defense, government, telecommunications, high tech, education, transportation, and financial sectors in the U.S. and Europe that have been compromised via vulnerabilities in Pulse Secure VPNs.
+Historic Mandiant and BAE investigations identified a significant number of these organizations as previous APT5 targets.

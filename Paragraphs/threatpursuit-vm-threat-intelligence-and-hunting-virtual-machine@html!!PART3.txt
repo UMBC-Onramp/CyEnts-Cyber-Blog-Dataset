@@ -1,0 +1,2 @@
+
+The tools installed provide easy access to a broad range of tooling, including, but not limited to, threat analytics, statistics, visualisation, threat hunting, malware triage, adversarial emulation, and threat modelling.

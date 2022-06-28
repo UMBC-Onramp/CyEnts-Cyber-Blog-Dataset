@@ -1,0 +1,5 @@
+
+FireEye has recently seen a surge in attacker use of WMI to carry out objectives such as system reconnaissance, remote code execution, persistence, lateral movement, covert data storage, and VM detection.
+Defenders and forensic analysts have largely remained unaware of the value of WMI due to its relative obscurity and completely undocumented file format.
+After extensive reverse engineering, the FireEye FLARE team has documented the WMI repository file format in detail, developed libraries to parse it, and formed a methodology for finding evil in the repository.
+The FLARE team is now publishing a whitepaper that takes a deep dive into the architecture of WMI, reveals case studies in attacker use of WMI in the wild, describes WMI attack mitigation strategies, and shows how to mine its repository for forensic artifacts.

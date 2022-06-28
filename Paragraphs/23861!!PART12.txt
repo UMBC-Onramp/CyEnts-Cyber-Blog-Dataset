@@ -1,0 +1,5 @@
+
+Avoid new VPN services and look for established services that have been around for some time.
+Install a security application that checks and warns if the device is jailbroken.
+Frustrated from getting kicked over and over, the attackers will eventually deploy a persistence mechanism and jailbreak your device in the process.
+This is where the chance of catching them increases tenfold and we can take advantage of the fact that the device is jailbroken.

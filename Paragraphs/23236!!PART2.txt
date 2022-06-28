@@ -1,0 +1,6 @@
+
+A simple phishing scheme The attackers who targeted Luno did not reinvent the wheel.
+ 
+Rather, they employed the tried-and-true method of playing on people’s desire for free cryptocurrency, sending potential victims e-mail messages, seemingly from the Luno team, saying that an incoming payment has been “placed on hold due to error(s)” in their profile data.
+The message includes a link for users to follow and solve the problem.
+Fake incoming transfer notification with link — just not to Luno As per usual with a phishing attack, the scammers forged the sender’s address, making the message look plausible.

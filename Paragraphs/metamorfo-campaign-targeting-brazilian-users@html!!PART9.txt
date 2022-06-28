@@ -1,0 +1,7 @@
+
+firefox.exe chrome.exe opera.exe safari.exe The folder C:\\Users\\Public\\Administrador\\logs\\ is created to store screenshots, as well as the number of mouse clicks the user has triggered while browsing the banking sites (Figure 12).
+The screenshots are continuously saved as .jpg images.
+Figure 12:
+Malware Capturing Mouse Clicks Command and Control The command and control (C2) server is selected based on the string in the file “id”: al -> '185.43.209[.]182' gr -> '212.237.46[.]6' pz -> '87.98.146[.]34' mn -> ’80.211.140[.]235'
+The connection to one of the hosts is then started over raw TCP on port 9999.
+The command and control communication generally follows the pattern <|Command |>, for example: '<|dispida|>logs>SAVE<' sends the screenshots collected in gh.txt. '

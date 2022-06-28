@@ -1,0 +1,5 @@
+In mid-May, one of the largest insurance companies in the U.S. paid $40 million to ransomware attackers.
+Two people familiar with the matter told Bloomberg that the malicious actors stole an undisclosed quantity of data and then effectively locked the insurer out of its network for two weeks.
+The company ignored the attackers’ demands at first.
+But, a week into the infection, it decided to make contact with the attackers.
+This effort led to negotiations in which the insurer convinced the attackers to drop the ransom from $60 million to $40 million.

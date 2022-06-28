@@ -1,0 +1,14 @@
+
+In addition, the Explorer can be used to add certain data points to the SCADA device – in this case, the Arduino device.
+Figure 4:
+Tags identified for OPC server In the OPC testing environment, we created tags in order to simulate a true OPC server functioning.
+Tags, in relation to ICS devices, are single data points.
+For example: temperature, vibration, or fill level.
+Tags represent a single value monitored or controlled by the system at a single point in time.
+With our test environment complete, we executed the malicious Havex “.dll\" file and analyzed how Havex’s OPC scanning module might affect OPC servers it comes in contact with.
+Analysis The particular Havex sample we looked at was a file named PE.dll (6bfc42f7cb1364ef0bfd749776ac6d38).
+When looking into the scanning functionality of the particular Havex sample, it directly scans for OPC servers, both on the server the sample was submitted on, and laterally, across the entire network.
+The scanning process starts when the Havex downloader calls the runDll export function.
+  
+The OPC scanner module identifies potential OPC servers by using the Windows networking (WNet) functions.
+  Through recursive calls to WNetOpenEnum and WNetEnumResources, the scanner builds a list of all servers that are globally accessible through Windows networking.

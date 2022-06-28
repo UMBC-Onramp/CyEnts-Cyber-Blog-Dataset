@@ -1,0 +1,17 @@
+
+The signature is associated with CVE-2013-5211 .
+Nmap.
+Script.
+Scanner indicates an attempted scan from an Nmap scripting engine scanner, which identifies what services the target system is running and performs further attacks based on its findings.
+SolarWinds.
+SUNBURST.Backdoor indicates that SUNBURST Backdoor C2 communication was detected in the network.
+SunBurst is a backdoor program distributed through the compromised SolarWind’s Orion IT monitoring and management software update system in late 2020.
+Port.
+Scanning detects an attempted scan by a port scanner that identifies which ports or services are available on a targeted system.
+Backdoor.
+DoublePulsar indicates either the presence of DoublePulsar malware or a scanning attempt via the RDP protocol.
+DoublePulsar is a backdoor trojan that was a part of the NSA leak by the Shadow Brokers group in March 2017 and was used in the WannaCry ransomware attack in May 2017.
+Qualys.
+Vulnerability.
+Scanner detects an attempted scan by a Qualys Vulnerability Scanner.
+An attacker may use the scanner to identify the targeted system's services and perform further attacks based on its findings.

@@ -1,0 +1,11 @@
+
+Notably, SUNSHUTTLE uses cookie headers to pass values to the C2, and if configured, can select referrers from a list of popular website URLs to help such network traffic “blend in.”
+The SUNSHUTTLE backdoor file examined, “Lexicon.exe” (MD5: 9466c865f7498a35e4e1a8f48ef1dffd), was written in GoLang.
+The file unpacks into MD5: 86e89349fefcbdd9d2c80ca30fa85511.
+The infection vector for SUNSHUTTLE is not known.
+It is most likely a second-stage backdoor dropped after an initial compromise.
+The SUNSHUTTLE sample uses the actor-controlled server “reyweb[.]com” for C2.
+“Reyweb[.]com” is registered anonymously via NameSilo, a domain provider who accepts bitcoin payment and has been used for C2 registration by state-sponsored APTs in the past, including Russia-nexus actors and Iran-nexus APTs
+Mandiant observed SUNSHUTTLE at a victim compromised by UNC2452, and have indications that it is linked to UNC2452, but we have not fully verified this connection.
+Please see FireEye’s resource center for background on UNC2452 and the SUNBURST campaign .
+Outlook and Implications The new SUNSHUTTLE backdoor is a sophisticated second-stage backdoor that demonstrates straightforward but elegant detection evasion techniques via its “blend-in” traffic capabilities for C2 communications.

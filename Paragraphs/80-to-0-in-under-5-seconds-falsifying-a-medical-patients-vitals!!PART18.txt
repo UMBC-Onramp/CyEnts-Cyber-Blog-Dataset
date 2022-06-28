@@ -1,0 +1,9 @@
+
+This also works with the other vital signs.
+Impact of emulation Although we have not yet reached our goal of real-time modification, we must consider the implications of this type of attack.
+If someone were to unplug the monitor of a stable patient and replace it with a device that continued to report the same stable vitals, would that cause any harm?
+Probably not immediately.
+But what if the stable patient suddenly became unstable?
+The central station would normally sound an alarm to alert medical personal, who could take appropriate action.
+However, if the monitor had been replaced, would anyone know help was needed?
+The patient monitor also normally sounds alarms that might be heard in and outside of the patient’s room, yet if the monitor was replaced, those alarms would be absent.

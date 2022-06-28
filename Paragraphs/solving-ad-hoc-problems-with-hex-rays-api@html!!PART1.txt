@@ -1,0 +1,5 @@
+Introduction IDA Pro is the de facto standard when it comes to binary reverse engineering.
+Besides being a great disassembler and debugger, it is possible to extend it and include a powerful decompiler by purchasing an additional license from Hex-Rays.
+The ability to switch between disassembled and decompiled code can greatly reduce the analysis time.
+The decompiler (from now on referred to as Hex-Rays ) has been around for a long time and has achieved a good level of maturity.
+However, there seems to be a lack of a concise and complete resources regarding this topic (tutorials or otherwise).

@@ -1,0 +1,6 @@
+
+Figure 6: Script to Drop and Execute Update.js
+The Update.js file also contains multi-layer obfuscation.
+After decoding, the JavaScript contains code to drop multiple files in %AppData%, including a 7zip standalone executable (7za.exe), password-protected archive (Loglist.rtf), and batch script (Upd.cmd).
+We will talk more about these components later.
+JavaScript uses PowerShell commands to download the files from the server.

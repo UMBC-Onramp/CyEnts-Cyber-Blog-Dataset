@@ -1,0 +1,6 @@
+
+GitHub repository hosting malicious files
+In addition, two more files were added during the course of this research: a configuration file for a Monero cryptomining program (“config.json”) and a UPX-packed local privilege escalation exploit for x86_64 Linux systems (“root_x86_64”).
+The config file uses the Monero address 41qALJpqLhUNCHZTMSMQyf4LQotae9MZnb4u53JzqvHEWyc2i8PEFUCZ4TGL9AGU34ihPU8QGbRzc4FB2nHMsVeMHaYkxus, the same used in the October attacks.
+Cryptominer configuration file
+In this blog, we’ll dig deeper into some newly-found samples from the initial attack repository.

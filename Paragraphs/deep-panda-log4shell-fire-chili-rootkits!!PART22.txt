@@ -1,0 +1,18 @@
+
+It does this using its post-execution prevention engine to identify malicious activities: All network IOCs have been added to the FortiGuard WebFiltering blocklist.
+The FortiGuard Antivirus service engine is included in Fortinet’s FortiGate, FortiMail, FortiClient, and FortiEDR solutions.
+FortiGuard Antivirus has coverage in place as follows: W32/Themida.
+ICD!tr BAT/Agent.6057!tr W64/Agent.
+A10B!tr W32/Agent.0B37!tr W32/GenKryptik.
+FQLT!tr W32/Generic.
+AC.F834B!tr W32/GenKryptik.
+ATCY!tr W32/Generic.
+AP.33C2D2!tr W32/GenKryptik.
+AQZZ!tr W32/Generic.
+HCRGEJT!tr W32/Agent.
+DKR!tr W32/Agent.
+QNP!tr W32/Agent.
+RXT!tr W32/Agentb.
+BXIQ!tr W32/Agent.
+DA3E!tr W32/Agent.
+D584!tr W32/Agent.0F09!tr W32/Agent.3385!tr W64/Agent.

@@ -1,0 +1,12 @@
+
+This entire key is then used to encrypt/decrypt payload data that immediately follows the key.
+The form of data on the wire is: Outbound/Inbound: <6randbytes><encrypted_data> ^-RC4NONCE-^
+Usage: <6randbytes><rc4_phrase><encrypted_data> ^-------RC4 KEY--------^
+ReadFile This command accepts a base64 encoded, RC4 encrypted file name via the img parameter and opens it for read.
+The file contents are read in full then sent back to the attacker as base64 encoded, RC4 encrypted data with the headers \"Content-type: application/x-download\\n\" , and form header \"Content-Disposition: attachment; filename=tmp\\n\\n\" .
+WriteFile
+This command accepts a base64 encoded, RC4 encrypted filename via the cert parameter, and base64 encoded, RC4 encrypted file data via the parameter md5 .
+The filename is opened in write mode with the file data being written to the file before the file is closed.
+The results of this command are sent back to the attacker, using the headers \"Cache-Control: no-cache\\n\" and \"Content-type: text/html\\n\\n\" .
+Execute This command accepts a base64 encoded, RC4 encrypted commands via the name parameter.
+The malicious logic forbids the cd command and will respond with the text Error 404 if executed.

@@ -1,0 +1,7 @@
+
+And finally, I elaborated on what kind of data Emotet collects from the victim’s system and how the binary data is encrypted and converted into base64 string and finally submitted to its C2 server via an HTTP packet.
+In the next part of this analysis, I will focus on those returned modules from Emotet’s C2 server and how they are executed by Emotet, as well as what sensitive data they are able to steal from the victim’s device.
+Please stay tuned.
+Fortinet Protections Fortinet customers are already protected from this malware by FortiGuard’s Web Filtering, AntiVirus, FortiMail, FortiClient, FortiEDR, and CDR (content disarm and reconstruction) services, as follows:
+The malicious Macro inside the Excel sample can be disarmed by the FortiGuard CDR (content disarm and reconstruction) service.
+All relevant URLs have been rated as \" Malicious Websites \" by the FortiGuard Web Filtering service.

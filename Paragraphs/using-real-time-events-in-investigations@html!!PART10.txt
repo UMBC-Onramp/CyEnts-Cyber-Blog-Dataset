@@ -1,0 +1,5 @@
+
+As part of its secure deletion process, SDelete renames the file 26 times in a successive alphabetic manner.
+Network Events Incident responders rarely see evidence of network communication from historical evidence on an endpoint without enhanced logging.
+Usually, Mandiant relies on NetFlow data, network sensors with full or partial packet capture, or malware analysis to determine the command and control (C2) servers with which a malware sample can communicate.
+Our solution’s real-time network events record both local and remote network ports, the leveraged protocol, and the relevant process.

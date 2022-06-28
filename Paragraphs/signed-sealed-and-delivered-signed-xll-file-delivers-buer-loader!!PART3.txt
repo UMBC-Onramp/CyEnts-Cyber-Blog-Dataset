@@ -1,0 +1,3 @@
+
+Signed malware containing valid digital certificates are used by threat actors to evade detection as they are trusted by antivirus and other endpoint security software.
+Because a company or organization is vetted by a certificate authority (CA) before the issuance of a digital certificate, operating systems and anti-virus software treat files signed with these certificates as clean, which ultimately allows the signed file to operate with impunity.

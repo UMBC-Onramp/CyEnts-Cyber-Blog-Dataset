@@ -1,0 +1,9 @@
+
+A detailed description of the modules and indicators of compromise can be found in our Securelist post .
+How to guard against the Trickbot Trojan
+The statistics show that the majority of Trickbot detections this year were registered in the US, Australia, China, Mexico and France.
+This does not mean, however, that other regions are safe, especially considering the readiness of its creators to collaborate with other cybercriminals.
+To prevent your company from falling victim to this Trojan, we recommend that you equip all Internet-facing devices with a high-quality security solution .
+In addition, it’s a good idea to use cyberthreat monitoring services to detect suspicious activity in the company’s infrastructure.
+
+

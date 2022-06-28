@@ -1,0 +1,8 @@
+
+Furthermore, UNC1945 operated from several virtual machines pre-configured with post-exploitation tools in addition to their custom toolset to evade detection and forensics.
+Initial Compromise In late 2018, UNC1945 gained access to a Solaris server and installed a backdoor we track as SLAPSTICK in order to capture connection details and credentials to facilitate further compromise.
+The SSH service of this server was exposed to the internet at the time, the same time we observed first evidence of threat activity.
+Unfortunately, due to insufficient available evidence, the next indication of activity was in mid-2020 at which time a different Solaris server was observed connecting to the threat actor infrastructure.
+This indicates a dwell time of approximately 519 days based on recovered artifacts.
+Although we were unable to determine how the late-2018 initial access was accomplished, we did observe successful UNC1945
+SSH connections directly to the victim Solaris 10 server, since the SSH service was exposed directly to the internet at the time.

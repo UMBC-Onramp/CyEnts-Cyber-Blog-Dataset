@@ -1,0 +1,10 @@
+
+Passive analysis of the capture showed Dynamic Host Configuration Protocol (DHCP) broadcasts for IPv6 addresses, Link-Local Multicast Name Resolution (LLMNR) protocol traffic, and NetBios Name Service (NBT-NS) traffic.
+We responded to broadcast LLMNR, NBT-NS, and WPAD name resolution requests from devices using a publicly available tool called Responder.
+As we supplied our IP address in response to broadcasted name resolution requests from other clients on the subnet, we performed man-in-the-middle (MiTM) attacks and obtained NTLMv1/2 authentication protocol password hashes from devices on the network.
+We then used Hashcat to crack the hashed credentials and use them for further lateral movement and compromise.
+The credentials we obtained included, but were not limited to, service accounts with local administrator rights on OPC servers and clients.
+We note that Hashcat cracked the captured credentials in only six seconds due to the lack of password strength and complexity.
+With the credentials captured in the first three steps, we accessed other hosts on the network using CrackMapExec.
+We dumped additional cached usernames, passwords, and password hashes belonging to both local and domain accounts from these hosts.
+This resulted in privileged access and control over the DCS's OPC clients and servers in the network.

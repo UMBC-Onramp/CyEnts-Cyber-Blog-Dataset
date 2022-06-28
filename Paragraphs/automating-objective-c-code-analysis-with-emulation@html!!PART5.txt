@@ -1,0 +1,7 @@
+
+flare-emu is designed to handle all the housekeeping of setting up a flexible and robust emulator for its supported architectures so that you can focus on solving your code analysis problems.
+It currently provides three different interfaces to serve your emulation needs, along with a slew of related helper and utility functions.
+emulateRange – This API is used to emulate a range of instructions, or a function, within a user-specified context.
+It provides options for user-defined hooks for both individual instructions and for when “call” instructions are encountered.
+The user can decide whether the emulator will skip over, or call into function calls.
+Figure 1 shows emulateRange used with both an instruction and call hook to track the return value of GetProcAddress calls and rename global variables to the name of the Windows APIs they will be pointing to.

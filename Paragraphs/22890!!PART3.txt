@@ -1,0 +1,5 @@
+
+But for cases requiring a faster data transfer speed, the remote uses a radio interface, enabling the remote not only to send data to the set-top box, but to receive from it as well.
+The radio interface consumes more power, so it is used only when needed.
+Like many modern devices, this type of remote control is essentially a connected computer — and therefore hackable.
+Having studied the remote’s firmware (with a copy conveniently stored on the set-top box’s hard drive), the researchers were able to determine the alterations that would enable the firmware to command the remote control to turn on the microphone and transmit sound over the radio channel.

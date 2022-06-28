@@ -1,0 +1,3 @@
+
+The type of cyber activity has implications for how we tackle the problem, thus it's key to distinguish.
+As part of our incident response and managed defense work, Mandiant has observed Chinese APT groups exploiting the computer networks of U.S. utilities enterprises servicing or providing electric power to U.S. consumers, industry, and government.

@@ -1,0 +1,5 @@
+
+At the same time, the malware displayed a message on the screen, saying that the software trial was over and the user must pay a subscription fee: $189 for one year or $378 for lifetime access.
+The money was to be transferred to an account in Panama.
+The malware used symmetric encryption, so the key to recover the files was contained right in the code.
+Therefore, the problem was relatively easy to solve: Retrieve the key, delete the malware, and use the key to recover the file names.

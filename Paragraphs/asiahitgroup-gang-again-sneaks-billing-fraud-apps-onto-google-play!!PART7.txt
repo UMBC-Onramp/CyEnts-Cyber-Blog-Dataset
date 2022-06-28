@@ -1,0 +1,6 @@
+
+Fake update notification.
+If the user clicks the only button, Sonvpay will do its job.
+However, even if there is no interaction with this window and the data in the push notification has the value “price” as empty, Sonvpay will proceed to subscribe to a premium-rate service: Figure 4.
+Starting mobile billing fraud if “price” value is empty.
+Downloading the Dynamic Payload from a Remote Server One of the parameters obtained from the silent push notification is a URL to request the location of functionality to perform mobile billing fraud.

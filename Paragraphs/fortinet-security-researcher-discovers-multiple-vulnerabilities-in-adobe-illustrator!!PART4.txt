@@ -1,0 +1,8 @@
+
+Specifically, the vulnerability is caused by a malformed DWG file, which causes a NULL pointer dereference.
+Attackers can exploit this vulnerability with a crafted DWG file, potentially leading to an application denial of service.
+Fortinet previously released IPS signature Adobe.
+Illustrator.
+CVE-2021-40748.DoS for this specific vulnerability to proactively protect our customers CVE-2021-40749 :
+This is a Memory Corruption vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.
+Specifically, the vulnerability is caused by a malformed DWG file, which causes a NULL pointer dereference.

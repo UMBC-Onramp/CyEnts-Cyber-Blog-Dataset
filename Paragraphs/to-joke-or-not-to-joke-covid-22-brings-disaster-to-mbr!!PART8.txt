@@ -1,0 +1,12 @@
+
+Imagine if the files on the compromised machine had been encrypted or destroyed and could not be recovered.
+Always be mindful of executing unknown files received from the internet.
+Fortinet Protections Fortinet customers are already protected from this malware by the FortiGuard Labs AntiVirus Service as used by FortiGate , FortiClient and FortiMail , and by FortiEDR as follows: W32/Ursu.558C!tr Malicious_Behavior.
+SB VBS/BadJoke.8A6B!tr VBS/BadJoke.7182!tr VBS/BadJoke.84AB!tr VBS/BadJoke.0C12!tr VBS/BadJoke.
+DF52!tr W32/BadJoke.
+DCAB!tr FortiEDR detects the downloaded executable file as malicious based on its behavior.
+IOCs Sample SHA-256: [Covid22.exe] 79f3b39797f0e85d9e537397a6f8966bc288d1b83ae1c313c825fbd17698879e [ClutterScreen.exe] 726DC8D52C9CF794412941BFBD27AF8F6FA27E72154A63F5C81A42BA40BD972D [CoronaPopup.exe] 80C9F65617386940153CC4D42E1097DEB79B4F9C98C67E6025BDC1CA03AD8FB7 [icons.exe] 496CABBD18530780A3CB75340BDDD7F74A71E84C83DF4D185CFC6EC71D14C41E [WipeMBR.exe] 5FC9080177A096DE2B717F2F2196867B6966900E129E5BC4E412D5DCA7ED9E60 [final.vbs] EA2EF4196586BF851D4DC422A04D51AD2CB552BF5AAE2DF361D1ED2D4842B4BA [lol.vbs] C88D3022B25EF86CD19CE99815AD26A1F9A201F69974577DA93E08328E047410 [noescapez.vbs] 3D519FC10BC2B6CAA5A27069DA55B1614CC97C1DFD4BCDC1DD7F36E686D913F1 [x.vbs] E22F004CF9E7C4C7B52BDA59DB2B57816992CB01FDBEF6675760FDD7BCD29728 [speakwh.vbs] 4624876389F6DDFB111FBBF3473D7C6B5555ED8A0F31C37E822A6FFEF5E27DE0 [Covid22Server.exe] 0C6DFAA12A98FB17058B79D283E96A3E34549D0AD2BE58F505AC8ABDE858D8A6 Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+

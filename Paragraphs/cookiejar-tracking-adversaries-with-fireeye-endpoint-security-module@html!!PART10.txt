@@ -1,0 +1,7 @@
+
+If the client IP address matches the hardcoded IP address (Figure 4), the backdoor accepts three commands based on the start of the URL: /phpconf_t/:
+Simply writes <html><h1>accepted.</h1></html> as the response.
+Likely used to test if the server is infected with the malware. /phpconf_s/
+: Executes commands on the server.
+Any communications to and from the system are forwarded to a shell, and are AES-256-ECB encrypted and then Base58 encoded.
+/phpconf_p/: Decode the second encoded string provided as a hostname/port (the first is ignored), using Base58 and AES-256-ECB (same key as before).

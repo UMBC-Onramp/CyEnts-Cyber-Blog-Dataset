@@ -1,0 +1,5 @@
+
+Due to a lack of context and forensic evidence at this time, Mandiant cannot associate all the code families described in this report to UNC2630 or UNC2717.
+We also note the possibility that one or more related groups is responsible for the development and dissemination of these different tools across loosely connected APT actors.
+It is likely that additional groups beyond UNC2630 and UNC2717 have adopted one or more of these tools.
+Despite these gaps in our understanding, we included detailed analysis, detection techniques, and mitigations for all code families in the Technical Annex.

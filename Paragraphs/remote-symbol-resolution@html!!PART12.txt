@@ -1,0 +1,9 @@
+
+This allows us to rename functions and pointers on the fly as the script runs all in one shot.
+This is where the network client capability comes in.
+Again, there are many approaches to this.
+Here we chose to integrate a network client into a beta of IDA Jscript (Figure 6).
+IDA Jscript is an open source IDA scripting tool with IDE that includes syntax highlighting, IntelliSense, function prototype tooltips, and debugger.
+Figure 6: Open source IDA Jscript decoding and resolving API addresses
+In this example we see a script that decodes the xdata pointer table, resolves the API address over the network, and then generates an IDC script to rename the pointers in IDA.
+After running this script and applying the results, the decompiler output becomes plainly readable (Figure 7).

@@ -1,0 +1,103 @@
+By Charles McFarland on Jun 13, 2018 On May 19 researchers discovered a series of vulnerabilities in the blockchain-based EOS platform that can lead to remote control over participating nodes.
+
+Just four days prior, a mining pool server for the IOT platform HDAC was compromised, impacting the vast majority of miners.
+
+In January the largest-ever theft of cryptocurrencies occurred against the exchange Coincheck, resulting in the loss of US$532 million in NEM coin.
+
+Due to its increased popularity and profitability cybercriminals have been targeting all things blockchain.
+
+McAfee Advanced Threat Research team analysts have now published the McAfee Blockchain Threat Report to explain current threats against the users and implementers of blockchain technologies.
+
+What is Blockchain?
+
+Even if you have not heard of blockchain, you have likely heard of cryptocurrencies, namely Bitcoin, the most popular implementation.
+
+In late 2017 Bitcoin reached a value of $20,000 per coin, prompting a lot of interest in the currency—including from cybercriminals.
+
+Cryptocurrencies are built on top of blockchain, which records transactions in a decentralized way and enables a trusted “ledger” between trustless participants.
+
+Each block in the ledger is linked to the next block, creating a chain.
+
+Hence, the system is called a blockchain.
+
+The chain enables anyone to validate all transactions without going to an outside source.
+
+From this, decentralized currencies such as Bitcoin are possible.
+
+Proof-of-work blockchain.
+
+Source: https://bitcoin.org/bitcoin.pdf .
+
+Blockchain Attacks Attackers have adopted many methods targeting consumers and businesses.
+
+The primary attack vectors include phishing, malware, implementation vulnerabilities, and technology.
+
+In a phishing scheme in January, Iota cryptocurrency lost $4 million to scams that lasted several months.
+
+Malware authors often change their focus.
+
+In late 2017 to early 2018 some have migrated from deploying ransomware to cryptomining.
+
+They have been found using open-source code such as XMRig for system-based mining and the mining service Coinhive .
+
+Source: McAfee Labs Implementation vulnerabilities are the flaws introduced when new technologies and tools are built on top of blockchain.
+
+The recent EOS attack is one example.
+
+In mid-July 2017 Iota suffered an attack that essentially enabled attackers to steal from any wallet.
+
+Another currency, Verge, was found with numerous vulnerabilities .
+
+Attackers exploiting the vulnerabilities were able to generate coins without spending any mining power.
+
+Known attacks against the core blockchain technology are much more difficult to implement, although they are not unheard of.
+
+The most widely known attack is the 51% attack, or majority attack, which enables attackers to create their own chains at will.
+
+The group 51 Crew targeted small coins, including Krypton, and held them for ransom.
+
+Another attack, known as a Sybil attack, can allow an attacker to completely control a targeted victim’s ledger.
+
+Attempts have been made for larger scale Sybil attacks such as one in 2016 .
+
+Dictionary Attacks Blockchain may be a relatively new technology but that does not mean that old attacks cannot work.
+
+Mostly due to insecure user behavior, dictionary attacks can leverage some implementations of blockchain.
+
+Brain wallets, or wallets based on weak passwords, are insecure, yet people still use them.
+
+These wallets are routinely stolen, as was the case with the nearly BTC60 stolen from the following wallet:
+
+This wallet recorded two transactions as recently as March 5, 2018.
+
+One incoming and one outgoing transaction occurred within roughly 15 minutes.
+
+Source: https://blockchain.info .
+
+Exchanges Under Attack The biggest players, and targets, in blockchain are cryptocurrency exchanges.
+
+Cryptocurrency exchanges can be thought of as banks in which you users create accounts, manage finances, and even trade currencies including traditional ones.
+
+One of the most notable incidents is the attack against Mt. Gox between 2011‒2014 that resulted in $450 million of Bitcoin stolen and led to the liquidation and closure of the company.
+
+Coincheck, previously mentioned, survived the attack and began reimbursing victims for their losses in March 2018.
+
+Not all recent exchanges fared so well.
+
+Bitcurex abruptly closed and led to an official investigation into the circumstances; Youbit suffered two attacks, leading the company into bankruptcy .
+
+An advertisement for the shuttered Polish exchange Bitcurex.
+
+Conclusion Blockchain technologies and its users are heavily targeted by profit-driven cybercriminals.
+
+Current attackers are changing their tactics and new groups are entering the space.
+
+As more businesses look to blockchain to solve their business problems and consumers increasingly rely on these technologies, we must be diligent in understanding where the threats lie to achieve proper and tailored risk management.
+
+New implementations must place security at the forefront.
+
+Cybercriminals have already enjoyed successes against the users and implementations of blockchain so we must prepare accordingly.
+
+
+
+

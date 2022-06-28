@@ -1,0 +1,4 @@
+
+Other ML models can be modified to implement incremental learning.
+For our experiment, we incrementally trained the baseline LightGBM model by augmenting the training data with FPs and FNs from test 1 and then trained an additional 100 trees on top of the baseline model (for a total of 1,100 trees).
+Unlike the baseline model we use regularization (L2 parameter of 1.0); using no regularization resulted in overfitting to the new points.

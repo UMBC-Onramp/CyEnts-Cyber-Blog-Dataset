@@ -1,0 +1,7 @@
+
+The document also demonstrates how to detect attacker activity in real-time by tapping into the WMI eventing system.
+WMI is a valuable asset not just for system administrators and attackers, but equally so for defenders and forensic analysts.
+Download a copy of the whitepaper today!
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

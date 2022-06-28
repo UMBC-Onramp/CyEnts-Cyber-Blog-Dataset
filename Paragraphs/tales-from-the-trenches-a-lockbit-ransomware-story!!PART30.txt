@@ -1,0 +1,5 @@
+
+Ransomware families are often programmed to run multi-threaded to ensure quick and overall encryption and prevent the encryption process getting stuck on a large file.
+However, LockBit was specifically advertised as single threaded and the threat actor Lockbi ensures that there are no speed issues when it comes to its encryption capability.
+Figure 37:
+The LockBit advertisement In the advertisement it is listed that one of the features of the ransomware is a local subnet scanner and SMB propagation method, something we can confirm based on our analysis.

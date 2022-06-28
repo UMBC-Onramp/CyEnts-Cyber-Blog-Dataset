@@ -1,0 +1,18 @@
+
+The new Authenticator is encrypted with the service specific session key that was previously obtained from the Domain Controller.
+ The authentication process is shown in Figure 9.
+Figure 9:
+Authenticating to SMB (AP-REQ)
+Once the file share server receives the authentication request, it first extracts and decrypts the service ticket from the Kerberos authentication blob and verifies the data within.
+It also extracts the service specific session key from the service ticket and attempts to decrypt the Authenticator with it.
+If this operation succeeds, the user is considered to be authenticated to the service.
+The server will acknowledge the successful authentication by sending one final Authenticator back to the user, encrypted with the service specific session key.
+This action completes the mutual authentication process.
+The response (contained within an “ap-rep” structure) is shown in Figure 10.
+Figure 10:
+Final Authenticator (Mutual Authentication, AP-REP)
+A diagram of the authentication flow is shown in Figure 11.
+Figure 11:
+Example Kerberos authentication flow Subscribe to Blogs Get email updates as new blog posts are added.
+
+

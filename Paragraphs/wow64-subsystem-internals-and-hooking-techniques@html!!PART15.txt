@@ -1,0 +1,6 @@
+
+The common case jmp once built is shown in Figure 12.
+Figure 12: Dynamically built jmp to transition back to 32bit mode
+At this point our call trace is complete.
+The WOW64 layer has transitioned back to 32-bit mode and will continue execution at the ret after Wow64SystemServiceCall in the syscall stub we started with.
+Now that an understanding of the flow of the WOW64 layer itself is understood, let’s examine the Wow64SystemServiceEx call we glossed over before.

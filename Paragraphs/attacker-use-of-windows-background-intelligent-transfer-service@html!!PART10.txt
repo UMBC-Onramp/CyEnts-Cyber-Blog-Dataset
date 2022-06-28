@@ -1,0 +1,6 @@
+
+Fortunately, the job and file structures are largely unchanged from the previous database format.
+Job data starts with the control structure: Offset Field Size 0 Type 4 4 Priority 4 8 State 4 ... 16 Job ID (GUID) 16 32 Name (UTF-16) variable variable Description (UTF-16) variable variable Command (UTF-16) variable variable Arguments (UTF-16) variable variable User SID (UTF-16) variable variable Flags 4
+Following the control structure is a list of files delimited by the XFER GUID, {7756DA36-516F-435A-ACAC-44A248FFF34D}.
+The list begins with a 4-byte file count followed by a list of GUIDs, which correspond to Id values in the Files table.
+The file data uses the following structure: Field Size Destination Filename (UTF-16) variable Source Filename (UTF-16) variable Temporary Filename (UTF-16)

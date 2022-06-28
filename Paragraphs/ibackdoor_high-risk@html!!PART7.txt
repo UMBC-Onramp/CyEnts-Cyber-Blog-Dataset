@@ -1,0 +1,12 @@
+
+The JavaScript component, which we refer to as msageJS , provides high-level execution logic and can trigger the backdoors by invoking the interfaces exposed by msageCore.
+Each component has its own separate version number.
+Figure 1: Key components of backdoored mobiSage SDK
+In the remainder of this section, we reveal internal details of msageCore, including its communication channel and high-risk interfaces.
+Then, we describe how msageJS is launched and updated, and how it can trigger the backdoors.
+Backdoors in msageCore Communication channel MsageCore implements a general framework to communicate with msageJS via the ad library’s WebView.
+Commands and parameters are passed via specially crafted URLs in the format  adsagejs://cmd&parameter.
+As shown in the reconstructed code fragment in Figure 2, msageCore fetches the command and parameters from the JavaScript context and inserts them in its command queue.
+Figure 2:
+Communication via URL loading in WebView.
+To process a command in its queue, msageCore dispatches the command along with its parameters to a corresponding Objective-C class and method.

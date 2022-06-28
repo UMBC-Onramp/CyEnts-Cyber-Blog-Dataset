@@ -1,0 +1,15 @@
+
+With our newly identified information obtained by passively scraping those IOCs from a variety of data providers, we can identify additional hashes, delivery URLs and web command and control locations, as shown in Figure 15.
+Figure 15: Maltego visualization of FIN11 dropper Pivoting on the suspected FIN11 delivery domain near-fast[.]com, we have found several more samples that were uploaded to an online malware sandbox website AppAnyRun .
+Within the ThreatPursuit VM Google Chrome browser and in the Tools directory, there are shortcuts and bookmarks to a range of sandboxes to help with accessing and searching them quickly.
+We can use AppAnyRun to further analyze the heterogenous networks and execution behaviors of these acquired samples.
+We have identified another similar sample, which is an XLS document named “MONITIORING REPORT.xls” with the MD5 hash 5d7d2371668ad4a6484f76b0b6511961
+(Figure 16).
+Let’s attempt to triage this newly discovered sample and qualify the relationship back to FIN11.
+Figure 16:
+VirusTotal execution report of 5d7d2371668ad4a6484f76b0b6511961 Extracting interesting strings and indicators from this sample allows us to compare these artifacts against our own dynamic analysis.
+If we can’t access the original malware sample, but we have other indicators to hunt with, we could also pivot on various unique characteristics and attributes (e.g., imphash, vthash, pdb string, etc...) to discover related samples.
+Even without access to the sample, we can also use YARA to mine for similar malware samples.
+One such source to mine is using the mquery tool and their datasets offered via CERT.PL.
+To fast track the creation of a YARA rule, we leverage the FIN11 YARA rule provided within the FIN11 Mandiant Advantage report .
+Simply copy and paste the YARA rule into mquery page and select “Query” to perform the search (Figure 17).

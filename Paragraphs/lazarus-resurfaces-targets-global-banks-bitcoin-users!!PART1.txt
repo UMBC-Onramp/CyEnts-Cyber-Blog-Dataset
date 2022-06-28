@@ -1,0 +1,5 @@
+By Ryan Sherstobitoff on Feb 12, 2018 This blog was written with support and contributions provided by Asheer Maholtra, Jessica Saavedra Morales, and Thomas Roccia.
+McAfee Advanced Threat Research (ATR) analysts have discovered an aggressive Bitcoin-stealing phishing campaign by the international cybercrime group Lazarus that uses sophisticated malware with long-term impact.
+This new campaign, dubbed HaoBao, resumes Lazarus’ previous phishing emails, posed as employee recruitment, but now targets Bitcoin users and global financial organizations.
+When victims open malicious documents attached to the emails, the malware scans for Bitcoin activity and then establishes an implant for long-term data-gathering.
+HaoBao targets and never-before-seen implants signal to McAfee ATR an ambitious campaign by Lazarus to establish cryptocurrency cybercrime at a sophisticated level.

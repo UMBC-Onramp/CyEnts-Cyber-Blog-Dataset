@@ -1,0 +1,11 @@
+
+The first type of message, which we denote as “format 1,” is a GET request to URLs of the form hxxp://domalo[.]online/ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91dueu3qa54/46kqb jvyklunp1z56txzkhen7gjci3cyx8ggkptx25i74mo6myqpx9klvv3/akcii239myzon0xwjlxqnn 3b34w/ <hash> .php?
+type=__ds_setdata&__ds_setdata_user= <user_hash> &__ds_setdata_ext= <message_hash> &__ds_setdata_data= <message> , where: <hash> is MD5(SHA1(MHost)) , which for this sample, is 212bad81b4208a2b412dfca05f1d9fa7 .
+<user_hash> is a unique identifier for the machine on which the malware is running.
+It is always calculated as SHA1(OS_version + machine_name + user_name) as provided by the .NET
+System.
+Environment class.
+<message_hash> identifies what kind of message the malware is sending to the C2 endpoint.
+The <message_hash> is calculated as MD5(<message_type> + <user_hash>) , where <message_type> is a short keyword identifying the type of message, and <user_hash> is as calculated above.
+Values for <message_type> exist for each command that the malware supports; for possible values, see the “msgs” variable in the code sample shown in Figure 19.
+Observe that this makes it difficult to observe the message type visually from log traffic, or to write a static network signature for the message type, since it varies for every machine due to the inclusion of the <user_hash> .

@@ -1,0 +1,5 @@
+
+In 2020, there were over 215k CWP installations accessible from the open internet, so the number of computers compromised in this campaign may be substantial.
+Installation On successful exploitation of the web panel, the following commands are executed.
+Figure 3.
+Commands executed via CWP exploit First, the “sshins” installer binary is retrieved, executed, and deleted .

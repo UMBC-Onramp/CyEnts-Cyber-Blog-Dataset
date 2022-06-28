@@ -1,0 +1,3 @@
+
+This is the function used to create the mutex: Figure 32.
+Creation and check of the hardcoded mutex LockBit Version 2 This LockBit version came out with the following changes: Appended extension changed The debug function removed Some of the samples came packed wither with UPX or a Delphi packer One sample digitally signed Appended extension changed: For this version, LockBit started to append the extension .lockbit in all the encrypted files as a file marker: Debug log function removed: LockBit, in this new version, removed the functionality whereby it stored all the skipped files in the encryption process.

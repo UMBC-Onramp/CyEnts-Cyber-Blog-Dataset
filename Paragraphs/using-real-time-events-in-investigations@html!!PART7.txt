@@ -1,0 +1,6 @@
+
+Our solution’s real-time file write events are incredibly useful in situations like this because they record the MD5 hash of the files written and partial contents of the file.
+File write events also record which process created or modified the file in question.
+Table 5 provides an example of a real-time file write event recorded by our solution.
+Field Example Timestamp (UTC) 2020-03-10 16:42:59.956
+Sequence Number 2884312 PID 9392 Process Path C:\\Windows\\Temp\\legitservice.exe Username TEST-DOMAIN\\BackupAdmin Device Path \\Device\\HarddiskVolume2 File Path C:\\Windows\\Temp\\WindowsServiceNT.log File MD5 Hash 30a82a8a864b6407baf9955822ded8f9 Num Bytes Seen Written 8 Size 658 Writes 4 Event reason File closed Closed TRUE Base64 Encoded Data At Lowest Offset Q3JlYXRpbmcgJ1dpbmRvd3NTZXJ2aWNlTlQubG9nJy Bsb2dmaWxlIDogT0sNCm1pbWlrYXR6KGNvbW1hbmQ Text

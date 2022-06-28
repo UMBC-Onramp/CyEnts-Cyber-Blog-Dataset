@@ -1,0 +1,8 @@
+
+GPT-2’s authors and subsequent researchers have warned about potential malicious use cases enabled by this powerful natural language generation technology, and while it was conducted here for a defensive application in a controlled offline setting using readily available open source data, our research reinforces this concern.
+As trends towards more powerful and readily available language generation models continue , it is important to redouble efforts towards detection as demonstrated by Figure 5 and other promising approaches such as Grover .
+This research was conducted during a three-month FireEye IGNITE University Program summer internship, and represents a collaboration between the FDS and FireEye Threat Intelligence’s Information Operations Analysis teams.
+If you are interested in working on multidisciplinary projects at the intersection of cyber security and machine learning, please consider applying to one of our 2020 summer internships .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

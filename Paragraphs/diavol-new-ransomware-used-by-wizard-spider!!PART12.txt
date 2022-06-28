@@ -1,0 +1,5 @@
+
+QuickBooks.
+FCS , dbeng8 , sqladhlp , QBIDPService , Culserver , RTVscan , vmware-usbarbitator64 , vmware-converter , VMAuthdService , VMnetDHCP , VMUSBArbService , VMwareHostd , sqlbrowser , SQLADHLP , sqlwriter , msmdsrv , tomcat6 , QBCFMonitorServicechrome.exe , outlook.exe , chrome.exe .
+The authors of Diavol made some mistakes in their hardcoded configuration.
+For starters, SERVPROC gets the list of the process names to terminate instead of service names to stop, and vice versa.

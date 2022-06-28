@@ -1,0 +1,5 @@
+
+Additionally, groups have demonstrated a data-poisoning attack where attackers did not have control over how the training data was labeled.
+Natural language processing applications can analyze text and generate a basic understanding of the opinions expressed, also known as sentiment analysis.
+Recent papers highlight how users can input corrupt text training examples into sentiment analysis models to degrade the model's overall performance and guide it to misunderstand a body of text.
+Compromises can also occur when the threat actor has limited access and understanding of the model’s inner-workings.

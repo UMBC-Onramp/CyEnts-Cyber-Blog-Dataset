@@ -1,0 +1,5 @@
+
+The author and seller of Hermes 2.1 emphasizes that he is selling is a kit and not a service.
+This suggests that a buyer of the kit must do some fine tuning by setting up a distribution method (spam, exploit kit, or RDP, for example) and infrastructure to make Hermes work effectively.
+If changing a name and ransom note are part of these tuning options, then it is likely that Ryuk is an altered version Hermes 2.1.
+Attribution: analyzing competing hypotheses In the race to determine who is behind an attack, research facts (the What and How questions) are often put aside to focus on attribution (the Who question).

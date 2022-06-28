@@ -1,0 +1,7 @@
+
+We assess an actor using the handle “xman_1365_x” may have been involved in the development and potential use of APT33’s TURNEDUP backdoor due to the inclusion of the handle in the processing-debugging (PDB) paths of many of TURNEDUP samples.
+An example can be seen in Figure 5.
+Figure 5: “xman_1365_x\" PDB String in TURNEDUP Sample Xman_1365_x was also a community manager in the Barnamenevis Iranian programming and software engineering forum, and registered accounts in the well-known Iranian Shabgard and Ashiyane forums, though we did not find evidence to suggest that this actor was ever a formal member of the Shabgard or Ashiyane hacktivist groups.
+Open source reporting links the “xman_1365_x” actor to the “Nasr Institute,” which is purported to be equivalent to Iran’s “cyber army” and controlled by the Iranian government.
+Separately, additional evidence ties the “Nasr Institute” to the 2011-2013 attacks on the financial industry, a series of denial of service attacks dubbed Operation Ababil.
+In March 2016, the U.S. Department of Justice unsealed an indictment that named two individuals allegedly hired by the Iranian government to build attack infrastructure and conduct distributed denial of service attacks in support of Operation Ababil.

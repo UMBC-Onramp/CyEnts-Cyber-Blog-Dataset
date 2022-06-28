@@ -1,0 +1,7 @@
+
+The video below shows how this simple unpatched vulnerability could have devastating impact on real systems.
+We also leverage this demo system, now located in our Hillsboro research lab, to highlight how an effective patch, in this case provided by Delta Controls, is used to immediately mitigate the vulnerability, which is ultimately our end goal of this research project.
+Conclusion Discoveries such as CVE-2019-9569 underline the importance of secure coding practices on all devices.
+ICS devices such as this Delta building manager control critical systems which have the potential to cause harm to businesses and people if not properly secured.
+There are some best practices and recommendations related to the security of products falling into nonstandard environments such as industrial controls.
+Based on the nature of the devices, they may not have the same visibility and process control as standard infrastructure such as web servers, endpoints and networking equipment.

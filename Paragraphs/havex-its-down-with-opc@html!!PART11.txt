@@ -1,0 +1,12 @@
+
+r.....
++..]000000B0
+  61 87 c1 0c 47 27 6a 61  fc c5 ee 41 a5 ae 89 c3 a...G'ja...
+A....000000C0  9e 00 54 b9 46 b8 88 72  94 a3 95 c8 8e 5d fe 23 ..
+T.F..r.....].#000000D0
+  2d fb 48 85 d5 31 c7 65  f1 c4 47 75 6f 77 03 6b -.H..1.e..
+Guow.k --Truncated--Probable Key Identifierff00ff00ff00ff00ff00ff00ff00fRSA Encrypted 3DES Key5A EB 13 80
+FE A6 B9 A9 8A 0F 41…
+The 3DES key will be the last 24 bytes of the decrypted result.3DES IV88 72  94 a3 95 c8 8e 5d3DES
+Encrypted Logfe 23 2d fb 48 85 d5 31 c7 65 f1… Figure 8:
+Sample encrypted .yls file Execution When executing PE.dll against the Arduino OPC server, we observe interesting responses within the plaintext %TEMP%\\[random].tmp.dat:

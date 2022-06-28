@@ -1,0 +1,7 @@
+
+We have seen this trust in the past, for example, with the popular credit card shops in the first decade of the century, which were a leading source of cybercrime until major police action broke the trust model.
+As endpoint detection grows stronger, the vulnerable remote desktop protocol (RDP) offers another path for cybercriminals.
+In 2019 we predict malware, specifically ransomware, will increasingly use RDP as an entry point for an infection.
+Currently, most underground shops advertise RDP access for purposes other than ransomware, typically using it as a stepping stone to gain access to Amazon accounts or as a proxy to steal credit cards.
+Targeted ransomware groups and ransomware-as-a-service (RaaS) models will take advantage of RDP, and we have seen highly successful under-the-radar schemes use this tactic.
+Attackers find a system with weak RDP, attack it with ransomware, and propagate through networks either living off the land or using worm functionality (EternalBlue).

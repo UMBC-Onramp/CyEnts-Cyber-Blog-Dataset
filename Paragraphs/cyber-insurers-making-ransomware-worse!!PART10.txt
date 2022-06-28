@@ -1,0 +1,10 @@
+
+They can also use encryption to protect their data from the start.
+Doing so will not only help organizations safeguard their sensitive information against the threat of double extortion, it will also potentially trick a ransomware strain into deeming that data unsuitable for encryption.
+Putting Cyber Insurance into Context Cyber insurance is not a digital security strategy; it’s part of one.
+More than that, it functions best as a last resort and not a first response.
+Accordingly, organizations need to focus on implementing all the security measures discussed above as a means of defending themselves against ransomware.
+Doing so will help them to save time and money if and when it comes time to respond to a ransomware attack.
+If your organization requires immediate assistance with incident response, please contact IBM Security X-Force’s US hotline 1-888-241-9812 | Global hotline (+001) 312-212-8034.
+
+

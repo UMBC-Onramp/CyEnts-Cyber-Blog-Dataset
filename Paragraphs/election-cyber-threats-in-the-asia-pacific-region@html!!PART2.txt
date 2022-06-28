@@ -1,0 +1,6 @@
+
+The 2020 U.S. elections are currently drawing attention to election cyber risks, but 2020 has already hosted dozens of elections worldwide, with more to come.
+In the Asia-Pacific region these included elections in Taiwan, India, South Korea, and Singapore to name a few, with regional elections scheduled for Indonesia in December.
+Given the prevalence of such activity worldwide and Mandiant's unique visibility into threat actor activity, we believe it is worthwhile to examine trends in adversary targeting of elections in a variety of regional contexts because the tactics, techniques, and procedures (TTPs) used in one region today may soon be deployed or mimicked in other regions.
+Notable Electoral Targeting in Asia-Pacific Region Mandiant Threat Intelligence tracked numerous elections-related incidents in the Asia-Pacific region in recent years.
+During this time, the most prolific regional actor was China, which we observed in more than 20 elections-related campaigns most frequently affecting Hong Kong and Taiwan.

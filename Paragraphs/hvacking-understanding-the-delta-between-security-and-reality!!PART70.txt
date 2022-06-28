@@ -1,0 +1,11 @@
+
+We believe this is a combination of standard practice for ICS systems administrators to connect these devices to the Internet, coupled with a strategy by the vendor (Delta Controls) proactively reaching out to customers to reduce the internet-connected footprint of the vulnerable devices.
+Most controllers appear to be in North America with the US accountable for 53% of online devices and Canada accounting for 35%.
+It is worth noting the fact that in some cases the IP address, and hence the geographic location of the device from Shodan, is traced back to an ISP (Internet Service Provider), which could result in skewed findings for locations.
+Some industries seem more at risk than others given the accessibility of devices.
+We were only able to map a small portion of these devices to specific industries, but the top three categories we found were Education, Telecommunications, and Real Estate.
+Education included everything from elementary schools to universities.
+In academic settings, the devices were sometimes deployed district-wide, in numerous facilities across multiple campuses.
+One example is a public-school system in Canada where each school building in the district had an accessible device.
+ Telecommunications was comprised entirely of ISPs and/or phone companies.
+Many of these could be due to the ISPs being listed as a service provider.

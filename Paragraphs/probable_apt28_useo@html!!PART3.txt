@@ -1,0 +1,5 @@
+
+The Flash exploit is mostly unobfuscated with only some light variable name mangling.
+The attackers relied heavily on the CVE-2014-0515 Metasploit module, which is well documented.
+It is ROPless, and instead constructs a fake vtable for a FileReference object that is modified for each call to a Windows API.
+The payload exploits a local privilege escalation vulnerability in the Windows kernel if it detects that it is running with limited privileges.

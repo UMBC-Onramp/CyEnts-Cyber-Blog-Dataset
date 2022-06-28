@@ -1,0 +1,6 @@
+
+To this day, two main attack vectors make up all previously disclosed attacks against the iOS platform: 1.
+     Jailbroken iOS devices that allow unsigned or ill-signed apps to be installed due to the disabled signature checking function.
+In some cases, the sandbox restrictions are lifted, which allows apps to function outside of the sandbox. 2.
+     App sideloading via Enterprise Certifications on non-jailbroken devices.
+FireEye published a series of reports that detailed attacks exploiting this attack surface, and recent reports show a continued focus on this known attack vector.

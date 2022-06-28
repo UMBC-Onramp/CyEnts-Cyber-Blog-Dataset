@@ -1,0 +1,125 @@
+Often in discussions with customers and potential customers,\nquestions arise about our penetration testing services , as well as\npenetration testing in general.
+
+In this post, we want to walk\nthrough
+
+Mandiant's take on the five W's of penetration testing, in\nhopes of helping those of you who many have some of these same\nquestions.
+
+For clarity, we are going to walk through these W's in a\nnon-traditional order.
+
+Why First and foremost, it's important to be upfront\nwith yourself with why you are having a penetration test performed\n(or at least considering one).
+
+If your organization's primary\nmotivation is compliance and needing to \"check the box,\"\nthen be on the lookout for your people attempting to subtly (or not\nso subtly) hinder the test in order to earn an \"easy pass\"\nby minimizing the number of findings (and therefore the amount of\npotential remediation work required).
+
+Individuals could attempt to\nhinder a penetration test by placing undue restrictions on the scope\nof systems assessed, the types of tools that can be used, or the\ntiming of the test.
+
+Even if compliance is a motivating\nfactor, we hope you're able to take advantage of the opportunity\npenetration testing provides to determine where vulnerabilities lie\nand make your systems more secure.
+
+That is the real value that\npenetration testing can provide.
+
+Finally, if you are getting\na penetration test to comply with requirements imposed on your\norganization, that will often drive some of the answers to later\nquestions about the type and scope of the test.
+
+Keep in mind that\nstandards only dictate minimum requirements, however, so you should\nalso consider additional penetration testing activities beyond the\n\"bare minimum.\" Who There are really two \"who\" questions to\nconsider, but for now we will just deal with the first: Who are the\nattackers that concern you?
+
+Are they: Random\nindividuals on the Internet?
+
+Specific threat actors, such\nas state-sponsored attackers, organized criminals, or hacktivist\ngroups?
+
+An individual or malware that is behind the\nfirewall and on your internal corporate network?
+
+Your own\nemployees (\"insider threats\")?
+
+Your customers\n(or attackers who may compromise customers'\nsystems/accounts)?
+
+Your vendors, service providers, and\nother business partners (or attackers who may have compromised\ntheir systems)?
+
+The answer to this will help drive\nthe type of testing to be performed and the types of test user\naccounts (if any) to provision.
+
+The next section will describe some\npossible penetration test types, but it's helpful to also discuss\nthe types of attackers you would like the penetration test to\nsimulate.
+
+What What type of penetration test do you want\nperformed?
+
+For organizations new to penetration testing, we\nrecommend starting with an external network penetration test, which\nwill assess your Internet-accessible systems in the same way that an\nattacker anywhere in the world could access them.
+
+Beyond that, there\nare several options: Internal network penetration test\n- A penetration test of your internal corporate network.
+
+Typically\nwe start these types of assessments with only a network connection\non the corporate networks, but a common variant is what we call an\n\"Insider Threat Assessment,\" where we start with one of\nyour standard workstations and a standard user account.
+
+Web application security assessment - A review of custom web\napplication code for security vulnerabilities such as access\ncontrol issues, SQL injection, cross-site scripting (XSS) and\nothers.
+
+These are best done in a test or development environment\nto minimize impact to the production environment.
+
+Social\nengineering - Using deceptive email, phone calls, and/or physical\nentry to gain access to systems.
+
+Wireless penetration\ntest - A detailed security assessment of wireless network(s) at\none or more of your locations.
+
+This typically includes a survey of\nthe location looking for unauthorized (\"rogue\") wireless\naccess points that have been connected to the corporate network\nand are often insecurely configured.
+
+If budgets were\nnot an issue, you would want to do all of the above, but in reality\nyou will need to prioritize your efforts on what makes sense for\nyour organization.
+
+Keep in mind that the best approach may change\nover time as your organization matures.
+
+Where In what physical location should the test take\nplace?
+
+Many types of penetration testing can be done remotely, but\nsome require the testers to visit your facility.
+
+Physical social\nengineering engagements and wireless assessments clearly need to be\nperformed at one (or more) of your locations.
+
+Some internal\npenetration tests can be done remotely via a VPN connection, but we\nrecommend conducting them at your location whenever possible.
+
+If\nyour internal network has segmentation in place (as we recommend),\nthen you should work with your penetration testing organization to\ndetermine the best physical location for the test to be performed.\nGenerally, you'll want to do the internal penetration test from a\nnetwork segment that has broad access to other portions of the\ninternal network in order to get the best coverage from the\ntest.
+
+Another \"Where\" to consider for remote testing\nis where the testers are physically located.
+
+When testers are in a\ndifferent country than you, legal issues can arise with data\nprovisioning and accessibility.
+
+Differences in language, culture,\nand time zones could also make coordination and interpretation of\nresults more difficult.
+
+When We recommend that most organizations get some\nsort of security assessment on an annual basis, but that security\nassessment does not necessarily need to be a penetration test (see Penetration\nTesting Has Come Of Age - How to Take Your Security Program to the\nNext Level ).
+
+Larger organizations may have multiple\nassessments per year, each focused in a different area.
+
+Within the year, the timing of the penetration test is usually\npretty flexible.
+
+You will want to make sure that the right people\nfrom your organization are available to initiate and manage the test\n- and to receive results and begin implementing changes.
+
+Based on\nyour organization's change control procedures, you may need to work\naround system freezes or other activities.
+
+Testing in December can\nbe difficult due to holidays and vacation, along with year-end\ncloseout activities, especially for organizations in retail,\ne-commerce, and payment processing.
+
+If you have significant\nupgrades planned for the systems that will be tested, it is\ntypically best to schedule the test for a month or two after the\nupgrades are due to be finished.
+
+This will allow some time for the\ninevitable delays in deploying the upgrades as well give the\nupgraded systems (and their administrators) a bit of time to\n\"settle in\" and get fully configured before being\ntested.
+
+Who (part 2)
+
+The other \"who\" question to\nconsider is who will perform the penetration test?
+
+We recommend\nconsidering the following when selecting a penetration testing\nprovider: What are the qualifications of the organization\nand the individuals who will be performing the test?
+
+What\ndifferentiates them from other providers?
+
+To what degree\ndoes their testing rely on automated vulnerability scanners vs.\nhands on manual testing?
+
+How well do they understand the\nthreat actors that are relevant to your environment?
+
+How well are\nthey able to emulate real world attacks?
+
+What\ndeliverables will you receive from the test?
+
+Are they primarily\nthe output of an automated tool?
+
+Ask for samples.
+
+Are\nthey unbiased?
+
+Do they use penetration tests as a means to sell or\nresell other products and services?
+
+No doubt, there\nare other questions that you will want to consider when scoping a\npenetration test, but we hope that these will help you get started.\nIf you'd like to read more about Mandiant's penetration testing (and\nother) services, you can do so here .
+
+Of course,\nalso feel free to contact\nus if you'd like to talk about your situation and how Mandiant\ncan best assess your organization's security.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

@@ -1,0 +1,3 @@
+Just over a month ago, iOS users were warned of the threat to their devices by the XcodeGhost malware.
+Apple quickly reacted, taking down infected apps from the App Store and releasing new security features to stop malicious activities.
+Through continuous monitoring of our customers’ networks, FireEye researchers have found that, despite the quick response, the threat of XcodeGhost has maintained persistence and been modified.

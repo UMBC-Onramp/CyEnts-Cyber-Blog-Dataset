@@ -1,0 +1,6 @@
+
+The following five rules will monitor a server’s event logs and alert upon the installation and usage of the AADInternals PowerShell module (Figure 12).
+The detection of these activities could be high fidelity alerts that an attacker is preparing to configure backdoors into M365 and Azure AD environments.
+Figure 12: AADInternals Helix rules
+If an attacker has successfully configured a backdoor using AADInternals, Helix will alert upon the following events registered in the Office 365 unified audit log and Azure Activity Log as indication of a possible event (Figure 13 and Figure 14).
+It is important to note that these alerts could be triggered upon legitimate administrator activity.

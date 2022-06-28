@@ -1,0 +1,16 @@
+
+Figure 5 shows reconstructed code snippets for capturing audio.
+Before storing recorded audio to a file audio_xxx.wav, the code retrieves two parameters from the command for recording duration and threshold.
+Figure 5: Capturing audio with duration and threshold.
+Figure 6 shows a code snippet for initializing the app’s keychain before reading.
+The accessed keychain is in the kSecClassGenericPassword class, which is widely used by apps for storing secret credentials such as passwords.
+Figure 6: Reading the keychain in the kSecClassGenericPassword class.
+Remote control in msageJS msageJS contains JavaScript code for communicating with a C2 server and submitting commands to msageCore.
+The file layout of msageJS is shown in Figure 7.
+Inside sdkjs.js, we find a wrapper object called adsage and the JavaScript interface for command execution.
+Figure 7:
+The file layout of msageJS The command execution interface is constructed as follows:
+adsage.exec(className, methodName, argsList, onSuccess, onFailure); The className and methodName parameters correspond to classes and methods in msageCore.
+The argsList parameter can be either a list or dict, and the exact types and values can be determined by reversing the methods in msageCore.
+The final two parameters are function callbacks invoked when the method exits.
+For example, the following invocation starts audio capture: adsage.exec(\"MSageCoreUIManager\", \"captureAudio\", [\"Hey\", 10, 40],  onSuccess, onFailure); Note that the files comprising msageJS cannot be found by simply listing the files in an affected app’s IPA.

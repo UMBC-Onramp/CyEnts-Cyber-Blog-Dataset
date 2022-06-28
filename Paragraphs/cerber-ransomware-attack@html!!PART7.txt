@@ -1,0 +1,4 @@
+
+If the malware is launched from the specific aforementioned folder and after eliminating any blacklisted filenames from an internal list, then the malware creates a renamed copy of itself to “%APPDATA%\\&#60GUID&#62” using a pseudo-randomly selected name from the “system32” directory.
+The malware executes the malware from the new location and then cleans up after itself.
+Shadow deletion As with many other ransomware families, Cerber will bypass UAC checks, delete any volume shadow copies and disable safe boot options.

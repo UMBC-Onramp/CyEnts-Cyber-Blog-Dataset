@@ -1,0 +1,6 @@
+
+When run, the malware appears to load very slowly — and then, nothing.
+The victim, seeing the game is not working, quits.
+The icon disappears from the screen at that point, but the Trojan remains on the device and gets to work.
+What’s actually happening during that fake startup is data collection:
+Vesub collects system data and receives further instructions.

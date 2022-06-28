@@ -1,0 +1,103 @@
+With the recent integration of Mandiant Web Historian™ into Mandiant Redline™ , you may be asking \"How do I review my Web History using Redline?\
+
+" If so, then follow along as I explain how to collect and review web history data in Redline - with a focus on areas where the workflow and features differ from that of Web Historian.
+
+For those of you unfamiliar with Redline, it is Mandiant's premier free tool, providing host investigative capabilities to help users find signs of malicious activity through memory and file analysis and the development of a threat assessment profile.
+
+Configuring Web History Data Collection Web Historian provided three options for choosing how to find web history data that you want to analyze: scan my local system, scan a profile folder, and parse an individual history file.
+
+Redline allows you to accomplish all three of these operations using a single option, Analyze this Computer , which is found under the Main Menu in the upper left corner.
+
+Specifying the path to a profile folder or a history file will require some additional configuration:
+
+Figure 1: Finding your web history data Web Historian (Left) vs. Redline (Right)
+
+Click on Analyze this Computer to begin configuring your analysis session.
+
+To ensure that Redline collects your desired web history data, click the link to Edit your script .
+
+On the View and Edit Your Script window are several options; take a look around and turn on any and all data that might interest you.
+
+For our purposes, we will be focusing on the Browser History options underneath the Network tab.
+
+This section contains all of the familiar options from Web Historian; simply select the boxes corresponding to the data you wish to collect.
+
+One difference you may notice is the absence of an option to specify the browser(s)
+
+you would like to target.
+
+You can now find that option by selecting Show Advanced Parameters from the upper right corner of the window.
+
+Once advanced parameters are enabled, simply type the name of any browser(s)
+
+you would like to target, each on its own separate line in the Target Browser field.
+
+To have Redline collect any web history data regardless of browser, just leave this field empty.
+
+You may also notice that enabling advanced parameters activates a field for History Files Location .
+
+As you may have guessed, this is where you can specify a path to a profile folder or history file to analyze directly, as you were able to do in Web Historian.
+
+Figure 2:
+
+Configuring Redline to Collect Browser History Data Now that you have finished configuring your script, choose a location to save your analysis session and then hit OK .
+
+Redline will run the script, which will require Administrator privileges and may trigger a UAC prompt before running depending on how your system is configured.
+
+After a brief collecting and processing time, your web history data will be ready for review.
+
+Reviewing your Data For the actual review of your web history data, you should feel right at home in Redline.
+
+Just like Web Historian, Redline uses a sortable, searchable, configurable table view for each of the individual categories of web history data.
+
+Figure 3: Displaying your web history data for review in both Web Historian (behind) and Redline (front)
+
+Although similar, Redline does have a few minor differences in how it visualizes your data: Redline does not break the data into pages; instead it will discretely page in large data sets (25k+ rows) automatically as you scroll down through the list.
+
+To configure the table view, you will need to manipulate the column headers for ordering and resizing, and right-click on a column header to show and hide columns - as opposed to using the column configuration menu in Web Historian.
+
+Searching and simple filtering is done in each individual table view and is not applied globally.
+
+To access the find options, either press the magnifying glass in the bottom right corner, or press Ctrl-f while a table view is selected.
+
+To export your data to a CSV (comma separated values) format file, click on export in the bottom right corner.
+
+Like Web Historian, Redline will only export data currently in the table view.
+
+If you applied any filtering or tags, those will affect the data as it is exported.
+
+In addition to the features that have always been available in Web Historian, Redline also allows you to review your web history with its full suite of analytical capabilities and investigative tools.
+
+Check out the Redline user guide for a full description of these capabilities.
+
+Here are just a few of the most popular: Timeline provides a chronological listing of all web-based events (e.g., URL last browsed to, File Download Started, etc.) in a single heterogeneous display.
+
+You can employ this to follow the activities of a user or attacker as they played out on the system.
+
+You can also quickly reduce your target investigative scope using the Timeline's powerful filtering capabilities.
+
+Use tags and comments to mark-up your findings as you perform your investigation, making it easier to keep track of what you have seen while moving forward.
+
+You can then go back and export those results into your favorite reporting solution.
+
+Use Indicators of Compromise (IOCs) as a quick way to determine if your system contains any potential security breaches or other evidence of compromise.
+
+Visit http://www.openioc.org/ to learn more about IOCs.
+
+Last but not least, Redline gives you the ability to examine an entire system worth of metadata.
+
+With Redline, you are not simply restricted to Web History related data; you can investigate security incidents with the scope and context of the full system.
+
+If your favorite feature from Web Historian has not yet been included in Redline (Graphing, Complex Filtering, etc.), feel free to make a request using one of the contact methods specified below.
+
+We will be taking feedback into consideration when choosing what the Redline team works on in the future.
+
+As always, feel free to contact us with send any additional questions.
+
+And just in case you do not already have it, the latest version of Redline (v1.10 as of the time of this writing) can always be found here .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

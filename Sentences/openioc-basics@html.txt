@@ -1,0 +1,87 @@
+Written by Will Gibb & Devon Kerr One challenge investigators face during incident response is finding a way to organize information about an attackers' activity, utilities, malware and other indicators of compromise, called IOCs.
+
+The OpenIOC format addresses this challenge head-on.
+
+OpenIOC provides a standard format and terms for describing the artifacts encountered during the course of an investigation.
+
+In this post we're going to provide a high-level overview of IOCs, including IOC use cases, the structure of an IOC and IOC logic.
+
+Before we continue, it's important to mention that IOCs are not signatures, and they aren't meant to function as a signature would.
+
+It is often understated, but an IOC is meant to be used in combination with human intelligence.
+
+IOCs are designed to aid in your investigation, or the investigations of others with whom you share threat intelligence.
+
+IOC Use Cases: There are several use cases for codifying your IOCs, and these typically revolve around your objectives as an investigator.
+
+The number of potential use cases is quite large, and we've listed some of the most common use cases below: Find malware/utility : This is the most common use case.
+
+Essentially, this is an IOC written to find some type of known malware or utility, either by looking for attributes of the binary, itself, or for some artifact created upon execution, such as a prefetch file or registry key.
+
+Methodology : Unlike an IOC written to identify malware or utilities, these IOCs find things you don't necessarily know about, in order to generate investigative leads.
+
+For example, if you wanted to identify any service DLL that wasn't signed and which was loaded from any directory that did not include the path \"windowssystem32\", you could write an IOC to describe that condition.
+
+Another good example of a methodology IOC is an IOC that looks for the Registry text value of all \"Run\" keys for a string ending \".jpg\".
+
+This represents an abnormal condition which upon investigation may lead to evidence of a compromise.
+
+Bulk :
+
+You may already be using this kind of IOC.
+
+Many organizations subscribe to threat intelligence feeds that deliver a list of MD5s or IP addresses; a bulk IOC can represent a collection of those indicators.
+
+These kinds of IOCs are very black and white and are typically only good for an exact match.
+
+Investigative :
+
+As you investigate systems in an environment and identify evidence of malicious activity such as metadata related to the installation of backdoors, execution of tools, or files being staged for theft, you can track that information in an IOC.
+
+These IOCs are similar to bulk IOCs; however, an investigative IOC only contains indicators from a single investigation.
+
+Using this type of IOC can help you to prioritize which systems you want to analyze.
+
+IOC components: An IOC is made up of three main parts: IOC metadata, references and the definition.
+
+Let's examine each one of these more closely, noting that we're using the Mandiant IOC Editor (IOCe) downloadable from the Mandiant website:
+
+Metadata : IOC metadata describes information like the author of the IOC (jsmith@domain.tld), the name of the IOC (Evil.exe (BACKDOOR) and a brief description such as \"This variant of the open source Poison Ivy backdoor has been configured to beacon to 10.127.10.128 and registers itself as \"Microsoft 1atent time services\".
+
+References : Within the IOC, references can find information like the name of an investigation or case number, comments and information on the maturity of the IOC such as Alpha, Beta, Release, etc.
+
+This data can help you to understand where the IOC fits in your library of threat intelligence.
+
+One common use for references is to associate an IOC with a particular threat group.
+
+It is not uncommon for certain references to be removed from IOCs when sharing IOCs with third parties.
+
+Definition :
+
+This is the content of the IOC, containing the artifacts that an investigator decided to codify in the IOC.
+
+For example, these may include the MD5 of a file, a registry path or something found in process memory.
+
+Inside the definition, indicators are listed out or combined into expressions that consist of two terms and some form of Boolean logic.
+
+One thing about the OpenIOC format that makes it particularly useful is the ability to combine similar terms using Boolean AND & OR logic.
+
+The previous example shows how this type of logic can be used.
+
+This type of IOC describes three possible scenarios: The name of a service is \"MS 1atent time services\" - OR - The ServiceDLL name for any service contains \"evil.exe\" - OR - The filename is \"bad.exe\" AND the filesize attribute of that file is within the range 4096 to 10240 bytes.
+
+When you use Boolean logic, remember the following:
+
+An AND requires that both sides of the expression are true An OR requires that one side of the expression is true Understanding that the Boolean statements, such as 'The name of a service is \"MS 1atent time services\", OR \"filename is \"bad.exe\" AND the filesize attribute of that file is within the range 4096 to 10240 bytes\"', are evaluated separately is an important aspect understanding how the logic within an IOC works.
+
+These statements are not if-else statements, nor do they both have to exist in order for the IOC to have a match.
+
+When investigating a host, if the \"MS 1atent time services\" service is present, this IOC would have a match; regardless of whether or not the malicious file the IOC described was present on the host as well.
+
+In our next post we're going to have a crash course in writing IOC definitions using the Mandiant IOC editor, IOCe.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

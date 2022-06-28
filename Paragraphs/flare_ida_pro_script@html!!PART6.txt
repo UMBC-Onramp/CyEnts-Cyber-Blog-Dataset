@@ -1,0 +1,5 @@
+
+The sample\nscript merely prints this information out, but real scripts would\nbegin actual analysis with these results.
+The reason that getPushArgs() returns a\nlist is for situations like in Figure 3, where separate code paths can\nsetup function arguments to a single call instruction.
+Each entry in\nthe result list contains the complete set of arguments if the\ndifferent code paths were taken.
+Figure 3: Multipath argtracker handling For a more complex example, suppose you have an annoying piece of\nmalware that decodes all of its strings at runtime.

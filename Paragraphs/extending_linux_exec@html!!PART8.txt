@@ -1,0 +1,8 @@
+
+When an IMA policy is set to audit any executable and auditd is running, a log will be written containing metadata for each executable.
+The simplest IMA policy we can write to log all executables looks like this: audit func=BPRM_CHECK mask=
+MAY_EXEC There are several ways to apply this policy to IMA that are detailed in the IMA documentation.
+Later versions of systemd will apply a custom policy located in “/etc/ima/ima-policy”.
+Placing the single line policy set forth above in this file will cause systemd to apply this IMA policy to the system.
+This version of systemd was included in Ubuntu 16.04.1.
+It should be noted that the example policy is extremely broad and will result in a high volume of logs being generated, primarily by daemons – equivalent to a Windows service - performing routine tasks, such as systemd.

@@ -1,0 +1,5 @@
+
+Using OT credentials retrieved in the previous phases, we authenticated to the SMB service (using single factor authentication) by pivoting through the patch management server in the DMZ network.
+This enabled us to execute remote console commands on management servers (such as the domain controller) in the OT network.
+With access to the domain controller in the core OT network, we extracted credentials for high privilege domain administrator accounts in the OT network using DCSYNC and Mimikatz.
+Using these accounts, we gained control of management servers, application servers, and operator workstations in the OT network.

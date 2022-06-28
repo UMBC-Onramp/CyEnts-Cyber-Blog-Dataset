@@ -1,0 +1,12 @@
+
+FIGURE 22.
+CREATION OF RANSOM NOTE IN ROOT FOLDER AND LOOKING FOR FOLDERS AND FILES
+An example ransom note, with some data anonymized, is shown below: FIGURE 23.
+EXAMPLE OF A MAZE RANSOM NOTE
+The procedure to crypt the files is easy, with the malware taking the following steps: Check the existence of the file with the function “SetFileAttributesW” with the attribute “FILE_ATTRIBUTE_ARCHIVE”.
+Reserve memory to the file with a call to “Virtual Alloc” for the key and iv.
+Open the file with read and write permissions with the function “CreateFileW” with the flag “OPEN_EXISTING”.
+Get the file size with the function “GetFileSizeEx” (it is important for managing big files, “GetFileSize” is not good for bigger files).
+Create a file mapping with the functions “CreateFileMappingW” and “MapViewOfFile” Generate a random key of 32 bytes with the function “CryptGenRandom”.
+Generate a random iv of 8 bytes with the function “CryptGenRandom”.
+Reserve 264 bytes of memory with the function “VirtualAlloc”.

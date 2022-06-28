@@ -1,0 +1,9 @@
+WinRAR, an over 20-year-old file archival utility used by over 500 million users worldwide, recently acknowledged a long-standing vulnerability in its code-base.
+ A recently published path traversal zero-day vulnerability, disclosed in CVE-2018-20250 by Check Point Research , enables attackers to specify arbitrary destinations during file extraction of ‘ACE’ formatted files, regardless of user input.
+ Attackers can easily achieve persistence and code execution by creating malicious archives that extract files to sensitive locations, like the Windows “Startup” Start Menu folder.
+ While this vulnerability has been fixed in the latest version of WinRAR (5.70), WinRAR itself does not contain auto-update features, increasing the likelihood that many existing users remain running out-of-date versions.
+FireEye has observed multiple campaigns leveraging this vulnerability, in addition to those already discussed by 360 Threat Intelligence Center .
+ Below we will look into some campaigns we came across that used customized and interesting decoy documents with a variety of payloads including ones which we have not seen before and the ones that used off-the-shelf tools like PowerShell Empire.
+Campaign 1: Impersonating an Educational Accreditation Council Infection Vector When the ACE file Scan_Letter_of_Approval.rar is extracted with vulnerable WinRAR versions lower than 5.70, it creates a file named winSrvHost.vbs in the Windows Startup folder without the user’s consent.
+The VBScript file is executed the next time Windows starts up.
+Decoy Document To avoid user suspicion, the ACE file contains a decoy document, “Letter of Approval.pdf”, which purports to be from CSWE, the Council on Social Work Education as shown in Figure 1.

@@ -1,0 +1,3 @@
+
+Overview of capa rule categories More than half of capa’s rules are associated with a MITRE ATT&CK technique including all techniques introduced in ATT&CK version 9 that lie within capa’s scope.
+Moreover, almost half of the capa rules are currently associated with a Malware Behavior Catalog (MBC) identifier.

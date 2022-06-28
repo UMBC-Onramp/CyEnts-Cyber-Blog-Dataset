@@ -1,0 +1,5 @@
+
+Our initial analysis suggests there were at least 300 infections, which we suspect occurred between June 8‒12, before the first World Cup matches began.
+The second round The second phase of the attack leverages an encrypted dex file.
+The file has a .data extension and is downloaded and dynamically loaded by the first-stage malware; it is extracted with the same mechanism used to upload the encrypted files.
+The location of the decryption key can be identified from the size of the contents and a fixed number in the first-stage malware.

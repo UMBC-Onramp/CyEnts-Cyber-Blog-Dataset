@@ -1,0 +1,7 @@
+
+Those blacklisted extensions will help the system avoid crashing during the encryption compared with other ransomware families.
+FIGURE 10.
+Check of file names and extensions This behavior is normal in ransomware but the previous check against hardcoded hashes based on the file/folder name is weird because later, as we can see in the above picture, the next check is against plain text strings.
+If it passes this check, the malware will make a new thread with a struct prepared with a hardcoded key block, the name of the file, and the path where the file exists.
+In this thread the first action is to remove the error mode with “SetErrorMode” to 1 to avoid an error dialog being shown to the user if it crashes.
+Later, it will prepare the path to the file from the struct passed as argument to the thread and change the attributes of the file to ARCHIVE with the function “SetFileAttributesW”, however the malware does not check if it can make this action with success or not.

@@ -1,0 +1,7 @@
+
+So periodically check for updates for your remote and install them when they are available.
+Corresponding items in TV and set-top-box menus are likely somewhere near their Wi-Fi and Bluetooth settings; Consider taking apart the remote to physically remove the microphone if your remote supports voice commands but you never use them.
+We think doing so is overkill, but it’s an option; Be aware that an attack on your Wi-Fi network is far more probable than such an exotic hack.
+Make sure to configure yours securely , move all vulnerable IoT devices to a guest network , and use a secure connection ] to protect the most valuable data.
+
+

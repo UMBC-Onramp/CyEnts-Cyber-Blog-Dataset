@@ -1,0 +1,6 @@
+
+Malware will be able to interact with an emulated file system, network and registry.
+All these emulated subsystems can be configured with a configuration file supplied to each emulation run.
+Windows APIs are handled by Python API handlers.
+These handlers will try to emulate expected outputs from these APIs so that malware samples will continue their expected execution path.
+When defining an API handler, all that is needed is the name of the API, the number of arguments the API expects, and an optional calling convention specification.

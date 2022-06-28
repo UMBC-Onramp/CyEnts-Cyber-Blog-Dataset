@@ -1,0 +1,3 @@
+
+OfficeActivity Operations Azure Sentinel logs Detection On-Premises If an attacker is able to compromise on-premises infrastructure and access a server running AD Connect or ADFS services with the intention of leveraging a tool such as AADInternals to expand the scope of their access to include cloud, timely on-premises detection and containment is key.
+The following methods can be leveraged to ensure optimized visibility and detection for the scope of activities described in this post: Treat ADFS and Azure AD Connect servers as Tier 0 assets .

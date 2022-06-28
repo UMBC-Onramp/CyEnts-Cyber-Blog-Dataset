@@ -1,0 +1,4 @@
+Image parsing and rendering are basic features of any modern operating system (OS).
+ Image parsing is an easily accessible attack surface, and a vulnerability that may lead to remote code execution or information disclosure in such a feature is valuable to attackers.
+In this multi-part blog series, I am reviewing Windows OS’ built-in image parsers and related file formats: specifically looking at creating a harness, hunting for corpus and fuzzing to find vulnerabilities.
+In part one of this series I am looking at color profiles—not an image format itself, but something which is regularly embedded within images.

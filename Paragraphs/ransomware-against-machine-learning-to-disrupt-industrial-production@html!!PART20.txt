@@ -1,0 +1,13 @@
+
+Logically segregate primary and redundant assets either by a network-based or host-based firewall with subsequent asset hardening (e.g., disabling services typically used by ransomware for its propagation, like SMB, RDP, and WMI).
+In addition to creating policies to disable unnecessary peer-to-peer and remote connections, we recommend routine auditing of all systems that potentially host these services and protocols.
+Note that such architecture is generally more resilient to security incidents.
+When establishing a rigorous back-up program, special attention should be paid to ensuring the security (integrity) of backups.
+Critical backups must be kept offline or, at minimum, on a segregated network.
+Optimize recovery plans in terms of recovery time objective.
+Introduce required alternative workflows (including manual) for the duration of recovery.
+This is especially critical for organizations with limited or no redundancy of critical assets.
+When recovering from backups, harden recovered assets and the entire organization's infrastructure to prevent recurring ransomware infection and propagation.
+Establish clear ownership and management of OT perimeter protection devices to ensure emergency, enterprise-wide changes are possible.
+Effective network segmentation must be maintained during containment and active intrusions.
+Hunt for adversary intrusion activity in intermediary systems , which we define as the networked workstations and servers using standard operating systems and protocols.

@@ -1,0 +1,6 @@
+
+As shown, ICS or SCADA systems involve OPC client software that interacts directly with an OPC server, which works in tandem with the PLC (Programmable Logic Controller) to control industrial hardware (such as a water pump, turbine, or tank).
+FireEye replicated both the hardware and software the OPC server setup (the components that appear within the dashed line on the right side of Figure 1).
+Figure 1: Topology of typical OPC server setup The components of our test environment are robust and comprehensive to the point that our system could be deployed in an environment to control actual SCADA devices.
+We utilized an Arduino Uno [1] as the primary hardware platform, acting as the OPC server.
+The Arduino Uno is an ideal platform for developing an ICS test environment because of the low power requirements, a large number of libraries to make programming the microcontroller easier, serial communication over USB, and cheap cost.

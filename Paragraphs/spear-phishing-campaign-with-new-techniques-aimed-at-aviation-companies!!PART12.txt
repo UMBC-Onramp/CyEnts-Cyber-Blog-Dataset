@@ -1,0 +1,6 @@
+
+It performs a variety of malicious tasks, and if you want to learn more about it, the GitHub AsyncRAT-C-Sharp link can help.
+AsyncRAT uses the following anti-analysis techniques to protect itself from being analyzed.
+Because Virtual Machines (VM) and sandboxes are used for the majority of dynamic analysis within the security community, many payloads, including this one, will try to evade dynamic analysis.
+In this case, the RAT retrieves the manufacturer via the WMI query “Select * from Win32
+ComputerSystem” and looks for the strings \"VMware\" and \"VirtualBox”.

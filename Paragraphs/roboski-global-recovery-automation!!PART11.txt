@@ -1,0 +1,5 @@
+
+About 20% of the valid email accounts showed server errors, and roughly 10% of accounts were associated with catch-all servers that accept emails sent to the domain, regardless of whether the mailbox exists or not.
+The remaining accounts returned as either belonging to invalid domains with no mail exchange record, bad syntax, transient network faults or unknown status.
+Infrastructure Overlaps with Distribution of Other Malware
+The researchers isolated about 165 different command and control (C2) IP addresses and domains that were used in the distribution of malicious payloads.

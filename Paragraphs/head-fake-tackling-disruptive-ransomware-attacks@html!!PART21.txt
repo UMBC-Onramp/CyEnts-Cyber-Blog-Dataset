@@ -1,0 +1,6 @@
+
+Figure 16: DoppelPaymer ransomware note observed observed during a Mandiant Incident Response investigation Ransomware?
+Not In My House!
+Over the past few years, we have seen ransomware graduate from a nuisance malware to one being used to extort victim networks out of significant sums of money.
+Furthermore, threat actors are now coupling ransomware with multiple toolkits or other malware families to gain stronger footholds into an environment.
+In this blog post alone, we witnessed a threat actor move through multiple toolsets - some automated, some manual - with the ultimate goal of holding the victim organization hostage.

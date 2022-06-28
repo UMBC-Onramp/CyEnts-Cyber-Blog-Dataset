@@ -1,0 +1,8 @@
+
+And finally, when run, the maliciously crafted Excel file connects to a predetermined server to download the payload, which in this case is Buer Loader.
+Campaign Details The modus operandi of these attackers is spam email.
+Based on our observations, these attacks do not appear to be targeted, but instead appear to be blanketed campaigns looking for low hanging fruit—i.e., anyone willing to open the malicious attachment.
+The email in the example below is a variant of the classic shipment courier status email, with this variation using DHL and Amazon trademarks as the lure.
+This specific example was sent to an individual and not to an organization, further reinforcing the idea that these campaigns are not targeted.
+This malicious spam appears to be rushed or the product of non-native English speakers as there are grammatical issues—“We sincerely sorry due to inconvenience...”—which makes it less than convincing, even to the untrained observer.
+(Incidentally, the recipient of this particular email has had their email username and password posted online previously.

@@ -1,0 +1,10 @@
+
+Apache Log4j is part of the Apache Logging Project.
+By and large, usage of this library is one of the easiest ways to log errors, and that is why most Java developers use it.
+Many large software companies and online services use the Log4j library, including Amazon, Apple iCloud, Cisco, Cloudflare, ElasticSearch, Red Hat, Steam, Tesla, Twitter, and many more.
+Because of the library being so popular, some information security researchers expect a significant increase in the attacks on vulnerable servers over the coming days.
+#Log4Shell pic.twitter.com/1bKDwRQBqt — Florian Roth ⚡️ (@cyb3rops) December 10, 2021 Which versions of the Log4j library is vulnerable and how can you protect your servers from attack?
+Almost all versions of Log4j are vulnerable, starting from 2.0-beta9 to 2.14.1.
+The simplest and most effective protection method is to install the most recent version of the library, 2.15.0 .
+You can download it on the project page .
+If for some reason updating the library is not possible, Apache Foundation recommends using one of the mitigation methods.

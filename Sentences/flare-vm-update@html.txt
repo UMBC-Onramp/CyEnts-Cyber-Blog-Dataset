@@ -1,0 +1,121 @@
+FLARE VM is the first of its kind reverse engineering and malware analysis distribution on Windows platform.
+
+Since its introduction in July 2017 , FLARE VM has been continuously trusted and used by many reverse engineers, malware analysts, and security researchers as their go-to environment for analyzing malware.
+
+Just like the ever-evolving security industry, FLARE VM has gone through many major changes to better support our users’ needs.
+
+FLARE VM now has a new installation, upgrade, and uninstallation process, which is a long anticipated feature requested by our users.
+
+FLARE VM also includes many new tools such as IDA 7.0, radare and YARA.
+
+Therefore, we would like to share these updates, especially the new installation process.
+
+Installation We strongly recommend you use FLARE VM within a virtualized environment for malware analysis to protect and isolate your physical device and network from malicious activities.
+
+We assume you already have experience setting up and configuring your own virtualized environment.
+
+Please create a new virtual machine (VM) and perform a fresh installation of Windows.
+
+FLARE VM is designed to be installed on Windows 7 Service Pack 1 or newer; therefore, you can select a version of windows that best suits your needs.
+
+From this point forward, all installation steps should be performed within your VM.
+
+Once you have a VM with a fresh installation of Windows, use one of the following URLs to download the compressed FLARE VM repository onto your VM: https://github.com/fireeye/flare-vm https://flarevm.info Figure 1: Download FLARE VM repo
+
+Then, use the following steps to install FLARE VM: Decompress the FLARE VM repository to a directory of your choosing.
+
+Start a new session of PowerShell with escalated privileges.
+
+FLARE VM attempts to install additional software and modify system settings; therefore, escalated privileges are required for installation.
+
+Within PowerShell, change directory to the location where you have decompressed the FLARE VM repository.
+
+Enable unrestricted execution policy for PowerShell by executing the following command and answering “Y” when prompted by PowerShell: Set-ExecutionPolicy unrestricted Execute the install.ps1 installation script.
+
+You will be prompted to enter the current user’s password.
+
+FLARE VM needs the current user’s password to automatically login after a reboot when installing.
+
+Optionally, you can specify the current user’s password by passing the “-password <current_user_password>” at the command line.
+
+Figure 2: Start PowerShell as administrator Figure 3: Ready to install FLARE VM
+
+The rest of the installation process is fully automated.
+
+Depending upon your internet speed the entire installation may take up to one hour to finish.
+
+The VM also reboots multiple times due to the numerous software installations’ requirements.
+
+Once the installation completes, the PowerShell prompt remains open waiting for you to hit any key before exiting.
+
+After completing the installation, you will be presented with the following desktop environment: Figure 4: FLARE VM installation completes Congratulations!
+
+You have successfully installed FLARE VM.
+
+At this point we recommend you power off the VM, switch the VM networking mode to Host-Only, and then take a snapshot to save a clean state of your analysis VM.
+
+Improvement The biggest improvement for FLARE VM is the ability to perform a proper update and uninstallation.
+
+The older version of FLARE VM came as a PowerShell script to install many chocolatey packages, one at a time; therefore, we were unable to include new packages when updating FLARE VM.
+
+In the past, our users had to reinstall FLARE VM completely, which is time consuming, or manually install the new package, which is error prone.
+
+To solve this issue, we have converted FLARE VM itself into a chocolatey package.
+
+Whenever a new tool is available we will also release a new version of FLARE VM.
+
+With this new design we can simply execute “choco upgrade all” to get the newest version of FLARE VM along with any new packages we have released.
+
+You can also safely uninstall all FLARE VM packages by executing “choco uninstall flarevm.installer.flare”.
+
+Our new FLARE VM is also updated to use Python 3.7 as the default Python interpreter.
+
+As a result, many python scripts may fail to execute.
+
+To maintain support for older scripts, we keep Python 2.7 installed in parallel with Python 3.7.
+
+We can easily switch between different versions by using the Python launcher.
+
+Run “py -2.7 <path_to_python_script>” to use Python 2.7, or “py <path_to_python_script>” to use the default Python 3.7 interpreter.
+
+For more details on the Python launcher, please refer to the following URL: https://docs.python.org/3/using/windows.html#launcher.
+
+Additionally, the new FLARE VM changes the location where Fakenet-NG saves its output when launched via the shortcut in the FLARE folder or taskbar pin.
+
+Instead of saving directly to the desktop, to reduce clutter, Fakenet-NG will store all its output in “Desktop\\fakenet_logs”.
+
+Compared to older versions this version of FLARE VM comes with many new tools and software packages.
+
+Most notably, this release adds the following: IDA Free 7.0 radare2 to support 64-bit disassembly The labs for the Practical Malware Analysis book pdfid, pdf-parser, and PdfStreamdumper to analyze malicious PDF documents The Malcode Analyst Pack Yara for signature matching The Cygwin Linux environment on windows PowerShell transcription and script block logging PowerShell transcripts can be found in “Desktop\\PS_Transcripts” Available Packages While we attempt to make the tools available as shortcuts within the FLARE folder, there are several available from command-line only.
+
+Please see the online documentation for the most up to date list.
+
+Here is an incomplete list of some major tools available on FLARE VM:
+
+Disassemblers: IDA Free 5.0 and IDA Free 7.0 Binary Ninja Radare2 and Cutter Debuggers: OllyDbg and OllyDbg2 x64dbg Windbg File Format parser: CFF Explorer, PEView, PEStudio PdfStreamdumper, pdf-parser, pdfid ffdec offvis and officemalscanner PE-bear Decompilers: RetDec Jd-gui and bytecode-viewer dnSpy IDR VBDecompiler Py2ExeDecompiler
+
+Monitoring tools: SysInternal suite RegShot Utilities:
+
+Hex Editors (010 editor, HxD and File Insight) FLOSS (FireEye Labs Obfuscated String Solver)
+
+Fakenet-NG Yara Malware Analyst Pack Conclusion The FLARE team continues to support and improve FLARE VM to be the de facto distribution for security research, incident response, and malware analysis on Windows platform.
+
+We greatly appreciate the numerous bug reports, tool requests, and feature recommendations from everyone.
+
+We hope FLARE VM, along with many other FLARE open source projects, can help you do your work better, easier, and faster.
+
+We are always looking for talented folks to join our team.
+
+The FLARE Team may be a good place for you if: You eat, sleep, and speak disassembly and malware all day long.
+
+You would like to push the state of the art for reverse engineering and malware analysis.
+
+Please check out our careers page , or send us an email.
+
+Happy Reversing!
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

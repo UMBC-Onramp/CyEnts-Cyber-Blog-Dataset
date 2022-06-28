@@ -1,0 +1,6 @@
+
+Our experts recently discovered two very similar spam campaigns distributing the IcedID and Qbot banking Trojans .
+Spam with malicious documents Both e-mails were disguised as business correspondence.
+In the first case, the attackers demanded compensation for some bogus reason or said something about canceling an operation.
+Attached to the message was a zipped Excel file named CompensationClaim plus a series of numbers.
+The second spam mailing had to do with payments and contracts and included a link to the hacked website where the archive containing the document was stored.

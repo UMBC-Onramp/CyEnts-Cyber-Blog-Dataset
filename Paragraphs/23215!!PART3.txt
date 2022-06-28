@@ -1,0 +1,7 @@
+
+We saw a similar situation in the spring of 2021 with the APKPure unofficial app store, whose developers also used an ad module from an unverified source, thereby infecting their creation , and consequently users, with the Triada Trojan (albeit a slightly different version).
+As in the case of the infected APKPure, the Triada Trojan in the dangerous version of the FMWhatsApp mod performs an intermediary function.
+First, it collects data about the user’s device, and then, depending on the information, it downloads another Trojan.
+Triada’s “extras” come in a variety of flavors — the infected version of FMWhatsApp downloads several types of malware to devices: Trojan-Downloader.AndroidOS.Agent.ic, a Trojan that downloads and runs other malicious modules; Trojan-Downloader.
+AndroidOS.Gapac.e, which downloads and runs other malicious modules and can also display full-screen ads at unexpected moments; Trojan-Downloader.
+AndroidOS.Helper.a, which downloads and runs the installer module of the xHelper Trojan and runs invisible ads in the background; Trojan.

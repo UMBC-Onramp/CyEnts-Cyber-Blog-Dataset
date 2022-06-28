@@ -1,0 +1,7 @@
+
+That single computer could be running an unpatched or dated version of Flash.
+As the use of Flash has declined, client-side JavaScript has become the de facto browser programming language.
+Yet JavaScript’s takeover does not fully solve the problem because it can deliver a Flash payload.
+Although some of the Flash vulnerabilities we have analyzed can be exploited remotely, many cannot.
+An attacker often requires some interaction by the victim to run a Flash exploit.
+JavaScript has become an increasingly common delivery mechanism for this purpose.

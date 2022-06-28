@@ -1,0 +1,7 @@
+
+This makes sense based on the context that Tridcom.dll is meant for a Trident controller, not a Tricon controller.
+It does seem as though Tr1com40.dll and TR1STRS.CPP code was based on older work.
+We are not shocked to find that the threat actor reversed legitimate code to bolster development of the TRITON framework.
+They want to work smarter, not harder, too.
+But after reverse engineering legitimate software and implementing the basics of the TriStation, the threat actors still had an incomplete understanding of the protocol.
+In TRITON's TS_cnames.pyc we saw \"Unk75\", \"Unk76\", \"Unk83\" and other values that were not present in the tr1com40.DLL strings, indicating that the TRITON threat actor may have explored the protocol and annotated their findings beyond what they reverse engineered from the DLL.

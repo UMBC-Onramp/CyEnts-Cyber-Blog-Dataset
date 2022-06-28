@@ -1,0 +1,19 @@
+
+Based on our initial observations, the ultimate intent may have been the deployment of ransomware, using the Gateway as a central pivot point.
+As previously mentioned, if suspect your Citrix appliances may have been compromised, we recommend utilizing the tool FireEye released in partnership with Citrix .
+Detect the Technique Aside from CVE-2019-19781, FireEye detects the activity described in this post across our platforms, including named detections for Meterpreter, and EternalBlue.
+Table 2 contains several specific detection names to assist in detection of this activity.
+Signature Name CERTUTIL.EXE DOWNLOADER (UTILITY) CURL Downloading Shell Script ETERNALBLUE EXPLOIT METERPRETER (Backdoor) METERPRETER URI (STAGER) SMB - ETERNALBLUE Table 2: FireEye Detections for activity described in this post Indicators Table 3 provides the unique indicators discussed in this post.
+Indicator Type Indicator Notes Network 45[.]120[.]53[.]214 Network 198[.]44[.]227[.]126
+Host 91dd06f49b09a2242d4085703599b7a7 piz.
+Lan Host 01af5ad23a282d0fd40597c1024307ca de.py Host bd977d9d2b68dd9b12a3878edd192319 ld.sh Host 0caf9be8fd7ba5b605b7a7b315ef17a0 .new.zip
+Host 9aa67d856e584b4eefc4791d2634476a x86.dll
+Host 55b40e0068429fbbb16f2113d6842ed2 x64.dll Host b0acb27273563a5a2a5f71165606808c
+scan.py
+Host 6cf1857e569432fcfc8e506c8b0db635 xp_eternalblue.replay Host 9e408d947ceba27259e2a9a5c71a75a8 eternalblue.replay Host e345c861058a18510e7c4bb616e3fd9f avpass.exe
+Host 48452dd2506831d0b340e45b08799623 since1969.exe Email Address asgardmaster5@protonmail[.]com
+From ransom note Email Address ragnar0k@ctemplar[.]com
+From ransom note Email Address j.jasonm@yandex[.]com
+From ransom note Table 3: Collection of IOCs from this blog post Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,8 @@
+
+Within days, this secondary Dridex instance was then used to enable the distribution of DoppelPaymer ransomware.
+  Prior to DoppelPaymer, the threat actor deleted volume shadow copies and disabled anti-virus and anti-malware protections on select systems.
+Event log artifacts revealed commands executed through PowerShell which were used to achieve this step (Figure 15): Event Log EID Message Microsoft-Windows-PowerShell%4Operational 600 HostApplication=powershell.exe
+Set-MpPreference -DisableRealtimeMonitoring $true Microsoft-Windows-PowerShell%4Operational 600 HostApplication=powershell.exe
+Uninstall-WindowsFeature -Name Windows-Defender Application 1034 Windows Installer removed the product.
+Product Name: McAfee Agent-++-5.06.0011-++-1033-++-1603-++-McAfee, Inc.-++-(NULL)-++--++-.
+Product Version: 82.

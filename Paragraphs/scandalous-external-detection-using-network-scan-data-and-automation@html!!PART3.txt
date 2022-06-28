@@ -1,0 +1,6 @@
+
+We needed a solution that would enable us to track thousands of groups, malware families and profiles.
+In this blog post we’d like to talk about that journey, highlight some wins, and for the first time publicly, introduce the project behind it all: SCANdalous.
+Pre-SCANdalous Case Studies Prior to any sort of system or automation, our team used traditional profiling methodologies to manually identify servers of interest.
+The following are some examples.
+The success we found in these case studies served as the primary motivation for SCANdalous.

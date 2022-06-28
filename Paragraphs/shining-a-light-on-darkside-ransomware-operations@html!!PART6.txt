@@ -1,0 +1,7 @@
+
+In addition to providing builds of DARKSIDE ransomware, the operators of this service also maintain a blog accessible via TOR.
+The actors use this site to publicize victims in an attempt to pressure these organizations into paying for the non-release of stolen data.
+A recent update to their underground forum advertisement also indicates that actors may attempt to DDoS victim organizations.
+The actor darksupp has stated that affiliates are prohibited from targeting hospitals, schools, universities, non-profit organizations, and public sector entities.
+This may be an effort by the actor(s) to deter law enforcement action, since targeting of these sectors may invite additional scrutiny.
+Affiliates are also prohibited from targeting organizations in Commonwealth of Independent States (CIS) nations.

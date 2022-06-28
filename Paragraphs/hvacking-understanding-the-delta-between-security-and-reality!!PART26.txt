@@ -1,0 +1,5 @@
+
+The patched code is provided in Figure 18.
+Notice the IDA decompiler has completely removed the subtraction statement from the code since it is no longer meaningful.
+Figure 18 With the software watchdog patched, the team attempted to again dynamically debug the application.
+Initially the test was thought to be successful, since it was possible to connect to gdbserver and start debugging the application.

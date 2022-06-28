@@ -1,0 +1,13 @@
+
+Any drive connected to the computer at the time of a ransomware attack will be encrypted as well.
+Protect access to cloud storage with a strong password and two-factor authentication.
+2.
+Be careful with messages E-mail attachments and infected websites are the most common hiding places for ransomware Trojans, so treat all unexpected e-mails and messages as potential sources of danger.
+What makes a message suspicious, though?
+It’s a gray area requiring consideration and judgment.
+Make sure you know the sender.
+Treat content, attachments and links in e-mails from strangers with the utmost skepticism.
+This applies to messages in messaging apps, social networks, and forums as well.
+If you have any concerns , consign the message to your spam folder, especially if it promises unexpected payouts.
+To encounter such messages less often, configure spam filtering and mail traffic scanning in your security solution.
+If you receive a suspicious link or file that you weren’t expecting from someone you do know, contact them by phone or in another format; their account or mailbox may have been compromised.

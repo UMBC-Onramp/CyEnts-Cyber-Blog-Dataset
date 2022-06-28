@@ -1,0 +1,9 @@
+
+One of the most significant shifts we see is that cryptojacking is still on the rise, while traditional ransomware attacks—aka “shoot and pray they pay”—are decreasing.
+Ransomware attacks are becoming more targeted as actors conduct their research to pick likely victims, breach their networks, and launch the malware followed by a high-pressure demand to pay the ransom.
+Although the total number of ransomware samples has fallen for two quarters, one family continues to spawn new variants.
+The Scarab ransomware family, which entered the threat landscape in June 2017, developed a dozen new variants in Q2.
+These variants combined make up more than 50% of the total number of Scarab samples to date.
+What spiked the movement, starting in fall 2017, toward cryptojacking?
+The first reason is the value of cryptocurrency.
+If attacker can steal Bitcoins, for example, from a victim’s system, that’s enough.

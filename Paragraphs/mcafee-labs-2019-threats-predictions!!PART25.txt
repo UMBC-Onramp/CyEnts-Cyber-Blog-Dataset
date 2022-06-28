@@ -1,0 +1,7 @@
+
+Similarly, during the last couple of years we have seen many high-profile data breaches attributed to misconfigured Amazon S3 buckets.
+This is clearly not the fault of AWS.
+Based on the shared responsibility model, the customer is on the hook to properly configure IaaS/PaaS infrastructure and properly protect their enterprise data and user access.
+Complicating matters, many of these misconfigured buckets are owned by vendors in their supply chains, rather than by the target enterprises.
+With access to thousands of open buckets and credentials, bad actors are increasingly opting for these easy pickings.
+McAfee has found that 21% of data in the cloud is sensitive—such as intellectual property, and customer and personal data—according to the McAfee Cloud Adoption and Risk Report.

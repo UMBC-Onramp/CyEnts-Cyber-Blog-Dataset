@@ -1,0 +1,16 @@
+
+Sysrv botnet attacks from Juniper’s sensors Mongo-Express RCE (CVE-2019-10758)
+The attack we’ve seen so far specifically targets port 8081, which affects a web based MongoDB admin interface known as “Mongo-Express”.
+Mongo-Express is a web-based admin interface used to manage MongoDB databases.
+Exploiting this interface could allow the attacker to gain access to the MongoDB databases.
+As of this writing, there are 847 public IPs in Shodan.io that are hosting this service.
+XXL-JOB Unauth RCE
+This attack targets vulnerability in XXL-Job, a lightweight distributed task scheduling framework.
+It allows users to schedule tasks like cron jobs via a web interface.
+According to the authors, this framework has been adopted by many companies in China.
+From Shodan, we’ve enumerated 35 public IPs with this service, almost all of them in China.
+xxl-job unauth rce attack XML-RPC (CVE-2017-11610)
+This vulnerability affects “Supervisor”, a web interface to manage processes on UNIX systems.
+A specially crafted XML-RPC request could allow code execution on a vulnerable server.
+Saltstack RCE (CVE-2020-16846)
+This vulnerability affects systems running Salt-API, an interface on top of Salt that provides multiple entry points to the Salt system.

@@ -1,0 +1,8 @@
+
+dnSpy is a great .NET decompiler.
+dnSpy’s interface displays a hierarchy of the sample’s namespaces and classes in the Assembly Explorer and shows code for the selected class on the right.
+Upon opening dfsds.exe, dnSpy told us that the sample’s original name at link time was DCRatBuild.exe, and that its entry point is at <PrivateImplementationDetails>{63E52738-38EE-4EC2-999E-1DC99F74E08C}.Main , shown in Figure 4.
+When we browsed to the Main method using the Assembly Explorer, we found C#-like code representing that method in Figure 5.
+Wherever dnSpy displays a call to another method in the code, it is possible to click on the target method name to go to it and view its code.
+By right-clicking on an identifier in the code, and clicking Analyze in the context menu, we caused dnSpy to look for all occurrences where the identifier is used, similar to using cross-references in IDA Pro.
+Figure 4: dnSpy can help us locate the sample's entry point Figure 5: dnSpy decompiles the Main method into C#-like code We went to the SchemaServerManager.

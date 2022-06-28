@@ -1,0 +1,8 @@
+
+How to protect yourself from Spring4Shell
+The main advice for anyone who uses the Spring framework is to upgrade to secure versions 5.3.18 or 5.2.20.
+The Apache Software Foundation has also released patched versions of Apache Tomcat 10.0.20, 9.0.62, and 8.5.78, in which the attack vector is closed on the Tomcat side.
+The Spring developers have also released patched versions of the Spring Boot 2.5.12 and 2.6.6 extensions that depend on the patched version of Spring Framework 5.3.18.
+If for some reason you cannot update the above software, then you should use one of the workarounds published on the official Spring website.
+
+

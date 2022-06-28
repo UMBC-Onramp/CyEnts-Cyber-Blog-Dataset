@@ -1,0 +1,7 @@
+
+Everybody’s Working for the Recon While monitoring our customers around the clock, FireEye Managed Defense identified suspicious file write activity on a system at a European manufacturing client and began our initial investigation by collecting the available volatile and non-volatile data from the affected host.
+ 
+Once evidence collection had completed, we began parsing the forensic data using the parsers available in FireEye's free Redline forensic analysis tool.
+Analysis of the logs quickly revealed that there were commands executed on the host which were consistent with interactive reconnaissance activity.
+Typically, once a host has successfully been compromised, attackers are presented with a command shell window which allows them to run commands on the host.
+These commands can consist of reconnaissance activity which expose useful information about the host to the attacker.

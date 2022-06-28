@@ -1,0 +1,291 @@
+If you follow information security, you have probably heard a lot about ransomware in recent years.
+
+You may even have had the misfortune of being on the receiving end of an attack.
+
+It is perhaps no exaggeration to describe ransomware as the most dangerous malware of our time.
+
+But did you know that such malicious programs have been around for more than 30 years, and that researchers predicted many features of modern-day attacks back in the mid-1990s?
+
+Do you want to know why cryptors replaced blockers, what the largest ransom in history was, and what AIDS has to do with it all?
+
+Then read on, for we have compiled a history of ransomware with the answers to these and many more questions.
+
+Together, let’s trace the development of blockers, cryptors, wipers, and other ransomware nasties over the past few decades.
+
+Ransomware dictionary The following terms appear frequently in the text.
+
+Cryptography — the science of preventing outsiders from reading confidential information.
+
+Encryption is one aspect of cryptography.
+
+Symmetric encryption — a data encryption method in which one key is used both to encrypt and to decrypt the information.
+
+Asymmetric encryption — a data encryption method that involves the use of two keys: one public to encrypt the information, and one private to decrypt it.
+
+Knowing the public key does not help with decryption; that requires the private key.
+
+RSA — a commonly used asymmetric encryption algorithm.
+
+Ransomware — any malicious program that forces the victim to pay a ransom to the attacker.
+
+Ransomware includes blockers , cryptors , and wipers disguised as cryptors.
+
+Blocker — a type of ransomware that blocks or simulates the blocking of a computer or mobile device.
+
+Such malware typically shows a persistent message with a payment demand on top of all other windows.
+
+Cryptomalware (cryptor) — a type of ransomware that encrypts user files so they cannot be used.
+
+Wiper — a type of malware designed to wipe (erase) data on the victim’s device.
+
+Sometimes ransomware simulating a cryptor actually turns out to be a wiper, damaging files irreparably; so even if the ransom is paid, it is still impossible to recover the data.
+
+RaaS (Ransomware-as-a-Service) — a criminal scheme whereby creators lease ransomware to anyone who wants to distribute it for a cut of the proceeds.
+
+It is a kind of cybercriminal franchise.
+
+1989:
+
+The first ransomware attack Dr. Joseph L. Popp, a biological researcher, created the first known cryptor.
+
+Popp took advantage of widespread interest in AIDS; hence his malware became known as the AIDS Trojan.
+
+In those days, the Internet was still in its infancy, so Popp used a highly original (by modern standards) delivery method.
+
+Having gotten mailing lists of subscribers to the WHO AIDS conference and PC Business World magazine, he sent victims a floppy disk with a sticker reading “AIDS Information Introductory Diskette” along with detailed instructions for installing the program.
+
+License agreement said that by installing the program, the user agreed to pay the company $378.
+
+But who takes things like that seriously?
+
+In fact, the installer served to deliver the malware to the hard drive.
+
+After a certain number of system boots, the AIDS Trojan became active, encrypting file names (including extensions) on the C: drive of the infected computer.
+
+The names turned into a jumble of random characters, making it impossible to work normally with the files.
+
+For example, to open or run a file, it was first necessary to work out what extension it should have and to change it manually.
+
+At the same time, the malware displayed a message on the screen, saying that the software trial was over and the user must pay a subscription fee: $189 for one year or $378 for lifetime access.
+
+The money was to be transferred to an account in Panama.
+
+The malware used symmetric encryption, so the key to recover the files was contained right in the code.
+
+Therefore, the problem was relatively easy to solve: Retrieve the key, delete the malware, and use the key to recover the file names.
+
+By January 1990, Virus Bulletin editorial advisor Jim Bates had created the AIDSOUT and CLEARAID programs to do just that.
+
+Joseph Popp was arrested, but the court found him mentally unfit to stand trial.
+
+He did, however, publish the book Popular Evolution: Life-Lessons from Anthropology a decade later.
+
+1995–2004:
+
+Young, Yung, and the ransomware of the future Perhaps because the AIDS Trojan failed to enrich its creator, the idea of encrypting data for purposes of ransom did not generate much enthusiasm among scammers of the day.
+
+Interest in it returned only in 1995, and in the scientific community.
+
+Cryptographers Adam L. Young and Moti Yung set out to learn what the most powerful computer virus would look like.
+
+They came up with the concept of ransomware that uses asymmetric encryption.
+
+Instead of using one key, which would have to be added to the program code, to encrypt the files, their model used two, public and private, which kept the decryption key secret.
+
+What is more, Young and Yung hypothesized that the victim would have to pay using electronic money, which did not yet exist.
+
+The cybersecurity prophets presented their thoughts at the IEEE Security and Privacy conference in 1996, but they were not well received.
+
+Then, 2004 saw the publication of Malicious Cryptography:
+
+Exposing Cryptovirology , in which Young and Yung systematized the results of their research.
+
+2007–2010:
+
+The golden years of blockers While cryptomalware was biding its time, the world saw the rise of another kind of ransomware: blockers.
+
+This rather primitive sort of malware interfered with the normal functioning of the operating system by adding itself to Windows’ startup routine.
+
+In addition, to foil deletion, many types blocked the registry editor and task manager.
+
+This kind of malware used diverse ways to keep victims from using their computers, ranging from a window that wouldn’t close to a change of desktop wallpaper.
+
+One method of payment was by text to a premium number .
+
+Neutralizing ransomware blockers usually did not require an antivirus program, but rather a fair bit of know-how on the part of the user.
+
+To remove the malware manually, it was necessary, for example, to boot the system from a Live or rescue CD, start in safe mode, or log in to Windows under a different profile.
+
+However, the ease of writing such Trojans offset the relatively low risk.
+
+Practically anyone could distribute them.
+
+There were even automatic generators.
+
+Sometimes, the malware placed a pornographic banner on the desktop and alleged the victim had viewed prohibited content (a tactic still used today).
+
+With the ransom demand being manageable, many preferred not to seek help, but simply to pay.
+
+2010:
+
+Cryptomalware with asymmetric encryption In 2011, cryptomalware developers stepped up their game considerably and, as Yung and Young predicted, began using asymmetric encryption.
+
+A modification of the GpCode cryptor, for example, was based on the RSA algorithm .
+
+2013:
+
+CryptoLocker hybrid ransomware Late 2013 marked the appearance of hybrid ransomware combining a blocker with cryptomalware.
+
+The concept increased cybercriminals’ chances of receiving payment, because even removing the malware, and thus removing the block, did not restore victims’ access to their files.
+
+Perhaps the most notorious of these hybrids is CryptoLocker .
+
+This malware was distributed in spam e-mails, and the cybercriminals behind it accepted ransom payment in Bitcoin.
+
+2015
+
+:
+
+Cryptors replace blockers In 2015, Kaspersky observed a snowballing number of cryptomalware infection attempts, with the number of attacks growing by a factor of 5.5.
+
+Cryptors started to squeeze out blockers .
+
+Cryptors prevailed for several reasons.
+
+First, user data is significantly more valuable than system files and applications, which can always be reinstalled.
+
+With encryption, cybercriminals could demand significantly higher ransoms — and had a better chance of getting paid.
+
+Second, by 2015, cryptocurrencies were widely used for anonymous money transfers, so the attackers were no longer afraid of being traced.
+
+Bitcoin and others made it possible to receive large ransoms without lighting up on the radar.
+
+2016:
+
+Mass ransomware Ransomware continued to grow as a force in cybersecurity, and 2016 saw an elevenfold increase in the number of ransomware modifications , with the average ransom ranging from 0.5 to hundreds of bitcoins (which were worth a fraction of today’s price).
+
+The main focus of attacks switched from the individual user to the corporate sector, justifiably prompting talk of the emergence of a new criminal industry.
+
+Cybercriminals no longer had to develop malware by themselves; they could just buy it off the shelf.
+
+For example, a “lifetime license” for Stampado ransomware went on sale.
+
+The malware threatened to delete random files after a certain period of time to scare victims into paying the ransom.
+
+Ransomware also became available under the RaaS (Ransomware-as-a-Service) model, a term that emerged with the appearance of Encryptor RaaS .
+
+The model helped ransomware spread even more widely.
+
+Extortionists began targeting government and municipal organizations in addition to businesses and home users.
+
+The HDDCryptor, which infected more than 2,000 San Francisco Municipal Transportation Agency computers, serves as a prime example.
+
+The cybercriminals demanded 100 BTC (then about $70,000) to restore the systems, but the agency’s IT department managed to solve the problem on its own.
+
+2016–2017: Petya, NotPetya, and WannaCry
+
+In April 2016, new malware called Petya reared its head.
+
+Whereas previous cryptors had left operating systems intact to allow victims to pay the ransom, Petya completely bricked infected machines; it targeted the MFT (Master File Table) — a database that stores the entire structure of files and folders on the hard drive.
+
+As destructive as it was, Petya’s penetration and distribution mechanism was rough.
+
+To activate it, the victim had to manually download and run an executable file, which made infection less likely.
+
+In fact, it might not have made much of a mark if not for another ransomware — the aptly named WannaCry .
+
+In May 2017, WannaCry infected more than 500,000 devices worldwide, causing $4 billion of damage.
+
+How did it do that?
+
+Вy incorporating the EternalBlue exploit , which took advantage of some very dangerous vulnerabilities in Windows.
+
+The Trojan infiltrated networks and installed WannaCry on victims’ computers.
+
+The malware then continued, spreading to other devices on the local network.
+
+Inside infected systems, WannaCry behaved normally, encrypting files and demanding a ransom.
+
+Not two months after the WannaCry outbreak another cryptor appeared, also modified for EternalBlue:
+
+NotPetya, also known as ExPetr . NotPetya devoured hard drives whole.
+
+Moreover, NotPetya encrypted the file table in such a way as to rule out decryption even after ransom payment.
+
+As a result, experts concluded that it was actually a wiper disguised as a cryptor.
+
+The total damage from NotPetya exceeded $10 billion .
+
+The WannaCry attack was so devastating that Microsoft released an urgent patch for operating systems it no longer supported.
+
+Updates for supported systems had been available long before both epidemics, but not everyone had installed them, allowing these two ransomware programs to make their presence felt for a long time to come.
+
+2017:
+
+A million bucks for decryption
+
+In addition to the unprecedented damages, another record was set in 2017, for the biggest known ransom of a single organization.
+
+South Korean Web host Nayana agreed to pay $1 million (negotiated down from 4.5 times that much) to unblock computers infected with the Erebus cryptor.
+
+What surprised the expert community most was that the company publicly announced the payment.
+
+Most victims prefer not to advertise such things.
+
+2018–2019:
+
+A threat to society The past few years are notable for massive ransomware attacks on utilities and community facilities.
+
+Transportation, water, energy, and healthcare institutions found themselves increasingly at risk .
+
+Cybercriminals counted on them paying up, too; even with very large ransom requests, going dark would mean leaving thousands or millions of people in the lurch.
+
+In 2018, for example, a cryptomalware attack on Bristol Airport in the UK disrupted flight display screens for two whole days.
+
+Staff resorted to using whiteboards, and to the airport’s credit, its response to the attack was quick and effective.
+
+As far as we know, no flights were cancelled and no ransom was paid.
+
+Hancock Health, a US clinic, fared less well, paying 4 BTC (then $55,000) after SamSam ransomware struck its systems.
+
+Explaining the company’s decision to pay the ransom , CEO Steve Long cited an approaching snowstorm, coupled with one of the worst flu seasons in memory.
+
+The clinic just did not have the time to restore its computers independently.
+
+In all, more than 170 municipal agencies in the United States fell victim to ransomware in 2019 , with ransom demands reaching as high as $5 million.
+
+Updating operating systems in such organizations can be difficult, so cybercriminals often used old — and therefore more accessible — exploits.
+
+2020:
+
+Rising scale and data leak extortion In addition to the rising scale of infection , as well as the consequences and ransom amounts, 2020 is memorable for a new hybrid approach that saw ransomware, before encrypting data, sending it to the cybercriminal operators.
+
+Threats to leak the information to competitors or to publish it followed.
+
+Given hypersensitivity about personal data these days, that could be fatal for a business.
+
+The tactic was first mastered by the Maze group back in 2019, but in 2020 it became a genuine trend.
+
+The Transform Hospital Group cosmetic surgery chain was the victim of one of the most high-profile incidents of 2020.
+
+The REvil hacker group encrypted and stole 900GB of Transform’s data , including pre- and post-operation photographs of patients, which the attackers threatened to publish.
+
+In addition, cryptomalware operators adopted a range of new tactics in 2020.
+
+For example, the REvil group started auctioning off stolen information.
+
+Cybercriminals have also united into cartel-type organizations.
+
+The first was the Maze group, which began posting information stolen by the LockBit cryptor.
+
+According to the cybercriminals , they are now working closely with LockBit, providing their platform for data leakage as well as sharing their knowledge.
+
+They also boasted that another notable group would soon be joining the cartel: RagnarLocker, a trailblazer in organizing DDoS attacks on victims’ resources as an additional lever of pressure on companies it extorts.
+
+Conclusion In a span of three decades, ransomware has evolved from a relatively harmless toy into a serious threat to users of all platforms, and especially to businesses.
+
+To guard against attacks, be sure to observe a few security rules — and if somehow, a hack succeeds, it is important to seek help from experts and not simply do the cybercriminals’ bidding.
+
+
+
+

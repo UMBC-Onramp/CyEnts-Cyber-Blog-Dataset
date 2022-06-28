@@ -1,0 +1,5 @@
+This year, Canada, multiple European nations, and others will host high profile elections.
+The topic of cyber-enabled threats disrupting and targeting elections has become an increasing area of awareness for governments and citizens globally.
+To develop solutions and security programs to counter cyber threats to elections, it is important to begin with properly categorizing the threat.
+In this post, we’ll explore the various threats to elections FireEye has observed and provide a framework for organizations to sort these activities.
+The Election Ecosystem: Targets Historically, FireEye has observed targeting of a wide range of organizations connected to elections.

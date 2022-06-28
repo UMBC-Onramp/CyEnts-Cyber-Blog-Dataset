@@ -1,0 +1,7 @@
+
+The retaining of invalid execution data is one of the properties of modern CPUs upon which Meltdown and Spectre depend.
+More information about the techniques is available on the site https://meltdownattack.com .
+Because these techniques can be applied (with variation) to most modern operating systems (Windows, Linux, Android, iOS, MacOS, FreeBSD, etc.), you may ask, “How dangerous are these?”
+“What steps should an organization take?”
+and “How about individuals?”
+The following risk analysis is based upon what McAfee currently understands about Meltdown and Spectre.

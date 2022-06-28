@@ -1,0 +1,6 @@
+
+One method of payment was by text to a premium number .
+Neutralizing ransomware blockers usually did not require an antivirus program, but rather a fair bit of know-how on the part of the user.
+To remove the malware manually, it was necessary, for example, to boot the system from a Live or rescue CD, start in safe mode, or log in to Windows under a different profile.
+However, the ease of writing such Trojans offset the relatively low risk.
+Practically anyone could distribute them.

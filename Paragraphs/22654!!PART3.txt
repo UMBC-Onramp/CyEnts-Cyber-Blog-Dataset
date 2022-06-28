@@ -1,0 +1,9 @@
+
+Remote workers also used their personal devices for entertainment, playing online games (31%) and watching movies (34%).
+However, many also used company laptops and smartphones for unintended purposes.
+For example, 18% of respondents used them to view adult content.
+Cybercriminals have actively exploited the increased interest in online entertainment by trying to lure users to fake sites and persuade them to download malware disguised as a movie or an installation file.
+A total of 61% of users surveyed in the fall admitted that they downloaded software from torrent sites, 65% used such sites for music and 66% for movies.
+Our telemetry data identified the most popular targets in spring 2020 as Minecraft and the television show Stranger Things .
+Unsecured channels for remote work In the office, IT administrators take care of securing the Internet channel.
+But when employees work from home, they set up their own routers and networks, a practice that increases security risks.

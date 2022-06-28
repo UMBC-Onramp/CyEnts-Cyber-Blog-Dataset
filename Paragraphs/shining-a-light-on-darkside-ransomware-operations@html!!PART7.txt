@@ -1,0 +1,4 @@
+
+Advertisement Date/Version Feature/Update Related Reporting Nov. 10, 2020 (V1)
+Ability to generate builds for both Windows and Linux environments from within the administration panel.
+20-00023273 Encrypts files using Salsa20 encryption along with an RSA-1024 public key Access to an administrative panel via TOR that can be used by clients to manage Darkside builds, payments, blog posts, and communication with victims The admin panel includes a Blog section that allows clients to publish victim information and announcements to the Darkside website for the purposes of shaming victims and coercing them to pay ransom demands April 14, 2021 (V2.0)

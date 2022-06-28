@@ -1,0 +1,4 @@
+
+As depicted in the code snippet above, the base64-encoded string consisted of the Windows domain, username, and NetBIOS name values separated by the pipe (|) character.
+Though somewhat convoluted and reliant on basic techniques, this persistence mechanism provides several advantages to an attacker.
+It avoids the need to create or execute a malicious binary on the targeted system, and similarly does not require any registry keys or settings to automatically load upon start-up or user login.

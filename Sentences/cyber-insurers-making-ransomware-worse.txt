@@ -1,0 +1,117 @@
+In mid-May, one of the largest insurance companies in the U.S. paid $40 million to ransomware attackers.
+
+Two people familiar with the matter told Bloomberg that the malicious actors stole an undisclosed quantity of data and then effectively locked the insurer out of its network for two weeks.
+
+The company ignored the attackers’ demands at first.
+
+But, a week into the infection, it decided to make contact with the attackers.
+
+This effort led to negotiations in which the insurer convinced the attackers to drop the ransom from $60 million to $40 million.
+
+Cyber Insurers’ Straight and Narrow View of Ransomware The attack discussed above stands out for a couple of reasons.
+
+First, it’s worth noting that $40 million is the largest ransom paid by any ransomware victim anywhere to date.
+
+Second, it’s important to point out that the victim was a company that offers cyber insurance itself.
+
+Why is the second point relevant?
+
+Well, there’s a paradox when it comes to cyber insurance companies and ransomware attackers.
+
+On the one hand, the former use monetary support to help their clients recover if and when they fall victim to the latter.
+
+On the other, cyber insurance companies normalize the fulfillment of ransom demands.
+
+Paying up puts all organizations at greater risk of an incident in the future.
+
+The issue is that insurers take a straight and narrow approach to the question of whether to pay.
+
+Insurers are concerned about the costs of recovery and business disruption.
+
+Is it cheaper for an organization to pay the ransom?
+
+Or is it cheaper if an organization attempts to restore their systems and data using existing backups?
+
+Download the Definitive Guide to Ransomware Why Ransomware Victims Shouldn’t Pay Up There’s a lot of uncertainty associated with the latter scenario.
+
+So, cyber insurers might be inclined to press their clients to pay the ransom.
+
+It’s a problem when they do.
+
+As noted by SC Media , they aren’t in a position to measure the more difficult-to-measure costs of paying a ransom.
+
+Such damages include a civil penalty that a victim could incur if they end up paying an attacker who happens to be a sanctioned individual, as the U.S. Department of Treasury’s Office of Foreign Assets Control announced in October 2020.
+
+They also include the negative publicity that often comes with supporting those who abide by ransomware’s business model.
+
+How cyber insurers view ransom payments is relevant given the proportion of claims that involve ransomware in some way.
+
+Ransomware incidents accounted for 41% of cyber insurance claims filed in the first half of 2020 — an increase of 260%.
+
+During that same period, ransom demands increased by 47%.
+
+Cyber insurance claims covered anywhere from as low as $1,000 to as high as $2 million per ransomware event.
+
+Ransom Demands Increasing The fact that ransom demands are increasing isn’t a coincidence.
+
+Per Bloomberg, the average ransom demand increased to somewhere between $50 million and $70 million over the first half of 2021.
+
+Even so, ransomware victims only ended up paying between $10 million and $15 million on average.
+
+The reality is that victims like the U.S. insurance company discussed above succeed in negotiating the ransom payment down.
+
+Not only that, but many victims have cyber insurance policies that cover some, if not all, of the cost of paying a ransom.
+
+Ransomware actors understand that many of their victims have cyber insurers paying with or for them.
+
+They can leverage that fact to jack up the price of their ransom demands, all while keeping the expectation that they’ll be paid by the victim, the insurance company or both.
+
+Anti-Ransomware Best Practices Amid Possible Changes
+
+The cyber insurance landscape could be changing with respect to ransomware.
+
+In the beginning of May, for instance, a global insurance company announced it would no longer write insurance policies in France that reimburse ransomware victims for paying the ransom.
+
+The insurance company clarified that its decision did not apply to existing policies, reported ABC News .
+
+More than that, it said that it would continue to provide coverage for responding to and recovering from a ransomware infection so long as the victim didn’t pay the ransom.
+
+Organizations don’t want to rely on an insurer when it comes to a ransomware attack.
+
+Cyber insurance companies could pressure them into paying the ransom and thereby contributing to the ransomware business model more broadly.
+
+The only answer is for organizations to prevent a ransomware infection from occurring in the first place.
+
+Layers, Like an Onion They can prevent a ransomware attack by taking a layered approach.
+
+First, they can invest in a security awareness training program that educates their workforce about some of the most common types of ransomware delivery vectors in circulation today.
+
+Organizations should specifically focus on using phishing simulations to familiarize all their employees with malware borne by email-based attacks.
+
+In doing so, organizations will take a step forward towards building a positive security culture .
+
+Second, organizations need to blend those human controls with technical security measures.
+
+Data backups are just the beginning.
+
+Take phishing as a delivery vector, for instance.
+
+Organizations can use disallow lists to prevent company inboxes from receiving mail from blocked websites or from opening email attachments in unusual formats.
+
+They can also use encryption to protect their data from the start.
+
+Doing so will not only help organizations safeguard their sensitive information against the threat of double extortion, it will also potentially trick a ransomware strain into deeming that data unsuitable for encryption.
+
+Putting Cyber Insurance into Context Cyber insurance is not a digital security strategy; it’s part of one.
+
+More than that, it functions best as a last resort and not a first response.
+
+Accordingly, organizations need to focus on implementing all the security measures discussed above as a means of defending themselves against ransomware.
+
+Doing so will help them to save time and money if and when it comes time to respond to a ransomware attack.
+
+If your organization requires immediate assistance with incident response, please contact IBM Security X-Force’s US hotline 1-888-241-9812 | Global hotline (+001) 312-212-8034.
+
+
+
+

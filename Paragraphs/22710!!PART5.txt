@@ -1,0 +1,7 @@
+
+This component can do several things: show ads on the lock screen; open browser tabs; collect information about the device; and, most unpleasant of all, download other malware.
+What can happen to a device with APKPure installed?
+Which Trojan gets downloaded (in addition to APKPure’s built-in one) depends on the Android version, as well as on how regularly the smartphone vendor released — and the user installed — security updates.
+If the user has a relatively recent version of the operating system, meaning Android 8 or higher, which doesn’t hand out root permissions willy-nilly, then it loads additional modules for the Triada Trojan .
+These modules, among other things, can buy premium subscriptions and download other malware.
+If the device is older, running Android 6 or 7, and without security updates installed (or in some cases not even released by the vendor), and thus more easily rootable, it could be the xHelper Trojan .

@@ -1,0 +1,5 @@
+
+An extensive library of Indicator Terms allows for a variety of information from hosts and networks to be recorded, and if something is not covered in the existing terms, additional terms may be added.
+Upcoming features like parameters will allow for further expansion of the standard, including customization for application or organization specific use cases.
+Having the OpenIOC standard in place is tremendously powerful, providing benefits for scaling detection and investigation, both of which are key parts of managing the threat lifecycle.
+OpenIOC enables easy, standardized information sharing once implemented, without adding much to workloads or draining resources.

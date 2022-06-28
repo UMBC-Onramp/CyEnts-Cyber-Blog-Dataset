@@ -1,0 +1,8 @@
+
+There are two types of .NET methods: a tiny method and a fat method.
+Looking at the first byte of the method body header, the two least-significant bits tell us if the method is tiny (where the last two bits are 10 ) or fat (where the last two bits are 11 ).
+.NET
+Tiny Method Let’s look at method 0x06000495 .
+Following the same steps described earlier, we check the row number 0x495 ( 1173 in decimal) of the Method table to find the method body RVA is 0x7A7C which translates to 0x5C7C as the offset into the file.
+At this offset, the first byte of the method body is 0x0A ( 0000 1010 in binary).
+Figure 8: Method 0x06000495 metadata and body Since the two least-significant bits are 10 , we know that 0x06000495 is a tiny method.

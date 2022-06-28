@@ -1,0 +1,3 @@
+
+When the Open-SSH server daemon ( sshd ) restarts, libs.so will first execute an initialization function as the library is loaded, and then has the ability to inject its own code whenever sshd calls bind().
+The sshd server processes use this hook in order to periodically beacon to the command-and-control (C2) server and to exfiltrate data , including a listing of system information such as CPU and OS details , amount of RAM, available disk space , and OpenSSH configuration :

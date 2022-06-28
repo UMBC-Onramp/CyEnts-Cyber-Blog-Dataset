@@ -1,0 +1,4 @@
+
+In considering their role and criticality to the process of elections, these various entities can be grouped into three categories: core election infrastructure, supporting organizations involved in the administration of elections, and other groups that have a participatory role in the electoral process.
+All of these entities may be targeted for a variety of reasons to influence or collect intelligence on the electoral process and participants.
+FireEye is aware of only limited indications of entities targeted in the first category (light blue area).

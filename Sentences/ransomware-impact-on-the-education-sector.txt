@@ -1,0 +1,435 @@
+FortiGuard Labs Threat Research Report Thanks to Paolo Di Prodi, Fred Gutierrez, and Val Saengphaibul, who helped contribute to this blog.
+
+Affected platforms: All OS platforms Impacted parties: Education Sectors Impact: Potential ransomware infection, data exfiltration, system compromise in education sectors Severity level: High Several major ransomware incidents that impacted our daily lives occurred in 2021.
+
+In early May, Colonial Pipeline, the largest refined petroleum pipeline in the United States, was infected by DarkSide ransomware .
+
+The infection forced the company to shut down their pipeline as a precautionary measure while assessments were being made, leading to long lines of cars at gas stations along the East Coast.
+
+Later that same month, the REvil ransomware attacked JBS, the world’s largest meat processor, and disrupted the company’s meat productions.
+
+In July, REvil struck again, affecting customers of the managed services provider Kaseya.
+
+ Attackers exploited an authentication bypass vulnerability in the Kaseya VSA (Virtual System Administrator) software, allowing attackers to distribute a malicious payload to downstream customers through hosts managed by the software.
+
+Because the prime goal of ransomware gangs is financial gain, the education sector was generally thought to be outside of bad guys’ targets.
+
+However, a report from the Federal Bureau of Investigation (FBI)
+
+ has suggested otherwise.
+
+ 
+
+The FBI released a Flash alert on March 16 th , warning the public of the PYSA ransomware increasingly targeting education institutions in the US and UK.
+
+PYSA, also known as Mespinoza, is an abbreviation for “Protect Your System Amigo” and is thought to have a close kinship to the Vurten ransomware.
+
+PYSA was first spotted in December 2019.
+
+At that time, it added a “.locked” file extension to the files it encrypted, but it later switched to the more familiar “.pysa” file extension.
+
+PYSA’s entry points are generally attributed to three methods: spam emails, intrusion to a Windows host with RDP exposed to the internet, and brute force attacks against a central management console as well as some Active Directory (AD) accounts.
+
+Once infected, PYSA uses various tools, such as ProcDump, Mimikatz, and Advanced IP Scanner, to enable lateral movement and information reconnaissance.
+
+PYSA is double-extortion ransomware, as it steals information from the compromised machine andencrypts
+
+ files, demanding money from the victim to decrypt their files and not release the stolen information to the public.
+
+The Grief ransomware hit a school district in Mississippi in May 2021.
+
+According to one public report, Grief’s leak site stated that ransomware software stole 10GB worth of data, including internal documents and personal information.
+
+Another school district in Washington state and schools in Virginia was also reportedly attacked by Grief.
+
+Grief ransomware, also known as GriefOrPay, is thought to be a rebrand of the DoppelPaymer ransomware.
+
+DoppelPaymer has been around since at least July 2019 and is a member of the BitPaymer ransomware family.
+
+While the reason behind rebranding from DoppelPaymer to Grief is not apparent, it happened after the Colonial Pipeline incident.
+
+One theory is that the rebrand was to take law enforcement’s attention away from the group.
+
+Ransomware gangs work like scam companies that change their names, logos, and registration after enough money is collected from the victims to divert unwanted attention from law enforcement.
+
+While its intrusion tactics are not yet identified, likely the Grief attack indirectly relies on spam emails as the DoppelyPaymer payload is thought to be distributed via the Dridex botnet.
+
+Another report suggests the presence of Cobalt Strike in some machines infected with Grief.
+
+Grief is also double-extortion ransomware, demanding ransom payments in Monero cryptocurrency for file decryption and not releasing harvested data.
+
+The Grief gang recently stepped their tactics up a notch.
+
+Their new ransom message threatens to erase the decryption key necessary to recover encrypted files if the victim contacts law enforcement or a professional ransom negotiator.
+
+This essentially makes Grief a wiper malware in addition to beingransomware.
+
+According to one report , ransomware attacks affected nearly 1,800 schools in the US during 2020, impacting over 1.3 million students.
+
+Ransoms during that time ranged from $10,000 to over $1 million per incident and cost educational institutions an additional $6.62 billion in downtime.
+
+ While attacking universities may not result in the large sums ofransom money that can be obtained by attacking large businesses, stolen information can be used for financial gain,as many university systems include valuable research data as well as contact information and emails for governmentagencies, defense industries, pharmaceutical labs, and other private companies that leverage university researchers.
+
+We are aware that some Ransomware-as-a-Service providers have a rule that excludes their associates from targeting sectors deemed essential (gas, oil, hospitals, nuclear power plants, etc.), as well as government sectors, military, and non-profit organizations, to which most education sectors belong.
+
+However, this is not altruistic on their part.
+
+They mostly want to avoid the hammer brought down by law enforcement, which has little tolerance when these sectors are targeted.
+
+But there is no guarantee that affiliates will always abide by these rules.
+
+And given the rate at which the education sector has recently been targeted, they are clearly not exempt from ransomware attacks.
+
+FortiGuard Labs has identified at least 20 different ransomware infections targeting the education sector.
+
+Most of these infections occurred in the United States, which outnumbered the other countries by a large margin.
+
+The Pysa and Ryuk ransomware families were the most common, closely followed by Grief and Babuk ransomware.
+
+Interestingly, many notable ransomware variants, such as REvil, Blackmatter, Lockbit, DarkSide, and Ragnar Locker, were not found to be targeting schools.
+
+That may be partially explained by the policy mentioned above that some ransomware groups have imposed on affiliates, banning them from attacking specific sectors such as health and education.
+
+Harvested Email Addresses Associated with Education Sectors FortiGuard Labs also analyzed lists pulled from a OSINT source for email addresses with “.edu”
+
+in the domain name.
+
+138,088 email addresses belonging to US educational institutions across all 50 States and territories were harvested between May and August 2021.
+
+Harvested emails are often sold on the dark web and can be used for future attacks.
+
+IPS Detection in Education Sectors IPS detection provides some interesting insights into malware prevalence.
+
+While it does not identify all ransomware in the wild, it does capture which ransomware is triggering IPS systems.
+
+The tables below show the top five IPS detections triggered between August 11 th and September 10 th , 2021, in the education sector in the US and worldwide.
+
+This data compares IPS detection trends in the US with those in the rest of the world.
+
+This unfiltered data indicates which cyberattacks targeted education sectors.
+
+The following tables below indicate the top five IPS signatures triggered inside organizations within the education sector from August 11 th to September 10 th , 2021.
+
+Note that the numbers were not filtered for unique machines, which means the actual impact could be lower.
+
+But this data still provides intelligence about how many scans and exploit attempts were made during the last 30 days against the education sector.
+
+In addition, these attacks do not necessarily mean that an attacker is targeting technology running inside an educational institution.
+
+It is simply a record of the attacks identified and blocked by IPS systems deployed inside education sector networks.
+
+NTP.Monlist.
+
+Command.
+
+DoS indicates an attempt against a Denial of Service vulnerability in the NTP service.
+
+The signature is associated with CVE-2013-5211 .
+
+Nmap.
+
+Script.
+
+Scanner indicates an attempted scan from an Nmap scripting engine scanner, which identifies what services the target system is running and performs further attacks based on its findings.
+
+SolarWinds.
+
+SUNBURST.Backdoor indicates that SUNBURST Backdoor C2 communication was detected in the network.
+
+SunBurst is a backdoor program distributed through the compromised SolarWind’s Orion IT monitoring and management software update system in late 2020.
+
+Port.
+
+Scanning detects an attempted scan by a port scanner that identifies which ports or services are available on a targeted system.
+
+Backdoor.
+
+DoublePulsar indicates either the presence of DoublePulsar malware or a scanning attempt via the RDP protocol.
+
+DoublePulsar is a backdoor trojan that was a part of the NSA leak by the Shadow Brokers group in March 2017 and was used in the WannaCry ransomware attack in May 2017.
+
+Qualys.
+
+Vulnerability.
+
+Scanner detects an attempted scan by a Qualys Vulnerability Scanner.
+
+An attacker may use the scanner to identify the targeted system's services and perform further attacks based on its findings.
+
+Nmap.
+
+Scirpt.
+
+Scanner and Port.
+
+Scanning Qualys.
+
+Vulnerability.
+
+Scanner appear to be regular offenders within the education sector.
+
+We were surprised to find that Sunburst backdoor IPS signatures also accounted for a large percentage of overall activity in the US, but further investigation revealed that most IPS detections belonged to one educational organization in the United States.
+
+However, when we investigated some of the most accessed URLs by the education sectors from August 11 th to September 10 th , 2021, Backdoor.
+
+DouplePulsar made more sense as its URLs led to variants of the Glupteba malware at the time of our analysis.
+
+Glupteba is a cross-platform trojan-type written in Golang and is primarily distributed through malicious advertisements that are injected into legitimate websites or advertising networks.
+
+Our analysis  confirmed the Glupteba variants downloaded from the URLs include a module to launch an infamous EternalBlue exploit, which was developed by U.S. National Security Agency (NSA) and was leaked by the ShadowBrokers hacking group in 2017.
+
+The exploit was subsequently used in notorious Wannacry and notPetya attacks. .
+
+The machines that contacted the  the malicious URLs may have downloaded and installed the Glupteba malware.
+
+Glupteba then exploitedEternalBlue to distribute DoublePulsar, a backdoor  implant disclosed by ShadowBrokers that enables the execution of additional malicious code.
+
+That scenario provides good explanation why the Backdoor.
+
+DouplePulsar signature was triggered.
+
+The detection was most observed in Brazil, South Africa, and India, which account for 70% of the total Backdoor.
+
+DouplePulsar detections triggered.
+
+Botnet and AV Detections in the Education Sector
+
+Next, we compared Botnet activities observed in the US and worldwide to find trends.
+
+They turned out to be almost in sync.
+
+Unlike IPS triggers, which record blocked attacks, botnet detections indicate active botnet malware within a network.
+
+The Mirai IoT botnet led both regions, followed by Gh0st Rat and Zeroaccess.
+
+Together, they account for more than 50% of the botnet activities in the US and global education sectors.
+
+As the malware source codes of those three botnets are readily available, the education sector is a potential target of both serious and novice botnet attackers.
+
+The following graphs show the top five AV detection observed in the education sector in the US and worldwide, from August 11 th to September 10 th , 2021.
+
+This data indicates which malware was blocked during that period.
+
+Cryxos was to most common malware triggered in the US as well as worldwide.
+
+This malicious JavaScript variant is typically associated with fake call support scams.
+
+It shows a fake pop-up warning that the victim’s machine has serious issues.
+
+The victim is further instructed to call support for a bogus fix as they risk losing sensitive data.
+
+The scammers then ask for a payment, either through a credit card or via gift cards.
+
+Other common attacks included: W32/Swizzor!B.tr is an old Windows malware that has been around for years.
+
+The malware is designed to show unwanted ads on a targeted machine or download and execute remote files.
+
+As a result, a device infected with Swizzor may show other behaviors (i.e., data exfiltration) that are known to be associated with the malware.
+
+JS/Miner.
+
+BP!tr is a malicious javascript that mines for cryptocurrency without the user’s knowledge.
+
+A victim’s machine may experience slower performance and higher electricity usage.
+
+W32/Agent.
+
+DRI!tr.dldr is a type of trojan malware designed to download and execute remote files.
+
+Just like Switzzor, a machine infected with this malware may exhibit malicious behaviors.
+
+W32/RanumBot.
+
+X!tr is a type of Trojan that opens a backdoor and awaits commands from its Command & Control server.
+
+Its behavior is dependent on the remote commands it receives.
+
+Conclusion - Education Sectors As with any other industry sector, educational institutions are not exempt from cyberattacks.
+
+Backdoor infections lead to information leaks that may be vital to an institution's research effort or steal PII of students, parents, and faculty.
+
+A publicized attack can lead to financial loss, brand damage, and loss of faith and reputation by its affiliates and partners.
+
+Even worse, not only can ransomware be deployed against a vulnerable network, but access to a compromised network can also be sold on the black market to other ransomware gangs.
+
+One of the most critical takeaways from nearly every research of this kind is that criminals overwhelmingly target known vulnerabilities with available patches.
+
+This makes cyber hygiene a top priority.
+
+Similarly, it reemphasizes the need to backup critical data.
+
+If regular backups are not implemented or are not properly managed, it could cost the institutions hundreds of thousands of dollars to replace affected devices.
+
+However, even when a victim has secured backups and an excellent recovery plan in place, attackers will still threaten to leak stolen data.
+
+If the ransom is not paid, they release everything on the dark web.
+
+ 
+
+Therefore, it is imperative to have a solid prevention and recovery plan against ransomware in place, including the encryption of all data at rest.
+
+Similarly, botnets are an indirect threat to those organizations that become a part of the attacker’s infrastructure.
+
+The attacker can exploit their bandwidth to launch DDoS attacks against other parties, move laterally to other institutions, or leverage the compute power for crypto mining or other illicit purposes.
+
+This will eventually result in a loss of productivity and revenue for those victims.
+
+We cannot emphasize more emphatically the following statement from a blog posted by Fortinet earlier this year, entitled, “ Threats Impacting Education Cybersecurity ”: “It’s common knowledge that the cost and effort associated with attack prevention tend to be significantly less than the cost associated with the fallout of a successful attack.
+
+Therefore, in education cybersecurity and beyond, investing in comprehensive cybersecurity strategies not only protects sensitive data and infrastructure but can also help reduce costs down the line.”
+
+Fortinet Protections and Recommendations FortiGuard Labs has the following AV coverage in place for the malware associated with this blog: FortiGuard Labs has the following AV coverage in place for malware associated with this blog: W32/Ransom.
+
+REVIL!tr W32/Ransom_Revil.
+
+R03BC0DHU20 W32/DarkSide.
+
+B!tr.ransom W32/Darkside.
+
+AO!tr.ransom ELF/Darkside.
+
+A9B5!tr.ransom W32/Darkside.50B7!tr.ransom W32/Darkside.
+
+B7D5!tr.ransom W32/Filecoder.
+
+NYO!tr.ransom W32/Zudochka.
+
+DLR!tr.ransom W32/DoppelPaymer.
+
+BM!tr PossibleThreat.
+
+PALLASNET.H W32/PossibleThreat W32/RanumBox.
+
+X!tr W32/Agent.
+
+BMGF!tr.dldr JS/Miner.
+
+BP!tr W32/Swizzor.
+
+B!tr JS/Cryxos.
+
+DEB1!tr FortiGuard Labs has the following IPS coverage in place for the malware associated with this blog: Telerik.
+
+Web.
+
+UI.RadAsyncUpload.
+
+Handling.
+
+Arbitrary.
+
+File.
+
+Upload PHPUnit.
+
+Eval-stdin.
+
+PHP.Remote.
+
+Code.
+
+Execution Apache.
+
+Struts.2.Jakarta.
+
+Multipart.
+
+Parser.
+
+Code.
+
+Execution ThinkPHP.Controller.
+
+Parameter.
+
+Remote.
+
+Code.
+
+Execution Dasan.
+
+GPON.Remote.
+
+Code.
+
+Execution NTP.Monlist.
+
+Command.
+
+DoS Nmap.
+
+Script.
+
+Scanner SolarWinds.
+
+SUNBURST.Backdoor Port.
+
+Scanning Backdoor.
+
+DoublePulsar Qualys.
+
+Vulnerability.
+
+Scanner Mirai.
+
+Botnet XcodeGhost Andromeda.
+
+Botnet Torpig.
+
+Mebroot.
+
+Botnet Zeroaccess.
+
+Botnet Backdoor.
+
+Cobalt.
+
+Strike.
+
+Beacon Kaseya.
+
+VSA.Remote.
+
+Code.
+
+Execution Darkside.
+
+Botnet The Fortinet fabric can offer end to end protection to educational institutions using the following technologies - FortiMail (blocking phishing attacks and malicious attachments), Web Filtering (blocking malicious URLs), FortiEDR (real-time and cloud-based protection), FortiSandbox (identifying and preventing unknown attacks), FortiToken (multi-factor authentication), and intent-based segmentation (preventing lateral movement).
+
+Organizations are also strongly encouraged to conduct ongoing end-user training designed to educate and inform personnel about the latest phishing/spearphishing techniques and how to spot and respond to them.
+
+This should include encouraging employees to never open attachments from someone they don't know and always treat emails from unrecognized/untrusted senders with caution.
+
+Since it has been reported that many phishing and spearphishing attacks are being delivered as part of social engineering distribution mechanisms, end-users must also be made aware of the various types of attacks currently in use.
+
+The FortiPhish cloud-based phishing simulation service uses real-world simulated phishing attacks and analysis to test user awareness and vigilance and help hone training efforts.
+
+Regular training sessions on how to spot emails with malicious attachments or links combined with impromptu tests increase user awareness and helps prevent initial access into the network.
+
+Zero Trust Network Access (ZTNA) addresses all types of attacks/threats:
+
+Reduces Attack Surface—ZTNA only allows access to specifically requested applications rather than the network-level access provided by traditional VPN.
+
+Ensures Endpoint Security Compliance—Checks to ensure the endpoint is compliant with your security policies (no critical vulnerabilities, has adequate security enabled, etc.) and only grants access to compliant endpoints.
+
+Verifies that users and devices accessing resources are “authorized.”
+
+  Identifies devices and users on a per-session basis and uses that information to make smarter decisions for application access (Should that device be allowed to access this application?
+
+  How about if the connection is from xyz geolocation?
+
+What about after-hours?).
+
+Not all endpoints should have access to all resources because they are connected to the local network or are part of the domain.
+
+Segmentation – reduces exposure in the event of compromise by preventing the lateral movement of malware.
+
+Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+
+
+

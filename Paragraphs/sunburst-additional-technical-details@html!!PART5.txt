@@ -1,0 +1,8 @@
+
+It repurposes two existing settings in the appSettings section: ReportWatcherRetry and ReportWatcherPostpone .
+During initialization, the backdoor determines if the ReportWatcherRetry setting is the value 3 .
+This value indicates the malware has been deactivated and will no longer perform any network activity.
+As we describe later, UNC2452 can command the backdoor to disable itself.
+This feature may be utilized when the operator determines the victim is not of interest or that they’ve completed their mission.
+When investigating a system compromised by SUNBURST, review this setting to determine if the backdoor has been disabled.
+Note, the presence of this value does not offer proof the actor did not further compromise the environment before disabling SUNBURST.

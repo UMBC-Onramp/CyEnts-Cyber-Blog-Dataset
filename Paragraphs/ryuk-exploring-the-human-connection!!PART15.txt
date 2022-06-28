@@ -1,0 +1,6 @@
+
+Once launched the first thing the decryptor does is to search the HKEY_CURRENT_USER Hive for a value pair named “svchos” in the path “SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run” and delete the specific entry.
+This removes the persistence of the malware.
+Afterwards it will reboot the system and remove any remaining Ryuk malware still receding on the system.
+Deleting the “svchos” value from the registry.
+Once rebooted the user needs to run the tool again and the decryptor will provide two options to decrypt.

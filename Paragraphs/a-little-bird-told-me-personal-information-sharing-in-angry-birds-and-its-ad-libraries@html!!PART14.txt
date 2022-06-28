@@ -1,0 +1,9 @@
+
+XX How is the personal information shared?
+We also researched the source code of the Burstly (ad mediation platform) to trace the method calls for the information sharing.
+First in com/burstly/lib/conveniencelayer/BurstlyAnimated Banner.java, when Angry Birds tries to initialize the connection with Burstly, initNewAnimatedBanner() is called as follows:
+this.initNewAnimatedBanner (arg7.getActivity(), arg8, arg9, arg10, arg11); Inside initNewAnimatedBanner(), it instantiates the BurstlyView object by calling: BurstlyView v0 = new BurstlyView(((Context)arg3)); v0.setZoneId(arg6); Before the ZoneId is set, the initializeView() method is called in the constructor of BurstlyView.
+Furthermore, inside the initializeView() method, we found the following: new BurstlyViewConfigurator(this).configure(this.mAttributes); Finally in the BurstlyViewConfigurator.configure() method, it sets a series of parameters: this.extractAndApplyBurstlyViewId(); this.extractAndApplyCrParams(); this.extractAndApplyDefaultSessionLife(); this.extractAndApplyPublisherId(); this.extractAndApplyPubTargetingParams(); this.extractAndApplyUseCachedResponse(); this.extractAndApplyZoneId(); These method calls are to retrieve information from burstly.com.
+For example, in the extractAndApplyCrParams() method, it retrieves parameters from burstly.com and stores them in the BurstlyView object: String v0 =
+this.mAttributes.getAttributeValue(\"http://burstly.com/lib/ui/schema\", \"crParams\"); if(v0 !
+= null) { BurstlyViewConfigurator.

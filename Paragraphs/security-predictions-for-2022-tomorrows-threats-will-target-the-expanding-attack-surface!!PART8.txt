@@ -1,0 +1,6 @@
+
+But even those highly specialized capabilities and tools are now being included in attack kits available for purchase on the dark web, making them available to a much broader set of far less technical attackers.
+And at the other end of the network, we also see new edge-based challenges emerging.
+\"Living off the land\" is a technique that allows malware and threat actors to leverage existing toolsets and capabilities within compromised environments.
+This enables attacks and data exfiltration to look like normal system activity and go unnoticed.
+Living off the land attacks are effective because they use legitimate tools to carry out their malicious actions.

@@ -1,0 +1,9 @@
+
+Source: McAfee® Global Threat Intelligence.
+Infection flow of the Rising Sun implant, which eventually sends data to the attacker’s control servers.
+Conclusion Our discovery of this new, high-function implant is another example of how targeted attacks attempt to gain intelligence.
+The malware moves in several steps.
+The initial attack vector is a document that contains a weaponized macro to download the next stage, which runs in memory and gathers intelligence.
+The victim’s data is sent to a control server for monitoring by the actors, who then determine the next steps.
+We have not previously observed this implant.
+Based on our telemetry, we discovered that multiple victims from different industry sectors around the world have reported these indicators.

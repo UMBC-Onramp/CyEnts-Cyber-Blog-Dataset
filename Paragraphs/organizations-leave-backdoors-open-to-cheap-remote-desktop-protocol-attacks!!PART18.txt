@@ -1,0 +1,8 @@
+
+Basic forensic and security advice Playing hide and seek Besides selling countless connections, RDP shops offer tips on how to remain undetected when an attacker wants to use the freshly bought RDP access.
+This screen from the UAS Shop’s FAQ section explains how to add several registry keys to hide user accounts.
+The UAS Shop offers a zip file with a patch to allow multiuser RDP access, although it is not possible by default on some Windows versions.
+The zip file contains two .reg files that alter the Windows registry and a patch file that alters termsvrl.dll to allow concurrent remote desktop connections.
+These alterations to the registry and files leave obvious traces on a system.
+Those indicators can be helpful when investigating misuse of RDP access.
+In addition to checking for these signs, it is good practice to check the Windows event and security logs for unusual logon types and RDP use.

@@ -1,0 +1,4 @@
+
+CCMINER XMRIG
+CLAYMORE SGMINER CAST XMR LUKMINER CPUMINER-MULTI Table 1: Commonly used Monero miner utilities The following are sample advertisements for miner utilities commonly observed in underground forums and markets.
+Advertisements typically range from stand-alone miner utilities to those bundled with other functions, such as credential harvesters, remote administration tool (RAT) behavior, USB spreaders, and distributed denial-of-service (DDoS) capabilities.

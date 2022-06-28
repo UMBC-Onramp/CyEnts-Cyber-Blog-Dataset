@@ -1,0 +1,5 @@
+By John Fokker and Thomas Roccia on Jul 16, 2019 Everyday thousands of people receive emails with malicious attachments in their email inbox.
+Disguised as a missed payment or an invoice, a cybercriminal sender tries to entice a victim to open the document and enable the embedded macro.
+This macro then proceeds to pull in a whole array of nastiness and infect a victim’s machine.
+Given the high success rate, malicious Office documents remain a preferred weapon in a cyber criminal’s arsenal.
+To take advantage of this demand and generate revenue, some criminals decided to create off-the-shelf toolkits for building malicious Office documents.

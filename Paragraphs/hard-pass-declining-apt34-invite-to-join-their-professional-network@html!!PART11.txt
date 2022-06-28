@@ -1,0 +1,5 @@
+
+Further information regarding VALUEVAULT can be found in the appendix below.
+Further pivoting from FireEye appliances and internal data sources yielded two additional files, PE86.dll (MD5: d8abe843db508048b4d4db748f92a103) and PE64.dll (MD5: 6eca9c2b7cf12c247032aae28419319e) .
+These files were analyzed and determined to be 64- and 32-bit variants of the malware PICKPOCKET, respectively.
+PICKPOCKET is a credential theft tool that dumps the user's website login credentials from Chrome, Firefox, and Internet Explorer to a file.

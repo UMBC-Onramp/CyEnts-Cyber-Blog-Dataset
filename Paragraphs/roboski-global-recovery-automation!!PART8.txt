@@ -1,0 +1,16 @@
+
+All emails are written in poor English and include an attached purchase order or quotation contained in an archive file (Zip, CAB or RAR), which, when executed, drops the RoboSki-packed malware.
+Figure 1 : Sample email sent to a Romania-based company Additional phishing messages uncovered with the same theme were composed in varying qualities of English and directed at seven unique entities across Europe and South America, targeting companies that manufacture automobile parts, machinery and energy components.
+While the quality of the text differs by sample, the uncovered emails contain signature blocks attempting to impersonate well-known global corporations.
+Where’s My Package?
+The teams found the email sender janattbs7[@]gmail[.]com sent not only an email to the Romanian-based company regarding a “quotation request,” but also an email for “shipping documents.”
+Due to additional emails sent to the same company with varying themes, X-Force researched the spoofed sender company as well as the recipient company; however, no clear connection between the two was discerned.
+Some of the sample emails used package delivery lures that purported to come from DHL or FedEx .
+These were typically sent to companies within the construction industry that support oil companies and government clients, as well as water technology and processing.
+Figure 2: Sample DHL email “Dear Customer, Your package has arrived at the office.
+Our courier could not deliver it to your address due to a wrong address provided by our customer.
+To receive your package, please go to any of our nearest office and show this receipt.
+CLICK ON THE ATTACHED FILE TO DOWNLOAD AND PRINT
+THE RECEIPT.
+Greetings The DHL team” Fake Notices , Payments and Invoices Other emails in the sample featured fake payment notices, invoices or bank transfers and were sent to organizations in Europe and the Middle East.
+Half of the samples were composed in the native language of the targeted recipients and contained signature blocks of authentic banks or import/export companies.

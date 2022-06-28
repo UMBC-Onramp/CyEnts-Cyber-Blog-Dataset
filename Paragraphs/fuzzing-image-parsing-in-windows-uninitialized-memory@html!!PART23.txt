@@ -1,0 +1,79 @@
+
+windowscodecs!CLibTiffDecoderBase::CopyPixels+0x80 09 000000aa`a654f4d0 00007ff9`4404563b
+windowscodecs!CDecoderFrame::CopyPixels+0xb5 0:000>
+db 00000297`44382140 00000297`44382140  5b cd 82 55 2a 94 e2 6f-d7 2d a5 93 58 23 00
+6c  
+[..U*..o.-..X#.l
+             // 0x10 bytes from file 00000297`44382150  06 51
+54 18 2e 2a 23 3a-4f
+ab 14 27 e9 c6 2c 83  .QT
+..
+*#:O..'..,.
+            // uninitialized memory 00000297`44382160  3a 25 b2 f6 9d e7 3c 09-cc a5 8e 27 b0 73 41 a9  :%....<....'.sA.
+00000297`44382170  fb 9b 02 b5 81 3e ea 45-4c 0f ab a7 72 e3 21 e7  .....
+>.EL...
+r.!.
+00000297`44382180  c8 44 84 3b c3 b5 44 8a-c9 6e 4b 2e 40 31 38 e0  .D.;
+..
+D..nK.@18.
+00000297`44382190  85 f0 bd 98 3b 0b ca b8-78 b1 9d d0 dd 4d 61 66  ....;...
+x....
+Maf 00000297`443821a0  16
+7d 0a e2 40 fa f8 45-4f 79 ab 95 d8 54 f9 44  .}..@
+..EOy...
+T.D 00000297`443821b0  66 26 28 00 b7 96 52 88-15 f0 ed 34 94 5f 6f 94  f&(...
+R....4._o.
+Figure 7: Partial population of memory Use of Uninitialized Memory 0:000> r rax=0000000000000006 rbx=0000000000000007 rcx=0000000000000200 rdx=0000000000011803 rsi=0000029744382150 rdi=0000000000000000
+rip=00007ff94414e837 rsp=000000aaa654f050 rbp=0000000000000001 r8=0000029744382550  r9=0000000000000000 r10=0000000000000008 r11=0000000000000013 r12=00007ff94418b7b0 r13=0000000000000003 r14=0000000023006c00 r15=00007ff94418bbb0 iopl=0
+         nv up ei pl nz na po nc cs=0033  ss=002b
+  ds=002b
+  es=002b
+  fs=0053  gs=002b
+             efl=00000206 windowscodecs!CCCITT::Expand2DLine+0x253: 00007ff9`4414e837 0fb606          movzx   eax,byte ptr [rsi] ds:00000297`44382150=06             ;
+Uninitialized memory being accessed 0:000> db 00000297`44382140 00000297`44382140  5b cd 82 55 2a 94 e2 6f-d7 2d a5 93 58 23 00
+6c  
+[..U*..o.-..X#.l
+             // 0x10 bytes from file 00000297`44382150  06 51
+54 18 2e 2a 23 3a-4f
+ab 14 27 e9 c6 2c 83  .QT
+..
+*#:O..'..,.
+             // uninitialized memory 00000297`44382160  3a 25 b2 f6 9d e7 3c 09-cc a5 8e 27 b0 73 41 a9  :%....
+<....'.sA.
+00000297`44382170  fb 9b 02 b5 81 3e ea 45-4c 0f ab a7 72 e3 21 e7  .....
+>.EL...
+r.!.
+00000297`44382180  c8 44 84 3b c3 b5 44 8a-c9 6e 4b 2e 40 31 38 e0  .D.;
+..
+D..nK.@18.
+00000297`44382190  85 f0 bd 98 3b 0b ca b8-78 b1 9d d0 dd 4d 61 66  ....;...
+x....
+Maf 00000297`443821a0  16
+7d 0a e2 40 fa f8 45-4f 79 ab 95 d8 54 f9 44  .}..@
+..EOy...
+T.D 00000297`443821b0  66 26 28 00 b7 96 52 88-15 f0 ed 34 94 5f 6f 94  f&(...
+R....4._o.
+0:000
+> k # Child-SP          RetAddr           Call Site 00 000000aa`a654f050 00007ff9`4414df80 windowscodecs!CCCITT::Expand2DLine+0x253 01 000000aa`a654f0d0 00007ff9`4412afcc windowscodecs!CCCITT::CCITT_Expand+0xac 02
+000000aa`a654f120 00007ff9`4404d3f0 windowscodecs!CCITTDecode+0x7c 03
+000000aa`a654f170 00007ff9`4404d2dc windowscodecs!TIFFReadEncodedStrip+0xb8 04 000000aa`a654f1b0 00007ff9`440396dd windowscodecs!CLibTiffDecoderBase::ReadStrip+0x74 05 000000aa`a654f1e0 00007ff9`44115fca windowscodecs!CLibTiffDecoderBase::GetOneUnpackedLine+0x1ad 06 000000aa`a654f2b0 00007ff9`44077400 windowscodecs!CLibTiffDecoderBase::HrProcessCopy+0x4a 07
+000000aa`a654f2f0 00007ff9`44048dbb windowscodecs!CLibTiffDecoderBase::HrReadScanline+0x20 08
+000000aa`a654f320 00007ff9`44048b40 windowscodecs!CDecoderBase::CopyPixels+0x23b 09 000000aa`a654f3d0 00007ff9`44043c95
+windowscodecs!CLibTiffDecoderBase::CopyPixels+0x80 0a 000000aa`a654f4d0 00007ff9`4404563b
+windowscodecs!CDecoderFrame::CopyPixels+0xb5 Figure 8:
+Reading of uninitialized value Depending on the uninitialized value (Figure 8), different code paths are taken in Expand2DLine, which will change the output pixels, as shown in Figure 9.
+{ { if ( v11 !=
+1 || a2 ) { unintValue = *
+++allocBuffer | (unintValue << 8);          // uninit mem read } else { unintValue <<= 8; ++allocBuffer; } --v11; v16 += 8; } v29 = unintValue >
+> (v16 - 8); dependentUninitValue
+=
+*
+(l + 2i64 * v29); v16 -=
+*(l + 2i64 * v29 + 1); if ( dependentUninitValue >= 0 )
+             // path 1 break; if ( dependentUninitValue < '\\xC0' ) return 0xFFFFFFFFi64;                     // path 2 } if ( dependentUninitValue <= 0x3F )
+              // path xx break; Figure 9: Use of uninitialized memory in if conditions Patch Microsoft decided to patch this vulnerability by using calloc instead of malloc , which initializes the allocated memory with zeros.
+Conclusion Part Two of this blog series presents multiple vulnerabilities in Windows’ built-in image parsers.
+In the next post, we will explore newer supported image formats in Windows such as RAW, HEIF and more.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

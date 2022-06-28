@@ -1,0 +1,7 @@
+
+Conclusion While the Hex-Rays decompiler is a powerful source of information during reverse engineering, writing generic scripts and plugins using the default API is difficult and requires handling numerous edge cases.
+This post introduced the FIDL library , a wrapper around the Hex-Rays API, which fixes this by reducing the amount of low-level details an analyst needs to understand in order to create a script leveraging the decompiler and should make the creation of these scripts much faster.
+In future blog posts we will publish more scripts and analysis utilizing this library.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

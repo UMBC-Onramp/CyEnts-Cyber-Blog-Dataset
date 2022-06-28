@@ -1,0 +1,5 @@
+
+If installed before the target app, the malicious\nextension can break the data container and gain full access to the\ntarget app's data container without users’ awareness, while the\ntarget app would work normally.
+If the malicious extension\nis installed after the target app, the target app can no\nlonger access its own data container.
+Thus the functionality of the\ntarget app will be seriously disturbed and the app will even crash\n(causing denial-of-service).
+In this circumstance, if the victim\ntries to reinstall the target app, the target app would recover.

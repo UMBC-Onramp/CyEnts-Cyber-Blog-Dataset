@@ -1,0 +1,12 @@
+
+John needs additional information before he can start to act.
+He knows two things about the attacker that might be able to help him out:
+The attacker is using a domain service account to perform network logons.
+The attacker has been using WCE to obtain credentials and the \"WCE SERVICE\" service appears in event logs.
+John turns to his security event and incident management (SEIM) system, which aggregates logs from his domain controllers, enterprise antivirus and intrusion detection systems.
+A search of type 3 network logons using the \"backupDaily\" domain account turns up 23 different systems accessed using that account.
+John runs another query for the \"WCE SERVICE\" and sees that logs from 3 domain controllers contain that service event.
+John needs to look for IOCs across all Acme machines in a short period of time.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

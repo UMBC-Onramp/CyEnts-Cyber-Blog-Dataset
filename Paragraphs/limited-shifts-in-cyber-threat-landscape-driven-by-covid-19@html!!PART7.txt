@@ -1,0 +1,4 @@
+
+Furthermore, the rapid adoption of platforms will undoubtedly lead to security mistakes and attract the attention of the threat actors.
+Secure remote access will likely rely on use of VPNs and user access permissions and authentication procedures intended to limit exposure of proprietary data.
+Hardware and infrastructure protection should include ensuring full disk encryption on enterprise devices, maintaining visibility on devices through an endpoint security tool, and maintaining regular software updates.

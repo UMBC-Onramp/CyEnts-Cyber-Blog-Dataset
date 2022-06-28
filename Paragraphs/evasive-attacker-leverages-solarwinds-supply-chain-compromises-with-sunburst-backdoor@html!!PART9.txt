@@ -1,0 +1,10 @@
+
+(Note: IP Scan history often shows IPs switching between default (WIN-*) hostnames and victim’s hostnames)
+Cross-referencing the list of IPs identified in internet scan data with remote access logs may identify evidence of this actor in an environment.
+There is likely to be a single account per IP address.
+IP Addresses located in Victim’s Country
+The attacker’s choice of IP addresses was also optimized to evade detection.
+The attacker primarily used only IP addresses originating from the same country as the victim, leveraging Virtual Private Servers.
+Detection Opportunity
+This also presents some detection opportunities, as geolocating IP addresses used for remote access may show an impossible rate of travel if a compromised account is being used by the legitimate user and the attacker from disparate IP addresses.
+The attacker used multiple IP addresses per VPS provider, so once a malicious login from an unusual ASN is identified, looking at all logins from that ASN can help detect additional malicious activity.

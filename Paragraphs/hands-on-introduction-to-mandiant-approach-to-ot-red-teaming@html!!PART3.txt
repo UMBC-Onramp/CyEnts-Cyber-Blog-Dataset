@@ -1,0 +1,6 @@
+
+We then used this access to collect information and develop an attack scenario simulating the path a threat actor could take to prepare for and attack the physical process (We highlight that the red team did not rely on weaknesses of the DCS, but instead weak password implementations in the target environment).
+NOTE:
+Red teaming in OT production systems requires planning, preparation and \"across the aisle\" collaboration.
+The red team must have deep knowledge of industrial process control and the equipment, software, and systems used to achieve it.
+The red team and the asset owner must establish acceptable thresholds before performing any activities.

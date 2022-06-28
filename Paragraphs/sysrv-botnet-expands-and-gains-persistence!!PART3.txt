@@ -1,0 +1,6 @@
+
+We believe this is a way for the threat actor to gain more persistence and may lead to more sophisticated attacks.
+Ldr.sh started adding its keys for maintaining persistence Bundled Exploits Based on our findings, the attack surged on March 4, 2021 and we identified six vulnerabilities actively exploited with a payload, including: Mongo Express RCE (CVE-2019-10758)
+XXL-JOB Unauth RCE XML-RPC (CVE-2017-11610)
+CVE-2020-16846 (Saltstack RCE)
+ThinkPHP RCE CVE-2018-7600 (Drupal Ajax RCE)

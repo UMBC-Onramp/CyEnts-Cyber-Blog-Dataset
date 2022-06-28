@@ -1,0 +1,8 @@
+
+Understanding where this information resides presents defenders with a catalog of systems and networks to focus collection and detection efforts on.
+Defenders can create tailored detections to hunt for adversary activity pursuing this information, prioritize alert response efforts, and identify additional security controls to implement.
+Mandiant red teaming in OT can help organizations identify which data is valuable for attackers to support their network propagation efforts and which systems are most likely to be compromised by attackers targeting OT networks.
+Visit our website for more information or to request Mandiant services or threat intelligence .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

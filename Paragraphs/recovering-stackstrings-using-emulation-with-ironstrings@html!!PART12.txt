@@ -1,0 +1,6 @@
+
+Note that both flare-emu and ironstrings were written using the new IDAPython API available in IDA Pro 7.0 and higher.
+They are not backwards compatible with previous program versions.
+Usage and Options To run the script in IDA Pro, go to File – Script File...
+(ALT+F7) and select ironstrings.py .
+The script runs automatically on all functions, prints its results to IDA Pro's output window, and adds comments at the locations where it recovered stackstrings.

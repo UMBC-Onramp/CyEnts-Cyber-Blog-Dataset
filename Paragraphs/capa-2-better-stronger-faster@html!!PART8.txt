@@ -1,0 +1,6 @@
+
+Finally, we updated capa to use the new signatures to guide its analysis.
+capa uses these signatures to differentiate library code from a programmer’s code.
+While capa can extract and match against the names of embedded library functions, it will skip finding capabilities and behaviors within the library code.
+This way, capa results better reflect the logic written by a programmer.
+Furthermore, library function identification drastically improves capa runtime performance: since capa skips processing of library functions, it can avoid the costly rule matching steps across a substantial percentage of real-world functions.

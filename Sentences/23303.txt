@@ -1,0 +1,47 @@
+Recent large-scale DDoS attacks using a new botnet called Mēris peaked at almost 22 million requests per second.
+
+According to Qrator research , MikroTik’s network devices generated a fair share of the botnet’s traffic.
+
+Having analyzed the situation, MikroTik experts found no new vulnerabilities in the company’s routers; however, old ones may still pose a threat.
+
+Therefore, to ensure your router has not joined the Mēris botnet (or any other botnet, for that matter), you need to follow a few recommendations.
+
+Why MikroTik devices are joining the botnet A few years ago, security research discovered a vulnerability in MikroTik routers : Winbox, a configuration tool for MikroTik routers through which many devices were compromised.
+
+Although MikroTik fixed the vulnerability back in 2018, apparently not all users updated their routers.
+
+Furthermore, even among those who did, not everyone followed the manufacturer’s additional password-change recommendations.
+
+If a user didn’t change the password, then even updated firmware could let attackers log in to the router and start exploiting it again.
+
+According to MikroTik , the routers that are now infected with Mēris are the same devices that were compromised back in 2018.
+
+The company has published indicators of device compromise and issued recommendations.
+
+How to tell if your MikroTik router is part of a botnet When a router joins a botnet, cybercriminals change a number of settings in the device firmware.
+
+Therefore, MikroTik’s first recommendation is to look at device configuration and check for the following: A rule that executes the script with the fetch () method.
+
+Remove this rule (under System → Scheduler), if present; A SOCKS proxy server enabled.
+
+You’ll find the setting under IP → SOCKS ; if you do not use it, disable it; An L2TP client called lvpn, (or any other L2TP client unfamiliar to you).
+
+Delete these clients as well; A firewall rule that allows remote access through port 5678.
+
+Remove this rule.
+
+Recommendations for protecting your MikroTik router Regular updates are a crucial part of any successful defense strategy.
+
+Much of keeping a MikroTik network safe is following general network security best practices.
+
+Make sure your router is using the latest firmware available, and update it regularly; Disable remote access to the device unless you absolutely need it; Configure remote access — again, if you really need it — through a VPN channel.
+
+For example, use the IPsec protocol; Use a long and strong management password.
+
+Even if your current password is strong, change it now, just in case; In general, proceed under the assumption  that your local area network is not secure, meaning if one computer gets infected, then the malware can attack the router from inside your perimeter and gain access by brute-forcing passwords.
+
+That is why for our part, we strongly recommend using reliable security solutions on all Internet-connected computers.
+
+
+
+

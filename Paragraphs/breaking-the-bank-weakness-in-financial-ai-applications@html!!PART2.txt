@@ -1,0 +1,4 @@
+
+Recent advances in adversarial AI research highlights the vulnerabilities in some AI techniques used by the financial sector.
+Data poisoning attacks , or manipulating a model's training data, can affect the end performance of a system by leading the model to generate inaccurate outputs or assessments.
+Manipulating the data used to train a model can be particularly powerful if it remains undetected, since \"finished\" models are often trusted implicitly.

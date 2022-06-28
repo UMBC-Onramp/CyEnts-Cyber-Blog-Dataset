@@ -1,0 +1,9 @@
+
+This document had the last author ‘Windows User’ and was created January 16, 2018 with Korean language resources.
+Several additional malicious documents with the same author appeared between January 16 though January 24, 2018.
+Document summary from Virus Total Malicious job recruitment documents Victims are persuaded to enable content through a notification claiming the document was created in an earlier version of Microsoft Word.
+The malicious documents then launch an implant on the victim’s system via a Visual Basic macro.
+Malicious Microsoft Word document Implants dropped in campaign The document (7e70793c1ca82006775a0cac2bd75cc9ada37d7c) created January 24, 2018 drops and executes an implant compiled January 22, 2018 with the name lsm.exe (535f212b320df049ae8b8ebe0a4f93e3bd25ed79).
+The implant lsm.exe contacted 210.122.7.129 which also resolves to worker.co.kr.
+Implants dropped in campaign The other malicious document ( a79488b114f57bd3d8a7fa29e7647e2281ce21f6) created January 19, 2018 drops the implant (afb2595ce1ecf0fdb9631752e32f0e32be3d51bb); which is 99% similar-to the lsm.exe implant.
+This document was distributed from the following Dropbox URLs: hxxps://dl.dropboxusercontent.com/content_link/AKqqkZsJRuxz5VkEgcguqNE7Th3iscMsSYvivwzAYuTZQWDBLsbUb7yBdbW2lHos/file?dl=1 hxxps://www.dropbox.com/s/q7w33sbdil0i1w5/job description.doc?dl=1 HTTP response for job description document This implant (csrss.exe) compiled January 15, 2018 contacts an IP address 70.42.52.80 which resolves to deltaemis.com.

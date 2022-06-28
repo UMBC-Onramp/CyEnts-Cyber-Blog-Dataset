@@ -1,0 +1,11 @@
+
+For cyber criminals, DDoS offers a low-cost, high-return attack type.
+IoT devices are cheap, plentiful and many are easy to compromise thanks to minimal or non-existent factory security settings.
+Companies are often willing to pay once they realize online services won’t be coming back up anytime soon unless the attackers turn down the traffic.
+The result is a frightening scenario for enterprises.
+Sudden, high-volume attacks from disparate sources could knock critical services offline for days or weeks.
+That, in turn, leads to major revenue and reputation loss.
+When it comes to defending against DDoS attacks, two components are critical.
+First is preparation.
+These attacks are a matter of when, not if.
+Companies need incident response plans in place that find potential weak points, critical control mechanisms and simple ways of reducing their impact — such as blocking traffic from specific locations.

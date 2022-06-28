@@ -1,0 +1,7 @@
+
+We want to return the “Latitude” value for the given IP address, so in the aforementioned example, we tell Excel to return data from column 2.
+Range lookup (match type)
+This part of the formula tells Excel what type of matching to perform on the value being looked up.
+Excel defaults to “Approximate” matching, which assumes the data is sorted and will match the closest value.
+We want to perform “Exact” matching, so we put “0” here (“FALSE” is also accepted).
+With the VLOOKUP function complete for the “Latitude” data, we can use the fill handle to update this field for the rest of the data set.

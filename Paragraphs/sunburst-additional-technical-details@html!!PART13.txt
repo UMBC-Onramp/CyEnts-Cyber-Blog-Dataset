@@ -1,0 +1,5 @@
+
+While we are not aware of any public decoder scripts that reverse all four possible encodings, most decoders focus on recovering the most useful information: the user ID and domain name embedded in the subdomains.
+We recommend that incident responders for victim organizations with access to DNS logs use these tools to confirm their AD domains are not embedded within SUNBURST generated DNS subdomains.
+Note that this does not indicate follow-on activity.
+The following sources may be referenced for decoding such domains: https://securelist.com/sunburst-connecting-the-dots-in-the-dns-requests/99862/ https://github.com/RedDrip7/SunBurst_DGA_Decode https://blog.cloudflare.com/a-quirk-in-the-sunburst-dga-algorithm/ Figure 1: Diagram of actor operations and usage of SUNBURST Command and Control SUNBURST uses a two-part C2 protocol that involves both DNS and HTTP.

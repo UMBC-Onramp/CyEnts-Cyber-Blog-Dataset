@@ -1,0 +1,7 @@
+
+With further investigation using GDB, we discovered that the device is continuously polling this database for the state of any binary outputs and then calling canioWriteOutput to publish the state obtained from the database, clobbering whatever state was there before.
+Similarly, changes to this state made by a user via the touchscreen are stored in this same database.
+At first, it may appear that the simplest solution would be to change the database value since we have root access to the device.
+However, the database is not in a known standard format, meaning we would need to take the time to reverse this format and understand how the data is stored.
+As we already have a way to hook the functions, controlling the outputs at the time canioWriteOutput is called is simpler.
+To accomplish this, we updated our malware to keep track of whether the attacker has made a modification to the output or not.

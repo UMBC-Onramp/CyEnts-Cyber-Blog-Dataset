@@ -1,0 +1,159 @@
+By Charles McFarland on Sep 19, 2018
+
+In response to the explosive increase in cryptomining campaigns in Q4 2017, the Cyber Threat Alliance has formed a cryptomining subcommittee to assess the threat.
+
+This committee comprises expert researchers from major cybersecurity companies, including McAfee.
+
+The committee has now released “The Illicit Cryptocurrency Mining Threat,” an in-depth report on the current state of unlawful cryptomining.
+
+In the report we explain what led to the recent rise in cryptomining-based attacks, their impact, defense recommendations, and predictions for future evolution of the attack.
+
+As members of the Cyber Threat Alliance and the cybersecurity community, we hope that individuals and enterprises can use our research to protect themselves from this threat and improve global security.
+
+The Rise of Illicit Cryptocurrency Mining To understand the cryptomining threat we need to go back only to late 2017 and early 2018 to see the dramatic growth of cryptomining incidents.
+
+Since 2017, the combined data of several CTA members shows a 459% increase in detections of mining malware.
+
+(Figure numbers are out of sequence.
+
+They are borrowed from the CTA report.)
+
+The increase of mining malware positively correlates with the growth of the value of coins.
+
+Specifically, in late 2017 we saw the value of Bitcoin soar to US$20,000 per coin.
+
+Anything with a high value attracts cybercriminals, and cryptocurrencies experienced some of the most dramatic volatility ever of any currency.
+
+Cybercriminals were early adopters of cryptocurrencies and use them to fuel underground economies.
+
+They have increasingly turned to mining to increase their funds by stealing the computer power of their victims.
+
+This theft is also referred to as cryptojacking.
+
+Cryptocurrency and Mining Cryptocurrencies have become an increasingly popular alternative to traditional electronic money (e-money).
+
+E-money is based on a fiat currency such as the U.S. dollar.
+
+One of the most common examples is prepaid credit cards, which stand for the backing currency without the need for physical cash.
+
+Cryptocurrencies are generally not backed by a fiat currency.
+
+In fact, they are considered decentralized—meaning there is no central authority.
+
+Monero has several advantages over Bitcoin in terms of privacy and anonymity; this makes it a favorite among bad actors.
+
+Beyond anonymity concerns, resources required to mine Monero are significantly lower, enabling more users to participate and increasing the profitability of botnets.
+
+The act of generating the coin is called mining, which is using system resources to solve a complex mathematical problem.
+
+Most major coins employ a “proof of work” that uses CPU resources to solve.
+
+Large groups of miners, including botnets, can amass their resources, called pool mining, on a single problem.
+
+The mining operations result in a solved mathematical equation that returns newly minted coins to the system and validates new transactions.
+
+The State of Illicit Cryptocurrency Mining Current incidents of illicit cryptomining occur through compiled executables.
+
+This practice is called binary-based mining.
+
+In the context of the browser, the practice is called browser-based mining.
+
+Binary-based cryptomining malware is delivered as a payload, often using spam or exploit kits.
+
+Open-source tools often facilitate mining.
+
+XMRig is a legitimate tool for mining Monero, yet is also frequently used by malicious actors for illicit cryptomining.
+
+The most common browser-based miner is Coinhive.
+
+Used legitimately, it offers an alternative to ad revenue by monetizing system resources.
+
+However, it has been widely used without informing users.
+
+On occasion the owner of the service is unaware of the mining code; this was the case with a recent attack against both Facebook Messenger and Starbucks Wi-Fi.
+
+As of July 2, PublicWWW yielded at least 23,000 websites hosting Coinhive code.
+
+An example of Coinhive script embedded within a website.
+
+Beyond using browsers to gather system resources, malware authors have become increasingly sophisticated in other ways.
+
+They have taken advantage of widespread vulnerabilities such as EternalBlue to propagate, or have implemented other techniques for evasion.
+
+The Smominru attack was a very profitable campaign leveraging this approach.
+
+It used “living off the land” techniques to evade detection and increase its ability to mine Monero.
+
+Impacts of Illicit Cryptocurrency Mining Cryptomining may have an impact on both the short- and long-term security of an organization or user.
+
+Three primary impact areas include: Potential security flaws that can lead to additional attacks Physical damage Impacts to business operations and productivity If a device is used in an unauthorized way, there is evidence of a potential security flaw that needs to be addressed.
+
+In late 2017, misconfigured devices using FTP led to hundreds of thousands of Monero miners on consumer-grade devices.
+
+Bad actors can and have used these same flaws for additional attacks against the systems.
+
+Physical damage is also a concern.
+
+The CPU-intensive operation of mining will produce excess heat and power consumption.
+
+For small devices the immediate concern is battery life.
+
+However, for large systems, especially data centers, the activity can increase the failure rate of components; this can have a major effect on the system.
+
+Ultimately this may lead to costly repairs or increased hardware requirements to support the expanded load.
+
+Organizations may also see a hit to business operations.
+
+Mass-computing projects present a similar concern, albeit for more altruistic purposes.
+
+Folding@Home , a medical research project aimed at understanding proteins, can be installed to use computer resources to help the research.
+
+However, business operations may be impacted by a loss of productivity or additional costs.
+
+Many businesses prohibit installing these types of computing projects to protect against unexpected costs and disruptions.
+
+Recommended Best Practices Fortunately, the defense against cryptomining is very similar to that against other threats.
+
+Cryptomining malware uses the same tools and methods; thus maintaining good security practices goes a long way.
+
+These include analysis of non-typical network traffic, and properly configuring and patching systems.
+
+A few additional steps specific to cryptomining: Monitor abnormal power consumption and CPU activity Search logs for related mining strings such as Crypto, Coinhive, XMR, Monero, and cpuminer Block mining pool communications Use browser extensions to protect against browser-based cryptocurrency mining For a more comprehensive list, including recommended Snort rules, see the Recommended Best Practices section of the report.
+
+The Evolution of Illicit Mining Illicit cryptocurrency mining appears to have a positive correlation with Bitcoin value.
+
+As long as cryptocurrencies such as Bitcoin have value, we expect bad actors will continue to mine for profits.
+
+Although public cryptocurrencies like Bitcoin may be closely tied to monetary value, private or custom blockchains are also at risk and also need to prepare against future attacks.
+
+Private blockchains, including non-currency-related ones, may carry unique risks.
+
+Large blockchains such as Bitcoin are considered immutable due to the difficulty of changing historical ledger data.
+
+Private blockchains inherently lack the same scale of adoption and thus may be more susceptible to attacks.
+
+The 51% attack is a well-known threat that can take advantage of a smaller network and have a severe impact on the blockchain’s integrity.
+
+With some nation-states already turning to cryptocurrencies to solve economic issues, it is likely that some nation-states will use illicit mining to gain revenue.
+
+State-sponsored actors have already been implicated in the theft of cryptocurrencies, as McAfee has reported .
+
+Legitimately mined cryptocurrency has been implicated in obfuscating state-sponsored cyber operations, hiding purchases of VPN accounts, servers, and domain registrations.
+
+Conclusion “The Illicit Cryptocurrency Mining Threat” represents the first joint industry initiative to educate enterprises and consumers about the growing threat of cryptocurrency mining.
+
+By improving security postures and adhering to proper security practices, we can increase the difficulty of these attacks succeeding, thus disrupting malicious behavior.
+
+Illicit cryptocurrency mining is not a fad.
+
+This problem will likely grow in relation to the value of cryptocurrencies.
+
+Current infection methods will give way to new techniques and exploits.
+
+The attraction of stealing cryptocurrencies may lead actors to develop targeted attacks against private implementations of blockchain as they become more prevalent.
+
+For more on illicit cryptomining threats, read the introductory blog, key findings summary, and the full report to learn about this important research.
+
+
+
+

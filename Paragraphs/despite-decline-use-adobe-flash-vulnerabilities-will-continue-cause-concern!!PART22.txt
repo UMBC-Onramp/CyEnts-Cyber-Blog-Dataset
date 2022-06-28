@@ -1,0 +1,4 @@
+
+McAfee protections for CVE-2018-4878 McAfee’s malware engine can parse Flash for malicious content.
+Customers who have turned on automatic updates or who update regularly have been protected against seven new variants of CVE-2018-4878 since February 6.
+McAfee Host Intrusion Prevention signatures 8001, 1149, 6011, and 6010 detect CVE-2018-4878 exploits.

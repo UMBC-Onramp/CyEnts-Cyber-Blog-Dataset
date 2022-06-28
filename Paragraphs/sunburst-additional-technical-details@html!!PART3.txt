@@ -1,0 +1,5 @@
+
+First, the backdoor verifies that the lowercase name of the current process is solarwinds.businesslayerhost .
+UNC2452 avoided including this string directly in the source code by computing a hash of the string and comparing the result to the 64-bit number 17291806236368054941 .
+The hash value is calculated as a standard FNV-1A 64-bit hash with an additional XOR by the 64-bit number 6605813339339102567 .
+The additional XOR operation forces malware analysts to develop custom tools to brute force the hash preimage.

@@ -1,0 +1,9 @@
+
+Compatible with both 64- and 86-bit Windows OS Hides from the following popular task managers: Windows Task Manager Process Killer KillProcess System Explorer Process Explorer AnVir Process Hacker Masked as a system driver Does not require administrator privileges No dependencies Registry persistence mechanism Ability to perform \"tasks\" (download and execute files, navigate to a site, and perform DDoS) USB spreader Support after purchase The Cost of Cryptojacking The presence of mining software on a network can generate costs on three fronts as the miner surreptitiously allocates resources: Degradation in system performance Increased cost in electricity Potential exposure of security holes Cryptojacking targets computer processing power, which can lead to high CPU load and degraded performance.
+In extreme cases, CPU overload may even cause the operating system to crash.
+Infected machines may also attempt to infect neighboring machines and therefore generate large amounts of traffic that can overload victims' computer networks.
+In the case of operational technology (OT) networks, the consequences could be severe.
+Supervisory control and data acquisition/industrial control systems (SCADA/ICS) environments predominately rely on decades-old hardware and low-bandwidth networks, therefore even a slight increase in CPU load or the network could leave industrial infrastructures unresponsive, impeding operators from interacting with the controlled process in real-time.
+The electricity cost, measured in kilowatt hour (kWh), is dependent upon several factors: how often the malicious miner software is configured to run, how many threads it's configured to use while running, and the number of machines mining on the victim's network.
+The cost per kWh is also highly variable and depends on geolocation.
+For example, security researchers who ran Coinhive on a machine for 24 hours found that the electrical consumption was 1.212kWh.

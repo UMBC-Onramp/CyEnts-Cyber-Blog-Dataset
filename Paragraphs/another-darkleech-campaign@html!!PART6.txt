@@ -1,0 +1,7 @@
+
+awsdns-hostmaster.amazon.com
+At time of this writing, the domain delivery[.]globalcdnnode[.]com was still resolving, using fast-flux DNS techniques to resolve to a different IP address every couple minutes, thwarting attempts at shutting down the domain by constantly being on the move.
+Figure 5.
+– The familiar Plesk control panel, residing on the server.
+This was a widespread campaign, indirectly affecting many web sites via malvertising techniques.
+The referring hosts run the gamut from local radio stations to high profile news, sports, and shopping sites.

@@ -1,0 +1,7 @@
+
+This does not necessarily mean the author is behind attack as the author provides the use of his server for command and control as well as to store the victim data as the default option in the WinSpy package.
+This feature allowing shared command-and-control infrastructure advertently or inadvertently provides another level of anonymity and deniability for the attacker.
+While analyzing the windows payloads for WinSpy we discovered that it also had Android spying components, which we have dubbed GimmeRat.
+The Android tool has multiple components allowing the victim’s device to be controlled by another mobile device remotely over SMS messages or alternatively through a Windows-based controller.
+The Windows-based controller is simplistic and requires physical access to the device.
+The recent surge in Android-based RATs such as Dendroid and AndroRAT shows a spike in the interest of malicious actors to control mobile devices.

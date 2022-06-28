@@ -1,0 +1,5 @@
+
+This would allow the attacker to forge tokens for arbitrary users and has been described as an Azure AD backdoor .
+Compromise the credentials of on-premises user accounts that are synchronized to Microsoft 365 that have high privileged directory roles, such as Global Administrator or Application Administrator.
+Backdoor an existing Microsoft 365 application by adding a new application or service principal credential in order to use the legitimate permissions assigned to the application, such as the ability to read email, send email as an arbitrary user, access user calendars, etc.
+Modify the permissions of folders in a victim mailbox (such as the inbox) to make its contents readable by any other user in the victim’s Microsoft 365 environment.

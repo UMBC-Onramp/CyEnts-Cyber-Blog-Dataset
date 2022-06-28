@@ -1,0 +1,11 @@
+
+What information is shared?
+Angry Birds encourages players to create Rovio accounts, touting the following benefits: To save scores and in-game weapons To preserve game progress across multiple devicesThe second benefit is especially attractive to devoted Angry Birds players because it allows them to stop playing on one device and pick up where they left off on another.
+Figure 1 shows the Rovio registration page.
+[caption id=\"attachment_4889\" align=\"aligncenter\" width=\"546\"] Figure 1: Rovio’s registration page[/caption] Figure 2 shows birthday information collected during registration.
+The end-use license agreement (EULA) and privacy policy grant Rovio rights to upload the collected information to third-party entities for marketing.
+[caption id=\"attachment_4894\" align=\"aligncenter\" width=\"546\"] Figure 2:
+The registration of the Rovio account includes personal information and EULA.[/caption]
+In Figure 3, the registration page asks for the user’s email address and gender.
+  
+When the player clicks the register button, Rovio uploads the collected data to the Angry Birds Cloud to create a player profile.

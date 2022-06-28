@@ -1,0 +1,4 @@
+
+Figure 4.
+Console output from the installer Hijacking the OpenSSH server process Injecting the malicious code The file /etc/ld.so.preload contains a directive to the dynamic linker telling it to load the specified shared library first , and to give precedence to the exported functions from the ld-preloaded library .
+Because the malicious libs.so library exports its own version of the bind () function, applications will use the backdoored version of this function instead of the standard implementation from Linux system libraries .

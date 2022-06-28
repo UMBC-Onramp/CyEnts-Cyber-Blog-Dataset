@@ -1,0 +1,4 @@
+
+The FTP credentials are stored in the registry configuration discussed earlier.
+Method 5 - Direct Interaction: The rdbms.exe module listens on port 443 on the victim’s machine.
+The attacker can directly connect to this port from the WinSpy controller and issue various commands to download captured data, upload/download files, execute files, send messages, view webcam feeds, etc.

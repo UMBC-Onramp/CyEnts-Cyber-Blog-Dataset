@@ -1,0 +1,11 @@
+
+*
+*** boring as hell”.
+It is curious that here they said “we” instead of “I” as before but perhaps they were talking about all malware development?
+The differences that these samples have are: Usually comes as a DLL instead of an EXE file.
+It does not run on Windows operating systems older than Vista as this makes analysis harder.
+By using the malware as a DLL, they can inject this module into a target process more easily than if they use an EXE sample of the malware.
+Instead of deleting the “Shadow Volumes” the developers instead use WMIC with the special trick of the path as mentioned earlier, using WMIC classes to control the Shadow Volumes.
+An example of this use can be seen in the next image.
+FIGURE 33.
+USING WMIC CLASSES IF NEEDED TO GET THE SHADOW VOLUMES

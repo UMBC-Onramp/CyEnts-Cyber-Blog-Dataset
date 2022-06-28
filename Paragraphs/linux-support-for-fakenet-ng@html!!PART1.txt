@@ -1,0 +1,8 @@
+Introduction In 2016, FLARE introduced FakeNet-NG , an open-source network analysis tool written in Python.
+FakeNet-NG allows security analysts to observe and interact with network applications using standard or custom protocols on a single Windows host, which is especially useful for malware analysis and reverse engineering.
+Since FakeNet-NG’s release, FLARE has added support for additional protocols.
+FakeNet-NG now has out-of-the-box support for DNS, HTTP (including BITS), FTP, TFTP, IRC, SMTP, POP, TCP, and UDP as well as SSL.
+Building on this work, FLARE has now brought FakeNet-NG to Linux.
+This allows analysts to perform basic dynamic analysis either on a single Linux host or using a separate, dedicated machine in the same way as INetSim.
+INetSim has made amazing contributions to the productivity of the security community and is still the tool of choice for many analysts.
+Now, FakeNet-NG gives analysts a cross-platform tool for malware analysis that can directly integrate with all the great Python-based infosec tools that continually emerge in the field.

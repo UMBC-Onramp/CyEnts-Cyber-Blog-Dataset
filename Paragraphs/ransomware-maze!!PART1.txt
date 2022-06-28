@@ -1,0 +1,7 @@
+By Alexandre Mundo on Mar 26, 2020 EXECUTIVE SUMMARY
+The Maze ransomware, previously known in the community as “ChaCha ransomware”, was discovered on May the 29th 2019 by Jerome Segura [1] .
+The main goal of the ransomware is to crypt all files that it can in an infected system and then demand a ransom to recover the files.
+However, the most important characteristic of Maze is the threat that the malware authors give to the victims that, if they do not pay , they will release the information on the Internet [2] .
+This threat has not been an idle one as the files of one company were indeed released on the Internet.
+Even though the company sued, the damage was already done.
+This is a behavior increasingly observed in new ransomware [3] , such as Sodinokibi, Nemty, Clop and others.

@@ -1,0 +1,8 @@
+
+Manual evasion : Manual deletion of incoming and sent mail.
+Attackers may forego mailbox rules entirely.
+Mail forwarding :
+Attackers accessing emails without logging in if a mechanism to forward mail to an external address was set up earlier.
+Mail client usage : Outlook or third-party mail clients used by attackers.
+Mail can be synced locally to the attacker’s machine and accessed later.
+VPN usage : VPN servers, sometimes with similar geolocations to their victims, used in an attempt to avoid detection and evade conditional access policies.

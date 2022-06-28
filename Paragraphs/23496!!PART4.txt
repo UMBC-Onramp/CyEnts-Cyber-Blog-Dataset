@@ -1,0 +1,6 @@
+
+Moreover, the server collecting the data has no protection whatsoever, so the information is basically up for grabs.
+One more subtlety: The transmission takes place over the Internet.
+To be clear, a feature phone user may not even be aware that the device can go online.
+So, apart from anything else, the covert actions may result in surprise mobile traffic charges.
+Another phone from the review group, apart from leaking user data, was programmed to steal money from its owner.

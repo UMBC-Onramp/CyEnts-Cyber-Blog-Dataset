@@ -1,0 +1,10 @@
+
+We have already seen two threats that demonstrate what cybercriminals can do with unprotected devices, in the form of the Mirai botnet, which first struck in 2016, and IoT Reaper, in 2017.
+These IoT malware appeared in many variants to attack connected devices such as routers, network video recorders, and IP cameras.
+They expanded their reach by password cracking and exploiting known vulnerabilities to build worldwide robot networks.
+Next year we expect to see two main vectors for attacking home IoT devices: routers and smartphones/ tablets.
+The Mirai botnet demonstrated the lack of security in routers.
+Infected smartphones, which can already monitor and control home devices, will become one of the top targets of cybercriminals, who will employ current and new techniques to take control.
+Malware authors will take advantage of phones and tablets, those already trusted controllers, to try to take over IoT devices by password cracking and exploiting vulnerabilities.
+These attacks will not appear suspicious because the network traffic comes from a trusted device.
+The success rate of attacks will increase, and the attack routes will be difficult to identify.

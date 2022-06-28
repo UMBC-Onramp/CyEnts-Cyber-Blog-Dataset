@@ -1,0 +1,6 @@
+
+Following our red teaming approach, the engagement was divided in two phases: active testing across IT and/or OT intermediary systems, and custom attack modeling to foresee paths an attacker may follow to complete its mission.
+We note that during the active testing phase we were very careful to maintain high safety standards.
+This required not only highly skilled personnel with knowledge about both IT and OT, but also constant engagement with the customer.
+Members from Big Steam Works helped us to set safety thresholds to stop and evaluate results before moving forward, and actively monitored the test to observe, learn, and remain vigilant for any unintended changes in the process.
+Phase 1 – Active Testing During this phase, we leveraged publicly accessible offensive security tools (including Wireshark, Responder, Hashcat, and CrackMapExec) to collect information, escalate privileges, and move across the OT network.

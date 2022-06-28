@@ -1,0 +1,6 @@
+
+Their mistakes?
+Using flawless Dutch in the ransom notes and one time they did not use a Tor connection to log in into their control server, instead using their home connection.
+Flawless Dutch in the ransomware code.
+Although they used an obfuscator tool (Confuser) for their code, in some of the samples the full name of one of the authors was present, because they did not clean up the debugging path.
+Example: c:\\Users\\**********\\Desktop\\Coinvault\\coinvault-cleaned\\obj\\Debug\\coinvault.pdb From grabbing keys to No More Ransom During the investigation the Dutch police obtained all the decryption keys for CoinVault and partnered with the private sector to build a decryption tool for CoinVault ransomware, successfully mitigating a large portion of the damage caused by CoinVault.

@@ -1,0 +1,221 @@
+Information operations have flourished on social media in part because they can be conducted cheaply, are relatively low risk, have immediate global reach, and can exploit the type of viral amplification incentivized by platforms.
+
+Using networks of coordinated accounts, social media-driven information operations disseminate and amplify content designed to promote specific political narratives, manipulate public opinion, foment discord, or achieve strategic ideological or geopolitical objectives.
+
+FireEye’s recent public reporting illustrates the continually evolving use of social media as a vehicle for this activity, highlighting information operations supporting Iranian political interests such as one that leveraged a network of inauthentic news sites and social media accounts and another that impersonated real individuals and leveraged legitimate news outlets .
+
+Identifying sophisticated activity of this nature often requires the subject matter expertise of human analysts.
+
+After all, such content is purposefully and convincingly manufactured to imitate authentic online activity, making it difficult for casual observers to properly verify.
+
+The actors behind such operations are not transparent about their affiliations, often undertaking concerted efforts to mask their origins through elaborate false personas and the adoption of other operational security measures.
+
+With these operations being intentionally designed to deceive humans, can we turn towards automation to help us understand and detect this growing threat?
+
+Can we make it easier for analysts to discover and investigate this activity despite the heterogeneity, high traffic, and sheer scale of social media?
+
+In this blog post, we will illustrate an example of how the FireEye Data Science (FDS) team works together with FireEye’s Information Operations Analysis team to better understand and detect social media information operations using neural language models.
+
+Highlights A new breed of deep neural networks uses an attention mechanism to home in on patterns within text, allowing us to better analyze the linguistic fingerprints and semantic stylings of information operations using modern Transformer models.
+
+By fine-tuning an open source Transformer known as GPT-2, we can detect social media posts being leveraged in information operations despite their syntactic differences to the model’s original training data.
+
+Transfer learning from pre-trained neural language models lowers the barrier to entry for generating high-quality synthetic text at scale, and this has implications for the future of both red and blue team operations as such models become increasingly commoditized.
+
+Background: Using GPT-2 for Transfer Learning OpenAI’s updated Generative Pre-trained Transformer (GPT-2) is an open source deep neural network that was trained in an unsupervised manner on the causal language modeling task .
+
+The objective of this language modeling task is to predict the next word in a sentence from previous context, meaning that a trained model ends up being capable of language generation.
+
+If the model can predict the next word accurately, it can be used in turn to predict the following word, and then so on and so forth until eventually, the model produces fully coherent sentences and paragraphs.
+
+Figure 1 depicts an example of language model (LM) predictions we generated using GPT-2.
+
+To generate text, single words are successively sampled from distributions of candidate words predicted by the model until it predicts an <|endoftext|> word, which signals the end of the generation.
+
+Figure 1:
+
+An example GPT-2 generation prior to fine-tuning after priming the model with the phrase “It’s disgraceful that.”
+
+The quality of this synthetically generated text along with GPT-2’s state of the art accuracy on a host of other natural language processing (NLP) benchmark tasks is due in large part to the model’s improvements over prior 1) neural network architectures and 2) approaches to representing text.
+
+GPT-2 uses an attention mechanism to selectively focus the model on relevant pieces of text sequences and identify relationships between positionally distant words.
+
+In terms of architectures, Transformers use attention to decrease the time required to train on enormous datasets; they also tend to model lengthy text and scale better than other competing feedforward and recurrent neural networks.
+
+In terms of representing text, word embeddings were a popular way to initialize just the first layer of neural networks, but such shallow representations required being trained from scratch for each new NLP task and in order to deal with new vocabulary.
+
+GPT-2 instead pre-trains all the model’s layers using hierarchical representations , which better capture language semantics and are readily transferable to other NLP tasks and new vocabulary.
+
+This transfer learning method is advantageous because it allows us to avoid starting from scratch for each and every new NLP task.
+
+In transfer learning, we start from a large generic model that has been pre-trained for an initial task where copious data is available.
+
+We then leverage the model’s acquired knowledge to train it further on a different, smaller dataset so that it excels at a subsequent, related task.
+
+This process of training the model further is referred to as fine-tuning, which involves re-learning portions of the model by adjusting its underlying parameters.
+
+Fine-tuning not only requires less data compared to training from scratch, but typically also requires less compute time and resources.
+
+In this blog post, we will show how to perform transfer learning from a pre-trained GPT-2 model in order to better understand and detect information operations on social media.
+
+Transformers have shown that Attention is All You Need , but here we will also show that Attention is All They Need: while transfer learning may allow us to more easily detect information operations activity, it likewise lowers the barrier to entry for actors seeking to engage in this activity at scale.
+
+Understanding Information Operations Activity Using Fine-Tuned Neural Generations In order to study the thematic and linguistic characteristics of a common type of social media-driven information operations activity, we first fine-tuned an LM that could perform text generation.
+
+Since the pre-trained GPT-2 model's dataset consisted of 40+ GB of Internet text data extracted from 8+ million reputable web pages, its generations display relatively formal grammar, punctuation, and structure that corresponds to the text present within that original dataset (e.g. Figure 1).
+
+To make it appear like social media posts with their shorter length, informal grammar, erratic punctuation, and syntactic quirks including @mentions, #hashtags, emojis, acronyms, and abbreviations, we fine-tuned the pre-trained GPT-2 model on a new language modeling task using additional training data.
+
+For the set of experiments presented in this blog post, this additional training data was obtained from the following open source datasets of identified accounts operated by Russia’s famed Internet Research Agency (IRA) “troll factory”: NBCNews , over 200,000 tweets posted between 2014 and 2017 tied to IRA “malicious activity.”
+
+FiveThirtyEight , over 1.8 million tweets associated with IRA activity between 2012 and 2018; we used accounts categorized as Left Troll, Right Troll, or Fearmonger.
+
+Twitter Elections Integrity , almost 3 million tweets that were part of the influence effort by the IRA around the 2016 U.S. presidential election.
+
+Reddit Suspicious Accounts , consisting of comments and submissions emanating from 944 accounts of suspected IRA origin.
+
+After combining these four datasets, we sampled English-language social media posts from them to use as input for our fine-tuned LM.
+
+Fine-tuning experiments were carried out in PyTorch using the 355 million parameter pre-trained GPT-2 model from HuggingFace’s transformers library , and were distributed over up to 8 GPUs.
+
+As opposed to other pre-trained LMs, GPT-2 conveniently requires minimal architectural changes and parameter updates in order to be fine-tuned on new downstream tasks .
+
+We simply processed social media posts from the above datasets through the pre-trained model, whose activations were then fed through adjustable weights into a linear output layer.
+
+The fine-tuning objective here was the same that GPT-2 was originally trained on (i.e. the language modeling task of predicting the next word, see Figure 1), except now its training dataset included text from social media posts.
+
+We also added the <|endoftext|> string as a suffix to each post to adapt the model to the shorter length of social media text, meaning posts were fed into the model according to: “#Fukushima2015 Zaporozhia NPP can explode at any time and that's awful!
+
+OMG!
+
+No way!
+
+#Nukraine<|endoftext|>” Figure 2 depicts a few example generations made after fine-tuning GPT-2 on the IRA datasets.
+
+Observe how these text generations are formatted like something we might expect to encounter scrolling through social media – they are short yet biting, express certainty and outrage regarding political issues, and contain emphases like an exclamation point.
+
+They also contain idiosyncrasies like hashtags and emojis that positionally manifest at the end of the generated text, depicting a semantic style regularly exhibited by actual users.
+
+Figure 2: Fine-tuning GPT-2 using the IRA datasets for the language modeling task.
+
+Example generations are primed with the same phrase from Figure 1, “It’s disgraceful that.”
+
+Hyphens are added for readability and not produced by the model.
+
+How does the model produce such credible generations?
+
+Besides the weights that were adjusted during LM fine-tuning, some of the heavy lifting is also done by the underlying attention scores that were learned by GPT-2’s Transformer.
+
+Attention scores are computed between all words in a text sequence, and represent how important one word is when determining how important its nearby words will be in the next learning iteration.
+
+To compute attention scores, the Transformer performs a dot product between a Query vector q and a Key vector k : q encodes the current hidden state, representing the word that searches for other words in the sequence to pay attention to that may help supply context for it.
+
+k encodes the previous hidden states, representing the other words that receive attention from the query word and might contribute a better representation for it in its current context.
+
+Figure 3 displays how this dot product is computed based on single neuron activations in q and k using an attention visualization tool called bertviz .
+
+Columns in Figure 3 trace the computation of attention scores from the highlighted word on the left, “America,” to the complete sequence of words on the right.
+
+For example, to decide to predict “#” following the word “America,” this part of the model focuses its attention on preceding words like “ban,” “Immigrants,” and “disgrace,” (note that the model has broken “Immigrants” into “Imm” and “igrants” because “Immigrants” is an uncommon word relative to its component word pieces within pre-trained GPT-2's original training dataset).
+
+  
+
+The element-wise product shows how individual elements in q and k contribute to the dot product, which encodes the relationship between each word and every other context-providing word as the network learns from new text sequences.
+
+The dot product is finally normalized by a softmax function that outputs attention scores to be fed into the next layer of the neural network.
+
+Figure 3:
+
+The attention patterns for the query word highlighted in grey from one of the fine-tuned GPT-2 generations in Figure 2.
+
+Individual vertical bars represent neuron activations, horizontal bars represent vectors, and lines represent the strength of attention between words.
+
+Blue indicates positive values, red indicates negative values, and color intensity represents the magnitude of these values.
+
+Syntactic relationships between words like “America,” “ban,” and “Immigrants“ are valuable from an analysis point of view because they can help identify an information operation’s interrelated keywords and phrases.
+
+These indicators can be used to pivot between suspect social media accounts based on shared lexical patterns, help identify common narratives, and even to perform more proactive threat hunting.
+
+While the above example only scratches the surface of this complex, 355 million parameter model, qualitatively visualizing attention to understand the information learned by Transformers can help provide analysts insights into linguistic patterns being deployed as part of broader information operations activity.
+
+Detecting Information Operations Activity by Fine-Tuning GPT-2 for Classification In order to further support FireEye Threat Analysts’ work in discovering and triaging information operations activity on social media, we next fine-tuned a detection model to perform classification.
+
+Just like when we adapted GPT-2 for a new language modeling task in the previous section, we did not need to make any drastic architectural changes or parameter updates to fine-tune the model for the classification task.
+
+However, we did need to provide the model with a labeled dataset, so we grouped together social media posts based on whether they were leveraged in information operations (class label CLS = 1 ) or were benign ( CLS = 0 ).
+
+Benign, English-language posts were gathered from verified social media accounts, which generally corresponded to public figures and other prominent individuals or organizations whose posts contained diverse, innocuous content.
+
+For the purposes of this blog post, information operations-related posts were obtained from the previously mentioned open source IRA datasets.
+
+For the classification task, we separated the IRA datasets that were previously combined for LM fine-tuning, and selected posts from only one of them for the group associated with CLS = 1 .
+
+To perform dataset selection quantitatively, we fine-tuned LMs on each IRA dataset to produce three different LMs while keeping 33% of the posts from each dataset held out as test data.
+
+Doing so allowed us to quantify the overlap between the individual IRA datasets based on how well one dataset’s LM was able to predict post content originating from the other datasets.
+
+Figure 4:
+
+Confusion matrix representing perplexities of the LMs on their test datasets.
+
+The LM corresponding to the GPT-2 row was not fine-tuned; it corresponds to the pretrained GPT-2 model with reported perplexity of 18.3 on its own test set, which was unavailable for evaluation using the LMs.
+
+The Reddit dataset was excluded due to the low volume of samples.
+
+In Figure 4, we show the result of computing perplexity scores for each of the three LMs and the original pre-trained GPT-2 model on held out test data from each dataset.
+
+Lower scores indicate better perplexity, which captures the probability of the model choosing the correct next word.
+
+The lowest scores fell along the main diagonal of the perplexity confusion matrix, meaning that the fine-tuned LMs were best at predicting the next word on test data originating from within their own datasets.
+
+The LM fine-tuned on Twitter’s Elections Integrity dataset displayed the lowest perplexity scores when averaged across all held out test datasets, so we selected posts sampled from this dataset to demonstrate classification fine-tuning.
+
+Figure 5: (A) Training loss histories during GPT-2 fine-tuning for the classification (red) and LM (grey, inset) tasks.
+
+ (B) ROC curve (red) evaluated on the held out fine-tuning test set, contrasted with random guess (grey dotted).
+
+To fine-tune for the classification task, we once again processed the selected dataset’s posts through the pre-trained GPT-2 model.
+
+This time, activations were fed through adjustable weights into two linear output layers instead of just the single one used for the language modeling task in the previous section.
+
+Here, fine-tuning was formulated as a multi-task objective with classification loss together with an auxiliary LM loss, which helped accelerate convergence during training and improved the generalization of the model.
+
+We also prepended posts with a new [BOS] (i.e. Beginning Of Sentence) string and suffixed posts with the previously mentioned [CLS] class label string, so that each post was fed into the model according to: “[BOS]Kevin Mandia was on @CNBC’s @MadMoneyOnCNBC with @jimcramer discussing targeted disinformation heading into the… https://t.co/l2xKQJsuwk[CLS]” The [BOS] string played a similar delimiting role to the <|endoftext|> string used previously in LM fine-tuning, and the [CLS] string encoded the hidden state ∈ {0, 1} that was the label fed to the model’s classification layer.
+
+The example social media post above came from the benign dataset, so this sample’s label was set to CLS = 0
+
+during fine-tuning.
+
+Figure 5A shows the evolution of classification and auxiliary LM losses during fine-tuning, and Figure 5B displays the ROC curve for the fine-tuned classifier on its test set consisting of around 66,000 social media posts.
+
+The convergence of the losses to low values, together with a high Area Under the ROC Curve (i.e. AUC), illustrates that transfer learning allowed this model to accurately detect social media posts associated with IRA information operations activity versus benign ones.
+
+Taken together, these metrics indicate that the fine-tuned classifier should generalize well to newly ingested social media posts, providing analysts a capability they can use to separate signal from noise.
+
+Conclusion In this blog post, we demonstrated how to fine-tune a neural LM on open source datasets containing social media posts previously leveraged in information operations.
+
+Transfer learning allowed us to classify these posts with a high AUC score, and FireEye’s Threat Analysts can utilize this detection capability in order to discover and triage similar emergent operations.
+
+Additionally, we showed how Transformer models assign scores to different pieces of text via an attention mechanism.
+
+This visualization can be used by analysts to tease apart adversary tradecraft based on posts’ linguistic fingerprints and semantic stylings.
+
+Transfer learning also allowed us to generate credible synthetic text with low perplexity scores.
+
+One of the barriers actors face when devising effective information operations is adequately capturing the nuances and context of the cultural climate in which their targets are situated.
+
+Our exercise here suggests this costly step could be bypassed using pre-trained LMs, whose generations can be fine-tuned to embody the zeitgeist of social media.
+
+GPT-2’s authors and subsequent researchers have warned about potential malicious use cases enabled by this powerful natural language generation technology, and while it was conducted here for a defensive application in a controlled offline setting using readily available open source data, our research reinforces this concern.
+
+As trends towards more powerful and readily available language generation models continue , it is important to redouble efforts towards detection as demonstrated by Figure 5 and other promising approaches such as Grover .
+
+This research was conducted during a three-month FireEye IGNITE University Program summer internship, and represents a collaboration between the FDS and FireEye Threat Intelligence’s Information Operations Analysis teams.
+
+If you are interested in working on multidisciplinary projects at the intersection of cyber security and machine learning, please consider applying to one of our 2020 summer internships .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

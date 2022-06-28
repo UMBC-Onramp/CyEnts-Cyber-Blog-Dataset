@@ -1,0 +1,10 @@
+
+Attackers can exploit this vulnerability with a crafted DWG file, potentially leading to an application denial of service.
+Fortinet previously released IPS signature Adobe.
+Illustrator.
+CVE-2021-40749.DoS for this specific vulnerability to proactively protect our customers.
+Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+

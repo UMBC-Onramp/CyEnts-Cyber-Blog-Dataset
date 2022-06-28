@@ -1,0 +1,15 @@
+
+The file as it would be displayed in WinRAR and sample contents of the decoy file are shown in Figure 20.
+Figure 20:
+Text file containing stolen credit card details as decoy Payloads
+This campaign used payloads from different malware families.
+To keep the draft concise, we did not include the analysis of all of them.
+The decompilation of one of the payloads with hash 1BA398B0A14328B9604EEB5EBF139B40 shows keylogging capabilities (Figure 21).
+We later identified this sample as QuasarRAT.
+Figure 21:
+Keylogging capabilities The decompilation of all the .NET-based payload shows that much of the code is written in Chinese.
+The decompilation of malware with hash BCC49643833A4D8545ED4145FB6FDFD2 containing Chinese text is shown in Figure 22.
+We later identified this sample as Buzy.
+Figure 22:
+Code written in Chinese
+The other payloads also have similar keylogging, password stealing and standard RAT capabilities.

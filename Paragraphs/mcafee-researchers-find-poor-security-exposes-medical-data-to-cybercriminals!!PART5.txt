@@ -1,0 +1,5 @@
+
+During our investigation, we noticed many small medical practices around the world using free, open-source PACS software, which was not always securely implemented.
+To determine how many PACS servers are connected depends on on how you search using Shodan, a search engine for finding specific types of computers connected to the Internet.
+Some servers connect over TCP 104; others use HTTP TCP 80 or HTTPS TCP 443.
+A quick search revealed more than 1,100 PACS directly connected to the Internet, not behind a recommended layer of network security measures or virtual private networks (VPNs).

@@ -1,0 +1,4 @@
+
+Not surprisingly, all of these code families have been associated with high-profile incidents impacting industrial organizations for the past two years.
+The earliest kill list containing OT processes we identified was a batch script deployed alongside LockerGoga in January 2019.
+The list is very similar to those used later in MegaCortex incidents, albeit with notable exceptions, such as an apparent typo on an OT-related process that is not present in our SNAKEHOSE or MegaCortex samples: “proficyclient.exe4”.

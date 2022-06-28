@@ -1,0 +1,8 @@
+
+The threat intelligence analyst role is a subset and specialized member of the blue team.
+Individuals in this role generally have a strong impetus for knowing the threat environment.
+Often their traits, skills and experiences will vary depending on training and subject matter expertise.
+Their expertise may not be technical and may include experiences and tradecraft earned by operating within a different domain (e.g., geospatial, criminal, signals intelligence, etc.).
+A key aspect of the role may include the requirement to hunt, study and triage previously undiscovered or recently emerging threats by discerning data for evil.
+Threat analysts apply a variety of structured analytical methods in order to develop meaningful and relevant products for their customers.
+With this distribution we aim to enable users to: Conduct hunting activities or missions Create adversarial playbooks using evidence-based knowledge Develop and apply a range of analytical products amongst datasets Perform analytical pivoting across forensic artifacts and elements Emulate advanced offensive security tradecraft Enable situational awareness through intelligence sharing and reporting Applied data science techniques & visualize clusters of symbolic data Leverage open intelligence sources to provide unique insights for defense and offense Akin to both FLARE-VM and Commando VM , ThreatPursuit VM uses Boxstarter , Chocolatey and MyGet packages to install software that facilitates the many aspects related to roles performed by analysts.

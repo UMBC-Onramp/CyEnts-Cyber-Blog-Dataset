@@ -1,0 +1,6 @@
+
+The same domain is also used by apps from the fake-installer campaign to deliver remote-execution commands, for example, action_sendsms: Figure 18.
+A fake-installer app checking for the command action_sendsms.
+The following timeline identifies the campaigns we have found from this group, strategies to trick users into installing the apps, distribution methods, main payload, and targeted countries: Figure 19.
+A timeline of Sonvpay campaigns.
+Conclusion Sonvpay campaigns are one example of how cybercriminals like the AsiaHitGroup Gang constantly adapt their tactics to trick users into subscribing to premium-rate services and boosting their profits.

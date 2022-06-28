@@ -1,0 +1,7 @@
+
+Conclusion We are releasing StringSifter to coincide with our presentation at DerbyCon 2019 on Sept. 7, and we will also be doing a technical dive into the model at the Conference on Applied Machine Learning for Information Security this October.
+With its release, StringSifter will join FLARE VM , FakeNet , and CommandoVM as one of many recent malware analysis tools that FireEye has chosen to make publicly available.
+If you are interested in developing data-driven tools that make it easier to find evil and help benefit the security community, please consider joining the FDS or FLARE teams by applying to one of our job openings .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

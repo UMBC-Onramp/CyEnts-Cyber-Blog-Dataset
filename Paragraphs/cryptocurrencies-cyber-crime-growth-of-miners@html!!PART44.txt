@@ -1,0 +1,4 @@
+
+It is important to note that JavaScript used in browser-based cryptojacking activity cannot access files on disk.
+However, if a host has inadvertently navigated to a website hosting mining scripts, we recommend purging cache and other browser data.
+Outlook In underground communities and marketplaces there has been significant interest in cryptojacking operations, and numerous campaigns have been observed and reported by security researchers.

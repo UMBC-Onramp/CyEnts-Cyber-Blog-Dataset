@@ -1,0 +1,8 @@
+
+According to our data, the malware has hit users in Europe, Latin America, and the Asia-Pacific region — not so surprising given its malware-as-a-service (MaaS) distribution model, meaning anyone can buy it and the price is quite low (about $10 per month or roughly $40 for a “lifetime license”).
+In addition to its theft functions, the malware has a set of tools meant to thwart analysis (read more about them here ).
+It sends stolen information as a ZIP archive to the C&C server, which is protected against DDoS and other Web attacks.
+The cybercriminals use either the (quite basic) control panel or Telegram to get the data, including gamer accounts.
+Not by BloodyStealer alone BloodyStealer is just one of many tools available on the dark web for stealing gamer accounts.
+Cybercriminals sell other types of malware, many of which have been on the market longer than BloodyStealer.
+In addition, underground forums often feature ads offering to post a malicious link on a popular website or selling tools to generate phishing pages automatically.

@@ -1,0 +1,4 @@
+
+Check out our README for more examples and help with flare-emu .
+Introducing objc2_analyzer Last year, I wrote a blog post to introduce you to reverse engineering Cocoa applications for macOS .
+That post included a short primer on how Objective-C methods are called under the hood, and how this adversely affects cross-references in IDA Pro and other disassemblers.

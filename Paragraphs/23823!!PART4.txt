@@ -1,0 +1,8 @@
+
+As is often the case, seeing is believing, and we recommend checking out the researchers’ video: How to protect yourself against NoReboot Again, at least for now NoReboot is only a demonstration of the feasibility of an attack.
+The attack is alarming, to be sure, but don’t forget that malware needs to get onto a smartphone before it can do any damage.
+Here are some tips to help you prevent that from happening: Keep in mind that it’s much harder for attackers to infect a smartphone remotely than if they have physical access to it.
+Be careful not to let someone else get hold of your smartphone — especially for a long period of time — and install a reliable device lock.
+People most often install malware on their smartphones on their own, voluntarily.
+Be careful about what you download and avoid installing unnecessary apps — that is, those you can easily live without — as a general rule.
+Don’t root or jailbreak your smartphone (at least if you haven’t been using *nix systems for many years).

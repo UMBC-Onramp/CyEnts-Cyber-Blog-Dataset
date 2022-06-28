@@ -1,0 +1,10 @@
+
+Figure 12
+In scBIPRxTask’s disassembly, we saw a new thread or “task” being created for both BACnet IP interfaces on ports 47808 and 47809.
+These spawned threads would handle all the incoming packets on their respective ports.
+When a packet would be received by the system, the thread responsible for scBIPRxTask would trigger for each packet.
+Using the IDA Pro decompiler, we could see what occurs for each packet.
+First, the function uses memset to zero out an allocated buffer on the stack and read from the network socket into this buffer.
+This buffer becomes the source for the following memcpy call.
+The new buffer is created with a static size of 1732 bytes and only 1732 bytes are appropriately read from the socket.
+Figure 13 After reading data from the socket, the function sets up a place to store the packet it has just received.

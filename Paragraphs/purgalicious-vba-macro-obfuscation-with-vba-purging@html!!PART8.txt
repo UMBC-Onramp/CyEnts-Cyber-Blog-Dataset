@@ -1,0 +1,3 @@
+
+VirusTotal’s detection rate of the\noriginal document (36/60) dropped by 67% after it was VBA purged (12/61) .\nVirusTotal also categorized the non-purged document as “create-ole”,\n“doc”, and “macros”, whereas the purged document was only categorized\nas “doc”.
+Figure 5: VirusTotal detection results\nfor non-purged Word document Figure 6: VirusTotal detection results\nfor purged Word document Detection and Hunting Opportunities With OfficePurge, we have the ability to quickly erase compiled VBA\ncode and reduce security product detections in public sandboxes, but\nwhy stop there?

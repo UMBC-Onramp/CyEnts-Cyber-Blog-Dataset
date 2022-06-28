@@ -1,0 +1,71 @@
+By Steve Povolny on Oct 09, 2018
+
+Cyberattacks have always been, well, cyber.
+
+Their immediate effects were on our data, our digital information, and our devices…until they weren’t.
+
+The interconnected nature of the world and the way it’s built in 2018 has brought us exciting and revolutionary innovations, but it has also been leveraged by hackers to extend the impact of a cyberattack beyond the digital sphere into the physical.
+
+Pacemakers can be hacked, shocks can be sent to patients remotely.
+
+Critical infrastructure can be taken down , rendering cities powerless.
+
+Large corporations we trust with our data are violating that trust by collecting our data unknowingly, and even tracking our locations without consent.
+
+Cybercrime is no longer just cyber, and it can compromise a lot more than just data.
+
+When you think of one’s well-being, physical health often comes to mind.
+
+Hospitals, health care, and medical tools and devices have evolved to become members of an interconnected ecosystem.
+
+Many health care systems connect to the internet to operate, the same holds true with numerous medical devices such as pacemakers.
+
+But that makes the latter part of the ”Internet of Things,” a growing collection of connected devices which are potentially vulnerable to cyberattack.
+
+In fact, there have already been reports of threats to these medical devices.
+
+Just last year , the FBI recalled half a million pacemakers, as a crucial flaw was discovered that could expose users to an attack.
+
+Additionally, security researchers recently revealed a chain of vulnerabilities in a particular pacemaker brand that an attacker could exploit to control implanted pacemakers remotely and cause physical harm to patients.
+
+Cybercriminals have also set their sights on larger targets when it comes to hacking health care devices and institutions.
+
+We’ve seen a handful of hospitals taken offline in recent ransomware attacks , all due to the use of outdated or vulnerable systems.
+
+Some of these attacks locked patient data and made proper care unachievable for hours on end.
+
+Hospitals are also not the only type of critical infrastructure that’s been on the victim’s end of a cyberattack.
+
+In fact, cybercriminals have recently begun hitting critical infrastructure hard and fast, with dramatic results emerging from their efforts.
+
+They’ve infamously put an entire city in the Ukraine out of power for about an hour.
+
+Then there was the Schneider Electric hack , in which cybercriminals leveraged a zero-day vulnerability within an industrial plant’s safety system for a cyberattack.
+
+There are also cyber issues that impact our physical safety that don’t even come in the form of an attack.
+
+Lately, news has been circulating about big-name companies tracking users’ locations or data, even when certain settings are off or when the user is unaware of the action.
+
+Specifically, it was discovered that even if a user disables Location History, Google still tracks users in particular instances — whenever they open up the Maps app, scan the internet for certain things, or receive automatic weather notifications.
+
+Even smartwatches have been used recently to record and track kids’ physical location .
+
+Ramifications such as these have changed the nature of privacy, as well as digital and physical safety as we know it.
+
+But as the threat landscape is evolving, so is the industry determined to protect innocent users everywhere.
+
+We at McAfee are working together with our entire industry to stop these types of attacks.
+
+We’re sharing threat intelligence, resources, and research findings to ensure we put up a united front against these threats.
+
+By learning from these attacks, we’re better preparing for those to come.
+
+We believe that together is power.
+
+And though these attacks are advanced, we know that acting together to stop them will be even more powerful.
+
+To learn more about McAfee’s approach to protecting against advanced cyberattacks and more, be sure to check us out at @McAfee and @McAfee_Labs .
+
+
+
+

@@ -1,0 +1,4 @@
+
+We will touch on this part later.
+Ranion RaaS Explained The latest version of Ranion ransomware is designed to encrypt files on a compromised machine using the following 44 file extensions, an increase of five new file types over previous analyses (newly added extensions are highlighted in orange):
+Although the ransomware is not designed to encrypt executable files, the Ranion developers state that users “can request other additional file types/extensions to encrypt for free as any files can be a target of Ranion ransomware.”

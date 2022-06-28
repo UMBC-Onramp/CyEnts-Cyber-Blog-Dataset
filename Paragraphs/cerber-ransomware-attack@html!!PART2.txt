@@ -1,0 +1,6 @@
+
+Exploit Guard, a major new feature of FireEye Endpoint Security (HX) , detected the threat and alerted HX customers on infections in the field so that organizations could inhibit the deployment of Cerber ransomware.
+After investigating further, the FireEye research team worked with security agency CERT-Netherlands, as well as web hosting providers who unknowingly hosted the Cerber installer, and were able to shut down that instance of the Cerber command and control (C2) within hours of detecting the activity.
+With the attacker-controlled servers offline, macros and other malicious payloads configured to download are incapable of infecting users with ransomware.
+FireEye hasn’t seen any additional infections from this attacker since shutting down the C2 server, although the attacker could configure one or more additional C2 servers and resume the campaign at any time.
+This particular campaign was observed on six unique endpoints from three different FireEye endpoint security customers.

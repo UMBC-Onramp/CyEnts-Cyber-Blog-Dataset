@@ -1,0 +1,10 @@
+
+The phishing kit uses techniques to evade phishing filters.
+One technique is the use of AES encryption to encode the content presented at the client’s side, as seen in Figure 4.
+The purpose of using this technique is code obfuscation, which helps to evade text-based detection.
+By obfuscating the webpage, attackers try to deceive text-based classifiers and prevent them from inspecting webpage content.
+This technique employs two files, a PHP and a JavaScript file that have functions to encrypt and decrypt input strings.
+The PHP file is used to encrypt the webpages at the server side, as seen in Figure 5.
+At the client side, the encrypted content is decoded using a defined function in the JavaScript file, as seen in Figure 6.
+Finally, the webpage is rendered using the ‘document.write’ function.
+Figure 4: Client-side code obfuscation using AES encryption Figure 5: PHP code used at server side for encryption Figure 6:

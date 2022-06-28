@@ -1,0 +1,5 @@
+
+We appreciate Hex-Rays for providing high-quality signatures for IDA Pro and thank them for sharing their research and tools with the community.
+To learn more about the pattern and signature file generation check out the siglib repository.
+The FLAIR utilities are available in the protected download area on Hex-Rays’ website .
+Rule Updates Since the initial release, the community has more than doubled the total capa rule count from 260 to over 570 capability detection rules !

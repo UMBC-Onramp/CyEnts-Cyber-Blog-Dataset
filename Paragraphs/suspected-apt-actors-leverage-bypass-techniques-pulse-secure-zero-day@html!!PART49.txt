@@ -1,0 +1,14 @@
+
+If this check did not match then the sample passes the base64 decoded data to a routine DSSafe::psystem which may execute shell commands, however this implementation is not provided and is speculation.
+If the param hashid is empty the sample instead checks that the param m is non-empty.
+If so, it's matched against get and put which will read/write arbitrary files to the host, respectively.
+ATRIUM The file compcheckresult.cgi (SHA256: f2b1bd703c3eb05541ff84ec375573cbdc70309ccb82aac04b72db205d718e90 ) is a webshell capable of arbitrary command execution.
+The sample has malicious logic inserted at the end of legitimate logic.
+The malicious logic inspects all requests of any type looking for the HTTP query parameter id .
+If this query parameter exists, the sample executes it verbatim on using the system API.
+The sample does not encode or obfuscate the command in any way.
+If the query parameter is not found in the request, then the original legitimate logic is invoked.
+Persistence Patcher The file DSUpgrade.pm (SHA256: 224b7c45cf6fe4547d3ea66a12c30f3cb4c601b0a80744154697094e73dbd450 ) is a patcher utility script responsible for persisting webshells across a system upgrade.
+We’ve observed variants of this utility targeting the persistence of multiple webshell families, notably ATRIUM, STEADYPULSE, and PULSECHECK.
+Like previous patchers, this sample uses sed to insert malicious logic.
+The attacker likely chose DSUpgade.pm to host their patch logic as it is a core file in the system upgrade procedure, ensuring the patch is during updates.

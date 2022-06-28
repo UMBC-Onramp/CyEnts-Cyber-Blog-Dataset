@@ -1,0 +1,14 @@
+
+Without CBC, a symmetric encryption algorith m is vulnerable to frequency analysis when the block size is small as well as other attacks in the general case.
+It appears that t he authors of this malware went to a surprising amount of trouble to strengthen the Nintendo DS encryption, in stark contrast to the noisy behavior of the ir sshins installer.
+Conclusion Without allowing our compromised test machine to remain connected to the internet and be used for malicious purposes , it’s difficult to ascertain the exact motivations of the authors.
+But because the malware catalogs detailed system information and credentials but does not immediately begin mining cryptocurrency or amplifying the attack by attempting to spread further, we suspect that access to the compromised machines will be sold or rented as part of a botnet.
+Detection The malware and C2 server used in this campaign are detected and blocked by Juniper ATP and Juniper ATP Cloud, and the malicious traffic is detected by the IDP rule SSL:VULN:CWP-LINUX-C2-BACKDOR.
+Figure 11.
+Detection on Juniper ATP Cloud IOCs 176[.]111.174.26    C2 server ab9cc4ee82aa6f57ba2a113aab905c33e278c969399db4188d0ea5942ad3bb7d  sshins (as delivered)
+936ca431d17d738beab9735a3d6e658ff29f8337f52353fd60e286c94dd2c06b  sshins (unpacked by UPX, after deleting appended data)
+c8df513e9e4848e35af5246a2ba797540b68a9379a1df17e34550cb0258960e8  sshins (manually unpacked) f51e83a53dd3a364709b1d0b93489f7a114b529268c3bab726ed288eba036bca  /lib64/
+libs.so 948b6c5fc1ba74ed57388241d1e8656e0ca082d10ff834c628d01c592764926d  /lib64/
+libs.so 56ce53b6c32beacd8864258c81bf276304a8da20bc0011f5e09d37b95a3e5def  /lib64/libs.so b5e29bdb105ae0e76d75c3d3959954c4f6610cd39aaa8f3aa852dd624e662480  /etc/
+ld.so.preload
+

@@ -1,0 +1,4 @@
+
+Because the central station is running on a Window XP embedded machine, we can attempt to verify this information by doing some quick reverse engineering of the binaries used by the application.
+After putting several libraries into Interactive Disassembler Pro, it is apparent that the symbols and debugging information has been left behind.
+With a little cleanup and work from the decompilers, we see the following code: This loop calls a function that broadcasts Rwhat, a protocol used by some medical devices.

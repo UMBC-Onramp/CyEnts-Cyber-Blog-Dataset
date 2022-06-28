@@ -1,0 +1,3 @@
+By Steve Povolny on Jun 14, 2018 The McAfee Labs Advanced Threat Research team has been investigating the Windows 10 platform.
+We have submitted several vulnerabilities already and have disclosed our research to Microsoft.
+ Please refer to our vulnerability disclosure policy for further details or the post from earlier this week on Windows 10 Cortana vulnerabilities.

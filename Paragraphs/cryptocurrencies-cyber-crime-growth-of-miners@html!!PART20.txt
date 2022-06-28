@@ -1,0 +1,5 @@
+
+Reports of cryptojacking activity due to misconfigured AWS S3 cloud storage buckets have also been observed, as was the case in the LA Times online compromise in February 2018.
+The presence of vulnerable AWS S3 buckets allows anyone on the internet to access and change hosted content, including the ability to inject mining scripts or other malicious software.
+Incorporation of Cryptojacking into Existing Botnets FireEye iSIGHT Intelligence has observed multiple prominent botnets such as Dridex and Trickbot incorporate cryptocurrency mining into their existing operations.
+Many of these families are modular in nature and have the ability to download and execute remote files, thus allowing the operators to easily turn their infections into cryptojacking bots.

@@ -1,0 +1,4 @@
+
+XML Once the VB script executes successfully, the Good.xml file, which contains inline C# assembly code, a loader dll, and the RAT payload, is dropped into the victim's Temp directory.
+All the files are saved as an ASCII byte array, and the RAT payload is also reversed to avoid signature-based detection.
+In this case, the adversary employs the method discovered by Casey Smith to compile and execute the inline C# code using the native Windows binary (MSBuild.exe).

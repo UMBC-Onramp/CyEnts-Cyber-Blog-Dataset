@@ -1,0 +1,5 @@
+
+“’Finding and fixing bugs isn’t the way to go, it’s … making it harder and more expensive for [attackers] to achieve an outcome,” said Adobe’s Chief Security Officer, Brad Arkin, at a conference in October 2014.
+He urged organizations to stop patching every vulnerability and instead increase the cost of exploitation to frustrate attackers.
+“The bad guys aren’t stupid,” he added.
+“They are going to apply their resources in the [most] cost efficient way possible, and so they seek to minimize the cost of developing an exploit.”

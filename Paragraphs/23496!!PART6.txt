@@ -1,0 +1,5 @@
+
+It seems, however, the phone can intercept this message and forward the confirmation code to a C&C server, all the while concealing the activity from the owner.
+Whereas the previous examples involved little more than unforeseen expense, this scenario threatens real legal problems, for example should the account be used for any criminal activities.
+What should I do now that I know push-button phones are unsafe?
+The difference between modern low-end phones and their counterparts of 10 years ago is that now, even dirt-cheap circuitry can include Internet access.

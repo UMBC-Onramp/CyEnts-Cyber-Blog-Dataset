@@ -1,0 +1,5 @@
+
+The disadvantages, while less obvious, become clear when one considers tech-savvy malicious actors.
+Suddenly, your potentially critical system now has a single point of failure, and one that is attached to a network, to make matters worse.
+Consider for a moment a positive pressure room in a hospital, the kind typically used to keep out contaminants during surgeries.
+Managing rooms such as these is a typical application for the eBMGR and it does not take an overactive imagination to envision what kind of damage a bad actor could cause if they disrupted such a sensitive environment.

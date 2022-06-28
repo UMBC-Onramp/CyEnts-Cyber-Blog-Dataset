@@ -1,0 +1,4 @@
+
+Also noteworthy is the use of a Jabber-bot to perform the essential functions, such as chatting, decryption and banning, replacing the need for a labor intensive admin panel that is hosted somewhere on the internet.
+Figure 38: LockBit profile including the 10,5 BTC deposit
+It seems that LockBit has joined the underground scene with a clear determination to do business; the authors have put a down a deposit in excess of 10,5 BTC, a bit shy of 75K USD.

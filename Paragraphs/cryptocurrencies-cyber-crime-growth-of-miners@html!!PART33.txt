@@ -1,0 +1,11 @@
+
+Cryptojacking Spam Campaigns FireEye iSIGHT Intelligence has observed several cryptocurrency miners distributed via spam campaigns, which is a commonly used tactic to indiscriminately distribute malware.
+We expect malicious actors will continue to use this method to disseminate cryptojacking code as for long as cryptocurrency mining remains profitable.
+In late November 2017, FireEye researchers identified a spam campaign delivering a malicious PDF attachment designed to appear as a legitimate invoice from the largest port and container service in New Zealand: Lyttelton Port of Chistchurch (Figure 9).
+Once opened, the PDF would launch a PowerShell script that downloaded a Monero miner from a remote host.
+The malicious miner connected to the pools supportxmr.com and nanopool.org.
+Figure 9:
+Sample lure attachment (PDF) that downloads malicious cryptocurrency miner Additionally, a massive cryptojacking spam campaign was discovered by FireEye researchers during January 2018 that was designed to look like legitimate financial services-related emails.
+The spam email directed victims to an infection link that ultimately dropped a malicious ZIP file onto the victim's machine.
+Contained within the ZIP file was a cryptocurrency miner utility (MD5: 80b8a2d705d5b21718a6e6efe531d493) configured to mine Monero and connect to the minergate.com pool.
+While each of the spam email lures and associated ZIP filenames were different, the same cryptocurrency miner sample was dropped across all observed instances (Table 2).

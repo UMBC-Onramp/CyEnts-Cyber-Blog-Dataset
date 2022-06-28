@@ -1,0 +1,6 @@
+
+This configuration was equipped with a 1-GHz VIA Eden processor.
+An open-source search of this configuration revealed that it is most commonly used in thin clients and some POS systems.
+The configurations are associated with several municipalities, housing associations, and health care institutions in the Netherlands.
+Thin client and POS systems are often overlooked and not commonly updated, making them an ideal backdoor target for an attacker.
+Although these systems have a small physical footprint, the business impact of having such a system compromised should not be underestimated.

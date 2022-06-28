@@ -1,0 +1,6 @@
+
+Another red flag is that the seca[.]cam domain was only registered a few weeks ago, on February 23, 2022.
+Checking the Bitcoin wallet address, we can see that this is an active wallet that had its first transaction on September 29 th, 2021.
+Since the first discovery of the campaign on the 7 th of March, several transactions have been made to this wallet.
+Its current value at time of writing is $46.82 USD, with total transactions valued at $712.79 USD.
+Assuming that this wallet was used for malicious purposes, it appears that various campaigns have netted the threat actor a modest profit.

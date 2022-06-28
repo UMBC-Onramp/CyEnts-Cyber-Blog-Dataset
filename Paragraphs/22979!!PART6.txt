@@ -1,0 +1,9 @@
+
+And if you need an app of any kind, find it on an official marketplace.
+Be very careful as well about the permissions you grant to applications .
+If a fitness app unexpectedly requests permission to use Accessibility, for example, think twice (or more) before answering.
+Finally, be sure to use authentic antivirus protection.
+With a completely free edition of Kaspersky Internet Security for Android available, there’s no reason to download it from unofficial sources.
+You can find our antivirus app in both Google Play and the Huawei AppGallery.
+
+

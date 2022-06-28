@@ -1,0 +1,5 @@
+
+However, with that said — it’s too early to relax.
+For one thing, the number of attacks on smartphones and tablets fell only relative to the record high of 2020, and remained at around the same level as in 2019.
+For another, cybercriminals are becoming increasingly inventive.
+Adware attacks One of the trends in 2021 was the introduction of malicious code in third-party ads modules, which developers of various useful apps often plug in to monetize their work.

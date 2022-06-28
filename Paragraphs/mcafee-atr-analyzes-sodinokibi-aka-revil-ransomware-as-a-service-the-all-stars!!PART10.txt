@@ -1,0 +1,6 @@
+
+There are some affiliates/ID’s that were only linked to a single sample that we found.
+A reason for affiliates to only appear for a short moment can be explained by the failure to perform.
+The GandCrab developers had a strict policy of expelling affiliates that underperformed.
+Expelling an affiliate would open a new slot that would receive a new incremented ID number.
+On the other hand, we observed several very active affiliates, “The All-Stars” , of which ID number 99 was by far the most active.

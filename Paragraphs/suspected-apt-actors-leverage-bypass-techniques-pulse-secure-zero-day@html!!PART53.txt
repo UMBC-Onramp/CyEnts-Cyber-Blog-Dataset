@@ -1,0 +1,5 @@
+
+>.
+If the second number minus the first is > 8191 the sample reads the data starting at the file offset of the first number, up to a size specified by second number minus first number.
+Once the sample has read the process memory and found all memory data of interest the sample detaches PTRACE then the sample begins memory scanning the copied data.
+The sample tries to locate a sequence of 'flags' in memory one by one to locate what seem to be information the attacker wishes to steal.

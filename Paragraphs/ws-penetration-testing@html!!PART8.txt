@@ -1,0 +1,10 @@
+
+Another \"Where\" to consider for remote testing\nis where the testers are physically located.
+When testers are in a\ndifferent country than you, legal issues can arise with data\nprovisioning and accessibility.
+Differences in language, culture,\nand time zones could also make coordination and interpretation of\nresults more difficult.
+When We recommend that most organizations get some\nsort of security assessment on an annual basis, but that security\nassessment does not necessarily need to be a penetration test (see Penetration\nTesting Has Come Of Age - How to Take Your Security Program to the\nNext Level ).
+Larger organizations may have multiple\nassessments per year, each focused in a different area.
+Within the year, the timing of the penetration test is usually\npretty flexible.
+You will want to make sure that the right people\nfrom your organization are available to initiate and manage the test\n- and to receive results and begin implementing changes.
+Based on\nyour organization's change control procedures, you may need to work\naround system freezes or other activities.
+Testing in December can\nbe difficult due to holidays and vacation, along with year-end\ncloseout activities, especially for organizations in retail,\ne-commerce, and payment processing.

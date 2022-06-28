@@ -1,0 +1,16 @@
+
+Conclusion RATs are widely used for legitimate purposes, often by system administrators.
+However, since they are legitimate applications and readily available, malware authors can easily abuse them and sometimes can avoid user suspicion as well.
+The FireEye HX Endpoint platform successfully detects this attack at the initial phase of the attack cycle.
+Acknowledgement Thanks to my colleagues Dileep Kumar Jallepalli, Rakesh Sharma and Kimberly Goody for their help in the analysis.
+Indicators of Compromise Registry entries HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run :
+ ManifestStore HKCU\\Software\\SeX\\KEx Files %
+AppData%\\ManifestStore\\client32.exe %AppData%\\ManifestStore\\client32.ini %AppData%\\ManifestStore\\HTCTL32.DLL %AppData%\\ManifestStore\\msvcr100.dll %
+AppData%\\ManifestStore\\nskbfltr.inf %AppData%\\ManifestStore\\NSM.ini %AppData%\\ManifestStore\\NSM.LIC %AppData%\\ManifestStore\\nsm_vpro.ini %AppData%\\ManifestStore\\pcicapi.dll %AppData%\\ManifestStore\\PCICHEK.DLL %AppData%\\ManifestStore\\PCICL32.DLL %
+AppData%\\ManifestStore\\remcmdstub.exe %AppData%\\ManifestStore\\TCCTL32.DLL %AppData%\\systemupdate\\Whitepaper.docx Shortcut file %AppData%\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\desktop.ini.lnk
+Firewall program entry allowing the following application %AppData%\\ManifestStore\\client32.exe Running process named “client32.exe” from the path “%AppData%\\ManifestStore\\client32.exe” Hashes
+The following hashes are JavaScript files that use the same obfuscation techniques described in the blog: fc87951ae927d0fe5eb14027d43b1fc3
+e3b0fd6c3c97355b7187c639ad9fb97a a8e8b2072cbdf41f62e870ec775cb246 6c5fd3258f6eb2a7beaf1c69ee121b9f 31e7e9db74525b255f646baf2583c419 065ed6e04277925dcd6e0ff72c07b65a 12dd86b842a4d3fe067cdb38c3ef089a
+350ae71bc3d9f0c1d7377fb4e737d2a4 c749321f56fce04ad8f4c3c31c7f33ff c7abd2c0b7fd8c19e08fe2a228b021b9 b624735e02b49cfdd78df7542bf8e779 5a082bb45dbab012f17120135856c2fc dc4bb711580e6b2fafa32353541a3f65 e57e4727100be6f3d243ae08011a18ae 9bf55bf8c2f4072883e01254cba973e6 20a6aa24e5586375c77b4dc1e00716f2 aa2a195d0581a78e01e62beabb03f5f0 99c7a56ba04c435372bea5484861cbf3 8c0d17d472589df4f597002d8f2ba487 227c634e563f256f396b4071ffda2e05 ef315aa749e2e33fc6df09d10ae6745d 341148a5ef714cf6cd98eb0801f07a01 Subscribe to Blogs Get email updates as new blog posts are added.
+
+

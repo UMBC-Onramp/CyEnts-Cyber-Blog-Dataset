@@ -1,0 +1,6 @@
+
+With the combination of protocol and SSL detection, each independent of the other, FakeNet-NG can now handle just about any protocol combination.
+The proxied SSL implementation also allows for improved packet analysis.
+The connection between the proxy and the Listener is not encrypted, which allows FakeNet to dump un-encrypted packets to the pcap output.
+This makes it easier for the analyst to examine the packet data.
+FakeNet continues to produce pcap output that includes packet data before and after modification by FakeNet.

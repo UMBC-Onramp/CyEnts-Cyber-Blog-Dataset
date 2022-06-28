@@ -1,0 +1,4 @@
+
+Affixed to each of these emails was an attached archive file (TAR, 7z, GZIP) posing as either transfer requests, SWIFT statements from an authentic bank or numeric codes potentially pointing to account numbers.
+Figure 3: Sample payment email Observations From X-Force’s Analysis X-Force uncovered several unique characteristics that provide insight into the attack infrastructure used in the various delivery of RoboSki-packed malware to facilitate operations.
+The activity examined involved at least 289 email addresses for exfiltration, of which about 150 do not appear legitimate nor have discoverable returns, while more than half appear to be valid accounts.

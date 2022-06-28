@@ -1,0 +1,8 @@
+
+Some of these attacks locked patient data and made proper care unachievable for hours on end.
+Hospitals are also not the only type of critical infrastructure that’s been on the victim’s end of a cyberattack.
+In fact, cybercriminals have recently begun hitting critical infrastructure hard and fast, with dramatic results emerging from their efforts.
+They’ve infamously put an entire city in the Ukraine out of power for about an hour.
+Then there was the Schneider Electric hack , in which cybercriminals leveraged a zero-day vulnerability within an industrial plant’s safety system for a cyberattack.
+There are also cyber issues that impact our physical safety that don’t even come in the form of an attack.
+Lately, news has been circulating about big-name companies tracking users’ locations or data, even when certain settings are off or when the user is unaware of the action.

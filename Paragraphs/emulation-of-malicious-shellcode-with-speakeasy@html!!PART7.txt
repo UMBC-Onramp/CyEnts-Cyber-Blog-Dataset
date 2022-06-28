@@ -1,0 +1,5 @@
+
+In the first part of this blog series, we will show the effectiveness of emulation with one of the more common samples of shellcode malware encountered during incident response investigations.
+Cobalt Strike is a commercial penetration testing framework that typically utilizes stagers to execute additional code.
+An example of a stager is one that downloads additional code via a HTTP request and executes the HTTP response data.
+The data in this case is shellcode that commonly begins with a decode loop, followed by a valid PE that contains code to reflectively load itself.

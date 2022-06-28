@@ -1,0 +1,4 @@
+
+Complete Mission
+There was evidence suggesting data exfiltration across most analyzed MAZE ransomware incidents.
+While malicious actors could monetize stolen data in various way (e.g. sale in an underground forum, fraud), actors employing MAZE are known to threaten the release of stolen data if victim organizations do not pay an extortion fee.

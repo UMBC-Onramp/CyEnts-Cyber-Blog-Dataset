@@ -1,0 +1,12 @@
+
+Figure 5.
+Strings from the disassembled library indicating data to be exfiltrated.
+In addition to the continuously-ru nning server processes , sshd forks() a pair of new process es to handle each login connection .
+From these session-specific processes, th e malicious bind() function launches an additional temporary sshd process that exfiltrates the incoming user’s login credentials .
+Figure 6.
+User credentials and computer identifier exfiltrated by the malware.
+C2 communication
+The C2 communication involves the server 176[.]111.174.26 on port 443.
+Port 443 is typically used for HTTPS but here the traffic is raw TCP , hiding in plain sight on a common port.
+The server has a Russian IP address that is associated with a Bulgarian webhosting provider.
+The client initiates communication with a simple directive , padded out to 8 bytes.

@@ -1,0 +1,5 @@
+
+Contacting the listed registrar in the WHOIS records is the best course of action, as many reputable registrars have an abuse contact form for domains violating their terms of service agreement.
+Do We Know Who These Threat Actors Are?
+Unfortunately, no.
+As the registrar of the domains and usage of CDN for these sites allow a high degree of anonymity, we don’t know who these scammers really are or if they are working alone or as part of a larger group.

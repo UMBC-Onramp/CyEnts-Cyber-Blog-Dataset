@@ -1,0 +1,7 @@
+
+Automatic DDoS protection systems do not like that.
+It can also be a sign of something even more shady, such as spam mailings.
+Keep in mind that the consequences can be much more dire for the company, with automated requests landing the organization’s IP address on a list of unsafe addresses.
+So, for example, if the e-mail server operates on the same address, at some point the employees’ messages may stop reaching external recipients.
+Other e-mail servers will simply start blocking the organization’s IP address and domain.
+Fake proxyware clients Another risk employees take in installing proxyware is that they may download something they didn’t mean to.

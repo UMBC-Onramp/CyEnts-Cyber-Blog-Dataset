@@ -1,0 +1,6 @@
+
+(See Mitre ATT&CK technique – Input Capture: Keylogging .)
+C2 Server After successfully compromising the victim’s machine, the AsyncRAT payload connects to the RAT C2 server located at “franco.ddns.net” on port 2455 (79.134.225.18:2455).
+Since 2019, IP 79.134.225.18 has been linked to AsyncRAT / RevengeRAT, NanoCore, and BotNet attacks.
+It is associated with the ISP provider “ The PRIVACYFIRST Project”, which runs multiple VPN services and supports the TOR project.
+The C2 domain “franco.ddns.net” used in this campaign is just few weeks old, hence the associated spike.

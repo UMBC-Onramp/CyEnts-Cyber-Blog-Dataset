@@ -1,0 +1,11 @@
+
+Functions with infinite loops do not have terminal nodes, and are not currently handled.
+For a simple example, consider the graph in Figure 14.
+It has the following immediate dominator and post-dominator trees: Figure 14:
+Example graph Node idom 0
+None 1 0 2 1 3 1 4 3 5 3 6 3 7 6 8 0 Node ipdom 0 8 1 3 2 3 3 6 4 6 5 6 6 7 7 8 8 None Looking for pairs of (idom[i] == j) and (ipdom[j] == i) gives the following: (0, 8) (1, 3) (3, 6) (6,7) (0, 8) is filtered because it makes up all of the nodes of the graph.
+(1,3) and (6, 7) are filtered out because they contain nodes reachable from nodes not in the set: for (1, 3) node 2 is reachable from node 6, and for (6, 7) node 2 is reachable from node 1.
+This leaves (3, 6) as the only isolate subgraph in this example, shown in Figure 15.
+Figure 15: Example graph with isolated subgraph Subscribe to Blogs Get email updates as new blog posts are added.
+
+

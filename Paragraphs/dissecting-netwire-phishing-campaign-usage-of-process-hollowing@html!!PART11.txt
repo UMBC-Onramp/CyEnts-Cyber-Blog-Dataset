@@ -1,0 +1,10 @@
+
+High-Level Analysis of the Payload The final payload was identified by FireEye Intelligence as a NETWIRE backdoor.
+The backdoor receives commands from a command and control (C2) server, performs reconnaissance that includes the collection of user data, and returns the information to the C2 server.
+Capabilities of the NETWIRE backdoor include key logging, reverse shell, and password theft.
+The backdoor uses a custom encryption algorithm to encrypt data and then writes it to a file created in the ./LOGS directory.
+The malware also contains a custom obfuscation algorithm to hide registry keys, APIs, DLL names, and other strings from static analysis.
+Figure 10 provides the decompiled version of the custom decoding algorithm used on these strings.
+Figure 10:
+Decompiled string decoding algorithm From reversing and analyzing the behavior of the malware, we were able to identify the following capabilities: Record mouse and keyboard events Capture session logon details Capture system details Take screenshots Monitor CPU usage Create fake HTTP proxy From the list of decoded strings, we were able to identify other features of this sample: “POP3” “IMAP” “SMTP” “HTTP” \"Software\\\\Microsoft\\\\Windows
+NT\\\\CurrentVersion\\\\Windows Messaging Subsystem\\\\Profiles\\\\Outlook\\\\” \"Software\\\\Microsoft\\\\Office\\\\15.0\\\\Outlook\\\\Profiles\\\\Outlook\\\\” \"Software\\\\Microsoft\\\\Office\\\\16.0\\\\Outlook\\\\Profiles\\\\Outlook\\\\” Stealing data from an email client “\\Google\\Chrome\\User Data\\Default\\Login Data” “\\Chromium\\User Data\\Default\\Login Data” “\\Comodo\\Dragon\\User Data\\Default\\Login Data” “\\Yandex\\YandexBrowser\\User Data\\Default\\Login Data” “\\Opera Software\\Opera Stable\\Login Data”

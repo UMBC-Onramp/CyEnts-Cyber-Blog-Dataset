@@ -1,0 +1,9 @@
+
+After this, it will make 2 threads, one of them to search for processes and the another one to crypt files in the network shares that it has access to.
+The first thread enumerates all processes of the system and creates the name of the process in upper case and calculates a hash with the name and compares it with a big list of hashes.
+This hash algorithm is a custom algorithm.
+It is typical in malware that tries to hide what processes they are looking for.
+If it finds one of them it will terminate it with “TerminateProcess” function after opening with the rights to make this action with “OpenProcess” function.
+The malware contains 61 hard-coded hashes of programs such as “STEAM.EXE”, database programs, office programs and others.
+Below, the first 38 hashes with the associated process names.
+These 38 processes are the most usual processes to close as we have observed with other ransomwares families such as GandCrab, Cerber, etc.

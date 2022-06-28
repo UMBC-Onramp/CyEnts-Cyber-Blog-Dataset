@@ -1,0 +1,7 @@
+
+One common approach to this problem is to patch the binaries.
+It is important when looking at patching a binary to ensure the patch you employ does not introduce any unintended side effects.
+This generally means you want to make the smallest change possible.
+In this case, the smallest meaningful change the team came up with was to modify the “subtract by 5” to a “subtract by 0.”
+  
+This would not change how the overall program functioned; however, every time the function was called to decrement the counter, the counter would simply never get smaller.

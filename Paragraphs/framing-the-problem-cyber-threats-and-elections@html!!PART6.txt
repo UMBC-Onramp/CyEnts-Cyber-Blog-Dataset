@@ -1,0 +1,6 @@
+
+Broadly speaking most election-related threats can be thought of in four categories: social-media enabled disinformation, cyber espionage, “hack and leak” campaigns, and attacks on critical election infrastructure.
+Social-Media Enabled Disinformation : This category includes the activity FireEye has tracked from the Russia-affiliated Internet Research Association (IRA) and various Iranian disinformation operations .
+In some cases, this has involved creating fraudulent content on controversial issues and seeking to promote it across social media platforms.
+In other examples, disinformation campaigns have focused on amplifying already issues that have organic interest.
+Some of these campaigns may also be involved in politically-motivated messaging on social media platforms prior to elections without a specific focus electoral events.

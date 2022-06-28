@@ -1,0 +1,10 @@
+
+AI technology has extended the capabilities of producing convincing deepfake video to a less-skilled class of threat actor attempting to manipulate individual and public opinion.
+AI-driven facial recognition, a growing security asset, is also being used to produce deepfake media capable of fooling humans and machines.
+Our researchers also foresee more threat actors targeting corporate networks to exfiltrate corporate information in two-stage ransomware campaigns.
+With more and more enterprises adopting cloud services to accelerate their business and promote collaboration, the need for cloud security is greater than ever.
+As a result, the number of organizations prioritizing the adoption container technologies will likely continue to increase in 2020.
+Which products will they rely on to help reduce container-related risk and accelerate DevSecOps?
+The increased adoption of robotic process automation and the growing importance to secure system accounts used for automation raises security concerns tied to Application Programming Interface (API) and their wealth of personal data.
+The threatscape of 2020 and beyond promises to be interesting for the cybersecurity community.
+–Raj Samani, Chief Scientist and McAfee Fellow, Advanced Threat Research Twitter @Raj_Samani

@@ -1,0 +1,6 @@
+
+Figure 2: Example of FakeUpdate landing page after HTTP redirects The redirect process used numerous subdomains, with a limited number of IP addresses.
+The malicious subdomains are often changed in different parts of the initial redirects and browser validation stages.
+After clicking the ‘Update’ button, we observed the downloading of one of three types of files: Heavily-obfuscated HTML applications (.hta file extensions) JavaScript files (.js file extensions) ZIP-compressed JavaScript files (.zip extensions)
+Figure 3 provides a snippet of JavaScript that provides the initial download functionality.
+var domain = '//gnf6.ruscacademy[.]in/'; var statisticsRequest = 'wordpress/news.php?b=612626&m=ad2219689502f09c225b3ca0bfd8e333&y=206'; var statTypeParamName = '

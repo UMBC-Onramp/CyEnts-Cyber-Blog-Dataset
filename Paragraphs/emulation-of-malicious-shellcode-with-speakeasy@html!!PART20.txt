@@ -1,0 +1,7 @@
+
+Limitations As said, emulation comes with some challenges.
+Maintaining feature parity with the system being emulated is an ongoing battle; however, it provides unique opportunities for controlling the malware and greater introspection options.
+In cases where emulation does not complete fully, emulation reports and memory dumps can still be generated in order to gather as much data as possible.
+For example, a backdoor may successfully install its persistence mechanism, but fail to connect to its C2 server.
+In this situation, the valuable host-based indicators are still logged and can provide value to an analyst.
+Missing API handlers can quickly and easily be added to the emulator in order to handle these situations.

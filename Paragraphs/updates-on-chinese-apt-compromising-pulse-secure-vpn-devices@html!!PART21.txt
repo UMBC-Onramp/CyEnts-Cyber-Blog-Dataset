@@ -1,0 +1,6 @@
+
+In 2018 we conducted an extensive review of Chinese cyber espionage operations, both before and after the official announcement of the PLA reforms and bilateral agreement to determine if there were any corresponding changes in the tactics, techniques, and procedures (TTPs) used during Chinese cyberespionage operations.
+We observed two important changes in the type of information stolen and the geographic distribution of the targets.
+Despite examining hundreds of incidents from January 2016 through mid 2019, we did not find definitive evidence of purely commercial application intellectual property theft in the US.
+Recent indictments by the US Department of Justice suggest that this theft did occur.
+While we observed other malicious activity, including geopolitical targeting, theft of intellectual property with military applications, and theft of confidential business information, we did not find evidence that these cyber operations violated the Obama-Xi agreement.

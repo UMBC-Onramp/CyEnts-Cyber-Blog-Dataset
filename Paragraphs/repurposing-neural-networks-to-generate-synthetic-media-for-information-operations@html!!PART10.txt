@@ -1,0 +1,4 @@
+
+Hear No Evil As a second proof of concept, we’ll switch to the audio domain where\nwe demonstrate how SV2TTS can be fine-tuned on audio samples in order\nto impersonate the voice of a target individual.
+SV2TTS is a complex,\n3-stage model that can perform Voice Cloning —or text-to-speech from arbitrary text inputs to captured reference\nspeech in real time.
+SV2TTS is comprised of three underlying neural\nnetworks – first, the speaker encoder is trained on thousands of\nspeakers in order to learn an abstract representation of human speech\nand squeeze it into a compressed embedding of floating point

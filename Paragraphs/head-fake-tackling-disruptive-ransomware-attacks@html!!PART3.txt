@@ -1,0 +1,7 @@
+
+Knock, Knock: FakeUpdates are Back!
+In April 2018, FireEye identified a campaign that used compromised websites to deliver heavily obfuscated Trojan droppers masquerading as Chrome, Internet Explorer, Opera, and/or Firefox browser updates.
+The compromised sites contained code injected directly into the HTML or in JavaScript components rendered by the pages which had been injected.
+These sites were accessed by victim users either via HTTP redirects or watering-hole techniques utilized by the attackers.
+Since our April 2018 blog post , this campaign has been refined to include new techniques and the use of post-exploitation toolkits.
+Recent investigations have shown threat actor activity that included internal reconnaissance, credential harvesting, privilege escalation, lateral movement, and ransomware deployment in enterprise networks.

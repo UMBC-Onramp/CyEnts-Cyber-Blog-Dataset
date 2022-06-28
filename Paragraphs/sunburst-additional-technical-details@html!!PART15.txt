@@ -1,0 +1,5 @@
+
+Other modes are “active”, in which the malware communicates via HTTP, and “disabled”, in which the malware is permanently disabled.
+These modes and transitions are defined in the Modes of Operation section.
+The C2 coordinator may also respond with a DNS CNAME response.
+In this case, the malware uses the pointed-to domain from the CNAME response for HTTPS C2 communications.

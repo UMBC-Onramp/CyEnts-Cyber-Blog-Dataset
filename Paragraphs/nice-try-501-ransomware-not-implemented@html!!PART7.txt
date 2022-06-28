@@ -1,0 +1,4 @@
+
+Figure 4: Snippet of scan.py showing instructions to deploy 32- or 64-bit downloaders I Call Myself
+Ragnarok Our analysis continued by examining the capabilities of the 32- and 64-bit DLLs, aptly named x86.dll and x64.dll .
+At only 5,120 bytes each, these binaries performed the following tasks (Figure 5 and Figure 6): Download a file named patch32 or patch64 (respective to operating system bit-ness) from a hard-coded URL using certutil , a native tool used as part of Windows Certificate Services (categorized as Technique 11005 within MITRE’s ATT&CK framework ).

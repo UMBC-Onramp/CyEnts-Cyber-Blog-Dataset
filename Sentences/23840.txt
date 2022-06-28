@@ -1,0 +1,41 @@
+Microsoft started the year with a massive vulnerability fix, releasing not only its regular first-Tuesday update, which this time covers a total of 96 vulnerabilities , but also issuing a bunch of fixes for the Microsoft Edge browser (mainly related to the Chromium engine).
+
+That makes more than 120 vulnerabilities patched since the beginning of the year.
+
+This is a clear reason to update the operating system and some Microsoft applications as soon as possible.
+
+Most severe vulnerabilities Nine of the vulnerabilities that were closed this Tuesday have a critical rating on the CVSS 3.1 scale.
+
+Of those, two are related to privilege escalation : CVE-2022-21833 in Virtual Machine IDE Drive and CVE-2022-21857 in Active Directory Domain Services.
+
+Exploitation of the other seven can give an attacker the remote code execution ability: CVE-2022-21917 in HEVC Video Extensions; CVE-2022-21912 and CVE-2022-21898 in DirectX Graphics Kernel; CVE-2022-21846 in Microsoft Exchange Server; CVE-2022-21840 in Microsoft Office; CVE-2021-22947 in Open Source Curl; CVE-2022-21907 in HTTP Protocol Stack.
+
+The last one seems to be the most unpleasant vulnerability.
+
+A bug in the HTTP protocol stack theoretically allows attackers not only to make the affected computer execute arbitrary code, but also to spread the attack over the local network (according to Microsoft terminology, the vulnerability is classified as wormable — that is, it can be used to create a worm ).
+
+This vulnerability is relevant for Windows 10, Windows 11, Windows Server 2022, and Windows Server 2019.
+
+However, according to Microsoft, it’s dangerous for users of Windows Server 2019 and Windows 10 version 1809 only if they enable HTTP Trailer Support using the EnableTrailerSupport key in the registry.
+
+Experts also expressed concern about the presence of another serious vulnerability in Microsoft Exchange Server — CVE-2022-21846 (which, by the way, is not the only Exchange bug on the list, just the most dangerous).
+
+Their concern is totally understandable — no one wants a recurrence of last year’s wave of exploited Exchange vulnerabilities.
+
+Vulnerabilities with PoCs Some of the fixed vulnerabilities were already known to the security community.
+
+Furthermore, someone has already published proofs of concept for them: CVE-2022-21836 — Windows certificate spoofing vulnerability; CVE-2022-21839 — Windows event tracing discretionary access control list denial of service vulnerability; CVE-2022-21919 — Windows user profile service elevation of privilege vulnerability.
+
+We have not yet observed real attacks using these vulnerabilities.
+
+However, the proofs of concept are already in public, so exploitation can begin at any time.
+
+How to stay safe First, you need to update your operating system (and other programs from Microsoft) as soon as possible.
+
+In general, it is usually wise not to delay installing patches for critical software.
+
+Second, any computer or server connected to the Internet must be equipped with a reliable security solution capable not only of preventing the exploitation of known vulnerabilities, but also of detecting attacks with yet-unknown exploits.
+
+
+
+

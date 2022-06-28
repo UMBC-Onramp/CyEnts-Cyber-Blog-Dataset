@@ -1,0 +1,5 @@
+Many popular mobile apps, including Rovio’s ubiquitous Angry Birds, collect and share players’ personal information much more widely than most people realize.
+Some news reports have begun to scratch the surface of the situation.
+The New York Times reported on Angry Birds and other data-hungry apps last October.
+And in January, the newspaper teamed up with public-interest news site ProPublica and U.K. newspaper the Guardian for a series of stories detailing how government agencies use the game (and other mobile apps) to collect personal data.
+Even the long-running CBS show 60 Minutes reported earlier this month that Rovio shares users’ locations .

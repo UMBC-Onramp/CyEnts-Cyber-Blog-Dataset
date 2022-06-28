@@ -1,0 +1,4 @@
+
+While the technical benefits are impressive, underlying flaws inherent in all types of models represent a rapidly growing threat, which cyber criminals will look to exploit.
+As technologies are adopted over the coming years, a very viable threat vector will emerge, and we predict adversaries will begin to generate deepfakes to bypass facial recognition.
+It will be critical for businesses to understand the security risks presented by facial recognition and other biometric systems and invest in educating themselves of the risks as well as hardening critical systems.

@@ -1,0 +1,4 @@
+
+This script is nearly identical to the one featured in last week’s post.
+The only change is that the parameter passed to the downloaded binary is “exploit.realtek.http” instead of “exploit.realtek”.
+When the botnet agent starts up, it opens a listening port on port 44842, and then opens a TCP connection to babaroga[.]lib (188[.]166.196.89, resolved specifically by DNS server 185[.]121.177.177) on port 53 and registers the compromised computer with the botnet, including an identifier — in this case, “exploit.realtek.http” — to indicate which attack was successful.

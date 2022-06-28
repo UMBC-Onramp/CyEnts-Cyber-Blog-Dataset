@@ -1,0 +1,4 @@
+
+We see the well-known ports attacked regularly, but threat actors commonly spread their attacks across the entire fourth layer of the TCP/IP stack.
+This chart shows the spread of attacks across one set of sensors over a seven day period.
+The sensors are rotated out regularly to provide a larger footprint for potential attackers, as well as to prevent attackers from identifying these sensors as research devices.

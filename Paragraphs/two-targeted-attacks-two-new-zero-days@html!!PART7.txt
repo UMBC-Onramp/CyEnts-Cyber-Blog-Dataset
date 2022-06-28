@@ -1,0 +1,4 @@
+
+Vulnerability and Exploit Details The 32-bit exploit triggers an out-of-bounds memory access that dereferences offsets from a high memory address, and inadvertently wraps into the null page.
+In user-mode, memory dereferences within the null page are generally assumed to be non-exploitable.
+Since the null page is usually not mapped – the exception being 16-bit legacy applications emulated by ntvdm.exe--null pointer dereferences will simply crash the running process.

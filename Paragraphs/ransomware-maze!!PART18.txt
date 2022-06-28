@@ -1,0 +1,3 @@
+
+For example, in the beginning it enters the folders “ydw” and “fdygg” but later returns to the root of the Windows installation unit with two “..” commands that lead to “C:\\” in this case.
+It later concatenates with the “Windows” folder and continues with the same behavior to finally enter into “system32” where it calls the “wmic.exe” program with the switches to delete the shadow volumes.

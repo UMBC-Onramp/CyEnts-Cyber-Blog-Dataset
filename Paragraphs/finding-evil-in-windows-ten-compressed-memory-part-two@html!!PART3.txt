@@ -1,0 +1,6 @@
+
+The process of retrieving these global offsets is described further in our white paper .
+To begin analysis, we create a marker page and flush it to the Virtual Store.
+This can be done in several ways, the easiest of which is allocating memory in a memory constrained virtual machine.
+ A simple utility ( ram_eater.exe ) was created to perform this task.
+The ram_eater utility allocates and writes a marker page, and then repeatedly allocates more memory in user-specified page amounts.

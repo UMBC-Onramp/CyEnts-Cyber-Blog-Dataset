@@ -1,0 +1,4 @@
+Mandiant has observed an aggressive financially motivated group, UNC2447, exploiting one SonicWall VPN zero-day vulnerability prior to a patch being available and deploying sophisticated malware previously reported by other vendors as SOMBRAT.
+Mandiant has linked the use of SOMBRAT to the deployment of ransomware, which has not been previously reported publicly.
+UNC2447 monetizes intrusions by extorting their victims first with FIVEHANDS ransomware followed by aggressively applying pressure through threats of media attention and offering victim data for sale on hacker forums.
+UNC2447 has been observed targeting organizations in Europe and North America and has consistently displayed advanced capabilities to evade detection and minimize post-intrusion forensics.

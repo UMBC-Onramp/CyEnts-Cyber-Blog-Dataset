@@ -1,0 +1,4 @@
+
+And one can only guess who else could get this information.
+Also, once demonstrated, other hackers may try to replicate the exploit and use it to cause real harm to players.
+There are various possible scenarios here: attackers can use it to steal passwords from game accounts or crypto wallets, install good old ransomware, hidden miners, and much more.

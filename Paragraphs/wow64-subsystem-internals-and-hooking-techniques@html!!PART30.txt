@@ -1,0 +1,11 @@
+
+X64 MSVC doesn’t support this and there are complications with REX prefixes when using that method.
+It’s nicer to use external masm files and rely on the linker to implement this shellcode.
+Arg Number Cdecl Location Fastcall Location Special Case? 0
+[ebp + 8] rcx
+Yes 1 [ebp + 12] rdx
+Yes 2 [ebp + 16] r8d Yes 3 [ebp + 20] r9d Yes 4 [ebp + 24] [rbp + 32 + 8]
+No 5 [ebp + 28] [rbp + 32 + 16]
+No 6 [ebp + 32] [rbp + 32 + 24]
+No Figure 19:
+Cdecl vs Fastcall argument positions Once this shellcode is written and wrapped into a nice C++ function, it’s possible for the wow64log DLL to invoke the callback via a simple C style function pointer call shown in Figure 20.

@@ -1,0 +1,4 @@
+
+Since this honeypot does not execute any of the downloaded binaries, most of the attacks keep retrying until their malware has executed in the system.
+By removing IP duplicates, the actual number of attack sources was obtained and is broken down in the next table.
+Top IoT Malware Variants Mirai variant authors use unique strings or tokens in their binaries that are used to verify whether SSH or Telnet commands were successfully executed in the device—although this could also be used by the threat actors to advertise their malware or, in some cases, simply as a placeholder for novelty messages.

@@ -1,0 +1,7 @@
+
+As for the Trojans and backdoors, Discord-based or simply distributed through the platform, they are not special or essentially different from other kinds of malware.
+Use a reliable antivirus app to stay safe, keep it running at all times — including when you install any software or add bots to a chat server — and pay attention to its warnings.
+Performance need not be a concern.
+For example, our security products include a game mode that minimizes overhead without compromising protection.
+
+

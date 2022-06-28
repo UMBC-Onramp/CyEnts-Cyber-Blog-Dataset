@@ -1,0 +1,5 @@
+
+Even though they are often publicly available through Minecraft online forums, Alt Lists contain stolen accounts that gamers can use to do the things listed above.
+That’s what the threat actors behind this ransomware attack are using to lure victims to download and open the file.
+In this case, the file is an executable, but it uses a text icon to fool potential victims into thinking it is a text file full of compromised usernames and passwords for Minecraft.
+While we don’t know how this specific fake list is being distributed, it’s a safe guess that the file is being advertised on Minecraft forums for Japanese gamers.

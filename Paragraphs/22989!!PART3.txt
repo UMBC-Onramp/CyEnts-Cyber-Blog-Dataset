@@ -1,0 +1,9 @@
+
+WeakAuras is essentially a framework: all timers and indicators are added to the base add-Аon using scripts written in Lua programming language, commonly called “auras”.
+Many sites offer ready-made assemblies of auras for specific classes, specializations, and even professions.
+Sometimes, though, players are looking for something specific, such as an aura for a single quest or an experimental tactic.
+Some players versed in programming customize existing scripts or create auras themselves.
+And sometimes, in a raid with random partners, an unfamiliar raid leader may demand, “we are using a new tactic to fight this boss — everyone needs to install this aura right now”, and send a link.
+Of course, the decision is yours, but anyone who doesn’t install the aura can expect to be kicked out of the raid.
+Worse, leaders usually drop those links into raid chats, and most players simply click on the name and install scripts without a second thought.
+It is important to remember that using these scripts, which are also linked on message boards or in in-game chats, can be risky.

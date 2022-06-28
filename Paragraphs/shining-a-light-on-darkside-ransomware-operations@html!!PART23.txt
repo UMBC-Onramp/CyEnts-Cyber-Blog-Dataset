@@ -1,0 +1,9 @@
+
+DARKSIDE RaaS affiliates are given access to an administration panel on which they create builds for specific victims.
+The panel allows some degree of customization for each ransomware build such as choosing the encryption mode and whether local disks and network shares should be encrypted (Figures 4).
+The following malware analysis is based on the file MD5: 1a700f845849e573ab3148daef1a3b0b.
+A more recently analyzed DARKSIDE sample had the following notable differences: The option for beaconing to a C2 server was disabled and the configuration entry that would have contained a C2 server was removed.
+Included a persistence mechanism in which the malware creates and launches itself as a service.
+Contained a set of hard-coded victim credentials that were used to attempt to logon as a local user.
+If the user token retrieved based on the stolen credentials is an admin token and is part of the domain administrators' group, it is used for network enumeration and file permission access.
+Figure 4: DARKSIDE build configuration options appearing in the administration panel Host-Based Indicators Persistence Mechanism Early versions of the malware did not contain a persistence mechanism.

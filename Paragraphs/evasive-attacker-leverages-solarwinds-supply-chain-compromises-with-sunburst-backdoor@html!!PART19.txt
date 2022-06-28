@@ -1,0 +1,6 @@
+
+The sample will delay for random intervals between the generation of domains; this interval may be any random value from the ranges 1 to 3 minutes, 30 to 120 minutes, or on error conditions up to 420 to 540 minutes (9 hours).
+The DNS A record of generated domains is checked against a hardcoded list of IP address blocks which control the malware’s behavior.
+Records within the following ranges will terminate the malware and update the configuration key ReportWatcherRetry to a value that prevents further execution: 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16 224.0.0.0/3 fc00:: - fe00:: fec0:: - ffc0:: ff00:
+: - ff00:: 20.140.0.0/15 96.31.172.0/24 131.228.12.0/22 144.86.226.0/24
+Once a domain has been successfully retrieved in a CNAME DNS response the sample will spawn a new thread of execution invoking the method HttpHelper.

@@ -1,0 +1,4 @@
+
+Alternatively, a logistics company might suddenly find a large portion of its truck fleet rendered useless by ransomware.
+The potential for lost revenue due to downtime might pressure the company to pay the ransom rather than risk more significant financial losses.
+Malicious C2 and Final Hop Points One effective law enforcement tactic in countering cyber espionage and criminal campaigns is identifying, locating and seizing the systems threat actors use to route malicious traffic through the Internet.

@@ -1,0 +1,5 @@
+
+Obviously, a tool that provides free gift cards does not exist, but the hope of getting something for nothing can be hugely attractive to many people.
+However, once the victim executes the fake Amazon gift card generator it drops and executes a malicious winlogin.exe that monitors the victim’s clipboard.
+The purpose of the malware is simple.
+If the victim tries to add money to their anon-bitcoin wallet by copying and pasting the wallet address, the malware overwrites the victim’s wallet address on the clipboard with its own, resulting in the money potentially going to the attacker.

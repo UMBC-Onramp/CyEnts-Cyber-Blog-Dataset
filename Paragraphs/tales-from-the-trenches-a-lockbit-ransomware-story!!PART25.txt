@@ -1,0 +1,2 @@
+
+We analyzed the base code of both samples and we did not find any code overlap but is a quite a random string to use casually.

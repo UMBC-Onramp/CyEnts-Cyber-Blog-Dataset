@@ -1,0 +1,4 @@
+
+The page source contains proper strings, valid tags, and appropriate formatting, but contains encoded text that would render gibberish without decoding prior to loading the page, as seen in Figure 3.
+Typically, decoding such text is done by including script functions within the code.
+Yet in this case, the decoding functions are not contained in the script.

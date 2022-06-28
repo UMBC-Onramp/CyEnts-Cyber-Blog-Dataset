@@ -1,0 +1,6 @@
+
+We leveraged the OPC Server and libraries from St4makers [2] (as shown in Figure 2).
+This software is available for free to SCADA engineers to allow them to develop software to communicate information to and from SCADA devices.
+Figure 2: OPC Server Setup Using the OPC Server libraries allowed us to make the Arduino Uno act as a true, functioning OPC SCADA device (Figure 3).
+Figure 3:
+Matrikon OPC Explorer showing Arduino OPC Server We also used Matrikon’s OPC Explorer [1] , which enables browsing between the Arduino OPC server and the Matrikon embedded simulation OPC server.

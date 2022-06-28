@@ -1,0 +1,9 @@
+
+Mandiant Threat Intelligence offers subscription content, custom analysis, and black box assessments that help organizations identify internet-exposed assets and information.
+Maintain situational awareness on threat actors’ interest in cyber physical systems and the development of OT exploits , with particular interest in attention driven to your organization, third party providers, or original equipment manufacturers (OEM).
+Configure HMIs and other control system assets to enforce acceptable input ranges and prohibit hazardous variable states.
+Similar to web application security, automation programmers should treat all operator input as potentially malicious and gain security assurances by validating that the operator input is within acceptable thresholds.
+Visit our website to learn more about Mandiant’s OT security practice or contact us directly to request Mandiant services or threat intelligence .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

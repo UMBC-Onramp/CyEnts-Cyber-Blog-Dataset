@@ -1,0 +1,18 @@
+
+completed is set to 1.
+The malware changes the desktop background to a bitmap containing the ransom instructions.
+HKCU\\Control Panel\\Desktop\\Wallpaper is set to: %CSIDL_DESKTOPDIRECTORY%\\_Locky_recover_instructions.bmp Network-Based Signatures Command and Control (CnC)
+The malware communicates with the following hard-coded hosts using HTTP over TCP port 80.
+The malware also uses a domain name generation algorithm as described below.
+188.138.88.184 31.41.47.37 5.34.183.136 91.121.97.170 Beacon Packet The malware beacon builds a HTTP POST request to /main.php as shown in Figure 9.
+The POST data is encoded using a custom algorithm.
+Figure 9.
+HTTP POST request polling packet (general packet structure)
+Domain Generation Algorithm (DGA)
+This sample contains a domain name generation algorithm that is based on the current month, day and year.
+There are eight possible domains per day and the domains change on the first of the month and on even numbered days.
+Figure 10 contains Python code to generate the eight possible domain names for the current date.
+Figure 10.
+Locky Domain Generation Algorithm [1] http://arstechnica.com/security/2016/03/kentucky-hospital-hit-by-ransomware-attack/ Subscribe to Blogs Get email updates as new blog posts are added.
+
+

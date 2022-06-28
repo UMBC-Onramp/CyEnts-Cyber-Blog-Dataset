@@ -1,0 +1,5 @@
+
+Adobe has promised to continue supporting Flash Player until the end of 2020.
+Unfortunately, this means merely that software updates, features, and patches will no longer be added; it does not effectively change Flash’s overall use.
+Only the end of websites requiring Flash will remove its vulnerabilities from the security picture.
+A highly targeted attack may need to compromise only a single computer to access an organization’s digital infrastructure and gain access to strategic targets.

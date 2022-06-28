@@ -1,0 +1,7 @@
+
+All other commands will be executed via the system API with output piped to the file /tmp/1 .
+The full system command is <command> >/tmp/1 2>&1 .
+The output of this execution is read and sent back to the attacker base64 encoded, RC4 encrypted.
+The headers \"Cache-Control: no-cache\\n\" and \"Content-type: image/gif\\n\\n\" are used.
+The response appears to be masquerading as a GIF when sending back this command output.
+RADIALPULSE

@@ -1,0 +1,7 @@
+
+Who is behind the attack, and what do they want?
+According to Bleeping Computer , the operators of Conti ransomware contacted HSE representatives and demanded almost $20 million in ransom.
+The crooks claimed that they had been present in HSE’s network for more than two weeks before encrypting any data, that they’d downloaded approximately 700GB of unencrypted files — including personal data, contracts, and financial documents — and that they’d publish the information if their terms weren’t met.
+Conti ransom demand.
+Source: Bleeping Computer.
+Ireland’s prime minister refused to pay that ransom, a decision we fully support .

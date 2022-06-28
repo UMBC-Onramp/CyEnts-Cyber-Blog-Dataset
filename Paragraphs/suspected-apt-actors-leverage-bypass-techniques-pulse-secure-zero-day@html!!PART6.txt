@@ -1,0 +1,7 @@
+
+Unpatch modified files and delete utilities and scripts after use to evade detection.
+Clear relevant log files utilizing a utility tracked as THINBLOOD based on an actor defined regular expression.
+In a separate incident in March 2021, we observed UNC2717 using RADIALPULSE, PULSEJUMP, and HARDPULSE at a European organization.
+Although we did not observe PULSEJUMP or HARDPULSE used by UNC2630 against U.S. DIB companies, these malware families have shared characteristics and serve similar purposes to other code families used by UNC2630.
+We also observed an OpenSSL library file modified in similar fashion as the other trojanized shared objects.
+We believe that the modified library file, which we’ve named LOCKPICK, could weaken encryption for communications used by the appliance, but do not have enough evidence to confirm this.

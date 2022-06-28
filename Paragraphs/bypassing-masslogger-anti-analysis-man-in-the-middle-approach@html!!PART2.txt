@@ -1,0 +1,9 @@
+
+Let us take a deep technical dive into the MassLogger credential stealer and the .NET runtime.
+Triage MassLogger is a .NET credential stealer.
+It starts with a launcher ( 6b975fd7e3eb0d30b6dbe71b8004b06de6bba4d0870e165de4bde7ab82154871 ) that uses simple anti-debugging techniques which can be easily bypassed when identified.
+This first stage loader eventually XOR-decrypts the second stage assembly which then decrypts, loads and executes the final MassLogger payload ( bc07c3090befb5e94624ca4a49ee88b3265a3d1d288f79588be7bb356a0f9fae ) named Bin-123.exe .
+The final payload can be easily extracted and executed independently.
+Therefore, we will focus exclusively on this final payload where the main anti analysis technique is used.
+Basic static analysis doesn’t reveal anything too exciting.
+We notice some interesting strings, but they are not enough to give us any hints about the malware’s capabilities.

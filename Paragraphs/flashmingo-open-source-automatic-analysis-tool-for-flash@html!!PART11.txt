@@ -1,0 +1,8 @@
+
+Conclusion Even though Flash is set to reach its end of life at the end of 2020 and most of the development community has moved away from it a long time ago, we predict that we’ll see Flash being used as an infection vector for a while.
+Legacy technologies are juicy targets for attackers due to the lack of security updates.
+FLASHMINGO provides malware analysts a flexible framework to quickly deal with these pesky Flash samples without getting bogged down in the intricacies of the execution environment and file format.
+Find the FLASHMINGO tool on the FireEye public GitHub Repository .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

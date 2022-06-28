@@ -1,0 +1,5 @@
+
+Figure 6.2 is a screenshot of a proxy tool showing how the packet with the stolen victim’s sensitive data is sent to its C2 server.
+It uses the HTTP Post method with a randomized URL to submit the stolen data in the body, which consists of a 40H-long exported key at the beginning with the encrypted data following, as shown in Figure 6.2.
+The C2 server can decrypt the submitted data using the 40H exported key.
+Conclusion In Part II of this analysis, I started with a received module packet from a C2 server and explained the structure of the packet.

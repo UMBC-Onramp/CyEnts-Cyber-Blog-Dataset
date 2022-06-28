@@ -1,0 +1,4 @@
+
+X-Force found infrastructure overlaps with the delivery of RoboSki’s distribution and recent or ongoing activity spreading malware such as AsyncRAT, LokiBot, NanoCore and the Gamarue Botnet, in addition to Agent Tesla , FormBook, njRAT , NanoCore and Remcos RAT , which have previously been reported on IBM’s premium threat intelligence platform TruSTAR and Security Intelligence .
+Prior references to the RoboSki malware were made in mid-2020 , linking it to activity by a group known as Vendetta.
+X-Force and CT do not necessarily attribute the new RoboSki variant analyzed, or its means of delivery, exclusively to Vendetta.

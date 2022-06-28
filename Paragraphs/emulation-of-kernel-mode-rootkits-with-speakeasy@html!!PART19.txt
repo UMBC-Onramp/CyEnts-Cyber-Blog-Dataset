@@ -1,0 +1,11 @@
+
+Acquiring the Injected User Mode Implant Now that we have a good idea what the driver does to hide itself on the system, we can use the memory dumps created by Speakeasy to acquire the injected DLL discussed earlier.
+Opening the zip file we created at emulation time, we can find the memory tag referenced in Figure 6.
+We quickly confirm the memory block has a valid PE header and it successfully loads into IDA Pro as shown in Figure 13.
+Figure 13:
+Injected user mode DLL recovered from Speakeasy memory dump Conclusion In this blog post, we discussed how Speakeasy can be effective at automatically identifying rootkit activity from the kernel mode binary.
+Speakeasy can be used to quickly triage kernel binaries that may otherwise be difficult to dynamically analyze.
+For more information and to check out the code, head over to our GitHub repository .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

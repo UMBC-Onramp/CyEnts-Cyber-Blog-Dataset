@@ -1,0 +1,8 @@
+
+However, instead of calling it directly, it puts the parameters needed for the function on the stack, followed by a memory address with a “push” opcode and then makes a direct jump to the Windows function.
+When the function ends, Windows makes a “ret” opcode then gets the last memory address that the malware pushed inside the stack, returning to this address and continuing the flow.
+An example of this can be seen in this image: FIGURE 10.
+HIGH OBFUSCATION TO TRY TO SLOW ANALYSIS AND MAKE IT MORE DIFFICULT Another ploy utilized by the malware (depending of the sample) is to get the function “DbgUIRemoteBreakin”, using the function “GetProcAddress”, before employing a trick to avoid having a debugger attach to it in runtime [7] .
+FIGURE 11.
+GET DBGUIREMOTEBREAKIN USING GETPROCADDRESS TO AVOID HAVING A DEBUGGER ATTACK IT
+The trick used here is “VirtualProtect” to give the function memory address of “DbgUIRemoteBreakin” permission to write to it: FIGURE 12.

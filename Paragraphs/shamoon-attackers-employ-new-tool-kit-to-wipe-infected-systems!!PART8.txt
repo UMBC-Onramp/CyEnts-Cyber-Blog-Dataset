@@ -1,0 +1,11 @@
+
+To spread the wipers, the attackers included an additional spreader using Psexec.exe, an administration tool used to remotely execute commands.
+The only difference is that this spreader uses psexec, which is supposed to be stored in Net2 on the spreading machine.
+It could be used on additional machines to move the malware further.
+The wiper contains three options: SilentMode:
+Runs the wiper without any output.
+BypassAcl: Escalates privileges.
+It is always enabled.
+PrintStackTrace:
+Tracks the number of folders and files erased.
+The BypassAcl option is always “true” even if the option is not specified.

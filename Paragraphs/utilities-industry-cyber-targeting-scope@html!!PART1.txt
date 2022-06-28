@@ -1,0 +1,5 @@
+There's often a lot of rhetoric in the press and in the security community around threats to the utilities industry, and risk exposure surrounding critical infrastructure.
+We've determined that the utilities industry (power, water, waste) has been, and likely will continue to be, a target for cyber espionage primarily from Chinese APT groups.
+We also anticipate that U.S. utilities infrastructure is vulnerable to computer network attack (CNA) from a variety of threat actors motivated by a desire to disrupt, deny access, or destroy.
+It's important to recognize the difference between actors seeking to steal data or intellectual property, and actors seeking to destroy systems or cause mass destruction.
+Often the distinction between computer network exploitation (CNE) and CNA gets lost in media coverage that bundles diverse cyber activity together.

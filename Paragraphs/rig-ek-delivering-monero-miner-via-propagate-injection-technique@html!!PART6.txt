@@ -1,0 +1,6 @@
+
+Figure 8:
+JavaScript 3 code snippet Once the exploitation is successful, the shellcode invokes a command line to create a JavaScript file with filename u32.tmp, as shown in Figure 9.
+Figure 9: WScript command line This JavaScript file is launched using WScript, which downloads the next-stage payload and executes it using the command line in Figure 10.
+Figure 10:
+Malicious command line Payload Analysis For this attack, the actor has used multiple payloads and anti-analysis techniques to bypass the analysis environment.

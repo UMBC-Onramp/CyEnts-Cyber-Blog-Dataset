@@ -1,0 +1,77 @@
+We continuously monitor the mobile threat landscape to keep you informed of the most important trends.
+
+Not long back, we published a report about the threats facing smartphone and tablet owners in 2021.
+
+First the good news: a major takeaway is that last year we saw a significant decrease in mobile threat activity compared to 2020.
+
+However, with that said — it’s too early to relax.
+
+For one thing, the number of attacks on smartphones and tablets fell only relative to the record high of 2020, and remained at around the same level as in 2019.
+
+For another, cybercriminals are becoming increasingly inventive.
+
+Adware attacks One of the trends in 2021 was the introduction of malicious code in third-party ads modules, which developers of various useful apps often plug in to monetize their work.
+
+For example, last spring cybercriminals used a malicious advertisement SDK to infect APKPure, a popular alternative Android app store.
+
+Fortunately, its developers took security seriously, and released a clean version a day after we got in touch with them.
+
+A similar story happened with the popular WhatsApp mod FMWhatsApp: one of the versions of the app harbored the Triada Trojan inside an advertisement SDK.
+
+This Trojan is infamous for being very difficult to remove from an infected device.
+
+Moreover, Triada rarely comes alone and tends to download a bunch of other malicious apps onto the victim’s device.
+
+Malware on Google Play We’ve already written more than once that malware can sneak into official app stores .
+
+To pass all checks and get to through to users, cybercriminals employ all sorts of tricks, such as loading malicious code into an approved program in the guise of an update.
+
+In 2021, loaders for various Trojans were found in apps on Google Play, which included the Joker and Facestealer malware.
+
+Joker stealthily takes out paid subscriptions for the user, while Facestealer, as the name suggests, specializes in stealing Facebook credentials.
+
+In most cases, to spread their creations via Google Play, cybercriminals add tiny injections of malicious code to an otherwise harmless apps that have been already approved by the store.
+
+For example, the authors of the Joker Trojan took advantage of the popularity of the Korean TV series Squid Game to hide the malware in an app that offered themed wallpapers.
+
+When Joker was discovered, there were more than 200 apps dedicated to the series on Google Play, and many of them borrowed features from each other.
+
+Unsurprisingly, when scanning such programs, the store moderators let a malicious “upgrade” sneak past.
+
+Small injections of malicious code are hard to detect during moderation, which cybercriminals constantly try to exploit.
+
+One of the apps in Google Play that contained Joker Trojan Bankers — creative theft For several years now, banking Trojans have been hunting, not just for bank accounts but also for accounts in online stores and other digital services.
+
+In 2021, their area of interest widened even further: our experts discovered the Gamethief malware, which steals login data for the mobile version of the game PlayerUnknown’s Battlegrounds (PUBG).
+
+This is the first mobile Trojan that specializes in stealing gaming accounts — just a few years ago, this type of malware was exclusive to desktop computers.
+
+Cybercriminals also improved the functionality of their creations.
+
+For example, the Fakecalls banking Trojan is capable of dropping the call if the user tries to contact their bank, and replacing it with a pre-recorded response of a fake bank representative.
+
+That way, the malware lulls the victim into thinking that a bank employee answered the call.
+
+How to protect your smartphone from malware Cybercriminals are resourceful and take every opportunity to prey on mobile device users.
+
+So, regardless of their activity level, it pays to be alert.
+
+Download apps only from official sources.
+
+True, this is not a 100% security guarantee, but there are far less malicious programs in official stores, and even when malware slips through moderation it usually gets removed from the store relatively quickly.
+
+Whenever possible, use apps from trusted developers with a good reputation to minimize the chances of encountering malware.
+
+Ignore apps that promise payouts you’ve never heard of or overly generous prizes.
+
+It’s almost bound to be a scam.
+
+Don’t give apps permissions they don’t need to work.
+
+Most malware will not be able to deploy fully without potentially dangerous permissions , for example, access to Accessibility, access to text messages and installation of unknown apps .
+
+Use a reliable mobile antivirus that will detect and block malware that tries to get inside your phone.
+
+
+
+

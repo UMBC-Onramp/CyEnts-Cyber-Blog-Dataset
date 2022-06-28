@@ -1,0 +1,6 @@
+
+Figure 7:
+Language resource files Evasion
+This campaign employs a variety of techniques to evade detection.
+This will not serve up a phishing page if the request came from certain blocked IP addresses.
+The backend code (Figure 8) served the users with a \"HTTP/1.1 403 Forbidden\" response header under the following conditions: IP has been seen five times (AntiBomb_User func) IP host resolves to its list of avoided host names ('google', 'Altavista', 'Israel', 'M247', 'barracuda', 'niw.com.au' and more) (AntiBomb_WordBoot func) IP is on its own local blocklist csv (x.csv in the kit) (AntiBomb_Boot func) IP has seen POSTing three times (AntiBomb_Block func) Figure 8:

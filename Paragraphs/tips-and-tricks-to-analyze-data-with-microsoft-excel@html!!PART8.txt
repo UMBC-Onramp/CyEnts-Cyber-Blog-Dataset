@@ -1,0 +1,11 @@
+
+If we took the information as it is presented in the logs and assumed the timestamps were all in the same time zone and created a timeline of this information, it would look like this: As it stands the previous screenshot, we have some login events to the HR application, which may look like normal activity for the employees.
+Then later in the day, they receive some suspicious emails.
+If this were hundreds of lines of log events, we would risk the login and web log events being overlooked as the time of activity precedes our suspected initial compromise vector by a few hours.
+If this were a timeline used for reporting, it would also be inaccurate.
+When we know which time zone our log sources are in, we can adjust the timestamps accordingly to reflect UTC.
+In this case, we confirmed through testing that the application logins and web logs are recorded in EDT, which is four hours behind UTC, or “UTC-4”.
+To change these to UTC time, we just need to add four hours to the time.
+The Excel TIME function makes this easy.
+We can just add a column to the existing tables, and in the first cell we type “=A2+TIME(4,0,0)”.
+Breaking this down:

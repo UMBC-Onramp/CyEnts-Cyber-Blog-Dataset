@@ -1,0 +1,5 @@
+
+It is also wise to consider how to better secure RDP if you are absolutely reliant on it.
+The good news is there are several easy steps that help an organization to better secure RDP access.
+That is why, in this blog, we will use the adversarial knowledge from the McAfee ATR red team to explain what easy measures can be undertaken to harden RDP access.
+Recommendations are additional to standard systems hygiene which should be carried out for all systems (although it becomes more important for Internet connected hosts), such as keeping all software up-to-date, and we intentionally avoid ‘security through obscurity’ items such as changing the RDP port number.

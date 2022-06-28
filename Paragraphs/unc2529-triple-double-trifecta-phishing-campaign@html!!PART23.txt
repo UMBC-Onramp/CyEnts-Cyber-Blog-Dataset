@@ -1,0 +1,4 @@
+
+def encdec(src, key): out = bytearray() for b in src: if key >= 250: key = 0
+out.append(b ^ key) key += 4 return out Figure 8: Algorithm to Decode the Launcher Once the launcher is decoded it is executed within the same PowerShell process as the bootstrap by calling the iex (Invoke-Expression) command.
+Launcher The launcher responsibility, after being executed by the bootstrap code, is to decrypt and execute the payload saved under the VersionIndependentProgID registry key.

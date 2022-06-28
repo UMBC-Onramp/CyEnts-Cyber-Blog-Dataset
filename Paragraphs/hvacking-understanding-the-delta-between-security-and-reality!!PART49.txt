@@ -1,0 +1,4 @@
+
+Since the BVLC layer is typically how a packet is identified as a BACnet packet, a potential problem with altering this layer is that the last packet will no longer look like a BACnet packet.
+If this is the case, will the application still ingest the packet?
+The team tested this and discovered that the application will ingest any broadcast packet regardless of type, since the vulnerable code is executed before the code that validates the packet type.

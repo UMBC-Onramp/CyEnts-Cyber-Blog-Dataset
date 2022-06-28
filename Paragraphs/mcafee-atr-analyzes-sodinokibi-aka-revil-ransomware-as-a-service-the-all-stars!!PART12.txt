@@ -1,0 +1,11 @@
+
+Lastly, for any future proceedings (suspect apprehension and legal)
+it is important to maintain a chain of custody linking victims, samples and affiliates together.
+Security providers as gatherers and owners of this data play a huge role in safeguarding this for the future.
+Overview Versions and ID Numbers Using an online tool from RAWGraphs we created a graphic display of the entire dataset showing the relationship between the versions and the ID numbers.
+Below is an overview, a more detailed overview can be found on the McAfee ATR Github .
+FIGURE 4.
+OVERVIEW OF GANDCRAB VERSIONS AND IDs
+Top performing affiliates immediately stood out from the rest as the lines were thicker and more spread out.
+According to our data, the most active ID numbers were 15,41,99 and 170.
+Determining the key players in a RaaS family can help Law Enforcement prioritize its valuable resources.

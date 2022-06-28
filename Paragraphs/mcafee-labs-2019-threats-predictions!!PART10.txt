@@ -1,0 +1,5 @@
+
+Credit card fraud and the demand for stolen credit card details will continue, with an increased focus on online skimming operations that target third-party payment platforms on large e-commerce sites.
+From these sites, criminals can silently steal thousands of fresh credit cards details at a time.
+Furthermore, social media is being used to recruit unwitting users, who might not know they are working for criminals when they reship goods or provide financial services.
+We predict an increase in the market for stolen credentials—fueled by recent large data breaches and by bad password habits of users.

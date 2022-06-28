@@ -1,0 +1,4 @@
+
+DevSecOps Will Rise to Prominence as Growth in Containerized Workloads Causes Security Controls to ‘Shift Left’
+By Sekhar Sarukkai DevOps teams can continuously roll out micro-services and interacting, reusable components as applications.
+As a result, the number of organizations prioritizing the adoption of container technologies will continue to increase in 2020.

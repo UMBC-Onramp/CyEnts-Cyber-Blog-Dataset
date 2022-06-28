@@ -1,0 +1,83 @@
+There’s a certain reliability to everyday objects.
+
+Take a TV remote for example: It’s hard to imagine one eavesdropping on conversations, but cybersecurity researchers J. J. Lehman and Ofri Ziv from Israeli company Guardicore got one to do just that.
+
+They reported their findings at RSA Conference 2021 .
+
+How researchers hacked a remote The subject of Lehman and Ziv’s research was the remote control for the Comcast Xfinity X1 set-top box, which is popular in the United States (with more than 10 million users, according to the researchers).
+
+The remote control supports voice commands, for which it is equipped with a microphone and a quite capable processor.
+
+Two data transfer technologies are implemented in the device.
+
+For switching channels and other simple actions, a standard infrared transmitter is used, which has the important advantage of consuming minimal energy so that the remote does not need frequent charging, allowing it to operate on ordinary batteries for an extended period of time.
+
+But for cases requiring a faster data transfer speed, the remote uses a radio interface, enabling the remote not only to send data to the set-top box, but to receive from it as well.
+
+The radio interface consumes more power, so it is used only when needed.
+
+Like many modern devices, this type of remote control is essentially a connected computer — and therefore hackable.
+
+Having studied the remote’s firmware (with a copy conveniently stored on the set-top box’s hard drive), the researchers were able to determine the alterations that would enable the firmware to command the remote control to turn on the microphone and transmit sound over the radio channel.
+
+But modifying the firmware was not enough; they still needed a way to upload it to the remote, and preferably without physical contact.
+
+To do that, Lehman and Ziv examined how the set-top box communicates with the remote and updates its software.
+
+They discovered that the remote had to initiate the update process.
+
+Every 24 hours, the remote queries the set-top box and receives either a negative response or an offer to install a new version of the software, which it downloads from the set-top-box.
+
+The researchers also found several vital flaws in the communication mechanism between the remote and the Xfinity box.
+
+First, the former does not check the firmware’s authenticity, so it will download and install whatever firmware the set-top box (or the hacker’s computer impersonating one) offers it.
+
+Second, although the set-top box and the remote exchange encrypted messages, the encryption is not properly enforced.
+
+The remote accepts (and executes) commands sent in plain text marked “encryption disabled.”
+
+The remote’s requests are still encrypted and therefore cannot be deciphered, but simply understanding the communication mechanism makes it possible to effectively guess what the remote is asking and to give the right response.
+
+It goes something like this: “YdvJhd8w@a&hW*wy5TOxn3B*El06%D7?”
+
+“Sure, there’s a firmware update available for you to download.”
+
+“Cj@EDkjGL01L^NgW@Fryp1unc1GTZIYM.”
+
+“Sending the file; accept it.”
+
+Third, it is quite easy to trigger an error in the firmware module that handles communication with the remote, causing the module to crash and reboot.
+
+That gives the attacker a window during which they are guaranteed to be the only party giving commands to the remote.
+
+Therefore, to hack the remote one needs to: Wait for the remote to make requests and guess when it is querying about updates; Knock out the set-top box module responsible for communicating with the remote the moment it makes an update query; Give an affirmative response to the remote and send a modified file for uploading.
+
+All of that happens contactlessly, over the radio interface.
+
+The researchers stuffed their remote with modified firmware that queried for updates not every 24 hours, but every minute; then, on receiving certain response, turned on the built-in microphone and broadcast the sound to the attackers.
+
+Their tests succeeded at relatively long range and through a wall, simulating a wiretap van outside a house.
+
+How to stay protected In our opinion, there is little point worrying about your remote being hacked and turned into a listening device.
+
+Although proven feasible, the attack isn’t really practical.
+
+It might be suitable for a targeted attack on some kind of special person, but it’s too complex and time-consuming for large-scale use.
+
+That said, here are some tips for those of a you-can-never-be-too-cautious frame of mind:
+
+If you own an Xfinity TV box, check the remote’s firmware version.
+
+The researchers responsibly disclosed the vulnerabilities to Comcast, and the company has issued an update that fixes the problem; The remote controls of some other manufacturer’s TV boxes and TVs with voice support likely operate on the same principle and may have similar vulnerabilities.
+
+So periodically check for updates for your remote and install them when they are available.
+
+Corresponding items in TV and set-top-box menus are likely somewhere near their Wi-Fi and Bluetooth settings; Consider taking apart the remote to physically remove the microphone if your remote supports voice commands but you never use them.
+
+We think doing so is overkill, but it’s an option; Be aware that an attack on your Wi-Fi network is far more probable than such an exotic hack.
+
+Make sure to configure yours securely , move all vulnerable IoT devices to a guest network , and use a secure connection ] to protect the most valuable data.
+
+
+
+

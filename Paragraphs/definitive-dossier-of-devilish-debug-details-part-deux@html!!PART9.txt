@@ -1,0 +1,6 @@
+
+In this case we wanted to derive features from the filename itself, so we left it.
+Other approaches could be to normalize it, or even to make note that the same filename string ‘mkzyu91952’ appears earlier in the path.
+There are endless possible features when dealing with file paths.
+Directory Analysis
+Once we had normalized directories, we could start to “tokenize” each directory term, to start performing some statistical analysis.

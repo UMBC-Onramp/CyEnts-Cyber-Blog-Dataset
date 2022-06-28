@@ -1,0 +1,9 @@
+
+Three years later, September 2021 saw the first real-life attack using Spectre v1.
+Known as Spook.js, the attack concept is complicated, but we will try to strip it down.
+Spectre v1 background News of the first two attacks of this family — Spectre and Meltdown — broke in 2018 .
+The attacks exploited the branch prediction mechanism, which is designed to speed up command execution, found in all modern CPUs.
+When a user enters a password to log in to a website, if the password is correct, one set of instructions is executed.
+If not, another set is executed.
+However — and this is where the branch prediction kicks in — before receiving the answer, the CPU starts executing the set of instructions it thinks it will most likely need.
+In our example, if the password has been entered correctly a hundred times before, the CPU will assume that this time will be no different.

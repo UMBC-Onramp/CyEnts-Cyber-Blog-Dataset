@@ -1,0 +1,5 @@
+
+The POST request, depicted in Figure 4, showed that the threat actors used a custom HTTP request for initial callback.
+The Age HTTP header, for example, was set to a string of 16 seemingly-random lowercase hexadecimal characters.
+Figure 4:
+Initial HTTP communication after successful execution of the FakeUpdates dropper The HTTP Age header typically represents the time in seconds since an object has been cached by a proxy.

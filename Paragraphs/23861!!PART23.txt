@@ -1,0 +1,6 @@
+
+Try to get in touch with a security researcher in your area and constantly discuss best practices.
+Share artifacts, suspicious messages or logs whenever you think something is odd.
+Security is never a single snapshot solution that is 100% proof; think of it like a stream that flows and you need to adjust your sailing depending on the speed, currents and obstacles.
+At the end of this, I’d like to leave you with a thought.
+If you get targeted by nation states, that means you are important .

@@ -1,0 +1,5 @@
+
+TRITON was used to modify application memory on SIS controllers in the environment, which could have led to a failed validation check.
+The failure occurred during the time period when TRITON was used.
+It is not likely that existing or external conditions, in isolation, caused a fault during the time of the incident.
+Attribution FireEye has not connected this activity to any actor we currently track; however, we assess with moderate confidence that the actor is sponsored by a nation state.

@@ -1,0 +1,8 @@
+
+In other cases, as we described in our second blog , the attacker often uses known post-exploitation frameworks, for privilege escalation, lateral movement and performing any additional actions on their objective.
+Since quite a few of these frameworks are readily available we often call this the “GitHubification” of attack tools.
+In this case however, the attacker could actually skip this step and continue with the network reconnaissance and deployment of the ransomware immediately, since a high privileged account was already compromised.
+Lateral Movement With the administrator-level account, the attacker used SMB to perform network reconnaissance, resulting in an overview of accessible hosts.
+Subsequently, the attacker used the internal Microsoft Remote Access Server (RAS) to access these systems using either the administrator or the LocalSystem account.
+The LocalSystem account is a built-in Windows account.
+It is the most authoritative account on a Windows local instance (more potent than any admin account).

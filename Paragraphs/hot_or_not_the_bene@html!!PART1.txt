@@ -1,0 +1,4 @@
+Introduction Apple has made a significant effort to build and maintain a healthy and clean app ecosystem.
+The essential contributing component to this status quo is the App Store, which is protected by a thorough vetting process that scrutinizes all submitted applications.
+While the process is intended to protect iOS users and ensure apps meet Apple’s standards for security and integrity, developers who have experienced the process would agree that it can be difficult and time consuming.
+The same process then must be followed when publishing a new release or issuing a patched version of an existing app, which can be extremely frustrating when a developer wants to patch a severe bug or security vulnerability impacting existing app users.

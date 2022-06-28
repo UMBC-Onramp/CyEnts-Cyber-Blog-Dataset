@@ -1,0 +1,6 @@
+
+If you suspect that an administrator account was compromised, don’t overlook this log!
+The PowerShell cmdlet Search-AdminAuditLog is used to query these logs, but note that the Audit Log Search feature must be enabled and the same 90 day retention limit will be in place.
+Azure AD Logs Azure AD logs can be accessed from the Azure portal ( portal.azure.com ) under the Azure Active Directory service.
+Azure AD Sign-in logs contain detailed information about how authentications occur and O365 application usage.
+Azure AD audit logs are also a valuable source of information, containing records of password resets, account creations, role modifications, OAuth grants, and more that could be indicative of suspicious activity.

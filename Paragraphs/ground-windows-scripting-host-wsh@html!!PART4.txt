@@ -1,0 +1,9 @@
+
+I've also seen a few variants of commodity malware that install a LNK file in the startup folder and deploy an EXE into a directory that the user can write to, like \" C: users local settings emp \".
+LNK files contain several kinds of useful metadata, but for today's purposes we're interested in LNK files as pointers to other files.
+In this recent case, we identified a novel technique that indirectly loads malicious scripts by means of LNK files in a user's start-up folder.
+The LNK file was designed to invoke the Windows scripting host (WSH).
+The WSH comes in both a GUI version, \"wscript.exe\", and a command-line version, \"cscript.exe\".
+The WSH can interpret Visual Basic scripts, commonly denoted by the file extension \".vbs\", and Jscripts (Microsoft's implementation of JavaScript), commonly denoted by the file extension \".js\".
+The malicious LNK file invoked \"wscript.exe\" to interpret a JScript file stored within a specific user's profile.
+Here's a cleaned-up excerpt parsed from the LNK file using lnk-parser , depicting the relative path to the WSH (in yellow) and an argument (in green) which points to a JScript file: The JScript we found used an ActiveXObject object to create an instance of Internet Explorer and open a URL hosted by a code-sharing cloud service.

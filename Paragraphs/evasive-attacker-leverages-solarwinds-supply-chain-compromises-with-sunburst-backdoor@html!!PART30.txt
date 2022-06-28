@@ -1,0 +1,7 @@
+
+This should include blocking all Internet egress from SolarWinds servers.
+If SolarWinds infrastructure is not isolated, consider taking the following steps: Restrict scope of connectivity to endpoints from SolarWinds servers, especially those that would be considered Tier 0 / crown jewel assets Restrict the scope of accounts that have local administrator privileged on SolarWinds servers.
+Block Internet egress from servers or other endpoints with SolarWinds software.
+Consider (at a minimum) changing passwords for accounts that have access to SolarWinds servers / infrastructure.
+Based upon further review / investigation, additional remediation measures may be required.
+If SolarWinds is used to managed networking infrastructure, consider conducting a review of network device configurations for unexpected / unauthorized modifications.

@@ -1,0 +1,9 @@
+
+Multiple actors are involved in MAZE ransomware operations, based on our observations of alleged users in underground forums and distinct tactics, techniques, and procedures across Mandiant incident response engagements.
+Actors behind MAZE also maintain a public-facing website where they post data stolen from victims who refuse to pay an extortion fee.
+The combination of these two damaging intrusion outcomes—dumping sensitive data and disrupting enterprise networks—with a criminal service makes MAZE a notable threat to many organizations.
+This blog post is based on information derived from numerous Mandiant incident response engagements and our own research into the MAZE ecosystem and operations.
+Mandiant Threat Intelligence will be available to answer questions on the MAZE ransomware threat in a May 21 webinar .
+Victimology We are aware of more than 100 alleged MAZE victims reported by various media outlets and on the MAZE website since November 2019.
+These organizations have been primarily based in North America, although victims spanned nearly every geographical region.
+Nearly every industry sector including manufacturing, legal, financial services, construction, healthcare, technology, retail, and government has been impacted demonstrating that indiscriminate nature of these operations (Figure 1).

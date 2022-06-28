@@ -1,0 +1,6 @@
+
+The patcher accepts two command line arguments, the path to the original binary and the patched output file path.
+The original binary is read into memory, patched, and then written to the output path.
+The assembly patches and offsets into the original binary are hardcoded.
+SLOWPULSE Variant 3 Patcher As part of our investigation into the SLOWPULSE family we were able to recover the utility used by the attacker to insert the malicious logic into the original libdsplibs.so file.
+The file with SHA256: 06c56bd272b19bf7d7207443693cd1fc774408c4ca56744577b11fee550c23f7 is responsible for inserting SLOWPULSE V3 malicious logic to bypass ACE logon authentication process.

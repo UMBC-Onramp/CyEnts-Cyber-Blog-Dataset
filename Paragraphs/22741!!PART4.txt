@@ -1,0 +1,9 @@
+
+The text is replete with trust-inspiring facts and figures.
+Fake Bitmain sales team uses Google Docs to tell victim about Antminer S19j availability The same text appears in the Google Docs file, only with an active link that leads, through a chain of redirects, to bitmain[.]sa[.]com, a clone of the official bitmain[.]com website (note the differences in the address).
+A WHOIS check reveals that the domain of the fake site was registered in March 2021.
+For extra credibility, the cybercriminals use the HTTPS protocol.
+Readers of this blog already know HTTPS protects data from interception as it travels from user to site but does not guarantee a site is bona fide.
+If the destination site is malicious, using a secure protocol just means the data will travel securely to the cybercriminals.
+Fake Bitmain site with Antminer S19j ad On the real Bitmain website, at the time of posting, the Buy button was inactive because the last Antminer S19j batch had already been snapped up; the site does not expect new deliveries to occur before October.
+But on the fake resource, the coveted mining machine slides right into the shopping cart, and for the same price as the real one, $5,017.

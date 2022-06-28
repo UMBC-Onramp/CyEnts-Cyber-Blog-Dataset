@@ -1,0 +1,7 @@
+
+This post details how this threat leverages these vulnerabilities to control affected devices, and ways to protect users from these attacks.
+Exploiting New Vulnerabilities The Beastmode campaign derives its name from filenames and URLs used for its binary samples (Figure 1), as well as a unique HTTP User-Agent header \"b3astmode\" (Figure 2) within the exploit requests.
+Binary samples are based on the publicly available source code of the Mirai botnet.
+Like most DDOS botnets, aside from brute-forcing credentials, Beastmode employs a variety of exploits to infect more devices, as listed below.
+CVE-2022-26210 targets TOTOLINK A800R, A810R, A830R, A950RG, A3000RU, and A3100R (Figure 2).
+CVE-2022-26186 targets TOTOLINK N600R and A7100RU (Figure 3).

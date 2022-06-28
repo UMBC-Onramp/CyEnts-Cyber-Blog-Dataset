@@ -1,0 +1,6 @@
+
+We can create our own visitor classes by inheriting from this one and overloading the corresponding methods.
+Example Scripts
+In this section, we will use the Hex-Rays API to solve two real-world problems: Identify calls to GetProcAddress to dynamically resolve Windows APIs, assigning the resulting address to a global variable.
+Display assignments related to stack strings as characters instead of numbers, for easier readability.
+GetProcAddress The first example we will walk through is how to automatically handle renaming global variables that have been dynamically resolved at run time.

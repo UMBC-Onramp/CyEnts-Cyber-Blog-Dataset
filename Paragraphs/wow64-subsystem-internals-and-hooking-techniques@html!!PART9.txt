@@ -1,0 +1,4 @@
+
+Going back to the jmp instruction we saw in Figure 6, we now know what is occurring.
+The instruction jmp [r15 + 0xF8] is equivalent to the C code jmp TurboThunkDispatch[0xF8 / sizeof(uint64_t)].
+Looking at the function pointer at this index we can see we’re at the function wow64cpu!CpupReturnFromSimulatedCode (Figure 8).

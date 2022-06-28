@@ -1,0 +1,5 @@
+FireEye has been busy over the last year.
+We have tracked malware-based espionage campaigns and published research papers on numerous advanced threat actors.
+We chopped through Poison Ivy , documented a cyber arms dealer , and revealed that Operation Ke3chang had targeted Ministries of Foreign Affairs in Europe.
+Worldwide, security experts made many breakthroughs in cyber defense research in 2013.
+I believe the two biggest stories were Mandiant’s APT1 report and the ongoing Edward Snowden revelations, including the revelation that the U.S. National Security Agency (NSA) compromised 50,000 computers around the world as part of a global espionage campaign.

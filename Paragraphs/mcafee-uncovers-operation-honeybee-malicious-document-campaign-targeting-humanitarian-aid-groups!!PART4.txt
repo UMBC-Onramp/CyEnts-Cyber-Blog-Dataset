@@ -1,0 +1,4 @@
+
+This sample, however, contained a bug that interfered with the execution flow of the dropper, suggesting that the authors did not test the malware after code signing it.
+The decoy document uses the cloud-based accounting software company Xero as a lure: A decoy document from MaoCheng dropper.
+Possible Operator The Advanced Threat Research team has identified the following persona (snoopykiller@mail.ru) tied to this recent operation.

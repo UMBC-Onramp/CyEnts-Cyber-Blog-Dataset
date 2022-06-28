@@ -1,0 +1,7 @@
+
+Once the framework is loaded, the script has full access to all of the framework’s APIs.
+Figure 10 shows the outcome of executing the private API [ACAccountStore allAccountTypes], which outputs 36 account types on the test device .
+This added behavior does not require the app to be rebuilt, nor does it require another review through the App Store.
+Figure 10.
+The screenshot of the console log for utilizing Accounts.framework
+The above demonstration highlights a serious security risk for iOS app users and app developers.

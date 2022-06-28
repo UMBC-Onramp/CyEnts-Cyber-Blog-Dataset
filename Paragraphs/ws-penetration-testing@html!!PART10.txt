@@ -1,0 +1,15 @@
+
+What\ndifferentiates them from other providers?
+To what degree\ndoes their testing rely on automated vulnerability scanners vs.\nhands on manual testing?
+How well do they understand the\nthreat actors that are relevant to your environment?
+How well are\nthey able to emulate real world attacks?
+What\ndeliverables will you receive from the test?
+Are they primarily\nthe output of an automated tool?
+Ask for samples.
+Are\nthey unbiased?
+Do they use penetration tests as a means to sell or\nresell other products and services?
+No doubt, there\nare other questions that you will want to consider when scoping a\npenetration test, but we hope that these will help you get started.\nIf you'd like to read more about Mandiant's penetration testing (and\nother) services, you can do so here .
+Of course,\nalso feel free to contact\nus if you'd like to talk about your situation and how Mandiant\ncan best assess your organization's security.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

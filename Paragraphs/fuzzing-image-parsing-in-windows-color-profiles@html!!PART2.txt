@@ -1,0 +1,9 @@
+
+What is an ICC Color Profile?
+Wikipedia provides a more-than-adequate description of ICC color profiles : \"In color management, an ICC profile is a set of data that characterizes a color input or output device, or a color space, according to standards promulgated by the International Color Consortium (ICC).
+Profiles describe the color attributes of a particular device or viewing requirement by defining a mapping between the device source or target color space and a profile connection space (PCS).
+This PCS is either CIELAB (L*a*b*) or CIEXYZ.
+Mappings may be specified using tables, to which interpolation is applied, or through a series of parameters for transformations. ”
+In simpler terms, an ICC color profile is a binary file that gets embedded into images and parsed whenever ICC supported software processes the images.
+Specification The ICC specification is around 100 pages and should be easy to skim through.
+Reading through specifications gives a better understanding of the file format, different types of color profiles, and math behind the color transformation.

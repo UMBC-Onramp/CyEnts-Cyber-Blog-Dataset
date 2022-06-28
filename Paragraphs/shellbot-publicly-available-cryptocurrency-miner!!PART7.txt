@@ -1,0 +1,5 @@
+
+Each ShellBot variant connected with a different botnet over an IRC channel.
+To get into the botnet, IBM infected some devices and followed the activity.
+The ‘Blackcat’ Server At the time of joining a server that was named Blackcat, the channel consisted of close to a hundred active bots and was about four months old.
+The channel itself was only used by the operator to address single or multiple machines, to which they would respond in a private chat.

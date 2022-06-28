@@ -1,0 +1,5 @@
+
+Downloading and running the modified application sets in motion a multistep infection chain .
+Additionally, our researchers found the malware loader in components that load before the operating system: UEFI (Unified Extensible Firmware Interface, the interface through which the operating system communicates with the hardware) and MBR (Master Boot Record, needed to start Windows).
+Either way, simply booting up the computer installs FinSpy.
+A smartphone or tablet can pick up FinSpy through a link in a text message.

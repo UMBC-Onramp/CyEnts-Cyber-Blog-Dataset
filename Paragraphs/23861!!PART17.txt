@@ -1,0 +1,6 @@
+
+In time, more and more friends started moving to Signal .
+And this worked well with my family too.
+I’m not saying you should do the same.
+Perhaps you can keep iMessage enabled and live happily and malware free — truth be told, Apple greatly improved the security sandbox around iMessage with BlastDoor in iOS 14.
+Nevertheless, the FORCEDENTRY exploit used by NSO to deliver Pegasus bypassed BlastDoor and of course, no security feature is ever 100% hack-proof.

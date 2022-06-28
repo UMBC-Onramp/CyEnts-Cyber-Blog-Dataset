@@ -1,0 +1,8 @@
+
+T1550 Alert on new domain federation in Office 365 OFFICE 365 [Modified Domain Federation Settings] T1550 Alert of modification to domain federations settings in Office 365 OFFICE 365 [User Added Credentials to Service Principal] T1098.011 Alert on addition of certificates or passwords added to Service Principals OFFICE 365 ANALYTICS [Abnormal Logon]
+T1078.004 Alert on suspicious login activity based on heuristics
+WINDOWS METHODOLOGY [ADFS Dump] TA0006 T1552 T1552.004 T1199 Alert on activity access requests for the AD FS Distributed Key Manager (DKM) container in Active Directory OFFICE 365 [Mailbox Folder Permission Change – Inbox and Top Of Information Store]
+T1098.002 Alert on suspicious modifications of mailbox folder permissions for the inbox or top of information store.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

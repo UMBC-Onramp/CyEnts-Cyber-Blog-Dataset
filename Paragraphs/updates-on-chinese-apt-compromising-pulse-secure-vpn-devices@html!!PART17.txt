@@ -1,0 +1,6 @@
+
+Previous versions of the ICT will exit if run on an unsupported software version.
+For every ICT scan, ensure that the ICT would have supported the device's version number.
+Reset all passwords in the environment.
+Upgrade to the most recent software version.
+To secure the appliance and assist with future investigations, consider implementing the following: Enable unauthenticated logging and configure syslog for Events, User & Admin Access Forward

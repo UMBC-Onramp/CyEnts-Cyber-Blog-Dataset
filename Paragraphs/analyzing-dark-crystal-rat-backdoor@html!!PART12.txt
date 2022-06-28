@@ -1,0 +1,9 @@
+
+Figure 11 shows the decoded configuration (with C2 endpoint URLs de-fanged): > echo TUhvc3Q6aHR0cDovL2RvbWFsby5vbmxpbmUva3NlemJseGx2b3Uza2NtYnE4bDdoZjNmNGN5NXhnZW
+80dWRsYTkxZHVldTNxYTU0LzQ2a3FianZ5a2x1bnAxejU2dHh6a2hlbjdnamNpM2N5eDhnZ2twdHgy
+NWk3NG1vNm15cXB4OWtsdnYzL2FrY2lpMjM5bXl6b24weHdqbHhxbm4zYjM0dyxCSG9zdDpodHRwOi 8vZG9tYWxvLm9ubGluZS9rc2V6Ymx4bHZvdTNrY21icThsN2hmM2Y0Y3k1eGdlbzR1ZGxhOTFkdWV1 M3FhNTQvNDZrcWJqdnlrbHVucDF6NTZ0eHpraGVuN2dqY2kzY3l4OGdna3B0eDI1aTc0bW82bXlxcH g5a2x2djMvYWtjaWkyMzlteXpvbjB4d2pseHFubjNiMzR3LE1YOkRDUl9NVVRFWC13TGNzOG8xTlZF
+VXRYeEo5bjl5ZixUQUc6VU5ERUY= | base64
+-d MHost:hxxp://domalo[.]online/ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91dueu3qa54/ 46kqbjvyklunp1z56txzkhen7gjci3cyx8ggkptx25i74mo6myqpx9klvv3/akcii239myzon0xwjl xqnn3b34w,BHost:hxxp://domalo[.]online/ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91 dueu3qa54/46kqbjvyklunp1z56txzkhen7gjci3cyx8ggkptx25i74mo6myqpx9klvv3/akcii239 myzon0xwjlxqnn3b34w,MX:DCR_MUTEX-wLcs8o1NVEUtXxJ9n9yf,TAG:UNDEF Figure 11: Decoding the base64 data in SchemaServerManager.
+Main reveals a configuration string Figure 11 shows that the data decoded to a configuration string containing four values:
+MHost, BHost, MX, and TAG.
+We analyzed the code that parses this string and found that MHost and BHost were used as its main and backup command and control (C2) endpoints.

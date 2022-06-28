@@ -1,0 +1,9 @@
+
+Mandiant has observed the threat actor using PsExec and cron jobs to deploy the DARKSIDE ransomware.
+UNC2465 has called the customer support lines of victims and told them that data was stolen and instructed them to follow the link in the ransom note.
+Implications We believe that threat actors have become more proficient at conducting multifaceted extortion operations and that this success has directly contributed to the rapid increase in the number of high-impact ransomware incidents over the past few years.
+Ransomware operators have incorporated additional extortion tactics designed to increase the likelihood that victims will acquiesce to paying the ransom prices.
+ 
+As one example, in late April 2021, the DARKSIDE operators released a press release stating that they were targeting organizations listed on the NASDAQ and other stock markets.
+They indicated that they would be willing to give stock traders information about upcoming leaks in order to allow them potential profits due to stock price drops after an announced breach.
+ In another notable example, an attacker was able to obtain the victim's cyber insurance policy and leveraged this information during the ransom negotiation process refusing to lower the ransom amount given their knowledge of the policy limits.

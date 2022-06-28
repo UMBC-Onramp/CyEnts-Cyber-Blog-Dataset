@@ -1,0 +1,4 @@
+
+ 
+This information may be useful in identifying anomalous logons based on geographical location.
+After taking all source IP addresses, running them against threat intelligence feeds and geolocating them, we have the following data added to a second sheet called “IP Address Intel” in our Excel document: Figure 2: IP address enrichment We can already see before we even dive into the logs themselves that we have suspicious activity: The five IP addresses in the 203.0.113.0/24 range in our data are known to be associated with activity connected to a fictional threat actor tracked as TMP.OGRE.

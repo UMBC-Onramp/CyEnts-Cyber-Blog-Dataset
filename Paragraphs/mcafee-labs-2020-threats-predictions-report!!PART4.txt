@@ -1,0 +1,9 @@
+
+The ability to create manipulated content is not new.
+Manipulated images were used as far back as World War II in campaigns designed to make people believe things that weren’t true.
+What’s changed with the advances in artificial intelligence is you can now build a very convincing deepfake without being an expert in technology.
+There are websites set up where you can upload a video and receive in return, a deepfake video.
+There are very compelling capabilities in the public domain that can deliver both deepfake audio and video abilities to hundreds of thousands of potential threats actors with the skills to create persuasive phony content.
+Deepfake video or text can be weaponized to enhance information warfare.
+Freely available video of public comments can be used to train a machine-learning model that can develop a deepfake video depicting one person’s words coming out of another’s mouth.
+Attackers can now create automated, targeted content to increase the probability that an individual or groups fall for a campaign.

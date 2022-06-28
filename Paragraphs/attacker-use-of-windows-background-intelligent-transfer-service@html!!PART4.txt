@@ -1,0 +1,4 @@
+
+Creating BitsParser Through our investigations, Mandiant consultants identified evidence of attackers leveraging BITS across multiple campaigns.
+In order to search for evidence of attacker use of BITS, we needed to understand the underlying infrastructure used by BITS and create a tool that could collect relevant information.
+We created BitsParser , which parses BITS databases and returns information about jobs executed on endpoint systems.

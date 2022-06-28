@@ -1,0 +1,5 @@
+
+Similar to IT Hosting, Freight and Logistics firms have low operating margins and end clients with little tolerance for service interruptions.
+The inability to pay or negotiate a large ransom has materially impacted several firms in this industry.
+Ryuk Decryptor findings and issues When victims do pay the exorbitant ransom amount, the criminals will provide a decryptor to unlock a their files.
+This decryptor is actually framework that needs to be loaded with a victim’s private RSA key, provided by the criminals, in order to decrypt.

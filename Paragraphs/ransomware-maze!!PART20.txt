@@ -1,0 +1,5 @@
+
+FIGURE 17.
+RECOVER THE FS REDIRECTION IN 64-BIT OPERATING SYSTEMS Maze affects network resources too, using the functions “WNetOpenEnumW”, “WNetEnumResourceW”, “WNetCloseEnum” and “WNetAddConnection2W”.
+FIGURE 18.
+ENUMERATING THE NETWORK RESOURCES OF THE DISK TO CRYPT FILES INSIDE OF THEM The malware uses two algorithms to crypt the files, ChaCha which is based on the Salsa20 algorithm that is symmetric and, for protection, an RSA algorithm that is asymmetric In each execution the malware creates a Public BLOB of one RSA key that will be used to crypt the part that holds the information to decrypt the files, and one Private BLOB with an RSA key that allows decryption of the information crypted with the public RSA blob created previously.

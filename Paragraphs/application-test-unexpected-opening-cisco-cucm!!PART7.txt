@@ -1,0 +1,5 @@
+
+Moving Laterally Through the Enterprise As a result of these vulnerabilities, a low-privileged user could elevate their privileges to the highest level on the CUCM appliance.
+From there, they could access sensitive data, manipulate sensitive configurations and install malicious software on the appliance that monitors and records the communication between Cisco Jabber users.
+An attacker could hijack logged-in user sessions or deceive users to steal their credentials.
+Furthermore, since the application allows for code execution, an attacker could use it as a foothold within the network from which to move laterally.

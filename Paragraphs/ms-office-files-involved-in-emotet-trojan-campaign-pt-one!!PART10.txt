@@ -1,0 +1,7 @@
+
+Constant Numbers are Obfuscated Normally, the constant numbers are useful to researchers for guessing the code’s purpose.
+Here is an example.
+The instruction “mov [esp+2ACh+var_1A0], 2710h” has been obfuscated, as seen in the three instructions below.
+mov     [esp+2ACh+var_1A0], 387854h or      [esp+2ACh+var_1A0],
+0F1FDFF8Dh xor     [esp+2ACh+var_1A0], 0F1FDD8CDh
+All APIs are hidden The APIs are obtained using a hash code of both the API name and the module name that the function belongs to.

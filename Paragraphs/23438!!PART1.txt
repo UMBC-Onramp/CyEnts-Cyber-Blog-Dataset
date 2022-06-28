@@ -1,0 +1,5 @@
+Google has released an emergency update for the Chrome browser that addresses three vulnerabilities: CVE-2021-37974 , CVE-2021-37975 , and CVE-2021-37976 .
+Google experts consider one of the vulnerabilities as critical and the other two as highly dangerous.
+What’s worse: according to Google cybercriminals have already exploited two of these three vulnerabilities.
+Therefore, Google advices all Chrome users to immediately update browser to version 94.0.4606.71.
+These vulnerabilities are also relevant to other browsers based on the Chromium engine — for instance, Microsoft recommends updating Edge to version 94.0.992.38.

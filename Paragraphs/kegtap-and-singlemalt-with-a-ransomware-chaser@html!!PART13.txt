@@ -1,0 +1,14 @@
+
+The actors used the Nltest command to list domain controllers.
+Lateral Movement Lateral movement was most commonly accomplished using valid credentials in combination with Cobalt Strike BEACON, RDP and SMB, or using the same backdoors used to establish a foothold in victim networks.
+The actors have regularly leveraged Cobalt Strike BEACON and Metasploit Meterpreter to move laterally within victim environments.
+The actors commonly moved laterally within victim environments using compromised accounts—both those belonging to regular users and accounts with administrative privileges.
+ In addition to the use of common post-exploitation frameworks, lateral movement has also been achieved using WMIC commands and the Windows RDP and SMB protocols.
+The actors used the Windows net use command to connect to Windows admin shares to move laterally.
+Complete Mission Mandiant is directly aware of incidents involving KEGTAP that included the post-compromise deployment of RYUK ransomware.
+ We have also observed instances where ANCHOR infections, another backdoor associated with the same actors, preceded CONTI or MAZE deployment.
+In at least one case, an executable was observed that was designed to exfiltrate files via SFTP to an attacker-controlled server.
+The actors have used Cobalt Strike BEACON to exfiltrate data created through network reconnaissance activities as well as user files.
+The actors were observed deleting their tools from victim hosts in an attempt to remove indicators of compromise.
+The actors have used their access to the victim network to deploy ransomware payloads.
+ There is evidence to suggest that RYUK ransomware was likely deployed via PsExec, but other scripts or artifacts related to the distribution process were not available for forensic analysis.

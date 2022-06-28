@@ -1,0 +1,8 @@
+By John Fokker and Christiaan Beek on Oct 14, 2019 Episode 3: Follow the Money
+This is the third installment of the McAfee Advanced Threat Research (ATR) analysis of Sodinokibi and its connections to GandCrab, the most prolific Ransomware-as-a-Service (RaaS) Campaign of 2018 and mid 2019.
+The Talking Heads once sang “We’re on a road to nowhere.”
+This expresses how challenging it can be when one investigates the financial trails behind a RaaS scheme with many affiliates, etc.
+However, we persisted, and we prevailed.
+By linking underground forum posts with bitcoin transfer traces, we were able to uncover new information on the size of the campaign and associated revenue; even getting detailed insights into what the affiliates do with their earnings following a successful attack.
+With the Sodinokibi ransomware a unique BTC wallet is generated for each victim.
+As long as no payment is made, no trace of the BTC wallet will be available on the blockchain.

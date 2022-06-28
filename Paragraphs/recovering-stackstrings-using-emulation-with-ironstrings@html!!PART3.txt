@@ -1,0 +1,15 @@
+
+In 2014 we published an IDA Pro plugin to automate the recovery of constructed strings in malware .
+In 2016, we released FLOSS ; a standalone open-source tool to automatically identify and decode strings in malware.
+Both solutions rely on vivisect , a Python-based program analysis and emulation framework.
+Although vivisect is a robust tool, it may fail to completely analyze an executable file or emulate its code correctly.
+And just like any tool, vivisect is susceptible to anti-analysis techniques.
+With missing, incomplete, or erroneous processing by vivisect, dependent tools cannot provide the best results.
+Moreover, vivisect does not provide an easy-to-use graphical interface to interactively change and enhance program analysis.
+I encountered all these shortcomings recently, when I analyzed a GandCrab ransomware sample (version 5.0.4, SHA256 hash: 72CB1061A10353051DA6241343A7479F73CB81044019EC9A9DB72C41D3B3A2C7).
+The malware contains various anti-analysis techniques to hinder disassembly and control-flow analysis.
+Before I could perform any efficient reverse engineering in IDA Pro, I had to overcome these hurdles.
+I used IDAPython to remove various anti-analysis instruction patterns which then allowed the disassembler to successfully identify all functions in the binary.
+Many of the recovered functions contained obfuscated strings.
+Unfortunately, my changes did not propagate to vivisect, because it performs its own independent analysis on the original binary.
+Consequently, vivisect still failed to recognize most functions correctly and I couldn’t use one of our existing solutions to recover the obfuscated strings.

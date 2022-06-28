@@ -1,0 +1,5 @@
+
+Examining the dropper – stage 1 Phase 1 Dropping the final payload occurs in multiple phases, making this, in actuality, a very complex operation.
+As shown in Figure 1 , attached to the e-mail is the file “order001.ppam”.
+This is an add-in file format used by Microsoft PowerPoint that, in this case, contains a malicious macro that acts as a dropper for Agent Tesla.
+The first phase of stage 1 begins with opening the PPAM attachment to activate the macro contained within.

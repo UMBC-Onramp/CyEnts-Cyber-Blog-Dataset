@@ -1,0 +1,6 @@
+
+Upon initial intrusion, the actor created several user accounts on the target system between June 10 th and June 11 th .
+ 
+The malware Sodinokibi and credential-harvesting tool Mimikatz were executed under the user account “ibm” that the actor created as part of the entry into the system Further information revealed that the actor was connecting from two IP addresses in Poland and Finland via the ‘ibm’ account.
+These logins originated from these countries in a 24hr period between July 10 th and 11 th with the following two unique machine names WIN-S5N2M6EGS5J and TS11.
+Machine name WIN-S5N2M6EGS5J was observed to be used by another actor that created the account “asp” and originated from the same Polish IP address.

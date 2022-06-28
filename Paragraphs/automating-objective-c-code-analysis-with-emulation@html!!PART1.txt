@@ -1,0 +1,9 @@
+This blog post is the next episode in the FireEye Labs Advanced Reverse Engineering (FLARE) team Script Series.
+Today, we are sharing a new IDAPython library – flare-emu – powered by IDA Pro and the Unicorn emulation framework that provides scriptable emulation features for the x86, x86_64, ARM, and ARM64 architectures to reverse engineers.
+Along with this library, we are also sharing an Objective-C code analysis IDAPython script that uses it.
+Read on to learn some creative ways that emulation can help solve your code analysis problems and how to use our new IDAPython library to save you lots of time in the process.
+Why Emulation?
+If you haven’t employed emulation as a means to solve a code analysis problem, then you are missing out!
+I will highlight some of its benefits and a few use cases in order to give you an idea of how powerful it can be.
+Emulation is flexible, and many emulation frameworks available today, including Unicorn, are cross-platform.
+With emulation, you choose which code to emulate and you control the context under which it is executed.

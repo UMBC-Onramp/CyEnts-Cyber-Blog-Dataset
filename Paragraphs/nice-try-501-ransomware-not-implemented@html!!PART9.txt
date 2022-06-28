@@ -1,0 +1,8 @@
+
+This file is an instance of the publicly available Meterpreter backdoor that was uploaded on November 12, 2019.
+Additional analysis confirmed that this binary communicated to 45[.]120[.]53[.]214 over TCP port 1234.
+Figure 7: VirusTotal graph showing links between resources hosted on or communicating with 45.120.53.214 Within the avpass.exe binary, we found an interesting PDB string that provided more context about the tool’s author: “ C:\\Users\\ragnarok\\source\\repos\\avpass\\Debug\\avpass.pdb ”.
+Utilizing ragnarok as a keyword, we pivoted and were able to identify a separate copy of since1969.exe (MD5: 48452dd2506831d0b340e45b08799623) uploaded to VirusTotal on January 23, 2020.
+The binary’s compilation timestamp of January 16, 2020, aligns with our earliest detections associated with this threat actor.
+Further analysis and sandboxing of this binary brought all the pieces together—this threat actor may have been attempting to deploy ransomware aptly named ‘Ragnarok’.
+We’d like to give credit to this Tweet from Karsten Hahn, who identified ragnarok-related about artifacts on January 17, 2020, again aligning with the timeframe of our initial detection.

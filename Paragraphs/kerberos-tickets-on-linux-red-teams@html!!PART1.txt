@@ -1,0 +1,6 @@
+At FireEye Mandiant , we conduct numerous red team engagements within Windows Active Directory environments.
+Consequently, we frequently encounter Linux systems integrated within Active Directory environments.
+Compromising an individual domain-joined Linux system can provide useful data on its own, but the best value is obtaining data, such as Kerberos tickets, that will facilitate lateral movement techniques.
+By passing these Kerberos Tickets from a Linux system, it is possible to move laterally from a compromised Linux system to the rest of the Active Directory domain.
+There are several ways to configure a Linux system to store Kerberos tickets.
+In this blog post, we will introduce Kerberos and cover some of the various storage solutions.

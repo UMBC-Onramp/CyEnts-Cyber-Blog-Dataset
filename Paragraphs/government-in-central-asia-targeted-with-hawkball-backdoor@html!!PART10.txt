@@ -1,0 +1,7 @@
+
+Figure 17:
+Get directory information Get Disk Information
+This command retrieves the drive information for drives C through Z along with available disk space for each drive.
+Figure 18:
+Retrieve drive information The information is stored in the following format for each drive: Format = \"%d+%d+%d+%d;\
+" Example: \"8+512+6460870+16751103;\" The information for all the available drives is combined and sent to the server using an operation similar to Figure 14.

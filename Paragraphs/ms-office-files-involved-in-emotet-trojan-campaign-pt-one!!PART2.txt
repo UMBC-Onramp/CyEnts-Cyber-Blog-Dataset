@@ -1,0 +1,6 @@
+
+Looking into the Excel File I have set my Excel’s macro option to \"Disable all macros with notification\" in \"Macro Settings.\
+"
+That’s why it shows the yellow “Security Warning” bar when an opened Excel file contains a Macro, as shown in Figure 1.1.
+This image shows the fake message used to lure a victim into clicking the “Enable Content” button to view the protected content of the Excel file.
+The malicious Macro has a function called “Workbook_Open()” that is executed automatically in the background when the Excel file opens.

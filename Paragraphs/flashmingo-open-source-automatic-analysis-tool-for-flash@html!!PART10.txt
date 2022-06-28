@@ -1,0 +1,7 @@
+
+If unspecified, it falls back to a log file within the plug-in’s directory.
+Line 10 to line 16 show the custom run method, extracting information from the SWF’s embedded data with the help of the custom _inspect_binary_data method.
+Note the source of this binary data: it is being read from a property named “swf”.
+This is the SWFObject passed to the plug-in as an argument, as mentioned previously.
+More complex analysis can be performed on the SWF file contents interacting with this swf object.
+Our repository contains documentation for all available methods of a SWFObject .

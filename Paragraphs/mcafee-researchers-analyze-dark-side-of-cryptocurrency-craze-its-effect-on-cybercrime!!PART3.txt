@@ -1,0 +1,5 @@
+
+Ironically, Monero is said to be one of the most private cryptocurrencies.
+Attacks such as these have also happened on Bitcoin, NEM, and Ethereum.
+Criminals are also leveraging techniques beyond mining, such as cryptocurrency address or wallet hijacking.
+For example, Evrial, a Trojan for sale on underground markets, watches the Windows clipboard and replaces any cryptocurrency wallet addresses with its own malicious address.

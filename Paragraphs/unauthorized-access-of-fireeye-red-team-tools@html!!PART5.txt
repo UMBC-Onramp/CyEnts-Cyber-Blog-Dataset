@@ -1,0 +1,6 @@
+
+Detections to Help the Community To empower the community to detect these tools, we are publishing countermeasures to help organizations identify these tools if they appear in the wild.
+In response to the theft of our Red Team tools, we have released hundreds of countermeasures for publicly available technologies like OpenIOC, Yara, Snort, and ClamAV.
+A list of the countermeasure is available on the FireEye GitHub repository found here .
+We are releasing detections and will continue to update the public repository with overlapping countermeasures for host, network, and file-based indicators as we develop new or refine existing detections.
+In addition, we are publishing a list of CVEs that need to be addressed to limit the effectiveness of the Red Team tools on the GitHub page.

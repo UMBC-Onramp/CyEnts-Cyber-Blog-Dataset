@@ -1,0 +1,4 @@
+
+PACS systems connected to the Internet.
+Darker colors represent more systems.
+Our eyebrows began to rise very early in our research, as we came across “IE 6 support only” messages or ActiveX controls and old Java support; many of these products are vulnerable to a plethora of exploits.

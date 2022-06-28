@@ -1,0 +1,9 @@
+
+It finally finishes creating MaintenaceSrv:
+The wiper dropped on the system can have any one of the following names: Next the wiper runs to destroy the data.
+Wiper The wiper component is dropped into the System32 folder.
+It takes one parameter to run.
+The wiper driver is embedded in its resources.
+We can see the encrypted resources, 101, in this screenshot: The resource decrypted is the driver ElRawDisk.sys, which wipes the disk.
+Extracting the resource: This preceding file is not malicious but is considered risky because it is the original driver.
+The wiper creates a service to run the driver with the following command: sc create hdv_725x type= kernel start= demand binpath= WINDOWS\\hdv_725x.sys 2>&1 >nul

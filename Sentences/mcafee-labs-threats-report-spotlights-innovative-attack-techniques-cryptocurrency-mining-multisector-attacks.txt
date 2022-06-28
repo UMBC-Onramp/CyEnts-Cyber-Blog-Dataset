@@ -1,0 +1,39 @@
+By Raj Samani on Jun 26, 2018
+
+In the McAfee Labs Threats Report June 2018, published today, we share investigative research and threat statistics gathered by the McAfee Advanced Threat Research and McAfee Labs teams in Q1 of this year.
+
+We have observed that although overall new malware has declined by 31% since the previous quarter, bad actors are working relentlessly to develop new technologies and tactics that evade many security defenses.
+
+These are the key campaigns we cover in this report.
+
+Deeper investigations reveal that the attack targeting organizations involved in the Pyeongchang Winter Olympics in South Korea used not just one PowerShell implant script, but multiple implants, including Gold Dragon, which established persistence to engage in reconnaissance and enable continued data exfiltration.
+
+The infamous global cybercrime ring known as Lazarus has resurfaced.
+
+We discovered that the group has launched the Bitcoin-stealing phishing campaign “HaoBao,” which targets the financial sector and Bitcoin users.
+
+We are also seeing the emergence of a complex, multisector campaign dubbed Operation GhostSecret, which uses many data-gathering implants.
+
+We expect to see an escalation of these attacks in the near future.
+
+Here are some additional findings and insights: Ransomware drops: New ransomware attacks took a significant dive (-32%), largely as a result of an 81% drop in Android lockscreen malware.
+
+Cryptojacking makes a comeback:
+
+Attackers targeting cryptocurrencies may be moving from ransomware to coin miner malware, which hijacks systems to mine for cryptocurrencies and increase their profits.
+
+New coin miner malware jumped an astronomical 1,189% in Q1.
+
+LNK outpaces PowerShell: Cybercriminals are increasingly using LNK shortcuts to surreptitiously deliver malware.
+
+New PowerShell malware dropped 77% in Q1, while attacks leveraging Microsoft Windows LNK shortcut files jumped 24%.
+
+Incidents go global :
+
+Overall security incidents rose 41% in Q1, with incidents hitting multiple regions showing the biggest increase, at 67%, and the Americas showing the next largest increase, at 40%.
+
+Get all the details by reading the McAfee Labs Threats Report, June 2018.
+
+
+
+

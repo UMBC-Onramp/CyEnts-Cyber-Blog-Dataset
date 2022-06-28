@@ -1,0 +1,47 @@
+By Charles McFarland and Steve Povolny on May 11, 2018 McAfee’s Advanced Threat Research team has performed analysis on samples of Syn/Ack ransomware implementing Process Doppelgänging.
+
+  For those who are concerned about the potential impact of this ransomware but are currently unable to implement McAfee product protections, we have found a simple but interesting alternative method.
+
+  Prior to encryption and ransom, the malware first checks if one of several hardcoded keyboards or languages is installed on the target machine.
+
+  
+
+If found, the malicious code will terminate, effectively resulting in an extremely simple “patch” of sorts.
+
+We have tested the following steps to be effective on several versions of Windows 7 and theoretically on Windows 10 – preventing the malware from encryption and ransom.
+
+  These steps can be taken proactively.
+
+  Due to limited scope of testing at this time, this technique may not work on all systems, release versions, and configurations.
+
+Windows 7 – Adding Keyboard Layout: Control Panel > Clock, Language, and Region > Region and Language > Keyboards and Languages Click the “Change Keyboards” tab In the Installed Services section click “add” Select Keyboard – For example: Russian (Russia) >
+
+Keyboard >
+
+Russian Click “Ok” Click “Apply”
+
+Click “Ok” Here is the list of keyboards layouts you can add – any will suffice: Armenian Azeri, (Cyrillic, Azerbaijan) Belarusian Georgian Kazakh Ukrainian Uzbek (Cryillic, Uzbekistan)
+
+Uzbek (Latin,Uzbekistan)
+
+Russian Tajik Windows 10 – Adding Language Support: Control Panel >
+
+Language >
+
+Add a language Armenian Azeri, (Cyrillic, Azerbaijan) Belarusian Georgian Kazakh Ukrainian Uzbek (Cryillic, Uzbekistan)
+
+Uzbek (Latin,Uzbekistan)
+
+Russian Tajik That’s all it takes!
+
+  
+
+Please note – this should not be considered a fully effective or long-term strategy.
+
+  
+
+It is highly likely the malware will change based on this finding; thus, we recommend the McAfee product protections referenced above for best effect.
+
+
+
+

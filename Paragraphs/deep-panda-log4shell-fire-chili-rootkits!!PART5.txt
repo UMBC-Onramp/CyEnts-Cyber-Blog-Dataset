@@ -1,0 +1,8 @@
+
+This command does not exist in the original Gh0st RAT source code.
+Among the many backdoor samples we hunted down, there are two distinguishable versions: binaries compiled in 2016 contain the version string MileStone2016 , while those compiled in 2017 contain MileStone2017 .
+The samples used in the recent infections we detected are only the 2017 variants.
+There are several differences between the 2016 and 2017 Milestones.
+First, 2017 Milestones are typically packed with Themida, while 2016 ones are unpacked.
+Secondly, although 2016 Milestones have plausible timestamps, all 2017 Milestones share an identical timestamp, which leads us to believe they are forged.
+Combined with the fact that 2017 backdoors are used in attacks to this day, it is uncertain whether they were compiled in 2017 or much later.

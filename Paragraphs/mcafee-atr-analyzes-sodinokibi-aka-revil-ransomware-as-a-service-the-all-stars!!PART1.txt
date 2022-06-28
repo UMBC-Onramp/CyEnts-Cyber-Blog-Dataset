@@ -1,0 +1,5 @@
+By John Fokker and Christiaan Beek on Oct 02, 2019 Episode 2: The All-Stars Analyzing Affiliate Structures in Ransomware-as-a-Service Campaigns
+This is the second installment of the McAfee Advanced Threat Research (ATR) analysis of Sodinokibi and its connections to GandGrab, the most prolific Ransomware-as-a-Service (RaaS) Campaign of 2018 and mid-2019.
+GandCrab announced its retirement at the end of May.
+Since then, a new RaaS family called Sodinokibi, aka REvil, took its place as one of the most prolific ransomware campaigns.
+In episode one of our analysis on the Sodinokibi RaaS campaign we shared our extensive malware and post-infection analysis, which included code comparisons to GandCrab, and insight on exactly how massive the new Sodinokibi campaign is.

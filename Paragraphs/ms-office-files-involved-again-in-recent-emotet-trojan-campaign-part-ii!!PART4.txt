@@ -1,0 +1,11 @@
+
+Referring to Figure 5.3 in part I of this series will help you understand the structure of the packet.
+The box marked in red is the verification data (99 DE … DD A5), a signed hash of the rest data of the packet.
+The following dword, 0x00000000, marked in yellow, is a flag that tells Emotet how to run the replied module.
+0x00 tells it to execute the module in a newly-created thread.
+The binary block in blue is the module.
+It starts with the module size, 0x79400 in this example, and the rest part is the module binary data (4D 5A 90 00 …).
+Emotet has to verify the decrypted data, as shown in Figure 1.1, using the 40H verification data.
+It then deploys the received module into memory and prepares to execute it.
+It then calls its entry point in a newly created thread.
+This post will refer to this module as a “thread-module.”

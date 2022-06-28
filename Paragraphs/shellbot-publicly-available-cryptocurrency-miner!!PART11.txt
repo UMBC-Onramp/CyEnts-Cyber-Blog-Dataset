@@ -1,0 +1,4 @@
+
+OpSec by Segmentation From the way bots are filtered, moved to other botnets and run new malware versions, it can be inferred that there is some sort of tiered segmentation.
+Conversations found on the server are proof that trading bots among operators are rather common, which explains how botnets can double in size quickly.
+The benefit of tiered segmentation is that it makes it very hard to find IRC server information on Tier 2 servers and higher, since these are only deployed by Tier 1 operators.

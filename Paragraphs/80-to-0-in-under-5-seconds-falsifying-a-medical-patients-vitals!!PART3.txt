@@ -1,0 +1,9 @@
+
+With the help of eBay, we purchased both a patient monitor and a compatible central monitoring station at a reasonable cost.
+The patient monitor monitored heartbeat, oxygen level, and blood pressure.
+It has both wired and wireless networking and appeared to store patient information.
+The central monitoring station ran Windows XP Embedded, with two Ethernet ports, and ran in a limited kiosk mode at start-up.
+Both units were produced around 2004; several local hospitals confirmed that these models are still in use.
+The two devices offer a range of potential attack surfaces.
+The central monitoring station operates fundamentally like a desktop computer running Windows XP, which has been extensively researched by the security community.
+The application running on the central monitoring station is old; if we found a vulnerability, it would likely be tied to the legacy operating system.

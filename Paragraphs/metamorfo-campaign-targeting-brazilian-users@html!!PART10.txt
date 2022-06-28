@@ -1,0 +1,6 @@
+
+<PING>' is sent from C2 to host, and '<PONG>' is sent from host to C2, to keep the connection alive. '
+<|INFO|>' retrieves when the infection first started based on the file timestamp from car.dat along with '<|>' and the host information.
+There were only four possible IP addresses that the sample analyzed could connect to based on the strings found in the file “id”.
+After further researching the associated infrastructure of the C2 (Figure 13), we were able to find potential number of victims for this particular campaign.
+Figure 13: Command and Control Server Open Directories Inside the open directories, we were able to get the following directories corresponding to the different active campaigns.

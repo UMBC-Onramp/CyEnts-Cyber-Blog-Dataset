@@ -1,0 +1,10 @@
+
+As the first installment of this series, we look into an open source solution: JSPatch .
+Episode 1.
+JSPatch JSPatch is an open source project – built on top of Apple’s JavaScriptCore framework – with the goal of providing an alternative to Apple’s arduous and unpredictable review process in situations where the timely delivery of hot fixes for severe bugs is vital.
+In the author’s own words ( bold added for emphasis): JSPatch bridges Objective-C and JavaScript using the Objective-C runtime.
+You can call any Objective-C class and method in JavaScript by just including a small engine.
+That makes the APP obtaining the power of script language: add modules or replacing Objective-C code to fix bugs dynamically .
+JSPatch Machinery
+The JSPatch author, using the alias Bang, provided a common example of how JSPatch can be used to update a faulty iOS app on his blog: Figure 1 shows an Objc implementation of a UITableViewController with class name JPTableViewController that provides data population via the selector tableView:didSelectRowAtIndexPath: .
+At line 5, it retrieves data from the backend source represented by an array of strings with an index mapping to the selected row number.

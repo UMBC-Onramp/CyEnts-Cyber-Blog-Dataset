@@ -1,0 +1,4 @@
+
+During our research we did not modify the patient monitor, which always showed the true data; but we have proven the impact of an attack can be meaningful.
+Such an attack could result in patients receiving the wrong medications, additional testing, and extended hospital stays—any of which could incur unnecessary expenses.
+Both product vendors and medical facilities can take measures to drastically reduce the threat of this type of attack.

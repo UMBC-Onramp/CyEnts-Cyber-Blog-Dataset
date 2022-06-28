@@ -1,0 +1,5 @@
+
+Based on our analysis, the actor registered two free hosting accounts: navermail.byethost3.com, which refers to the popular South Korean search engine, and nihon.byethost11.com.
+The email address was used to register a free account for a control server in all the implants described in our analysis.
+Technical Analysis Let’s start with an overview of the attack: We continue with the components involved in this operation.
+The malicious Word file is the beginning of the infection chain and acts as a dropper for two DLL files.

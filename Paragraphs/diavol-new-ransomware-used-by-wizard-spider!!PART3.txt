@@ -1,0 +1,6 @@
+
+This is either a bluff or a placeholder for future capabilities.
+Browsing to the URL led to us a website, seen in figures 2 and 3, from which we derived the name for the ransomware.
+As part of a rather unique encryption procedure, Diavol operates using user-mode Asynchronous Procedure Calls (APCs) without a symmetric encryption algorithm.
+Usually, ransomware authors aim to complete the encryption operation in the shortest amount of time.
+Asymmetric encryption algorithms are not the obvious choice as they significantly slower than symmetric algorithms.

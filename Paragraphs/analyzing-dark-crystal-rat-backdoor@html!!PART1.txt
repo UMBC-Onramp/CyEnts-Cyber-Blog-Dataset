@@ -1,0 +1,8 @@
+The FireEye Mandiant Threat Intelligence Team helps protect our customers by tracking cyber attackers and the malware they use.
+The FLARE Team helps augment our threat intelligence by reverse engineering malware samples.
+Recently, FLARE worked on a new C# variant of Dark Crystal RAT (DCRat) that the threat intel team passed to us.
+We reviewed open source intelligence and prior work, performed sandbox testing, and reverse engineered the Dark Crystal RAT to review its capabilities and communication protocol.
+Through publishing this blog post we aim to help defenders look for indicators of compromise and other telltale signs of Dark Crystal RAT, and to assist fellow malware researchers new to .NET
+malware, or who encounter future variants of this sample.
+Discovering Dark Crystal RAT
+The threat intel team provided FLARE with an EXE sample, believed to contain Dark Crystal RAT, and having the MD5 hash b478d340a787b85e086cc951d0696cb1.

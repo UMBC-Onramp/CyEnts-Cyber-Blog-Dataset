@@ -1,0 +1,7 @@
+
+WAP billing fraud in Malaysia.
+However, for Malaysia the app needs to intercept a confirmation code (PIN) sent by the mobile operator via SMS.
+Sonvpay has this SMS interception functionality implemented in the original repackaged application: Figure 8.
+Processing an intercepted SMS message to get the confirmation PIN.
+Once the PIN is obtained, it is sent to the mobile operator via a web request to automatically confirm the subscription.
+If the parameters for Kazakhstan or Malaysia do not match, Sonvpay still tries to perform mobile billing fraud by attempting to send an SMS message to a premium-rate number provided via the silent push notification: Figure 9.

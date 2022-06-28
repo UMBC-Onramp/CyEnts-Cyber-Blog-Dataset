@@ -1,0 +1,14 @@
+
+Many developers have doubts that the App Store would accept technologies leveraging scripts such as JavaScript.
+According to Apple’s App Store Review Guidelines, apps that download code in any way or form will be rejected.
+However, t he JSPatch community argues it is in compliance with Apple’s iOS Developer Program Information, which makes an exception to scripts and code downloaded and run by Apple's built-in WebKit framework or JavascriptCore, provided that such scripts and code do not change the primary purpose of the application by providing features or functionality that are inconsistent with the intended and advertised purpose of the application as submitted to the App Store.
+The use of malicious JavaScript (which presumably changes the primary purpose of the application) is clearly prohibited by the App Store policy.
+JSPatch is walking a fine line, but it is not alone.
+In our coming reports, we intend to similarly examine more solutions in order to find a better solution that satisfies Apple and the developer community without jeopardizing the users security experience.
+Stay tuned!
+[1] We have contacted the app provider regarding the issue.
+In order to protect the app vendor and its users, we choose to not disclose the identity before they have this issue addressed.
+[2] The redacted part is the hardcoded decryption key.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

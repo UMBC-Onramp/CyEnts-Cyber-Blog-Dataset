@@ -1,0 +1,4 @@
+
+steps objects whose 0x2 bit is clear in the Timestamp field contain random data and are discarded when assembling the malware response.
+This may be an attempt to hinder analysis in the absence of the malware sample.
+Figure 3: HTTP callout masquerades as OIP protocol Modes of Operation As detailed in the DGA section, the malware has multiple modes of operation configured by the IP block that A records resolve to as well as depending on if CNAME records exist.

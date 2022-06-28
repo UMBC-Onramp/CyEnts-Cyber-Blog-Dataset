@@ -1,0 +1,10 @@
+
+Speakeasy is designed to support arbitrary emulation engines in the future via an abstraction layer, but it currently relies on Unicorn.
+Full OS sandboxing will likely always be required to analyze all samples as generically emulating all of Windows is somewhat unfeasible.
+Sandboxing can be difficult to scale on demand and can be time consuming to run samples.
+However, by making sure we emulate specific malware families, such as Beacon in this example, we can quickly reduce the need to reverse engineer variants.
+Being able to generate high level triage reports in an automated fashion is often all the analysis that is needed on a malware variant.
+This allows malware analysts more time to focus on samples that may require deeper analysis.
+Shellcode or Windows PEs are loaded into the emulated address space.
+Windows data structures required to facilitate basic emulation of Windows kernel mode and user mode are created before attempting to emulate the malware.
+Processes, drivers, devices and user mode libraries are “faked” in order to present the malware with a realistic looking execution environment.

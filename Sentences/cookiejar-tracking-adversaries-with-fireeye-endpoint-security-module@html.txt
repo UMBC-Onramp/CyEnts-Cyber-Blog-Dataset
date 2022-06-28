@@ -1,0 +1,113 @@
+During a recent investigation at a telecommunications company led by Mandiant Managed Defense , our team was tasked with rapidly identifying systems that had been accessed by a threat actor using legitimate, but compromised domain credentials.
+
+This sometimes-challenging task was made simple because the customer had enabled the Logon Tracker module within their FireEye Endpoint Security product.
+
+Logon Tracker is an Endpoint Security Innovation Architecture module designed to simplify the investigation of lateral movement within Windows enterprise environments.
+
+Logon Tracker improves the efficiency of investigating lateral movement by aggregating historical logon activity and provides a mechanism to monitor for new activity.
+
+This data is presented in a user interface designed for analyzing investigative leads (e.g., a compromised account) and hunting for suspicious activity (e.g., RDP activity by privileged accounts).
+
+Logon Tracker also provides a graph interface that enables the identification of irregular and unique logons with the option to filter on hostnames, usernames, protocol, time of day, process name, privilege level, status (success/failure), and more.
+
+Figure 1:
+
+Logon Tracker GUI interface A critical component of a successful incident response is the scoping effort to identify systems that may have been accessed by the adversary.
+
+Windows Event Logs offer a commonly utilized method of identifying an adversary’s lateral movement between Windows systems.
+
+However, as with all log sources, Windows Event Logs are subject to data retention limits on endpoints, making the aggregated logon activity provided by Logon Tracker a critical source of evidence for incident response.
+
+Logon Tracker’s graphical display along with the raw logon events allowed Mandiant Managed Defense to quickly identify 10 potentially compromised hosts and begin to create a timeline of adversary activity.
+
+Managed Defense also leveraged Logon Tracker to monitor for additional suspicious logons and adversary activity throughout the incident response.
+
+Searching for logons (both failed and successful) from known compromised accounts and activity originating from compromised systems allowed our investigators to quickly determine which systems should be prioritized for analysis.
+
+Additionally, Logon Tracker provides investigators the ability to: Filter logon data for activity originating from user-provided IP ranges Search for logon data for activity by specific privileged accounts, including “Domain Administrators” and “Enterprise Administrators” Search for any privileged logon using the “Privileged” logon type Provide alerting and definition of custom rules (coming soon!)
+
+Case Background In mid-July, the Managed Defense Security Operations Center identified potential credential harvesting activity on a Windows server.
+
+The activity included the creation of a scheduled task configured to execute the built-in Windows utility, NTDSUTIL to take a snapshot of the active NTDS.dit file and save it locally to a text file as shown in Figure 2: \"schtasks  /s
+
+<redacted> /create /tn ntbackup /tr
+
+\\\"ntdsutil snapshot \\\\\\\"activate instance ntds\\\\\\\" create quit quit >c:\\\\Users\\\\admin\\\\AppData\\\\Local\\\\Temp\\\\ntds.log\\\" /sc
+
+once /st 05:38:00 /sd
+
+07-12-2020 /f Figure 2: Scheduled task creation for NTDS.DIT harvesting The NTDS.dit file is a database that contains Active Directory data such as user objects, group memberships, groups, and—more useful to an adversary—password hashes for all users in the domain.
+
+Leveraging Logon Tracker and simple timeline analysis, Managed Defense quickly determined an adversary had accessed this system to create a scheduled task from a system with a hostname that did not match the naming convention used within the environment.
+
+An anonymized example of Logon Tracker data is shown in Figure 3: Figure 3:
+
+Logon Tracker data Armed with the suspicious hostname and potentially compromised username, Managed Defense then used Logon Tracker’s search functionality to determine the scope of systems potentially accessed by the adversary.
+
+The resulting investigation revealed that an Internet-facing Customer Relationship Management (CRM) application hosted on a Linux Apache web server had been compromised.
+
+Multiple web shells had been placed within web-accessible folders, allowing an adversary to execute arbitrary commands on the server.
+
+The adversary leveraged one of these web shells to install a malicious Apache module and restart Apache for the module to take effect.
+
+Mandiant has classified this module as COOKIEJAR (see the Malware Appendix at the end of the post for more details).
+
+The COOKIEJAR module enabled the adversary to proxy through the compromised server to any arbitrary IP/port pair within the customer’s internal network, see Figure 4.
+
+Figure 4: PCAP data Using this proxied access to the customer’s network, the adversary leveraged previously compromised domain credentials to connect to multiple Windows servers using SMB.
+
+Due to the use of the proxy to connect into the customer’s network, the hostname of the adversary’s workstation being used to conduct the attack was also passed into the logon events.
+
+This type of activity occurs due to the direct connection to the customers network and is similar to being on the same LAN.
+
+The non-standard hostname and non-standard customer naming convention used by the adversary help make scoping an easy task.
+
+Additionally, Managed Defense was able to leverage network detection to alert on the authentication attempts and activities of the adversary’s host.
+
+Malware Appendix
+
+During the course of the response, Mandiant identified a customized malicious Apache plugin capable of intercepting HTTP requests to an Apache HTTP server.
+
+The new malware family COOKIEJAR was created to aid in clustering and tracking this activity.
+
+The COOKIEJAR module installs a pre-connection hook that only runs if the client IP address matches a specified hardcoded adversary-controlled IP address.
+
+It listens for SSL/TLS connections on the port specified by the Apache server, using a certificate and private key loaded from /tmp/cacert.pem and /tmp/privkey.pem respectively.
+
+If the client IP address matches the hardcoded IP address (Figure 4), the backdoor accepts three commands based on the start of the URL: /phpconf_t/:
+
+Simply writes <html><h1>accepted.</h1></html> as the response.
+
+Likely used to test if the server is infected with the malware. /phpconf_s/
+
+: Executes commands on the server.
+
+Any communications to and from the system are forwarded to a shell, and are AES-256-ECB encrypted and then Base58 encoded.
+
+/phpconf_p/: Decode the second encoded string provided as a hostname/port (the first is ignored), using Base58 and AES-256-ECB (same key as before).
+
+The server will connect to the remote host and act as a proxy for the command and control (C2).
+
+Data to and from the C2 is encoded using Base58 and AES-256-ECB.
+
+Data to and from the remote host is not encoded.
+
+Figure 5:
+
+Hardcoded configuration data within COOKIEJAR Detecting the Techniques Product Signature Network Security/MVX APT.Backdoor.
+
+Linux64_COOKIEJAR_1 APT.Backdoor.
+
+Linux_COOKIEJAR_1 APT.Backdoor.
+
+Linux.
+
+COOKIEJAR Acknowledgements Chris Gardner, Malware Analyst Fred House, Director, Engineering More information on FireEye Endpoint Security's Logon Tracker Module including the module download and user manual are available in the FireEye Marketplace .
+
+ Learn more about Mandiant Managed Defense , and catch an on-demand recap on this and the Top 5 Managed Defense attacks this year.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

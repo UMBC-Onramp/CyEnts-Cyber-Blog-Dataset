@@ -1,0 +1,6 @@
+
+And not for all users, but only for those who were “lucky” enough to be in the mod creator’s list.
+This list includes the developers of Traffic Manager, the creators of the game, and other people that the list creator had real or imaginary complaints about.
+But that’s not all.
+In the same post, the creator of the mod known as Chaos or Holy Water intentionally broke compatibility with other mods.
+As Cities: Skylines has a huge number of modifications, it needs a mechanism that prevents mod-related bugs in the game.

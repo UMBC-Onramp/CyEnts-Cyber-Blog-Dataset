@@ -1,0 +1,18 @@
+
+For the symmetric key, DEATHRANSOM calls RtlGenRandom to generate 32 random bytes.
+This is the 32 byte key used to AES encrypt each file.
+After the file is encrypted, the AES key is encrypted with the public RSA key and appended to the file.
+DEATHRANSOM lastly appends the four magic bytes of AB CD EF AB at the end of the encrypted file and uses this as a check to ensure that it does not encrypt an already encrypted file.
+The analyzed DEATHRANSOM sample used for comparison does not change the file extension.
+HELLOKITTY Encryption HELLOKITTY contains an embedded RSA-2048 public key.
+This public key is SHA256 hashed and used as the victim ID within the ransom note.
+This RSA pubic key is also used to encrypt each file's symmetric key.
+For the symmetric key, HelloKitty generates a 32 byte seed value based on the CPU timestamp.
+A Salsa20 key is generated and encrypts a second 32 byte seed value.
+The encrypted result is XOR’d with the first seed, resulting in a 32 byte key used to AES encrypt each file.
+After each file is encrypted, the original file size, magic value of DE C0 AD BA, and AES key are encrypted with the public RSA key and appended to the file.
+HELLOKITTY and FIVEHANDS appends this additional metadata to the encrypted file, while DEATHRANSOM does not.
+Lastly it appends the four magic bytes DA DC CC AB to the end of the encrypted file.
+Depending on the version, HELLOKITTY may or may not change the file extension.
+Other samples of HELLOKITTY have used an embedded NTRU public key instead of RSA.
+FIVEHANDS Encryption FIVEHANDS uses an embedded NTRU public key.

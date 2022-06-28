@@ -1,0 +1,8 @@
+
+$nona is the larger of the two and is Agent Tesla.
+$STRDYFUGIHUYTYRTESRDYUGIRI will inject Agent Tesla into a running Windows process.
+Renaming 19.dll to 19.ps1 allows it to be executed as a normal PowerShell script.
+With this particular sample, it will attempt to launch and then inject Agent Tesla into the aspnet_compiler.exe application.
+Examining the malware – stage 2 At its core, Agent Tesla is a keylogger and RAT (Remote Access Trojan).
+It will take any results captured from the keyboard and clipboard and send them back to its C2 (Command and Control) server.
+In this instance, once injected into the aspnet­_compiler.exe process Agent Tesla will be up and running.

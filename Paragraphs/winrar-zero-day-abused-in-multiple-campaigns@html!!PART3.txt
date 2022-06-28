@@ -1,0 +1,8 @@
+
+Figure 3: Base64-encoded data in Authorization header The VBS backdoor first sends the base64-encoded data, including the victim ID and the ComputerName, using the code in Figure 4.
+Figure 4: Base64-encoded victim data It then extracts the base64-encoded data in the Authorization header of the HTTP response from the C2 server and decodes it.
+The decoded data starts with the instruction code from the C2 server, followed with additional parameters.
+C2 Communication
+The malware reaches out to the C2 server at 185[.]162.131.92 via an HTTP request.
+Actual communication is via the Authorization field, as shown in Figure 5.
+Figure 5: Communication via Authorization field

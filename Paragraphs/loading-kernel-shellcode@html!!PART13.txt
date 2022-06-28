@@ -1,0 +1,16 @@
+
+In response, the driver sets the appropriate flags on the device object, issues a breakpoint to pass control to the kernel debugger, and finally calls the shellcode as if it were a function.
+While You’re Here Driver development opens the door to unique instrumentation opportunities.
+For example, Figure 7 shows a few kernel callback routines described in the WDK help files that can track system-wide process, thread, and DLL activity.
+Figure 7: WDK kernel-mode driver architecture reference Kernel development is a deep subject that entails a great deal of study, but the WDK also comes with dozens upon dozens of sample drivers that illustrate correct Windows kernel programming techniques.
+This is a treasure trove of Windows internals information, security research topics, and instrumentation possibilities.
+If you have time, take a look around before you get back to work.
+Wrap-Up We’ve shared FLARE’s tool for loading privileged shellcode in test environments so that we can dynamically analyze kernel shellcode.
+We hope this provides a straightforward way to quickly triage kernel shellcode if it ever appears in your environment.
+Download the source code now.
+Do you want to learn more about these tools and techniques from FLARE?
+Then you should take one of our Black Hat classes in Las Vegas this summer!
+Our offerings include Malware Analysis Crash Course , macOS Malware for Reverse Engineers , and Malware Analysis Master Class .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

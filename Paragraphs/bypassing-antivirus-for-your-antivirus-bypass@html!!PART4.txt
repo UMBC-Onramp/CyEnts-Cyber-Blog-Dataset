@@ -1,0 +1,6 @@
+
+After we find the line, we are going to break it into words and then reverse any variables found in the line.
+This will require a fairly simple script: From the output of the script, we can see that detection takes place on line 166 (167 for non-programmer types), which reads: $BytesLeft = $BytesLeft - $count ‍ Surely, we can't change the variable names!
+‍ ‍ We could simply do a $page.content.replace twice to replace the two variables but why would we when we can over-complicate this?
+Let’s add logic to change the variable names for us by simply reversing the characters.
+Now the output reads: Detection at line 166 (counting from 0 ^,^) Replaced $BytesLeft with $tfeLsetyB Replaced $count with $tnuoc ‍ But does Find-AvSignature.ps1 still work?

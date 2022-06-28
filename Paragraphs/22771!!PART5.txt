@@ -1,0 +1,5 @@
+
+The Maze attacks continued until September 2020, when the group began winding down its operations , although not before several international corporations, a state bank in Latin America, and a US city’s information system had already suffered from its activities.
+In each of those cases, Maze operators demanded several million dollars from the victims.
+2.
+Conti (aka IOCP ransomware) Conti appeared in late 2019 and was very active throughout 2020, accounting for more than 13% of all ransomware victims during this period.

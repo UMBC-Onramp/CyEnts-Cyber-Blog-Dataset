@@ -1,0 +1,4 @@
+On Jan. 31, KISA (KrCERT) published an advisory about an Adobe Flash zero-day vulnerability (CVE-2018-4878) being exploited in the wild.
+On Feb. 1, Adobe issued an advisory confirming the vulnerability exists in Adobe Flash Player 28.0.0.137 and earlier versions, and that successful exploitation could potentially allow an attacker to take control of the affected system.
+FireEye began investigating the vulnerability following the release of the initial advisory from KISA.
+Threat Attribution We assess that the actors employing this latest Flash zero-day are a suspected North Korean group we track as TEMP.Reaper.

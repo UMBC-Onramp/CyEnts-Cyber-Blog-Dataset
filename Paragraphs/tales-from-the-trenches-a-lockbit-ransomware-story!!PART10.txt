@@ -1,0 +1,7 @@
+
+Figure 4: Entropy analysis Figure 5: Portex visualization of LockBit This file is a .NET launcher.
+Examining the Main() function in the code shows that an array containing a particularly long AES encrypted base64 string (in the variable named ‘exeBuffer’) carries the executable for the actual ransomware.
+Figure 6: .NET launcher buffer This encrypted string is decrypted using the key ENCRYPTION29942.
+The first 32 bytes of the long ExeBuffer string are used as the salt in the encryption scheme, where ENCRYPTION29942 is the passphrase.
+Figure 7:
+Launcher calls & functions Remarkably, the script checks for the existence of vbc.exe on its designated host.

@@ -1,0 +1,4 @@
+
+Analysis On January 15 th , McAfee ATR discovered a malicious document masquerading as a job recruitment for a Business Development Executive located in Hong Kong for a large multi-national bank.
+The document was distributed via a Dropbox account at the following URL:
+hxxps://www.dropbox.com/s/qje0yrz03au66d0/JobDescription.doc?dl=1 This is the mark of a new campaign, though it utilizes techniques, tactics and procedures observed in 2017.

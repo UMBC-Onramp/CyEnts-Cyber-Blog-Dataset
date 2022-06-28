@@ -1,0 +1,5 @@
+
+We observed that Sodinokibi, like GandCrab and Anatova, are blacklisting the regular Syrian language and the Syrian language in Arabic too.
+If the system contains one of these languages, it will exit without performing any action.
+If a different language is detected, it will continue in the normal flow.
+This is interesting and may hint to an affiliate being involved who has mastery of either one of the languages.

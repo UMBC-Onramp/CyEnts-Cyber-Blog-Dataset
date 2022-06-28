@@ -1,0 +1,9 @@
+
+00007ff774651191 ldr+0x0000000000001191 00007ff7746514b4 ldr+0x00000000000014b4 00007ffa505a7bd4 KERNEL32!BaseThreadInitThunk+0x0000000000000014
+00007ffa515aced1 ntdll!RtlUserThreadStart+0x0000000000000021 Listing 2:
+Crash info icm32!SwapShortOffset reads unsigned short values, bswaps them and stores at the same location, giving this crash both read and write primitives.
+unsigned __int16 *__fastcall SwapShortOffset(void *sourceBuff, unsigned int offset, unsigned int len) { unsigned __int16 *endBuff; // r9 unsigned __
+int16
+*result; // rax endBuff =
+(sourceBuff + len); for ( result =
+(sourceBuff + offset); result < endBuff; ++result )

@@ -1,0 +1,6 @@
+
+Additionally, behavioral analytics should be deployed to detect “left hand” threats.
+Discovering and blocking an attack during initial reconnaissance and probing efforts can help raise threat awareness and prevent problems arising later in the attack chain.
+Security tools should be selected based on their ability to detect and prevent both known and unknown threats and respond to active threats in real-time before beachheads can be established or malicious payloads can be delivered.
+To help, AI and machine learning capabilities need to be deployed pervasively across the network to baseline normal behavior and respond instantly to changes and detect and disable sophisticated threats before they can execute their payloads.
+They are also essential in correlating massive amounts of collected data to detect malicious behavior, including using threat feeds and attack profiles to predict the most likely places an attack may occur and proactively bolstering those defenses.

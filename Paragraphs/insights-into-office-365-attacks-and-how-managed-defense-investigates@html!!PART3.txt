@@ -1,0 +1,5 @@
+
+These emails are typically hidden from the compromised user due to attacker-created Outlook mailbox rules.
+Often times, by the time the scheme is inevitably discovered and understood days or weeks later, the money is unrecoverable—highlighting the importance of contacting law enforcement immediately if you’ve fallen victim to a fraud.
+The personal finances of staff aren’t off limits to attackers either.
+We’ve observed several cases of W-2 scams, in which attackers send a request to HR for W-2 information from the victim’s account.

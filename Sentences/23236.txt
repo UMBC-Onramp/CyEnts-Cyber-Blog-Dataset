@@ -1,0 +1,53 @@
+Since the advent of cryptocurrency, scammers of every stripe have sought to get rich from stealing virtual coins.
+
+With cybercriminals duping both buyers of mining equipment and cryptoinvestors , we spotlight a scam targeting users of the Luno cryptoexchange.
+
+About Luno The Luno cryptocurrency exchange has been in existence since 2013, and today it serves more than 5 million clients in 40 countries.
+
+Luno’s primary focus is on emerging markets, allowing users from countries such as Singapore, Malaysia, Indonesia, South Africa, and Nigeria to purchase tokens with local currency.
+
+Luno is a centralized exchange (CEX), meaning clients’ cryptowallet keys are stored on the exchange.
+
+Typically, such sites are well protected against hacking and leakage.
+
+However, account protection becomes much harder when owners spill their credentials to cybercriminals.
+
+A simple phishing scheme The attackers who targeted Luno did not reinvent the wheel.
+
+ 
+
+Rather, they employed the tried-and-true method of playing on people’s desire for free cryptocurrency, sending potential victims e-mail messages, seemingly from the Luno team, saying that an incoming payment has been “placed on hold due to error(s)” in their profile data.
+
+The message includes a link for users to follow and solve the problem.
+
+Fake incoming transfer notification with link — just not to Luno As per usual with a phishing attack, the scammers forged the sender’s address, making the message look plausible.
+
+The strange address of the link lurking under the button, which looks nothing like luno.com and is located in the .ar domain zone (Argentina), might arouse suspicion.
+
+If the victim doesn’t notice this discrepancy and simply clicks, the link takes them through a chain of redirects to an illegitimate Luno login page.
+
+The fake resource is very similar in design to the real Luno site, but the cybercriminals did not even try to disguise the URL, apparently counting on user carelessness.
+
+The fake login page looks like the real one, although with an entirely different URL To keep the cryptoinvestor victim from suspecting anything is amiss, the scammers even set strict security requirements.
+
+For example, to log in to the fake site, you need to enter a strong password with the same strict requirements as the official platform.
+
+The password requirements on the fake exchange are as strict as on the real Luno site Next, if the victim enters their credentials and tries to log in, the screen will display a 403 Forbidden error, and that’s it, the attackers now have the password — and access to the victim’s cryptocurrency.
+
+Error message on the fake exchange How to guard against cryptophishing Phishing remains a viable method of stealing accounts and money on cryptocurrency platforms.
+
+That said, knowing a few simple rules will help minimize the risk of getting hooked.
+
+Be vigilant.
+
+Unexpected messages about large transfers, gifts, and winnings are nearly always a trick; Carefully check the URL in the address bar before entering credentials.
+
+Website spoofing is a common phishing technique; Don’t trust links in e-mails.
+
+Instead, bookmark the URLs of cryptocurrency wallets, exchanges, and other important services, and open them using your bookmarks; Use a unique password for each cryptocurrency service (and for all other sites and services as well) so that a hack or data leak on one resource won’t affect your other accounts; Install a reliable antivirus solution to protect against phishing.
+
+For example, Kaspersky Internet Security ‘s built-in antiphishing and antifraud modules warn users about potentially dangerous sites in good time.
+
+
+
+

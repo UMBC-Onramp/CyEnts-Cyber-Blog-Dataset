@@ -1,0 +1,5 @@
+
+This has caused insufficient or late supply of end products or services, representing long-term financial losses in the form of missed business opportunities, costs for incident response, regulatory fines, reputational damage, and sometimes even paid ransoms.
+In certain sectors, such as utilities and public services, high availability is also critical to societal well-being.
+The best-known example of ransomware impacting industrial production due to an IT network infection is Norsk Hydro’s incident from March 2019, where disruptions to Business Process Management Systems (BPMS) forced multiple sites to shut down automation operations.
+Among other collateral damage, the ransomware interrupted communication between IT systems that are commonly used to manage resources across the production chain.

@@ -1,0 +1,5 @@
+
+(One notable exception: you cannot bypass HTTPS encryption by exploiting FragAttacks.)
+Worse, threat actors can use FragAttacks to mount attacks against devices connected to the Wi-Fi network, including Internet of Things (IoT) devices.
+Those vulnerabilities open up the same access to poorly secured devices attackers would have if they logged on to the network.
+Some of these vulnerabilities can be used to inject malicious, unencrypted Wi-Fi frames that look like handshake messages.

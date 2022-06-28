@@ -1,0 +1,13 @@
+
+When Good.xml is executed, it first creates a file named \"Startups32.vbs\" in the system startup folder.
+The .vbs script contains code to run Good.xml file after each system startup to maintain persistence.
+(See Mitre ATT&CK technique – Persistence .) .NET
+RAT Loader
+After achieving persistence, Good.xml retrieves the .NET
+Rat loader from the byte array and loads it into the current application.
+The .NET
+RAT loader is contained in the byte array sBytes in the XML, which is loaded using the method Thread.
+GetDomain.
+Load(sBytes).
+The method Thread.
+GetDomain() returns the domain of the current running thread, while Load() dynamically loads the byte array assembly into the current application domain during runtime.

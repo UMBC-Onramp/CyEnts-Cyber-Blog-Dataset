@@ -1,0 +1,4 @@
+
+The WinSpy malware creates its configuration in the registry under \"SOFTWARE\\MSI64\" as shown in Figure 2.
+The various components of WinSpy read this configuration at runtime.
+This configuration dictates various settings such as the username, unique identifier, connection parameters, remote FTP server and credentials, filename and path for captured data, current status, etc.

@@ -1,0 +1,6 @@
+
+Geopolitical context The motivation behind the attack is still unclear.
+Shamoon Version 1 attacked just two targets in the Middle East.
+Shamoon Version 2 attacked multiple targets in Saudi Arabia.
+Version 3 went after companies in the Middle East by using their suppliers in Europe, in a supply chain attack.
+Inside the .Net wiper, we discovered the following ASCII art: These characters resemble the Arabic text تَبَّتْ يَدَا

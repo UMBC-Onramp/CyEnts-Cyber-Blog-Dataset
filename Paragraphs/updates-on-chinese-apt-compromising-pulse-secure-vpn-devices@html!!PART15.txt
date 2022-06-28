@@ -1,0 +1,3 @@
+
+Relevant MITRE ATT&CK techniques, Yara rules and hashes are published on Mandiant’s GitHub page .
+Forensics, Remediation, and Hardening Guidelines To begin an investigation, Pulse Secure users should contact their Customer Support Representative for assistance completing the following steps: Capture memory and a forensic image of the appliance Run the Pulse Integrity Checker Tool found online Request a decrypted image of each partition and a memory dump To remediate a compromised Pulse Secure appliance: Caution must be taken when determining if a Pulse Secure device was compromised at any previous date.

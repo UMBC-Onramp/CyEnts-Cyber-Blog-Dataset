@@ -1,0 +1,10 @@
+
+SLOWPULSE Variant 2 ACE Two Factor Auth Credential Logging We also identified a variant of SLOWPULSE (SHA256: 1ab50b77dd9515f6cd9ed07d1d3176ba4627a292dc4a21b16ac9d211353818bd ) which logs credentials used during ACE-2FA protocol authentication.
+The backdoor is implemented in the routine DSAuth::AceAuthServer::checkUsernamePassword .
+As part of the login procedure the username and password are retrieved then written into a map entry structure.
+The backdoor inserts an unconditional jump into the logon logic that takes this map entry structure, reads the username and password fields, then writes them to the file /home/perl/PAUS.pm in a+ (append) mode, using the format string %s:%s\\n .
+The backdoor then unconditionally jumps back into the normal control flow to continue the logon process as normal.
+SLOWPULSE Variant 3 ACE Two Factor Auth Bypass We Identified another variant of SLOWPULSE (SHA256: b1c2368773259fbfef425e0bb716be958faa7e74b3282138059f511011d3afd9 ) which is similar to SLOWPULSE VARIANT 2 the malicious logic lives within DSAuth::AceAuthServer::checkUsernamePassword , however this variant bypasses the logon procedure rather than login credentials.
+Typical execution of this routine calls DsSecID_checkLogin to validate the username and password which sets the EAX register to 1.
+The routine DSAuth::AceAuthServer::handleACEAuthResult then checks EAX to determine if auth was successful or not.
+The malicious logic hijacks execution immediately after the username and password fields are written to their map entries, then checks if the password matches the backdoor password.

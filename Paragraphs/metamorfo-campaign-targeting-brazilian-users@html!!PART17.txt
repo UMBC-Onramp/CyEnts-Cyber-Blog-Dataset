@@ -1,0 +1,6 @@
+
+The malware displays fake forms on top of the banking sites and intercepts credentials from the victims.
+It can also display a fake Windows Update whenever there is nefarious activity in the background, as seen in Figure 23.
+Figure 23:
+Fake Form Displaying Windows Update The sample also contains a keylogger functionality, as shown in Figure 24.
+Figure 24: Keylogger Function Command and Control The Trojan’s command and control command structure is identical to the first sample.

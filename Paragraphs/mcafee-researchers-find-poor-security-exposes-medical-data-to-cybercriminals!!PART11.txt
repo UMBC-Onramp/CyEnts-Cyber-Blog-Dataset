@@ -1,0 +1,9 @@
+
+Researching the retrieved files from open sources and directories, we discovered most of the images still contained this metadata, such as in the following example, from which we extracted (obscured) personally identifiable information (PII).
+Metadata discovered in a DICOM file.
+Combining Vulnerabilities and Metadata We combined possible vulnerabilities and the metadata to create a test scenario, installing information from a dummy patient, including an x-ray picture of a knee, to the vulnerable PACS server.
+Our test patient record, followed by an x-ray of a knee.
+Using vulnerability information gathered in an earlier phase of research, we launched an attack to gain access to the PACS server.
+Once we had access, we downloaded the image from our dummy patient and altered the metadata of the image series, changing all references of “knee” to “elbow.”
+Altered metadata of the test patient image.
+We then saved the picture and uploaded it to the server.

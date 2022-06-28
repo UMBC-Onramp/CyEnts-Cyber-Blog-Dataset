@@ -1,0 +1,8 @@
+
+Security researchers have also seen destructive features used as anti-forensic techniques:
+The OlympicDestroyer malware targeted the Olympic Games organization and erased event logs and backups to avoid investigation.
+Artificial intelligence the next weapon In recent years, we have seen malware using evasion techniques to bypass machine learning engines.
+For example, in 2017 the Cerber ransomware dropped legitimate files on systems to trick the engine that classifies files.
+In 2018, PyLocky ransomware used InnoSetup to package the malware and avoid machine learning detection.
+Clearly, bypassing artificial intelligence engines is already on the criminal to-do list; however, criminals can also implement artificial intelligence in their malicious software.
+We expect evasion techniques to begin leveraging artificial intelligence to automate target selection, or to check infected environments before deploying later stages and avoiding detection.

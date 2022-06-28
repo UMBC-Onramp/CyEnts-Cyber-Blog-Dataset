@@ -1,0 +1,59 @@
+A few months ago, Apple unveiled three series of computers powered by its own M1 chip, designed to replace Intel’s processors.
+
+The chips are notable for being based on the ARM architecture instead of the x86 architecture traditionally used in personal computers.
+
+In essence, the Apple M1 is a direct relative of the iPhone and iPad processors.
+
+If everything goes according to plan, Apple will be able to switch completely to its own processors and unify its software under a single architecture.
+
+Leaving aside the current pros and cons performance-wise, we took a look at the innovation from a security perspective.
+
+Bad news: Just a few months after the release of the first Apple M1 computers, virus writers had already adapted several malware families to the new processor.
+
+What makes Apple M1 malware unique?
+
+In terms of malicious functionality, absolutely nothing distinguishes M1 malware from “regular” malware.
+
+It can run natively on Mac computers with M1 chips, that’s the difference.
+
+Developers recompiled their code and adapted the malware to the new architecture to make it work more efficiently.
+
+Essentially, the M1 adaptation drive is just more evidence that virus writers are motivated to keep their creations up to date.
+
+Does that mean old malware doesn’t work on computers with the Apple M1?
+
+Unfortunately, malware adapted for M1 is an addition, not merely a replacement.
+
+Apple uses the Rosetta 2 system to make the transition from one platform to another seamless.
+
+Roughly speaking, it translates old program code written for the Intel x86 series into a form that the M1 can digest.
+
+Rosetta doesn’t distinguish legitimate programs from malicious ones; it runs x86 malware as readily as any other app.
+
+But it is always more convenient to work without an intermediary, which is why some virus writers adapted their handiwork for the Apple M1.
+
+Are older computers immune to M1 malware?
+
+The new malicious programs for the Apple M1 are not fundamentally new; they’re modifications of old ones.
+
+Cybercriminals tend to release the updated versions in a hybrid format, compatible with both platforms.
+
+How many varieties of M1 malware are out there?
+
+Our researchers have reliably identified four families already adapted for the M1.
+
+The first, known as XCSSET, infects Xcode projects and allows attackers to do all kinds of nasty stuff on the victim’s Mac.
+
+The second is Silver Sparrow, which recently made a media splash and is spreading far faster than the first.
+
+The third and fourth known M1-malware varieties are adware from the Pirrit and Bnodlero families.
+
+Hardcore techies can check out our technical breakdown of all four families.
+
+How can you guard against M1 malware?
+
+Probably the most important advice for Mac users is not to become complacent just because Apple devices are supposedly safer than others, and to adhere to all the usual rules of digital hygiene: Do not follow suspicious links; Do not download suspicious files or apps; Do not install apps from untrusted sources; Use reliable security solutions that detect and neutralize this new breed of malware pests.
+
+
+
+

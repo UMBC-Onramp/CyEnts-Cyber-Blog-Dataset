@@ -1,0 +1,4 @@
+
+Introducing flare-dbg The FLARE team is introducing a Python project, flare-dbg that runs on top of pykd.
+Its goal is to make Windbg scripting easy.
+The heart of the flare-dbg project lies in the DebugUtils class, which contains several functions to handle: ·      Memory and register manipulation ·      Stack operations ·      Debugger execution ·      Breakpoints ·      Function calling In addition to the basic debugger utility functions, the DebugUtils class uses Vivisect to handle the binary analysis portion.

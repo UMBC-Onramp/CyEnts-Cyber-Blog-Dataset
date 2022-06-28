@@ -1,0 +1,8 @@
+
+Next, the backdoor only executes if the filesystem last write time of the .NET assembly SolarWinds.Orion.Core.BusinessLayer.dll is at least 12 to 14 days prior to the current time.
+The exact threshold is selected randomly from this interval.
+In other words, SUNBURST lays low for almost two weeks before raising its head.
+If the timestamp check fails, the backdoor will execute again at a random later time when it is invoked by a legitimate recurring background task.
+Once the threshold is met, the sample creates the named pipe 583da945-62af-10e8-4902-a8f205c72b2e to ensure only one instance of the backdoor is running.
+If the named pipe already exists, the malware exits.
+SUNBURST stores its configuration in the legitimate SolarWinds.Orion.Core.BusinessLayer.dll.config file.

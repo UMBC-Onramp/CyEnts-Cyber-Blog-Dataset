@@ -1,0 +1,6 @@
+
+The patcher accepts four arguments.
+The first argument is the original binary path, the second the patched output file path, third is the backdoor bypass password, and fourth is the letter e specifying to apply patches.
+The sample reads the original binary into memory, applies the assembly patches associated with SLOWPULSE V3, as well as the provided bypass password, then written to the output path.
+The assembly patches, and all offsets including where to copy the bypass password are hardcoded.
+SLOWPULSE Variant 4 Patcher As part of our investigation into the SLOWPULSE family we recovered the utility the attacker used to insert the malicious logic into the original libdsplibs.so file.

@@ -1,0 +1,6 @@
+
+Despite the agile approach of the developers, the coding is not professional and bugs usually remain in the malware (even in Version 5.0.2), but the speed of change is impressive and increases the difficulty of combating it.
+The group behind GandCrab has achieved cult status in underground forums; the authors are undoubtedly confident and have strong marketing skills, but flawless programming is not one of their strengths.
+Underground alliances On September 27, the GandCrab crew announced Version 5 with the same showmanship as its earlier versions.
+GandCrab ransomware has gained a lot of attention from security researchers as well as the underground.
+The developers market the affiliate program like a “members-only club” and new affiliates are lining up to join, in the hope of making easy money through the large-scale ransomware extortion scheme.

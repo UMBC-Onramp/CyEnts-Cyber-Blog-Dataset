@@ -1,0 +1,10 @@
+
+Figure 22
+Being heap memory, this region was also executable, a detail that will become important shortly.
+Replacing the 0x22’s in the malformed packet with a non-repeating pattern both revealed where in the payload to place our shell code and confirmed that the bytes in this region were all unique.
+With a potential place to put our shellcode, the next major component to address was controlling execution.
+The write-what-where condition allowed us to write anywhere in memory; however, it did not give us control of execution.
+One technique to tackle this problem is to leverage the Global Offset Table (GOT).
+In Linux, the GOT redirects a function pointer to an absolute location and is located in the .got section of an ELF executable or shared object.
+Since the .got section is written to at execution time, it is generally still writable later during execution.
+Relocation Read Only (RELRO) is an exploit mitigation which marks the loaded .got section read-only once it is mapped; however, as seen above, this protection was conveniently not enabled.

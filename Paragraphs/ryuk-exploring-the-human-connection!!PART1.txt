@@ -1,0 +1,5 @@
+By John Fokker and Alexandre Mundo on Feb 19, 2019
+In collaboration with Bill Siegel and Alex Holdtman from Coveware.
+At the beginning of 2019, McAfee ATR published an article describing how the hasty attribution of Ryuk ransomware to North Korea was missing the point.
+Since then, collective industry peers discovered additional technical details on Ryuk’s inner workings , the overlap between Ryuk and Hermes2.1, and a detailed description of how the ransomware is piggybacking the infamous and ever evolving Trickbot as a primary attack vector.
+In this blog post we have teamed up with Coveware to take a closer look at the adversary and victim dynamics of Ryuk Ransomware.

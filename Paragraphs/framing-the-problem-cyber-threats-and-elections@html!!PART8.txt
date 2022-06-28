@@ -1,0 +1,5 @@
+
+In this manner, they combine the previous two categories of activity.
+Notably, this tactic has been employed by Guccifer 2.0 and DC Leaks in the 2016 U.S. election.
+In some cases, similar tactics have leveraged compromised infrastructure to carry out disinformation operations, such as in the 2014 Ukrainian presidential campaign in which Russian-nexus actors posted erroneous election results from the compromised Ukrainian election commission website.
+Attacks on Critical Election Infrastructure : Compromises into core critical infrastructure such as election management systems, voting systems, electronic pollbooks, and others represent the most critical risks to elections, with the potential to alter or delete votes or voters from voter rolls.

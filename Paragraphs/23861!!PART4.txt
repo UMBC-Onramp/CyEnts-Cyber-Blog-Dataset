@@ -1,0 +1,4 @@
+
+When a threat actor can afford to spend millions, potentially tens of millions or even hundreds of millions of USD on their offensive programs, it is very unlikely that a target will be able to avoid getting infected.
+To put this in simpler words, if you are targeted by such an actor, it’s not a question of “whether you can get infected,” it’s actually just a matter of time and resources before you get infected .
+Now, for the good news — exploit development and offensive cyberwarfare are often more of an art rather than an exact science.

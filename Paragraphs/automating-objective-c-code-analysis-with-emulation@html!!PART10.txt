@@ -1,0 +1,7 @@
+
+Examples Figure 4 shows a few blocks of code that call a function that takes a timestamp value and converts it to a string.
+Figure 5 shows a simple script that uses flare-emu ’s iterate API to print the arguments passed to this function for each place it is called.
+The script also emulates a simple XOR decode function and prints the resulting, decoded string.
+Figure 6 shows the resulting output of the script.
+Figure 4:
+Calls to a timestamp conversion function Figure 5: Simple example of flare-emu usage Figure 6: Output of script shown in Figure 5 Here is a sample script that uses flare-emu to track return values of GetProcAddress and rename the variables they are stored in accordingly.

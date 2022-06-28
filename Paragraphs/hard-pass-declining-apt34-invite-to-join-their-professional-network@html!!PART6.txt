@@ -1,0 +1,7 @@
+
+Offending applications can subsequently be sandboxed or terminated, preventing an exploit from reaching its next programmed step.
+The Managed Defense SOC analyzed the alert and identified a malicious file named System.doc (MD5: b338baa673ac007d7af54075ea69660b) , located in C:\\Users\\<user_name>\\.templates .
+The file System.doc is a Windows Portable Executable (PE), despite having a \"doc\" file extension.
+FireEye identified this new malware family as TONEDEAF.
+A backdoor that communicates with a single command and control (C2) server using HTTP GET and POST requests, TONEDEAF supports collecting system information, uploading and downloading of files, and arbitrary shell command execution.
+When executed, this variant of TONEDEAF wrote encrypted data to two temporary files – temp.txt and temp2.txt – within the same directory of its execution.

@@ -1,0 +1,7 @@
+
+The law-enforcement operation effectively killed off Netwalker. 5.
+DoppelPaymer ransomware
+The last villain of our roundup is DoppelPaymer, ransomware whose victims make up about 9% in the total statistics.
+Its creators made a mark with other malware too, including the Dridex banking Trojan and the now-defunct BitPaymer (aka FriedEx) ransomware, which is considered an earlier version of DopplePaymer .
+So the total number of victims of this group is in fact much higher.
+Commercial organizations hit by DoppelPaymer include electronics and automobile manufacturers, as well as a large Latin American oil company.

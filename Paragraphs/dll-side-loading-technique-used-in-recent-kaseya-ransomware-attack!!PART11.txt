@@ -1,0 +1,9 @@
+
+This is a Windows Defender executable and normally not detected by security applications.
+After dropping both the executable and the DLL file, the ransomware executes MsMpEng.exe using CreateProcessW API.
+Walkthrough on How This Ransomware Uses the DLL Side-Loading Technique Both mpsvc.dll and MsMpEng.exe are found within the ransomware in the resource section of the file.
+To access the content of the resource section of the file, the ransomware uses FindResourceW, LoadResource, and LockResource APIs to grab the contents of the resource section.
+The resource section has two main elements, “MODLIS” and “SOFTIS”.
+These provide the contents for “mpsvc.dll” and “MsMpEng.exe”, respectively (Figure 7a).
+The ransomware tries to access “mpsvc.dll” in the “C:\\Windows” folder.
+If it fails, it will create “mpsvc.dll” in “AppData\\Local\\Temp”.

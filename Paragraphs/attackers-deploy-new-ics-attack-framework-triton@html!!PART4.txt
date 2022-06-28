@@ -1,0 +1,3 @@
+
+TRITON is also designed to communicate using the proprietary TriStation protocol which is not publicly documented suggesting the adversary independently reverse engineered this protocol.
+The targeting of critical infrastructure to disrupt, degrade, or destroy systems is consistent with numerous attack and reconnaissance activities carried out globally by Russian, Iranian, North Korean, U.S., and Israeli nation state actors.

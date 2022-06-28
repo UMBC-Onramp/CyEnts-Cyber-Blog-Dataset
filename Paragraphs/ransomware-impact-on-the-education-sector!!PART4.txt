@@ -1,0 +1,9 @@
+
+Grief ransomware, also known as GriefOrPay, is thought to be a rebrand of the DoppelPaymer ransomware.
+DoppelPaymer has been around since at least July 2019 and is a member of the BitPaymer ransomware family.
+While the reason behind rebranding from DoppelPaymer to Grief is not apparent, it happened after the Colonial Pipeline incident.
+One theory is that the rebrand was to take law enforcement’s attention away from the group.
+Ransomware gangs work like scam companies that change their names, logos, and registration after enough money is collected from the victims to divert unwanted attention from law enforcement.
+While its intrusion tactics are not yet identified, likely the Grief attack indirectly relies on spam emails as the DoppelyPaymer payload is thought to be distributed via the Dridex botnet.
+Another report suggests the presence of Cobalt Strike in some machines infected with Grief.
+Grief is also double-extortion ransomware, demanding ransom payments in Monero cryptocurrency for file decryption and not releasing harvested data.

@@ -1,0 +1,5 @@
+
+The next question was, what do we copy?
+Using “/proc/mtd” to gain information about how memory is partitioned, we could see file systems located on mtd4 and mtd5.
+We used dd to copy off both the mtd4 and mtd5 partitions.
+We later discovered that one of the images is a backup used as a system fall back if a persistent issue is detected.

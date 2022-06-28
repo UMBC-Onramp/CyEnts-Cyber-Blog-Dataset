@@ -1,0 +1,4 @@
+
+These exploits are uniquely attractive to malicious groups or persons because the attack surface is nearly unprecedented, the attack vector is relatively new, and the impacts (privilege escalation and leaks of highly sensitive memory) are detrimental.
+The only naturally mitigating factor is that these exploits require local code execution.
+A number of third parties have already identified JavaScript as an applicable delivery point, meaning both attacks could theoretically be run from inside a browser, effectively opening an avenue of remote delivery.

@@ -1,0 +1,9 @@
+
+Do your research.
+Consumers should ensure they are aware of the security risks associated with products available on the market.
+For product manufacturers: Manufacturer supported awareness.
+Product manufacturers can help by clearly stating the level of security their product provides in comparison with the technology or component they seek to advance.
+Embrace vulnerability disclosure.
+Threat actors are constantly tracking flaws which they can weaponize; conversely, threat researchers are constantly working to uncover and secure product vulnerabilities.
+By partnering with researchers and responding quickly, vendors have a unique opportunity
+

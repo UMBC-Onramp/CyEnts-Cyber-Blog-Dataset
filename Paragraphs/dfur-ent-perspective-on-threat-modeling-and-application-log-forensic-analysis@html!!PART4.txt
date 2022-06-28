@@ -1,0 +1,10 @@
+
+Backend databases store metadata for users, such as street addresses and contact information.
+DFUR Security Team Threat Modeling After stumbling through several incidents, the DFUR security team realized that their application did not log the information needed to answer investigative question clearly and quickly.
+The team held workshops with technical stakeholders to develop a threat model and improve their application security strategy.
+They addressed questions, such as: What types of threats does DFUR face based on industry trends?
+What impact could those threats have?
+How could the DFUR application be attacked or abused?
+What log data would DFUR need to prove an attack or fraud happened?
+The DFUR team compiled the stakeholder feedback and developed a threat profile to identify and prioritize high-risk threats facing the DFUR application platform, including: Account takeover and abuse Password attacks (e.g., credential stuffing)
+Bank account modifications PHI/PII access Health service modifications or interruptions Fraudulent reimbursement claim submission Veterinarians over-prescribing catnip

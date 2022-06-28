@@ -1,0 +1,6 @@
+
+If the 64-bit hook detects an invocation that didn’t also pass through the 32-bit hook, then it’s known that a sample is utilizing Heaven’s Gate.
+This technique can detect both evasion techniques previously detailed.
+However, in practice this is very difficult to implement.
+Looking at the requirements that must be satisfied to hook the 64-bit syscall stub we come up with this list: Install 64-bit hook from a 32-bit module How do you read/write 64-bit address space from a 32-bit module?
+Implement a 64-bit callback from a 32-bit module Typically, inline hooking uses C functions as callback stubs, but we’re compiling a 32-bit module so we’ll have a 32-bit callback instead of the required 64-bit one.

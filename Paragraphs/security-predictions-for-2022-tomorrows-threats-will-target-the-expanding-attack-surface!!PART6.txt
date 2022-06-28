@@ -1,0 +1,5 @@
+
+We have already seen new attacks emerging that target digital wallets.
+A new fake Amazon gift card generator specifically targets digital wallets by replacing the victim’s wallet with that of the attacker.
+And ElectroRAT targets them by combining social engineering with custom cryptocurrency applications and a new Remote Access Trojan (RAT) to target multiple operating systems, including Windows, Linux, and macOS.
+We expect to see more malware designed to target stored crypto credentials and drain digital wallets, especially as more businesses adopt digital wallets to make purchases.

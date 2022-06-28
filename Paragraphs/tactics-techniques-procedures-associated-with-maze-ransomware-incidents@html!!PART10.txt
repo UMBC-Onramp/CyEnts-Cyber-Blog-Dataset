@@ -1,0 +1,4 @@
+
+Initial Compromise There are few clear patterns for intrusion vector across analyzed MAZE ransomware incidents.
+This is consistent with our observations of multiple actors who use MAZE soliciting partners with network access.
+The following are a sample of observations from several Mandiant incident response engagements: A user downloaded a malicious resume-themed Microsoft Word document that contained macros which launched an IcedID payload, which was ultimately used to execute an instance of BEACON.

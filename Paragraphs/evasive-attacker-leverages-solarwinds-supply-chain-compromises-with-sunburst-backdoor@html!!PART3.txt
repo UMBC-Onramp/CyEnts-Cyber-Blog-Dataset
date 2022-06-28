@@ -1,0 +1,7 @@
+
+SUNBURST Backdoor SolarWinds.Orion.Core.BusinessLayer.dll is a SolarWinds digitally-signed component of the Orion software framework that contains a backdoor that communicates via HTTP to third party servers.
+We are tracking the trojanized version of this SolarWinds Orion plug-in as SUNBURST.
+After an initial dormant period of up to two weeks, it retrieves and executes commands, called “Jobs”, that include the ability to transfer files, execute files, profile the system, reboot the machine, and disable system services.
+The malware masquerades its network traffic as the Orion Improvement Program (OIP) protocol and stores reconnaissance results within legitimate plugin configuration files allowing it to blend in with legitimate SolarWinds activity.
+The backdoor uses multiple obfuscated blocklists to identify forensic and anti-virus tools running as processes, services, and drivers.
+Figure 1: SolarWinds digital signature on software with backdoor Multiple trojanzied updates were digitally signed from March - May 2020 and posted to the SolarWinds updates website, including: hxxps://downloads.solarwinds[.]com/solarwinds/CatalogResources/Core/2019.4/2019.4.5220.20574/SolarWinds-Core-v2019.4.5220-Hotfix5.msp

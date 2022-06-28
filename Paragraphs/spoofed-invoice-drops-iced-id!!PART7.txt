@@ -1,0 +1,8 @@
+
+If a connection to a C2 server has been made, the malware then moves to ensure persistence.
+It installs a copy of itself in the user’s temp directory, “%APPDATA%\\local\\temp”.
+Conclusion Threat actors that are knowledgeable of their targets are able to increase their chances of installing an implant within an organization.
+Based on our observations, the efforts used in this IcedID attack highlight the groups methodical effort, as evidenced by their research of Ukraine's retail fuel industry.
+Additionally, the use of uncommon deployment methods (zipped ISO file) to establish a foothold—and ultimately gain persistence within an organization—reveals how crafty the threat actors are able to be to obtain unauthorized access.
+Fortinet Protections
+All IcedID samples mentioned in this blog are detected by the following (AV) signatures: W32/Kryptik.

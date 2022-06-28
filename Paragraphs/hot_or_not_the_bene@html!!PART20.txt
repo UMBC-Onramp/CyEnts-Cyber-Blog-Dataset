@@ -1,0 +1,7 @@
+
+○
+Consequences : The app developer can utilize all the Private APIs provided by the loaded frameworks to perform actions that are not advertised to Apple or the users.
+Since the developer has control of the JavaScript code, the malicious behavior can be temporary, dynamic, stealthy, and evasive.
+Such an attack, when in place, will pose a big risk to all stakeholders involved.
+○      Figure 19 demonstrates a scenario of this type of attack: Figure 19.
+Threat model for JSPatch used by a malicious app developer ● Precondition : 1) Third-party ad SDK embeds JSPatch platform; 2) Host app uses the ad SDK; 3) Ad SDK provider has malicious intention against the host app.

@@ -1,0 +1,4 @@
+
+Visit our website for more information or to request Mandiant services or threat intelligence .
+Mandiant's Approach for Safe Red Teaming in OT Mandiant's approach to red teaming OT production systems consists of two phases: active testing on IT and/or OT intermediary systems, and custom attack modeling to develop one or more realistic attack scenarios.
+Our approach is designed to mirror the OT-targeted attack lifecycle—with active testing during initial stages (Initial Compromise, Establish Foothold, Escalate Privileges, and Internal Reconnaissance), and a combination of active/passive data collection and custom threat modeling to design feasible paths an attacker would follow to complete the mission.

@@ -1,0 +1,6 @@
+
+Potential Exploitation Sophisticated threat actors can exploit the weaknesses in classifiers to alter an AI-based detection tool and mischaracterize anomalous illegal activity as normal activity.
+Manipulating the model helps insider threats conduct criminal activity without fear of discovery.
+Threat Actors Camouflaging Insider Threat Activity
+Currently threat actors possess limited access to the kind of technology required to evade these fraud detection systems, and therefore with high confidence we assess that the threat of this activity type remains low.
+However, as AI financial tools become more commonplace, adversarial methods to exploit these tools will also become more available and insider threats leveraging AI to evade detection will likely increase in the future.

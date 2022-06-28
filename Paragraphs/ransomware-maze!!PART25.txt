@@ -1,0 +1,13 @@
+
+That way it is not possible to use forensic tools to recover the files because they use the same sector on the raw disk.
+The malware does not delete the file using the function “DeleteFileW” and later create a new one with the crypted data.
+Instead, all changes are applied in the mapping directly, in memory, without using a file pointer on the disk to read and write, which makes the process much quicker.
+The image of the file is unmapped, and handles closed.
+The process is repeated with new files.
+The list of folders that the malware avoids are: Windows main directory.
+Games Tor Browser ProgramData cache2\\entries Low\\Content.
+IE5 User Data\\Default\\Cache All Users Local Settings AppData\\Local Program Files
+The malware ignores these file extensions: LNK EXE SYS DLL
+The malware also has a list of filenames that will not be crypted: inf ini ini dat db bak dat.log db bin DECRYPT-FILES.txt
+However, it does crypt the file “ntuser.ini” to prevent other ransomwares from crypting it.
+It creates the ransom note in each folder that it can.

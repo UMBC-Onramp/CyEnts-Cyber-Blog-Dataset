@@ -1,0 +1,4 @@
+
+iOS app URL scheme “lets you communicate with other apps through a protocol that you define.”
+[1] By deliberately defining the same URL schemes used by other apps, a malicious app can still hijack the communications towards those apps and mount phishing attacks to steal login credentials.
+Even worse than the first Masque Attack [3], attackers might be able to conduct Masque Attack II through an app in the App Store.

@@ -1,0 +1,8 @@
+
+This technique makes it appear like another instruction, in this case “pop eax,” which extracts the value after adding 0x11 from the top of the stack (ESP register).
+The code later makes an unconditional jump to this address in EAX.
+This way the ransomware follows its normal code flow.
+Figure 9.
+New code to make static analysis more difficult.
+Conclusion GandCrab is the leading ransomware threat for any person or enterprise.
+The author uses many ways to install it—including exploits kits, phishing mails, Trojans, and fake programs.

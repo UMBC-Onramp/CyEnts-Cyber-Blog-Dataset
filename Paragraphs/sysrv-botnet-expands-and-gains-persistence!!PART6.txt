@@ -1,0 +1,13 @@
+
+Sysrv Botnet Payload When a system is infected and becomes a bot, the bot has two functions.
+The first is to spread and infect more bots and the second is to mine for Monero cryptocurrency.
+A bot spreads itself by attacking random public IPs using the exploits we have listed above.
+The exploit’s payload is to download a loader script from a hard-coded IP or domain via wget, curl or powershell.
+The name of the script is either ldr.sh or ldr.ps1.
+The loader script will then download the worm and miner binary from an IP hardcoded on the loader script.
+The binary payload has a Linux and Windows version.
+It is a 64-bit Go binary which is then packed with UPX.
+Linux binary found on Virustotal Windows binary found on Virustotal Cryptomining Worm The cryptomining worm spreads by scanning vulnerable systems on the internet.
+It uses multiple exploits we have listed above.
+Based on the binaries we have seen and the time when we have seen them, we found that the threat actor is constantly updating its exploit arsenal.
+The latest addition includes an exploit targeting Laravel software, an open-source PHP web framework.

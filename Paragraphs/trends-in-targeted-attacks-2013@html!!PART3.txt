@@ -1,0 +1,8 @@
+
+Conflict Where kinetic conflict and nation-state disputes arise, malware is sure to be found.
+Here are some of the more interesting cases documented this year: Middle East: continued attacks targeting the Syrian opposition; further activity by Operation Molerats related to Israel and Palestinian territories.
+India and Pakistan: tenuous relations in physical world equate to tenuous relations in cyberspace.
+Exemplifying this trend was the Indian malware group Hangover , the ByeBye attacks against Pakistan, and Pakistan-based attacks against India.
+Korean peninsula: perhaps foreshadowing future conflict, North Korea was likely behind the Operation Troy (also known as DarkSeoul ) attacks on South Korea that included defacements, distributed denial-of-service (DDoS) attacks, and malware that wiped hard disks.
+Another campaign, Kimsuky , may also have a North Korean connection.
+China: this was the source of numerous attacks, including the ongoing Surtr campaign, against the Tibetan and Uygur communities, which targeted MacOS and Android.

@@ -1,0 +1,11 @@
+
+We have been performing Red Team assessments for customers around the world for over 15 years.
+In that time, we have built up a set of scripts, tools, scanners, and techniques to help improve our clients’ security postures.
+Unfortunately, these tools were stolen by a highly sophisticated attacker.
+The stolen tools range from simple scripts used for automating reconnaissance to entire frameworks that are similar to publicly available technologies such as CobaltStrike and Metasploit.
+Many of the Red Team tools have already been released to the community and are already distributed in our open-source virtual machine, CommandoVM .
+Some of the tools are publicly available tools modified to evade basic security detection mechanisms.
+Other tools and frameworks were developed in-house for our Red Team.
+No Zero-Day Exploits or Unknown Techniques
+The Red Team tools stolen by the attacker did not contain zero-day exploits.
+The tools apply well-known and documented methods that are used by other red teams around the world.

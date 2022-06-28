@@ -1,0 +1,5 @@
+
+Bypassing Inline Hooks As described in this blog post, Windows provides a way for 32-bit applications to execute 64-bit syscalls on a 64-bit system using the WOW64 layer.
+However, the segmentation switch we noted earlier can be manually performed, and 64-bit shellcode can be written to setup a syscall.
+This technique is popularly called “Heaven’s Gate”.
+JustasMasiulis’ work call_function64 can be used as a reference to see how this may be done in practice (JustasMasiulis).

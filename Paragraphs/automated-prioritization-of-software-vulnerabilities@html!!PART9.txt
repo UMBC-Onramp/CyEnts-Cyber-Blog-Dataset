@@ -1,0 +1,7 @@
+
+In other words, they are contiguous sequence of n words from a text.
+After we extract these n-grams, we can represent original text as a bag-of-ngrams.
+Consider the sentence: A criticial vulnerability was found in Linux.
+If we consider all 2-gram features, then the bag-of-ngrams representation contains “A critical”, “critical vulnerability”, etc.
+Word embeddings are a way to learn the meaning of a word by how it was used in previous contexts, and then represent that meaning in a vector space.
+Word embeddings know the meaning of a word by the company it keeps, more formally known as the distribution hypothesis .

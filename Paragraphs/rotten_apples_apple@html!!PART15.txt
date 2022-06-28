@@ -1,0 +1,7 @@
+
+ODcyNTA5MTJGUjU0OTYwNTQ5NDc3MTk3NTAxODE2ODYzNDgxODg2NzU3NA==&log=1&sFR
+=ODIxNjMzMzMxODA0NTE4MTMxNTQ5c2RmZ3M1ZjRzNjQyMDQzNjgzODcyOTU2MjU5&email=\" />
+This code redirects the browser to this URL/page: http://manageAppleid84913[.]net/signin.php?c=OTYwNzUyNjlGUjU0OTYwNTQ5NDY0MDgxMjQ4OTQ5OTk0MTQ3MDc1NjYyOA==&log=1&sFR=
+ODc0MjQyNTEyNzMyODE1NTMxNTQ5c2RmZ3M1ZjRzNjQzMDU5MjUzMzg4NDMzNzE1&email=
+# This loads a highly obfuscated JavaScript in the web browser that, on execution, generates the phishing HTML code at runtime to evade signature-based phishing detection systems.
+This is seen in Figure 17 in Appendix 2, with a deobfuscated version of the HTML code being shown in Figure 18.

@@ -1,0 +1,11 @@
+
+With the Bitcoin surge, malware developers and underground markets found themselves in need of more stability, prompting a switch to other currencies and a resurgence of old techniques.
+It is far easier to mine small currencies because the hash rate is generally more manageable and hardware requirements can be more accessible depending on the network design.
+Monero, for example, is ASIC resistant, meaning that while mining specialized hardware does not have an overwhelming advantage to nonspecialized hardware.
+This allows the average computer to be more effective at the task.
+Due to this advantage, Monero is actively mined in mass by criminals using web-based miners on the machines of unsuspecting visitors.
+This intrusion is known as cryptojacking, which works by hijacking the browser session to use system resources.
+A quick look at recent examples of cryptojacking throws light on this issue.
+Starting mid-2017, there have been a slew of instances in which major websites have found themselves compromised and unwittingly hosting the code, turning their users into mining bots.
+The public Wi-Fi at a Starbucks outlet was found to hijack browsers to mine Monero.
+Even streaming services such as YouTube have been affected through infected ads .

@@ -1,0 +1,9 @@
+
+The hack was confirmed by the malware author in a Russian forum: Figure 1.
+Confirmation by the author of the hack of GandCrab servers.
+The text apologizes to partners for the hack and temporarily shuts down the program.
+It promises to release an improved version within a few days.
+The second version of GandCrab quickly appeared and improved the malware server’s security against future counterattacks.
+The first versions of the ransomware had a list of file extensions to encrypt, but the second and later versions have replaced this list with an exclusion list.
+All files except those on the list were encrypted.
+Old versions of the malware used RSA and AES to encrypt the files, and communicated with a control server to send the RSA keys locked with an RC4 algorithm.

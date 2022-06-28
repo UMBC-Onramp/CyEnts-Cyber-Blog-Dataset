@@ -1,0 +1,7 @@
+
+These plugins may be shellcode or DLL modules to be dynamically loaded.
+The C2 server may instruct the backdoor to load the plugins directly or persist them into the encrypted storage file, where they may subsequently be reloaded, such as after upgrading the backdoor.
+Figure 2:
+Malware author mark “No one is perfect except me.”
+SOMBRAT evades forensic analysis by patching the process memory used to record command line arguments.
+It replaces the initial command line with the base filename of the program executable, removing any arguments.

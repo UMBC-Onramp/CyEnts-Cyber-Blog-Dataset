@@ -1,0 +1,5 @@
+
+Based on our observations, this is further complicated by the deployment of non-persistent malware, which leaves almost no traces after reboot.
+Since many forensics frameworks require a device jailbreak, which in turn requires a reboot, this results in the malware being removed from memory during the reboot.
+Currently, several methods can be used for detection of Pegasus and other mobile malware.
+MVT (Mobile Verification Toolkit) from Amnesty International is free, open source and allows technologists and investigators to inspect mobile phones for signs of infection.

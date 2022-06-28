@@ -1,0 +1,6 @@
+
+To be clear, the apps were totally useless from a user perspective.
+Instead, after the first run they hid their icons and repeatedly opened the browser to flash ads.
+They could also play videos from YouTube, open Google Play app pages, and more.
+The version we analyzed, for example, opened the browser every two minutes, rendering the device essentially unusable.
+The thing was especially troubling, because it was extremely hard for a user to figure out what was going on, which app was responsible for the troubles and how to stop it.

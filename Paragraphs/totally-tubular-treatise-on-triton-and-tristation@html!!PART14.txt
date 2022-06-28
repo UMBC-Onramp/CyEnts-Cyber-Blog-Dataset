@@ -1,0 +1,6 @@
+
+With a simple look at the file strings, \"BAZINGA!\" We struck gold.
+File Name tr1com40.dll MD5 069247DF527A96A0E048732CA57E7D3D Size 110592 Compile Date 2006-08-23 File Description Tricon Communications Interface Product Name
+TricCom Dynamic Link Library File Version 4.2.441 Original File Name TricCom.
+DLL Copyright Copyright © 1993-2006
+Triconex Corporation The tr1com40.DLL is exactly what you would expect to see in a custom application package.

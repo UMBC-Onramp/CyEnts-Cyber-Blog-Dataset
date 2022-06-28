@@ -1,0 +1,6 @@
+
+The figure below shows a sequence of commands that the SORA Mirai variant executes immediately after gaining access to a device.
+These strings have been heavily used by researchers over time to classify variants.
+However, there are cases where variants may use different tokens but turn out to be the same malware function-wise—and are even operated by the same threat actor.
+In such cases, analyzing the actual binary being downloaded into the device would greatly help further define the number of existing variants.
+Based on the attacks received by the honeypot, the following table shows the top 10 variants we were able to identify.

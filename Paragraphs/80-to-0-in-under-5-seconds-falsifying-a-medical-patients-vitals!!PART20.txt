@@ -1,0 +1,10 @@
+
+Is this enough to make the scenario unrealistic or not a threat?
+We asked Dr. Nordeck if a short loss in connection could be part of a reasonable scenario.
+“A momentary disconnection of the ECG would likely go unnoticed as this happens often due to patient movement or changing clothes and, as long as it is reconnected, will be unlikely to cause an alert,” he said.
+Modifying vitals in real time Although emulating the patient monitor is interesting, it did not accomplish our goal of making real-time modifications.
+Using what we learned while testing emulation, could we perform real-time injection?
+To answer this question, we must first understand the difference between emulation and real-time injection.
+Emulation requires a deeper understanding of how the initial connection, the handshake, between the two devices occurred.
+When considering real-time modification, this handshake has already taken place.
+But an attacker would not know which port the data packets are being sent too, nor any of the other ports used in the data stream.

@@ -1,0 +1,10 @@
+
+This means R12 is often used as a general-purpose register within subroutines indicating it is almost certainly safe to clobber for our purposes without experiencing unexpected adverse effects.
+Piecing Everything Together With a firm understanding of the vulnerability, exploit, and the shellcode needed we could now attempt exploitation.
+Looking at the sequence of packets used to cause this attack, it is not a single packet attack, but a multiple packet attack.
+The initial buffer overflow is contained in the large malformed packet, so what data do we build into it?
+This packet is overwriting memory but not providing control over execution; therefore, this can be considered the “setup” or “staging” packet.
+This is where memcpy will look for the address of the destination buffer for our last packet.
+The address we want to overwrite goes in this packet followed by our shellcode.
+As explained above, the address we are looking to overwrite is the address of the scDecodeBACnetUDP function pointer in the GOT minus one, to ensure the address isn’t 4-byte aligned.
+By repairing the last byte of the previous function pointer and overwriting this address, we can gain execution control.

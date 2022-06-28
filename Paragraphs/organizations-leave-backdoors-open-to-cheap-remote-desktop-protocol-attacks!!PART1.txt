@@ -1,0 +1,4 @@
+By John Fokker on Jul 11, 2018 Thanks to my colleague Christiaan Beek for his advice and contributions.
+While researching underground hacker marketplaces, the McAfee Advanced Threat Research team has discovered that access linked to security and building automation systems of a major international airport could be bought for only US$10.
+The dark web contains RDP shops, online platforms selling remote desktop protocol (RDP) access to hacked machines, from which one can buy logins to computer systems to potentially cripple cities and bring down major companies.
+RDP, a proprietary protocol developed by Microsoft that allows a user to access another computer through a graphical interface, is a powerful tool for systems administrators.

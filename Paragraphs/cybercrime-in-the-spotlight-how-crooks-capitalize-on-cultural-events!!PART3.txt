@@ -1,0 +1,5 @@
+
+As for fans at home, many phishing and waterhole attacks have been designed around these events to entice fans to visit malicious sites or open emails that appear to be related to the games.
+However, for nation-state attacks, a lot of groundwork is done before these global events even begin.
+Our McAfee Labs team saw this firsthand in the period leading up to the Pyeongchang 2018 Olympic Winter Games.
+A nation-state hacker pretended to be a supplier to the Olympics and sent out weaponized mail to organizations of interest that contained malware developed well before the event had started.

@@ -1,0 +1,4 @@
+
+In the following sections, we outline a typical Transformer architecture and discuss how we adapt it to URLs with a character-focused tokenization.
+We then discuss loss functions we employ to guide the training of the model, and finally compare our training approaches to more conventional ML-based modeling options.
+Adapting Transformers to URLs Our URL Transformer operates at the character level, where each character in the URL corresponds to an input token.

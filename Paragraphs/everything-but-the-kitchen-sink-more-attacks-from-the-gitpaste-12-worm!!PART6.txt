@@ -1,0 +1,12 @@
+
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11511
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10758 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11447 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19509 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5902 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8816 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10987 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17463 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17496 https://www.exploit-db.com/exploits/37474 https://www.exploit-db.com/exploits/40500 https://www.exploit-db.com/exploits/45135
+https://www.exploit-db.com/exploits/45161 https://www.exploit-db.com/exploits/46542 https://www.exploit-db.com/exploits/48225
+https://www.exploit-db.com/exploits/48358 https://www.exploit-db.com/exploits/48676
+https://www.exploit-db.com/exploits/48734 https://www.exploit-db.com/exploits/48737 https://www.exploit-db.com/exploits/48743 https://www.exploit-db.com/exploits/48751
+https://www.exploit-db.com/exploits/48758 https://www.exploit-db.com/exploits/48771 https://www.exploit-db.com/exploits/48775 https://www.exploit-db.com/exploits/48805
+https://www.exploit-db.com/exploits/48827
+Many of these exploits are new, with public disclosures and proofs of concepts dated as recently as September.
+While the X10-unix attacks vary in target operating system and architecture, each tries to do three things: Install Monero cryptomining software.
+Install the appropriate version of the X10-unix worm.
+Open a backdoor listening on ports 30004 and 30006 and upload the victim’s IP address to a private Pastebin paste.

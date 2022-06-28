@@ -1,0 +1,7 @@
+
+Still, an attacker gains a significant advantage from running any code.
+The McAfee Labs analysis shows that CVE-2018-4878 was another example of remote code execution, which usually leads to full compromise.
+This point suggests that Flash vulnerabilities will remain a significant target.
+The data source CVE Details offers the following distribution of Flash CVE vulnerabilities: Source: CVE Details .
+In 2015 through 2017, 81% of flaws resulted in code execution of one form or another.
+CVE Details also assigns Flash issues with Common Vulnerability Scoring System scores .

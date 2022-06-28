@@ -1,0 +1,7 @@
+
+Most of this data comes from a web service without malicious activity.
+However, in the background and without user consent the app silently transfers information to another server.
+Data captured Golden Cup captures a considerable amount of encrypted data from the victim’s device: Phone number Installed packages Device model, manufacturer, serial number Available internal storage capacity Device ID Android version IMEI, IMSI
+This spyware may be just the first stage of a greater infection due to its capability to load dex files from remote sources.
+The app connects to its control server and tries to download, unzip, and decrypt a second stage.
+Android/FoulGoal.

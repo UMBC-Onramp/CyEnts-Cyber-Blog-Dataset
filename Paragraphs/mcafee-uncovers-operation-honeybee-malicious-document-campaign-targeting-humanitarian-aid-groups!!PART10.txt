@@ -1,0 +1,3 @@
+
+The malicious NTWDBLIB DLL performs the simple task of setting up the malicious ipnet.dll as a service by running one of the two batch files contained in the CAB file (which is also dropped to %systemroot%\\system32): NTWDBLIB executing the installer batch files under the context of cliconfg.exe.
+The batch files involved in the attack modify the system service COMSysApp to load the malicious ipnet.dll.

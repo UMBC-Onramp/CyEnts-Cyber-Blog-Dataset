@@ -1,0 +1,6 @@
+
+LSASS Dumping and Lateral Movement Mandiant observed this attacker dump the LSASS process using Task Manager to a file named lsass.
+DMP, and later, zip the dump into two files named lsass.zip and lsass2.zip located in the C:\\ProgramData\\psh\\ directory.
+From this point, the attacker was observed moving laterally to different systems in the environment using Remote Desktop Protocol (RDP) connections.
+Conclusion UNC2465 established initial access via a Trojanized installer executed by an unsuspecting user.
+UNC2465 interactively established an NGROK tunnel and began moving laterally in less than 24 hours.

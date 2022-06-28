@@ -1,0 +1,5 @@
+
+This data compares IPS detection trends in the US with those in the rest of the world.
+This unfiltered data indicates which cyberattacks targeted education sectors.
+The following tables below indicate the top five IPS signatures triggered inside organizations within the education sector from August 11 th to September 10 th , 2021.
+Note that the numbers were not filtered for unique machines, which means the actual impact could be lower.

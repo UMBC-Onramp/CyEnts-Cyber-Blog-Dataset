@@ -1,0 +1,10 @@
+
+Value Information E Initially Set to 0 T Initially set to 0
+K The result of GetTickCount() Table 2: Second GET request parameters If the returned response is 200, the malware examines the Set-Cookie field.
+This field provides the Command ID.
+As shown in Figure 10, the field Set-Cookie responds with ID=17.
+This Command ID acts as the index into a function table created by the malware.
+Figure 12 shows the creation of the virtual function table that will perform the backdoor’s command.
+Figure 12: Function table Table 3 shows the commands supported by HAWKBALL.
+Command Operation Performed 0 Set URI query string to value 16 Unknown 17 Collect system information 18 Execute a provided argument using CreateProcess 19 Execute a provided argument using CreateProcess and upload output 20 Create a cmd.exe reverse shell, execute a command, and upload output 21 Shut down reverse shell
+22 Unknown 23 Shut down reverse shell 48 Download file 64 Get drive geometry and free space for logical drives C-Z 65 Retrieve information about provided directory 66 Delete file 67 Move file Table 3: HAWKBALL commands Collect System Information Command ID 17 indexes to a function that collects the system information and sends it to the C2 server.

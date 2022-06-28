@@ -1,0 +1,8 @@
+
+This seems to be copied from CSWE website.
+Figure 1: Decoy document impersonating CSWE VBS Backdoor The VBS file in the Startup folder will be executed by wscript.exe when Windows starts up.
+The VBS code first derives an ID for the victim using custom logic based on a combination of the ComputerName, Processor_identifier and Username.
+It obtains these from environment strings, as shown in Figure 2.
+Figure 2:
+Deriving victim ID
+Interestingly, the backdoor communicates with the command and control (C2) server using the value of the Authorization HTTP header using the code in Figure 3.

@@ -1,0 +1,4 @@
+
+For more on this issue, see our blog post on the risks associated with remote connectivity .
+The Information Operations Threat We have seen information operations actors promote narratives associated with COVID-19 to manipulate primarily domestic or near-abroad audiences.
+We observed accounts in Chinese-language networks operating in support of the People's Republic of China (PRC), some of which we previously identified to be promoting messaging pertaining to the Hong Kong protests, shift their focus to praising the PRC's response to the COVID-19 outbreak, criticizing the response of Hong Kong medical workers and the U.S. to the pandemic, and covertly promoting a conspiracy theory that the U.S. was responsible for the outbreak of the coronavirus in Wuhan.

@@ -1,0 +1,6 @@
+
+The domain is again wrong, as well.
+This time it’s .app, which app developers use.
+The button points to a phishing site The “LinkedIn login page,” which the link opens, has issues: a blue square covering part of the last letter in the logo, and Linkedin instead of LinkedIn (under the username and password fields).
+arefully check the URL of the site and the name of the social network “You appeared in 2 search this week”
+Links in fake notifications don’t always open fake login pages — sometimes they can lead to more unexpected places.

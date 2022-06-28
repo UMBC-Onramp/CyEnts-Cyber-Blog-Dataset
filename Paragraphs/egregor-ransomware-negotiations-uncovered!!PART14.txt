@@ -1,0 +1,8 @@
+
+Also consider the use of offsite/cold storage solutions.
+The availability of backup files is a significant differentiator for organizations that can help recover from a ransomware attack.
+Implement a strategy to prevent unauthorized data theft, especially as it applies to uploading large amounts of data to legitimate cloud storage platforms that attackers can abuse.
+Consider blocking outbound traffic to unapproved cloud hosting services.
+Employ user and entity behavior analytics to identify potential security incidents.
+When triggered, assume a breach has taken place.
+Audit, monitor and quickly act on suspected abuse related to privileged accounts and groups.

@@ -1,0 +1,11 @@
+
+A.
+For more analysis, see the Mobile Research team’s post.
+Ordinarily we advise users to review the requested permissions before installing a mobile app, and normally this is enough.
+In this case, the only permission requested was access to SMS messages, and once installed the app behaved as expected.
+In the background, however, Sonvpay silently used the push notification service to subscribe users to premium-rate services.
+This campaign displays a significant level of customization.
+The criminals can tailor their fraud to the country of their choosing.
+In our analysis we looked at mobile billing fraud targeting users in Kazakhstan, Malaysia, and Russia.
+In Kazakhstan victims are subscribed to a premium-rate service whereas in Malaysia and Russia they are connected to a WAP billing service.
+Further, the criminals recognize that in Malaysia the mobile operator sends a PIN code, so the attackers include functionality to intercept the SMS.

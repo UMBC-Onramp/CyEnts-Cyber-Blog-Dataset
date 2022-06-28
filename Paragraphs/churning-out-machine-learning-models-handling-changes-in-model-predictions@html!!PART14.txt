@@ -1,0 +1,10 @@
+
+We compare the baseline model, the standard model retrain, the incrementally learned model and the RCOP model.
+Figure 3:
+Bad churn versus accuracy on test set 2.
+Table 1 summarizes each of these approaches, discussed in detail above.
+Name Trained on Method Total # of trees Baseline train LightGBM 1000
+Standard retrain train + FPs/FNs from baseline on test 1 LightGBM 1100 Incremental model train + FPs/FNs from baseline on test 1 Trained 100 new trees, starting from the baseline model 1100 RCOP train + FPs/FNs from baseline on test 1 LightGBM with altered sample weights 1100 Table 1:
+A description of the models tested The baseline model has 100 fewer trees than the other models, which could explain the comparatively reduced accuracy.
+However, we tried increasing the number of trees which resulted in only a minor increase in accuracy of < 0.001%.
+The increase in accuracy for the non-baseline methods is due to the differences in data set and training methods.

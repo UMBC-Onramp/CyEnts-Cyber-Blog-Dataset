@@ -1,0 +1,6 @@
+
+Is it possible for an on-premises compromise to “vertically” move to M365 and Azure AD?
+If a global administrator account is compromised, is it possible to maintain persistence even after the compromised account has been detected, a password reset has occurred, and MFA has been applied?
+AADInternals PowerShell Module
+In some incidents, Mandiant has witnessed attackers utilizing a PowerShell module called AADInternals , which can allow an attacker to vertically move from on-premises to Azure AD, establish backdoors, steal passwords, generate user security tokens, and bypass MFA protections.
+This PowerShell module has allowed attackers to maintain persistence in the tenant even after initial eradication efforts were conducted.

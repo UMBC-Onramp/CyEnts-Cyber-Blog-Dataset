@@ -1,0 +1,99 @@
+Just over a month ago, iOS users were warned of the threat to their devices by the XcodeGhost malware.
+
+Apple quickly reacted, taking down infected apps from the App Store and releasing new security features to stop malicious activities.
+
+Through continuous monitoring of our customers’ networks, FireEye researchers have found that, despite the quick response, the threat of XcodeGhost has maintained persistence and been modified.
+
+More specifically, we found that: XcodeGhost has entered into U.S. enterprises and is a persistent security risk Its botnet is still partially active A variant we call XcodeGhost S reveals more advanced samples went undetected After monitoring XcodeGhost related activity for four weeks, we observed 210 enterprises with XcodeGhost-infected applications running inside their networks, generating more than 28,000 attempts to connect to the XcodeGhost Command and Control (CnC) servers -- which, while not under attacker control, are vulnerable to hijacking by threat actors.
+
+Figure 1 shows the top five countries XcodeGhost attempted to callback to during this time.
+
+Figure 1.
+
+Top five countries XcodeGhost attempted to callback in a four-week span The 210 enterprises we detected with XcodeGhost infections represent a wide range of industries.
+
+Figure 2 shows the top five industries affected by XcodeGhost, sorted by the percentage of callback attempts to the XcodeGhost CnC servers from inside their networks:
+
+Figure 2:
+
+Top five industries affected based on callback attempts Researchers have demonstrated how XcodeGhost CnC traffic can be hijacked to: Distribute apps outside the App Store Force browse to URL Aggressively promote any app in the App Store by launching the download page directly Pop-up phishing windows
+
+Figure 3 shows the top 20 most active infected apps among 152 apps, based on data from our DTI cloud:
+
+Figure 3:
+
+Top 20 infected apps Although most vendors have already updated their apps on App Store, this chart indicates many users are actively using older, infected versions of various apps in the field.
+
+The version distribution varies among apps.
+
+For example, the most popular Apps 网易云音乐 and WeChat-infected versions are listed in Figure 4.
+
+App Name Version Incident Count (in 3 weeks)
+
+WeChat 6.2.5.19 2963 网易云音乐 Music 163 2.8.2 3084 2.8.3 2664 2.8.1 1227 Figure 4:
+
+Sample infected app versions The infected iPhones are running iOS versions from 6.x.x to 9.x.x as illustrated by Figure 5.
+
+It is interesting to note that nearly 70% of the victims within our customer base remain on older iOS versions.
+
+We encourage them to update to the latest version iOS 9 as quickly as possible.
+
+Figure 5: Distribution of iOS versions running infected apps Some enterprises have taken steps to block the XcodeGhost DNS query within their network to cut off the communication between employees’ iPhones and the attackers’ CnC servers to protect them from being hijacked.
+
+However, until these employees update their devices and apps, they are still vulnerable to potential hijacking of the XcodeGhost CnC traffic -- particularly when outside their corporate networks.
+
+Given the number of infected devices detected within a short period among so many U.S enterprises, we believe that XcodeGhost continues to be an ongoing threat for enterprises.
+
+XcodeGhost Modified to Exploit iOS 9 We have worked with Apple to have all XcodeGhost and XcodeGhost S (described below) samples we have detected removed from the App Store.
+
+XcodeGhost is planted in different versions of Xcode, including Xcode 7 (released for iOS 9 development).
+
+In the latest version, which we call XcodeGhost S, features have been added to infect iOS 9 and bypass static detection.
+
+According to [1], Apple introduced the “NSAppTransportSecurity” approach for iOS 9 to improve client-server connection security.
+
+By default, only secure connections (https with specific ciphers) are allowed on iOS 9.
+
+Due to this limitation, previous versions of XcodeGhost would fail to connect with the CnC server by using http.
+
+However, Apple also allows developers to add exceptions (“NSAllowsArbitraryLoads”) in the app’s Info.plist to allow http connection.
+
+As shown in Figure 6, the XcodeGhost S sample reads the setting of “NSAllowsArbitraryLoads” under the “NSAppTransportSecurity” entry in the app’s Info.plist and picks different CnC servers (http/https) based on this setting.
+
+Figure 6: iOS 9 adoption in XcodeGhost S
+
+Further, the CnC domain strings are concatenated character by character to bypass the static detection in XcodeGhost S, such behavior is shown in Figure 7.
+
+Figure 7:
+
+Construct the CnC domain character by character The FireEye iOS dynamic analysis platform has successfully detected an app  (“自由邦”)  [2] infected by XcodeGhost S and this app has been taken down from App Store in cooperation with Apple.
+
+It is a shopping app for travellers and is available on both U.S. and CN App Stores.
+
+As shown in Figure 8, the infected app’s version is 2.6.6, updated on Sep. 15.
+
+Figure 8: An App Store app is infected with XcodeGhost S Enterprise Protection FireEye MTP has detected and assisted in Apple’s takedown of thousands of XcodeGhost-infected iOS applications.
+
+We advise all organizations to notify their employees of the threat of XcodeGhost and other malicious iOS apps.
+
+Employees should make sure that they update all apps to the latest version.
+
+For the apps Apple has removed, users should remove the apps and switch to other uninfected apps on App Store.
+
+FireEye
+
+MTP management customers have full visibility into which mobile devices are infected in their deployment base.
+
+We recommend that customers immediately review MTP alerts, locate infected devices/users, and quarantine the devices until the infected apps are removed.
+
+FireEye NX customers are advised to immediately review alert logs for activities related to XcodeGhost communications.
+
+[1] h
+
+ttps://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/ [2] https://itunes.apple.com/us/app/id915233927 [3] http://drops.wooyun.org/papers/9024 [4] https://itunes.apple.com/us/app/pdf-reader-annotate-scan-sign/id368377690?mt=8 [5] https://itunes.apple.com/us/app/winzip-leading-zip-unzip-cloud/id500637987?mt=8 [7] https://www.fireeye.com/blog/threat-research/2015/08/ios_masque_attackwe.html [8] https://www.fireeye.com/blog/threat-research/2015/02/ios_masque_attackre.html [9] https://www.fireeye.com/blog/threat-research/2014/11/masque-attack-all-your-ios-apps-belong-to-us.html [10] https://www.fireeye.com/blog/threat-research/2015/06/three_new_masqueatt.html
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

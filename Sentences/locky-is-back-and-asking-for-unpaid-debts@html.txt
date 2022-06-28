@@ -1,0 +1,93 @@
+On June 21, 2016, FireEye’s Dynamic Threat Intelligence (DTI) identified an increase in JavaScript contained within spam emails.
+
+FireEye analysts determined the increase was the result of a new Locky ransomware spam campaign.
+
+As shown in Figure 1, Locky spam activity was uninterrupted until June 1, 2016, when it stopped for nearly three weeks.
+
+During this period, Locky was the most dominant ransomware distributed in spam email.
+
+Now, Locky distribution has returned to the level seen during the first half of 2016.
+
+Figure 1.
+
+Locky spam activity in 2016 Figure 2 shows that the majority of Locky spam email detections between June 21 and June 23 of this year were recorded in Japan, the United States and South Korea.
+
+Figure 2.
+
+Locky spam by country from June 21 to June 23 of this year
+
+The spam email – a sample shown is shown in Figure 3 – purports to contain an unpaid invoice in an attached ZIP archive.
+
+Instead of an invoice, the ZIP archive contains a Locky downloader written in JavaScript.
+
+Figure 3.
+
+Locky spam email JavaScript based Downloader Updates In this campaign
+
+, few updates were seen in both the JavaScript based downloader and the Locky payload.
+
+The JavaScript downloader does the following: Iterates over an array of URLs hosting the Locky payload.
+
+If a connection to one of the URLs fails, the JavaScript sleeps for 1,000 ms before continuing to iterate over the array of URLs.
+
+Uses a custom XOR-based decryption routine to decrypt the Locky payload.
+
+Ensures the decrypted binary is of a predefined size.
+
+In Figure 4 below, the size of the decrypted binary had to be greater than 143,360 bytes and smaller than 153,660 bytes to be executed.
+
+Figure 4.
+
+Payload download function in JavaScript 5.
+
+     Checks (Figure 5) that the first two bytes of the binary contain the “MZ” header signature.
+
+Figure 5: MZ header check 6.
+
+     Executes the decrypted payload by passing it the command line parameter, “123”.
+
+Locky Payload Updates The Locky ransomware downloaded in this campaign requires a command line argument to properly execute.
+
+This command line parameter, “123” in the analyzed sample, is passed to the binary by the first stage JavaScript-based downloader.
+
+This command line parameter value is used in the code unpacking stage of the ransomware.
+
+Legitimate binaries typically verify the number of arguments passed or compare the command line parameter with the expected value and gracefully exit if the check fails.
+
+However in the case of this Locky ransomware, the program does not exit (Figure 6) and the value received as a command line parameter is added to a constant value defined in the binary.
+
+The sum of the constant and the parameter value is used in the decryption routine (Figure 7).
+
+If no command line parameter is passed, it adds zero to the constant.
+
+Figure 6.
+
+Command line parameter check Figure 7.
+
+Decryption routine
+
+If no command line parameter is passed, then the constant for the decryption routine is incorrect.
+
+This results in program crash as the decrypted code is invalid.
+
+In Figure 8 and Figure 9, we can see the decrypted code sections with and without the command line parameter, respectively.
+
+Figure 8.
+
+Correct decrypted code Figure 9.
+
+Incorrect decrypted code
+
+By using this technique, Locky authors have created a dependency on the first stage downloader for the second stage to be executed properly.
+
+If a second stage payload such as this is directly analyzed, it will result in a crash.
+
+Conclusion As of today, the Locky spam campaign is still ongoing, with an added anti-analysis / sandbox evasion technique.
+
+We expect to see additional Locky spam campaigns and will remain vigilant in order to protect our customers.
+
+Email Hashes 2cdf62f8aae20026418f143895c769a2009e6b9b3ac59bfa8fc79ca2f326b93a 1fd5c1f0ecc1d54324f3bdc327e7893032482a13c0914ef6f531bd93caef0a06 0ea7d59d7f1494fce8f45a1f35abb07a456de6d8d65327eca8ff84f307a49a06 22645be8553628574a7af3c32a45178e201e9af33b20b36d29b9c012b731da4c 198d8d1a89221c575d957c1f4342741f3675ebb10f95ffe3371150e124f4850e Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

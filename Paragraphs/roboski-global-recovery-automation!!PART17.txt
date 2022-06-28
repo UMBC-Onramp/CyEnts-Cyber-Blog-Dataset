@@ -1,0 +1,6 @@
+
+In addition, this file path was found within a file possibly related to Razy malware.
+License Re-Use
+While analyzing some of the final payloads, some interesting and specific attributes regarding Remcos RAT were observed.
+Analysts found that the Remcos configuration contains a license code field (‘license_code’), which is unique to each purchaser.
+In some cases where the RoboSki packer led to the delivery of Remcos, it was observed that two specific license codes were re-used.

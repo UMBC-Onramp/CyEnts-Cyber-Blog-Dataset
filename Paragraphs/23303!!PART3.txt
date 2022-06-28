@@ -1,0 +1,4 @@
+
+Therefore, MikroTik’s first recommendation is to look at device configuration and check for the following: A rule that executes the script with the fetch () method.
+Remove this rule (under System → Scheduler), if present; A SOCKS proxy server enabled.
+You’ll find the setting under IP → SOCKS ; if you do not use it, disable it; An L2TP client called lvpn, (or any other L2TP client unfamiliar to you).

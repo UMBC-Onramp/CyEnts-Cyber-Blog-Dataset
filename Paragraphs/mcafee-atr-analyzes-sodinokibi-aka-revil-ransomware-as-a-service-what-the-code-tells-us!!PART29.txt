@@ -1,0 +1,17 @@
+
+The Sodinokibi campaigns are ongoing and differ in skills and tools due to the different affiliates operating these campaigns, which begs more questions to be answered.
+How do they operate?
+And is the affiliate model working?
+McAfee ATR has the answers in episode 2, “ The All Stars .”
+Coverage McAfee is detecting this family by the following signatures: “Ransom-Sodinokibi” “Ransom-REvil!”.
+MITRE ATT&CK Techniques
+The malware sample uses the following MITRE ATT&CK™ techniques: File and Directory Discovery File Deletion Modify Registry Query Registry Registry modification Query information of the user Crypt Files Destroy Files Make C2 connections to send information of the victim Modify system configuration Elevate privileges YARA Rule rule Sodinokobi { /* This rule detects Sodinokobi Ransomware in memory in old samples and perhaps future.
+*/ meta: author      =
+“McAfee ATR team” version     = “1.0” description =
+“This rule detect Sodinokobi Ransomware in memory in old samples and perhaps future.”
+strings: $a = { 40 0F B6 C8 89 4D FC 8A 94
+0D FC FE FF FF 0F B6 C2 03 C6 0F B6 F0 8A 84 35 FC FE FF FF 88 84
+0D FC FE FF FF 88 94 35 FC FE FF FF 0F B6 8C 0D FC FE FF FF } $b = { 0F B6 C2 03
+C8 8B 45 14 0F B6 C9 8A 8C 0D FC FE FF FF 32 0C 07 88
+08 40 89 45 14 8B 45 FC 83 EB 01 75 AA } condition: all of them }
+

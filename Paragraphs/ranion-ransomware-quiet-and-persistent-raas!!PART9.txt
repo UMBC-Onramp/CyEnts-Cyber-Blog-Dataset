@@ -1,0 +1,6 @@
+
+As of September 2021, one bitcoin exchanged for around 50,000 USD so Ranion developers have adjusted their prices, and they also now offer discounts for easy-to-buy add-on options.
+Ranion’s business model is quite different from other RaaS vendors.
+Typically, Ransomware-as-a-Service vendors pay out 60%-80% of any ransoms collected to their “affiliates” that have successfully installed their ransomware onto a victim’s machine.
+The Ranion developers do not take a middleman’s cut.
+Instead, their affiliates pay for the RaaS service upfront, and they then receive 100% of any ransoms collected.

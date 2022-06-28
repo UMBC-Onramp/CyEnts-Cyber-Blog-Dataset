@@ -1,0 +1,8 @@
+Introduction We are expanding our script series beyond IDA Pro.
+This post extends the FireEye Labs Advanced Reverse Engineering (FLARE) script series to an invaluable tool for the reverse engineer – the debugger.
+Just like IDA Pro, debuggers have scripting interfaces.
+For example, OllyDbg uses an asm-like scripting language, the Immunity debugger contains a Python interface, and Windbg has its own language.
+Each of these options isn’t ideal for rapidly creating string decoding debugger scripts.
+Both Immunity and OllyDbg only support 32-bit applications, and Windbg’s scripting language is specific to Windbg and, therefore, not as well-known.
+The pykd project was created to interface between Python and Windbg to allow debugger scripts to be written in Python.
+Because malware reverse engineers love Python, we built our debugger scripting library on top of pykd for Windbg.

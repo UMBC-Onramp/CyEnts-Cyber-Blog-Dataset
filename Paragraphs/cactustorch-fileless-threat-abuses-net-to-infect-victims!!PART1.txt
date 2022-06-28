@@ -1,0 +1,8 @@
+By McAfee on Jul 26, 2018 McAfee Labs has noticed a significant shift by some actors toward using trusted Windows executables, rather than external malware, to attack systems.
+One of the most popular techniques is a “fileless” attack.
+Because these attacks are launched through reputable executables, they are hard to detect.
+Both consumers and corporate users can fall victim to this threat.
+In corporate environments, attackers use this vector to move laterally through the network.
+One fileless threat, CactusTorch, uses the DotNetToJScript technique, which loads and executes malicious .NET
+assemblies straight from memory.
+These assemblies are the smallest unit of deployment of an application, such as a .dll

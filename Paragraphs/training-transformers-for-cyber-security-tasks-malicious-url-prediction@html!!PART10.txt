@@ -1,0 +1,7 @@
+
+A key advantage of this approach is that data used for pre-training does not require malicious or benign labels; instead, the next characters in a URL serve as the labels to be predicted from prior characters in the sequence.
+This is similar to the example given in Figure 1, where the embedding output is used to predict the next character, “y,” in “fireeye.com.”
+Overall, this training regime allows us to take advantage of the massive amount of unlabeled data that is typically available in cyber security-related problems.
+The overall structure of the architecture for this regime is similar to the aforementioned binary classification task, with FFNN layers added for classification.
+However, since we are now predicting multiple classes (i.e., one class per input character in the vocabulary), we must apply a softmax function to the output to induce a probability distribution over the potential output characters.
+Once the Transformer portion of the network is pre-trained in this way, we can swap the FFNN classification layers focused on character prediction with new layers that will be trained for the malicious URL classification problem, as in the decode-to-label case.

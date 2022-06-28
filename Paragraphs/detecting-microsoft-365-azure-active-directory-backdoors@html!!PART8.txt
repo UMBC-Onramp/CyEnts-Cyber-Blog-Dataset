@@ -1,0 +1,5 @@
+
+As with Method 1, this server can also be used to harvest valid credentials.
+Backdoor 2: Abusing Identity Federation Attacker Requirements Local administrative access to AD and server running Active Directory Federation Services Or M365 global administrator credentials Another method of authenticating to M365 is through the usage of federation services.
+When a M365 domain is configured as a federated domain, a trust is configured between M365 and an external identify provider.
+In many cases, this trust is established with an Active Directory Federation Services (ADFS) server for an on-premises Active Directory domain.

@@ -1,0 +1,7 @@
+
+More than likely, the main web page has advertisements, and some of those ads could be served from 3 rd party advertiser networks and or CDNs.
+If just one of those advertisements on the page is malicious, visitors to that page are at risk of redirection and or infection, even though the news website’s server is itself clean.
+So, when everybody shows up to work on Monday and opens their browsers, there could be a wave of clients making requests to exploit kit landing pages, if Darkleech is lurking in those advertisement waters, you could end up with a leech or 2 attached to your network.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

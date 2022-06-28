@@ -1,0 +1,7 @@
+
+We have seen similar phishing attacks targeting the banking sector in the past, but this is newer for delivery websites.
+Notable Techniques Localization
+The phishing page displays the local language based on the region of the targeted user.
+The localization code (Figure 6) supports major languages spoken in Europe and the Americas such as Spanish, English, and Portuguese.
+Figure 6:
+Localization code The backend contains PHP resource files for each supported language (Figure 7), which are picked up dynamically based on the user’s IP address location.

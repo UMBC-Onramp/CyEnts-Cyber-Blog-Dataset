@@ -1,0 +1,6 @@
+
+The acquisition gateway also often acts as the server connecting to the hospital’s information system (using the HL7 protocol) to enrich images with patient data.
+The PACS controller is the central unit coordinating all traffic among the different components.
+The final component in the PACS infrastructure is the database and archiving system.
+The system ensures that all images are correctly stored and labeled for either short- or long-term storage.
+Larger implementations might have multiple imaging devices and acquisition gateways in various locations, connected over the Internet.

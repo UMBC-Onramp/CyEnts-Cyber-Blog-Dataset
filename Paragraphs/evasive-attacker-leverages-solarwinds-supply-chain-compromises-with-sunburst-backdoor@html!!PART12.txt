@@ -1,0 +1,4 @@
+
+This is some of the best operational security that FireEye has observed in a cyber attack, focusing on evasion and leveraging inherent trust.
+However, it can be detected through persistent defense.
+In-Depth Malware Analysis SolarWinds.Orion.Core.BusinessLayer.dll (b91ce2fa41029f6955bff20079468448) is a SolarWinds-signed plugin component of the Orion software framework that contains an obfuscated backdoor which communicates via HTTP to third party servers.

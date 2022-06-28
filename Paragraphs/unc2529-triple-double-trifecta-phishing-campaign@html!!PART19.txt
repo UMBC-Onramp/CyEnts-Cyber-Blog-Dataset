@@ -1,0 +1,5 @@
+
+The persistence mechanism, the bootstrap, and the launcher are described in more details in the following sections.
+Persistence Mechanism The persistence mechanism implemented by the DOUBLEDROP sample is slightly different depending on whether the dropper has been started within an elevated PowerShell process or not.
+If the dropper was executed within an elevated PowerShell process, it creates a scheduled task with an action specified as TASK_ACTION_COM_HANDLER and the class ID - the {<rnd_guid_2>} GUID (See Figure 5).
+Once executed by the system, the task finds the {<rnd_guid_2>} class under the HKLM\\Software\\Classes\\CLSID registry path, which in this case points to an emulator class via the TreatAs registry key.

@@ -1,0 +1,6 @@
+
+Threads are said to be alertable when they relinquish their execution quantum to the kernel thread scheduler and notify the kernel that they are able to dispatch APCs.
+The malware searches for threads within the services.exe process and once it detects one that’s alertable it will allocate memory for the DLL to inject then queue an APC to execute it.
+Speakeasy emulates all kernel structures involved in this process, specifically the executive thread object ( ETHREAD ) structures that are allocated for every thread on a Windows system.
+Malware may attempt to grovel through this opaque structure to identify when a thread’s alertable flag is set (and therefore a valid candidate for an APC).
+Figure 7 shows the memory read event that was logged when the Winnti malware manually parsed an ETHREAD structure in the services.exe process to confirm it was alertable.

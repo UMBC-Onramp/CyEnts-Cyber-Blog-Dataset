@@ -1,0 +1,5 @@
+FireEye recently analyzed the capabilities of a variant of Havex (referred to by FireEye as “Fertger” or “PEACEPIPE”), the first publicized malware reported to actively scan OPC servers used for controlling SCADA (Supervisory Control and Data Acquisition) devices in critical infrastructure (e.g., water and electric utilities), energy, and manufacturing sectors.
+While Havex itself is a somewhat simple PHP Remote Access Trojan (RAT) that has been analyzed by other sources, none of these have covered the scanning functionality that could impact SCADA devices and other industrial control systems (ICS) .
+Specifically, this Havex variant targets servers involved in OPC (Object linking and embedding for Process Control) communication, a client/server technology widely used in process control systems (for example, to control water pumps, turbines, tanks, etc.).
+Note: ICS is a general term that encompasses SCADA (Supervisory Control and Data Acquisition) systems, DCS (Distributed Control Systems), and other control system environments.
+The term SCADA is well-known to wider audiences, and throughout this article, ICS and SCADA will be used interchangeably.

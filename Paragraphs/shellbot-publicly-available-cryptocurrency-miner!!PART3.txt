@@ -1,0 +1,6 @@
+
+The ShellBot malware lives within this ecosystem.
+While it is a rather simple piece of Perl-based code, it enables attackers to mount internet relay chat (IRC)-controlled botnets that command coin mining on computers, Linux servers, Android devices and Internet of Things devices.
+The one requirement is having a weak password, as ShellBot’s typical entry point is a brute-force attack; the other is a command injection on servers that accept remote commands from the command-line interface (CLI).
+While it started out as a basic IRC bot, over time ShellBot has been using effective exploits to compromise servers and devices.
+It started out with a ShellShock (CVE-2014-6271) campaign, which is how it got its name, but over the years has used Drupalgeddon (CVE-2018-7600) and other exploits that can compromise large swaths of devices.

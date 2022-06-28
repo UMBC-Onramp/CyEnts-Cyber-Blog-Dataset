@@ -1,0 +1,9 @@
+
+This blog post describes the extended analysis and other improvements.
+You can download capa v3 standalone binaries from the project’s release page and checkout the source code on GitHub .
+ELF File Format Support capa finds capabilities in programs by parsing executable file formats, disassembling code, and then recognizing features in functions.
+In versions v1 and v2, capa only understood the PE file format, so its analysis was restricted to Windows programs.
+Thanks to our colleagues at Intezer , capa now recognizes ELF files!
+This means you can use the tool to identify behaviors in malware that targets Linux computers.
+Figure 1 shows a rule that describes techniques to fetch the current user on Linux.
+Figure 1: capa rule identifying capabilities on Linux We’re excited Intezer leverages capa and thrilled they are sharing their improvements with the community.

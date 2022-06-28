@@ -1,0 +1,6 @@
+
+Hide.so updates the crontab file to download and execute https://pastebin[.]com/raw/Tg5FQHhf.
+It also prevents administrators from collecting information about running processes by intercepting “readdir” system calls and skip directories for processes like tcpdump, sudo, openssl, etc.
+in “/proc”.
+The “/proc” directory in Linux contains information about running processes.
+It is used, for example, by the “ps” command to show information about running processes.

@@ -1,0 +1,9 @@
+
+If this file exists, the ransomware finishes without dropping the payload.
+The file gets its name from the serial number of the Windows logic unit hard disk value.
+The malware makes a simple calculation with this name and creates it in the %appdata% or %program files% folder (based in the OS) with the extension .lock.
+Figure 4.
+Creating the special file.
+The GandCrab author reacted quickly, changing the operation to make this value unique and use the Salsa20 algorithm with an embedded key and IV with text referring to these companies.
+The text and the value calculated were used to make the filename; the extension remained .lock.
+One of the security companies responded by making a free tool to make this file available for all users, but within hours the author released another Version 4.1.2 with the text changed.

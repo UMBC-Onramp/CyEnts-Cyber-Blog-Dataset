@@ -1,0 +1,4 @@
+
+Exploits need to be tuned for specific OS versions and hardware and can be easily thwarted by new OS releases, new mitigation techniques or even small things such as random events.
+With that in mind, infection and targeting is also a question of cost and making things more difficult for the attackers.
+Although we may not always be able to prevent the successful exploitation and infection of the mobile device, we can try to make it as hard as possible for the attackers.

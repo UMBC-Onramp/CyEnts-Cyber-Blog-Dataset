@@ -1,0 +1,13 @@
+
+Companies in the IT Hosting and the Freight and Logistics industries have been particularly susceptible to this discrepancy.
+Coveware has assisted at least 3 companies that have had to unwind their business when an affordable ransom amount, could not be reached.
+Typically, downtime costs are 10x the ransom amount, but in these industries downtime costs can be particularly extreme.
+IT Hosting companies are of note as the size and number of their servers can make them appear like a large organization.
+Unfortunately, the business of hosting involves high fixed costs, low operating margins, and zero tolerance of downtime by end clients.
+  Hosting companies that get attacked typically have a few hours to restore service before their clients drop them for alternatives.
+Moreover, these companies suffer irreparable harm to their reputations, and may trigger SLA breaches that leave them exposed to liability.
+  
+The inability to pay a six-figure ransom has caused multiple hosting companies to shut down.
+Freight and Logistics firms are also acutely exposed.
+These firms also present like larger firms given the volume of data they move and their network footprint.
+Additionally, attacks against Freight and Logistics firms can cause immediate supply chain issues for the victims’ end clients, who are subsequently forced to route through other service providers.

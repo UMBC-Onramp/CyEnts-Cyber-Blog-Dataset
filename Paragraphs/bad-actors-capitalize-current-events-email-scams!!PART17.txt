@@ -1,0 +1,5 @@
+
+IGNORE all unsolicited emails purporting to be from the UN as they are not real.
+(Note: Scams mentioned in this blog have been sent to the UN before publication)
+Unsolicited emails asking for donations of any kind via email (especially via cryptocurrency) is a red flag regardless of cause.
+Responding to any email (even if it doesn’t contain a link or malicious attachment) from an untrusted sender will validate your email address to threat actors, either adding you to spam lists or subjecting to future attacks and scams.

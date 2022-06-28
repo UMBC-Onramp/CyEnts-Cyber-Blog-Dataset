@@ -1,0 +1,6 @@
+
+printf '\\xD0' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B34)) printf '\\xFF' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B35))
+STEADYPULSE
+The file licenseserverproto.cgi (SHA256: 168976797d5af7071df257e91fcc31ce1d6e59c72ca9e2f50c8b5b3177ad83cc ) is a webshell implemented via modification of a legitimate Perl script used by a Pulse Secure tool which enables arbitrary command execution.
+The attacker inserted two blocks of Perl code that implement the webshell.
+The source code modifications are surrounded by comments that indicate the start and end of inserted code.

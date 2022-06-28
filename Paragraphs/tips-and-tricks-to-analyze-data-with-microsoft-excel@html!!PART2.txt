@@ -1,0 +1,5 @@
+
+Summarizing Verbose Artifacts Tools such as FireEye Redline include handy timeline features to combine multiple artifact types into one concise timeline.
+When we use individual parsers or custom artifact formats, it may be tricky to view multiple types of data in the same view.
+Normalizing artifact data with Excel to a specific set of easy-to-use columns makes for a smooth combination of different artifact types.
+Consider trying to review parsed file system, event log, and Registry data in the same view using the following data.

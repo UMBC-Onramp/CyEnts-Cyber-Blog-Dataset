@@ -1,0 +1,7 @@
+
+Egregor ransom demands and average ransom payment, in U.S. dollars, December 2020 (Source: IBM X-Force/Cylera)
+How each ransom amount was determined was likely a judgment call based on a combination of publicly available information about the victim along with what the operators perceived the victim could afford to pay.
+Ultimately, researchers observed that the threat actors appeared to strike a balance between a victim’s ability and willingness to pay while considering multiple additional factors.
+In one negotiation, Egregor actors gave the victim organization an initial ransom demand of $1.7 million.
+Through some negotiating by the victim, explaining they were a small company, Egregor operators decreased the ransom to $1 million.
+In another example, Egregor operators alluded to using an analyst associated with Egregor operations to estimate a victim’s total loss if they were to forego paying the ransom and instead suffer a data leak.

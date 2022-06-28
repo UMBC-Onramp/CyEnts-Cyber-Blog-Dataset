@@ -1,0 +1,7 @@
+FireEye Labs recently found a more advanced variant of Android.
+MisoSMS, the SMS-stealing malware that we uncovered last December — yet another sign of cybercriminals’ growing interest in hijacking mobile devices for surveillance and data theft.
+Like the original version of the malware, the new variant sends copies of users’ text messages to servers in China.
+But the newest rendition adds a few features that make it harder to detect, including a new disguise, encrypted transmissions, and command-and-control (CnC) communications that are handled natively rather than over email.
+FireEye Mobile Threat Prevention customers are already protected from both variants.
+Both variants of MisoSMS use the same names for receivers and services.
+While the old variant masquerades as an Android settings application, the new version presents itself as “Gplay Dsc” to the user.

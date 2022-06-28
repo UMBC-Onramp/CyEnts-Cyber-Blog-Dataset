@@ -1,0 +1,8 @@
+
+How do we do this in practice?
+Here’s a simple checklist.
+How to protect from advanced spyware on iOS Reboot daily.
+According to research from Amnesty International and Citizen Lab, the Pegasus infection chain often relies on zero-click 0-days with no persistence, so regular reboot helps clean the device.
+If the device is rebooted daily, the attackers will have to re-infect it over and over again.
+In time, this increases the chances of detection; a crash might happen or artifacts could be logged that give away the stealthy nature of the infection.
+Actually, this is not just theory, it’s practice — we analyzed one case in which a mobile device was targeted through a zero-click exploit (likely FORCEDENTRY).

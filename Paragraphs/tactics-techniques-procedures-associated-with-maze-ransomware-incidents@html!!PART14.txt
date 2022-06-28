@@ -1,0 +1,5 @@
+
+Multiple built-in Windows commands were used to enable network, account, and host reconnaissance of the impacted environment, though the actors also supplied and used Advanced IP Scanner and Adfind to support this stage of their operations.
+Preliminary network reconnaissance has been conducted using a batch script named '2.bat' which contained a series of nslookup commands.
+The output of this script was copied into a file named '2.txt'.
+The actor exfiltrated reconnaissance command output data and documents related to the IT environment to an attacker-controlled FTP server via an encoded PowerShell script.

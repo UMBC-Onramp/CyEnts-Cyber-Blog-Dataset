@@ -1,0 +1,5 @@
+
+Here’s how to protect yourself.
+Malware being spread through Discord Malicious files distributed through Discord represent the most obvious threat.
+A recent study identified several dozen types of malware.
+We call this threat “obvious” simply because sharing files through Discord is very easy; every file uploaded to the platform is assigned a permanent URL, formatted as follows: cdn.discordapp.com/attachments/{channel ID}/{file ID}/{file name} Most files are freely available for download by anyone with the link.

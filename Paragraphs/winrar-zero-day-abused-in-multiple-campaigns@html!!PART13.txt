@@ -1,0 +1,39 @@
+
+The VirusTotal submissions show the use of different malware families in this campaign and a wide range of targeting.
+Hashes of ACE Files File Name Hash leaks copy.rar e9815dfb90776ab449539a2be7c16de5 cc.rar 9b81b3174c9b699f594d725cf89ffaa4 zabugor.rar 914ac7ecf2557d5836f26a151c1b9b62 zabugorV.rar eca09fe8dcbc9d1c097277f2b3ef1081 Combolist.rar 1f5fa51ac9517d70f136e187d45f69de Nulled2019.rar f36404fb24a640b40e2d43c72c18e66b IT.rar 0f56b04a4e9a0df94c7f89c1bccf830c Hashes of Payloads File name Hash Malware Family explorer.exe 1BA398B0A14328B9604EEB5EBF139B40 QuasarRAT explorer.exe AAC00312A961E81C4AF4664C49B4A2B2 Azorult
+IntelAudio.exe 2961C52F04B7FDF7CCF6C01AC259D767
+Netwire Discord.exe 97D74671D0489071BAA21F38F456EB74 Razy Discord.exe BCC49643833A4D8545ED4145FB6FDFD2 Buzy old.exe 119A0FD733BC1A013B0D4399112B8626
+Azorult FireEye Detection FireEye detection names for the indicators in the attack:
+FireEye Endpoint Security IOC: WINRAR (EXPLOIT) MG:
+Generic.mg AV: Exploit.
+ACE-PathTraversal.
+Gen Exploit.
+Agent.
+UZ Exploit.
+Agent.
+VA Gen:Heur.BZC.ONG.Boxter.91.1305E319
+Gen:Variant.
+Buzy.2604 Gen:Variant.
+Razy.472302
+Generic.
+MSIL.PasswordStealerA.5CBD94BB Trojan.
+Agent.
+DPAS Trojan.
+GenericKD.31783690 Trojan.
+GenericKD.31804183 FireEye Network Security FE_Exploit_ACE_CVE201820250_2 FE_Exploit_ACE_CVE201820250_1 Backdoor.
+EMPIRE Downloader.
+EMPIRE Trojan.
+Win.
+Azorult Trojan.
+Netwire FireEye Email Security FE_Exploit_ACE_CVE201820250_2 FE_Exploit_ACE_CVE201820250_1 FE_Backdoor_QUASARRAT_A
+FE_Backdoor_EMPIRE Conclusion We have seen how various threat actors are abusing the recently disclosed WinRAR vulnerability using customized decoys and payloads, and by using different propagation techniques such as email and URL.
+Because of the huge WinRAR customer-base, lack of auto-update feature and the ease of exploitation of this vulnerability, we believe this will be used by more threat actors in the upcoming days.
+Traditional AV solutions will have a hard time providing proactive zero-day detection for unknown malware families.
+FireEye MalwareGuard , a component of FireEye Endpoint Security, detects and blocks all the PE executables mentioned in this blog post using machine learning.
+It’s also worth noting that this vulnerability allows the malicious ACE file to write a payload to any path if WinRAR has sufficient permissions, so although the exploits that we have seen so far chose to write the payload to startup folder, a more involved threat actor can come up with a different file path to achieve code execution so that any behavior based rules looking for WinRAR writing to the startup folder can be bypassed.
+Enterprises should consider blocking vulnerable WinRAR versions and mandate updating WinRAR to the latest version.
+FireEye Endpoint Security, FireEye Network Security and FireEye Email Security detect and block these campaigns at several stages of the attack chain.
+Acknowledgement Special thanks to Jacob Thompson, Jonathan Leathery and John Miller for their valuable feedback on this blog post.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

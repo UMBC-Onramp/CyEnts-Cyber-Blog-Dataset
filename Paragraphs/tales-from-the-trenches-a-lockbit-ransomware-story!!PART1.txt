@@ -1,0 +1,9 @@
+By ATR Operational Intelligence Team on Apr 30, 2020 Co-authored by Marc RiveroLopez.
+In collaboration with Northwave As we highlighted previously across two blogs, targeted ransomware attacks have increased massively over the past months.
+In our first article , we discussed the growing pattern of targeted ransomware attacks where the primary infection stage is often an info-stealer kind of malware used to gain credentials/access to determine if the target would be valuable for a ransomware attack.
+In the second part , we described the reconnaissance phase of an attacker that controls an infected host or a valid account to access a remote service.
+Many of them are using a similar manual modus operandi as we highlighted in the earlier blogs.
+We believe there is real opportunity to learn from incident response cases and previous attacks, hence why this blog is dubbed ‘tales from the trenches’.
+In collaboration with Northwave , this article describes a real-life case of a targeted ransomware attack.
+During one of their recent incident responses, Northwave encountered a relatively new family of ransomware called LockBit performing a targeted attack.
+First sighted in late 2019, under the name .abcd virus, this piece of ransomware was more a revision than evolution when compared with earlier attacks.

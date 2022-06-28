@@ -1,0 +1,7 @@
+
+This thread runs in an infinite loop with a wait using the function “Sleep” per iteration of 30 minutes.
+FIGURE 9.
+Thread to kill critical processes to unlock files The second thread created has the task of enumerating all network shares and crypts files in them if the malware has access to them.
+For executing this task, it uses the typical API functions of the module “MPR.DLL”:
+WNetOpenEnumW WNetEnumResourceW WNetCloseEnum
+This thread starts creating a reserve of memory with “GlobalAlloc” function to keep the information of the “MPR” functions.

@@ -1,0 +1,12 @@
+
+Here we release a library we call flare-dbg .
+This library provides several utility classes and functions to rapidly develop scripts to automate debugging tasks within Windbg.
+Stay tuned for future blog posts that will describe additional uses for debugger scripts!
+String Decoding Malware authors like to hide the intent of their software by obfuscating their strings.
+Quickly deobfuscating strings allows you to quickly figure out what the malware is doing.
+As stated in Practical Malware Analysis, there are generally two approaches to deobfuscating strings: self-decoding and manual programming.
+The self-decoding approach allows the malware to decode its own strings.
+Manual programming requires the reverse engineer to reprogram the decoding function logic.
+A subset of the self-decoding approach is emulation, where each assembly instruction execution is emulated.
+Unfortunately, library call emulation is required, and emulating every library call is difficult and may cause inaccurate results.
+In contrast, a debugger is attached to the actual running process, so all the library functions can be run without issue.

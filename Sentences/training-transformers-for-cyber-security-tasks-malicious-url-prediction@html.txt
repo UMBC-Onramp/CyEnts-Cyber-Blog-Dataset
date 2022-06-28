@@ -1,0 +1,155 @@
+Highlights Perform a case study on using Transformer models to solve cyber security problems Train a Transformer model to detect malicious URLs under multiple training regimes Compare our model against other deep learning methods, and show it performs on-par with other top-scoring models Identify issues with applying generative pre-training to malicious URL detection, which is a cornerstone of Transformer training in natural language processing (NLP) tasks Introduce novel loss function that balances classification and generative loss to achieve improved performance on the malicious URL detection task Introduction Over the past three years Transformer machine learning (ML) models, or “Transformers” for short, have yielded impressive breakthroughs in a variety of sequence modeling problems, specifically natural language processing (NLP).
+
+For example, OpenAI’s latest GPT-3 model is capable of generating long segments of grammatically-correct prose from scratch.
+
+Spinoff models, such as those developed for question and answering, are capable of correlating context over multiple sentences.
+
+AI Dungeon , a single and multiplayer text adventure game, uses Transformers to generate plausible unlimited content in a variety of fantasy settings.
+
+Transformers’ NLP modeling capabilities are apparently so powerful that they pose security risks in their own right, in terms of their potential power to spread disinformation , yet on the other side of the coin, they can be used as powerful tools to detect and mitigate disinformation campaigns.
+
+For example, in previous research by the FireEye Data Science team, a NLP Transformer was fine-tuned to detect disinformation on social media sites.
+
+Given the power of these Transformer models, it seems natural to wonder if we can apply them to other types of cyber security problems that do not necessarily involve natural language, per se.
+
+In this blog post, we discuss a case study in which we apply Transformers to malicious URL detection.
+
+Studying Transformer performance on URL detection problem is a first logical step to extending Transformers to more generic cyber security tasks, since URLs are not technically natural language sequences but share some common characteristics with NLP.
+
+In the following sections, we outline a typical Transformer architecture and discuss how we adapt it to URLs with a character-focused tokenization.
+
+We then discuss loss functions we employ to guide the training of the model, and finally compare our training approaches to more conventional ML-based modeling options.
+
+Adapting Transformers to URLs Our URL Transformer operates at the character level, where each character in the URL corresponds to an input token.
+
+When a URL is input to our Transformer, it is appended with special tokens—a classification token (“CLS”) that conditions the model to produce a prediction and padding tokens (“PAD”) that normalize the input to a fixed length to allow for parallel training.
+
+Each token in the input string is then projected into a character embedding space, followed by a stack of Attention and Feed-Forward Neural Network (FFNN) layers.
+
+This stack of layers is similar to the architecture introduced in the original Transformers paper .
+
+At a high level, the Attention layers allow each input to be associated with long-distance context of other characters that are important for the classification task, similar to the notion of attention in humans, while the FFNN layers provide capacity for learning the relationships among the combination of inputs and their respective contexts.
+
+An illustration of our architecture is shown in Figure 1.
+
+Additionally, the URL Transformer employs a masking strategy in its Attention calculation, which enforces a left-to-right (L-R) dependence.
+
+This means that only input characters from the left of a given character influence that character’s representation in each layer of the attention stack.
+
+The network outputs one embedding for each input character, which captures all information learned by the model about the character sequence up to that point in the input.
+
+Once the model is trained, we can use the URL Transformer to perform several different tasks, such as generatively predicting the next character in the input sequence by using the sequence embedding () as an input to another neural network with as softmax output over the possible vocabulary of characters.
+
+A specific example of this is shown in Figure 1, where we take the embedding of the input “firee”() and use it to predict the next most likely character, “y.”
+
+Similarly, we can use the embedding produced after the classification token to predict other properties of the input sequences, such as their likelihood of maliciousness.
+
+Figure 1: High-level overview of the URL Transformer architecture Loss Functions and Training Regimes With the model architecture in hand, we now turn to the question of how we train the model to most effectively detect malicious URLs.
+
+Of course, we can train this model in a similar way to other supervised deep learning classifiers by: (1) making predictions on samples from a labeled training set, (2) using a loss function to measure the quality of our predictions, and (3) tune model parameters (i.e., weights) via backpropagation .
+
+However, the nature of the Transformer model allows for several interesting variations to this training regime .
+
+In fact, one of the reasons that Transformers have become so popular for NLP tasks is because they allow for self-supervised generative pre-training, which takes advantage of massive amounts of unlabeled data to help the model learn general characteristics of the input language before being fine-tuned on the ultimate task at-hand (e.g., question answering, sentiment analysis, etc.).
+
+Here, we outline some of the training regimes we explored for our URL Transformer model.
+
+Direct Label Prediction (Decode-To-Label)
+
+Using a training set of URLs with malicious and benign labels, we can treat the URL Transformer architecture as a feature extractor, whose outputs we use as the input to a traditional classifier (e.g., FFNN or even a random forest).
+
+When using a FFNN as our classifier, we can backpropagate the classification loss (e.g., binary cross-entropy) through both the classifier and the Transformer network to adjust the weights to perform classification.
+
+This training regime is the baseline for our experiments and is how most deep learning models are trained for classification tasks.
+
+Next-Character Prediction Pre-Training and Fine-Tuning Beyond the baseline classification training regime, the NLP literature suggests that one can learn a self-supervised embedding of the input sequence by training the Transformer to perform a next-character prediction task, then fine-tuning the learned representation for the classification problem.
+
+A key advantage of this approach is that data used for pre-training does not require malicious or benign labels; instead, the next characters in a URL serve as the labels to be predicted from prior characters in the sequence.
+
+This is similar to the example given in Figure 1, where the embedding output is used to predict the next character, “y,” in “fireeye.com.”
+
+Overall, this training regime allows us to take advantage of the massive amount of unlabeled data that is typically available in cyber security-related problems.
+
+The overall structure of the architecture for this regime is similar to the aforementioned binary classification task, with FFNN layers added for classification.
+
+However, since we are now predicting multiple classes (i.e., one class per input character in the vocabulary), we must apply a softmax function to the output to induce a probability distribution over the potential output characters.
+
+Once the Transformer portion of the network is pre-trained in this way, we can swap the FFNN classification layers focused on character prediction with new layers that will be trained for the malicious URL classification problem, as in the decode-to-label case.
+
+Balanced Mixed-Objective Training Prior work has shown that imbuing the training process with additional knowledge outside of the primary task can help constrain the learning process, and ultimately result in better models.
+
+For instance, a malware classifier might train using loss functions that capture malicious/benign classification, malware family prediction, and tag prediction tasks as a mechanism to provide the classifier with broader understanding of the problem than looking at malicious/benign labels in isolation.
+
+Inspired by these findings, we also introduced a mixed-objective training regime for our URL Transformer, where we train for binary classification and next-character prediction simultaneously.
+
+At each iteration of training, we compute a loss multiplier such that each loss contribution is fixed prior to backpropagation.
+
+This ensures that neither loss term dominates during training.
+
+Specifically, for minibatch i , let the net loss L Mixed be computed as follows:
+
+Given hyperparameters a and b , defined such that a + b : = 1, we compute constant a so that the net loss contribution of L CLS to L Mixed is a and the net contribution of L Next to L Mixed is b .
+
+For our evaluations, we set a := b := 0.5, effectively requiring that the model equally balance its ability to generate the next character and accurately predict malicious URLs.
+
+Evaluation To evaluate our URL Transformer model and better understand the impact of the three training regimes discussed earlier, we collected a training dataset of over 1M labeled malicious and benign URLs, which was split into roughly 700K training samples, 100K validation samples, and 200k test samples.
+
+Additionally, we also developed an unlabeled pre-training dataset of 20M URLs.
+
+Using this data, we performed four different training runs for our Transformer model: DecodeToLabel (Baseline): Using strictly the binary cross-entropy loss on the embedded classification features over the entire sequence, we trained the model for 15 epochs using the training set.
+
+MixedObjective:
+
+We trained the model for 15 epochs on the training set, using both the embedded classification features and the embedded next-character prediction features.
+
+FineTune:
+
+We pre-trained the model for 15 epochs on the next-character prediction task using the training set, ignoring the malicious/benign labels.
+
+We then froze weights over the first 16 layers of the model and trained the model for an additional 15 epochs using a binary cross-entropy loss on the classification labels.
+
+FineTune 20M:
+
+We performed pre-training on the next-character prediction task using the 20M URL dataset, pre-training for 2 epochs.
+
+We then froze weights over the first 16 layers of the Transformer and trained for 15 epochs on the binary classification task.
+
+The ROC curve shown in Figure 2 compares the performance of these four training regimes.
+
+Here, our baseline DecodeToLabel model (red) yielded a ROC curve with 0.9484 AUC, while the MixedObjective model (green) slightly outperformed the baseline with an AUC of 0.956.
+
+Interestingly, both of the fine-tuning models yielded poor classification results, which is counter to the established practice of these Transformer models in the NLP domain.
+
+Figure 2: ROC curves for four URL Transformer training regimes To assess the relative efficacy of our Transformer models on this dataset, we also fit several other types of benchmark models developed for URL classification: (1) a Random Forest model on SME-derived features, (2) a 1D Convolutional Neural Network (CNN) model on character embeddings, and (3) a Long Short-Term Memory (LSTM) neural network on character embeddings.
+
+Details of these models can be found in our white paper , however we find that our top performing Transformer model performs on-par with the best performing non-Transformer baseline (a 1D CNN model), which perhaps indicates that the long-range dependencies typically learned by Transformer models are not as useful in the case of malicious URL detection.
+
+Figure 3:
+
+ROC curves comparing URL Transformer to other benchmark URL classification models
+
+Summary Our experiments suggest that Transformers can achieve performance comparable to or better than that of other top-performing models for URL classification, though the details of how to achieve that performance differ from common practice.
+
+Contrary to findings from the NLP domain , wherein self-supervised pre-training substantially enhances performance in a fine-tuned classification task, similar pretraining approaches actually diminish performance for malicious URL detection.
+
+This suggests that the next character prediction task has too little apparent correlation with the task of malicious/benign prediction for effective/stable transfer.
+
+Interestingly, utilizing next-character prediction as an auxiliary loss function in conjunction with a malicious/benign loss yields improvements over training solely to predict the label.
+
+We hypothesize that while pre-training leads to a relatively poor generative model due to randomized content in the URLs within our dataset, a malicious/benign loss may serve to better condition the generative model learned by the next-character prediction task, distilling a subset of relevant information.
+
+It may also be the case that the long-distance relationships that are key to the generative pre-training task are not as important for the final malicious URL classification, as evidenced by the performance of the 1D CNN model.
+
+Note that we did not perform a rigorous hyperparameter search for our Transformer, since this research was primarily concerned with loss functions and training regimes.
+
+Therefore, it is still an open question as to whether a more optimal architecture, specifically designed for this classification task, could substantially outperform the models described here.
+
+While our URL dataset is not representative of all data in the cyber security space, the difficulty of obtaining a readily fine-tuned model from self-supervised pre-training suggests that this approach is unlikely to work well for training Transformers on longer sequences or sequences with lesser resemblance to natural language (e.g., PE files), but an auxiliary loss might work.
+
+Details about this research and additional results can be found in our associated white paper .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

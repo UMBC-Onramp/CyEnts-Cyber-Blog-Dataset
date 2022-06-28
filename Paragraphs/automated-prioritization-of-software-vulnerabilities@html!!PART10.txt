@@ -1,0 +1,5 @@
+
+These word embedding representations are machine friendly, and similar words are often assigned similar representations.
+Word embeddings are domain specific.
+In our work, we additionally train terminology specific to cyber security topics, such as related words to threats are defenses , cyberrisk , cybersecurity , threat , and iot-based .
+The embedding would allow a classifier to implicitly combine the knowledge of similar words and the meaning of how concepts differ.

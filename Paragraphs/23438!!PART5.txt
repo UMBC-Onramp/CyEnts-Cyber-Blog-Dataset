@@ -1,0 +1,8 @@
+
+If your browser version is not the latest available, Chrome will automatically start the update.
+For extra protection we recommend users to install security solutions on all devices with Internet access.
+This way, even you’re caught without an up-to-date browser, proactive protection technologies will minimize the possibility of successful vulnerability exploitation.
+We also recommend employees of corporate information security departments to use security solutions on all devices , monitor security updates and employ automatic update delivery and control system.
+It would be also reasonable to prioritize the installation of browser updates.
+
+

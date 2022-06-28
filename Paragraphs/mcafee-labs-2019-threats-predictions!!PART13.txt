@@ -1,0 +1,11 @@
+
+Different evasions for different malware
+In 2018, we observed the emergence of new threats such as cryptocurrency miners, which hijack the resources of infected machines.
+With each threat comes inventive evasion techniques: Cryptocurrency mining:
+Miners implement a number of evasion techniques.
+Minerva Labs discovered WaterMiner, which simply stops its mining process when the victim runs the Task Manager or an antimalware scan.
+Exploit kits: Popular evasion techniques include process injection or the manipulation of memory space and adding arbitrary code.
+In-memory injection is a popular infection vector for avoiding detection during delivery.
+Botnets: Code obfuscation or anti-disassembling techniques are often used by large botnets that infect thousands of victims.
+In May 2018, AdvisorsBot was discovered using junk code, fake conditional instructions, XOR encryption, and even API hashing.
+Because bots tend to spread widely, the authors implemented many evasion techniques to slow reverse engineering.

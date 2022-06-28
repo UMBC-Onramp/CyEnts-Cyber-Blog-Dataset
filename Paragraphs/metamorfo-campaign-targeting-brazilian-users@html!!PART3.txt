@@ -1,0 +1,7 @@
+
+ The user has to unzip the archive and double-click the executable for the infection chain to continue.
+The PE file is a simple HTA script compiled into an executable.
+When the user double-clicks the executable, the malicious HTA file is extracted to %temp% and executed by mshta.exe.
+The HTA script (Figure 4) contains VBS code that fetches a second blob of VBS code encoded in base64 form from hxxp://<redacted>/ilha/pz/logs.php.
+Figure 4:
+Contents of HTA File After the second stage of VBS is decoded (Figure 5 and Figure 6), the script downloads the final stage from hxxp://<redacted>/28022018/pz.zip.

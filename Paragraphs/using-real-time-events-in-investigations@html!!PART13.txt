@@ -1,0 +1,11 @@
+
+Event Type Value Operation 1 PreSetValueKey 2 PreDeleteValueKey 3 PostCreateKey, PostCreateKeyEx, PreCreateKeyEx 4 PreDeleteKey 5 PreRenameKey Table 9:
+FireEye Endpoint Security real-time registry key event types Based on this real-time registry key event, the malicious executable C:\\Windows\\Temp\\legitservice.exe created the Windows service LegitWindowsService .
+If we investigated the surrounding registry keys, we might identify even more information about this malicious service.
+Conclusion The availability of real-time events designed for forensic analysis can fill in gaps that traditional forensic artifacts cannot on their own.
+Mandiant has seen great value in using real-time events during active-attacker investigations.
+We have used real-time events to determine the functionality of attacker utilities that were no longer present on disk, to determine users and source network addresses used during malicious remote desktop activity when expected corresponding event logs were missing, and more.
+Check out our FireEye Endpoint Security page and Redline page for more information (as well as Redline on the FireEye Market ), and take a FireEye Endpoint Security tour today.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,5 @@
+
+Despite the routine techniques employed to gain access to an OT environment, the threat actors behind the TRITON malware framework invested significant time learning about the Triconex Safety Instrumented System (SIS) controllers and TriStation, a proprietary network communications protocol.
+The investment and purpose of the Triconex SIS controllers leads Mandiant to assess the attacker's objective was likely to build the capability to cause physical consequences.
+TriStation remains closed source
+and there is no official public information detailing the structure of the protocol, raising several questions about how the TRITON framework was developed.

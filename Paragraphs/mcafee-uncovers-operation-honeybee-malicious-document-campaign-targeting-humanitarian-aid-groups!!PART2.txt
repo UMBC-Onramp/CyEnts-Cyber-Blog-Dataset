@@ -1,0 +1,16 @@
+
+The Advanced Threat Research team also observed a heavy concentration of the implant in Vietnam from January 15–17.
+Background On January 15, Advanced Threat Research discovered an operation using a new variant of the SYSCON backdoor.
+The Korean-language Word document manual.doc appeared in Vietnam on January 17, with the original author name of Honeybee.
+Document properties.
+This malicious document contains a Visual Basic macro that dropped and executed an upgraded version of the implant known as SYSCON, which appeared in 2017 in malicious Word documents as part of several campaigns using North Korea–related topics.
+The malicious Visual Basic script uses a unique key (custom alphabet) to encode data.
+We have seen this in previous operations using SYSCON.
+This key was also used in the Honeybee campaign and appears to have been used since August 2017.
+Examples of decoy documents.
+Several additional documents surfaced between January 17 and February 3.
+All contain the same Visual Basic macro code and author name as Honeybee.
+Some of the malicious documents were test files without the implant.
+From our analysis, most these documents were submitted from South Korea, indicating that some of the targeting was in South Korea.
+These Honeybee documents did not contain any specific lures, rather variations of a “not compatible” message attempting to convince the user to enable content.
+We also observed a related malicious document created January 12 by the author Windows User that contained a different encoding key, but essentially used the same macro and same type of implant as we saw with the recent Honeybee documents.

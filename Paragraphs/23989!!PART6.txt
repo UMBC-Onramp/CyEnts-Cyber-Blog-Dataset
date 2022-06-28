@@ -1,0 +1,12 @@
+
+So, regardless of their activity level, it pays to be alert.
+Download apps only from official sources.
+True, this is not a 100% security guarantee, but there are far less malicious programs in official stores, and even when malware slips through moderation it usually gets removed from the store relatively quickly.
+Whenever possible, use apps from trusted developers with a good reputation to minimize the chances of encountering malware.
+Ignore apps that promise payouts you’ve never heard of or overly generous prizes.
+It’s almost bound to be a scam.
+Don’t give apps permissions they don’t need to work.
+Most malware will not be able to deploy fully without potentially dangerous permissions , for example, access to Accessibility, access to text messages and installation of unknown apps .
+Use a reliable mobile antivirus that will detect and block malware that tries to get inside your phone.
+
+

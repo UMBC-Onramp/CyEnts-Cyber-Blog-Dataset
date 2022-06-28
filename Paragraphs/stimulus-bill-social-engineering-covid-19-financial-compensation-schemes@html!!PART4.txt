@@ -1,0 +1,2 @@
+
+These emails had OpenDocument Presentation (.ODP) format attachments that, when opened in Microsoft PowerPoint or OpenOffice Impress, display a U.S. Small Business Administration (SBA) themed message (Figure 5) and an in-line link that redirects to an Office 365 phishing kit (Figure 6) hosted at https://tyuy56df-kind-giraffe-ok.mybluemix[.]net/. Figure 4:

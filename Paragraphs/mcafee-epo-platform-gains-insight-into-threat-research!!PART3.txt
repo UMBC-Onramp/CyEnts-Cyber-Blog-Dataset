@@ -1,0 +1,6 @@
+
+Top stories Want to know more?
+The Top Stories section offers the latest information from McAfee news sources, including new product releases and new blog content (beyond threats analysis).
+Support and product advisories At the bottom right of the screen you will find Security Product Advisories: Support Notification Service: McAfee SNS is a proactive notification service that allows McAfee to communicate critical information in a timely manner on product upgrades, releases, and end-of-life notices.
+SNS is a vital information link during critical incidents, providing you with the updates you need to ensure that your systems and organization are protected.
+Product Security Bulletins : McAfee is focused on ensuring the security of our customers’ computers, networks, devices, and data.

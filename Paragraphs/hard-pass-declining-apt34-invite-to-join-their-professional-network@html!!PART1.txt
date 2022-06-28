@@ -1,0 +1,5 @@
+Background With increasing geopolitical tensions in the Middle East, we expect Iran to significantly increase the volume and scope of its cyber espionage campaigns.
+Iran has a critical need for strategic intelligence and is likely to fill this gap by conducting espionage against decision makers and key organizations that may have information that furthers Iran's economic and national security goals.
+The identification of new malware and the creation of additional infrastructure to enable such campaigns highlights the increased tempo of these operations in support of Iranian interests.
+FireEye Identifies Phishing Campaign
+In late June 2019, FireEye identified a phishing campaign conducted by APT34, an Iranian-nexus threat actor.

@@ -1,0 +1,4 @@
+In democratic societies, elections are the mechanism for choosing heads of state and policymakers.
+There are strong incentives for adversary nations to understand the intentions and preferences of the people and parties that will shape a country's future path and to reduce uncertainty about likely winners.
+Mandiant Threat Intelligence regularly observes cyber espionage operations we believe to be seeking election-related information targeting governments, civil society, media, and technology organizations around the globe.
+We have also seen disruptive and destructive cyber attacks and propaganda campaigns seeking to undermine targeted governments and influence the outcomes of electoral contests.

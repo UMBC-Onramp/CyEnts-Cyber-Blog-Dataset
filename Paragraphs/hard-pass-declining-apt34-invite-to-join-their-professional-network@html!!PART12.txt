@@ -1,0 +1,5 @@
+
+This tool was previously observed during a Mandiant incident response in 2018 and, to date, solely utilized by APT34.
+Conclusion The activity described in this blog post presented a well-known Iranian threat actor utilizing their tried-and-true techniques to breach targeted organizations.
+Luckily, with FireEye’s platform in place, our Managed Defense customers were not impacted.
+Furthermore, upon the blocking of this activity, FireEye was able to expand upon the observed indicators to identify a broader campaign, as well as the use of new and old malware.

@@ -1,0 +1,11 @@
+
+We realize life without iMessage may be very difficult for some (more on that later), but if Pegasus and other high-end APT mobile malware is in your threat model, this is a tradeoff worth taking.
+Disable Facetime.
+Same advice as above.
+Keep the mobile device up to date; install the latest iOS patches as soon as they are out.
+Not everyone can afford zero-click 0-day’s, actually many of the iOS exploit kits we are seeing are targeting already patched vulnerabilities.
+Nevertheless, many people run older phones and postpone updates for various reasons.
+If you want to be ahead of (at least some) nation state hackers, update as soon as possible and teach yourself not to need Emojis to install the patches .
+Don’t ever click on links received in messages.
+This is simple advice yet effective.
+Not all Pegasus customers can afford to buy zero-click 0-day chains at a cost of millions so they rely on 1-click exploits.

@@ -1,0 +1,6 @@
+
+If this check passes the backdoor logic actives by overwriting EAX to 1 to force the application down the execution path of successful authentication, even though in reality authentication failed.
+RADIUS Two Factor Auth Bypass In the typical execution of DSAuth::RadiusAuthServer::checkUsernamePassword the legitimate application sends a RADIUS-2FA auth packet with username and password via RadiusAuthPacket::sendRadiusPacket .
+The response is then retrieved and parsed by the routine DSAuth::RadiusAuthServer::handleResponse .
+After packet retrieval the packet type is verified to be 3, it's not known what this packet type specifies but this is the packet type of a successful authentication response.
+If the packet type check passes, then the sample reads a field of the packet that specifies if authentication was successful or not and then checks this status later.

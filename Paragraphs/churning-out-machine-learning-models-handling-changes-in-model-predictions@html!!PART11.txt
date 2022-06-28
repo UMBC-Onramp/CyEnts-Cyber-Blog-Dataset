@@ -1,0 +1,9 @@
+
+The incremental model has a bad churn of 0.05% (113 samples total) and 99.34% accuracy on test 2.
+Another interesting metric is the model’s performance on the new training data; how many of the baseline FPs and FNs from test 1 does the new model fix?
+The incrementally trained model correctly classifies 84% of the previous incorrect classifications.
+In a very broad sense, incrementally training on a previous model’s mistake provides a “patch” for the “bugs” of the old model.
+Churn-Aware Learning Incremental approaches only work if the features of the original and new model are identical.
+If new features are added, say to improve model accuracy, then alternative methods are required.
+If what we desire is both accuracy and low churn, then the most straightforward solution is to include both of these requirements when training.
+That’s the approach taken by Cormier et al., where samples received different weights during training in such a way as to minimize churn.

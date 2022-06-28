@@ -1,0 +1,9 @@
+
+This code renders in the browser to create the fake Apple ID phishing webpage seen in Figure 10, which resembles the authentic Apple page https://Appleid.
+Apple[.]com/ .
+Figure 10:
+Screenshot of the phishing page as seen by the victims in the bro wser On submitting a fake username and password, the form gets submitted to signin-box-disabled.php and the JavaScript and jQuery creates the page seen in Figure 11, informing the user that the Apple ID provided has been locked and the user must unlock it: Figure 11:
+Phishing page suggesting victims to unlock their Apple IDs , which requests personal information such as name, date of birth, telephone numbers, addresses, credit card details and security questions, as shown in Figure 12.
+While filling out this form, we observed that the country part of the address drop-down menu only allowed address options from England, Scotland and Wales, suggesting that this attack is targeting these regions onlyClicking on unlock leads the user to the page profile.php .
+Figure 12:
+User information requested by phishing page On submitting false information on this form, the user would get a page asking to wait while the entered information is confirmed or verified.

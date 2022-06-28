@@ -1,0 +1,7 @@
+
+These random strings are used to name the Windows tool, which is then executed.
+Since this tool depends on a legitimate DLL named cryptui.dll, the search order path will find the malicious Trojan with the same name in the same directory and load it into its process space.
+In Q4 of 2017, a similar malspam campaign delivered the same banking Trojan by using an embedded JAR file attached in the email instead of an HTML attachment.
+On execution, the Java code downloaded a ZIP archive from a cloud file hosting site such as Google Drive, Dropbox, or Github.
+The ZIP archive contained a legitimate Microsoft tool and the malicious Trojan.
+Banking Trojan Analysis The Trojan expects to be located in the hardcoded directory C:\\\\Users\\\\Public\\Administrador\\\\ along with three other files to start execution.

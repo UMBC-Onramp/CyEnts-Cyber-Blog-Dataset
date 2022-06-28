@@ -1,0 +1,8 @@
+
+Figure 2:
+Example argtracker usage In this sample code, we start by creating a new Vivisect workspace.\nVivisect (see installation instructions at the end) is a separate\nbinary analysis framework written in Python and is used heavily by argracker .
+The workspace contains analysis\ninformation similar to an IDB file for IDA.
+Using this workspace, a\nnew ArgTracker instance is created.
+For each\ncode cross-reference to MyCreateThread , we\ncall tracker.getPushArgs(xref, 7) .
+This\nfunction takes as parameters: The location of the call instruction being analyzed: xref
+The number of stack arguments to\nextract: 7 An optional list of register names that contain\narguments to extract, which defaults to being empty This malware sample uses the _ cdecl calling convention where all arguments are pushed on the stack, so all\nseven arguments should be able to be recovered by argtracker .

@@ -1,0 +1,2 @@
+About a month ago, I was involved in an investigation that revealed a targeted attacker using an interesting variation of a well-known persistence mechanism - a technique that is relevant both to incident responders hunting for evil and penetration testers looking to add post-exploitation methods to their toolkit.
+Today, I'm going to talk about this persistence mechanism and discuss some ways you might go about identifying it in your environment.

@@ -1,0 +1,415 @@
+By McAfee Labs on Nov 29, 2018 These predictions were written by Eoin Carroll, Taylor Dunton, John Fokker, German Lancioni, Lee Munson, Yukihiro Okutomi, Thomas Roccia, Raj Samani, Sekhar Sarukkai, Dan Sommer, and Carl Woodward.
+
+As 2018 draws to a close, we should perhaps be grateful that the year has not been entirely dominated by ransomware , although the rise of the GandCrab and SamSam variants show that the threat remains active.
+
+Our predictions for 2019 move away from simply providing an assessment on the rise or fall of a particular threat, and instead focus on current rumblings we see in the cybercriminal underground that we expect to grow into trends and subsequently threats in the wild.
+
+We have witnessed greater collaboration among cybercriminals exploiting the underground market, which has allowed them to develop efficiencies in their products.
+
+Cybercriminals have been partnering in this way for years; in 2019 this market economy will only expand.
+
+The game of cat and mouse the security industry plays with ransomware developers will escalate, and the industry will need to respond more quickly and effectively than ever before.
+
+Social media has been a part of our lives for more than a decade.
+
+Recently, nation-states have infamously used social media platforms to spread misinformation.
+
+In 2019, we expect criminals to begin leveraging those tactics for their own gain.
+
+Equally, the continued growth of the Internet of Things in the home will inspire criminals to target those devices for monetary gain.
+
+One thing is certain: Our dependency on technology has become ubiquitous.
+
+Consider the breaches of identity platforms, with reports of 50 million users being affected.
+
+It is no longer the case that a breach is limited to that platform.
+
+Everything is connected, and you are only as strong as your weakest link.
+
+In the future, we face the question of which of our weakest links will be compromised.
+
+—Raj Samani, Chief Scientist and McAfee Fellow, Advanced Threat Research Twitter @Raj_Samani
+
+Predictions Cybercriminal Underground to Consolidate, Create More Partnerships to Boost Threats Artificial Intelligence the Future of Evasion Techniques Synergistic Threats Will Multiply, Requiring Combined Responses Misinformation, Extortion Attempts to Challenge Organizations’ Brands Data Exfiltration Attacks to Target the Cloud Voice-Controlled Digital Assistants the Next Vector in Attacking IoT Devices Cybercriminals to Increase Attacks on Identity Platforms and Edge Devices Under Siege Cybercriminal Underground to Consolidate, Create More Partnerships to Boost Threats Hidden hacker forums and chat groups serve as a market for cybercriminals, who can buy malware, exploits, botnets, and other shady services.
+
+With these off-the-shelf products, criminals of varying experience and sophistication can easily launch attacks.
+
+In 2019, we predict the underground will consolidate, creating fewer but stronger malware-as-a-service families that will actively work together.
+
+These increasingly powerful brands will drive more sophisticated cryptocurrency mining, rapid exploitation of new vulnerabilities, and increases in mobile malware and stolen credit cards and credentials.
+
+We expect more affiliates to join the biggest families, due to the ease of operation and strategic alliances with other essential top-level services, including exploit kits, crypter services, Bitcoin mixers, and counter-antimalware services.
+
+Two years ago, we saw many of the largest ransomware families, for example, employ affiliate structures.
+
+We still see numerous types of ransomware pop up, but only a few survive because most cannot attract enough business to compete with the strong brands, which offer higher infection rates as well as operational and financial security.
+
+At the moment the largest families actively advertise their goods; business is flourishing because they are strong brands (see GandCrab) allied with other top-level services, such as money laundering or making malware undetectable.
+
+Underground businesses function successfully because they are part of a trust-based system.
+
+This may not be a case of “honor among thieves,” yet criminals appear to feel safe, trusting they cannot be touched in the inner circle of their forums.
+
+We have seen this trust in the past, for example, with the popular credit card shops in the first decade of the century, which were a leading source of cybercrime until major police action broke the trust model.
+
+As endpoint detection grows stronger, the vulnerable remote desktop protocol (RDP) offers another path for cybercriminals.
+
+In 2019 we predict malware, specifically ransomware, will increasingly use RDP as an entry point for an infection.
+
+Currently, most underground shops advertise RDP access for purposes other than ransomware, typically using it as a stepping stone to gain access to Amazon accounts or as a proxy to steal credit cards.
+
+Targeted ransomware groups and ransomware-as-a-service (RaaS) models will take advantage of RDP, and we have seen highly successful under-the-radar schemes use this tactic.
+
+Attackers find a system with weak RDP, attack it with ransomware, and propagate through networks either living off the land or using worm functionality (EternalBlue).
+
+There is evidence that the author of GandCrab is already working on an RDP option.
+
+We also expect malware related to cryptocurrency mining will become more sophisticated, selecting which currency to mine on a victim’s machine based on the processing hardware (WebCobra) and the value of a specific currency at a given time.
+
+Next year, we predict the length of a vulnerability’s life, from detection to weaponization, will grow even shorter.
+
+We have noticed a trend of cybercriminals becoming more agile in their development process.
+
+They gather data on flaws from online forums and the Common Vulnerabilities and Exposures database to add to their malware.
+
+We predict that criminals will sometimes take a day or only hours to implement attacks against the latest weaknesses in software and hardware.
+
+We expect to see an increase in underground discussions on mobile malware, mostly focused on Android, regarding botnets, banking fraud, ransomware, and bypassing two-factor authentication security.
+
+The value of exploiting the mobile platform is currently underestimated as phones offer a lot to cybercriminals given the amount of access they have to sensitive information such as bank accounts.
+
+Credit card fraud and the demand for stolen credit card details will continue, with an increased focus on online skimming operations that target third-party payment platforms on large e-commerce sites.
+
+From these sites, criminals can silently steal thousands of fresh credit cards details at a time.
+
+Furthermore, social media is being used to recruit unwitting users, who might not know they are working for criminals when they reship goods or provide financial services.
+
+We predict an increase in the market for stolen credentials—fueled by recent large data breaches and by bad password habits of users.
+
+The breaches lead, for example, to the sale of voter records and email-account hacking.
+
+These attacks occur daily.
+
+Artificial Intelligence the Future of Evasion Techniques To increase their chances of success, attackers have long employed evasion techniques to bypass security measures and avoid detection and analysis.
+
+Packers, crypters, and other tools are common components of attackers’ arsenals.
+
+In fact, an entire underground economy has emerged, offering products and dedicated services to aid criminal activities.
+
+We predict in 2019, due to the ease with which criminals can now outsource key components of their attacks, evasion techniques will become more agile due to the application of artificial intelligence.
+
+Think the counter-AV industry is pervasive now?
+
+ 
+
+This is just the beginning.
+
+In 2018 we saw new process-injection techniques such as “process doppelgänging” with the SynAck ransomware, and PROPagate injection delivered by the RigExploit Kit.
+
+ By adding technologies such as artificial intelligence, evasion techniques will be able to further circumvent protections.
+
+Different evasions for different malware
+
+In 2018, we observed the emergence of new threats such as cryptocurrency miners, which hijack the resources of infected machines.
+
+With each threat comes inventive evasion techniques: Cryptocurrency mining:
+
+Miners implement a number of evasion techniques.
+
+Minerva Labs discovered WaterMiner, which simply stops its mining process when the victim runs the Task Manager or an antimalware scan.
+
+Exploit kits: Popular evasion techniques include process injection or the manipulation of memory space and adding arbitrary code.
+
+In-memory injection is a popular infection vector for avoiding detection during delivery.
+
+Botnets: Code obfuscation or anti-disassembling techniques are often used by large botnets that infect thousands of victims.
+
+In May 2018, AdvisorsBot was discovered using junk code, fake conditional instructions, XOR encryption, and even API hashing.
+
+Because bots tend to spread widely, the authors implemented many evasion techniques to slow reverse engineering.
+
+They also used obfuscation mechanisms for communications between the bots and control servers.
+
+Criminals use botnets for activities such as DDOS for hire, proxies, spam, or other malware delivery.
+
+Using evasion techniques is critical for criminals to avoid or delay botnet takedowns.
+
+Advanced persistent threats: Stolen certificates bought on the cybercriminal underground are often used in targeted attacks to bypass antimalware detection.
+
+Attackers also use low-level malware such as rootkits or firmware-based threats.
+
+For example, in 2018 ESET discovered the first UEFI rootkit, LoJax.
+
+Security researchers have also seen destructive features used as anti-forensic techniques:
+
+The OlympicDestroyer malware targeted the Olympic Games organization and erased event logs and backups to avoid investigation.
+
+Artificial intelligence the next weapon In recent years, we have seen malware using evasion techniques to bypass machine learning engines.
+
+For example, in 2017 the Cerber ransomware dropped legitimate files on systems to trick the engine that classifies files.
+
+In 2018, PyLocky ransomware used InnoSetup to package the malware and avoid machine learning detection.
+
+Clearly, bypassing artificial intelligence engines is already on the criminal to-do list; however, criminals can also implement artificial intelligence in their malicious software.
+
+We expect evasion techniques to begin leveraging artificial intelligence to automate target selection, or to check infected environments before deploying later stages and avoiding detection.
+
+Such implementation is game changing in the threat landscape.
+
+We predict it will soon be found in the wild.
+
+Synergistic Threats Will Multiply, Requiring Combined Responses This year we have seen cyber threats adapt and pivot faster than ever.
+
+We have seen ransomware evolving to be more effective or operate as a smoke screen.
+
+We have seen cryptojacking soar, as it provides a better, and safer, return on investment than ransomware.
+
+We can still see phishing going strong and finding new vulnerabilities to exploit.
+
+We also noticed fileless and “living off the land” threats are more slippery and evasive than ever, and we have even seen the incubation of steganography malware in the Pyeongchang Olympics campaign .
+
+In 2019, we predict attackers will more frequently combine these tactics to create multifaced, or synergistic, threats.
+
+What could be worse?
+
+Attacks are usually centered on the use of one threat.
+
+Bad actors concentrate their efforts on iterating and evolving one threat at a time for effectiveness and evasion.
+
+When an attack is successful, it is classified as ransomware, cryptojacking, data exfiltration, etc., and defenses are put in place.
+
+At this point, the attack’s success rate is significantly reduced.
+
+However, if a sophisticated attack involves not one but five top-notch threats synergistically working together, the defense panorama could become very blurry.
+
+The challenge arises when an attempt is made to identify and mitigate the attack.
+
+Because the ultimate attack goals are unknown, one might get lost in the details of each threat as it plays a role in the chain.
+
+One of the reasons synergic threats are becoming a reality is because bad actors are improving their skills by developing foundations, kits, and reusable threat components .
+
+As attackers organize their efforts into a black-market business model, they can focus on adding value to previous building blocks.
+
+This strategy allows them to orchestrate multiple threats instead of just one to reach their goals.
+
+An example is worth a thousand words Imagine an attack that starts with a phishing threat—not a typical campaign using Word documents, but a novel technique.
+
+This phishing email contains a video attachment.
+
+When you open the video, your video player does not play and prompts you to update the codec.
+
+Once you run the update, a steganographic polyglot file (a simple GIF) is deployed on your system.
+
+Because it is a polyglot (a file that conforms to more than one format at the same time), the GIF file schedules a task that fetches a fileless script hosted on a compromised system.
+
+That script running in memory evaluates your system and decides to run either ransomware or a cryptocurrency miner.
+
+That is a dangerous synergistic threat in action.
+
+The attack raises many questions: What are you dealing with?
+
+Is it phishing 2.0?
+
+Is it stegware?
+
+Is it fileless and “living off the land”?
+
+Cryptojacking?
+
+Ransomware?
+
+It is everything at the same time.
+
+This sophisticated but feasible example demonstrates that focusing on one threat may not be enough to detect or remediate an attack.
+
+When you aim to classify the attack into a single category, you might lose the big picture and thus be less effective mitigating it.
+
+Even if you stop the attack in the middle of the chain, discovering the initial and final stages is as important for protecting against future attempts.
+
+Be curious, be creative, connect your defenses Tackling sophisticated attacks based on synergic threats requires questioning every threat.
+
+What if this ransomware hit was part of something bigger?
+
+What if this phishing email pivots to a technique that employees are not trained for?
+
+What if we are missing the real goal of the attack?
+
+Bearing these questions in mind will not only help capture the big picture, but also get the most of security solutions.
+
+We predict bad actors will add synergy to their attacks, but cyber defenses can also work synergistically.
+
+Cybercriminals to Use Social Media Misinformation, Extortion Campaigns to Challenge Organizations’ Brands The elections were influenced, fake news prevails, and our social media followers are all foreign government–controlled bots.
+
+ At least that’s how the world feels sometimes.
+
+To say recent years have been troubled for social media companies would be an understatement.
+
+ During this period a game of cat and mouse has ensued, as automated accounts are taken down, adversaries tactics evolve, and botnet accounts emerge looking more legitimate than ever before.
+
+ In 2019, we predict an increase of misinformation and extortion campaigns via social media that will focus on brands and originate not from nation-state actors but from criminal groups.
+
+Nation-states leverage bot battalions to deliver messages or manipulate opinion, and their effectiveness is striking.
+
+Bots often will take both sides of a story to spur debate, and this tactic works.
+
+By employing a system of amplifying nodes, as well as testing the messaging (including hashtags) to determine success rates, botnet operators demonstrate a real understanding of how to mold popular opinion on critical issues.
+
+In one example, an account that was only two weeks old with 279 followers, most of which were other bots, began a harassment campaign against an organization.
+
+By amplification, the account generated an additional 1,500 followers in only four weeks by simply tweeting malicious content about their target.
+
+Activities to manipulate public opinion have been well documented and bots well versed in manipulating conversations to drive agendas stand ready.
+
+Next year we expect that cybercriminals will repurpose these campaigns to extort companies by threatening to damage their brands.
+
+Organizations face a serious danger.
+
+Data Exfiltration Attacks to Target the Cloud
+
+In the past two years, enterprises have widely adopted the Software-as-a-Service model, such as Office 365, as well as Infrastructure- and Platform-as-a-Service cloud models, such as AWS and Azure.
+
+With this move, far more corporate data now resides in the cloud.
+
+In 2019, we expect a significant increase in attacks that follow the data to the cloud.
+
+With the increased adoption of Office 365, we have noticed a surge of attacks on the service— especially attempts to compromise email.
+
+One threat the McAfee cloud team uncovered was the botnet KnockKnock, which targeted system accounts that typically do not have multifactor authentication.
+
+We have also seen the emergence of exploits of the trust model in the Open Authorization standard.
+
+One was launched by Fancy Bear, the Russian cyber espionage group, phishing users with a fake Google security app to gain access to user data.
+
+Similarly, during the last couple of years we have seen many high-profile data breaches attributed to misconfigured Amazon S3 buckets.
+
+This is clearly not the fault of AWS.
+
+Based on the shared responsibility model, the customer is on the hook to properly configure IaaS/PaaS infrastructure and properly protect their enterprise data and user access.
+
+Complicating matters, many of these misconfigured buckets are owned by vendors in their supply chains, rather than by the target enterprises.
+
+With access to thousands of open buckets and credentials, bad actors are increasingly opting for these easy pickings.
+
+McAfee has found that 21% of data in the cloud is sensitive—such as intellectual property, and customer and personal data—according to the McAfee Cloud Adoption and Risk Report.
+
+With a 33% increase in users collaborating on this data during the past year, cybercriminals know how to seek more targets: Cloud-native attacks targeting weak APIs or ungoverned API endpoints to gain access to the data in SaaS as well as in PaaS and serverless workloads Expanded reconnaissance and exfiltration of data in cloud databases (PaaS or custom applications deployed in IaaS) expanding the S3 exfiltration vector to structured data in databases or data lakes Leveraging the cloud as a springboard for cloud-native man-in-the-middle attacks (such as GhostWriter, which exploits publicly writable S3 buckets introduced due to customer misconfigurations) to launch cryptojacking or ransomware attacks into other variants of MITM attacks.
+
+Voice-Controlled Digital Assistants the Next Vector in Attacking IoT Devices As tech fans continue to fill their homes with smart gadgets, from plugs to TVs, coffee makers to refrigerators, and motion sensors to lighting, the means of gaining entry to a home network are growing rapidly, especially given how poorly secured many IoT devices remain.
+
+But the real key to the network door next year will be the voice-controlled digital assistant, a device created in part to manage all the IoT devices within a home.
+
+As sales increase—and an explosion in adoption over the holiday season looks likely—the attraction for cybercriminals to use assistants to jump to the really interesting devices on a network will only continue to grow.
+
+For now, the voice assistant market is still taking shape, with many brands still looking to dominate the market, in more ways than one, and it is unclear whether one device will become ubiquitous.
+
+If one does take the lead, its security features will quite rightly fall under the microscope of the media, though not perhaps before its privacy concerns have been fully examined in prose.
+
+(Last year we highlighted privacy as the key concern for home IoT devices.
+
+Privacy will continue to be a concern, but cybercriminals will put more effort into building botnets, demanding ransoms, and threatening the destruction of property of both homes and businesses).
+
+This opportunity to control a home’s or office’s devices will not go unnoticed by cybercriminals, who will engage in an altogether different type of writing in relation to the market winner, in the form of malicious code designed to attack not only IoT devices but also the digital assistants that are given so much license to talk to them.
+
+Smartphones have already served as the door to a threat.
+
+In 2019, they may well become the picklock that opens a much larger door.
+
+We have already seen two threats that demonstrate what cybercriminals can do with unprotected devices, in the form of the Mirai botnet, which first struck in 2016, and IoT Reaper, in 2017.
+
+These IoT malware appeared in many variants to attack connected devices such as routers, network video recorders, and IP cameras.
+
+They expanded their reach by password cracking and exploiting known vulnerabilities to build worldwide robot networks.
+
+Next year we expect to see two main vectors for attacking home IoT devices: routers and smartphones/ tablets.
+
+The Mirai botnet demonstrated the lack of security in routers.
+
+Infected smartphones, which can already monitor and control home devices, will become one of the top targets of cybercriminals, who will employ current and new techniques to take control.
+
+Malware authors will take advantage of phones and tablets, those already trusted controllers, to try to take over IoT devices by password cracking and exploiting vulnerabilities.
+
+These attacks will not appear suspicious because the network traffic comes from a trusted device.
+
+The success rate of attacks will increase, and the attack routes will be difficult to identify.
+
+An infected smartphone could cause the next example of hijacking the DNS settings on a router .
+
+Vulnerabilities in mobile and cloud apps are also ripe for exploitation, with smartphones at the core of the criminals’ strategy.
+
+Infected IoT devices will supply botnets, which can launch DDoS attacks, as well as steal personal data.
+
+The more sophisticated IoT malware will exploit voice-controlled digital assistants to hide its suspicious activities from users and home-network security software.
+
+Malicious activities such as opening doors and connecting to control servers could be triggered by user voice commands (“Play music” and “What is today’s weather?”).
+
+Soon we may hear infected IoT devices themselves exclaiming: “Assistant!
+
+Open the back door!”
+
+Cybercriminals to Increase Attacks on Identity Platforms and Edge Devices Under Siege Large-scale data breaches of identity platforms—which offer centralized secure authentication and authorization of users, devices, and services across IT environments—have been well documented in 2018.
+
+Meanwhile, the captured data is being reused to cause further misery for its victims.
+
+In 2019, we expect to see large-scale social media platforms implement additional measures to protect customer information.
+
+However, as the platforms grow in numbers, we predict criminals will further focus their resources on such attractive, data-rich environments.
+
+ The struggle between criminals and big-scale platforms will be the next big battleground.
+
+Triton, malware that attacks industrial control systems (ICS), has demonstrated the capabilities of adversaries to remotely target manufacturing environments through their adjacent IT environments.
+
+Identity platform and “edge device” breaches will provide the keys to adversaries to launch future remote ICS attacks due to static password use across environments and constrained edge devices, which lack secure system requirements due to design limitations.
+
+(An edge device is any network-enabled system hardware or protocol within an IoT product.)
+
+We expect multifactor authentication and identity intelligence will become the best methods to provide security in this escalating battle.
+
+We also predict identity intelligence will complement multifactor authentication to strengthen the capabilities of identity platforms.
+
+Identity is a fundamental component in securing IoT.
+
+In these ecosystems, devices and services must securely identify trusted devices so that they can ignore the rest.
+
+The identity model has shifted from user centric in traditional IT systems to machine centric for IoT systems.
+
+Unfortunately, due to the integration of operational technology and insecure “edge device” design, the IoT trust model is built on a weak foundation of assumed trust and perimeter-based security.
+
+At Black Hat USA and DEF CON 2018, 30 talks discussed IoT edge device exploitation.
+
+That’s a large increase from just 19 talks on the topic in 2017.
+
+The increase in interest was primarily in relation to ICS, consumer, medical, and “smart city” verticals.
+
+(See Figure 1.)
+
+Smart edge devices, combined with high-speed connectivity, are enabling IoT ecosystems, but the rate at which they are advancing is compromising the security of these systems.
+
+Figure 1:
+
+The number of conference sessions on the security of IoT devices has increased, matching the growing threat to poorly protected devices.
+
+Most IoT edge devices provide no self-defense (isolating critical functions, memory protection, firmware protection, least privileges, or security by default) so one successful exploit owns the device.
+
+IoT edge devices also suffer from “break once, run everywhere” attacks—due to insecure components used across many device types and verticals.
+
+(See articles on WingOS and reverse engineering.)
+
+McAfee Advanced Threat Research team engineers have demonstrated how medical device protocols can be exploited to endanger human life and compromise patients’ privacy due to assumed trust.
+
+These examples illustrate just a few of many possible scenarios that lead us to believe adversaries will choose IoT edge devices as the path of least resistance to achieve their objectives.
+
+Servers have been hardened over the last decade, but IoT hardware is far behind.
+
+By understanding an adversary’s motives and opportunities (attack surface and access capability), we can define a set of security requirements independent of a specific attack vector.
+
+Figure 2 gives a breakdown of the types of vulnerabilities in IoT edge devices, highlighting weak points to address by building identity and integrity capabilities into edge hardware to ensure these devices can deflect attacks.
+
+Figure 2: Insecure protocols are the primary attack surface in IoT edge devices.
+
+IoT security must begin on the edge with a zero-trust model and provide a hardware root of trust as the core building block for protecting against hack and shack attacks and other threats.
+
+McAfee predicts an increase in compromises on identity platforms and IoT edge devices in 2019 due to the adoption of smart cities and increased ICS activity.
+
+
+
+

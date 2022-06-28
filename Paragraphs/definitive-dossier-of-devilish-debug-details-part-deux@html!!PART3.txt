@@ -1,0 +1,11 @@
+
+Build a PDB classifier as a weak signal for binary analysis.
+To start, we began gathering data.
+Our dataset, pulled from internal and external sources, started with over 200,000 samples.
+Once we deduplicated by PDB path, we had around 50,000 samples.
+Next, we needed to consistently label these samples, so we considered various labeling schemes.
+Labeling Binaries With PDB Paths For many of the binaries we had internal FireEye labels, and for others we looked up hashes on VirusTotal (VT) to have a look at their detection rates.
+This covered the majority of our samples.
+For a relatively small subset we had disagreements between our internal engine and VT results, which merited a slightly more nuanced policy.
+The disagreement was most often that our internal assessment determined a file to be benign, but the VT results showed a nonzero percentage of vendors detecting the file as malicious.
+In these cases we plotted the ‘VT ratio”: that is, the percentage of vendors labeling the files as malicious (Figure 1).

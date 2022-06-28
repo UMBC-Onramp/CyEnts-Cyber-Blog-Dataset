@@ -1,0 +1,4 @@
+
+How Is ACCE Support Built?
+ACCE is built on top of CT’s proprietary libraries, as well as the Department of Defense Cyber Crime Center’s (DC3) malware configuration parser and kordesii frameworks.
+This promotes an automation workflow where initial YARA signature detections prompt running targeted modules organized by capability to extract layers of components (RoboSki packer->

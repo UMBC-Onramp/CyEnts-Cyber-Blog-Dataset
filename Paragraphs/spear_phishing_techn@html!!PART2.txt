@@ -1,0 +1,9 @@
+
+Fileless execution and persistence – In targeted campaigns, threat actors often attempt to avoid writing an executable to the disk to avoid detection and forensic examination.
+The campaign we observed used four stages of PowerShell scripts without writing the the payloads to individual files.
+Decoy documents – This campaign used PowerShell to download benign documents from the Internet and launch them in a separate Microsoft Word instance to minimize user suspicion of malicious activity.
+Attack Cycle
+The threat actors used social engineering to convince users to run an embedded macro in a Microsoft Word document that launched a malicious PowerShell payload.
+The threat actors used two publicly available techniques, an AppLocker whitelisting bypass and a script to inject shellcode into the userinit.exe process.
+The malicious payload was spread across multiple PowerShell scripts, making its execution difficult to trace.
+Rather than being written to disk as individual script files, the PowerShell payloads were stored in the registry.

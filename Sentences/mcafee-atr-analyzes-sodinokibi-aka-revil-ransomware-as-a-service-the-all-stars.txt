@@ -1,0 +1,271 @@
+By John Fokker and Christiaan Beek on Oct 02, 2019 Episode 2: The All-Stars Analyzing Affiliate Structures in Ransomware-as-a-Service Campaigns
+
+This is the second installment of the McAfee Advanced Threat Research (ATR) analysis of Sodinokibi and its connections to GandGrab, the most prolific Ransomware-as-a-Service (RaaS) Campaign of 2018 and mid-2019.
+
+GandCrab announced its retirement at the end of May.
+
+Since then, a new RaaS family called Sodinokibi, aka REvil, took its place as one of the most prolific ransomware campaigns.
+
+In episode one of our analysis on the Sodinokibi RaaS campaign we shared our extensive malware and post-infection analysis, which included code comparisons to GandCrab, and insight on exactly how massive the new Sodinokibi campaign is.
+
+The Sodinokibi campaigns are still ongoing and differ in execution due to the different affiliates spreading the ransomware.
+
+Which begs more questions to be answered, such as how do the affiliates operate?
+
+Is the affiliate model working?
+
+What can we learn about the campaign and possible connections to GandCrab by investigating the affiliates?
+
+It turns out, through large scale sample analysis and hardcoded value aggregation, we were able to determine which affiliates played a crucial role in the success of GandCrab’ criminal enterprise and found a lot of similarity between the RaaS enterprise of GandCrab and that of Sodinokibi.
+
+Before we begin with the Sodinokibi analysis and comparison we will briefly explain the methodology that we used for GandCrab.
+
+GandCrab RaaS System GandCrab was a prime example of a Ransomware-as-a-Service.
+
+RaaS follows a structure where the developers are offering their product to affiliates, partners or advertisers who are responsible for spreading the ransomware and generating infections.
+
+The developers take a percentage of the earned income and provide the other portion to the affiliates.
+
+FIGURE 1.
+
+HIGH LEVEL OVERVIEW OF THE GANDCRAB RAAS MODEL Operating a RaaS model can be lucrative for both parties involved: Developer’s perspective : The malware author/s request a percentage per payment for use of the ransomware product.
+
+This way the developers have less risk than the affiliates spreading the malware.
+
+The developers can set certain targets for their affiliates regarding the amount of infections they need to produce.
+
+In a way, this is very similar to a modern sales organization in the corporate world.
+
+Subsequently, a RaaS model offers malware authors a safe haven when they operate from a country that does not regard developing malware as a crime.
+
+If their own nation’s citizens are not victimized, the developers are not going to be prosecuted.
+
+Affiliate perspective : As an affiliate you do not have to write the ransomware code yourself; less technical skill is involved.
+
+RaaS makes ransomware more accessible to a greater number of users.
+
+An affiliate just needs to be accepted in the criminal network and reach the targets set by the developers.
+
+As a service model it also offers a level of decentralization where each party sticks to their own area of expertise.
+
+Getting a Piece of the Pie Affiliates want to get paid proportionate to the infections they made; they expose themselves to a large amount of risk by spreading ransomware and they want to reap the benefits.
+
+Mutual trust between the developer and the affiliate plays a huge role in joining a RaaS system.
+
+It is very much like the expression: “Trust, hard to build, and easy to lose” and this largely explains the general skepticism that cybercriminal forum members display when a new RaaS system is announced.
+
+For the RaaS service to grow and maintain their trust, proper administration of infections/earnings per affiliate plays an important part.
+
+Through this, the developers can ensure that everyone gets an honest piece of the proverbial “pie”.
+
+So how can this administration be achieved?
+
+One way is having hardcoded values in the ransomware.
+
+Linking the Ransomware to Affiliates Through our technical malware analysis, we established that, starting from version 4, GandCrab included certain hardcoded values in the ransomware source code: id – The affiliate id number.
+
+sub_id – The Sub ID of the affiliate ID; A tracking number for the affiliate for sub-renting infections or it tracks their own campaign, identifiable via the sub_id number.
+
+version – The internal version number of the malware.
+
+Version 4 had significant changes overall and we believe that these changes were partly done by the authors to improve administration and make GandCrab more scalable to cope with its increased popularity.
+
+Based on the hardcoded values it was possible for us, to a certain extent, to extract the administration information and create our own overview.
+
+We hunted for as many different GandCrab samples as we could find, using Yara rules, industry contacts and customer submissions.
+
+The sample list we gathered is quite extensive but not exhaustive.
+
+From the collected samples we extracted the hardcoded values and compile times automatically, using a custom build tool.
+
+We aggregated all these values together in one giant timeline from GandCrab version 4, all the way up to version 5.2.
+
+FIGURE 2.
+
+SMALL PORTION OF THE TIMELINE OF COLLECTED SAMPLES (NOTE THE FIRST FOUR POSSIBLY TIME STOMPED)
+
+ID and SUB_ID Characteristics Observed Parent-Child Relationship
+
+The extracted ID’s and Sub_IDs showed a parent-child relationship, meaning every ID could have more than one SUB_ID (child) but every SUB_ID only had one ID (parent).
+
+FIGURE 3.
+
+THE ACTIVITY OF ID NUMBER 41 (PARENT) AND ITS CORRESPONDING SUB_IDs (CHILDREN) ID
+
+Increments Overall, we observed a gradual increment in the ID number over time.
+
+The earlier versions generally had lower ID numbers and higher ID numbers appeared with the later versions.
+
+However, there were relatively lower ID numbers that appeared in many versions, as shown in figure 3.
+
+This observation aligned with our theory that the ID number corresponds with a particular affiliate.
+
+Certain affiliates remained partners for a long period of time, spreading different versions of GandCrab; this explains the ID number appearing over a longer period and in different versions.
+
+This theory has also been acknowledged by several (anonymous) sources.
+
+Determining Top ID’s/Affiliates When we applied the theory that the ID corresponded with an affiliate, we observed different activity amongst the affiliates.
+
+There are some affiliates/ID’s that were only linked to a single sample that we found.
+
+A reason for affiliates to only appear for a short moment can be explained by the failure to perform.
+
+The GandCrab developers had a strict policy of expelling affiliates that underperformed.
+
+Expelling an affiliate would open a new slot that would receive a new incremented ID number.
+
+On the other hand, we observed several very active affiliates, “The All-Stars” , of which ID number 99 was by far the most active.
+
+We first observed ID 99 in six different samples of version 4.1.1, growing to 35 different samples in version 5.04.
+
+Based on our dataset we observed 71 unique unpacked samples linked to ID 99.
+
+Being involved with several versions (consistency over time), in combination with the number of unique samples (volume) and the number of infections (based on industry malware detections) can effectively show which affiliate was the most aggressive and possibly the most important to the RaaS network.
+
+Affiliate vs. Salesperson & Disruption An active affiliate can be compared to a top salesperson in any normal commercial organization.
+
+Given that the income of the RaaS network is largely dependent on the performance of its top affiliates, identifying and disrupting a top affiliate’s activity can have a crippling effect on the income of the RaaS network, internal morale and overall RaaS performance.
+
+This can be achieved through arrests of an affiliate and/or co-conspirers.
+
+Another way is disrupting the business model and lowering the ransomware’s profits through offering free decryption tools or building vaccines that prevent encryption.
+
+The disruption will increase the operational costs for the criminals, making the RaaS of less interest.
+
+Lastly, for any future proceedings (suspect apprehension and legal)
+
+it is important to maintain a chain of custody linking victims, samples and affiliates together.
+
+Security providers as gatherers and owners of this data play a huge role in safeguarding this for the future.
+
+Overview Versions and ID Numbers Using an online tool from RAWGraphs we created a graphic display of the entire dataset showing the relationship between the versions and the ID numbers.
+
+Below is an overview, a more detailed overview can be found on the McAfee ATR Github .
+
+FIGURE 4.
+
+OVERVIEW OF GANDCRAB VERSIONS AND IDs
+
+Top performing affiliates immediately stood out from the rest as the lines were thicker and more spread out.
+
+According to our data, the most active ID numbers were 15,41,99 and 170.
+
+Determining the key players in a RaaS family can help Law Enforcement prioritize its valuable resources.
+
+Where are the All-Stars?
+
+Top Affiliates Missing in 5.2 At the time we were not realizing it fully but, looking back at the overview, it stands out that none of the top affiliates/ID numbers where present in the final version 5.2 of GandCrab which was released in February.
+
+We believe that this was an early indicator that the end of GandCrab was imminent.
+
+This discovery might indicate that some kind of event had taken place that resulted in the most active affiliates not being present.
+
+The cause could have been internal or external.
+
+But what puzzles us is why would a high performing affiliate leave?
+
+Maybe we will never hear the exact reason.
+
+Perhaps it is quite similar to why people leave regular jobs… feeling unhappy, a dispute or leaving for a better offer.
+
+With the absence of the top affiliates the question remains; Where did these affiliates go to?
+
+FIGURE 5.
+
+ID AND SUB_ID NUMBER LINKED TO VERSION 5.2 Please note that active ID numbers 15,41,99 and170 from the complete overview are not present in any GandCrab version 5.2 infections.
+
+The most active affiliate in version 5.2. was nr 287.
+
+Goodbye GandCrab, Hello Sodinokibi/
+
+REvil In our opening episode we described the technical similarities we have seen between GandCrab and REvil.
+
+We are not the only ones that noticed these similarities – security reporter Brian Krebs published an article where he highlights the similarities between GandCrab and a new ransomware named Sodinokibi or REvil, and certain postings that were made on several underground forums.
+
+Affiliates Switching RaaS Families….
+
+On two popular underground Forums a user named UNKN , aka unknown , placed an advertisement on the 4 th of July 2019, for a private ransomware as a service (RaaS) he had been running for some time.
+
+Below is a screenshot of the posting.
+
+Interesting is the response from a user with the nickname Lalartu.
+
+In a reply to the advertisement, Lalartu mentions that he is working with UNKN and his team, as well as that they had been a former GandCrab affiliate, something that was noticed by Bleepingcomputer too.
+
+Lalartu’s post supports our earlier observations that some top GandCrab affiliates suddenly disappeared and might have moved to a different RaaS family.
+
+This is something that was suspected but never confirmed with technical evidence.
+
+We suspect that Lalartu is not the only GandCrab affiliate that has moved to Sodinokibi.
+
+If top affiliates have a solid and very profitable infection method available, then it does not make sense to retire with the developers.
+
+Around February 2019, there was a noticeable change in some of GandCrab’s infections behavior.
+
+Managed Service Providers (MSP) were now targeted through vulnerable systems and their customers got infected with GandCrab on a large scale, something we had not seen performed before by any of the affiliates.
+
+Interestingly, shortly after the retirement of GandCrab, the MSP modus operandi was quickly adopted by Sodinokibi, another indication that a former GandCrab affiliate had moved to Sodinokibi.
+
+This makes us suspect that Sodinokibi is actively recruiting the top performing affiliates from other successful RaaS families, creating a sort of all-star team.
+
+At the same time, the RaaS market is such where less proficient affiliates can hone their skills, improve their spreading capabilities and pivot to the more successful RaaS families.
+
+Combined with a climate where relatively few ransomware arrests are taking place, it allows for an alarming cybercriminal career path with dire consequences.
+
+Gathering “administration” from Sodinokibi/Revil Samples Another similarity Sodinokibi shares with GandCrab is the administration of infections, one of the indicators of a RaaS’s growth potential.
+
+In our earlier blog we discussed that Sodinokibi generates a JSON config file for each sample containing certain values such as a PID number and a value labeled sub.
+
+So, we decided to use our GandCrab affiliate methodology on the Sodinokibi config files we were able to collect.
+
+With GandCrab we had to write our own tool to pull the hardcoded indicators but, with Sodinokibi, we were lucky enough that Carbon Black had developed a tool that did much of the heavy lifting for us.
+
+In the end there were still some samples from which we had to pull the configs manually.
+
+The JSON file contains different values and fields; for a comparison to GandCrab we focused on the PID and SUB field of each sample as these values appeared to have a similar characteristic as the ID and SUB_ID field in the GandCrab samples.
+
+FIGURE 6.
+
+REVIL JSON CONFIG VALUES Interpreting the Data Structures With the data we gathered, we used the same analysis methodology on Sodinokibi  as we did on GandCrab.
+
+We discovered that Sodinokibi has a RaaS structure very similar to GandCrab and with the Parent-Child relationship structure being nearly identical.
+
+Below we compared activity of GandCrab affiliate number 99 with the activity of the Sodinokibi affiliate number 19.
+
+FIGURE 7.
+
+THE ACTIVITY OF GANDCRAB ID
+
+NO 99 (PARENT) AND ITS CORRESPONDING SUB (CHILDREN) FIGURE 8.
+
+THE ACTIVITY OF SODINOKIBI PID NO 19 (PARENT) AND ITS CORRESPONDING SUB (CHILDREN)
+
+It needs to be said that the timespan for the GandCrab overview was generated over a long period of time with a larger total of samples than the Sodinokibi overview.
+
+Nevertheless, the similarity is quit striking.
+
+The activity of both ID numbers displays a tree-shaped structure with the parent ID number at the root and branching out to the respective SUB numbers linked to multiple samples.
+
+We believe that the activity above might be linked to a tiered affiliate group that is specialized in RDP brute forcing and infecting systems with Sodinokibi after each successful compromise.
+
+Both RaaS family structures are too large to effectively publish within the space of this blog.
+
+Our Complete overview for the Sodinokibi RaaS structure can be found on our McAfee GitHub .
+
+Conclusion When we started our journey with GandCrab we did not expect it would take us so far down the rabbit hole.
+
+Mass sample analysis and searching for administration indicators provided a way to get more insight in a multi-million-dollar criminal enterprise, determine key players and foresee future events through changes in the business structure.
+
+We believe that the retirement of GandCrab was not an overnight decision and, based on the data on the affiliates, it was clear that something was going to happen.
+
+With the emergence of Sodinokibi and the few forum postings by a high profile former GandCrab affiliate, everything fell into place.
+
+We have strong indications that some of the top affiliates have found a new home with Sodinokibi to further their criminal business.
+
+Given that the income of the RaaS network is largely dependent on the performance of its top affiliates, and it is run like a normal business, we (the security industry) should not only research the products the criminals develop, but also identify possible ways to successfully disrupt the criminal business.
+
+In our next episode we dive deeper into the financial streams involved in the affiliate program and provide an estimate of how much money these actors are earning with the ransomware-as-a-service business model.
+
+
+
+

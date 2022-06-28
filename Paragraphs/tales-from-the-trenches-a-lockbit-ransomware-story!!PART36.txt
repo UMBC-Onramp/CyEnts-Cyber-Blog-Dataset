@@ -1,0 +1,4 @@
+
+In negotiations with an attacker, always try to obtain this knowledge since it is also relevant for your recovery strategy.
+If it is only one key, you know you can use one tool for the entire network; however, if encrypted servers use distinct keys, recovery becomes increasingly more difficult.
+After successful decryption of two different files (from distinct servers), the chat with the attacker began.

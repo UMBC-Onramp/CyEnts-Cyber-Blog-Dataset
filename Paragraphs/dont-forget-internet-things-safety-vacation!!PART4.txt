@@ -1,0 +1,11 @@
+
+“You are staying in an open environment,” says Ree.
+“Don’t assume it is your house.
+In a vacation rental home, an attacker could easily scan open ports and see what’s connected.”
+Invisible Connections
+Every time you rent a vacation home and connect to its network or an IoT device , you leave a footprint behind that can be leveraged by an attacker.
+Laurie gave an example.
+Let’s say your children play video games while on vacation.
+They may use a headset, which plugs into the game console, to chat with other players.
+The console connects to the router, which creates a firewall rule that allows players to connect to a shared port.
+Then, whenever someone connects to that port on the internet service provider’s external address, that person can also connect to your children’s game console.

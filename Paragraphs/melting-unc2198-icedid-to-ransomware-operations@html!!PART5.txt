@@ -1,0 +1,4 @@
+
+UNC2198 compromised 32 systems in 26 hours during this incident; however, ransomware was not deployed.
+Throughout July 2020 we attributed three intrusions to UNC2198 from Incident Response engagements, including one resulting in the deployment of MAZE ransomware.
+In October 2020, a slew of activity at both Incident Response engagements and Managed Defense clients resulted in the creation of two new UNC groups, and another incident attributed to UNC2198.

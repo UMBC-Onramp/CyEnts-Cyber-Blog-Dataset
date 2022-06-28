@@ -1,0 +1,4 @@
+
+It is useful for the malware developers to prove the malware works correctly in the critical part without detecting his/her own machines based on the language.
+fast ->
+If this option is enabled, and by default a lot of samples have it enabled, the malware will crypt the first 1 megabyte of each target file, or all files if it is smaller than this size.

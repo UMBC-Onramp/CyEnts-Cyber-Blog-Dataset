@@ -1,0 +1,4 @@
+
+Figure 2: UNC2529 phishing campaign, second wave Although Mandiant has no evidence about the objectives of this threat actor, their broad targeting across industries and geographies is consistent with a targeting calculus most commonly seen among financially motivated groups.
+Technical Analysis Overview
+The Triple DOUBLE malware ecosystem consists of a downloader (DOUBLEDRAG) (or alternatively an Excel document with an embedded macro), a dropper (DOUBLEDROP), and a backdoor (DOUBLEBACK).

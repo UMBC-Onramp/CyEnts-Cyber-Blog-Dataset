@@ -1,0 +1,5 @@
+
+Filenames and malware distribution data suggest the group is primarily focused on targeting Ukrainian entities.
+Association With So-Called Luhansk People's Republic FireEye Threat Intelligence analysis uncovered several indications that the actors behind this activity have ties to the breakaway so-called Luhansk People's Republic (LPR).
+Registrant Overlap with Official So-Called LPR Website Infrastructure analysis suggests these operators are linked to the so-called LPR and the persona \"re2a1er1.\
+" The domain used as C&C by the previous LNK file (sinoptik[.]website) was registered under the email \"re2a1er1@yandex.ru.\" The email address also registered the following domains.

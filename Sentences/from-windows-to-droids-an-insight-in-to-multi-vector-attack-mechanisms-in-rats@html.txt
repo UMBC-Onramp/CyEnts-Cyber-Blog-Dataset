@@ -1,0 +1,265 @@
+FireEye recently observed a targeted attack on a U.S.-based financial institution via a spear-phishing email.
+
+The payload used in this campaign is a tool called WinSpy, which is sold by the author as a spying and monitoring tool.
+
+The features in this tool resemble that of many other off-the-shelf RATs (Remote Administration Tools) available today.
+
+We also observed a second campaign by a different attacker where the WinSpy payload was implanted in macro documents to attack various other targets in what appears to be a spam campaign.
+
+The command-and-control (CnC) infrastructure used in the attack against the financial institution is owned and controlled by author of WinSpy.
+
+This does not necessarily mean the author is behind attack as the author provides the use of his server for command and control as well as to store the victim data as the default option in the WinSpy package.
+
+This feature allowing shared command-and-control infrastructure advertently or inadvertently provides another level of anonymity and deniability for the attacker.
+
+While analyzing the windows payloads for WinSpy we discovered that it also had Android spying components, which we have dubbed GimmeRat.
+
+The Android tool has multiple components allowing the victim’s device to be controlled by another mobile device remotely over SMS messages or alternatively through a Windows-based controller.
+
+The Windows-based controller is simplistic and requires physical access to the device.
+
+The recent surge in Android-based RATs such as Dendroid and AndroRAT shows a spike in the interest of malicious actors to control mobile devices.
+
+GimmeRAT is another startling example of malicious actors venturing into the Android ecosystem.
+
+Attacks Employing WinSpy While the WinSpy tool is being sold as a spying and monitoring tool for home users, its remote administration capabilities fits the bill for an adversary looking to infiltrate a target or organization.
+
+This tool also adds another layer of anonymity for the attacker by using the default command-and-control server provided as part of the WinSpy package.
+
+Figure 1 - Mechanism of attack on financial institution employing WinSpy The attack targeting a U.S. financial institution arrives via a spear-phishing email.
+
+The attachment (b430263181959f4dd681e9d5fd15d2a0) in the email is a large NSIS packed file, which when detonated launches a screenshot of a pay slip as decoy to avert the attention of the victim.
+
+It also drops and launches various components as seen in Figure 1 and Figure 2.
+
+Figure 2 - Components of WinSpy We observed a second attacker using WinSpy in macro documents (78fc7bccd86c645cc66b1a719b6e1258, f496bf5c7bc6843b395cc309da004345) as well as standalone executables (8859bbe7f22729d5b4a7d821cfabb044, 2b19ca87739361fa4d7ee318e6248d05).
+
+These arrive either as an attachment or as a link to the payload in emails.
+
+The documents had the unique metadata shown below: File Type                       : XLS MIME Type                    : application/vnd.ms-excel Author                          : MR.
+
+FRANK
+
+Last Modified By              : MR.
+
+FRANK Software                        : Microsoft Excel Create Date                    : 2012:02:07 10:41:21 Modify Date                     : 2012:02:07 10:41:29 Security                          :
+
+None Code Page                       :
+
+Windows Latin 1 (Western European) Company                         : USER App Version                     : 11.5606
+
+The email attacks were found to have attachment names such as Western Union Slip.xls Money Transfer Wumt.xls Wumt.xls Windows Components The WinSpy modules are written in Visual Basic and use some freely available libraries such as modJPEG.bas and cJpeg.cls .
+
+The components each support various features as shown below.
+
+Feature Component Webcam monitoring Webcam monitoring RDS.exe RDS.exe Screen capture & JPEG Encoder Screen capture & JPEG Encoder RDS.exe RDS.exe
+
+Connectivity check Connectivity check RDS.exe RDS.exe
+
+Send Victim information to CnC Send Victim information to CnC RDS.exe RDS.exe FTP exfiltration FTP exfiltration RDS.exe RDS.exe
+
+Status Report to CnC Status Report to CnC windns.exe windns.exe Email/FTP exfiltration Email/FTP exfiltration windns.exe windns.exe AV Find and Kill AV Find and Kill windns.exe windns.exe Auto configure firewall Auto configure firewall windns.exe windns.exe Keylogging and reports Keylogging and reports messenger.exe messenger.exe Backdoor for remote interaction Backdoor for remote interaction rdbms.exe rdbms.exe Microphone recording Microphone recording rdbms.exe rdbms.exe Upload/download/execute files Upload/download/execute files rdbms.exe rdbms.exe File system browser File system browser rdbms.exe rdbms.exe Execute remote commands Execute remote commands rdbms.exe rdbms.exe Send messages to remote machine Send messages to remote machine rdbms.exe rdbms.exe
+
+The WinSpy malware creates its configuration in the registry under \"SOFTWARE\\MSI64\" as shown in Figure 2.
+
+The various components of WinSpy read this configuration at runtime.
+
+This configuration dictates various settings such as the username, unique identifier, connection parameters, remote FTP server and credentials, filename and path for captured data, current status, etc.
+
+The various options in the configuration are abbreviations.
+
+For example \"DUNIN\" stands for date to uninstall, \"FTSV\" stands for FTP server, \"FTUS\" stands for FTP user, and so forth.
+
+The \"SID2\" value is a unique ID used to identify the infection and is generated at build time.
+
+Figure 3 - WinSpy Configuration
+
+The WinSpy controller has options to create a new remote file allowing you to choose various parameters and exfiltration options.
+
+The author interestingly allows for default command and control and exfiltration options to a server he controls.
+
+Figure 4 - WinSpy Builder The controller has options to retrieve screenshots, keylogs, and various reports from the victim’s machine.
+
+It also has the ability to interact with file system to upload and download files as well as execute new payloads.
+
+Figure 5 - WinSpy Controller Figure 6 - WinSpy File Browser Command and Control
+
+The WinSpy payloads have multiple communication methods for reporting status, attacker interaction, and data exfiltration each of which are described below.
+
+Method 1 - I am online :
+
+It reports back to the authors server on port 14001 to report the victim's online status with \"/P\" and it receives the same command in response to acknowledge.
+
+Figure 7 - Online Status Method 2 - Victim Information: It also reports back to the WinSpy author’s server on port 27171 using a secondary protocol shown below.
+
+The request contains the victim’s IP address as well as unique identifier generated at build time of the payload.
+
+The server responds with a keep alive in response to this request.
+
+Figure 8 - Victim Information Figure 9 - Victim information Method
+
+3 - SMTP Exfiltration: It relays keylog data through SMTP if configured.
+
+It relays emails through an SMTP server running on port 37 on the WinSpy author’s server using preconfigured authentication parameters.
+
+Port 37 is typically used by NTP protocol but in this case the author has reconfigured it for SMTP relay.
+
+The X-Mailer \"SysMon v1.0.0\" sticks out like a sore thumb.
+
+Figure 10 - SMTP Exfiltration Method 4 - FTP Exfiltration: If configured with a custom FTP server, the WinSpy payload will upload all intercepted data and report to the remote server periodically.
+
+The FTP credentials are stored in the registry configuration discussed earlier.
+
+Method 5 - Direct Interaction: The rdbms.exe module listens on port 443 on the victim’s machine.
+
+The attacker can directly connect to this port from the WinSpy controller and issue various commands to download captured data, upload/download files, execute files, send messages, view webcam feeds, etc.
+
+Any required data transfer is done over Port 444.
+
+It supports various commands, the significant ones are shown below.
+
+The initial connection commands shows that the author plans to implement authentication at some point in time but as it stands now anyone can connect to an infected instance using this command.
+
+Command Description /CLUserName.
+
+Password. /CLUserName.
+
+Password.
+
+Initialize connection from controller Initialize connection from controller /CK /CK
+
+Acknowledge Acknowledge /CB{OptionalPath} /CB{OptionalPath} Enumerates all files in root dir or specified path Enumerates all files in root dir or specified path /CU{FilePath} /CU{FilePath} Uploads specified File Uploads specified File /CD{FilePath} /CD{FilePath}
+
+Downloads file from specified path Downloads file from specified path /CD
+
+\\\\\\KEYLOGS /CD
+
+\\\\\\KEYLOGS Download keylogs Download keylogs /CD \\\\\\WEBSITED /CD \\\\\\WEBSITED Download websites visited detail report Download websites visited detail report /CD \\\\\\WEBSITES /CD
+
+\\\\\\WEBSITES Download websites visited summary report Download websites visited summary report /CD \\\\\\ONLINETIME /CD \\\\\\ONLINETIME Download online time report Download online time report /CD \\\\\\CHATROOM /CD
+
+\\\\\\CHATROOM Download chat logs Download chat logs /CD \\\\\\PCACTIVETIME /CD \\\\\\PCACTIVETIME Download PC active time report Download PC active time report /RF{FilePath} /RF{FilePath} Execute remote file in specified path Execute remote file in specified path /WO & /WE
+
+/WO & /WE
+
+Webcam init and enable Webcam init and enable /SO /SO
+
+Start microphone recording Start microphone recording /AR{Command} /AR{Command
+
+} Run command on remote machine Run command on remote machine /AM{Message} /AM{Message}
+
+Sends message to remote machine Sends message to remote machine Android Components In the process of investigating the Windows modules for WinSpy we also discovered various Android components that can be employed to engage in surveillance of a target.
+
+We have found three different applications that are a part of the surveillance package.
+
+One of the applications requires commandeering via a windows controller and requires physical access to the device while the other two applications can be deployed in a client-server model and allow remote access through a second Android device.
+
+Figure 11 - Deployment Scenarios for Android Components Windows Physical Controller: The Windows controller requires physical access to the device and allows the attacker to retrieve screenshots from the infected device.
+
+ 
+
+This component is designed to target a victim in physical proximity.
+
+The various options available in the Windows controller are shown in Figure
+
+12 below.
+
+Figure 12 - Windows Controller for Android Device The functionality and structure of the components on the victim’s device are described below in detail.
+
+Component 1 -  GlobalService.apk Components: a. Services Global Service b. Methods Sleeper ScreenCapturer ServiceActivity Main activity The app is started with an intent that is provided from the desktop android executable.
+
+The intent is a \"com.google.system.service.
+
+StartUpReceiver\" intent with the extra field of \"interval\" which holds a string of the form “interval@@hostname@@port@@username@@password@@working_directory@@delete_after_upload” The hostname, port, username, and password are used to connect to the attackers' FTP server to send screenshots, which is explained, in a later section.
+
+Once this intent is received the GlobalService is restarted with the interval parameter..
+
+GlobalService This service contains the following variables private static final String TAG = \"GlobalService\"; private static boolean isScreenON; private int mInterval; private KeyguardManager mKeyGaurdManager; private BroadcastReceiver mPowerKeyReceiver; private Timer mSyncTimer; private TimerTask mSyncTimerTask; It goes on to check the value of the isScreenON variable.
+
+If the screen is on and if the keyguard has been unlocked, it calls the startScreenCaptureThread() method.
+
+The startScreenCaptureThread method sets the value of the mInterval variable to the value of interval passed to GlobalService.
+
+It also sets the properties of the mSyncTimerTask to point to the takeScreenshot method from the ScreenCapturer class such that the thread, when invoked, will take a screenshot every ‘interval’ number of seconds.
+
+The takeScreenshot method in the ScreenCapturer class connects to a native service using a local socket.
+
+It connects to port 42345 on localhost.
+
+The native service, which is listening on the same port, accepts strings on the socket.
+
+The takeScreenshot method sends a string of the form ‘/data/local/tmp/images/screenshot_DATE.png’ to the underlying native service.
+
+The native service checks for the string after the last trailing slash “/”, “screenshot” after the last trailing slash will cause the native service to take a screenshot by issuing the “screencap –p” method.
+
+The screenshot taken will be written to the path specified by the string passed as an argument.
+
+The takeScreenshot method then returns the path of the image to the screenCaptureThread which calls the FTPService thereby uploading the screenshot to the attackers CnC server.
+
+Component 2 - GlobalNativeService
+
+The native services listens on a local socket for commands from the GlobalService.apk.
+
+As seen above, if the string after the last trailing slash is “screenshot_” is sent to the Native service through the socket.
+
+It runs the command “screencap –p” on the shell of the device and captures a screenshot of the infected device.
+
+The native service also implements other functionality such as deleting a file, saving FTP information to /data/local/tmp/ftpInformation.
+
+If the string “GPSLocationInfo” is sent to the native service on the local socket, it creates GPSLocations.txt at /data/local/tmp/GPSLocations.txt
+
+but does not save the current GPS location.
+
+This perhaps indicates an upcoming feature.
+
+Android Remote Controller Component 1 - GPSTracker.apk
+
+The startup routine for the GPSTracker class is exactly the same as the one for GlobalService class.
+
+It gets the value from an \"StartGPSTracker\" intent which holds the value for an 'interval' variable as an integer.
+
+ 
+
+This app records the GPS location of the device at regular intervals (5 minutes).
+
+It records the location only if the previous location is 200 meters apart from the current location.
+
+When a location has to be added to the database all previous locations are deleted.
+
+Therefore it only maintains the last known location.
+
+This app monitors all incoming messages.
+
+If an SMS with \"[gmyl]\"(Short for (g)ive (m)e (y)our (l)ocation) at the beginning arrives on the device, the corresponding SMS_RECEIVED intent is aborted and the database is queried.
+
+A response SMS is crafted as shown below: \"[himl]<>DATE><LATITUDE##LONGTITUDE\" The string “himl” is short for (h)ere (i)s (m)y (l)ocation.
+
+Only the last known location is sent as a response to the user.
+
+Component 2 - GPSTrackerClient.apk
+
+This app acts as the controller to the GPSTracker.apk.
+
+While the GPSTracker.apk is installed on the victim's device, the GPSTrackerClient.apk is installed on the device from which the monitoring takes place.
+
+It takes the phone number of the phone to be tracked and sends it an SMS that contains \"[gmyl]\".
+
+The GPSTracker.apk then responds with the location in an SMS message as described in the above section.
+
+It then uses the native maps functionality, i.e., Google Maps, to point to the location sent by GPSTracker.
+
+It is also worthwhile to note that the two modules do not authenticate each other by any means therefore it allows anyone infected with GPSTracker.apk to be controlled just by sending SMS messages with a given structure.
+
+Conclusion These attacks and tools reaffirm that we live in an age of digital surveillance and intellectual property theft.
+
+Off-the-shelf RATs have continued to proliferate over the years and attackers have continued to increasingly use these tools.
+
+With the widespread adoption of mobile platforms such as Android, a new market continues to emerge with the demand for RATs to support these platforms.
+
+We will continue to see more implementations of RATs and payloads to support multiple platforms and attackers will continue to take advantage of these new attack surfaces to infiltrate their targets.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

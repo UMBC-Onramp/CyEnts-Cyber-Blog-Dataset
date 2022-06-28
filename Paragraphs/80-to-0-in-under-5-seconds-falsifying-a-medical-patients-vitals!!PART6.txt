@@ -1,0 +1,9 @@
+
+Many hardware simulators are on the market and vary drastically in cost.
+The cheapest and easiest vital sign to simulate turned out to be a heartbeat.
+For less than $100 we purchased an electrocardiogram (ECG) simulator on eBay.
+The following image illustrates our test network:
+In our test bed, the patient monitor (left), central monitoring station (right), and a research computer (top) were attached to a standard switch.
+The research computer was configured on a monitor port of the switch to sniff the traffic between the central monitoring device and the patient monitor.
+The ECG simulator was attached to the patient monitor.
+Reconnaissance With the network configured, we turned to Wireshark to watch the devices in action.

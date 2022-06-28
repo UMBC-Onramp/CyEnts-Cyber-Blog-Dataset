@@ -1,0 +1,8 @@
+
+Figure 8 provides a snippet of files created by the binary upon execution.
+Figure 8:
+Ragnarok-related ransomware files The ransom note dropped by this ransomware, shown in Figure 11, points to three email addresses.
+6.it's wise to pay as soon as possible it wont make you more losses the ransome: 1 btcoin for per machine,5 bitcoins for all machines how to buy bitcoin and transfer?
+i think you are very good at googlesearch asgardmaster5@protonmail[.]com ragnar0k@ctemplar[.]com j.jasonm@yandex[.]com
+Attention:if you wont pay the ransom in five days, all of your files will be made public on internet and will be deleted Figure 9: Snippet of ransom note dropped by “since1969.exe” Implications FireEye continues to observe multiple actors who are currently seeking to take advantage of CVE-2019-19781.
+This post outlines one threat actor who is using multiple exploits to take advantage of vulnerable internal systems and move laterally inside the organization.

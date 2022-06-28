@@ -1,0 +1,7 @@
+
+Recently, there have been various reports of actors conducting cryptocurrency mining operations specifically targeting cloud infrastructure.
+Cloud infrastructure is increasingly a target for cryptojacking operations because it offers actors an attack surface with large amounts of processing power in an environment where CPU usage and electricity costs are already expected to be high, thus allowing their operations to potentially go unnoticed.
+We assess with high confidence that threat actors will continue to target enterprise cloud networks in efforts to harness their collective computational resources for the foreseeable future.
+The following are some real-world examples of cryptojacking in the cloud: In February 2018, FireEye researchers published a blog detailing various techniques actors used in order to deliver malicious miner payloads (specifically to vulnerable Oracle servers) by abusing CVE-2017-10271.
+Refer to our blog post for more detailed information regarding the post-exploitation and pre-mining dissemination techniques used in those campaigns.
+In March 2018, Bleeping Computer reported on the trend of cryptocurrency mining campaigns moving to the cloud via vulnerable Docker and Kubernetes applications, which are two software tools used by developers to help scale a company's cloud infrastructure.

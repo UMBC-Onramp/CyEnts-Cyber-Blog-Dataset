@@ -1,0 +1,43 @@
+Everyone likes something for free.
+
+And there is no better place to go to get free analysis, intelligence and tools than The Armory on M-Unition.
+
+During the past year, we've offered intelligence and analysis on new threat activity, sponsored open source projects and offered insight on free tools like Redline™ , all of which has been highlighted on our blog.
+
+In case you've missed it, here are some of our most popular posts: Challenges in Malware and Intelligence Analysis: Similar Network Protocols, Different Backdoors and Threat Groups
+
+In this post, Mandiant's Intel shares insight on threat activity.
+
+Specifically, two separate APT groups, using two different backdoors that had very similar networking protocols.
+
+Read more to learn what they found.
+
+New Release: OWASP Broken Web Applications Project VM Version 1.1 Chuck Willis overviews version 1.1 of the Mandiant-sponsored OWASP Broken Web Applications Project Virtual Machine (VM).
+
+If you are not familiar with this open source project, it provides a freely downloadable VM containing more than 30 web applications with known or intentional security vulnerabilities.
+
+Many people use the VM for training or self-study to learn about web application security vulnerabilities, including how to find them, exploit them, and fix them.
+
+It can also be used for other purposes such as testing web application assessment tools and techniques or understanding evidence of web application attacks.
+
+Back to Basics Series: OpenIOC Will Gibb and a few of his colleagues at Mandiant embark on a series going back to the basics and looking deeper at OpenIOC - how we got where we are today, how to make and use IOCs, and the future of OpenIOC.
+
+Check out related posts here: The History of OpenIOC , Back to the Basics , OpenIOC, IOC Writer and Other Free Tools.
+
+Live from Black Hat 2013:
+
+Redline, Turbo Talk, and Arsenal Sitting poolside at Black Hat USA 2013, Mandiant's Kristen Cooper chats with Ted Wilson about Redline in this latest podcast.
+
+Ted leads the development of Redline where he provides innovative investigative features and capabilities enabling both the seasoned investigator and those with considerably less experience to answer the question, \"have you been compromised?\" Utilities Industry in the Cyber Targeting Scop e
+
+Our intel team is back again, this time with an eye on the utilities industry.
+
+As part of our incident response and managed defense work, Mandiant has observed Chinese APT groups exploiting the computer networks of U.S. utilities enterprises servicing or providing electric power to U.S. consumers, industry, and government.
+
+The most likely targets for data theft in this industry include smart grid technologies, water and waste management expertise, and negotiations information related to existing or pending deals involving Western utilities companies operating in China.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

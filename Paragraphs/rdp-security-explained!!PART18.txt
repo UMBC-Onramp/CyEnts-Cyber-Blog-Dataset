@@ -1,0 +1,5 @@
+
+This is particularly relevant for externally exposed systems.
+Microsoft provides a download and usage information for LAPS here .
+Limit Domain Administrator Account Access Accounts within the domain admins group have full control of the domain by default, by virtue of being part of the administrators group for all domain controllers, domain workstations and domain member servers.
+If a credential for a domain admin account is retrieved from the RDP server, the attacker now holds the ‘keys to the kingdom’ and is in full control of the entire domain.

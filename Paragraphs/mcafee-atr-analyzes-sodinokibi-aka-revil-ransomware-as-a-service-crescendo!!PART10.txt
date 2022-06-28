@@ -1,0 +1,9 @@
+
+Campaign 36 Activity from June 3 rd to 26 th indicates that the attacker present on the system was conducting operations involving the Sodinokibi ransomware.
+When linking back activity, we observed one notable tool the actor had used during the operation.
+‘Hidden-User.bat’ was designed to create hidden users on the target system.
+This tool links back to some underground distribution on Farsi-speaking private channels.
+The file being shared is identical to the one we found to be used actively in the Sodinokibi case in different instances in June 2019, in different cities in the Middle East.
+We found the following Farsi-speaking users sharing and discussing this tool specifically (Cryptor007 and MR Amir), and others active in these groups.
+McAfee ATR observed this tool being used on June 13 th , 2019 and June 26 th , 2019 by the same actors in different regions.
+HIDDEN-USER.bat POSTED IMAGE OF THE TOOL IN USE These Sodinokibi variants are strictly appearing in Israel from our observations: a3769a6748ba5d8023bcb161a5274e24d419bd36 (June 3 rd , 2019) bbabc23525b3852d463ef17ba7b8a2cab831e2b9

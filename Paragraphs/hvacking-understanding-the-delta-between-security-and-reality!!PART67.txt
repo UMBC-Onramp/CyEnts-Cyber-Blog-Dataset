@@ -1,0 +1,6 @@
+
+Based on the commands provided, the “set_io_state” method called by this thread activates the necessary hooking methods to control the I/O as described in the previous section.
+Figure 32 With a fully functioning backdoor in the memory space of the Delta software, we had full control of the device with a realistic attack chain.
+Figure 33 outlines the entire attack.
+Figure 33
+The entire process above, from sending out the malicious packets to gaining remote control, takes under three minutes, with the longest task being the reboot.

@@ -1,0 +1,6 @@
+
+Sonvpay apps found on Google Play.
+We notified Google about these apps on April 10 and they were promptly removed.
+A couple of days later the app “Despacito for Ringtone” was found again on the store and was quickly removed.
+In total we found 15 apps that were installed at least 50,000 times since the first one, Cut Ringtones 2018, was released on Google Play in January 2018.
+The following table lists the 15 malicious apps: At the time of download, the only red flag that a user could notice is that the app needs access to SMS messages.

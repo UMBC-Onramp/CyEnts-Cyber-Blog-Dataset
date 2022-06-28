@@ -1,0 +1,9 @@
+
+When a URL is input to our Transformer, it is appended with special tokens—a classification token (“CLS”) that conditions the model to produce a prediction and padding tokens (“PAD”) that normalize the input to a fixed length to allow for parallel training.
+Each token in the input string is then projected into a character embedding space, followed by a stack of Attention and Feed-Forward Neural Network (FFNN) layers.
+This stack of layers is similar to the architecture introduced in the original Transformers paper .
+At a high level, the Attention layers allow each input to be associated with long-distance context of other characters that are important for the classification task, similar to the notion of attention in humans, while the FFNN layers provide capacity for learning the relationships among the combination of inputs and their respective contexts.
+An illustration of our architecture is shown in Figure 1.
+Additionally, the URL Transformer employs a masking strategy in its Attention calculation, which enforces a left-to-right (L-R) dependence.
+This means that only input characters from the left of a given character influence that character’s representation in each layer of the attention stack.
+The network outputs one embedding for each input character, which captures all information learned by the model about the character sequence up to that point in the input.

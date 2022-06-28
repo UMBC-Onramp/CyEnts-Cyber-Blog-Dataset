@@ -1,0 +1,7 @@
+
+The Mina project is dedicated to creating a minimalistic blockchain, so the Mina website is also minimalistic to the extreme — which spared the scammers the effort of building a comprehensive fake.
+Visitors are required to complete a simple registration: name, e-mail address, and, for some reason, a link to their social network page.
+The rogue site’s overall style is similar to Mina’s The scammers claim to have streamlined the ICO process: “Make a cryptocurrency payment to the specified wallet and get your tokens.”
+In fact, the next prompt, right after registration, requests a cryptocurrency selection and payment amount.
+The token “purchasing” process is designed to be as simple as possible — select one of three popular cryptocurrencies … … and then specify the sum you mean to part with (forever)
+Once the currency and sum are specified, the payment alone remains — the website offers to copy the address of the scammers’ cryptocurrency wallet or scan its QR code.

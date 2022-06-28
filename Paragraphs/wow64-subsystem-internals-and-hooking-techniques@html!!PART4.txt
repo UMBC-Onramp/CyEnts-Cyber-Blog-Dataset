@@ -1,0 +1,6 @@
+
+WOW64
+Syscall Stub Notice that instead of a syscall instruction in the WOW64 version, Wow64SystemServiceCall is called.
+In the WOW64 system what would normally be an entry into the kernel is instead replaced by a call to a usermode routine.
+Following this Wow64SystemServiceCall , we can see in Figure 3 that it immediately performs an indirect jmp through a pointer named Wow64Transition .
+Figure 3: Wow64SystemService transitions through a pointer ‘Wow64Transition’ Note that the Wow64SystemServiceCall function is found within ntdll labeled as ntdll_77550000; a WOW64 process has two ntdll modules loaded, a 32-bit one and a 64-bit one.

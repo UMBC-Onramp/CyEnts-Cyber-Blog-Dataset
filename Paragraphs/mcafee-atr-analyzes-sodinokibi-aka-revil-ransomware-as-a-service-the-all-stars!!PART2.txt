@@ -1,0 +1,7 @@
+
+The Sodinokibi campaigns are still ongoing and differ in execution due to the different affiliates spreading the ransomware.
+Which begs more questions to be answered, such as how do the affiliates operate?
+Is the affiliate model working?
+What can we learn about the campaign and possible connections to GandCrab by investigating the affiliates?
+It turns out, through large scale sample analysis and hardcoded value aggregation, we were able to determine which affiliates played a crucial role in the success of GandCrab’ criminal enterprise and found a lot of similarity between the RaaS enterprise of GandCrab and that of Sodinokibi.
+Before we begin with the Sodinokibi analysis and comparison we will briefly explain the methodology that we used for GandCrab.

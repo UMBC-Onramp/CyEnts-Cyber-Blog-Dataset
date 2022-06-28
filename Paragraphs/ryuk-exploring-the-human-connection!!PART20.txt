@@ -1,0 +1,8 @@
+
+Conclusion In the last seven months Ryuk has proven to be a highly profitable form of ransomware, despite the poor programming behind it and its decryptor.
+The criminals have proven to be ruthless and several of their victims were forced to wind down their businesses after they were unable to afford the exorbitant ransom.
+When a company does give in to the high demands it is extra painful to see a situation occur where they are permanently unable to recover their files due to the faulty decryptor.
+A solid data loss prevention strategy still remains the best advice against all forms of ransomware, for general prevention advice please visit NoMoreRansom .
+Always seek professional assistance when you are faced with a targeted ransomware attack such as Ryuk.
+
+

@@ -1,0 +1,8 @@
+
+Note that malware can also construct strings in global memory.
+Our new script handles both cases; strings constructed on the stack and in global memory.
+ironstrings:
+Stackstring Recovery Using flare-emu
+The new IDAPython script is an evolution of our existing solutions.
+It combines FLOSS’s stackstring recovery algorithm and functionality from our IDA Pro plugin.
+The script relies on IDA Pro’s program analysis and emulates code using Unicorn.

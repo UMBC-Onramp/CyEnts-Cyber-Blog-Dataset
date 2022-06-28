@@ -1,0 +1,8 @@
+
+Another good example of a methodology IOC is an IOC that looks for the Registry text value of all \"Run\" keys for a string ending \".jpg\".
+This represents an abnormal condition which upon investigation may lead to evidence of a compromise.
+Bulk :
+You may already be using this kind of IOC.
+Many organizations subscribe to threat intelligence feeds that deliver a list of MD5s or IP addresses; a bulk IOC can represent a collection of those indicators.
+These kinds of IOCs are very black and white and are typically only good for an exact match.
+Investigative :

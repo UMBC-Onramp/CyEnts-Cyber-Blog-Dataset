@@ -1,0 +1,8 @@
+
+Researchers have demonstrated how open access to the prediction functions of a model as well as knowledge transfer can also facilitate compromise.
+How Financial Entities Leverage AI AI can process large amounts of information very quickly, and financial institutions are adopting AI-enabled tools to make accurate risk assessments and streamline daily operations.
+As a result, threat actors likely view financial service AI tools as an attractive target to facilitate economic gain or financial instability (Figure 2).
+Figure 2:
+Financial AI tools and their weaknesses Sentiment Analysis Use Branding and reputation are variables that help analysts plan future trade activity and examine potential risks associated with a business.
+News and online discussions offer a wealth of resources to examine public sentiment .
+AI techniques, such as natural language processing, can help analysts quickly identify public discussions referencing a business and examine the sentiment of these conversations to inform trades or help assess the risks associated with a firm.

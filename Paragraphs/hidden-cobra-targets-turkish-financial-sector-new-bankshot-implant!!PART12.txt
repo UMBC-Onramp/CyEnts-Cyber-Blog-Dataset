@@ -1,0 +1,7 @@
+
+* Change the time of a file as specified by the control server The malware changing the file time.
+Create a process by impersonating a logged-on user Getting a user token using WTSQueryUserToken.
+A process created as logged-in user.
+Gather the process time for all processes Getting time information for all processes running on the system.
+Gather domain and account names based on all running processes Gathering account information from running processes.
+Read a specified file’s contents and send the data to the control server Write data sent by the control server to an existing file Mark a file to be deleted on reboot Marking a file for deletion on reboot.

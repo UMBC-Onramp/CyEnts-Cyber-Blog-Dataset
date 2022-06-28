@@ -1,0 +1,8 @@
+
+In the newer versions of Clop, victims are required to state their company name and site in the email communications.
+We are not absolutely sure why this is, but it might be an effort to improve victim tracking.
+Looking at the Clop ransom note, it shares TTPs with other ransomware families; e.g. it mimics the Ryuk ransomware and contains similarities with BitPaymer, however the code and functions are quite different between them.
+Coverage Customers of McAfee gateway and endpoint products are protected against this version.
+GenericRXHA-RK!3FE02FDD2439 GenericRXHA-RK!160FD326A825 Trojan-Ransom Ransom-Clop!73FBFBB0FB34 Ransom-Clop!0403DB9FCB37 Ransom-Clop!227A9F493134 Ransom-Clop!A93B3DAA9460 GenericRXHA-RK!35792C550176 GenericRXHA-RK!738314AA6E07 RDN/Generic.dx bub BAT/Ransom-Clob BAT/Ransom-Blob McAfee ENS customers can create expert rules to prevent batch command execution by the ransomware.
+A few examples are given below for reference.
+The following expert rule can be used to prevent the malware from deleting the shadow volumes with vssadmin (“vssadmin Delete Shadows /all /quiet”).

@@ -1,0 +1,5 @@
+
+Example I wrote a simple piece of malware that hides strings by encoding them.
+Figure 1 shows an HTTP User-Agent string being decoded by a function I named string_decoder.
+Figure 1: String decoder function reference in IDA Pro After a cursory look at the string_decoder function, the arguments are identified as an offset to an encoded string of bytes, an output address, and a length.
+The function can be described as the following C prototype: Now that we have a basic understanding of the string_decoder function, we test decoding using Windbg and flare-dbg.

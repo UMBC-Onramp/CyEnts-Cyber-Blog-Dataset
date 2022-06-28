@@ -1,0 +1,4 @@
+
+Furthermore, by using our understanding of how the attack is performed at a network level, we were able to add mitigation for this vulnerability to McAfee’s Network Security Platform (NSP) via NSP signature 0x45d43f00, helping our customers remain secure.
+This is our idea of a success story – researchers and vendors coming together to improve security for end users and ultimately reduce the attack surface for the adversary.
+If there’s any doubt they are interested in targets like these, a quick search will illuminate the myriad attempts to exploit industrial control systems as a top target of interest.

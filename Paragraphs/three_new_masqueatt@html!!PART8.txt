@@ -1,0 +1,9 @@
+
+The dummy placeholder will disappear after the victim restarts the device.
+Also, as shown in Table 1, a manifest file can contain different apps’ metadata entries to distribute multiple apps at a time, which means this vulnerability can cause multiple apps being demolished with just one click by the victim.
+By leveraging this vulnerability, one app developer can install his/her own app and demolish other apps (e.g. a competitor’s app) at the same time.
+In this way, attackers can perform DoS attacks or phishing attacks on iOS.
+Figure 1.
+Phishing Attack by installing “malicious Chrome” and demolishing the genuine one Figure 1 shows an example of the phishing attack.
+When the user clicks a URL in the Gmail app, this URL is rewritten with the “googlechrome-x-callback://” scheme and supposed to be handled by Chrome on the device.
+However, an attacker can leverage the Manifest Masque vulnerability to demolish the genuine Chrome and install “malicious Chrome” registering the same scheme.

@@ -1,0 +1,5 @@
+
+Looking at the raw TRITON code, some of the comments may appear oddly phrased, but we do get a sense that the developer is clearly using many of the right vernacular and acronyms, showing smarts on PLC programming.
+The TS_cnames.pyc script contains interesting typos such as 'Set lable', 'Alocate network accepted', 'Symbol table ccepted' and 'Set program information reponse'.
+These appear to be normal human error and reflect neither poor written English nor laziness in coding.
+The significant amount of annotation, cascading logic, and robust error handling throughout the code suggests thoughtful development and testing of the framework.

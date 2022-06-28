@@ -1,0 +1,12 @@
+
+In this post we have covered the foundations of all decompiler scripts: the ctree object, a structure composed by expressions and statements representing every element of the code as well the relationships between them.
+By creating a custom visitor we have shown how to traverse the tree and read or modify the code elements, therefore analyzing or modifying the pseudocode.
+Hopefully, this post will motivate you to start writing your own scripts.
+This is only the beginning!
+Do you want to learn more about these tools and techniques from FLARE?
+Then you should take one of our Black Hat classes in Las Vegas this summer!
+Our offerings include Malware Analysis Crash Course , macOS Malware for Reverse Engineers , and Malware Analysis Master Class .
+References Although written in 2009, one of the best references is still the original article on the Hex-Rays blog .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

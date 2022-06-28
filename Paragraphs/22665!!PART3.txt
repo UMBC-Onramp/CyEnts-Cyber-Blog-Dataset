@@ -1,0 +1,5 @@
+
+The decentralized approach provides greater anonymity.
+In addition, DEX exchanges often have lower fees, which is perhaps why they have been attracting ever more cryptocurrency traders of late.
+Decentralization also means more security concerns for users — and on top of the ordinary added risk DEX users accept, cybercriminals recently created a phishing site disguised as a DEX exchange called Uniswap.
+How DEX clients get duped Potential victims — users of popular Discord cryptocurrency servers — receive phishing messages that appear to come from Uniswap and offer free tokens.

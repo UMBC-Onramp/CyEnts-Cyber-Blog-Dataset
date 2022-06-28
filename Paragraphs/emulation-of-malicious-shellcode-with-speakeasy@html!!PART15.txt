@@ -1,0 +1,8 @@
+
+Similar techniques are used for when shellcode accesses the export tables of DLLs loaded within the emulated address space of the malware.
+By executing as little Python code as possible, we can maintain reasonable speeds while still allowing users to rapidly develop capabilities for the framework.
+Memory Management Speakeasy implements a lightweight memory manager on top of the emulator engine’s memory management.
+Each chunk of memory allocated by malware is tracked and tagged so that meaningful memory dumps can be acquired.
+Being able to attribute activity to specific chunks of memory can prove to be extremely useful for analysts.
+Logging memory reads and writes to sensitive data structures can reveal the true intent of malware not revealed by API call logging, which is particularly useful for samples such as rootkits.
+Speakeasy offers an optional “memory tracing” feature that will log all memory accesses that samples exhibit.

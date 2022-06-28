@@ -1,0 +1,9 @@
+
+In this blog post, I am going to concentrate on ICC color profiles.
+Microsoft has a list of supported Windows APIs .
+Looking into some of the obviously named APIs, such as OpenColorProfile , we can see that it is implemented in MSCMS.dll.
+This DLL is a generic entry point and supports loading of Microsoft’s Color Management Module (CMM) and third-party CMMs such as Adobe’s CMM.
+Microsoft’s CMM—the ICM—can be found as ICM32.dll in system32 directory.
+Figure 1: ICM32 Windows’ CMM was written by a third-party during the Windows 95 era and still ships more or less with the same code (with security fixes over the decades).
+Seeing such an old module gives me some hope of finding a new vulnerability.
+But this is also a small module that may have gone through multiple rounds of review and fuzzing: both by internal product security teams and by external researchers, reducing my hopes to a certain degree.

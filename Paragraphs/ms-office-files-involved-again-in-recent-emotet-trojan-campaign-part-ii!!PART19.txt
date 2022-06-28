@@ -1,0 +1,5 @@
+
+Finally, going back to the thread-module, Emotet reads the stolen information from the given temporary files.
+It then compresses and encrypts the data, which is ultimately submitted using the HTTP Post method to the C2 server.
+Fortinet Protections Fortinet customers are already protected from this malware by FortiGuard’s Web Filtering, AntiVirus, FortiMail, FortiClient, FortiEDR, and CDR (content disarm and reconstruction) services, as follows:
+The malicious Macro inside the Excel sample mentioned in Part I of the post can be disarmed by the FortiGuard CDR (content disarm and reconstruction) service.

@@ -1,0 +1,5 @@
+
+Alternatively, they can load infected, pirated copies onto existing warez sites.
+That is how the Swarez loader gets distributed.
+Users who try to download, say, cracks for Minecraft get sent through a long chain of redirects to a page with a ZIP archive, inside of which is another password-protected ZIP and a text file with a key.
+Unzipping the archive loads Swarez on the unfortunate gamer’s device, where it proceeds to download Taurus spyware, a Trojan that takes screenshots and steals cryptowallets, desktop files, and passwords and other data stored in browsers.

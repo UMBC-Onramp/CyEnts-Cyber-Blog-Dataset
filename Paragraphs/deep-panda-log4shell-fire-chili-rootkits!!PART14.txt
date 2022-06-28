@@ -1,0 +1,5 @@
+
+When found, the ActiveProcessLinks offset is also easily located as it is the next field in the EPROCESS structure.
+The older rootkit samples use the hiding mechanism on Windows 8 and below, while the newer samples use it on only Windows 7 and below.
+By default, the global process list is initialized with the path *\\qwerty.exe .
+However, we have not observed any file with this name related to the campaign.

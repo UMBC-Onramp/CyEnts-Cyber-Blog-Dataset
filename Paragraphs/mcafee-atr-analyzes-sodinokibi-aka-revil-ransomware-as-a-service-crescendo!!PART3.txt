@@ -1,0 +1,4 @@
+
+We noticed some of our honeypot RDP servers were attacked by Persian-speaking actors that were actively harvesting credentials.
+Our analysis of these attacks led us to various Persian underground channels offering the same tools we observed appearing in Sodinokibi intrusions.
+Some of these tools are closed source and custom made, originating from within the channels in our analysis.

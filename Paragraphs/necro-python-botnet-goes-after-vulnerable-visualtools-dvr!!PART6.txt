@@ -1,0 +1,5 @@
+
+It uses the DGA domain to host campaign.js Necro injects javascript code to html, htm, php and .js files found on the compromised server.
+It uses the DGA domain to host campaign.js We also noted a change in its TOR Socks proxies.
+When the bot receives the “ torflood ” command, it uses a set of TOR proxies for its DDOS attacks.
+New Tor Proxies [‘107.150.8.170:9051’, ‘95.217.251.233:1080’, ‘5.130.184.36:9999’, ‘83.234.161.187:9999’, ‘185.186.240.37:9119’, ‘5.61.53.57:9500’, ‘23.237.60.122:9051’, ‘185.82.217.167:9051’, ‘78.153.5.183:666’, ‘51.210.202.187:8425’, ‘85.159.44.163:9050’, ‘217.12.221.85:9051’, ‘130.61.153.38:9050’, ‘142.93.143.155:9010’, ‘8.209.253.198:9000’, ‘127.0.0.1:9050’]

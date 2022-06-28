@@ -1,0 +1,71 @@
+Newspapers have the ability to do more than simply keep us current with worldly affairs; we can use them to squash bugs!
+
+Yet, as we move from waiting on the newspaper delivery boy to reading breaking news on e Papers, we lose the subtle art of bug squashing.
+
+Instead, we end up exposing ourselves to dangerous digital bugs that can affect our virtual worlds.
+
+This is exactly what happened to visitors of one of the top five news sites of China.
+
+Any users running Internet Explorer (IE) who navigated to the website may have been exposed to an old, yet persistent VBScript worm that has the ability to self-replicate recursively from infected machines.
+
+Incidentally, the major actors involved with this old campaign have been taken down, yet traces of their injected recursive malware have still managed to sneak on to one of the highest browsed sites in China.
+
+The FireEye Dynamic Threat Intelligence (DTI) first discovered that the site was compromised and used to host VBS/Ramnit on Jan. 28, 2016.
+
+We can confirm that the infection is still live as of the time of this writing.
+
+IE users who visit the site may be compromised if they browse to a specific page (paperindex[.]htm) and click ‘Yes’ to run ActiveX, which may appear to be safe since the website is familiar and popular.
+
+There is no exploit used for infection, simply social engineering and errant clicks.
+
+As shown in Figure 1, a malicious VBScript is appeneded after the HTML body.
+
+Upon landing on this page, the victim’s browser will load the news content while it executes a malicious ActiveX component in the background.
+
+Figure 1:
+
+Legitimate HTML page appended with malicious VBScript As shown in Figure 2 and Figure 3, the VBScript drops a binary named “svchost.exe” in the %TEMP% folder and executes it upon successful ActiveX execution.
+
+In a case where the system is compromised, it also tries to connect to a CnC server, fget-career[.]com, which has been involved in campaigns for this trojan before.
+
+Figure 2:
+
+The VBScript drops the binary in the %TEMP% folder and executes it Figure 3:
+
+The full path to “svchost.exe” (using Internet Explorer 11 on Windows 7) Successful execution of the VBScript and the delivery of W32.Ramnit onto the victim’s machine depends on the user’s browser, as well as the browser’s setting.
+
+Since Chrome and Firefox do not support client-side VBScript, only IE users are susceptible to this attack.
+
+Fortunately, recent versions of IE do not run code automatically by default.
+
+Instead, users will see two popup warnings when the browser is rendering potentially dangerous objects such as ActiveX components, as shown in Figure 4 and Figure 5.
+
+Figure 4:
+
+First warning for blocked content in IE 11 Figure 5: Second warning for blocked content in IE 11 Only when the victim clicks on “Yes” will the browser execute the blocked content.
+
+In this case, the IE executes the VBScript, drops the payload, and executes it in the background while the user simply sees the usual news page.
+
+As long as users click “No” to disallow ActiveX components, they will remain safe from W32.Ramnit.
+
+However, this type of social engineering continues to be successful.
+
+When a legitimate site is compromised to host exploits or malware, the positive reputation of the site is leveraged to trick users into clicking “Yes” and becoming infected.
+
+The potential impact of this particular threat is compounded by the fact that the compromised site is ranked in the Alexa Top 100 for most visited sites internationally, and is in the Top 25 for most popular websites in China [1].
+
+FireEye appliances detect this infection at multiple levels.
+
+FireEye’s multiflow detection traces out the complete attack chain, as well as CnC communication.
+
+While the CnC host has been suspended for a long time, the worm’s presence alone can be a pain for the victim because it adds itself into all HTML files that it can access.
+
+Additionally, it adds itself to the startup registry and impacts the machine’s performance.
+
+So the question that you need to ask yourself is this: If a Top 100 Alexa domain is still infected by this veteran malware, are you?
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

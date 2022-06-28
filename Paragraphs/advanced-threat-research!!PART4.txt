@@ -1,0 +1,8 @@
+
+A CTB Locker affiliate server.
+An example of CTB Locker source code.
+Besides the use of an affiliate server in CTB Locker’s infrastructure, two other components complete the setup: a gateway server and a payment server.
+Attacks Begin to Grow During 2016, a massive spam campaign struck the Netherlands.
+Emails in Dutch seemed to originate from one of the largest telco providers.
+The emails claimed to have the latest bill attached.
+There was no bill, of course, rather CTB Locker asking for around $400USD of ransom to return files.

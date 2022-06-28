@@ -1,0 +1,6 @@
+
+argv[1]; sourceProfile.cbDataSize =
+(
+strlen(argv[1]) + 1); hSrcProfile = OpenColorProfileA(&sourceProfile, PROFILE_READ, FILE_SHARE_READ, OPEN_EXISTING); if (nullptr == hSrcProfile) { return -1; } hProfileList[0] = hSrcProfile; hProfileList[1] = hDstProfile; hColorTransform = CreateMultiProfileTransform
+( hProfileList, 2, dwIntent, 2, USE_RELATIVE_COLORIMETRIC | BEST_MODE, INDEX_DONT_CARE );
+if (nullptr == hColorTransform) { return -1; } DeleteColorTransform(hColorTransform); CloseColorProfile(hSrcProfile); CloseColorProfile(hDstProfile); return 0; } Listing 1: Harness Hunting for Corpus and Dictionary Sites offering multiple color profiles can be found all over the internet.

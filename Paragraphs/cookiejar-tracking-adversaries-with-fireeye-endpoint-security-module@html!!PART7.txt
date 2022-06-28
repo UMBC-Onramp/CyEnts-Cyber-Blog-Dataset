@@ -1,0 +1,6 @@
+
+The adversary leveraged one of these web shells to install a malicious Apache module and restart Apache for the module to take effect.
+Mandiant has classified this module as COOKIEJAR (see the Malware Appendix at the end of the post for more details).
+The COOKIEJAR module enabled the adversary to proxy through the compromised server to any arbitrary IP/port pair within the customer’s internal network, see Figure 4.
+Figure 4: PCAP data Using this proxied access to the customer’s network, the adversary leveraged previously compromised domain credentials to connect to multiple Windows servers using SMB.
+Due to the use of the proxy to connect into the customer’s network, the hostname of the adversary’s workstation being used to conduct the attack was also passed into the logon events.

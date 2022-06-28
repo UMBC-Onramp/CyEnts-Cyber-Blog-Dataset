@@ -1,0 +1,12 @@
+
+While many organizations are now focusing more on perimeter defenses and two-factor authentication after recent public examples of password reuse or VPN appliance exploitation, monitoring on endpoints is often overlooked or left to traditional antivirus.
+A well-rounded security program is essential to mitigate risk from sophisticated groups such as UNC2465 as they continue to adapt to a changing security landscape.
+Indicators Supply Chain/Trojanized Nullsoft Installer/SmartPSS MD5: 1430291f2db13c3d94181ada91681408
+Filename: SMARTPSS-Win32_ChnEng_IS_V2.002.0000007.0.R.181023-General-v1.exe Zip MD5: 54e0a0d398314f330dfab6cd55d95f38 Supply Chain/Trojanized Nullsoft Installer/SVStation MD5: e9ed774517e129a170cdb856bd13e7e8 Filename: SVStation_Win64-B1130.1.0.0.exe Intermediate Stage URL: hxxp://sdoc[.]xyz/ID-508260156241 IP: 185.92.151[.]150 SMOKEDHAM LOADER MD5: f075c2894ac84df4805e8ccf6491a4f4 (Gbdh7yghJgbj3bb.html) MD5: 05d38c7e957092f7d0ebfc7bf1eb5365 SMOKEDHAM MD5: 127bf1d43313736c52172f8dc6513f56 (in-memory from f075c2894ac84df4805e8ccf6491a4f4)
+Host: max-ghoster1.azureedge[.]net (actual C2) MD5: 9de326bf37270776b78e30d442bda48b (MEtNOcyfkXWe.html)
+Host: atlant20.azureedge[.]net (actual C2) MD5: b06319542cab55346776f0358a61b3b3 (in-memory from 05d38c7e957092f7d0ebfc7bf1eb5365)
+Host: skolibri13.azureedge[.]net (actual C2)
+NGROK MD5: e3bc4dd84f7a24f24d790cc289e0a10f (legitimate NGROK renamed to conhost.exe) MD5: 84ed6012ec62b0bddcd18058a8ff7ddd (VirtualHost.vbs) UltraVNC IP/Port: 81.91.177[.]54:7234 (using legitimate ULTRAVNC 23b89bf2c2b99fbc1e232b4f86af65f4)
+BEACON Host: w2doger[.]xyz IP: 185.231.68.102 MD5: a9fa3eba3f644ba352462b904dfbcc1a (shellcode)
+Detecting the Techniques FireEye detects this activity across our platforms.
+The following contains specific detection names that provide indicators associated with this activity.

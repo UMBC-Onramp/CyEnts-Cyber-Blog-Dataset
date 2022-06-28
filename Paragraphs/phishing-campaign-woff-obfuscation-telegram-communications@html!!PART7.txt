@@ -1,0 +1,4 @@
+
+We were able to access one of the Telegram channels controlled by the attacker as shown in Figure 10.
+The sensitive information being sent in the chat includes IP addresses and credit card data.
+Figure 10: Telegram channel with stolen information Conclusion Attackers (and especially phishers) are always on the hunt for new ways to evade detection by security products.

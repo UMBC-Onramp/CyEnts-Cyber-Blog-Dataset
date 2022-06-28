@@ -1,0 +1,9 @@
+
+Since the debugger already has a API address look up table, this gives a crude yet quick method to get the information we need.
+Figure 4: ApiLogger from iDefense MAP injecting a data file into a process and examining results in debugger
+From here we can extract the resolved symbols and write a script to integrate them into our IDB.
+This works, but it is bulky and involves several steps.
+Our Tool
+What we really want is to build our own symbol lookup table for a process and create a streamlined way to access it from our scripts.
+The first question is: How can we build our own lookup table of API addresses to API names?
+To resolve this information, we need to follow some steps: enumerate all of the DLLs loaded into a process for each DLL, walk the export table and extract function name and RVA calculate API entrypoint based on DLL base address and export RVA build a lookup table based on all of this information While this sounds like a lot of work, libraries are already available that handle all of the heavy lifting.

@@ -1,0 +1,9 @@
+FortiGuard Labs Research Affected Platforms: Windows Impacted Users: Windows Users Impact: Collects sensitive information from victim machines Severity Level:
+Critical During the past month, FortiEDR detected a campaign by Deep Panda, a Chinese APT group.
+The group exploited the infamous Log4Shell vulnerability in VMware Horizon servers.
+The nature of targeting was opportunistic insofar that multiple infections in several countries and various sectors occurred on the same dates.
+The victims belong to the financial, academic, cosmetics, and travel industries.
+Following exploitation, Deep Panda deployed a backdoor on the infected machines.
+Following forensic leads from the backdoor led us to discover a novel kernel rootkit signed with a stolen digital certificate.
+We found that the same certificate was also used by another Chinese APT group, named Winnti, to sign some of their tools.
+In this blog, we share our analysis of the flow of infection, the backdoor, and new rootkit, along with our attribution of this campaign to these Chinese nation-state threat actors.

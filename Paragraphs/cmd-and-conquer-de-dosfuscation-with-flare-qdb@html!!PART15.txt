@@ -1,0 +1,10 @@
+
+Figure 11:
+Command interpreter with fDumpParse set Microsoft probably inserted the fDumpParse flag so developers could debug issues with cmd.exe.
+Unfortunately, as nifty as this is, it has drawbacks for bulk de-obfuscation: This output is harder to read than plain commands, because it dumps the tree in preorder traversal rather than inorder like it was typed.
+Output copied from the console may contain extraneous line breaks depending on the console host program’s text wrapping behavior.
+Scrolling in the command interpreter to read or copy output can be tedious.
+The console buffer is limited, so not everything may be captured.
+Malicious script authors can still use the CLS command to clear the screen and make all the fDumpParse output disappear.
+Gratuitous joining of commands with command separators (as found in XYNT.bat) yields unreadable ASTs that exceed the console width and wrap around, as in Figure 12.
+Figure 12: fDumpParse result exceeding console width Consequently, fDumpParse is not ideal for de-obfuscating large, malicious batch files; however, it is still interesting and useful for de-obfuscating short scripts or one-off commands.

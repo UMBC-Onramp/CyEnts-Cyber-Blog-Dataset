@@ -1,0 +1,9 @@
+
+Thus victims will need to find a way to unsubscribe from the premium-rate service, which may not be easy if the subscription occurred silently or if the app does not provide that information.
+Also, the fact that WAP-billing fraud does not require sending an SMS message to a premium-rate number makes it easier to commit.
+Cybercriminals need to only silently subscribe users by forcing them to load the WAP-billing service page and click on buttons.
+For these reasons we expect that mobile billing fraud will continue to target Android users.
+McAfee Mobile Security detects this threat as Android/Sonvpay.
+To protect yourselves from this and similar threats, employ security software on your mobile devices, check user reviews for apps on Google Play, and do not accept or trust apps that ask for payment functionality via SMS messages as soon as the app is opened or without any interaction.
+
+

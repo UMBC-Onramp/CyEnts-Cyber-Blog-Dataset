@@ -1,0 +1,6 @@
+
+k
+The result of GetTickCount() Table 1: GET request parameters If the returned response is 200, then the malware sends another GET request (Figure 10) with the following parameters (Figure 11).
+Format = \"?e=%d&&t=%d&&k=%d\" Figure 10:
+Second GET request Figure 11:
+Second GET request parameters formation Table 2 shows information about the parameters.

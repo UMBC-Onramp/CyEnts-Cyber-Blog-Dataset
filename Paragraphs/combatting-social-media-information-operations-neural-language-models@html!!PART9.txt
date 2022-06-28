@@ -1,0 +1,5 @@
+
+For the set of experiments presented in this blog post, this additional training data was obtained from the following open source datasets of identified accounts operated by Russia’s famed Internet Research Agency (IRA) “troll factory”: NBCNews , over 200,000 tweets posted between 2014 and 2017 tied to IRA “malicious activity.”
+FiveThirtyEight , over 1.8 million tweets associated with IRA activity between 2012 and 2018; we used accounts categorized as Left Troll, Right Troll, or Fearmonger.
+Twitter Elections Integrity , almost 3 million tweets that were part of the influence effort by the IRA around the 2016 U.S. presidential election.
+Reddit Suspicious Accounts , consisting of comments and submissions emanating from 944 accounts of suspected IRA origin.

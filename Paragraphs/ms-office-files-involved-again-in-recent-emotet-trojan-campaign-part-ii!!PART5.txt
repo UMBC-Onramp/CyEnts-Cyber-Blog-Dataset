@@ -1,0 +1,4 @@
+
+Its primary purposes are to extract and execute the final functional module that steals sensitive data from the victim’s device and to submit the stolen data to its C2 server, which will be discussed later in this analysis.
+Figure 1.2 shows where the thread function ASM code calls the entry point of the deployed thread-module.
+Thread-Module — Performs Process Hollowing The thread-module proceeds to decrypt a PE file, the final functional module, from its .text section into memory.

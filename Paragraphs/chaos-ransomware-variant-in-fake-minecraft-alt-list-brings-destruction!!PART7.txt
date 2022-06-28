@@ -1,0 +1,5 @@
+
+The malware also changes the desktop wallpaper, perhaps to add more pressure to the victim to pay the ransom.
+Conclusion - Chaos Ransomware Variant There is nothing fancy about this Chaos ransomware variant nor its infection vector.
+However, despite its cheap ransom demand, its ability to destroy data and render it unrecoverable makes it more than a mere prank to annoy Japanese Minecraft gamers.
+Ransomware is still ransomware, and in this case, the victim may not be able to get their original files back, with or without making a ransom payment.

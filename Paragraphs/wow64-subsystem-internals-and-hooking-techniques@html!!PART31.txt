@@ -1,0 +1,4 @@
+
+Figure 20: call_function32 invokes shellcode to call a 32-bit callback from the 64-bit logging DLL From within the 32-bit callback any desired MITM operations can be performed, but restrictions exist on which APIs are callable.
+Due to the context saving that the WOW64 layer performs, 32-bit APIs that would re-enter the WOW64 layer may not be called as the context values would be corrupted.
+We are therefore limited to only APIs that won’t re-enter WOW64, which are those that are exported from the 64-bit ntdll.

@@ -1,0 +1,7 @@
+
+Operation Tovar, in which law enforcement agencies took down the infrastructure responsible for spreading CryptoLocker, created a need for more malware—CTB Locker and CryptoWall malware families helped to fill the gap.
+In June 2014, the CTB Locker authors began to advertise the malware family on the underground scene at a cost of $3,000USD, where people could buy the first versions for $1,500USD.
+The authors also offered an affiliate program, which made CTB Locker infamous.
+By sharing a percentage of the received ransoms, the affiliates ran the greater risk—because they had to spread the ransomware—but they also enjoyed the higher profits.
+By using exploit kits and spam campaigns, the malware was distributed all over the world, mostly targeting “Tier 1” countries, those in which the victims could afford to pay and most likely would pay the ransom.
+Midway through 2015, we gained unique information from an affiliate server that helped us tremendously in the subsequent investigations.

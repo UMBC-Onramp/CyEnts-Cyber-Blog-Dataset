@@ -1,0 +1,13 @@
+
+Permission Groups Discovery T1018:
+Remote System Discovery T1016:
+System Network Configuration Discovery Lateral Movement T1076:
+Remote Desktop Protocol T1105:
+Remote File Copy Collection T1005:
+Data from Local System Command and Control T1043:
+Commonly Used Port T1105:
+Remote File Copy T1071: Standard Application Layer Protocol Exfiltration T1002: Data Compressed T1048:
+Exfiltration Over Alternative Protocol Impact T1486: Data Encrypted for Impact T1489:
+Service Stop MAZE Group 2 MITRE ATT&CK Mapping ATT&CK Tactic Category Techniques Initial Access T1193:
+Spearphishing Attachment Execution T1059: Command-Line Interface T1086:
+PowerShell T1085: Rundll32 T1064:

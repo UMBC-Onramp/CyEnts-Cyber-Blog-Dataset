@@ -1,0 +1,6 @@
+
+The developer community has been searching for alternatives, and with some success.
+A set of solutions now offer a more efficient iOS app deployment experience, giving app developers the ability to update their code as they see fit and deploy patches to users’ devices immediately.
+While these technologies provide a more autonomous development experience, they do not meet the same security standards that Apple has attempted to maintain.
+Worse, these methods might be the Achilles heel to the walled garden of Apple’s App Store.
+In this series of articles, FireEye mobile security researchers examine the security risks of iOS apps that employ these alternate solutions for hot patching, and seek to prevent unintended security compromises in the iOS app ecosystem.

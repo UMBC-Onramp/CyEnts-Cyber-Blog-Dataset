@@ -1,0 +1,7 @@
+
+This shellcode is decrypted in memory through EQENDT32.EXE.
+Figure 2 shows the decryption mechanism used in EQENDT32.EXE.
+Figure 2:
+Shellcode decryption routine The decrypted shellcode is dropped as a Microsoft Word plugin WLL (MD5: D90E45FBF11B5BBDCA945B24D155A4B2) into C:\\Users\\ADMINI~1\\AppData\\Roaming\\Microsoft\\Word\\STARTUP (Figure 3).
+Figure 3:
+Payload dropped as Word plugin Technical Details DllMain of the dropped payload determines if the string WORD.EXE is present in the sample’s command line.

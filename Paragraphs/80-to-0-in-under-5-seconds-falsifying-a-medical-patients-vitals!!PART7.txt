@@ -1,0 +1,6 @@
+
+The first test was to boot only the central monitor station and observe any network traffic.
+In the preceding screenshot a few basic observations stand out.
+First, we can see that the central station is sending User Datagram Protocol (UDP) broadcast packets every 10 seconds with a source and destination port of 7000.
+We can also see clear-text ASCII in the payload, which provides the device name.
+After collecting and observing these packets for several minutes, we can assume this is standard behavior.

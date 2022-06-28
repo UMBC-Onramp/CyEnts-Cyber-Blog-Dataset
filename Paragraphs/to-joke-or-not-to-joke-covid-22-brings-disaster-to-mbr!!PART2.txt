@@ -1,0 +1,4 @@
+
+While the malware itself is not sophisticated, it does take several actions designed to put fear into the victim before inducing true panic.
+But before that, when first manually running the file, it asks whether the potential victim wants to install Covid-22 on their machine, as if it were an application.
+Once the victim proceeds with the installation, the malware drops several malicious files before forcefully rebooting the machine.

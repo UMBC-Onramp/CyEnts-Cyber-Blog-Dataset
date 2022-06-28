@@ -1,0 +1,8 @@
+
+The initial research was on the CTB Locker ransomware but based on information from the U.S. Secret Service, it was determined that the same suspected gang was also linked to distribution of Cerber ransomware—another major family.
+The Arrests During the operation in East Romania, six houses were searched whereby the investigators seized a significant amount of hard-drives, laptops, external-storage, crypto-currency mining rigs, and hundreds of SIM cards.
+Suspects were arrested for allegedly spreading CTB Locker ransomware, and other suspects allegedly responsible for spreading Cerber were arrested at the airport in Bucharest.
+Watch video of arrests.
+The law enforcement action emphasizes the value of public-private partnerships and underscores the determination behind the McAfee mantra “Together is power.”
+
+

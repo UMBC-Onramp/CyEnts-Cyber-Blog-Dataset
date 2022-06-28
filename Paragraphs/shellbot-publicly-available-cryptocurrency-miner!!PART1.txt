@@ -1,0 +1,4 @@
+IBM Security X-Force researchers studied the botnet activity of a malware variant that is used by cyber crime groups to illegally mine cryptocurrency.
+Examining two ShellBot botnets that appeared in attacks honeypots caught, the X-Force team was able to infect its own devices and become part of the live botnets, thereby gaining insight into how these botnets were managed internally.
+This post provides the details on IBM’s research and sheds light on the growing threat of cryptomining botnets to enterprise networks.
+While seeing computational resources abused by cryptojacking operations is enough of a problem, the riskier consequence of the infection is that malware begets malware.

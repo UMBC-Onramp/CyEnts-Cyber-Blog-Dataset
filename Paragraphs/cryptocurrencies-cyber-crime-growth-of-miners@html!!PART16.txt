@@ -1,0 +1,4 @@
+
+They estimated that this equated to electrical costs per month of $10.50 USD in the United States, $5.45 USD in Singapore, and $12.30 USD in Germany.
+Cryptojacking can also highlight often overlooked security holes in a company's network.
+Organizations infected with cryptomining malware are also likely vulnerable to more severe exploits and attacks, ranging from ransomware to ICS-specific malware such as TRITON .

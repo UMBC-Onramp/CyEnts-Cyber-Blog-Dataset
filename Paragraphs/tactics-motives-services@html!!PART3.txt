@@ -1,0 +1,4 @@
+
+Security incidents at critical infrastructure such as electric power grids, utilities and manufacturing companies can affect the lives of hundreds of thousands of people.
+Our new Industrial Control Systems (ICS) Security Gap Assessment is specifically focused on helping these industries - and others that use SCADA systems - to assess their existing security processes for industrial control systems.
+The service helps identify security GAPs and provides specific recommendations to close those GAPs and safeguard critical infrastructure.

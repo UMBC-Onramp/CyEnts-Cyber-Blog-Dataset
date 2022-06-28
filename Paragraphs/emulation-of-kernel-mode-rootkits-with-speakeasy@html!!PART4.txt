@@ -1,0 +1,8 @@
+
+Additionally, any system threads or work items that are created are sequentially emulated in order to get as much code coverage as possible.
+Emulating a Kernel Mode Implant
+In this blog post, we will show an example of Speakeasy’s effectiveness at emulating a real kernel mode implant family publicly named Winnti.
+This sample was chosen despite its age because it transparently implements some classic rootkit functionality.
+The goal of this post is not to discuss the analysis of the malware itself as it is fairly antiquated.
+Rather, we will focus on the events that are captured during emulation.
+The Winnti sample we will be analyzing has SHA256 hash c465238c9da9c5ea5994fe9faf1b5835767210132db0ce9a79cb1195851a36fb and the original file name tcprelay.sys .

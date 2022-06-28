@@ -1,0 +1,3 @@
+Apple has released an urgent update for iOS and iPadOS that fixes the CVE-2022-22620 vulnerability.
+They recommend updating devices as soon as possible, as the company have reason to believe that the vulnerability is already being actively exploited by unknown actors.
+Why vulnerability CVE-2022-22620 is dangerous As usual, Apple experts do not disclose the details of the vulnerability until the investigation is completed, and the majority of users have the patches installed.

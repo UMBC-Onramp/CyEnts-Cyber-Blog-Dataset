@@ -1,0 +1,7 @@
+
+DARKSIDE
+RaaS
+In mid-May 2021, Mandiant observed multiple threat actors cite an announcement that appeared to be shared with DARKSIDE RaaS affiliates by the operators of the service.
+This announcement stated that they lost access to their infrastructure, including their blog, payment, and content distribution network (CDN) servers, and would be closing their service.
+The post cited law enforcement pressure and pressure from the United States for this decision.
+Multiple users on underground forums have since come forward claiming to be unpaid DARKSIDE affiliates, and in some cases privately provided evidence to forum administrators who confirmed that their claims were legitimate.

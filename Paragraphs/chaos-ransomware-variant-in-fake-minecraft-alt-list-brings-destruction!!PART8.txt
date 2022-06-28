@@ -1,0 +1,10 @@
+
+The best advice is for players to stay off suspicious gaming cheat sites and simply enjoy the game the way it was meant to be played.
+Fortinet Protections FortiGuard Labs has AV coverage in place for all of the malicious file samples in the report as: MSIL/Filecoder.
+AGP!tr.ransom
+Due to the ease of disruption, damage to daily operations , potential impact to the reputation of an organization, and the unwanted destruction or release of personally identifiable information (PII), etc., it is important to keep all AV and IPS signatures up to date.
+IOCs SHA2: 1a00c3f9173ee4c6f944e2dcebe44ca71f06455951728af06eba0f945e084907 aacce549a756cd942ee79f57625d0902ce79315f4e4bfb1381afa208599d7be5 Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+

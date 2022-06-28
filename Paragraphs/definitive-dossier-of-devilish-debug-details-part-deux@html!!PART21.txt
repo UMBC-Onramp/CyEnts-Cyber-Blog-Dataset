@@ -1,0 +1,5 @@
+
+Once again, this makes some intuitive sense for finding malware authors.
+Training and evaluating decision trees with various parameters turned out to be a hugely productive exercise in discovering potential new signature terms and logic.
+Classification Accuracy and Findings Since we now had a large dataset of PDB paths and features, we wanted to see if we could train a traditional classifier to separate good files from bad.
+Using a Random Forest with some tuning, we were able to achieve an average accuracy of 87% over 10 cross validations.

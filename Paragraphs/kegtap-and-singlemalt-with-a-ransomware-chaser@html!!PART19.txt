@@ -1,0 +1,7 @@
+
+These passwords are likely old and insecure.
+Make a best effort to reset as many of these accounts as possible to long and complex passwords.
+In cases where it is possible, migrate to MSAs and gMSAS for automated rotation.
+Prevent the usage of privileged accounts for lateral movement.
+Use GPOs to restrict the ability for privileged accounts such as Domain Administrators and privileged service accounts from initiating RDP connections and network logins.
+Actors often pick just a few accounts to use for RDP; by limiting the number of potential accounts, you provide detection opportunities and opportunities to slow the actor.

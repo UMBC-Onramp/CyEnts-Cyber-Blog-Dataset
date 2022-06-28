@@ -1,0 +1,7 @@
+
+Ransom Demands Increasing The fact that ransom demands are increasing isn’t a coincidence.
+Per Bloomberg, the average ransom demand increased to somewhere between $50 million and $70 million over the first half of 2021.
+Even so, ransomware victims only ended up paying between $10 million and $15 million on average.
+The reality is that victims like the U.S. insurance company discussed above succeed in negotiating the ransom payment down.
+Not only that, but many victims have cyber insurance policies that cover some, if not all, of the cost of paying a ransom.
+Ransomware actors understand that many of their victims have cyber insurers paying with or for them.

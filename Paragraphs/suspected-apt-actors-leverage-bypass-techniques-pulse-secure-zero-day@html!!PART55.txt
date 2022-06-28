@@ -1,0 +1,17 @@
+
+0A 61 75 74 68 4E 75 6D 62 65 72 05 01
+3E 00 AUTHNUM_END_FLAG:
+3C 2F 05 0A 61 75 74 68 4E 75 6D 62 65 72 05 01
+3E 00
+If all these sequences are found, the data between the start and end is extracted and eventually formatted and written to the file /tmp/dsserver-check.statementcounters .
+The approximate format of this data is: Name:<username
+> ||
+Pwd:<password>
+||
+AuthNum:<authnumber>\\n The sample replaces the following URL encoded values with their ascii representation for the password: &amp; ->  & &lt;  ->  < &gt;  ->  >
+PACEMAKER Launcher Utility As part of our investigation into PACEMAKER we were able to retrieve a simple bash script responsible for launching the credential stealer.
+The launcher script hash SHA256 4c5555955b2e6dc55f52b0c1a3326f3d07b325b112060329c503b294208960ec launches PACEMAKER from a hardcoded path with options specifying a 16MB memory read size and a memory scan interval of 2 seconds, with a variable self-kill time.
+#!/bin
+/bash /home/bin/memread -t $1 -m 16 -s 2 & THINBLOOD Log Wiper Utility The file dsclslog with SHA256 88170125598a4fb801102ad56494a773895059ac8550a983fdd2ef429653f079 is a log wiper utility.
+The sample provides the usage information: Usage: dsclslog -f
+[events|access] -r [Regex1,Regex2,Regex3,...]

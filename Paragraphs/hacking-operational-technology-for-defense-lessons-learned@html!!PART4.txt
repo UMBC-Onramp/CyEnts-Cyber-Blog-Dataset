@@ -1,0 +1,8 @@
+
+Visit our website to learn more about Mandiant’s OT security practice or contact us directly to request Mandiant services or threat intelligence .
+Building the Foundation: Information Gathering for IT-OT Network Propagation Targeted OT attacks attempting to cause physical impacts require planning.
+A sophisticated actor who is motivated to disrupt or modify an industrial process from a public network will necessarily need to maintain access to the victim environment and remain undetected for enough time to accomplish their objective.
+Throughout this time, the actor will strive to learn about the control process to formulate the attack, figure out how to pivot to the OT systems and bypass security controls, and sometimes even develop or deploy custom OT malware.
+Similar to the techniques used by TEMP.Veles to reach the OT network during the TRITON incident , Mandiant’s experience during red team engagements highlights that collecting information from IT network assets plays a crucial role in targeted OT attacks.
+As a result, the internal reconnaissance phase for OT targeted attacks begins in the enterprise network, where the actor obtains knowledge and resources to propagate from an initial compromise in the IT network to remote access in the OT network.
+Detailed information collected about the target, their security operations, and their environment can also support an actor's attempts at remaining undetected while expanding operations.

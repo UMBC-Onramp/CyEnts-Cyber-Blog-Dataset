@@ -1,0 +1,3 @@
+
+The initial wave of Gitpaste-12 attacks was last seen on October 27, when the GitHub repository hosting the bulk of the worm’s payloads was removed.
+On November 10, we discovered a new round of attacks: Network traffic from the new attacks The wave of attacks used payloads from yet another GitHub repository, which contained a Linux cryptominer (“ls”), a list of passwords for brute-force attempts (“pass”) and a statically linked Python 3.9 interpreter of unknown provenance.

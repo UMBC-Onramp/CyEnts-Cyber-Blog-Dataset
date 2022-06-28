@@ -1,0 +1,4 @@
+FireEye has just released its 2013 Advanced Threat Report (ATR), which provides a high-level overview of the computer network attacks that FireEye discovered last year.
+In this ATR, we focused almost exclusively on a small, but very important subset of our overall data analysis – the advanced persistent threat (APT).
+APTs, due to their organizational structure, mission focus, and likely some level of nation-state support, often pose a more serious danger to enterprises than a lone hacker or hacker group ever could.
+Over the long term, APTs are capable of cyber attacks that can rise to a strategic level, including widespread intellectual property theft, espionage, and attacks on national critical infrastructures.

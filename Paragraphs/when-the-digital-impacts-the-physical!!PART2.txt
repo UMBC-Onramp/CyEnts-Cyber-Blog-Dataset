@@ -1,0 +1,6 @@
+
+Large corporations we trust with our data are violating that trust by collecting our data unknowingly, and even tracking our locations without consent.
+Cybercrime is no longer just cyber, and it can compromise a lot more than just data.
+When you think of one’s well-being, physical health often comes to mind.
+Hospitals, health care, and medical tools and devices have evolved to become members of an interconnected ecosystem.
+Many health care systems connect to the internet to operate, the same holds true with numerous medical devices such as pacemakers.

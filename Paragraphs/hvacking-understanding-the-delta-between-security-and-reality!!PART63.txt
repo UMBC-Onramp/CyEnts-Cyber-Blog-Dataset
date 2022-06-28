@@ -1,0 +1,4 @@
+
+Unfortunately, not every function was as simple as canioWriteOutput.
+For example, when reversing the functions used to control analog outputs, we noticed that they utilized custom data structures to hold various information about the analog device, including its state.
+As a result, we had to first reverse the layout of these data structures to understand how the analog information was being sent to the outputs before we could modify their state.

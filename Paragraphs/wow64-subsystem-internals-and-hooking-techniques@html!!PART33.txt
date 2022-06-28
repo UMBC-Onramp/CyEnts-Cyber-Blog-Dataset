@@ -1,0 +1,5 @@
+
+The result is clean looking callback stubs that function exactly how inline hooks might, but with zero assembly modifications required.
+Arguments can easily be manipulated as well, but the return status may not be modified unless a little stack walk hackery is implemented.
+The only other consideration is that the wow64log DLL itself needs to be carefully crafted to not build with any CRT mechanisms.
+The flags required are: Disable CRT with /NODEFAULT LIB (all C APIs now unavailable), set a new entry point name to not init CRT NtDllMain Disable all CRT security routines /GS-

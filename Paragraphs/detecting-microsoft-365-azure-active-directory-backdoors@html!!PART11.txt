@@ -1,0 +1,6 @@
+
+IssuerURI of the ADFS server and ADFS Signing certificate.
+This can be obtained from an ADFS server when directly logged into the server or remotely querying the server via an privileged account.
+Once an attacker has collected the necessary information, using the AADInternals Open-AADIntOffice365Portal command, a security token for the user can be generated granting an attacker access to M365 (Figure 5).
+Figure 5: AADInternals Open-AADIntOffice365Portal command Method 2:
+Cloud Compromise If an attacker has a compromised an M365 Global Administrator account, using their own infrastructure, an attacker can use their administrative access to collect user information and reconfigure the tenant to establish their backdoor.

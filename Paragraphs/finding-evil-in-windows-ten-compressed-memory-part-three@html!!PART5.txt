@@ -1,0 +1,12 @@
+
+These tools may cease to work after any given update.
+This is the case with the Windows kernel’s Store Manager component.
+Structures relied on to locate compressed data in RAM are constantly evolving.
+This requires some flexibility built into the plugins and a means of reducing the analysis time required to reconstruct these structures.
+Leveraging flare-emu To ease my Store Manager analysis efforts, I looked into Tom Bennett’s flare-emu utility .
+flare-emu can be viewed as the marriage of IDA Pro with the Unicorn emulation engine.
+The original use of the framework was to clean up Objective-C function call names due to ambiguity stemming from the unknown id argument for calls to objc_msgSend .
+Tom was able to use emulation to resolve the ambiguity and clean up his analysis environment.
+The value I saw in the framework was that the barrier to entry for using Unicorn was now lowered to a point where it could be used to rapidly prototype ideas.
+flare-emu handles PE loading, memory faults, and function calls while guaranteeing traversal over code you would like to reach.
+After analyzing a dozen Windows 10 kernels, I had become familiar enough with the process to begin automating the effort.

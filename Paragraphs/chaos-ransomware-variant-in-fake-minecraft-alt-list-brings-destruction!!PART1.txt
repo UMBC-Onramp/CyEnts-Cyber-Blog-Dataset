@@ -1,0 +1,3 @@
+FortiGuard Labs Threat Research Report Affected Platforms: Windows Impacted Parties: Japanese Minecraft Gamers Impact: Potential loss of files and money due to file encryption and destruction and paying ransom Severity Level: Medium Minecraft is one of the most popular digital games in the world.
+It was originally released in May 2009 by Swedish game developer Mojang Studios, which was acquired by Microsoft in 2014 for US $2.5 billion.
+Initially released for the Windows, Mac, and Linux platforms, the game is now available on 22 platforms including video game consoles and mobile devices, including Android and iOS.

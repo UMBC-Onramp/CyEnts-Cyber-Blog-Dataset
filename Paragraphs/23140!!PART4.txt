@@ -1,0 +1,8 @@
+
+Sometimes the number sits unobtrusively somewhere at the bottom of the text.
+Other times it is highlighted in red and repeated several times in the message.
+What happens if you call?
+Most likely the scammers will try to wangle your login credentials for some financial service or bank card details.
+Alternatively, they might try to trick you into transferring money or even installing a Trojan on your computer, which has been known to happen .
+The only limits are the scammers’ imagination and vishing skills.
+How to guard against such e-mails The particulars may change, but all scams have certain elements in common: the use of some sort of trick to get someone to do something.

@@ -1,0 +1,6 @@
+
+For example, last spring cybercriminals used a malicious advertisement SDK to infect APKPure, a popular alternative Android app store.
+Fortunately, its developers took security seriously, and released a clean version a day after we got in touch with them.
+A similar story happened with the popular WhatsApp mod FMWhatsApp: one of the versions of the app harbored the Triada Trojan inside an advertisement SDK.
+This Trojan is infamous for being very difficult to remove from an infected device.
+Moreover, Triada rarely comes alone and tends to download a bunch of other malicious apps onto the victim’s device.

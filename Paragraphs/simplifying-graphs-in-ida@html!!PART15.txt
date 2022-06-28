@@ -1,0 +1,5 @@
+
+For each command handler group node that we created, right click that node and select “SimplifyGraph -> Complement & expand group”.
+A result of complementing a single command handler node is shown in Figure 13, which is much easier to analyze.
+Figure 13:
+Group complement When done analyzing the current command handler, delete the complement group by right clicking the “Complement of group X” node and use IDA’s built-in “Ungroup nodes” command.

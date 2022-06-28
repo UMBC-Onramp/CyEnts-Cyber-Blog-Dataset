@@ -1,0 +1,5 @@
+
+An anonymized example of Logon Tracker data is shown in Figure 3: Figure 3:
+Logon Tracker data Armed with the suspicious hostname and potentially compromised username, Managed Defense then used Logon Tracker’s search functionality to determine the scope of systems potentially accessed by the adversary.
+The resulting investigation revealed that an Internet-facing Customer Relationship Management (CRM) application hosted on a Linux Apache web server had been compromised.
+Multiple web shells had been placed within web-accessible folders, allowing an adversary to execute arbitrary commands on the server.

@@ -1,0 +1,6 @@
+
+Registry Keys The rootkit hides registry keys from users using Microsoft’s Registry Editor.
+The code is based on an open-source project published by a Chinese developer.
+The HHIVE->GetCellRoutine functions of keys in the global registry keys list are replaced with a filter function.
+When the path of the querying process is *\\WINDOWS\\REGEDIT.EXE , the function simply returns 0 in place of the key node.
+By default, the global registry list is initialized with the rootkit’s registry key ( \\REGISTRY\\MACHINE\\SYSTEM\\CURRENTCONTROLSET\\SERVICES\\CRTSYS ) .

@@ -1,0 +1,8 @@
+
+This suggests the attacker was intent on causing a specific outcome beyond a process shutdown.
+Of note, on several occasions, we have observed evidence of long term intrusions into ICS which were not ultimately used to disrupt or disable operations.
+For instance, Russian operators, such as Sandworm Team, have compromised Western ICS over a multi-year period without causing a disruption.
+Summary of Malware Capabilities The TRITON attack tool was built with a number of features, including the ability to read and write programs, read and write individual functions and query the state of the SIS controller.
+However, only some of these capabilities were leveraged in the trilog.exe sample (e.g. the attacker did not leverage all of TRITON’s extensive reconnaissance capabilities).
+The TRITON malware contained the capability to communicate with Triconex SIS controllers (e.g. send specific commands such as halt or read its memory content) and remotely reprogram them with an attacker-defined payload.
+The TRITON sample Mandiant analyzed added an attacker-provided program to the execution table of the Triconex controller.

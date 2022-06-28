@@ -1,0 +1,4 @@
+
+Threat actors have been observed targeting mobile devices by hosting malicious cryptojacking apps on popular app stores and through drive-by malvertising campaigns that identify users of mobile browsers.
+The following are some real-world examples of mobile devices being used for cryptojacking:
+During 2014, FireEye iSIGHT Intelligence reported on multiple Android malware apps capable of mining cryptocurrency: In March 2014, Android malware named \"CoinKrypt\" was discovered, which mined Litecoin, Dogecoin, and CasinoCoin currencies.

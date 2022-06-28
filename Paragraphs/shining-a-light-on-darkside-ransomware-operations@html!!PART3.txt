@@ -1,0 +1,6 @@
+
+The origins of these incidents are not monolithic.
+DARKSIDE ransomware operates as a ransomware-as-a-service (RaaS) wherein profit is shared between its owners and partners, or affiliates, who provide access to organizations and deploy the ransomware.
+Mandiant currently tracks multiple threat clusters that have deployed this ransomware, which is consistent with multiple affiliates using DARKSIDE.
+These clusters demonstrated varying levels of technical sophistication throughout intrusions.
+While the threat actors commonly relied on commercially available and legitimate tools to facilitate various stages of their operations, at least one of the threat clusters also employed a now patched zero-day vulnerability.

@@ -1,0 +1,5 @@
+
+MS-OVBA’s file structure stores\nall VBA data in a hierarchy , which consists of structured\nstorage that contain different types of streams.
+VBA code in an Office\ndocument is stored in various module streams that consists of two\nparts: the PerformanceCache (also known as\nP-code), and the CompressedSourceCode .
+The PerformanceCache section is an array of\nbytes that contains compiled VBA code.
+The CompressedSourceCode section contains VBA source\ncode that is compressed with Microsoft’s proprietary algorithm.

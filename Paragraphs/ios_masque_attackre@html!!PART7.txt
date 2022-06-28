@@ -1,0 +1,6 @@
+
+Furthermore, one app can block another\napp from handling the same URL scheme if the developer crafts the\nbundle id carefully.
+The mechanism of URL scheme handling seems more like a “feature”\ninstead of a “bug” for iOS App Store which allows apps from different\ndevelopers to share the same URL schemes.
+On iOS App Store, the two\napps “BASCOM Anywhere Filter Browser” [5] and “Chrome - web browser by\nGoogle” [6] both registered the URL schemes “googlechrome://” and \n“googlechromes://”.
+With both apps installed, an iOS 8.1.3 device\nlaunches “BASCOM Anywhere Filter Browser” instead of Google’s Chrome\nbrowser when the user clicks on a link shown in Safari browser which\nuses the scheme “googlechrome://” or  “googlechromes://”.
+We’ve also seen 28 App Store apps all registering the URL scheme\n“fb://”, which is one of the URL scheme registered by the Facebook\napp.

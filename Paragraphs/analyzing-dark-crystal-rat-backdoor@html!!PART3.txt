@@ -1,0 +1,4 @@
+
+We chose to begin static analysis using CFF Explorer, a good tool for opening a PE file and breaking down its sections into a form that is easy to view.
+Having viewed dfsds.exe in CFF Explorer, as shown in Figure 2, the utility showed us that it is a .NET executable.
+This meant we could take a much different path to analyzing it than we would on a native C or C++ sample.

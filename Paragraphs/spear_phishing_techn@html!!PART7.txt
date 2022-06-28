@@ -1,0 +1,7 @@
+
+Figure 9: Registry value containing encoded PowerShell script Figure 10 shows that using Start-Process, PowerShell decodes this registry and runs the malicious code.
+Figure 10:
+Code to decode and run malicious content from registry
+The third stage PowerShell script also configures another registry value  named HKCU\\CurrentVersion\\Run\\SecurityUpdate to launch the encoded PowerShell payload stored in the HKCU: \\Console\\FontSecurity key.
+Figure 11 shows the code for these actions.
+This will execute the PowerShell payload when the user logs in to the system.

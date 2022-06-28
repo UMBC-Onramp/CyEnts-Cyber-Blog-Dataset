@@ -1,0 +1,5 @@
+
+When responding to these alerts, first check with your M365 and Azure AD administrator to verify the activity before raising a security event.
+Figure 13:
+Office 365 and Azure Helix rules Figure 14:
+PTA Connector Registered alert description Hunting for Backdoors in M365 Unified Audit Logs and Azure AD Logs If you suspect a global administrator account was compromised and you want to review Azure AD for indicators of potential abuse, the following should be reviewed (note that these same concepts can be used for proactive log monitoring): From Azure AD Sign-ins logs, monitor logon activity from On-Premises Directory Synchronization Service Accounts.

@@ -1,0 +1,4 @@
+
+For example, espionage actors could feasibly use this knowledge and help turn a joint venture into a hostile takeover or eliminate a competitor in a bidding process.
+Additionally, threat actors can exploit weaknesses in financial AI tools as part of larger third-party compromises against high-value clients.
+Threat Actors Influencing Trade Deals and Negotiations With high confidence, we consider the current threat risk to trade activity and business deals to be low, but as more companies leverage AI applications to help prepare for market-moving catalysts, these applications will likely become an attack surface for future espionage operations.

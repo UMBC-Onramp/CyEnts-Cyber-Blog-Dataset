@@ -1,0 +1,8 @@
+
+This RVA belongs to the .text section whose RVA is 0x2000 .
+Therefore, this method body begins at 0x9690 ( 0xB690 – 0x2000 ) bytes into the .text section.
+The .text section starts at 0x200 bytes into the file according to the section header.
+As a result, we can find the method body at 0x9890 ( 0x9690 + 0x200 ) bytes offset into the file.
+We can see the method body in Figure 7.
+Figure 7: Method 0x0600049D body in a hex editor .NET
+Method Body The .NET method body starts with a method body header, followed by the MSIL bytes.

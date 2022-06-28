@@ -1,0 +1,9 @@
+
+2016–2017: Petya, NotPetya, and WannaCry
+In April 2016, new malware called Petya reared its head.
+Whereas previous cryptors had left operating systems intact to allow victims to pay the ransom, Petya completely bricked infected machines; it targeted the MFT (Master File Table) — a database that stores the entire structure of files and folders on the hard drive.
+As destructive as it was, Petya’s penetration and distribution mechanism was rough.
+To activate it, the victim had to manually download and run an executable file, which made infection less likely.
+In fact, it might not have made much of a mark if not for another ransomware — the aptly named WannaCry .
+In May 2017, WannaCry infected more than 500,000 devices worldwide, causing $4 billion of damage.
+How did it do that?

@@ -1,0 +1,8 @@
+
+The social connection between Adversary and Victim Ransom Amounts and Negotiations By aggregating ransomware negotiation and payment data, Coveware is able to identify strain-specific ransomware trends.
+With regards to Ryuk, it should be noted that ransom amounts average more than 10x the average, making it the costliest type of ransomware.
+Coveware also observed that some Ryuk ransoms were highly negotiable, while others were not.
+The bar-belled negotiation results generated an average ransom payment of $71k, a 60% discount from an average opening ask of $145k.
+The bar-belled negotiation outcomes meant that some victims were stonewalled.
+These victims either lost their data or took on staggering financial risk to pay the ransom.
+The outcomes also imply that in certain cases the adversary would rather receive infrequent large windfalls (often in excess of 100BTC), while in other cases the adversary was keen to monetize every attack and accept lower amounts to ensure payment.

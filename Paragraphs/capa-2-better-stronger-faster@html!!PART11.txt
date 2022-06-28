@@ -1,0 +1,10 @@
+
+When a user upgrades to capa 2.0, they’ll see that the tool runs faster and provides more precise results.
+Signature Generation To provide the benefits of python-flirt to all users (especially those without an IDA Pro license) we have spent significant time to create a comprehensive FLIRT signature set for the common malware analysis use-case.
+The signatures come included with capa and are also available at our GitHub under the Apache 2.0 license.
+We believe that other projects can benefit greatly from this.
+For example, we expect the performance of FLOSS to improve once we’ve incorporated library function identification.
+Moreover, you can use our signatures with IDA Pro to recognize more library code.
+Our initial signatures include: From Microsoft Visual Studio (VS), for all major versions from VS6 to VS2019: C and C++ run-time libraries Active Template Library (ATL) and Microsoft Foundation Class (MFC) libraries
+The following open-source projects as compiled with VS2015, VS2017, and VS2019:
+CryptoPP curl Microsoft Detours Mbed TLS (previously PolarSSL) OpenSSL zlib Identifying and collecting the relevant library and object files took a lot of work.

@@ -1,0 +1,5 @@
+Incident response investigations don’t always involve standard host-based artifacts with fully developed parsing and analysis tools.
+At FireEye Mandiant, we frequently encounter incidents that involve a number of systems and solutions that utilize custom logging or artifact data.
+Determining what happened in an incident involves taking a dive into whatever type of data we are presented with, learning about it, and developing an efficient way to analyze the important evidence.
+One of the most effective tools to perform this type of analysis is one that is in almost everyone’s toolkit: Microsoft Excel.
+In this article we will detail some tips and tricks with Excel to perform analysis when presented with any type of data.

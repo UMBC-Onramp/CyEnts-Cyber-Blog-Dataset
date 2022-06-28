@@ -1,0 +1,3 @@
+
+Mandiant was also able to use compromised credentials to login to the human machine interface (HMI) portal for the meter control infrastructure and issue a disconnect command for a target endpoint meter in the smart grid environment.
+Strategic Collection and Detection Opportunities During Reconnaissance and Network Propagation Although specific capabilities such as malware and tooling vary amongst incidents, internal reconnaissance and network propagation are consistently needed for sophisticated adversaries to expand remote operations from external networks to OT systems.

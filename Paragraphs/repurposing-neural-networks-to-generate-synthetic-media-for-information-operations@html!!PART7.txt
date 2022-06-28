@@ -1,0 +1,4 @@
+
+Just how much has this barrier to entry been lowered though?\nFine-tuning can be performed in a fraction of the time, cost, data\nsize, and compute compared to training models from scratch.
+Whether\nit's a cloud hosted notebook with GPU access, or a cloud GPU instance\nreservation for just a single day, we're talking on the order of just\ntens of dollars to fine-tune one of these models.
+Skill-wise,\nfine-tuning is not necessarily trivial, but it’s also not “brain\nsurgery”—authors or other open source contributors often release\nadditional code and tutorials for how to fine-tune.

@@ -1,0 +1,4 @@
+
+That is to say that, while adversaries often begin their operations in the enterprise, it is not always your enterprise that leads to compromises in your ICS.
+Looking ahead, ransomware threats will continue to impact both IT and OT networks directly while threat groups become more adept and intent on targeting OT networks directly.
+From ICS Kill Chain Stage 1 to Stage 2: Implications for ICS and OT The majority of the data, by the very nature of these operations, examined in this analysis primarily involves Stage 1 operations that initially affect enterprise and non-OT environments.

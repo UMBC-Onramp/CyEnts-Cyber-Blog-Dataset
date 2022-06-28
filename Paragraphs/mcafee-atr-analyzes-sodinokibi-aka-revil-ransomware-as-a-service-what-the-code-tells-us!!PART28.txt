@@ -1,0 +1,5 @@
+
+This observation was also discovered by Tesorion in one of its blogs .
+Overall, looking at the structure and coincidences, either the developers of the GandCrab code used it as a base for creating a new family or, another hypothesis, is that people got hold of the leaked GandCrab source code and started the new RaaS Sodinokibi.
+Conclusion Sodinokibi is a serious new ransomware threat that is hitting many victims all over the world.
+We executed an in-depth analysis comparing GandCrab and Sodinokibi and discovered a lot of similarities, indicating the developer of Sodinokibi had access to GandCrab source-code and improvements.

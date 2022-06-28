@@ -1,0 +1,14 @@
+
+The exploit was subsequently used in notorious Wannacry and notPetya attacks. .
+The machines that contacted the  the malicious URLs may have downloaded and installed the Glupteba malware.
+Glupteba then exploitedEternalBlue to distribute DoublePulsar, a backdoor  implant disclosed by ShadowBrokers that enables the execution of additional malicious code.
+That scenario provides good explanation why the Backdoor.
+DouplePulsar signature was triggered.
+The detection was most observed in Brazil, South Africa, and India, which account for 70% of the total Backdoor.
+DouplePulsar detections triggered.
+Botnet and AV Detections in the Education Sector
+Next, we compared Botnet activities observed in the US and worldwide to find trends.
+They turned out to be almost in sync.
+Unlike IPS triggers, which record blocked attacks, botnet detections indicate active botnet malware within a network.
+The Mirai IoT botnet led both regions, followed by Gh0st Rat and Zeroaccess.
+Together, they account for more than 50% of the botnet activities in the US and global education sectors.

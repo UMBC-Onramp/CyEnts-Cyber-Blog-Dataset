@@ -1,0 +1,18 @@
+
+This IP address was previously used to host a file entitled “obl_leaked_report.zip” (MD5: a4c7c79308139a7ee70aacf68bba814f).
+The initial beacon to the command-and-control server is as follows:
+POST /path_active.php?compname=[HOSTNAME]_[USERNAME]
+HTTP/1.1 Host: 199.91.173.45 Accept: */* Content-Length: 11 Content-Type: application/x-www-form-urlencoded This same control server was used in previous activity .
+The Page Campaign A final malicious document was seen abusing the missing Flight 370 story on March 18, 2014.
+This document exploited CVE-2012-0158 and was entitled “MH370 PM statement 15.03.14 - FINAL.DOC” (MD5: 5e8d64185737f835318489fda46f31a6).
+This document dropped a Backdoor.
+APT.Page implant and connected to 122.10.89.85 on both port 80 and 443.
+The initial beacon traffic over port 80 is as follows: GET /18110143/
+page_32180701.html HTTP/1.1 Accept: */* Cookie: XX=0; BX=0 User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Win32)
+Host: 122.10.89.85 Connection: Keep-Alive Cache-Control: no-cache Pragma: no-cache Conclusion While many APT actors have adopted strategic Web compromise as a delivery vector, it is apparent that spear phishing via email-based attachments or links to zip files remain popular with many threat actors, especially when paired with lures discussing current media events.
+Network defenders should incorporate these facts into their user training programs and be on heightened alert for regular spear-phishing campaigns, which leverage topics dominating the news cycle.
+Acknowledgement:
+We thank Nart Villeneuve and Patrick Olsen for their support, research, and analysis on these findings.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

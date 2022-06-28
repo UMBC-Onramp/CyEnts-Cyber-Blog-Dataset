@@ -1,0 +1,4 @@
+Introduction This blog post is the second in a three-part series covering our Windows 10 memory forensics research and it coincides with our BlackHat USA 2019 presentation.
+In Part One of the series , we covered the integration of the research in both Volatily and Rekall memory forensics tools.
+We demonstrated that forensic artifacts (including reflectively loaded malware) could remain undiscovered without the FLARE research integration on Windows 10 (available on GitHub at win10_volatility and win10_rekall ).
+In this post, we demonstrate how to retrieve a compressed page using the structures and algorithms described in our white paper .

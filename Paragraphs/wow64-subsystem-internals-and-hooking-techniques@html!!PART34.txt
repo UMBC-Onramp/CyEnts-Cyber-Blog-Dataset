@@ -1,0 +1,13 @@
+
+Disable C++ exceptions Remove default linker libraries, only link ntdll.lib Use extern “C” __declspec(dllimport)
+<typedef> to link against the correct NtApis An example of a program hooking its own system calls via wow64log inline hooks is shown in Figure 23.
+Figure 23:
+Demonstration of inline hooks in action Conclusion Using inline WOW64 hooks, wow64log hooks, and kernel/hypervisor hooks, all techniques of usermode hook evasion can be identified easily and automatically.
+Detecting which layers of hooks are skipped or bypassed will give insight into which evasion technique is employed.
+The identifying table is: Evasion Mode 32bit Inline wow64Log 64bit Inline Kernel/Hypervisor Prologue Restore ❌ ✔ ✔ ✔ Heavens Gate sys-stub ❌ ❌
+✔ ✔ Heavens Gate direct syscall ❌ ❌
+❌
+✔ Structure Appendix struct _WOW64_CPURESERVED { USHORT Flags; USHORT MachineType; WOW64_CONTEXT Context; char ContextEx[1024]; }; typedef ULONG *WOW64_LOG_ARGUMENTS; struct _WOW64_SYSTEM_SERVICE { unsigned __int32 SystemCallNumber : 12; unsigned __int32 ServiceTableIndex : 4; unsigned __int32 TurboThunkNumber : 5; unsigned __int32 AlwaysZero : 11; }; #pragma pack(push, 1) struct _WOW64_FLOATING_SAVE_AREA { DWORD ControlWord; DWORD StatusWord; DWORD TagWord; DWORD ErrorOffset; DWORD ErrorSelector; DWORD DataOffset; DWORD DataSelector; BYTE RegisterArea[80]; DWORD Cr0NpxState; }; #pragma pack(pop) #pragma pack(push, 1) struct _WOW64_CONTEXT { DWORD ContextFlags; DWORD Dr0; DWORD Dr1; DWORD Dr2; DWORD Dr3; DWORD Dr6; DWORD Dr7; WOW64_FLOATING_SAVE_AREA FloatSave; DWORD SegGs; DWORD SegFs; DWORD SegEs; DWORD SegDs; DWORD Edi; DWORD Esi; DWORD Ebx; DWORD Edx; DWORD Ecx; DWORD Eax; DWORD Ebp; DWORD Eip; DWORD SegCs; DWORD EFlags; DWORD Esp; DWORD SegSs; BYTE ExtendedRegistersUnk[160]; M128A Xmm0; M128A Xmm1; M128A Xmm2;
+M128A Xmm3; M128A Xmm4; M128A Xmm5; M128A Xmm6; M128A Xmm7; M128A Xmm8; M128A Xmm9; M128A Xmm10; M128A Xmm11; M128A Xmm12; M128A Xmm13; M128A Xmm14; M128A Xmm15; }; #pragma pack(pop) Subscribe to Blogs Get email updates as new blog posts are added.
+
+

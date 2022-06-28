@@ -1,0 +1,3 @@
+
+One of the manifestations of such a cost is the app hot patching process, where a simple bug fix has to go through an app review process that subjects the developers to an average waiting time of seven days before updated code is approved.
+Thus, it is not surprising to see developers seeking various solutions that attempt to bypass this wait period, but which lead to unintended security risks that may catch Apple off guard.

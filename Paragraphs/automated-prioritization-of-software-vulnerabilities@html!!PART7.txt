@@ -1,0 +1,5 @@
+
+The rationale is that eventual presence in these lists indicates not just that exploits can exist or that they do exist, but that they also are publicly available.
+Modeling Approach Predicting the CVSS scores and exploitability from Twitter data involves multiple steps.
+First, we need to find appropriate representations (or features) for our natural language to be processed by machine learning models.
+In this work, we use two natural language processing methods in natural language processing for extracting features from text: (1) N-grams features, and (2) Word embeddings.

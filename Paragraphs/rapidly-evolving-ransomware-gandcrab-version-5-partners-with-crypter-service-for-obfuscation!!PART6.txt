@@ -1,0 +1,5 @@
+
+Version 5.0 carries two exploits that try to elevate privileges.
+It checks the version of the operating system and the TokenIntegrityLevel class of the process.
+If the SID Subauthority is SECURITY_MANDATORY_LOW_RID (0x1000), it tries to execute the exploits if it also passed one previous check of a mutex value.
+One release is the exploit released in August on Twitter and GitHub by the hacker “SandboxEscaper.”

@@ -1,0 +1,5 @@
+
+BshServlet/` , but this was a busy server and the payload was not included in the logging, only metadata.
+Example HTTP log entry '-` 2886000` 10.10.10.10` -` -` \"[23/Sep/2019:10:10:10 +0800]\"` \"POST /weaver/bsh.servlet.
+BshServlet/ HTTP/1.1\"`  \"-\"' FireEye Endpoint Security has the ability to collect a memory image and this was completed on the same day as the initial activity.
+As memory is volatile, the earlier it's collected in an investigation the more likely you are to uncover additional evidence.

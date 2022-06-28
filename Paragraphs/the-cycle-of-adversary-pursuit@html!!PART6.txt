@@ -1,0 +1,15 @@
+
+Let's Encrypt, CN=
+Let's Encrypt Authority X3
+Validity
+Not Before:
+Jan 28 02:02:14 2020 GMT Not After : Apr 27 02:02:14 2020 GMT Subject: CN=cylenceprotect[.]com Figure 4: TLS Certificate for the domain cylenceprotect[.]com
+The certificate was issued by Let’s Encrypt, with the earliest validity date within 24 hours of the activity detected by Managed Defense, substantiating the speed in which this threat actor operates.
+Along with the certificate in Figure 4, we also identified the default generated, self-signed Cobalt Strike certificate (Figure 5) on port 54546 (50050 by default).
+Certificate: Data: Version: 3 (0x2)
+Serial Number: 1843990795 (0x6de9110b)
+Signature Algorithm: sha256WithRSAEncryption Issuer: C=Earth, ST=Cyberspace, L=
+Somewhere, O=cobaltstrike, OU=
+AdvancedPenTesting, CN=
+Major Cobalt Strike Validity Not Before:
+Jan 28 03:06:30 2020 GMT Not After : Apr 27 03:06:30 2020 GMT Subject: C=Earth, ST=Cyberspace, L=

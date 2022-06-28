@@ -1,0 +1,6 @@
+
+Use a unidirectional gateway rather than bidirectional network connections for any applications that depend on the data provided by the SIS.
+Implement strict access control and application whitelisting on any server or workstation endpoints that can reach the SIS system over TCP/IP.
+Monitor ICS network traffic for unexpected communication flows and other anomalous activity.
+Figure 3:
+Triconex Key Switch ( source ) Appendix: Technical Analysis Figure 4: TRITON Architecture and Attack Scenario TRITON was deployed on an SIS engineering workstation running the Microsoft Windows operating system.

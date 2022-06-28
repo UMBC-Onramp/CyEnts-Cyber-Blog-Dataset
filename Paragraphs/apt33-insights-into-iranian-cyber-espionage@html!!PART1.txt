@@ -1,0 +1,7 @@
+When discussing suspected Middle Eastern hacker groups with destructive capabilities, many automatically think of the suspected Iranian group that previously used SHAMOON – aka Disttrack – to target organizations in the Persian Gulf.
+However, over the past few years, we have been tracking a separate, less widely known suspected Iranian group with potential destructive capabilities, whom we call APT33.
+Our analysis reveals that APT33 is a capable group that has carried out cyber espionage operations since at least 2013.
+We assess APT33 works at the behest of the Iranian government.
+Recent investigations by FireEye’s Mandiant incident response consultants combined with FireEye iSIGHT Threat Intelligence analysis have given us a more complete picture of APT33’s operations, capabilities, and potential motivations.
+This blog highlights some of our analysis.
+Our detailed report on FireEye Threat Intelligence contains a more thorough review of our supporting evidence and analysis.

@@ -1,0 +1,4 @@
+
+Checking the records of our dummy patient, we found our changes were successful.
+Changes successfully updated.
+Reconstructing Body Parts In the medical imaging world, a large array of software can investigate and visualize images in different ways, for example, in 3D. We took our collection of images, and using a demo version of 3D software, we reconstructed complete 3D models of vertebrae, pelvis, knees, etc.

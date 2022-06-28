@@ -1,0 +1,5 @@
+
+Over a period of several days, an actor conducted reconnaissance activity using Bloodhound, PowerSploit/PowerView (Invoke-ShareFinder), and a reconnaissance script designed to enumerate directories across internal hosts.
+An actor employed the adfind tool and a batch script to collect information about their network, hosts, domain, and users.
+The output from this batch script (2adfind.bat) was saved into an archive named 'ad.7z' using an instance of the 7zip archiving utility named 7.exe .
+An actor used the tool smbtools.exe to assess whether accounts could login to systems across the environment.

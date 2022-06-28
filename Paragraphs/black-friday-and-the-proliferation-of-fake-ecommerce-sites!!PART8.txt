@@ -1,0 +1,4 @@
+
+A visit to the actual company website (milwaukeetool.com) reveals that they do not sell direct, which is often the case of many major brands: A Bing.com shopping query highlighted that the lowest official price for this 2696-26 M18 LITHIUM-ION CORDLESS 6-TOOL COMBO KIT is $613.00 (USD).
+Further Scrutiny As we dug deeper by using OSINT (Open Source Intelligence) searches on the major search engines, we found 19 more online retail sites using the same template and shopping carts as the Milwauketools.shop, suggesting that these are all part of a larger scam.
+This was further confirmed when we determined that they have all been registered with the same registrar.

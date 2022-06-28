@@ -1,0 +1,10 @@
+
+Laurie recently found five connected or IoT devices that he didn’t know existed inside his home.
+Even more, when he looked at the firewall rules on his internet service provider’s router, the universal plug and play (UPnP) was switched on, adding firewall rules for smart devices in his home unbeknownst to him.
+In addition, with the pandemic nearing the rearview window, employees are starting to travel again.
+This increase also means vacation rental home bookings are up.
+One vacation home company notes that by the end of March 2021, 90% of its homes in New Jersey and Cape Cod were booked for July.
+Another company revealed the booking lead time for summer stays at its rental properties is 147 days this year.
+Internet of Things Security in Vacation Homes While renting a vacation home can provide more space for less money, it can also create more attacker opportunities.
+For example, Ree shared a story about a recent family vacation.
+He, his wife and kids stayed in a vacation rental home from where he worked for a week.

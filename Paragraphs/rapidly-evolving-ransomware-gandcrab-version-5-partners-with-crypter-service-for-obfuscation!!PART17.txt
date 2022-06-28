@@ -1,0 +1,6 @@
+
+Creating the wallpaper in the temp folder.
+Here is an example of strings used in the wallpaper name and to check the name of the user and the format string, whether it is another user, or the final string in the case of SYSTEM user with USER in uppercase.
+The name of the wallpaper and special strings.
+Finally, the wallpaper is set for any user other than SYSTEM: Changing the wallpaper.
+The malware detects the language of the system and decrypts the strings and writes the correct ransom note in the language of the system.

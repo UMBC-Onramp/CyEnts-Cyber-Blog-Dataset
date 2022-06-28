@@ -1,0 +1,4 @@
+
+This has the effect of hiding all graph nodes that you aren’t currently examining and allows you to better focus on analysis of the current group.
+As you can see, we’re abusing group creation a bit so that we can avoid creating a custom graph viewer, and instead stay within the built-in IDA graph disassembly view which allows us to continue to markup the disassembly as you’re used to.
+Complementing the graph gives you the view seen in Figure 10, where the entire graph is grouped into a node named “Complement of group X”.

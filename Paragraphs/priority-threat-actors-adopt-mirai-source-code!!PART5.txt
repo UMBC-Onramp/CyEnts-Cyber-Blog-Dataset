@@ -1,0 +1,6 @@
+
+The JAWS DVR software has been under attack with a steady increase since October 2019 and peaking in June 2020.
+In the past few months, SANS saw a steady decline in the activity of port 60001.
+Meanwhile, we at Juniper Threat Labs have seen a significant increase since July 2020, peaking at 733 daily attacks on the July 18.
+Attacks for port 5500, 5501, 5502 and 5050 do not seem to be targeting a specific vulnerability.
+The file downloaded was a simple shell script with the following contents.

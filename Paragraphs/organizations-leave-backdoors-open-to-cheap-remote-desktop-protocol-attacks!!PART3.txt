@@ -1,0 +1,5 @@
+
+A screenshot of Blackpass.bz, one of the most popular RDP-shops, largely due to the variety of services offered.
+Shops explained Security maven Brian Krebs wrote the article “Really Dumb Passwords” in 2013.
+That short phrase encapsulates the vulnerability of RDP systems.
+Attackers simply scan the Internet for systems that accept RDP connections and launch a brute-force attack with popular tools such as, Hydra, NLBrute or RDP Forcer to gain access.

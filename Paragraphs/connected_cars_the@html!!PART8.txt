@@ -1,0 +1,12 @@
+
+This requires an ongoing understanding about the nature of threats and vulnerabilities in a rapidly evolving landscape, and building in strong proactive security measures to protect against these risks.
+FireEye explores these risks to automotive safety in our latest FireEye iSIGHT Intelligence and Mandiant Consulting report: Connected Cars: The Open Road for Hackers .
+The report is available for download here.
+FireEye Capabilities FireEye combines our industry leading threat intelligence , incident response and red team capabilities with our ICS domain expertise to help the automotive industry improve their prevention, detection and response capabilities.
+FireEye’s Red Team Operations and Penetration Tests can provide firms in the automotive industry experience responding to real-world attacks without the risk of negative headlines.
+A one-time risk assessment is not enough, because threat attackers are consistently evolving.
+For more information, contact FireEye .
+FireEye iSIGHT Intelligence’s Horizons Team conducts strategic forecasting to anticipate risks posed by emerging technologies and geopolitical developments, helping clients and the public better assess their exposure to a dynamic cyber threat landscape.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

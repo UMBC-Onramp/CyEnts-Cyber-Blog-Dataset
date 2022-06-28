@@ -1,0 +1,7 @@
+
+Observe that the last HTTP request visible in Figure 14 contains a list of running processes.
+By tracing through the decompiled code, we found that the method SchemaServerManager.
+ObserverWatcher.
+NewMerchant generated this message.
+We renamed this method to taskThread and assigned meaningful names to the other methods it calls; the resulting code for this method appears in Figure 15.
+Figure 15: The method that generates the list of running processes and sends it to the C2 endpoint By analyzing the code further, we identified the components of the URLs that the malware used to send data to the C2 endpoint, and how they are constructed.

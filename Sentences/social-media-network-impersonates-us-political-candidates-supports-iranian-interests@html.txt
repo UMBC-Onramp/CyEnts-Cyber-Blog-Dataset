@@ -1,0 +1,407 @@
+In August 2018, FireEye Threat Intelligence released a report exposing what we assessed to be an Iranian influence operation leveraging networks of inauthentic news sites and social media accounts aimed at audiences around the world.
+
+We identified inauthentic social media accounts posing as everyday Americans that were used to promote content from inauthentic news sites such as Liberty Front Press (LFP), US Journal, and Real Progressive Front.
+
+We also noted a then-recent shift in branding for some accounts that had previously self-affiliated with LFP; in July 2018, the accounts dropped their LFP branding and adopted personas aligned with progressive political movements in the U.S. Since then, we have continued to investigate and report on the operation to our intelligence customers, detailing the activity of dozens of additional sites and hundreds of additional social media accounts.
+
+Recently, we investigated a network of English-language social media accounts that engaged in inauthentic behavior and misrepresentation and that we assess with low confidence was organized in support of Iranian political interests.
+
+In addition to utilizing fake American personas that espoused both progressive and conservative political stances, some accounts impersonated real American individuals, including a handful of Republican political candidates that ran for House of Representatives seats in 2018.
+
+Personas in this network have also had material published in U.S. and Israeli media outlets, attempted to lobby journalists to cover specific topics, and appear to have orchestrated audio and video interviews with U.S. and UK-based individuals on political issues.
+
+While we have not at this time tied these accounts to the broader influence operation we identified last year, they promoted material in line with Iranian political interests in a manner similar to accounts that we have previously assessed to be of Iranian origin.
+
+Most of the accounts in the network appear to have been suspended on or around the evening of 9 May, 2019.
+
+Appendix 1 provides a sample of accounts in the network.
+
+The Network The accounts, most of which were created between April 2018 and March 2019, used profile pictures appropriated from various online sources, including, but not limited to, photographs of individuals on social media with the same first names as the personas.
+
+As with some of the accounts that we identified to be of Iranian origin last August, some of these new accounts self-described as activists, correspondents, or “free journalist[s]” in their user descriptions.
+
+Some accounts posing as journalists claimed to belong to specific news organizations, although we have been unable to identify individuals belonging to those news organizations with those names.
+
+Narratives promoted by these and other accounts in the network included anti-Saudi, anti-Israeli, and pro-Palestinian themes.
+
+Accounts expressed support for the Joint Comprehensive Plan of Action (JCPOA), commonly known as the Iran nuclear deal; opposition to the Trump administration’s designation of Iran’s Islamic Revolutionary Guard Corps (IRGC) as a Foreign Terrorist Organization; antipathy toward the Ministerial to Promote a Future of Peace and Security in the Middle East (a U.S.-led conference that focused on Iranian influence in the Middle East more commonly known as the February 2019 Warsaw Summit); and condemnation of U.S. President Trump’s veto of a resolution passed by Congress to end U.S. involvement in the Yemen conflict.
+
+Figure 1: Sample tweets on the Trump administration’s designation of Iran’s IRGC as a Foreign Terrorist Organization
+
+Interestingly, some accounts in the network also posted a small amount of messaging seemingly contradictory to their otherwise pro-Iran stances.
+
+For example, while one account’s tweets were almost entirely in line with Iranian political interests, including a tweet claiming that “iran has shown us that his nuclear program is peaceful [sic],” the account also posted a series of tweets directed at U.S. President Trump on Sept. 25, 2018, the same day that he gave a speech to the United Nations in which he excoriated the Iranian Government.
+
+The account called on Trump to attack Iran, using the hashtags #attack_Iran, #go_to_hell_Rouhani, #stop_sanctions, #UnitedNations, and #trump_speech; other accounts in the network, which likewise predominantly held pro-Iran stances, echoed these sentiments, using the same or similar hashtags.
+
+It is possible that these accounts were seeking to build an audience with views antipathetic to Iran that could then later be targeted with pro-Iranian messaging.
+
+Apart from the narratives and messaging promoted, we observed several limited indicators that the network was operated by Iranian actors.
+
+For example, one account in the network, @AlexRyanNY, created in 2010, had only two visible tweets prior to 2017, one of which, from 2011, was in Persian and of a personal nature.
+
+Subsequently in 2017, @AlexRyanNY claimed in a tweet to be “an Iranian who supported Hillary” in a tweet directed at a Democratic political strategist.
+
+This account, using the display name “Alex Ryan” and claiming to be a Newsday correspondent, appropriated the photograph of a genuine individual also with the first name of Alex.
+
+We note that it is possible that the account was compromised from another individual or that it was merely repurposed by the same actor.
+
+Additionally, while most of the accounts in the network had their interface languages set to English, we observed that one account had its interface language set to Persian.
+
+Impersonation of U.S. Political Candidates Some Twitter accounts in the network impersonated Republican political candidates that ran for House of Representatives seats in the 2018 U.S. congressional midterms.
+
+These accounts appropriated the candidates’ photographs and, in some cases, plagiarized tweets from the real individuals’ accounts.
+
+Aside from impersonating real U.S. political candidates, the behavior and activity of these accounts resembled that of the others in the network.
+
+For example, the account @livengood_marla impersonated Marla Livengood, a 2018 candidate for California’s 9 th Congressional District, using a photograph of Livengood and a campaign banner for its profile and background pictures.
+
+The account began tweeting on Sept. 24, 2018, with its first tweet plagiarizing one from Livengood’s official account earlier that month: Figure 2:
+
+Tweet by suspect account @livengood_marla, dated Sept. 24, 2018 (left); tweet by Livengood’s verified account, dated Sept. 1, 2018 (right)
+
+The @livengood_marla account plagiarized a number of other tweets from Livengood’s official account, including some that referenced Livengood’s official account username: Figure 3: Tweet by suspect account @livengood_marla, dated Sept. 24, 2018 (left); tweet by Livengood’s verified account, dated Sept. 3, 2018 (right)
+
+The @livengood_marla account also tweeted various news snippets on both political and apolitical subjects, such as the confirmation of Brett Kavanaugh to the U.S. Supreme Court and the wedding of the UK’s Princess Eugenie and Jack Brooksbank, prior to segueing into promoting material more closely aligned with Iranian interests.
+
+For example, the account, along with others in the network, commemorated the United Nations’ International Day of the Girl Child with a photograph of emaciated children in Yemen, as well as narratives pertaining to the killing of Saudi journalist Jamal Khashoggi and Saudi Shiite child Zakaria al-Jaber, intended to portray Saudi Arabia in a negative light.
+
+In another example, the account @ButlerJineea impersonated Jineea Butler, a 2018 candidate for New York’s 13 th Congressional District, using a photograph of Butler for its profile picture and incorporating her campaign slogans into its background picture, as well as claiming in its Twitter bio to be a “US House candidate, NY-13” and linking to Butler’s website, jineeabutlerforcongress.com.
+
+Figure 4:
+
+Suspect account @ButlerJineea (left); apparent legitimate, currently inactive account @Jineea4congress
+
+(right)
+
+These and other accounts in the network plagiarized tweets from additional sources beyond the individuals they impersonated, including other U.S. politicians, about both political and apolitical topics.
+
+Influence Activity Leveraged U.S. and Israeli Media
+
+In addition to directly posting material on social media, we observed some personas in the network leverage legitimate print and online media outlets in the U.S. and Israel to promote Iranian interests via the submission of letters, guest columns, and blog posts that were then published.
+
+We also identified personas that we suspect were fabricated for the sole purpose of submitting such letters, but that do not appear to maintain accounts on social media.
+
+The personas claimed to be based in varying locations depending on the news outlets they were targeting for submission; for example, a persona that listed their location as Seattle, WA in a letter submitted to the Seattle Times subsequently claimed to be located in Baytown, TX in a letter submitted to The Baytown Sun .
+
+Other accounts in the network then posted links to some of these letters on social media.
+
+The letters and columns, many of which were published in 2018 and 2019, but which date as far back as 2015, were mostly published in small, local U.S. news outlets; however, several larger outlets have also published material that we suspect was submitted by these personas (see Appendix 2).
+
+In at least two cases, the text of letters purportedly authored by different personas and published in different newspapers was identical or nearly identical, while in other instances, separate personas promoted the same narratives in letters published within several days of each other.
+
+The published material was not limited to letters; one persona, “John Turner,” maintained a blog on The Times of Israel website from January 2017 to November 2018, and wrote articles for the U.S.-based site Natural News Blogs from August 2015 to July 2018.
+
+The letters and articles primarily addressed themes or promoted stances in line with Iranian political interests, similar to the activity conducted on social media.
+
+Figure 5: Sample letter published in Galveston County’s (Texas)
+
+The Daily News, authored by suspect persona Mathew O’Brien
+
+We have thus far identified at least five suspicious personas that have had letters or other content published by legitimate news outlets.
+
+We surmise that additional personas exist, based on other investigatory leads.
+
+“John Turner” :
+
+The John Turner persona has been active since at least 2015.
+
+Turner has claimed to be based, variously, in New York, NY, Seattle, WA, and Washington, DC.
+
+Turner described himself as a journalist in his Twitter profile, though has also claimed both to work at the Seattle Times and to be a student at Villanova University, claiming to be attending between 2015 and 2020.
+
+In addition to letters published in various news outlets, John Turner maintained a blog on The Times of Israel site in 2017 and 2018 and has written articles for Natural News Blogs .
+
+At least one of Turner’s letters was promoted in a tweet by another account in the network.
+
+“Ed Sullivan” :
+
+The Ed Sullivan persona, which has on at least one occasion used the same headshot as that of John Turner, has had letters published in the Galveston County, Texas-based The Daily News , the New York Daily News , and the Los Angeles Times , including some letters identical in text to those authored by the “Jeremy Watte” persona (see below) published in the Texas-based outlet The Baytown Sun .
+
+Ed Sullivan has claimed his location to be, variously, Galveston and Newport News (Virginia).
+
+“Mathew Obrien” :
+
+The Mathew Obrien persona, whose name has also been spelled “Matthew Obrien” and “Mathew O’Brien”, claimed in his Twitter bio to be a Newsday correspondent.
+
+The persona has had letters published in Galveston County’s The Daily News and the Athens, Texas-based Athens Daily Review ; in those letters, his claimed locations were Galveston and Athens, respectively, while the persona’s Twitter account, @MathewObrien1, listed a location of New York, NY.
+
+At least one of Obrien’s letters was promoted in a tweet by another account in the network.
+
+“Jeremy Watte” :
+
+Letters signed by the Jeremy Watte persona have been published in The Baytown Sun and the Seattle Times , where he claimed to be based in Baytown and Seattle, respectively.
+
+The texts of at least two letters signed by Jeremy Watte are identical to that in letters published in other newspapers under the name Ed Sullivan.
+
+At least one of his letters was promoted in a tweet by another account in the network.
+
+“Isabelle Kingsly” :
+
+The Isabelle Kingsly persona claimed on her Twitter profile (@IsabelleKingsly) to be an “Iranian-American” based in Seattle, WA.
+
+Letters signed by Kingsly have appeared in The Baytown Sun and the Newport News Virginia local paper The Daily Press ; in those letters, Kingsly’s location is listed as Galveston and Newport News, respectively.
+
+The @IsabelleKingsly Twitter account’s profile picture and other posted pictures were appropriated from a social media account of what appears to be a real individual with the same first name of Isabelle.
+
+At least one of Kingsly’s letters was promoted in a tweet by another account in the network.
+
+Other Media Activity Personas in the network also engaged in other media-related activity, including criticism and solicitation of mainstream media coverage, and conducting remote video and audio interviews with real U.S. and UK-based individuals while presenting themselves as journalists.
+
+One of those latter personas presented as working for a mainstream news outlet.
+
+Criticism/Solicitation of Media Coverage Accounts in the network directed tweets at mainstream media outlets, calling on them to provide coverage of topics aligned with Iranian interests or, alternatively, criticizing them for insufficient coverage of those topics.
+
+For example, we observed accounts criticizing media outlets over their lack of coverage of the killing of Shiite child Zakaria al-Jaber in Saudi Arabia, as well as Saudi Arabia’s conduct in the Yemen conflict.
+
+While such activity might have been intended to directly influence the media outlets’ reporting, the accounts may have also been aiming to reach a wider audience by tweeting at outlets with a large following that woud see those replies.
+
+Figure 6: Sample tweets by suspect accounts calling on mainstream media outlets to increase their coverage of alleged Saudi activity in the Yemen conflict “Media” Interviews with Real U.S., UK-Based Individuals Accounts in the network, under the guise of journalist personas, also solicited various individuals over Twitter for interviews and chats, including real journalists and politicians.
+
+The personas appear to have successfully conducted remote video and audio interviews with U.S. and UK-based individuals, including a prominent activist, a radio talk show host, and a former U.S. Government official, and subsequently posted the interviews on social media, showing only the individual being interviewed and not the interviewer.
+
+The interviewees expressed views that Iran would likely find favorable, discussing topics such as the February 2019 Warsaw summit, an attack on a military parade in the Iranian city of Ahvaz, and the killing of Jamal Khashoggi.
+
+The provenance of these interviews appear to have been misrepresented on at least one occasion, with one persona appearing to have falsely claimed to be operating on behalf of a mainstream news outlet; a remote video interview with a US-based activist about the Jamal Khashoggi killing was posted by an account adopting the persona of a journalist from the outlet Newsday , with the Newsday logo also appearing in the video.
+
+We did not identify any Newsday interview with the activist in question on this topic.
+
+In another instance, a persona posing as a journalist directed tweets containing audio of an interview conducted with a former U.S. Government official at real media personalities, calling on them to post about the interview.
+
+Conclusion We are continuing to investigate this and potentially related activity that may be being conducted by actors in support of Iranian interests.
+
+At this time, we are unable to provide further attribution for this activity, and we note the possibility that the activity could have been designed for alternative purposes or include some small percentage of authentic behavior.
+
+However, if it is of Iranian origin or supported by Iranian state actors, it would demonstrate that Iranian influence tactics extend well beyond the use of inauthentic news sites and fake social media personas, to also include the impersonation of real individuals on social media and the leveraging of legitimate Western news outlets to disseminate favorable messaging.
+
+If this activity is being conducted by the same or related actors as those responsible for the Liberty Front Press network of inauthentic news sites and affiliated social media accounts that we exposed in August 2018, it may also suggest that these actors remain undeterred by public exposure or by social media platforms’ shutdowns of their accounts, and that they continue to seek to influence audiences within the U.S. toward positions in line with Iranian political interests.
+
+Appendices Appendix 1: Sample Twitter accounts identified in this network, currently suspended.
+
+Username Display Name Bio Creation Date Location @MichaelA22444 Michael Anderson Free journalist
+
+#resist 3/16/2019 DC @sammichelsn1995
+
+Sam Michelson Journalist.
+
+In search of reality.
+
+1995.
+
+Resistance.
+
+3/14/2019 @JasonCa26738291
+
+Jason Campbell
+
+It’s our duty to leave our Country-to our children-better than we found it 2/20/2019 @SaraMar44752473 Sara Martin 1/24/2019
+
+@LisaBro09759828 Lisa Brown 1/24/2019 @Jennife67352965 Jennifer Parker I AM 1/23/2019 @SusanSc25255529 Susan Scott Don't think too hard, just have fun with life...
+
+1/22/2019 @LindaJa02370118 Linda Jackson
+
+I drink lots of tea...
+
+1/22/2019 @MarkAda05568324 Mark Adams 1/22/2019 @aliisseeeee alliisse Liberty 1/21/2019 New York @morsi18 morsi 1/13/2019 @AntiReality2 Anti_Reality
+
+Very angry mad at politicians In favor of sick minds 1/9/2019 North Carolina, USA @JennyMick3
+
+Jenny Mick Unemployment Widow mother of two 1/9/2019 Pennsylvania, USA @JaneAnton9 Jane Anton Daughter of best parent.
+
+Do your best, just let your success shows your efforts.
+
+1/9/2019 California, USA @RabinAntonio Antonio Rabin Student at Harvard college.
+
+somehow into politics.
+
+I love gym 1/9/2019 @Angelofhuman1
+
+Angel of human I do into beauty and humanity 12/26/2018
+
+California, USA @AliciaHernan3 Alicia Hernan Wife, mom of tow sons, student, in favor of peace.
+
+12/26/2018
+
+New York, USA @ThomasRace3
+
+Thomas Race Bodybuilding sports and into Music and gym 12/25/2018
+
+Michigan, USA @EmmaWil14155495 Emma Wilkerson Student in college  studying International law 12/25/2018 Sunnyvale, CA @Kevin24798000
+
+Kevin A free person from everywhere I'm somehow into politics 12/15/2018 New York, USA @ImanRashedii
+
+Iman Rashed Correspondent at  https://t.co/3hxSgtkuXh.
+
+  🎥📸Freelance Journalist.
+
+    ➡️➡️oppose War and Brutality 💆‍♂️I was born in Beirut 12/8/2018 London @emAnderson1996 emily anderson
+
+In search of peace.
+
+Really into politics and justice.
+
+Love US and other countries.
+
+10/6/2018 New York, USA @FordNaava naava ford 10/2/2018 @MaazRoss maaz ross follow back 9/30/2018 @sam86523055 ResistSam high educated free journalist in favor of politics in search of reality Middle East issues 9/29/2018 New York, USA @ButlerJineea Jineea Butler US House candidate, NY-13 9/26/2018 U.S. Congressional Candidate for NY District 13 serving Harlem, Washington Heights and Western Bronx.
+
+US @TynioAnya Anya Tynio 9/26/2018 @livengood_marla Marla Livengood 9/23/2018
+
+@Fall_Of_Amercia Fall_of_Amercia save the US 9/8/2018 Washington, DC @IsabelleKingsly Elizabeth Warren not for 2020 Single.
+
+Iranian-American.
+
+Lifestyle.
+
+And a tad of politics.
+
+@ewarren not for 2020.
+
+9/8/2018
+
+Seattle, WA @MathewObrien1 Mathew Obrien
+
+A single boy,@Newsday correspondent , interested in news Scientist🔬.
+
+Animal 🐘 and Nature lover🌲, hiker and backpacker♍   .
+
+6/21/2018 New York, NY @HumanBeingUSA Human-Rights
+
+The fight for human rights never sleeps, standing up for human rights across the world, wherever justice, freedom, fairness and truth are denied.
+
+6/14/2018 New York, USA @ashleyc57528342 ashley cohen follow me to get follow back 6/14/2018 Arizona, USA @josefsanchezzzz josef sanchez 6/10/2018 @GuillouJan
+
+jan guillou 5/13/2018 @saidqutb2 saidqutb 5/12/2018 @olegkashin4321 rajat sharma 5/8/2018
+
+@Suzan_Nicolson Suzan Nicholson follow me to get follow back 5/8/2018 Las Vegas, NV @caroloffoff diana culi
+
+5/7/2018 @hairullomirsaid guillem balague 5/7/2018
+
+@habibayyoub1 habib ayyoub 5/6/2018 @daphneposh
+
+James Anderson No Magats 🚫, 🔥 Anti War & Hate, Pro Equality, Humanity, Humor & Sensible Gun Reform 4/30/2018 New York, USA @JohnHoward333 John H.T Journalist.
+
+RTs Are not necessarily endorsements.
+
+All views my own.
+
+#Resist 5/12/2015 Washington, USA @AlexRyanNY
+
+Alex Ryan New Yorker, @Newsday correspondent.
+
+You don't have a soul.
+
+You are a Soul.
+
+You have a body.
+
+4/17/2011 New York, USA Table 1: Sample Twitter accounts identified in this network Appendix 2: Sample letters published in news outlets submitted by personas identified in this network, August 2018 to April 2019.
+
+Date Author Author’s Listed Location Newspaper Article Aug. 1, 2018
+
+Jeremy Watte Baytown
+
+The Baytown Sun (baytownsun.com)
+
+Title: “Trump’s wall just a vanity project”
+
+The letter argues against the Trump administration’s proposed border wall with Mexico.
+
+The text of the letter is identical to that published in Galveston County’s The Daily News (galvnews.com) on Aug. 4, 2018, three days later.
+
+http://baytownsun.com/opinion/article_85fa9df4-9527-11e8-9aa8-1bb745e7141a.html Aug. 4, 2018
+
+Ed Sullivan Galveston Galveston County’s The Daily News (galvnews.com)
+
+Title: “Trump cares not one wit about effects of shutdown”
+
+The text of the letter is identical to that published in The Baytown Sun on Aug. 1.
+
+https://www.galvnews.com/opinion/guest_columns/article_7d5b3e9b-cbdd-5ac8-8c91-3a1eb0da3df7.html Oct. 11, 2018 Jeremy Watte Baytown
+
+The Baytown Sun (baytownsun.com)
+
+Title: “Time to fight for it”
+
+The letter, written from the point of view of an individual aligned with the U.S. political left, calls on individuals to fight for justice.
+
+http://baytownsun.com/opinion/article_915fde6c-ccf3-11e8-a085-33dce44563d1.html Oct. 23, 2018
+
+Ed Sullivan Newport News New York Daily News (nydailynews.com)
+
+Title: “Don’t shrug off Khashoggi’s murder”
+
+The letter argues that “the most fitting and best memorial to Jamal Khashoggi,” a Saudi journalist who was murdered in the Saudi embassy in Istanbul, “would be the swift end to the war in Yemen.”
+
+https://www.nydailynews.com/dp-edt-letswed-1024-story.html Oct. 23, 2018
+
+Ed Sullivan Newport News Los Angeles Times (latimes.com)
+
+Title: “Don’t shrug off Khashoggi’s murder”
+
+The letter is identical to that published in the New York Daily News on the same day.
+
+https://www.latimes.com/dp-edt-letswed-1024-story.html Nov. 27, 2018 John Turner New York, NY Times of Israel (blog.timesofisrael.com)
+
+Title: “Saudi Arabia’s foreign policy is failing”
+
+The letter states that the murder of Jamal Khashoggi is “the latest in a series of foreign policy blunders” committed by the Saudi Crown Prince Mohammed Bin Salman.
+
+https://blogs.timesofisrael.com/saudi-arabias-foreign-policy-is-failing/ Nov. 30, 2018 John Turner New York, NY Times of Israel (blog.timesofisrael.com)
+
+Title: “Relations with Israel will not benefit Gulf states”
+
+The letter argues that the Gulf states will not benefit from normalized relations with Israel, stating that “the Arab street” would not support those relations and that such a move would be risky for “the Gulf’s unelected rulers.”
+
+https://blogs.timesofisrael.com/relations-with-israel-will-not-benefit-gulf-states/ Dec. 26, 2018 Isabelle Kingsly Galveston The Baytown Sun (baytownsun.com)
+
+Title: “Wild West sheriff” The letter argues that Trump is not an aberration in U.S. history, but rather an ideological descendant of various U.S. historical currents; the article also calls him “an authoritarian, racist madman.”
+
+http://baytownsun.com/opinion/letters/article_4ad26b8c-08bb-11e9-9056-3f5207ea4cf7.html Jan. 18, 2019 Jeremy Watte Seattle Seattle Times (seattletimes.com)
+
+Title: “ISIS’ ideology not defeated” The letter, written in response to an article about Americans killed by an ISIS suicide bomber in Syria, asserts that the Islamic extremist ideology espoused by the terrorist group remains undefeated.
+
+https://www.seattletimes.com/opinion/letters-to-the-editor/isis-ideology-not-defeated/ March 1, 2019 Jeremy Watte Baytown
+
+The Baytown Sun (baytownsun.com)
+
+Title: “Sins of Saudi Arabia”
+
+The letter is condemnatory of Saudi Arabia, citing its actions in the Yemen conflict, the killing of Jamal Khashoggi, the killing of Zakaria al-Jaber, a Shiite child, in Medina, and the imprisonment of Saudi women activists.
+
+The letter also defends Iran, stating that it is not responsible for similar crimes.
+
+http://baytownsun.com/opinion/article_4c8f1d4e-3bce-11e9-a391-37761ca39ef2.html April 9, 2019 Mathew Obrien Galveston Galveston County’s The Daily News (galvnews.com)
+
+Title: “Sanctioning Islamic corps is pure madness”
+
+The letter condemns the Trump administration’s designation of the IRGC as a Foreign Terrorist Organization and claims that Trump is seeking to start a war with Iran.
+
+https://www.galvnews.com/opinion/letters_to_editor/article_860e6c9b-1e22-5871-a1ea-d8d466fccc94.html April 11, 2019 Matthew Obrien Athens Athens Daily Review (athensreview.com)
+
+Title: “Trump, Bolton trying to start war with Iran” The letter, similar to the April 9 letter published in Galveston County’s The Daily News, claims that Trump and Bolton are trying to start a war with Iran to use the war in Trump’s 2020 presidential campaign, while disregarding the alleged crimes of Saudi Arabia.
+
+https://www.athensreview.com/opinion/letters_to_the_editor/trump-bolton-trying-to-start-war-with-iran/article_e41a029e-5ca5-11e9-b59b-4f174bf94dcd.html April 11, 2019 Isabelle Kingsly Newport News Daily Press (dailypress.com)
+
+Title: “An uneasy path – Re; Recent Iran sanction reports”
+
+The letter also argues that Trump and Bolton are seeking to start a war with Iran toward political ends.
+
+https://www.dailypress.com/news/opinion/letters/dp-edt-letsfri-0412-story.html April 19, 2019 Jeremy Watte Baytown
+
+The Baytown Sun (baytownsun.com)
+
+Title: “Escalating hostility toward Iran” The letter argues that the election of Trump to the U.S. presidency has set the U.S. on a dangerous course and condemns the U.S. withdrawal from the Iran nuclear deal (JCPOA), stating that “the ayatollahs have welcomed this abrogation of honor on Trump’s part.”
+
+http://baytownsun.com/opinion/article_fd3f8bfa-6249-11e9-992a-d373a2b5a5a4.html April 23, 2019
+
+Ed Sullivan Galveston Galveston County’s The Daily News (galvnews.com)
+
+Title: “Escalating hostility toward Iran is wrong, dangerous”
+
+The text of this letter is nearly identical to that authored by Jeremy Watte and published in The Baytown Sun on April 19, excepting changes made in several sentences.
+
+https://www.galvnews.com/opinion/letters_to_editor/article_0409879b-fff9-5ab8-bbf5-a49a1c1592d9.html Table 2: Sample letters published in news outlets submitted by personas in this network Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

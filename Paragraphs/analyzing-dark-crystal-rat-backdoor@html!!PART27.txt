@@ -1,0 +1,6 @@
+
+Open chat window taskbarHide
+Hide the taskbar RDStart Start remote control over user’s desktop closechat
+Close chat window RDStop Stop remote control over user’s desktop fm_opendir List directory contents uninstall Remove the malware from the client taskkill Kill a process forkbomb Endlessly spawn instances of cmd.exe fm_get Transfer a file from the client to the C2 desktopShow
+Show desktop icons Clipboardget Transfer clipboard contents to C2 playaudiourl
+Play a sound file opencd Open the CD-ROM drive door shutdown Shut down the machine restart Restart the machine browseurl Open a web URL in the default browser Table 3: Capabilities of DCRat Proof-of-Concept Dark Crystal RAT Server

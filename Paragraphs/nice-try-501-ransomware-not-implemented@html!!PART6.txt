@@ -1,0 +1,4 @@
+
+Our initial analysis showed that this script was a combination of functions from multiple open source projects or scripts.
+As one example, the replay files, which were either adapted or copied directly from this public GitHub repository, were present in the Install_Backdoor function, as shown in Figure 3: Figure 3: Snippet of scan.py showing usage of EternalBlue replay files This script also had multiple functions checking whether an identified system is 32- vs. 64-bit, as well as raw shell code to step through an exploit.
+The exploit_main function, when called, would appropriately choose between 32- or 64-bit and select the right DLL for injection, as shown in Figure 4.

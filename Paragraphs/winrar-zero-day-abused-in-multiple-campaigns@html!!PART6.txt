@@ -1,0 +1,10 @@
+
+Based on the VirusTotal uploader and the email headers, we believe this is an attack on an Israeli military company.
+Decoy Files
+The ACE file contains decoy files related to documentation for SysAid, a help desk service based in Israel.
+These files are shown as they would be displayed in WinRAR in Figure 7.
+Figure 7: Decoy files Thumbs.db.lnk
+This LNK file target is ‘C:\\Users\\john\\Desktop\\100m.bat’.
+But when we look at the icon location using a LNK parser, as shown in Figure 8, it points to an icon remotely hosted on one of the C2 servers, which can be used to steal NTLM hashes.
+Figure 8:
+LNK parser output SappyCache Analysis Upon extraction, WinRAR copies a previously unknown payload we call SappyCache to the Startup folder with the file name ‘ekrnview.exe’.

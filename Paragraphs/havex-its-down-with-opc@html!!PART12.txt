@@ -1,0 +1,7 @@
+
+Figure 9:
+Sample scan log The contents of the tmp.dat file are the results of the scan of the network devices, looking for OPC servers.
+These are not the in-depth results of the OPC servers themselves, and only perform the initial scanning.
+The particular Havex sample in question also enumerates OPC tags and fully interrogates the OPC servers identified within %TEMP%\\[random].tmp.dat.
+The particular fields queried are: server state, tag name, type, access, and id. The contents of a sample %TEMP%\\OPCServer[random].txt can be found below: Figure 10:
+Contents of OPCServer[Random].txt OPC interrogation While we don’t have a particular case study to prove the attacker’s next steps, it is likely after these files are created and saved, they will be exfiltrated to a command and control server for further processing.

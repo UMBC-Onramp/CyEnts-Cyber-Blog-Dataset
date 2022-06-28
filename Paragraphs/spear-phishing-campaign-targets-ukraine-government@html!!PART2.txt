@@ -1,0 +1,12 @@
+
+The spear phishing email, sent on Jan. 22, 2019, used the subject \"SPEC-20T-MK2-000-ISS-4.10-09-2018-STANDARD,\" and the sender was forged as Armtrac, a defense manufacturer in the United Kingdom (Figure 1).
+Figure 1:
+The spear phishing email
+The email included an attachment with the filename \"Armtrac-Commercial.7z\" (MD5: 982565e80981ce13c48e0147fb271fe5).
+This 7z package contained \"Armtrac-Commercial.zip\" (MD5: e92d01d9b1a783a23477e182914b2454) with two benign Armtrac documents and one malicious LNK file with a substituted icon (Figure 2).
+Figure 2: LNK with substituted icon Armtrac-20T-with-Equipment-35078.pdf
+(MD5: 0d6a46eb0d0148aafb34e287fcafa68f) is a benign document from the official Armtrac website.
+SPEC-20T-MK2-000-ISS-4.10-09-2018-STANDARD.pdf (MD5: bace12f3be3d825c6339247f4bd73115) is a benign document from the official Armtrac website.
+SPEC-10T-MK2-000-ISS-4.10-09-2018-STANDARD.pdf.lnk (MD5: ec0fb9d17ec77ad05f9a69879327e2f9) is a malicious LNK file that executes a PowerShell script.
+Interestingly, while the LNK file used a forged extension to impersonate a PDF document, the icon was replaced with a Microsoft Word document icon.
+Sponsor Potentially Active Since 2014 Compilation times indicate that this actor, who focused primarily on Ukraine, may have been active since at least 2014.

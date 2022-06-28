@@ -1,0 +1,4 @@
+
+The commands that navigate the cursor in IDA Pro will never be as fast or easy as simply using the mouse to point and click somewhere on the screen.
+In any case, users will find themselves building up a collection of voice commands they prefer to use that will depend on personal tastes.
+However, enabling full voice control allows reverse engineers who do not have full use of their hands to still effectively operate IDA Pro, which we hope will be of great use to the community.

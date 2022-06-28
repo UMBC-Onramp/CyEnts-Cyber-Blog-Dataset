@@ -1,0 +1,3 @@
+
+At this stage the client had pulled the system offline and began remediation steps, however we still didn't know exactly which exploit was leveraged to gain a foothold on this system.
+We knew the process path which indicated it was httpd.exe being leveraged to run malicious javaw.exe commands.

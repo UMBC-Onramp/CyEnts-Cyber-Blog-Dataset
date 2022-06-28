@@ -1,0 +1,15 @@
+
+From here, navigate your IDA Pro Disassembly view to the function containing a technique you'd like to capture and click the Analyze button.
+The rule generator will parse, format, and display all the capa features that it finds in your function.
+You can write your rule using the rule generator's three main panes:
+Features , Preview , and Editor .
+Your first step is to add features from the Features pane.
+The Features pane is a tree view containing all the capa features extracted from your function.
+You can filter for specific features using the search bar at the top of the pane.
+Then, you can add features by double-clicking them.
+Figure 2 shows this in action.
+Figure 2: capa explorer feature selection As you add features from the Features pane, the rule generator automatically formats and adds them to the Preview and Editor panes.
+The Preview and Editor panes help you finesse the features that you've added and allow you to modify other information like the rule's metadata.
+The Editor pane is an interactive tree view that displays the statement and feature hierarchy that forms your rule.
+You can reorder nodes using drag-and-drop and edit nodes via right-click context menus.
+To help humans understand the rule logic, you can add descriptions and comments to features by typing in the Description and Comment columns.

@@ -1,0 +1,6 @@
+
+In addition to these two vulnerabilities patched on iOS 8.4, we also disclose the detail of another untrusted code injection attack by replacing the VPN Plugin, the Plugin Masque Attack.
+We reported this vulnerability to Apple in Nov 2014, and Apple fixed the vulnerability on iOS 8.1.3 when Apple patched the original Masque Attack (App Masque)
+[6, 11].
+However, this exploit is even more severe than the original Masque Attack.
+The malicious code can be injected to the neagent process and can perform privileged operations, such as monitoring all VPN traffic, without the user’s awareness.

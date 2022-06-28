@@ -1,0 +1,6 @@
+
+In recent years, however, its creators have actively transformed the banking Trojan into a multifunctional modular tool.
+What’s more, Trickbot is now popular with cybercriminal groups as a delivery vehicle for injecting third-party malware into corporate infrastructure.
+News outlets recently reported that Trickbot’s authors have hooked up with various new partners to use the malware to infect corporate infrastructure with all kinds of additional threats, such as the Conti ransomware.
+Such repurposing could pose an additional danger to employees of corporate security operation centers and other cybersec experts.
+Some security solutions still recognize Trickbot as a banking Trojan, as per its original specialty.

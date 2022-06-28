@@ -1,0 +1,9 @@
+
+Figure 3 shows the script’s output of the recovered stackstring locations from the GandCrab sample.
+Analysis of this malware takes the script about 15 seconds.
+Figure 3: Deobfuscated stackstrings and locations where they were identified Figure 4 shows the disassembly listing of the stackstring creation example discussed at the beginning of this post after running ironstrings .
+Figure 4:
+Commented stackstring after running ironstrings After analyzing a sample, the script provides a summary and a unique listing of all recovered strings.
+The output for the ransomware sample is shown in Figure 5.
+Here the tool failed to analyze two functions due to invalid memory operations during Unicorn’s code emulation.
+Figure 5: Script summary and unique string listing Note that you can modify various options to change the script’s behavior.

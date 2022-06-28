@@ -1,0 +1,9 @@
+
+Figure 1: Geographical and industry distribution of alleged MAZE victims Multiple Actors Involved in MAZE Ransomware Operations Identified Mandiant identified multiple Russian-speaking actors who claimed to use MAZE ransomware and were seeking partners to fulfill different functional roles within their teams.
+Additional information on these actors is available to Mandiant Intelligence subscribers .
+A panel used to manage victims targeted for MAZE ransomware deployment has a section for affiliate transactions.
+This activity is consistent with our assessment that MAZE operates under an affiliate model and is not distributed by a single group.
+Under this business model, ransomware developers will partner with other actors (i.e. affiliates) who are responsible for distributing the malware.
+In these scenarios, when a victim pays the ransom demand, the ransomware developers receive a commission.
+Direct affiliates of MAZE ransomware also partner with other actors who perform specific tasks for a percentage of the ransom payment.
+This includes partners who provide initial access to organizations and pentesters who are responsible for reconnaissance, privilege escalation and lateral movement—each of which who appear to work on a percentage-basis.

@@ -1,0 +1,8 @@
+Introduction Recently FireEye mobile researchers discovered a high-risk ad\nlibrary embedded in thousands of iOS apps in the Apple App Store,\nincluding 213 popular apps with more than 1000 user reviews in both\nthe US and Chinese App Stores.
+As of publication of this blog, 935\naffected apps are still downloadable.
+The capabilities of this ad\nlibrary go far beyond those of typical adware and clearly violate\nrequirements of Apple’s iOS Developer Program intended to protect\nusers’ security and privacy.
+The library embeds backdoors in unsuspecting apps that make use of it to display ads, exposing sensitive data and functionality.
+The backdoors can be controlled remotely by loading JavaScript code from remote servers to perform the following actions: Capture audio and screenshots.
+Monitor and upload device location.
+Read/delete/create/modify files in the app’s data container.
+Read/Write/Reset the app’s keychain (e.g., app password storage).

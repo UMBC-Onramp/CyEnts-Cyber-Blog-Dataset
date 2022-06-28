@@ -1,0 +1,5 @@
+
+The ransom note is dropped as a text file using a random filename, such as “5f03r-readme.txt”.
+The filename format uses “<random string>-readme.txt”.
+Encrypted files in the folder have the extension name of “5f03r” or the <random string> added to the filename.
+The files used for DLL side-loading technique are also dropped in the same path as the wallpaper bmp file (Figure 1d).

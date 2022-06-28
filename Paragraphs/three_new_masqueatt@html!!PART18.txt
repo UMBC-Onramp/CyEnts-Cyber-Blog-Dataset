@@ -1,0 +1,17 @@
+
+iOS Update Gap in Enterprise Networks
+The release of iOS 8.1.3 (where App Masque, URL Masque, and Plugin\nMasque issues were fixed or partially fixed) was in January 2015, and\niOS is well known for its fast adoption of new versions.
+However, our\nrecent monitoring of iOS web traffic in several high-profile networks\nshows surprising results.
+As shown in Figure 3, nearly one third of\nthe iOS traffic that we monitored is still from devices with versions\nbelow 8.1.3 even 5 months after its release.
+The devices behind that\ntraffic are still vulnerable to all the Masque Attacks, including the\nApp Masque, URL Masque, and Plugin Masque.
+We urge everyone,\nespecially enterprise users, to keep up with the latest iOS updates.
+Figure 3.
+iOS version ratios based on network traffic monitored by FireEye Conclusions To summarize, although Apple has fixed or partially fixed the\noriginal Masque Attack [6, 11] on iOS 8.1.3, there are still other\nattack surfaces to exploit vulnerabilities in the installation process\non iOS.
+We disclose the details of three variants of Masque Attack in\nthis article to help users realize the risk and better protect\nthemselves.
+Moreover, around one third of iOS devices that we\nmonitored are still vulnerable to all the Masque Attacks because they\nhave not been upgraded.
+We suggest that all iOS users keep their\ndevices up-to-date.
+[2] https://developer.apple.com/app-extensions/ [3] https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/NotificationCenter.html [4] https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html [5] https://drive.google.com/file/d/0BxxXk1d3yyuZOFlsdkNMSGswSGs/view [6] https://www.fireeye.com/blog/threat-research/2014/11/masque-attack-all-your-ios-apps-belong-to-us.html [7] http://thecyberwire.com/events/docs/nsmail.pdf [8] https://cansecwest.com/slides/2015/CanSecWest2015_Final.pdf
+[9] https://itunes.apple.com/us/app/cisco-anyconnect/id392790924?mt=8 [11] https://www.fireeye.com/blog/threat-research/2015/02/ios_masque_attackre.html [12]
+http://en.pangu.io/ Subscribe to Blogs Get email updates as new blog posts are added.
+
+

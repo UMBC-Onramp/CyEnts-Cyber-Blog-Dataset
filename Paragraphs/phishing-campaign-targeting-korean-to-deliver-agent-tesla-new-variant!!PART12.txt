@@ -1,0 +1,4 @@
+
+Agent Tesla publishes a Setup program that allows the attacker to choose which features to enable.
+The Tesla Agent Setup program then compiles the Agent Tesla payload file according to those choices.
+Agent Tesla starts these tasks in its Main() (stealing credentials), Timer (keylogger, stealing clipboard data, taking screenshots), and Thread (stealing cookies from browsers) functions.

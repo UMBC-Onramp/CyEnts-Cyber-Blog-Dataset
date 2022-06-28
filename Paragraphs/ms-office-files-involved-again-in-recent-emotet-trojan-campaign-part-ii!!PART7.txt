@@ -1,0 +1,5 @@
+
+Afterward, the thread-module starts to monitor the temporary file in a loop until it is created with the stolen information from the victim’s device.
+Looking at the Functional Modules In the above analysis, I explained how a C2 module is loaded and executed in the victim’s device.
+The C2 server can return many modules, each going through the same process as described above.
+They will have a thread-module, run in their thread, and perform their own process hollowing.

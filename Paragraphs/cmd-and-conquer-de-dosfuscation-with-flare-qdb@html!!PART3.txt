@@ -1,0 +1,10 @@
+
+This file does not appear in VirusTotal as of this writing, but its dropper does (the MD5 hash is ABD0A49FDA67547639EEACED7955A01A).
+My goal was to de-obfuscate this script and report on what the attacker was doing.
+Figure 1: Contents of XYNT.bat
+This 165k batch file is dropped as C:\\Windows\\Temp\\XYNT.bat and executed by its dropper.
+Its commands are built from environment variable substrings.
+Figure 2 shows how to use the ECHO command to decode the first command.
+Figure 2: Partial command decoding via the ECHO command The script uses hundreds of commands to set environment variables that are ultimately expanded to de-obfuscate malicious commands.
+A tedious approach to de-obfuscating this script would be to de-fang each command by prepending an ECHO statement to print each de-obfuscated command to the console.
+Unfortunately, although the ECHO command can “decode” each command, BatchEncryption needs the SET commands to be executed to decode future commands.

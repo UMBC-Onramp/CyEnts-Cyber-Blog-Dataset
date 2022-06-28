@@ -1,0 +1,6 @@
+
+Individuals could attempt to\nhinder a penetration test by placing undue restrictions on the scope\nof systems assessed, the types of tools that can be used, or the\ntiming of the test.
+Even if compliance is a motivating\nfactor, we hope you're able to take advantage of the opportunity\npenetration testing provides to determine where vulnerabilities lie\nand make your systems more secure.
+That is the real value that\npenetration testing can provide.
+Finally, if you are getting\na penetration test to comply with requirements imposed on your\norganization, that will often drive some of the answers to later\nquestions about the type and scope of the test.
+Keep in mind that\nstandards only dictate minimum requirements, however, so you should\nalso consider additional penetration testing activities beyond the\n\"bare minimum.\" Who There are really two \"who\" questions to\nconsider, but for now we will just deal with the first: Who are the\nattackers that concern you?

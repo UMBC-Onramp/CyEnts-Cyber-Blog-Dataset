@@ -1,0 +1,5 @@
+
+This was particularly true for government buildings where solicitations for proposals are issued to build the required infrastructure.
+All-in-all we have collected around 20 documents that include detailed proposals, requirements, pricing, engineering diagrams, and other information useful for reconnaissance.
+One particular government building had a 48-page manual that included internal network settings of the devices, control diagrams, and even device locations.
+Redacted network diagram found on the Internet specifying ICS buildout What does it matter if an attacker can turn on and off someone’s AC or heat?

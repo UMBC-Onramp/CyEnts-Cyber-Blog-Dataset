@@ -1,0 +1,7 @@
+
+However, let’s get straight to the findings.
+Out of the five phones, two send the user’s data somewhere the first time they’re powered on.
+To whom the data goes — manufacturer, distributor, firmware developer, or somebody else — is not clear.
+Neither is it clear how the data may be used.
+It could be assumed that such data might be useful to monitor sales or control the distribution of batches of products in different countries.
+To be clear, it doesn’t sound very dangerous; and after all, every smartphone transmits some telemetry data.

@@ -1,0 +1,9 @@
+
+Removing this beast is a real challenge; even a factory reset won’t do it.
+Armed with root access, xHelper lets attackers do almost anything they want on the device.
+Is APKPure safe now?
+On April 8, we informed APKPure about the issue.
+On April 9, APKPure representatives replied that they saw the problem and were working on the fix.
+Shortly after that, a new version (3.17.19) appeared on the APKPure website.
+According to its description , the update “Fixed a potential security problem, making APKPure safer to use.”
+We can confirm that the problem has indeed been fixed: APKPure 3.17.19 doesn’t contain the malicious component.

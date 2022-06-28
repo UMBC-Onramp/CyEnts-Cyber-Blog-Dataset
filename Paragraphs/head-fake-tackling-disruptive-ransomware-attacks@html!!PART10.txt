@@ -1,0 +1,8 @@
+
+Following the system information gathering, the data is subsequently XOR-encoded and sent via another custom HTTP POST request request to the same C2 server, with the data included in the parameter “b=” .
+Figure 5 provides a snippet of sample of the second HTTP request.
+Figure 5: Second HTTP POST request after successful system information gathering Figure 6 provides a copy of the decoded content, showing the various data points the malware transmitted back to the C2 server.
+0=500 1=C:\\Users\\User\\AppData\\Local\\Temp\\Chrome.js 2=
+AMD64 3=SYSTEM1 4=
+User 5=4 6=
+Windows_NT 7=DOMAIN 8=HP 9=

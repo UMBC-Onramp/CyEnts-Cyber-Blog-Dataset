@@ -1,0 +1,9 @@
+
+Malware on Google Play We’ve already written more than once that malware can sneak into official app stores .
+To pass all checks and get to through to users, cybercriminals employ all sorts of tricks, such as loading malicious code into an approved program in the guise of an update.
+In 2021, loaders for various Trojans were found in apps on Google Play, which included the Joker and Facestealer malware.
+Joker stealthily takes out paid subscriptions for the user, while Facestealer, as the name suggests, specializes in stealing Facebook credentials.
+In most cases, to spread their creations via Google Play, cybercriminals add tiny injections of malicious code to an otherwise harmless apps that have been already approved by the store.
+For example, the authors of the Joker Trojan took advantage of the popularity of the Korean TV series Squid Game to hide the malware in an app that offered themed wallpapers.
+When Joker was discovered, there were more than 200 apps dedicated to the series on Google Play, and many of them borrowed features from each other.
+Unsurprisingly, when scanning such programs, the store moderators let a malicious “upgrade” sneak past.

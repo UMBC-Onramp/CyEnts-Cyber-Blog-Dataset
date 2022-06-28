@@ -1,0 +1,5 @@
+
+FIGURE 7.
+CHECK IF OS IS 32- OR 64-BIT In the case that the field was false, or the exploit is patched, the malware will check the OS version again using the PEB.
+If the OS is Windows Vista, at least it will get from the own process token the level of execution privilege.
+When the discovered privilege level is less than 0x3000 (that means that the process is running as a real administrator in the system or SYSTEM), it will relaunch the process using the ‘runas’ command to elevate to 0x3000 process from 0x2000 or 0x1000 level of execution.

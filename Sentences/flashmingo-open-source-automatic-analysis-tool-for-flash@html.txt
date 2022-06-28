@@ -1,0 +1,165 @@
+Adobe Flash is one of the most exploited software components of the last decade.
+
+Its complexity and ubiquity make it an obvious target for attackers.
+
+Public sources list more than one thousand CVEs being assigned to the Flash Player alone since 2005.
+
+Almost nine hundred of these vulnerabilities have a Common Vulnerability Scoring System (CVSS) score of nine or higher.
+
+After more than a decade of playing cat and mouse with the attackers, Adobe is finally deprecating Flash in 2020.
+
+To the security community this move is not a surprise since all major browsers have already dropped support for Flash.
+
+A common misconception exists that Flash is already a thing of the past; however, history has shown us that legacy technologies linger for quite a long time.
+
+If organizations do not phase Flash out in time, the security threat may grow beyond Flash's end of life due to a lack of security patches.
+
+As malware analysts on the FLARE team, we still see Flash exploits within malware samples.
+
+We must find a compromise between the need to analyse Flash samples and the correct amount of resources to be spent on a declining product.
+
+To this end we developed FLASHMINGO , a framework to automate the analysis of SWF files.
+
+FLASHMINGO enables analysts to triage suspicious Flash samples and investigate them further with minimal effort.
+
+It integrates into various analysis workflows as a stand-alone application or can be used as a powerful library.
+
+Users can easily extend the tool's functionality via custom Python plug-ins.
+
+Background: SWF and ActionScript3 Before we dive into the inner workings of FLASHMINGO, let’s learn about the Flash architecture.
+
+Flash’s SWF files are composed of chunks, called tags , implementing a specific functionality.
+
+Tags are completely independent from each other, allowing for compatibility with older versions of Flash.
+
+If a tag is not supported, the software simply ignores it.
+
+The main source of security issues revolves around SWF’s scripting language: ActionScript3 (AS3).
+
+This scripting language is compiled into bytecode and placed within a Do ActionScript ByteCode ( DoABC ) tag.
+
+If a SWF file contains a DoABC tag, the bytecode is extracted and executed by a proprietary stack-based virtual machine (VM), known as AVM2 in the case of AS3, shipped within Adobe’s Flash player.
+
+The design of the AVM2 was based on the Java VM and was similarly plagued by memory corruption and logical issues that allowed malicious AS3 bytecode to execute native code in the context of the Flash player.
+
+In the few cases where the root cause of past vulnerabilities was not in the AVM2, ActionScript code was still necessary to put the system in a state suitable for reliable exploitation.
+
+For example, by grooming the heap before triggering a memory corruption.
+
+For these reasons, FLASHMINGO focuses on the analysis of AS3 bytecode.
+
+Tool Architecture FLASHMINGO leverages the open source SWIFFAS library to do the heavy lifting of parsing Flash files.
+
+All binary data and bytecode are parsed and stored in a large object named SWFObject .
+
+This object contains all the information about the SWF relevant to our analysis: a list of tags, information about all methods, strings, constants and embedded binary data, to name a few.
+
+It is essentially a representation of the SWF file in an easily queryable format.
+
+FLASHMINGO is a collection of plug-ins that operate on the SWFObject and extract interesting information.
+
+Figure 1 shows the relationship between FLASHMINGO, its plug-ins, and the SWFObject .
+
+Figure 1: High level software structure
+
+Several useful plug-ins covering a wide range of common analysis are already included with FLASHMINGO, including: Find suspicious method names.
+
+Many samples contain method names used during development, like “run_shell” or “find_virtualprotect”.
+
+This plug-in flags samples with methods containing suspicious substrings.
+
+Find suspicious constants.
+
+The presence of certain constant values in the bytecode may point to malicious or suspicious code.
+
+For example, code containing the constant value 0x5A4D may be shellcode searching for an MZ header.
+
+Find suspicious loops.
+
+Malicious activity often happens within loops.
+
+This includes encoding, decoding, and heap spraying.
+
+This plug-in flags methods containing loops with interesting operations such as XOR or bitwise AND.
+
+It is a simple heuristic that effectively detects most encoding and decoding operations, and otherwise interesting code to further analyse.
+
+Retrieve all embedded binary data.
+
+A decompiler plug-in that uses the FFDEC Flash Decompiler .
+
+This decompiler engine, written in Java, can be used as a stand-alone library.
+
+Since FLASHMINGO is written in Python, using this plug-in requires Jython to interoperate between these two languages.
+
+Extending FLASHMINGO With Your Own Plug-ins FLASHMINGO is very easy to extend.
+
+Every plug-in is located in its own directory under the plug-ins directory.
+
+At start-up FLASHMINGO searches all plug-in directories for a manifest file (explained later in the post) and registers the plug-in if it is marked as active.
+
+To accelerate development a template plug-in is provided.
+
+To add your own plug-in, copy the template directory, rename it, and edit its manifest and code.
+
+The template plug-in’s manifest, written in YAML, is shown below: ``` # This is a template for easy development name : Template active : no description : copy this to kickstart development returns : nothing ``` The most important parameters in this file are: name and active .
+
+The name parameter is used internally by FLASHMINGO to refer to it.
+
+The active parameter is a Boolean value (yes or no) indicating whether this plug-in should be active or not.
+
+By default, all plug-ins (except the template) are active, but there may be cases where a user would want to deactivate a plug-in.
+
+The parameters description and returns are simple strings to display documentation to the user.
+
+Finally, plug-in manifests are parsed once at program start.
+
+Adding new plug-ins or enabling/disabling plug-ins requires restarting FLASHMINGO.
+
+Now for the actual code implementing the business logic.
+
+The file plugin.py contains a class named Plugin ; the only thing that is needed is to implement its run method.
+
+Each plug-in receives an instance of a SWFObject as a parameter.
+
+The code will interact with this object and return data in a custom format, defined by the user.
+
+This way, the user's plug-ins can be written to produce data that can be directly ingested by their infrastructure.
+
+Let's see how easy it is to create plug-ins by walking through one that is included, named binary_data .
+
+This plugin returns all embedded data in a SWF file by default.
+
+If the user specifies an optional parameter pattern then the plug-in searches for matches of that byte sequence within the embedded data, returning a dictionary of embedded data and the offset at which the pattern was found.
+
+First, we define the optional argument pattern to be supplied by the user (line 2 and line 4): Afterwards, implement a custom run method and all other code needed to support it: This is a simple but useful plugin and illustrates how to interact with FLASHMINGO.
+
+The plug-in has a logging facility accessible through the property “ml” (line 2).
+
+By default it logs to FLASHMINGO’s main logger.
+
+If unspecified, it falls back to a log file within the plug-in’s directory.
+
+Line 10 to line 16 show the custom run method, extracting information from the SWF’s embedded data with the help of the custom _inspect_binary_data method.
+
+Note the source of this binary data: it is being read from a property named “swf”.
+
+This is the SWFObject passed to the plug-in as an argument, as mentioned previously.
+
+More complex analysis can be performed on the SWF file contents interacting with this swf object.
+
+Our repository contains documentation for all available methods of a SWFObject .
+
+Conclusion Even though Flash is set to reach its end of life at the end of 2020 and most of the development community has moved away from it a long time ago, we predict that we’ll see Flash being used as an infection vector for a while.
+
+Legacy technologies are juicy targets for attackers due to the lack of security updates.
+
+FLASHMINGO provides malware analysts a flexible framework to quickly deal with these pesky Flash samples without getting bogged down in the intricacies of the execution environment and file format.
+
+Find the FLASHMINGO tool on the FireEye public GitHub Repository .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

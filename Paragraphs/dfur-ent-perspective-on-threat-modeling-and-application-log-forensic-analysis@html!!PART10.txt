@@ -1,0 +1,7 @@
+
+Application logs were designed for troubleshooting, not investigating .
+The DFUR application was configured to log diagnostic information, application errors, and limited subsets of successful user activity.
+The DFUR team needed to reconfigure and develop the application to record more security related events.
+DFUR:
+New and Improved Monitoring and Detection The DFUR team addressed their application log and analysis problems and started building a detection and investigative capability in their Splunk ES instance.
+Using the analysis workflows developed during the threat modeling process, the DFUR team designed Splunk dashboards (Figure 1) to provide detection analytics and context around three primary datapoints: usernames, IP addresses, and care providers (“organizations”).

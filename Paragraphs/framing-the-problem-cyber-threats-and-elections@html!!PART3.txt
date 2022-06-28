@@ -1,0 +1,5 @@
+
+Although we have not observed direct evidence that actors have manipulated the electoral process in any major national or regional election by infiltrating the systems or hardware used to record or tally votes, the sheer complexity of these systems prevents us from categorically stating that these systems have not been successfully compromised.
+Moving outward into the gray section of the diagram, entities that fall into this category include organizations involved in the administration of elections.
+While these organizations may maintain networks separate from voting systems and tabulation platforms, they play important roles in overseeing and communicating results to the public.
+FireEye has witnessed breaches into a variety of these organizations, in some cases for the purpose of collecting intelligence or in others to coopt and display false information on publicly-facing systems as part of an influence campaign.

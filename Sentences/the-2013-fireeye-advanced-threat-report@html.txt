@@ -1,0 +1,29 @@
+FireEye has just released its 2013 Advanced Threat Report (ATR), which provides a high-level overview of the computer network attacks that FireEye discovered last year.
+
+In this ATR, we focused almost exclusively on a small, but very important subset of our overall data analysis – the advanced persistent threat (APT).
+
+APTs, due to their organizational structure, mission focus, and likely some level of nation-state support, often pose a more serious danger to enterprises than a lone hacker or hacker group ever could.
+
+Over the long term, APTs are capable of cyber attacks that can rise to a strategic level, including widespread intellectual property theft, espionage, and attacks on national critical infrastructures.
+
+The data contained in this report is gleaned from the FireEye Dynamic Threat Intelligence (DTI) cloud , and is based on attack metrics shared by FireEye customers around the world.
+
+Its insight is derived from: 39,504 cyber security incidents 17,995 malware infections 4,192 APT incidents 22 million command and control (CnC) communications 159 APT-associated malware families CnC infrastructure in 206 countries and territories Based on our data, the U.S., South Korea, and Canada were the top APT targets in 2013; the U.S., Canada, and Germany were targeted by the highest number of unique malware families.
+
+The ATR describes attacks on 20+ industry verticals.
+
+Education, Finance, and High-Tech were the top overall targets, while Government, Services/Consulting, and High-Tech were targeted by the highest number of unique malware families.
+
+In 2013, FireEye discovered eleven zero-day attacks.
+
+In the first half of the year, Java was the most common target for zero-days; in the second half, FireEye observed a surge in Internet Explorer (IE) zero-days that were used in watering hole attacks, including against U.S. government websites.
+
+Last year, FireEye analyzed five times more Web-based security alerts than email-based alerts – possibly stemming from an increased awareness of spear phishing as well as a more widespread use of social media.
+
+In sum, the 2013 ATR offers strong evidence that malware infections occur within enterprises at an alarming rate, that attacker infrastructure is global in scope, and that advanced attackers continue to penetrate legacy defenses, such as firewalls and anti-virus (AV), with ease.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

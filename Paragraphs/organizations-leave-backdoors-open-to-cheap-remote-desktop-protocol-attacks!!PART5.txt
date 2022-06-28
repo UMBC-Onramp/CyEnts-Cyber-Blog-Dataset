@@ -1,0 +1,8 @@
+
+The number of compromised systems claimed to be available for sale by several RDP shops.
+A single compromised system can appear on more than one shop’s list.
+RDP access by cybercriminals How do cybercriminals (mis)use RDP access?
+RDP was designed to be an efficient way to access a network.
+By leveraging RDP, an attacker need not create a sophisticated phishing campaign, invest in malware obfuscation, use an exploit kit, or worry about antimalware defenses.
+Once attackers gain access, they are in the system.
+Scouring the criminal underground, we found the top uses of hacked RDP machines promoted by RDP shops.

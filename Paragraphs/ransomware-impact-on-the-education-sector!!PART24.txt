@@ -1,0 +1,12 @@
+
+Verifies that users and devices accessing resources are “authorized.”
+  Identifies devices and users on a per-session basis and uses that information to make smarter decisions for application access (Should that device be allowed to access this application?
+  How about if the connection is from xyz geolocation?
+What about after-hours?).
+Not all endpoints should have access to all resources because they are connected to the local network or are part of the domain.
+Segmentation – reduces exposure in the event of compromise by preventing the lateral movement of malware.
+Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+

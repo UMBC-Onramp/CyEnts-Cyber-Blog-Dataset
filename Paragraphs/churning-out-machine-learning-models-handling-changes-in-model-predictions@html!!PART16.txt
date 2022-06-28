@@ -1,0 +1,11 @@
+
+Our scheme, which reduces the weight of those points instead of removing them, is not dissimilar to those other noise reduction approaches which could explain the accuracy improvement.
+Conclusion ML models experience an inherent struggle: not retraining means being vulnerable to new classes of threats, while retraining causes churn and potentially reintroduces old vulnerabilities.
+In this blog post, we have discussed two different approaches to modifying ML model training in order to reduce churn: incremental model training and churn-aware learning.
+Both demonstrate effectiveness in the EMBER malware classification data set by reducing the bad churn, while simultaneously improving accuracy.
+Finally, we also demonstrated the novel conclusion that reducing churn in a data set with label noise can result in a more accurate model.
+Overall, these approaches provide low technical debt solutions to updating models that allow data scientists and machine learning engineers to keep their models up-to-date against the latest cyber threats at minimal cost.
+At FireEye, our data scientists work closely with the FireEye Labs detection analysts to quickly identify misclassifications and use these techniques to reduce the impact of churn on our customers.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

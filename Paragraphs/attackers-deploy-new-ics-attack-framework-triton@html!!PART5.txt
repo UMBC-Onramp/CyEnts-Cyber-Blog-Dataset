@@ -1,0 +1,8 @@
+
+Intrusions of this nature do not necessarily indicate an immediate intent to disrupt targeted systems, and may be preparation for a contingency.
+Background on Process Control and Safety Instrumented Systems Figure 1: ICS Reference Architecture Modern industrial process control and automation systems rely on a variety of sophisticated control systems and safety functions.
+These systems and functions are often referred to as Industrial Control Systems (ICS) or Operational Technology (OT).
+A Distributed Control System (DCS) provides human operators with the ability to remotely monitor and control an industrial process.
+It is a computerized control system consisting of computers, software applications and controllers.
+An Engineering Workstation is a computer used for configuration, maintenance and diagnostics of the control system applications and other control system equipment.
+A SIS is an autonomous control system that independently monitors the status of the process under control.

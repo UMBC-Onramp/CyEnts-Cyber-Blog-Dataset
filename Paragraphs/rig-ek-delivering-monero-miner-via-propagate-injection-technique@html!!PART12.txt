@@ -1,0 +1,6 @@
+
+After modifying several header fields at the start of decrypted data, we can get the proper executable header (Figure 14).
+Figure 14:
+Injected executable without header (left), and with header (right)
+After decrypting the payload, the malware targets the shell process, explorer.exe, for malicious code injection.
+It uses GetShellWindow and GetWindowThreadProcessId APIs to get the shell window’s thread ID (Figure 15).

@@ -1,0 +1,12 @@
+
+The request is made with the following parameters ‘hwid=<HWID>&username=<username>&password=<password>’.
+Once the app is running and registered it shows the following interface.
+In this interface it is possible to see the function proposed by the app and it was similar to the screenshot that was shared during our chat.
+Basically, the tool allows the following: Download and execute a malicious executable from an URL Execute a custom command Type of payload can be exe, jar, vbs, pif, scr Modify the dropped filename Load a stub for increase obfuscation Generate a Word or Excel document It contains an Anti
+-virus Evasion tab: Use encryption and modify the encryption key Add junk code Add loop code It also contains a tab which is still in development: Create Jscript or VBscript Download and execute Payload URL Obfuscation with base64 and AMSI bypass which are not yet developed.
+Reverse Engineering
+The sample is coded in .Net
+without any obfuscation.
+We can see in the following screenshot the structure of the file.
+Additionally, it uses the Bunifu framework for the graphic interface.
+( https://bunifuframework.com/ )

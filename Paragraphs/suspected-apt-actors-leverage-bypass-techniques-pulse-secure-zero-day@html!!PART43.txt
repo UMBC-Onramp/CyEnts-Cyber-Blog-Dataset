@@ -1,0 +1,8 @@
+
+If no cmd value was extracted, the webshell will simply output a </pre
+> HTML tag.
+PULSECHECK
+The file secid_canceltoken.cgi (SHA256: a1dcdf62aafc36dd8cf64774dea80d79fb4e24ba2a82adf4d944d9186acd1cc1 ) is a webshell written in Perl that enables arbitrary command execution.
+With a properly formatted request, the script will execute webshell code.
+Otherwise, the legitimate welcome page of the Pulse Secure VPN software is presumably invoked.
+The script checks for web requests using the HTTP POST method and, if found, will further check the HTTP request headers for the CGI environment variable HTTP_X_KEY .

@@ -1,0 +1,9 @@
+
+Here is a quick rundown of what to expect: By the Numbers : A large and diverse set of metrics including attacker dwell time, detection by source, industry targeting, growing threat techniques, sophisticated malware families, and more.
+Ransomware : Front-line stories on how this harmful threat is evolving, challenges with recovery, and best practice hardening strategies to effectively combat this threat.
+Newly Named Threat Groups :
+More on FIN11, a financially motivated threat group that we promoted in 2020, which has been active since at least 2016 and is most recently known for operations involving ransomware and extortion.
+Pandemic-Related Threats : Breakdown of countless espionage campaigns targeting ground-breaking research in the race to learn more about COVID-19.
+UNC2452/SUNBURST :
+UNC2452’s headline-making compromise of environments via an implant in the SolarWinds Orion platform, mapped to the attack lifecycle framework with details at every stage.
+Case Studies : Mandiant engagements involving the rise of insider threats and how to be more prepared, plus advanced red teaming tactics that enabled access to executive emails without any exploits.

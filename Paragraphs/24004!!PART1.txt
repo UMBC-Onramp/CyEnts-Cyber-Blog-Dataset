@@ -1,0 +1,2 @@
+Researchers have discovered a critical vulnerability CVE-2022-22965 , in Spring, an open source framework for the Java platform.
+Unfortunately, details about the vulnerability were leaked to the public before the official announcement was published and the relevant patches were released.

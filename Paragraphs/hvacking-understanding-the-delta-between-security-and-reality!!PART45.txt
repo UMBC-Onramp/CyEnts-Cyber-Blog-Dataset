@@ -1,0 +1,5 @@
+
+Figure 26 shows what the shellcode looks like with consideration for all restrictions.
+Figure 26
+It is important to note that the “.asciz” assembler directive is used to place a null-terminated ASCII string literal into memory.
+R12 was chosen as the register to contain the address of branch, since R12 is the Intra Procedural (IP) scratch space register on the ARM architecture.

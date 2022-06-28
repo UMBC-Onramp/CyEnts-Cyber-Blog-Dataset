@@ -1,0 +1,6 @@
+
+The more computational resources a pool harnesses, the greater the pool's chance of mining a new block.
+When a new block is mined, the pool's participants are rewarded with coins.
+Figure 1 illustrates the roles miners play in the blockchain network.
+Figure 1:
+The role of miners Underground Interest FireEye iSIGHT Intelligence has identified eCrime actor interest in cryptocurrency mining-related topics dating back to at least 2009 within underground communities.

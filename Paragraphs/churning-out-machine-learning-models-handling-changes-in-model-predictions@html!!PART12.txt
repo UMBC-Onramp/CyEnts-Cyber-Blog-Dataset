@@ -1,0 +1,4 @@
+
+We have made a few deviations in our approach: (1) we are interested in reducing bad churn (churn involving new misclassifications) as opposed to all churn and (2) we would like to avoid the extreme memory requirements of the original method.
+In a similar manner to Cormier et al., we want to reduce the weight, e.g. importance, of previously misclassified samples during training of a new model.
+Practically, the model sees making the same mistakes as the previous model as cheaper than making a new mistake.

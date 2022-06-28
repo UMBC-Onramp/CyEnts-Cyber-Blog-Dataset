@@ -1,0 +1,4 @@
+
+I discovered cmd!Dispatch, which receives not a string but a structure with pointers to the command, arguments, and any I/O redirection information (such as redirecting the standard output or error streams of a program to a file or device).
+Testing revealed that these strings had all their environment variables expanded, which means we should be able to read the de-obfuscated commands from here.
+Figure 4 is an exploration of this structure in WinDbg after running the command \"echo hai > nul\".

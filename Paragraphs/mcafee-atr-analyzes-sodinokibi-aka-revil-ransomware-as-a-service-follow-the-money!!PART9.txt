@@ -1,0 +1,3 @@
+
+If we take the average of $2,500 – $5,000 USD as a ransom ask, and the mentioned split of 30/40 percent for the actor maintaining the Sodinokibi ransomware and affiliate infrastructure, they make $700 – $1,500 USD per paid infection.
+We already saw in the beginning of this article that the affiliate Lalartu claimed to have made 287k USD in 72 hours, which is an 86k USD profit for the actor from one affiliate only.

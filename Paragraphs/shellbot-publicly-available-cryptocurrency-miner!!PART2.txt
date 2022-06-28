@@ -1,0 +1,5 @@
+
+A seemingly simplistic infection is still a foothold that can result in more sophisticated malware on the network down the line, which may end up exfiltrating data and even installing ransomware to extort the organization later on.
+Cryptojacking Is the Name of ShellBot’s Game With the exponential rise in the value of cryptocurrency, cybercrime endeavors based on these digital coins have been rising as well.
+Aside from the devastating rise of ransomware attacks, the illegal mining of cryptocurrency on devices one does not own, aka cryptojacking, has become a commercial grade threat used in the hands of lone criminals and organized groups alike.
+In some cases, cryptojacking operations that keep mining farms processing coins reached the magnitude of a $50 million business for their bot masters.

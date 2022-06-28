@@ -1,0 +1,4 @@
+Users have long needed to access important resources such as virtual private networks (VPNs), web applications, and mail servers from anywhere in the world at any time.
+While the ability to access resources from anywhere is imperative for employees, threat actors often leverage stolen credentials to access systems and data.
+Due to large volumes of remote access connections, it can be difficult to distinguish between a legitimate and a malicious login.
+Today, we are releasing GeoLogonalyzer to help organizations analyze logs to identify malicious logins based on GeoFeasibility; for example, a user connecting to a VPN from New York at 13:00 is unlikely to legitimately connect to the VPN from Australia five minutes later.

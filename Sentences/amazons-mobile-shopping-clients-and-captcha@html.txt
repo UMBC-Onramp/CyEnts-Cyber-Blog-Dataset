@@ -1,0 +1,55 @@
+Amazon is a popular online retailer serving millions of users.
+
+Unfortunately, FireEye mobile security researchers have found security issues within Amazon’s mobile apps on both Android and iOS platforms through which attackers can crack the passwords of target Amazon accounts.
+
+Amazon confirmed our findings and hot fixed the issue.
+
+Recently, we found two security issues within Amazon’s mobile apps on both Android and iOS platforms: No limitation or CAPTCHA for password attempts Weak password policy Attackers can exploit these two security issues remotely against target Amazon accounts.
+
+Figure 1.
+
+Verification Code for Wrong Password Attempts A CAPTCHA (\"Completely Automated Public Turing test to tell Computers and Humans Apart\") is a challenge-response test designed to determine whether the user is a human.
+
+CAPTCHAs are well adopted for preventing programmed bots from accessing online services for bad purposes, such as conducting denial-of-service attacks, harvesting information and cracking passwords.
+
+The web version of Amazon requires the user to complete a CAPTCHA after ten incorrect password attempts (Figure 1), to prevent password cracking.
+
+However, Amazon’s mobile apps haven’t adopted such protection using CAPTCHA (Figure 2 and Figure 3).
+
+This design flaw provides attackers the chance to crack any Amazon account’s password using brute force.
+
+Figure 2.
+
+Amazon Android App Figure 3.
+
+Amazon iOS
+
+App
+
+Furthermore, Amazon doesn’t have a strong password strength requirement.
+
+It accepts commonly used weak passwords such as \"123456\" and \"111111\".
+
+We know that the weaker the password, the easier for hackers to break into an account.
+
+Therefore, allowing weak passwords puts account safety to potential security risks.
+
+Given that there are many well-known previous password leakages , attackers can use these password leakages as knowledge bases to conduct password cracking.
+
+As a proof of concept, we figured out the password of one Amazon account we setup within 1000 attempts, using the latest version (2.8.0) of Amazon’s Android shopping client.
+
+After receiving our vulnerability report, Amazon hot fixed the first issue by patching their server.
+
+Now if the user tries multiple incorrect passwords, the server will block the user from login (Figure 4).
+
+In the future, we suggest adding CAPTCHA support for Amazon mobile (Android and iOS)
+
+apps, and enforcing requirements for stronger passwords.
+
+Figure 4.
+
+Wrong Password Block Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

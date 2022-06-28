@@ -1,0 +1,49 @@
+The gaming community is discussing a recent vulnerability in the Dark Souls III videogame.
+
+This RCE vulnerability allows attackers to remotely execute arbitrary code on a victim’s computer.
+
+Apparently, the vulnerability also affects earlier games in the Dark Soul series: because of this the developers have taken the unusual step of temporarily deactivating PvP servers across Dark Souls Remastered, Dark Souls II, and Dark Souls III.
+
+According to the developers , they also plan to turn off servers for Dark Souls: Prepare To Die as well.
+
+Players fear that the same vulnerability could also affect the upcoming Elden Ring game, which is thought to use the same infrastructure.
+
+The bug is relevant only for PC users, so Xbox and PlayStation are unaffected.
+
+Why Dark Souls vulnerability is so dangerous This vulnerability allows an attacker to execute almost any program on the victim’s computer, so they’re able to steal confidential data or execute any program they wish (including installing malware).
+
+You can find a demonstration of the exploit in the Twitch stream of the player named The_Grim_Sleeper in which an unknown person launched a PowerShell script on the streamer’s computer that used the Windows Narrator engine to read out critical notes about the gameplay.
+
+What is the chance that Dark Souls vulnerability will be exploited ITW?
+
+The details of the exploit for this vulnerability are not available to the general public, at least not yet.
+
+Despite the ethically dubious way of drawing attention to the problem, the person behind the attack apparently was not trying to cause any real harm.
+
+Judging by the discussion in the Dark Souls community, the creator of the exploit has been trying to inform the game’s developers about this serious vulnerability for some time, but they had ignored his messages.
+
+That’s why he decided to hack a popular streamer right during the streaming session.
+
+However, this information is not 100% reliable, in reality everything may not be so straight-forward.
+
+For example, the creator of the exploit has already shared information about the vulnerability with the developers of the Blue Sentinel plugin, a mod for Dark Souls designed to counteract cheats.
+
+And one can only guess who else could get this information.
+
+Also, once demonstrated, other hackers may try to replicate the exploit and use it to cause real harm to players.
+
+There are various possible scenarios here: attackers can use it to steal passwords from game accounts or crypto wallets, install good old ransomware, hidden miners, and much more.
+
+How to stay safe from Dark Souls vulnerability?
+
+Apparently, FromSoftware is currently trying to solve the problem.
+
+Let’s hope they can fix the vulnerability quickly.
+
+However, in the meantime we recommend using high-quality security solutions for each device .
+
+Thanks to a special gaming mode, our antiviruses protect against all kinds of threats, including the exploitation of vulnerabilities, while consuming a minimum of PC resources and without interfering with the gameplay.
+
+
+
+

@@ -1,0 +1,3 @@
+
+Could it be that perhaps the developer is a researcher (because of the way that they talk with others and provoke them)?
+Secondly, malware analysis is mentioned more than once and, thirdly, they said that they made an IDAPython script to remove all obfuscated code that the malware has (the ransomware may have got the name ‘Maze’ because of how analysis of it is like walking through a labyrinth).

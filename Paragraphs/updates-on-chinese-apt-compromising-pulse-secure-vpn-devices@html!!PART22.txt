@@ -1,0 +1,7 @@
+
+Between January 2016 and mid-2019, the geographic focus of Chinese cyber operations shifted dramatically to Asia and away from the U.S. and Europe.
+While the U.S. remained the single most frequently targeted country, it became a much smaller percentage of observed activity.
+From 2012–2015, U.S. targeting constituted nearly 70 percent of all observed Chinese cyber espionage, while from January 2016 through August 2019, U.S. targeting fell to approximately 20 percent of Chinese activity.
+Targeting of Europe represented a similar proportion of overall Chinese activity to targeting of the Americas.
+Changes in Chinese Espionage Activity between 2019 and 2021 Based on developments observed between 2019-2021, Mandiant Threat Intelligence assesses that most Chinese APT actors now concentrate on lower-volume but more-sophisticated, stealthier operations collecting strategic intelligence to support Chinese strategic political, military, and economic goals.
+While some of the technical changes may be the result of the restructuring of China's military and civilian organizations, some changes possibly reflect larger technical trends in cyber operations overall.

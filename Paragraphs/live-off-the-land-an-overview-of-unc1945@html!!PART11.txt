@@ -1,0 +1,8 @@
+
+libyaml-0.so.2 Figure 4: LOGBLEACH
+To further obfuscate activity, a Linux ELF packer named STEELCORGI was executed in memory on the Solaris system.
+The malware contains various anti-analysis techniques, including anti-debugging, anti-tracing, and string obfuscation.
+It uses environment variables as a key to unpack the final payload.
+Escalate Privileges and Lateral Movement After successfully establishing a foothold, UNC1945 collected credentials, escalated privileges, and successfully moved laterally through multiple networks.
+UNC1945 obtained credentials via SLAPSTICK and open source tools such as Mimikatz, which enabled easy lateral movement throughout networks to obtain immediate access to other segments of the network and third-party environments.
+Stolen credentials collected by SLAPSTICK were used to traverse the customer network via SSH and deploy SLAPSTICK to additional hosts.

@@ -1,0 +1,4 @@
+
+Figure 3: Percentage of IP addresses found by SCANdalous before being marked as observed at a client by a FireEye analyst A similar pattern can be seen for SCANdalous’ average lead time over the same data (Figure 4).
+Figure 4:
+Average lead time in days for SCANdalous over the same data shown in Figure 3 As we continue to create signatures and increase our external detection efforts, we can see from these numbers that the effectiveness and value of the resulting data grow as well.

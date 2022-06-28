@@ -1,0 +1,11 @@
+
+Once the fake update notification is displayed, Sonvpay requests the download of the library from another remote server: Figure 5.
+Sonvpay requesting library with additional functionality.
+The new APK file is downloaded and stored in the path /sdcard/
+Android/<package_name>/cache/ so that it can be dynamically loaded and executed at runtime.
+The library we obtained for performing mobile billing fraud targeted only Kazakhstan and Malaysia
+but, because the library is present in a remote server and can be dynamically loaded, it can likely be updated at any time to target more countries or mobile operators.
+WAP Billing and SMS Fraud
+In the case of Kazakhstan, Sonvpay loads a specific URL delivered through the silent push notification and uses JavaScript to click on a button and on the element “activate” to fraudulently subscribe the user to a premium-rate service: Figure 6.
+WAP billing fraud in Kazakhstan.
+For Malaysia, the malware creates a new WebView to send the “Shortcode” and “Keyword” parameters to a specific URL to subscribe the user to a WAP billing service: Figure 7.

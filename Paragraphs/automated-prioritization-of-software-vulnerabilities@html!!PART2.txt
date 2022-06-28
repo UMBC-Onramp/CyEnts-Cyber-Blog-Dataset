@@ -1,0 +1,7 @@
+
+However, it has been criticized for a lack of timeliness, vulnerable population representation, normalization, rescoring and broader expert consensus that can lead to disagreements .
+For example, some of the worst exploits have been assigned low CVSS scores.
+Additionally, CVSS does not measure the vulnerable population size, which many practitioners have stated they expect it to score.
+The design of the current CVSS system leads to too many severe vulnerabilities, which causes user fatigue.
+­ To provide a more timely and broad approach, we use machine learning to analyze users’ opinions about the severity of vulnerabilities by examining relevant tweets.
+The model predicts whether users believe a vulnerability is likely to affect a large number of people, or if the vulnerability is less dangerous and unlikely to be exploited.

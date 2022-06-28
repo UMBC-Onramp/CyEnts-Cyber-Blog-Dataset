@@ -1,0 +1,13 @@
+
+Given the sporadic availability during the week of both the host and exploit kit’s landing page, it’s possible the system is or was undergoing further setup and this is the prelude to yet another large-scale campaign.
+We can’t say for sure
+but we know this is not the last time we will see it or the crimeware actor behind it.
+Registrant:
+Name: Alexey Prokopenko Organization: home
+Address: Lenina 4, kv 1 City: Ubileine Province/state: LUGANSKA OBL Country: UA Postal Code: 519000 Email: alex1978a
+@bigmir.net
+By the way, this actor has a long history of malicious activity online too.
+The campaign also appears to be abusing Amazon Web Services.
+globalcdnnode.com
+Server:           ns-293.awsdns-36.com
+Address:    205.251.193.37#53 globalcdnnode.com origin = ns-293.awsdns-36.com mail addr =

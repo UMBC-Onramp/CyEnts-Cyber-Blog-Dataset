@@ -1,0 +1,5 @@
+
+This threat group has conducted broad targeting across a variety of industries operating in the Middle East; however, we believe APT34's strongest interest is gaining access to financial, energy, and government entities.
+Additional research on APT34 can be found in this FireEye blog post , this CERT-OPMD post , and this Cisco post .
+Mandiant Managed Defense also initiated a Community Protection Event (CPE) titled “Geopolitical Spotlight: Iran.”
+This CPE was created to ensure our customers are updated with new discoveries, activity and detection efforts related to this campaign, along with other recent activity from Iranian-nexus threat actors to include APT33, which is mentioned in this updated FireEye blog post .

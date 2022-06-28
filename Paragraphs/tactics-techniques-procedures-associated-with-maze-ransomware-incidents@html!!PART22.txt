@@ -1,0 +1,2 @@
+
+A104-488 - Host CLI - Collection, Exfiltration: Active Directory Reconnaissance with SharpHound, CollectionMethod All A104-046 - Host CLI - Collection, Exfiltration: Data from Local Drive using PowerShell A104-090 - Host CLI - Collection, Impact: Creation of a Volume Shadow Copy A104-489 - Host CLI - Collection: Privilege Escalation Check with PowerUp,

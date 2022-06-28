@@ -1,0 +1,8 @@
+
+Source: American Heart Association.
+The first decision point in this tree asks if the patient is hemodynamically stable (whether the blood pressure is normal).
+This attack does not affect the bedside monitor.
+A nurse might retake the patient’s blood pressure, which would be normal.
+The next decision point following the “Yes” path is a diagnosis of focal atrial tachycardia.
+Regardless of the medical terms and answers, the patient is issued medication.
+In the case of a network attack, this is medication the patient does not need and could cause harm.

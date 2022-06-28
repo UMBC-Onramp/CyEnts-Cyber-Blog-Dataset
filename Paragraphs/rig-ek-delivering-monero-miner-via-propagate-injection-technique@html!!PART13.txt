@@ -1,0 +1,4 @@
+
+Figure 15: Getting shell window thread ID
+The malware injects and maps the decrypted PE in a remote process (explorer.exe).
+It also injects shellcode that is configured as a callback function in SetPropA. After injecting the payload into the target process, it uses EnumChild and EnumProps functions to enumerate all entries in the property list of the shell window and compares it with UxSubclassInfo After finding the UxSubclassInfo property of the shell window, it saves the handle info and uses it to set the callback function through SetPropA. SetPropA has three arguments, the third of which is data.

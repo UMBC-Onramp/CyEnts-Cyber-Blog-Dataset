@@ -1,0 +1,7 @@
+
+GetString($( for ($i = 0; $i -lt $loader.
+Length; $i++) { if ($xor_val -ge 250) { $xor_val = 0 } $loader[$i] -bxor $xor_val; $xor_val += 4 } )) )
+Figure 7:
+De-obfuscated and sanitized bootstrap code Note that the actual values for <base64_encoded_path_to_launcher> , <launcher_reg_val> , and <xor_val> are generated on the fly by the dropper and will be different across the compromised systems.
+The encoding of the launcher is implemented as a simple rolling XOR that is incremented after each iteration.
+The following code snippet (Figure 8) could be used to either encode or decode the launcher, given the initial key.

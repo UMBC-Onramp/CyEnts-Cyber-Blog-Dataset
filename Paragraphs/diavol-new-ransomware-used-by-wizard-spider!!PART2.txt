@@ -1,0 +1,5 @@
+
+So, let’s say hello to a new ransomware family.
+In this blog, we’ll dive into the inner workings of Diavol and its possible attribution to the criminal group known as Wizard Spider.
+First Encounter with Diavol The ransomware drops a ransom note in a text format in every folder it goes over, as can be seen in figure 1.
+According to the note, the authors claim they stole data from the victim’s machine, though we did not find a sample that was capable of performing that.

@@ -1,0 +1,41 @@
+Exactly five years ago, in October 2016, our solutions first encountered a Trojan named Trickbot (aka TrickLoader or Trickster).
+
+Found mostly on home computers back then, its primary task was to steal login credentials for online banking services.
+
+In recent years, however, its creators have actively transformed the banking Trojan into a multifunctional modular tool.
+
+What’s more, Trickbot is now popular with cybercriminal groups as a delivery vehicle for injecting third-party malware into corporate infrastructure.
+
+News outlets recently reported that Trickbot’s authors have hooked up with various new partners to use the malware to infect corporate infrastructure with all kinds of additional threats, such as the Conti ransomware.
+
+Such repurposing could pose an additional danger to employees of corporate security operation centers and other cybersec experts.
+
+Some security solutions still recognize Trickbot as a banking Trojan, as per its original specialty.
+
+Therefore, infosec officers who detect it might view it as a random home-user threat that accidentally slipped into the corporate network.
+
+In fact, its presence there could indicate something far more serious — a ransomware injection attempt or even part of a targeted cyberespionage operation.
+
+Our experts were able to download modules of the Trojan from one of its C&C servers and analyze them thoroughly.
+
+What Trickbot can do now The modern Trickbot’s main objective is to penetrate and spread on local networks.
+
+Its operators can then use it for various tasks — from reselling access to the corporate infrastructure to third-party attackers, to stealing sensitive data.
+
+Here’s what the malware can now do: Harvest usernames, password hashes and other information useful for lateral movement in the network from Active Directory and the registry; Intercept web traffic on the infected computer; Provide remote device control via the VNC protocol; Steal cookies from browsers; Extract login credentials from the registry, the databases of various applications and configuration files, as well as steal private keys, SSL certificates and data files for cryptocurrency wallets; Intercept autofill data from browsers and information that users input into forms on web-sites; Scan files on FTP and SFTP servers; Embed malicious scripts in web pages; Redirect browser traffic through a local proxy; Hijack APIs responsible for certificate chain verification so as to spoof the verification results; Collect Outlook profile credentials, intercept e-mails in Outlook and send spam through it; Search for the OWA service and brute-force it; Gain low-level access to hardware; Provide access to the computer at the hardware level; Scan domains for vulnerabilities; Find addresses of SQL servers and execute search queries on them; Spread through the EternalRomance and EternalBlue exploits; Create VPN connections.
+
+A detailed description of the modules and indicators of compromise can be found in our Securelist post .
+
+How to guard against the Trickbot Trojan
+
+The statistics show that the majority of Trickbot detections this year were registered in the US, Australia, China, Mexico and France.
+
+This does not mean, however, that other regions are safe, especially considering the readiness of its creators to collaborate with other cybercriminals.
+
+To prevent your company from falling victim to this Trojan, we recommend that you equip all Internet-facing devices with a high-quality security solution .
+
+In addition, it’s a good idea to use cyberthreat monitoring services to detect suspicious activity in the company’s infrastructure.
+
+
+
+

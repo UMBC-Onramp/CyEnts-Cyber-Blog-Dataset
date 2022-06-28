@@ -1,0 +1,31 @@
+
+The captured Excel sample and the downloaded Emotet dll file are detected as \" VBA/Emotet.2826!tr.dldr \" and \" W32/Emotet.
+B185!tr \" and are blocked by the FortiGuard AntiVirus service.
+FortiEDR detects both the Excel file and Emotet dll file as malicious based on its behavior.
+In addition to these protections, we suggest that organizations have their end users also go through the FREE NSE training : NSE 1 – Information Security Awareness .
+It includes a module on Internet threats that is designed to help end users learn how to identify and protect themselves from phishing attacks.
+IOCs URLs Involved in the Campaign: \"hxxps[:]//youlanda[.]org/eln-images/n8DPZISf/\" \"hxxp[:]//rosevideo[.]net/eln-images/EjdCoMlY8Gy/\" \"hxxp[:]//vbaint[.]com/eln-images/H2pPGte8XzENC/\" \"hxxps[:]//framemakers[.]us/eln-images/U5W2IGE9m8i9h9r/\" \"hxxp[:]//niplaw[.]com/asolidfoundation/yCE9/\" \"hxxp[:]//robertmchilespe[.]com/cgi/3f/\" \"hxxp[:]//vocoptions[.]net/cgi/ifM9R5ylbVpM8hfR/\" \"hxxp[:]//missionnyc[.]org/fonts/JO5/\" \"hxxp[:]//robertflood[.]us/eln-images/DGI2YOkSc99XPO/\" \"hxxp[:]//mpmcomputing[.]com/fonts/fJJrjqpIY3Bt3Q/\" \"hxxp[:]//dadsgetinthegame[.]com/eln-images/tAAUG/\" \"hxxp[:]//smbservices[.]net/cgi/JO01ckuwd/\" \"hxxp[:]//stkpointers[.]com/eln-images/D/\" \"hxxp[:]//rosewoodcraft[.]com/
+Merchant2/5[.]00/PGqX/\" C2 Server List in this Variant: (49 in total
+) 185[.]248[.]140[.]40:443 8[.]9
+[.]11
+[.]48:443
+200[.]17
+[.]134
+[.]35:7080
+207[.]38
+[.]84
+[.]195:8080
+79[.]172 [.]212
+[.]216:8080
+45[.]176
+[.]232
+[.]124:443 45[.]118
+[.]135 [.]203:7080 162[.]243 [.]175
+[.]63:443 110[.]232[.]117[.]186:8080
+103[.]75[.]201[.]4:443 195[.]154[.]133[.]20:443 160[.]16[.]102[.]168:80 164[.]68[.]99[.]3:8080 131[.]100[.]24[.]231:80 216[.]158[.]226[.]206:443 159[.]89[.]230[.]105:443 178[.]79[.]147[.]66:8080 178[.]128[.]83[.]165:80 212[.]237[.]5[.]209:443 82[.]165[.]152[.]127:8080 50[.]116[.]54[.]215:443 58[.]227[.]42[.]236:80 119[.]235[.]255[.]201:8080 144[.]76[.]186[.]49:8080 138[.]185[.]72[.]26:8080 162[.]214[.]50[.]39:7080 81[.]0[.]236[.]90:443 176[.]104[.]106[.]96:8080 144[.]76[.]186[.]55:7080 129[.]232[.]188[.]93:443 212[.]24[.]98[.]99:8080 203[.]114[.]109[.]124:443 103[.]75[.]201[.]2:443 173[.]212[.]193[.]249:8080 41[.]76[.]108[.]46:8080 45[.]118[.]115[.]99:8080 158[.]69[.]222[.]101:443 107[.]182[.]225[.]142:8080 212[.]237[.]17[.]99:8080 212[.]237[.]56[.]116:7080 159[.]8[.]59[.]82:8080 46[.]55[.]222[.]11:443 104[.]251[.]214[.]46:8080 31[.]24[.]158[.]56:8080 153[.]126[.]203[.]229:8080 51[.]254[.]140[.]238:7080 185[.]157[.]82[.]211:8080 217[.]182[.]143[.]207:443 45[.]142[.]114[.]231:8080 Sample SHA-256
+Involved in the Campaign:
+[Excel files Captured] 25271BB2C848A32229EE7D39162E32F5F74580E43F5E24A93E6057F7D15524F0 C176C2B0336EA70C0D875F5C79D00771D59891560283364A81B2EDE495CDE62F 9C62600A0885E39BD39748150B9B64155C9EA2DBBCDD43241EB24C8E098DE782 36C2119C68B3C79B58417CADEA3547F8BBECD2DF02FEB5F04EE798DFA621B66D B380DFC348541691E4084689405D8ACFAEAFDDD92EFF95566AFF2412F620E2DC 68AA775EC46C8B0911542E471F9A7F39D538001BD8552898416310436F58B95A B14AB6A611A93B25DA2815D2071AA5B76085414BF6AD32432FC0809B3610DB05
+81E9D87903290E4A525BEB865F5CCCCA9838BDD51238DC4FD0B9AE623BF609BB B019A867D167B6088EA18B3BD2F1A67706505AACC9542C4017E757F0381B3F0A F4626135C820C4784E1452E81FE25D291EA3A6326E906A2E15AE960EEA3276E4 [puihoud.dll (the downloaded Emotet)] A7C6ABBC3241B6CFCFA27158E80BD50D3C9F1AE97E86481CCABD5B2337670690 Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+Read part II of our analysis to learn more about malicious modules involved and how to avoid this lure.
+
+

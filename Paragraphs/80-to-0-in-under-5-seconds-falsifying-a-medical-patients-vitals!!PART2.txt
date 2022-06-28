@@ -1,0 +1,6 @@
+
+“Vital signs are integral to clinical decision making” explained Dr. Shaun Nordeck.
+Bedside patient monitors and related systems are key components that provide medical professionals with the vital signs they need to make decisions; these systems are now the focal point of this research.
+Exploring the attack surface Most patient monitoring systems comprise at minimum of two basic components: a bedside monitor and a central monitoring station.
+These devices are wired or wirelessly networked over TCP/IP.
+The central monitoring station collects vitals from multiple bedside monitors so that a single medical professional can observe multiple patients.

@@ -1,0 +1,9 @@
+
+It also checks for disk space because sandboxes and virtual machines typically have limited disk space.
+In addition, it loads the module SbieDll to detect “sandboxie”, an open-source sandboxing program for Windows.
+Lastly, it checks if the process is being debugged by calling IsDebuggerPresent().
+(See Mitre ATT&CK technique – Virtualization/Sandbox Evasion .)
+The payload also includes a security software discovery technique.
+This technique is used to determine which security products are present on the compromised machine to shape the follow-on behaviors.
+Below is the command-line query used to enumerate the installed antivirus products.
+(See Mitre ATT&CK technique – Defense Evasion .)

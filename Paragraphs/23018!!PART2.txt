@@ -1,0 +1,9 @@
+
+What is vishing?
+Vishing is short for voice plus phishing (as smishing is SMS + phishing ), and, aided by the mass transition to remote work, it has turned the phone into a major weapon of fraud, to the extent that law-enforcement agencies now periodically release official announcements about the danger.
+According to 2019 data from the US Federal Trade Commission, only 6% of scam calls ended in financial loss.
+Nevertheless, when it happened, the damage was quite significant, with a median value of $960.
+Anyone can fall for a scammer’s bait, even experts who think they’ve seen it all .
+Many fraudsters are excellent at gaining the confidence of even the most vigilant target.
+On the one hand, vishing is more conservative than regular phishing, because the telephone itself is an older means of communication.
+On the other hand, massive data leaks in the digital age have lent voice scams new power: Never before have scammers been in possession of such volumes of information about almost everyone on the planet.

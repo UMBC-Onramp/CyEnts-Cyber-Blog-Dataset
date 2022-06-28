@@ -1,0 +1,4 @@
+
+In short, we began with files from open directories, transformed them into a 3D model, and printed a tangible model using a 3D printer: Our 3D model of a pelvis.
+Conclusion When we began our investigation into the security status of medical imaging systems, we never expected we would conclude by reconstructing body parts.
+The amount of old software used in implementations of PACS servers and the amount of vulnerabilities discovered within the software itself are concerning.

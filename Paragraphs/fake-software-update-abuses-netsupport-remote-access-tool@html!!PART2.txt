@@ -1,0 +1,5 @@
+
+When users navigate to the compromised website, the malicious JavaScript file is downloaded, mostly from a DropBox link.
+Before delivering the payload, the JavaScript sends basic system information to the server.
+After receiving further commands from the server, it then executes the final JavaScript to deliver the final payload.
+In our case, the JavaScript that delivers the payload is named Update.js, and it is executed from %AppData% with the help of wscript.exe.

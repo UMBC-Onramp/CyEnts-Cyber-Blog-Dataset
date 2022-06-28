@@ -1,0 +1,8 @@
+
+This trick also makes deeper analysis take longer because analysts are blind as to which APIs they need to be looking for.
+Looking deeper, these initial APIs are not very important to the malware.
+Instead, it resolves its needed APIs using a simple hashing computation.
+The malware includes a list of hash values that correspond to the APIs it needs.
+It first resolves the LoadLibraryA API to load the needed DLL file.
+It grabs the first available API name from the loaded library, calculates the hash, and then compares it to the current API hash.
+If it is the right hash, it gets the index of the API name and the API address pointed to by the index.

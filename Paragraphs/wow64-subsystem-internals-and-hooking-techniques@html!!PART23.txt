@@ -1,0 +1,9 @@
+
+In practice ASMJIT may be utilized for this.
+This is however a very tedious technique to trace a large number of APIs.
+There are other challenges to this technique as well.
+For example, in modern Windows 10 the base address of ntdll64 is set to a high 64-bit address rather than a lower 32-bit address as in Windows 7.
+Due to this, supporting returns from callbacks back up to the original hooked stub and allocating a trampoline within the required memory range is difficult since the standard ret instruction doesn’t have enough bits on the stack to represent the 64-bit return address.
+As an aside, it should be noted that the WOW64 layer contains what is likely a bug when dealing with the NtWow64* functions.
+These APIs all take a HANDLE as first argument, which should be sign extended to 64-bits.
+However, this does not occur for these APIs, therefore when using the pseudo handle -1

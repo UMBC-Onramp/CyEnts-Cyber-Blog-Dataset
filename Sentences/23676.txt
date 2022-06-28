@@ -1,0 +1,83 @@
+Imagine getting paid for access to just a tiny portion of your Internet bandwidth at work.
+
+Sounds pretty sweet, doesn’t it?
+
+The computer is on all the time anyway, and you have unlimited Internet access, so why not?
+
+It’s not even your own resources, just corporate equipment and bandwidth.
+
+That all sounds simple, but you don’t have to look too closely to see that when you agree to install a proxyware client on a work computer, it’s not harmless at all.
+
+Install proxyware and you’re exposing your corporate network to risks that far outweigh any income you might earn from the deal.
+
+To put it bluntly, no other questionable Internet money-making scheme comes with such a variety of undesirable consequences.
+
+Today we explain why proxyware is dangerous.
+
+What is proxyware?
+
+Researchers at Cisco Talos coined the term proxyware and have reported on the phenomenon in depth .
+
+Essentially, a proxyware service acts as a proxy server.
+
+Installed on a desktop computer or smartphone, it makes the device’s Internet connection accessible to an outside party.
+
+Depending on how long the program remains enabled and how much bandwidth it is permitted to use, the client accumulates points that can eventually be converted into currency and transferred to a bank account.
+
+Of course, these kinds of services do not have to be used for illegal purposes, and they do have some legitimate applications.
+
+For example, some appeal to the marketing departments of large companies, which need as many Web entry points as possible in different geographic regions.
+
+Why proxyware on a company computer is a bad idea Although proxyware services claim “tenants” are harmless, problems sometimes still occur, including IP address reputation damage and software reliability.
+
+Pessimization of the IP address The most common problem with proxyware for the users of the computers on which it runs — or even for the entire network if it has a single IP address — is that the services often encounter CAPTCHA s, whose entire point is to ensure only real humans can get access to an online resource.
+
+A computer with proxyware raises suspicions, and rightly so.
+
+One way bandwidth tenants can use proxyware-laden computers is to scan the Web or measure the speed of website access by regularly deploying a flood of requests.
+
+Automatic DDoS protection systems do not like that.
+
+It can also be a sign of something even more shady, such as spam mailings.
+
+Keep in mind that the consequences can be much more dire for the company, with automated requests landing the organization’s IP address on a list of unsafe addresses.
+
+So, for example, if the e-mail server operates on the same address, at some point the employees’ messages may stop reaching external recipients.
+
+Other e-mail servers will simply start blocking the organization’s IP address and domain.
+
+Fake proxyware clients Another risk employees take in installing proxyware is that they may download something they didn’t mean to.
+
+Try this little experiment: Go to Google and search for “honeygain download.”
+
+You’ll get a couple of links to the developer’s official website and hundreds to unscrupulous file-sharing sites, half of which include “bonus content” with their downloads.
+
+What kinds of bonus content?
+
+Well, researchers describe one such trojanized installer as deploying a cryptocurrency-mining program (which devour a PC’s resources and electricity) and a tool to connect to the cybercriminals’ command server, from which anything else can be downloaded at any time.
+
+That kind of proxyware can take down an organization’s entire IT infrastructure.
+
+It could also lead to ransomware encrypting data, ransom demands, and more.
+
+In sum, proxyware is a grab bag of dangers for a business.
+
+Covert installation of proxyware Most scenarios resemble the above: unintended consequences of purposeful (if sometimes unauthorized) installations.
+
+The converse sometimes happens as well, with an employee catching actual malware on a shady site, and that malware installing a modified proxyware client on the computer.
+
+That’s nothing but trouble: slowed computers, less network bandwidth, and, potentially, data theft.
+
+Recommendations for businesses Your best way to combat criminal exploitation through proxyware is to install a reliable antivirus solution on every computer that has Internet access.
+
+Not only will that protect your company from the harmful effects of proxyware, but if said proxyware includes, or is included with, other malware, you’ll still be covered.
+
+To be clear, even “clean” proxyware is not much better.
+
+A sound security policy should not allow anyone to install proxyware or any other questionable software on employees’ computers, regardless of whether the computers are in the office or employees are connecting to the organization’s VPN.
+
+As a rule, most employees do not need, and should not be allowed, to install software on their computers independently.
+
+
+
+

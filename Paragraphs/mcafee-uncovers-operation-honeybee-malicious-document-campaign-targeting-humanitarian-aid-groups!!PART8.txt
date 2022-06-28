@@ -1,0 +1,7 @@
+
+Credentials are encoded in the .ini file.
+Decoded credential data contained in ipnet.ini.
+dll:
+The malicious DLL file run as a service (using svchost.exe).
+The DLL contains the following PDB path: D:\\Task\\MiMul\\FTPCom_vs10\\Release\\Engine.pdb.
+The macro then extracts the CAB file into %systemroo%\\system32, using either wusa.exe or expand.exe (depending on the OS) to again bypass UAC prompts Once the files have been extracted, the Visual Basic macro deletes the CAB file and runs the malicious NTWDBLIB.dll via cliconfg.exe (to gain privileges and bypass UAC protections)

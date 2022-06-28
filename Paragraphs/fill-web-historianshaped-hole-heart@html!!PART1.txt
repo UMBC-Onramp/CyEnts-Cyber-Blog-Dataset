@@ -1,0 +1,3 @@
+With the recent integration of Mandiant Web Historian™ into Mandiant Redline™ , you may be asking \"How do I review my Web History using Redline?\
+" If so, then follow along as I explain how to collect and review web history data in Redline - with a focus on areas where the workflow and features differ from that of Web Historian.
+For those of you unfamiliar with Redline, it is Mandiant's premier free tool, providing host investigative capabilities to help users find signs of malicious activity through memory and file analysis and the development of a threat assessment profile.

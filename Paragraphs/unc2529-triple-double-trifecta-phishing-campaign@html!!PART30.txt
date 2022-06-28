@@ -1,0 +1,10 @@
+
+(xor + xor) & 0xffffffff return uuid.
+UUID(bytes_le=bytes(b))
+Figure 11: GUID generation algorithm Once the GUID is generated the malware formats it as Global\\{ <guid> } and attempts to open a mutex with that name.
+In case the mutex is already created the backdoor assumes that another instance of itself is already running and terminates itself.
+Otherwise, the backdoor creates the mutex and branches out depending on the detected process it currently mapped into.
+Executing Within the PowerShell Process The initial state of the backdoor execution is when it is mapped into a PowerShell process created by the bootstrap code.
+In this mode, the backdoor attempts to relocate itself into a new instance of msiexec.exe.
+Before the injection is attempted, the backdoor enumerates the running processes looking for Kaspersky Antivirus (avp.exe, avpui.exe) or BitDefender (bdagent.exe, bdservbdagent.exe, bdservicehost.exe) engines.
+This part of the functionality seems to be a work in progress because the malware ignores the fact if the Kaspersky software is detected but it will not attempt injecting into the msiexec.exe process in case BitDefender is found running on the compromised system.

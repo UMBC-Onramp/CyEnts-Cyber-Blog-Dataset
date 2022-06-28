@@ -1,0 +1,10 @@
+
+Practically, churn introduces two problems in our models.
+First, bad churn may require changes to whitelist/blacklists used in conjunction with ML models.
+As we previously discussed, these are used to handle the small but inevitable number of incorrect classifications.
+Testing on large repositories of data is necessary to catch such changes and update associated whitelists and blacklists.
+Second, churn may create issues for other ML models or rule-based systems which rely on the output of the ML model.
+For example, consider a hypothetical system which evaluates URLs using both a ML model and a noisy blacklist.
+The system generates an alert if P(URL = ‘malicious’) > 0.9 or P(URL = ‘malicious’) > 0.5 and the URL is on the blacklist After retraining, the distribution of P(URL=‘malicious’) changes and all .com
+domains receive a higher score.
+The alert rules may need to be readjusted to maintain the required overall accuracy of the combined system.

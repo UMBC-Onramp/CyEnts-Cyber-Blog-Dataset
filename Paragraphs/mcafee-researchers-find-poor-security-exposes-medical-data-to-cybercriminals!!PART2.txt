@@ -1,0 +1,4 @@
+
+Intrigued, I decided to dig into the world of medical imaging and its possible security risks.
+The results were disturbing; ultimately, we were able to combine attack vectors to reconstruct body parts from the images and make a three-dimensional model.
+PACS Most hospitals or medical research facilities use PACS, for picture archiving and communication system, so that images such as ultrasounds, mammograms, MRIs, etc. can be accessed from the various systems within their facility, or through the cloud.

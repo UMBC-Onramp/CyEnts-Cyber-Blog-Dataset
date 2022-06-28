@@ -1,0 +1,7 @@
+
+When choosing the manual option in the decryptor, the user has to supply a path of the specific file or choose “0” to finish.
+However, choosing a “0” will put the decryptor into an infinite loop.
+Looking at the decryptor, it is very worrisome to see that the criminals behind Ryuk can get away with such bad programming.
+It shows a clear lack of empathy towards their victims and the absence of solid coding skills.
+Victims who do pay the exorbitant ransom demand are far from in the clear.
+The decryptor offered by the criminals has a very high risk of malfunctioning, resulting in permanent damage to their precious files.

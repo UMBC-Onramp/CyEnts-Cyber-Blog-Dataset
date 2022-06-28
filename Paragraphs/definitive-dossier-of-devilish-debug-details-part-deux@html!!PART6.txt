@@ -1,0 +1,5 @@
+
+To further illustrate this point, consider a simple file path such as: C:\\Users\\World\\Desktop\\duck\\Zbw138ht2aeja2.pdb ( source file )
+This path tells us several things: This software was compiled on the system drive of the computer In a user profile, under user ‘World’ The project is managed on the Desktop, in a folder called ‘duck’
+The filename has a high degree of entropy and is not very easy to remember In contrast, consider something such as: D:\\VSCORE5\\BUILD\\VSCore\\release\\EntVUtil.pdb ( source file )
+This indicates: Compilation on an external or secondary drive Within a non-user directory Contains development terms such as ‘BUILD’ and ‘release’ With a sensible, semi-memorable file name These differences seem relatively straightforward and make intuitive sense as to why one might be representative of malware development whereas the other represents a more “legitimate-looking” development environment.

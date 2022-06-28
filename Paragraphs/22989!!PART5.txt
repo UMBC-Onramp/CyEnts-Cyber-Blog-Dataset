@@ -1,0 +1,4 @@
+
+As soon as the player selected the desired item, the script redirects the query to an identical product that the scammer is selling for 10,000 coins.
+At the same time, the script replaces the system message confirming the purchase with a fake one, showing the original price, say 5 coins.
+That way, despite making and confirming a small purchase, the player finds their account has been charged 10,000 instead.

@@ -1,0 +1,6 @@
+
+The main focus of attacks switched from the individual user to the corporate sector, justifiably prompting talk of the emergence of a new criminal industry.
+Cybercriminals no longer had to develop malware by themselves; they could just buy it off the shelf.
+For example, a “lifetime license” for Stampado ransomware went on sale.
+The malware threatened to delete random files after a certain period of time to scare victims into paying the ransom.
+Ransomware also became available under the RaaS (Ransomware-as-a-Service) model, a term that emerged with the appearance of Encryptor RaaS .

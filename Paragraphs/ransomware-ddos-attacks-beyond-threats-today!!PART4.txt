@@ -1,0 +1,7 @@
+
+This increases the chances of detection and identification of security risks outside the network perimeter.
+MITM Attacks The rising use of remote connections has created a perfect storm for man-in-the-middle (MITM) malware attacks.
+This type of attack listens in on digital connections and could exfiltrate key data.
+Often designed for minimal impact, these attacks can go unnoticed for weeks or months.
+In the past, the fear around MITM attacks has been the risk of data eavesdropping.
+People feared threat actors could capture unencrypted data, such as plaintext emails, and then use it to compromise systems at scale.

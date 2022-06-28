@@ -1,0 +1,7 @@
+
+The received data must pass verification, otherwise it drops the packet.
+The control data starts from offset+54H to the end.
+0x8 is the size of the following data.
+The control data in this packet is two dword numbers — 0x00.
+The first 0x00 is a flag that can be 0, 1, or 8.
+If the flag is 8, Emotet will uninstall itself from the victim’s device, including removing the auto-run item from system registry, deleting the file(s) or folder(s) it created, as well as deleting the Emotet Dll file.

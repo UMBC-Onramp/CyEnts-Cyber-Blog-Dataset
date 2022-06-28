@@ -1,0 +1,9 @@
+
+{ 2E 4D 65 74 68
+6F 64 20 3D 20 22 50 4F 53 54 22 } //.Method =
+\"POST\" $domainFrontingDomain = /\\.[hH]ost\\s*=\\s*\\\"[^\\\"]*\";/ $envCollection1 = { 45 6E 76 69 72 6F 6E 6D 65 6E 74 2E 47 65 74 45
+6E 76 69 72
+6F 6E 6D 65 6E 74 56 61 72 69 61 62
+6C 65 28 22 43 4F 4D 50 55 54 45 52 4E 41 4D 45 22 29 } //Environment.
+GetEnvironmentVariable(\"COMPUTERNAME\") $envCollection2 = { 45 6E 76 69 72
+6F 6E 6D 65 6E 74 2E 47 65 74 45

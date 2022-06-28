@@ -1,0 +1,10 @@
+
+A detects when the screen is on or off and records this in its internal file scrn.txt, with the strings “on” or “off” to track when users are looking at their screens: The Message Queuing Telemetry Transport protocol serves as the communication channel between the device and the malicious server to send and receive commands.
+Data encryption User data is encrypted with AES before it is sent to the control server.
+Cryptor class provides the encryption and decryption functionality.
+The doCrypto function is defined as a common function.
+As the first parameter of the function, “1” represents encryption and “2” is decryption mode:
+The encryption key is generated dynamically using the SecureRandom function, which generates a unique value on the device to obfuscate the data.
+The addKey function embeds the encryption key into the encryption data.
+The data with the key is uploaded to the control server.
+We believe the malware author uses this AES encryption technique for any information to be uploaded to escape the detection by Google Bouncer and network inspection products.

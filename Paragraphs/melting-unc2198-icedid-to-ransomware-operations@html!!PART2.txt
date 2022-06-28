@@ -1,0 +1,4 @@
+
+Building an Igloo: ICEDID Infections Separate phases of intrusions are attributed to different uncategorized (UNC) groups when discrete operations such as obtaining access are not part of a contiguous operation.
+Pure “access operations” establish remote access into a target environment for follow on operations actioned by a separate group.
+A backdoor deployed to establish an initial foothold for another group is an example of an access operation.

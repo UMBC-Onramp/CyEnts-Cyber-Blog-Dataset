@@ -1,0 +1,6 @@
+
+While we suspect many of the victims compromised by this threat actor were small- and medium-sized businesses, on one occasion the group appeared to have successfully accessed the BAS of a hotel in Australia belonging to a major international hotel chain (Figure 3).
+Figure 3:
+Screenshots showing a possible compromise of a hotel BAS Some Amateur Actors Show Limited OT Expertise Some of the actors we track made comments that indicated they had either a limited understanding of the OT assets they compromised or that they were simply attempting to gain notoriety.
+For example, one threat actor shared a screenshot of a purportedly compromised German-language rail control system.
+We conducted a reverse image search of the screenshot and identified the asset as the web interface for an ECoS 50210 command station designed for model train sets (Figure 4).

@@ -1,0 +1,11 @@
+
+SOMBRAT Technical Details
+The SOMBRAT backdoor is written in modern C++ and implemented as a collection of \"plugins\" that interoperate with one another.
+There are five plugins distributed with this variant: `core`, `network`, `storage`, `taskman`, and `debug` (the `config` plugin described by Blackberry is not present).
+The core plugins communicate with the C2 server via messages sent over a common networking layer; each plugin supports its own set of messages, and the backdoor protocol can be extended by dynamically loaded plugins.
+The `core` plugin coordinates state tracking, such as network connectivity, and dynamic plugin loading and unloading.
+The `network` plugin configures the networking layer used to communicate with the C2 server, for example enabling the operator to switch between DNS and TCP protocols.
+The `storage` plugin exposes logical operations, such as read and write, for an encrypted file used to store plugins, resources, and arbitrary data.
+The `taskman` plugin enables the operator to list and kill processes on the compromised system.
+Finally, the `debuglog` plugin supports a single command to records debug messages.
+Given that the core plugins do not enable an operator directly execute arbitrary commands or reconfigure the system, the primary function of the SOMBRAT backdoor is to load plugins provided via the C2 server.

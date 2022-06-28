@@ -1,0 +1,11 @@
+
+In late 2017, misconfigured devices using FTP led to hundreds of thousands of Monero miners on consumer-grade devices.
+Bad actors can and have used these same flaws for additional attacks against the systems.
+Physical damage is also a concern.
+The CPU-intensive operation of mining will produce excess heat and power consumption.
+For small devices the immediate concern is battery life.
+However, for large systems, especially data centers, the activity can increase the failure rate of components; this can have a major effect on the system.
+Ultimately this may lead to costly repairs or increased hardware requirements to support the expanded load.
+Organizations may also see a hit to business operations.
+Mass-computing projects present a similar concern, albeit for more altruistic purposes.
+Folding@Home , a medical research project aimed at understanding proteins, can be installed to use computer resources to help the research.

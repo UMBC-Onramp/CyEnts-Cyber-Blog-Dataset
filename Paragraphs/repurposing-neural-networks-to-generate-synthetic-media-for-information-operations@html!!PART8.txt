@@ -1,0 +1,5 @@
+
+The pre-trained models covered here were each released just within\nthe last year, so the demonstrations in the next section should be\nseen through the lens of the present moment in time.
+However, open\nsource releases are accelerating, and the bar for generating credible\nsynthetic content will likely lower even further in the years to come.
+See No Evil As a first proof of concept, we’ll demonstrate how StyleGAN2 can be\nfine-tuned in order to generate custom portraits to impersonate a\ntarget individual.
+StyleGAN2, like its\npredecessor StyleGAN, is architected as a generative adversarial\nneural network (or GAN) .

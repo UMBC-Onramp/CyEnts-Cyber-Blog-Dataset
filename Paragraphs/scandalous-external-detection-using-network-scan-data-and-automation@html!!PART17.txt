@@ -1,0 +1,11 @@
+
+The automation we build into our tools allows us to not only accomplish more of the work we were doing manually, it enables us to work on things we never could before.
+Of course, the conversion doesn’t happen all at once.
+Like all good things, we made a lot of incremental improvements over time to get where we are today, and we’re still finding ways to make more.
+Continuing to innovate is how we keep moving forward – as Advanced Practices, as FireEye, and as an industry.
+Example Signatures
+The following are example Shodan queries; however, any source of scan data can be used.
+Used to Identify APT39 C2 Servers product:“bitvise” port:“443” org:“WorldStream B.V.” Used to Identify QUADAGENT
+C2 Servers “PHP/7.2.0beta2” RULER.HOMEPAGE Payloads html:“clsid:0006F063-0000-0000-C000-000000000046” Subscribe to Blogs Get email updates as new blog posts are added.
+
+

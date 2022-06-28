@@ -1,0 +1,11 @@
+
+Once this intent is received the GlobalService is restarted with the interval parameter..
+GlobalService This service contains the following variables private static final String TAG = \"GlobalService\"; private static boolean isScreenON; private int mInterval; private KeyguardManager mKeyGaurdManager; private BroadcastReceiver mPowerKeyReceiver; private Timer mSyncTimer; private TimerTask mSyncTimerTask; It goes on to check the value of the isScreenON variable.
+If the screen is on and if the keyguard has been unlocked, it calls the startScreenCaptureThread() method.
+The startScreenCaptureThread method sets the value of the mInterval variable to the value of interval passed to GlobalService.
+It also sets the properties of the mSyncTimerTask to point to the takeScreenshot method from the ScreenCapturer class such that the thread, when invoked, will take a screenshot every ‘interval’ number of seconds.
+The takeScreenshot method in the ScreenCapturer class connects to a native service using a local socket.
+It connects to port 42345 on localhost.
+The native service, which is listening on the same port, accepts strings on the socket.
+The takeScreenshot method sends a string of the form ‘/data/local/tmp/images/screenshot_DATE.png’ to the underlying native service.
+The native service checks for the string after the last trailing slash “/”, “screenshot” after the last trailing slash will cause the native service to take a screenshot by issuing the “screencap –p” method.

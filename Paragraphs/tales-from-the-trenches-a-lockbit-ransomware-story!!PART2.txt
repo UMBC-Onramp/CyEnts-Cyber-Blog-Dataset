@@ -1,0 +1,3 @@
+
+Like the previous posts in this blog series, we describe the different stages of the attack and recovery, including a thorough analysis of the ransomware and the attackers behind it.
+In this blog we’ll cover: Targeted Countries Attack Analysis Initial Access Network Infiltration Credentials and Privileges Lateral Movement Ransomware Deployment Malware Analysis Payload Analysis Technical Analysis Insights from the Underground Recovery Conclusion LockBit Telemetry Map We gathered telemetry through our McAfee Global Threat Intelligence GTI database on the different LockBit samples we analyzed in our research.

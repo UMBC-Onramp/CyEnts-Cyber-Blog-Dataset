@@ -1,0 +1,9 @@
+
+Figure 1: API obfuscation code from a crypto ransomware sample
+In Figure 1, we see one numeric value being loaded into eax, XORed against another, and then being called as a function pointer.
+These numbers only make sense in the context of a running process.
+We can calculate the final number from the values contained in the memory dump, but we also need a way to know which API address it resolved to in this particular running process.
+We also have to take into account that DLLs can be rebased due to conflicts in preferred base address, and systems with ASLR enabled.
+Figure 2 shows one other place we can look to see where the values were initially set.
+Figure 2:
+Crypto malware setting obfuscated function pointer from API hash

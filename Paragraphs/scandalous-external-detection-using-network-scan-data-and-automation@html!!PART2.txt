@@ -1,0 +1,8 @@
+
+Regular, first-hand observations of threat actors afford us opportunities to learn intimate details of their modus operandi.
+While our visibility from organic data is vast, we also derive value from third-party data sources.
+By looking outwards, we extend our visibility beyond our clients’ environments and shorten the time it takes to detect adversaries in the wild—often before they initiate intrusions against our clients.
+In October 2019, Aaron Stephens gave his “Scan’t Touch This” talk at the annual FireEye Cyber Defense Summit (slides available on his Github ).
+He discussed using network scan data for external detection and provided examples of how to profile command and control (C2) servers for various post-exploitation frameworks used by criminal and intelligence organizations alike.
+However, manual application of those techniques doesn’t scale.
+It may work if your role focuses on one or two groups, but Advanced Practices’ scope is much broader.

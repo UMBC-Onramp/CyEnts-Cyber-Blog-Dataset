@@ -1,0 +1,6 @@
+
+In mid-2020, we observed UNC1945
+deploy
+EVILSUN—a remote exploitation tool containing a zero-day exploit for CVE-2020-14871—on a Solaris 9 server.
+At the time, connections from the server to the threat actor IP address were observed over port 8080.
+Mandiant discovered and reported CVE-2020-14871, a recently patched vulnerability in the Oracle Solaris Pluggable Authentication Module (PAM) that allows an unauthenticated attacker with network access via multiple protocols to exploit and compromise the operating system.

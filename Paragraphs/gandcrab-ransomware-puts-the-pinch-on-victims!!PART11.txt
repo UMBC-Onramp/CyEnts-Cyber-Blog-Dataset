@@ -1,0 +1,12 @@
+
+It checks the number of remote units, the size of the ransomware name running compared with certain sizes, installs a VectoredExceptionHandler, and checks for VMware virtual machines using the old trick of the virtual port in a little encrypted shellcode: Figure 6.
+Detecting VMware.
+The malware calculates the free space of the main Windows installation logic unit and finally calculates a value.
+If this value is correct for the ransomware, it runs normally.
+If the value is less than 0x1E, it waits one hour to start the normal process.
+(It blocks automatic systems that do not have “sleep” prepared.)
+If the value is greater than 0x1E, the ransomware finishes its execution.
+Figure 7.
+Checking for virtual machines and choosing a path.
+Version 4.2.1 This version appeared August 1.
+The change from the previous version is a text message to the company that made the vaccine along with a link to a source code zero-day exploit that attacks one of this company’s products.

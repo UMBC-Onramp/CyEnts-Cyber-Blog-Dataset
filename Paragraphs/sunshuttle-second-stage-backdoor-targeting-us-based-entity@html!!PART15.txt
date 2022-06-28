@@ -1,0 +1,12 @@
+
+Examples of those requests are as follows:
+Victim to C2 GET /icon.png
+HTTP/1.1 Host: reyweb[.]com User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0)
+Gecko/20100101
+Firefox/75.0 Referer: www.google.com
+Accept-Encoding: gzip Victim to C2 GET /css/style.css HTTP/1.1 Host: reyweb[.]com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0)
+Gecko/20100101
+Firefox/75.0 Referer: www.facebook.com Accept-Encoding: gzip Victim to C2 GET /css/bootstrap.css HTTP/1.1 Host: reyweb[.]com User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0)
+Gecko/20100101
+Firefox/75.0 Referer: www.facebook.com Accept-Encoding: gzip Victim to Legitimate GET / HTTP/1.1 Host: cdn.cloudflare[.]com User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0)

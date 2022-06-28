@@ -1,0 +1,4 @@
+
+Remember, however, that all major smartphone manufacturers at least try to anonymize the data they collect, and its destination is usually more or less clear.
+In this case, however, nothing is known about who is collecting owners’ sensitive information without their consent.
+For example, one of the phones transmits not only its serial number, country of activation, firmware info, and language, but also the base station identifier, handy for establishing the user’s approximate location.

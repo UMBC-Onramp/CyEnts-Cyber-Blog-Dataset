@@ -1,0 +1,10 @@
+On June 21, 2016, FireEye’s Dynamic Threat Intelligence (DTI) identified an increase in JavaScript contained within spam emails.
+FireEye analysts determined the increase was the result of a new Locky ransomware spam campaign.
+As shown in Figure 1, Locky spam activity was uninterrupted until June 1, 2016, when it stopped for nearly three weeks.
+During this period, Locky was the most dominant ransomware distributed in spam email.
+Now, Locky distribution has returned to the level seen during the first half of 2016.
+Figure 1.
+Locky spam activity in 2016 Figure 2 shows that the majority of Locky spam email detections between June 21 and June 23 of this year were recorded in Japan, the United States and South Korea.
+Figure 2.
+Locky spam by country from June 21 to June 23 of this year
+The spam email – a sample shown is shown in Figure 3 – purports to contain an unpaid invoice in an attached ZIP archive.

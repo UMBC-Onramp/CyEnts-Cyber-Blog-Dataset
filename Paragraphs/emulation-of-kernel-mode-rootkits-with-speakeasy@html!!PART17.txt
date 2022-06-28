@@ -1,0 +1,7 @@
+
+This type of hook can be easily identified with Speakeasy by looking for memory writes to critical kernel objects as shown in Figure 10.
+Figure 10:
+Memory write event used to hook the Tcpip network driver System Service Dispatch Table Hooks
+Finally, the rootkit will attempt to hide itself using the nearly ancient technique of system service dispatch table (SSDT) patching.
+Speakeasy allocates a fake SSDT so malware can interact with it.
+The SSDT is a function table that exposes kernel functionality to user mode code.

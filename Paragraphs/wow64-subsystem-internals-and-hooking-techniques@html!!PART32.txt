@@ -1,0 +1,4 @@
+
+The NtWriteFile export may be used to easily write to stdout or a file, but we must re-enter the 64-bit execution mode and do the inverse argument mapping as before.
+This logging routine can be called from within the 32-bit callbacks and is shown in Figure 21 and Figure 22.
+Figure 21: call_function64 invokes shellcode to call the 64bit WriteFile from with the 32bit callback Figure 22: 32bit callbacks must log via routines that only call non-reentrant WOW64 APIs

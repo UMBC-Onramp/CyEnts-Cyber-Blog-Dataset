@@ -1,0 +1,4 @@
+
+Finally, it changes the desktop wallpaper to the new image using the SystemParametersInfo API with the SPI_SETDESKWALLPAPER flag.
+Connections to Conti and Egregor As Diavol was deployed in conjunction with the Conti ransomware in this attack, albeit on different machines, we tried to see if there’s any correlation between them.
+Starting with the command-line parameters, the ones used by Diavol are nearly identical to those of Conti and used for the same functionality: log file, encrypt local drives or network shares, and scan specific hosts for network shares.

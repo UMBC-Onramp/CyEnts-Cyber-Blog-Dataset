@@ -1,0 +1,6 @@
+
+At the moment, they only say that the vulnerability belongs to the Use-After-Free (UAF) class, therefore it is related to incorrect use of dynamic memory in applications.
+Its exploitation allows the attacker to create malicious web content, the processing of which can lead to arbitrary code execution on the victim’s device.
+Simply put, the most likely attack scenario is an infection of an iPhone or iPad device after visiting a malicious web page.
+Which devices and apps are vulnerable to CVE-2022-22620 exploitation Judging by the description of the bug, the vulnerability was found in the WebKit engine used in many applications for macOS, iOS and Linux.
+In particular, all browsers for iOS and iPadOS are based on this open source engine — that is, not only iPhone’s default Safari, but also Google Chrome, Mozilla Firefox and any others.

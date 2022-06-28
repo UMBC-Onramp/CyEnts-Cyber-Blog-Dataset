@@ -1,0 +1,11 @@
+
+As with Maze, the ransomware not only encrypts, but also sends copies of files from hacked systems to ransomware operators.
+The cybercriminals then threaten to publish the information online if the victim fails to comply with their demands.
+Among the most high-profile Conti attacks was the hack of a school in the United States , followed by a $40 million ransom demand.
+(The administration said it had been ready to pay $500,000 but would not negotiate 80 times that amount.)
+3.
+REvil (aka Sodin, Sodinokibi ransomware)
+The first attacks by REvil ransomware were detected in early 2019 in Asia.
+The malware quickly attracted the attention of experts for its technical prowess, such as its use of legitimate CPU functions to bypass security systems.
+In addition, its code contained characteristic signs of having been created for lease.
+In the total statistics, REvil victims make up 11%.

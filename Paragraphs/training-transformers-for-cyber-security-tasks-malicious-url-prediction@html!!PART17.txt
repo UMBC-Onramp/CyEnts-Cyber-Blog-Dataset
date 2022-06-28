@@ -1,0 +1,7 @@
+
+Therefore, it is still an open question as to whether a more optimal architecture, specifically designed for this classification task, could substantially outperform the models described here.
+While our URL dataset is not representative of all data in the cyber security space, the difficulty of obtaining a readily fine-tuned model from self-supervised pre-training suggests that this approach is unlikely to work well for training Transformers on longer sequences or sequences with lesser resemblance to natural language (e.g., PE files), but an auxiliary loss might work.
+Details about this research and additional results can be found in our associated white paper .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

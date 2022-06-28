@@ -1,0 +1,8 @@
+
+Our Securelist post delves more into the FMWhatsapp mod’s Triada Trojan.
+How to defend against such attacks Practicing caution and using your device safely is key to keeping malware and other mobile nasties off your phone.
+Generally speaking, follow these tips to avoid trouble:
+Avoid installing apps from unofficial sources and use your device’s settings to deny permission to install them.
+(If you need to install an app not from an official store, temporarily enable that permission and then disable it again); Use only official messaging apps, and download them only from official app stores — they may lack some features, but will not flood your phone with viruses; Check what permissions you’ve granted to installed apps — some might pose a real threat ; Install a reliable mobile antivirus app on your phone, and heed its warnings.
+
+

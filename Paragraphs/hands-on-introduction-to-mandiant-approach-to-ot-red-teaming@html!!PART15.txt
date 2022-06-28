@@ -1,0 +1,4 @@
+
+While we did not continue to execute any further attack, the level of access gained at this point enabled us to perform further reconnaissance and data collection to design and conceptualize the last steps of a targeted attack on the industrial steaming boilers.
+The TTPs we used during the active testing phase resemble some of the simplest resources that can be used by threat actors during real OT intrusions.
+The case results are concerning given that they illustrate only a few of the most common weaknesses we often observe across Mandiant OT red team engagements.

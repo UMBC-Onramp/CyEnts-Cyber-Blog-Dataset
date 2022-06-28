@@ -1,0 +1,7 @@
+
+The targets will be reached, regardless of conditions during emulation that may have caused different branches to be taken.
+Figure 2 illustrates a set of code branches that iterate has forced to be taken in order to reach its target; the flags set by the cmp instructions are irrelevant.
+  Like the emulateRange API, options for user-defined hooks for both individual instructions and for when “call” instructions are encountered are provided.
+An example use of the iterate API is for the function argument tracking technique mentioned earlier in this post.
+Figure 2:
+A path of emulation determined by the iterate API in order to reach the target address emulateBytes – This API provides a way to simply emulate a blob of extraneous shellcode.

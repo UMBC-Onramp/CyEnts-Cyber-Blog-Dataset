@@ -1,0 +1,59 @@
+Welcome to my first post as a FireEye™ employee!
+
+Many of you have asked me what I think of FireEye's acquisition of Mandiant.
+
+One of the aspects of the new company that I find most exciting is our increased threat intelligence capabilities.
+
+This post will briefly explore what that means for our customers, prospects, and the public.
+
+By itself, Mandiant generates threat intelligence in a fairly unique manner from three primary sources.
+
+First, our professional services division learns about adversary tools, tactics, and procedures (TTPs) by assisting intrusion victims.
+
+This \"boots on the ground\" offering is unlike any other, in terms of efficiency (a small number of personnel required), speed (days or weeks onsite, instead of weeks or months), and effectiveness (we know how to remove advanced foes).
+
+By having consultants inside a dozen or more leading organizations every week of the year, Mandiant gains front-line experience of cutting-edge intrusion activity.
+
+Second, the Managed Defense™ division operates our software and provides complementary services on a multi-year subscription basis.
+
+This team develops long-term counter-intrusion experience by constantly assisting another set of customers in a managed security services model.
+
+Finally, Mandiant's intelligence team acquires data from a variety of sources, fusing it with information from professional services and managed defense.
+
+The output of all this work includes deliverables such as the annual M-Trends report and last year's APT1 document , both of which are free to the public.
+
+Mandiant customers have access to more intelligence through our software and services.
+
+As a security software company, FireEye deploys powerful appliances into customer environments to inspect and (if so desired) quarantine malicious content.
+
+Most customers choose to benefit from the cloud features of the FireEye product suite .
+
+This decision enables community self-defense and exposes a rich collection of the world's worst malware.
+
+As millions more instances of FireEye's MVX technology expand to mobile, cloud and data center environments, all of us benefit in terms of protection and visibility.
+
+Furthermore, FireEye's own threat intelligence and services components generate knowledge based on their visibility into adversary software and activity.
+
+Recent examples include breaking news on Android malware, identifying Yahoo!
+
+systems serving malware, and exploring \"cyber arms\" dealers.
+
+Like Mandiant, FireEye's customers benefit from intelligence embedded into the MVX platforms.
+
+Many have looked at the Mandiant and FireEye combination from the perspective of software and services.
+
+While these are important, both ultimately depend on access to the best threat intelligence available.
+
+As a combined entity, FireEye can draw upon nearly 2,000 employees in 40 countries, with a staff of security consultants, analysts, engineers, and experts not found in any other private organization.
+
+Stay tuned to the FireEye and Mandiant blogs as we work to provide an integrated view of adversary activity throughout 2014.
+
+I hope you can attend the FireEye + Mandiant - 4 Key Steps to Continuous Threat Protection webinar on Wednesday, Jan 29 at 2pm ET.
+
+During the webinar Manish Gupta, FireEye SVP of Products, and Dave Merkel, Mandiant CTO and VP of Products will discuss why traditional IT security defenses are no longer the safeguards they once were and what's now needed to protect against today's advanced threats.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

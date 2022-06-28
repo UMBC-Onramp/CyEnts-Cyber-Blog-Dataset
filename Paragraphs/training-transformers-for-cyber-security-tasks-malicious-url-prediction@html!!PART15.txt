@@ -1,0 +1,9 @@
+
+The ROC curve shown in Figure 2 compares the performance of these four training regimes.
+Here, our baseline DecodeToLabel model (red) yielded a ROC curve with 0.9484 AUC, while the MixedObjective model (green) slightly outperformed the baseline with an AUC of 0.956.
+Interestingly, both of the fine-tuning models yielded poor classification results, which is counter to the established practice of these Transformer models in the NLP domain.
+Figure 2: ROC curves for four URL Transformer training regimes To assess the relative efficacy of our Transformer models on this dataset, we also fit several other types of benchmark models developed for URL classification: (1) a Random Forest model on SME-derived features, (2) a 1D Convolutional Neural Network (CNN) model on character embeddings, and (3) a Long Short-Term Memory (LSTM) neural network on character embeddings.
+Details of these models can be found in our white paper , however we find that our top performing Transformer model performs on-par with the best performing non-Transformer baseline (a 1D CNN model), which perhaps indicates that the long-range dependencies typically learned by Transformer models are not as useful in the case of malicious URL detection.
+Figure 3:
+ROC curves comparing URL Transformer to other benchmark URL classification models
+Summary Our experiments suggest that Transformers can achieve performance comparable to or better than that of other top-performing models for URL classification, though the details of how to achieve that performance differ from common practice.

@@ -1,0 +1,6 @@
+
+Due to these inherent privacy-focused features and CPU-mining profitability, Monero has become an attractive option for cyber criminals.
+Underground Advertisements for Miners Because most miner utilities are small, open-sourced tools, many criminals rely on crypters.
+Crypters are tools that employ encryption, obfuscation, and code manipulation techniques to keep their tools and malware fully undetectable (FUD).
+Table 1 highlights some of the most commonly repurposed Monero miner utilities.
+XMR Mining Utilities XMR-STACK MINERGATE XMRMINER

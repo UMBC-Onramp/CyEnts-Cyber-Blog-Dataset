@@ -1,0 +1,15 @@
+
+Why use WhatsApp mods?
+Not all users are happy with the official WhatsApp app.
+Some may feel a need for self-destructing messages or, conversely, the ability to view messages another user deleted.
+Others are after dynamic themes, and still others want to hide certain chats from the general list or automatically translate messages.
+Naturally, they want these features right away, not when WhatsApp’s developers finally get around to implementing them.
+As a result, some users turn to the modified WhatsApp clients available online, which are fairly numerous and not hard to find.
+Fans of mods are not deterred even by WhatsApp’s occasional crackdown on such modifications or the threat of account bans.
+The creators of WhatsApp mods often embed ads in them — understandably — along with the features users are looking for.
+Problems arise, however, from their use of third-party ad modules through which malicious code can sneak in under developers’ radar.
+Triada et al.
+in the FMWhatsApp mod
+That’s precisely what happened with FMWhatsApp, a popular WhatsApp mod.
+In version 16.80.0 the developers use third-party ad module that includes a Trojan.
+Our mobile antivirus solution detects this malware as Trojan.AndroidOS.Triada.ef.

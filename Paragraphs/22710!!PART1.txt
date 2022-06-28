@@ -1,0 +1,3 @@
+We always recommend downloading apps from official stores only , to reduce the likelihood of installing malware.
+However, unofficial stores not only host malicious apps, but they might not be safe at all.
+Following a recent investigation, we are sorry to report that APKPure, a popular alternative source of Android apps, was Trojanized and has been distributing other Trojans.

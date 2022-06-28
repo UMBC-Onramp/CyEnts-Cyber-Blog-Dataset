@@ -1,0 +1,9 @@
+
+It is not known why the malware authors have chosen these file size values or why they choose to encrypt some and destroy others.
+But it is interesting to note that the Chaos malware was originally classified as a wiper malware with the ransomware component added later.
+Once the attack takes place, a dropped ReadMe.txt files ask the victim to pay a ransom in either bitcoin or pre-paid cards.
+The requested amount to decrypt the files is equal to 2,000 yen (approx.
+US $17), which is dirt cheap compared to the amounts other ransomware attacks typically demand.
+The ransom note does not specify which type of pre-paid card the attacker wants.
+All kinds of pre-paid cards (online shopping, gaming, music, mobile phone charge and online streaming services) are available in convenience stores.
+Japan has more than 50,000 convenience store locations selling pre-paid cards and most are open 24/7.

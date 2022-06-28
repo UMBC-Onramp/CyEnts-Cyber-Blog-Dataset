@@ -1,0 +1,5 @@
+
+BlueKeep (CVE-2019-0708) is a security vulnerability that was discovered in Microsoft's Remote Desktop Protocol (RDP) implementation, which allows for the possibility of remote code execution.
+Complete Mission
+Despite this multi-staged operation, Mandiant did not observe evidence of data exfiltration and was unable to determine UNC1945's mission for most of the intrusions we investigated.
+In at least one case, we observed ROLLCOAST ransomware deployment in the final phase of the threat actor activity, but Mandiant didn’t attribute this activity to UNC1945.

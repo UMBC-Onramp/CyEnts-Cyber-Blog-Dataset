@@ -1,0 +1,6 @@
+
+files we were expecting a real image file, with perhaps some steganography inside, but what we saw instead was the header of a portable executable, so no steganography pictures this time.
+The PE was compiled in Microsoft Visual C# v7.0 / Basic .NET, .NET executable -> Microsoft.
+Figure 3: Static analysis of LockBit Entropy
+-wise it seems quite tidy too, not showing any stray sections or big spikes in the graph.
+This behavior indicates that the writer of the malware did not use obfuscation.

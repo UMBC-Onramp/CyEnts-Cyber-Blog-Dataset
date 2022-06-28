@@ -1,0 +1,11 @@
+
+In Version 2, the picture of a drowned Syrian boy was used, with a hint of Yemeni Arabic, referring to the conflicts in Syria and Yemen.
+Now we see a verse from the Quran, which might indicate that the adversary is related to another Middle Eastern conflict and wants to make a statement.
+When we look at the tools, techniques, and procedures used during the multiple waves, and by matching the domains and tools used (as FireEye described in its report ), we conclude that APT33 or a group attempting to appear to be APT33 is behind these attacks.
+Coverage The files we detected during this incident are covered by the following signatures: Trojan-Wiper RDN/Generic.dx RDN/Ransom Indicators of compromise Hashes OCLC.exe: f972d776d7dabf9f978dc4cc4f69d88e715541ff Spreader.exe: 0104e42d1d6522f6170ca4aa42fcbf70f7390a74 SpreaderPsexec.exe: cb8faa97e94c3c60b680e28eb6a2d3910d1ce466 Slhost.exe: 3eab7112e94f9ec1e07b9ae4696052a7cf123bba File paths and filenames C:\\net2\\ C:\\all\\ C:\\net4\\ C:\\windows\\system32\\
+C:\\\\Windows\\System32\\Program Files\\Internet Explorer\\Signing \\\\admin$\\process.bat NothingFound.txt MaintenaceSrv32.exe MaintenaceSrv64.exe SlHost.exe OCLC.exe Spreader.exe SpreaderPsexec.exe
+Some command lines cmd.exe /c “”C:\\Program Files\\Internet Explorer\\signin\\MaintenaceSrv32.bat cmd.exe /c
+“ping -n 30 127.0.0.1 >nul && sc config MaintenaceSrv binpath= C:\\windows\\system32\\MaintenaceSrv64.exe LocalService” && ping -n 10 127.0.0.1 >nul && sc start MaintenaceSrv MaintenaceSrv32.exe
+LocalService cmd.exe /c
+“”C:\\Program Files\\Internet Explorer\\signin\\MaintenaceSrv32.bat ” “ MaintenaceSrv32.exe service
+

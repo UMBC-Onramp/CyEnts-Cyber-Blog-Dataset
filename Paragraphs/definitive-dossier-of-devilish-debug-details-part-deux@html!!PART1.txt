@@ -1,0 +1,5 @@
+In Part One of this blog series , Steve Miller outlined what PDB paths are, how they appear in malware, how we use them to detect malicious files, and how we sometimes use them to make associations about groups and actors.
+As Steve continued his research into PDB paths, we became interested in applying more general statistical analysis.
+The PDB path as an artifact poses an intriguing use case for a couple of reasons.
+­First, the PDB artifact is not directly tied to the functionality of the binary.
+As a byproduct of the compilation process, it contains information about the development environment, and by proxy, the malware author themselves.

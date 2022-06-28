@@ -1,0 +1,7 @@
+
+Once again, Chinese Apple users are being targeted for their Apple IDs and passwords using the same content reported on in our earlier blog.
+The majority of these domains are registered in the .com
+TLD by email accounts from qq[.]com, and the IPs of these domains point to mainland China, as seen in Figure 1.
+Figure 1: Google map showing the location of the hosted phishing domains What has not Changed?
+The attackers have not changed the content of the phishing sites.
+The obfuscated JavaScript used in the earlier version is once again being used here in this campaign.

@@ -1,0 +1,9 @@
+
+Given the large amounts of web traffic these types of sites see, its not surprising there was a tidal wave of requests to delivery[.]globalcdnnode[.]com.
+Every time a page with the malvertisement was loaded, a request was made to hXXp://delivery.globalcdnnode.com/7f01baa99716452bda5bba0572c58be9/afr-zone.php, in the background.
+To give an example of what this activity looked like from DTI, you can see the numbers in the chart below.
+Figure 6.
+– DTI graph showing number of Darkleech detections logged each day.
+By using malvertising and or posing as a legitimate advertiser or content delivery network, the bad guys infiltrate the web advertisement ecosystem.
+This results in their malicious content getting loaded in your browser, often times in the background , while you browse sites that have nothing to do with the attack (as was the case in our careers site).
+Imagine a scenario where a good portion of enterprise users have a home page set to a popular news website .

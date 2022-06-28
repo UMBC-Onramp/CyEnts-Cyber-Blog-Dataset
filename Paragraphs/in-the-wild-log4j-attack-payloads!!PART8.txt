@@ -1,0 +1,4 @@
+
+f42915a2c76a29edd58fc2e1f7fde4c15d369e141d384064203ac57d53c41d5e *aa0 7ef631659c6f66719a18330ca3a79e89a9297681087659b8aa903c23c9e98be2
+*lz Another request that leads to coinminer is the following: Reverse Shell First sighting exploiting CVE-2021-44228: December 14, 2021 We have seen attacks that try to open a reverse shell using JNDIExploit.
+The following request opens a reverse shell to 167[.]99.32.139:1389 Exfiltrating Sensitive Information Aside from making the target install malware, an attack can also exfiltrate sensitive information from the target.

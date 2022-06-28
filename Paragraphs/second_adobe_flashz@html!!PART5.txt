@@ -1,0 +1,17 @@
+
+Na/PSOE9OPXCQpA3abFUntBrDP3FVPsCE2NiYfFei78GlGeYO:IPSOE9OPXCQ pAK5YBvPPPrZVkiY2Y Import Hash : ae984e4ab41d192d631d4f923d9210e4 PEHash: 57e6b26eac0f34714252957d26287bc93ef07db2 .text : e683e1f9fb674f97cf4420d15dc09a2b .rdata : 3a92b98a74d7ffb095fe70cf8acacc75 .data : b5d4f68badfd6e3454f8ad29da54481f .rsrc :
+474f9723420a3f2d0512b99932a50ca7 C2 Password: gogogod< Memo: 201507122359 Process Inject Targets: %windir%\\system32\\svchost.exe
+Sogu Config Encoder: sogu_20140307 Mutex Name: ZucFCoeHa8KvZcj1FO838HN&*wz4xSdmm1 Figure 4:
+SOGU Binary ‘Rdws.exe’ The compile timestamp indicates the malware was assembled on July 13, less than a day before we observed the SWC.
+We believe the time stamp in this case is likely genuine, based on the time line of the incident.
+The SOGU binary also appears to masquerade as a legitimate Trend Micro file named “VizorHtmlDialog.exe” in Figure 5.
+LegalCopyright:
+Copyright (C) 2009-2010 Trend Micro Incorporated.
+All rights reserved.
+InternalName: VizorHtmlDialog FileVersion:
+3.0.0.1303 CompanyName: Trend Micro Inc.
+PrivateBuild:
+Build 1303 - 8/8/2010 LegalTrademarks:
+Trend Micro Titanium is a registered trademark of Trend Micro Incorporated.
+Comments: ProductName:
+Trend Micro Titanium SpecialBuild: 1303 ProductVersion: 3.0 FileDescription:

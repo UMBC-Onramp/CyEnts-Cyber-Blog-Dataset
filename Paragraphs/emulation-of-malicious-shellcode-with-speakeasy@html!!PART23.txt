@@ -1,0 +1,10 @@
+
+This will be covered in more detail in a later blog post.
+Emulation of a Beacon Implant For this example, we will be emulating shellcode that decodes and executes a Beacon implant variant that has a SHA-256 hash of 7f6ce8a8c2093eaf6fea1b6f1ef68a957c1a06166d20023ee5b637b5f7838918.
+We begin by verifying the file format of the sample.
+This sample is expected to be launched either by a loader or used as part of an exploit payload.
+Figure 6: Hex dump of malware sample
+In Figure 6, we can clearly see that the file is not in the PE file format.
+An analyst who has seen many shellcode samples may notice the first two bytes: “0xfc 0xe8”.
+These bytes disassemble to the intel assembly instructions “cld” and “call”.
+The “cld” instruction is a common prelude to position independent shellcode as it will clear the direction flag allowing malware to easily parse string data from system DLL’s export tables.

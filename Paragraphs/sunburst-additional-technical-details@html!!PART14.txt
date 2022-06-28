@@ -1,0 +1,11 @@
+
+In “passive” mode, the backdoor communicates with its C2 coordinator via DNS and receives high-level updates to its state.
+For example, the C2 coordinator may tell the backdoor to go to sleep or spring into action.
+When the backdoor is in “active” mode, it communicates via HTTP to its final C2 server and receives detailed commands such as “spawn a process” or “transfer a file”.
+DNS C2 and the C2 Coordinator Protocol
+When communicating with the C2 coordinator, the backdoor continuously generates domains via its DGA.
+The backdoor delays execution for random intervals between generating domains.
+In some cases, this delay is up to 9 hours.
+If the C2 coordinator responds with a DNS A record, SUNBURST checks the resolved address against a hard-coded list of IP address blocks.
+If the address falls within a block, the backdoor transitions into an associated mode.
+The backdoor starts in the “passive” mode where it does nothing but check blocklists, sleep, and beacon via DNS until a transition is seen.

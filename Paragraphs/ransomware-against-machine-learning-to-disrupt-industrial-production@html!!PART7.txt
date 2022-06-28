@@ -1,0 +1,3 @@
+
+This represents an expansion of financial crime actors’ targeting of industries that process directly marketable information (e.g., credit card numbers or customer data) to include the monetization of production environments.
+As threat actors perform internal reconnaissance and move laterally across target networks before deploying ransomware, they are now better positioned to cast wide nets that impact the target’s most critical assets and negotiate from a privileged position.

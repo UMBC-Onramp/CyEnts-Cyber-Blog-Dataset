@@ -1,0 +1,51 @@
+
+6F 6E 6D 65 6E 74 56 61 72 69 61 62
+6C 65 28 22 55 53 45 52 4E 41 4D 45 22 29 } //Environment.
+GetEnvironmentVariable(\"USERNAME\") $functionalityString1 = { 28 22 64 65
+6C 61 79 22 29 } //(\"delay\") $functionalityString2 = { 28 22 73 63 72 65 65 6E 73 68
+6F 74 22 29 } //(\"screenshot\") $functionalityString3 = { 28 22 65 78 69 74 22 29 } //(\"exit\") $publicStrings1 =
+\"public string UUID\" $publicStrings2 =
+\"public string ID\" $publicStrings3 = \"public string Data\" $UserAgentRequest = { 20 3D 20 45 6E 76 69 72
+6F 6E 6D 65 6E 74 2E 4F 53 56 65 72 73 69 6F 6E 2E 54
+6F 53 74 72 69 6E 67 28 29 3B } // = Environment.
+OSVersion.
+ToString(); condition: filesize < 1MB and all of them } rule Loader_Win_SMOKEDHAM { meta: author = \"Mandiant\" date_created = \"2021-06-10\" md5 = \"05d38c7e957092f7d0ebfc7bf1eb5365\" strings: $listedDLLs1 = \"System.Drawing.dll\" fullword $listedDLLs2 =
+\"System.
+Web.
+Extensions.dll\" fullword $listedDLLs3 =
+\"System.
+Windows.
+Forms.dll\" fullword $CSharpLang = {2d 4c 61 6e 67 75 61 67 65 20 43 53 68 61 72 70} // -Language CSharp $StringConversion = \"convertto-securestring\" nocase $SecureString1 = {5b 53 79 73 74 65 6d 2e 52 75 6e 74 69
+6d 65 2e 49 6e 74 65 72 6f 70 53 65 72 76 69 63 65 73 2e 4d 61 72 73 68 61 6c 5d 3a 3a 53 65 63 75 72
+65 53 74 72 69 6e 67 54 6f 42 53 54 52} //[System.
+Runtime.
+InteropServices.
+Marshal]::SecureStringToBSTR $SecureString2 = {5b 53 79 73 74 65 6d 2e 52 75 6e 74 69 6d 65 2e 49 6e 74 65 72 6f 70 53 65 72 76 69 63 65 73 2e 4d 61 72 73 68 61 6c 5d 3a 3a 50 74 72 54 6f 53 74 72 69
+6e 67 41 75 74 6f} //[System.
+Runtime.
+InteropServices.Marshal]::PtrToStringAuto condition: filesize < 1MB and (1 of ($listedDLLs*)) and $CSharpLang and $StringConversion and $SecureString1 and $SecureString2 } MITRE
+ATT&CK UNC2465
+Tactic Description Initial Access T1189: Drive-by Compromise T1195.002: Compromise Software Supply Chain T1566:
+Phishing Execution T1053.005: Scheduled Task T1059.001: PowerShell T1059.005:
+Visual Basic Persistence T1098:
+Account Manipulation T1136: Create Account T1547.001:
+Registry Run Keys / Startup Folder T1547.004:
+Winlogon Helper DLL T1547.009: Shortcut Modification Defense Evasion T1027: Obfuscated Files or Information T1070.006:
+Timestomp T1112: Modify Registry T1140: Deobfuscate/Decode Files or Information T1218.005:
+Mshta T1553.002: Code Signing T1562.004: Disable or Modify System Firewall Discovery T1012: Query Registry T1033:
+System Owner/User Discovery T1082:
+System Information Discovery Collection T1056.001:
+Keylogging T1113: Screen Capture T1560:
+Archive Collected Data Impact T1486:
+Data Encrypted for Impact T1531:
+Account Access Removal Command and Control T1071.001: Web Protocols T1090.004: Domain Fronting T1102:
+Web Service T1105:
+Ingress Tool Transfer T1219:
+Remote Access Software T1572:
+Protocol Tunneling T1573.002: Asymmetric Cryptography Lateral Movement T1021.004:
+SSH T1021.005: VNC Credential Access T1003.001: LSASS Memory Resource Development T1588.003:
+Code Signing Certificates T1588.004: Digital Certificates T1608.003: Install Digital Certificate Acknowledgements Thanks to everyone that contributed analysis and review.
+Special thanks to Alison Stailey, Joseph Reyes, Nick Richard, Andrew Thompson, Jeremy Kennelly, Joshua Sablatura, Evan Reese, Van Ta, Stephen Eckels, and Tufail Ahmed.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

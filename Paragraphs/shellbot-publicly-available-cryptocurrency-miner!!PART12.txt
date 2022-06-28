@@ -1,0 +1,4 @@
+
+The only way to join a Tier 3 botnet would be to be moved up the chain and follow the newly deployed Perl scripts.
+Along the way, it becomes much easier for the different botnet operators to filter out research bots, increasing the security of the operation.
+Attribution ShellBot is publicly available code, so it is harder to attribute it to any one group.

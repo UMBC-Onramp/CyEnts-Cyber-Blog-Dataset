@@ -1,0 +1,6 @@
+FortiGuard Labs Research Affected Platforms: Linux Impacted Users: Any organization Impact: Remote attackers gain control of the vulnerable systems Severity Level: Critical Between February and March 2022, our FortiGuard Labs team observed that the Beastmode (aka B3astmode) Mirai-based DDoS campaign has aggressively updated its arsenal of exploits.
+Five new exploits were added within a month, with three targeting various models of TOTOLINK routers.
+This inclusion of TOTOLINK exploits is especially noteworthy as they were added just a week after the exploit codes were published on GitHub.
+We previously reported on the MANGA campaign , which similarly adopted exploit code within weeks of their release.
+By rapidly adopting newly released exploit code, threat actors can potentially infect vulnerable devices and expand their botnets before patches are applied to fix these vulnerabilities.
+TOTOLINK has already released updated firmware for affected models and users are strongly encouraged to update their devices.

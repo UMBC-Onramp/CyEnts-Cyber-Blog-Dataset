@@ -1,0 +1,73 @@
+In March this year, our experts discovered an ad on an underground forum for a piece of malware dubbed BloodyStealer by its creators.
+
+The ad states that it steals following data from infected devices: Passwords, cookies , bank card details, browser autofill data; Device data; Screenshots; Desktop and uTorrent client files; Bethesda, Epic Games, GOG, Origin, Steam, Telegram, and VimeWorld client sessions ; Logs.
+
+BloodyStealer ad.
+
+Source What struck us was that most of the listed programs are game-related, which suggests that gamer accounts and their contents are in demand on the underground market.
+
+We decided to examine in detail exactly what risks gamers face.
+
+BloodyStealer conquers the world Although BloodyStealer is relatively new, it is already globe-trotting.
+
+According to our data, the malware has hit users in Europe, Latin America, and the Asia-Pacific region — not so surprising given its malware-as-a-service (MaaS) distribution model, meaning anyone can buy it and the price is quite low (about $10 per month or roughly $40 for a “lifetime license”).
+
+In addition to its theft functions, the malware has a set of tools meant to thwart analysis (read more about them here ).
+
+It sends stolen information as a ZIP archive to the C&C server, which is protected against DDoS and other Web attacks.
+
+The cybercriminals use either the (quite basic) control panel or Telegram to get the data, including gamer accounts.
+
+Not by BloodyStealer alone BloodyStealer is just one of many tools available on the dark web for stealing gamer accounts.
+
+Cybercriminals sell other types of malware, many of which have been on the market longer than BloodyStealer.
+
+In addition, underground forums often feature ads offering to post a malicious link on a popular website or selling tools to generate phishing pages automatically.
+
+Cybercriminal sells BlackMafia phishing tool to create fake PUBG pages With the aid of these tools, cybercriminals can collect, and then try to monetize, a huge amount of credentials.
+
+All kinds of offers related to gamer accounts can be found on the dark web.
+
+Logs for wholesale access Among the most popular products are so-called logs — databases containing reams of data for logging into accounts.
+
+In their ads, attackers can specify the types of data, the geography of users, the period over which the logs were collected, and other details.
+
+For example, in the screenshot below, an underground forum member offers an archive with 65,600 records, of which 9,000 are linked to users from the US, and 5,000 to residents of India, Turkey, and Canada.
+
+The entire archive costs $150 (about 0.2 cents per record).
+
+Dark-web ad for the sale of logs for August 2021 That said, these databases can contain outdated or even useless information, and so some sellers let buyers check the logs to confirm they’re up to date.
+
+Another dark-web ad: Fresh logs for $300 per 1,000 records Gamer accounts, games, and inventory Cybercriminals sell access to specific gaming accounts as well, both individually and wholesale.
+
+Unsurprisingly, accounts with many games, add-ons, and expensive items hold particular value.
+
+Typically cybercriminals sell them at huge discounts.
+
+A cybercriminal selling 280,000 gamer accounts for just $4,000 Account content is also traded, again for a fraction of its real value.
+
+On the dark web, for example, you can find Need for Speed and other titles selling for less than 50 cents.
+
+Games from stolen accounts are sold for a song In-game items are also in circulation.
+
+Discounted skins on the underground market How to avoid falling victim to BloodyStealer and other thieves Having games and in-game items sold off is not the only problem that awaits the owner of a stolen account.
+
+Cybercriminals or buyers (it makes little difference to the victim) can use the account to launder money, distribute phishing links, and do other illegal things.
+
+To avoid falling prey to cybercriminals, make sure your accounts and devices are secure.
+
+Protect your accounts with strong passwords, enable two-factor authentication, and generally max out the platform’s security settings (see our guides for Steam , Battle.net , Origin , Twitch , and Discord users).
+
+Download apps only from official sources to minimize the chances of picking up BloodyStealer or other malware.
+
+Be wary of links in e-mails and messages from strangers.
+
+Before entering your credentials on any website, make sure it’s genuine.
+
+Use a reliable security solution.
+
+For example, Kaspersky Security Cloud blocks BloodyStealer and doesn’t interfere with gameplay .
+
+
+
+

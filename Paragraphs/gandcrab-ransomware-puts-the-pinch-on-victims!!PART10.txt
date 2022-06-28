@@ -1,0 +1,7 @@
+
+The malware no longer creates any file, instead making a mutex object with this special name.
+The mutex remains and keeps the .lock extension in the name.
+Figure 5.
+Creating a special mutex instead of a special lock file.
+The vaccine does not work with the second Version 4.1.2 and Version 4.2, but it does work with previous versions.
+Version 4.2 This version has code to detect virtual machines and stop running the ransomware within them.

@@ -1,0 +1,10 @@
+
+DeleteFile 11 Deletes the specified file path.
+GetFileHash 12 Compute the MD5 of a file at a given path and return the result as a hex string.
+If an argument is provided, it is the expected MD5 hash of the file and returns an error if the calculated MD5 differs.
+ReadRegistryValue 13
+Arbitrary registry read from one of the supported hives.
+SetRegistryValue 14
+Arbitrary registry write from one of the supported hives.
+DeleteRegistryValue 15
+Arbitrary registry delete from one of the supported hives.

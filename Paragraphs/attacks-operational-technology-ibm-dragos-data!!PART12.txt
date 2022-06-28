@@ -1,0 +1,4 @@
+
+Even so, the group Dragos tracks as KAMACITE breached multiple industrial networks by utilizing spearphishing with malicious attachments and external access via legitimate services to gain access to victim organizations.
+Looking Ahead: What Does This Data Mean for 2021?
+X-Force threat intelligence anticipates that ransomware will continue to be a top attack type for industrial organizations into 2021.

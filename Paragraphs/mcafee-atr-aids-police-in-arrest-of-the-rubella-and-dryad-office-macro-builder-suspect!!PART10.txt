@@ -1,0 +1,12 @@
+
+A closer look at the screenshot revealed the same PDB path C:\\Users\\Breitling\\. Screenshot with the Breitling PDB path Chatting with Rubella Since Rubella was quite extroverted on the underground forums and had stated Jabber contact details in advertisements we decided to carefully initiate contact with him in the hope that we would get access to some more information.
+About a week after we added Rubella to our Jabber contact list, we received a careful “Hi.”
+We started talking and posing as a potential buyer, carefully mentioning our interest the Rubella Macro Builder.
+During this chat Rubella was quite responsive and as a real businessperson, mentioned that he was offering a new “more exclusive” Macro Builder named Dryad.
+Rubella proceeded to share a screenshot of Dryad with us.
+Screenshot of Dryad shared by Rubella Eventually we ended our conversation in a friendly manner and told Rubella we would be in touch if we remained interested.
+Dryad Macro Builder Based on the information provided from the chat with Rubella we performed a quick search for Dryad Macro Builder.
+We eventually found a sample of the Dryad Macro Builder and decided to further analyze this sample and compare it for overlap with the Rubella Macro Builder.
+PE Summary
+We noticed that the program was coded in .NET
+Assembly which is usually a preferred language for less skilled malware coders.

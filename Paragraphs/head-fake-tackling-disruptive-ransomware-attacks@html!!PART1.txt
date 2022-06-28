@@ -1,0 +1,6 @@
+Within the past several months, FireEye has observed financially-motivated threat actors employ tactics that focus on disrupting business processes by deploying ransomware in mass throughout a victim’s environment.
+Understanding that normal business processes are critical to organizational success, these ransomware campaigns have been accompanied with multi-million dollar ransom amounts.
+In this post, we’ll provide a technical examination of one recent campaign that stems back to a technique that we initially reported on in April 2018 .
+Between May and September 2019, FireEye responded to multiple incidents involving a financially-motivated threat actor who leveraged compromised web infrastructure to establish an initial foothold in victim environments.
+This activity bared consistencies with a fake browser update campaign first identified in April 2018 – now tracked by FireEye as FakeUpdates .
+In this newer campaign, the threat actors leveraged victim systems to deploy malware such as Dridex or NetSupport , and multiple post-exploitation frameworks.

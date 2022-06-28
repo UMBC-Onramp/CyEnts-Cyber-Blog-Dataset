@@ -1,0 +1,7 @@
+
+And it is freely available as Open Source; so that others can benefit from some of the methods we have already found to work well in our practice.
+We hope that as we improve it, you can take even more advantage of what OpenIOC has to offer in your IR and Threat Intelligence workflows.
+Next up in the Back to Basics: OpenIOC series, we'll talk about some of the basics of what OpenIOC is and what using it involves - and some of the upcoming things in the future of OpenIOC.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

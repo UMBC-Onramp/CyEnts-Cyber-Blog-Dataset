@@ -1,0 +1,9 @@
+
+Figure 5:
+Contents of Decoded VBS Figure 6: More Contents of Decoded VBS The downloaded ZIP file contains four files.
+Two are PE files.
+One is a legitimate Windows tool, pvk2pfx.exe, that is abused for DLL side-loading.
+One is the malicious banking Trojan as the DLL.
+The VBS code unzips the archive, changes the extension of the legitimate Windows tool from .png
+ to .exe, and renames the malicious DLL as cryptui.dll.
+The VBS code also creates a file in C:\\Users\\Public\\Administrador\\car.dat with random strings.

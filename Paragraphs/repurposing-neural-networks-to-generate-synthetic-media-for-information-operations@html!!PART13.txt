@@ -1,0 +1,5 @@
+
+Neither the\ntext nor the voices exist in any of the original SVT2TTS training\ndatasets.
+It's worth noting that we didn’t even need a GPU to do this\n– the pre-trained model was fine-tuned locally using a basic laptop’s\nCPU cores, which also suggests that quality improvements are possible\nwith greater resourcing.
+Speak No Evil Our last proof of concept is in the text domain, where we\ndemonstrate how GPT-2 can be fine-tuned in order to generate custom\nsocial media posts reflecting narratives pushed in a social media IO\ncampaign.
+GPT-2 is an open source\nneural network that was trained on the causal language modeling\ntask , whose objective is to predict the next word in a sentence\nfrom previous context.

@@ -1,0 +1,5 @@
+
+It is likely that some of them arose in code carried forward from earlier versions, that is, from legacy code.
+Software implementers have a compelling argument to reuse as much code as possible in each new version.
+It is cheaper because it saves time.
+In a product with a history as long as Flash’s (more than 10 years), some of its code was written for a different threat landscape, not for today’s attackers and their more sophisticated tools and techniques.

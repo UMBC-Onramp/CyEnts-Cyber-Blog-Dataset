@@ -1,0 +1,8 @@
+
+GeoLogonalyzer would process this application access log and detect that the user account required a FAST travel rate of roughly 1,250 miles per hour which may appear malicious.
+Establishing a baseline of legitimate authentication patterns is recommended to understand false positives.
+Reliance on Open Source Data GeoLogonalyzer relies on open source data to make cloud hosting provider determinations.
+These lookups are only as accurate as the available open source data.
+Preventing Remote Access Abuse Understanding that no single analysis method is perfect, the following recommendations can help security teams prevent the abuse of remote access platforms and investigate suspected compromise.
+Identify and limit remote access platforms that allow access to sensitive information from the Internet, such as VPN servers, systems with RDP or SSH exposed, third-party applications (e.g., Citrix), intranet sites, and email infrastructure.
+Implement a multi-factor authentication solution that utilizes dynamically generated one-time use tokens for all remote access platforms.

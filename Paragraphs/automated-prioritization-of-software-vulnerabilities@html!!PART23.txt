@@ -1,0 +1,12 @@
+
+In our work, we found that social media content that pre-dates CVE scoring releases can be effectively used by machine learning models to forecast vulnerability scores and prioritize vulnerabilities days before they are made available.
+Our approach incorporates a novel social sentiment component, which CVE scores do not, and it allows scores to better predict real-world exploitation of vulnerabilities.
+Finally, our approach allows for a more practical prioritization of software vulnerabilities effectively indicating the few that are likely to be weaponized by attackers.
+NIST has acknowledged that the current CVSS methodology is insufficient.
+The current process of scoring CVSS is expected to be replaced by ML-based solutions by October 2019, with limited human involvement.
+However, there is no indication of utilizing a social component in the scoring effort.
+This work was led by researchers at Ohio State under the IARPA CAUSE program, with support from Leidos and FireEye.
+This work was originally presented at NAACL in June 2019, our paper describes this work in more detail and was also covered by Wired .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

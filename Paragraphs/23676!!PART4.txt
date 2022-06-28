@@ -1,0 +1,7 @@
+
+Of course, these kinds of services do not have to be used for illegal purposes, and they do have some legitimate applications.
+For example, some appeal to the marketing departments of large companies, which need as many Web entry points as possible in different geographic regions.
+Why proxyware on a company computer is a bad idea Although proxyware services claim “tenants” are harmless, problems sometimes still occur, including IP address reputation damage and software reliability.
+Pessimization of the IP address The most common problem with proxyware for the users of the computers on which it runs — or even for the entire network if it has a single IP address — is that the services often encounter CAPTCHA s, whose entire point is to ensure only real humans can get access to an online resource.
+A computer with proxyware raises suspicions, and rightly so.
+One way bandwidth tenants can use proxyware-laden computers is to scan the Web or measure the speed of website access by regularly deploying a flood of requests.

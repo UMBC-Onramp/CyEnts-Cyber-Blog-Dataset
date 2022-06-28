@@ -1,0 +1,2 @@
+Although we recently reported finding 20 apps in Google Play posing as Minecraft modpacks — the most popular with more than a million downloads — Minecraft -themed malware continues to pop up in Google Play.
+Instead of doing anything they claimed, the apps turned users’ smartphones and tablets into extremely intrusive advertising tools.

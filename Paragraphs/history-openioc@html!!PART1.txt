@@ -1,0 +1,4 @@
+With the buzz in the security industry this year about sharing threat intelligence, it's easy to get caught up in the hype, and believe that proper, effective sharing of Indicators or Intelligence is something that can just be purchased along with goods or services from any security vendor.
+It's really a much more complex problem than most make it out to be, and one that we've been working on for a while.
+A large part of our solution for managing Threat Indicators is using the OpenIOC standard format.
+Since its founding, Mandiant sought to solve the problem of how to conduct leading-edge Incident Response (IR) - and how to scale that response to an entire enterprise.

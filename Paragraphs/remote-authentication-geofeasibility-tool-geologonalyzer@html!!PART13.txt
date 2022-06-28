@@ -1,0 +1,5 @@
+
+Analysts can manually edit these coordinates, if desired, by modifying the RESERVED_IP_COORDINATES constant in the Python script.
+Setting this constant to the coordinates of your office location may provide the most accurate results, although may not be feasible if your organization has multiple locations or other point-to-point connections.
+GeoLogonalyzer also accepts the parameter –skip_rfc1918, which will completely ignore any RFC1918 source IP addresses and could result in missed activity.
+Failed Logon and Logoff Data It may also be useful to include failed logon attempts and logoff records with the log source data to see anomalies related to source information of all VPN activity.

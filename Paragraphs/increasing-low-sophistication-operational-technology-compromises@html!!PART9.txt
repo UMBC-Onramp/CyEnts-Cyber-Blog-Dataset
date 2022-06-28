@@ -1,0 +1,3 @@
+
+Figure 5: “Gas system” that was really a kitchen ventilation system Low Sophistication OT Threat Activity is Supported by Hacktivist Tutorials In a few instances, actors operating as part of hacktivist collectives created and shared tutorials that instructed their affiliates and sympathetic parties on how to identify and compromise internet-accessible OT assets.
+The tutorials typically described simple methodologies, such as using VNC utilities to connect to IP addresses identified in Shodan or Censys searches for port 5900.

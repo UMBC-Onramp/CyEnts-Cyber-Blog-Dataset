@@ -1,0 +1,10 @@
+
+Attackers exploiting the vulnerability can corrupt memory and gain remote code execution.
+In the exploit, the attacker embeds the FLV object directly in the ActionScript code, and plays the video using NetStream class.
+In memory, it looks like the following: 0000000: 46 4c 56 01 05 00 00 00 09 00 00 00 00 12 00 00  FLV............. 0000010: f4 00 00 00 00 00 00 00 02 00 0a 6f 6e 4d 65 74  ...........onMet 0000020:
+61 44 61 74 61 08 00 00 00 0b 00 08
+64 75 72 61  aData.......dura 0000030: 74 69 6f 6e 00 40 47
+ca 3d 70 a3 d7 0a 00 05
+77  tion.@G.=p.....w 0000040: 69 64 74 68 00 40 74 00 00 00 00 00 00 00 06
+68  idth.@t........
+h 0000050:

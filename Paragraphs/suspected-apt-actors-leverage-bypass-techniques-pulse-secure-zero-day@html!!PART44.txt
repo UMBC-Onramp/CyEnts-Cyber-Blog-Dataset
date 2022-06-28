@@ -1,0 +1,8 @@
+
+If this header matches a backdoor key, then the malware will output the result of the command sent in the variable HTTP_X_CMD .
+This data is RC4 encrypted and base64-encoded.
+The passphrase to decrypt is sent in the environment variable HTTP_X_CNT .
+The webshell will set the content type to Content-type:text/html and the command output printed.
+Following this, the script exits.
+QUIETPULSE The file dsserver (SHA256: 9f6ac39707822d243445e30d27b8404466aa69c61119d5308785bf4a464a9ebd ) is a legitimate Perl script with malicious modifications to fork the child process /home/bin/dshelper .
+The dshelper script does not exist on a clean PulseSecure installation, this file is described as QUIETPULSE Utility Script.

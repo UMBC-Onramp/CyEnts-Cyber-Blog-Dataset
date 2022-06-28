@@ -1,0 +1,6 @@
+
+6E 76 69 72
+6F 6E 6D 65 6E 74 56 61 72 69 61 62
+6C 65 28 22 55 53 45 52 44 4F 4D 41 49 4E 22 29 } //Environment.
+GetEnvironmentVariable(\"USERDOMAIN\") $envCollection3 = { 45 6E 76 69 72 6F 6E 6D 65 6E 74 2E 47
+65 74 45 6E 76 69 72

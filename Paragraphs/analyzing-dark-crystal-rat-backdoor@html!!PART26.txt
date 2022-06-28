@@ -1,0 +1,3 @@
+
+Unzip a ZIP file to a given path on the client keyloggerstop Stop logging keystrokes fm_drives Enumerate drive letters cookiestealer Transfer cookies and browser/FileZilla saved credentials to the C2 fm_delete Recursively delete a given directory dismon Hide desktop icons and taskbar fm_uploadu Transfer a file from the C2 to the client taskstart Start a process cleardesktop Rotate screen lcmd Run shell command and send standard output back to C2 taskbarShow Show taskbar clipboard Set clipboard contents cookiestealer_file
+Save cookies and credentials to a local file newuserpass Create a new local user account beep Beep for set frequency and duration speak Use speech synthesizer to speak text openchat

@@ -1,0 +1,21 @@
+
+Fortinet previously released IPS signature Adobe.
+Illustrator.
+CVE-2021-40718.Memory.
+Leak for this specific vulnerability to proactively protect our customers.
+CVE-2021-40746 : This is an Arbitrary Code Execution vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.
+Specifically, the vulnerability is caused by a malformed DWG file, which causes an Out of Bounds memory access due to an improper bounds check.
+Attackers can exploit this vulnerability to execute arbitrary code within the context of the application via a crafted DWG file.
+Fortinet previously released IPS signature Adobe.
+Illustrator.
+CVE-2021-40746.Arbitrary.
+Code.
+Execution for this specific vulnerability to proactively protect our customers.
+CVE-2021-40747 :
+This is a Memory Corruption vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.
+Specifically, the vulnerability is caused by a malformed DWG file, which causes a NULL pointer dereference.
+Attackers can exploit this vulnerability with a crafted DWG file, potentially leading to an application denial of service.
+Fortinet previously released IPS signature Adobe.
+Illustrator.
+CVE-2021-40747.DoS for this specific vulnerability to proactively protect our customers CVE-2021-40748 :
+This is a Memory Corruption vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.

@@ -1,0 +1,8 @@
+
+An example of the script’s capability is shown in Figure 7 and Figure 8.
+Figure 7: Objective-C IDB snippet before running objc2_analyzer Figure 8: Objective-C IDB snippet after running objc2_analyzer
+Observe the instructions referencing selectors have been patched to instead reference the implementation function itself, for easy transition.
+The comments added to each call make analysis much easier.
+Cross-references from the implementation functions are also created to point back to the objc_msgSend calls that reference them as shown in Figure 9.
+Figure 9: Cross-references added to IDB for implementation function It should be noted that every release of IDA Pro starting with 7.0 have brought improvements to Objective-C code analysis and handling.
+However, at the time of writing, the latest version of IDA Pro being 7.2, there are still shortcomings that are mitigated using this tool as well as the immensely helpful comments that are added.

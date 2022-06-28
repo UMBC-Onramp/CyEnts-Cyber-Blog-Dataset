@@ -1,0 +1,7 @@
+
+But this data still provides intelligence about how many scans and exploit attempts were made during the last 30 days against the education sector.
+In addition, these attacks do not necessarily mean that an attacker is targeting technology running inside an educational institution.
+It is simply a record of the attacks identified and blocked by IPS systems deployed inside education sector networks.
+NTP.Monlist.
+Command.
+DoS indicates an attempt against a Denial of Service vulnerability in the NTP service.

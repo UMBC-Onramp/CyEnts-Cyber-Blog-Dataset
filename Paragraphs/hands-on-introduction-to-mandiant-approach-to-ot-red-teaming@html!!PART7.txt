@@ -1,0 +1,7 @@
+
+Test specific processes or systems deemed at high risk of causing a disruption to safety or operations.
+This analysis highlights gaps or weaknesses to determine methods needed to secure high-risk system(s).
+Red Teaming in OT Provides Unique Value to Defenders Red teaming in OT can be uniquely helpful for defenders, as it generates value in a way very specific to an organizations' needs, while decreasing the gap between the \"no holds barred\" world of real attackers and the \"safety first\" responsibility of the red team.
+While it is common for traditional red teaming engagements to end shortly after the attacker pivots into a production OT segment, a hybrid approach, such as the one we use, makes it possible for defenders to gain visibility into the specific strengths and weaknesses of their OT networks and security implementations.
+Here are some other benefits of red teaming in OT production networks: It helps defenders understand and foresee possible paths that sophisticated actors may follow to reach specific goals.
+While cyber threat intelligence is another great way to build this knowledge, red teaming allows for additional acquisition of site-specific data.

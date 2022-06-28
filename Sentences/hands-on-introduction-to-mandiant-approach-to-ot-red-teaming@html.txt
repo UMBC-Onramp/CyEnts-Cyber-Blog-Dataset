@@ -1,0 +1,197 @@
+Operational technology (OT) asset owners have historically considered red teaming of OT and industrial control system (ICS) networks to be too risky due to the potential for disruptions or adverse impact to production systems.
+
+While this mindset has remained largely unchanged for years, Mandiant's experience in the field suggests that these perspectives are changing; we are increasingly delivering value to customers by safely red teaming their OT production networks.
+
+This increasing willingness to red team OT is likely driven by a couple of factors, including the growing number and visibility of threats to OT systems, the increasing adoption of IT hardware and software into OT networks, and the maturing of OT security teams.
+
+In this context, we deemed it relevant to share some details on Mandiant's approach to red teaming in OT based on years of experience supporting customers learning about tangible threats in their production environments.
+
+In this post we introduce Mandiant's approach to OT red teaming and walk through a case study.
+
+During that engagement, it took Mandiant only six hours to gain administrative control on the target's OLE for Process Control (OPC) servers and clients in the target's Distributed Control System (DCS) environment.
+
+We then used this access to collect information and develop an attack scenario simulating the path a threat actor could take to prepare for and attack the physical process (We highlight that the red team did not rely on weaknesses of the DCS, but instead weak password implementations in the target environment).
+
+NOTE:
+
+Red teaming in OT production systems requires planning, preparation and \"across the aisle\" collaboration.
+
+The red team must have deep knowledge of industrial process control and the equipment, software, and systems used to achieve it.
+
+The red team and the asset owner must establish acceptable thresholds before performing any activities.
+
+Visit our website for more information or to request Mandiant services or threat intelligence .
+
+Mandiant's Approach for Safe Red Teaming in OT Mandiant's approach to red teaming OT production systems consists of two phases: active testing on IT and/or OT intermediary systems, and custom attack modeling to develop one or more realistic attack scenarios.
+
+Our approach is designed to mirror the OT-targeted attack lifecycle—with active testing during initial stages (Initial Compromise, Establish Foothold, Escalate Privileges, and Internal Reconnaissance), and a combination of active/passive data collection and custom threat modeling to design feasible paths an attacker would follow to complete the mission.
+
+Figure 1:
+
+Mandiant OT red teaming approach Mandiant's OT red teaming may begin either from the perspective of an external attacker leveraging IT compromises to pivot into the OT network, or from the perspective of an actor who has already gained access into the OT network and is ready to escalate the intrusion.
+
+We then leverage a range of commodity tools and utilities that are widely available in most target environments to pivot across OT intermediary systems and gain privileged access to target ICS.
+
+Throughout this process, we maintain constant communication with the customer to establish safety thresholds.
+
+Active participation from the defenders will also enable the organization to learn about the techniques we use to extract information and the weaknesses we exploit to move across the target network.
+
+Once the active testing stops at the agreed safety threshold, we compile this information and perform additional research on the system and processes to develop realistic and target-specific attack scenarios based on our expertise of threat actor behaviors.
+
+Mandiant's OT red teaming can be scoped in different ways depending on the target environment, the organization's goals, and the asset owner's cyber security program maturity.
+
+For example, some organizations may test the full network architecture, while others prefer to sample only an attack on a single system or process.
+
+This type of sampling is useful for organizations that own a large number of processes and are unlikely to test them one by one, but instead they can learn from a single-use case that reflects target-specific weaknesses and vulnerabilities.
+
+Depending on the scope, the red teaming results can be tailored to: Model attack scenarios based on target-specific vulnerabilities and determine the scope and consequences if a threat actor were to exploit them in their environment.
+
+Model attack paths across the early stages of reconnaissance and lateral movement to identify low-hanging fruit that adversaries may exploit to enable further compromise of OT.
+
+Operationalize threat intelligence to model scenarios based on tactics, techniques, and procedures (TTPs) from known actors, such as advanced persistent threats (APTs).
+
+Test specific processes or systems deemed at high risk of causing a disruption to safety or operations.
+
+This analysis highlights gaps or weaknesses to determine methods needed to secure high-risk system(s).
+
+Red Teaming in OT Provides Unique Value to Defenders Red teaming in OT can be uniquely helpful for defenders, as it generates value in a way very specific to an organizations' needs, while decreasing the gap between the \"no holds barred\" world of real attackers and the \"safety first\" responsibility of the red team.
+
+While it is common for traditional red teaming engagements to end shortly after the attacker pivots into a production OT segment, a hybrid approach, such as the one we use, makes it possible for defenders to gain visibility into the specific strengths and weaknesses of their OT networks and security implementations.
+
+Here are some other benefits of red teaming in OT production networks: It helps defenders understand and foresee possible paths that sophisticated actors may follow to reach specific goals.
+
+While cyber threat intelligence is another great way to build this knowledge, red teaming allows for additional acquisition of site-specific data.
+
+It responds to the needs of defenders to account for varying technologies and architectures present in OT networks across different industries and processes.
+
+As a result, it accounts for outliers that are often not covered by general security best practices guidance.
+
+It results in tangible and realistic outputs based on our active testing showing what can really happen in the target network.
+
+Mandiant's OT red teaming results often show that common security testing tools are sufficient for actors to reach critical process networks.
+
+It results in conceptual attack scenarios based on real attacker behaviors and specific knowledge about the target.
+
+While the scenarios may sometimes highlight weaknesses or vulnerabilities that cannot be patched, these provide defenders with the knowledge needed to define alternative mitigations to mitigate risks earlier in the lifecycle.
+
+It can help to identify real weaknesses that could be exploited by an actor at different stages of the attack lifecycle.
+
+With this knowledge, defenders can define ways to stop threat activity before it reaches critical production systems, or at least during early phases of the intrusion.
+
+Applying Our Approach in the Real World: Big Steam Works During this engagement, we were tasked with gaining access to critical control systems and designing a destructive attack in an environment where industrial steaming boilers are operated with an Distributed Control System (DCS).
+
+In this description, we redacted customer information—including the name, which we refer to as \"Big Steam Works\"—and altered sensitive details.
+
+However, the overall attack techniques remain unchanged.
+
+The main objective of Big Steam Works is to deliver steam to a nearby chemical production company.
+
+For the scope of this red team, the customer wanted to focus entirely on its OT production network.
+
+We did not perform any tests in IT networks and instead begun the engagement with initial access granted in the form of a static IP address in Big Steam Work's OT network.
+
+The goal of the engagement was to deliver consequence-driven analysis exploring a scenario that could cause a significant physical impact to both safety and operations.
+
+Following our red teaming approach, the engagement was divided in two phases: active testing across IT and/or OT intermediary systems, and custom attack modeling to foresee paths an attacker may follow to complete its mission.
+
+We note that during the active testing phase we were very careful to maintain high safety standards.
+
+This required not only highly skilled personnel with knowledge about both IT and OT, but also constant engagement with the customer.
+
+Members from Big Steam Works helped us to set safety thresholds to stop and evaluate results before moving forward, and actively monitored the test to observe, learn, and remain vigilant for any unintended changes in the process.
+
+Phase 1 – Active Testing During this phase, we leveraged publicly accessible offensive security tools (including Wireshark, Responder, Hashcat, and CrackMapExec) to collect information, escalate privileges, and move across the OT network.
+
+In close to six hours, we achieved administrative control on several Big Steam Works' OLE for Process Control (OPC) servers and clients in their DCS environment.
+
+We highlight that the test did not rely on weaknesses of the DCS, but instead weak password implementations in the target environment.
+
+Figure 2 details our attack path: Figure 2:
+
+Active testing in Big Steam Work's OT network We collected network traffic using Wireshark to map network communications and identify protocols we could use for credential harvesting, lateral movement, and privilege escalation.
+
+Passive analysis of the capture showed Dynamic Host Configuration Protocol (DHCP) broadcasts for IPv6 addresses, Link-Local Multicast Name Resolution (LLMNR) protocol traffic, and NetBios Name Service (NBT-NS) traffic.
+
+We responded to broadcast LLMNR, NBT-NS, and WPAD name resolution requests from devices using a publicly available tool called Responder.
+
+As we supplied our IP address in response to broadcasted name resolution requests from other clients on the subnet, we performed man-in-the-middle (MiTM) attacks and obtained NTLMv1/2 authentication protocol password hashes from devices on the network.
+
+We then used Hashcat to crack the hashed credentials and use them for further lateral movement and compromise.
+
+The credentials we obtained included, but were not limited to, service accounts with local administrator rights on OPC servers and clients.
+
+We note that Hashcat cracked the captured credentials in only six seconds due to the lack of password strength and complexity.
+
+With the credentials captured in the first three steps, we accessed other hosts on the network using CrackMapExec.
+
+We dumped additional cached usernames, passwords, and password hashes belonging to both local and domain accounts from these hosts.
+
+This resulted in privileged access and control over the DCS's OPC clients and servers in the network.
+
+While we did not continue to execute any further attack, the level of access gained at this point enabled us to perform further reconnaissance and data collection to design and conceptualize the last steps of a targeted attack on the industrial steaming boilers.
+
+The TTPs we used during the active testing phase resemble some of the simplest resources that can be used by threat actors during real OT intrusions.
+
+The case results are concerning given that they illustrate only a few of the most common weaknesses we often observe across Mandiant OT red team engagements.
+
+We highlight that all the tools used for this intrusion are known and publicly available.
+
+An attacker with access to Big Steam Works could have used these methods as they represent low-hanging fruit and can often be prevented with simple security mitigations.
+
+Phase 2 – Custom Attack Modeling For roughly a week, Mandiant gathered additional information from client documentation and research on industrial steaming boilers.
+
+We then mirrored the process an attacker would follow to design a destructive attack on the target process given the results achieved during phase 1.
+
+At this point of the intrusion, the attacker would have already obtained complete control over Big Steam Works' OPC clients and servers, gaining visibility and access to the DCS environment.
+
+Before defining the path to follow, the attacker would likely have to perform further reconnaissance (e.g., compromising additional systems, data, and credentials within the Big Steam Works DCS environment).
+
+Specifically, the attacker could: Gain access to the DCS configuration software/engineering workstation Obtain configuration/control logic files Determine the type/function of the different DCS nodes in the environment Use native DCS tools for system overview, graphics display, and point drill down Identify alarms/alerts monitored by operators via remote HMI screens and map them to defined points Map the flow of the physical process based on data collection and review Our next step was to develop the custom scenario.
+
+For this example, we were tasked with modeling a case where the attacker was attempting to create a condition that had a high likelihood of causing physical damage and disruption of operations (see Figure 3).
+
+In this scenario, the attacker attempted to achieve this by lowering the water level in a boiler drum below the safe threshold while not tripping the burner management system or other safety mechanisms.
+
+If successful, this would result in rapid and extreme overheating in the boiler.
+
+Opening the feedwater valve under such conditions could result in a catastrophic explosion.
+
+Figure 3:
+
+Custom attack model diagram for Big Steam Works Figure 3 describes how a real attacker might pursue their mission after gaining access to the OPC servers and clients.
+
+As the actor moves closer to their goals, it becomes more difficult to assess both the probability of success and the actual impact of their actions due to nuances specific to the client environment and additional safety and security controls built into the process.
+
+However, the analysis holds significant value as it illustrates the overall structure of the physical process and potential attacker behaviors aimed at achieving specific end goals.
+
+Furthermore, it proceeds directly from the results obtained during the first phase of the red teaming.
+
+The model presents one feasible combination of actions that an attacker could perform to access devices governing the boiler drum and modify the water level while remaining undetected.
+
+With the level of access obtained from phase 1, the attacker would likely be able to compromise engineering workstations (EWS) for the boiler drum's controller using similar tools.
+
+This would likely enable the actor to perform actions such as changing the drum level setpoints, modifying the flow of steam scaling, or modifying water flow scaling.
+
+While the model does not reflect all additional safety and security measures that may be present deeper in the process, it does account for the attacker's need to modify alarms and control sensor outputs to remain undetected.
+
+By connecting the outcomes produced in the test to the potential physical impacts and motivations involved in a real attack, this model provided Big Steam Works with a realistic overview of cyber security threats to a specific physical process.
+
+Further collaboration with the customer enabled us to validate the findings and support the organization to mitigate the risks reflected in the model.
+
+Outlook Mandiant's OT red teaming supports organizations by combining both the hands-on analysis of vulnerabilities and weaknesses in IT and OT networks with the conceptual modeling of attacker goals and possible avenues to reach specific outcomes.
+
+It also enables security practitioners to adopt the attacker's perspective and explore attack vectors that may otherwise have not been conceived regardless of their value as low-hanging fruit for OT intrusions.
+
+Our approach presents realistic scenarios based upon technical evidence of intrusion activity upon OT intermediary systems in the tested network.
+
+In this way, it is tailored to support consequence-driven analysis of threats to specific critical systems and processes.
+
+This enables organizations to identify attack scenarios involving digital assets and determine safeguards that can best help to protect the process and ensure the safety of their facilities.
+
+Head over to our website for more information or to request Mandiant services or threat intelligence .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

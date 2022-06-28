@@ -1,0 +1,5 @@
+
+Now we will talk about the changes of some samples to see how prolific the ransomware Clop is.
+Sample 0403db9fcb37bd8ceec0afd6c3754314 has a compile date of 12 February, 2019 and has the following changes if compared with other samples: The file created has the name “you_offer.txt”.
+The name of the device in the fake call to “EraseTape” and “DefineDosDeviceA” functions is “..1”.
+An atom searched for nothing has the name of “$$$$”.

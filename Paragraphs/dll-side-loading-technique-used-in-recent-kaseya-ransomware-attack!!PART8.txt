@@ -1,0 +1,9 @@
+
+The complete list of C&Cs can be found in Appendix B: IOCs.
+MITRE ATT&CK Framework Analysis The MITRE ATT&CK Framework is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations.
+ It provides threat researchers and responders with a system for examining cyberattacks, allowing techniques and events to be more easily analyzed by researchers and presented in a way that help victims to better understand where in the attack cycle certain events occur.
+Critical elements of this ransomware have been mapped to the MITRE ATT&CK Framework.
+Two of its key strategies tied to specific MITRE ATT&CK TTP (tactics, techniques, and procedures) IDs are detailed below.
+The full set of MITRE ATT&CK elements are listed in the Appendix.
+MITRE
+T1562.004 Disable or Modify System Firewall Technique

@@ -1,0 +1,12 @@
+
+__main__': url=sys.argv[1] while(1): cmd=input('cmd:')
+exploit(url,cmd)
+The script contained some hardcoded HTTP header values including user-agent, accepted data types, accepted languages and content-type.
+The script builds an HTTP request and allows the user to specify the command they would like to run; it would then append the URL and command to the crafted exploit to execute.
+In our instance the attacker was leveraging this vulnerability to launch mshta.exe to download a second stage payload.
+Using search engines for internet connected devices such as Shodan or Censys we can quickly identify systems running the Weaver e-cology platform.
+Using this technique, we identified 28 internet facing system that are potentially vulnerable.
+Conclusion This isn't a new story; Managed Defense responds to cases like this every week.
+The usage of FOMB was particularly interesting in this instance and it's the first case in Managed Defense we've seen this technique being leveraged in an attempt to bypass defenses.
+ When leveraged correctly, compiled “.bmf”
+ files can be effectively used to sneak into an environment undetected and gain a foothold via persistence in the WMI buffer.

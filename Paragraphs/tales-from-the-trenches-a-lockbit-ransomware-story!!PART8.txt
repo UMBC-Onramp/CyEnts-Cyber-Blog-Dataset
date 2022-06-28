@@ -1,0 +1,5 @@
+
+Hence, the attacker only needed access to one system with an account having enough privileges to automatically make all other hosts in the network download and execute it.
+Malware Analysis For our analysis, we will use the file found in our investigation, the details of which are: File name: rs35.png SHA1 488e532e55100da68eaeee30ba342cc05810e296 SHA256 ca57455fd148754bf443a2c8b06dc2a295f014b071e3990dd99916250d21bc75 size 546.00 KB PDB c:\\users\\user\\work\\code\\dotnet\\regedit-64\\regedit-64\\obj\\release\\rs35.pdb guid 84e7065-65fe-4bae-a122-f967584e31db Technical Analysis
+The file we found in our investigation was a dropper renamed as a .png file.
+When first opening the .png

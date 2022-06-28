@@ -1,0 +1,5 @@
+
+Figure 3:
+JavaScript 1 code snippet The VBScript exploits CVE-2016-0189 which allows it to download the payload and execute it using the code snippet seen in Figure 4.
+Figure 4: VBScript code snippet JavaScript 2 The second JavaScript contains a function that will retrieve additional JavaScript code and append this script code to the HTML page using the code snippet seen in Figure 5.
+Figure 5: JavaScript 2 code snippet This newly appended JavaScript exploits CVE-2015-2419 which utilizes a vulnerability in JSON.stringify.

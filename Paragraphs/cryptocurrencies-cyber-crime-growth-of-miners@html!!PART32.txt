@@ -1,0 +1,4 @@
+
+Loapi is thought to be the work of the same developers behind the 2015 Android malware Podec, and is usually disguised as an anti-virus app.
+In January 2018, SophosLabs released a report detailing their discovery of 19 mobile apps hosted on Google Play that contained embedded Coinhive-based cryptojacking code, some of which were downloaded anywhere from 100,000 to 500,000 times.
+Between November 2017 and January 2018, researchers with Malwarebytes Labs reported on a drive-by cryptojacking campaign that affected millions of Android mobile browsers to mine Monero.

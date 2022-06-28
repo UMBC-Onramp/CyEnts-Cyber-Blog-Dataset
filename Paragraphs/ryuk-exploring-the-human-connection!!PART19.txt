@@ -1,0 +1,12 @@
+
+Victims should always make an exact copy of the encrypted hard disk before trying to use the decryptor.
+Call to action in piecing the different parts together By combining all the fresh insights with the information that was already discovered by ourselves and industry peers we can start defining our leading hypotheses around Ryuk.
+Based on this hypothesis, we will actively look for falsifying evidence.
+We encourage the security community to participate in this process.
+We realize that only by collaboration can we piece the different parts of the Ryuk puzzle together.
+By now it should be without question that involvement of the DPRK is the least likely hypothesis.
+Our leading Hypothesis on Ryuk until proven otherwise is; Ryuk is a direct descendant from Hermes2.1 with slight modifications, based on the code overlap in the ransomware as well as the decryptor.
+Ryuk is not designed to be used in a largescale corporate environment, based on all the scalability issues in the decryptor.
+At this moment there are several actors or actor-groups spreading Ryuk, based on the extortion modus operandi and different communications with the victims.
+The actors or actor-groups behind Ryuk have a relationship with one of the Post-Soviet republics, based on the Russian found in one of the encrypted files and the cultural references observed in the negotiations.
+The actors behind Ryuk most likely have an affiliation or relationship with the actors behind Trickbot and, based on their TTP, are better skilled at exploitation and lateral movement than pure Ransomware development.

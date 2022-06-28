@@ -1,0 +1,117 @@
+The FireEye Labs team has identified two new zero-day vulnerabilities as part of limited, targeted attacks against some major corporations.
+
+Both zero-days exploit the Windows Kernel, with Microsoft assigning CVE-2014-4148 and CVE-2014-4113 to and addressing the vulnerabilities in their October 2014 Security Bulletin .
+
+FireEye Labs have identified 16 total zero-day attacks in the last two years – uncovering 11 in 2013 and five in 2014 so far.
+
+Microsoft commented: “On October 14, 2014, Microsoft released MS14-058 to fully address these vulnerabilities and help protect customers.
+
+We appreciate FireEye Labs using Coordinated Vulnerability Disclosure to assist us in working toward a fix in a collaborative manner that helps keep customers safe.”
+
+In the case of CVE-2014-4148, the attackers exploited a vulnerability in the Microsoft Windows TrueType Font (TTF) processing subsystem, using a Microsoft Office document to embed and deliver a malicious TTF to an international organization.
+
+Since the embedded TTF is processed in kernel-mode, successful exploitation granted the attackers kernel-mode access.
+
+Though the TTF is delivered in a Microsoft Office document, the vulnerability does not reside within Microsoft Office.
+
+CVE-2014-4148 impacted both 32-bit and 64-bit Windows operating systems shown in MS14-058 , though the attacks only targeted 32-bit systems.
+
+The malware contained within the exploit has specific functions adapted to the following operating system platform categories: Windows 8.1/Windows Server 2012 R2 Windows 8/Windows Server 2012 Windows 7/Windows Server 2008 R2 (Service Pack 0 and 1)
+
+Windows XP Service Pack 3 CVE-2014-4113 rendered Microsoft Windows 7, Vista, XP, Windows 2000, Windows Server 2003/R2, and Windows Server 2008/R2 vulnerable to a local Elevation of Privilege (EoP) attack.
+
+This means that the vulnerability cannot be used on its own to compromise a customer’s security.
+
+An attacker would first need to gain access to a remote system running any of the above operating systems before they could execute code within the context of the Windows Kernel.
+
+Investigation by FireEye Labs has revealed evidence that attackers have likely used variations of these exploits for a while.
+
+Windows 8 and Windows Server 2012 and later do not have these same vulnerabilities.
+
+Information on the companies affected, as well as threat actors, is not available at this time.
+
+We have no evidence of these exploits being used by the same actors.
+
+ 
+
+Instead, we have only observed each exploit being used separately, in unrelated attacks.
+
+About CVE-2014-4148 Mitigation Microsoft has released security update MS14-058 that addresses CVE-2014-4148.
+
+Since TTF exploits target the underlying operating system, the vulnerability can be exploited through multiple attack vectors, including web pages.
+
+In the past, exploit kit authors have converted a similar exploit (CVE-2011-3402) for use in browser-based attacks.
+
+More information about this scenario is available under Microsoft’s response to CVE-2011-3402:
+
+MS11-087 .
+
+Details This TTF exploit is packaged within a Microsoft Office file.
+
+Upon opening the file, the font will exploit a vulnerability in the Windows TTF subsystem located within the win32k.sys kernel-mode driver.
+
+The attacker’s shellcode resides within the Font Program (fpgm) section of the TTF.
+
+The font program begins with a short sequence of instructions that quickly return.
+
+The remainder of the font program section is treated as unreachable code for the purposes of the font program and is ignored when initially parsing the font.
+
+During exploitation, the attacker’s shellcode uses Asynchronous Procedure Calls (APC) to inject the second stage from kernel-mode into the user-mode process winlogon.exe (in XP) or lsass.exe (in other OSes).
+
+From the injected process, the attacker writes and executes a third stage (executable).
+
+The third stage decodes an embedded DLL to, and runs it from, memory.
+
+This DLL is a full-featured remote access tool that connects back to the attacker.
+
+Plenty of evidence supports the attacker’s high level of sophistication.
+
+Beyond the fact that the attack is zero-day kernel-level exploit, the attack also showed the following: a usable hard-coded area of kernel memory is used like a mutex to avoid running the shellcode multiple times the exploit has an expiration date: if the current time is after October 31, 2014, the exploit shellcode will exit silently the shellcode has implementation customizations for four different types of OS platforms/service pack levels, suggesting that testing for multiple OS platforms was conducted the dropped malware individually decodes each string when that string is used to prevent analysis the dropped malware is specifically customized for the targeted environment the dropped remote access capability is full-featured and customized: it does not rely on generally available implementations (like Poison Ivy) the dropped remote access capability is a loader that decrypts the actual DLL remote access capability into memory and never writes the decrypted remote access capability to disk About CVE-2014-4113 Mitigation Microsoft has released security update MS14-058 that addresses this vulnerability.
+
+Vulnerability and Exploit Details The 32-bit exploit triggers an out-of-bounds memory access that dereferences offsets from a high memory address, and inadvertently wraps into the null page.
+
+In user-mode, memory dereferences within the null page are generally assumed to be non-exploitable.
+
+Since the null page is usually not mapped – the exception being 16-bit legacy applications emulated by ntvdm.exe--null pointer dereferences will simply crash the running process.
+
+In contrast, memory dereferences within the null page in the kernel are commonly exploited because the attacker can first map the null page from user-mode, as is the case with this exploits.
+
+The steps taken for successful 32-bit exploitation are: Map the null page: ntdll!ZwAllocateVirtualMemory(…,BaseAddress=0x1, …)
+
+Build a malformed win32k!tagWND structure at the null page such that it is properly validated in the kernel Trigger vulnerability Attacker’s callback in win32k!tagWND.lpfnWndProc executes in kernel-mode Callback overwrites EPROCESS.Token to elevate privileges Spawns a child process that inherits the elevated access token 32-bit Windows 8 and later users are not affected by this exploit.
+
+The Windows 8 Null Page protection prohibits user-mode processes from mapping the null page and causes the exploits to fail.
+
+In the 64-bit version of the exploit, dereferencing offsets from a high 32-bit memory address do not wrap, as it is well within the addressable memory range for a 64-bit user-mode process.
+
+As such, the Null Page protection implemented in Windows versions 7 (after MS13-031) and later does not apply.
+
+The steps taken by the 64-bit exploit variants are: Map memory page: ntdll!ZwAllocateVirtualMemory(…) Build a malformed win32k!tagWND structure at the mapped page such that it is properly validated in the kernel Trigger vulnerability Attacker’s callback in win32k!tagWND.lpfnWndProc executes in kernel-mode Callback overwrites EPROCESS.Token to elevate privileges Spawns a child process that inherits the elevated access token 64-bit Windows 8 and later users are not affected by this exploit.
+
+Supervisor Mode Execution Prevention (SMEP) blocks the attacker’s user-mode callback from executing within kernel-mode and causes the exploits to fail.
+
+Exploits Tool History The exploits are implemented as a command line tool that accepts a single command line argument – a shell command to execute with SYSTEM privileges.
+
+This tool appears to be an updated version of an earlier tool.
+
+The earlier tool exploited CVE-2011-1249, and displays the following usage message to stdout when run: Usage:system_exp.exe cmd Windows Kernel Local Privilege Exploits The vast majority of samples of the earlier tool have compile dates in December 2009.
+
+  Only two samples were discovered with compile dates in March 2011.
+
+Although the two samples exploit the same CVE, they carry a slightly modified usage message of: Usage:local.exe cmd Windows local Exploits The most recent version of the tool, which implements CVE-2014-4113, eliminates all usage messages.
+
+The tool appears to have gone through at least three iterations over time.
+
+The initial tool and exploits is believed to have had limited availability, and may have been employed by a handful of distinct attack groups.
+
+As the exploited vulnerability was remediated, someone with access to the tool modified it to use a newer exploit when one became available.
+
+These two newer versions likely did not achieve the widespread distribution that the original tool/exploits did and may have been retained privately, not necessarily even by the same actors.
+
+We would like to thank Barry Vengerik, Joshua Homan, Steve Davis, Ned Moran, Corbin Souffrant, Xiaobo Chen for their assistance on this research.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

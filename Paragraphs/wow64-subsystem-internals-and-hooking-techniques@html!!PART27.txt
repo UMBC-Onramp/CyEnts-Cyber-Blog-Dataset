@@ -1,0 +1,17 @@
+
+Windows kindly implements this patching via wow64cpu!BTCpuTurboThunkControl as shown in Figure 17.
+Figure 17:
+Patching the TurboThunk table is implemented for us Note that in previous Windows versions the module which exported this and how it did is different to Windows 10, version 2004.
+After invoking this patch routine all syscall paths through WOW64 go through Wow64SystemServiceEx and we can focus on crafting a logging DLL that man-in-the-middles (MITMs) all calls.
+There are a couple of challenges to be considered here: How do we determine which system call is currently occurring from the logging DLL?
+How are callbacks written?
+Wow64log is 64-bit DLL, we’d like a 32-bit callback.
+Is shellcode required, or can we make nice C style function callbacks?
+What APIs may we call?
+All that’s loaded is 64-bit ntdll.
+The first concern is rather easy, from within the wow64log DLL we can read the syscall number from the syscall stubs to create a map of number to name.
+This is possible because syscall stubs always start with the same assembly and the syscall number is at a static offset of 0x4.
+Figure 18 shows how we can then compare the values in this map against the syscall number passed to Wow64LogSystemService ’s parameter structure WOW64_LOG_SERVICE .
+typedef uint32_t* WOW64_ARGUMENTS; struct WOW64_LOG_SERVICE { uint64_t BtLdrEntry; WOW64_ARGUMENTS Arguments; ULONG ServiceTable; ULONG ServiceNumber; NTSTATUS Status; BOOLEAN PostCall; }; EXTERN_C __declspec(dllexport) NTSTATUS NTAPI Wow64LogSystemService(WOW64_LOG_SERVICE* service) { for (uint32_t i = 0; i < LAST_SYSCALL_ID; i++) { const char* sysname = SysCallMap[i].name; uint32_t syscallNum = SysCallMap[i].SystemCallNumber; if (ServiceParameters->ServiceNumber != syscallNum) continue; //LOG sysname } } Figure 18:
+Minimal example of determining which syscall is occurring—in practice the service table must be checked too Writing callbacks is a bit more challenging.
+The wow64log DLL is executing in 64-bit mode and we’d like to be able to write callbacks in 32-bit mode since it’s very easy to load additional 32-bit modules into a WOW64 process.

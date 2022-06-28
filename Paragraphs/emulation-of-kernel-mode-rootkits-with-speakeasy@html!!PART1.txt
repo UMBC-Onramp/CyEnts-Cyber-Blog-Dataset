@@ -1,0 +1,10 @@
+In August 2020, we released a blog post about how the Speakeasy emulation framework can be used to emulate user mode malware such as shellcode.
+If you haven’t had a chance, give the post a read today .
+In addition to user mode emulation, Speakeasy also supports emulation of kernel mode Windows binaries.
+When malware authors employ kernel mode malware, it will often be in the form of a device driver whose end goal is total compromise of an infected system.
+The malware most often doesn’t interact with hardware and instead leverages kernel mode to fully compromise the system and remain hidden.
+Challenges With Dynamically Analyzing Kernel Malware
+Ideally, a kernel mode sample can be reversed statically using tools such as disassemblers.
+However, binary packers just as easily obfuscate kernel malware as they do user mode samples.
+Additionally, static analysis is often expensive and time consuming.
+If our goal is to automatically analyze many variants of the same malware family, it makes sense to dynamically analyze malicious driver samples.

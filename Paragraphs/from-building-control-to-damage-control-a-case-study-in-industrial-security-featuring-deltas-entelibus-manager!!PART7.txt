@@ -1,0 +1,3 @@
+
+The result was an attack that would compromise any enteliBUS Manager on the same network and attach a custom piece of malware we developed to the software running on it.
+This malware would then create a backdoor which would allow the attacker to remotely issue commands to the manager and control any hardware connected to it, whether it be something as benign as a light switch or as dangerous as a boiler.

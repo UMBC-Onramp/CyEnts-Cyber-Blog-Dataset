@@ -1,0 +1,6 @@
+
+These modes of operation are stored in internal enumerations.
+These mappings and values are described next.
+Internal Modes
+The following modes govern internal operations of the malware: Mode Name Value Description Truncate 3 Disabled; the malware killswitch has been activated and the sample may never run again without external modification to the XML configuration on-disk.
+New 4 Passive mode; DGA subdomains encode the system’s domain name Append 5 Active mode; C2 beaconing will occur on next CNAME resolve or is already actively occurring.

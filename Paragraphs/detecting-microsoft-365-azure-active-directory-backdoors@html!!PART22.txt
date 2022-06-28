@@ -1,0 +1,11 @@
+
+Use a dedicated server for each.
+Do not install these roles and server in addition to other.
+All too often we are seeing Azure AD Connect running on a file server.
+Ensure PowerShell logging is optimized on AD Connect and ADFS servers Review Microsoft-Windows-PowerShell/Operational logs on ADFS and AADConnect Server Logs.
+If PowerShell logging is enabled, search for Event ID 4101.
+This event ID will record the event where AADInternals was installed (Figure 23).
+Figure 23: EventID 410—Installed Module Additionally, with this logging enabled, you will be able to review the PowerShell commands used by an attacker.
+In PowerShell, run Get-Module -All and look for the presence of AADInternals (Figure 24).
+Figure 24: Get-Module command to list installed modules Alert for the presence of C:\\PTASpy and C:\\PTASpy\\PTASpy.csv.
+This is the default location of the log file that contains records of all the accounts that were intercepted by the tool.

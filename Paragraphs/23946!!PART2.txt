@@ -1,0 +1,8 @@
+
+What is interesting in this case is the purpose for which attackers are using it.
+HermeticRansom goals HermeticRansom attacked computers at the same time as another malware known as HermeticWiper, and based on publicly available information from security community, it was used in recent cyberattacks in Ukraine.
+According to our experts, the relative simplicity and questionable malware workflow implementation suggests that HermeticRansom was used as a smokescreen for HermeticWiper attacks.
+What HermeticRansom is capable of Once infecting the victim’s computer, the malware first identifies hard drives and collects a list of directories and files located everywhere except for the Windows and Program Files folders.
+It then encrypts certain categories of files and renames them adding а .encrypted tag and the email address of the ransomware operators.
+The malware also creates a read_me.html file in the Desktop folder containing a ransom note with the attackers’ contacts.
+The note looks like this: Ransom note left by HermeticRansom malware HermeticRansom encrypts files with following extensions: .inf, .acl, .avi, .bat, .bmp, .cab, .cfg, .chm, .cmd, .com, .crt, .css, .dat, .dip, .dll, .doc, .dot, .exe, .gif, .htm, .ico, .iso, .jpg, .mp3, .msi and odt.

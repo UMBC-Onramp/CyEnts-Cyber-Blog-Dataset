@@ -1,0 +1,8 @@
+
+HX has proven effective at detecting and inhibiting the success of Cerber malware.
+Attack Process
+The Cerber ransomware attack cycle we observed can be broadly broken down into eight steps: Target receives and opens a Word document.
+Macro in document is invoked to run PowerShell in hidden mode.
+Control is passed to PowerShell, which connects to a malicious site to download the ransomware.
+On successful connection, the ransomware is written to the disk of the victim.
+PowerShell executes the ransomware.

@@ -1,0 +1,5 @@
+
+In this post, we will cover two additional versatile features of Excel: LOOKUP functions and PivotTables.
+For this scenario, we will use a dataset of logon events for an example Microsoft Office 365 (O365) instance to demonstrate how an analyst can enrich information in the dataset.
+Then we will demonstrate some examples of how to use PivotTables to summarize information and highlight anomalies in the data quickly.
+Our data contains the following columns: Description – Event description User – User’s name User Principle Name – email address App – such as Office 365, Sharepoint, etc.

@@ -1,0 +1,4 @@
+
+To enrich our original dataset, we will add three columns to our data to integrate the supplementary information: “Latitude,” “Longitude,” and “Threat Intel” (Figure 3).
+We can use the VLOOKUP or XLOOKUP functions to quickly retrieve the supplementary data and integrate it into our main O365 log sheet.
+Figure 3: Enrichment columns VLOOKUP The traditional way to look up particular data in another array is by using the VLOOKUP function .

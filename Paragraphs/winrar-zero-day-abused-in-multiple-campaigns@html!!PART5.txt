@@ -1,0 +1,8 @@
+
+After some C2 communication, the C2 server responded with instructions to download the payload from hxxp://185.49.71[.]101/i/pwi_crs.exe, which is a Netwire RAT.
+Commands Supported by VBS Backdoor Command Explanation d Delete the VBS file and exit process
+Pr Download a file from a URL and execute it
+Hw Get hardware info av Look for antivirus installed from a predefined list.
+Indicators File Name Hash/IP Address Scan_Letter_of_Approval.rar 8e067e4cda99299b0bf2481cc1fd8e12
+winSrvHost.vbs
+3aabc9767d02c75ef44df6305bc6a41f Letter of Approval.pdf dc63d5affde0db95128dac52f9d19578 pwi_crs.exe 12def981952667740eb06ee91168e643 C2 185[.]162.131.92 Netwire C2 89[.]34.111.113 Campaign 2: Attack on Israeli Military Industry Infection Vector Based on the email uploaded to VirusTotal, the attacker seems to send a spoofed email to the victim with an ACE file named SysAid-Documentation.rar as an attachment.

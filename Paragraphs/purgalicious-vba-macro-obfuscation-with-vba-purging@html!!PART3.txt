@@ -1,0 +1,10 @@
+
+The\nboundary between the two sections is determined by a MODULEOFFSET , which is stored in the dir stream.
+A diagram of a module stream is shown\nin Figure 1.
+Figure 1: Module stream diagram When a VBA macro is added to a document, the VBA engine saves a\ncompiled version in the PerformanceCache section of the relevant module stream to increase performance.\nHowever, an Office application will only access the PerformanceCache if its version and architecture\nmatch what was used to compile the original VBA code.
+This version and\nimplementation information is stored in the _VBA_PROJECT and __SRP_# streams.
+If the\nversions do not match, the compressed source code is decompressed,\ncompiled, and run instead.
+VBA Purging vs VBA Stomping
+In 2018, research by the Walmart security team brought a technique\nknown as “ VBA Stomping ” to wider\npublic awareness.
+Originally identified by Dr. Vesselin Bontchev in\n2016 , this technique allows attackers to remove compressed VBA\ncode from Office documents and still execute malicious macros without\nmany of the VBA keywords that AV engines had come to rely on for\ndetection.
+For an example of VBA stomping in-the-wild, check out “ STOMP\n2 Dis: Brilliance in the (Visual) Basics ”.

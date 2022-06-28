@@ -1,0 +1,4 @@
+FortiGuard Labs Threat Research Report Many thanks to Val Saengphaibul who contributed to this blog.
+Affected platforms: Microsoft Windows Impacted parties: Windows Users Impact: Encrypts files on the compromised machines and demands ransom from the victim to recover the encrypted files.
+Severity level: High Ranion is a Ransom-as-a-Service (RaaS) that has enjoyed unusual longevity as it has been active since at least February 2017.
+While its activities and purpose—encrypting files on compromised machines and receiving ransom payment from the user to recover their files—may seem the same as other ransomware in the public’s eyes, the truth is that the inner workings of Ranion RaaS are unlike other ransomware.

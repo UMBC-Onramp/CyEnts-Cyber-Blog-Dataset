@@ -1,0 +1,7 @@
+
+This is very common as we saw in the past with RaaS schemes like GandCrab and Cryptowall.
+Responding to this post is an actor with the moniker of ‘Lalartu’ and his comments are quite interesting, hinting he was involved with GandCrab.
+As a site-note: “Lalartu’ means ‘ghost/phantom’.
+Its origins are from the Sumerian civilization where Lalartu was seen as a vampiric demon.
+Researching the moniker of ‘Lalartu’ through our data, we went back in time a month or so and discovered a posting from the actor on June 4 th of 2019, again referencing GandCrab.
+We observe here a couple of transaction IDs (TXID) on the bitcoin ledger, however they are incomplete.

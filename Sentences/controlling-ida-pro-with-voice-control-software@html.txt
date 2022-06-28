@@ -1,0 +1,153 @@
+Introduction This blog post is the next episode in the FireEye Labs Advanced Reverse Engineering (FLARE) team Script Series.
+
+Today, we are sharing something quite unusual.
+
+It is not a tool or a virtual machine distribution, nor is it a plugin or script for a popular reverse engineering tool or framework.
+
+Rather, it is a profile created for a consumer software application completely unrelated to reverse engineering or malware analysis… until now.
+
+The software is named VoiceAttack , and its purpose is to make it easy for users to control other software on their computer using voice commands.
+
+With FLARE’s new profile for VoiceAttack , users can completely control IDA Pro with their voice!
+
+Have you ever dreamed of telling IDA Pro to decompile a function or show you the strings of a binary?
+
+Well dream no more!
+
+Not only does our profile give you total control of the software, it also provides shortcuts and other cool features not previously available.
+
+It’s our hope that providing voice control for the world’s most popular disassembler will further empower users with repetitive stress injuries or disabilities to more effectively put their reverse engineering skills to use with this new accessibility option as well as helping the community at large work more efficiently.
+
+Check out our video demonstration of some of the features of the profile to see it in action. &amp;amp;nbsp; How Does It Work?
+
+Voice attack is an inexpensive software application that utilizes the Windows Speech Recognition (WSR) feature to enable the creation of user-defined, voice-activated macros.
+
+The user specifies a key word or phrase, then defines one or more actions to be taken when that word or phrase is recognized.
+
+The most common types of actions to be taken include key presses, mouse movement and clicks, and clipboard manipulation.
+
+However, there are many other more advanced features available that provide a lot of flexibility to users including variables, loops, and conditionals.
+
+You can even have the computer speak to you in response to your commands!
+
+VoiceAttack requires an internet connection, but only during the registration process, after which the network adapter can be disabled or configured to a network that cannot reach the internet without issue.
+
+To use VoiceAttack, you must first train Windows Speech Recognition to recognize your voice.
+
+Instructions on how to do so can be found here .
+
+This process only takes a few minutes at minimum, but the more time you spend training, the better the experience you will have with it.
+
+What Does the IDA Pro Profile Provide?
+
+FLARE’s IDA Pro profile for VoiceAttack maps every advertised keyboard shortcut in IDA Pro to a voice command.
+
+Although this is only one part of what the profile provides, many users will find this in itself very useful.
+
+When developing this profile, I was shocked to discover just how many keyboard shortcuts there really are for IDA Pro and what can be accomplished with them.
+
+Some of my favorite shortcuts are found under the View->Open Subviews and Windows menus.
+
+With this profile, I can simply say “show strings” or “show structures” or “show window x” to change the tab I am currently viewing or open a new view in a tab without having to move my mouse cursor anywhere.
+
+The next few paragraphs describe some other useful commands to make any reverse engineer’s job easier.
+
+For a more detailed description of the profile and commands available, see the Github page .
+
+Macros A series of voice commands can perform multi-step actions not otherwise reachable by individual keyboard shortcuts.
+
+For example, wouldn’t it be nice to have commands to toggle the visibility of opcode bytes (see Figure 1)?
+
+Currently, you have to open the Options menu, select the General menu item, input a value in the Number of opcode bytes text field, and click the OK button.
+
+Well, now you can simply say “show opcodes” or “hide opcodes” and it will be so!
+
+Figure 1:
+
+Configuring the number of opcode bytes to show in IDA Pro's disassembly view Defining a Unicode string in IDA Pro is a multi-step exercise, whether you navigate to the Edit->Strings menu or use the “string literals” keyboard shortcut Alt+A followed by pressing the U key as shown in Figure 2.
+
+Now you can simply say “make Unicode string” and the work is done for you.
+
+Figure 2: String literals dialog in IDA Pro Reversing a C++ application?
+
+The Create struct from selection action is a very helpful feature in this case, but it requires you to navigate to the Edit->Structs menu in order to use it.
+
+The voice command “create struct from selection” does this for you automatically.
+
+The “look it up” command will copy the currently highlighted token in the disassembly and search Google for it using your default browser.
+
+There are several other macros in the profile that are like this and save you a lot of time navigating menus and dialogs to perform simple actions.
+
+Cursor Movement, Dialogs, and Navigation The cursor movement commands allow the user to move the cursor up, down, left, or right, one or more times, in specified increments.
+
+These commands also allow for scrolling with a voice command that commences scrolling in a chosen direction, and another voice command for stopping scrolling.
+
+There are even voice commands to set the speed of the scroll to slow, medium, or fast.
+
+In the disassembly view, the cursor can also be moved per “word” on the current line of the disassembly or decompilation, or even per basic block or function.
+
+Like many other applications, dialogs are a part of IDA Pro’s user interface.
+
+The ability to easily navigate and interact with items in a dialog with your voice is essential to a smooth user experience.
+
+Voice commands in the profile enable the user to easily click the OK or Cancel buttons, toggle checkboxes, and tab through controls in the dialog in both directions and in specified increments.
+
+With the aid of a companion IDAPython plugin , additional navigation commands are supported.
+
+Commands that allow the user to move the cursor to the beginning or end of the current function, to the next or previous “call” instruction, to the previous or next instruction containing the highlighted token, or to a specified number of bytes forward or backwards from the current cursor position help to make voice-controlled navigation easier.
+
+These cursor movement and navigation commands enable users to have full control of IDA Pro without the use of their hands.
+
+While this is true and an important goal for the profile, it is not practical for people who have full use of their hands to go completely hands-free.
+
+The commands that navigate the cursor in IDA Pro will never be as fast or easy as simply using the mouse to point and click somewhere on the screen.
+
+In any case, users will find themselves building up a collection of voice commands they prefer to use that will depend on personal tastes.
+
+However, enabling full voice control allows reverse engineers who do not have full use of their hands to still effectively operate IDA Pro, which we hope will be of great use to the community.
+
+Having such a capability is also useful for those who suffer from repetitive strain injury .
+
+Input Recognition
+
+The commands described so far give you control over IDA Pro with your voice, but there is still the matter of providing textual input for items such as function and variable names, comments, and other text input fields.
+
+VoiceAttack does provide the ability in macros to enable and disable what is called “Dictation Mode”.
+
+When in Dictation Mode, any recognized words are added to a buffer of text until Dictation Mode is disabled.
+
+Then this text can be used elsewhere in the macro.
+
+Unfortunately, this feature is not designed to recognize the kinds of technical terms one would be using in the context of reverse engineering programs.
+
+Even if it were, there is still the issue of having to format the text to be a valid function or variable name.
+
+Instead of wrestling with this feature to try to make it work for this purpose, a very large and growing collection of “input recognition” commands was created.
+
+These commands are designed to recognize common words used in the names of functions and variables, as well as full function names as found in the C runtime libraries and the Windows APIs.
+
+Once recognized, the word or function name is copied to the user’s clipboard and pasted into the text field.
+
+To avoid the inadvertent triggering of such commands during the regular operation of IDA Pro, these commands are only active when the “input mode” is enabled.
+
+This mode is enabled automatically when certain commands are activated such as “rename” or “find”, and automatically disabled when dialog commands such as “OK” or “cancel” are activated.
+
+The input mode can also be manually manipulated with the “input mode on” and “input mode off” commands.
+
+Conclusion Today, the FLARE team is releasing a profile for VoiceAttack and a companion IDAPython plugin that enables full voice control of IDA Pro along with many added convenience features.
+
+The profile contains over 1000 defined commands and growing.
+
+It is easy to view, edit, and add commands to this profile to customize it to suit your needs or to improve it for the community at large.
+
+The VoiceAttack software is highly affordable and enables you to create profiles for any applications or games that you use.
+
+For installation instructions and usage information, see the project’s Github page .
+
+Give it a try today!
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

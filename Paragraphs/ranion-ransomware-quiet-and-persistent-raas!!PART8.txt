@@ -1,0 +1,6 @@
+
+How Ranion Makes Money Originally, back in 2017, Ranion offered users two support packages (a 1-year and a 6-months service).
+Today, the Ranion team offers four support packages: Elite, Premium, Standard, and Test.
+Figure 3:
+Ranion ransomware packages and prices Previously, the most expensive package was offered for 0.95 bitcoin and the cheapest for 0.60 bitcoin.
+In February 2017, one bitcoin was worth about 1,200 US dollars, which means these packages sold for around 1,140 USD and 720 USD, respectively.

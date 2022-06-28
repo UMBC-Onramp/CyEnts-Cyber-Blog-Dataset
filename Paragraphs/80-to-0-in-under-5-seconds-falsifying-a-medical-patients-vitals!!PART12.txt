@@ -1,0 +1,5 @@
+
+Using our network setup and starting the ECG simulator we can see the central monitor station and the patient monitor come to life.
+With everything working, we again use Wireshark to examine the traffic.
+We find a new set of packets.
+In the preceding screen capture we see the patient monitor at IP address 126.4.153.150 is sending the same-size data packets to the central monitoring station at address 126.1.1.1.

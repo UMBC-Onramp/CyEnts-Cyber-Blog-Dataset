@@ -1,0 +1,6 @@
+Malicious Office documents remain a favorite technique for every type\nof threat actor, from red teamers to FIN groups to APTs.
+In this blog\npost, we will discuss \"VBA Purging\", a technique we have\nincreasingly observed in the wild and that was first publicly\ndocumented by Didier Stevens in February 2020 .
+We will explain\nhow VBA purging works with Microsoft Office documents in Compound File\nBinary Format (CFBF), share some detection and hunting opportunities,\nand introduce a new tool created by Mandiant’s Red Team:
+OfficePurge .
+MS-OVBA File Format Before diving into VBA Purging, it is important to understand\ncertain components of Microsoft’s\nspecifications on VBA macros (MS-OVBA).
+We focus on MS-OVBAs in\nMicrosoft Office 97 documents that use the CFBF file format, instead\nof the modern Open Office XML (OOXML) format used by Microsoft Excel\n“.xlsx” and Microsoft Word “.docx” documents.

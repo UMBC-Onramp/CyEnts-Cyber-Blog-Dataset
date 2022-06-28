@@ -1,0 +1,9 @@
+
+In the same month, a cyberattack affected databases belonging to the University Hospital in Brno, one of the largest centers for COVID-19 blood testing in the Czech Republic.
+As a result, doctors couldn’t process coronavirus tests and even canceled a number of surgical operations.
+Advanced cybercriminals have targeted organizations combatting COVID-19.
+There is evidence that in September 2020 members of the Lazarus Group attacked a pharmaceutical company that was developing a coronavirus vaccine; a month later, they switched to a related health ministry.
+Both medical organizations and individual employees became targets.
+In the UK, scammers tricked health workers out of e-mail logins and passwords by offering to register them for a nonexistent seminar on “the deadly COVID-19 virus.”
+The healthcare system’s work was also hindered by people who should presumably have understood the threat: employees of healthcare companies.
+For example, in the spring of last year, a man dismissed from his position as vice president of the American company Stradis Healthcare disrupted the supply of personal protective equipment for doctors for several months as revenge for his dismissal.

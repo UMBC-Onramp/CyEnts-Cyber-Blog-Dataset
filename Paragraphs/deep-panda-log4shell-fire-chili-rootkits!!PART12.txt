@@ -1,0 +1,4 @@
+
+This results in restricting user-mode processes from acquiring the permissions needed to terminate the threat actor’s malicious processes using standard APIs.
+To hide a process, the rootkit monitors all newly created processes on the system by registering a callback using the PsSetCreateProcessNotifyRoutine API.
+Whenever a new process is created on the system, the rootkit checks if its path is in the global process list.

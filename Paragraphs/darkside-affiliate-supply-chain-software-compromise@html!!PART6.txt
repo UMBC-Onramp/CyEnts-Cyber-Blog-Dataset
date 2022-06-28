@@ -1,0 +1,5 @@
+
+Based on the perceived profitability of these operations, it is almost certain that numerous threat actors will continue to conduct widespread ransomware operations for the foreseeable future.
+Background In June 2021, Mandiant Consulting was engaged to respond to an intrusion.
+During analysis, Mandiant determined the initial vector was a trojanized security camera PVR installer from a legitimate website.
+Mandiant attributed the overall intrusion activity to DARKSIDE affiliate UNC2465 due to continued use of infrastructure and tooling since October 2020.

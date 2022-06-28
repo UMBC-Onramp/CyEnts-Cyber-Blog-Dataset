@@ -1,0 +1,5 @@
+
+This blog post discusses the various trends that we have been observing related to cryptojacking activity, including cryptojacking modules being added to popular malware families, an increase in drive-by cryptomining attacks, the use of mobile apps containing cryptojacking code, cryptojacking as a threat to critical infrastructure, and observed distribution mechanisms.
+What Is Mining?
+As transactions occur on a blockchain, those transactions must be validated and propagated across the network.
+As computers connected to the blockchain network (aka nodes) validate and propagate the transactions across the network, the miners include those transactions into \"blocks\" so that they can be added onto the chain.

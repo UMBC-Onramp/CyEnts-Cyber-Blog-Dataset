@@ -1,0 +1,3 @@
+Recent years have seen ransomware grow from an abstract curiosity into a major problem anyone can face — and that hundreds of thousands of people already have .
+Now a mass industry , ransomware even shows a division of labor, with some criminals writing malicious code and others selecting targets and using the code to infect them, earning a percentage of the ransom.
+In the past couple of years, ransomers have focused increasingly on organizations, but that does not mean ordinary users are in the clear — people still get hit, sometimes even by accident.

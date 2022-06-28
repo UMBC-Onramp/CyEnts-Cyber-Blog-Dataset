@@ -1,0 +1,6 @@
+
+There is evidence that the author of GandCrab is already working on an RDP option.
+We also expect malware related to cryptocurrency mining will become more sophisticated, selecting which currency to mine on a victim’s machine based on the processing hardware (WebCobra) and the value of a specific currency at a given time.
+Next year, we predict the length of a vulnerability’s life, from detection to weaponization, will grow even shorter.
+We have noticed a trend of cybercriminals becoming more agile in their development process.
+They gather data on flaws from online forums and the Common Vulnerabilities and Exposures database to add to their malware.

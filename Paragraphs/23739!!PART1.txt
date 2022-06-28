@@ -1,0 +1,3 @@
+Various information security news outlets reported on the discovery of critical vulnerability CVE-2021-44228 in the Apache Log4j library (CVSS severity level 10 out of 10).
+Millions of Java applications use this library to log error messages.
+To make matters worse, attackers are already actively exploiting this vulnerability.

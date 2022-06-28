@@ -1,0 +1,11 @@
+
+The success of this test confirmed this method would work.
+For our function hook to do more than just act as a passthrough, we needed to understand what parameters were being passed to the function and how they affect execution.
+By using GDB, we could examine the data passed in during both the “on” and “off” states.
+For canioWriteObject, it was discovered that the state of binary output was encoded into the second parameter passed to the function.
+From there, we could theoretically control the state of the binary output by simply passing the desired state as the second parameter to the real function, leaving the other parameters as-is.
+In practice, however, the state change produced using this method persisted only for a split second before the device reset the output back to its proper state.
+Why was the device returning the output to the correct state?
+Is there some type of protection in place?
+Investigating strings in the main Delta binary and the filesystem on the device led us to discover that the device software maintains databases on the filesystem, likely to preserve device and state information across reboots.
+At least one of these databases is used to store the state of binary outputs along with, presumably, other kinds of I/O devices.

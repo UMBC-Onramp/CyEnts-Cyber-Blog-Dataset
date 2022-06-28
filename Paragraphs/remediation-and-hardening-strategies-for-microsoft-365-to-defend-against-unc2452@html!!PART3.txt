@@ -1,0 +1,7 @@
+
+Goals and Objectives Methodologies that UNC2452 and other threat actors have used to move laterally from on-premises networks to the Microsoft 365 cloud have been detailed in our white paper, Remediation and Hardening Strategies for Microsoft 365 to Defend Against UNC2452 .
+The paper also discusses how organizations can proactively harden their environments and remediate environments where similar techniques have been observed.
+Mandiant is releasing an auditing script, Azure AD Investigator , through its GitHub repository that organizations can use to check their Microsoft 365 tenants for indicators of some of the techniques used by UNC2452.
+The script will alert administrators and security practitioners to artifacts that may require further review to determine if they are truly malicious or part of legitimate activity.
+Many of the attacker techniques detailed in the white paper are dual-use in nature—they can be used by threat actors but also by legitimate tools.
+Therefore, a detailed review for specific configuration parameters may be warranted, including correlating and verifying that configurations are aligned with authorized and expected activities.

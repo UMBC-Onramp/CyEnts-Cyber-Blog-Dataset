@@ -1,0 +1,3 @@
+
+With machines working for anyone, an arms race would be fueled, and machine-supported actions would increase from both defenders and attackers.
+The Verdict Machine learning and AI are very present in the arsenal of cyber defenders, as the industry has become fairly successful at applying AI to malware detection and user and entity behavior analytics (UEBA) by using deep neural networks and anomaly detection.

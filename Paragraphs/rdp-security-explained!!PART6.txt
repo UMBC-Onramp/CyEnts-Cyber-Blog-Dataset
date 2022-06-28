@@ -1,0 +1,4 @@
+
+As you only have access to the network you will still need to RDP to the computer but can do so more securely without exposing it to the internet.
+Use Complex Passwords An often-used alternative acronym for RDP is “Really Dumb Passwords.”
+That short phrase encapsulates the number one vulnerability of RDP systems, simply by scanning the internet for systems that accept RDP connections and launching a brute-force attack with popular tools such as, ForcerX, NLBrute, Hydra or RDP Forcer to gain access.

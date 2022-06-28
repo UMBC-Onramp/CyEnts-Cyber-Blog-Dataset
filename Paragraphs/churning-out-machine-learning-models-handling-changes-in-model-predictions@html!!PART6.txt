@@ -1,0 +1,5 @@
+
+Ultimately, finding ways of reducing churn minimizes this kind of technical debt.
+Experimental Setup We’re going to explore churn and churn reduction techniques using EMBER, an open source malware classification data set.
+It consists of 1.1 million PE files first seen in 2017, along with their labels and features.
+The objective is to classify the files as either goodware or malware.

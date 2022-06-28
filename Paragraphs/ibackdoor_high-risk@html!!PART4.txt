@@ -1,0 +1,6 @@
+
+An attacker could reverse-engineer the insecure HTTP-based control protocol between the ad library and its server, and then hijack the connection to insert commands to trigger the backdoors and steal sensitive information.
+A malicious app developer can similarly inject commands, utilizing the library’s backdoors to build their own surveillance app.
+Since the ad library has passed the App Store review process in numerous apps, this is an attractive way to create an app with these hidden behaviors that will pass under Apple’s radar.
+App Store Protections Ineffective Despite Apple’s reputation for keeping malware out of the App Store with its strict review process, this case demonstrates that it is still possible for dangerous code that exposes users to critical security and privacy risks to sneak into the App Store by piggybacking on unsuspecting apps.
+Backdoors that enable silently recording audio and uploading sensitive data when triggered by downloaded code clearly violate the requirements of the iOS Developer Program [3].

@@ -1,0 +1,5 @@
+
+We have observed an expansion of narratives, targeting and TTPs associated with Ghostwriter activity since we released our July 2020 report.
+For example, several recent operations have heavily leveraged the compromised social media accounts of Polish officials on the political right to publish content seemingly intended to create domestic political disruption in Poland rather than foment distrust of NATO.
+These operations, conducted in Polish and English, appear to have largely not relied on the dissemination vectors we have typically observed with previous Ghostwriter activity, such as website compromises, spoofed emails or posts from inauthentic personas.
+We have observed no evidence that these social media platforms were themselves in any way compromised, and instead believe account credentials were obtained using the compromised email accounts of targeted individuals.

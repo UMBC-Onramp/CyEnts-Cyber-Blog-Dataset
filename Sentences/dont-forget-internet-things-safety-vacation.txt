@@ -1,0 +1,115 @@
+Home is where the ‘smart’ is.
+
+A recent study revealed the average American household has 25 connected or Internet of Things (IoT) devices.
+
+The number of consumers who have smart home devices connected to their home internet has grown by 38% since the pandemic began.
+
+The findings don’t surprise Brad Ree, the chief technology officer (CTO) of Internet of Things solutions at the ioXt Alliance .
+
+Nor do they surprise Adam Laurie, IBM Security X-Force Red ’s lead hardware hacker.
+
+Ree has more than 80 connected devices in his home.
+
+Laurie recently found five connected or IoT devices that he didn’t know existed inside his home.
+
+Even more, when he looked at the firewall rules on his internet service provider’s router, the universal plug and play (UPnP) was switched on, adding firewall rules for smart devices in his home unbeknownst to him.
+
+In addition, with the pandemic nearing the rearview window, employees are starting to travel again.
+
+This increase also means vacation rental home bookings are up.
+
+One vacation home company notes that by the end of March 2021, 90% of its homes in New Jersey and Cape Cod were booked for July.
+
+Another company revealed the booking lead time for summer stays at its rental properties is 147 days this year.
+
+Internet of Things Security in Vacation Homes While renting a vacation home can provide more space for less money, it can also create more attacker opportunities.
+
+For example, Ree shared a story about a recent family vacation.
+
+He, his wife and kids stayed in a vacation rental home from where he worked for a week.
+
+Being the security savvy CTO that he is, the minute he entered the home, Ree performed a port scan to see if anyone else could connect to the network.
+
+To his surprise, various past visitors had added multiple firewall rules to the home network.
+
+Any one of the rules could have enabled the visitors to remain connected, even remotely.
+
+The access also meant if the visitors had malicious intentions, they could compromise Ree’s laptop and potentially his employer’s network.
+
+“You are staying in an open environment,” says Ree.
+
+“Don’t assume it is your house.
+
+In a vacation rental home, an attacker could easily scan open ports and see what’s connected.”
+
+Invisible Connections
+
+Every time you rent a vacation home and connect to its network or an IoT device , you leave a footprint behind that can be leveraged by an attacker.
+
+Laurie gave an example.
+
+Let’s say your children play video games while on vacation.
+
+They may use a headset, which plugs into the game console, to chat with other players.
+
+The console connects to the router, which creates a firewall rule that allows players to connect to a shared port.
+
+Then, whenever someone connects to that port on the internet service provider’s external address, that person can also connect to your children’s game console.
+
+Removing access, as Laurie points out, is tough.
+
+You would need a UPnP daemon, which the average consumer most likely does not have.
+
+“When you leave the house, you can always connect to that port,” says Laurie.
+
+“If an attacker were to connect to that port, she would be routed to an address assigned to the game console.”
+
+Worse yet, imagine if the next visitor connected his work laptop to that same network.
+
+The visitor could run a business process on that same open port.
+
+Therefore, they can expose the laptop to other users with previous access.
+
+Vacation rental home networks typically do not adhere to the same security protocols as businesses.
+
+In business environments, routers are usually under an administrator’s control.
+
+That admin also likely limits IoT devices.
+
+The network isn’t open and insecure protocols are off.
+
+Many businesses apply the zero-trust model to their networks.
+
+Home and vacation rental home networks, on the other hand, typically do not have that kind of commercial-grade security.
+
+Ree refuses to even charge a phone in vacation rental homes for that reason.
+
+Protecting Against Loose Internet of Things Rules
+
+So how can you protect your own devices the next time you stay in a vacation rental home?
+
+The easiest step is to immediately connect to the corporate virtual private network.
+
+Savvier technology users may want to go an extra step and run their own port scans.
+
+Laurie applies those kinds of extra security measures when he rents homes and cars.
+
+In a rental car, he always checks the Bluetooth history and conducts a factory reset before and after using the vehicle.
+
+You could do the same in a vacation rental home, although it may create a conflict with homeowners if they set up their own rules.
+
+Ree stresses the need for IoT and smart home device manufacturers to step up their security controls and processes.
+
+Routers, for example, should not allow routing between nodes.
+
+The Federal Bureau of Investigation recommends that UPnP be turned off, although in some routers it may be turned on by default.
+
+Implementing a standard security label or certification could also help from a consumer and manufacturer standpoint.
+
+Manufacturers can validate their devices and have security controls and processes built-in before they go to customers, and customers can know which devices are more secure based on the security label.
+
+IBM X-Force, Silicon Labs and the ioXt Alliance are presenting a virtual panel at 11 a.m. EDT on July 21, 2021, where experts will discuss three IoT- and operational technology-related security topics — critical infrastructure security, standardizing IoT security and the perceived privacy and security problem.
+
+Register here
+
+

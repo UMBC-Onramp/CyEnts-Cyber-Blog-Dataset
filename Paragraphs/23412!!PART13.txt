@@ -1,0 +1,6 @@
+
+Applying this method to, say, a bank’s website is probably not going to work.
+No reason to panic The study of Spook.js is important because researchers have, for the first time, been able to demonstrate a fairly realistic scenario for the exploitation of one of the Spectre vulnerabilities.
+Nevertheless, the chances of a real-world attack are low.
+First, the developers of Google Chrome, on the back of this research, have beefed up the mechanism for isolating loaded sites from one another.
+Second, cybercriminals have many easier ways to steal user data, from traditional malware to social engineering, and this one requires serious knowledge of the low-level workings of modern CPUs.

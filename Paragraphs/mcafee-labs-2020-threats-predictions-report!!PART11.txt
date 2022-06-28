@@ -1,0 +1,5 @@
+
+In the first stage cybercriminals will deliver a crippling ransomware attack, extorting victims to get their files back.
+In the second stage criminals will target the recovering ransomware victims again with an extortion attack, but this time they will threaten to disclose the sensitive data stolen before the ransomware attack.
+During our research on Sodinobiki we observed two-stage attacks, with cryptocurrency miners installed before an actual ransomware attack took place.
+For 2020, we predict that cybercriminals will increasingly exfiltrate sensitive corporate information prior to a targeted ransomware attack to sell the stolen data online or to extort the victim and increase monetization.

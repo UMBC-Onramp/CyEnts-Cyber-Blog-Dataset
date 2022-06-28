@@ -1,0 +1,5 @@
+Over the past five years, ransomware has evolved from being a threat to individual computers to posing a serious danger to corporate networks.
+Cybercriminals have stopped simply trying to infect as many computers as possible and are now targeting big victims instead.
+Attacks on commercial organizations and government agencies require careful planning but can potentially lead to rewards in the tens of millions of dollars.
+Ransomware gangs exploit companies’ financial clout, which tends to be far greater than that of ordinary users.
+What’s more, many modern ransomware groups steal data prior to encryption, adding the threat of publication as further leverage.

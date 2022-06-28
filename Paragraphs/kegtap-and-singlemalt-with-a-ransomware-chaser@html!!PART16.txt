@@ -1,0 +1,13 @@
+
+The job is set to retry on a regular interval, thus ensuring the malware continues to run.
+To review the BITS job on a host run the command bitsadmin /list .
+Display name may be “Adobe Update”, “System autoupdate” or another generic value.
+Notify state may be set to Fail (Status 2).
+FileList URL value may be set to the local host or a URL that does not exist.
+The Notification Command Line value may contain the path to the SINGLEMALT sample and/or a command to move it to a new location then start it.
+The Retry Delay value will be set.
+WINEKEY maintains persistence through reboot via the use of registry RUN keys.
+Searching for anomalous RUN keys enterprise-wide can help to identify systems impacted by this malware.
+Key:
+HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Backup Mgr Value: Path to the backdoor Figure 4:
+Example registry RUN key used by WINEKEY to maintain persistence The ANCHOR backdoor has been seen across a subset of intrusions associated with this activity and can often be identified via the scheduled tasks it uses to maintain persistence through reboot.

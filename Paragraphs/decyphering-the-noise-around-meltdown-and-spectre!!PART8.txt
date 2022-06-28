@@ -1,0 +1,4 @@
+
+As always, JavaScript is a double-edged sword, offering a more user-friendly browsing experience, but also offering attackers an increased attack surface in the context of the browser’s executing scripted code.
+Any technique that allows an attacker to cross virtual machine boundaries is of particular interest, because such a technique might allow an adversary to use a cloud virtual machine instance to attack other tenants of the cloud.
+Spectre is designed to foster attacks across application boundaries and hence applies directly to this problem.

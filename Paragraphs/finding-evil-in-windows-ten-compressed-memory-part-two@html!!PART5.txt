@@ -1,0 +1,4 @@
+
+This ensures that we traverse the correct process-specific page tables for the ram_eater process.
+Using the page frame number ( pfn ) described by the hardware PTE, we dump the physical memory to validate the contents of our marker page.
+Page frame numbers do not include the low-order bits used to specify an offset into a page, therefore they must be multiplied by PAGE_SIZE ( 0x1000 ) to identify the actual address of the data.

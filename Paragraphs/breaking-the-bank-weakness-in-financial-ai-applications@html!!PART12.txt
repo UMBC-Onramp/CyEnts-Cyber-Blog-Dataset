@@ -1,0 +1,5 @@
+
+Russian hackers reportedly leveraged Corkow malware to place $500M worth of trades at non-market rates, briefly destabilizing the dollar-ruble exchange rate in February 2015.
+Future criminal operations can leverage vulnerabilities in automatic training algorithms to disrupt the market with a flood of automated bad trades.
+Compliance and Fraud Detection Use Financial institutions and regulators are leveraging AI-enabled anomaly detection tools to ensure that traders are not engaging in illegal activity.
+These tools can examine trade activity, internal communications , and other employee data to ensure that workers are not capitalizing on advanced knowledge of the market to engage in fraud, theft, insider trading, or embezzlement.

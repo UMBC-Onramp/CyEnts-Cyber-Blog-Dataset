@@ -1,0 +1,4 @@
+
+FIDL FIDL, the FLARE IDA Decompiler Library , is our implementation of a wrapper around the Hex-Rays API.
+FIDL’s main goal is to abstract away the lower level details of the default decompiler API.
+FIDL solves multiple problems: Provides analysts an easy-to-understand API layer which can be used to write more complicated binary processing scripts Abstracts away the minutiae of processing the AST Provides helper implementations for commonly needed functionality when working with the decompiler Provides documented examples on how to use various Hex-Rays APIs Many of FIDL’s benefits are exposed to users via the controlFlowinator class.

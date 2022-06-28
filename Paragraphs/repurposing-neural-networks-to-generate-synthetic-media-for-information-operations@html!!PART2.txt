@@ -1,0 +1,7 @@
+
+Detection, attribution, and response is challenging in scenarios where actors can anonymously generate and distribute credible fake content using proprietary training datasets.
+The security community can and should help AI researchers, policy makers, and other stakeholders mitigate the harmful use of open source models.
+Background: Synthetic Media, Generative Models, and Transfer Learning Synthetic media is by no means a new development; methods for manipulating media for specific agendas are as old as the media themselves.
+In the 1930’s, the chief of the Soviet secret police was photographed walking alongside Joseph Stalin before being retouched out of an official press photo, after he himself was arrested and executed during the Great Purge .
+Digital graphic manipulation like this became prominent with the advent of Photoshop.
+Then later in the 2010’s, the term “deepfake” was coined.

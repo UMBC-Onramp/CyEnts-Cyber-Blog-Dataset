@@ -1,0 +1,7 @@
+
+It is also a packer-protected module, so it does the same thing as Module1 when its entry point is called.
+According to my analysis, the unpacked PE file is an EXE file that is another freeware from NirSoft called “ Mail PassView ”.
+It was originally designed as a small password recovery tool for email clients.
+Emotet is using the latest version—v1.92.
+Figure 5.1 is a screenshot of this software running on my test environment.
+Going through its code and constant strings, we learned it could obtain email account settings and credentials from the following email clients or other clients that could save email credentials: Mozilla Thunderbird, Eudora, Microsoft Outlook, Microsoft Outlook Express, Windows Mail, MSNMessenger, Windows Live Mail, Group Mail, IncrediMail, Yahoo!

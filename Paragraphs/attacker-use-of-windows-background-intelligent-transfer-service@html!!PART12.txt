@@ -1,0 +1,8 @@
+
+As with other filesystem and data formats, deleted entries are not immediately overwritten and can often be recovered for some time after deletion.
+The following algorithm is used to recover deleted jobs and files from Windows 10 QMGR databases: Locate file records by searching for the file identifier GUID, {519ECFE4-D946-4397-B73E-268513051AB2}.
+Attempt to parse the following data as a normal file record.
+Locate job records by searching for job identifier GUIDs.
+Attempt to parse the following data as a normal job record.
+Handle incomplete job entries by parsing just the control structure and manually locate associated files if required.
+The following job GUIDs have been observed in QMGR databases: {E10956A1-AF43-42C9-92E6-6F9856EBA7F6} {4CD4959F-7064-4BF2-84D7-476A7E62699F} {A92619F1-0332-4CBF-9427-898818958831} {DDBC33C1-5AFB-4DAF-B8A1-2268B39D01AD} {8F5657D0-012C-4E3E-AD2C-F4A5D7656FAF} {94416750-0357-461D-A4CC-5DD9990706E4} Correlate carved file records to carved jobs.

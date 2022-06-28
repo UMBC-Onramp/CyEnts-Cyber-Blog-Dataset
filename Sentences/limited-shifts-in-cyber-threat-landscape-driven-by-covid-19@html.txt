@@ -1,0 +1,99 @@
+Though COVID-19 has had enormous effects on our society and economy, its effects on the cyber threat landscape remain limited.
+
+For the most part, the same actors we have always tracked are behaving in the same manner they did prior to the crisis.
+
+There are some new challenges, but they are perceptible, and we—and our customers—are prepared to continue this fight through this period of unprecedented change.
+
+The significant shifts in the threat landscape we are currently tracking include: The sudden major increase in a remote workforce has changed the nature and vulnerability of enterprise networks.
+
+Threat actors are now leveraging COVID-19 and related topics in social engineering ploys.
+
+We anticipate increased collection by cyber espionage actors seeking to gather intelligence on the crisis.
+
+Healthcare operations, related manufacturing, logistics, and administration organizations, as well as government offices involved in responding to the crisis are increasingly critical and vulnerable to disruptive attacks such as ransomware.
+
+Information operations actors have seized on the crisis to promote narratives primarily to domestic or near-abroad audiences.
+
+Same Actors, New Content The same threat actors and malware families that we observed prior to the crisis are largely pursuing the same objectives as before the crisis, using many of the same tools.
+
+They are simply now leveraging the crisis as a means of social engineering.
+
+This pattern of behavior is familiar.
+
+Threat actors have always capitalized on major events and crises to entice users.
+
+Many of the actors who are now using this approach have been tracked for years.
+
+Ultimately, COVID-19 is being adopted broadly in social engineering approaches because it is has widespread, generic appeal, and there is a genuine thirst for information on the subject that encourages users to take actions when they might otherwise have been circumspect.
+
+We have seen it used by several cyber criminal and cyber espionage actors, and in underground communities some actors have created tools to enable effective social engineering exploiting the coronavirus pandemic.
+
+Nonetheless, COVID-19 content is still only used in two percent of malicious emails.
+
+For the time being, we do not believe this social engineering will be abetting.
+
+In fact, it is likely to take many forms as changes in policy, economics, and other unforeseen consequences manifest.
+
+Recently we predicted a spike in stimulus related social engineering , for example.
+
+Additionally, the FBI has recently released a press release anticipating a rise in COVID-19 related Business Email Compromise (BEC) scams.
+
+State Actors Likely Very Busy Given that COVID-19 is the undoubtedly the overwhelming concern of governments worldwide for the time being, we anticipated targeting of government, healthcare, biotech, and other sectors by cyber espionage actors.
+
+We have not yet observed an incident of cyber espionage targeting COVID-19 related information; however, it is often difficult to determine what information these actors are targeting.
+
+There has been at least one case reported publicly which we have not independently confirmed.
+
+We have seen state actors, such as those from Russia, China and North Korea, leverage COVID-19 related social engineering, but given wide interest in that subject, that does not necessarily indicate targeting of COVID-19 related information.
+
+Threat to Healthcare Though we have no reason to believe there is a sudden, elevated threat to healthcare, the criticality of these systems has probably never been greater, and thus the risk to this sector will be elevated throughout this crisis.
+
+The threat of disruption is especially disconcerting as it could affect the ability of these organizations to provide safe and timely care.
+
+This threat extends beyond hospitals to pharmaceutical companies, as well as manufacturing, administration and logistics organizations providing vital support.
+
+Additionally, many critical public health resources lie at the state and local level.
+
+Though there is some anecdotal evidence suggesting some ransomware actors are avoiding healthcare targets, we do not expect that all actors will practice this restraint.
+
+Additionally, an attack on state and local governments, which have been a major target of ransomware actors, could have a disruptive effect on treatment and prevention efforts.
+
+Remote Work The sudden and unanticipated shift of many workers to work from home status will represent an opportunity for threat actors.
+
+Organizations will be challenged to move quickly to ensure sufficient capacity, as well as that security controls and policies are in place.
+
+Disruptive situations can reduce morale and increase stress, leading to adverse behavior such as decreasing users’ reticence to open suspicious messages, and even increasing the risk of insider threats.
+
+Distractions while working at home can cause lowered vigilance in scrutinizing and avoiding suspicious content as workers struggle to balance work and home responsibilities at the same time.
+
+Furthermore, the rapid adoption of platforms will undoubtedly lead to security mistakes and attract the attention of the threat actors.
+
+Secure remote access will likely rely on use of VPNs and user access permissions and authentication procedures intended to limit exposure of proprietary data.
+
+Hardware and infrastructure protection should include ensuring full disk encryption on enterprise devices, maintaining visibility on devices through an endpoint security tool, and maintaining regular software updates.
+
+For more on this issue, see our blog post on the risks associated with remote connectivity .
+
+The Information Operations Threat We have seen information operations actors promote narratives associated with COVID-19 to manipulate primarily domestic or near-abroad audiences.
+
+We observed accounts in Chinese-language networks operating in support of the People's Republic of China (PRC), some of which we previously identified to be promoting messaging pertaining to the Hong Kong protests, shift their focus to praising the PRC's response to the COVID-19 outbreak, criticizing the response of Hong Kong medical workers and the U.S. to the pandemic, and covertly promoting a conspiracy theory that the U.S. was responsible for the outbreak of the coronavirus in Wuhan.
+
+We have also identified multiple information operations promoting COVID-19-related narratives that were aimed at Russian- and Ukrainian-speaking audiences, including some that we assess with high confidence are part of the broader suspected Russian influence campaign publicly referred to as \"Secondary Infektion,\" as well as other suspected Russian activity.
+
+These operations have included leveraging a false hacktivist persona to spread the conspiracy theory that the U.S. developed the coronavirus in a weapons laboratory in Central Asia, taking advantage of physical protests in Ukraine to push the narrative that Ukrainians repatriated from Wuhan will infect the broader Ukrainian population, and claiming that the Ukrainian healthcare system is ill-equipped to deal with the pandemic.
+
+Other operations alleged that U.S. government or military personnel were responsible for outbreaks of the coronavirus in various countries including Lithuania and Ukraine, or insisted that U.S. personnel would contribute to the pandemic's spread if scheduled multilateral military exercises in the region were to continue as planned.
+
+Outlook It is clear that adversaries expect us to be distracted by these overwhelming events.
+
+The greatest cyber security challenge posed by COVID-19 may be our ability to stay focused on the threats that matter most.
+
+An honest assessment of the cyber security implications of the pandemic will be necessary to make efficient use of resources limited by the crisis itself.
+
+For more information and resources that can help strengthen defenses, visit FireEye's \" Managing Through Change and Crisis \" site, which aggregates many resources to help organizations that are trying to navigate COVID-19 related security challenges.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

@@ -1,0 +1,9 @@
+
+If the developer was criticized, Chaos/Holy Water retaliated by adding the Steam platform’s IDs of critics to their personal “enemies list,” which introduced arbitrary bugs in the game’s performance.
+There was some interesting internal drama among active fan players, but nothing serious enough to call it a real malicious attack.
+But wait — that’s not all!
+Hundred percent backdoor On February 14, 2022, the developers of Cities: Skylines published their description of the incident.
+It reports that the author’s extensions have been removed from the Steam Workshop site.
+The creators of the game insist that there was no malicious code in them.
+Clarifying, “No keyloggers, viruses, cryptocurrency mining software, or similar” was found.
+But further down in the text, there is a brief mention of the “Update from GitHub” extension by the same author.

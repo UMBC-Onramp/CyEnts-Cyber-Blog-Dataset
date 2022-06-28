@@ -1,0 +1,3 @@
+
+Back to Basics Series: OpenIOC Will Gibb and a few of his colleagues at Mandiant embark on a series going back to the basics and looking deeper at OpenIOC - how we got where we are today, how to make and use IOCs, and the future of OpenIOC.
+Check out related posts here: The History of OpenIOC , Back to the Basics , OpenIOC, IOC Writer and Other Free Tools.

@@ -1,0 +1,8 @@
+
+Players fear that the same vulnerability could also affect the upcoming Elden Ring game, which is thought to use the same infrastructure.
+The bug is relevant only for PC users, so Xbox and PlayStation are unaffected.
+Why Dark Souls vulnerability is so dangerous This vulnerability allows an attacker to execute almost any program on the victim’s computer, so they’re able to steal confidential data or execute any program they wish (including installing malware).
+You can find a demonstration of the exploit in the Twitch stream of the player named The_Grim_Sleeper in which an unknown person launched a PowerShell script on the streamer’s computer that used the Windows Narrator engine to read out critical notes about the gameplay.
+What is the chance that Dark Souls vulnerability will be exploited ITW?
+The details of the exploit for this vulnerability are not available to the general public, at least not yet.
+Despite the ethically dubious way of drawing attention to the problem, the person behind the attack apparently was not trying to cause any real harm.

@@ -1,0 +1,9 @@
+
+That kind of proxyware can take down an organization’s entire IT infrastructure.
+It could also lead to ransomware encrypting data, ransom demands, and more.
+In sum, proxyware is a grab bag of dangers for a business.
+Covert installation of proxyware Most scenarios resemble the above: unintended consequences of purposeful (if sometimes unauthorized) installations.
+The converse sometimes happens as well, with an employee catching actual malware on a shady site, and that malware installing a modified proxyware client on the computer.
+That’s nothing but trouble: slowed computers, less network bandwidth, and, potentially, data theft.
+Recommendations for businesses Your best way to combat criminal exploitation through proxyware is to install a reliable antivirus solution on every computer that has Internet access.
+Not only will that protect your company from the harmful effects of proxyware, but if said proxyware includes, or is included with, other malware, you’ll still be covered.

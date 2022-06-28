@@ -1,0 +1,5 @@
+
+All binary data and bytecode are parsed and stored in a large object named SWFObject .
+This object contains all the information about the SWF relevant to our analysis: a list of tags, information about all methods, strings, constants and embedded binary data, to name a few.
+It is essentially a representation of the SWF file in an easily queryable format.
+FLASHMINGO is a collection of plug-ins that operate on the SWFObject and extract interesting information.

@@ -1,0 +1,10 @@
+
+Email 8c93e024fc194f520e4e72e761c0942d Campaign 3: Potential Attack in Ukraine with Empire Backdoor Infection Vector
+The ACE file named zakon.rar is propagated using a malicious URL mentioned in the indicators.
+360 Threat Intelligence Center has also encountered this campaign.
+Decoy Documents The ACE file contains a file named Ukraine.pdf, which contains a message on the law of Ukraine about public-private partnerships that purports to be a message from Viktor Yanukovych, former president of Ukraine (Figure 16 and Figure 17).
+Figure 16: Ukraine.pdf decoy file Figure 17:
+Contents of decoy file Based on the decoy PDF name, the decoy PDF content and the VirusTotal uploader, we believe this is an attack on an individual in Ukraine.
+Empire Backdoor When the file contents are extracted, WinRAR drops a .bat file named mssconf.bat in the Startup folder.
+The batch file contains commands that invoke base64-encoded PowerShell commands.
+After decoding, the PowerShell commands invoked are found to be the Empire backdoor, as shown in Figure 18.

@@ -1,0 +1,4 @@
+
+There are no answers to these questions for now.
+We believe that we can identify these anomalies in the long run if we strive for increased visibility into ICS technologies.
+We hope that by holding public discussions about ICS technologies, the Infosec community can cultivate closer relationships with ICS vendors and give the world better insight into how attackers move from the IT to the OT space.

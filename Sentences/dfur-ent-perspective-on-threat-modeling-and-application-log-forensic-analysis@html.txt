@@ -1,0 +1,181 @@
+Many organizations operating in e-commerce, hospitality, healthcare, managed services, and other service industries rely on web applications.
+
+And buried within the application logs may be the potential discovery of fraudulent use and/or compromise!
+
+But, let's face it, finding evil in application logs can be difficult and overwhelming for a few reasons, including: The wide variety of web applications with unique functionality The lack of a standard logging format Logging formats that were designed for troubleshooting application issues and not security investigations The need for a centralized log analysis solution or SIEM to process and investigate a large amount of application log data
+
+So, in this blog post, we discuss threat modeling concepts that can help prioritize logging decisions and unleash the ability to identify and investigate attacks against an application.
+
+To help us demonstrate, we'll describe situations for a fictitious organization called Dog and Feline Urgent Response, or DFUR, that we presented at the 2020 SANS Digital Forensics & Incident Response (DFIR) Summit .
+
+We selected Splunk Enterprise Security (ES) as DFUR’s SIEM and logging analysis platform, but this is just one option and there are multiple technologies that can facilitate application log analysis.
+
+We created a Splunk application called “ Dog and Feline Urgent Response (DFUR) ” available on the FireEye GitHub that contains pre-indexed data and dashboards that you can use to follow along with the following attack scenarios.
+
+But, enough kitten around.
+
+Let’s introduce you to DFUR!
+
+DFUR:
+
+Dog and Feline Urgent Response DFUR is a long-standing organization in the pet wellness industry that provides care providers, pet owners, and insurance providers with application services.
+
+Care providers, such as veterinarians, use DFUR to process patient records, submit prescriptions, and order additional care services Pet owners use DFUR to make appointments, pay bills, and see diagnostic test results Insurance providers use DFUR to receive and pay claims to pet care providers Application users log into a web portal that forwards logon and user transaction logs to DFUR’s Splunk ES instance.
+
+Backend databases store metadata for users, such as street addresses and contact information.
+
+DFUR Security Team Threat Modeling After stumbling through several incidents, the DFUR security team realized that their application did not log the information needed to answer investigative question clearly and quickly.
+
+The team held workshops with technical stakeholders to develop a threat model and improve their application security strategy.
+
+They addressed questions, such as: What types of threats does DFUR face based on industry trends?
+
+What impact could those threats have?
+
+How could the DFUR application be attacked or abused?
+
+What log data would DFUR need to prove an attack or fraud happened?
+
+The DFUR team compiled the stakeholder feedback and developed a threat profile to identify and prioritize high-risk threats facing the DFUR application platform, including: Account takeover and abuse Password attacks (e.g., credential stuffing)
+
+Bank account modifications PHI/PII access Health service modifications or interruptions Fraudulent reimbursement claim submission Veterinarians over-prescribing catnip
+
+The DFUR security team discussed how they could identify threats using their currently available logs, and, well, the findings were not purr-ty.
+
+Logging Problems Identified The DFUR team used their threat model to determine what log sources were relevant to their security mission, and then they dug into each one to confirm the log events were valid, normalized, and accessible.
+
+This effort produced a list of high-priority logging issues that needed to be addressed before the security team could move forward with developing methods for detection and analysis: Local logs were not forwarded to their Splunk ES instance .
+
+Only a limited subset of logging was forwarded to their Splunk ES instance, so DFUR analysts couldn't search for the actions performed by users who were authenticated to the application portal.
+
+Inaccurate field mapping .
+
+DFUR analysts identified extracted field values that were mapped to incorrect field names.
+
+One example was the user-agent in authentication log events had been extracted as the username field.
+
+Application updates sometimes affected Splunk ingestion and parsing.
+
+DFUR analysts identified servers that didn't have a startup script to ensure log forwarding was enabled upon system reboot.
+
+Application updates changed the logging output format which broke field extractions.
+
+DFUR analysts didn't have a way to determine when log sources weren't operating as expected.
+
+Time zone misconfigurations .
+
+DFUR analysts determined their log sources had multiple time zone configurations which made correlation difficult.
+
+The log archival settings needed to be modified .
+
+DFUR analysts needed to configure their Splunk ES instance data retirement policy to maintain indexed data for a longer time period and archive historical data for quick restoration.
+
+Source IP addresses of users logging into the portal were masked by a load balancer.
+
+The DFUR analysts realized that the source IP address for every user logon was a load balancer, which made attribution even more difficult.
+
+The X-Forwarded-For (XFF) field in their appliances needed to be enabled.
+
+Analysis Problems Identified The DFUR infosec team reviewed how previous incidents involving the DFUR application were handled.
+
+They quickly learned that they needed to solve the following operational issues before they could effectively investigate application attacks: Inconsistency during manual analysis .
+
+DFUR analysts took different approaches to searching their Splunk ES instance, and they would reach different conclusions.
+
+Playbooks were needed to define a standard investigative methodology for common incident scenarios.
+
+No documentation of log fields or sources .
+
+Some DFUR analysts were not aware of all relevant data sources that were available when investigating security incidents.
+
+This led to findings that were based on a small part of the picture.
+
+A data dictionary was needed that defines the log sources and fields in the DFUR Splunk ES instance and the retention time for each log source.
+
+Application logs were designed for troubleshooting, not investigating .
+
+The DFUR application was configured to log diagnostic information, application errors, and limited subsets of successful user activity.
+
+The DFUR team needed to reconfigure and develop the application to record more security related events.
+
+DFUR:
+
+New and Improved Monitoring and Detection The DFUR team addressed their application log and analysis problems and started building a detection and investigative capability in their Splunk ES instance.
+
+Using the analysis workflows developed during the threat modeling process, the DFUR team designed Splunk dashboards (Figure 1) to provide detection analytics and context around three primary datapoints: usernames, IP addresses, and care providers (“organizations”).
+
+Figure 1: DFUR monitoring and detection dashboard
+
+The DFUR team created the Splunk dashboards using Simple XML to quickly identify alerts and pivot among the primary datapoints, as seen in Figure 2.
+
+The DFUR team knew that their improved and streamlined methodology would save time compared to exporting, analyzing, and correlating raw logs manually.
+
+Figure 2:
+
+Pivoting concepts used to develop DFUR dashboards Newly armed (legged?) with a monitoring and detection capability, the DFUR team was ready to find evil!
+
+Attack Scenario #1: Account Takeover The next morning, the DFUR security team was notified by their customer service team of a veterinarian provider with the username ‘labradorable’ who hadn’t received their daily claims payment and noticed their banking information in the DFUR portal was changed overnight.
+
+A DFUR analyst opened the User Activity Enrichment dashboard (Figure 3) and searched for the username to see recent actions performed by the account.
+
+Figure 3:
+
+User Activity Enrichment dashboard The analyst reviewed the Remote Access Analytics in the dashboard and identified the following anomalies (Figure 4):
+
+The username reminder and password reset action was performed the day before from an Indonesia-based IP address The user account was logged in from the same suspicious IP address shortly after The legitimate user always logs in from California, so the Indonesia source IP login activity was highly suspicious Figure 4:
+
+Remote access analytics based on user activity The DFUR analyst clicked on the Application Activity tab in the User Activity Enrichment dashboard to see what actions were performed by the user while they were logged in from the suspicious IP address.
+
+The analyst identified the user account logged in from the suspicious IP address and performed an email address change and added two (2) new bank accounts, as seen in Figure 5.
+
+Figure 5: Application activity timeline filtered based on IP address The DFUR analyst confirmed that the two (2) bank accounts were added by the user to the care provider with organization ID 754354, as seen in Figure 6.
+
+Figure 6: Bank accounts added and assigned to a provider By clicking on the organization ID in the Splunk results table, the DFUR analyst triggered a drill-down action to automatically open the Organization Enrichment Dashboard and populate the organization ID value with the results from the previous panel (Figure 7).
+
+The DFUR analyst determined that the bank routing information for the new bank accounts was inconsistent with the organization’s mailing address.
+
+Figure 7:
+
+Organization Enrichment Dashboard The activity indicated that the attacker had access to the user’s primary email and successfully reset the DFUR account password.
+
+The DFUR analyst confirmed that no other accounts were targeted by the suspicious IP address (Figure 8).
+
+Figure 8: IP Address Enrichment dashboard Attack Scenario #2: Credential Stuffing Later that afternoon, the DFUR team began receiving reports of account lockouts in the patient and provider portals when users tried to login.
+
+The security team was asked to investigate potential password attack activity on their DFUR platform.
+
+The DFUR analyst pulled up the main monitoring and detection dashboard and scrolled down to the panel focused on identifying potential password attack activity (Figure 9).
+
+They identified five (5) IP addresses associated with an elevated number of failed login attempts, suggesting a password spray or credential stuffing attack with varying success.
+
+Figure 9:
+
+Dashboard panel showing potential password attack events The DFUR analyst clicked on one of the IP addresses which triggered a drill-down action to open the IP Address Enrichment dashboard and prepopulate the IP address token value (Figure 10).
+
+Figure 10:
+
+IP Address Enrichment dashboard
+
+The DFUR analyst identified more than 3,000 failed login attempts associated with the IP address with three (3) successful logins that morning.
+
+The Remote Access Analytics panels for the IP address further showed successful logins for accounts that may have been successfully compromised and need to be reset (Figure 11).
+
+Figure 11:
+
+Remote access analytics for IP address Conclusion After implementing the newly developed logs and analysis capabilities and by leveraging Splunk’s security solutions, the DFUR security team drastically improved key metrics aligned with their application security missions: Identify compromise and fraud before customers report it Analyze 90% of application security events within 30 minutes Answer all investigation questions from users, compliance, and legal teams Mandiant and the whole DFUR security team hope you can use the scenarios and references in this post to improve your log analysis and how you leverage a SIEM solution in the following ways: Reflect on your current logging gaps and capabilities to improve Enhance logs from “whatever the developers implemented” to “designed to be investigated” Develop investigative workflows that are reliable and repeatable Correlate pivot points between your data sources and streamline correlation capabilities Create monitoring and alerting capabilities based on threat modeling Lower the technical barrier for comprehensive analysis Implement similar analysis capabilities to those in the “DFUR” Splunk application, linked in the References section Understand that logs can lead into better security analytics and strengthening of your security operations References For organizations that utilize Splunk security solutions as their SIEM solution, for automation, analytics or log aggregation, or want to try out for free with Splunk’s free trial download, we developed an application called “Dog and Feline Urgent Response (DFUR)” to demonstrate application log forensic analysis and dashboard pivoting concepts.
+
+The code contains pre-indexed data and CSV files referenced by searches contained in four Splunk XML dashboards.
+
+All data, such as IP addresses and usernames, was fabricated for the purposes of the demo and any association with organizations, users, or pets is coincidental.
+
+Watch the recording of our SANS DFIR Summit presentation .
+
+Download the \"DFUR\" Splunk application in FireEye GitHub .
+
+If you need assistance investigating application attacks or developing log analysis capabilities, contact us at investigations@mandiant.com.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

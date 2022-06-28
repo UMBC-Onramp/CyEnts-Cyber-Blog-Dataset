@@ -1,0 +1,13 @@
+
+In this variant of Agent Tesla, the attacker has only enabled stealing credentials and cookies.
+The count of the software clients from which it steals credentials is more than 70, and can be categorized as Web Browsers, Email Clients, IM Clients, VPN/FTP/Downloader/Database Clients, and Windows Credentials.
+The list of the affected software clients is listed as below: Chromium-based Web Browsers: Epic Privacy, Uran, Chedot, Comodo Dragon, Chromium, Orbitum, Cool Novo, Sputnik, Coowon, Brave, Liebao Browser, Elements Browser, Sleipnir 6, Vivaldi, 360 Browser, Torch Browser, Yandex Browser, QIP Surf, Amigo, Kometa, Citrio, Opera Browser, CentBrowser, 7Star, Coccoc, and Iridium Browser.
+Web Browsers: Chrome, Microsoft Edge, Firefox, Safari, IceCat, Waterfox, Tencent QQBrowser, Flock Browser, SeaMonkey, IceDragon, Falkon, UCBrowser, Cyberfox, K-Meleon, PaleMoon.
+VPN clients: OpenVPN, NordVPN, RealVNC, TightVNC, UltraVNC, Private Internet Access VPN.
+FTP clients: FileZilla, Cftp, WS_FTP, FTP Navigator, FlashFXP, SmartFTP, WinSCP 2, CoreFTP, FTPGetter.
+Email clients: Outlook, Postbox, Thunderbird, Mailbird, eM Client, Claws-mail, Opera Mail, Foxmail, Qualcomm Eudora, IncrediMail, Pocomail, Becky!
+Internet Mail, The Bat!.
+Downloader/IM clients: DownloadManager, jDownloader, Psi+, Trillian.
+Others: MySQL and Microsoft Credentials.
+Figure 4.1 displays the method used for stealing credentials from several clients.
+Figure 4.2 shows the credentials just stolen from a web browser, “IceCat”, where “Browser” is the software client name, “Password” is the saved password, “URL” is the login page, and “UserName” is the saved login user name.

@@ -1,0 +1,5 @@
+
+The script upd.cmd contains the password to extract the archive.
+The major features provided by the NetSupport tool include: Remote desktop File transfer Remote inventory and system information Launching applications in client’s machine Geolocation Downloads.txt This file contains a list of IP addresses, which could be compromised systems.
+It has IPs along with User-agent.
+The IP addresses in the file belong to various regions, mostly the U.S., Germany, and the Netherlands.

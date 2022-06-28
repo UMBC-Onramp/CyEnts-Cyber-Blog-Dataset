@@ -1,0 +1,6 @@
+
+Figure 3:
+The attention patterns for the query word highlighted in grey from one of the fine-tuned GPT-2 generations in Figure 2.
+Individual vertical bars represent neuron activations, horizontal bars represent vectors, and lines represent the strength of attention between words.
+Blue indicates positive values, red indicates negative values, and color intensity represents the magnitude of these values.
+Syntactic relationships between words like “America,” “ban,” and “Immigrants“ are valuable from an analysis point of view because they can help identify an information operation’s interrelated keywords and phrases.

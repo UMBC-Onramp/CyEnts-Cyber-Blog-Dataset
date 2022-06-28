@@ -1,0 +1,16 @@
+
+On May 18, 2021, a user in the affected organization browsed to the Trojanized link and downloaded the ZIP.
+Upon installing the software, a chain of downloads and scripts were executed, leading to SMOKEDHAM and later NGROK on the victim’s computer.
+Additional malware use such as BEACON, and lateral movement also occurred.
+Mandiant believes the Trojanized software was available from May 18, 2021, through June 8, 2021.
+Pivoting on the slightly modified, but benign, MSHTA.exe application in VirusTotal, Mandiant identified a second installer package with the MD5 hash, e9ed774517e129a170cdb856bd13e7e8 (SVStation_Win64-B1130.1.0.0.exe), from May 26, 2021, which also connects out the same URL as the Trojanized SmartPSS installer.
+Supply Chain Intrusion Cycle Figure 1:
+Intrusion cycle Phase 1:
+Trojanized Installer Download Mandiant Consulting observed the Trojanized installer downloaded on a Windows workstation after the user visited a legitimate site that the victim organization had used before.
+The downloaded file was extracted to C:\\Users\\[username]\\Downloads\\06212019-General-SMARTPSS-Win32-ChnEng-IS\\General_SMARTPSS-Win32_ChnEng_IS_V2.002.0000007.0.R.181023\\SMARTPSS-Win32_ChnEng_IS_V2.002.0000007.0.R.181023-General-v1.exe.
+Mandiant confirmed the user intended to download, install, and use the SmartPSS software.
+Figure 2 shows an image of the download page used for SmartPSS software.
+Figure 2: SmartPSS download page Phase 2: Nullsoft Installer The installer executable is a Nullsoft installer that when executed wrote two files to C:\\ProgramData\\SMARTPSS-Win32_ChnEng_IS.
+We were able to extract the malicious installer script and files for analysis using 7-Zip.
+The relevant section of this installer script is shown below in Figure 3.
+Figure 3: Nullsoft installer script section The installer script created two files: SMARTPSS-Win32_ChnEng_IS_V2.002.0000007.0.R.181023-General.exe (b540b8a341c20dced4bad4e568b4cbf9) and smartpss.exe (c180f493ce2e609c92f4a66de9f02ed6).

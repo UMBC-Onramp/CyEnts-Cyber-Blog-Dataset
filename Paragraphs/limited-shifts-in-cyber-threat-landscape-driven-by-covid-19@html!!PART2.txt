@@ -1,0 +1,6 @@
+
+Threat actors are now leveraging COVID-19 and related topics in social engineering ploys.
+We anticipate increased collection by cyber espionage actors seeking to gather intelligence on the crisis.
+Healthcare operations, related manufacturing, logistics, and administration organizations, as well as government offices involved in responding to the crisis are increasingly critical and vulnerable to disruptive attacks such as ransomware.
+Information operations actors have seized on the crisis to promote narratives primarily to domestic or near-abroad audiences.
+Same Actors, New Content The same threat actors and malware families that we observed prior to the crisis are largely pursuing the same objectives as before the crisis, using many of the same tools.

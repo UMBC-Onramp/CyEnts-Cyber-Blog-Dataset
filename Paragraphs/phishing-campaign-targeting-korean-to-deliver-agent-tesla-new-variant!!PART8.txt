@@ -1,0 +1,16 @@
+
+The code snippet below is used to run “schtasks” command with the “/create” option to create a new scheduled task, as shown in Figure 3.1.
+It executes a VBScript code within a remote HTML file, then downloads the Agent Tesla payload to run on the victim’s system.
+It also detects and kills any other Agent Tesla process instances already running.
+This allows it to perform its upgrading function.
+2.
+ Persistence – StartMenu Startup:
+A standalone VBS file, “%Public%\\ hulalalMCROSOFT.vbs ”, extracted from VBScript-embedded-in-HTML downloads another base64-encoded VBS file from “hxxps[:]//bitbucket[.]org/!api/2.0/snippets/hogya/5X7My8/b271c1b3c7a78e7b68fa388ed463c7cc1dc32ddb/files/divine1-2” into a local file.
+Going through the base64-decoded code, it saves the VBS code to a file called “UYA-update.vbs“ located under %Public% folder.
+This standalone VBS file downloads the Agent Tesla payload and deploys it on the victim’s system.
+As a result, whenever the VBS file is executed it starts Agent Tesla.
+To keep Agent Tesla alive on the victim’s system, it copies the downloaded standalone VBS file “UYA-update.vbs” into the StartMenu’s Startup folder and renames it as “GTQ.vbs”.
+This allows it to start automatically when the system starts.
+Figure 3.2 displays the Startup folder with the copied “GTQ.vbs”.
+3.
+ Perform process-hollowing: “UYA-update.vbs” continues to craft a piece of PowerShell code within a base64-decoded PE file from a local variable.

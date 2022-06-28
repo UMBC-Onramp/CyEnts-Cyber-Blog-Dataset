@@ -1,0 +1,9 @@
+
+Due to its increased popularity and profitability cybercriminals have been targeting all things blockchain.
+McAfee Advanced Threat Research team analysts have now published the McAfee Blockchain Threat Report to explain current threats against the users and implementers of blockchain technologies.
+What is Blockchain?
+Even if you have not heard of blockchain, you have likely heard of cryptocurrencies, namely Bitcoin, the most popular implementation.
+In late 2017 Bitcoin reached a value of $20,000 per coin, prompting a lot of interest in the currency—including from cybercriminals.
+Cryptocurrencies are built on top of blockchain, which records transactions in a decentralized way and enables a trusted “ledger” between trustless participants.
+Each block in the ledger is linked to the next block, creating a chain.
+Hence, the system is called a blockchain.

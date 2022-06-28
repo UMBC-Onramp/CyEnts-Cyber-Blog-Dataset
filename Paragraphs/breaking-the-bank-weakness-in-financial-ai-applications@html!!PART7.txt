@@ -1,0 +1,6 @@
+
+Additionally, threat actors can leverage AI techniques to generate manipulated multimedia or \"deep fakes\" to facilitate such disruption.
+False information can have considerable market-wide effects.
+Malicious actors have a history of distributing false information to facilitate financial instability.
+For example, in April 2013, the Syrian Electronic Army (SEA) compromised the Associated Press (AP)
+Twitter account and announced that the White House was attacked and President Obama sustained injuries.

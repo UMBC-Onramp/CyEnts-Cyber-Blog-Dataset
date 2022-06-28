@@ -1,0 +1,4 @@
+
+This is consistent with the increase in OT activity by more resourced financially-motivated groups and ransomware operators.
+Security Best Practices and Situational Awareness Help Prevent Low Sophistication Compromises Defense against low sophistication compromises is best addressed by implementing security best practices and gaining situational awareness about the threat exposure of assets and data.
+Implementing security controls to defend against this activity is also the foundation for mature security programs that seek to prevent and identify complex OT threats before they introduce a risk to the safety of people and infrastructure.

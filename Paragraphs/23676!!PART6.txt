@@ -1,0 +1,5 @@
+
+Try this little experiment: Go to Google and search for “honeygain download.”
+You’ll get a couple of links to the developer’s official website and hundreds to unscrupulous file-sharing sites, half of which include “bonus content” with their downloads.
+What kinds of bonus content?
+Well, researchers describe one such trojanized installer as deploying a cryptocurrency-mining program (which devour a PC’s resources and electricity) and a tool to connect to the cybercriminals’ command server, from which anything else can be downloaded at any time.

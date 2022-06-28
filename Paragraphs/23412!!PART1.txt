@@ -1,0 +1,5 @@
+By comparison, a phishing attack makes sense: Click a link, land on a malicious page, enter some details, and an attacker steals them.
+Try this one on for size, instead: Click a link and an attacker steals your data.
+That’s right, today we’re talking about malicious pages that exploit a fundamental CPU feature to steal data without requiring a victim to enter anything.
+And the vulnerability in question is very difficult, if not impossible, to fix.
+In 2018, researchers proved the scenario was theoretically possible, unveiling the first two variants of the Spectre vulnerability.

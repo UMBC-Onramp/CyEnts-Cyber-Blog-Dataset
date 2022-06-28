@@ -1,0 +1,9 @@
+
+For many API handlers, simply returning a success code will be sufficient to make the malware to continue execution.
+While full emulation of every piece of malware may not be feasible, targeting functionality of specific malware families can greatly reduce the need to reverse engineer variants of the same families.
+Usage Speakeasy is available right now on our GitHub .
+It can be installed with the included Python installer script or installed within a Docker container using the provided Dockerfile.
+It is platform agnostic and can be used to emulate Windows malware on Windows, Linux or MacOS.
+More information can be found on the project’s README .
+Once installed, Speakeasy can be used as a standalone library or invoked directly using the provided run_speakeasy.py script.
+In this blog post we will demonstrate how to emulate a malware sample directly from the command line.

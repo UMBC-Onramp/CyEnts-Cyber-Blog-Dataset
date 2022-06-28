@@ -1,0 +1,5 @@
+
+Among these 2846 apps, we have observed over 900 attempt to contact their command and control (C2) server.
+We have notified Apple and provided the details to them.
+These backdoors can be controlled not only by the original creators of the ad library, but potentially also by outside threat actors.
+While we have not observed commands from the C2 server intended to trigger the most sensitive capabilities such recording audio or stealing sensitive data, there are several ways that the backdoors could be abused by third-party targeted attackers to further compromise the security and privacy of the device and user:

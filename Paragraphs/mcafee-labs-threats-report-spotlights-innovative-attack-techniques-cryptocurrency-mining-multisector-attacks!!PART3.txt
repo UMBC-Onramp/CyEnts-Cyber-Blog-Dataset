@@ -1,0 +1,11 @@
+
+Cryptojacking makes a comeback:
+Attackers targeting cryptocurrencies may be moving from ransomware to coin miner malware, which hijacks systems to mine for cryptocurrencies and increase their profits.
+New coin miner malware jumped an astronomical 1,189% in Q1.
+LNK outpaces PowerShell: Cybercriminals are increasingly using LNK shortcuts to surreptitiously deliver malware.
+New PowerShell malware dropped 77% in Q1, while attacks leveraging Microsoft Windows LNK shortcut files jumped 24%.
+Incidents go global :
+Overall security incidents rose 41% in Q1, with incidents hitting multiple regions showing the biggest increase, at 67%, and the Americas showing the next largest increase, at 40%.
+Get all the details by reading the McAfee Labs Threats Report, June 2018.
+
+

@@ -1,0 +1,4 @@
+
+We believe that the activity above might be linked to a tiered affiliate group that is specialized in RDP brute forcing and infecting systems with Sodinokibi after each successful compromise.
+Both RaaS family structures are too large to effectively publish within the space of this blog.
+Our Complete overview for the Sodinokibi RaaS structure can be found on our McAfee GitHub .

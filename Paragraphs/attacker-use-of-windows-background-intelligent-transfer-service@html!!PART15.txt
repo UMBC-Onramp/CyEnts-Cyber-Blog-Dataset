@@ -1,0 +1,10 @@
+
+The standalone BitsParser does not have this ability.
+The BITS service should be stopped prior to running BitsParser or third-party tools for copying locked files may be utilized.
+BITS Persistence in the Wild
+In 2020 Mandiant responded to many incidents involving Ryuk ransomware operators leveraging custom backdoors and loaders to actively target hospitals and other medical support centers (see our blog post Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser ).
+Through numerous engagements Mandiant was able to profile the attacker's Tools Techniques and Procedures (TTPs) and identify unique aspects of the various backdoors and loaders that were leveraged prior to encryption.
+In one such engagement, Mandiant consultants had mapped the vast majority of the attack timeline from initial exploitation to the encryption of corporate resources and an extortion demand.
+Log analysis and telemetry provided by the customer's on-premises endpoint detection solution led to the identification of a KEGTAP backdoor on an end-user workstation.
+Mandiant was able to identify the specific email and lure used by the ransomware operators including the download and execution of the file mail.exe , which launched KEGTAP.
+However, none of the persistence mechanisms that Mandiant observed in other engagements were present on this endpoint.

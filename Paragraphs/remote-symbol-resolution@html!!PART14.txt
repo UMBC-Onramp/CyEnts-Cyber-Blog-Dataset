@@ -1,0 +1,12 @@
+
+Conclusion It is common for malware to use techniques that mask the Windows API being used.
+These techniques force malware analysts to have to extract data from runtime data, calculate entry point addresses, and then resolve their meaning within the context of a particular running process.
+In previous techniques, several manual stages were involved that were bulky and time intensive.
+This blog introduces a small simple open source tool that can integrate well into multiple IDA scripting languages.
+This combination allows analysts streamlined access to the data required to quickly bypass these types of obfuscations and continue on with their analysis.
+We are happy to be able to open source the remote lookup application so that others may benefit and adapt it to their own needs.
+Sample network clients have been provided for Python, C#, D, and VB6.
+Download a copy of the tool today.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,3 @@
+
+Notably, the respective loader and backdoor as well as POWERTRICK have typically been installed on a small number of hosts in observed incidents, suggesting these payloads may be reserved for establishing a foothold and performing initial network and host reconnaissance.
+However, BEACON is frequently found on a larger number of hosts and used throughout various stages of the attack lifecycle.

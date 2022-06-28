@@ -1,0 +1,7 @@
+
+Users can easily extend the tool's functionality via custom Python plug-ins.
+Background: SWF and ActionScript3 Before we dive into the inner workings of FLASHMINGO, let’s learn about the Flash architecture.
+Flash’s SWF files are composed of chunks, called tags , implementing a specific functionality.
+Tags are completely independent from each other, allowing for compatibility with older versions of Flash.
+If a tag is not supported, the software simply ignores it.
+The main source of security issues revolves around SWF’s scripting language: ActionScript3 (AS3).

@@ -1,0 +1,10 @@
+
+Determining that this was kernel shellcode allowed me to quickly resolve the rest of my questions, but to confirm my findings, I wrote a kernel shellcode loader.
+Here’s what it looks like to use this tool to load a small, do-nothing piece of shellcode.
+Using FLARE’s Kernel Shellcode Loader I booted a target system with a kernel debugger and opened an administrative command prompt in the directory where I copied the shellcode loader (kscldr.exe).
+The shellcode loader expects to receive the name of the file on disk where the shellcode is located as its only argument.
+Figure 3 shows an example where I’ve used a hex editor to write the opcodes for the NOP (0x90) and RET (0xC3) instructions into a binary file and invoked kscldr.exe to pass that code to the kernel shellcode loader driver.
+I created my file using the Windows port of xxd that comes with Vim for Windows .
+Figure 3: Using kscldr.exe to load kernel shellcode The shellcode loader prompts with a security warning.
+After clicking yes, kscldr.exe installs its driver and uses it to execute the shellcode.
+The system is frozen at this point because the kernel driver has already issued its breakpoint and the kernel debugger is awaiting commands.

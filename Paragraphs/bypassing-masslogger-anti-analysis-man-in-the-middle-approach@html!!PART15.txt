@@ -1,0 +1,6 @@
+
+Figure 9:
+Method 0x06000495 in dnSpy IL view .NET
+Fat Method Coming back to method 0x0600049D (entry number 1181 ) at offset 0x9890 into the file (RVA 0xB690 ), the first byte of the method body is 0x1B (or 0001 1011 in binary).
+The two least-significant bits are 11 , indicating that 0x0600049D is a fat method.
+The fat method body header is 12-byte long whose structure is beyond the scope of this blog post.

@@ -1,0 +1,5 @@
+
+Figure 7:
+Before and after of switch statement groupings Isolated Subgraphs Running Edit -> Plugins -> SimplifyGraph brings up a new chooser named \"SimplifyGraph - Isolated subgraphs\" that begins showing what I call isolated subgraphs of the current graph, as seen in Figure 8.
+Figure 8:
+Example isolated subgraphs chooser A full definition appears later in the appendix including how these are calculated, but the gist is that an isolated subgraph in a directed graph is a subset of nodes and edges such that there is a single entrance node, a single exit node, and none of the nodes (other than the subgraph entry node) is reachable by nodes not in the subgraph.

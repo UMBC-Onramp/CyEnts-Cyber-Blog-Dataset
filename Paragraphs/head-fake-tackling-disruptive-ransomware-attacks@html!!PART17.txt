@@ -1,0 +1,4 @@
+
+For example, via process tracking, we identified a Dridex-injected explorer.exe executing malicious PowerShell: a clear sign of an Empire stager: Figure 12:
+An example of PowerShell Empire stager execution revealed during forensic analysis In the above example, the threat actors instructed the victim system to use the remote server 185.122.59[.]78 for command-and-control using an out-of-the-box Empire agent C2 configuration for TLS-encrypted backdoor communications.
+During their hands-on post-exploitation activity, the threat actors also moved laterally via PowerShell remoting and RDP sessions.

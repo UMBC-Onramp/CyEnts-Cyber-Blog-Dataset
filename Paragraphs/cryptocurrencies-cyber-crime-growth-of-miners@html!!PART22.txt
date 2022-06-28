@@ -1,0 +1,5 @@
+
+The IcedID injects launched an anonymous miner using the mining code from Coinhive's AuthedMine.
+In late 2017, Bleeping Computer reported that security researchers with Radware observed the hacking group CodeFork leveraging the popular downloader Andromeda (aka Gamarue) to distribute a miner module to their existing botnets.
+In late 2017, FireEye researchers observed Trickbot operators deploy a new module named \"testWormDLL\" that is a statically compiled copy of the popular XMRig Monero miner.
+On Aug. 29, 2017, Security Week reported on a variant of the popular Neutrino banking Trojan, including a Monero miner module.

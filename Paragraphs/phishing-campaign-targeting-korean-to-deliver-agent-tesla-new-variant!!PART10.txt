@@ -1,0 +1,6 @@
+
+Figure 3.3 is the entire code of function “ClassLibrary3.Class1.Run()”.
+After successfully calling \"ClassLibrary3.Class1.Run()\" of the decoded PE, it downloads two files from the hyperlinks: 'hxxp[:]//149.56.200.165/rump/1.txt', which is for another .Net module to perform process-hollowing, and 'hxxps[:]//bitbucket[.]org/!api/2.0/snippets/hogya/nxq8od/c73df176f221868c33d4b3033ec04dc173d4ba4c/files/divine1-1', which is passed from PowerShell and is where it downloads the Agent Tesla payload from.
+The Agent Tesla payload is fileless on the victim’s system.
+It is only kept in the memory of the PowerShell process.
+The downloaded .Net module has a function named “ClassLibrary1.Class1.Run()” that perform the process-hollowing.

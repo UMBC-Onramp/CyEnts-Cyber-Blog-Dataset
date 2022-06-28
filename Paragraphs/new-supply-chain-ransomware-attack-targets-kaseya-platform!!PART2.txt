@@ -1,0 +1,8 @@
+
+Those same unofficial reports claim that a malicious update was deployed to the Kaseya VSA interface by the threat actors as an update or hot fix for the Kaseya VSA agent.
+This fake update is a ransomware file, and it has now been downloaded to thousands of systems, including the machines of MSP providers and their customers who use Kaseya VSA.
+ There are reports of ransom demands of $50,000 for smaller organizations and up to $5 million for larger enterprises.
+Kaseya is urging all customers to take all on-premises VSA servers offline immediately.
+Only on-premises systems have been impacted by this attack.
+Cloud-based SaaS services remain unaffected.
+The Kaseya advisory reads in part: \"ALL ON-PREMISES VSA SERVERS SHOULD CONTINUE TO REMAIN OFFLINE UNTIL FURTHER INSTRUCTIONS FROM KASEYA ABOUT WHEN IT IS SAFE TO RESTORE OPERATIONS.

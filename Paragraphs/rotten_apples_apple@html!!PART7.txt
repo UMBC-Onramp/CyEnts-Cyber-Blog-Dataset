@@ -1,0 +1,6 @@
+
+Figure 1:
+The page created by the obfuscated JavaScript as displayed in the browse r The page is created by the de-obfuscated content seen in Figure 2.
+Figure 2: Deobfuscated conten t Burp Suite is a tool to secure and penetrate web applications: https://portswigger[.]net/burp/.  
+The Burp session of a user supplying login and password to the HTML form is shown in Figure 3.
+Here we can see 5 variables (u,p,x,y and cc) and a cookie being sent via HTTP POST method to the page save.php.

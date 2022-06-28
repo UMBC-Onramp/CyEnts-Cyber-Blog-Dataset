@@ -1,0 +1,7 @@
+
+Summary FireEye has uncovered a widespread campaign, that we are tracking as UNC2452.
+The actors behind this campaign gained access to numerous public and private organizations around the world.
+They gained access to victims via trojanized updates to SolarWind’s Orion IT monitoring and management software.
+This campaign may have begun as early as Spring 2020 and is currently ongoing.
+Post compromise activity following this supply chain compromise has included lateral movement and data theft.
+The campaign is the work of a highly skilled actor and the operation was conducted with significant operational security.

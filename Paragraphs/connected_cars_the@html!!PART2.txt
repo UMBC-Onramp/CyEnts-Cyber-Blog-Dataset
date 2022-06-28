@@ -1,0 +1,6 @@
+
+An ever-growing list of features—including web browsing, Wi-Fi access points, and remote-start mobile phone apps—enhance user enjoyment, but also greatly expand vehicles’ attack surface, rendering them potentially vulnerable to advanced attacks.
+During the past year especially, numerous proof-of-concept demonstrations have revealed connected-car vulnerabilities that malicious actors can exploit, ranging from unauthorized entry to commandeering the vehicle’s operation .
+Unfortunately, as consumer demand drives ever more features, the opportunities for compromise will increase as well.
+Ransomware The scourge of ransomware has so far affected thousands of systems belonging to ordinary individuals, hospitals, and police stations.
+A vehicle’s increased connectivity, ever-expanding attack surface, and high upfront cost make them attractive ransomware targets.

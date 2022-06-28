@@ -1,0 +1,3 @@
+
+While deepfake videos, including techniques like face swapping and lip syncing, are concerning in the long term, this blog post focuses on more basic, but we argue more believable, synthetic media generation advancements in the text, static image, and audio domains.
+Machine learning approaches for creating synthetic media are underpinned by generative models, which have been effectively misused to fabricate high volume submissions to federal public comment websites and clone a voice to trick an executive into handing over $240,000 .

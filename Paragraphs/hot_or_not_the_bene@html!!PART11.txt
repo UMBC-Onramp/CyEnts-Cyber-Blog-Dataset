@@ -1,0 +1,8 @@
+
+Figure 12 shows the corresponding console outputs.
+Figure 11.
+JavaScript patch code that loads the BluetoothManager.framework into the app process Figure 12.
+The screenshot of the console log for utilizing BluetoothManager.framework Example 3: Change system properties via private API a .
+     Example dependent framework: b /System/Library/Frameworks/CoreTelephony.framework b .
+Private API used by example framework: [CTTelephonyNetworkInfo updateRadioAccessTechnology:] Consider a target app that is built with the public framework CoreTelephony.framework .
+Apple documentation explains that this framework allows one to obtain information about a user’s home cellular service provider.

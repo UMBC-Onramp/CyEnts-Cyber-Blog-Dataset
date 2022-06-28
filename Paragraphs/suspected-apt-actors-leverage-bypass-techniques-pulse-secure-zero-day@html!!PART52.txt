@@ -1,0 +1,9 @@
+
+The sample starts by setting an alarm that kills the application after a configurable number of minutes, 14 by default.
+It then enters a loop which reads /proc/
+entries every 2 seconds looking for a target application, this interval is also configurable.
+The target is found by opening /proc/<process_name>/cmdline for each entry in the folder and then reading this file looking for the string dswsd within the command line.
+Once found the target application's proc/<target_pid>/mem is opened, the process is attached to with PTRACE, then memory read in chunks up to 512 bytes in size.
+For each chunk, the string 20 30 20 0A 00 ( 0 \\n) is searched for as a needle.
+If found the sample splits the data by first space, then a dash -.
+Two dashes are expected to be found, and these are immediately converted into hex numbers, example form: -<number

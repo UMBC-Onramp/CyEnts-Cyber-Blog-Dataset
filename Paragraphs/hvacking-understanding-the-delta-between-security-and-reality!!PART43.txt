@@ -1,0 +1,6 @@
+
+Figure 25 Of the registers we have access to at the time our shell code executes, the one that gives us the smallest delta between its contents and one of these three addresses we can use to call system is R4.
+R4 contains 0x40235CB4, giving a delta of 0x517F0 when compared to the address for a direct call to system .
+The last nibble being 0 is ideal since that means we don’t have to account for the last bit, thanks to the rotation mechanism inherent to ARM immediate values.
+This means that we only need two immediate values to convert the contents of R4 into our desired address: one for 0x51000, the other for 0x7F0.
+Since we can apply an immediate offset when MOV’ing one register into another, we should be able to load a register with the address of system in only two instructions.

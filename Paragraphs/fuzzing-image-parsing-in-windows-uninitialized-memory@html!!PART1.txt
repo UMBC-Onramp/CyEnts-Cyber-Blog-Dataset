@@ -1,0 +1,10 @@
+Continuing our discussion of image parsing vulnerabilities in Windows , we take a look at a comparatively less popular vulnerability class: uninitialized memory.
+In this post, we will look at Windows’ inbuilt image parsers—specifically for vulnerabilities involving the use of uninitialized memory.
+The Vulnerability: Uninitialized Memory In unmanaged languages, such as C or C++, variables are not initialized by default.
+Using uninitialized variables causes undefined behavior and may cause a crash.
+There are roughly two variants of uninitialized memory: Direct uninitialized memory usage: An uninitialized pointer or an index is used in read or write.
+This may cause a crash.
+Information leakage (info leak) through usage of uninitialized memory: Uninitialized memory content is accessible across a security boundary.
+An example: an uninitialized kernel buffer accessible from user mode, leading to information disclosure.
+In this post we will be looking closely at the second variant in Windows image parsers, which will lead to information disclosure in situations such as web browsers where an attacker can read the decoded image back using JavaScript.
+Detecting Uninitialized Memory Vulnerabilities Compared to memory corruption vulnerabilities such as heap overflow and use-after-free, uninitialized memory vulnerabilities on their own do not access memory out of bound or out of scope.

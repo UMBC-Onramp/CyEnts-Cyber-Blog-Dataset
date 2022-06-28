@@ -1,0 +1,5 @@
+
+Additional Differences DEATHRANSOM makes an external HTTPS connection to download a file.
+Neither HELLOKITTY or FIVEHANDS initiate network connections.
+HELLOKITTY contains code to set the victims wallpaper to a ransom related image.
+The other samples do not have this functionality Different versions of DEATHRANSOM and HELLOKITTY are known to change the file extension Different versions of HELLOKITTY are known to check for specific processes to terminate.

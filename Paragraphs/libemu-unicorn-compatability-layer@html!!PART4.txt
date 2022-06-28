@@ -1,0 +1,4 @@
+
+There is one common case of direct member access to the emu_cpu structure that requires some special attention.
+This structure gives the user direct read/write access to the emulator’s virtual processor and is commonly utilized by user code.
+Examples to support include: The next task was to see if we could mimic the direct access to the emu_cpu elements as if they were static struct fields.

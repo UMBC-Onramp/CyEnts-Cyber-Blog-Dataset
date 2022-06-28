@@ -1,0 +1,5 @@
+
+This filesystem copied became increasingly useful as the project continued With the active UART connection, it was now possible to investigate more about how the system is running.
+Since we were able to previously determine the device is only listening on ports 47808 and 47809, whichever application is listening on these ports would be the only point of an attack for a remote exploit.
+This was quickly confirmed using “netstat -nap” from the UART console.
+We noticed that port 47808 was being used by an application called “dactetra”.

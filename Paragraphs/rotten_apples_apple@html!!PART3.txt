@@ -1,0 +1,4 @@
+
+This blog highlights some highly organized and sophisticated phishing attack campaigns we observed targeting Apple customers.
+Campaign 1: Zycode phishing campaign targeting Apple's Chinese Customers
+This phishing kit is named “zycode” after the value of a password variable embedded in the JavaScript code which all these domains serve in their HTTP responses.

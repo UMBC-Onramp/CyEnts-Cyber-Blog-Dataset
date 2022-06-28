@@ -1,0 +1,77 @@
+FireEye Labs recently found a more advanced variant of Android.
+
+MisoSMS, the SMS-stealing malware that we uncovered last December — yet another sign of cybercriminals’ growing interest in hijacking mobile devices for surveillance and data theft.
+
+Like the original version of the malware, the new variant sends copies of users’ text messages to servers in China.
+
+But the newest rendition adds a few features that make it harder to detect, including a new disguise, encrypted transmissions, and command-and-control (CnC) communications that are handled natively rather than over email.
+
+FireEye Mobile Threat Prevention customers are already protected from both variants.
+
+Both variants of MisoSMS use the same names for receivers and services.
+
+While the old variant masquerades as an Android settings application, the new version presents itself as “Gplay Dsc” to the user.
+
+The new variant also abandons SMTP email as the transport method.
+
+It now handles all CnC communication natively in C++, making it harder for an analyst to analyze the malware by disassembling its ARM code.
+
+The newer version also hard codes specific public DNS servers such as the following: resolver1.opendns.com
+
+nscache.prserv.com resolver1.qwest.net resolver2.opendns.com google-public-dns-b.google.com google-public-dns-a.google.com mx1.oray.net.cn 183.136.132.176 183.136.132.170
+
+The new MisoSMS attempts to resolve its CnC domain name(puk[dot]nespigt[dot]iego[dot]net) from one of these DNS servers.
+
+In this way, MisoSMS stays quiet in sandbox environments, which typically use internal DNS servers and cut off access to outside networks.
+
+If the malware cannot access the hard-coded DNS servers, it does nothing and is therefore not detected.
+
+The new MisoSMS also uses a variant of the XTEA encryption algorithm to communicate with its CnC server.
+
+The request and responses of the CnC server are structured so that the first four bytes of the request and response contain the length of the encrypted blob of data.
+
+By skipping the first four bytes, we can decrypt the communications using the key embedded in the native binary.
+
+Figure 1 shows MisoSMS registering a newly infected device with the CnC server.
+
+The first four bytes in the encrypted payload mark the length of the message.
+
+The rest of the payload contains information about the infected device.
+
+[caption id=\"attachment_5080\" align=\"aligncenter\" width=\"621\"] Figure 1 - New Infection Registration[/caption] Figure 2 and Figure 3 show the SMS exfiltration mechanism, as seen in Figure 1, the first four bytes of the encrypted payload contains the length indicator of the payload.
+
+The intercepted SMS message is sent to the CnC with the Device ID of the already compromised device.
+
+[caption id=\"attachment_5078\"
+
+align=\"aligncenter\" width=\"640\"] Figure 2 - Encrypted
+
+CnC Communication containing stolen SMS[/caption] [caption id=\"attachment_5079\" align=\"aligncenter\" width=\"640\"] Figure 3 - Decrypted CnC Communication containing stolen SMS[/caption]
+
+The domain name of the CnC is also encrypted and stored as a byte array in the native binary.
+
+Once the encrypted byte array containing the CnC information is decrypted, the malware checks to see whether the CnC is a domain or an IP address.
+
+That check is  meaningful.
+
+Its existence implies the ability to change the CnC information dynamically.
+
+And that ability, in turn, suggests that MisoSMS uses excerpts of publically available code.
+
+The CnC server currently serves a Web page that resembles an Android app, as shown in Figure 4.
+
+[caption id=\"attachment_5081\" align=\"aligncenter\" width=\"349\"] Figure 4 - CnC serving an webpage[/caption]
+
+The Web page contains a link pointing to “hxxps://www.dropbox.com/s/t47d2nheqbhky64/%EA%B2%BD%20%EC%B0%B0%20%EC%B2%AD[dot]apk,” which is currently not available.
+
+Like the website, the MisoSMS app itself displays Korean text.
+
+The newest version of MisoSMS suggests that cyber attackers are increasingly eyeing mobile devices — and the valuable information they store — as targets.
+
+It also serves as a vivid reminder of how crucial protecting this threat vector is in today’s mobile environment.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

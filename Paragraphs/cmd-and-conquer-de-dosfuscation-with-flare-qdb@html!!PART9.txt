@@ -1,0 +1,5 @@
+
+Figure 5: Command data structure diagram By inspection, I found that cmd!Dispatch is responsible for executing both shell built-ins and executable programs, so unlike breaking on CreateProcess, it will not miss commands that do not result in process creation.
+Based on these findings, I wrote a flare-qdb script to parse and dump commands as they are executed.
+Introducing De-DOSfuscator De-DOSfuscator uses flare-qdb and Vivisect to hook the Dispatch function in cmd.exe and parse commands from memory.
+The De-DOSfuscator script runs in a 64-bit Python 2 interpreter and dumps commands to both the console and a log file.

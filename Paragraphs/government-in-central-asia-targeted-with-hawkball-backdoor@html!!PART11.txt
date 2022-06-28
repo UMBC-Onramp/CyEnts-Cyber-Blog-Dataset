@@ -1,0 +1,28 @@
+
+Anti-Debugging Tricks Debugger Detection With PEB The malware queries the value for the flag BeingDebugged from PEB to check whether the process is being debugged.
+Figure 19:
+Retrieve value from PEB
+NtQueryInformationProcess
+The malware uses the NtQueryInformationProcess API to detect if it is being debugged.
+The following flags are used:
+Passing value 0x7 to ProcessInformationClass: Figure 20: ProcessDebugPort verification Passing value 0x1E to ProcessInformationClass: Figure 21: ProcessDebugFlags verification Passing value 0x1F to ProcessInformationClass: Figure 22:
+ProcessDebugObject Conclusion HAWKBALL is a new backdoor that provides features attackers can use to collect information from a victim and deliver new payloads to the target.
+At the time of writing, the FireEye Multi-Vector Execution (MVX) engine is able to recognize and block this threat.
+We advise that all industries remain on alert, though, because the threat actors involved in this campaign may eventually broaden the scope of their current targeting.
+Indicators of Compromise (IOC) MD5 Name AC0EAC22CE12EAC9EE15CA03646ED70C Doc.rtf D90E45FBF11B5BBDCA945B24D155A4B2 hh14980443.wll Network Indicators 149.28.182[.]78:443 149.28.182[.]78:80 http://149.28.182[.]78/?t=0&&s=0&&p=
+wGH^69&&k=<tick_count>
+http://149.28.182[.]78/?e=0&&t=0&&k=<tick_count>
+http://149.28.182[.]78/?e=0&&t=<int_xor_key>&&k=<tick_count> Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET
+CLR 2.0.50727; .NET
+CLR 3.5.30729; .NET
+CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+FireEye Detections MD5 Product Signature Action AC0EAC22CE12EAC9EE15CA03646ED70C FireEye Email Security FireEye Network Security FireEye Endpoint Security FE_Exploit_RTF_EQGEN_7 Exploit.
+Generic.
+MVX Block D90E45FBF11B5BBDCA945B24D155A4B2 FireEye Email Security FireEye Network Security FireEye Endpoint Security Malware.
+Binary.
+Dll FE_APT_Backdoor_Win32_HawkBall_1 APT.Backdoor.
+Win.
+HawkBall Block Acknowledgement Thank you to Matt Williams for providing reverse engineering support.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

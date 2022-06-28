@@ -1,0 +1,15 @@
+
+Figure 12:
+Assigning meaningful names to methods makes it easier to keep analyzing the program Continuing to analyze the SchemaServerManager.
+Main method revealed that the sample persists across reboots.
+The persistence algorithm can be summarized as follows:
+The malware picks the name of a random running process, and then copies itself to %APPDATA% and C:\\ .
+For example, if svchost.exe is selected, then the malware copies itself to %APPDATA%\\svchost.exe and C:\\svchost.exe .
+The malware creates a shortcut %APPDATA%\\dotNET.lnk pointing to the copy of the malware under %APPDATA% .
+The malware creates a shortcut named dotNET.lnk in the logged-on user’s Startup folder pointing to %APPDATA%\\dotNET.lnk .
+The malware creates a shortcut C:\\Sysdll32.lnk pointing to the copy of the malware under C:\\ .
+The malware creates a shortcut named Sysdll32.lnk in the logged-on user’s Startup folder pointing to C:\\Sysdll32.lnk .
+The malware creates the registry value HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\scrss pointing to %APPDATA%\\dotNET.lnk .
+The malware creates the registry value HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Wininit pointing to C:\\Sysdll32.lnk .
+After its persistence steps, the malware checks for multiple instances of the malware:
+The malware sleeps for a random interval between 5 and 7 seconds.

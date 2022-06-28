@@ -1,0 +1,8 @@
+
+Network C2 events The network indicators are summarized in the “network_events” and “traffic” sections of the generated report.
+In Figure 10, we can see the IP address, port number and, in this case, HTTP headers associated with the connections made by the malware.
+In this example, when we emulated the sample, we instructed Speakeasy to create a memory dump of the emulated address space.
+A ZIP archive will get created of each memory allocation along with context around it.
+This context includes base address, size and a tag that is assigned by the emulator in order to identify what the memory allocation corresponds to.
+Figure 11 shows a snippet of the memory dump files created during emulation.
+The file names contain the tag and base address associated with each memory allocation.

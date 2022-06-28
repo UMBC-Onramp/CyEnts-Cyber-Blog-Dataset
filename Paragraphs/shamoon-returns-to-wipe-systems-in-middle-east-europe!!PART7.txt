@@ -1,0 +1,8 @@
+
+The malware checks whether the following shares exist to copy itself and spread:
+ADMIN$ C$\\WINDOWS D$\\WINDOWS E$\\WINDOWS
+Shamoon queries the service to retrieve specific information related to the LocalService account .
+It then retrieves the resources within the PE file to drop the components.
+Finding the location of the resource: Shamoon creates the file and sets the time to August 2012 as an antiforensic trick.
+It puts this date on any file it can destroy.
+The modification time can be used as an antiforensic trick to bypass detection based on the timeline, for example.

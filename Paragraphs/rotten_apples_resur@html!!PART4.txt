@@ -1,0 +1,13 @@
+
+We have provided the details of JavaScript and screenshots of interaction with the website in our earlier blog .
+What has Changed?
+Apparently the domains and email addresses used in previous version of the campaign were effectively taken down.
+Now the attackers have moved to a new malicious infrastructure; new domains, IPs and email addresses are being used for this campaign.
+The new domain names for the campaign are listed in Table 1, while their IPs and registrant emails are reported in Table 2 and Table 3, respectively.
+Domains List Table 1:
+Apple phishing domains serving the Zycode phishing kit.
+Unique IP(s)
+Table 2 shows the list of unique IPs, which are not the same as what was seen before.
+Table 2.
+IP addresses used by the domains.
+Unique Email Addresses The email addresses used to register these domains, showing no similarity with email addresses in the previous campaign, are shown in Table 3.

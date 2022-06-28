@@ -1,0 +1,9 @@
+
+Similarities between this variant and the original malware sample: Service name is the same: COMSysApp
+The DLL and ini files contain the same functions as described elsewhere in this post Data Reconnaissance
+The following information is gathered from the endpoint and sent to the control server.
+System info: Computer name System info using: cmd /c systeminfo >%temp%\\temp.ini List of currently running process using: cmd /c tasklist >%temp%\\temp.ini
+Exfiltration The data exfiltration process runs in the following sequence: The temp.ini files are copied into a text file that matches the pattern: From <COMPUTER-NAME> (<Month>-<Day> <Hour>-<Minute>-<Second>).txt.
+For example, From <COMPUTER-NAME> (01-04 11-40-02).txt
+All the text files are now packed into the archive temp.zip (%temp%\\temp.zip) zip is Base64 encoded (with a custom key, same as that used in the malicious document) and then copied to post.txt txt is uploaded to the control server Additional Commands and Capabilities The service-based DLL implant traverses to the /htdocs/ directory on the FTP server and looks for any files with the keywords: TO EVERYONE:
+Commands issued to all infected endpoints TO <COMPUTERNAME>: Commands issued to endpoints matching the ComputerName

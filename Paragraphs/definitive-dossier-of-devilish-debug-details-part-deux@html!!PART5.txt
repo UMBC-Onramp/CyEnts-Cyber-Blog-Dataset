@@ -1,0 +1,6 @@
+
+Building Features Next, we had to start building features.
+This is where the fun began.
+Looking at dozens and dozens of PDB paths, we simply started recording various things that ‘pop out’ to an analyst.
+As noted earlier, a file path contains tons of implicit information, beyond simply being a string-based artifact.
+Some analogies we have found useful is that a file path is more akin to a geographical location in its representation of a location on the file system, or like a sentence in that it reflects a series of dependent items.

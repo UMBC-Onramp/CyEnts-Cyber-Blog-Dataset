@@ -1,0 +1,8 @@
+
+Ransomware developers increase the odds of victims paying ransoms by crippling as much of the business operation as possible, demonstrating a jump from ICS Kill Chain Stage 1 to Stage 2 operations.
+Threat groups that Dragos tracks such as KAMACITE and ELECTRUM — with links to Hive0103 or Sandworm, a group multiple organizations have attributed to Russian government actors — work as an access-effects team and show how a Stage 1 intrusion can quickly become a Stage 2 intrusion.
+KAMACITE deploys malware with ICS-specific capabilities.
+This includes various modules linked to BLACKENERGY2 malware, infecting asset owners in Europe and North America.
+After compromising the IT environment, KAMACITE hands off ICS network access to other activity groups, like ELECTRUM, which was suspected in the 2016 Ukraine power event .
+Another example of an access-effects team, which Dragos also tracks, is PARISITE , which enables operations for MAGNALLIUM — a group with links to Hive0016 or APT33 and has been attributed to Iranian state actors.
+PARISITE’s initial access activity is associated with a focus on ICS-related entities and serves as an initial access vector for future disruptive operations associated with MAGNALLIUM.

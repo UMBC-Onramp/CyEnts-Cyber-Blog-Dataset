@@ -1,0 +1,1 @@
+Malware analysts routinely use the Strings program during static analysis in order to inspect a binary's printable characters.

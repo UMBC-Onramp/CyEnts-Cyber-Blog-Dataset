@@ -1,0 +1,5 @@
+
+Background Beginning in 2017, the Lazarus group heavily targeted individuals with spear phishing emails impersonating job recruiters which contained malicious documents.
+The campaign lasted from April to October and used job descriptions relevant to target organizations, in both English and Korean language.
+The objective was to gain access to the target’s environment and obtain key military program insight or steal money.
+The 2017 campaign targets ranged from defense contractors to financial institutions, including crypto currency exchanges, however; much of this fake job recruitment activity ceased months later, with the last activity observed October 22, 2017.

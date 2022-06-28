@@ -1,0 +1,14 @@
+
+In the Shamoon attacks of 2016–2017, the adversaries used both the Shamoon Version 2 wiper and the wiper Stonedrill.
+In the 2018 attacks, we find the Shamoon Version 3 wiper as well as the wiper Filerase, first mentioned by Symantec .
+These new wiper samples (Filerase) differ from the Shamoon Version 3, which we analyzed last week.
+The latest Shamoon appears to be part of a toolkit with several modules.
+We identified the following modules: OCLC.exe: Used to read a list of targeted computers created by the attackers.
+This tool is responsible to run the second tool, spreader.exe, with the list of each targeted machine.
+Spreader.exe: Used to spread the file eraser in each machine previously set.
+It also gets information about the OS version.
+SpreaderPsexec.exe:
+Similar to spreader.exe but uses psexec.exe to remotely execute the wiper.
+SlHost.exe:
+The new wiper, which browses the targeted system and deletes every file.
+The attackers have essentially packaged an old version (V2) of Shamoon with an unsophisticated toolkit coded in .Net.

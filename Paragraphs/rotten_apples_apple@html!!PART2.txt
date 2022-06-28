@@ -1,0 +1,7 @@
+
+Apple provides all of its customers with an Apple ID, a centralized personal account that gives access to iCloud and other Apple features and services such as the iTunes Store and App Store.
+Users will provide their Apple ID to sign in to iCloud[.]com, and use the same Apple ID to set up iCloud on their iPhone, iPad, iPod Touch, Mac, or Windows computer.
+iCloud ensures that users always have the latest versions of their important information –  including documents, photos, notes, and contacts – on all of their Apple devices.
+iCloud provides an easy interface to share photos, calendars, locations and more with friends and family, and even helps users find their device if they lose it.
+Perhaps most importantly, its iCloud Keychain feature allows user to store passwords and credit card information and have it entered automatically on their iOS devices and Mac computers.
+Anyone with access to an Apple ID, password and some additional information, such as date of birth and device screen lock code, can completely take over the device and use the credit card information to impersonate the user and make purchases via the Apple Store.

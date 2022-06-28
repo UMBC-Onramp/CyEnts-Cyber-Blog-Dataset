@@ -1,0 +1,4 @@
+
+Although we have only directly observed APT33 use DROPSHOT to deliver the TURNEDUP backdoor, we have identified multiple DROPSHOT samples in the wild that drop SHAPESHIFT.
+The SHAPESHIFT malware is capable of wiping disks, erasing volumes and deleting files, depending on its configuration.
+Both DROPSHOT and SHAPESHIFT contain Farsi language artifacts, which indicates they may have been developed by a Farsi language speaker (Farsi is the predominant and official language of Iran).

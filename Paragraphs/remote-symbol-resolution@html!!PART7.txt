@@ -1,0 +1,4 @@
+
+Here we have two manifestations of essentially the same problem.
+How do we best resolve calculated API addresses and add this information back into our IDA database?
+One of the first techniques used was to calculate all of the final addresses, write them to a binary file, inject the data into the process, and examine the table in the debugger (Figure 4).

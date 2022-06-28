@@ -1,0 +1,6 @@
+
+A few changes to the registry could make the malware run correctly, but we do not want to help the malware authors fix their product.
+Even though GandCrab’s authors quickly repair mistakes as they are pointed out, they still fail to find some of the basic errors by themselves.
+(McAfee has had no contact with GandCrab’s developers.)
+The second release writes a random extension of five letters instead of using the normal .CRAB or .KRAB extension seen in previous versions.
+The malware keeps this information as binary data in a new registry entry in the subkey “ext_data\\data” and in the value entry of “ext.”

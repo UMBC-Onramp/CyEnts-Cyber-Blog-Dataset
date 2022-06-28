@@ -1,0 +1,4 @@
+
+For the scope of this red team, the customer wanted to focus entirely on its OT production network.
+We did not perform any tests in IT networks and instead begun the engagement with initial access granted in the form of a static IP address in Big Steam Work's OT network.
+The goal of the engagement was to deliver consequence-driven analysis exploring a scenario that could cause a significant physical impact to both safety and operations.

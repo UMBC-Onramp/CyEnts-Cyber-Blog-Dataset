@@ -1,0 +1,6 @@
+
+As a scientific work, Spook.js is set to alter the software landscape through the introduction of new recommendations for website security (for example, the authors propose moving authorization pages to a separate domain name).
+Subsequent studies may find ways to make attacks a little easier, but most likely they will lead to more rounds of security enhancements.
+Even if Spectre-type vulnerabilities can be exploited en masse, the protection means will be the same as for any malware.
+Security vendors will simply add the new types of attacks to the list of those to be monitored and blocked before execution.
+It’s also possible that one day researchers will stumble upon a feature of Spectre-like vulnerabilities that necessitates a major reworking of the entire modern IT ecosystem.

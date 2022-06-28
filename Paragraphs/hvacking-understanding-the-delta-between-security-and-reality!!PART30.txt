@@ -1,0 +1,6 @@
+
+Writing the Exploit Before attempting exploitation, we wanted to first investigate if the system had any exploit mitigations or limitations we needed to be aware of.
+We began by running an open source script called “checksec.sh”.
+This script, when run on a binary, will report if any of the common exploit mitigations are in place.
+Figure 21 shows the script’s output when ran on the primary Delta binary, named “dactetra”.
+Figure 21

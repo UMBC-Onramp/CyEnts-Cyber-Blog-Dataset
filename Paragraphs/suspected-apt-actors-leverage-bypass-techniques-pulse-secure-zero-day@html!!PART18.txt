@@ -1,0 +1,12 @@
+
+Yara rules, Snort rules, and hashes are published on Mandiant’s GitHub page .
+Detections and Mitigations 1d3ab04e21cfd40aa8d4300a359a09e3b520d39b1496be1e4bc91ae1f6730ecc HARDPULSE contains an embedded 'recovery' URL https://ive-host/dana-na/auth/recover[.]cgi?token=<varies> that may be accessed by an attacker.
+The sample uses the POST parameters checkcode , hashid , m , and filename .
+This URL is not present in legitimate versions of this file.
+7fa71a7f76ef63465cfeacf58217e0b66fc71bc81d37c44380a6f572b8a3ec7a 68743e17f393d1f85ee937dffacc91e081b5f6f43477111ac96aa9d44826e4d2
+d72daafedf41d484f7f9816f7f076a9249a6808f1899649b7daa22c0447bb37b
+PULSEJUMP, RADIALPULSE AND PACEMAKER use the following files to record credentials: /tmp/dsactiveuser.statementcounters /tmp/dsstartssh.statementcounters /tmp/
+dsserver-check.statementcounters cd09ec795a8f4b6ced003500a44d810f49943514e2f92c81ab96c33e1c0fbd68 The malicious operations of SLOWPULSE can be detected via log correlation between the authentication servers responsible for LDAP and RADIUS auth and the VPN server.
+Authentication failures in either LDAP or RADIUS logs with the associated VPN logins showing success would be an anomalous event worthy of flagging.
+a1dcdf62aafc36dd8cf64774dea80d79fb4e24ba2a82adf4d944d9186acd1cc1
+Upon invocation of the PULSECHECK webshell, the following HTTP request headers will be sent: Key Value REQUEST_METHOD

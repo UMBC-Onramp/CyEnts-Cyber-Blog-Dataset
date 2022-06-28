@@ -1,0 +1,9 @@
+
+Shellcode analysis
+Subsequently, the malicious Flash code downloads a file containing the dropped malware payload.
+The beginning of the file is a JPG image; the end of the file (offset 36321) is the payload, encoded with an XOR key of 0x95.
+The attacker appends the payload to the shellcode before pivoting to code control.
+Then, when the shellcode is executed, the malware creates files “sqlrenew.txt” and “stream.exe”.
+The tail of the image file is decoded, and written to these files.
+“sqlrenew.txt” is then executed with the LoadLibraryA Windows API call.
+ZxShell payload analysis As documented above, this exploit dropped an XOR (0x95) payload that executed a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce).

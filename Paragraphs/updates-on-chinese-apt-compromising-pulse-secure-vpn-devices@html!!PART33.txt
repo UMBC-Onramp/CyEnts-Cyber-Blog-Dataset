@@ -1,0 +1,7 @@
+
+File Name File Type Size Compile Time dsrlog
+ELF.X86
+13332
+The utility expects to be run from the command line as follows: drslog <pid> <code2_string> <code3_string> <command> Where <pid> is the pid process ID to patch in memory, <code2_string> and <code3_string> are two strings to write into the target process, and <command> is either 'e' or 'E' for installation or 'u' or 'U' for uninstallation.
+During installation (using the 'e' or 'E' <command>), the <code2_string> <code3_string> command line strings are written to the target process at hard-coded memory addresses, a small amount of code is written, and a jump instruction to the code snippet is patched in memory of the target process.
+The added code checks whether an argument is equal to either <code2_string> <code3_string> strings, and if, so skips a function call in the target process.

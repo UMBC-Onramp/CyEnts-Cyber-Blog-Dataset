@@ -1,0 +1,13 @@
+
+To measure the popularity of Flash, we turned to Q-Success’ W3Techs web survey data.
+The following table shows the use of four client-side languages, with Flash declining steadily since 2011.
+JavaScript, on the other hand, today is nearly ubiquitous, at 95%.
+The two leading languages are graphed in the chart that follows the table.
+Historical Yearly Trends in the Usage of Client-Side Programming Languages for Websites Usage (in % of sites) of Client-Side Programming Languages for Websites Chart data as of March 8, 2018.
+Source for table and chart : © 2009-2018 Q-Success DI Gelbmann GmbH
+From W3Techs data, we can see that Flash use has declined steadily, to only 5% of surveyed web sites.
+Doesn’t that suggest that Flash exploitation would also decline or even stop?
+Unfortunately, it does not.
+The following W3Techs chart shows that although the number of sites using Flash is fairly low, enough high-traffic sites employ it to keep Flash popular.
+High-Traffic Sites That Still Use Adobe Flash Source: PublicWWW .
+If popular websites continue to use Flash, then Flash Player will remain in use on users’ machines for some time.

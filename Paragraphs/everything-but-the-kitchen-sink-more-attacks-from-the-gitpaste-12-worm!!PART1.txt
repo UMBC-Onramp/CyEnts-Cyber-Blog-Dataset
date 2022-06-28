@@ -1,0 +1,1 @@
+In November, Juniper Threat Labs documented a new wormable cryptomining campaign dubbed Gitpaste-12 .

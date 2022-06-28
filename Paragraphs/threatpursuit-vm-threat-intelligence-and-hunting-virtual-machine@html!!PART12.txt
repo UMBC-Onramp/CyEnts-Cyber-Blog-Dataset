@@ -1,0 +1,5 @@
+
+Figure 10: MISP triage of events Under the tags section of our newly created FIN11 event, we apply relevant tags to begin associating aspects of contextual information related to our target, as seen in Figure 11.
+Figure 11: MISP Event setup for FIN11
+We then select “Add Attribute” into our event, which will allow us to import our MD5 hashes into the MISP galaxy, as seen in Figure 12.
+Using both the category and type, we select the appropriate values that best represent our dataset and prepare to submit that data into our event.

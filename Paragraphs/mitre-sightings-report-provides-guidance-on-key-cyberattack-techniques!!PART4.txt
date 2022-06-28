@@ -1,0 +1,7 @@
+
+Defenders can use this information to create a threat-informed defense against what they are most likely to see, not just the latest cyberthreat headlines.”
+The Extremely Useful Takeaway The biggest takeaway from the research data is that 90% of all attacks arise from only 15 techniques across six tactics.
+This intel is extremely useful as it significantly narrows down the most likely threats from the entire corpus of more than 370 possible techniques across 14 tactics.
+The MITRE ATT&CK framework has been the de facto standard for mapping and responding to cyberattacks of all types.
+Using it to analyze aggregated global threat data from various sources and then presenting according to the prevalence of potential attacks gives defenders a unique opportunity to change the economics of the attack cycle.
+Instead of testing for all techniques and their respective defenses—which can be very costly and time-consuming—defenders can now prioritize specific techniques and build defenses around them while focusing their red team efforts on trying new strategies for implementing those techniques.

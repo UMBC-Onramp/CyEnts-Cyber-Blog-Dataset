@@ -1,0 +1,9 @@
+
+In this blog, we will examine details of this attack as well as the infrastructure they used.
+The reader will see the multi-step process used to ensure that the target would be infected, including evasive steps to bypass detection technologies via the .XLL file extension and the use of a valid signed digital certificate.
+What Exactly is an XLL File Extension?
+An XLL file extension is used by Excel Add-in files to allow third party applications to add extra functionality to Excel.
+XLL files are similar in structure to DLL files.
+They allow for calls of specific Excel commands, worksheet functions from Visual Basic (VBA), registered XLL commands, and from functions referenced in Excel.
+The use of XLL files is not as common as a maliciously crafted XLS file that contain macros or exploits, so it is a rarely observed evasion tactic used by threat actors to bypass endpoint detection.
+Complicating things even further, the malicious XLL file used in this campaign (at the time of analysis) is signed with a valid digital signature and chained accordingly.

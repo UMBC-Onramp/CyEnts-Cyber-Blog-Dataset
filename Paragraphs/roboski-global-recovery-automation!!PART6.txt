@@ -1,0 +1,7 @@
+
+Analyzed emails were sent between the second and third week of February 2021 and were categorized into three main themes: purchase order/request for quotation/inquiry, shipping notification and payment notice/bank transfers.
+The sample emails were sent to 15 unique companies located in 12 different countries across Europe, South America, the Middle East and South Asia.
+In all instances, the phishing emails were addressed to companies associated with the manufacture or export of items supporting and/or supplying construction, transport, engineering or energy services.
+Most samples were directed at entities in Europe, with the highest concentration of targeted organizations based in Romania, Italy and Germany.
+X-Force and CT analysts assessed with high confidence that global trade- and logistics-themed phishing campaigns will continue to plague organizations into the year ahead, as the recovery of global trade unfolds over time.
+Organizations, especially those engaged in import and export, should exercise extra caution and seek to cultivate a culture of cyber awareness among management and employees.

@@ -1,0 +1,8 @@
+
+We sign in to the Mandiant Advantage portal (Figure 5) using our public subscription to get a snapshot view of any highlighted activity (Figure 6).
+Figure 5:
+Mandiant Advantage portal Figure 6: Actor activity for Q3 2020 Based on Mandiant Advantage report, we notice a number of highly active APT and FIN actors.
+We choose to drill in to one of these actors by hovering our mouse and selecting the actor tag FIN11.
+We receive a high-level snapshot summary view of the threat actor, their targeted industry verticals, associated reports and much more, as seen in Figure 7.
+We also may choose to select the most recent report associated with FIN11 for review.
+Figure 7: FIN11 actor summary By selecting the “View Full Page” button as seen at the top right corner of Figure 6, we can use the feature to download indicators, as seen in the top right corner of Figure 8.

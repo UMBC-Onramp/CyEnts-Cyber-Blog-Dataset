@@ -1,0 +1,5 @@
+FortiGuard Labs Research Thanks to Val Saengphaibul and Fred Gutierrez who helped contribute to this blog.
+Affected Platforms: Windows Impacted Users: Windows users Impact:
+Compromised machines are under the control of the threat actor Severity Level: Medium Spearphishing crafted with industry-specific terms derived from intelligence gathering techniques to trick a recipient into opening a file is especially difficult to identify.
+This is especially true when an adversary has knowledge of how a business works and the processes that underpin it.
+Using this knowledge, a lure can be crafted that takes advantage of these day-to-day processes – for example, settling the cost of a fuel transaction.

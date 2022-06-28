@@ -1,0 +1,8 @@
+
+The dropper uses the Add-Type cmdlet to define a new .NET class for the backdoor.
+The Add-Type cmdlet can be used to define a new .NET class using an existing assembly or source code files or specifying source code inline or saved in a variable.
+In this case, the dropper uses SMOKEDHAM backdoor source code that is stored in a variable.
+The SMOKEDHAM backdoor source code is embedded as an encrypted string.
+The dropper uses the ConvertTo-SecureString cmdlet and an embedded key to decrypt the source code prior to executing the Add-Type cmdlet.
+After defining a new .NET class for the backdoor, the dropper executes the backdoor's entry point.
+The dropper configures the backdoor with a C2 server address, RC4 encryption key, and sleep interval.

@@ -1,0 +1,8 @@
+
+[1-10] FF FF FF FF [1-10] FF FF FF FF [1-30] 03 00 00 00
+[1-10] 03 00 00 00 } condition: (uint16(0) ==
+0x5A4D and uint32(uint32(0x3C))
+=
+= 0x00004550) and $consts } Figure 20: DARKSIDE YARA rule rule Dropper_Win_Darkside_1 { meta: author = \"FireEye\" date_created = \"2021-05-11\" description = \"Detection for on the binary that was used as the dropper leading to DARKSIDE.\" strings: $CommonDLLs1 = \"KERNEL32.dll\" fullword $CommonDLLs2 = \"USER32.dll\" fullword $CommonDLLs3 =
+\"ADVAPI32.dll\" fullword $CommonDLLs4 =
+\"ole32.dll\" fullword $KeyString1 = { 74 79 70 65 3D 22 77 69 6E 33 32 22 20 6E 61 6D 65 3D 22 4D 69 63 72 6F 73

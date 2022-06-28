@@ -1,0 +1,7 @@
+
+In the following blog we will explain some of the details we found that helped unmask the suspected actor behind the Rubella Macro Builder.
+What is an Office Macro Builder?
+An Office Macro Builder is a toolkit designed to weaponize an Office document so it can deliver a malicious payload by the use an obfuscated macro code that purposely tries to bypass endpoint security defenses.
+By using a toolkit dedicated to this purpose, an actor can push out higher quantities of malicious documents and successfully outsource the first stage evasion and delivery process to a specialized third party.
+Below is an overview with the general workings of an Office Macro Builder.
+The Defense evasion shown here is specific to Rubella Office Macro Builder.

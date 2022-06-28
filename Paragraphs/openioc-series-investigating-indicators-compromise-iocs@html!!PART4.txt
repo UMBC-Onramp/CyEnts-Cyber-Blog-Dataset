@@ -1,0 +1,5 @@
+
+These events were likely the result of Bob opening the PDF.
+John sent the PDF to a malware analyst to determine the nature of the exploit used to infect Bob's PC.
+The first IOC John writes describes the malware identified on Bob's PC, \"acmCleanup.exe\", as well as the malicious PDF.
+IOCs sometimes start out as rudimentary - looking for the known file hashes, filenames and persistence mechanisms of the malware identified.

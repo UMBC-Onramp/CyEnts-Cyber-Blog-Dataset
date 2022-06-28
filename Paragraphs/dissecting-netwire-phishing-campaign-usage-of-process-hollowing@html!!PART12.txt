@@ -1,0 +1,13 @@
+
+“Software\\Microsoft\\Internet Explorer\\IntelliForms\\Storage2” “vaultcli.dll: VaultOpenVault,VaultCloseVault,VaultEnumerateItem,VaultGetItem,VaultFree” “select *  from moz_login” Stealing login details from browsers A complete report on the NETWIRE backdoor family is available to customers who subscribe to the FireEye Intelligence portal .
+Indicators of Compromise Host-based indicators: dac4ed7c1c56de7d74eb238c566637aa Initial attack vector .vbs file Network-based indicators: 178.239.21.]62:1919 kingshakes[.]linkpc[.]net 105.112.35[.]72:3575 homi[.]myddns[.]rocks C2 domains of NETWIRE Trojan FireEye Detection FireEye detection names for the indicators in the attack: Endpoint security Exploit Guard: Blocks execution of wscript IOC: POWERSHELL DOWNLOADER D (METHODOLOGY) AV: Trojan.
+Agent.
+DRAI Network Security Backdoor.
+Androm Email Security Malicious.
+URL Malware.Binary.vbs Conclusion Malware authors continue to use different \"fileless\" process execution techniques to reduce the number of indicators on an endpoint.
+The lack of visibility into .NET process execution combined with the flexibility of PowerShell makes this technique all the more effective.
+FireEye Endpoint Security and the FireEye Network Security detect and block this attack at several stages of the attack chain.
+Acknowledgement We would like to thank Frederick House, Arvind Gowda, Nart Villeneuve and Nick Carr for their valuable feedback.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

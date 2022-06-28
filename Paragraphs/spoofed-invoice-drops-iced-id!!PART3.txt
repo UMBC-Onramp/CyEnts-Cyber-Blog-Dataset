@@ -1,0 +1,14 @@
+
+This instance also uses an interesting deployment method.
+It uses the ISO format, which is mounted automatically as a disk in Windows.
+ISO files can also be used to create bootable CD-ROMs or install an operating system or virtual machine.
+It also contains a LNK (shortcut file) used to launch a DLL (Dynamic-link Library).
+This blog details the infection process and subsequent malware deployment by the threat actors behind IcedID.
+The Phishing E-mail The e-mail originated from an IP address in Belize, at 179[.]60[.]150[.]96.
+It spoofs the originating e-mail address to appear to have been sent from another fuel provider in Ukraine.
+The e-mail contains both English and Ukrainian elements and looks realistic given the mention of extra security measures regarding the attachment.
+Attached to the e-mail is a file named “invoice_15.zip”.
+Extracting the Zip file will drop “invoice_15.iso” and begin the first phase of infection.
+ISO Windows is capable of mounting iso files as external disks.
+Doing so will present the user with a shortcut called “document.”
+In most cases, the file extension will be hidden from the user, making it appear as an actual document.

@@ -1,0 +1,4 @@
+
+PDB path Breitling One of the posts Rubella placed on a popular hacker forum was promoting a piece of free software the actor coded to spoof email.
+The posting contained a link to VirusTotal and included a SHA-256 hash of the software.
+This gained our interest since it provided a possibility to link the adversary to the capability.

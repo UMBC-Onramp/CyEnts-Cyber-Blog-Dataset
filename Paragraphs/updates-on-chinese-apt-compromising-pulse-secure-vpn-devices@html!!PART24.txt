@@ -1,0 +1,7 @@
+
+Recently observed Chinese cyber espionage activity exhibits an increased diligence in operational security, familiarity with network defender investigation techniques, and cognizance of the forensic evidence they leave behind.
+We observe the resurgence of older Chinese espionage groups, including APT4 and APT5 after long periods of dormancy and currently active groups engage in frequent and widespread campaigns.
+Redline Withdrawn?
+The Obama-Xi agreement prohibits the theft of intellectual property with purely commercial applications for the purpose of gaining a competitive advantage.
+It does not cover government or diplomatic information, sensitive business communications, IT data, PII, or intellectual property with military or dual use applications.
+We have direct evidence of UNC2630, UNC2717 and other Chinese APT actors stealing credentials, email communications, and intellectual property with dual commercial and military applications.

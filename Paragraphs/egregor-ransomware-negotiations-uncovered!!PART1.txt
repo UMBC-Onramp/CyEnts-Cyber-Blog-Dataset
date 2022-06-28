@@ -1,0 +1,7 @@
+Ransomware attacks are topping the charts as the most common attack type to target organizations with a constant drumbeat of attacks impacting industries across the board.
+In fact, IBM Security X-Force has seen a more than 10% increase in ransomware incident response requests compared to this time last year.
+Ransomware is well on its way toward becoming a global billion-dollar enterprise – one that victims are funding.
+Attackers are operating like a well-oiled business industry, yielding high profits in a year that most businesses struggled.
+Why?
+The new ransomware business model is relentless, extortive and paying off.
+IBM Security X-Force Threat Intelligence analysts, together with Cylera , an IoT and medical device security intelligence company that works with IBM Security to deliver IoMT solutions, have obtained and analyzed hours of chat correspondence and negotiations that occurred in December 2020 between the notorious Egregor ransomware actors, responsible for upwards of $80 million dollars in losses globally.

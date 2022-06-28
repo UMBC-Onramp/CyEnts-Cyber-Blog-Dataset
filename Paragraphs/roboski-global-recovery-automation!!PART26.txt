@@ -1,0 +1,6 @@
+
+In addition to being hex-encoded, the .NET
+Microsoft resource name and base XOR key are Base64 encoded.
+A .NET obfuscator is leveraged to encrypt all strings in the RoboSki packer, inhibiting the ability to easily extract the resource name and base XOR key.
+All 55 RoboSki packer samples contained the same RoboSki decryption component.
+After updating the parser module(s) to support the variations observed in the RoboSki packer, approximately 1,300 additional RoboSki packer samples were obtained via VirusTotal and subsequently run against the capability.

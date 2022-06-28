@@ -1,0 +1,11 @@
+
+The infection The two brothers did not directly infect their victims with ransomware; they took a multistep approach.
+Their distribution method was via newsgroup channels.
+They hooked a small piece of malicious code to known software or license-key generators before posting the software packages on the newsgroups.
+Once victims installed the package or ran the key generator, they would become part of a botnet through the software the brothers named Comhost, which can record keystrokes, search for credentials, and steal Bitcoin wallets.
+Comhost can also upload and execute binaries received from the control server they named Sonar.
+(We believe Sonar is modified a version of the popular Solar botnet software.)
+The Sonar botnet panel.
+Once they had accumulated enough bots, they simply pushed CoinVault to all their victims and locked thousands of computers at once.
+This method made it hard for victims to figure out how they were attacked, because weeks could pass between the initial infection and the encryption.
+By spreading their ransomware via newsgroups with pirated software, they discouraged victims from going to the police out of fear of prosecution and copyright-violation fines.

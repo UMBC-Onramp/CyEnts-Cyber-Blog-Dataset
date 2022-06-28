@@ -1,0 +1,5 @@
+
+You can see them if you look in the right location in the malware code before it executes its infection routine.
+Decrypting the Ransom Note To extract the ransom note, REvil ransomware decrypts a large chunk of bytes using a simple RC4 algorithm to generate a base64 blob of string.
+This string is then decoded by calling the CryptStringToBinaryW API, as shown in Figure 4.
+The RC4 algorithm shown above is the same code that decrypts most of the strings that the malware needs, including the C&Cs used to exfiltrate information from the infected machine (Figure 5).

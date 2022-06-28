@@ -1,0 +1,9 @@
+
+The stated goals of the IMA subsystem are “to detect if files have been accidentally or maliciously altered, both remotely and locally, appraise a file’s measurement against a ‘good’ value stored as an extended attribute, and enforce local file integrity.”
+To achieve these goals, IMA provides several functions, including: Collect – “measure” a file before it is accessed.
+The term measurement in this context means to grab a hash of the file data, the hash of some file metadata and the file path, and then store this data in a runtime measurement list.
+Store – add the measurement to a kernel resident list and, if a hardware Trusted Platform Module (TPM) is present, extend the IMA Platform Configuration Register (PCR).
+TPM and PCR are part of an international standard for dedicated microcontrollers intended to secure hardware.
+Attest – if present, use the TPM to sign the IMA PCR value to allow a remote validation of the measurement list.
+Appraise – enforce local validation of a measurement against a “good” value stored in an extended attribute of the file.
+Protect – protect a file’s security extended attributes (including appraisal hash) against off-line attack.

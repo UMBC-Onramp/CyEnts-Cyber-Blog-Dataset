@@ -1,0 +1,10 @@
+
+lolol.sh terminating other processes on the target device.
+The script then tries to download a set of malicious binaries, one for each common CPU architecture.
+As before, the final payload is Mirai botnet malware.
+Each binary is renamed to nginx (a common web server and load balancer) before the script attempts to run it.
+Only the binary matching the target device architecture will successfully execute, and that process will immediately rename itself to avoid being terminated the next time lolol.sh runs.
+(Line 60 appears to be an error in the script.)
+Figure 5.
+lolol.sh attempting to download and execute Mirai binaries.
+To ensure persistence, the script downloads the latest version of lolol.sh and sets it to run every 10 minutes as a cron job.

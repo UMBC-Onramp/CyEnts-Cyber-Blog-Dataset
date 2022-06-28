@@ -1,0 +1,10 @@
+
+The chain enables anyone to validate all transactions without going to an outside source.
+From this, decentralized currencies such as Bitcoin are possible.
+Proof-of-work blockchain.
+Source: https://bitcoin.org/bitcoin.pdf .
+Blockchain Attacks Attackers have adopted many methods targeting consumers and businesses.
+The primary attack vectors include phishing, malware, implementation vulnerabilities, and technology.
+In a phishing scheme in January, Iota cryptocurrency lost $4 million to scams that lasted several months.
+Malware authors often change their focus.
+In late 2017 to early 2018 some have migrated from deploying ransomware to cryptomining.

@@ -1,0 +1,4 @@
+
+Throughout our investigations, we did not directly observe the staging or exfiltration of any data by Chinese espionage actors that could be considered a violation of the Obama-Xi agreement.
+Given the narrow definition of commercial intellectual property theft and the limited availability of forensic evidence, it is possible that our assessment will change with the discovery of new information.
+Evidence collected by Mandiant over the past decade suggests that norms and diplomatic agreements do not significantly limit China's use of its cyber threat capabilities, particularly when serving high-priority missions.

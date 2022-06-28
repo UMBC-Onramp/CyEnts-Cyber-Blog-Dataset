@@ -1,0 +1,4 @@
+
+This could be an indicator that an attacker has connected a rogue PTA server hosted on an attacker’s infrastructure (Figure 17).
+Figure 17: Azure AD Sign-in logs—Azure AD Application Proxy Connector If using Azure Sentinel, this event will also be registered in the Azure AuditLogs table as a “ Register Connector ” OperationName (Figure 18).
+Figure 18: Register Connector—Azure Sentinel logs In the Azure Management Portal under the Azure AD Connect blade, review all registered servers running PTA Agent.

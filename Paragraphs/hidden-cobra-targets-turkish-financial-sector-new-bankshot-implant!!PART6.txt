@@ -1,0 +1,5 @@
+
+The malicious DLL is not a service DLL
+because it lacks ServiceMain().
+To mask itself, it can run as a regular library loaded into a legitimate process.
+The malware begins by creating a new thread from the DllMain() function to carry out its malicious activities: New thread created in the malware’s DllMain() function.

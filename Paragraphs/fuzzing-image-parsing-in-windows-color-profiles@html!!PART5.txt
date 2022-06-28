@@ -1,0 +1,4 @@
+
+ Looking for any recent vulnerabilities in ICM32, we can see multiple bugs from 2017-2018 by Project Zero and ZDI researchers, but then relative silence from 2019 onwards.
+Making a Harness Although there is a list of ICM APIs in MSDN, we need to find an API sequence used by Windows for any ICC related operations.
+One of the ways to find our API sequence is to search a disassembly of Windows DLLs and EXEs in hope to find the color profile APIs being used.

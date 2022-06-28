@@ -1,0 +1,7 @@
+
+Deletion of Volume Shadow Copies DEATHRANSOM, HELLOKITTY, and FIVEHANDS use the same code to delete volume shadow copies via WMI by performing the query select * from Win32_ShadowCopy and then deleting each instance returned by its id. Encryption Operations Each of these three malware families utilizes a similar encryption scheme.
+An asymmetric public key is either hard-coded or generated.
+A unique symmetric key is generated for each encrypted file.
+After each file is encrypted, the asymmetric key will encrypt the symmetric key and append it to the encrypted file.
+Additionally, a unique four byte magic value is appended to the end of the encrypted file.
+The malware checks for these magic bytes to ensure it does not encrypt a previously encrypted file again.

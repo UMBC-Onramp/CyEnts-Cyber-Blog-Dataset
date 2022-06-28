@@ -1,0 +1,6 @@
+
+Often, this dictionary is named userData in the user-defined callbacks, as in the examples below, due to its naming in Unicorn.
+ironstrings uses this to access function analysis data and store recovered strings across its various hooks.
+The dictionary also provides access to the EmuHelper object and emulation meta data.
+Figure 2: flare-emu example hook implementations Installation Download and install flare-emu as described at the GitHub installation page .
+ironstrings is available, along with our other IDA Pro plugins and scripts, at our ironstrings GitHub page .

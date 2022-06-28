@@ -1,0 +1,3 @@
+
+Although we do not believe that this theft will greatly advance the attacker’s overall capabilities, FireEye is doing everything it can to prevent such a scenario.
+It’s important to note that FireEye has not seen these tools disseminated or used by any adversaries, and we will continue to monitor for any such activity along with our security partners.

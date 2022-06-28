@@ -1,0 +1,4 @@
+
+An IDAPython script named objc2_xrefs_helper was also introduced in the post to help fix these cross-references issues.
+If you have not read that blog post, I recommend reading it before continuing on reading this post as it provides some context for what makes objc2_analyzer particularly useful.
+A major shortcoming of objc2_xrefs_helper was that if a selector name was ambiguous, meaning that two or more classes implement a method with the same name, the script was unable to determine which class the referenced selector belonged to at any given location in the binary and had to ignore such cases when fixing cross-references.

@@ -1,0 +1,4 @@
+
+The scam website, however, prominently features a button labeled Claim accumulated rewards .
+A page disguised as Uniswap offers 2.5 ETH Clicking the button takes the victim to a screen requesting the private key or mnemonic phrase for their cryptowallet (in our story, the scammers requested a Metamask wallet).
+In this case, a mnemonic phrase , or seed phrase, is a sequence of normal human words that restores access to a wallet in the event of a technical failure or a change of device.

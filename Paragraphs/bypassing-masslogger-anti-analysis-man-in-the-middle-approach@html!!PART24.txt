@@ -1,0 +1,5 @@
+
+Therefore, JITM also includes a partially implemented .NET
+metadata parser: Script\\pydnet.py .
+This script uses pefile and vivisect modules and parses the PE file up to the Method table to extract all methods and their associated RVAs.
+Figure 16: Bin-123.exe before and after adding an additional section named FLARE Finally, to tie everything together, JITM provides Script\\fix_assembly.py to perform the following tasks: Write the method body header and MSIL of each method recovered in jitm.json into a temporary binary file named “ section.bin ” while at the same time remember the associated method token and the offset into section.bin .

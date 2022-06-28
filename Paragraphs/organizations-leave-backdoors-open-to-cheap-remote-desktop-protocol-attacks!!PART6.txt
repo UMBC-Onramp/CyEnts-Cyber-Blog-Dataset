@@ -1,0 +1,6 @@
+
+False flags: Using RDP access to create misdirection is one of the most common applications.
+While preserving anonymity, an attacker can make it appear as if his illegal activity originates from the victim’s machine, effectively planting a false flag for investigators and security researchers.
+Attackers can plant this flag by compiling malicious code on the victim’s machine, purposely creating false debugging paths and changing compiler environment traces.
+Spam: Just as spammers use giant botnets such as Necrus and Kelihos, RDP access is popular among a subset of spammers.
+Some of the systems we found for sale are actively promoted for mass-mailing campaigns, and almost all the shops offer a free blacklist check, to see if the systems were flagged by SpamHaus and other antispam organizations.

@@ -1,0 +1,10 @@
+
+This malicious JavaScript variant is typically associated with fake call support scams.
+It shows a fake pop-up warning that the victim’s machine has serious issues.
+The victim is further instructed to call support for a bogus fix as they risk losing sensitive data.
+The scammers then ask for a payment, either through a credit card or via gift cards.
+Other common attacks included: W32/Swizzor!B.tr is an old Windows malware that has been around for years.
+The malware is designed to show unwanted ads on a targeted machine or download and execute remote files.
+As a result, a device infected with Swizzor may show other behaviors (i.e., data exfiltration) that are known to be associated with the malware.
+JS/Miner.
+BP!tr is a malicious javascript that mines for cryptocurrency without the user’s knowledge.

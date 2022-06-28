@@ -1,0 +1,4 @@
+
+In general, stealing the intended secret data, such as passwords, encryption keys, and so forth, requires a combination of conditions.
+Spook.js — real-life application of Spectre v1 We might conclude that Spectre isn’t all that dangerous.
+After all, if an attacker can execute code on a target computer, exploiting one of the many vulnerabilities in the operating system or installed programs to escalate privileges and steal data would be far simpler.

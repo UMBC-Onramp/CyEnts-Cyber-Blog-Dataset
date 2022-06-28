@@ -1,0 +1,13 @@
+
+Important messages will be signed like this!
+Hajime Author.
+Contact CLOSED
+Stay sharp!
+It was only a matter of time before some speculated that Hajime might be the work of a real vigilante.
+SYLVEON
+Coming Out of Retirement?
+What surprised us more was the appearance of the SYLVEON variant on the table.
+In mid-2019 there was a 14-year old European IoT malware author that went by the name of “Light The Sylveon” and “Light The Leafeon”.
+When we took quick look at the decrypted strings of one of the binaries we captured, the word “Leafeon” was found, creating speculation that this might be the author’s comeback.
+“Light the Sylveon” co-created the destructive SILEX IoT malware, whose goal was to render vulnerable devices inoperable by running destructive commands–very similar to BrickerBot .
+From the malware authors’ perspective, based on a message embedded in the malware’s binary, this was to “prevent skids to flex their skidded botnet.”

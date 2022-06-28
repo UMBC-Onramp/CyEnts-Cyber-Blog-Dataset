@@ -1,0 +1,5 @@
+
+Approximately five minutes later, the attacker began uploading files to \"C:$RECYCLE.BIN\".
+Based on review of their MD5 hashes, three files (\"wce.exe\", \"getlsasrvaddr.exe\", \"update.exe\") were identified as known credential dumping utilities while others (\"filewalk32.exe\", \"rar.exe\") were tools for performing file system searches and creating WinRAR archives.
+These items should be recorded in an IOC, as a representation of an attacker's tools, techniques and procedures (TTPs).
+It is important to know that an attacker is likely to have interacted with many more systems than were infected with malware; for this reason it is crucial to look for evidence that an attacker has accessed systems.

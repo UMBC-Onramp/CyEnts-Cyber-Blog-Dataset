@@ -1,0 +1,6 @@
+
+The malware’s main task is to steal bank card details and login credentials for bank accounts, preferably business accounts (hence the businesslike e-mails).
+To achieve their objectives, the Trojans employ various methods.
+For example, they may: Inject a malicious script into a Web page to intercept user-entered data; Redirect online banking users to a fake login page; Steal data saved in the browser.
+Qbot can also log keystrokes to intercept passwords.
+Unfortunately, theft of payment data is not the only trouble that awaits victims.

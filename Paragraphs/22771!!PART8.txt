@@ -1,0 +1,13 @@
+
+The malware affected almost 20 business sectors.
+The largest share of victims falls to Engineering & Manufacturing (30%), followed by Finance (14%), Professional & Consumer Services (9%), Legal (7%), and IT & Telecommunications (7%).
+The latter category accounted for one of the most high-profile ransomware attacks of 2019, when cybercriminals hacked several MSPs and distributed Sodinokibi among their customers.
+The group currently holds the record for the largest ever known ransom demand : $50 million from Acer in March 2021.
+4.
+Netwalker (aka Mailto ransomware)
+Of the total number of victims, Netwalker accounted for more than 10%.
+Among its targets are logistics giants, industrial groups, energy corporations, and other large organizations.
+In the space of just a few months in 2020, the cybercriminals hauled in more than $25 million .
+Its creators seem determined to bring ransomware to the masses .
+They offered to lease Netwalker to lone scammers in exchange for a slice of attack profits.
+According to Bleeping Computer, the malware distributor’s share could reach 70% of the ransom, although such schemes typically pay affiliates much less.

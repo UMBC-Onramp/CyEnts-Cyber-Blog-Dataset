@@ -1,0 +1,6 @@
+
+During this intrusion, the actors downloaded and modified some of the router images related to the company’s network routers.
+Also during this time, APT5 stole files related to military technology from a South Asian defense organization.
+Observed filenames suggest the actors were interested in product specifications, emails concerning technical products, procurement bids and proposals, and documents on unmanned aerial vehicles (UAVs).
+APT5 persistently targets high value corporate networks and often re-compromises networks over many years.
+Their primary targets appear to be aerospace and defense companies located in the U.S., Europe, and Asia.

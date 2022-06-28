@@ -1,0 +1,7 @@
+
+XcodeGhost Modified to Exploit iOS 9 We have worked with Apple to have all XcodeGhost and XcodeGhost S (described below) samples we have detected removed from the App Store.
+XcodeGhost is planted in different versions of Xcode, including Xcode 7 (released for iOS 9 development).
+In the latest version, which we call XcodeGhost S, features have been added to infect iOS 9 and bypass static detection.
+According to [1], Apple introduced the “NSAppTransportSecurity” approach for iOS 9 to improve client-server connection security.
+By default, only secure connections (https with specific ciphers) are allowed on iOS 9.
+Due to this limitation, previous versions of XcodeGhost would fail to connect with the CnC server by using http.

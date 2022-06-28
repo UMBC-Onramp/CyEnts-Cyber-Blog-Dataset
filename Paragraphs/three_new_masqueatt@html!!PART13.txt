@@ -1,0 +1,5 @@
+
+But\nthis falls into the prior case again -- the victim app is now\ninstalled after the malicious app, so the malicious extension\ncan gain full access to the target app's container.
+Here is a demo for breaking the data container attack.
+In this demo,\na malicious extension can access all the files within the Gmail app’s\ndata container and upload them to the attacker’s server.
+Plugin Masque: Executing Untrusted Code with Privilege Apart of the iOS extension, the VPN plugin is another type of bundle\nin an .ipa file.

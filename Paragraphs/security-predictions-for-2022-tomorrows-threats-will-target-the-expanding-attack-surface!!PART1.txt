@@ -1,0 +1,7 @@
+According to FortiGuard Labs , 2022 is shaping up to be a banner year for cybercriminals, with ransomware on the rise and an unprecedented number of attackers lining up to find a victim.
+Attacks will continue to span the entire attack surface, leaving IT teams scrambling to cover every possible avenue of attack.
+This will be incredibly challenging because the attack surface will simultaneously be expanding as organizations transition to more hybrid environments and workspaces, adopt more AI and ML-based technologies , develop new connectivity options, and deploy additional business-critical applications and devices into the cloud.
+By understanding what the future may hold in relation to cyber threats, we give ourselves the best possible chance of defeating them.
+Attack Framework - Left to Right Attacks are often discussed in terms of left-hand and right-hand threats when viewed through an attack chain such as the MITRE ATT&CK framework.
+On the left are efforts spent pre-attack, which includes planning, development, and weaponization strategies.
+We predict that cybercriminals will spend more time and effort on reconnaissance and discovering zero-day capabilities to exploit new technologies and expanding network environments.

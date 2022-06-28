@@ -1,0 +1,6 @@
+
+Shellcode as an Attack Platform In general, shellcode is an excellent choice for attackers to remain stealthy on an infected system.
+Shellcode runs within executable memory and does not need to be backed by any file on disk.
+This allows attacker code to hide easily within memory where most forms of traditional forensic analysis will fail to identify it.
+Either the original binary file that loads the shellcode must first be identified, or the shellcode itself must be dumped from memory.
+To avoid detection, shellcode can be hidden within a benign appearing loader, and then be injected into another user mode process.

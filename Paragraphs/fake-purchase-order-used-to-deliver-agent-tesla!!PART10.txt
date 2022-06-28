@@ -1,0 +1,19 @@
+
+1DF27F8D8B8572CB76D7275D7FE686C88F4297DA39095C1399B1E55459DFFDF6 49BF5F9D59C27291FCB0D9F0C593DCB00CA9705E5D294E9C55353BDEFBC37273 A155AB7DB6D22A44487D909BB040F5300B6E24283CDB7D7D902E7CE5CDD533BB FD210DFB8C2F3B33FEEE191608EF58DD2816F08E9850DB734143115BA199690E 5F53A249455BB903C2C57A5CE23BFA6D069966034F74947A70037DEB1459DC88 AD3BE25985B1DFA0A72C7CE59365F2AE7142FB4B2A78B7905D10AEB13998DDD4 9783473EFECA3003D6A1B8DB8FE0E1A8AA291F170110D974C058806A25B4C419 B1043F48E99EF5B98F4987E1FFD3200CD6A32B3427BA2762310FDEA58934D95C 3E99AA348FAFFDF2D73867C47067EA17A96CA36E5329E30C3A37F45B4274D165 0ABBD4F17EC6DEDEFA188E39501B923286C56627ACB87FEC73271E459A383D0D
+Filename SHA256 Order001.ppam DCA3AC723A130E56FB158C34C68E1C4B7D8577D0DBE9D8B859BFFF7ADA34D02E Loader 4C0E2CB721585C480169B3804E17E2761BC5FE76584CF1375FCCDB33CA64D5A5 Network IOCs: 192[.]154[.]226[.]47 hxxps://www[.]mediafire[.]com/file/s2w0i5rhl9e4wje/1.dll hxxps://www[.]mediafire[.]com/file/u8t0g2vyrvoyldp/10.dll hxxps://www[.]mediafire[.]com/file/hheln09oi15b266/11.dll hxxps://www[.]mediafire[.]com/file/mra2u90srnmymxl/12.dll hxxps://www[.]mediafire[.]com/file/e7fmuc053m1vdz5/13.dll hxxps://www[.]mediafire[.]com/file/l3xh5g98wf5l4gv/14.dll hxxps://www[.]mediafire[.]com/
+file/5d7sd1qat59dtpy/15.dll hxxps://www[.]mediafire[.]com/file/2tpkh278oypz794/16.dll hxxps://www[.]mediafire[.]com/file/hjjo0rc7izwy4is/17.dll hxxps://www[.]mediafire[.]com/file/wy0e3mn2xyaqdhd/18.dll hxxps://www[.]mediafire[.]com/file/otza6n31talvvle/19.dll hxxps://www[.]mediafire[.]com/file/dsgxrjtpbyyzm7u/2.dll hxxps://www[.]mediafire[.]com/file/
+mf3pufkmdshddyq/20.dll hxxps://www[.]mediafire[.]com/file/ijdnf0wqv4e5frr/21.dll hxxps://www[.]mediafire[.]com/file/c9gt9xi3l9srlhi/22.dll hxxps://www[.]mediafire[.]com/file/pqk7p5p1vvcv5s1/23.dll hxxps://www[.]mediafire[.]com/file/mqbl43fcem1fndd/24.dll hxxps://www[.]mediafire[.]com/file/xz0guzs3g004f0i/25.dll hxxps://www[.]mediafire[.]com/file/qe4ece114vu4n0o/3.dll hxxps://www[.]mediafire[.]com/file/wbh1kq3u82mcso6/4.dll hxxps://www[.]mediafire[.]com/file/x0o4nlef7snbixu/5.dll hxxps://www[.]mediafire[.]com/file/xrnlyn4pjcmcfyf/6.dll hxxps://www[.]mediafire[.]com/file/
+qbzdrs7ulvvzfay/7.dll hxxps://www[.]mediafire[.]com/file/9q41qxg988c3opx/8.dll hxxps://www[.]mediafire[.]com/file/xxbskabqkber6oq/9.dll
+Mitre TTPs Resource Development Stage Capabilities:
+Upload Malware T1608.001 Initial Access Phishing:
+Spearphishing Attachment T1566.001 Execution Command and Scripting Interpreter:
+PowerShell T1059.001 User Execution:
+Malicious File T1204.002 Persistence Boot or Logon Autostart Execution:
+Registry Run Keys / Startup
+Folder
+T1547.001 Defense Evasion Process Injection: Portable Executable Injection T1055.002 Reflective Code Loading T1620
+Credentials Access Credentials from Password Stores: Credentials from Web Browsers T1555.003 Input Capture:
+Keylogging T1056.001 Discovery Account
+Discovery T1087 Command and Control Application Layer Protocol: Web Protocols T1071.001 Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+
+

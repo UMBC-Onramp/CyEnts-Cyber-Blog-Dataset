@@ -1,0 +1,11 @@
+
+(June 11 th , 2019)
+We observed the actor dropping one of the above-mentioned variants of Sodinokibi.
+In this case, the login came from an IP address originating in Iran and with a machine with a female Persian name.
+The attackers connecting are most likely Farsi-speaking, as is evident by the browsing history uncovered by McAfee ATR, which indicates where a number of the tools utilized originate from, including Farsi language file sharing sites, such as Picofile.com and Soft98.ir, that contain malicious tools such as NLBrute, etc.
+FARSI LANGUAGE SITE FOUND IN BROWSING HISTORY
+We observed the actor attempting to run an RDP brute force attack using NLBrute downloaded from the Iranian site Picofile.com.
+The target was several network blocks in Oman and the United Arab Emirates in the Middle East.
+In our analysis we discovered an offer to install ransomware on servers posted in Farsi speaking on August 19 th, .
+This posting date corresponds with the timing of attacks observed in the Middle East.
+The services mentioned are specifically targeting servers that have been obtained via RDP credential theft campaigns.

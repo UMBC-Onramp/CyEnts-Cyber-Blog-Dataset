@@ -1,0 +1,16 @@
+
+These emails came with a Word attachment that was using macros to run the malware in the system.
+The exploit kits used most often were Fallout and Spelevo [6] .
+The malware is hard programmed with some tricks to prevent reversing of it and to make static analysis more difficult.
+This report covers these protections and the behavior of the malware in an infected system.
+The developers have inserted messages to provoke malware researchers, including the email address of Lawrence Abrams, owner of “BleepingComputer”, who they contacted directly.
+They are very active on social media sites such as Twitter.
+McAfee protects its customers against the threats that we talk about in this report in all its products, including personal antivirus, endpoint and gateway.
+MAZE OVERVIEW
+The malware is a binary file of 32 bits, usually packed as an EXE or a DLL file.
+This report focuses on the EXE file.
+FIGURE 2.
+INFORMATION ABOUT THE MALWARE
+More information about the sample used in this report appears in this table: TECHNICAL DETAILS Maze is a complex piece of malware that uses some tricks to frustrate analysis right from the beginning.
+The malware starts preparing some functions that appear to save memory addresses in global variables to use later in dynamic calls though it does not actually use these functions later.
+Whether it is residual code existing in the entry point of the malware or a trick to mislead researchers is up for debate.

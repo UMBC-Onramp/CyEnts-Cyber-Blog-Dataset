@@ -1,0 +1,10 @@
+
+.DLL .exe
+.EXE .sys
+.SYS .ocx
+.OCX .LNK .lnk
+desktop.ini autorun.inf ntuser.dat iconcache.db bootsect.bak ntuser.dat.log thumbs.db DESKTOP.INI AUTORUN.INF NTUSER.DAT ICONCACHE.DB BOOTSECT.BAK NTUSER.DATA.LOG
+THUMBS.DB This check is done with a custom function that checks character per character against all the list.
+It is the reason for having the same names in both upper and lower case, instead of using the function “lstrcmpiA,” for example, to avoid some hook in this function preventing the file from being affected.
+The check of the extension at the same time is to make the process of crypto quicker.
+Of course, the malware checks that the file does not have the name of the ransom note and the extension that it will put in the crypted file.

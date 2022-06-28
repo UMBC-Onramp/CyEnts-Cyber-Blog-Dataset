@@ -1,0 +1,9 @@
+
+JSPatch setup in the targeted app There is a sequence of flow from the app entry point (in this case the AppDelegate class) to where the JavaScript file containing updates or patch code is written to the file system.
+This process involves communicating with the remote server to retrieve the patch code.
+On our test device, we eventually found that the JavaScript patch code is hashed and stored at the location shown in Figure 5.
+The corresponding content is shown in Figure 6 in Base64-encoded format: Figure 5.
+Location of downloaded JavaScript on test device Figure 6.
+Encrypted patch content While the target app developer has taken steps to secure this sensitive data from prying eyes by employing Base64 encoding on top of a symmetric encryption, one can easily render this attempt futile by running a few commands through Cycript .
+The patch code, once decrypted, is shown in Figure 7: Figure 7.
+Decrypted original patch content retrieved from remote server

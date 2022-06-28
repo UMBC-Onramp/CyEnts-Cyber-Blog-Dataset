@@ -1,0 +1,7 @@
+
+Moreover, with these attacks yielding extremely high profits for those residing in less prosperous parts of the world, new ransomware families and gangs will continue to emerge and may take Egregor’s place in the near future.
+Ransomware attacks continue to be the top threat to organizations globally as this threat grows and expands its reach year over year.
+Yet, even in the face of sophisticated threats, there are actions companies can take that can help mitigate risks and minimize damage: Establish and drill an incident response team.
+Whether in-house or as a retained service, the formation of an incident response team and drilling the most relevant attack scenarios to your organization can make a big difference in attack outcomes and costs .
+Establish and maintain offline backups.
+Ensure you have files safely stored from attacker accessibility with read-only access.

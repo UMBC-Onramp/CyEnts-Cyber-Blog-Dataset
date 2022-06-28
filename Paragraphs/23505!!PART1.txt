@@ -1,0 +1,2 @@
+Exactly five years ago, in October 2016, our solutions first encountered a Trojan named Trickbot (aka TrickLoader or Trickster).
+Found mostly on home computers back then, its primary task was to steal login credentials for online banking services.

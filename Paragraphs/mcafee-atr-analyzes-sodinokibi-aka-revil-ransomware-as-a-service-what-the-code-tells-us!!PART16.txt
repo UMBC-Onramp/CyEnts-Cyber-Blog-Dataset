@@ -1,0 +1,7 @@
+
+It is a downgrade from SYSTEM to another user with less privileges to avoid affecting the desktop of the SYSTEM user later.
+After this it will parse again the config and get information of the victim’s machine This information is the user of the machine, the name of the machine, etc.
+The malware prepares a victim id to know who is affected based in two 32-bit values concat in one string in hexadecimal.
+The first part of these two values is the serial number of the hard disk of the Windows main logic unit, and the second one is the CRC32 hash value that comes from the CRC32 hash of the serial number of the Windows logic main unit with a seed hardcoded that change per sample.
+FIGURE 9.
+GET DISK SERIAL NUMBER TO MAKE CRC32 HASH After this, the result is used as a seed to make the CRC32 hash of the name of the processor of the machine.

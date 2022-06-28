@@ -1,0 +1,6 @@
+
+We can cross-reference these times with data from SCANdalous to help us understand the impact of our external detection.
+Looking at the IP addresses marked by an analyst as observed at a client in the last year, we find that 21.7% (more than one in five) were also found by SCANdalous.
+Of that fifth, SCANdalous has an average lead time of 47 days.
+If we only consider the IP addresses that SCANdalous found first, the average lead time jumps to 106 days.
+Going even deeper and examining this data month-to-month, we find a steady upward trend in the percentage of IP addresses identified by SCANdalous before being observed at a client (Figure 3).

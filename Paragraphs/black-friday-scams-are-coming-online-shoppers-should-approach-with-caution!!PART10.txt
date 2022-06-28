@@ -1,0 +1,3 @@
+
+Fortinet's Secure Email Gateway not only sees and effectively stops such threats but can be easily integrated into an organization's larger security strategy, rather than operating as a stand-alone solution, enabling organizations to deploy FortiMail as part of a complete end-to-end security solution.
+Organizations are also strongly encouraged to conduct ongoing training designed to educate and inform personnel about the latest phishing/spearphishing techniques and how to spot and respond to them.

@@ -1,0 +1,7 @@
+
+0x843 -> uz-Cyrl-UZ (Uzbek (Cyrilic from Uzbekistan))
+0x7C1A -> sr (Serbian) 0x6C1A -> sr-Cyrl (Serbian in Cyrilic) 0x1C1A -> sr-Cyrl-BA (Serbian (Cyrilic from Bosnia and Herzegovina))
+0x281A -> sr-Cyrl-RS (Serbian (Cyrilic from Serbia))
+0x81A -> sr-Latn-CS (Serbian (Latin))
+(this language code starts from Windows Vista)
+The malware tries to delete the shadow volumes in the system using the “wmic.exe” program with the switches “shadowcopy” and “delete”.

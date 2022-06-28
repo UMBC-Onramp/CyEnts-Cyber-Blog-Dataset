@@ -1,0 +1,5 @@
+
+Figure 8: XLOOKUP array to look in Note the use of the “$” to ensure these are absolute references and will not be updated by Excel if we copy this formula to other cells.
+Array of data to return: This part will be the array of data from which Excel will return data.
+In this case, Excel will return the data contained within the absolute range of B2 to D15 from the “IP Address Intel” sheet for the value that was looked up.
+In the aforementioned example formula, it will return the values in the row for the IP address 198.51.100.126:

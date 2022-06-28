@@ -1,0 +1,7 @@
+
+Check out Figure 4 to see how we can leverage flare-emu to solve this challenge.
+Figure 4: Code snippet from w10deflate_auto project demonstrating the automation of wCompressionFormat The decorators preceding the function signify that the extraction algorithm will work on both 32-bit and 64-bit architectures.
+After generating a known pattern using a helper function within my project, flare-emu is used to allocate a buffer, storing a pointer to it in lp_stdatamgr .
+The pointer is written into the ECX register because I know that the first argument to the parent function, StDmSinglePageCopy is the pointer to the ST_DATA_MGR structure.
+The pHook function populates ECX prior to the emulation run.
+The helper function locate_call_in_fn is usedto perform a relaxed search for RtlDecompressBufferEx within StDmSinglePageCopy .

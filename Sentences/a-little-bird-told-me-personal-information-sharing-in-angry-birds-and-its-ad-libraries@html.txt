@@ -1,0 +1,263 @@
+Many popular mobile apps, including Rovio’s ubiquitous Angry Birds, collect and share players’ personal information much more widely than most people realize.
+
+Some news reports have begun to scratch the surface of the situation.
+
+The New York Times reported on Angry Birds and other data-hungry apps last October.
+
+And in January, the newspaper teamed up with public-interest news site ProPublica and U.K. newspaper the Guardian for a series of stories detailing how government agencies use the game (and other mobile apps) to collect personal data.
+
+Even the long-running CBS show 60 Minutes reported earlier this month that Rovio shares users’ locations .
+
+The Android version of Angry Birds in the Google Play store, updated on March 4, continues to share personal information.
+
+In fact, more than a quarter billion users who create Rovio accounts to save their game progress across multiple devices might be unwittingly sharing all kinds of information—age, gender, and more — with multiple parties.
+
+And many more users who play the game without a Rovio account are sharing their device information without realizing it.
+
+Once a Rovio account is created and personal information uploaded, the user can do little to stop this personal information sharing.
+
+Their data might be in multiple locations: Angry Birds Cloud, Burstly (ad mediation platform), and third-party ad networks such as Jumptap and Millennial Media.
+
+Users can avoid sharing personal data by playing Angry Birds without Rovio account, but that won’t stop the game from sharing device information.
+
+In this blog post, we examine the personal information Angry Birds collects.
+
+We also demonstrate the relationships between the app, the ad mediation platform, and the ad clouds — showing how the information flows among the three.
+
+We also spell out the evidence, such as network packet capture (PCap) from FireEye Mobile Threat Prevention (MTP), to support our information flow chart.
+
+Finally, we reveal how the multi-stage information sharing works by tracking the code paths from the reverse-engineered source code.
+
+To investigate the mechanism and contents of the information sharing, we researched different versions of Angry Birds.
+
+We found that multiple versions of the game can share personal information in clear text, including email, address, age, and gender.
+
+Angry Birds’ data management service, “ad-x.co.uk,” shares information in the penultimate version of the game (V4.0.0), which was offered in the Google Play store through March 4.
+
+  
+
+And contrary to media reports that this data sharing occurred only on an older “special edition” of the game, we found that some  sharing occurs in multiple versions of Angry Birds — including the latest to the “classic” version, 4.1.0.
+
+(This update as added to Google Play on March 4.)
+
+With more than 2 billion downloads of Angry Birds so far, this sharing affects many, many devices.
+
+What information is shared?
+
+Angry Birds encourages players to create Rovio accounts, touting the following benefits: To save scores and in-game weapons To preserve game progress across multiple devicesThe second benefit is especially attractive to devoted Angry Birds players because it allows them to stop playing on one device and pick up where they left off on another.
+
+Figure 1 shows the Rovio registration page.
+
+[caption id=\"attachment_4889\" align=\"aligncenter\" width=\"546\"] Figure 1: Rovio’s registration page[/caption] Figure 2 shows birthday information collected during registration.
+
+The end-use license agreement (EULA) and privacy policy grant Rovio rights to upload the collected information to third-party entities for marketing.
+
+[caption id=\"attachment_4894\" align=\"aligncenter\" width=\"546\"] Figure 2:
+
+The registration of the Rovio account includes personal information and EULA.[/caption]
+
+In Figure 3, the registration page asks for the user’s email address and gender.
+
+  
+
+When the player clicks the register button, Rovio uploads the collected data to the Angry Birds Cloud to create a player profile.
+
+[caption id=\"attachment_4897\"
+
+align=\"aligncenter\" width=\"546\"] Figure 3: Rovio asks for email and gender information during registration.[/caption] Figure 4 shows another way Angry Birds collects personal information.
+
+  Rovio offers a newsletter to update Angry Birds players with new games, episodes, and special offers.
+
+  During newsletter signup, Rovio collects the player’s first and last name, email address, date of birth, country of residence, and gender.
+
+This information is aggregated with the user’s Rovio account profile by matching the player’s email address.
+
+[caption id=\"attachment_4899\" align=\"aligncenter\" width=\"546\"] Figure 4:
+
+Newsletter registration page requesting more personal information[/caption] [caption id=\"attachment_5017\" align=\"alignnone\" width=\"549\"]
+
+Figure 5:
+
+Information flow among Angry Birds, the ad intermediate platform and the ad cloud[/caption] First, we are concerned with the type of information transmitted to the advertisement library.
+
+Figure 5 illustrates the information flow among Angry Birds, the Angry Birds Cloud, Burstly (the embedded ad library and ad mediation platform), and cloud-based ad services such as Jumptap and Millennial Media.
+
+Angry Birds uses Burstly as an ad adapter, which provides integration with numerous third-party ad clouds including Jumptap and Millennial Media.
+
+The ad services use players’ personal data to target ads.
+
+As the figure shows, Angry Birds maintains an HTTP connection with the advertising platform Burstly, the advertisement provider Millennial Media, and more.
+
+Traffic flow Table 1 summarizes the connections, which we explain in detail below.
+
+PCap Burstly (Ad Mediation Platform)
+
+Third Party Ad Clouds 1 1 POST (personal information, IP) POST (personal information, IP) 2 2 GET Ad from Jumptap GET Ad from Jumptap 3 3 GET Ad from Turn.com GET Ad from Turn.com Table 1:
+
+PCap information exchanged between Angry Birds, Burstly and third-party ad clouds Angry Birds uses native code called libAngryBird.so to access storage and help the ad libraries store logs, caches, database, configuration files, and AES-encrypted game data.
+
+For users with a Rovio account, this data includes the user's personal information in clear text or easily decrypted formats.
+
+For example, some information is stored in clear text in the web view cache called webviewCacheChromium: {\"accountId\":\"AC3XXX...XXXA62B\",\"accountExtRef\":\"hE...fDc\",\"personal\":{\"firstName\":null,\"lastName\":null, \"birthday\":\"19XXXXX-01\", \"age\":\"30\", \"gender\":\"FEMALE\", \"country\":\"United States\" , \"countryCode\":\"US\" , \"marketingConsent\":false, \"avatarId\":\"AVXXX...
+
+XXX2c\",\"imageAssets\":[...], \"nickName\":null}, \"abid\":{ \"email\":\"eXXX...XXXe@XXX.XXX\" , \"isConfirmed\":false}, \"phoneNumber\":null, \"facebook\":{\"facebookId\":\"\",\"email\":\"\"},\"socialNetworks\":[]} The device is given a universal id 1XXXX8, which is stored in the webviewCookiesChromium database in clear text: cu 1XXXX8 |{\"name\":\"cu 1XXXX8 \",\"value\":\"3%2XXX...XXX6+PM\"}|13XXX...
+
+XXX1 The id \"1XXXX8\" labels the personal information when uploaded by the ad mediation platform.
+
+Then the information is passed to ad clouds.
+
+1.
+
+The initial traffic captures in the PCap shows what kind of information Angry Birds uploads to Burstly: HTTP/1.1 200 OK Cache-Control:
+
+private Date: Thu, 06 Mar 2014 XX:
+
+XX:
+
+XX GMT Server: Microsoft-IIS/7.5 ServerName: P-ADS-OR-WEBC #22 X-AspNet-Version: 4.0.30319 X-Powered-
+
+By: ASP.NET X-ReqTime: 0 Content-Length: 0
+
+Connection: keep-alive POST /Services/PubAd.svc/GetSingleAdPlacement HTTP/1.1 Content-type: text/json; charset=utf-8 User-Agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; Ascend Y300
+
+Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko)
+
+Version/4.0
+
+Mobile Safari/534.30 Content-Length: 1690
+
+Host: neptune.appads.com Connection: Keep-Alive {\"data\":{\"Id\":\"8XXX5\",\"acceptLanguage\":\"en\",\"adPool\":0,\"androidId\":\"u1XXX...XXXug\",\"bundleId\": \"com.rovio.angrybirds\",…,\"cookie\":[{\"name\":\"cu 1XXX8 \",\"value\":\"3XXX6+PM\"},{\"name\":\"vw\",\"value\":\"ref=1XXX2&dgi=,eL,default,GFW\"},{\"name\":\"lc\",\"value\":\"1XXX8\"},{\"name\":\"iuXXXg\",\"value\":\"x\"},{\"name\":\"cuXXX8\",\"value\":\"3%2XXXPM\"},{\"name\":\"fXXXg\",\"value\":\"ref=1XXX712&crXXX8=2,1&crXXX8=,1\"}], \"crParms\":\"age=30 ,androidstore='com.android.vending', customer='googleplay', gender='FEMALE' , version='4.1.0'\", \"debugFlags\":0, \"deviceId\":\"aXXX...XXXd\" , \"encDevId\":\"xXXX....
+
+XXXs=\", \"encMAC\":\"iXXX...
+
+XXXg=\", \"ipAddress\":\"\", \"mac\":\"1XXX...XXX9\" , \"noTrack\":0,\"placement\":\"\", \"pubTargeting\":\" age=30 , androidstore='com.android.vending', customer='googleplay', gender='FEMALE' , version='4.1.0'\",\"rvCR\":\"\", \"type\":\"iq\",\"userAgentInfo\":{\"Build\":\"1.35.0.50370\", \"BuildID\":\"323\", \"Carrier\":\"\",\"Density\":\"High\", \"Device\": \"AscendY300\" , \"DeviceFamily\": \"Huawei\" , \"MCC\":\"0\",\"MNC\":\"0\",...
+
+We can see the information transmitted to neptune.appads.com includes gender, age, android id, device id, mac address, device type, etc.
+
+In another PCap in which Angry Birds sends POST to the same host name, the IP address is transmitted too: HTTP/1.1 200 OK … POST /Services/v1/SdkConfiguration/Get HTTP/1.1 … Host: neptune.appads.com ...
+
+IpAddress\":\"fXXX...XXX9%eth0\" ,...
+
+According to whois records , the registrant organization of neptune.appads.com is Burstly, Inc.
+
+Therefore, the aforementioned information is actually transmitted to Burstly.
+
+It Both PCaps contain the keyword “crParms.”
+
+This keyword is also used in the source code to put personal information into a map sent as a payload.
+
+Skyrocket.com is an app monetization service provided by Burstly .
+
+The following PCap shows that Angry Birds retrieves the customer ID from Skyrocket.com through an HTTP GET request: HTTP/1.1 200 OK Cache-Control: private Content-Type: text/html
+
+Date: Thu, 06 Mar 2014 07:12:25
+
+GMT Server: Microsoft-IIS/7.5 ServerName: P-ADS-OR-WEBA #5 X-AspNet-Version: 4.0.30319 X-Powered-
+
+By: ASP.NET X-ReqTime: 2 X-Stats: geo-0 Content-Length: 9606
+
+Connection: keep-alive GET /7…
+
+.4/ad/image/1...
+
+c.jpg HTTP/1.1 User-Agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-us;
+
+Ascend Y300
+
+Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko)
+
+Version/4.0
+
+Mobile Safari/534.30 Host: cdn.skyrocketapp.com
+
+Connection: Keep-Alive {\"type\":\"ip\",\"Id\":\"9XXX8\",...
+
+\"data\":[{\"imageUrl\":\"http://cdn.skyrocketapp.com/79...
+
+2c.jpg\",\"adType\":{\"width\":300, \"height\":250, \"extendedProperty\":80}, \"dataType\": 64, \"textAdType\":0,\"destType\":1,\"destParms\":\"\",\"cookie\":[{\"name\":\"fXXXg\", \"value\": \"ref=1XXX2&cr 1XXX8 =2,1&cr1XXX8=1&aoXXX8=\", \"path\":\"/\", \"domain\": \"neptune.appads.com\", \"expires\":\"Sat, 05 Apr 2014 XXX GMT\", \"maxage\": 2…0}, {\"name\":\"vw\",\"value\":\"ref=1XXX2&...},...,\"cbi\":\"http://bs.serving-sys.com/
+
+Burstin...25&rtu=-1\",\"cbia\":[\"http://bs….\":1,\"expires\":60},...
+
+\"color\":{\"bg\":\"0…0\"}, \"isInterstitial\":1} 2.
+
+In this PCap, the ad is fetched by including the customer id 1XXX8 into the HTTP POST request to jumptap.com, i.e. Millennial Media: HTTP/1.1 200 OK Cache-Control: private Content-Type: text/html Date: Thu, XX Mar 2014 XX:XX:
+
+XX GMT Server: Microsoft-IIS/7.5 ServerName: P-ADS-OR-WEBC #17 X-AspNet-Version: 4.0.30319 X-Powered-
+
+By: ASP.NET X-ReqTime: 475 X-Stats: geo-0;rcf88626-255;rcf75152-218 Content-Length: 2537
+
+Connection: keep-alive GET /img/1547/1XXX2.jpg
+
+HTTP/1.1 Host: i.jumptap.com Connection: keep-alive Referer: http://bar/ X-Requested-With: com.rovio.angrybirds User-Agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; Ascend Y300
+
+Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko)
+
+Version/4.0
+
+Mobile Safari/534.30 Accept-Encoding: gzip,deflate Accept-Language: en-US Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7 {\"type\":\"ip\",\"Id\":\"8XXX5\",\"width\":320,\"height\":50,\"cookie\":[],\"data\":[{\"data\":\"<!-- AdPlacement : banner_ingame_burstly…\",\"adType\":{\"width\":320, \"height\":50, \"extendedProperty\":2064 },\"dataType\":1, \"textAdType\":0, \"destType\":10, \"destParms\":\"\", \"cookie\":[{\"name\":\"...\", \"value\":\"ref=...&cr 1XXX8 =4,1&cr1XXX8=2,1\", \"path\":\"/\", \"domain\":\"neptune.appads.com\", \"expires\":\"Sat, 0X Apr 2014 0X:XX:
+
+XX GMT\", \"maxage\":2XXX0}, {\"name\":\"vw\",..., \"crid\":7XXX2, \"aoid\":3XXX3, \"iTrkData\":\"...\", \"clkData\":\"...\",\"feedName\":\"Nexage\"}]} In this pcap, the advertisement is retrieved from jumptap.com.
+
+We can use the same customer i
+
+d “1XXXX8” to easily track the PCap of different ad libraries.
+
+3.
+
+For example, in another PCap from turn.com, customer id remains the same: HTTP/1.1 200 OK Cache-Control: private Content-Type: text/html
+
+Date: Thu, 06 Mar 2014 07:30:54
+
+GMT Server: Microsoft-IIS/7.5 ServerName: P-ADS-OR-WEBB #6 X-AspNet-Version: 4.0.30319 X-Powered-
+
+By: ASP.NET X-ReqTime: 273 X-Stats: geo-0;rcf88626-272 Content-Length: 4714 Connection: keep-alive GET /server/
+
+ads.js?pub=24… PvctPFq&acp=0.51 HTTP/1.1 Host: ad.turn.com
+
+Connection: keep-alive Referer: http://bar/ Accept: */* X-Requested-With: com.rovio.angrybirds User-Agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; Ascend Y300
+
+Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko)
+
+Version/4.0
+
+Mobile Safari/534.30 Accept-Encoding: gzip,deflate Accept-Language: en-US Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7 {\"type\":\"ip\",\"Id\":\"0...
+
+b\",\"width\":320,\"height\":50,\"cookie\":[],\"data\":[{\"data\":\"<!-- AdPlacement : banner_ingame_burstly --> \\\"http://burstly.ads.nexage.com:80...\" destParms\":\"\", \"cookie\":[{\"name\":\"f...g\", \"value\":\"ref=1...
+
+0&cr 1XXXX8 =k,1&cr...
+
+8=i, 1\",\"path\":\"/\", \"domain\":\"neptune.appads.com\", \"expires\":\"Sat, 0X Apr 2014 0X:XX:
+
+XX How is the personal information shared?
+
+We also researched the source code of the Burstly (ad mediation platform) to trace the method calls for the information sharing.
+
+First in com/burstly/lib/conveniencelayer/BurstlyAnimated Banner.java, when Angry Birds tries to initialize the connection with Burstly, initNewAnimatedBanner() is called as follows:
+
+this.initNewAnimatedBanner (arg7.getActivity(), arg8, arg9, arg10, arg11); Inside initNewAnimatedBanner(), it instantiates the BurstlyView object by calling: BurstlyView v0 = new BurstlyView(((Context)arg3)); v0.setZoneId(arg6); Before the ZoneId is set, the initializeView() method is called in the constructor of BurstlyView.
+
+Furthermore, inside the initializeView() method, we found the following: new BurstlyViewConfigurator(this).configure(this.mAttributes); Finally in the BurstlyViewConfigurator.configure() method, it sets a series of parameters: this.extractAndApplyBurstlyViewId(); this.extractAndApplyCrParams(); this.extractAndApplyDefaultSessionLife(); this.extractAndApplyPublisherId(); this.extractAndApplyPubTargetingParams(); this.extractAndApplyUseCachedResponse(); this.extractAndApplyZoneId(); These method calls are to retrieve information from burstly.com.
+
+For example, in the extractAndApplyCrParams() method, it retrieves parameters from burstly.com and stores them in the BurstlyView object: String v0 =
+
+this.mAttributes.getAttributeValue(\"http://burstly.com/lib/ui/schema\", \"crParams\"); if(v0 !
+
+= null) { BurstlyViewConfigurator.
+
+LOG.logDebug(\"BurstlyViewConfigurator\",
+
+\"Setting CR params to: {0}\", new Object[]{v0}); this.mBurstlyView.setCrParms(v0); } The key crParms is the same one used in the first PCap to label the values corresponding to personal information such as age and gender.
+
+Conclusion In summary, Angry Birds collects user’s personal information and associates with customer id before storing it in the smart phone storage.
+
+Then the Burstly ad library embedded in Angry Birds fetches the customer id, uploads the corresponding personal information to the Burstly cloud, and transmits it to other advertising clouds.
+
+We have caught such traffics in the network packet captures and the corresponding code paths in the reversed engineered source code.
+
+For FireEye ThreatScore information on Angry Birds and more details about the application’s behavior, FireEye Mobile Threat Prevention customers can access their Mobile Threat Prevention (MTP) portal.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

@@ -1,0 +1,8 @@
+
+Each time Emotet needs to call an API, it calls a local function to obtain it in the EAX register and then calls it.
+Figure 4.2 is an example of calling API GetCommandLineW(), where 0xB03E1C69 is the hash code of module “kernel32” and 0x4543B55E is the hash code of “GetCommandLineW”.
+Communicating with the C2 Server Once Emotet finishes collecting the basic information from the victim’s device, it calls the API BCryptEncrypt() to encrypt the data.
+Let’s look at the kind of data contained in the collected data, as shown in Figure 5.1.
+The 60H bytes data in memory is the plaintext data to be encrypted.
+Let me explain what most of the data is.
+0x20 , at offset+4, is the size of sha256 hash code followed, which includes the bytes starting from offset+8 to offset+0x27 (A0 C9 … 68 F8).

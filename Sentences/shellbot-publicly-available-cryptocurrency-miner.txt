@@ -1,0 +1,183 @@
+IBM Security X-Force researchers studied the botnet activity of a malware variant that is used by cyber crime groups to illegally mine cryptocurrency.
+
+Examining two ShellBot botnets that appeared in attacks honeypots caught, the X-Force team was able to infect its own devices and become part of the live botnets, thereby gaining insight into how these botnets were managed internally.
+
+This post provides the details on IBM’s research and sheds light on the growing threat of cryptomining botnets to enterprise networks.
+
+While seeing computational resources abused by cryptojacking operations is enough of a problem, the riskier consequence of the infection is that malware begets malware.
+
+A seemingly simplistic infection is still a foothold that can result in more sophisticated malware on the network down the line, which may end up exfiltrating data and even installing ransomware to extort the organization later on.
+
+Cryptojacking Is the Name of ShellBot’s Game With the exponential rise in the value of cryptocurrency, cybercrime endeavors based on these digital coins have been rising as well.
+
+Aside from the devastating rise of ransomware attacks, the illegal mining of cryptocurrency on devices one does not own, aka cryptojacking, has become a commercial grade threat used in the hands of lone criminals and organized groups alike.
+
+In some cases, cryptojacking operations that keep mining farms processing coins reached the magnitude of a $50 million business for their bot masters.
+
+The ShellBot malware lives within this ecosystem.
+
+While it is a rather simple piece of Perl-based code, it enables attackers to mount internet relay chat (IRC)-controlled botnets that command coin mining on computers, Linux servers, Android devices and Internet of Things devices.
+
+The one requirement is having a weak password, as ShellBot’s typical entry point is a brute-force attack; the other is a command injection on servers that accept remote commands from the command-line interface (CLI).
+
+While it started out as a basic IRC bot, over time ShellBot has been using effective exploits to compromise servers and devices.
+
+It started out with a ShellShock (CVE-2014-6271) campaign, which is how it got its name, but over the years has used Drupalgeddon (CVE-2018-7600) and other exploits that can compromise large swaths of devices.
+
+ShellBot has also been evolving its features to better spread through networks and disable competing infections to ensure all the computing power is used for its own goals.
+
+ShellBot’s objective, in most cases, is mining for Monero coin.
+
+Brute-Forcing a Way In ShellBot infections typically use brute-force attacks to guess the passwords of targeted servers and devices.
+
+In the botnets IBM X-Force examined, the most frequently used credential types helped identify the targets as misconfigured databases, FTP-servers, monitoring servers and other Linux machines.
+
+By far the most frequent username for which the password was brute-forced was ‘root,’ followed by standard or default username strings such as ‘ubuntu’, ‘admin’, ‘user’ and ‘test’.
+
+There were also some standard database-type credentials such as ‘oracle’, ‘postgres’ or ‘mysql’.
+
+Figure 1:
+
+The top username types used in ShellBot attacks (Source: IBM X-Force)
+
+Botnet logs also showed the top passwords the malware managed to guess.
+
+Unfortunately for the targeted device owners, it was rather easy to figure out simple and default passwords.
+
+Figure 2:
+
+The top weak passwords used in ShellBot attacks (Source: IBM X-Force)
+
+ShellBot campaigns logged in IBM’s spam traps focused on verified ShellBot instances and ShellBot tactics, techniques and procedures (TTPs) that also launch a Perl-based payload.
+
+IBM X-Force saw quite a bit of activity every month, as shown in the figure below.
+
+Figure 3: ShellBot activity by month, January to June 2021 (Source: IBM X-Force) Infect and Control ShellBot is dropped as a payload to systems and devices where a password was brute-forced.
+
+Immediately after a successful login, the infected machine/device receives a list of commands to execute; those include sending back system information, downloading and executing a PERL script, removing logs, removing the command history and deleting the payload itself.
+
+Each ShellBot variant connected with a different botnet over an IRC channel.
+
+To get into the botnet, IBM infected some devices and followed the activity.
+
+The ‘Blackcat’ Server At the time of joining a server that was named Blackcat, the channel consisted of close to a hundred active bots and was about four months old.
+
+The channel itself was only used by the operator to address single or multiple machines, to which they would respond in a private chat.
+
+Reconnaissance commands were regularly issued to the bots, with the goal of collecting information that would allow the botnet’s operators to zero in on valuable assets.
+
+The information the attackers looked for was root access, CPU and GPU information and system architecture (ARMV, etc.)
+
+Most notably, the Blackcat botnet operators were eager to find machines with NVIDIA GPUs , which is a graphic processing unit with higher compute power that translates into faster mining.
+
+Once the server’s operators get the information on the system’s CPU/GPU, they group the bots in different channels accordingly.
+
+Figure 4:
+
+Operators probing for GPU info and sorting bots into #nvidia channel After sorting machines based on their mining capabilities, the operators would go on to download and execute a new ShellBot Perl script on those machines.
+
+The ‘pola’ version contained new IRC parameters, forcing the bots to join a different IRC server, which appeared like the operators were migrating active bots to a different network.
+
+Figure 5:
+
+Operators deploying secondary malware with different IRC parameters to move bots to Pola server Graduating to the Pola Server
+
+The operation X-Force tracked was probably rather fresh.
+
+When the researchers followed the migrated bots to the Pola server, they noticed that it was created that very same day.
+
+It already contained 143 bots, which were most likely migrated from other channels.
+
+Within the next day, the number of bots doubled, suggesting that there must have been additional servers like Blackcat moving higher value bots to the Pola server.
+
+Once on the Pola server, the filtering for higher value bots continued and a third payload — miner3.tgz — was deployed to the selected bots in a series of commands launched by the botnet’s operators.
+
+The process begins with the removal of previous versions of the ShellBot malware and those of other cryptominers that might be resident on the machine/device.
+
+Once the machine is clean of potential rivals, the operators go on to install their own miner.
+
+An archive is then unpacked into a .cache directory, in which the script .x is executed.
+
+This launches XMRig as well as XHide (process hider) on the infected machine.
+
+Figure 6:
+
+Cryptominer download #Armv – the DDoS Channel Botnets of all types, and especially those that command infected devices, are often used for distributed denial-of-service (DDoS) attacks.
+
+With a simple command, operators order the bots to browse to the target website and attempt to flood it with traffic and cause a denial of service.
+
+The botnets had a channel for bots that took part in DDoS attacks.
+
+The floods lasted 500 seconds each and did not appear very powerful.
+
+It is possible that the channel had a few low-value devices on it or was used as a testing ground.
+
+OpSec by Segmentation From the way bots are filtered, moved to other botnets and run new malware versions, it can be inferred that there is some sort of tiered segmentation.
+
+Conversations found on the server are proof that trading bots among operators are rather common, which explains how botnets can double in size quickly.
+
+The benefit of tiered segmentation is that it makes it very hard to find IRC server information on Tier 2 servers and higher, since these are only deployed by Tier 1 operators.
+
+The only way to join a Tier 3 botnet would be to be moved up the chain and follow the newly deployed Perl scripts.
+
+Along the way, it becomes much easier for the different botnet operators to filter out research bots, increasing the security of the operation.
+
+Attribution ShellBot is publicly available code, so it is harder to attribute it to any one group.
+
+Often, botnets using widespread code can be used by anyone, but they can see more meaningful activity from specific actors and groups.
+
+Links to Romanian-Speaking Operators What IBM found throughout its research, especially during the infiltration of IRC servers, are clues to an operation being managed by Romanian-speaking bot masters.
+
+For one, X-Force found Perl scripts stating flood.ro as the author, and some instances of ShellBot were hosted on a Romanian news site.
+
+The Perl scripts further linked to Romanian-speakers’ IRC channels on multiple servers.
+
+One of the operators used the Romanian hostname blackcat.ro on IRC.
+
+All threat actors conversing in the channels were fluent in Romanian.
+
+These links to Romania line up with threat intelligence on ShellBot by other security researchers in the past few years.
+
+Links to the Outlaw Gang
+
+The Romanian threat group tracked as Outlaw, which was identified in 2018, has been observed to use ShellBot to target different organizations.
+
+After comparing data from IBM’s own research with TTPs from previously reported Outlaw attacks, X-Force found similarities in the threat actors’ TTPs to those in the Blackcat and Pola servers.
+
+A screenshot of the Perl script had previously appeared in an article by TrendMicro and is identical to one of the samples used for the infections in the cases IBM saw.
+
+Another identical script is the Pola script applied to bots that graduated the Blackcat server.
+
+A malware analysis conducted by Yoroi on a 2020 Outlaw campaign mentions the same bash scripts, run and upd, which X-Force found in the cryptominers distributed on the Pola server.
+
+Lastly, TrendMicro published an article on Outlaw campaigns, which discovered the use of an old process hider, XHide, to mask the mining process XMrig.
+
+The hash of the XHide binaries, h32 and h64, contained in the cryptominer matched up to the ones used in one of the Outlaw campaigns.
+
+Is this evidence that the servers IBM infiltrated were associated with the Outlaw group itself?
+
+It’s possible, and it’s also plausible that other threat actors in this space copied the TTPs or bought the scripts from someone else.
+
+Mitigating the Risk of Cryptojacking Malware Cryptojacking malware can be an insidious and long-term attack that’s often hard to detect but can be damaging in a number of ways: impaired server performance, accumulation of electricity costs and overheating devices, to name a few.
+
+What puts companies at greater risk is the residence of malware on networked assets and devices, which can allow attackers to strengthen their foothold down the line.
+
+That risk can become any other type of attack given the time and the motivation of the attackers.
+
+In order to minimize the risk of a ShellBot infection, it is vital to properly configure all public-facing devices with strong credentials and ensure that logging is in place.
+
+For servers that can be accessed remotely, it is wise to add multifactor authentication and disable the option to run CLI commands remotely if that is a requirement the business needs.
+
+In addition, all outbound IRC traffic should be monitored or entirely blocked, as this may be an indicator of a ShellBot infection and potential data exfiltration that is not related to business needs.
+
+Network system monitoring should be implemented to detect excessive resource utilization and users should be educated about the risk and signs of cryptojacking on their devices.
+
+Indicators of Compromise IRC servers: Blackcat: 128.199.111.21 Same operator as on Blackcat: 68.183.180.36, 159.203.14.2 Pola: 159.89.7.123 Pola script download: hxxp://209.97.132.66/pola XMRig
+
+download: hxxp://162.243.166.183/miner3.tgz Recent Shellbot attacks detected on IBM’s honeypots: Attacker IPs (brute-forcing): 5.181.80.157 14/06/2021 193.232.68.71 12/06/2021 195.203.90.161 02/06/2021 142.93.169.146 16/05/2021 162.144.233.29 15/042021
+
+Shellbot download URLs hxxp://51.38.105.98/a
+
+hxxp://5.253.86.50/div hxxps://gsmboss.clan.su/zn.jpg hxxp://142.93.127.16/wp-includes/images/media/.x/px.txt hxxp://58.135.80.99/a/div
+
+

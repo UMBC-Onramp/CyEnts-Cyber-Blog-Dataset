@@ -1,0 +1,9 @@
+
+The malware first tries to update the HKEY_LOCAL_MACHINE registry key.
+If the update is unsuccessful then it also tries to update the HKEY_CURRENT_USER registry key.
+Value written to registry to achieve persistence on the endpoint:
+Registry Subkey =
+Software\\Microsoft\\Windows\\CurrentVersion\\Run Value Name =
+AdobeFlash Value Content = “C:\\DOCUME~1\\<username>\\LOCALS~1\\Temp\\OneDrive.exe” kLZXlyJelgqUpKzP Registry based persistence of the second stage payload Connections to 2017 campaigns The techniques, tactics and procedures are very similar to the campaigns that targeted US Defense contractors, US Energy sector, financial organizations and crypto currency exchanges in 2017.
+The same Windows User author appeared back in 2017 in two malicious documents 비트코인_지갑주소_및_거래번호.doc and 비트코인 거래내역.xls which were involved in crypto currency targeting.
+Furthermore, one of the implants communicates to an IP address that was involved in hosting malicious job description documents in 2017 involving the Sikorsky military program.

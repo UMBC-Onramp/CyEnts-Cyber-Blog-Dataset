@@ -1,0 +1,8 @@
+
+We did not observe any additional payloads at the time of analysis.
+Figure 18: Empire backdoor Indicators File Name/URL Hash/URL zakon.rar 9b19753369b6ed1187159b95fc8a81cd mssconf.bat 79B53B4555C1FB39BA3C7B8CE9A4287E C2 31.148.220[.]53 URL http://tiny-share[.]com
+/direct/7dae2d144dae4447a152bef586520ef8 Campaign 4: Credential and Credit Card Dumps as Decoys Decoy Documents
+This campaign uses credential dumps and likely stolen credit card dumps as decoy documents to distribute different types of RATs and password stealers.
+One file, ‘leaks copy.rar’, used text files that contained stolen email IDs and passwords as decoys.
+These files are shown as they would be displayed in WinRAR in Figure 19.
+Figure 19: Text files containing stolen email credentials as decoy Another file, ‘cc.rar’, used a text file containing stolen credit card details as a decoy.

@@ -1,0 +1,6 @@
+
+The payment A ransomware criminal must decide the amount of ransom to charge.
+Generally the more targeted a ransomware attack is, the higher the ransom demand will be.
+CoinVault’s infections were not targeted at one organization; they charged only US$250.
+The two brothers explained that they chose that price to be low enough for an average person to pay while still making a good profit.
+The prosecutor remarked ironically that they were “very noble [to keep] their ransom demand affordable.”

@@ -1,0 +1,6 @@
+
+This search order provides a Windows application with a list of locations where it can find a valid DLL or libraries.
+The application then uses the DLL that is available, whichever comes first.
+When the application executes it then loads the malicious DLL if it is available first rather than the valid DLL.
+However, this ransomware does a little more than that.
+Instead of just dropping the malicious “mpsvc.dll”, it also drops the valid application, MsMpEng.exe.

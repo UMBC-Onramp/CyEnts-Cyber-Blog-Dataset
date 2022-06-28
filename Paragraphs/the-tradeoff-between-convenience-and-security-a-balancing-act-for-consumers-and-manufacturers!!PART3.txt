@@ -1,0 +1,5 @@
+
+The same concept applies to the front door.
+Most consumers still utilize physical keys to secure the front door to their homes.
+However, the introduction of NFC enabled home door locks, which can be opened using compatible smart rings, adds both convenience and potentially compromised security.
+For example, upon investigating the McLear NFC Ring, McAfee ATR uncovered a design insecurity, which could allow an attacker to easily clone the NFC Ring and gain entry to a home utilizing an NFC enabled smart lock.

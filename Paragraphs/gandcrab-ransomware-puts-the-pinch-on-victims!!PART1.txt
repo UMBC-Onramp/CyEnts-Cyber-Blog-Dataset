@@ -1,0 +1,6 @@
+By Alexandre Mundo on Jul 31, 2018 Update: On August 9 we added our analysis of Versions 4.2.1 and 4.3.
+The GandCrab ransomware first appeared in January and has been updated rapidly during its short life.
+It is the leading ransomware threat.
+The McAfee Advanced Threat Research team has reverse engineered Versions 4.0 through 4.3 of the malware.
+The first versions (1.0 and 1.1) of this malware had a bug that left the keys in memory because the author did not correctly use the flags in a crypto function.
+One antimalware company released a free decryption tool, posted on NoMoreRansom.org , with help of Romanian police and Europol.

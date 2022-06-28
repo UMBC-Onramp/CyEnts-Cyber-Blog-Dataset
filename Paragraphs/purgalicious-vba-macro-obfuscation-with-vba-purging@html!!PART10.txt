@@ -1,0 +1,5 @@
+
+MSDN documentation shows\nthat the minimum length for the _VBA_PROJECT stream is 7 bytes to fit the required fields in the stream header.
+The\nfollowing YARA rule searches for CFBF files with a 7 byte _VBA_PROJECT stream: rule FEYE_OLE_VBAPurged_1 { meta: author =
+\"Alyssa Rahman\n(@ramen0x3f)\" description = \"This\nfile has a _VBA_PROJECT stream that has been cleared.
+This is\nevidence of VBA purging, a technique where the p-code\n(PerformanceCache data) is removed from Office files that have\nan embedded macro.\" strings: $vba_proj = { 5F 00 56 00 42 00 41 00 5F 00 50 00 52 00 4F 00\n4A 00 45 00 43 00 54 00 00 00 00 00 00 00 00 00 } condition: uint32(0) ==

@@ -1,0 +1,7 @@
+
+For this purpose, we excluded the drives since they would always have the same depth.
+[’leave_1’,’smell_2’,’long_3’,’rulethis_4’
+] N-Gram Analysis Finally, we explored breaking paths into n-grams; that is, as a distinct set of n- adjacent directories.
+For example, a 2-gram representation of this path might look like: [‘c:\\leave’,’leave\\smell’,’smell\\long’,’long\\rulethis’]
+We tested each of these approaches and while positional analysis and n-grams contained more information , in the end, bag-of-words seemed to generalize best.
+Additionally, using the bag-of-words approach made it easier to extract simple signature logic from the resultant models, as will be shown in a later section.

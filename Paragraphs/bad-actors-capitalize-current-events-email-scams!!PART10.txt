@@ -1,0 +1,4 @@
+
+It is possible, if there are a lot of respondents, they could be using OCR (Optical Image Recognition) image technology to store victim data in a database for later use.
+It is important to again note that the IRS does not handle any official correspondence via email.
+Official W-9 forms are available on the IRS Web page .

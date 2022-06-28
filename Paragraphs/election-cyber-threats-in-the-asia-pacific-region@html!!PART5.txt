@@ -1,0 +1,4 @@
+
+Our approach examines threats through the lens of risk posed at various levels of the elections ecosystem.
+We break the elections threat landscape into distinct attack surfaces to better allow our customers and partners to take action.
+These include the following: Electoral Platforms Affecting Public Opinion Electoral Process Support Organizations Core Electoral Process Systems Figure 2: Attack surfaces associated with the electoral process Top Target of Election Cyber Threat Activity: Public Opinion Using our ecosystem taxonomy, based on activity observed from 2016 to 2019, Mandiant Threat Intelligence assesses that actors concentrated on \"platforms affecting public opinion\" much more often than \"core election systems\" such as voting machines, or \"electoral support organizations\" such as election commissions.

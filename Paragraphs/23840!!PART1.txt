@@ -1,0 +1,3 @@
+Microsoft started the year with a massive vulnerability fix, releasing not only its regular first-Tuesday update, which this time covers a total of 96 vulnerabilities , but also issuing a bunch of fixes for the Microsoft Edge browser (mainly related to the Chromium engine).
+That makes more than 120 vulnerabilities patched since the beginning of the year.
+This is a clear reason to update the operating system and some Microsoft applications as soon as possible.

@@ -1,0 +1,8 @@
+By Christiaan Beek and Raj Samani on Sep 17, 2018 Politics and ransomware .
+No, it’s not a lost single from the Oasis back catalogue, but in fact a relatively recent tactic by ransomware developers looking to exploit the profiles of major politicians to install ransomware on victims’ computers.
+Donald Trump, Angela Merkel, and now Barack Obama all serve as lures for the unsuspecting.
+Despite its claims, does the “Obama campaign” deliver the ransomware it advertises?
+Well, perhaps not.
+The Obama campaign Recently identified by the MalwareHunterTeam and documented by Bleeping Computer, the Obama campaign displayed some confusing characteristics.
+For example, it encrypted only .exe files and asked for a tip to decrypt the files.
+This campaign does not behave like normal ransomware variants, which typically target user data files rather than .exe files.

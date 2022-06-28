@@ -1,0 +1,5 @@
+
+Having such a capability is also useful for those who suffer from repetitive strain injury .
+Input Recognition
+The commands described so far give you control over IDA Pro with your voice, but there is still the matter of providing textual input for items such as function and variable names, comments, and other text input fields.
+VoiceAttack does provide the ability in macros to enable and disable what is called “Dictation Mode”.

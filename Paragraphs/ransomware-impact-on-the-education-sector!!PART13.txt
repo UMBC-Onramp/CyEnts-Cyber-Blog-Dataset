@@ -1,0 +1,12 @@
+
+Nmap.
+Scirpt.
+Scanner and Port.
+Scanning Qualys.
+Vulnerability.
+Scanner appear to be regular offenders within the education sector.
+We were surprised to find that Sunburst backdoor IPS signatures also accounted for a large percentage of overall activity in the US, but further investigation revealed that most IPS detections belonged to one educational organization in the United States.
+However, when we investigated some of the most accessed URLs by the education sectors from August 11 th to September 10 th , 2021, Backdoor.
+DouplePulsar made more sense as its URLs led to variants of the Glupteba malware at the time of our analysis.
+Glupteba is a cross-platform trojan-type written in Golang and is primarily distributed through malicious advertisements that are injected into legitimate websites or advertising networks.
+Our analysis  confirmed the Glupteba variants downloaded from the URLs include a module to launch an infamous EternalBlue exploit, which was developed by U.S. National Security Agency (NSA) and was leaked by the ShadowBrokers hacking group in 2017.

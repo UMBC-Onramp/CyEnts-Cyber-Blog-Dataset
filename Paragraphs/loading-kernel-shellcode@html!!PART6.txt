@@ -1,0 +1,7 @@
+
+From here, the powerful facilities of WinDbg are available to debug and analyze the code’s behavior.
+Building It Yourself To try out FLARE’s kernel shellcode loader for yourself, you’ll need to download the source code .
+To get started building it, download and install the Windows Driver Kit (WDK) .
+I’m using Windows Driver Kit Version 7.1.0 , which is command line driven, whereas more modern versions of the WDK integrate with Visual Studio.
+If you feel comfortable using a newer kit, you’re welcomed to do so, but beware, you’ll have to take matters into your own hands regarding build commands and dependencies.
+Since WDK 7.1.0 is adequate for purposes of this tool, that is the version I will describe in this post.

@@ -1,0 +1,5 @@
+
+Reversing the Code In this first episode, we will dig into the code and explain the inner workings of the ransomware once it has executed on the victim’s machine.
+Overall the code is very well written and designed to execute quickly to encrypt the defined files in the configuration of the ransomware.
+The embedded configuration file has some interesting options which we will highlight further in this article.
+Based on the code comparison analysis we conducted between GandCrab and Sodinokibi we consider it a likely hypothesis that the people behind the Sodinokibi ransomware may have some type of relationship with the GandCrab crew.

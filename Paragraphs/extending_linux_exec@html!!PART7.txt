@@ -1,0 +1,4 @@
+
+It could also be the case that runtime integrity checking on every machine isn’t suitable for your environment.
+Generating and storing these logs opens up the possibility for future investigation as well as centralized detection capabilities if your organization is ingesting these logs into a single repository.
+Appraise We can utilize the auditing function of IMA to generate a log every time IMA measures an executable.

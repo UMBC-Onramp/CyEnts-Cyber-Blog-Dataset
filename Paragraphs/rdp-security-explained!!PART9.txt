@@ -1,0 +1,5 @@
+
+Better yet, a FIDO based authentication device can provide an extra factor which is not vulnerable to spoofing attacks, in a similar fashion to other one-time-password (OTP) mechanisms.
+This increases the difficulty for an unauthorized person to gain access to the computing device.
+Use an RDP Gateway Recent versions of Windows Server provide an RDP gateway server.
+This provides one external interface to many internal RDP endpoints, thus simplifying management, including many of the items outlined in the following recommendations.

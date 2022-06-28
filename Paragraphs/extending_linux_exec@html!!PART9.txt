@@ -1,0 +1,3 @@
+
+The policy can be further restricted by file magic values, UID, filesystem mask values and several others, as specified by the policy documentation .
+This policy will produce audit INTEGRITY_RULE logs that look like this: This gives us several great pieces of information for searching and correlation in a SIEM: the path of the file that was executed (kaiten.bin) and the path of its parent (/bin/bash), the PID(8205) and parent PID(1943) of the executable, the SHA-1 hash value(48a3171d8f04c09f6d06362d4c4b995eaa97d489) of this file (or whatever hash value you configured IMA to use), and the UID, GID, etc., of the user that owned the process.

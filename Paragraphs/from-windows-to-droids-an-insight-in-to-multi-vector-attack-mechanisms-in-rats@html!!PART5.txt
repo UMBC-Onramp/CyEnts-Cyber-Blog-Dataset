@@ -1,0 +1,13 @@
+
+These arrive either as an attachment or as a link to the payload in emails.
+The documents had the unique metadata shown below: File Type                       : XLS MIME Type                    : application/vnd.ms-excel Author                          : MR.
+FRANK
+Last Modified By              : MR.
+FRANK Software                        : Microsoft Excel Create Date                    : 2012:02:07 10:41:21 Modify Date                     : 2012:02:07 10:41:29 Security                          :
+None Code Page                       :
+Windows Latin 1 (Western European) Company                         : USER App Version                     : 11.5606
+The email attacks were found to have attachment names such as Western Union Slip.xls Money Transfer Wumt.xls Wumt.xls Windows Components The WinSpy modules are written in Visual Basic and use some freely available libraries such as modJPEG.bas and cJpeg.cls .
+The components each support various features as shown below.
+Feature Component Webcam monitoring Webcam monitoring RDS.exe RDS.exe Screen capture & JPEG Encoder Screen capture & JPEG Encoder RDS.exe RDS.exe
+Connectivity check Connectivity check RDS.exe RDS.exe
+Send Victim information to CnC Send Victim information to CnC RDS.exe RDS.exe FTP exfiltration FTP exfiltration RDS.exe RDS.exe

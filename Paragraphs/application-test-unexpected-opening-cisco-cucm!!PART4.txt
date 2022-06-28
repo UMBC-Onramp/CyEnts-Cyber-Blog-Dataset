@@ -1,0 +1,6 @@
+
+At first, our team managed to identify several SQL injection vulnerabilities , but the application had a protection module that filtered the user input.
+By inspecting this module, we found a weakness in the module logic that we used to bypass it.
+This allowed one to exploit three SQL injection vulnerabilities.
+An attacker could use this to extract sensitive information from the application database, including the administrator password hash.
+Other Vulnerabilities One of the SQL injections was chained with another vulnerability — an operating system command injection vulnerability — to achieve arbitrary code execution on the appliance.

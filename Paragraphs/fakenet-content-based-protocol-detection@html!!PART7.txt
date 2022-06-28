@@ -1,0 +1,7 @@
+
+Figure 2 is a basic configuration for a Listener, and Figure 3 demonstrates how the proxy is configurable for TCP and UDP.
+Figure 2:
+Listener Configuration Options Figure3:
+Proxy Configuration Options The proxy also handles SSL detection.
+Before polling the Listeners, the proxy examines the packet.
+If SSL is detected, the proxy “wraps” the socket in SSL using Python’s OpenSSL library.

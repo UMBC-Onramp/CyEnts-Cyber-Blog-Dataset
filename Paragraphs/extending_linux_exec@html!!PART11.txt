@@ -1,0 +1,7 @@
+
+Now that you’re ingesting these logs into your SIEM, there are all sorts of detection and hunting scenarios available: Using rules and ingestion decoration services (services that add additional metadata to a log at ingestion time) to check hashes against internal and or external blacklists.
+For example: o   VirusTotal o   Lists of hashes seen in public Linux honeypots o   Lists of samples seen in previous incidents Inspecting the path of the executable for abnormalities.
+For example: o   Binaries named as system utilities executing from unusual locations (/opt/app/sudo, /home/foo/su)
+o   Paths you wouldn’t expect to see with executable files (Executables in your web app’s image upload directory o   Binaries executing from hidden directories (/opt/.hidden/foo, /home/user/.hidden/bar)
+Checking specific UIDs and GIDs for unusual execution.
+For example: o   Web app user account attempting to use unusual utilities (top, netstat, su, etc.)

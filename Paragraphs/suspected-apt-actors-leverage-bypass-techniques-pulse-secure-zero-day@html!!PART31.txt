@@ -1,0 +1,5 @@
+
+The inserted malicious logic hijacks execution just after DSAuth::RadiusAuthServer::handleResponse where the password sent to the RADIUS server is checked against a backdoor password.
+If this check passes the malicious logic overwrites the retrieved packet with values indicating that it's of type 3 and that authentication was successful.
+The malicious logic then rejoins the original execution flow where the packet type is checked.
+If written the spoofed values force the application down the execution path of successful authentication, even though in reality authentication failed.

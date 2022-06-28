@@ -1,0 +1,8 @@
+
+Other reporting disclosed the Coinhive script being embedded on the Showtime domain as well as on the LA Times website , both surreptitiously mining Monero.
+A majority of in-browser cryptojacking activity is transitory in nature and will last only as long as the user’s web browser is open.
+However, researchers with Malwarebytes Labs uncovered a technique that allows for continued mining activity even after the browser window is closed.
+The technique leverages a pop-under window surreptitiously hidden under the taskbar.
+As researchers pointed out, closing the browser window may not be enough to interrupt the activity, and that more advanced actions like running the Task Manager may be required.
+Figure 8: Statement from TPB operators on Coinhive script Malvertising and Exploit Kits Malvertisements – malicious ads on legitimate websites – commonly redirect visitors of a site to an exploit kit landing page.
+These landing pages are designed to scan a system for vulnerabilities, exploit those vulnerabilities, and download and execute malicious code onto the system.

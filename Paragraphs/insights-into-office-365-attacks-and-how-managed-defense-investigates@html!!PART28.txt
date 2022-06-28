@@ -1,0 +1,9 @@
+
+We’ll also leverage other FireEye products, such as the Endpoint Security platform, to search for phishing domains present on a host’s web browser history.
+Conclusion Unauthorized access to O365 tenant doesn’t just pose a threat to an organization, but also to its staff and business partners.
+Organizations without enhanced security controls in O365 are at the greatest risk of experiencing a BEC.
+However, as multi factor-authentication becomes more and more commonplace, we’ve witnessed an increase of MFA bypass attempts performed by increasingly proficient attackers.
+It’s important to remember that social engineering plays a primary role throughout a BEC.
+Ensure that users are trained on how to identify credential harvesting forms, a common compromise vector.
+When in the midst of a BEC compromise, teams may want to promptly alert personnel in HR and finance-related roles to exercise extra caution when processing requests related to banking or wire transfers while the investigation is in progress.
+The examples covered in this blog post are just a sample of what Managed Defense performs while investigating an Office 365 compromise.

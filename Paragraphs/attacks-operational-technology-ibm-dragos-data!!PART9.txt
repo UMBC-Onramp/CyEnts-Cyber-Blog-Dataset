@@ -1,0 +1,5 @@
+
+Another group, TALONITE, uses spearphishing, masquerading as legitimate engineering and energy entities, to entice victims to download executables containing RATs.
+This enables the group to establish persistence and move laterally within a network, attempting to achieve access into ICS while also stealing information related to operations that may be stored in enterprise networks.
+Vulnerability Exploitation and Stolen Credentials Provide a Way
+In In terms of initial infection vectors, X-Force incident response data indicates that vulnerability exploitation and stolen credentials are the most common entry points for adversaries, leading to 40 and 32% of incidents remediated, respectively.

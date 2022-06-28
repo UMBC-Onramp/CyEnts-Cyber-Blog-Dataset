@@ -1,0 +1,5 @@
+
+Indicators and Detections to Help the Community To empower the community to detect this supply chain backdoor, we are publishing indicators and detections to help organizations identify this backdoor and this threat actor.
+The signatures are a mix of Yara, IOC, and Snort formats.
+A list of the detections and signatures are available on the FireEye GitHub repository found here .
+We are releasing detections and will continue to update the public repository with overlapping detections for host and network-based indicators as we develop new or refine existing ones.

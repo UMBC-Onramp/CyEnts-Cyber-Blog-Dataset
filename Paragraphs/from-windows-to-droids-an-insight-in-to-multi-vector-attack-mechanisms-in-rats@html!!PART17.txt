@@ -1,0 +1,6 @@
+
+The screenshot taken will be written to the path specified by the string passed as an argument.
+The takeScreenshot method then returns the path of the image to the screenCaptureThread which calls the FTPService thereby uploading the screenshot to the attackers CnC server.
+Component 2 - GlobalNativeService
+The native services listens on a local socket for commands from the GlobalService.apk.
+As seen above, if the string after the last trailing slash is “screenshot_” is sent to the Native service through the socket.

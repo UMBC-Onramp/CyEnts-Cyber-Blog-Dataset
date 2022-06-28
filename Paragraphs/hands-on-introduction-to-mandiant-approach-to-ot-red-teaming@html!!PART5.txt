@@ -1,0 +1,6 @@
+
+Figure 1:
+Mandiant OT red teaming approach Mandiant's OT red teaming may begin either from the perspective of an external attacker leveraging IT compromises to pivot into the OT network, or from the perspective of an actor who has already gained access into the OT network and is ready to escalate the intrusion.
+We then leverage a range of commodity tools and utilities that are widely available in most target environments to pivot across OT intermediary systems and gain privileged access to target ICS.
+Throughout this process, we maintain constant communication with the customer to establish safety thresholds.
+Active participation from the defenders will also enable the organization to learn about the techniques we use to extract information and the weaknesses we exploit to move across the target network.

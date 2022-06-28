@@ -1,0 +1,5 @@
+
+type nul > %TMP%:Defrag.scr\")), 0, true Exit Do End If Loop The malware ensures that it will run after every reboot by adding itself to the Run registry key: \\REGISTRY\\MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run\\\"Defrag\" =
+ wscript \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp:defrag.vbs\" NitlovePOS expects to be run with the “-“ sign as argument; otherwise it won’t perform any malicious actions.
+This technique can help bypass some methods of detection, particularly those that leverage automation.
+Here is an example of how the malware is executed: \\LOCALS~1\\Temp:Defrag.scr\" - If the right argument is provided, NitlovePOS will decode itself in memory and start searching for payment card data.

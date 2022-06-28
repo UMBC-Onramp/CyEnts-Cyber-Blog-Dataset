@@ -1,0 +1,11 @@
+
+It keeps the gathered contact information in a doubly-linked chain structure.
+Figure 4.1 shows one email contact obtained from an email within my test Outlook account that was then added into the doubly-linked chain, as shown at the bottom.
+The collected data shows the Person name and Email address of the email sender.
+In this example, it collected “Outlook” and “outlook@email2.office.com” from the displayed email message.
+This module enumerates all collected emails and puts the unique email contact information into the doubly linked chain.
+To collect Outlook’s data, it has to call several APIs, including MAPIInitialize(), MAPILogonEx(), and MAPIFreeBuffer(), as well as create some COM objects by calling the API CoCreateInstance(), such as OlkAccountManager and OlkMail.
+Finally, it retrieves those email contacts from the linked chain one by one and saves them into the temporary file that comes from the command line parameter.
+Figure 4.2 shows a screenshot of the temporary file, “%temp%\\6827.tmp” in this example, along with the collected email contacts.
+Module3 - Stealing Account Settings of Victim’s Email Clients
+This functional module focuses on stealing its victim’s email account settings and the credentials from their email clients.

@@ -1,0 +1,12 @@
+
+-StartDate mm/dd/yyyy -EndDate
+(Get-Date)
+-ResultSize 5000
+-UserIds user@client.com
+| Export-CSV \\path\\to\\file.csv –NoTypeInformation -Encoding utf8 Querying MAL for a user in PowerShell: Search-MailboxAuditLog -Identity user@client.com
+-LogonTypes
+Owner,Delegate,Admin -ShowDetails -StartDate (Get-Date).AddDays(-90) -EndDate (Get-Date) | Export-CSV \\path\\to\\file.csv –NoTypeInformation -Encoding utf8 Querying Admin Audit Log for all events within a certain date in PowerShell: Search-AdminAuditLog -StartDate mm/dd/yyyy -EndDate mm/dd/yyyy | Export-CSV \\path\\to\\file.csv –
+NoTypeInformation -Encoding utf8 Query UAL with New Leads Now that we’ve built a list of suspicious IP addresses (or even entire CIDR ranges) and User-Agent strings, we’ll run new queries against the entire UAL to try to identify other compromised user accounts.
+We’ll repeat this step and the previous step for each newly identified user account.
+One advantage to using FireEye Helix platform over PowerShell is that we can query entire CIDR ranges.
+This is helpful when we observe attackers coming from a VPN or ISP that dynamically assigns IP addresses within the same address block.

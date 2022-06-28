@@ -1,0 +1,25 @@
+
+VALUEVAULT maintains the same functionality as the original tool by allowing the operator to extract and view the credentials stored in the Windows Vault.
+Additionally, VALUEVAULT will call Windows PowerShell to extract browser history in order to match browser passwords with visited sites.
+A snippet of this function is shown in Figure 6.
+powershell.exe /c \"function get-iehistory {.
+[CmdletBinding()].
+param (). .
+$shell =
+New-Object -ComObject Shell.
+Application.
+$hist = $shell.
+NameSpace(34).
+$folder = $hist.
+Self. .
+$hist.
+Items() | .
+foreach {.
+if ($_.IsFolder) {. $siteFolder = $_.GetFolder.
+$siteFolder.
+Items() | .
+foreach {.
+$site = $_. .
+if ($site.
+IsFolder) {.
+$pageFolder = $site.

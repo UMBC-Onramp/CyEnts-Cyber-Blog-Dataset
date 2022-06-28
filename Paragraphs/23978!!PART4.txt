@@ -1,0 +1,6 @@
+
+Notable victims of LAPSUS$ include Nvidia, Samsung and Ubisoft.
+In addition, they recently released 37 GB of code believed to be related to internal Microsoft projects.
+How to stay safe?
+At the moment it is impossible to say with absolute certainty that the incident really happened.
+The publication of screenshots in itself is a rather strange move that may be aimed at self-promotion of the hackers, an attack on Okta’s reputation, or an attempt to hide the real method by which LAPSUS$ gained access to one of Okta’s clients.

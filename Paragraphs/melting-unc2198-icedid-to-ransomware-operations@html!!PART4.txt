@@ -1,0 +1,13 @@
+
+ 
+In at least five cases, UNC2198 acquired initial access from UNC2420 MOUSEISLAND to conduct intrusion operations.
+In 2020, Mandiant attributed nine separate intrusions to UNC2198.
+UNC2198’s objective is to monetize their intrusions by compromising victim networks with ransomware.
+In July 2020, Mandiant observed UNC2198 leverage network access provided by an ICEDID infection to encrypt an environment with MAZE ransomware.
+As the year progressed into October and November, we observed UNC2198 shift from deploying MAZE to using EGREGOR ransomware during another Incident Response engagement.
+Like MAZE, EGREGOR is operated using an affiliate model , where affiliates who deploy EGREGOR are provided with proceeds following successful encryption and extortion for payment.
+The UNC2198 cluster expanded over the course of more than six months.
+Mandiant’s December 2020 blog post on UNCs described the analytical tradecraft we use to merge and graduate clusters of activity.
+Merging UNCs is a substantial analytical practice in which indicators and tradecraft attributed to one group are scrutinized against another.
+Two former UNCs that shared similar modus operandi were eventually merged into UNC2198.
+The Snowball Effect of Attribution AP created UNC2198 based on a single intrusion in June 2020 involving ICEDID, BEACON, SYSTEMBC and WINDARC.

@@ -1,0 +1,14 @@
+
+Connections The US government reports that Bankshot is used by Hidden Cobra to target multiple industries including financial organizations.
+This implant has been connected to a major Korean bank attack and is also known as Trojan Manuscript.
+That variant contained the capability to search for hosts related to the SWIFT network and the same control server strings as the variant we found targeting the Turkish financial sector.
+The implant does not conduct financial transactions; rather it is a channel into the victim’s environment, in which further stages of implants can be deployed for financial reconnaissance.
+The Bankshot implant was also observed in 2017 in documents appearing to come from Latin American banks.
+Malicious document delivering the Bankshot implant in 2017.
+These connections, combined with the implant’s nearly identical appearance to known variants, are a strong indication that we have uncovered a Hidden Cobra attack.
+Further, previous implants from 2017 contained bogus documents with financially themed content.
+A code comparison of hash 12c786c490366727cf7279fc141921d8 with hash 6de6a0df263ecd2d71a92597b2362f2c (from November 28, 2017).
+Conclusion We have found what may be an early data-gathering stage for future possible heists from financial organizations in Turkey (and possibly other countries).
+In this campaign, we see the adoption of a recent zero-day Adobe Flash vulnerability to get the implant onto the victim’s systems.
+The campaign has a high chance of success against victims who have an unpatched version of Flash.
+Documents with the Flash exploit managed to evade static defenses and remain undetected as an exploit on VirusTotal.

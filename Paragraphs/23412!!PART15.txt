@@ -1,0 +1,9 @@
+
+That, however, remains unlikely.
+Let’s not forget that it took three years to move from a theoretical vulnerability to the first practical attack (and even then, it’s an attack with many limitations).
+Spectre may also be used for targeted attacks in which the potential benefit from the stolen data exceeds the costs of the operation.
+Even if that scenario is relevant to your organization, you can easily make attacks more difficult by using different browsers for different content.
+For example, do not open pages and Web services with sensitive information in the same browser where you get your online entertainment.
+Ideally, handle confidential information in an isolated environment, in a virtual machine, or simply on a separate device.
+
+

@@ -1,0 +1,5 @@
+
+It enables the following privileges : SeBackupPrivilege SeRestorePrivilege SeTakeOwnershipPrivilege SeSecurityPrivilege To find a file to erase, the malware uses function GetFullPath to get all paths.
+It erases each folder and file.
+The malware browses every file in every folder on the system.
+To erase all files and folders, it first removes the “read only’ attributes to overwrite them.

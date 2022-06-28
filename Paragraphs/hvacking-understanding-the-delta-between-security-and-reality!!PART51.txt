@@ -1,0 +1,5 @@
+
+Without physical access to the device, an attacker wouldn’t have a clear idea of how the backup image differs from the original or even if it is exploitable.
+If the backup image uses a different version of the firmware, the exploit may no longer work.
+Perhaps more importantly, a denial-of-service attack suffers from its inherent lack of subtlety.
+If the attack immediately causes alarms to go off when executed, the attacker can expect that their persistence in the system will be short-lived.

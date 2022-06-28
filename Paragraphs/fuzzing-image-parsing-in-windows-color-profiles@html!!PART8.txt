@@ -1,0 +1,4 @@
+
+One of the other main source of color profile is images; many image files contain a color profile but require some programming/tools to dump their color profile to stand-alone files.
+Simply skimming through the specification, we can also make sure the corpus contains at least one sample from all of the seven different color profiles.
+ This along with the code coverage information can be used to prepare the first set of corpuses for fuzzing.

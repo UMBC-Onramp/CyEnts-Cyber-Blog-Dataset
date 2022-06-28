@@ -1,0 +1,6 @@
+
+Delete these clients as well; A firewall rule that allows remote access through port 5678.
+Remove this rule.
+Recommendations for protecting your MikroTik router Regular updates are a crucial part of any successful defense strategy.
+Much of keeping a MikroTik network safe is following general network security best practices.
+Make sure your router is using the latest firmware available, and update it regularly; Disable remote access to the device unless you absolutely need it; Configure remote access — again, if you really need it — through a VPN channel.

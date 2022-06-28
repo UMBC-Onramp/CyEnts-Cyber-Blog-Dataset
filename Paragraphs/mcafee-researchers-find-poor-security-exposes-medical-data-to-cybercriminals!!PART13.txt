@@ -1,0 +1,7 @@
+
+and, in one case, we reconstructed a partial face.
+Because we firmly believe in protecting privacy, the following example—a series of images from a pelvis—comes from a demo file that accompanies the software.
+An example of a series of images.
+After selecting areas of interest and adjusting the levels, we generated a 3D model of the pelvis: A 3D model of the pelvis.
+The application that generated the 3D model has a feature that allowed us to export the model in several data formats to be used by other 3D drawing programs.
+After the export, we imported the data into a 3D drawing program and converted the file to STL, a popular format for 3D objects and printers.

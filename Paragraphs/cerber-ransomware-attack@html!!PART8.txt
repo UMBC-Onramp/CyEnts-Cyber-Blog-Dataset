@@ -1,0 +1,8 @@
+
+Cerber accomplished this by launching the following processes using respective arguments: Vssadmin.exe \"delete shadows /all /quiet\" WMIC.exe \"shadowcopy delete\" Bcdedit.exe \"/set {default} recoveryenabled no\" Bcdedit.exe \"/set {default} bootstatuspolicy ignoreallfailures Coercion People may wonder why victims pay the ransom to the threat actors.
+In some cases it is as simple as needing to get files back, but in other instances a victim may feel coerced or even intimidated.
+We noticed these tactics being used in this campaign, where the victim is shown the message in Figure 2 upon being infected with Cerber.
+Figure 2.
+A message to the victim after encryption The ransomware authors attempt to incentivize the victim into paying quickly by providing a 50 percent discount if the ransom is paid within a certain timeframe, as seen in Figure 3.
+Figure 3.
+Ransom offered to victim, which is discounted for five days Multilingual Support As seen in Figure 4, the Cerber ransomware presented its message and instructions in 12 different languages, indicating this attack was on a global scale.

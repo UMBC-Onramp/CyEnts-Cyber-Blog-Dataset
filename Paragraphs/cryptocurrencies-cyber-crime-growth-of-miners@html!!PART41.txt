@@ -1,0 +1,7 @@
+
+These messages are simple, readable, JSON-RPC messages.
+Subscription requests will include the following entities: id, method, and params (Figure 15).
+A deep packet inspection (DPI) engine can be configured to look for these parameters in order to block Stratum over unencrypted TCP.
+Figure 15:
+Stratum subscription request parameters Encrypted Stratum Sessions
+In the case of JavaScript-based miners running Stratum over HTTPS, detection is more difficult for DPI engines that do not decrypt TLS traffic.

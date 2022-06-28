@@ -1,0 +1,6 @@
+
+In our PoC TIFF file, the BPS value is 0x09—which is not supported by UnpackLine —and the control flow never reaches a code path that writes to the buffer.
+This is the root cause of the uninitialized memory, which gets processed further down the pipeline and finally shown as pixel data.
+Patch After presenting my analysis to Microsoft, they decided to patch the vulnerability by making the files with unsupported BPS values as invalid.
+This avoids all decoding and rejects the file in the very early phase of its loading.
+CVE-2020-1397 Figure 5: Rendering of CVE-2020-1397

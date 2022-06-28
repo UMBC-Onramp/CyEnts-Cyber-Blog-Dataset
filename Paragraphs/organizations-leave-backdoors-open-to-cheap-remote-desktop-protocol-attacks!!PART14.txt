@@ -1,0 +1,11 @@
+
+By leveraging the vast amounts of connections offered by the RDP shops, we were able to quickly identify a victim that fits the profile of a high-value target in the United States.
+We found a newly posted (on April 16)
+Windows Server 2008 R2 Standard machine on the UAS Shop.
+According to the shop details, it belonged to a city in the United States and for a mere $10 we could get administrator rights to this system.
+RDP access offered for sale.
+UAS Shop hides the last two octets the of the IP addresses of the systems it offers for sale and charges a small fee for the complete address.
+(We did not pay for any services offered by UAS or any other shop.)
+To locate the system being sold, we used shodan.io to search for any open RDP ports at that specific organization using this query: org:”City  XXX” port:”3389” The results were far more alarming than we anticipated.
+The Shodan search narrowed 65,536 possible IPs to just three that matched our query.
+By obtaining a complete IP address we could now look up the WHOIS information, which revealed that all the addresses belonged to a major International airport.

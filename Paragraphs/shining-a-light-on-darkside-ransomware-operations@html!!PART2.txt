@@ -1,0 +1,3 @@
+
+Background Since initially surfacing in August 2020, the creators of DARKSIDE ransomware and their affiliates have launched a global crime spree affecting organizations in more than 15 countries and multiple industry verticals.
+Like many of their peers, these actors conduct multifaceted extortion where data is both exfiltrated and encrypted in place, allowing them to demand payment for unlocking and the non-release of stolen data to exert more pressure on victims.

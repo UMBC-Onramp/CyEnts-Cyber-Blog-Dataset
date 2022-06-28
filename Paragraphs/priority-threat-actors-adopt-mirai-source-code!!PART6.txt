@@ -1,0 +1,7 @@
+
+The IP address of the malware hosting server 45(.)13.58.4 is Heficed, another VPS provider but less well-known than Digital Ocean.
+What’s unique about this attack is that the first file variants of dlr.
+* (x86, mips, mpls, arm(all) and ppc are all packed with UPX, while m68k, sh4 and spc appear to not be packed at all.
+The strings in the files that show this to be a variant of Mirai are: “NeTiS and Thisity” and “FoReHeAd We BiG L33T HaxErS”
+Then, in future versions, there appears to be some significant changes specifically in claiming the system for “Priority” Server Infected!
+System Now Owned By Priority 54.39.36.160 Proximity-Killers These Mirai variants are identified by Juniper ATP Cloud as Mirai.0 The IP address referenced in the code is (54(.)39.36.160) also hosted at another VPS known as

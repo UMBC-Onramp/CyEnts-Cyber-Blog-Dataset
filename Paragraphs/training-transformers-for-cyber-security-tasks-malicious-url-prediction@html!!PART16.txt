@@ -1,0 +1,7 @@
+
+Contrary to findings from the NLP domain , wherein self-supervised pre-training substantially enhances performance in a fine-tuned classification task, similar pretraining approaches actually diminish performance for malicious URL detection.
+This suggests that the next character prediction task has too little apparent correlation with the task of malicious/benign prediction for effective/stable transfer.
+Interestingly, utilizing next-character prediction as an auxiliary loss function in conjunction with a malicious/benign loss yields improvements over training solely to predict the label.
+We hypothesize that while pre-training leads to a relatively poor generative model due to randomized content in the URLs within our dataset, a malicious/benign loss may serve to better condition the generative model learned by the next-character prediction task, distilling a subset of relevant information.
+It may also be the case that the long-distance relationships that are key to the generative pre-training task are not as important for the final malicious URL classification, as evidenced by the performance of the 1D CNN model.
+Note that we did not perform a rigorous hyperparameter search for our Transformer, since this research was primarily concerned with loss functions and training regimes.

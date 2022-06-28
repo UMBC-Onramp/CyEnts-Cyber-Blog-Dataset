@@ -1,0 +1,6 @@
+
+According to firmware analysis, the phone contacted the command server over the Internet and executed its instructions, including sending hidden text messages to paid numbers.
+The next phone model had even more advanced malicious functionality.
+According to one actual phone user, a total stranger used the phone number to sign up for Telegram.
+How could that have happened?
+Signing up for almost any messaging app means providing a phone number to which a confirmation code is sent by SMS.

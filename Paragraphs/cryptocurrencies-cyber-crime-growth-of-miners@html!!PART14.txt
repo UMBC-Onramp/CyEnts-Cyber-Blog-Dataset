@@ -1,0 +1,3 @@
+
+The actor offered the software for $30 USD, payable via Bitcoin.
+Ostensibly, the tool works with CPUs only and offers the following features: Configurable miner pool and port (default to minergate)

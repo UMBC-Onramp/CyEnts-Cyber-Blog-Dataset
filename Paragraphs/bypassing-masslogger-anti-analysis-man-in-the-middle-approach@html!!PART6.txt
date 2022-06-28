@@ -1,0 +1,6 @@
+
+We can use de4dot to automatically deobfuscate the MassLogger payload.
+However, looking at the deobfuscated payload, we quickly identify a major issue: Most of the methods contain almost no logic as shown in Figure 2.
+Figure 2: dnSpy showing empty methods Looking at the original MassLogger payload in dnSpy ’s Intermediate Language (IL) view confirms that most methods do not contain any logic and simply return nothing.
+This is obviously not the real malware since we already observed with dynamic analysis that the sample indeed performs malicious activities and logging to a log file.
+We are left with a few methods, most notably the method with the token 0x0600049D called first thing in the main module constructor.

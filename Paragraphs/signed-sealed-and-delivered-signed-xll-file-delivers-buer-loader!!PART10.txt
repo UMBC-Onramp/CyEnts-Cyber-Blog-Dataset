@@ -1,0 +1,6 @@
+
+In layman’s terms, RUST toolchains are collections of programs along with multiple dependencies needed to compile a RUST application.
+RUST toolchains observed used so far by Buer were: ureq 2.0.2 A minimal HTTP request library minreq
+A simple, minimal-dependency HTTP client with less features than ureq.
+A user-agent string of “something/1.0.0” Ring
+According to the official site, Ring is a safe, fast, small crypto focused on general-purpose cryptography.

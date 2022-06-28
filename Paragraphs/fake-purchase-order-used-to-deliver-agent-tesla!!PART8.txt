@@ -1,0 +1,7 @@
+
+With entries in the registry it will have persistence to run even if the host machine is rebooted.
+As can be seen in Figure 11, this variant is similar to one FortiGuard Labs has analyzed previously .
+From this point, it will run in the background and observe the user, recording their actions and sending them back to the threat actor.
+Conclusion Threat actors for the most part like to use lures that are tried and true, as was the case here with the invoicing phishing e-mail, because they continue to enjoy success.
+The dropper attached to the phishing e-mail shows the continuing evolution and complexity required to evade modern security controls combined with the need to traverse several gates to arrive at the release point for the final payload.
+Once finally deployed to a system, the ability to obfuscate and hide inside everyday files and processes proves that Agent Tesla is a very capable and formidable threat.

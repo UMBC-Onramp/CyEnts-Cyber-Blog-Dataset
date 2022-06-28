@@ -1,0 +1,7 @@
+
+In Part I of this post , I explained how this variant of Emotet is spread by malicious VBA code in Excel documents, how the downloaded Emotet malware runs within a Rundll32 program, what kind of anti-analysis techniques this variant uses.
+, how it encrypts and submits its victim’s data to its C2 server.
+, what Emotet does when it receives response data from the C2 server, and what Emotet does to enable persistence on the victim’s device.
+In this post, you will learn what the data in response packets with malicious modules look like, what modules have been received from the C2 server for the current Emotet campaign, and how they are deployed in the victim’s device.
+You will also discover what sensitive data those modules steal from a victim’s device.
+When X.dll Receives a Response with a Module Once the C2 server has processed and detected the first submitted packet that includes critical data—such as the victim’s device system version, Windows architecture, etc.—it replies with malicious modules for Emotet to execute in the victim’s device.

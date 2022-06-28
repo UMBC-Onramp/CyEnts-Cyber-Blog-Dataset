@@ -1,0 +1,10 @@
+
+This strategy allows them to orchestrate multiple threats instead of just one to reach their goals.
+An example is worth a thousand words Imagine an attack that starts with a phishing threat—not a typical campaign using Word documents, but a novel technique.
+This phishing email contains a video attachment.
+When you open the video, your video player does not play and prompts you to update the codec.
+Once you run the update, a steganographic polyglot file (a simple GIF) is deployed on your system.
+Because it is a polyglot (a file that conforms to more than one format at the same time), the GIF file schedules a task that fetches a fileless script hosted on a compromised system.
+That script running in memory evaluates your system and decides to run either ransomware or a cryptocurrency miner.
+That is a dangerous synergistic threat in action.
+The attack raises many questions: What are you dealing with?

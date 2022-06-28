@@ -1,0 +1,6 @@
+
+Figure 1: DFUR monitoring and detection dashboard
+The DFUR team created the Splunk dashboards using Simple XML to quickly identify alerts and pivot among the primary datapoints, as seen in Figure 2.
+The DFUR team knew that their improved and streamlined methodology would save time compared to exporting, analyzing, and correlating raw logs manually.
+Figure 2:
+Pivoting concepts used to develop DFUR dashboards Newly armed (legged?) with a monitoring and detection capability, the DFUR team was ready to find evil!

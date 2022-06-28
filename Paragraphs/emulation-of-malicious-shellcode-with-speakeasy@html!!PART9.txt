@@ -1,0 +1,5 @@
+
+It is built using the Cobalt Strike framework without any code modifications and can be easily built to have its core functionality and its command and control information modified.
+All of this allows attackers to rapidly build and deploy new variants of Beacon implants on compromised networks.
+Therefore, a tool to rapidly extract the variable components of Beacon are necessary and, ideally, will not require the valuable time of malware analysts.
+Speakeasy Design Speakeasy currently employs the QEMU-based emulator engine Unicorn to emulate CPU instructions for the x86 and amd64 architectures.

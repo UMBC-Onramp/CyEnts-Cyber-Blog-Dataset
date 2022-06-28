@@ -1,0 +1,7 @@
+
+As you investigate systems in an environment and identify evidence of malicious activity such as metadata related to the installation of backdoors, execution of tools, or files being staged for theft, you can track that information in an IOC.
+These IOCs are similar to bulk IOCs; however, an investigative IOC only contains indicators from a single investigation.
+Using this type of IOC can help you to prioritize which systems you want to analyze.
+IOC components: An IOC is made up of three main parts: IOC metadata, references and the definition.
+Let's examine each one of these more closely, noting that we're using the Mandiant IOC Editor (IOCe) downloadable from the Mandiant website:
+Metadata : IOC metadata describes information like the author of the IOC (jsmith@domain.tld), the name of the IOC (Evil.exe (BACKDOOR) and a brief description such as \"This variant of the open source Poison Ivy backdoor has been configured to beacon to 10.127.10.128 and registers itself as \"Microsoft 1atent time services\".

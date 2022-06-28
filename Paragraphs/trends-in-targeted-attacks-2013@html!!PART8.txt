@@ -1,0 +1,4 @@
+
+This year, I was fascinated by published research about exploit and malware dealers and targeted attack contractors (also known as cyber “hitmen”), because it further complicates the traditional “state-sponsored” analysis that we’ve become accustomed to.
+Dealers — The malware and exploits used in targeted attacks are not always exclusively available to one threat actor.
+Some are supplied by commercial entities such as FinFisher , which has been reportedly used against activists around the world, and HackingTeam , which sells spyware to governments and law enforcement agencies.

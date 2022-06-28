@@ -1,0 +1,6 @@
+
+If we can observe a certain ECG pattern, we can play it back to the central monitoring station without the patient monitor on the network.
+Thus we can emulate the function of the patient monitor with any device.
+The following video demonstrates this emulation using a Raspberry Pi.
+We set our Scapy scripts to load after booting the Pi, which mimics the idle function of the patient monitor.
+When the central monitor requests information about the patient’s vitals, the Pi provides the station with an 80-beats-per-minute wave form.

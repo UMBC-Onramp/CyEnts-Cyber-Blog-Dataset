@@ -1,0 +1,3 @@
+
+In addition to enabling testsigning mode, it is necessary to enable kernel debugging to be able to really follow what is happening after the kernel shellcode gains execution.
+Starting with Windows Vista, we can enable both testsigning and kernel debugging by issuing the following two commands in an administrative command prompt followed by a reboot: bcdedit.exe /set testsigning on bcdedit.exe /set debug on For debugging in a VM, I install VirtualKD , but you can also follow your virtualization vendor’s directions for connecting a serial port to a named pipe or other mechanism that WinDbg understands.

@@ -1,0 +1,13 @@
+
+Another top offender we observed was AgentTesla.
+Since these rules both turn up benign documents as well, they aren’t\nready for a production environment; however, they could be useful as\n“weak signals” for more manual threat hunting.
+Many static detection\nengines may struggle for accuracy when identifying the VBA purging\ntechnique.
+Dynamic analysis techniques, such as those used by\nFireEye’s MVX engine, will still detonate the malicious document\nproperly and be detected even if the VBA is purged.
+Conclusion For as long as companies use Office documents, attackers will be\ntrying to smuggle malicious macros into them.
+VBA purging represents a\nrecent example of how threat actors continually invent new ways to\nevade defenders.
+The artifacts discussed in this blog post should\nserve as a starting point for detecting VBA purging, and hopefully the\ntooling and indicators we have shared will help you hunt for\nadditional anomalies in malicious Office documents.
+Check out OfficePurge today!
+Indicators of Compromise File Name Description SHA256 Hash test.doc Unicorn macro payload in Word document without\nVBA purging f4431f02fe1e624fdb7bf2243bb72f1899d7eccb1ed7b2b42ed86e001e8bff28 test2.doc Unicorn macro payload in Word document with\nVBA purging 98bd119f928e8db4ed45f5426f2c35c5f6d6ccc38af029e7ab4b9cfcc1447c53 excel_calc.xls Sample document in OfficePurge’s\n“sample-data folder” de6583d338a8061bb1fc82687c8f5bff9a36ba1e2a87172e696ffaeca32567af excel_calc_PURGED.xls Sample document in OfficePurge’s\n“sample-data folder” 914a6cf78fe98e80b1dee87347adbc8f8b37a1dfe672aa5196885daa447e9e73 publisher_calc.pub Sample document in OfficePurge’s\n“sample-data folder” 4bce7c675edde20a3357bc1d0f25b53838ab0b13824ab7a5bbc09b995b7c832f publisher_calc_PURGED.pub Sample document in OfficePurge’s\n“sample-data folder” 36bdfaaf3ea228844507b1129b6927e1e69a2cd5e8af99d507121b1485d85e1e word_calc.doc Sample document in OfficePurge’s\n“sample-data folder” 23fa4b77c578470c1635fe20868591f07662b998716c51fbb53d78189c06154f word_calc_PURGED.doc Sample document in OfficePurge’s\n“sample-data folder”
+a7eac98b3477fc97ccfe94f1419a859061ca944dc95372265e922992bd551529 Subscribe to Blogs Get email updates as new blog posts are added.
+
+

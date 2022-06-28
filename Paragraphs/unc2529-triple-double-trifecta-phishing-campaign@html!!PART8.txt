@@ -1,0 +1,3 @@
+
+Masquerading as the account executive, seven phishing emails were observed targeting the medical industry, high-tech electronics, automotive and military equipment manufacturers, and a cleared defense contractor with subject lines very specific to the products of the California-based electronics manufacturing company.
+Another example is a freight / transport company that received a phish with subject, “compton ca to flowery branch ga”, while a firm that recruits and places long-haul truck drivers received a simple, “driver” in the subject line.

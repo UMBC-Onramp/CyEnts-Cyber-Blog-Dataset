@@ -1,0 +1,7 @@
+
+The B+tree traversal is shown in Figure 8.
+Figure 8: Traversing the local B+tree to find the chunk key associated with the SM_PAGE_KEY After the B+tree traversal is complete we found that our chunk key is 4b02d .
+Since it’s a compound value we need to decode it in order to retrieve the two indices into SMHP_CHUNK_METADATA ’s chunk pointer array, and the offset within the located chunk.
+The decoding involves four additional SHMP_CHUNK_METADATA fields – dwVectorSize , dwPageRecordsPerChunk , dwPageRecordSize , and dwChunkPageHeaderSize .
+The process is shown in Figure 9.
+Figure 9: Retrieving the page record associated with the chunk key

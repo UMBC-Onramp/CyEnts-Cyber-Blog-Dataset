@@ -1,0 +1,4 @@
+In December 2019, we published a blog post on augmenting analysis using Microsoft Excel for various data sets for incident response investigations.
+As we described, investigations often include custom or proprietary log formats and miscellaneous, non-traditional forensic artifacts.
+There are, of course, a variety of ways to tackle this task, but Excel stands out as a reliable way to analyze and transform a majority of data sets we encounter.
+In our first post, we discussed summarizing verbose artifacts using the CONCAT function, converting timestamps using the TIME function, and using the COUNTIF function for log baselining.

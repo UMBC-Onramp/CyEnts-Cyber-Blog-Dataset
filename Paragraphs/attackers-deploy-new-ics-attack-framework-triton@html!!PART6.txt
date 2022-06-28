@@ -1,0 +1,5 @@
+
+If the process exceeds the parameters that define a hazardous state, the SIS attempts to bring the process back into a safe state or automatically performs a safe shutdown of the process.
+If the SIS and DCS controls fail, the final line of defense is the design of the industrial facility, which includes mechanical protections on equipment (e.g. rupture discs), physical alarms, emergency response procedures and other mechanisms to mitigate dangerous situations.
+Asset owners employ varied approaches to interface their plant's DCS with the SIS.
+The traditional approach relies on the principles of segregation for both communication infrastructures and control strategies.

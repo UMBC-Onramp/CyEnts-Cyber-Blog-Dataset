@@ -1,0 +1,5 @@
+
+As evidence of their intent, the cybercriminals published screenshots of large money transfers.
+To make the leasing process as easy as possible, they set up a website to automatically publish the stolen data after the ransom deadline.
+In January 2021, police seized Netwalker dark web resources and charged Canadian citizen Sebastien Vachon-Desjardins with obtaining more than $27.6 million from the extortion activity.
+Vachon-Desjardins was in charge of finding victims, breaching them, and deploying Netwalker on their systems.

@@ -1,0 +1,7 @@
+
+There are some actors who have speculated that the DARKSIDE operator’s decision to close could be an exit scam.
+While we have not seen evidence suggesting that the operators of the DARKSIDE service have resumed operations, we anticipate that at least some of the former affiliates of the DARKSIDE service will likely identify different ransomware or malware offerings to use within their own operations.
+Notably, Mandiant has continued to observe a steady increase in the number of publicly named victims on ransomware shaming sites within the past month.
+Despite the recent ban of ransomware-related posts within underground forums, threat actors can still leverage private chats and connections to identify ransomware services.
+As one example, in mid-May 2021, the operator of the SODINOKIBI (aka REvil)
+RaaS indicated that multiple affiliates from other RaaS platforms that had shut down were switching to their service.

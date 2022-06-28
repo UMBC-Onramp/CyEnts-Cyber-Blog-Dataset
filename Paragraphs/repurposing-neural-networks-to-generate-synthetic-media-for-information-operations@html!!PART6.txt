@@ -1,0 +1,4 @@
+
+Code is typically released in the form of GitHub\nrepositories with extensive HOWTO guides and well-documented READMEs.\nThis allows anyone to easily reproduce figures from the initial\npapers, and potentially use this source code as a starting point for\ntheir own research or projects.
+This process plays out on loop,\nensuring a healthy, self-reinforcing model supply chain and ultimately\na quicker pace of scientific innovation.
+However, while this emergent\nmodel sharing ecosystem beneficially lowers the barrier to entry for\nnon-experts, it also gives a leg up to those seeking to leverage open\nsource models for malicious purposes.

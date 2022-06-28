@@ -1,0 +1,4 @@
+
+0x50dc0542 This short list shows the name of the process to kill and the custom hash from the special name generated from the original process name.
+FIGURE 8.
+TERMINATEPROCESS FUNCTION TAKEN FROM THE EXPORT ADDRESS TABLE (EAT) OF KERNEL32 AND PASSING THE HASH NAME CHECK

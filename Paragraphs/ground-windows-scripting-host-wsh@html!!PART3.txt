@@ -1,0 +1,4 @@
+
+I often see the startup folder used legitimately to execute maintenance scripts written in Visual Basic or in Microsoft's batch scripting language.
+I also frequently see that applications install shortcut, or LNK, files within the startup folder that point to applications on disk.
+Malicious use of this directory, however, is most often associated with commodity malware - often accomplished by dropping an executable into the startup folder.

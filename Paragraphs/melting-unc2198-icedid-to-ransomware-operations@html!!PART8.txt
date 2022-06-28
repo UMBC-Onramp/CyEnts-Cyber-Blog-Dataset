@@ -1,0 +1,5 @@
+
+The timing of the EGREGOR usage is also consistent with MAZE ransomware shutting down as reported by Mandiant Intelligence.
+Figure 3 depicts the timeline of related intrusions and merges into UNC2198.
+Figure 3: UNC2198 timeline UNC2198 Intrusion Flow: After Initial Access Expanding the UNC2198 cluster through multiple intrusions and merges with other UNC groups highlights the range of TTPs employed.
+We have pulled out some key data from all our UNC2198 intrusions to illustrate an amalgamation of capabilities used by the threat actor.

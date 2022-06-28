@@ -1,0 +1,6 @@
+
+It performs this by storing local caches of the website in various geographic locations.
+It does this by linking together a network of servers to deliver content as quickly and cheaply as possible.
+A CDN provider places servers at internet exchange points (IXPs) between different Internet providers so they can distribute content geographically closer to website visitors, allowing them to experience faster page loads.
+CDNs were once the realm of only large corporations.
+However, as the price of the CDN has come down, many webhosting providers who offer shopping carts are also providing CDN services.

@@ -1,0 +1,11 @@
+
+The following commands are supported by the malware implant:
+cmd /c pull <filename>:
+Adds filename to temp.zip, Base64 encodes, and uploads to control server cmd /c chip <string>: Deletes current ipnet.ini config file.
+Writes new config info (control server connection info) to new ipnet.ini.
+cmd /c put <new_file_name> <existing_file_name>:
+Copies existing file to new file name.
+Deletes existing file. /user
+<parameters>:
+Executes downloaded file with parameters specified using CreateProcessAsUser cmd /c <command>:
+Executes command on infected endpoint Conclusion The actor behind Honeybee has been operating with new implants since at least November 2017 with the first known version of NTWDBLIB installer.

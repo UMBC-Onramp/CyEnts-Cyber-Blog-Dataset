@@ -1,0 +1,4 @@
+
+We will add “User Principle Name” and “IP Address” fields as Rows, and “IP Address” as Values.
+Let’s also add the “App” field to Columns.
+Our field settings and resulting table are displayed in Figure 15: Figure 15: PivotTable with IP addresses and apps With just a few clicks, we have a summarized table indicating which IP addresses each user logged in from, and which app they logged into.

@@ -1,0 +1,7 @@
+
+If it is not the right hash, the malware gets the next API name and continues its calculations.
+The ransomware repeats this same process until it resolves the API addresses that the malware needs.
+This is quite a simple trick.
+Most malware hides its APIs and resolves the right addresses using different combinations of LoadLibraryA, GetProcAddress, and other APIs.
+They also use different combinations of encryption, calculations, and encodings.
+But at the end of the malware’s API addresses resolving algorithm we still get the list of APIs with their proper addresses.

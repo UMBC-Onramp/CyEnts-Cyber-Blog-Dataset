@@ -1,0 +1,7 @@
+
+Please note that this is by no means a comprehensive list of O365 attacks, rather a focus on the usual routes we’ve seen BEC actors take to accomplish their objective.
+Phase 1:
+Initial Compromise Phishing :
+Emails with links to credential harvesting forms sent to victims, sometimes from the account of a compromised business partner.
+Brute force : A large dictionary of passwords attempted against an account of interest.
+Password spray : A dictionary of commonly used passwords attempted against a list of known user accounts.

@@ -1,0 +1,6 @@
+
+Figure 9:
+Dashboard panel showing potential password attack events The DFUR analyst clicked on one of the IP addresses which triggered a drill-down action to open the IP Address Enrichment dashboard and prepopulate the IP address token value (Figure 10).
+Figure 10:
+IP Address Enrichment dashboard
+The DFUR analyst identified more than 3,000 failed login attempts associated with the IP address with three (3) successful logins that morning.

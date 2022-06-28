@@ -1,0 +1,4 @@
+
+The security team was asked to investigate potential password attack activity on their DFUR platform.
+The DFUR analyst pulled up the main monitoring and detection dashboard and scrolled down to the panel focused on identifying potential password attack activity (Figure 9).
+They identified five (5) IP addresses associated with an elevated number of failed login attempts, suggesting a password spray or credential stuffing attack with varying success.

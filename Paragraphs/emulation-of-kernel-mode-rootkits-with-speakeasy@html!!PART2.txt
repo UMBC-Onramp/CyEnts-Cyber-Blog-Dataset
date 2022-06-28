@@ -1,0 +1,5 @@
+
+Dynamic analysis of kernel mode malware can be more involved than with user mode samples.
+In order to debug kernel malware, a proper environment needs to be created.
+This usually involves setting up two separate virtual machines as debugger and debugee.
+The malware can then be loaded as an on-demand kernel service where the driver can be debugged remotely with a tool such as WinDbg.

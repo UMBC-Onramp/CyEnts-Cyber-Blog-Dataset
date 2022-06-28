@@ -1,0 +1,5 @@
+
+When the full contents of the iso container are revealed, a DLL file can also be seen.
+LNK As seen in Figure 4, the shortcut file was created some time prior to the sending of the phishing e-mail.
+Additionally, the highlighted area shows what will occur should the shortcut be clicked on by a user.
+In this case, Regsvr32 is used to register “main.dll” with the Windows registry and launch the code contained within.

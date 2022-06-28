@@ -1,0 +1,9 @@
+
+The following screenshot shows the execution of this command: The malware overwrites every file in c:\\Windows\\System32, placing the machine in a critical state.
+All the files on the system are overwritten.
+The overwriting process: Finally, it forces the reboot with the following command: Shutdown -r -f -t 2
+Once the system is rebooted it shows a blue screen:
+Worm The worm component is extracted from the resources from the dropper.
+Destructive malware usually uses spreading techniques to infect machines as quickly as possible.
+The worm component can take the following names: We noticed the capability to scan for the local network and connect to a potential control server:
+Although the worm component can spread the dropper and connect to a remote server, the component was not used in this version.

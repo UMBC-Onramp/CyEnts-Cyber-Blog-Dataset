@@ -1,0 +1,7 @@
+
+Removing access, as Laurie points out, is tough.
+You would need a UPnP daemon, which the average consumer most likely does not have.
+“When you leave the house, you can always connect to that port,” says Laurie.
+“If an attacker were to connect to that port, she would be routed to an address assigned to the game console.”
+Worse yet, imagine if the next visitor connected his work laptop to that same network.
+The visitor could run a business process on that same open port.

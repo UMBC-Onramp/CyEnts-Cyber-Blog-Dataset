@@ -1,0 +1,13 @@
+
+Deploy multifactor authentication on all remote access points into an enterprise network — with particular care given to secure or disable remote desktop protocol (RDP) access.
+Multiple ransomware attacks have been known to exploit weak RDP access to gain initial entry into a targeted network.
+Use penetration testing to identify weak points in enterprise networks and vulnerabilities that should be prioritized for patching.
+In particular, we recommend implementing mitigations for CVE-2019-19781 , which multiple threat actors have used to gain initial entry into enterprises in 2020 and 2021 — including for ransomware attacks.
+Consider prioritizing the immediate remediation, as applicable, of the following frequently exploited software vulnerabilities: CVE-2019-2725 CVE-2020-2021 CVE-2020-5902 CVE-2018-8453 VPN-related CVEs CVE-2019-11510 CVE-2019-11539 CVE-2018-13379 CVE-2019-18935 CVE-2021-22893 RDP Restrict port access on TCP port 3389
+Apply multifactor authentication to remote access logins Remediate RDP vulnerabilities such as Windows RDP CVE-2019-0708 (BlueKeep) CVE-2020-3427 CVE-2020-0610 CVE-2020-0609 Segment networks according to the data they host.
+Encrypt the data most likely to be stolen in an attack.
+Consider adopting a Zero Trust approach and framework to better control what users can access and potentially halt an attack in its tracks.
+If you are experiencing cybersecurity issues or an incident, contact X-Force to help: U.S. Hotline: 1-888-241-9812 | Global Hotline: +(001) 312-212-8034.
+Learn more about X-Force’s threat intelligence and incident response services .
+
+

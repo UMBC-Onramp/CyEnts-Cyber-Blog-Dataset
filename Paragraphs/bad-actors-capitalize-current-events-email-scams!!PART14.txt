@@ -1,0 +1,6 @@
+
+The point is that important sectors such as government agencies are no longer exempt from attacks, especially from Emotet threat actors, regardless of bias or opinion.
+Phishing scams aren’t going anywhere.
+They are a part of the threat landscape and will likely always be a component of an attackers’ arsenal.
+This is because the return on investment for an attacker is very high.
+A crafted email containing specific language designed to trick users into opening an attachment, following a link, responding with confidential or sensitive information, etc. will always work on a percentage of targets.

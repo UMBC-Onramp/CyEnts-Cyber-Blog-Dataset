@@ -1,0 +1,6 @@
+
+Last February, researchers uncovered OlympicDestroyer, which affected the Olympic Games organization.
+Shamoon is destructive malware that McAfee has been monitoring since its appearance.
+The most recent wave struck early this month when the McAfee Foundstone Emergency Incident Response team reacted to a customer’s breach and identified the latest variant.
+Shamoon hit oil and gas companies in the Middle East in 2012 and resurfaced in 2016 targeting the same industry.
+This threat is critical for businesses; we recommend taking appropriate actions to defend your organizations.

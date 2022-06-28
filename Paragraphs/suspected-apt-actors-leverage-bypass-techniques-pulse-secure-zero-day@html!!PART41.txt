@@ -1,0 +1,4 @@
+
+The comment strings used are ##cgistart1 , ##cgiend1 , ##cgistart2 and ##cgiend2 .
+Although the exact purpose of these comment strings is unknown, the attacker may use them to facilitate updates to the malicious code or to allow for its quick removal if necessary.
+The Perl script enclosed in the tags ##cgistart1 and ##cgiend1 adds several lines to import Perl modules that are used by the webshell.

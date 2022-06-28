@@ -1,0 +1,9 @@
+
+in response.
+In this field, complete control of the operating system is typically the finish line.
+But we weren’t content with just that.
+After all, controlling the eBMGR on its own is not all that interesting; we wanted to see if we could use it to control all the devices it was connected to.
+Unfortunately, we did not have the source code for the device’s software, so this new goal proved non-trivial.
+We went back to the drawing board and acquired some additional hardware that the Delta device might realistically be charged with managing and had a certified technician program the device just as he would for a real-world client – in our case, as an HVAC controller.
+Our strategy quickly became what is often referred to as a replay attack.
+As an example, if we wanted to determine how to tell the device to flip a switch, we would first observe the device flipping the switch in the “normal” way and try to track down what code had to run for that to happen.

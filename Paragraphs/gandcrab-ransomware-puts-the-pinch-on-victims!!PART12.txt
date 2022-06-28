@@ -1,0 +1,7 @@
+
+The code is a Visual Studio project and can be easily recompiled.
+This code has folders in Russian after loading the project in Visual Studio.
+Version 4.3 This version also appeared August 1.
+This version has several changes from previous versions.
+It removes the code to detect virtual machines and a few other odd things in Version 4.2.
+This code had some failure points; some virtual machines could not be detected.

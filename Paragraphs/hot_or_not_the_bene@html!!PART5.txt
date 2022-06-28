@@ -1,0 +1,18 @@
+
+While the review process for updated apps often takes less time than the initial submission review, the process can still be time-consuming, unpredictable, and can potentially cause loss of business if app fixes are not delivered in a timely and controlled manner.
+However, if the original app is embedded with the JSPatch engine, its behavior can be changed according to the JavaScript code loaded at runtime.
+This JavaScript file ( hxxp://cnbang.net/bugfix.JS in the above example) is remotely controlled by the app developer.
+It is delivered to the app through network communication.
+Figure 2 shows the standard way of setting up JSPatch in an iOS app.
+This code would allow download and execution of a JavaScript patch when the app starts: Figure 2.
+Objc code enabling JSPatch in an app JSPatch is indeed lightweight.
+In this case, the only additional work to enable it is to add seven lines of code to the application:didFiishLaunchingWithOptions: selector.
+Figure 3 shows the JavaScript downloaded from hxxp://cnbang.net/bugfix.JS that is used to patch the faulty code.
+Figure 3.
+JSPatch hot patch fixing index out of bound bug in Figure 1 Malicious Capability Showcase JSPatch is a boon to iOS developers.
+In the right hands, it can be used to quickly and effectively deploy patches and code updates.
+But in a non-utopian world like ours, we need to assume that bad actors will leverage this technology for unintended purposes.
+Specifically, if an attacker is able to tamper with the content of JavaScript file that is eventually loaded by the app, a range of attacks can be successfully performed against an App Store application.
+Target App
+We randomly picked a legitimate app [1] with JSPatch enabled from the App Store.
+The logistics of setting up the JSPatch platform and resources for code patching are packaged in this routine [AppDelegate excuteJSPatch:] , as shown in Figure 4 [2] : Figure 4.

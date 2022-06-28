@@ -1,0 +1,8 @@
+
+For example, IcedID can download other malware, including ransomware, to infected devices.
+Meanwhile, Qbot’s tricks include stealing e-mail threads for use in further spam campaigns, and providing its operators with remote access to victims’ computers.
+On work machines in particular, the consequences can be serious.
+How to stay safe from banking Trojans No matter how crafty cybercriminals can be, you don’t need to reinvent the wheel to stay safe.
+Both of the spam campaigns in question rely on recipients taking risky actions — if they don’t open the malicious file and let it execute the macro, the scheme simply will not work.
+To reduce your chances of becoming a victim: Check the sender’s identity, including the domain name.
+Someone claiming to be a contractor or a corporate client but using a Gmail address, for example, may be suspicious.

@@ -1,0 +1,4 @@
+
+A few additional steps specific to cryptomining: Monitor abnormal power consumption and CPU activity Search logs for related mining strings such as Crypto, Coinhive, XMR, Monero, and cpuminer Block mining pool communications Use browser extensions to protect against browser-based cryptocurrency mining For a more comprehensive list, including recommended Snort rules, see the Recommended Best Practices section of the report.
+The Evolution of Illicit Mining Illicit cryptocurrency mining appears to have a positive correlation with Bitcoin value.
+As long as cryptocurrencies such as Bitcoin have value, we expect bad actors will continue to mine for profits.

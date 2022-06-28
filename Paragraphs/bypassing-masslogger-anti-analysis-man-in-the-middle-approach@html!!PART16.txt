@@ -1,0 +1,11 @@
+
+The field we really care about is a four-byte field at offset 0x04 byte into this fat header.
+This field specifies the length of the MSIL that follows this method body header.
+For method 0x0600049D , the entire method body header is “ 1B 30 08 00
+A8 61 00 00 75 00 00 11 ” and the length of the MSIL to follow is “ A8 61 00 00 ” or 0x61A8 ( 25000 in decimal) bytes.
+Figure 10: Method 0x0600049D body in a hex editor JIT Compilation
+Whether a method is tiny or fat, it does not execute as is.
+When the .NET runtime needs to execute a method, it follows exactly the process described earlier to find the method body which includes the method body header and the MSIL bytes.
+If this is the first time the method needs to run, the .NET runtime invokes the Just-In-Time compiler which takes the MSIL bytes and compiles them into x86 or x64 assembly depending on whether the current process is 32- or 64-bit.
+After some preparation, the JIT compiler eventually calls the compileMethod() function.
+The entire .NET runtime project is open-sourced and available on GitHub .

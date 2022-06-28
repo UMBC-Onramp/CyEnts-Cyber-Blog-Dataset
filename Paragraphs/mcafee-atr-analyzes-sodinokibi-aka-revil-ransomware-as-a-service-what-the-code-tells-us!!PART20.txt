@@ -1,0 +1,6 @@
+
+After this step is completed, the malware will check the “dbg” option gathered from the config and, if that value is ‘true’, it will avoid checking the language of the machine but if the value is ‘false’ ( by default), it will check the machine language and compare it with a list of hardcoded values.
+FIGURE 12.
+GET THE KEYBOARD LANGUAGE OF THE SYSTEM
+The malware checks against the next list of blacklisted languages (they can change per sample in some cases): 0x818 – Romanian (Moldova) 0x419 – Russian 0x819 – Russian (Moldova
+) 0x422 – Ukrainian 0x423 – Belarusian 0x425 – Estonian 0x426 – Latvian 0x427 – Lithuanian 0x428 – Tajik 0x429 – Persian 0x42B – Armenian 0x42C – Azeri 0x437 – Georgian 0x43F – Kazakh 0x440 – Kyrgyz 0x442 – Turkmen 0x443 – Uzbek 0x444 – Tatar 0x45A – Syrian 0x2801 – Arabic (Syria)

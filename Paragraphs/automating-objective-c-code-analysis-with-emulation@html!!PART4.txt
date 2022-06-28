@@ -1,0 +1,4 @@
+
+The data tracking technique could also be employed to track the this pointer in C++ code in order to markup object member references, or the return values from calls to GetProcAddress/dlsym in order to rename the variables they are stored in appropriately.
+There are many possibilities.
+Introducing flare-emu The FLARE team is introducing an IDAPython library, flare-emu , that marries IDA Pro’s binary analysis capabilities with Unicorn’s emulation framework to provide the user with an easy to use and flexible interface for scripting emulation tasks.

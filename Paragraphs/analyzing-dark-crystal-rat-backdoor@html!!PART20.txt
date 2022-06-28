@@ -1,0 +1,11 @@
+
+One type of message uses the value u instead of a hash for <message_hash> .
+<message> is the message data, which is not obscured in any way.
+The other type of ordinary message is a getdata message.
+These are GET requests to URLs of the form hxxp://domalo[.]online/ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91dueu3qa54/46kqb jvyklunp1z56txzkhen7gjci3cyx8ggkptx25i74mo6myqpx9klvv3/akcii239myzon0xwjlxqnn 3b34w/ <hash> .php?
+type=__ds_getdata&__ds_getdata_user= <user_hash> &_
+_ds_getdata_ext= <message_hash> &__ds_getdata_key= <key> , where: <hash> and <user_hash> are calculated as described above for getdata messages.
+<message_hash> is also calculated as described above for getdata messages, but describes the type of message the malware is expecting to receive in the server’s response.
+<key> is MD5(<user_hash>) .
+The server is expected to respond to a getdata message with an appropriate response for the type of message specified by <message_hash> .
+GET requests, format 2 A few types of messages from the malware to the C2 use a different format, which we denote as “format 2.”

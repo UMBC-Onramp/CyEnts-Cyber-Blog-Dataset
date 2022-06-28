@@ -1,0 +1,8 @@
+
+Taking everything into account and sending the series of 97 packets, we were able to successfully exploit the building manager by creating a bind shell.
+Below is a video demonstrating this attack: A Real-world Scenario Although providing a root shell to an attacker proves the vulnerability is exploitable, what can an attacker do with it?
+A shell by itself does not prove useful unless an attacker can control the normal operation of the system or steal valuable data.
+In this case, there is not a lot of useful data stored on the device.
+Someone could download information about how the system is configured or what it’s controlling, which may have some value, but this will not hold significant impact on its own.
+It is also plausible to delete essential system files via a denial-of-service attack that could easily put the target in an unusable state, but pure destruction is also of low value for various reasons.
+First, as mentioned previously, the device has a backup image that it will fall back to if a failure occurs during the boot process.

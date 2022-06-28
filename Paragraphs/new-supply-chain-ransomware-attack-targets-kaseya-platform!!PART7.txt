@@ -1,0 +1,10 @@
+
+EAD4!tr.ransom W32/Sodinokibi.8859!tr.ransom W32/Sodinokibi.5421!tr.ransom FortiGuard Labs has IPS coverage in place as: Kaseya.
+VSA.Remote.
+Code.
+Execution All known network IOC's are blocked by the WebFiltering client.
+The FortiGuard AntiVirus service is supported by FortiGate , FortiMail, FortiClient , and FortiEDR .
+The Fortinet AntiVirus engine is a part of each of those solutions as well.
+As a result, customers who have these products with up-to-date protections are protected.
+For FortiEDR protections, all published IOCs have been added to our Cloud intelligence service and will be blocked if executed on customer systems.
+The FortiGuard Responder team has published a Knowledge Base analysis on Kaseya and “ How FortiEDR detects Kaseya supply chain ransomware attack .”

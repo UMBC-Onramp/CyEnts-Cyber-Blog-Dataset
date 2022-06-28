@@ -1,0 +1,9 @@
+
+Doing so allowed us to quantify the overlap between the individual IRA datasets based on how well one dataset’s LM was able to predict post content originating from the other datasets.
+Figure 4:
+Confusion matrix representing perplexities of the LMs on their test datasets.
+The LM corresponding to the GPT-2 row was not fine-tuned; it corresponds to the pretrained GPT-2 model with reported perplexity of 18.3 on its own test set, which was unavailable for evaluation using the LMs.
+The Reddit dataset was excluded due to the low volume of samples.
+In Figure 4, we show the result of computing perplexity scores for each of the three LMs and the original pre-trained GPT-2 model on held out test data from each dataset.
+Lower scores indicate better perplexity, which captures the probability of the model choosing the correct next word.
+The lowest scores fell along the main diagonal of the perplexity confusion matrix, meaning that the fine-tuned LMs were best at predicting the next word on test data originating from within their own datasets.

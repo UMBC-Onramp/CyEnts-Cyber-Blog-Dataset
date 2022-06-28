@@ -1,0 +1,11 @@
+
+Additionally, a referrer is selected from the following list, presumably to make the traffic blend in if traffic is being decrypted for inspection: www.bing.com www.yahoo.com www.google.com www.facebook.com
+The cookie headers vary slightly depending on the operation being performed.
+The following is an example request to the C2 from the “request_session_key” routine.
+Victim to C2 GET /assets/index.php HTTP/1.1 Host: reyweb[.]com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0)
+Gecko/20100101 Firefox/75.0 Cookie: HjELmFxKJc=48b9e25491e088a35105274cae0b9e67; P5hCrabkKf=gZLXIeKI; iN678zYrXMJZ=i4zICToyI70Yeidf1f7rWjm5foKX2Usx; b7XCoFSvs1YRW=78 Referer: www.facebook.com Accept-Encoding: gzip Within the Cookie header, these values represent the following: HjELmFxKJc=48b9e25491e088a35105274cae0b9e67 Timestamp MD5 contained within the configuration P5hCrabkKf=gZLXIeKI “P5hCrabkKf=” contains a unique string based on which routine is performing the request (see the following table).
+iN678zYrXMJZ=i4zICToyI70Yeidf1f7rWjm5foKX2Usx “i4zICToyI70Yeidf1f7rWjm5foKX2Usx” is hard coded within the SUNSHUTTLE backdoor.
+It possibly represents a payload identifier b7XCoFSvs1YRW=78 Unknown purpose.
+This value is only included in request_session_key and retrieve_session_key requests.
+As mentioned, the cookie value “P5hCrabkKf=” contained in each request signifies the operation that is being performed.

@@ -1,0 +1,7 @@
+
+Soldering pins to each of the unpopulated headers and using a logic analyzer, we determined that the 4-pin header in the center of the board is a universal asynchronous receiver-transmitter (UART) header running at a baud rate of 115200.
+Figure 3 Using the Exodus XI Breakout board (shout out to @Logan_Brown and the Exodus team) to connect to the UART headers, we were met with an unprotected root prompt on the system.
+Now with full access to the system, we could start to gain a deeper understanding of how the system works and extract the firmware.
+Figure 4 Firmware Extraction and System Analysis With the UART interface, we could now explore the system in real-time, but how could we extract the firmware for offline analysis?
+The device has two USB ports which we were able to use to mount a USB drive.
+This allowed us to copy what is running in memory using dd onto a flash drive, effectively extracting the firmware.

@@ -1,0 +1,48 @@
+
+Technical Indicators DOUBLEDRAG /
+BIFF8 Files MD5 Role Wave 39fc804566d02c35f3f9d67be52bee0d DOUBLEDRAG 1 st 44f7af834ee7387ac5d99a676a03cfdd DOUBLEDRAG 1 st 4e5583e34ad54fa7d1617f400281ba56 PDF Decoy 1 st e80dc4c3e26deddcc44e66bb19b6fb58 PDF Decoy 1 st 169c4d96138d3ff73097c2a9aab5b1c0 Zip 1 st e70502d020ba707095d46810fd32ee49 Zip 1 st 62fb99dc271abc104504212157a4ba91 Excel BIFF8 macro 2 nd 1d3fcb7808495bd403973a0472291da5 PDF Decoy 2 nd 6a1da7ee620c638bd494f4e24f6f1ca9 Zip 2 nd a28236b43f014c15f7ad4c2b4daf1490 Zip 2 nd d594b3bce66b8b56881febd38aa075fb Zip 2 nd Domains Dec. 2, 2020 Wave Dec. 11 to 18, 2020 Wave adupla[.]net aibemarle[.]com ceylonbungalows[.]net bestwalletforbitcoin[.]com
+chandol[.]com bitcoinsacks[.]com
+closetdeal[.]com
+digitalagencyleeds[.]com
+daldhillon[.]com
+erbilmarriott[.]com desmoncreative[.]com ethernetpedia[.]com farmpork[.]com fileamazon[.]com gemralph[.]com gamesaccommodationscotland[.]com isjustlunch[.]com greathabibgroup[.]com logicmyass[.]com infomarketx[.]com lottoangels[.]com
+jagunconsult[.]com
+mangoldsengers[.]com khodaycontrolsystem[.]com oconeeveteransmemorial[.]com maninashop[.]com scottishhandcraft[.]com onceprojects[.]com seathisons[.]com simcardhosting[.]com skysatcam[.]com
+stayzarentals[.]com smartnhappy[.]com touristboardaccommodation[.]com stepearn[.]com towncentrehotel[.]com sugarmummylove[.]com vacuumcleanerpartsstore[.]com
+techooze[.]com zmrtu[.]com tigertigerbeads[.]com totallyhealth-wealth[.]com towncenterhotel[.]com uaeworkpermit[.]com
+DOUBLEDROP MD5 4b32115487b4734f2723d461856af155 9e3f7e6697843075de537a8ba83da541 cc17e0a3a15da6a83b06b425ed79d84c URLs hxxp://p-leh[.]com/update_java.dat hxxp://clanvisits[.]com/mini.dat hxxps://towncentrehotels[.]com/ps1.dat DOUBLEBACK MD5 1aeecb2827babb42468d8257aa6afdeb
+1bdf780ea6ff3abee41fe9f48d355592 1f285e496096168fbed415e6496a172f 6a3a0d3d239f04ffd0666b522b8fcbaa ce02ef6efe6171cd5d1b4477e40a3989 fa9e686b811a1d921623947b8fd56337 URLs hxxps://klikbets[.]net/admin/client.php hxxps://lasartoria[.]net/admin/client.php hxxps://barrel1999[.]com/admin4/client.php hxxps://widestaticsinfo[.]com/admin4/client.php hxxps://secureinternet20[.]com/admin5/client.php hxxps://adsinfocoast[.]com/admin5/client.php Detections FireEye detects this activity across our platforms.
+The following contains specific detection names that provide an indicator of exploitation or post-exploitation activities we associate with UNC2529.
+Platforms Detection Name Network Security Email Security Detection On Demand Malware File
+Scanning Malware File Storage Scanning FEC_Trojan_JS_DOUBLEDRAG_1 (static) FE_Trojan_JS_DOUBLEDRAG_1 (static) Downloader.
+DOUBLEDRAG (network) Downloader.
+JS.DOUBLEDRAG.MVX (dynamic) FE_Dropper_PS1_DOUBLEDROP_1 (static) FEC_Dropper_PS1_DOUBLEDROP_1 (static) Dropper.
+PS1.DOUBLEDROP.MVX (dynamic) FE_Backdoor_Win_DOUBLEBACK_1 (static) FE_Backdoor_Win_DOUBLEBACK_2 (static) FE_Backdoor_Win_DOUBLEBACK_3 (static) FE_Backdoor_Win_DOUBLEBACK_4 (static) Backdoor.
+Win.
+DOUBLEBACK (network)
+Malware.Binary.xls Endpoint Security Real-Time (IOC) POWERSHELL ENCODED REMOTE DOWNLOAD (METHODOLOGY) SUSPICIOUS POWERSHELL USAGE (METHODOLOGY) MALICIOUS SCRIPT CONTENT
+A (METHODOLOGY)
+POWERSHELL INVOCATION FROM REGISTRY ARTIFACT (METHODOLOGY)
+Malware Protection (AV/MG)
+Generic.mg.1aeecb2827babb42 Generic.mg.1bdf780ea6ff3abe Generic.mg.1f285e496096168f Generic.mg.6a3a0d3d239f04ff Generic.mg.ce02ef6efe6171cd Generic.mg.fa9e686b811a1d92 Trojan.
+JS.Agent.
+TZP Gen:Variant.
+Ulise.150277 Gen:Variant.
+Ulise.150283 Gen:Variant.
+Razy.799918
+UNC2529 MITRE ATT&CK Mapping ATT&CK Tactic Category Techniques Resource Development Compromise Infrastructure (TT1584)
+Develop Capabilities (T1587) Digital Certificates (T1587.003)
+Obtain Capabilities (T1588) Digital Certificates (T1588.004) Initial Access Phishing (T1566)
+Spearphishing Link (T1566.002) Execution User Execution (T1204)
+Malicious Link (T1204.001) Command and Scripting Interpreter (T1059) Visual Basic (T1059.005) JavaScript/JScript (T1059.007)
+Privilege Escalation Process Injection (T1055) Defense Evasion Indicator Removal on Host (T1070)
+File Deletion (T1070.004) Obfuscated Files or Information (T1027) Process Injection (T1055) Modify Registry (T1112)
+Discovery System Owner/User Discovery (T1033) Process Discovery (T1057)
+System Information Discovery (T1082)
+Account Discovery (T1087) Software Discovery (T1518) Collection Screen Capture (T1113)
+Archive Collected Data (T1560) Archive via Utility (T1560.001)
+Command and Control Application Layer Protocol (T1071) Web Protocols (T1071.001) Asymmetric Cryptography (T1573.002) Acknowledgements Thank you to Tyler McLellan, Dominik Weber, Michael Durakovich and Jeremy Kennelly for technical review of this content.
+In addition, thank you to Nico Paulo Yturriaga and Evan Reese for outstanding signature creation, and Ana Foreman for graphics support.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

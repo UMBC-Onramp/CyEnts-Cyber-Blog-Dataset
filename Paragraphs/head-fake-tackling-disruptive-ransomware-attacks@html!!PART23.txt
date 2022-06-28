@@ -1,0 +1,28 @@
+
+Detecting the Techniques FireEye detects this activity across our platforms, including named detections for Dridex, Empire, BitPaymer and DoppelPaymer Ransomware.
+As a result of these investigations, FireEye additionally deployed new indicators and signatures to Endpoint and Network Security appliances.
+  
+This table contains several specific detection names from a larger list of detections that were available prior to this activity occurring.
+Platform Signature Name Endpoint Security HX Exploit Detection Empire RAT (BACKDOOR) EVENTVWR PARENT PROCESS
+(METHODOLOGY)
+Dridex (BACKDOOR)
+Dridex A (BACKDOOR)
+POWERSHELL SSL VERIFICATION DISABLE (METHODOLOGY) SUSPICIOUS POWERSHELL USAGE (METHODOLOGY) FAKEUPDATES SCREENSHOT CAPTURE (METHODOLOGY)
+Network Security Backdoor.
+FAKEUPDATES Trojan.
+Downloader.
+FakeUpdate Exploit.
+Kit.
+FakeUpdate Trojan.
+SSLCert.
+SocGholish MITRE ATT&CK Technique Mapping ATT&CK Techniques Initial Access Drive-by Compromise (T1189), Exploit Public-Facing Application (T1190)
+Execution PowerShell (T1086), Scripting (T1064), User Execution (T1204), Windows Management Instrumentation (T1047) Persistence DLL Search Order Hijacking (T1038)
+Privilege Escalation Bypass User Account Control (T1088), DLL Search Order Hijacking (T1038) Defense Evasion Bypass User Account Control (T1088), Disabling Security Tools (T1089), DLL Search Order Hijacking (T1038), File Deletion (T1107), Masquerading (T1036), NTFS File Attributes (T1096), Obfuscated Files or Information (T1027), Scripting (T1064), Virtualization/Sandbox Evasion (T1497) Credential Access Credential Dumping (T1003)
+Discovery Account Discovery (T1087), Domain Trust Discovery (T1482), File and Directory Discovery (T1083), Network Share Discovery (T1135), Process Discovery (T1057), Remote System Discovery (T1018), Security Software Discovery (T1063), System Information Discovery (T1082), System Network Configuration Discovery (T1016), Virtualization/Sandbox Evasion (T1497) Lateral Movement Remote Desktop Protocol (T1076),  Remote File Copy (T1105) Collection Data from Local System (T1005), Screen Capture (T1113) Command And Control
+Commonly Used Port (T1436), Custom Command and Control Protocol (T1094) ,Data Encoding (T1132), Data Obfuscation (T1001), Remote Access Tools (T1219), Remote File Copy (T1105), Standard Application Layer Protocol (T1071)
+Exfiltration Automated Exfiltration (T1020),
+Exfiltration Over Command and Control Channel (T1041) Impact Data Encrypted for Impact (T1486), Inhibit System Recovery (T1490), Service Stop (T1489) Acknowledgements A huge thanks to James Wyke and Jeremy Kennelly for their analysis of this activity and support of this post.
+Catch an on-demand recap on this and the Top 5 Managed Defense attacks this year.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

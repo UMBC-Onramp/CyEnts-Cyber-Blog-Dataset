@@ -1,0 +1,7 @@
+
+The remainder of the font program section is treated as unreachable code for the purposes of the font program and is ignored when initially parsing the font.
+During exploitation, the attacker’s shellcode uses Asynchronous Procedure Calls (APC) to inject the second stage from kernel-mode into the user-mode process winlogon.exe (in XP) or lsass.exe (in other OSes).
+From the injected process, the attacker writes and executes a third stage (executable).
+The third stage decodes an embedded DLL to, and runs it from, memory.
+This DLL is a full-featured remote access tool that connects back to the attacker.
+Plenty of evidence supports the attacker’s high level of sophistication.

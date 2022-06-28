@@ -1,0 +1,4 @@
+
+If your backpack ends up in a small town where all the residents use Android smartphones (or even the latest push-button phones that barely connect to the Internet ), it will be challenging to pin down the location of the AirTag.
+In this case a third detection mechanism kicks in: if a few hours go by and the AirTag hasn’t had a connection with any iPhone, the built-in speaker starts playing a sound.
+If the person who finds the item figures out how to connect their smartphone with NFC to the AirTag, the AirTag tells them the phone number of the item’s owner.

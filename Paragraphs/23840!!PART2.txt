@@ -1,0 +1,4 @@
+
+Most severe vulnerabilities Nine of the vulnerabilities that were closed this Tuesday have a critical rating on the CVSS 3.1 scale.
+Of those, two are related to privilege escalation : CVE-2022-21833 in Virtual Machine IDE Drive and CVE-2022-21857 in Active Directory Domain Services.
+Exploitation of the other seven can give an attacker the remote code execution ability: CVE-2022-21917 in HEVC Video Extensions; CVE-2022-21912 and CVE-2022-21898 in DirectX Graphics Kernel; CVE-2022-21846 in Microsoft Exchange Server; CVE-2022-21840 in Microsoft Office; CVE-2021-22947 in Open Source Curl; CVE-2022-21907 in HTTP Protocol Stack.

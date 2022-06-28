@@ -1,0 +1,3 @@
+
+When the expert rule is applied at the endpoint, deletion of shadow volume fails with the following error message: The malware also tries to stop McAfee services using command “net stop McShield /y”.
+The following expert rule can be used to prevent the malware from stopping McAfee Services: When the expert rule is applied at the endpoint, the attempt to stop McAfee service using net command fails with the following error message: Indicators of Compromise The samples use the following MITRE ATT&CK™ techniques: Execution through API (Batch file for example).

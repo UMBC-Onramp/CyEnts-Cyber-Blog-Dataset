@@ -1,0 +1,10 @@
+
+As part of confirming our findings about Dark Crystal RAT capabilities that we obtained through reverse engineering, we found some YouTube demonstrations of the DCRat builder and server.
+The YouTube user LIKAR has a YouTube demonstration of Dark Crystal RAT .
+The author demonstrates use of the Dark Crystal RAT software on a server with two active RAT instances.
+During the video, the author browses through the various screens in the software.
+This made it easy to envision how a cyber threat would use the RAT, and to confirm our suspicions of how it works.
+Figure 21 shows a capture from the video at 3:27 .
+Note that the Dark Crystal RAT builder software refers to the DCRatBuild package as a “server” rather than a client.
+Nonetheless, observe that one of the options was a type of Java, or C# (Beta).
+By watching this YouTube video and doing some additional background research, we discovered that Dark Crystal RAT has existed for some time in a Java version.

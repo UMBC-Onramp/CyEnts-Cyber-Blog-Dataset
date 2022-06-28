@@ -1,0 +1,5 @@
+
+Example SimplifyGraph.cfg contents ``` \"MINIMUM_SUBGRAPH_NODE_COUNT\"=5 \"MAXIMUM_SUBGRAPH_NODE_PERCENTAGE\"=75 \"SUBGRAPH_HIGHLIGHT_COLOR\"=0x00aa1111 ``` Prior work: I came across semi-related work while working on this: GraphSlick from the 2014 Hex-Rays contest .
+ That plug-in had different goals to automatically identifying (nearly) identical inline functions via CFG and basic block analysis, and patching the program to force mock function calls to the explicit function.
+It had a separate viewer to present information to the user.
+SimplifyGraph is focused on automating tasks when doing manual reverse engineering (group creation) to reduce the complexity of disassembly in graph mode.

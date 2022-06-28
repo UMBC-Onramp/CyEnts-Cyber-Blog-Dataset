@@ -1,0 +1,6 @@
+
+In some cases (for example, if the victim’s iPhone is not jailbroken ), the attacker may need physical access to the device, which somewhat complicates the task.
+Also, it seems that physical access is necessary for the attackers to infect Linux machines, but we cannot say for sure.
+What data does FinSpy steal?
+FinSpy has extensive user-surveillance capabilities.
+For example, PC versions of the malware can: Turn on the microphone and record or transmit everything it hears; Record or transmit in real time everything the user types on the keyboard; Turn on the camera and record or transmit images from it; Steal files the user interacts with: accesses, modifies, prints, receives, deletes, and so forth; Take screenshots or capture a section of the screen the user clicks; Steal e-mails from the Thunderbird, Outlook, Apple Mail, and Icedove clients; Intercept contacts, chats, calls, and files in Skype.

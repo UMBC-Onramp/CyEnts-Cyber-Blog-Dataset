@@ -1,0 +1,3 @@
+
+Establishing a Foothold in the IT Network Mandiant conducted a spear phishing exercise to gain initial access into the client’s enterprise network from the Internet.
+We defined a combination of two different phishing scenarios that we deployed to test email filtering and egress monitoring controls: Embedded link for a malicious file hosted on a Mandiant owned domain on the Internet Email attachment for a Microsoft Office document with auto - executable macro code This exercise allowed our team to achieve code execution on a user workstation in the enterprise environment and to establish an unattributable egress communication path to a Mandiant hosted Cobalt Strike Command and Control (C&C) server on the Internet.

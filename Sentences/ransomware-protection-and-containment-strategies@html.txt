@@ -1,0 +1,47 @@
+UPDATE (Oct. 30, 2020):
+
+ We have updated the report to include additional protection and containment strategies based on front-line visibility and response efforts in combating ransomware.
+
+While the full scope of recommendations included within the initial report remain unchanged, the following strategies have been added into the report: Windows Firewall rule configurations to block specific binaries from establishing outbound connections from endpoints Domain Controller isolation and recovery planning steps Proactive GPO permissions review and monitoring guidance Ransomware is a global threat targeting organizations in all industries.
+
+The impact of a successful ransomware event can be material to an organization - including the loss of access to data, systems, and operational outages.
+
+The potential downtime, coupled with unforeseen expenses for restoration, recovery, and implementation of new security processes and controls can be overwhelming.
+
+Ransomware has become an increasingly popular choice for attackers over the past few years, and it’s easy to understand why given how simple it is to leverage in campaigns – while offering a healthy financial return for attackers.
+
+In our latest report, Ransomware Protection and Containment Strategies: Practical Guidance for Endpoint Protection, Hardening, and Containment , we discuss steps organizations can proactively take to harden their environment to prevent the downstream impact of a ransomware event.
+
+These recommendations can also help organizations with prioritizing the most important steps required to contain and minimize the impact of a ransomware event after it occurs.
+
+Ransomware is commonly deployed across an environment in two ways: Manual propagation by a threat actor after they’ve penetrated an environment and have administrator-level privileges broadly across the environment: Manually run encryptors on targeted systems.
+
+Deploy encryptors across the environment using Windows batch files (mount C$ shares, copy the encryptor, and execute it with the Microsoft PsExec tool).
+
+Deploy encryptors with Microsoft Group Policy Objects (GPOs).
+
+Deploy encryptors with existing software deployment tools utilized by the victim organization.
+
+Automated propagation: Credential or Windows token extraction from disk or memory.
+
+Trust relationships between systems – and leveraging methods such as Windows Management Instrumentation (WMI), SMB, or PsExec to bind to systems and execute payloads.
+
+Unpatched exploitation methods (e.g., EternalBlue – addressed via Microsoft Security Bulletin MS17-010 ).
+
+The report covers several technical recommendations to help organizations mitigate the risk of and contain ransomware events including: Endpoint segmentation Hardening against common exploitation methods Reducing the exposure of privileged and service accounts Cleartext password protections If you are reading this report to aid your organization’s response to an existing ransomware event, it is important to understand how the ransomware was deployed through the environment and design your ransomware response appropriately.
+
+This guide should help organizations in that process.
+
+Read the report today .
+
+*Note: The recommendations in this report will help organizations mitigate the risk of and contain ransomware events.
+
+However, this report does not cover all aspects of a ransomware incident response.
+
+We do not discuss investigative techniques to identify and remove backdoors (ransomware operators often have multiple backdoors into victim environments), communicating and negotiating with threat actors, or recovering data once a decryptor is provided.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

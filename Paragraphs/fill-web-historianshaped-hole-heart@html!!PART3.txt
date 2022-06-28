@@ -1,0 +1,5 @@
+
+To ensure that Redline collects your desired web history data, click the link to Edit your script .
+On the View and Edit Your Script window are several options; take a look around and turn on any and all data that might interest you.
+For our purposes, we will be focusing on the Browser History options underneath the Network tab.
+This section contains all of the familiar options from Web Historian; simply select the boxes corresponding to the data you wish to collect.

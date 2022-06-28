@@ -1,0 +1,5 @@
+
+Figure 9: Windows APIs used in .NET dropper for process hollowing After reversing and modifying the code of the C# dropper to invoke R from main, we were able to confirm that when the method R is invoked, InstallUtil.exe is spawned in suspended mode.
+The memory blocks of the suspended process are unmapped and rewritten with the sections of the payload program passed as an argument to method R.
+The thread is allowed to continue after changes have been made to the entry point.
+When the process hollowing is complete, the parent PowerShell process is terminated.

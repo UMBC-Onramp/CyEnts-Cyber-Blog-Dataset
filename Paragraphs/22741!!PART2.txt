@@ -1,0 +1,5 @@
+
+How the scam works Scammers and spammers have long relied on Google services (Forms, Sheets, Calendar, Photos and others) for their ability to send automatic notifications to anyone the author of a file (or a calendar entry, etc.) shares it with or mentions in it.
+The e-mails come not from the actual author, but from no less an authority than Google, so spam filters typically let them through.
+In this case, potential cryptocurrency miners are receiving e-mails saying they have been mentioned in a Google Docs file by a user with the nickname BitmainTech (the name of a real manufacturer of mining rigs).
+The respectable name — @docs[.]google[.]com — in the From field helps lower the recipient’s guard.

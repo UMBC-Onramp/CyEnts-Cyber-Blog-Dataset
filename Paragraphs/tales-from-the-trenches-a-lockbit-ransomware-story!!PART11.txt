@@ -1,0 +1,7 @@
+
+Usually, this binary is a digitally signed executable from Microsoft; however, in this case, the malware uses it for process hollowing.
+By statically analyzing the file we can spot the usage of: NtUnmapViewOfSection LockBit uses this API in order to unmap the original code in execution NtWriteVirtualMemory
+The malware writes the base address of the injected image into the PEB via NtWriteVirtualMemory VirtualAllocEx
+To allocate the space before injecting the malicious code The VBC utility is the visual basic compiler for Windows and LockBit uses it to compile and execute the code on the fly directly in execution.
+If the vbc utility does not exist on the system, the malware downloads the original vbc.exe file from the same malicious URL as seen before.
+After executing vbc.exe, the malware replaces the objects in memory with the code for deploying the ransomware (as deduced from the exeBuffer).

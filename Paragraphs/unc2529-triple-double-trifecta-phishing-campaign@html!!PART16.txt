@@ -1,0 +1,9 @@
+
+In order to do so, the dropper generates three pseudo-random GUIDs and creates the registry keys and values shown in Figure 5.
+* HK[CU|LM]\\Software\\Classes\\CLSID\\{<rnd_guid_0>}
+* key:
+LocalServer * value: <default> * data: <bootstrap_ps_code> * key: ProgID * value: <default> * data: <rnd_guid_1> * value: <last_4_chars_of_rnd_guid_0> * data: <encoded_loader> * key: VersionIndependentProgID * value: <default> * data: <rnd_guid_1> * value: <first_4_chars_of_rnd_guid_0> * data: <encoded_rc4_key>
+* value: <last_4_chars_of_rnd_guid_0> * data: <rc4_encrypted_payload> * HK[CU|LM]\\Software\\Classes\\{<rnd_guid_1>} * value: <default> * data: <rnd_guid_1>
+* key:
+CLSID * value: <default> * data: <rnd_guid_0>
+* HK[CU|LM]\\Software\\Classes\\CLSID\\{<rnd_guid_2>}

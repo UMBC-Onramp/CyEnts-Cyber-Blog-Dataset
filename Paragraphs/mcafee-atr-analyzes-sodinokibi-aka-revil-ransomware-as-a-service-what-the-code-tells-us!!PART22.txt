@@ -1,0 +1,8 @@
+
+This insight became especially interesting later in our investigation.
+If the malware continues, it will search all processes in the list in the field “prc” in the config and terminate them in a loop to unlock the files locked for this/these process/es. FIGURE 13.
+SEARCH FOR TARGET PROCESSES AND TERMINATE THEM After this it will destroy all shadow volumes of the victim machine and disable the protection of the recovery boot with this command: exe /c vssadmin.exe Delete Shadows /All /Quiet & bcdedit /set {default} recoveryenabled No & bcdedit /set {default} bootstatuspolicy ignoreallfailures
+It is executed with the Windows function “ShellExecuteW”.
+FIGURE 14.
+LAUNCH COMMAND TO DESTROY SHADOW VOLUMES AND DESTROY SECURITY IN THE BOOT
+Next it will check the field of the config “wipe” and if it is true will destroy and delete all files with random trash or with NULL values.

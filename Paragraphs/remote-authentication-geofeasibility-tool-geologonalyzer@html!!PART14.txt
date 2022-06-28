@@ -1,0 +1,5 @@
+
+At this time, GeoLogonalyzer does not distinguish between successful logons, failed logon attempts, and logoff events.
+GeoLogonalyzer also does not detect overlapping logon sessions from multiple source IP addresses.
+False Positive Factors Note that the use of VPN or other tunneling services may create false positives.
+For example, a user may access an application from their home office in Wyoming at 08:00 UTC, connect to a VPN service hosted in Georgia at 08:30 UTC, and access the application again through the VPN service at 09:00 UTC.

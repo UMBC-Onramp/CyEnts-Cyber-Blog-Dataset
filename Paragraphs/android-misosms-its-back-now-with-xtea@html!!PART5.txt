@@ -1,0 +1,7 @@
+
+The domain name of the CnC is also encrypted and stored as a byte array in the native binary.
+Once the encrypted byte array containing the CnC information is decrypted, the malware checks to see whether the CnC is a domain or an IP address.
+That check is  meaningful.
+Its existence implies the ability to change the CnC information dynamically.
+And that ability, in turn, suggests that MisoSMS uses excerpts of publically available code.
+The CnC server currently serves a Web page that resembles an Android app, as shown in Figure 4.

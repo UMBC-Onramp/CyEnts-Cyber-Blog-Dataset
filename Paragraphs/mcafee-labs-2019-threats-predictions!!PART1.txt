@@ -1,0 +1,3 @@
+By McAfee Labs on Nov 29, 2018 These predictions were written by Eoin Carroll, Taylor Dunton, John Fokker, German Lancioni, Lee Munson, Yukihiro Okutomi, Thomas Roccia, Raj Samani, Sekhar Sarukkai, Dan Sommer, and Carl Woodward.
+As 2018 draws to a close, we should perhaps be grateful that the year has not been entirely dominated by ransomware , although the rise of the GandCrab and SamSam variants show that the threat remains active.
+Our predictions for 2019 move away from simply providing an assessment on the rise or fall of a particular threat, and instead focus on current rumblings we see in the cybercriminal underground that we expect to grow into trends and subsequently threats in the wild.

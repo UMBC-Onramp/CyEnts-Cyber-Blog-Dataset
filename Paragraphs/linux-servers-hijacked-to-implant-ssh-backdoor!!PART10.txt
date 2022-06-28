@@ -1,0 +1,6 @@
+
+( The decom piled code is functionally identical to the Gameboy routine, differing only due to loop-unrolling and other compiler optimizations . )
+While the underlying encryption routine is taken directly from publicly available code , the malware authors incorporate some additional tricks to thwart analysis and decryption.
+Both Blowfish and the Nintendo variant require a n S-box lookup table that remains constant throughout the encryption and decryption processes.
+But u nlike the Nintendo implementation , the malware mutate s its S-box prior to use.
+First, as the table is loaded from program memory, it is subject to several static transformations that make it harder to correlate the stored table with the one used for encryption.

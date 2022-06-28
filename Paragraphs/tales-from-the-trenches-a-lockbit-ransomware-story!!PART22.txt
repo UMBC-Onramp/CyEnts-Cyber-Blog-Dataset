@@ -1,0 +1,14 @@
+
+That means there is an active group behind it which is probably getting feedback on its actions.
+This is an example of the development cycle; this graph was extracted, analyzing statically all the internal functions and comparing them across the samples: For this investigation, we found different LockBit versions with different features between them: LockBit Version 1 This first version contains unique features compared to other versions we found in the wild.
+These features are: IPLO (IPLogger geolocalization service)
+Persistence through the COM interface and the HIVE Current Version Run A different extension used in the encrypted files Debug file created for debugging purposes HIGH CPU Usage in the encryption process The reusage of a MUTEX observed in other ransomware families IPLO.RU geo-localization service: One of the interesting items we found was that LockBit tries to identify the victim’s geo-location, through the URL IPLO.RU, requesting a static TXT file in that service.
+Figure 25:
+LockBit IPLO.RU geolocation traffic captured in the analysis The communication to this page is through HTTPS; we intercepted the traffic to get the reply from the remote server: Figure 26:
+SSL decrypted traffic Analyzing statically the code in LockBit, we found that this URL is not resolved dynamically in execution; it is hardcoded in the binary:
+Figure 27:
+Hardcoded URL of IPLO service Creating persistence through Current version Run and COM task schedule:
+There are many ways to gain persistence in a system.
+This first version of LockBit uses a task schedule through the COM interface to gain persistence.
+Figure 28:
+Persistence using the COM interface LockBit also uses a reboot persistence method by using the Windows registry hive: HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run Using the CurrentVersion\\Run hive serves to survive the reboot if the system shuts down.

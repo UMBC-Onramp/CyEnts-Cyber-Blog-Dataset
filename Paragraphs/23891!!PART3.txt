@@ -1,0 +1,5 @@
+
+So even if you do not use Safari, this vulnerability still affects you directly.
+Apple released updates for iPhones 6s and newer; all models of iPad Pro, iPad Air version 2 and newer, iPad starting with the 5th generation, iPad mini starting with 4th generation, and iPod touch media player starting with the 7th generation.
+How to stay safe The patches that Apple released on February 10 changes memory management mechanisms and thus prevents exploitation of CVE-2022-22620.
+So in order to protect your device, it should be enough to install iOS 15.3.1 and iPadOS 15.3.1 updates.

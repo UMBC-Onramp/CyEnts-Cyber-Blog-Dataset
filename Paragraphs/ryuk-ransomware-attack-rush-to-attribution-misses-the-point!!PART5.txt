@@ -1,0 +1,9 @@
+
+In the same underground forum thread we found a post from October 22, 2018, mentioning Ryuk.
+This post contains a link to an article in the Russian security magazine Xakep.ru (“Hacker”) discussing the emergence of Ryuk and how it was first discovered by MalwareHunterTeam in August 2018.
+This first appearance came well before last week’s attack on newspaper printing services.
+Manga connection Ryuk, according to Wikipedia, refers to a Japanese manga character from the series “Death Note.”
+Ryuk apparently drops a death note, a fitting name for ransomware that drops ransom notes.
+Ransomware is typically named by its cybercriminal developer, as opposed to the naming of state-sponsored malware, which is mostly is done by the security industry.
+It seems the criminals behind Ryuk are into manga.
+The use of manga character names and references is common in the cybercriminal scene.

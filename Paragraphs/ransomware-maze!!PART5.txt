@@ -1,0 +1,11 @@
+
+If the malware detects a debugger it will remain in an infinite loop without making anything while wasting system resources.
+FIGURE 5.
+MAZE CATCHES THE DEBUGGER AND REMAINS RUNNING, WASTING RESOURCES
+The malware gets all processes in the system but ignores the first one (the ‘idle process’ in Windows which is simply a tool to let the user know what percentage of system resources are being used).
+Using the name of each process it makes a custom name with a custom algorithm, along with a hash that is checked against a hardcoded list.
+If the hash is found in this list the process will be terminated.
+FIGURE 6.
+CHECK OF HASHES FROM CUSTOM NAME OF THE PROCESSES OF THE SYSTEM For example, the process of the debugger “x32dbg”, is caught at this point: FIGURE 7.
+X32DBG PROCESS CAUGHT BY THE MALWARE WITH THE HASH It can terminate IDA debugger, x32dbg, OllyDbg and more processes to avoid dynamic analysis, close databases, office programs and security tools.
+A partial list of the processes that can be cracked using a dictionary list terminated by the malware is shown below: dumpcap.exe -> 0x5fb805c5 excel.exe -> 0x48780528 fiddler.exe -> 0x5e0c05b1 msaccess.exe -> 0x6a9c05ff mysqld-nt.exe -> 0x79ec0661 outlook.exe -> 0x615605dc pipanel.exe -> 0x5fb805c4 procexp64.exe -> 0x78020640 procexp.exe -> 0x606805d4 procmon64.exe -> 0x776e0635 procmon.exe -> 0x600005c9 python.exe -> 0x55ee0597 taskkill.exe -> 0x6c2e0614 visio.exe -> 0x49780539 winword.exe -> 0x60d805d5 x32dbg.exe -> 0x5062053b x64dbg.exe ->

@@ -1,0 +1,7 @@
+
+It is a kind of cybercriminal franchise.
+1989:
+The first ransomware attack Dr. Joseph L. Popp, a biological researcher, created the first known cryptor.
+Popp took advantage of widespread interest in AIDS; hence his malware became known as the AIDS Trojan.
+In those days, the Internet was still in its infancy, so Popp used a highly original (by modern standards) delivery method.
+Having gotten mailing lists of subscribers to the WHO AIDS conference and PC Business World magazine, he sent victims a floppy disk with a sticker reading “AIDS Information Introductory Diskette” along with detailed instructions for installing the program.

@@ -1,0 +1,4 @@
+
+The vulnerability here is that the offset (0x51) used for verification is smaller than the offset (0x54) used to advance the buffer pointer.
+This error provides a 3 byte out of bound read and write.
+The fix for this was pretty straight forward—change the verification offset to 0x54, which is how Microsoft fixed this bug.

@@ -1,0 +1,5 @@
+
+In some cases, it fails to infect.
+For example, in Windows XP the second release of Version 5 runs but does not encrypt the files.
+(We thank fellow researcher Yassine Lemmou, who shared this information with us.)
+We and Lemmou know where the problem is in Version 5.0.2.

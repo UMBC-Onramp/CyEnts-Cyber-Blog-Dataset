@@ -1,0 +1,7 @@
+
+This data is presented in a user interface designed for analyzing investigative leads (e.g., a compromised account) and hunting for suspicious activity (e.g., RDP activity by privileged accounts).
+Logon Tracker also provides a graph interface that enables the identification of irregular and unique logons with the option to filter on hostnames, usernames, protocol, time of day, process name, privilege level, status (success/failure), and more.
+Figure 1:
+Logon Tracker GUI interface A critical component of a successful incident response is the scoping effort to identify systems that may have been accessed by the adversary.
+Windows Event Logs offer a commonly utilized method of identifying an adversary’s lateral movement between Windows systems.
+However, as with all log sources, Windows Event Logs are subject to data retention limits on endpoints, making the aggregated logon activity provided by Logon Tracker a critical source of evidence for incident response.

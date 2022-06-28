@@ -1,0 +1,6 @@
+
+We examined more closely the packets that are sent before the data packets.
+We learned that even though the packets are sent with UDP, some sort of handshake is performed between the two devices.
+The next diagram describes this handshake.
+In this fanciful dialog, CMS is the central monitoring system; PM is the patient monitor.
+To understand what is happening during the handshake, we can relate each phase of this handshake to that of a TCP three-way handshake.

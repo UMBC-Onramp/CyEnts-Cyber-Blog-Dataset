@@ -1,0 +1,45 @@
+Given the community interest and media coverage surrounding the economic stimulus bill currently being considered by the United States House of Representatives, we anticipate attackers will increasingly leverage lures tailored to the new stimulus bill and related recovery efforts such as stimulus checks, unemployment compensation and small business loans.
+
+Although campaigns employing themes relevant to these matters are only beginning to be adopted by threat actors, we expect future campaigns—primarily those perpetrated by financially motivated threat actors—to incorporate these themes in proportion to the media’s coverage of these topics.
+
+Threat actors with varying motivations are actively exploiting the current pandemic and public fear of the coronavirus and COVID-19.
+
+This is consistent with our expectations; malicious actors are typically quick to adapt their social engineering lures to exploit major flashpoints along with other recurrent events (e.g. holidays, Olympics).
+
+Security researchers at FireEye and in the broader community have already begun to identify and report on COVID-19 themed campaigns with grant, payment, or economic recovered themed emails and attachments.
+
+Example Malware Distribution Campaign On March 18, individuals at corporations across a broad set of industries and geographies received emails with the subject line “COVID-19 Payment” intended to distribute the SILENTNIGHT banking malware (also referred to by others as Zloader).
+
+Despite the campaign’s broad distribution, a plurality of associated messages were sent to organizations based in Canada.
+
+Interestingly, although the content of these emails was somewhat generic, they were sometimes customized to reference a payment made in currency relevant to the recipient’s geography and contextually relevant government officials (Figure 1 and Figure 2).
+
+These emails were sent from a large pool of different @gmx.com email addresses and had password protected Microsoft Word document attachments using the file name “COVID 19 Relief.doc” (Figure 3).
+
+The emails appear to be auto generated and follow the format <name>.<name><SevenNumberString>@gmx.com.
+
+When these documents were opened and macros enabled, they would drop and execute a .JSE script crafted to download and execute an instance of SILENTNIGHT from http://209.141.54[.]161/crypt18.dll.
+
+An analyzed sample of SILENTNIGHT downloaded from this URL had an MD5 hash of 9e616a1757cf1d40689f34d867dd742e, employed the RC4 key 'q23Cud3xsNf3', and was associated with the SILENTNIGHT botnet 'PLSPAM'.
+
+This botnet has been seen loading configuration files containing primarily U.S.- and Canada financial institution webinject targets.
+
+Furthermore, this sample was configured to connect to the following controller infrastructure: http://marchadvertisingnetwork4[.]com/post.php http://marchadvertisingnetwork5[.]com/post.php http://marchadvertisingnetwork6[.]com/post.php http://marchadvertisingnetwork7[.]com/post.php http://marchadvertisingnetwork8[.]com/post.php http://marchadvertisingnetwork9[.]com/post.php http://marchadvertisingnetwork10[.]com/post.php Figure 1: Example lure using CAD Figure 2:
+
+Example lure using AUD Figure 3:
+
+Malicious Word document Example Phishing Campaign Individuals at financial services organizations in the United States were sent emails with the subject line “Internal Guidance for Businesses Grant and loans in response to respond to COVID-19” (Figure 4).
+
+These emails had OpenDocument Presentation (.ODP) format attachments that, when opened in Microsoft PowerPoint or OpenOffice Impress, display a U.S. Small Business Administration (SBA) themed message (Figure 5) and an in-line link that redirects to an Office 365 phishing kit (Figure 6) hosted at https://tyuy56df-kind-giraffe-ok.mybluemix[.]net/. Figure 4:
+
+Email lure referencing business grants and loans Figure 5: SBA-themed message Figure 6: Office 365 phishing page Implications Malicious actors have always exploited users’ sense of urgency, fear, goodwill and mistrust to enhance their operations.
+
+The threat actors exploiting this crisis are not new, they are simply taking advantage of a particularly overtaxed target set that is urgently seeking new information.
+
+Users who are aware of this dynamic, and who approach any new information with cautious skepticism will be especially prepared to meet this challenge.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

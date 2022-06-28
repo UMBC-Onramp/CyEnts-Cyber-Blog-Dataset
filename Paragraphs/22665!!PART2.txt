@@ -1,0 +1,8 @@
+
+With a CEX exchange, clients transfer money to the exchange and the funds are moved to a wallet, the private key for which is stored on the platform.
+Accordingly, exchange operators are also responsible for security.
+CEX exchanges belong to specific legal entities, and their clients undergo know-your-customer checks to fight money laundering.
+In general, such sites are convenient and reliable, but some users are put off by the need to transfer funds to the exchange and the possibility of having their account frozen during verification.
+Unlike CEX platforms, DEX exchanges are essentially just intermediaries between buyers and sellers.
+Traders can use any wallet and don’t need to transfer private keys.
+DEX exchanges tend not to be owned by any particular organization, they don’t necessarily verify their clients, and they’re not typically very invested in stopping illegal transactions.

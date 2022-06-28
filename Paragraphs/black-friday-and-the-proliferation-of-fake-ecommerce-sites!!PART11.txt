@@ -1,0 +1,7 @@
+
+In the screenshot below, we list the domains of other imitation retail sites FortiGuard Labs found, their similar creation dates, and their common registrar and CDN use, along with their use of a common template: Questions and Answers How is all this possible?
+Isn’t building a website only to have it taken down a huge waste of time?
+Website and ecommerce software have evolved considerably over the past decade.
+With the widespread usage of content management systems (CMS), where CMS and shopping carts are often bundled together with a content delivery network (CDN) by a webhost, bad actors are able to deploy ecommerce sites in record fashion.
+What exactly is a CDN?
+A CDN essentially enables the fast and efficient delivery of website content to requests from all over the world.

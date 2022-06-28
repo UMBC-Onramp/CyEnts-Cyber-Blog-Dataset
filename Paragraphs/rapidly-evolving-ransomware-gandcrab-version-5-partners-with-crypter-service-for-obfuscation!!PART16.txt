@@ -1,0 +1,12 @@
+
+If the system is Windows XP, the code will avoid that and continue in its normal flow.
+This mutex is never created for the main malware; it is created for the DLL loaded using the exploit.
+To better understand this explanation, this IDA snippet may help: Explaining the check of mutex and exploits.
+This version changes the desktop wallpaper, which is created at runtime and is filled with the extension generated to encrypt the files.
+(The ransom note text or HTML has the name: <extension_in_uppercase>_DECRYPT.
+<txt|html>) and the user name of the machine.)
+Creating the new wallpaper at runtime.
+The username is checked with “SYSTEM.”
+If the user is “SYSTEM,” the malware puts the name “USER” in the wallpaper.
+Checking the name of the user for the wallpaper.
+The wallpaper is created in the %TEMP% folder with the name pidor.bmp.

@@ -1,0 +1,9 @@
+
+objc2_analyzer is available, along with our other IDA Pro plugins and scripts , at our GitHub page.
+Conclusion flare-emu is a flexible tool to include in your arsenal that can be applied to a variety of code analysis problems.
+Several example problems were presented and solved using it in this blog post, but this is just a glimpse of its possible applications.
+If you haven’t given emulation a try for solving your code analysis problems, we hope you will now consider it an option.
+And for all, we hope you find value in using these new tools!
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

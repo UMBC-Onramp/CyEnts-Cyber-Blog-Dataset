@@ -1,0 +1,4 @@
+
+While the model does not reflect all additional safety and security measures that may be present deeper in the process, it does account for the attacker's need to modify alarms and control sensor outputs to remain undetected.
+By connecting the outcomes produced in the test to the potential physical impacts and motivations involved in a real attack, this model provided Big Steam Works with a realistic overview of cyber security threats to a specific physical process.
+Further collaboration with the customer enabled us to validate the findings and support the organization to mitigate the risks reflected in the model.

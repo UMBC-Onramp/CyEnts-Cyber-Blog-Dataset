@@ -1,0 +1,9 @@
+
+But this name of the processor is not extracted using the Windows API as GandCrab does; in this case the malware authors use the opcode CPUID to try to make it more obfuscated.
+FIGURE 10.
+GET THE PROCESSOR NAME USING CPUID OPCODE
+Finally, it converts these values in a string in a hexadecimal representation and saves it.
+Later, during the execution, the malware will write in the Windows registry the next entries in the subkey “SOFTWARE\\recfg” (this subkey can change in some samples but usually does not).
+The key entries are: 0_key -> Type binary; this is the master key (includes the victim’s generated random key to crypt later together with the key of the malware authors).
+sk_key ->
+As 0_key entry, it is the victim’s private key crypted but with the affiliate public key hardcoded in the sample.

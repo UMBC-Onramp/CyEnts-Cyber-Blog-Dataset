@@ -1,0 +1,9 @@
+
+After receiving our vulnerability report, Amazon hot fixed the first issue by patching their server.
+Now if the user tries multiple incorrect passwords, the server will block the user from login (Figure 4).
+In the future, we suggest adding CAPTCHA support for Amazon mobile (Android and iOS)
+apps, and enforcing requirements for stronger passwords.
+Figure 4.
+Wrong Password Block Subscribe to Blogs Get email updates as new blog posts are added.
+
+

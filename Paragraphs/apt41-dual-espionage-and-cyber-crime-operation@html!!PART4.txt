@@ -1,0 +1,8 @@
+
+These multi-stage operations restrict malware delivery only to intended victims and significantly obfuscate the intended targets.
+In contrast, a typical spear-phishing campaign’s desired targeting can be discerned based on recipients' email addresses.
+A breakdown of industries directly targeted by APT41 over time can be found in Figure 1.
+Figure 1: Timeline of industries directly targeted by APT41 Probable Chinese Espionage Contractors Two identified personas using the monikers “Zhang Xuguang” and “Wolfzhi” linked to APT41 operations have also been identified in Chinese-language forums.
+These individuals advertised their skills and services and indicated that they could be hired.
+Zhang listed his online hours as 4:00pm to 6:00am, similar to APT41 operational times against online gaming targets and suggesting that he is moonlighting.
+Mapping the group’s activities since 2012 (Figure 2) also provides some indication that APT41 primarily conducts financially motivated operations outside of their normal day jobs.

@@ -1,0 +1,8 @@
+
+The commands are denoted by the <|Command|> syntax.
+<|OK|> gets a list of banking software installed on the host. '
+<PING>' is sent from C2 to host, and '<PONG>' is sent from host to C2, to keep connection alive.
+<|dellLemb|> deletes the registry key \\Software\\Microsoft\\Internet Explorer\\notes.
+EXECPROGAM calls ShellExecute to run the application given in the command.
+EXITEWINDOWS calls ExitWindowsEx.
+NOVOLEMBRETE creates and stores data sent with the command in the registry key \\Software\\Microsoft\\Internet Explorer\\notes.

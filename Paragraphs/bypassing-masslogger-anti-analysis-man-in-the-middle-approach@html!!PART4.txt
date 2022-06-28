@@ -1,0 +1,12 @@
+
+We must perform a deeper analysis to better understand the sample and its capabilities.
+User Name: user IP: 127.0.0.1 Location: United States OS: Microsoft Windows 7 Ultimate 32bit CPU: Intel(R) Core(TM) i7-6820HQ CPU @
+2.70GHz GPU: VMware SVGA 3D AV: NA Screen Resolution: 1438x2460 Current Time: 6/17/2020 1:23:30 PM MassLogger Started: 6/17/2020 1:23:21 PM Interval: 2 hour MassLogger Process:
+C:\\Users\\user\\Desktop\\Bin-123.exe MassLogger Melt: false MassLogger Exit after delivery: false As Administrator: False Processes: Name:cmd,
+Title:Administrator: FakeNet-NG - fakenet Name:iexplore,
+Title:FakeNet-NG - Internet Explorer Name:dnSpy-x86,
+Title:dnSpy v6.0.5 (32-bit)
+Name:cmd,
+Title:Administrator: C:\\Windows\\System32\\cmd.exe Name:ProcessHacker,
+Title:Process Hacker [WIN-R23GG4KO4SD\\user]+ (Administrator)
+### WD Exclusion ### Disabled ### USB Spread ### Disabled ### Binder ### Disabled ### Window Searcher ### Disabled ### Downloader ### Disabled ### Bot Killer ### Disabled ### Search And Upload ### Disabled ### Telegram Desktop ### Not Installed ### Pidgin ### Not Installed ### FileZilla ### Not Installed ### Discord Tokken ### Not Installed ### NordVPN ### Not Installed ### Outlook ### Not Installed ### FoxMail ### Not Installed ### Thunderbird ### Not Installed ### QQ Browser ### Not Installed ### FireFox ### Not Installed ### Chromium Recovery ### Not Installed ### Keylogger And Clipboard ### [20/06/17]  [Welcome to Chrome - Google Chrome]

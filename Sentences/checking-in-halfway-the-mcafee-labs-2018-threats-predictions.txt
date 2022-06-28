@@ -1,0 +1,101 @@
+By McAfee Enterprise on Jun 26, 2018 Time flies when you’re fighting cybercrime.
+
+Now that’s not exactly how the phrase goes, but for us at McAfee, it’s hard to believe that we’re already almost halfway through 2018.
+
+It seems like just yesterday we were predicting the types of cyberthreats we would see throughout this year with our McAfee Labs 2018 Threats Predictions Report .
+
+From the machine learning arms race to the home becoming the ultimate storefront, it looked like we had a quite a year ahead of us.
+
+But in reality, not all these predictions can to fruition.
+
+And conversely, some unraveled in ways we didn’t imagine.
+
+Let’s take a look at what predictions became reality, and what may still lay ahead for the cybersecurity industry in 2018.
+
+The First Half of 2018 Ransomware Pivots to New Targets, New Objectives
+
+The Prediction In November of last year, we predicted 2018 was going to be colored by ransomware attacks that were anything but ordinary.
+
+These attacks could pivot away from traditional, individual extortion, and rather aim to sabotage or disrupt organizations.
+
+The Verdict Ransomware attacks have seen a pivot, last year we witnessed the WannaCry ransomware attacks, which spread like wildfire to hundreds of thousands of devices, but this year’s ransomware attacks have reshaped their focus, completely moving away from the individual attack.
+
+With disruption as an objective, these attacks managed to shut down both critical and personal services.
+
+As of June 2018, an Ohio police and fire department , a Minnesota psychiatric provider , and even a family planning clinic have all been victims of a ransomware attack, proving threat actors will stop at almost nothing in order to cause a bit of chaos.
+
+The Adversarial Machine Learning Arms Race Revs Up The Prediction Late last year, our Labs team discussed how the influence of machine learning will be felt on both sides of the equation – white hats will ramp up their AI/ML defenses, while cybercriminals will tap into the technology’s power to enact advanced attacks.
+
+With machines working for anyone, an arms race would be fueled, and machine-supported actions would increase from both defenders and attackers.
+
+The Verdict Machine learning and AI are very present in the arsenal of cyber defenders, as the industry has become fairly successful at applying AI to malware detection and user and entity behavior analytics (UEBA) by using deep neural networks and anomaly detection.
+
+In fact, the use of this technology and application of human-machine teaming has been cited as a reason top talent will accept a job at a cybersecurity firm in the first place.
+
+However, we have yet to see them actively leveraged by cybercriminals in attacks this year.
+
+In lieu of AI, attacks in 2018 have rather used more traditional techniques, but for non-traditional purposes.
+
+Just take Operation Honeybee as an example – the attacked leveraged malicious documents, which is typically known as an older attack vector, but set its sights on a unique type of target: humanitarian aid groups.
+
+Honeybee also ladders back to a larger trend seen throughout the first half of this year – threats have new targets, and certainly new objectives.
+
+When Your Home Becomes the Ultimate Storefront The Prediction The growth of smart home devices is nothing new, but the way they’re leveraged by corporations has changed over time.
+
+We predicted 2018 to be no exception, companies creating these devices have powerful incentives to observe what consumers are doing in their homes and learn from their behaviors.
+
+We foresaw these corporations exploring new ways to capture consumer data and adjusting terms and conditions in order to avoid getting fined.
+
+The Verdict
+
+The monetization and use of consumer data have been huge topics of discussion in 2018, but not because of the IoT industry yet.
+
+Rather, the now infamous Facebook Cambridge Analytica incident stirred up quite the debate earlier this year around what companies are doing with consumer data.
+
+In 2018, IoT devices are being used to spy – but not by corporations.
+
+Cybercriminals are continuing to use vulnerable IoT devices to their advantage, swooping data and spying on families as a result of device vulnerabilities.
+
+From smart TVs to baby monitors , the handful of IoT attacks in 2018 have proved that these devices still have ways to go when it comes to a solid security posture.
+
+The Next Six Months Serverless Apps: New Opportunities for Friend and Foe The Prediction Cybercriminals will take advantage of convenient opportunities as they arise, which is precisely why our team predicted that threat actors will jump on serverless apps this year, using their greater granularity as a chance to increase the attack surface and steal data in transit across a network.
+
+The Verdict As of now, major attacks against serverless apps have yet to be seen.
+
+Mind you, it could soon become a reality, as researchers have recently figured out how to turn serverless apps into sources for crypto-mining.
+
+These researchers are in the minority, as many IT professionals don’t really understand the new technology and all the cyber risk associated with it – which in itself can pose the biggest risk of all.
+
+In fact, many security professionals lack the basic skills required to understand and secure this technology.
+
+Inside Your Child’s Digital Backpack The Prediction Children are being introduced to the internet and tech devices earlier than ever before.
+
+As exciting as that is, most kids are not properly trained on how to surf the web safely which can pose potential risks to their privacy.
+
+This type of exposure led us to predict that in 2018 organizations will begin to collect and leverage digital content generated by children, and parents will be unaware of how much information is out there about their kid.
+
+The Verdict
+
+Though there has been no known incident yet in which a child’s information has been leveraged or compromised, some apps and gadgets have the potential to do so.
+
+It was recently reported , that a new app being used by kids is allowing other users to track them by GPS.
+
+According to McAfee research , children’s online gaming use could also put them at serious risk of a cyberattack.
+
+Beyond these predictions, there is also a variety of other threats security professionals could be facing in the second half of 2018.
+
+Just take VPNFilter , Hidden Cobra , and Gold Dragon for example – all of these attacks have proven that cybercriminals have come out into 2018 swinging.
+
+They’re going after high-profile, high stakes industries, and are using deceptive and sly techniques in order to steal information from these targets.
+
+Needless to say, the threat landscape is going to continue to change and evolve throughout 2018.
+
+However, no matter how the rest of the year unfolds, we’re confident that cyber defenders are ready to take on any future threat that may come their way.
+
+Hear from our leading researchers from McAfee Labs and Office of the CTO as they share more details into the threat landscape predictions for 2018 in our on-demand webinar .
+
+To learn more about what McAfee is doing to help tackle today’s cyberthreats, be sure to follow us at @McAfee and @McAfee_Labs .
+
+
+
+

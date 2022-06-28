@@ -1,0 +1,5 @@
+
+Using the Helix query transforms groupby < [srccountry,srcregion] , groupby < useragent and groupby < srcipv4 , which highlight the least common geolocations, User Agent strings, and IP addresses, can also assist in identifying anomalies in results.
+Querying UAL for a user in Helix: class=ms_office365
+username=user@client.com | table
+[createdtime, action, username, srcipv4, srccountry, srcregion, useragent, rawmsg] | groupby < [srccountry,srcregion] Querying UAL for a user in PowerShell: Search-UnifiedAuditLog

@@ -1,0 +1,8 @@
+
+The iframe injected into a compromised website is shown in Figure 2.
+Figure 2:
+Injected iframe
+The landing page contains three different JavaScripts snippets, each of which uses a different technique to deliver the payload.
+Each of these are not new techniques, so we will only be giving a brief overview of each one in this post.
+JavaScript 1
+The first JavaScript has a function, fa, which returns a VBScript that will be executed using the execScript function, as shown by the code in Figure 3.

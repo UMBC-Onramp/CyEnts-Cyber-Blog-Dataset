@@ -1,0 +1,9 @@
+
+However, after three minutes the system rebooted again.
+Figure 19 shows the message the team caught on reboot after several repeated experiments with the same results.
+Figure 19
+This indicates that in the boot phase of startup, a hardware watchdog is set to 180 seconds (or three minutes).
+The system has two watchdog timers, one hardware and one software; we had only disabled one of the timers.
+The same method of patching the binary which was used to disable the software watchdog timer would not work for the hardware watchdog timer; the application would also need to kick the watchdog to prevent a reboot.
+Armed with this knowledge, we turned to the Delta binaries on the device for code that could help us “kick” the hardware watchdog.
+With the debugging symbols left in, it was relatively easy to find a function which was responsible for managing the hardware watchdog.

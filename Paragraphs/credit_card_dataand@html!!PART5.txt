@@ -1,0 +1,7 @@
+
+JavaScript code used at client-side for decryption Another technique is the host-based evasion, as seen in Figure 7.
+The host name of organizations such as ‘phishtank’ and ‘google’ are blacklisted.
+The host name of the client is compared against a list of blacklisted host names.
+If there is a match against the blacklist, a “404 Not Found” error page is presented.
+Figure 7:
+Server side code for blacklisting known hosts.

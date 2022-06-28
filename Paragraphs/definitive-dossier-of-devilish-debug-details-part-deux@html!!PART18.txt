@@ -1,0 +1,10 @@
+
+This gave us enough information about the dataset without blowing up our model with too many features (and therefore, dimensions).
+One-hot encoding the presence of these terms was then the final step in featurizing the directory names present in the paths.
+YARA Signatures Do Grow on Trees Armed with some statistical features, as well as one-hot encoded keyword matches, we began to train some models on our now-featurized dataset.
+In doing so, we hoped to use the model training and evaluation process to give us insights into how to build better signatures.
+If we developed an effective classification model, that would be an added benefit.
+We felt that tree-based models made sense for this use case for two reasons.
+First, tree-based models have worked well in the past in domains requiring a certain amount of interpretability and using a blend of quantitative and categorical features.
+Second, the features we used are largely things we could represent in a YARA signature.
+Therefore, if our models built boolean logic branches that separated large numbers of PDB files, we could potentially translate these into signatures.

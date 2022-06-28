@@ -1,0 +1,4 @@
+
+As reported by Microsoft in the associated advisory “With NLA turned on, an attacker would first need to authenticate to Remote Desktop Services using a valid account on the target system before the attacker could exploit the vulnerability.”
+Restrict users who can logon using RDP All administrators can use RDP by default.
+Remote access should be limited to only the accounts that require it.

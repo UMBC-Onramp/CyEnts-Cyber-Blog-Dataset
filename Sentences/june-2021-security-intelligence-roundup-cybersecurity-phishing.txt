@@ -1,0 +1,95 @@
+Cybersecurity careers are a buzzy topic lately, with more people needed and salaries competitive.
+
+How do you make yourself stand out in this field and find a career you both love and do well?
+
+Meanwhile, when you’re not working you may very well be making a new streaming account to escape after a long day.
+
+The pandemic has changed our streaming habits — and we need to be sure that doesn’t increase our risk at home.
+
+This month’s insights also include what an expert thinks are the most pressing worries in the field today, a primer on zero trust and more.
+
+Check out our top advice and news from June.
+
+Quick Briefs:
+
+Top Insights From June 3-Minute Read 🕒 Zero Trust or Bust: What It Is and Why It Matters to Data Security Zero trust wraps around other digital defense efforts like a moat, protecting your valuable data inside.
+
+This piece is a top-level look at what zero trust is for and what use cases might call for it.
+
+For example, if you’re using a lot of remote employees or a lot of different access rights, zero trust can make your defenses simpler.
+
+After all, it assumes everyone is a potential threat.
+
+3-Minute Read 🕒
+
+What’s Behind Rising Ransomware Costs?
+
+It’s a vicious cycle: more and more companies are willing to pay million dollar ransoms to high-end threat actors.
+
+Then, these attackers see more potential for ill-gotten gains.
+
+The rising costs of ransomware come from this cycle.
+
+See why it’s often best not to pay a ransom if you’re targeted.
+
+Instead, we lay out the best ways to make sure ransomware attackers can’t get inside your systems far enough to launch an attack in the first place.
+
+4-Minute Read 🕒 Cybersecurity Certifications:
+
+Take Your Career to the Next Level Cybersecurity certifications can often boost a career faster than a degree, showing you know how to use your skills in the real world.
+
+Is a certification the right next step for your career?
+
+Our guide gives you a framework for exploring what you want out of your work in this field.
+
+In addition, take a look at which certifications are the most highly-respected and which organizations offer legitimate and practical certification programs.
+
+Worth Your While: In-Depth Coverage To Sharpen Your Skills & Tighten Security 4-Minute Read 🕒 Why a Phishing Attack Is Still Profitable —
+
+And How To Stop One Attackers are dangling a lot of hooks and bait in the water.
+
+Phishing, a staple of internet scams since nearly the dawn of the internet itself, is still a popular and profitable angle for threat actors.
+
+In particular, they’re using spear-phishing to target executives.
+
+Learn how to educate employees on the signs of a phishing attack.
+
+In addition, see how protections like two-factor authentication can reduce the risk.
+
+5-Minute Read 🕒 Surge of New Digital Accounts During the Pandemic Leads to Lingering Security Side Effects I don’t know about you, but I started watching some TV shows outside my usual fare during the pandemic.
+
+All that “Star Trek” was already on a service I subscribe to, so I didn’t need to create a new username and password.
+
+But a lot of people during the pandemic did, making the summer after a very long winter a good time to revisit your passwords.
+
+Do you use the same one on multiple services?
+
+And, how does this apply to the way employees log in to your organization?
+
+4-Minute Read 🕒
+
+The Hottest Cybersecurity Must-Reads for the Busy Security Practitioner IBM prepared a variety of assessments and resources for cybersecurity practitioners looking to make structural changes.
+
+See step-by-step guides to finding out where you are on your cloud journey (and how to secure the cloud).
+
+Gain insights into what threat actors are thinking.
+
+And learn how to pass that information on to other members of your organization with authority.
+
+June’s Expert Insight: 3 Things That Keep a Top Data Security Expert Up at Night Tony DeMichele runs database engineering and database audit and compliance for a Fortune 50 company, so he has to have a finger on the pulse of cybersecurity.
+
+What does he prioritize?
+
+What is he really worried about?
+
+He talked to us about data breaches, human error and moving data to the cloud.
+
+Take a look at his practical advice for dealing with today’s most pressing cybersecurity worries.
+
+Want to keep up with today’s cybersecurity news and best practices?
+
+Watch this space for the Security Intelligence newsletter.
+
+
+
+

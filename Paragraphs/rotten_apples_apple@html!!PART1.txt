@@ -1,0 +1,5 @@
+At FireEye Labs we have an automated system designed to proactively detect newly registered malicious domains.
+This system observed some phishing domains registered in the first quarter of 2016 that were designed to appear as legitimate Apple domains.
+These phony Apple domains were involved in phishing attacks against Apple iCloud users in China and UK.
+In the past we have observed several phishing domains targeting Apple, Google and Yahoo users; however, these campaigns are unique as they are serving the same malicious phishing content from different domains to target Apple users.
+Since January 2016 we have observed several phishing campaigns targeting the Apple IDs and passwords of Apple users.

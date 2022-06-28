@@ -1,0 +1,5 @@
+
+Remember: Threat actors are playing the numbers game.
+If they spam out 1,000 emails at a very minimal cost, and 10 people bite giving them valuable data, then the effort spent was well worth the return on investment.
+Fortinet Coverage Fortinet customers are protected from this campaign by FortiGuard Web Filtering, AntiVirus, FortiMail, FortiClient, FortiEDR, and CDR (content disarm and reconstruction) services, as follows:
+The malicious macro inside the Excel sample (Emotet) can be disarmed by the FortiGuard CDR (content disarm and reconstruction) service.

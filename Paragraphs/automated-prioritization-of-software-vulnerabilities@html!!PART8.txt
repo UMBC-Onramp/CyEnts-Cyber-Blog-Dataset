@@ -1,0 +1,5 @@
+
+Second, we use these features to predict if the tweet is relevant to the cyber security field using a classification model.
+Third, we use these features to predict if the relevant tweets are making strong statements indicative of severity.
+Finally, we match the severe and relevant tweets up to the corresponding CVE.
+N-grams are word sequences, such as word pairs for 2-gram or word triples for 3-grams.

@@ -1,0 +1,6 @@
+
+A more sophisticated scheme involves some preparation, for example, infecting a computer with malware that invokes a pop-up window with a description of the alleged problem and a phone number to call to get it fixed.
+Bank The ultimate object of any scam is money, so of course some fraudsters pretend to call from banks.
+Generally, they claim to be reporting suspicious account activity, which in reality gives them cover to request details such as a CVC/CVV code or a one-time passcode from a text message.
+Armed with such details, the fake bank employee can easily clean out an account for real.
+How to recognize scam calls We can’t discount the notion that scammers, always on the lookout for more-convincing hooks, might someday learn from fraud’s rich history of tells, but most scams exhibit at least one of several red flags.

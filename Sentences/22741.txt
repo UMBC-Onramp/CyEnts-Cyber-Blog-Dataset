@@ -1,0 +1,95 @@
+Rising cryptocurrency prices have led to an increase in demand for mining equipment, but COVID-19 restrictions have led to a drop in supply.
+
+As a result, the world is witnessing another shortage of powerful video cards and cryptomining equipment , with months-long wait times for new deliveries.
+
+Cybercriminals, as always, are looking to capitalize on the crisis.
+
+For example, fraudsters have been extracting cryptocurrency from buyers using a popular Google service and a clone of a mining equipment manufacturer’s website.
+
+How the scam works Scammers and spammers have long relied on Google services (Forms, Sheets, Calendar, Photos and others) for their ability to send automatic notifications to anyone the author of a file (or a calendar entry, etc.) shares it with or mentions in it.
+
+The e-mails come not from the actual author, but from no less an authority than Google, so spam filters typically let them through.
+
+In this case, potential cryptocurrency miners are receiving e-mails saying they have been mentioned in a Google Docs file by a user with the nickname BitmainTech (the name of a real manufacturer of mining rigs).
+
+The respectable name — @docs[.]google[.]com — in the From field helps lower the recipient’s guard.
+
+The displayed username is whatever the sender wants it to be, and the sender’s real e-mail address remains hidden.
+
+The e-mail reads: “BitmainTech mentioned you in a document” Bait follows in the form of an announcement of a sale on Antminer S19j mining machines.
+
+Posing as the Bitmain sales department, the scammers report that the equipment is available to be ordered, but time’s running out; stock is limited and delivery is on a first-come-first-served basis.
+
+The text is replete with trust-inspiring facts and figures.
+
+Fake Bitmain sales team uses Google Docs to tell victim about Antminer S19j availability The same text appears in the Google Docs file, only with an active link that leads, through a chain of redirects, to bitmain[.]sa[.]com, a clone of the official bitmain[.]com website (note the differences in the address).
+
+A WHOIS check reveals that the domain of the fake site was registered in March 2021.
+
+For extra credibility, the cybercriminals use the HTTPS protocol.
+
+Readers of this blog already know HTTPS protects data from interception as it travels from user to site but does not guarantee a site is bona fide.
+
+If the destination site is malicious, using a secure protocol just means the data will travel securely to the cybercriminals.
+
+Fake Bitmain site with Antminer S19j ad On the real Bitmain website, at the time of posting, the Buy button was inactive because the last Antminer S19j batch had already been snapped up; the site does not expect new deliveries to occur before October.
+
+But on the fake resource, the coveted mining machine slides right into the shopping cart, and for the same price as the real one, $5,017.
+
+The fake website lets you add the mining machine to your shopping cart To proceed to checkout, the victim has to sign in or register.
+
+There are two possible reasons to implement this requirement: for greater authenticity or to build a database of addresses and passwords for account hacking purposes.
+
+Despite registering (using a disposable e-mail address, of course), we never received a registration confirmation message.
+
+Fake Bitmain authorization page
+
+In any event, the system allows the user to sign in and finalize the order.
+
+The login procedure looks quite convincing.
+
+The Antminer S19j is in the cart!
+
+Or is it?
+
+At the next stage, the victim is asked to provide a delivery address.
+
+Perhaps the scammers are collecting this data for sale as well.
+
+A warning that the manufacturer cannot ship to mainland China if the order is placed on the English-language site Most cryptomining rig manufacturers, including Bitmain, are located in China.
+
+Moving heavy and expensive equipment from there is not cheap, yet the cybercriminals charge roughly five dollars for shipping, regardless of destination and service (UPS, DHL, or FedEx).
+
+Choosing a delivery service.
+
+The shipping cost is $5.45 no matter where the shipment is headed Next, the victim is asked to choose a payment method.
+
+They must use cryptocurrency but can choose BTC, BCH, ETH, or LTC.
+
+Selecting a payment method: Bitcoin, Ethereum, Bitcoin Cash, or Litecoin The final and most important step is making the payment.
+
+The cybercriminals provide cryptowallet details and warn that the transaction must be completed within two hours, otherwise the order will be canceled.
+
+Note that the cost of delivery, though minuscule, does not appear in the bill.
+
+The total order price does not include shipping After the victim has parted with a considerable amount of cryptocurrency, the air of legitimacy evaporates.
+
+The user’s personal account contains no order data, and the buttons are inactive.
+
+The inglorious finale How to stay safe from scams To avoid being duped, stay vigilant so as not to fall for hype.
+
+Stay wary, and pay particular attention if someone tries to hurry you into making a payment.
+
+In this case, the appearance of a scarce product for sale is no different than receiving news of a sudden lottery win (doubly suspicious if you didn’t even buy a ticket).
+
+Check the official website.
+
+If you receive an offer from a well-known brand, find the official website and look there for information about the promotion.
+
+Always examine the address bar.
+
+Use an advanced security product with protection against phishing and online fraud, such as Kaspersky Internet Security .
+
+
+
+

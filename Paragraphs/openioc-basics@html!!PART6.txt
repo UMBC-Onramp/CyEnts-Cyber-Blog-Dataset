@@ -1,0 +1,5 @@
+
+References : Within the IOC, references can find information like the name of an investigation or case number, comments and information on the maturity of the IOC such as Alpha, Beta, Release, etc.
+This data can help you to understand where the IOC fits in your library of threat intelligence.
+One common use for references is to associate an IOC with a particular threat group.
+It is not uncommon for certain references to be removed from IOCs when sharing IOCs with third parties.

@@ -1,0 +1,3 @@
+
+In our top ten vulnerabilities, seven were found to be in the 134 (5.2%), while the CVSS scoring’s top ten included only one (0.7%) CVE being exploited.
+Table 3: Precision and recall scores for the top 10, 50 and 100 vulnerabilities when comparing CVSS scoring, our simplistic volume model and our NLP model Conclusion Preventing vulnerabilities is critical to an organization’s information security posture, as it effectively mitigates some cyber security breaches.

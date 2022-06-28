@@ -1,0 +1,8 @@
+
+FireEye has identified that a large number of the compromised sites serving up the first stage of FakeUpdates have been older, vulnerable Content Management System (CMS) applications.
+You Are Using an Older Version…of our
+Malware
+The FakeUpdates campaign begins with a rather intricate sequence of browser validation, performed before the final payload is downloaded.
+Injected code on the initial compromised page will make the user’s browser transparently navigate to a malicious website using hard-coded parameters.
+After victim browser information is gleaned, additional redirects are performed and the user is prompted to download a fake browser update.
+FireEye has observed that the browser validation sequence may have additional protections to evade sandbox detections and post-incident triage attempts on the compromise site(s).

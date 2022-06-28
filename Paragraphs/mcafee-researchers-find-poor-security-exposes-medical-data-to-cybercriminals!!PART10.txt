@@ -1,0 +1,12 @@
+
+NRRD
+Nearly Raw Raster Data Searching open directories and FTP servers while using several search engines, we gathered thousands of images—some of them complete MRI scans, mostly in DICOM format.
+One example: An open directory of images.
+The DICOM format originated in the 1980s, before cybersecurity was a key component.
+The standard format contains a detailed list of tags such as patient name, station name, hospital, etc.
+All are included as metadata with the image.
+Opening an image with a text editor presents the following screen:
+An example of the DICOM file format.
+The file begins with the prefix DICM, an indicator that we are dealing with a DICOM file.
+  Other (now obscured) strings in this example include the hospital’s name, city, patient name, and more.
+The Health Insurance Portability and Accountability Act requires a secure medical imaging workflow, which includes the removal or anonymizing of metadata in DICOM files.

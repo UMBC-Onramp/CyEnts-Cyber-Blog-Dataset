@@ -1,0 +1,8 @@
+
+However, in 2019 FIN11’s targeting expanded to include a diverse set of sectors and geographic regions.
+At this point, it would be difficult to name a client that FIN11 hasn’t targeted.
+Mandiant has also responded to numerous FIN11 intrusions, but we’ve only observed the group successfully monetize access in few instances.
+This could suggest that the actors cast a wide net during their phishing operations, then choose which victims to further exploit based on characteristics such as sector, geolocation or perceived security posture.
+Recently, FIN11 has deployed CLOP ransomware and threatened to publish exfiltrated data to pressure victims into paying ransom demands.
+The group’s shifting monetization methods—from point-of-sale (POS) malware in 2018, to ransomware in 2019, and hybrid extortion in 2020—is part of a larger trend in which criminal actors have increasingly focused on post-compromise ransomware deployment and data theft extortion.
+Notably, FIN11 includes a subset of the activity security researchers call TA505 , but we do not attribute TA505’s early operations to FIN11 and caution against using the names interchangeably.

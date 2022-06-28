@@ -1,0 +1,13 @@
+By Charles McFarland and Shivangee Trivedi on Mar 11, 2018 In December 2017 Bitcoin values skyrocketed, peaking at the unprecedented amount of roughly US$19,000 per coin.
+Unsurprisingly, the market for cryptocurrencies exploded in response.
+Investors, companies, and even the public found a fresh interest in digital currencies.
+However, the exciting change in Bitcoin value did not just influence your average wealth seeker.
+It also influenced vast underground cybercriminal markets, malware developers, and cybercriminal behavior.
+Blessing and Curse The surge of Bitcoin popularity and price per coin piqued the interest of cybercriminals, driving cryptocurrency hijacking in the last quarter of 2017.
+However, the same popularity and price jump also created a headache for bad actors.
+Ransomware techniques and the buying and selling of goods became problematic.
+The volatility of the Bitcoin market makes ransom costs hard to predict at the time of infection and costs can surge upwards of $28 per transaction, complicating a criminal campaign.
+The volatility made mining, the act of using system resources to “mint” cryptocurrency, exceedingly difficult and raised transaction prices.
+This was especially true for Bitcoin, due its high hash rate of the network.
+(The higher the hash rate, the more people they compete against.)
+Cybercriminals will always seek to combine the highest returns in the shortest time with the least risk.

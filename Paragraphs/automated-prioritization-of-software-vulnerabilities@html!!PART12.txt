@@ -1,0 +1,6 @@
+
+Correctly identifying the nouns using NER is important to how we parse a sentence.
+In Figure 3, for instance, NER facilitates Windows 10 to be understood as an entity while October 2018 is treated as elements of a date.
+Without this ability, the text in Figure 3 may be confused with the physical notion of windows in a building.
+Once NER tokens are identified, they are used to test if a vulnerability affects them.
+In the Windows 10 example, Windows 10 is the entity and the classifier will predict whether the user believes there is a serious vulnerability affecting Windows 10 .

@@ -1,0 +1,13 @@
+
+[caption id=\"attachment_4899\" align=\"aligncenter\" width=\"546\"] Figure 4:
+Newsletter registration page requesting more personal information[/caption] [caption id=\"attachment_5017\" align=\"alignnone\" width=\"549\"]
+Figure 5:
+Information flow among Angry Birds, the ad intermediate platform and the ad cloud[/caption] First, we are concerned with the type of information transmitted to the advertisement library.
+Figure 5 illustrates the information flow among Angry Birds, the Angry Birds Cloud, Burstly (the embedded ad library and ad mediation platform), and cloud-based ad services such as Jumptap and Millennial Media.
+Angry Birds uses Burstly as an ad adapter, which provides integration with numerous third-party ad clouds including Jumptap and Millennial Media.
+The ad services use players’ personal data to target ads.
+As the figure shows, Angry Birds maintains an HTTP connection with the advertising platform Burstly, the advertisement provider Millennial Media, and more.
+Traffic flow Table 1 summarizes the connections, which we explain in detail below.
+PCap Burstly (Ad Mediation Platform)
+Third Party Ad Clouds 1 1 POST (personal information, IP) POST (personal information, IP) 2 2 GET Ad from Jumptap GET Ad from Jumptap 3 3 GET Ad from Turn.com GET Ad from Turn.com Table 1:
+PCap information exchanged between Angry Birds, Burstly and third-party ad clouds Angry Birds uses native code called libAngryBird.so to access storage and help the ad libraries store logs, caches, database, configuration files, and AES-encrypted game data.

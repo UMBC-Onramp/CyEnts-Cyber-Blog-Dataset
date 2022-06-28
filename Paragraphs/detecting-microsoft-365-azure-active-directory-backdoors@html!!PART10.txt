@@ -1,0 +1,7 @@
+
+When providing the function a valid UserPrincipalName, Immutable ID and IssuerURI, an attacker can generate a security token as any user of the tenant.
+What’s even more concerning is that once this security token is generated, this can allow an attacker to bypass MFA.
+As with Backdoor 1, this attack can either be performed from a compromised on-premises environment or from an attacker’s own infrastructure.
+Method 1: On-Premises Compromise Once an attacker has gained access to an on-premises domain with elevated access, they can begin to collect the required information to craft their own security tokens to backdoor into M365 as any user.
+An attacker will require: A valid UserPrincipalName and Immutable.
+Both of these attributes can be pulled from the on-premises Active Directory domain.

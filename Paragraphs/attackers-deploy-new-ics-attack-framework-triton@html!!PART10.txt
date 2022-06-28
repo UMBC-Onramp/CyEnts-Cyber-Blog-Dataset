@@ -1,0 +1,3 @@
+
+Analysis of Attacker Intent We assess with moderate confidence that the attacker’s long-term objective was to develop the capability to cause a physical consequence.
+We base this on the fact that the attacker initially obtained a reliable foothold on the DCS and could have developed the capability to manipulate the process or shutdown the plant, but instead proceeded to compromise the SIS system.

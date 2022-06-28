@@ -1,0 +1,12 @@
+
+Figure 13:
+Memory dump containing the decoded malware
+If we look at the bytes in the original shellcode buffer, we can see that it was decoded before it was copied and is sitting in memory ready to be dumped at offset 0x48.
+We can now successfully load the decoded Beacon DLL into IDA Pro for full analysis (Figure 14).
+Figure 14:
+Decoded malware successfully loaded into IDA Pro Conclusion In this blog post we demonstrated how the Speakeasy emulation framework can be used to automatically triage a Beacon malware sample.
+We used it to discover valuable network indicators, extract its config information from memory, and acquire a decoded Beacon DLL for further analysis.
+Head over to our GitHub to start using Speakeasy today , and stay tuned for the next blog post where we will demonstrate kernel malware analysis using emulation.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

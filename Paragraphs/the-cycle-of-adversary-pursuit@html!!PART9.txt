@@ -1,0 +1,6 @@
+
+Within two days of our initial clustering and expansion of UNC1878 from the original Managed Defense investigation, Mandiant Incident Responders were investigating activity at a U.S. based medical equipment company with several indicators we had previously identified and attributed to UNC1878.
+Attributed domains, payloads and methodologies provided consultants with a baseline to build detections on, as well as a level of confidence in the actor’s capabilities and speed in which they operate.
+Three days later, UNC1878 was identified during another incident response engagement at a restaurant chain.
+In this engagement, Mandiant consultants found evidence of attempted deployment of RYUK ransomware on hundreds of systems, finally revealing UNC1878’s desired end goal.
+In the following weeks, we continued to encounter UNC1878 in various phases of their intrusions at several Mandiant Incident Response and Managed Defense customers.

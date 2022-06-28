@@ -1,0 +1,9 @@
+
+*result = _byteswap_ushort(*result);        // read, bswap and write return result; } Listing 3: SwapShortOffset decompiled The crashing function icm32!SwapShortOffset doesn’t immediately point to the root cause of the bug.
+For that, we need to go one call up to icm32!InitNamedColorProfileData .
+__int64 __fastcall InitNamedColorProfileData(__int64 a1, void *hProfile, int a3, _DWORD *a4) { ... ... errCode =
+CMGetPartialProfileElement(hProfile, 'ncl2', 0, pBuffSize, 0i64);      // getting size of ncl2 element if ( errCode ) return errCode; minSize = pBuffSize[0]; if ( pBuffSize[0] < 0x55 ) minSize = 0x55; pBuffSize[0] = minSize; outBuff = SmartNewPtrClear(minSize, &errCode);                                    // allocating the buffer for ncl2 ... ...
+errCode =
+CMGetPartialProfileElement(hProfile, 'ncl2', 0, pBuffSize, outBuff);    // reading ncl2 elements to buffer if ( !errCode ) { ... ...
+totalSizeToRead = count
+* totalDeviceCoord; if ( totalSizeToRead < 0xFFFFFFFFFFFFFFAEui64 && totalSizeToRead + 0x51 <= pBuffSize[0] )  //

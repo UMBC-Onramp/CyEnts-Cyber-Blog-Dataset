@@ -1,0 +1,7 @@
+
+Figure 7 shows the deobfuscated SMOKEDHAM dropper.
+Figure 7: SMOKEDHAM dropper Phase 5: SMOKEDHAM Backdoor SMOKEDHAM (127bf1d43313736c52172f8dc6513f56) is a .NET-based backdoor that supports commands, including screen capture and keystroke capture.
+The backdoor may also download and execute additional PowerShell commands from its command and control (C2) server.
+SMOKEDHAM Network Communications SMOKEDHAM communicates with its C2 server using HTTPS.
+The backdoor uses domain fronting to obfuscate its true C2 server.
+The fronted domain is configured by an earlier stage of execution and the actual domain is hard-coded in the backdoor.

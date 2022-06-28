@@ -1,0 +1,10 @@
+
+Following the traces of one particular affiliate, we ended up seeing large amounts of bitcoins being transferred into a wallet which had a total value of 443 BTC, around 4,5 million USD with the average bitcoin price.
+We do understand that there are situations in which executives decide to pay the ransom but, by doing that, we keep this business model alive and also fund other criminal markets.
+Conclusion In this blog we focused on insights into the financial streams behind ransomware.
+By linking underground forum posts with bitcoin transfer traces, we were able to uncover new information on the size of the campaign and associated revenue.
+In some cases, we were able even to get detailed insights into what the affiliates do with their earnings following a “successful” attack.
+It shows that paying ransomware is not only keeping the ‘ransom-model’ alive but is also supporting other forms of crime.
+In the next and final episode, “Crescendo” McAfee ATR reveals insights gleaned from a global network of honey pots.
+
+

@@ -1,0 +1,13 @@
+
+The MIR agent recognizes \"INDX\" as an attribute because the files listed in the indices may or may not be deleted.
+Results
+Regardless of which method is used, your binary file should begin with the string \"INDX\" if you grabbed the correct data stream.
+You can verify the results quickly in a hex editor.
+Ensure that the first four bytes of the binary data is the string \"INDX\".
+Conclusion This example demonstrates three ways to use various tools to extract INDX attribute content.
+Our next post will detail the internal structures of a file name attribute.
+A file name attribute will exist for each file tracked in a directory.
+These structures include the MACb (Modified, Accessed, Changed, and birth) times of a file and can be a valuable timeline source in an investigation.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

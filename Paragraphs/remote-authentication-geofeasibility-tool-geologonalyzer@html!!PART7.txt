@@ -1,0 +1,5 @@
+
+One solution for attackers is to establish a proxy on either a compromised server in another country, or even through a rented server hosted in another country by companies such as AWS, DigitalOcean, or Choopa.
+Fortunately, Github user “client9” tracks many datacenter hosting providers in an easily digestible format.
+With this information, we can attempt to detect attackers utilizing datacenter proxy to thwart GeoFeasibility analysis.
+Using GeoLogonalyzer Usable Log Sources GeoLogonalyzer is designed to process remote access platform logs that include a timestamp, username, and source IP.

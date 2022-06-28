@@ -1,0 +1,4 @@
+
+Note that you'll need to change your BIOS settings to ensure the system boots from the recovery media first, or else the system will try to boot using the overwritten MBR leading to a boot error.
+Once the system boots from recovery media, you should be able to choose to run the command prompt, whereby the user can run the command \"bootrec.exe /fixmbr\".
+It is also vital to remind system administrators of the importance of backing up your data on external storage in case any of your files are ever damaged, encrypted, or destroyed.

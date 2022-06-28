@@ -1,0 +1,6 @@
+
+Prior to this, the malware gets the function of “WoW64DisableWow64FsRedirection” with “GetProcAddress” and uses it to avoid redirection by default in 64-bit operating systems and calls it in a dynamic way.
+The malware tries to delete the shadow copies two times, once before crypting the files in the infected system and secondly after crypting them.
+This execution is done with the function “CreateProcessW” but, to increase the level of obfuscation, the malware is launched with this command: FIGURE 16.
+DELETION OF SHADOW COPIES IN THE INFECTED SYSTEM WITH THE WMIC COMMAND As you can see in the image above, the malware uses a command with the name of folders that do not exist by default in Windows, except “Windows”, “system32” and “wbem”.
+It enters these folders but then promptly exits them using the command “..”, meaning it returns to the previous folder in the path.

@@ -1,0 +1,9 @@
+
+Once the information is gathered, it then sends the following information about the infected machine to the C2 RAT server.
+(See Mitre ATT&CK technique – Exfiltration Over C2 Channel .)
+This RAT hosts resources and additional payloads on Pastebin, an online content hosting service.
+In the below code snippet, the RAT client grabs an IP address from the pastebin website using WebClient.
+DownloadString() and connects to it.
+(See Mitre ATT&CK technique – Acquire Infrastructure: Web Services .)
+The AsyncRAT client requests that the RAT server send additional plugins and payloads, which are then executed in memory, as shown below.
+It employs a fileless technique to execute payloads in memory, reducing its footprint and avoiding traditional defenses that scan the disk for malicious files.

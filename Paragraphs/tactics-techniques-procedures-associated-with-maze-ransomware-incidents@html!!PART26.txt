@@ -1,0 +1,2 @@
+
+- Malicious File Transfer - Mimikatz W/ Padding (1MB), Download A100-886 - Malicious File Transfer - Rclone.exe, Download A100-484 - Scanning Activity - Nmap smb-enum-shares, SMB Share Enumeration Detecting the Techniques Platform Signature Name MVX (covers multiple FireEye technologies)

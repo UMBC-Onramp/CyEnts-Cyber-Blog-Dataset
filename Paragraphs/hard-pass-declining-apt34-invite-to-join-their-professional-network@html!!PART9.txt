@@ -1,0 +1,9 @@
+
+Figure 3:
+Additional VBA code from System.doc Upon first execution of TONEDEAF, FireEye identified a callback to the C2 server offlineearthquake[.]com over port 80.
+The FireEye Footprint: Pivots and Victim Identification After identifying the usage of offlineearthquake[.]com as a potential C2 domain, FireEye’s Intelligence and Advanced Practices teams performed a wider search across our global visibility.
+FireEye’s Advanced Practices and Intelligence teams were able to identify additional artifacts and activity from the APT34 actors at other victim organizations.
+Of note, FireEye discovered two additional new malware families hosted at this domain, VALUEVAULT and LONGWATCH.
+We also identified a variant of PICKPOCKET, a browser credential-theft tool FireEye has been tracking since May 2018, hosted on the C2.
+Requests to the domain offlineearthquake[.]com could take multiple forms, depending on the malware’s stage of installation and purpose.
+Additionally, during installation, the malware retrieves the system and current user names, which are used to create a three-character “sys_id”.

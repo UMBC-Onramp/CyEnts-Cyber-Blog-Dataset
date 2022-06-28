@@ -1,0 +1,9 @@
+
+FIGURE 17.
+Collision of hashes In the screenshot “BOOT” is a correct name for the hash, but the others are collisions.
+This malware has a lot of changes per version that avoid making a normal vaccine using mutex, etc.
+The Odd One in the Family That not all ransomware is created equally, especially goes for Clop.
+Earlier in this blog we have highlighted some interesting choices the developers made when it came to detecting language settings, processes and the use of batch files to delete the shadow volume copies.
+We found in the analysis some unique functions compared with other ransomware families.
+However, Clop does embrace some of the procedures we have seen with other ransomware families by not listing the ransom amount or mentioning a bitcoin address.
+Victims must communicate via email instead of with a central command and control server hosting decryption keys.

@@ -1,0 +1,5 @@
+
+In some ways, FIN11 is reminiscent of APT1; they are notable not for their sophistication, but for their sheer volume of activity.
+There are significant gaps in FIN11’s phishing operations, but when active, the group conducts up to five high-volume campaigns a week.
+While many financially motivated threat groups are short lived, FIN11 has been conducting these widespread phishing campaigns since at least 2016.
+From 2017 through 2018, the threat group primarily targeted organizations in the financial, retail, and hospitality sectors.

@@ -1,0 +1,67 @@
+Following recent scams involving fake cryptocurrency exchanges and fake news sites , we recently uncovered a third campaign, one using fake DEX exchanges and aimed at cryptocurrency enthusiasts on the Discord messaging app.
+
+Here’s how the new scheme works.
+
+A word about cryptocurrency exchanges First, what’s a DEX?
+
+Two types of cryptocurrency exchanges exist: centralized (CEX) and decentralized (DEX).
+
+With a CEX exchange, clients transfer money to the exchange and the funds are moved to a wallet, the private key for which is stored on the platform.
+
+Accordingly, exchange operators are also responsible for security.
+
+CEX exchanges belong to specific legal entities, and their clients undergo know-your-customer checks to fight money laundering.
+
+In general, such sites are convenient and reliable, but some users are put off by the need to transfer funds to the exchange and the possibility of having their account frozen during verification.
+
+Unlike CEX platforms, DEX exchanges are essentially just intermediaries between buyers and sellers.
+
+Traders can use any wallet and don’t need to transfer private keys.
+
+DEX exchanges tend not to be owned by any particular organization, they don’t necessarily verify their clients, and they’re not typically very invested in stopping illegal transactions.
+
+The decentralized approach provides greater anonymity.
+
+In addition, DEX exchanges often have lower fees, which is perhaps why they have been attracting ever more cryptocurrency traders of late.
+
+Decentralization also means more security concerns for users — and on top of the ordinary added risk DEX users accept, cybercriminals recently created a phishing site disguised as a DEX exchange called Uniswap.
+
+How DEX clients get duped Potential victims — users of popular Discord cryptocurrency servers — receive phishing messages that appear to come from Uniswap and offer free tokens.
+
+The authors pass their scheme off as an airdrop — a giveaway of coins, usually to promote a new cryptocurrency but sometimes for user loyalty or for simple tasks such as reposting on social networks.
+
+(Such “gifts” are sometimes called helicopter money .)
+
+In their message, the scammers claim that several cryptocurrency services have just launched such a campaign, and the addressee is among the lucky recipients of the drop.
+
+The prize is juicy, too: 2.5 Ethereum and 25,000 ZKSwap coins — more than $75,000 at the time of posting.
+
+A scam message from a fake exchange about winning helicopter ETH and ZKS If one ignores the unusually generous airdrop, the message looks credible:
+
+The language is awkward but not riddled with major errors, the level of emoji use is reasonable, and the list of exchanges includes reputable names.
+
+It even includes believable T&Cs for receiving the prize.
+
+The brevity of the link to the giveaway might arouse suspicion, but that’s unlikely; many are already accustomed to shortened addresses such as t.co or bit.ly links.
+
+The link leads to a page very similar to the Uniswap website — and the fairly well-known exchange actually held a helicopter money promotion for clients not so long ago.
+
+The scam website, however, prominently features a button labeled Claim accumulated rewards .
+
+A page disguised as Uniswap offers 2.5 ETH Clicking the button takes the victim to a screen requesting the private key or mnemonic phrase for their cryptowallet (in our story, the scammers requested a Metamask wallet).
+
+In this case, a mnemonic phrase , or seed phrase, is a sequence of normal human words that restores access to a wallet in the event of a technical failure or a change of device.
+
+How not to fall for DEX scams To avoid swallowing the cybercriminal bait, follow these simple rules: Be wary of any offers of free cryptocurrency.
+
+Bona fide promotional giveaways tend to be reserved for early investors; Pay attention to the criteria.
+
+If a message about a prize or a giveaway contains a condition you have not fulfilled, then even if the promotion is real, you still won’t be eligible;
+
+Consult Claimable if you have any doubts.
+
+It’s a free service that lets you check whether you can claim a prize and requires only the public key for your cryptowallet, no confidential data; Check on official websites to see if a particular promotion is actually running; Add the websites you use to your bookmarks and visit them from there; do not follow links in messages or e-mails; Read the terms of use of the services, paying attention to which data they might request from you and which they won’t.
+
+
+
+

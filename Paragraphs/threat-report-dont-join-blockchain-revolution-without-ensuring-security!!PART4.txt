@@ -1,0 +1,11 @@
+
+They have been found using open-source code such as XMRig for system-based mining and the mining service Coinhive .
+Source: McAfee Labs Implementation vulnerabilities are the flaws introduced when new technologies and tools are built on top of blockchain.
+The recent EOS attack is one example.
+In mid-July 2017 Iota suffered an attack that essentially enabled attackers to steal from any wallet.
+Another currency, Verge, was found with numerous vulnerabilities .
+Attackers exploiting the vulnerabilities were able to generate coins without spending any mining power.
+Known attacks against the core blockchain technology are much more difficult to implement, although they are not unheard of.
+The most widely known attack is the 51% attack, or majority attack, which enables attackers to create their own chains at will.
+The group 51 Crew targeted small coins, including Krypton, and held them for ransom.
+Another attack, known as a Sybil attack, can allow an attacker to completely control a targeted victim’s ledger.

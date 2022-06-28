@@ -1,0 +1,5 @@
+
+In addition, the domain used self-hosted name servers ns1.cylenceprotect[.]com and ns2.cylenceprotect[.]com, which also resolved to the Choopa IP address.
+Network scan data for the server uncovered a certificate on port 80 and 443, a snippet of which can be seen in Figure 4.
+Certificate: Data: Version: 3 (0x2)
+Serial Number: 03:a8:60:02:c7:dd:7f:88:5f:2d:86:0d:88:41:e5:3e:25:f0 Signature Algorithm: sha256WithRSAEncryption Issuer: C=US, O=

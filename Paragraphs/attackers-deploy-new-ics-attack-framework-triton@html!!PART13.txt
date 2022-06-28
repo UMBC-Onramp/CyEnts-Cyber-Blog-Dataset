@@ -1,0 +1,11 @@
+
+This sample left legitimate programs in place, expecting the controller to continue operating without a fault or exception.
+If the controller failed, TRITON would attempt to return it to a running state.
+If the controller did not recover within a defined time window, this sample would overwrite the malicious program with invalid data to cover its tracks.
+Recommendations Asset owners who wish to defend against the capabilities demonstrated in the incident, should consider the following controls: Where technically feasible, segregate safety system networks from process control and information system networks.
+Engineering workstations capable of programming SIS controllers should not be dual-homed to any other DCS process control or information system network.
+Leverage hardware features that provide for physical control of the ability to program safety controllers.
+These usually take the form of switches controlled by a physical key.
+On Triconex controllers, keys should not be left in the PROGRAM mode other than during scheduled programming events.
+Implement change management procedures for changes to key position.
+Audit current key state regularly.

@@ -1,0 +1,5 @@
+
+We therefore calculated the cumulative number of samples covered by each term, as we iterated down the list from most common to least common.
+Figure 5 is a graph showing the result.
+Figure 5: Cumulative share of samples covered by distinct terms As you can see, with only a small fraction of the terms, we can arrive at a significant percentage of the cumulative total PDB paths.
+Setting a simple cutoff at about 70% of the dataset resulted in roughly 230 terms for our total vocabulary.

@@ -1,0 +1,4 @@
+
+Despite the frequent changes seen across these campaigns, the following has remained consistent across recent activity: Emails contain an in-line link to an actor-controlled Google Docs document, typically a PDF file.
+This document contains an in-line link to a URL hosting a malware payload.
+Emails masquerade as generic corporate communications, including follow-ups about documents and phone calls or emails crafted to appear related to complaints, terminations, bonuses, contracts, working schedules, surveys or queries about business hours.

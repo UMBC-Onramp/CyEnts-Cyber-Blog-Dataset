@@ -1,0 +1,6 @@
+
+Our setup splits the data into three sets to simulate model training, then retraining while keeping an independent data set for final evaluation.
+Figure 2 shows our data split and how it compares to the original EMBER data split.
+We have built a LightGBM classifier on the training data, which we’ll refer to as the baseline model.
+To simulate production testing, we run the baseline model on test 1 and record the FPs and FNs.
+Then, we retrain our model using both the training data and the FPs/FNs from test 1.

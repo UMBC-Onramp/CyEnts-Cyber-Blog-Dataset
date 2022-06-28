@@ -1,0 +1,5 @@
+
+Being the security savvy CTO that he is, the minute he entered the home, Ree performed a port scan to see if anyone else could connect to the network.
+To his surprise, various past visitors had added multiple firewall rules to the home network.
+Any one of the rules could have enabled the visitors to remain connected, even remotely.
+The access also meant if the visitors had malicious intentions, they could compromise Ree’s laptop and potentially his employer’s network.

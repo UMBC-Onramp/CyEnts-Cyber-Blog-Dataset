@@ -1,0 +1,6 @@
+
+The rootkit uses Direct Kernel Object Modification (DKOM), which involves undocumented kernel structures and objects, for its operations.
+For this reason, it relies on specific OS builds as otherwise it may cause the infected machine to crash.
+In general, the latest supported build is Windows 10 Creators Update (Redstone 2), released in April 2017.
+The purpose of the driver is to hide and protect malicious artifacts from user-mode components.
+This includes four aspects: files, processes, registry keys and network connections.

@@ -1,0 +1,9 @@
+
+Figure 4: Global variables renamed Stack Strings
+Our next example is a typical issue when dealing with malware: stack strings .
+This is a technique aimed to make the analysis harder by using arrays of characters instead of strings in the code.
+An example can be seen in Figure 5; the malware stores each character’s ASCII value in the stack and then references it in the call to sprintf .
+At a first glance, it’s very difficult to say what is the meaning of this string (unless of course, you know the ASCII table by heart).
+Figure 5: Hex-Rays decompiler output.
+Stack strings are difficult to read.
+Our script will modify these assignments to something more readable.

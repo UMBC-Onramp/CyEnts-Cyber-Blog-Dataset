@@ -1,0 +1,5 @@
+
+Figure 9 shows De-DOSfuscator log after inducing the rest of the code to run.
+Figure 9:
+After circumventing anti-sandbox measure XYNT.bat calls a dropped binary to create and start a Windows service for persistence.
+The largest dropped binary is a variant of the XMRig cryptocurrency miner, and many of the services and executables referenced by the script also appear to be cryptocurrency-related.

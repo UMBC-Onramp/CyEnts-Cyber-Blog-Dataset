@@ -1,0 +1,7 @@
+
+For example, entering the command cinst github as administrator installs GitHub Desktop on your system.
+To update all currently installed packages to their most recent versions, run the command cup all as administrator.
+Getting Started: A Use Case As threat analysts, what we choose to pursue will depend on the priorities and requirements of our current role.
+Often, they vary with each threat or adversary encountered such as financial crime, espionage, issue-motivated groups or individuals.
+The role broadly encompasses the collection and analysis of threat data (e.g., malware, indicators of attack/compromise) with the goal of triaging the data and developing actionable intelligence.
+For example, one may want to produce detection signatures based on malware network communications to classify, share or disseminate indicators of compromise (IOCs) in standardized ways.

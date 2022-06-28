@@ -1,0 +1,5 @@
+
+Companies have been receiving emails that discuss how severe this attack was and then encourage them to download ‘ransomware system updates’ — which are really links to malware.
+Similar campaigns have been carried out around COVID-19 vaccines, natural disaster relief and nearly every other news-worthy event in the last five years.
+For enterprises, the prevalence of phishing attacks is the most frightening thing about them.
+While on their own they represent minimal risk, increasing volume and velocity means that one of these efforts is bound to break through.

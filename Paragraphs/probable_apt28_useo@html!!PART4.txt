@@ -1,0 +1,6 @@
+
+It uses the vulnerability to run code from userspace in the context of the kernel, which modifies the attacker’s process token to have the same privileges as that of the System process.
+CVE-2015-3043 Exploit The primary difference between the CVE-2014-0515 metasploit module and this exploit is, obviously, the vulnerability.
+CVE-2014-0515 exploits a vulnerability in Flash’s Shader processing, whereas CVE-2015-3043 exploits a vulnerability in Flash’s FLV processing.
+The culprit FLV file is embedded within AS3 in two chunks, and is reassembled at runtime.
+Vulnerability A buffer overflow vulnerability exists in Adobe Flash Player (<=17.0.0.134) when parsing malformed FLV objects.

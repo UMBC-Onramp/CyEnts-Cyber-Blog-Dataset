@@ -1,0 +1,11 @@
+
+For more than 70% of capa rules we have collected associated real-world binaries.
+Each binary implements interesting capabilities and exhibits noteworthy features.
+You can view the entire sample collection at our capa test files GitHub page .
+We rely heavily on these samples for developing and testing code enhancements and rule updates.
+Python 3 Support Finally, we’ve spent nearly three months migrating capa from Python 2.7 to Python 3.
+This involved working closely with vivisect and we would like to thank the team for their support.
+After extensive testing and a couple of releases supporting two Python versions, we’re excited that capa 2.0 and future versions will be Python 3 only.
+Conclusion Now that you’ve seen all the recent improvements to capa, we hope you’ll upgrade to the newest capa version right away!
+Thanks to library function identification capa will report faster and more relevant results.
+Hundreds of new rules capture the most interesting malware functionality while the improved capa explorer plugin helps you to focus your analysis and codify your malware knowledge while it’s fresh.

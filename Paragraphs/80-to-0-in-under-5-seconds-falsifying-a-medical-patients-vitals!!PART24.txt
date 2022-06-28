@@ -1,0 +1,4 @@
+
+It still indicates this data is coming from the original patient monitor address, which is different from the IP address on the packet’s IP header.
+Due to this implementation, there is no need for the attacker to spoof their IP address for the attack to be successful.
+Two videos show this modification happening in real time: Impact of real-time modification Although the monitor in the patient’s room is not directly affected, real-time modification is impactful because medical professionals use these central stations to make critical decisions on a large number of patients—instead of visiting each room individually.

@@ -1,0 +1,7 @@
+
+Anti VM Checks
+The malware searches for a series of hooked modules, specific filenames and paths, and known sandbox volume serial numbers, including: sbiedll.dll, dir_watch.dll, api_log.dll, dbghelp.dll, Frz_State, C:\\popupkiller.exe, C:\\stimulator.exe, C:\\TOOLS\\execute.exe, \\sand-box\\, \\cwsandbox\\, \\sandbox\\, 0CD1A40, 6CBBC508, 774E1682, 837F873E, 8B6F64BC.
+Aside from the aforementioned checks and blacklisting, there is also a wait option built in where the payload will delay execution on an infected machine before it launches an encryption routine.
+This technique was likely implemented to further avoid detection within sandbox environments.
+Persistence Once executed, Cerber deploys the following persistence techniques to make sure a system remains infected: A registry key is added to launch the malware instead of the screensaver when the system becomes idle.
+The “CommandProcessor” Autorun keyvalue is changed to point to the Cerber payload so that the malware will be launched each time the Windows terminal, “cmd.exe”, is launched.

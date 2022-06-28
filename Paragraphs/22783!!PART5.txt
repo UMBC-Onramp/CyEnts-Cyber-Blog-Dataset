@@ -1,0 +1,7 @@
+
+With texts, even legitimate messages look a lot like one another, with short messages often employing nonstandard language and no design to speak of; and scammers with the technical skills can realistically spoof the sender’s info, replacing the sender’s real number with a fake one.
+How to protect yourself from smishing As with traditional phishing, you have strong defenses against smishing.
+Do not click on links or share any of your information in a text thread.
+As a general rule, the less activity, the better; Use two-factor authentication wherever you have the option.
+That way, even having a stolen password won’t help criminals raid your account.
+Contact your bank immediately if you suspect criminals have gotten access to your account.

@@ -1,0 +1,3 @@
+
+In many cases, determining the initial exploitation vector and timeframe was not possible to determine because the actors altered or deleted forensic evidence, or the appliance had undergone subsequent code upgrades thereby destroying evidence related to the initial exploitation.
+Establish Foothold In some cases, Mandiant observed the actors create their own Local Administrator account outside of established credential management controls on Windows servers of strategic value.

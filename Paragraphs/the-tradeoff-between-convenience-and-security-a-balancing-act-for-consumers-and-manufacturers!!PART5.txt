@@ -1,0 +1,6 @@
+
+As we move towards automation and remote access to nearly every computerized system on the planet, it’s our shared responsibility to maintain awareness of this fact and demand a higher bar for the products that we buy.
+So what can be done?
+The responsibility is shared between consumers and manufacturers, and there are a few options: For consumers: Practice proper cyber hygiene.
+From a technical perspective, consumers have many tools at their disposal, even when security concerns do manifest.
+Implement a strong password policy, put IoT devices on their own, separate, network, utilize dual-factor authentication when possible, minimize redundant systems and patch quickly when issues are found.

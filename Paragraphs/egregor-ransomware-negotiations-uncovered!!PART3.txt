@@ -1,0 +1,6 @@
+
+Ransom Negotiations – Several factors played a role in determining the final negotiated ransom amount or data leak outcome, including the operators’ perception of the victim’s ability and willingness to pay as well as the victim’s negotiation strategies such as attempting to buy time and delay the payment.
+Operational Structure – The chats reveal a highly sophisticated organized crime group was behind Egregor operations.
+Numerous roles or teams were mentioned including the financial department, data manager, attackers/IT specialists, PR manager, publications manager and decryption tool master-maker.
+Compassion with a Catch – X-Force researchers maintain the operators of ransomware like Egregor are nefarious actors.
+However, the chat logs revealed a few glimpses of what could be perceived as empathy or practical consideration.

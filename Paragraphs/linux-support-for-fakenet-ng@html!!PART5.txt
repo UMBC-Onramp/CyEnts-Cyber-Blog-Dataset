@@ -1,0 +1,5 @@
+
+The setting in FakeNet-NG’s default configuration is *, which configures FakeNet-NG to redirect on all interfaces.
+LinuxFlushIptables : Deletes all iptables rules before adding rules for FakeNet-NG.
+The original rules are restored as part of FakeNet-NG’s shutdown sequence which is triggered when you hit Ctrl+C.
+This reduces the likelihood of conflicting, erroneous, or duplicate rules in the event of unexpected termination, and is enabled in FakeNet-NG’s default configuration.

@@ -1,0 +1,5 @@
+
+The next step is checking the field “net” from the config, and, if true, will start sending a POST message to the list of domains in the config file in the field “dmn”.
+FIGURE 17.
+PREPARE THE FINAL URL RANDOMLY PER DOMAIN TO MAKE THE POST COMMAND This part of the code has similarities to the code of GandCrab, which we will highlight later in this article.
+After this step the malware cleans its own memory in vars and strings but does not remove the malware code, but it does remove the critical contents to avoid dumps or forensics tools that can gather some information from the RAM.

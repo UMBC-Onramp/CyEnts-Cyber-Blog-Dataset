@@ -1,0 +1,8 @@
+
+In total, there are 49 C2 servers (IP address and port) hardcoded and encrypted within this variant.
+Please refer to the “C2 Server List” under the “IOCs” section for all the IP addresses and ports.
+The C2 server detects the submitted data to determine next steps, including replying with Emotet modules and commands for further actions.
+The replied data is encrypted binary data in the HTTP response body.
+In Figure 5.3, below, the marked box is an example of the data just after decryption.
+The decrypted data is 60H long and contains both verification data and control data.
+0x40 at the beginning is the size of the verification data, the signature data (31 1B … 3C 6D), which is a signed hash of the control data.

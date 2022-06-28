@@ -1,0 +1,4 @@
+
+Once that is set up and tested, we’re ready to go!
+If you try the shellcode loader and get a blue screen indicating stop code 0x3B (SYSTEM_SERVICE_EXCEPTION), then you likely did not successfully connect the kernel debugger beforehand.
+Remember that the driver issues a software interrupt to give control to the debugger immediately before executing the shellcode; if the debugger is not successfully attached, Windows will blue screen.

@@ -1,0 +1,10 @@
+
+Once emulation begins, emulated API calls will be logged to the screen along with their arguments and return values.
+Figure 8 shows the Beacon sample allocating a new memory buffer where it will copy itself.
+The malware then begins to manually resolve exports it needs to execute.
+Figure 8: Network configuration After additional decoding and setup, the malware attempts to connect to its C2 server.
+In Figure 9, we can see the malware using the Wininet library to connect and read data from the C2 server using HTTP.
+Figure 9: Wininet API calls to connect to C2
+The malware will loop endlessly until it receives the data it expects from its C2 server.
+Speakeasy will timeout after a predetermined amount of time and generate a JSON report.
+Figure 10:

@@ -1,0 +1,10 @@
+
+Once the attacker has established control, they can operate the device without impacting what information the user is provided, allowing the attacker to stay undetected and granting them ample opportunity to cause serious damage, depending on what kind of hardware the Delta controller manages.
+Real World Impact
+What is the impact of an attack like this?
+These controllers are installed in multiple industries around the world.
+Via Shodan, we have observed nearly 600 internet-accessible controllers running vulnerable versions of the firmware.
+  
+We tracked eBMGR devices from February 2019 to April 2019 and found that there were a significant number of new devices available with public IP addresses.
+As of early April 2019, 492 eBMGR devices remained reachable via internet-wide scans using Shodan.
+Of those found, a portion are almost certainly honeypots based on user-applied tags found in the Shodan data, leaving 404 potentially vulnerable victims.

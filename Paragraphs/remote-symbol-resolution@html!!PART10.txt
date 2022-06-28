@@ -1,0 +1,6 @@
+
+The first consideration is how we interface with it.
+For maximum flexibility, three methods were chosen.
+Lookups can be submitted: individually via textbox in bulk by file or over the network by a remote client In terms of input formats, it accepts the following: hex memory address case insensitive API name
+dll_name@ordinal dll_name.export_name
+The tool output is in the form of a CSV list that includes address, name, ordinal, and DLL.

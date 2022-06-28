@@ -1,0 +1,9 @@
+
+To make the message appear more convincing, the cybercriminals add the company’s name and logo, and indicate its support service as the sender.
+Suspicion is raised only by taking a closer look at the address the e-mail came from.
+The scammers ask the victim to verify their account
+The first sign it’s a fake is the typo in the company name in the e-mail address (metamasks instead of metamask).
+Another red flag is the domain, (the part of the address after the @ symbol).
+Respectable companies usually use their name as the domain, for example, account-security-noreply@microsoft.com.
+In this case, however, the domain has no relation at all to MetaMask.
+Lastly, .de indicates that the address is registered in Germany, which is also strange, since MetaMask is an American company.

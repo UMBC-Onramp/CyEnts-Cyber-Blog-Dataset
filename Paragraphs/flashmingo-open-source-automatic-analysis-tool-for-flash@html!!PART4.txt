@@ -1,0 +1,5 @@
+
+In the few cases where the root cause of past vulnerabilities was not in the AVM2, ActionScript code was still necessary to put the system in a state suitable for reliable exploitation.
+For example, by grooming the heap before triggering a memory corruption.
+For these reasons, FLASHMINGO focuses on the analysis of AS3 bytecode.
+Tool Architecture FLASHMINGO leverages the open source SWIFFAS library to do the heavy lifting of parsing Flash files.

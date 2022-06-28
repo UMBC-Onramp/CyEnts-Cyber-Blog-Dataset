@@ -1,0 +1,2 @@
+
+And now, as edge devices become more powerful, with more native capabilities and, of course, more privileges, we expect to see new attacks designed to \"live off the edge.\" Malware living in these edge environments will use local resources to monitor edge activities and data and then steal, hijack, or even ransom critical systems, applications, and information while avoiding detection.

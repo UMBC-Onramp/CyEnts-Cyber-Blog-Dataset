@@ -1,0 +1,3 @@
+
+In the latest findings from the McAfee Advanced Threat Research team, we examine an adversary that was not content with a single campaign, but launched five distinct waves adapted to their separate targets.
+The new report “Operation Oceansalt Attacks South Korea, U.S., and Canada with Source Code from Chinese Hacker Group” analyzes these waves and their victims, primarily in South Korea but with a few in the United States and Canada.

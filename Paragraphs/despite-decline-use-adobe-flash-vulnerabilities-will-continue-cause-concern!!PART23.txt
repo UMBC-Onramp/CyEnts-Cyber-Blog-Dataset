@@ -1,0 +1,29 @@
+
+8001 and 1149:
+On by default, but log only, not block.
+Customers can select block.
+8001:
+Suspicious exploit behavior, log only, available in HIPS, not in ENS 1149: CMD tool access by a Windows mail client or Internet Explorer, log only, available in HIPS, not in ENS 6011 and 6010:
+Off by default.
+Enabling them may result in an increase of false positives.
+6011:
+Generic application invocation protection, not present in ENS 6010:
+Generic application hooking protection, not present in ENS Recent campaigns exploiting Flash Player Issues CVE-2018-4878: Currently being exploited in a massive spam mail campaign.
+https://www.trendmicro.com/vinfo/us/security/news/vulnerabilities-and-exploits/north-korean-hackers-allegedly-exploit-adobe-flash-player-vulnerability-cve-2018-4878-against-south-korean-targets CVE-2017-11292:
+Black Oasis Advanced Persistent Threat https://threatpost.com/adobe-patches-flash-zero-day-exploited-by-black-oasis-apt/128467/ CVE-2016-4117:
+Hidden Cobra APT/CryptXXX Ransomware/Erebus APT https://www.proofpoint.com/us/threat-insight/post/cryptxxx-new-ransomware-actors-behind-reveton-dropping-angler
+http://securityaffairs.co/wordpress/48415/cyber-crime/scarcruft-apt.html CVE-2016-1019:
+Cerber and Locky ransomware/Hidden Cobra
+APT https://blog.trendmicro.com/trendlabs-security-intelligence/look-adobe-flash-player-cve-2016-1019-zero-day-vulnerability/
+https://www.proofpoint.com/us/threat-insight/post/killing-zero-day-in-the-egg CVE-2015-3133:
+CryptoWall Ransomware
+https://nakedsecurity.sophos.com/2015/06/29/latest-flash-hole-already-exploited-ransomware/ CVE-2015-0311:
+TeslaCrypt and FessLeak Ransomware https://blog.trendmicro.com/trendlabs-security-intelligence/analyzing-cve-2015-0311-flash-zero-day-vulnerability/ http://malware.dontneedcoffee.com/2015/01/cve-2015-0311-flash-up-to-1600287.html CVE-2014-8439:
+Cerber Ransomware https://www.f-secure.com/weblog/archives/00002768.html CVE-2015-7645:
+Cerber and Alpha Crypt Ransomware http://malware.dontneedcoffee.com/2015/10/cve-2015-7645.html
+McAfee does not control or audit third-party benchmark data or the websites referenced in this document.
+You should visit the referenced website and confirm whether referenced data is accurate.
+McAfee and the McAfee logo are trademarks or registered trademarks of McAfee, LLC or its subsidiaries in the US and other countries.
+Other marks and brands may be claimed as the property of others.
+Copyright © 2018 McAfee, LLC
+

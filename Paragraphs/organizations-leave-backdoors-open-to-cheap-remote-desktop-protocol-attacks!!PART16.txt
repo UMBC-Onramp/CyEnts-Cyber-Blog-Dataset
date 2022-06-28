@@ -1,0 +1,7 @@
+
+The names of the other accounts seemed unimportant at first but after performing several open-source searches we found that the accounts were associated with two companies specializing in airport security; one in security and building automation, the other in camera surveillance and video analytics.
+We did not explore the full level of access of these accounts, but a compromise could offer a great foothold and lateral movement through the network using tools such as Mimikatz.
+The login screen of a second system on the same network.
+Looking at the other login account (preceding screen), we saw it is part of the domain with a very specific abbreviation.
+We performed the same kind of search on the other login account and found the domain is most likely associated with the airport’s automated transit system, the passenger transport system that connects terminals.
+It is troublesome that a system with such significant public impact might be openly accessible from the Internet.

@@ -1,0 +1,5 @@
+
+The Word file contains malicious Visual Basic macro code that runs when the document is opened in Word using the Document_Open() autoload function.
+The word file also contains a Base64-encoded file (encoded with a custom key) in it that is read, decoded, and dropped to the disk by the macro.
+The Document_Open() subroutine implementing the malicious functionality.
+The Visual Basic macro performs the following tasks: Opens a handle to the malicious document to read the encoded CAB file Decodes the CAB file and writes it to the disk at %temp%\\setup.cab Encoded CAB file in the Word document.

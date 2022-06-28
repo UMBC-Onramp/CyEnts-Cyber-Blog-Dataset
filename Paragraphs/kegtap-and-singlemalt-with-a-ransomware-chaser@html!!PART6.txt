@@ -1,0 +1,5 @@
+
+Figure 1:
+Email containing internal references to target an organization’s name Figure 2: Google Docs PDF document containing a target organization’s logo Hiding the final payload behind multiple links is a simple yet effective way to bypass some email filtering technologies.
+Various technologies have the ability to follow links in an email to try to identify malware or malicious domains; however, the number of links followed can vary.
+Additionally, embedding links within a PDF document further makes automated detection and link-following difficult.

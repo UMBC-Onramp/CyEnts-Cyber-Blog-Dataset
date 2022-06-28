@@ -1,0 +1,6 @@
+
+The two versions also slightly differ in commands and communication.
+2016
+Milestones apply XOR encryption to their communication, as well as support a command to execute as a new user with administrator privileges.
+To do so, the backdoor first creates a new administrator user on the system, with the username ANONYMOUS and the password MileSt0ne2@16 .
+It then executes another instance of itself as that user with CreateProcessAsUser and proceeds to remove the user from the system immediately thereafter.

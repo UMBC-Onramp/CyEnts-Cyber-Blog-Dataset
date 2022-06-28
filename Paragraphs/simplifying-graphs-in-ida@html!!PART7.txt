@@ -1,0 +1,8 @@
+
+Figure 5:
+Unique reachable with sentry The UR algorithm operates on the currently visible graph, meaning that you can run the UR algorithm repeatedly and nest groups.
+Switch Case Groups Creation Switch statements implemented as jump tables appear in the graph as nodes with a large fan-out, as shown in Figure 6.
+The SimplifyGraph plug-in detects when the currently selected node has more than two successor nodes and adds a right-click menu option “SimplifyGraph -> Create switch case subgraphs”.
+Selecting this runs the Unique-Reachable algorithm on each separate case branch and automatically uses IDA’s branch label as the group node text.
+Figure 6:
+Switch jumptable use Figure 7 shows a before and after graph overview of the same function when the switch-case grouping is run.

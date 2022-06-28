@@ -1,0 +1,7 @@
+
+To get this information it needs to call APIs RtlGetVersion() and GetNativeSystemInfo().
+0x01 at offset+50h is a current process ID (rundll32.exe) related value.
+The last data, starting at offset+58h, is meaningless padding (AB AB AB…).
+The encrypted binary data will be converted into base64 string by calling the API CryptBinaryToStringW().
+The base64 string is submitted to the C2 server as a “Cookies” value in an HTTP Get request.
+In the example shown in Figure 5.2, as you may have noticed, the Cookie name and URL are randomized by Emotet to bypass the cybersecurity device’s detection.

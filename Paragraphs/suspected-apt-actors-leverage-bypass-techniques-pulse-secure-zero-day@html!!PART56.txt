@@ -1,0 +1,11 @@
+
+The –f flag specifies if the file log.events.vc0 or log.access.vc0 within the directory /home/runtime/logs should be modified.
+To perform its log cleaning operations the sample first makes two copies of whichever log file was chosen, but uses .vc1
+and .vc2
+as the extension for the new files.
+The file with the .vc1 is used to search for entries that match the given entries, and the file with the .vc2 extension is used as a temporary file where the cleaned log is written.
+After generating both files and log cleaning is finished the sample executes the following commands via the system API to overwrite the original log with the cleaned version, then removes the intermediate: mv /home/runtime/logs/log.<logtype>.vc2 /home/runtime/logs/log.<logtype>.vc0 rm /home/runtime/logs/log.<logtype>.vc1 THINBLOOD LogWiper Utility Variant
+The file clear_log.sh (SHA256: 1741dc0a491fcc8d078220ac9628152668d3370b92a8eae258e34ba28c6473b9 ) is a BASH script responsible for zeroing log lines that match a given regex pattern.
+The sample is similar to the compiled THINBLOOD Log Wiper but edits logs in-place with sed rather than making temporary copies.
+The sed commands used are: sed -i \"s/.\\x00[^\\x00]*<regex_string>[^\\x00]*\\x09.\\x00//g\" /data/runtime/logs/<logfile> sed -i
+\"s/\\x<hex_char>\\x00[^\\x00]*$2[^\\x00]*\\x09\\x<hex_char>\\x00//g\" /data/runtime/logs/<logfile>

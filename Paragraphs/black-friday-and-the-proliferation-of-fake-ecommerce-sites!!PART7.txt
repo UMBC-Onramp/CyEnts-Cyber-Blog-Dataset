@@ -1,0 +1,3 @@
+
+Looking at the source code of the shopping cart, we see the string “刷新按钮“, which translates to a “refresh button”.
+Perhaps this is indicative of the origins of the group behind this site, or the shopping cart was repurposed from elsewhere.

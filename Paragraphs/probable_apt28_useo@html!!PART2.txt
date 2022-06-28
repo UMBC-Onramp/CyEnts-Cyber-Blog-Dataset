@@ -1,0 +1,11 @@
+
+We have only seen CVE-2015-1701 in use in conjunction with the Adobe Flash exploit for CVE-2015-3043.
+The Microsoft Security Team is working on a fix for CVE-2015-1701.
+Exploit Overview
+The high level flow of the exploit is as follows: 1.
+       User clicks link to attacker controlled website 2.
+       HTML/JS launcher page serves Flash exploit 3.
+       Flash exploit triggers CVE-2015-3043, executes shellcode 4.
+       Shellcode downloads and runs executable payload 5.
+       Executable payload exploits local privilege escalation (CVE-2015-1701) to steal System token The Flash exploit is served from unobfuscated HTML/JS.
+The launcher page picks one of two Flash files to deliver depending upon the target’s platform (Windows 32 versus 64bits).

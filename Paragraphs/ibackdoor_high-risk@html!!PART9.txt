@@ -1,0 +1,8 @@
+
+MSageCorePluginFileModule - createDir - deleteDir: - deleteFile: - createFile: - getFileContent: - ...
+MSageCoreKeyChain - writeKeyValue: - readValueByKey: - resetValueByKey: MSageCorePluginNetWork - sendHttpGet: - sendHttpPost: - sendHttpUpload: - ... MSageCoreEncryptPlugin - MD5Encrypt: - SHA1Encrypt: - AESEncrypt: - AESDecrypt: - DESEncrypt: - DESDecrypt: - XOREncrypt: - XORDecrypt: - RC4Encrypt: - RC4Decrypt - ...
+Table 1: Selected interfaces exposed by msageCore The selected interfaces reveal some of the key capabilities exposed by the backdoors in the library.
+They expose the ability to capture audio and screenshots while the affected app is in use, identify and launch other apps installed on the device, periodically monitor location, read and write files in the app’s data container, and read/write/reset “secure” keychain items stored by the app.
+Additionally, any data collected via these interfaces can be encrypted with various encryption schemes and uploaded to a remote server.
+Beyond the selected interfaces, the ad library exposes users to additional risks by including explicit logic to promote and install “enpublic” apps shown in Figure 4.
+As we have highlighted in previous blogs [4, 5, 6, 7, 8], enpublic apps can introduce additional security risks by using private APIs, which would normally cause an app to be blocked by the App Store review process.

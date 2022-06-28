@@ -1,0 +1,10 @@
+
+LOG.logDebug(\"BurstlyViewConfigurator\",
+\"Setting CR params to: {0}\", new Object[]{v0}); this.mBurstlyView.setCrParms(v0); } The key crParms is the same one used in the first PCap to label the values corresponding to personal information such as age and gender.
+Conclusion In summary, Angry Birds collects user’s personal information and associates with customer id before storing it in the smart phone storage.
+Then the Burstly ad library embedded in Angry Birds fetches the customer id, uploads the corresponding personal information to the Burstly cloud, and transmits it to other advertising clouds.
+We have caught such traffics in the network packet captures and the corresponding code paths in the reversed engineered source code.
+For FireEye ThreatScore information on Angry Birds and more details about the application’s behavior, FireEye Mobile Threat Prevention customers can access their Mobile Threat Prevention (MTP) portal.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

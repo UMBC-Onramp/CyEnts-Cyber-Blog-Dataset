@@ -1,0 +1,10 @@
+
+Management.
+Control.
+That’s what’s at stake if a device such as this is not properly secured.
+It’s also what made this device such a high priority for McAfee’s Advanced Threat Research team.
+The decision to make network-connected critical systems such as these demands an extremely high standard of software security – finding where it might fall short is precisely our job.
+With these stakes in mind, our team went to work.
+We began by hooking up an eBMGR unit to a network with several other devices to simulate an environment somewhat true to life.
+Using a technique known as “fuzzing”, we then blasted the device with all kinds of deliberately malformed network traffic, looking for a chink in the armor.
+That is one advantage often afforded to the bad guys in software security; they can make many mistakes; manufacturers need only make one.

@@ -1,0 +1,7 @@
+
+This would remove a statement like “here is how you can #exploit tax loopholes” from being confused with a cyber security-related discussion about a user exploiting a software vulnerability as a malicious tool.
+Second, a forecasting model scores the vulnerability based on whether annotators perceived the threat to be severe.
+CVSS Forecasting Results Both the relevancy classifier and the severity classifier were applied to various datasets.
+Data was collected from December 2017 to July 2018.
+Most notably 1,000 tweets were held-out from the original 6,000 to be used for the relevancy classifier and 466 tweets were held-out for the severity classifier.
+To measure the performance, we use the Area Under the precision-recall Curve (AUC), which is a correctness score that summarizes the tradeoffs of minimizing the two types of errors (false positive vs false negative), with scores near 1 indicating better performance.

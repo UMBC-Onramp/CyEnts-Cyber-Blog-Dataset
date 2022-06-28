@@ -1,0 +1,6 @@
+
+The DarkCrystalServer is not self-contained, rather, it is just a PHP file that allows the user to supply a username and password, which causes it to download and install the server software.
+Due to the need to supply credentials and communicate back with dcrat[.]ru (Figure 20), we did not pursue further analysis of DarkCrystalServer.
+Figure 19:
+The RAT page lists software for the RAT, the server, an API, and plugin development Figure 20:
+The DarkCrystalServer asks for a username and password and calls back to dcrat[.]ru to download software, so we did not pursue it further YouTube Videos

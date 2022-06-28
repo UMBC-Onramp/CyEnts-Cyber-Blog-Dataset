@@ -1,0 +1,15 @@
+
+Unfortunately, this continued for two dubious days with multiple excuses before the attacker sent a link to the decryptor via the chat.
+It appeared that they were ineffective in solving the technical issues; hence they chose to send it via SendSpace.
+Once downloaded, the recovery phase could start.
+In this phase, all servers were decrypted, scanned and cleaned (or rebuilt) in a quarantined network.
+Subsequently, after implementing the appropriate technical and security measures, each host joined a new clean network.
+Conclusion As we highlighted in the first two articles, targeted ransomware attacks have increased massively over the past months.
+Many of them are all using a similar, quite manual, attack pattern as we highlighted.
+In this article, we provided an in-depth view of a relatively new ransomware family named LockBit.
+Based on a real-life case as encountered by Northwave, we described a typical ransomware attack including the modus operandi of attackers, the recovery process, an insight in the underground that advertises the ransomware and a full technical break-down of the ransomware itself.
+Additionally, during our analysis, we were able to obtain multiple samples of the LockBit ransomware with which we could provide an extensive list of IOCs.
+ McAfee will continue monitoring this threat.
+Learn from the articles, identify which technology can give you visibility inside your network.
+What digital evidence sources do you have, and can you detect fast enough to preserve and respond?
+If you were not able to prevent the ‘initial access stage’, make sure to have a strong Defense-in-Depth by having multiple defence technologies in place.

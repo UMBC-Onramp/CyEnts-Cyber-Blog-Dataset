@@ -1,0 +1,4 @@
+
+In this context, we deemed it relevant to share some details on Mandiant's approach to red teaming in OT based on years of experience supporting customers learning about tangible threats in their production environments.
+In this post we introduce Mandiant's approach to OT red teaming and walk through a case study.
+During that engagement, it took Mandiant only six hours to gain administrative control on the target's OLE for Process Control (OPC) servers and clients in the target's Distributed Control System (DCS) environment.

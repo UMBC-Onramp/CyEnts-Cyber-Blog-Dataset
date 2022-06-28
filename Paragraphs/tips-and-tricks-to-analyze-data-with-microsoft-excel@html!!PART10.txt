@@ -1,0 +1,6 @@
+
+In this example, we are adding 4 hours, 0 minutes, and 0 seconds.
+Now we have a formula that takes the EDT timestamp and adds four hours to it to make it UTC.
+Then we can replicate this formula for the rest of the table.
+The end result looks like this: When we have all of our logs in the same time zone, we are ready to compile our master timeline.
+Taking the UTC timestamps and the summary events we made, our new, accurate timeline looks like this: Now we can clearly see suspicious emails sent to (fictional) employees Austin and Dave.

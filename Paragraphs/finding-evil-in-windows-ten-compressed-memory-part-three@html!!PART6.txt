@@ -1,0 +1,6 @@
+
+The automation of undocumented structures and algorithms requires one or more of the following properties to remain constant across builds.
+Structure locations Function prototypes Order of structure memory access Structure field usage
+Callstacks Let’s explore the example of locating the offset of ST_DATA_MGR.wCompressionFormat .
+As shown in Figure 1, this field is the first argument to RtlDecompressBufferEx .
+This function is publicly available and documented.

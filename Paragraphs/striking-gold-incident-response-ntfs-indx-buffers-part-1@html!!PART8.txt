@@ -1,0 +1,11 @@
+
+These have the name \"$I30\" because the stream name is identified as $I30 in the index root and index allocation attributes.
+To extract the content of an index attribute, in the explorer pane, highlight the folder.
+In the file list pane, right click the relevant $I30 file and choose the option to \"export\".
+This will prompt you for a location to save the binary content.
+Mandiant Intelligent Response ® The Mandiant Intelligent Response ® (MIR) agent v.2.2 has the ability to extract INDX records natively.
+To generate a list of INDX buffers in MIR, run a RAW file audit.
+One of the options in the audit is to \"Parse NTFS INDX Buffers\".
+You can run this recursively, or you can target specific directories.
+We recommend the latter because this option will generate numerous entries when done recursively.
+To display a list of parsed INDX buffers, you can filter a file listing in MIR by choosing the \"FileAttributes\" are \"like\" \"*INDX*\".

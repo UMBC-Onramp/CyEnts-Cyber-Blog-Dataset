@@ -1,0 +1,14 @@
+
+ Process Hollowing T1547.001: Registry Run Keys / Startup Folder T1056.001: Input Capture: Keylogging T1053.002: Scheduled Task T1041:
+Exfiltration Over C2 Channel T1518.001: Security Software Discovery T1497: Virtualization/Sandbox Evasion IOCs Email 34646a93538a34c871e04a368c97637d1b7d1d4507bf210afd9349a61b25b35e ef4b52c8f2c844b76534f583171d03a87cc195b0c3ae32754df0c01177792432 04e93767d16a3e6ca68e45fea23434a9c9ed363c3f0d28b9653f74bbf405ef65 VBS adf94da54bc49abc6fdb2a36523eb726f26dacd5598a0fdc64e61b8d500edad8 34914c4af84888552bd7ef74d9a691918013766719881a042723001ef96f554c c16e5de09a78886dc972d26aeb0e9fe760b855eb157c7df308fad2116b860ef7 65d3ff89602db4294fa2f585c472e566a3d72d2065e6bc4f493b02a3b08393ba
+4c6f832a85fbcf17308ab923b066577de859571a2743e99bf249398e19a00fb8 0b56c16a28482cc0af81b93aff36d02610e30a8d65d7ea1ccd73f8242effbada 9dd8a6725b9c881311501b79770e4f1c9aee2c3b42f59f7694d48b67939eede5
+59aafb3dd9c6cdb95ff662299e1faf3efb01d5ef8479dbbb8032b4b9cb3c3d91 a54f4ee320b21c1cfde3358a25131476127b9fb1fd5cad9fd03fa2be1f4fd0e2 9297b0db717beea397aacf15e7ef081faf3b9e430002a1c1b4e150e56fb940f9 Good.xml E7D60A25BF1D80C144919F5F112594793A12A8176F2000BD890E331234A26814 8938838db8d16708692e80d170e0d8dc1522531e5a5ab5ae878a27a147780f44 b45470aa79cc7acab448a65252c3c7ee840ce6d0e78c40ad2c6bc261a912d393 f9bc8699f18b93cdb4b076dbf6f4baf2befd8c72eb26cefc28086f02a607f2f6 .NET
+Loader B0DC46B5FC849DA9CC7A3FC4D8AA5EA8745D7E50869AC689BB956AAB3079EEB9 814f21f8c2befba504e592e3396be7454f93013939325cc7fbad5c38f022b395 AsyncRAT
+5344E8B1EF4939A3C9F84921B284DD6E0B98B2CF524D678116BEF6E58DC4A6C3 PDB E:\\Hard
+Drives\\Local Disk (C)\\WIN 10 [ October Update ]
+FILES\\Sparta Project #Hope\\projFUD\\projFUD\\obj\\Debug\\projFUD.pdb
+Malicious IPs 79.134.225.18 (C2) 192.145.239.18 Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+

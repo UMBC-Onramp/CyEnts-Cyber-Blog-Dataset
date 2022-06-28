@@ -1,0 +1,7 @@
+
+The main reason is for speed.
+RSA is a powerful but slow algorithm.
+Salsa20 is quick and the implementation is small.
+The ransomware checks the language of the system and will not drop the malicious payload if the infected machine operates in Russian or certain other former Soviet languages: Figure 2.
+Checking the language of the infected system.
+GandCrab encrypts any file that does not appear on the following file-extension exclusion list: The ransomware does not encrypt files in these folders: GandCrab leaves these files unencrypted: The ransomware generates a pair of RSA keys before encrypting any file.

@@ -1,0 +1,65 @@
+Although we recently reported finding 20 apps in Google Play posing as Minecraft modpacks — the most popular with more than a million downloads — Minecraft -themed malware continues to pop up in Google Play.
+
+Instead of doing anything they claimed, the apps turned users’ smartphones and tablets into extremely intrusive advertising tools.
+
+To be clear, the apps were totally useless from a user perspective.
+
+Instead, after the first run they hid their icons and repeatedly opened the browser to flash ads.
+
+They could also play videos from YouTube, open Google Play app pages, and more.
+
+The version we analyzed, for example, opened the browser every two minutes, rendering the device essentially unusable.
+
+The thing was especially troubling, because it was extremely hard for a user to figure out what was going on, which app was responsible for the troubles and how to stop it.
+
+We notified Google about our find, and the malicious apps were quickly removed from the store.
+
+New versions of malicious apps Deletion from Google’s app store does not necessarily defeat malware; historically, its makers simply upload new, slightly modified, versions using different names and from different developer accounts.
+
+One example of the cycle comes from the VK Music Trojan, which stole VK user accounts and, despite being reported, dug in to Google Play for several years .
+
+Mindful of that, we revisited the case of the harmful Minecraft modpacks in Google Play to find out whether reporting had helped.
+
+To that end, we launched a search for similar apps — and found some.
+
+New, improved versions First, we found several apps using the abovementioned approach, but with some improvements.
+
+In a basic scenario the apps accept push message commands from the attackers to show full-screen ads (no user interaction required).
+
+The apps are designed to download an extra module as well.
+
+With that module downloaded, more functions become available, enabling the apps to hide their icons, run the browser, play YouTube videos, open Google Play app pages, and so forth.
+
+This time, the list of compromised apps included, in addition to Minecraft mods, a file recovery utility called File Recovery – Recover Deleted Files .
+
+Version 1.1.0, available from Google Play until February 2021 had a malicious payload.
+
+That version has been removed, and version 1.1.1, which is now on Google Play, is safe.
+
+Simplified version with paid subscription on Google Play Second, we found a couple of Minecraft modpacks with basic functionality, a configuration in which the apps occasionally show full screen ads, even with the app inactive, but are unable to hide their icons or run the browser, YouTube, or Google Play.
+
+For extra monetization, the in-app purchases function is used.
+
+One of the malicious Minecraft modpacks in Google Play
+
+Interestingly, one of the apps is now available from the store as a “basic” version and with in-app purchases enabled, whereas a couple of months back it relied on the extra downloadable module.
+
+From this we conclude that their owners are continuing to experiment with monetization options.
+
+Facebook-account-stealing version Third, we found several more apps were found in which the described above malicious functionality was not the core one.
+
+A while ago, for example, Google Play carried a fake Madgicx advertising network app and a fake TikTok ad-management app that would insistently prompt for the user’s Facebook account data and, if user provided it, would steal the account.
+
+Apps from alternative stores Finally, many such apps remain available from alternative stores even after Google removes them from its store.
+
+Which is no surprise; even Google, with vastly more resources than the average company, can’t always promptly moderate the great volume of existing apps.
+
+Yet we decided to mention this aspect here, as it provides clear evidence that alternative stores are unsafe to use.
+
+If still intending to use them for whatsoever reason, at least install a reliable mobile antivirus to protect you against dangerous apps.
+
+That said, as we see from this story, as well as many other episodes of malware getting into the official Google app store , even if you download your apps only from Google Play, you are still better off with an antivirus on your smartphone.
+
+
+
+

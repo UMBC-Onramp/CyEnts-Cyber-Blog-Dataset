@@ -1,0 +1,9 @@
+
+Gather Victim Host Information: Client Configurations T1562 Impair Defenses T1569.002-Service Execution T1574 Hijack Execution Flow T1600-Weaken Encryption Figure 6:
+MITRE ATT&CK Map Technical Annex SLIGHTPULSE
+The file meeting_testjs.cgi (SHA256: 133631957d41eed9496ac2774793283ce26f8772de226e7f520d26667b51481a ) is a webshell capable of arbitrary file read, write, and command execution.
+Malicious logic is inserted at the end of legitimate logic to respond to POST requests.
+We believe this webshell may be responsible for placing additional webshells and used to modify legitimate system components resulting in the other observed malware families due to its functionality.
+The malicious logic inserts a branch condition to respond to HTTP POST requests rather than just the typical GET requests expected of the legitimate code.
+If GET requests are performed the legitimate logic is still invoked.
+POST requests have a series of parameters checked for existence to determine which command to invoke.

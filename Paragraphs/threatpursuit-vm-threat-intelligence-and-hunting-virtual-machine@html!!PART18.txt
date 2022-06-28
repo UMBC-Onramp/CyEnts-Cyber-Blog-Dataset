@@ -1,0 +1,7 @@
+
+We will briefly add our content into our MISP instance and apply tags to finalize our review.
+We may wish to add MITRE ATT&CK tags (Figure 19) relevant across the malware infection chain for our sample as they could be useful from a modelling standpoint.
+Figure 19:
+MITRE ATT&CK tags for the malware sample Final Thoughts
+We hope you enjoyed this basic malware triage workflow use-case using ThreatPursuit VM.
+There are so many more tools and capabilities within the included toolset such as Machine learning (ML) and ML algorithms, that also assist threat hunters by analyzing large volumes of data quickly.

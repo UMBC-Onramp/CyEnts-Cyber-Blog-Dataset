@@ -1,0 +1,8 @@
+
+Conclusion The campaign analyzed in this blog is likely part of Snip3 Crypter-as-a-service, as some of the artifacts (i.e., Sender IP, C2 IP address, and the final payload) are the same.
+But this one doesn’t use PowerShell script.
+Instead, it employs a new technique to compile and execute inline C# code contained in an XML.
+This is yet another example of threat actors quickly adopting and evolving techniques to create more sophisticated and difficult-to-detect attacks.
+In addition to the Fortinet protections below, I would encourage you to review the Mitre attack techniques and measure how effective your current security controls are.
+Learn more about Mitre Att&CK and how to test your defenses .
+Fortinet Protections Fortinet customers are already protected from this RAT variant with FortiGuard’s Web Filtering and AntiVirus services, as follow:

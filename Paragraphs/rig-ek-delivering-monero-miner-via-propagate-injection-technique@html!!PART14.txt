@@ -1,0 +1,6 @@
+
+The callback procedure address is stored at the offset 0x14 from the beginning of data.
+Malware modifies the callback address with the injected shellcode address (Figure 16).
+Figure 16:
+Modifying callback function The malware then sends a specific message to the window to execute the callback procedure corresponding to the UxSubclassInfo property, which leads to the execution of the shellcode.
+The shellcode contains code to execute the address of the entry point of the injected third stage payload using CreateThread.

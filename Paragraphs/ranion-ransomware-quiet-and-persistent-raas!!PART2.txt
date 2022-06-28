@@ -1,0 +1,5 @@
+
+In this blog, FortiGuard Labs will explain how Ranion RaaS works.
+The opening lines of The Tale of Heike, a martial epic about the civil war between the Taira and Minamoto clans in 12 th -century Japan, help describe the rise and fall of various ransomware groups in 2021.
+“The Jetavana Temple bells ring the passing of all things.
+Twinned sala trees, white in full flower, declare the great man's certain fall.

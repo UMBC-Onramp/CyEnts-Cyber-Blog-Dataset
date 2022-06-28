@@ -1,0 +1,6 @@
+By Christiaan Beek on Jun 18, 2018
+Every week we read about adversaries attacking their targets as part of online criminal campaigns.
+Information gathering, strategic advantage, and theft of intellectual property are some of the motivations.
+Besides these, we have seen during the past two years an increase in attacks in which adversaries are not shy of leaving a trail of destruction.
+One might wonder how to deal with these kinds of threats and where to start.
+Sun Tzu’s The Art of War contains some great wisdom regarding the strategy of warfare.

@@ -1,0 +1,4 @@
+
+The strange address of the link lurking under the button, which looks nothing like luno.com and is located in the .ar domain zone (Argentina), might arouse suspicion.
+If the victim doesn’t notice this discrepancy and simply clicks, the link takes them through a chain of redirects to an illegitimate Luno login page.
+The fake resource is very similar in design to the real Luno site, but the cybercriminals did not even try to disguise the URL, apparently counting on user carelessness.

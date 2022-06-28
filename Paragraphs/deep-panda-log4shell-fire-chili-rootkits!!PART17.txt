@@ -1,0 +1,5 @@
+
+NSI_PARAM contains connection data such as IP, port, connection state, and process IDs of the executables in charge of creating the connection.
+The filter function iterates this structure, searching for connections involving a process or port number from its global network list.
+All identified connections are removed from the structure, rendering them hidden from the process that sent the IOCTL.
+It is interesting to note that the newer build of the 64-bit rootkit added support to filter IOCTLs from 32-bit processes as well.

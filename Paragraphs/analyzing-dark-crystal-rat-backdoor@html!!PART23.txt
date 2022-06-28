@@ -1,0 +1,4 @@
+
+The server sends a non-empty response if a microphone request is pending RDK
+The server responds directly with keystrokes to replay comm The server responds directly with other types of tasking Table 1: Message types when the malware uses a special message to request tasking from the server POST requests When the malware needs to upload large files, it makes a POST request.
+These POST requests are sent to hxxp://domalo[.]online/ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91dueu3qa54/46kqb jvyklunp1z56txzkhen7gjci3cyx8ggkptx25i74mo6myqpx9klvv3/akcii239myzon0xwjlxqnn 3b34w/<hash>.php , with the following parameters in the POST data: name is <user_hash> + \".\" + <message_type> , where <user_hash> is calculated as described above and <message_type> is the type of data being uploaded.

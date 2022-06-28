@@ -1,0 +1,11 @@
+
+Hunting Strategies
+If an organization identifies a host with an active infection believed to be an instance of KEGTAP or a parallel malware family, the following containment actions are recommended.
+Note that due to the velocity of this intrusion activity, these actions should be taken in parallel.
+Isolate and perform a forensic review of any impacted systems.
+Review incoming emails to the user that owns the impacted device for emails matching the distribution campaigns, and take action to remove the messages from all mailboxes.
+Identify the URLs used by the phishing campaign and block them using proxy or network security devices.
+Reset credentials for any user accounts associated with execution of the malware.
+Perform an enterprise wide review for lateral movement authentication from the impacted systems.
+Check authentication logs from any single-factor remote access solutions that may exist (VPN, VDI, etc) and move towards multi-factor authentication (MFA) as soon as possible.
+An enterprise-wide effort should be made to identify host-based artifacts related to the execution of first-stage malware and all post-intrusion activity associated with this activity.

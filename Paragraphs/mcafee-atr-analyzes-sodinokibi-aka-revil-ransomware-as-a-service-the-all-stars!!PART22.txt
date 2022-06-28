@@ -1,0 +1,10 @@
+
+Conclusion When we started our journey with GandCrab we did not expect it would take us so far down the rabbit hole.
+Mass sample analysis and searching for administration indicators provided a way to get more insight in a multi-million-dollar criminal enterprise, determine key players and foresee future events through changes in the business structure.
+We believe that the retirement of GandCrab was not an overnight decision and, based on the data on the affiliates, it was clear that something was going to happen.
+With the emergence of Sodinokibi and the few forum postings by a high profile former GandCrab affiliate, everything fell into place.
+We have strong indications that some of the top affiliates have found a new home with Sodinokibi to further their criminal business.
+Given that the income of the RaaS network is largely dependent on the performance of its top affiliates, and it is run like a normal business, we (the security industry) should not only research the products the criminals develop, but also identify possible ways to successfully disrupt the criminal business.
+In our next episode we dive deeper into the financial streams involved in the affiliate program and provide an estimate of how much money these actors are earning with the ransomware-as-a-service business model.
+
+

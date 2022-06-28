@@ -1,0 +1,6 @@
+
+On November 6 and 7, a Maze campaign targeting Germany delivered macro-laden documents using the subject lines “Wichtige informationen uber Steuerruckerstattung” and “1&1 Internet AG - Ihre Rechnung 19340003422 vom 07.11.19” (Figure 3).
+Recipients included individuals at organizations in a wide range of industries, with the Financial Services, Healthcare, and Manufacturing sectors being targeted most frequently.
+These emails were sent using a number of malicious domains created with the registrant address gladkoff1991@yandex.ru.
+Figure 3: German-language lure On November 8, a campaign delivered Maze primarily to Financial Services and Insurance organizations located in the United states.
+These emails originated from a compromised or spoofed account and contained an inline link to download a Maze executable payload.

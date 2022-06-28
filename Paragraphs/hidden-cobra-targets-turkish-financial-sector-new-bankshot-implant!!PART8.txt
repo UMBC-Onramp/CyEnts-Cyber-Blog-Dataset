@@ -1,0 +1,5 @@
+
+Connection: keep-alive Cache-Control: max-age=0 Accept: */* Content-Type: multipart/form-data; boundary= Content-Type: application/octet-stream Accept-Encoding: gzip,deflate,sdch Accept-Language: ko-KR -> Korean Content-Disposition: form-data;name=”board_id” Content-Disposition: form-data;name=”user_id” Content-Disposition: form-data;name=”file1″; filename=”img01_29.jpg” Content-Disposition: form-data;name=”file1″; filename=”my.doc” Content-Disposition: form-data;name=”file1″; filename=”pratice.pdf” Content-Disposition: form-data;name=”file1″; filename=”king.jpg” Content-Disposition: form-data;name=”file1″; filename=”dream.avi” Content-Disposition: form-data;name=”file1″; filename=”hp01.avi” Content-Disposition: form-data;name=”file1″; filename=”star.avi” User Agents
+The implant either fetches the user agent from Internet Explorer (using ObtainUserAgentAsString()) or uses a default user agent specified in the malware binary:
+Mozilla/5.0 (Windows NT 6.1; WOW64) Chrome/28.0.1500.95
+Safari/537.36 Control Server Communications

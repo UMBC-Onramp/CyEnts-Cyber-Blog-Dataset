@@ -1,0 +1,3 @@
+
+Figure 31 When canioInit is called, we first spawn a new thread and then execute the real canioInit function.
+  Our new thread opens a socket on UDP port 1337 and listens for very specific commands, such as “bo0 on” to indicate to “turn on binary output 0” or “reset” to put the device back in the user’s control.

@@ -1,0 +1,6 @@
+
+These are FTP Data (uploading stolen data in a file to a FTP server provided by the attacker), HTTP Post (sending data as the body of the post to a URL provided by the attacker), SMTP (sending stolen data to the attacker’s email address), and Telegram (using the Telegram bot API “sendDocument()” to send files to a specified chat or channel).
+The attacker chose HTTP Post for this variant.
+Once Agent Tesla needs to send data to the attacker, it encrypts the stolen data using a DES algorithm and encodes the result using a base64 algorithm, which is the final data to be sent as the body in the HTTP Post request.
+ 
+The submission URL is \"hxxp[:]//69[.]174.99[.]181/webpanel-divine/mawa/7dd66d9f8e1cf61ae198.php\", which is a hardcoded string in Agent Tesla.

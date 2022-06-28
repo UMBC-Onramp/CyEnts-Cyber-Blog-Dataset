@@ -1,0 +1,7 @@
+
+This function calls the Wow64SystemServiceCall function which then executes the Wow64Transition.
+The KiFastSystemCall performs the transition from 32-bit to 64-bit execution.
+The flow is shown in Figure 5.
+Figure 5: 32-bit to 64-bit transition The destination of the CPU transition jump is the 64-bit code show in Figure 6.
+Figure 6:
+Destination of KiFastSystemCall Figure 6 shows the first 64-bit instruction we’ve seen executed in this call trace so far.

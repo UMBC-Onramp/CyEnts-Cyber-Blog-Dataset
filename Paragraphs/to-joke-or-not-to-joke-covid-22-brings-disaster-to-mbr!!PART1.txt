@@ -1,0 +1,10 @@
+FortiGuard Labs Threat Research Report Affected platforms : Microsoft Windows Impacted parties : Windows Users Impact : Unable to boot the machine Severity level : Medium Even now, almost two years after the COVID-19 pandemic started, there is no sign that cybercriminals will stop taking advantage of the situation as an attack vector.
+This time, however, this attacker uses a COVID pandemic that has not yet happened as bait.
+FortiGuard Labs recently discovered a new malware posing as a mysterious COVID22 installer.
+While containing many of the features of \"joke\" malware, it is also destructive, causing infected machines to fail to boot.
+Because it has no features for encrypting data demanding a ransom to undo the damage it inflicts, it is instead a new destructive malware variant designed to render affected systems inoperable.
+This blog explains how this malware works.
+Covid-22 in Action The malware file is named Covid22.
+For those unfamiliar with the naming scheme, COVID-19 is a short form of Co rona v irus d isease, and 19 represents the year the outbreak was first identified.
+The file name Covid22 plays off the current Coronavirus disease but applies that same image of fear and destruction to computers, potentially creating a cyber-pandemic in 2022.
+While we don't know how exactly the malware was distributed, the malware author has tried to weaponize fear as bait to lure victims into opening the file.

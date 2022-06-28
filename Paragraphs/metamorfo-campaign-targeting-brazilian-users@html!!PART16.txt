@@ -1,0 +1,14 @@
+
+This is done in order to get only one report per infected host.
+The malware collects host information, base64 encodes it, and sends it to two C2 servers.
+The following items are gathered from the infected system: OS name OS version OS architecture AV installed List of banking software installed IP address Directory where malware is being executed from The information is sent to hxxp://108.61.188.171/put.php (Figure 20).
+Figure 20:
+Host Recon Data Sent to First C2 Server
+The same information is sent to panel-dark[.]com/Contador/put.php
+(Figure 21).
+Figure 21:
+Host Recon Data Sent to
+Second C2 Server
+The malware alters the value of registry key Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\\ExtendedUIHoverTime to 2710 in order to change the number of milliseconds a thumbnail is showed while hovering on the taskbar, as seen in Figure 22.
+Figure 22:
+ExtendedUIHoverTime Registry Key Change Like the Trojan from the first campaign, this sample checks if the foreground window's title contains names of Brazilian banks and digital coins by looking for hardcoded strings.

@@ -1,0 +1,4 @@
+
+In this case, the malware created a system thread and Speakeasy automatically emulated it.
+Moving on to the newly created thread (identified by an “ep_type” of “system_thread”), we can see the malware begin its real functionality.
+The malware begins by enumerating all running processes on the host, looking for the service controller process named services.exe.

@@ -1,0 +1,5 @@
+
+Monero Bytecoin Electroneum DigitalNote Karbowanec Sumokoin Fantomcoin Dinastycoin Dashcoin LeviarCoin BipCoin QuazarCoin Bitcedi Linux Build Specifics Issues running on Linux servers (higher performance on desktop OS)
+Compatible with AMD64 processors on Ubuntu, Debian, Mint (support for CentOS later) Figure 7:
+Miner bot web panel Sample Advertisement #5 (Miner + USB Spreader + DDoS Tool)
+In August 2017, actor \"MeatyBanana\" was observed by FireEye iSIGHT Intelligence selling a Monero miner utility that included the ability to download and execute files and perform DDoS attacks.

@@ -1,0 +1,4 @@
+
+Conclusion This research from McAfee’s Advanced Threat Research team shows it is possible to emulate and modify a patient’s vital signs in real time on a medical network using a patient monitor and central monitoring station.
+For this attack to be viable, an attacker would need to be on the same network as the devices and have knowledge of the networking protocol.
+Any modifications made to patient data would need to be believable to medical professionals for there to be any impact.

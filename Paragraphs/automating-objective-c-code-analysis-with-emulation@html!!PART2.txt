@@ -1,0 +1,13 @@
+
+Because the emulated code cannot access the system services of the operating system under which it is running, there is little risk of it causing damage.
+All of these benefits make emulation a great option for ad-hoc experimentation, problem solving, or automation.
+Use Cases Decoding/Decryption/Deobfuscation/Decompress – Often during malicious code analysis you will come across a function used to decode, decompress, decrypt, or deobfuscate some useful data such as strings, configuration data, or another payload.
+If it is a common algorithm, you may be able to identify it by sight or with a plug-in such as signsrch .
+Unfortunately, this is not often the case.
+You are then left to either opening up a debugger and instrumenting the sample to decode it for you, or transposing the function by hand into whatever programming language fits your needs at the time.
+These options can be time consuming and problematic depending on the complexity of the code and the sample you are analyzing.
+Here, emulation can often provide a preferable third option.
+Writing a script that emulates the function for you is akin to having the function available to you as if you wrote it or are calling it from a library.
+This allows you to reuse the function as many times as it’s needed, with varying inputs, without having to open a debugger.
+This case also applies to self-decrypting shellcode, where you can have the code decrypt itself for you.
+Data Tracking – With emulation, you have the power to stop and inspect the emulation context at any time using an instruction hook.

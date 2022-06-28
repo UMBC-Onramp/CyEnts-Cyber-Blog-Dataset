@@ -1,0 +1,5 @@
+
+The file with SHA256: e63ab6f82c711e4ecc8f5b36046eb7ea216f41eb90158165b82a6c90560ea415 responsible for inserting the patch for SLOWPULSE V3.
+The patch applied overwrites a single call to DSAuth::RealmSignin::runSecondaryAuth with mov eax, 1 .
+This patcher utility is a simple bash script, unlike the previous patchers which were compiled applications likely written in C. The script in full is: printf '\\xB8' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B31)) printf '\\x01' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B32))
+printf '\\x00' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B33)) printf '\\x00' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B34)) printf '\\x00' | dd conv=notrunc of=/home/lib/libdsplibs.so bs=1 count=1 seek=$((0x5C7B35))

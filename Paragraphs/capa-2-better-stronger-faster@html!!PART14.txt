@@ -1,0 +1,5 @@
+
+This means that capa recognizes many more techniques seen in real-world malware, certainly saving analysts time as they reverse engineer programs.
+And to reiterate, we’ve surfed a wave of support as almost 30 colleagues from a dozen organizations have volunteered their experience to develop these rules.
+Thank you!
+Figure 8 provides a high-level overview of capabilities capa currently captures, including: Host Interaction describes program functionality to interact with the file system, processes, and the registry Anti-Analysis describes packers, Anti-VM, Anti-Debugging, and other related techniques Collection describes functionality used to steal data such as credentials or credit card information Data Manipulation describes capabilities to encrypt, decrypt, and hash data Communication describes data transfer techniques such as HTTP, DNS, and TCP Figure 8:

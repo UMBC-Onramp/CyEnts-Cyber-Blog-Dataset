@@ -1,0 +1,10 @@
+
+Figure 19:
+Content that is placed in Restore-My-Files.txt Victim Information Stored in the Registry Key LockBit in execution will create two keys in the infected system with the values full and public.
+Those keys are created in the following hive HKEY_CURRENT_USER\\SOFTWARE\\LockBit .
+The data stored in these keys belongs to the infected victim in order to be able to identify them in the future.
+Figure 20:
+LockBit registry keys Lastly, after finishing the encryption, the desktop wallpaper is changed to a message for the user, saying that LockBit encrypted the host.
+Figure 21:
+LockBit wallpaper after encryption LockBit Filemarker Some of the ransomware we analyzed shares a common file marker across all the encrypted files in order to verify the origin.
+This digital marker can be used there in the control panel in order to verify that this was the ransomware that encrypted the files.

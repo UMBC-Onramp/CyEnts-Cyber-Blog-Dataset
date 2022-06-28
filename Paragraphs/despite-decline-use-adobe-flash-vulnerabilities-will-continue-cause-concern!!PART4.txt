@@ -1,0 +1,5 @@
+
+(See the list of example sites, below.)
+Flash continues to offer attackers an exploitable collection of flaws for the immediate future.
+The following chart uses CVE data.
+Although not every exploitable and exploited condition receives a CVE entry, most flaws that are discovered through security research or reported against major software vendors’ products eventually gains a CVE number that is posted to the CVE database kept by Mitre.

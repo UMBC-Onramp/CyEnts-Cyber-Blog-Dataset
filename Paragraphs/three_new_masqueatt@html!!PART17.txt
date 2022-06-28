@@ -1,0 +1,4 @@
+
+That means the user can't uninstall the app easily.
+Even\nif the user tries to power off the phone by long-pressing the power\nbutton, the neagent daemon running attacker's code will be keep\nrunning in the background and stops the device from a real reboot.
+The\nphone screen will be totally black and looks like the device is\nrebooting, however, neagent can keep running with the\nattacker's code in the background.

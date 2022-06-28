@@ -1,0 +1,4 @@
+
+APT41 has also deployed rootkits and Master Boot Record (MBR) bootkits on a limited basis to hide their malware and maintain persistence on select victim systems.
+The use of bootkits in particular adds an extra layer of stealth because the code is executed prior to the operating system initializing.
+The limited use of these tools by APT41 suggests the group reserves more advanced TTPs and malware only for high-value targets.

@@ -1,0 +1,5 @@
+
+Enable unrestricted execution policy for PowerShell by executing the following command and answering “Y” when prompted by PowerShell: Set-ExecutionPolicy unrestricted Execute the install.ps1 installation script.
+You will be prompted to enter the current user’s password.
+FLARE VM needs the current user’s password to automatically login after a reboot when installing.
+Optionally, you can specify the current user’s password by passing the “-password <current_user_password>” at the command line.

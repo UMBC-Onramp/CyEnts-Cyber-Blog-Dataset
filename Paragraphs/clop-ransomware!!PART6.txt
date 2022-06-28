@@ -1,0 +1,5 @@
+
+This happens because the author did not use a “timeout” command.
+FIGURE 5.
+Deletion of the malware itself The next action of the malware is to create a new thread that will start all processes.
+With the handle of this thread, it will wait for an infinite amount of time to finish with the “WaitForSingleObject” function and later return to the winMain function and exit.

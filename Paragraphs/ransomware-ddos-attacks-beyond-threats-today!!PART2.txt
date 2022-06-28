@@ -1,0 +1,6 @@
+
+However, this IT tunnel vision makes it easy to miss the forest for the trees.
+You don’t want to let distributed-denial-of-service (DDoS) attacks and other problems slip behind network defenses unnoticed.
+Here’s a look at four threats just as frightening as ransomware, and what enterprises can do about them.
+Third-Party Software Problems Third-party software solutions are key to keeping business running smoothly, but come with the risk of undetected or zero-day threats.
+Left unchecked, at-risk third-party programs could provide lateral access points for threat actors to compromise key systems.

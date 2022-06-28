@@ -1,0 +1,163 @@
+By Alexandre Mundo , Thomas Roccia , Jessica Saavedra-Morales and Christiaan Beek on Dec 14, 2018 Destructive malware has been employed by adversaries for years.
+
+Usually such attacks are carefully targeted and can be motivated by ideology, politics, or even financial aims.
+
+Destructive attacks have a critical impact on businesses, causing the loss of data or crippling business operations.
+
+When a company is impacted, the damage can be significant.
+
+Restoration can take weeks or months, while resulting in unprofitability and diminished reputation.
+
+Recent attacks have demonstrated how big the damage can be.
+
+Last year NotPetya affected several companies around the world.
+
+Last February, researchers uncovered OlympicDestroyer, which affected the Olympic Games organization.
+
+Shamoon is destructive malware that McAfee has been monitoring since its appearance.
+
+The most recent wave struck early this month when the McAfee Foundstone Emergency Incident Response team reacted to a customer’s breach and identified the latest variant.
+
+Shamoon hit oil and gas companies in the Middle East in 2012 and resurfaced in 2016 targeting the same industry.
+
+This threat is critical for businesses; we recommend taking appropriate actions to defend your organizations.
+
+During the past week, we have observed a new variant attacking several sectors, including oil, gas, energy, telecom, and government organizations in the Middle East and southern Europe.
+
+Similar to the previous wave, Shamoon Version 3 uses several mechanisms as evasion techniques to bypass security as well to circumvent analysis and achieve its ends.
+
+However, its overall behavior remains the same as in previous versions, rendering detection straightforward for most antimalware engines.
+
+As in previous variants, Shamoon Version 3 installs a malicious service that runs the wiper component.
+
+Once the wiper is running, it overwrites all files with random rubbish and triggers a reboot, resulting in a “blue screen of death” or a driver error and making the system inoperable.
+
+The variant can also enumerate the local network, but in this case does nothing with that information.
+
+This variant has some bugs, suggesting the possibility that this version is a beta or test phase.
+
+The main differences from earlier versions are the name list used to drop the malicious file and the fabricated service name MaintenaceSrv (with “maintenance” misspelled).
+
+The wiping component has also been designed to target all files on the system with these options: Overwrite file with garbage data (used in this version and the samples we analyzed) Overwrite with a file (used in Shamoon Versions 1 and 2) Encrypt the files and master boot record (not used in this version)
+
+Shamoon is modular malware:
+
+The wiper component can be reused as a standalone file and weaponized in other attacks, making this threat a high risk.
+
+The post presents our findings, including a detailed analysis and indicators of compromise.
+
+Analysis Shamoon is a dropper that carries three resources.
+
+The dropper is responsible for collecting data as well as embedding evasion techniques such as obfuscation, antidebugging, or antiforensic tricks.
+
+The dropper requires an argument to run.
+
+It decrypts the three resources and installs them on the system in the %System% folder.
+
+It also creates the service MaintenaceSrv, which runs the wiper.
+
+The typo in the service name eases detection.
+
+The Advanced Threat Research team has watched this service evolve over the years.
+
+The following tables highlight the differences: The wiper uses ElRawDisk.sys to access the user’s raw disk and overwrites all data in all folders and disk sectors, causing a critical state of the infected machine before it finally reboots.
+
+The result is either a blue screen or driver error that renders the machine unusable.
+
+Overview Dropper Executable summary The dropper contains other malicious components masked as encrypted files embedded in PE section.
+
+These resources are decrypted by the dropper and contain: MNU: The communication module LNG:
+
+The wiper component PIC: The 64-bit version of the dropper Shamoon 2018 needs an argument to run and infect machines.
+
+It decrypts several strings in memory that gather information on the system and determine whether to drop the 32-bit or 64-bit version.
+
+It also drops the file key8854321.pub (MD5: 41f8cd9ac3fb6b1771177e5770537518) in the folder c:\\Windows\\Temp\\key8854321.pub.
+
+The malware decrypts two files used later:
+
+C:\\Windows\\inf\\mdmnis5tQ1.pnf C:\\Windows\\inf\\averbh_noav.pnf
+
+Shamoon enables the service RemoteRegistry, which allows a program to remotely modify the registry.
+
+It also disables remote user account control by enabling the registry key LocalAccountTokenFilterPolicy.
+
+The malware checks whether the following shares exist to copy itself and spread:
+
+ADMIN$ C$\\WINDOWS D$\\WINDOWS E$\\WINDOWS
+
+Shamoon queries the service to retrieve specific information related to the LocalService account .
+
+It then retrieves the resources within the PE file to drop the components.
+
+Finding the location of the resource: Shamoon creates the file and sets the time to August 2012 as an antiforensic trick.
+
+It puts this date on any file it can destroy.
+
+The modification time can be used as an antiforensic trick to bypass detection based on the timeline, for example.
+
+We also observed that in some cases the date is briefly modified on the system, faking the date of each file.
+
+ The files dropped on the system are stored in C:\\\\Windows\\System32\\. Before creating the malicious service, Shamoon elevates its privilege by impersonating the token.
+
+It first uses LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient.
+
+Metasploit uses a similar technique to elevate privileges.
+
+Elevating privileges is critical for malware to perform additional system modifications, which are usually restricted.
+
+Shamoon creates the new malicious service MaintenaceSrv.
+
+It creates the service with the option Autostart (StartType: 2) and runs the service with its own process (ServiceType: 0x10):
+
+If the service is already created, it changes the configuration parameter of the service with the previous configuration.
+
+It finally finishes creating MaintenaceSrv:
+
+The wiper dropped on the system can have any one of the following names: Next the wiper runs to destroy the data.
+
+Wiper The wiper component is dropped into the System32 folder.
+
+It takes one parameter to run.
+
+The wiper driver is embedded in its resources.
+
+We can see the encrypted resources, 101, in this screenshot: The resource decrypted is the driver ElRawDisk.sys, which wipes the disk.
+
+Extracting the resource: This preceding file is not malicious but is considered risky because it is the original driver.
+
+The wiper creates a service to run the driver with the following command: sc create hdv_725x type= kernel start= demand binpath= WINDOWS\\hdv_725x.sys 2>&1 >nul
+
+The following screenshot shows the execution of this command: The malware overwrites every file in c:\\Windows\\System32, placing the machine in a critical state.
+
+All the files on the system are overwritten.
+
+The overwriting process: Finally, it forces the reboot with the following command: Shutdown -r -f -t 2
+
+Once the system is rebooted it shows a blue screen:
+
+Worm The worm component is extracted from the resources from the dropper.
+
+Destructive malware usually uses spreading techniques to infect machines as quickly as possible.
+
+The worm component can take the following names: We noticed the capability to scan for the local network and connect to a potential control server:
+
+Although the worm component can spread the dropper and connect to a remote server, the component was not used in this version.
+
+Conclusion Aside from the major destruction this malware can cause, the wiper component can be used independently from the dropper.
+
+The wiper does not have to rely on the main stub process.
+
+The 2018 Shamoon variant’s functionality indicates modular development.
+
+This enables the wiper to be used by malware droppers other than Shamoon.
+
+Shamoon is showing signs of evolution; however, these advancements did not escape detection by McAfee DATs.
+
+We expect to see additional attacks in the Middle East (and beyond) by these adversaries.
+
+We will continue to monitor our telemetry and will update this analysis as we learn more.
+
+MITRE ATT&CK™ matrix Indicators of compromise df177772518a8fcedbbc805ceed8daecc0f42fed                    Original dropper x86 ceb7876c01c75673699c74ff7fac64a5ca0e67a1                    Wiper 10411f07640edcaa6104f078af09e2543aa0ca07                   Worm module 43ed9c1309d8bb14bd62b016a5c34a2adbe45943               key8854321.pub bf3e0bc893859563811e9a481fde84fe7ecd0684                  RawDisk driver McAfee detection Trojan-Wiper!DE07C4AC94A5 RDN/Generic.dx Trojan-Wiper
+
+

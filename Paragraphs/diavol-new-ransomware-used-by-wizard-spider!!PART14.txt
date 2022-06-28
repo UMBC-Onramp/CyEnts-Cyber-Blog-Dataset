@@ -1,0 +1,8 @@
+
+*.dll ,
+*.lock64 ,
+*readme_for_decrypt.txt , *locker.txt , *unlocker.txt , %WINDIR%\\ , %PROGRAMFILES%\\ , %PROGRAMW6432%\\ , %TEMP%\\ SMBFAST and SMB routines enumerate available network shares for access.
+SMBFAST will only be called if the “-h” parameter is present.
+This routine scans for accessible network shares on specific hosts.
+SMB scans for accessible network shares on hosts found in the ARP table.
+Note that this routine will be skipped if the mode command-line parameter (“ -m ”) is set to “local”.

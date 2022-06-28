@@ -1,0 +1,5 @@
+
+Thread-Module – Submit Stolen Data With the functional modules working to steal sensitive data, the thread-module keeps monitoring the temporary file until it is created with the stolen information.
+It then loads the stolen data from the temporary file to memory and then deletes the file.
+Before submitting the stolen data to the C2 server, it compresses the data and encrypts it.
+This example, shown in Figure 6.1, is where it was about to call the API BCryptEncrypt() to encrypt the packet, which begins from 4790E0.

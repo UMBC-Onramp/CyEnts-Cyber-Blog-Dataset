@@ -1,0 +1,4 @@
+
+Given the power of these Transformer models, it seems natural to wonder if we can apply them to other types of cyber security problems that do not necessarily involve natural language, per se.
+In this blog post, we discuss a case study in which we apply Transformers to malicious URL detection.
+Studying Transformer performance on URL detection problem is a first logical step to extending Transformers to more generic cyber security tasks, since URLs are not technically natural language sequences but share some common characteristics with NLP.

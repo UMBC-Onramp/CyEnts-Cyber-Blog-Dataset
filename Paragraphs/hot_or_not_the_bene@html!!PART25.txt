@@ -1,0 +1,4 @@
+
+JSPatch is one of several different offerings that provide a low-cost and streamlined patching process for iOS developers.
+All of these offerings expose a similar attack vector that allows patching scripts to alter the app behavior at runtime, without the constraints imposed by the App Store’s vetting process.
+Our demonstration of abusing JSPatch capabilities for malicious gain, as well as our presentation of different attack scenarios, highlights an urgent problem and an imperative need for a better solution – notably due to a growing number of app developers in China and beyond having adopted JSPatch.

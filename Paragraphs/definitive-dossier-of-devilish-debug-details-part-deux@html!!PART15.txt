@@ -1,0 +1,5 @@
+
+The vast majority of these terms occurred once or twice in the entire dataset, resulting in what is known as a ‘long-tailed’ distribution.
+Figure 4 is a graph of only the top 100 most common terms in descending order.
+Figure 4:
+Long tailed distribution of term occurrence As you can see, the counts drop off quickly, and you are left dealing with an enormous amount of terms that may only appear a handful of times.

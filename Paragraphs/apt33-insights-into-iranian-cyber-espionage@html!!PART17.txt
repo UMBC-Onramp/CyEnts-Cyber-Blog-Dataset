@@ -1,0 +1,5 @@
+
+While not conclusive by itself, the use of publicly available Iranian hacking tools and popular Iranian hosting companies may be a result of APT33’s familiarity with them and lends support to the assessment that APT33 may be based in Iran.
+Figure 6:
+APT33 Interactive Commands by Day of Week Outlook and Implications Based on observed targeting, we believe APT33 engages in strategic espionage by targeting geographically diverse organizations across multiple industries.
+Specifically, the targeting of organizations in the aerospace and energy sectors indicates that the threat group is likely in search of strategic intelligence capable of benefitting a government or military sponsor.

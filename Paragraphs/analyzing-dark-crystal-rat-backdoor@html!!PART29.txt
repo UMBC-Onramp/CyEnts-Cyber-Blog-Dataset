@@ -1,0 +1,4 @@
+
+For GET requests, the server must distinguish between beacons, ordinary messages, and special messages (lines 123-138).
+For ordinary messages, __ds_setdata messages are simply printed to standard output, while the only __ds_getdata message type supported is s_comm (screenshot communications), to which the server responds with the desired screenshot dimensions (lines 63-84).
+For messages of type comm, the server sends four types of commands in sequence: first, it hides the desktop icons; then, it causes the string “Hello this is tech support” to be spoken; next, it displays a message box asking for a password; finally, it launches the Windows Calculator (lines 86-121).

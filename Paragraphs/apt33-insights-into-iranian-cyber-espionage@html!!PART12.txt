@@ -1,0 +1,7 @@
+
+While we have not directly observed APT33 use SHAPESHIFT or otherwise carry out destructive operations, APT33 is the only group that we have observed use the DROPSHOT dropper.
+It is possible that DROPSHOT may be shared amongst Iran-based threat groups, but we do not have any evidence that this is the case.
+In March 2017, Kasperksy released a report that compared DROPSHOT (which they call Stonedrill) with the most recent variant of SHAMOON (referred to as Shamoon 2.0).
+They stated that both wipers employ anti-emulation techniques and were used to target organizations in Saudi Arabia, but also mentioned several differences.
+For example, they stated DROPSHOT uses more advanced anti-emulation techniques, utilizes external scripts for self-deletion, and uses memory injection versus external drivers for deployment.
+Kaspersky also noted the difference in resource language sections: SHAMOON embeds Arabic-Yemen language resources while DROPSHOT embeds Farsi (Persian) language resources.

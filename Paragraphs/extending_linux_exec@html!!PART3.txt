@@ -1,0 +1,5 @@
+
+File execution logs are available in various forms and locations in Linux, but the logs we will be generating contain a wealth of data in one location that would otherwise need to be gathered from several disparate sources or may have not have been available at all.
+First, you should familiarize yourself with documentation for your Linux distribution to verify whether the IMA kernel compilation options are enabled by default.
+The IMA subsystem has been part of the mainline kernel since version 2.6.30, but not every distribution compiles their kernel with these options enabled.
+All of the examples in this post were tested on Ubuntu 16.04.1 LTS, as the IMA kernel options are enabled by default in this distribution.

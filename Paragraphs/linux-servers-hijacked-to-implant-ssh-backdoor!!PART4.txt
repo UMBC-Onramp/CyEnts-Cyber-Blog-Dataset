@@ -1,0 +1,6 @@
+
+Then the CWP logs are wiped of any mention of sshins and the shell history is cleared.
+The sshins binary is a 64-bit Linux ELF executable.
+It is packed with UPX and t he packed file has garbage bytes appended to it in an attempt to hinder automated unpacking.
+It does 3 things: Drops a Linux shared library to an architecture-specific location (in this case, /lib64/libs.so).
+Writes the name of the dropped file to a text file at /etc/ld.so.preload Restarts the OpenSSH service.

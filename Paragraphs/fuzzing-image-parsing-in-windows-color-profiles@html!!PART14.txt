@@ -1,0 +1,17 @@
+
+Additional Vulnerabilities While looking at the previous vulnerability, one can see a pattern of using the CMGetPartialProfileElement function for reading the size, allocation, and reading content.
+This sort of pattern can introduce bugs such as unconstrained size or integer overflow while adding an offset to the size, etc.
+I decided to pursue this function and see if such instances are present within ICM32.dll.
+I found three instances which had an unchecked offset access: CMConvIndexToNameProfile , CMConvNameToIndexProfile and CMGetNamedProfileInfoProfile .
+All of these functions are accessible through exported and documented MSCMS functions: ConvertIndexToColorName , CMConvertColorNameToIndex , and GetNamedProfileInfo respectively.
+__int64 __fastcall CMConvIndexToNameProfile(HPROFILE
+hProfile, __int64 a2, __int64 a3, unsigned int a4) { ... ... errCode =
+CMGetPartialProfileElement(hProfile, 'ncl2', 0, pBuffSize, 0i64);    // read size if ( !errCode ) { allocBuff = SmartNewPtr(pBuffSize[0], &errCode); if ( !errCode ) { errCode = CMGetPartialProfileElement(hProfile, 'ncl2', 0, pBuffSize, allocBuff);    // read to buffer if ( !errCode ) { SwapLongOffset((allocBuff + 12), 0, 4u);         // 12 > *pBuffSize ?
+SwapLongOffset((allocBuff + 16), v12, v13); Listing 5: CMConvIndexToNameProfile decompiled The bug discovered in CMConvIndexToNameProfile and the other two functions is that there is no minimum length check for ‘ncl2’ elements and offsets 12 and 16 are directly accessed for both read and write—providing out of bound read/write to allocBuffer , if the size of allocBuffer is smaller than 12.
+Microsoft decided not to immediately fix these three vulnerabilities due to the fact that none of the Windows binaries use these functions.
+Independently, we did not find any Windows or third-party software using these APIs.
+Conclusion In part one of this blog series, we looked into color profiles, wrote a harness, hunted for corpus and successfully found multiple vulnerabilities.
+Stay tuned for part two, where we will be looking at a relatively less talked about vulnerability class: uninitialized memory.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,9 @@
+
+Background: Using GPT-2 for Transfer Learning OpenAI’s updated Generative Pre-trained Transformer (GPT-2) is an open source deep neural network that was trained in an unsupervised manner on the causal language modeling task .
+The objective of this language modeling task is to predict the next word in a sentence from previous context, meaning that a trained model ends up being capable of language generation.
+If the model can predict the next word accurately, it can be used in turn to predict the following word, and then so on and so forth until eventually, the model produces fully coherent sentences and paragraphs.
+Figure 1 depicts an example of language model (LM) predictions we generated using GPT-2.
+To generate text, single words are successively sampled from distributions of candidate words predicted by the model until it predicts an <|endoftext|> word, which signals the end of the generation.
+Figure 1:
+An example GPT-2 generation prior to fine-tuning after priming the model with the phrase “It’s disgraceful that.”
+The quality of this synthetically generated text along with GPT-2’s state of the art accuracy on a host of other natural language processing (NLP) benchmark tasks is due in large part to the model’s improvements over prior 1) neural network architectures and 2) approaches to representing text.

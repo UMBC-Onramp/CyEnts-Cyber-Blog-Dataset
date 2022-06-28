@@ -1,0 +1,12 @@
+
+The server validates the service ticket and authenticates the user.
+If the server determines that the user has permissions to access the share, the user can begin making SMB queries.
+For an in-depth example of how Kerberos authentication works, scroll down to view the appendix at the bottom of this article.
+Kerberos On Linux Domain-Joined Systems When a Linux system is joined to an Active Directory domain, it also needs to use Kerberos tickets to access services on the Windows Active Directory domain.
+Linux uses a different Kerberos implementation.
+Instead of Windows formatted tickets (commonly referred to as the KIRBI format), Linux uses MIT format Kerberos Credential Caches (CCACHE files).
+When a user on a Linux system wants to access a remote service with Kerberos, such as a file share, the same procedure is used to request the TGT and corresponding service ticket.
+In older, more traditional implementations, Linux systems often stored credential cache files in the /tmp directory.
+Although the files are locked down and not world-readable, a malicious user with root access to the Linux system could trivially obtain a copy of the Kerberos tickets and reuse them.
+On modern versions of Red Hat Enterprise Linux and derivative distributions, the System Security Services Daemon (SSSD) is used to manage Kerberos tickets on domain-joined systems.
+SSSD implements its own form of Kerberos Cache Manager (KCM) and encrypts tickets within a database on the system.

@@ -1,0 +1,6 @@
+
+At the time of writing this post, Microsoft has recently released information about enhanced auditing functionality that gives investigators insight into which emails were accessed by attackers.
+This level of logging for regular user accounts is only available for organizations with an Office 365 E5 subscription.
+Once Advanced Auditing is enabled, mail access activity will be logged under the MailItemsAccessed operation in both the UAL and MAL.
+Administrator Audit Log
+If the Audit Log Search feature is enabled, this supplemental data source logs all PowerShell administrative cmdlets (including command-line arguments) executed by administrators.

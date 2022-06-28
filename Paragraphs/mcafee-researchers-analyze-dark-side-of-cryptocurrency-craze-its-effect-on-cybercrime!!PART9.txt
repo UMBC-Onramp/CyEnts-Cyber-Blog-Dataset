@@ -1,0 +1,7 @@
+
+Then three major events dramatically changed the way cybercriminals operated.
+Silk Road closed:
+The popular black market and first major modern cryptocurrency “dark net” market was shut down by the FBI.
+The market was tailored to drug sales, and the FBI takedown left its buyers and sellers without a place to sell their goods.
+The migration of buyers and sellers to less restrictive markets enabled cross-sales to a much larger audience than was previously available to cybercriminals.
+Buyers of drugs could now also buy stolen data—including Netflix accounts or credit cards—from new markets such as AlphaBay as demand increased.

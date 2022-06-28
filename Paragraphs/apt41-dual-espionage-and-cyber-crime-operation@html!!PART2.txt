@@ -1,0 +1,8 @@
+
+The group has established and maintained strategic access to organizations in the healthcare, high-tech, and telecommunications sectors.
+APT41 operations against higher education, travel services, and news/media firms provide some indication that the group also tracks individuals and conducts surveillance.
+For example, the group has repeatedly targeted call record information at telecom companies.
+In another instance, APT41 targeted a hotel’s reservation systems ahead of Chinese officials staying there, suggesting the group was tasked to reconnoiter the facility for security reasons.
+The group’s financially motivated activity has primarily focused on the video game industry, where APT41 has manipulated virtual currencies and even attempted to deploy ransomware.
+The group is adept at moving laterally within targeted networks, including pivoting between Windows and Linux systems, until it can access game production environments.
+From there, the group steals source code as well as digital certificates which are then used to sign malware.

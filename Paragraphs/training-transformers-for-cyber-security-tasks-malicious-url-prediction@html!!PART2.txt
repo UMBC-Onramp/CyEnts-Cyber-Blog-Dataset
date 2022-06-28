@@ -1,0 +1,6 @@
+
+For example, OpenAI’s latest GPT-3 model is capable of generating long segments of grammatically-correct prose from scratch.
+Spinoff models, such as those developed for question and answering, are capable of correlating context over multiple sentences.
+AI Dungeon , a single and multiplayer text adventure game, uses Transformers to generate plausible unlimited content in a variety of fantasy settings.
+Transformers’ NLP modeling capabilities are apparently so powerful that they pose security risks in their own right, in terms of their potential power to spread disinformation , yet on the other side of the coin, they can be used as powerful tools to detect and mitigate disinformation campaigns.
+For example, in previous research by the FireEye Data Science team, a NLP Transformer was fine-tuned to detect disinformation on social media sites.

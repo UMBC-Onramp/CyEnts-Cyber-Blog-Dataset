@@ -1,0 +1,8 @@
+
+Taking the list of transactions as a starting point in our graph-analysis, we colored the lines red and started from there to investigate the wallets involved and interesting transactions: Although it might look like spaghetti, once you dive in, very interesting patterns can be discovered.
+We see victims paying to their assigned wallets; from there it takes an average of two to three transactions before it goes to an ‘affiliate’ or ‘distribution’ wallet.
+From that wallet we see the split happening as the moniker ‘UNKN’ mentioned in his forum post we started this article with.
+The 60 or 70 percent stays with the affiliate and the remaining 40/30 percent is forwarded in multiple transactions towards the actors behind Sodinokibi.
+Once we identified a couple of these transactions, we started to dig in both directions.
+What is the affiliate doing with the money and where is the money going for the Sodinokibi actors?
+We picked one promising affiliate wallet and started to dig deeper down and followed the transactions.

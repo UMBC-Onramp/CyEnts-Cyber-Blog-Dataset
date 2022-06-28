@@ -1,0 +1,6 @@
+
+Between January 16 and 17, 2020, FireEye Managed Defense detected the IP address 45[.]120[.]53[.]214 attempting to exploit CVE-2019-19781 at dozens of FireEye clients.
+When successfully exploited, we observed impacted systems executing the cURL command to download a shell script with the file name ld.sh from 45[.]120[.]53[.]214 (Figure 1).
+In some cases this same shell script was instead downloaded from hxxp://198.44.227[.]126:81/citrix/ld.sh .
+Figure 1: Snippet of ld.sh, downloaded from 45.120.53.214
+The shell script, provided in Figure 2, searches for the python2 binary (Note: Python is only pre-installed on Citrix Gateway 12.x and 13.x systems) and downloads two additional files to the system: piz.

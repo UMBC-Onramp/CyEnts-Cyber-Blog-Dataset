@@ -1,0 +1,5 @@
+
+The PROPagate method is similar to the SetWindowLong injection technique.
+In this method, the malware uses the SetPropA function to modify the callback for UxSubclassInfo and cause the remote process to execute the malicious code.
+This code injection technique only works for a process with lesser or equal integrity level.
+The malware first checks whether the integrity of the current running process is medium integrity level (2000, SECURITY_MANDATORY_MEDIUM_RID).

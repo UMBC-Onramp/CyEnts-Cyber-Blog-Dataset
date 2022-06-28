@@ -1,0 +1,8 @@
+
+This time, the software update was Kaseya’s VSA remote management tool, which was poisoned with malicious code that launched a chain of events ending with an infection by the group’s ransomware.
+Some portion of REvil actors are believed to be based in Russia and other parts of Eastern Europe.
+The gang opened with a $70M ransom demand and later lowered it to $50M for the release of a decryptor that would apply to all the affected victims.
+How Did Attackers Get in?
+Threat actors affiliated with REvil ransomware were able to leverage a zero-day file upload and code injection vulnerability in Kaseya VSA’s on-prem solution.
+What’s been reported as CVE-2021-30116 was the security vulnerability the attackers exploited for their initial foothold.
+This flaw allowed for an authentication bypass and for executing arbitrary commands, which later helped attackers download and distribute a malicious loader masquerading as a VSA update to victim systems with VSA agents installed.

@@ -1,0 +1,14 @@
+
+FireEye Protection
+Immediately after we discovered the high-risk ad library and affected apps, FireEye updated detection rules in its NX and Mobile Threat Prevention (MTP) products to detect the affected apps and their network activities.
+In addition, FireEye customers can access the full list of affected apps upon request.
+FireEye NX customers are alerted if an employee uses an infected app while their iOS device is connected to the corporate network.
+It is important to note that, even if the servers that the backdoored mobiSage SDK communicates with do not deliver JavaScript code that triggers the high-risk backdoors, the affected apps still try to connect to them using HTTP.
+This HTTP session is vulnerable to hijacking by outside attackers.
+FireEye MTP management customers have full visibility into high-risk apps installed on mobile devices in their deployment base.
+End users receive on-device notifications of the detection and IT administrators receive email alerts.
+Click here to learn more about FireEye Mobile Threat Protection product.
+[1] http://www.adsage.com/mobisage
+[2] http://www.adsage.cn/ [3] https://developer.apple.com/programs/ios/information/iOS_Program_Information_4_3_15.pdf [4] https://www.fireeye.com/blog/threat-research/2015/08/ios_masque_attackwe.html [5] https://www.fireeye.com/blog/threat-research/2015/02/ios_masque_attackre.html [6] https://www.fireeye.com/blog/threat-research/2014/11/masque-attack-all-your-ios-apps-belong-to-us.html [7] https://www.fireeye.com/blog/threat-research/2015/06/three_new_masqueatt.html [8] https://www.virusbtn.com/virusbulletin/archive/2014/11/vb201411-Apple-without-shell Subscribe to Blogs Get email updates as new blog posts are added.
+
+

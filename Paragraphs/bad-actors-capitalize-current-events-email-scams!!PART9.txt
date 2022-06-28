@@ -1,0 +1,4 @@
+
+After this step is completed, the bad actor provides a different form to complete.
+Once this form is filled out, all PII included on this form appears to be sent to an 806 phone number, which is the area code for the state of Texas.
+As of the time of writing this number has an active fax service, which most likely is internet-based and can receive the content and distribute as an attachment to the malicious actor anywhere in the world.

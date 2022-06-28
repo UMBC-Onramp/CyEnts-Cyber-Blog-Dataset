@@ -1,0 +1,9 @@
+
+There are many use cases for the technology, most related to authentication and to answer a single question: is this person who they claim to be?
+As time moves onwards, the pace of technology has brought increased processing power, memory and storage to facial recognition technology.
+New products have leveraged facial recognition in innovative ways to simplify everyday life, from unlocking smart phones, to passport ID verification in airports, and even as a law enforcement aid to identify criminals on the street.
+One of the most prevalent enhancements to facial recognition is the advancement of artificial intelligence (AI).
+A recent manifestation of this is deepfakes, an AI-driven technique producing extremely realistic text, images, and videos that are difficult for humans to discern real from fake.
+Primarily used for the spread of misinformation, the technology leverages capabilities.
+Generative Adversarial Networks (GANs), a recent analytic technology, that on the downside, can create fake but incredibly realistic images, text, and videos.
+Enhanced computers can rapidly process numerous biometrics of a face, and mathematically build or classify human features, among many other applications.

@@ -1,0 +1,229 @@
+Introduction Machine learning (ML) is playing an increasingly important role in cyber security.
+
+Here at FireEye, we employ ML for a variety of tasks such as: antivirus , malicious PowerShell detection , and correlating threat actor behavior .
+
+While many people think that a data scientist’s job is finished when a model is built, the truth is that cyber threats constantly change and so must our models.
+
+The initial training is only the start of the process and ML model maintenance creates a large amount of technical debt.
+
+Google provides a helpful introduction to this topic in their paper “Machine Learning: The High-Interest Credit Card of Technical Debt. ”
+
+A key concept from the paper is the principle of CACE : change anything, change everything .
+
+Because ML models deliberately find nonlinear dependencies between input data, small changes in our data can create cascading effects on model accuracy and downstream systems that consume those model predictions.
+
+This creates an inherent conflict in cyber security modeling: (1) we need to update models over time to adjust to current threats and (2) changing models can lead to unpredictable outcomes that we need to mitigate.
+
+Ideally, when we update a model, the only change in model outputs are improvements, e.g. fixes to previous errors.
+
+Both false negatives (missing malicious activity) and false positives (alerts on benign activity), have significant impact and should be minimized.
+
+Since no ML model is perfect, we mitigate mistakes with orthogonal approaches: whitelists and blacklists, external intelligence feeds, rule-based systems, etc.
+
+Combining with other information also provides context for alerts that may not otherwise be present.
+
+However, CACE !
+
+These integrated systems can suffer unintended side effects from a model update.
+
+Even when the overall model accuracy has increased, individual changes in model output are not guaranteed to be improvements.
+
+Introduction of new false negatives or false positives in an updated model, called churn , creates the potential for new vulnerabilities and negative interactions with cyber security infrastructure that consumes model output.
+
+In this article, we discuss churn, how it creates technical debt when considering the larger cyber security product, and methods to reduce it.
+
+Prediction Churn Whenever we retrain our cyber security-focused ML models, we need to able to calculate and control for churn.
+
+Formally, prediction churn is defined as the expected percent difference between two different model predictions (note that prediction churn is not the same as customer churn, the loss of customers over time, which is the more common usage of the term in business analytics).
+
+It was originally defined by Cormier et al .
+
+for a variety of applications.
+
+For cyber security applications, we are often concerned with just those differences where the newer model performs worse than the older model.
+
+Let’s define bad churn when retraining a classifier as the percentage of misclassified samples in the test set which the original model correctly classified.
+
+Churn is often a surprising and non-intuitive concept.
+
+After all, if the accuracy of our new model is better than the accuracy of our old model, what’s the problem?
+
+Consider the simple linear classification problem of malicious red squares and benign blue circles in Figure 1.
+
+The original model, A, makes three misclassifications while the newer model, B, makes only two errors.
+
+B is the more accurate model.
+
+Note, however, that B introduces a new mistake in the lower right corner, misclassifying a red square as benign.
+
+That square was correctly classified by model A and represents an instance of bad churn.
+
+Clearly, it’s possible to reduce the overall error rate while introducing a small number of new errors which did not exist in the older model.
+
+Figure 1: Two linear classifiers with errors highlighted in orange.
+
+The original classifier A has lower accuracy than B. However, B introduces a new error in the bottom right corner.
+
+Practically, churn introduces two problems in our models.
+
+First, bad churn may require changes to whitelist/blacklists used in conjunction with ML models.
+
+As we previously discussed, these are used to handle the small but inevitable number of incorrect classifications.
+
+Testing on large repositories of data is necessary to catch such changes and update associated whitelists and blacklists.
+
+Second, churn may create issues for other ML models or rule-based systems which rely on the output of the ML model.
+
+For example, consider a hypothetical system which evaluates URLs using both a ML model and a noisy blacklist.
+
+The system generates an alert if P(URL = ‘malicious’) > 0.9 or P(URL = ‘malicious’) > 0.5 and the URL is on the blacklist After retraining, the distribution of P(URL=‘malicious’) changes and all .com
+
+domains receive a higher score.
+
+The alert rules may need to be readjusted to maintain the required overall accuracy of the combined system.
+
+Ultimately, finding ways of reducing churn minimizes this kind of technical debt.
+
+Experimental Setup We’re going to explore churn and churn reduction techniques using EMBER, an open source malware classification data set.
+
+It consists of 1.1 million PE files first seen in 2017, along with their labels and features.
+
+The objective is to classify the files as either goodware or malware.
+
+For our purposes we need to construct not one model, but two, in order to calculate the churn between models.
+
+We have split the data set into three pieces: January through August is used as training data September and October are used to simulate running the model in production and retraining (test 1 in Figure 2).
+
+November and December are used to evaluate the models from step 1 and 2 (test 2 in Figure 2).
+
+Figure 2:
+
+A comparison of our experimental setup versus the original EMBER data split.
+
+EMBER has a ten-month training set and a two-month test set.
+
+Our setup splits the data into three sets to simulate model training, then retraining while keeping an independent data set for final evaluation.
+
+Figure 2 shows our data split and how it compares to the original EMBER data split.
+
+We have built a LightGBM classifier on the training data, which we’ll refer to as the baseline model.
+
+To simulate production testing, we run the baseline model on test 1 and record the FPs and FNs.
+
+Then, we retrain our model using both the training data and the FPs/FNs from test 1.
+
+We’ll refer to this model as the standard retrain.
+
+This is a reasonably realistic simulation of actual production data collection and model retraining.
+
+Finally, both the baseline model and the standard retrain are evaluated on test 2.
+
+The standard retrain has a higher accuracy than the baseline on test 2, 99.33% vs 99.10% respectively.
+
+However, there are 246 misclassifications made by the retrain model that were not made by the baseline or 0.12% bad churn.
+
+Incremental Learning Since our rationale for retraining is that cyber security threats change over time, e.g. concept drift, it’s a natural suggestion to use techniques like incremental learning to handle retraining.
+
+In incremental learning we take new data to learn new concepts without forgetting (all) previously learned concepts.
+
+That also suggests that an incrementally trained model may not have as much churn, as the concepts learned in the baseline model still exist in the new model.
+
+Not all ML models support incremental learning, but linear and logistic regression, neural networks, and some decision trees do.
+
+Other ML models can be modified to implement incremental learning.
+
+For our experiment, we incrementally trained the baseline LightGBM model by augmenting the training data with FPs and FNs from test 1 and then trained an additional 100 trees on top of the baseline model (for a total of 1,100 trees).
+
+Unlike the baseline model we use regularization (L2 parameter of 1.0); using no regularization resulted in overfitting to the new points.
+
+The incremental model has a bad churn of 0.05% (113 samples total) and 99.34% accuracy on test 2.
+
+Another interesting metric is the model’s performance on the new training data; how many of the baseline FPs and FNs from test 1 does the new model fix?
+
+The incrementally trained model correctly classifies 84% of the previous incorrect classifications.
+
+In a very broad sense, incrementally training on a previous model’s mistake provides a “patch” for the “bugs” of the old model.
+
+Churn-Aware Learning Incremental approaches only work if the features of the original and new model are identical.
+
+If new features are added, say to improve model accuracy, then alternative methods are required.
+
+If what we desire is both accuracy and low churn, then the most straightforward solution is to include both of these requirements when training.
+
+That’s the approach taken by Cormier et al., where samples received different weights during training in such a way as to minimize churn.
+
+We have made a few deviations in our approach: (1) we are interested in reducing bad churn (churn involving new misclassifications) as opposed to all churn and (2) we would like to avoid the extreme memory requirements of the original method.
+
+In a similar manner to Cormier et al., we want to reduce the weight, e.g. importance, of previously misclassified samples during training of a new model.
+
+Practically, the model sees making the same mistakes as the previous model as cheaper than making a new mistake.
+
+Our weighing scheme gives all samples correctly classified by the original model a weight of one and all other samples have a weight of: w = α – β |0.5 – P old ( χ i )|, where P old ( χ i ) is the output of the old model on sample χ i and α , β are adjustable hyperparameters.
+
+We train this reduced churn operator model (RCOP) using an α of 0.9, a β of 0.6 and the same training data as the incremental model.
+
+RCOP produces 0.09% bad churn, 99.38% accuracy on test 2.
+
+Results Figure 3 shows both accuracy and bad churn of each model on test set 2.
+
+We compare the baseline model, the standard model retrain, the incrementally learned model and the RCOP model.
+
+Figure 3:
+
+Bad churn versus accuracy on test set 2.
+
+Table 1 summarizes each of these approaches, discussed in detail above.
+
+Name Trained on Method Total # of trees Baseline train LightGBM 1000
+
+Standard retrain train + FPs/FNs from baseline on test 1 LightGBM 1100 Incremental model train + FPs/FNs from baseline on test 1 Trained 100 new trees, starting from the baseline model 1100 RCOP train + FPs/FNs from baseline on test 1 LightGBM with altered sample weights 1100 Table 1:
+
+A description of the models tested The baseline model has 100 fewer trees than the other models, which could explain the comparatively reduced accuracy.
+
+However, we tried increasing the number of trees which resulted in only a minor increase in accuracy of < 0.001%.
+
+The increase in accuracy for the non-baseline methods is due to the differences in data set and training methods.
+
+Both incremental training and RCOP work as expected producing less churn than the standard retrain, while showing accuracy improvements over the baseline.
+
+In general, there is usually a trend of increasing accuracy being correlated with increasing bad churn: there is no free lunch.
+
+That increasing accuracy occurs due to changes in the decision boundary, the more improvement the more changes occur.
+
+It seems reasonable the increasing decision boundary changes correlate with an increase in bad churn although we see no theoretical justification for why that must always be the case.
+
+Unexpectedly, both the incremental model and RCOP produce more accurate models with less churn than the standard retrain.
+
+We would have assumed that given their additional constraints both models would have less accuracy with less churn.
+
+The most direct comparison is RCOP versus the standard retrain.
+
+Both models use identical data sets and model parameters, varying only by the weights associated with each sample.
+
+RCOP reduces the weight of incorrectly classified samples by the baseline model.
+
+That reduction is responsible for the improvement in accuracy.
+
+A possible explanation of this behavior is mislabeled training data.
+
+Multiple authors have suggested identifying and removing points with label noise, often using the misclassifications of a previously trained model to identify those noisy points.
+
+Our scheme, which reduces the weight of those points instead of removing them, is not dissimilar to those other noise reduction approaches which could explain the accuracy improvement.
+
+Conclusion ML models experience an inherent struggle: not retraining means being vulnerable to new classes of threats, while retraining causes churn and potentially reintroduces old vulnerabilities.
+
+In this blog post, we have discussed two different approaches to modifying ML model training in order to reduce churn: incremental model training and churn-aware learning.
+
+Both demonstrate effectiveness in the EMBER malware classification data set by reducing the bad churn, while simultaneously improving accuracy.
+
+Finally, we also demonstrated the novel conclusion that reducing churn in a data set with label noise can result in a more accurate model.
+
+Overall, these approaches provide low technical debt solutions to updating models that allow data scientists and machine learning engineers to keep their models up-to-date against the latest cyber threats at minimal cost.
+
+At FireEye, our data scientists work closely with the FireEye Labs detection analysts to quickly identify misclassifications and use these techniques to reduce the impact of churn on our customers.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

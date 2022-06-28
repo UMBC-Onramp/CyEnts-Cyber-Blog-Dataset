@@ -1,0 +1,6 @@
+
+Compromising both the DCS and SIS system would enable the attacker to develop and carry out an attack that causes the maximum amount of damage allowed by the physical and mechanical safeguards in place.
+Once on the SIS network, the attacker used their pre-built TRITON attack framework to interact with the SIS controllers using the TriStation protocol.
+The attacker could have caused a process shutdown by issuing a halt command or intentionally uploading flawed code to the SIS controller to cause it to fail.
+Instead, the attacker made several attempts over a period of time to develop and deliver functioning control logic for the SIS controllers in this target environment.
+While these attempts appear to have failed due one of the attack scripts’ conditional checks, the attacker persisted with their efforts.

@@ -1,0 +1,7 @@
+
+The config_t.encoded_config blob can be decoded by XOR-ing the data with the config_header_t.xor_val_1.
+The decoded configuration data consists of a comma-separated list of URLs followed by a key that is used in the communication module.
+The first two bytes specify the lengths of the comma-separated URL list and the key, respectively.
+The URLs in the observed samples follow the pattern shown in Figure 13.
+https://<server>/admin<n>/client.php Figure 13:
+Observed C2 URL pattern The initial sample did not have any value for <n> but the samples after that were observed to use <n> equal to 4 or 5.

@@ -1,0 +1,4 @@
+Though COVID-19 has had enormous effects on our society and economy, its effects on the cyber threat landscape remain limited.
+For the most part, the same actors we have always tracked are behaving in the same manner they did prior to the crisis.
+There are some new challenges, but they are perceptible, and we—and our customers—are prepared to continue this fight through this period of unprecedented change.
+The significant shifts in the threat landscape we are currently tracking include: The sudden major increase in a remote workforce has changed the nature and vulnerability of enterprise networks.

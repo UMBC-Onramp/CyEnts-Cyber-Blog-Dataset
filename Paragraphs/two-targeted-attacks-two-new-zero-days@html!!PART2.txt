@@ -1,0 +1,6 @@
+
+Since the embedded TTF is processed in kernel-mode, successful exploitation granted the attackers kernel-mode access.
+Though the TTF is delivered in a Microsoft Office document, the vulnerability does not reside within Microsoft Office.
+CVE-2014-4148 impacted both 32-bit and 64-bit Windows operating systems shown in MS14-058 , though the attacks only targeted 32-bit systems.
+The malware contained within the exploit has specific functions adapted to the following operating system platform categories: Windows 8.1/Windows Server 2012 R2 Windows 8/Windows Server 2012 Windows 7/Windows Server 2008 R2 (Service Pack 0 and 1)
+Windows XP Service Pack 3 CVE-2014-4113 rendered Microsoft Windows 7, Vista, XP, Windows 2000, Windows Server 2003/R2, and Windows Server 2008/R2 vulnerable to a local Elevation of Privilege (EoP) attack.

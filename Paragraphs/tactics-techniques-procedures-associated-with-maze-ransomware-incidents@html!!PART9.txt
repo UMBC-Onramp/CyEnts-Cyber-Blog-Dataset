@@ -1,0 +1,4 @@
+
+Even within these teams, the cyber criminals appear to be task-oriented meaning that one operator is not responsible for the full lifecycle.
+The following sections highlight the TTPs seen in a subset of incidents and serve to illustrate the divergence that may occur due to the fact that numerous, disparate actors are involved in different phases of these operations.
+Notably, the time between initial compromise to encryption has also been widely varied, from weeks to many months.

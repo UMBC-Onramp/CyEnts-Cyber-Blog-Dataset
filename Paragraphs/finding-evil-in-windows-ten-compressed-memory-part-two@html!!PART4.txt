@@ -1,0 +1,6 @@
+
+In a memory constrained virtual machine (1 GB RAM), the marker page will become stale shortly and be evicted to the virtual store.
+In Figure 1, ram_eater reports that it has allocated the marker page at address 0x2a368480000 .
+The marker page we used (see Figure 2) was a string beginning with “ CC WAS HERE! ”.
+Figure 1: Allocating a marker page using ram_eater_x64.exe We can verify the contents of our marker page by locating it in the kernel debugger, viewing its Page Table Entry (PTE) and dumping its corresponding physical memory (see Figure 2).
+We use the !process extension to locate ram_eater ’s EPROCESS structure and switch into the context of the ram_eater process.

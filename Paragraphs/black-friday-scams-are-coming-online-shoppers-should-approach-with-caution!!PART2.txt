@@ -1,0 +1,8 @@
+
+Given the popularity, volume, and money related to this event, cybercriminals would not pass up on this lucrative opportunity to fool consumers any way they can for financial gain.
+In this blog, we will elaborate how cybercriminals are using a fake Amazon gift card generator to steal cryptocurrency from their victims and using fake documents to lure those victims into potentially giving out their personal information, such as credentials for online shopping sites, credit card numbers, and home addresses.
+We also look at a similar scam preying on high interest in gaming consoles due to the global chip shortage.
+Nothing is More Expensive than Free Legitimate gift cards are often used online to purchase items on Amazon.
+FortiGuard Labs recently discovered a malicious file named Amazon Gift Tool.exe.
+The file was found in a zip file hosted on a publicly available file repository site.
+While we don’t know exactly how this tool was presented to potential victims, but criminals most likely advertised the tool as a free Amazon gift card generator.

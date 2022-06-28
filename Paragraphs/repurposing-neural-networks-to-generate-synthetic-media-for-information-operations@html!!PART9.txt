@@ -1,0 +1,9 @@
+
+GANs consist of 2 underlying networks\nthat are pitted against each other (hence “adversarial”)
+- a\ngenerator, which generates new instances of data, and a discriminator,\nwhich evaluates these instances for authenticity by deciding whether\neach one belongs to the actual training dataset or not.
+If you\ngenerate images from pre-trained StyleGAN2 off-the-shelf, it outputs random,\nhigh quality, and highly diverse images that appear in a similar\norientation as the images that it was pre-trained on .
+These\nimages are not present in StyleGAN2’s original training set, but are\ncompletely fabricated from the generative model—these people in fact\ndo not exist, and never have.
+StyleGAN2 can also be fine-tuned on private datasets to generate\noutputs for custom tasks that the user of the open source model can\ncontrol.
+As illustrated in Figure 2, we downloaded a few hundred\nimages of Tom Hanks from online image search services, cropped them so\nthat they were each face-centered and 512x512 pixels as required by\nthe pre-trained model, and simply continued training StyleGAN2 by\npointing it at this new smaller dataset using a slightly smaller\nlearning rate.
+After less than a day of fine-tuning on a single GPU,\nwe then used the fine-tuned StyleGAN2 model to generate arbitrarily\nmany fake images of Mr. Hanks, which exhibit a high level of\nresemblance to his authentic online images.
+In theory, we could\ncollect cropped images from any target of our choosing and perform the\nsame exercise to generate arbitrarily many fake images of them.

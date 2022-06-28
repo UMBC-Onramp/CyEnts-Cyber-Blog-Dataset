@@ -1,0 +1,5 @@
+
+In addition, Diavol and Conti both operate similarly with asynchronous I/O operations when queuing the file paths for encryption.
+There also might be a link between Diavol and Egregor ransomware.
+Some lines in the ransom note are identical, as can be seen in figure 12, although this is not reliable as it could simply be a red herring that Diavol’s authors planted.
+Some have reported a link between Wizard Spider, the threat actor behind Conti, and Twisted Spider, the threat actor behind Egregor.

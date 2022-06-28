@@ -1,0 +1,25 @@
+
+A dictionary, which helps the fuzzer to find additional code paths, can be prepared by combing through specifications and creating a list of unique tag names and values.
+One can also find dictionaries from open source fuzzing attempts on LCMS, etc.
+Fuzzing I used a 16-core machine to fuzz the harness with my first set of corpuses.
+Code coverage information from MSCMS.dll and ICM32.dll was used as feedback for my fuzzer.
+Crashes started to appear within a couple of days.
+CVE-2020-1117 — Heap Overflow in InitNamedColorProfileData
+The following crash happens in icm32!SwapShortOffset while trying to read out of bounds: 0:000
+> r rax=0000023690497000 rbx=0000000000000000 rcx=00000000000000ff rdx=000000000000ffff rsi=0000023690496f00
+rdi=0000023690496fee rip=00007ffa46bf3790 rsp=000000c2a56ff5a8 rbp=0000000000000001 r8=0000000000000014  r9=0000023690497002
+r10=0000000000000014 r11=0000000000000014 r12=000000c2a56ff688 r13=0000023690492de0 r14=000000000000000a r15=000000004c616220 iopl=0         nv up ei ng nz ac pe cy cs=0033  ss=002b
+  ds=002b
+  es=002b
+  fs=0053  gs=002b
+             efl=00000293 icm32!SwapShortOffset+0x10:
+00007ffa`46bf3790 0fb610          movzx   edx,byte ptr [rax] ds:00000236`90497000=??
+0:000
+> !
+heap -p
+-a @rax address 0000023690497000 found in _DPH_HEAP_ROOT @ 23690411000 in busy allocation (  DPH_HEAP_BLOCK:         UserAddr         UserSize -         VirtAddr         VirtSize)
+23690412b60:      23690496f00              100 -      23690496000             2000 00007ffa51644807 ntdll!RtlDebugAllocateHeap+0x000000000000003f
+00007ffa515f49d6 ntdll!RtlpAllocateHeap+0x0000000000077ae6
+00007ffa5157babb ntdll!RtlpAllocateHeapInternal+0x00000000000001cb 00007ffa51479da0 msvcrt!malloc+0x0000000000000070 00007ffa46bf3805 icm32!SmartNewPtr+0x0000000000000011 00007ffa46bf37c8
+icm32!SmartNewPtrClear+0x0000000000000014 00007ffa46c02d05 icm32!InitNamedColorProfileData+0x0000000000000085 00007ffa46bf6e39 icm32!Create_LH_ProfileSet+0x0000000000004e15 00007ffa46bf1973
+icm32!PrepareCombiLUTs+0x0000000000000117 00007ffa46bf1814 icm32!CMMConcatInitPrivate+0x00000000000001f4 00007ffa46bf12a1 icm32!CWConcatColorWorld4MS+0x0000000000000075 00007ffa46bf11f4 icm32!CMCreateMultiProfileTransformInternal+0x00000000000000e8 00007ffa46bf1039 icm32!CMCreateMultiProfileTransform+0x0000000000000029 00007ffa48f16e6c mscms!CreateMultiProfileTransform+0x000000000000024c

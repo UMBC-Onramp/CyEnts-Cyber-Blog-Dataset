@@ -1,0 +1,7 @@
+
+Consistent with other reporting , the education sector remains most affected, likely due to more relaxed security controls across university networks and students taking advantage of free electricity to mine cryptocurrencies (Figure 13).
+Figure 10: Cryptocurrency miner detection activity per month Figure 11: Commonly observed pools and associated ports Figure 12:
+Top 10 affected countries Figure 13:
+Top five affected industries Figure 14:
+Top affected industries by country Mitigation Techniques Unencrypted Stratum Sessions
+According to security researchers at Cato Networks, in order for a miner to participate in pool mining, the infected machine will have to run native or JavaScript-based code that uses the Stratum protocol over TCP or HTTP/S. The Stratum protocol uses a publish/subscribe architecture where clients will send subscription requests to join a pool and servers will send messages (publish) to its subscribed clients.

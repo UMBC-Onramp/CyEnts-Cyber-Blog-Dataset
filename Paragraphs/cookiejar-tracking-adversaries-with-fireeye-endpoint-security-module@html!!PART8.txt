@@ -1,0 +1,4 @@
+
+This type of activity occurs due to the direct connection to the customers network and is similar to being on the same LAN.
+The non-standard hostname and non-standard customer naming convention used by the adversary help make scoping an easy task.
+Additionally, Managed Defense was able to leverage network detection to alert on the authentication attempts and activities of the adversary’s host.

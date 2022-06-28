@@ -1,0 +1,11 @@
+
+GetFolder.
+$pageFolder.
+Items() | .
+foreach {.
+$visit = New-Object -TypeName PSObject -Property @{ .
+URL = $($pageFolder.
+GetDetailsOf($_,0)) . }.
+$visit. }. }. }. }. }. }.
+get-iehistory Figure 6: Snippet of PowerShell code from VALUEVAULT to extract browser credentials Upon execution, VALUEVAULT creates a SQLITE database file in the AppData\\Roaming directory under the context of the user account it was executed by.
+This file is named fsociety.dat and VALUEVAULT will write the dumped passwords to this in SQL format.

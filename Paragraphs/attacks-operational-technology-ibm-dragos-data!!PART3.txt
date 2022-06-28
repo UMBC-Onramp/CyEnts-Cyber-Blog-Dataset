@@ -1,0 +1,9 @@
+
+The research shows that ransomware and remote access Trojans are the most common attack types against enterprise networks connected to OT networks.
+Ransomware specifically has direct impacts as it moves from enterprise networks into OT networks and causes costly operational outages.
+The remote access Trojans highlighted in this analysis are those utilized by OT-specific threat groups as they leverage this capability to gain access to enterprise networks and then move from Stage 1 to Stage 2 operations as defined by the ICS Cyber Kill Chain .
+While the data does highlight the most common attack types and vectors, it is important to note that the most frequent events are not always the most consequential.
+As an example, OT-specific threat groups, while active much more than people realize, are not nearly as active as the broader enterprise IT threats.
+However, OT threat groups cause significant impact that ranges from the theft of intellectual property to the direct targeting of human life (e.g. the TRITON/TRISIS attack in Saudi Arabia in 2017).
+The data further reveals that adversaries most frequently use stolen credentials to gain initial access to enterprise networks with connected ICS environments.
+Many defenders may think that by protecting their enterprise networks they are protecting their ICS networks, but it is important to note that many original equipment manufacturers, integrators and vendors have their enterprise and production networks directly connected to others’ OT networks.

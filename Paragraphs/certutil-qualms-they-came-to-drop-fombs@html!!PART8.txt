@@ -1,0 +1,5 @@
+
+Analysis of FireEye Endpoint Security ring buffer events uncovered reconnaissance commands executed on the system including whoami , ipconfig and the downloading of additional binaries.
+However, further analysis of the system did not uncover an initial exploit within the same timeframe of these commands.
+Analysis of the HTTP logs also did not uncover the initial payload.
+Within the HTTP logs we identified suspicious HTTP POST requests including requests to ’/weaver/bsh.servlet.

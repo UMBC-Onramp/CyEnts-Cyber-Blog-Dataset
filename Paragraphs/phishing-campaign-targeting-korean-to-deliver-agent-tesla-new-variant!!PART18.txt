@@ -1,0 +1,7 @@
+
+Agent Tesla reads the response and checks if it contains “uninstall”.
+If yes, it uninstalls Agent Tesla from the victim’s system, including deleting all files made by Agent Tesla and removing keys from registry that Agent Tesla created, and exits the process.
+Packet “3”: It sends the victim’s keystrokes (keylogger data) and stolen clipboard data within the “data” part of the post.
+Packet “4”: It sends captured screenshots of the victim’s screen within the “data” part of the post.
+Packet “5”:
+It sends the credentials stolen from the software clients within the “data” part of the post.

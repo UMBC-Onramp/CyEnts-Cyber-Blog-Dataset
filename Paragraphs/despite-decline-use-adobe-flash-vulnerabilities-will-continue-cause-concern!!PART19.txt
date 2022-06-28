@@ -1,0 +1,8 @@
+
+“The Bizarro Sundown (aka GreenFlash) and ThreadKit exploit kits added the exploit to their lists last month,” he said.
+“The Rig and Magnitude exploit kits added this flaw to their arsenals this month.”
+Adding a new exploit does not mean the old ones are no longer available.
+Exploit kits are additive.
+The Rig kit, which appeared in 2014, contains the following Flash exploits: CVE-2013-0634
+           CVE-2015-3113 CVE-2014-0497
+           CVE-2015-5119 CVE-2014-0515           CVE-2015-5122 CVE-2014-0569           CVE-2015-7645 CVE-2015-0311           CVE-2016-1019 CVE-2015-0359           CVE-2016-4117 CVE-2015-3090 Old exploits do not die, they just get used less often as software is upgraded to fix earlier versions.

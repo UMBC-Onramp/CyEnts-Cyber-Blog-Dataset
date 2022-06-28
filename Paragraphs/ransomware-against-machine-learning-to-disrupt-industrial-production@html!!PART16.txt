@@ -1,0 +1,4 @@
+
+Interruptions to these flows of information containing for example product inventories, forced employees to identify manual alternatives to handle more than 6,500 stock-keeping units and 4,000 shelves.
+FireEye Mandiant has responded to at least one similar case where TrickBot was used to deploy Ryuk ransomware at an oil rig manufacturer.
+While the infection happened only on corporate networks, the biggest business impact was caused by disruptions of Oracle ERP software driving the company temporarily offline and negatively affecting production.

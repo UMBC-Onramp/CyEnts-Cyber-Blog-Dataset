@@ -1,0 +1,7 @@
+
+Google will most likely reveal more details on the vulnerabilities after the majority of users have up-dated their browsers.
+In any case, it’s not worth delaying the update — much better do it as soon as possible.
+How to stay safe The first step for everyone is to update browsers on all devices that have access to the Internet.
+Quite often the update is installed automatically when the browser is restarted, however many users do not restart their computer for a long time, so their browser may remain vulnerable for several days or even weeks.
+In any case, we recommend checking the version of Chrome.
+Here’s how to do it: click on the Customise and Control Google Chrome button at the top-right corner of the browser window and choose Help -> About Google Chrome .

@@ -1,0 +1,6 @@
+
+Guidance from the FBI was also made available on their website .
+Deputy National Security Advisor for Cyber and Emerging Technology, Anne Neuberger, released a statement about the attack, urging anyone who believes their systems have been compromised in the Kaseya ransomware incident to immediately report to the Internet Crime Complaint Center at www.IC3.gov .
+What is REvil, Sodinokibi?
+REvil, also known as Sodin or Sodinokibi , is a ransomware-as-a-service (RaaS) malware family active since early 2019.
+Third party reporting suggests REvil was developed by GandCrab authors, another RaaS malware family that claimed to retire in May 2019.

@@ -1,0 +1,17 @@
+
+Initialize .
+This method is responsible for the C2 communications and dispatching.
+The HTTP thread begins by delaying for a configurable amount of time that is controlled by the SetTime command.
+The HTTP thread delays for a minimum of one minute between callouts.
+The malware uses HTTP GET or POST requests.
+The sample disables certificate verification so it is possible to decrypt HTTPS traffic if SSL man-in-the-middle is performed.
+The malware constructs HTTP GET or POST request URIs from random selections of substrings.
+The scheme used depends on the A record received just prior to the CNAME DNS response.
+When sending a GET request, the malware adds an \"If-None-Match\" HTTP header that includes the encoded user ID.
+This likely allows the C2 server to determine which SUNBURST installation generated the request, further enabling multiplexing of C2 streams on a single server.
+In observed traffic, the C2 server employs steganography to hide data within HTTP response bodies and attempts to appear as benign XML related to .NET assemblies.
+Command data is spread across many GUID and hexadecimal strings.
+Commands are extracted from HTTP response bodies by searching for hexadecimal strings using the following regular expression: \"\\{[0-9a-f-]{36}\\}\"|\"[0-9a-f]{32}\"|\"[0-9a-f]{16}\" .
+Matched substrings in the response are filtered for non-hex characters, joined together, and hex-decoded.
+Depending on the mode of operation, the malware may skip the steganography and send the encoded response in an HTTP response body.
+Figure 2: C2 response embeds commands in XML GUIDs In the received C2 response, the first DWORD value indicates the actual size of the message.

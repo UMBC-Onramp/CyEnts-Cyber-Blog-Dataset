@@ -1,0 +1,5 @@
+
+This facilitated user access to the system with a secret hard-coded password and allowed the threat actors to escalate privileges and maintain persistence (see Figure 1).
+Log –font –unix | /usr/lib/ssh/sshd sshd kbdint - can <Encoded Password> <IP REDACTED>
+Magical Password auth.info | sshd[11800]: [ID 800047 auth.info] Accepted keyboard-interactive for root from <IP REDACTED> port 39680 ssh2 auth.notice | su:
+[ID 366847 auth.notice] ‘su root’ - succeeded for netcool on /dev/pts/31 Figure 1: SLAPSTICK logs At the initial victim, UNC1945 placed a copy of a legitimate pam_unix.so file and SLAPSTICK in the /lib64/security folder.

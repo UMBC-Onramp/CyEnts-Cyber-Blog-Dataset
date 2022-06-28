@@ -1,0 +1,26 @@
+
+99aa16d7fc34cdcc7dfceab46e990f44 3/23/20 165.22.125.178:443 CN=servicemonsterr[.]com 82abfd5b55e14441997d47aee4201f6d 3/24/20 69.55.60.140:443 CN=boostyourservice[.]com 7f3787bf42f11da321461e6db7f295d1 3/24/20 45.141.86.98:443 CN=tenthservice-developer[.]com eef29bcbcba1ce089a50aefbbb909203 3/26/20 178.79.132.82:443 CN=
+developmasters[.]com 5cf480eba910a625e5e52e879ac5aecb 3/26/20 194.26.29.247:443 CN=
+thirteenthservicehelper[.]com 2486df3869c16c0d9c23a83cd61620c2 5/4/20 159.65.216.127:443 CN=
+info-develop[.]com 5f7a5fb72c6689934cc5d9c9a681506b 9/22/20 69.61.38.155:443 C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=gtrsqer[.]com d37ba4a4b1885e96ff54d1f139bf3f47 9/22/20 96.9.225.144:443 C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=hakunaman[.]com
+4408ba9d63917446b31a0330c613843d 9/22/20 96.9.209.216:443
+C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=caonimas[.]com d921dd1ba03aaf37d5011020577e8147 9/22/20 107.173.58.176:443 C=US,ST=TX,L=Texas,O=
+lol,
+OU=,CN=chalengges[.]com dfeb6959b62aff0b93ca20fd40ef01a8
+9/22/20 96.9.225.143:443 C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=reginds[.]com 05c03b62dea6ec06006e57fd0a6ba22e 9/22/20
+69.61.38.156:443 C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=errvghu[.]com c14a892f8203a04c7e3298edfc59363a
+9/22/20 45.34.6.229:443 C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=harddagger[.]com 7ed16732ec21fb3ec16dbb8df0aa2250
+9/22/20 45.34.6.226:443 C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=getinformationss[.]com 1788068aff203fa9c51d85bf32048b9c 9/22/20 45.34.6.225:443
+C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=gameleaderr[.]com 0fff2f721ad23648175d081672e77df4
+9/22/20 107.173.58.185:443 C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=razorses[.]com b960355ba112136f93798bf85e6392bf 9/22/20 107.173.58.183:443 C=US,ST=TX,L=Texas,O=
+lol,OU=,CN=nomadfunclub[.]com a3d4e6d1f361d9c335effdbd33d12e79
+9/22/20 107.173.58.175:443 C=US,ST=TX,L=Texas,O=

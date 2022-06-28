@@ -1,0 +1,7 @@
+
+This is useful for the malware developers to attack a special path instead of losing time going after a full machine and it makes the attack more targeted.
+–logging ->
+If this switch is enabled the malware will log all the steps it makes.
+Useful to the malware developers in debug environments, or in the attack phase to know that all was ok, step by step.
+Here is a small example of this information: FIGURE 31.
+EXAMPLE OF THE INFORMATION THAT THE MALWARE CAN GIVE WITH THE LOG SWITCH OTHER SAMPLES

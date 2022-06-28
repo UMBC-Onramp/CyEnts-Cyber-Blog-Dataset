@@ -1,0 +1,5 @@
+
+Emotet is known to have delivered other malware variants in the past, with the most disruptive being ransomware.
+Some ransomware as a service (RaaS) groups have specific policies to not deploy ransomware to government sectors, defense industry, and other critical infrastructures (hospitals, etc.).
+However, actual attacks are often carried out by RaaS affiliates who may or may not abide by the policy set by RaaS groups.
+Request to fill and send a W-8 form via a fax number A different scam recently observed is an email with the subject line of: “NEW YEAR-NON-RESIDENT ALIEN TAX EXEMPTION UPDATE.”

@@ -1,0 +1,4 @@
+
+In this scenario, an attacker can use malicious code to gain access to the images.
+Original image (left) and the one stolen from Google cloud storage using a Spook.js attack.
+Source Method limitations Researchers have shown how the attack can be carried out on different CPUs, including several modern ones from Intel and even the new ARM-based Apple M1.

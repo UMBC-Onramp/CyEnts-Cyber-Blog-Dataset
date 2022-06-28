@@ -1,0 +1,7 @@
+
+If it is the charset used, the malware will delete itself from the disk and terminate itself with “TerminateProcess” but if it is not this charset, it will continue in the normal flow This double check circumvents users with a multisystem language, i.e. they have the Russian language installed but not active in the machine to avoid this type of malware.
+FIGURE 4.
+Check the text charset and compare with Russian charset The code that is supposed to delete the ransomware from the disk contains an error.
+It will call directly to the prompt of the system without waiting for the malware to finish.
+ 
+This means that the execution of the command will be correct but, as the malware is still running, it will not delete it from the disk.

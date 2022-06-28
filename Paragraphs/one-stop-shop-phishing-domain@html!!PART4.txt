@@ -1,0 +1,13 @@
+
+Figure 4:
+OTP being requested Step 4 URL: hxxp://csecurepay[.]com/
+Final.aspx
+Once all of the sensitive data is gathered, a fake failed login message will be displayed to the victim, as seen in Figure 5.
+Figure 5: Fake error message being displayed Credit and Debit Card Phishing Website Using the registrant information from the csecurepay domain, we found another domain registered by the phisher as “nsecurepay[.]com”.
+The domain, registered in latest August 2016, aims to steal credit and debit card information.
+The following are among the list of cards that are targeted: 1.
+     ICICI Credit Card 2.
+     ICICI Debit Card 3.
+     Visa/Master Credit Card 4.
+     Visa/Master Debit Card 5.
+     SBI Debit Card Only At the time of this writing, the nsecurepay website was producing errors when redirecting to spoofed credit and debit card pages.

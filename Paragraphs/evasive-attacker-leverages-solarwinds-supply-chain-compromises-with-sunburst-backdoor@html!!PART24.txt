@@ -1,0 +1,5 @@
+
+        There is a second, unrelated delay routine that delays for a random interval between [16hrs, 83hrs] CollectSystemDescription 3 Profile the local system including hostname, username, OS version, MAC addresses, IP address, DHCP configuration, and domain information.
+UploadSystemDescription 4 Perform a HTTP request to the specified URL, parse the results and compare components against unknown hashed values.
+Format a report and send to the C2 server.
+RunTask 5 Starts a new process with the given file path and arguments GetProcessByDescription 6 Returns a process listing.

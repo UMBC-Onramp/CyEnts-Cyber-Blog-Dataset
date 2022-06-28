@@ -1,0 +1,16 @@
+
+Limit or restrict access to Azure AD Connect servers.
+Any server acting as an identity provider or facilitating identity federation should be treated as a Tier 0 asset.
+Create separate dedicated global administrator accounts .
+Global administrators should be cloud-only accounts.
+These accounts should not retain any licensing.
+Implement MFA on all accounts: admins, users and services.
+If a particular account cannot use MFA, apply a conditional access rule that limits its logon to a trusted network.
+This works particularly well for service accounts.
+Establish a roadmap to block legacy authentication .
+Limit which accounts are synced from on-premises to the cloud .
+Do not sync privileged or service accounts to the cloud.
+Use Azure administrative roles .
+Not everybody or everything needs to be a global admin to administer the environment.
+Use password hash sync over Pass-through Authentication.
+Many organizations are reluctant to sync their password to Azure AD.

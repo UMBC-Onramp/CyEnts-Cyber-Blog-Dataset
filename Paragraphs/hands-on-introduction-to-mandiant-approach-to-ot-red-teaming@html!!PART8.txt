@@ -1,0 +1,5 @@
+
+It responds to the needs of defenders to account for varying technologies and architectures present in OT networks across different industries and processes.
+As a result, it accounts for outliers that are often not covered by general security best practices guidance.
+It results in tangible and realistic outputs based on our active testing showing what can really happen in the target network.
+Mandiant's OT red teaming results often show that common security testing tools are sufficient for actors to reach critical process networks.

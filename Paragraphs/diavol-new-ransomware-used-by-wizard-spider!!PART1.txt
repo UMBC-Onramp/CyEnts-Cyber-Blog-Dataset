@@ -1,0 +1,6 @@
+FortiGuard Labs Threat Research Report Affected Platforms: Windows Impact: Data encryption, Data destruction Threat Severity:
+Critical Diavol Introduction
+At the beginning of June, FortiEDR prevented a ransomware attack that had targeted one of our customers.
+After successfully stopping the attack, we were able to isolate two suspicious files that, at the time, were not found on VirusTotal: locker.exe and locker64.dll .
+In the timeline of the attack, locker.exe was deployed a day before locker64.dll.
+While we were able to identify locker64.dll to be a Conti (v3) ransomware, locker.exe appeared to be entirely different.

@@ -1,0 +1,8 @@
+
+BitsParser Tool Release
+At the time of writing we are not aware of any open source tools available to parse BITS databases and extract data useful for incident response and forensic investigations.
+To help address this and foster further research, FireEye has decided to release a standalone version of BitsParser.
+This command line utility can process all versions of BITS databases and perform carving to recover deleted job and file information.
+Source code for BitsParser can be found at our GitHub page .
+Note that on Windows 10 the QMGR database files are opened without sharing by the BITS service thus preventing other programs from directly opening them.
+When BitsParser is deployed via the FireEye endpoint agent it can directly parse the local filesystem and raw read files in circumstances where they cannot be directly read.

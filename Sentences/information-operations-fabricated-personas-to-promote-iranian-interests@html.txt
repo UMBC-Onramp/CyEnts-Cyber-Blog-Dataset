@@ -1,0 +1,101 @@
+In May 2019, FireEye Threat Intelligence published a blog post exposing a network of English-language social media accounts that engaged in inauthentic behavior and misrepresentation that we assessed with low confidence was organized in support of Iranian political interests.
+
+Personas in that network impersonated candidates for U.S. House of Representatives seats in 2018 and leveraged fabricated journalist personas to solicit various individuals, including real journalists and politicians, for interviews intended to bolster desired political narratives.
+
+Since the release of that blog post, we have continued to track activity that we believe to be part of that broader operation, reporting our findings to our intelligence customers using the moniker “Distinguished Impersonator.”
+
+Today, Facebook took action against a set of eleven accounts on the Facebook and Instagram platforms that they shared with us and, upon our independent review, we assessed were related to the broader Distinguished Impersonator activity set we’ve been tracking.
+
+We separately identified a larger set of just under 40 related accounts active on Twitter against which Twitter has also taken recent enforcement action.
+
+In this blog post, we provide insights into the recent activity and behavior of some of the personas in the Distinguished Impersonator network, in order to exemplify the tactics information operations actors are employing in their attempts to surreptitiously amplify narratives and shape political attitudes.
+
+Activity Overview Personas in the Distinguished Impersonator network have continued to engage in activity similar to that we previously reported on publicly in May 2019, including social media messaging directed at politicians and media outlets; soliciting prominent individuals including academics, journalists, and activists for “media” interviews; and posting what appear to be videoclips of interviews of unknown provenance conducted with such individuals to social media.
+
+The network has also leveraged authentic media content to promote desired political narratives, including the dissemination of news articles and videoclips from Western mainstream media outlets that happen to align with Iranian interests, and has amplified the commentary of real individuals on social media.
+
+Outside of impersonating prominent individuals such as journalists, other personas in the network have primarily posed as U.S. liberals, amplifying authentic content from other social media users broadly in line with that proclaimed political leaning, as well as material more directly in line with Iranian political interests, such as videoclips of a friendly meeting between U.S. President Trump and Crown Prince of Saudi Arabia
+
+Mohammad Bin Salman accompanied by pro-U.S. Democrat commentary, videoclips of U.S. Democratic presidential candidates discussing Saudi Arabia's role in the conflict in Yemen, and other anti-Saudi, anti-Israeli, and anti-Trump messaging.
+
+Some of this messaging has been directed at the social media accounts of U.S. politicians and media outlets (Figure 1).
+
+Figure 1: Twitter accounts in the Distinguished Impersonator network posting anti-Israeli, anti-Saudi, and anti-Trump content
+
+We observed direct overlap between six of the personas operating on Facebook platforms and those operating on Twitter.
+
+In one example of such overlap, the “Ryan Jensen” persona posted to both Twitter and Instagram a videoclip showing antiwar protests in the U.S. following the killing of Qasem Soleimani, commander of the Islamic Revolutionary Guards Corps’ Quds Force (IRGC-QF) by a U.S. airstrike in Baghdad in January 2020 (Figure 2).
+
+Notably, though the strike motivated some limited activity by personas in the network, the Distinguished Impersonator operation has been active since long before that incident.
+
+Figure 2:
+
+Posts by the “Ryan Jensen” persona on Twitter and Instagram disseminating a videoclip of antiwar protests in the U.S. following the killing of Qasem Soleimani Accounts Engaged in Concerted Replies to Influential Individuals on Twitter, Posed as Journalists and Solicited Prominent Individuals for “Media” Interviews Personas on Twitter that we assess to be a part of the Distinguished Impersonator operation engaged in concerted replies to tweets by influential individuals and organizations, including members of the U.S. Congress and other prominent political figures, journalists, and media outlets.
+
+The personas responded to tweets with specific narratives aligned with Iranian interests, often using identical hashtags.
+
+The personas sometimes also responded with content unrelated to the tweet they were replying to, again with messaging aligned with Iranian interests.
+
+For example, a tweet regarding a NASA mission received replies from personas in the network pertaining to Iran’s seizure of a British oil tanker in July 2019.
+
+Other topics the personas addressed included U.S.-imposed sanctions on Iran and U.S. President Trump’s impeachment (Figure 3).
+
+While it is possible that the personas may have conducted such activity in the hope of eliciting responses from the specific individuals and organizations they were replying to, the multiple instances of personas responding to seemingly random tweets with unrelated political content could also indicate an intent to reach the broader Twitter audiences following those prominent accounts.
+
+Figure 3:
+
+Twitter accounts addressing U.S.-imposed sanctions on Iran (left) and the Trump impeachment (right)
+
+Instagram accounts that we assess to be part of the Distinguished Impersonator operation subsequently highlighted this Twitter activity by posting screen recordings of an unknown individual(s) scrolling through the responses by the personas and authentic Twitter users to prominent figures’ tweets.
+
+The Instagram account @ryanjensen7722, for example, posted a video scrolling through replies to a tweet by U.S. Senator Cory Gardner commenting on “censorship and oppression.”
+
+The video included a reply posted by @EmilyAn1996, a Twitter account we have assessed to be part of the operation, discussing potential evidence surrounding President Trump’s impeachment trial.
+
+Figure 4:
+
+Screenshot of video posted by @ryanjensen7722 on Instagram scrolling through Twitter replies to a tweet by U.S. Senator Cory Gardner We also observed at least two personas posing as journalists working at legitimate U.S. media outlets openly solicit prominent individuals via Twitter, including Western academics, activists, journalists, and political advisors, for interviews (Figure 5).
+
+These individuals included academic figures from organizations such as the Washington Institute for Near East Policy and the Foreign Policy Research Institute, as well as well-known U.S. conservatives opposed to U.S. President Trump and a British MP.
+
+The personas solicited the individuals’ opinions regarding topics relevant to Iran’s political interests, such as Trump’s 2020 presidential campaign, the Trump administration’s relationship with Saudi Arabia, Trump’s “deal of the century,” referring to a peace proposal regarding the Israeli-Palestinian conflict authored by the Trump administration, and a tweet by President Trump regarding former UK Prime Minister Theresa May. Figure 5: The “James Walker” persona openly soliciting interviews from academics and journalists on Twitter Twitter Personas Posted Opinion Polls To Solicit Views on Topics Relevant to Iranian Political Interests Some of the personas on Twitter also posted opinion polls to solicit other users’ views on political topics, possibly for the purpose of helping to build a larger follower base through engagement.
+
+One account, @CavenessJim, posed the question: “Do you believe in Trump’s foreign policies especially what he wants to do for Israel which is called ‘the deal of the century’?”
+
+(The poll provided two options: “Yes, I do.”
+
+and “No, he cares about himself.”
+
+Of the 2,241 votes received, 99% of participants voted for the latter option, though we note that we have no visibility into the authenticity of those “voters”.)
+
+Another account, @AshleyJones524, responded to a tweet by U.S. Senator Lindsey Graham by posting a poll asking if the senator was “Trump’s lapdog,” tagging seven prominent U.S. politicians and one comedian in the post; all 24 respondents to the poll voted in the affirmative.
+
+As with the Instagram accounts’ showcasing of replies to the tweets of prominent individuals, Instagram accounts in the network also highlighted polls posted by the personas on Twitter (Figure 6).
+
+Figure 6: Twitter account @CavenessJim
+
+posts Twitter poll (left); Instagram account @ryanjensen7722 posts video highlighting @CavenessJim's Twitter poll (right)
+
+Videoclips of Interviews with U.S., U.K., and Israeli Individuals Posted on Iran-Based Media Outlet Tehran Times Similar to the personas we reported on in May 2019, some of the more recently active personas posted videoclips on Facebook, Instagram, and Twitter of interviews with U.S., UK, and Israeli individuals including professors, politicians, and activists expressing views on topics aligned with Iranian political interests (Figure 7).
+
+We have thus far been unable to determine the provenance of these interviews, and note that, unlike some of the previous cases we reported on in 2019, the personas in this more recent iteration of activity did not themselves proclaim to have conducted the interviews they promoted on social media.
+
+The videoclips highlighted the interviewees’ views on issues such as U.S. foreign policy in the Middle East and U.S. relations with its political allies.
+
+Notably, we observed that at least some of the videoclips that were posted by the personas to social media have also appeared on the website of the Iranian English-language media outlet Tehran Times , both prior to and following the personas' social media posts.
+
+In other instances, Tehran Times published videoclips that appeared to be different segments of the same interviews that were posted by Distinguished Impersonator personas.
+
+Tehran Times is owned by the Islamic Propagation Organization, an entity that falls under the supervision of the Iranian Supreme Leader Ali Khamenei.
+
+Figure 7: Facebook and Instagram accounts in the network posting videoclips of interviews with an activist and a professor Conclusion The activity we’ve detailed here does not, in our assessment, constitute a new activity set, but rather a continuation of an ongoing operation we believe is being conducted in support of Iranian political interests that we’ve been tracking since last year.
+
+It illustrates that the actors behind this operation continue to explore elaborate methods for leveraging the authentic political commentary of real individuals to furtively promote Iranian political interests online.
+
+The continued impersonation of journalists and the amplification of politically-themed interviews of prominent individuals also provide additional examples of what we have long referred to internally as the “media-IO nexus”, whereby actors engaging in online information operations actively leverage the credibility of the legitimate media environment to mask their activities, whether that be through the use of inauthentic news sites masquerading as legitimate media entities , deceiving legitimate media entities in order to promote desired political narratives , defacing media outlets’ websites to disseminate disinformation, spoofing legitimate media websites, or, as in this case, attempting to solicit commentary likely perceived as expedient to the actors’ political goals by adopting fake media personas.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

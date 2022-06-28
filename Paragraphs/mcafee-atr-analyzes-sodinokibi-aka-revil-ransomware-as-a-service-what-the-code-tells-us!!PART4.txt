@@ -1,0 +1,4 @@
+
+FIGURE 1.1.
+OVERVIEW OF SODINOKIBI’S EXECUTION FLAW Inside the Code Sodinokibi Overview For this article we researched the sample with the following hash (packed): The main goal of this malware, as other ransomware families, is to encrypt your files and then request a payment in return for a decryption tool from the authors or affiliates to decrypt them.
+The malware sample we researched is a 32-bit binary, with an icon in the packed file and without one in the unpacked file.

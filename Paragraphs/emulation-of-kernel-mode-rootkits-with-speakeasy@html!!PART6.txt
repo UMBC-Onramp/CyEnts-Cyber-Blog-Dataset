@@ -1,0 +1,5 @@
+
+We supply the memory tracing flag (“-m”) which will log all memory reads and writes performed by the malware.
+This is useful for detecting things like hooking and direct kernel object manipulation (DKOM).
+Figure 1: Command line used to emulate the malicious driver Speakeasy will then begin emulating the malware’s DriverEntry function.
+The entry point of a driver is responsible for setting up passive callback routines that will service user mode

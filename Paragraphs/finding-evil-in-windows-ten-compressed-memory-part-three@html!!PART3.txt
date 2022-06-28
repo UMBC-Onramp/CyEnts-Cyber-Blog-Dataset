@@ -1,0 +1,6 @@
+
+This final post accompanies my and Dimiter Andonov's BlackHat USA 2019 talk with the series title and seeks to describe the challenges faced in maintaining software that ultimately relies on undocumented structures.
+Here we introduce a solution to reduce the level of effort of analyzing undocumented structures.
+Overview Undocumented structures within the Windows kernel are always subject to change.
+The flexibility granted by not publicizing a structure’s composition can be invaluable to a development team.
+It can allow for the system to grow unencumbered by the need to update helper functions and public documentation.

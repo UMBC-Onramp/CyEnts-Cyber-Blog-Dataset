@@ -1,0 +1,13 @@
+
+After an initial dormant period of up to two weeks, it retrieves and executes commands, called “Jobs”, that include the ability to transfer and execute files, profile the system, and disable system services.
+The backdoor’s behavior and network protocol blend in with legitimate SolarWinds activity, such as by masquerading as the Orion Improvement Program (OIP) protocol and storing reconnaissance results within plugin configuration files.
+The backdoor uses multiple blocklists to identify forensic and anti-virus tools via processes, services, and drivers.
+Unique Capabilities Subdomain DomainName Generation Algorithm (DGA) is performed to vary DNS requests CNAME responses point to the C2 domain for the malware to connect to The IP block of A record responses controls malware behavior DGA encoded machine domain name, used to selectively target victims Command and control traffic masquerades as the legitimate Orion Improvement Program Code hides in plain site by using fake variable names and tying into legitimate components Delivery and Installation Authorized system administrators fetch and install updates to SolarWinds Orion via packages distributed by SolarWinds’s website.
+The update package CORE-2019.4.5220.20574-SolarWinds-Core-v2019.4.5220-Hotfix5.msp (02af7cec58b9a5da1c542b5a32151ba1) contains the SolarWinds.Orion.Core.BusinessLayer.dll described in this report.
+After installation, the Orion software framework executes the .NET program SolarWinds.BusinessLayerHost.exe to load plugins, including SolarWinds.Orion.Core.BusinessLayer.dll.
+This plugin contains many legitimate namespaces, classes, and routines that implement functionality within the Orion framework.
+Hidden in plain sight, the class SolarWinds.
+Orion.
+Core.
+BusinessLayer.
+OrionImprovementBusinessLayer implements an HTTP-based backdoor.

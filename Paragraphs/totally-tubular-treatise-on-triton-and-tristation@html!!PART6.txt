@@ -1,0 +1,7 @@
+
+This compares the TriStation packet value at offset 0 with a value in a corresponding array from TS_cnames.pyc (Figure 2), which is largely used as a “dictionary” for the protocol.
+Figure 2:
+TS_cnames.pyc TS_cst array From this we can infer that offset 0 of the TriStation protocol contains message types.
+This is supported by an additional function, tcm_result, which declares type, size = struct.unpack('<HH', data_received[0:4]), stating that the first two bytes should be handled as integer type and the second two bytes are integer size of the TriStation message.
+This is our first glimpse into what the threat actor(s) understood about the TriStation protocol.
+Since there are only 11 defined message types, it really doesn't matter much if the type is one byte or two because the second byte will always be 0x00.

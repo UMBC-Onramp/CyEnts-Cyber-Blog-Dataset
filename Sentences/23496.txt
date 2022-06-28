@@ -1,0 +1,87 @@
+A recent review of five entry-level mobile phones retailing for about $10–$20 examined their security in detail .
+
+Commonly referred to as “feature phones” or “granny phones” — and often procured for elderly relatives either unwilling or unable to get used to smartphones — such phones can also be “just in case” spares.
+
+Some people also believe they are safer than Android-powered smartphones.
+
+Well, the reviewer refuted that last bit.
+
+He discovered hidden functions in four out of the five phones: Two transmit data at first power up (leaking the new owner’s personal information), and the other two not only leak private data, but can also subscribe the user to paid content by secretly communicating over the Internet with a command server.
+
+Infected granny phones The study author offers information about the methods used to analyze these simple devices’ firmware, the technicalities of which may be interesting to those willing to repeat the same analysis.
+
+However, let’s get straight to the findings.
+
+Out of the five phones, two send the user’s data somewhere the first time they’re powered on.
+
+To whom the data goes — manufacturer, distributor, firmware developer, or somebody else — is not clear.
+
+Neither is it clear how the data may be used.
+
+It could be assumed that such data might be useful to monitor sales or control the distribution of batches of products in different countries.
+
+To be clear, it doesn’t sound very dangerous; and after all, every smartphone transmits some telemetry data.
+
+Remember, however, that all major smartphone manufacturers at least try to anonymize the data they collect, and its destination is usually more or less clear.
+
+In this case, however, nothing is known about who is collecting owners’ sensitive information without their consent.
+
+For example, one of the phones transmits not only its serial number, country of activation, firmware info, and language, but also the base station identifier, handy for establishing the user’s approximate location.
+
+Moreover, the server collecting the data has no protection whatsoever, so the information is basically up for grabs.
+
+One more subtlety: The transmission takes place over the Internet.
+
+To be clear, a feature phone user may not even be aware that the device can go online.
+
+So, apart from anything else, the covert actions may result in surprise mobile traffic charges.
+
+Another phone from the review group, apart from leaking user data, was programmed to steal money from its owner.
+
+According to firmware analysis, the phone contacted the command server over the Internet and executed its instructions, including sending hidden text messages to paid numbers.
+
+The next phone model had even more advanced malicious functionality.
+
+According to one actual phone user, a total stranger used the phone number to sign up for Telegram.
+
+How could that have happened?
+
+Signing up for almost any messaging app means providing a phone number to which a confirmation code is sent by SMS.
+
+It seems, however, the phone can intercept this message and forward the confirmation code to a C&C server, all the while concealing the activity from the owner.
+
+Whereas the previous examples involved little more than unforeseen expense, this scenario threatens real legal problems, for example should the account be used for any criminal activities.
+
+What should I do now that I know push-button phones are unsafe?
+
+The difference between modern low-end phones and their counterparts of 10 years ago is that now, even dirt-cheap circuitry can include Internet access.
+
+Even with an otherwise clean device, this may prove an unpleasant discovery: a phone chosen specifically for its inability to connect to the Internet goes online anyway.
+
+Earlier, the same researcher analyzed another push-button phone .
+
+Although he found no malicious functionality, the device had a menu of paid subscriptions for horoscopes and demo games, the full versions of which the user could unlock — and pay for — with a text.
+
+In other words, your elderly relative or child could press the wrong button on a phone purchased specifically for its lack of Internet and apps and end up paying for the mistake.
+
+What makes this “infected” mobiles story important is that it’s often the manufacturer or a dealer back in China adding the “extra features,” so local distributors may not even be aware of the problem.
+
+Another complicating factor is that push-button phones come in small batches in a multitude of different models, and it is hard to tell a normal phone from a compromised one, unless one can thoroughly investigate firmware.
+
+Clearly, not all distributors can afford adequate firmware control.
+
+It might be easier just to buy a smartphone.
+
+Of course, that depends on budget, and unfortunately, cheaper smartphones may have similar malware issues .
+
+But if you can afford one — even a very simple one — from a major manufacturer, it could prove a safer choice, especially if your reason for choosing a push-button device is that you’re looking for something simple, reliable, and free of hidden functions.
+
+You can mitigate Android risks with a reliable antivirus app ; feature phones offer no such control.
+
+As for elderly relatives, if they’re used to answering calls by opening their flip phone, adapting to a touch screen may prove next to impossible, but upgrading is worth a try in our opinion.
+
+Plenty of older folks have switched to smartphones easily enough and can now happily experience the wide world of mobile computing.
+
+
+
+

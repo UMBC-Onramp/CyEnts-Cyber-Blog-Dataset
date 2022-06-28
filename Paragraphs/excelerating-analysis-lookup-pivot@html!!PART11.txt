@@ -1,0 +1,2 @@
+
+Instead, we will apply filters to the top row of our O365 data set by selecting the “Filter” option under “Sort & Filter” in the “Home” ribbon: Figure 6: Filter option To reference the threat intelligence data sheet using XLOOKUP, we will use the following formula: Figure 7: XLOOKUP function for enrichment There are three parts to this XLOOKUP formula: Value to lookup: This dictates what cell value we are going to look up more information for.

@@ -1,0 +1,5 @@
+
+the call fails with STATUS_INVALID_HANDLE .
+This bug was introduced in an unknown Windows 10 version.
+To successfully use these APIs OpenProcess must be used to retrieve a real, positive valued handle.
+I will not be covering the internals of how to inline hook the 64-bit syscall stub since this post is already very long.

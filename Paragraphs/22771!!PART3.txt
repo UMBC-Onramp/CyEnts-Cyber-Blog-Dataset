@@ -1,0 +1,9 @@
+
+Since 2019, experts have regularly observed targeted campaigns from a series of so-called big-game-hunting ransomware.
+The malware operators’ own sites show attack statistics.
+We used this data to compile a ranking of the most active cybercriminal groups.
+1.
+Maze (aka ChaCha ransomware)
+Maze ransomware, first spotted in 2019 , quickly rose to the top of its malware class.
+Of the total number of victims, this ransomware accounted for more than a third of attacks.
+The group behind Maze was one of the first to steal data before encryption .

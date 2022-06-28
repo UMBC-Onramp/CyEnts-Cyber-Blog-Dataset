@@ -1,0 +1,6 @@
+
+Fast and Relentless APT41 quickly identifies and compromises intermediary systems that provide access to otherwise segmented parts of an organization’s network.
+In one case, the group compromised hundreds of systems across multiple network segments and several geographic regions in as little as two weeks.
+The group is also highly agile and persistent, responding quickly to changes in victim environments and incident responder activity.
+Hours after a victimized organization made changes to thwart APT41, for example, the group compiled a new version of a backdoor using a freshly registered command-and-control domain and compromised several systems across multiple geographic regions.
+In a different instance, APT41 sent spear-phishing emails to multiple HR employees three days after an intrusion had been remediated and systems were brought back online.

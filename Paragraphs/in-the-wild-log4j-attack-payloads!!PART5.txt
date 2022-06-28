@@ -1,0 +1,9 @@
+
+Exploit.class downloads Muhstik bot when in Linux and XMRig when on Windows Here are the corresponding sha256 hashes of the downloaded files we have seen: c39eb055c5f71ebfd6881ff04e876f49495c0be5560687586fc47bf5faee0c84
+  pty1 33dd6c0af99455a0ca3908c0117e16a513b39fabbf9c52ba24c7b09226ad8626
+  pty2 4c97321bcd291d2ca82c68b02cde465371083dace28502b7eb3a88558d7e190c  pty3 b0a8b2259c00d563aa387d7e1a1f1527405da19bf4741053f5822071699795e2  pty4 2752deb9f9f9602ca0c7bd41c3171d1560b929b6a4221ab07b0bf872d042f7e7  pty5 A290b6f956ecdb3d2d2019088f0b01a93a9f680c82a4680c0fb87eb5e3e64897
+  log C70e6f8edfca4be3ca0dc2cfac8fddd14804b7e1e3c496214d09c6798b4620c5  s.cmd s.cmd code that installs XMRig
+Kinsing 
+Malware First sighting exploiting CVE-2021-44228: December 11, 2021
+The attacker in this case seems to have used the JNDIExploit tool, given the presence of “Basic/Command/Base64” in the string.
+The base64 encoded string is a command to download a shell script lh.sh (3ba2c4ae64be8d03747dffd5e4dc98730a54fdbb4aad50516428dc2507fdbfcf).

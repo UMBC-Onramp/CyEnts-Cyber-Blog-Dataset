@@ -1,0 +1,5 @@
+
+This makes intuitive sense given the more collaborative environment a “legitimate” software development process might require.
+There are, of course, many exceptions and this is what makes the problem tricky.
+Another strong signal we found, at least in our dataset, is that when the word “Desktop” was in a non-English language and particularly in a different alphabet, the likelihood of that PDB path being tied to a malicious file was very high (Figure 2).
+While potentially useful, this can be indicative of geographical bias in our dataset, and further research would need to be done to see if this type of signature would generalize.

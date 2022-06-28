@@ -1,0 +1,9 @@
+
+To see how well this model works, we tracked some Bitcoin wallets used by one of the older Ranion samples for ransom payment.
+Two moderate payments, totaling about USD $153 and $460 worth of Bitcoin, were made to the wallet within a week of the Ranion sample being made available.
+But a Bitcoin wallet used by Ranion has recorded transactions from two other Bitcoin wallets.
+About $4.7 million USD worth of Bitcoin was transferred to one of those wallets from over 300 different Bitcoin wallets.
+Dropper Add-On Another notable characteristic of Ranion is that it provides an opportunity for buyers to purchase a dropper add-on.
+At first glance, a “dropper” may sound like a malware add-on that Ranion affiliates can use to deliver ransomware, but it’s not.
+According to an FAQ posted on the purchase site, the add-on dropper has the following description: “ RANION can download a program of yours (exe file) and execute it after encryption process ended. ”
+For example, an attacker might use this add-on to silently download and install a remote access tool “RAT” on a victim’s machine infected with Ranion.

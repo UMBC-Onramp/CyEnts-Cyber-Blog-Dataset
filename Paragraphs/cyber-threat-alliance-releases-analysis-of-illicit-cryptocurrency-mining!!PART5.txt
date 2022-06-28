@@ -1,0 +1,6 @@
+
+XMRig is a legitimate tool for mining Monero, yet is also frequently used by malicious actors for illicit cryptomining.
+The most common browser-based miner is Coinhive.
+Used legitimately, it offers an alternative to ad revenue by monetizing system resources.
+However, it has been widely used without informing users.
+On occasion the owner of the service is unaware of the mining code; this was the case with a recent attack against both Facebook Messenger and Starbucks Wi-Fi.

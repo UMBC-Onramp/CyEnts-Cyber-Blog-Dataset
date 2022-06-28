@@ -1,0 +1,5 @@
+
+(See Mitre ATT&CK technique – Spearphishing Link .)
+As of the time of writing this blog, these emails had not been flagged as phishing or suspicious by any of the VirusTotal engines.
+The IP address “192.145.239.18” is used to send all the emails in this campaign.
+This IP address is also associated with Snip3 Crypter, an aviation-themed campaign seen in April and May of 2021.

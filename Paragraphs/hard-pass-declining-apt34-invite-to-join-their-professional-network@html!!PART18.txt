@@ -1,0 +1,9 @@
+
+This functionality is not in the original version of the “Windows Vault Password Dumper”.
+Figure 7 shows the SQL format of the fsociety.dat file.
+Figure 7: SQL format of the VALUEVAULT fsociety.dat SQLite database VALUEVAULT’s function names are not obfuscated and are directly reviewable in strings analysis.
+Other developer environment variables were directly available within the binary as shown below.
+VALUEVAULT does not possess the ability to perform network communication, meaning the operators would need to manually retrieve the captured output of the tool.
+C:/Users/<redacted>/Desktop/projects/go/src/browsers-password-cracker/new_edge.go C:/Users/<redacted>/Desktop/projects/go/src/browsers-password-cracker/mozila.go C:/Users/<redacted>/Desktop/projects/go/src/browsers-password-cracker/main.go C:/Users/<redacted>/Desktop/projects/go/src/browsers-password-cracker/ie.go C:/Users/<redacted>/Desktop/projects/go/src/browsers-password-cracker/Chrome Password Recovery.go Figure 8: Golang files extracted during execution of VALUEVAULT LONGWATCH FireEye identified the binary WinNTProgram.exe (MD5:021a0f57fe09116a43c27e5133a57a0a) hosted on the malicious domain offlineearthquake[.]com .
+FireEye identifies this malware as LONGWATCH.
+The primary function of LONGWATCH is a keylogger that outputs keystrokes to a log.txt file in the Windows temp folder.

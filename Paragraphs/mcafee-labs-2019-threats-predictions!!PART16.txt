@@ -1,0 +1,8 @@
+
+Such implementation is game changing in the threat landscape.
+We predict it will soon be found in the wild.
+Synergistic Threats Will Multiply, Requiring Combined Responses This year we have seen cyber threats adapt and pivot faster than ever.
+We have seen ransomware evolving to be more effective or operate as a smoke screen.
+We have seen cryptojacking soar, as it provides a better, and safer, return on investment than ransomware.
+We can still see phishing going strong and finding new vulnerabilities to exploit.
+We also noticed fileless and “living off the land” threats are more slippery and evasive than ever, and we have even seen the incubation of steganography malware in the Pyeongchang Olympics campaign .

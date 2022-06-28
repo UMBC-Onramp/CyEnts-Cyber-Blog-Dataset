@@ -1,0 +1,7 @@
+
+Mandiant has observed evidence of UNC2447 affiliated actors previously using RAGNARLOCKER ransomware.
+Based on technical and temporal observations of HELLOKITTY and FIVEHANDS deployments, Mandiant suspects that HELLOKITTY may have been used by an overall affiliate program from May 2020 through December 2020, and FIVEHANDS since approximately January 2021.
+Background In November 2020, Mandiant created UNC2447, an uncategorized group observed using the novel WARPRISM PowerShell dropper to install BEACON at two Mandiant Managed Defense clients.
+Mandiant Managed Defence quicky neutralized these intrusions and did not observe attempts to deploy ransomware.
+In January and February 2021, Mandiant Consulting observed a novel rewrite of DEATHRANSOM—dubbed FIVEHANDS—along with SOMBRAT at multiple victims that were extorted.
+During one of the ransomware intrusions, the same WARPRISM and BEACON samples previously clustered under UNC2447 were observed.

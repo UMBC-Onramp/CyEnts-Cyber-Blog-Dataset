@@ -1,0 +1,4 @@
+
+So, it may be either a researcher who knows IDAPro very well or is an advanced developer (and the obfuscated code in Maze is very well done) or perhaps it is a developer that has another job in normal life besides the creation of malware?
+Of course, these are just possibilities, not facts.
+The malware developer achieved their goal with this interaction as their target audience saw the answer and talked about their malware, as noted in the final line of their response “ …but you need to know that we love you researchers without you our job also would be fuc

@@ -1,0 +1,6 @@
+
+As a result, the blocklisted service is disabled on the next power cycle .
+This means the presence of a blocklisted service on a compromised host does not make a system immune to SUNBURST.
+After the registry modification is made, SUNBURST updates the ReportWatcherPostpone configuration value to reflect the service it disabled.
+Then, the backdoor pauses and retries the process and service blocklist checks at a later time.
+Subsequent service blocklist checks skip services already present in the ReportWatcherPostpone configuration key.

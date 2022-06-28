@@ -1,0 +1,2 @@
+Mandiant Threat Intelligence has tied together several information operations that we assess with moderate confidence comprise part of a broader influence campaign—ongoing since at least March 2017—aligned with Russian security interests.
+The operations have primarily targeted audiences in Lithuania, Latvia, and Poland with narratives critical of the North Atlantic Treaty Organization’s (NATO) presence in Eastern Europe, occasionally leveraging other themes such as anti-U.S. and COVID-19-related narratives as part of this broader anti-NATO agenda.

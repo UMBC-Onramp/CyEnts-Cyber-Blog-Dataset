@@ -1,0 +1,5 @@
+FireEye has discovered additional details about the SUNBURST backdoor since our initial publication on Dec. 13, 2020.
+Before diving into the technical depth of this malware, we recommend readers familiarize themselves with our blog post about the SolarWinds supply chain compromise , which revealed a global intrusion campaign by a sophisticated threat actor we are currently tracking as UNC2452.
+SUNBURST is a trojanized version of a digitally signed SolarWinds Orion plugin called SolarWinds.Orion.Core.BusinessLayer.dll .
+The plugin contains a backdoor that communicates via HTTP to third party servers.
+After an initial dormant period of up to two weeks, SUNBURST may retrieve and execute commands that instruct the backdoor to transfer files, execute files, profile the system, reboot the system, and disable system services.

@@ -1,0 +1,12 @@
+
+Web shells were deployed to an internet-facing system.
+The system level access granted by these web shells was used to enable initial privilege escalation and the execution of a backdoor.
+Intrusion operators regularly obtained and maintained access to multiple domain and local system accounts with varying permissions that were used throughout their operations.
+An actor created a new domain account and added it to the domain administrators group.
+Escalate Privileges Although Mandiant has observed multiple cases where MAZE intrusion operators employed Mimikatz to collect credentials to enable privilege escalation, these efforts have also been bolstered in multiple cases via use of Bloodhound, and more manual searches for files containing credentials.
+Less than two weeks after initial access, the actor downloaded and interacted with an archive named mimi.zip , which contained files corresponding to the credential harvesting tool Mimikatz.
+In the following days the same mimi.zip archive was identified on two domain controllers in the impacted environment.
+The actor attempted to find files with the word “password” within the environment.
+Additionally, several archive files were also created with file names suggestive of credential harvesting activity.
+The actor attempted to identify hosts running the KeePass password safe software.
+Across multiple incidents, the Bloodhound utility was used, presumably to assess possible methods of obtaining credentials with domain administrator privileges.

@@ -1,0 +1,7 @@
+
+Such attacks began last fall , but of late they’ve become particularly high-profile.
+Recently, online magazine Motherboard connected with a cybercriminal group and learned how they exploit Instagram’s policy to make money through ban-as-a-service offerings .
+The group’s favored tactic is the fake impersonation complaint, which involves verified accounts, identifiable by the blue check next to the username.
+The attackers use verified accounts to create a full copy of the victim’s profile, right down to the avatar and description.
+Then they file a complaint against the original, accusing the owner of impersonation.
+If the victim’s account is not verified, the support service bans the victim.

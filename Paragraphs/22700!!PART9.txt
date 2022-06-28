@@ -1,0 +1,9 @@
+
+The cybersecurity prophets presented their thoughts at the IEEE Security and Privacy conference in 1996, but they were not well received.
+Then, 2004 saw the publication of Malicious Cryptography:
+Exposing Cryptovirology , in which Young and Yung systematized the results of their research.
+2007–2010:
+The golden years of blockers While cryptomalware was biding its time, the world saw the rise of another kind of ransomware: blockers.
+This rather primitive sort of malware interfered with the normal functioning of the operating system by adding itself to Windows’ startup routine.
+In addition, to foil deletion, many types blocked the registry editor and task manager.
+This kind of malware used diverse ways to keep victims from using their computers, ranging from a window that wouldn’t close to a change of desktop wallpaper.

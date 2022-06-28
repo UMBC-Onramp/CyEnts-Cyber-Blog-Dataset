@@ -1,0 +1,4 @@
+
+However, this ransom service provides enough basic features for new threat actors to use it as a steppingstone for working with more sophisticated malicious services.
+Ranion is only “educational” in that it helps train wannabe cyber criminals inflict the same damage as other ransomware variants that have simply adopted more polished and sophisticated delivery and propagation mechanisms.
+Fortinet Protections Fortinet customers are already protected from this malware by FortiGuard’s AntiVirus and FortiEDR services, as follows: MSIL/Kryptik.

@@ -1,0 +1,7 @@
+
+Figure 2:
+Post-compromise tactics This section will detail the notable techniques and outline potential opportunities for detection.
+TEARDROP and BEACON Malware Used Multiple SUNBURST samples have been recovered, delivering different payloads.
+In at least one instance the attackers deployed a previously unseen memory-only dropper we’ve dubbed TEARDROP to deploy Cobalt Strike BEACON.
+TEARDROP is a memory only dropper that runs as a service, spawns a thread and reads from the file “gracious_truth.jpg”, which likely has a fake JPG header.
+Next it checks that HKU\\SOFTWARE\\Microsoft\\CTF exists, decodes an embedded payload using a custom rolling XOR algorithm and manually loads into memory an embedded payload using a custom PE-like file format.

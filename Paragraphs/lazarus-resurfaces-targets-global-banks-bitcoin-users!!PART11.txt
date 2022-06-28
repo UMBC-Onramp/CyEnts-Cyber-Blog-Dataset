@@ -1,0 +1,6 @@
+
+Hardcoded DLL export name “CoreDn” in malware All the malicious activities described below are performed by the DLL unless specified otherwise.
+Data Reconnaissance The implant has the capability of gathering data from the victim’s system.
+The following information will be gathered and sent to the command and control server.
+Computer name and currently logged on user’s name, stored in the format <ComputerName> \\ <Username>
+Malware obtaining the computer name and user name List of all processes currently running on the system arranged in format <Process Name>\\r\\n <Process Name>\\r\\n <Process Name>\\r\\n <Process Name>\\r\\n Malware collecting process information from endpoint

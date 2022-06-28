@@ -1,0 +1,8 @@
+
+The threat actors sent a spear-phishing email with an attachment titled, “Malaysian Airlines MH370.doc” (MD5: 9c43a26fe4538a373b7f5921055ddeae).
+Although threat actors often include some sort of “decoy content” upon successful exploitation (that is, a document representing what the recipient expected to open), in this case, the user is simply shown a blank document.
+The attachment dropped a Poison Ivy variant into the path C:\\DOCUME~1\\admin\\LOCALS~1\\Temp\\kav.exe (MD5: 9dbe491b7d614251e75fb19e8b1b0d0d), which, in turn, beaconed outbound to www.verizon.proxydns[.]com.
+This Poison Ivy variant was configured with the connection password “wwwst@Admin.”
+The APT group we refer to as Admin@338 has previously used Poison Ivy implants with this same password.
+We document the Admin@338 group’s activities in our Poison Ivy: Assessing Damage and Extracting Intelligence paper.
+Further, the domain www.verizon.proxydns[.]com previously resolved to the following IP addresses that have also been used by the Admin@338 group: IP Address First Seen Last Seen 103.31.241.110 103.31.241.110 2013-08-27 2013-08-27 2013-08-28 2013-08-28 174.139.242.19 174.139.242.19 2013-08-28 2013-08-28 2013-08-31 2013-08-31 58.64.153.157 58.64.153.157 2013-09-03 2013-09-03 2014-03-07 2014-03-07 59.188.0.197 59.188.0.197 2014-03-07 2014-03-07 2014-03-19 2014-03-19 A second targeted attack attributed to the same Admin@338 group was sent to a prominent U.S.-based think tank on March 14, 2014.

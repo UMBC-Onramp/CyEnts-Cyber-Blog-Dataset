@@ -1,0 +1,7 @@
+
+Decoding and writing the CAB file to %temp%.
+The decoded CAB file in the Visual Basic memory buffer.
+The CAB file contains the following files and functions: dll: A malicious DLL used to launch batch files (used with cliconfg.exe for UAC bypass).
+The DLL contains the following PDB path: D:\\Task\\MiMul\\NTWDBLIB\\Release\\NTWDBLIB.pdb.
+bat:
+A batch file to set up the service COMSysApp, for an x64 system bat: A batch file to set up the service COMSysApp, for an x86 system ini: A data file with Base64-encoded data for connecting to an FTP server.

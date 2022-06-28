@@ -1,0 +1,5 @@
+
+The only pure Python ESE database implementation we identified was part of the Impacket network toolset.
+Although the source code could perform basic database enumeration, it lacked key features, including the ability to process long values.
+Since the QMGR database includes entries large enough to require long values, modification of the Impacket implementation was required.
+We adapted the Impacket ESE database parsing code to make it more robust and support all features necessary for parsing QMGR databases.

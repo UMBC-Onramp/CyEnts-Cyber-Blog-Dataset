@@ -1,0 +1,9 @@
+
+The Techniques Meltdown and Spectre are new techniques that build upon previous work, such as “KASLR” and other papers that discuss practical side-channel attacks.
+The current disclosures build upon such side-channel attacks through the innovative use of speculative execution.
+Speculative execution has been a feature of processors for at least a decade.
+Branch speculation is built on the Tomasulo algorithm .
+In essence, when a branch in execution depends upon a runtime condition, modern processors make a “guess” to potentially save time.
+This speculatively executed branch proceeds by employing a guess of the value of the condition upon which the branch must depend.
+That guess is typically based upon the last step of the same branch’s previous execution.
+The conditional value is cached for reuse in case that particular branch is taken again.

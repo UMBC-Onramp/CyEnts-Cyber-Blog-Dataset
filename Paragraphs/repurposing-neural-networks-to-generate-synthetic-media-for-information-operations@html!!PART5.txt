@@ -1,0 +1,5 @@
+
+This process of training the model further is referred to as fine-tuning , which typically requires less resources compared to pre-training from scratch.
+You can think of this in more relatable terms—if you’re a professional tennis player, you don’t need to completely relearn how to swing a racket in order to excel at badminton.
+In practice though, the benefits of transfer learning are only\nrealized when people share their pre-trained models.
+As illustrated by\nFigure 1, it turns out that it’s commonplace for well-resourced\nindustry and academic researchers to release their model checkpoints\nwhen their state of the art (SOTA) work gets accepted into a top-tier\nconference.

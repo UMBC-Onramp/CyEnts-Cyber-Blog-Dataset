@@ -1,0 +1,7 @@
+
+As noted by Ars Technica , however, MITM attacks are now evolving to target supposedly secure HTTPS protected websites.
+Known as cross-protocol attacks, these efforts leverage the function of transport layer security protocols.
+With them, they can protect the integrity of TCP connections rather than the server itself.
+This makes it possible for attackers to redirect HTTPS traffic to a substitute file transfer protocol server.
+From there, that could empower cross-site scripting or cookie-stealing attacks.
+Standard MITM attacks can often be prevented with robust VPN solutions.

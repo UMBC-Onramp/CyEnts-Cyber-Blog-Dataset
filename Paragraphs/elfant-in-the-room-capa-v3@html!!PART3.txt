@@ -1,0 +1,7 @@
+
+In addition to the code updates, Intezer proposed 36 capa rules to identify various capabilities in ELF files, such as reconnaissance, persistence, and host interaction techniques.
+Please read Intezer’s blog post for more details.
+New Features capa Can Recognize As we taught capa to recognize ELF files, we also wanted rule authors to tune their rules to find behaviors specific to different operating systems (OS), CPU architectures, and file formats.
+For example, the APIs exposed by Windows are very different from those found on Linux systems; therefore, rules should clearly designate which pattern to use on Windows versus Linux.
+Based on discussions and feedback collected from users and contributors, we've extended capa’s rule format to describe OSes, CPU architectures, and file formats.
+The rule shown in Figure 2 uses os features to distinguish techniques used to get networking interface information on Windows and Linux.

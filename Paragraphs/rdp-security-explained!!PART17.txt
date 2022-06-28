@@ -1,0 +1,9 @@
+
+If all administrators do not need remote access you should consider removing the Administrator account from the RDP access group.
+You can then add the specific users which require access to the “Remote Desktop Users” group.
+See here for more information on managing users in your RDS collection.
+Minimize the Number of Local Administrator Accounts Local administrator accounts provide an attack vector for attackers who gain access to a system.
+Credentials can be cracked offline and more accounts means more likelihood of a successful crack.
+Therefore, you should aim for a maximum of one local administrator account which is secured appropriately.
+Ensure that Local Administrator Accounts are Unique If the local administrator accounts match those assigned to their counterparts on other systems within the server’s internal network, the attacker can potentially re-use credentials to move laterally.
+This issue occurs quite frequently, so Microsoft provided Local Administrator Password Solution (LAPS) as a means to avoid this scenario across the organization with central management of unique local administrator credentials.

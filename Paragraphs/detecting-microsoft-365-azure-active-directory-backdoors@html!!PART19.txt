@@ -1,0 +1,8 @@
+
+The Authentication Agent and IP should match your infrastructure (Figure 19).
+Log in to https://portal.azure.com
+Select Azure AD Connect > Pass-through Authentication Figure 19:
+Azure Active Directory Pass-through Authentication agent status Monitor and alert for \"Directory Administration Activity\" in Office 365 Security & Compliance Center’s unified audit log.
+When an attacker is able to create a domain federation within a compromised cloud tenant, and link this to attacker-owned infrastructure, this will generate activity in the log (Figure 21).
+https://Protections.office.com/unifiedauitlog >
+Audit Log Search Select Directory Administration Activates category to select all activities Create New Alert Policy (Figure 20)

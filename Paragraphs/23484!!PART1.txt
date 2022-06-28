@@ -1,0 +1,5 @@
+At Kaspersky’s recent Security Analyst Summit , our experts presented a detailed report on FinSpy (aka FinFisher) spyware and its distribution methods, including some previously unknown ones.
+You can read more about their findings in Securelist’s post .
+In this article, meanwhile, we explore what kind of malware FinSpy is and how you can protect yourself from it.
+What is FinSpy (FinFisher)?
+A commercial spyware program used by law enforcement and government agencies worldwide, FinSpy first lit up researchers’ radar in 2011, when documents related to it appeared on WikiLeaks.

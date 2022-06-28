@@ -1,0 +1,7 @@
+
+Network Connections The rootkit is capable of hiding TCP connections from tools such as netstat.
+Much of the code for this part seems to be copied from an open-source project .
+The rootkit attaches to nsiproxy.sys ’s device stack and intercepts IOCTLs of type IOCTL_NSI_GETALLPARAM ( 0x12000B ) that are sent to it.
+This IOCTL is used to retrieve information about the active network connections on the system.
+When it is intercepted, the driver replaces the IoCompletion routine with a function that filters the results to hide its own network connections.
+IOCTL_NSI_GETALLPARAM returns the information about network connections in an NSI_PARAM structure.

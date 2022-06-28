@@ -1,0 +1,4 @@
+
+In our earlier blog we discussed that Sodinokibi generates a JSON config file for each sample containing certain values such as a PID number and a value labeled sub.
+So, we decided to use our GandCrab affiliate methodology on the Sodinokibi config files we were able to collect.
+With GandCrab we had to write our own tool to pull the hardcoded indicators but, with Sodinokibi, we were lucky enough that Carbon Black had developed a tool that did much of the heavy lifting for us.

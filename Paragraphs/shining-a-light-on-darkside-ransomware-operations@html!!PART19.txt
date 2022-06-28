@@ -1,0 +1,5 @@
+
+More recent UNC2465 emails have used Dropbox links with a ZIP archive containing malicious LNK files that, when executed, would ultimately lead to SMOKEDHAM being downloaded onto the system.
+UNC2465 has used Advanced IP Scanner, BLOODHOUND, and RDP for internal reconnaissance and lateral movement activities within victim environments.
+The threat actor has used Mimikatz for credential harvesting to escalate privileges in the victim network.
+UNC2465 also uses the publicly available NGROK utility to bypass firewalls and expose remote desktop service ports, like RDP and WinRM, to the open internet.

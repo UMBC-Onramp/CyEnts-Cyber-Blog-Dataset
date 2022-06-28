@@ -1,0 +1,199 @@
+FireEye recently analyzed the capabilities of a variant of Havex (referred to by FireEye as “Fertger” or “PEACEPIPE”), the first publicized malware reported to actively scan OPC servers used for controlling SCADA (Supervisory Control and Data Acquisition) devices in critical infrastructure (e.g., water and electric utilities), energy, and manufacturing sectors.
+
+While Havex itself is a somewhat simple PHP Remote Access Trojan (RAT) that has been analyzed by other sources, none of these have covered the scanning functionality that could impact SCADA devices and other industrial control systems (ICS) .
+
+Specifically, this Havex variant targets servers involved in OPC (Object linking and embedding for Process Control) communication, a client/server technology widely used in process control systems (for example, to control water pumps, turbines, tanks, etc.).
+
+Note: ICS is a general term that encompasses SCADA (Supervisory Control and Data Acquisition) systems, DCS (Distributed Control Systems), and other control system environments.
+
+The term SCADA is well-known to wider audiences, and throughout this article, ICS and SCADA will be used interchangeably.
+
+Threat actors have leveraged Havex in attacks across the energy sector for over a year, but the full extent of industries and ICS systems affected by Havex is unknown.
+
+We decided to examine the OPC scanning component of Havex more closely, to better understand what happens when it’s executed and the possible implications.
+
+OPC Testing Environment To conduct a true test of the Havex variant’s functionality, we constructed an OPC server test environment that fully replicates a typical OPC server setup (Figure 1 [3] ).
+
+As shown, ICS or SCADA systems involve OPC client software that interacts directly with an OPC server, which works in tandem with the PLC (Programmable Logic Controller) to control industrial hardware (such as a water pump, turbine, or tank).
+
+FireEye replicated both the hardware and software the OPC server setup (the components that appear within the dashed line on the right side of Figure 1).
+
+Figure 1: Topology of typical OPC server setup The components of our test environment are robust and comprehensive to the point that our system could be deployed in an environment to control actual SCADA devices.
+
+We utilized an Arduino Uno [1] as the primary hardware platform, acting as the OPC server.
+
+The Arduino Uno is an ideal platform for developing an ICS test environment because of the low power requirements, a large number of libraries to make programming the microcontroller easier, serial communication over USB, and cheap cost.
+
+We leveraged the OPC Server and libraries from St4makers [2] (as shown in Figure 2).
+
+This software is available for free to SCADA engineers to allow them to develop software to communicate information to and from SCADA devices.
+
+Figure 2: OPC Server Setup Using the OPC Server libraries allowed us to make the Arduino Uno act as a true, functioning OPC SCADA device (Figure 3).
+
+Figure 3:
+
+Matrikon OPC Explorer showing Arduino OPC Server We also used Matrikon’s OPC Explorer [1] , which enables browsing between the Arduino OPC server and the Matrikon embedded simulation OPC server.
+
+In addition, the Explorer can be used to add certain data points to the SCADA device – in this case, the Arduino device.
+
+Figure 4:
+
+Tags identified for OPC server In the OPC testing environment, we created tags in order to simulate a true OPC server functioning.
+
+Tags, in relation to ICS devices, are single data points.
+
+For example: temperature, vibration, or fill level.
+
+Tags represent a single value monitored or controlled by the system at a single point in time.
+
+With our test environment complete, we executed the malicious Havex “.dll\" file and analyzed how Havex’s OPC scanning module might affect OPC servers it comes in contact with.
+
+Analysis The particular Havex sample we looked at was a file named PE.dll (6bfc42f7cb1364ef0bfd749776ac6d38).
+
+When looking into the scanning functionality of the particular Havex sample, it directly scans for OPC servers, both on the server the sample was submitted on, and laterally, across the entire network.
+
+The scanning process starts when the Havex downloader calls the runDll export function.
+
+  
+
+The OPC scanner module identifies potential OPC servers by using the Windows networking (WNet) functions.
+
+  Through recursive calls to WNetOpenEnum and WNetEnumResources, the scanner builds a list of all servers that are globally accessible through Windows networking.
+
+  
+
+The list of servers is then checked to determine if any of them host an interface to the Component Object Models (COM) listed below:
+
+Figure 5: Relevant COM objects Once OPC servers are identified, the following CLSIDs are used to determine the capabilities of the OPC server: Figure 6: CLSIDs used to determine capabilities of the OPC server When executing PE.dll, all of the OPC server data output is first saved as %TEMP%\\[random].tmp.dat.
+
+The results of a capability scan of an OPC server is stored in %TEMP%\\OPCServer[random].txt.
+
+Files are not encrypted or deleted once the scanning process is complete.
+
+Once the scanning completes, the log is deleted and the contents are encrypted and stored into a file named %TEMP%\\[random].tmp.yls.
+
+  
+
+The encryption process uses an RSA public key obtained from the PE resource TYU.
+
+  
+
+The RSA key is used to protect a randomly generated 168-bit 3DES key that is used to encrypt the contents of the log.
+
+The TYU resource is BZip2 compressed and XORed with the string “1312312”.
+
+  A decoded configuration for 6BFC42F7CB1364EF0BFD749776AC6D38 is included in the figure below: Figure 7:
+
+Sample decoded TYU resource The 4409de445240923e05c5fa6fb4204 value is believed to be an RSA key identifier.
+
+The AASp1… value is the Base64 encoded RSA key.
+
+A sample encrypted log file (%TEMP%\\[random].tmp.yls) is below.
+
+00000000  32 39 0a 66 00 66 00 30  00 30 00 66 00 66 00 30
+
+29.f.f.0.0.f.f.000000010  00 30 00 66 00 66 00 30  00 30 00 66 00 66 00 30 .0.f.f.0.0.f.f.000000020  00 30 00 66 00 66 00 30  00 30 00 66 00 66 00 30 .0.f.f.0.0.f.f.000000030
+
+  00 30 00 66 00 66 00 30  00 30 00 66 00 37 39 36 .0.f.f.0.0.f.79600000040  0a 31 32 38 0a 96 26 cc  34 93 a5 4a 09 09 17 d3 .128..
+
+&.4..
+
+J....00000050  e0 bb 15 90 e8 5d cb 01  c0 33 c1 a4 41 72 5f a5 .....]...3..
+
+Ar_.00000060  13 43 69 62 cf a3 80 e3  6f ce 2f 95 d1 38 0f f2 .Cib....
+
+o./..8..00000070
+
+  56 b1 f9 5e 1d e1 43 92  61 f8 60 1d 06 04 ad f9 V..^..
+
+C.a.
+
+`.....00000080  66 98 1f eb e9 4c d3 cb  ee 4a 39 75 31 54 b8 02 f....
+
+L...J9u1T..00000090
+
+  b5 b6
+
+4a 3c e3 77 26 6d  93 b9 66 45 4a 44 f7 a2 ..J<.w&m..fEJD..
+
+000000A0  08 6a 22 89 b7 d3 72 d4  1f 8d b6 80 2b d2 99 5d .j\"...
+
+r.....
+
++..]000000B0
+
+  61 87 c1 0c 47 27 6a 61  fc c5 ee 41 a5 ae 89 c3 a...G'ja...
+
+A....000000C0  9e 00 54 b9 46 b8 88 72  94 a3 95 c8 8e 5d fe 23 ..
+
+T.F..r.....].#000000D0
+
+  2d fb 48 85 d5 31 c7 65  f1 c4 47 75 6f 77 03 6b -.H..1.e..
+
+Guow.k --Truncated--Probable Key Identifierff00ff00ff00ff00ff00ff00ff00fRSA Encrypted 3DES Key5A EB 13 80
+
+FE A6 B9 A9 8A 0F 41…
+
+The 3DES key will be the last 24 bytes of the decrypted result.3DES IV88 72  94 a3 95 c8 8e 5d3DES
+
+Encrypted Logfe 23 2d fb 48 85 d5 31 c7 65 f1… Figure 8:
+
+Sample encrypted .yls file Execution When executing PE.dll against the Arduino OPC server, we observe interesting responses within the plaintext %TEMP%\\[random].tmp.dat:
+
+Figure 9:
+
+Sample scan log The contents of the tmp.dat file are the results of the scan of the network devices, looking for OPC servers.
+
+These are not the in-depth results of the OPC servers themselves, and only perform the initial scanning.
+
+The particular Havex sample in question also enumerates OPC tags and fully interrogates the OPC servers identified within %TEMP%\\[random].tmp.dat.
+
+The particular fields queried are: server state, tag name, type, access, and id. The contents of a sample %TEMP%\\OPCServer[random].txt can be found below: Figure 10:
+
+Contents of OPCServer[Random].txt OPC interrogation While we don’t have a particular case study to prove the attacker’s next steps, it is likely after these files are created and saved, they will be exfiltrated to a command and control server for further processing.
+
+Conclusion Part of threat intelligence requires understanding all parts of a particular threat.
+
+This is why we took a closer look at the OPC functionality of this particular Havex variant.
+
+  
+
+We don’t have any case study showcasing why the OPC modules were included, and this is the first “in the wild” sample using OPC scanning.
+
+It is possible that these attackers could have used this malware as a testing ground for future utilization, however.
+
+Since ICS networks typically don’t have a high-level of visibility into the environment, there are several ways to help minimize some of the risks associated with a threat like Havex.
+
+First, ICS environments need to have the ability to perform full packet capture ability.
+
+This gives incident responders and engineers better visibility should an incident occur.
+
+Also, having mature incident processes for your ICS environment is important.
+
+Being able to have security engineers that also understand ICS environments during an incident is paramount.
+
+Finally, having trained professionals consistently perform security checks on ICS environments is helpful.
+
+This ensures standard sets of security protocols and best practices are followed within a highly secure environment.
+
+We hope that this information will further educate industrial control systems owners and the security community about how the OPC functionality of this threat works and serves as the foundation for more investigation.
+
+Still, lots of questions remain about this component of Havex.
+
+What is the attack path?
+
+Who is behind it?
+
+What is their intention?
+
+We’re continuing to track this specific threat and will provide further updates as this new tactic unfolds.
+
+Acknowledgements We would like to thank Josh Homan for his help and support.
+
+Related MD5s ba8da708b8784afd36c44bb5f1f436bc 6bfc42f7cb1364ef0bfd749776ac6d38 4102f370aaf46629575daffbd5a0b3c9 References http://www.matrikonopc.com/products/opc-desktop-tools/opc-explorer.aspx http://arduino.cc/en/Main/arduinoBoardUno http://www.f-secure.com/weblog/archives/00002718.html
+
+http://www.opcdatahub.com/WhatIsOPC.html Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

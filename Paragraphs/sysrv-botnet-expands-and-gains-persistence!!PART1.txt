@@ -1,0 +1,8 @@
+On March 4, 2021, Juniper Threat Labs identified a surge of activity of the Sysrv botnet.
+The botnet spread itself into Windows and Linux systems by exploiting multiple vulnerabilities, which we will cover in this blog.
+The threat actor’s objective is to install a Monero cryptominer.
+The attack remains active.
+Here’s what we’ve seen so far.
+Sysrv Botnet Development Juniper Threat Labs monitored the Sysrv botnet since December of 2020.
+At that time, it used two mining pools, minexmr and f2pool .
+It also used multi-component malware wherein the worm binary is installed as sysrv ( sysrv.exe on Windows) and the miner binary as network01 (network01.exe on Windows).

@@ -1,0 +1,4 @@
+
+The Risk of Disruptive Cyber Attacks Computer network attacks (CNA) - that is, offensive cyber operations meant to disrupt or destroy-are also a threat to the utilities industry from state actors in times of major conflict.
+Perpetrators may include hostile adversaries, possibly nation-states, during times of escalated tensions, or terrorist operatives who gain the required expertise.
+The threat of a state-sponsored actor or proxy targeting this industry using CNA is a growing concern, particularly in the case of Iran, though wide-scale data theft is the primary type of threat we've observed to this point.

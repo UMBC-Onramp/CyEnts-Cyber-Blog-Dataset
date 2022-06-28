@@ -1,0 +1,8 @@
+
+Between April 17 and April 20, 2021, Mandiant incident responders observed UNC2630 access dozens of compromised devices and remove webshells like ATRIUM and SLIGHTPULSE.
+Under certain conditions, the Integrity Checker Tool (ICT) will show no evidence of compromise on appliances which may have had historical compromise.
+This false negative may be returned because the ICT cannot scan the rollback partition.
+If a backdoor or persistence patcher exists on the rollback partition and a Pulse Secure appliance is rolled back to the prior version, the backdoor(s) will be present on the appliance.
+Please see the Forensics, Remediation, and Hardening Guidelines section for important information regarding the ICT and upgrade process.
+In at least one instance, UNC2630 deleted their webshell(s) but did not remove the persistence patcher, making it possible to regain access when the device was upgraded.
+ The remaining persistence patcher causes the malicious code to be executed later during a system upgrade, re-inserts webshell logic into various files on the appliance, and recompromises the device.

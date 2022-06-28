@@ -1,0 +1,4 @@
+
+The plug-in performs a graph traversal starting at this node, identifies all reachable nodes, and prunes any nodes (and their reachable nodes) that have predecessor nodes not in the current set.
+It then prompts you for the node text to appear in the new group node.
+If you select more than one node (by holding the Ctrl key when selecting nodes) for the UR algorithm, each additional node acts as a sentry node.

@@ -1,0 +1,8 @@
+
+For FortiSandbox, all publicly known ransomware samples are detected by our behavior-based protection.
+Appendix The following advisory was posted by Kaseya:
+Information Regarding Potential Attack on Kaseya VSA
+The following FortiGuard Threat Signal report contains the latest information about this ransomware attack as well as updated information about FortiGuard Labs protections: Global Ransomware and Supply Chain Attack on Kaseya VSA Affecting Multiple Organizations Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+
+

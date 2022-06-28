@@ -1,0 +1,5 @@
+
+While the full scope of recommendations included within the initial report remain unchanged, the following strategies have been added into the report: Windows Firewall rule configurations to block specific binaries from establishing outbound connections from endpoints Domain Controller isolation and recovery planning steps Proactive GPO permissions review and monitoring guidance Ransomware is a global threat targeting organizations in all industries.
+The impact of a successful ransomware event can be material to an organization - including the loss of access to data, systems, and operational outages.
+The potential downtime, coupled with unforeseen expenses for restoration, recovery, and implementation of new security processes and controls can be overwhelming.
+Ransomware has become an increasingly popular choice for attackers over the past few years, and it’s easy to understand why given how simple it is to leverage in campaigns – while offering a healthy financial return for attackers.

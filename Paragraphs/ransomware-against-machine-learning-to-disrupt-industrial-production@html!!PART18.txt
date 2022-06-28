@@ -1,0 +1,9 @@
+
+This prompted an intentional shut down of operations that lasted two days.
+Mitigating the Effects of Ransomware Requires Defenses Across IT and OT Threat actors deploying ransomware have made rapid advances both in terms of effectiveness and as a criminal business model, imposing high operational costs on victims.
+We encourage all organizations to evaluate their safety and industrial risks related to ransomware attacks.
+Note that these recommendations will also help to build resilience in the face of other threats to business operations (e.g., cryptomining malware infections).
+While every case will differ, we highlight the following recommendations.
+For custom services and actionable intelligence in both IT and OT, contact FireEye Mandiant Consulting , Managed Defense , and Threat Intelligence .
+Conduct tabletop and/or controlled red team exercises to assess the current security posture and ability of your organization to respond to the ransomware threat.
+Simulate attack scenarios (mainly in non-production environments) to understand how the incident response team can (or cannot) detect, analyze, and recover from such an attack.

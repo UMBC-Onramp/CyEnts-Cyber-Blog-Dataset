@@ -1,0 +1,12 @@
+
+Figure 2:
+Top five industries affected based on callback attempts Researchers have demonstrated how XcodeGhost CnC traffic can be hijacked to: Distribute apps outside the App Store Force browse to URL Aggressively promote any app in the App Store by launching the download page directly Pop-up phishing windows
+Figure 3 shows the top 20 most active infected apps among 152 apps, based on data from our DTI cloud:
+Figure 3:
+Top 20 infected apps Although most vendors have already updated their apps on App Store, this chart indicates many users are actively using older, infected versions of various apps in the field.
+The version distribution varies among apps.
+For example, the most popular Apps 网易云音乐 and WeChat-infected versions are listed in Figure 4.
+App Name Version Incident Count (in 3 weeks)
+WeChat 6.2.5.19 2963 网易云音乐 Music 163 2.8.2 3084 2.8.3 2664 2.8.1 1227 Figure 4:
+Sample infected app versions The infected iPhones are running iOS versions from 6.x.x to 9.x.x as illustrated by Figure 5.
+It is interesting to note that nearly 70% of the victims within our customer base remain on older iOS versions.

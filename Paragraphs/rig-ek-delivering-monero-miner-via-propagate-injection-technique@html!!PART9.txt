@@ -1,0 +1,8 @@
+
+It also contains code that checks whether the executable is in debugged mode, which it extracts from offset 0x2 of the PEB.
+If the BeingDebugged flag is set, the executable terminates itself.
+The malware also implements an Anti-VM check by opening the registry key HKLM\\SYSTEM\\ControlSet001\\Services\\Disk\\Enum with value 0.
+It checks whether the registry value data contains any of the strings: vmware, virtual, qemu, or xen.
+ 
+Each of these strings is indictative of virtual machines After running the anti-analysis and environment check, the malware starts executing the core code to perform the malicious activity.
+The malware uses the PROPagate injection method to inject and execute the code in a targeted process.

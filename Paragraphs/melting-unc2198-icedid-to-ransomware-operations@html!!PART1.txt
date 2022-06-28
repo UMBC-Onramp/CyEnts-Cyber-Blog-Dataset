@@ -1,0 +1,8 @@
+Mandiant Advanced Practices (AP) closely tracks the shifting tactics, techniques, and procedures (TTPs) of financially motivated groups who severely disrupt organizations with ransomware.
+In May 2020, FireEye released a blog post detailing intrusion tradecraft associated with the deployment of MAZE .
+As of publishing this post, we track 11 distinct groups that have deployed MAZE ransomware.
+At the close of 2020, we noticed a shift in a subset of these groups that have started to deploy EGREGOR ransomware in favor of MAZE ransomware following access acquired from ICEDID infections.
+Since its discovery in 2017 as a banking trojan, ICEDID evolved into a pernicious point of entry for financially motivated actors to conduct intrusion operations.
+In earlier years, ICEDID was deployed to primarily target banking credentials.
+In 2020 we observed adversaries using ICEDID more explicitly as a tool to enable access to impacted networks, and in many cases this was leading to the use of common post-exploitation frameworks and ultimately the deployment of ransomware.
+This blog post shines a heat lamp on the latest tradecraft of UNC2198, who used ICEDID infections to deploy MAZE or EGREGOR ransomware.

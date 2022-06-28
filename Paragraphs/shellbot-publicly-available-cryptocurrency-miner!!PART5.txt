@@ -1,0 +1,10 @@
+
+By far the most frequent username for which the password was brute-forced was ‘root,’ followed by standard or default username strings such as ‘ubuntu’, ‘admin’, ‘user’ and ‘test’.
+There were also some standard database-type credentials such as ‘oracle’, ‘postgres’ or ‘mysql’.
+Figure 1:
+The top username types used in ShellBot attacks (Source: IBM X-Force)
+Botnet logs also showed the top passwords the malware managed to guess.
+Unfortunately for the targeted device owners, it was rather easy to figure out simple and default passwords.
+Figure 2:
+The top weak passwords used in ShellBot attacks (Source: IBM X-Force)
+ShellBot campaigns logged in IBM’s spam traps focused on verified ShellBot instances and ShellBot tactics, techniques and procedures (TTPs) that also launch a Perl-based payload.

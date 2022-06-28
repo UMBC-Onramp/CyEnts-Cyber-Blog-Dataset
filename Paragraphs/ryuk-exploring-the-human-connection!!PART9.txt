@@ -1,0 +1,4 @@
+
+Surprisingly, despite the differences between negotiation outcome and initial communications, Coveware observed little difference between the BTC wallets (blacked out to protect victims) associated with the above cases.
+Initial comparison showed no meaningful discrepancy in difference between the time of a ransom payment and the time of a corresponding withdraw.
+Additionally, the distribution of funds upon withdrawal was consistently split between two addresses.

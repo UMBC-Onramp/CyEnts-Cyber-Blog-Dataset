@@ -1,0 +1,12 @@
+Gitpaste-12 is a new worm recently discovered by Juniper Threat Labs, which uses GitHub and Pastebin for housing component code and has at least 12 different attack modules available.
+There is evidence of test code for possible future modules, indicating ongoing development for this malware.
+For now, however, targets are Linux based x86 servers, as well as Linux ARM and MIPS based IoT devices.
+This malware has been dubbed Gitpaste-12 because of the usage of GitHub, Pastebin and 12 ways to compromise the system.
+The first GitPaste-12 first attacks were detected by Juniper Threat Labs on October 15, 2020.
+We’ve reported both the Pastebin URL and the git repo in question and the git repo was closed on October 30, 2020.
+This should stop the proliferation of this botnet.
+The GitHub repository used at the time of discovery was as follows: https://github[.]com/
+cnmnmsl-001/- First commit Thu Jul 9 21:07:06 2020 Last commit Oct 27, 2020 Anatomy of Gitpaste-12
+The first phase of the attack is the initial system compromise (note the details of compromises used by this worm will be discussed later in this piece).
+This worm has 12 known attack modules and more under development.
+The worm will attempt to use known exploits to compromise systems and may also attempt to brute force passwords.

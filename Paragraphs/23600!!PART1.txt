@@ -1,0 +1,4 @@
+In the six years since the launch of Discord’s chat and VoIP service, the platform has become a popular tool for building communities of interest, especially among gamers.
+However, just like any other platform that hosts user-generated content, Discord can be exploited.
+Discord’s extensive customization options also open the door to attacks on ordinary users, both on and off the chat server.
+Recent research into Discord security has revealed several cyberattack scenarios linked to its chat service, some of which can be truly dangerous for users.

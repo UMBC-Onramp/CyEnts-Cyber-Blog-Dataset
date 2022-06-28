@@ -1,0 +1,7 @@
+
+The contest will begin at 8:00 p.m. ET on Sept. 11, 2020.
+This is a CTF-style challenge for all active and aspiring reverse engineers, malware analysts and security professionals.
+The contest runs for six full weeks and ends at 8:00 p.m. ET on Oct. 23, 2020.
+This year’s contest features a total of 11 challenges in a variety of formats, including Windows, Linux, Python, VBA and .NET.
+This is one of the only Windows-centric CTF contests out there and we have crafted it to closely represent the challenges faced by our FLARE team on a daily basis.
+If you are skilled and dedicated enough to complete the seventh Flare-On challenge, you will receive a prize and recognition on the Flare-On website for your accomplishment.

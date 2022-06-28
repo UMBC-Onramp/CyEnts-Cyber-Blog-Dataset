@@ -1,0 +1,8 @@
+
+But modifying the firmware was not enough; they still needed a way to upload it to the remote, and preferably without physical contact.
+To do that, Lehman and Ziv examined how the set-top box communicates with the remote and updates its software.
+They discovered that the remote had to initiate the update process.
+Every 24 hours, the remote queries the set-top box and receives either a negative response or an offer to install a new version of the software, which it downloads from the set-top-box.
+The researchers also found several vital flaws in the communication mechanism between the remote and the Xfinity box.
+First, the former does not check the firmware’s authenticity, so it will download and install whatever firmware the set-top box (or the hacker’s computer impersonating one) offers it.
+Second, although the set-top box and the remote exchange encrypted messages, the encryption is not properly enforced.

@@ -1,0 +1,4 @@
+
+For FortiSandbox , all publicly known ransomware samples are detected by our behavior-based protection.
+Additional Content FortiEDR KB Article How FortiEDR detects ransomware attack on Kaseya VSA (fortinet.com)
+FortiGuard Threat Signal Threat Signal Report | FortiGuard Fortinet Blog Post New Supply Chain Ransomware Attack Targets Kaseya Platform | FortiGuard Labs (fortinet.com) Appendix A: MITRE ATT&CK Techniques ID Description T1195.002 Supply Chain Compromise: Compromise Software Supply Chain T1059.001 Command and Scripting Interpreter: PowerShell T1059.003 Command and Scripting Interpreter: Windows Command Shell T1569.002 System Services: Service Execution T1574.002 Hijack Execution Flow: DLL Side-Loading T1068 Exploitation for Privilege Escalation T1562.004 Impair Defenses: Disable or Modify System Firewall T1562.001 Impair Defenses: Disable or Modify Tools T1070.004 Indicator Removal on Host: File Deletion T1036.003 Masquerading: Rename System Utilities

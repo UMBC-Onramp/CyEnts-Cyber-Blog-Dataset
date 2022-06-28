@@ -1,0 +1,6 @@
+
+Over the past several years, we have captured and analyzed many Agent Tesla variants.
+It has been quite active since 2014 when it was first observed.
+Agent Tesla is a .Net-based malware (developed in C#.Net, VB.Net, C++.Net, etc.)
+whose core function is to collect sensitive information from a victim’s machine, including recording keystrokes and data on the system clipboard, stealing saved software credentials (browsers, mail clients, VPN, FTP, IM, etc.), stealing browser cookies files, and taking screenshots.
+In this blog we will look at the phishing email, analyze the malicious macro contained in the attachment, show how the malware is updated and maintains persistence, examine the Agent Tesla payload, and show the ways it exfiltrates stolen data and credentials.

@@ -1,0 +1,4 @@
+
+While the individuals and the activity described in indictment are different than what is discussed in this report, it provides some evidence that individuals associated with the “Nasr Institute” may have ties to the Iranian government.
+Potential Ties to Destructive Capabilities and Comparisons with SHAMOON One of the droppers used by APT33, which we refer to as DROPSHOT, has been linked to the wiper malware SHAPESHIFT.
+Open source research indicates SHAPESHIFT may have been used to target organizations in Saudi Arabia.

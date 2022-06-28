@@ -1,0 +1,4 @@
+In order to enable emulation of malware samples at scale, we have developed the Speakeasy emulation framework .
+Speakeasy aims to make it as easy as possible for users who are not malware analysts to acquire triage reports in an automated way, as well as enabling reverse engineers to write custom plugins to triage difficult malware families.
+Originally created to emulate Windows kernel mode malware, Speakeasy now also supports user mode samples.
+The project’s main goal is high resolution emulation of the Windows operating system for dynamic malware analysis for the x86 and amd64 platforms.

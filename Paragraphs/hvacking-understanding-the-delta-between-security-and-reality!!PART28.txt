@@ -1,0 +1,5 @@
+
+There are several approaches which could be used to attempt to disable the hardware watchdog.
+In this scenario, we decided to take advantage of the fact that the code which dealt with the hardware watchdog was in a shared library and exported.
+This allowed for the creation of a new program using the existing watchdog-kicking code.
+By creating a second program that will kick the hardware watchdog, we could debug the Delta application without the system resetting.

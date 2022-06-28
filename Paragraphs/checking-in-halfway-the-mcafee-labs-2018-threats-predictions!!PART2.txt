@@ -1,0 +1,6 @@
+
+Let’s take a look at what predictions became reality, and what may still lay ahead for the cybersecurity industry in 2018.
+The First Half of 2018 Ransomware Pivots to New Targets, New Objectives
+The Prediction In November of last year, we predicted 2018 was going to be colored by ransomware attacks that were anything but ordinary.
+These attacks could pivot away from traditional, individual extortion, and rather aim to sabotage or disrupt organizations.
+The Verdict Ransomware attacks have seen a pivot, last year we witnessed the WannaCry ransomware attacks, which spread like wildfire to hundreds of thousands of devices, but this year’s ransomware attacks have reshaped their focus, completely moving away from the individual attack.

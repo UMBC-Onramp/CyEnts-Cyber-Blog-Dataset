@@ -1,0 +1,7 @@
+
+Coupling the increasing difficulty of finding problems against the increase in effectiveness of a software security program, we find a distribution like what we have seen with Flash CVE reporting from 2015 through 2017.
+Until 2015, attackers exploited relatively easy-to-find cross-site scripting errors, but these largely disappeared after 2014.
+Suddenly, in 2015, there is a huge jump in the discovery of difficult-to-uncover memory issues and code execution opportunities.
+The leap in the CVE numbers reflects more technically challenging issues surfacing just as Adobe’s software strategy was making its shift.
+The new strategy had not had time to be fully effective by 2015.
+Plus, Flash, like all complex software, carries a large amount of legacy code.

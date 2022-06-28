@@ -1,0 +1,8 @@
+
+First, it removed the SMB scanner which was observed in the May 2021 attack.
+Second, it changed the url that it injects to script files on the compromised system.
+Previously, it used a hardcoded url, ‘ ublock-referer[.]dev/campaign.js ’ and injects this on the scripts and now it uses the DGA for its url, i.e., ‘DGA_DOMAIN/campaign.js’ .
+As noted in the previous reports, this bot will find HTML, PHP, JS and HTM files in the system and will inject a javascript code in every file.
+This is an attempt for that attacker to not only compromise the server but also clients connecting to it.
+Using a DGA domain to host the javascript makes it more resilient against defenses.
+Necro injects javascript code to html, htm, php and .js files found on the compromised server.

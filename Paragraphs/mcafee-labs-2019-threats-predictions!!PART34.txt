@@ -1,0 +1,5 @@
+
+The identity model has shifted from user centric in traditional IT systems to machine centric for IoT systems.
+Unfortunately, due to the integration of operational technology and insecure “edge device” design, the IoT trust model is built on a weak foundation of assumed trust and perimeter-based security.
+At Black Hat USA and DEF CON 2018, 30 talks discussed IoT edge device exploitation.
+That’s a large increase from just 19 talks on the topic in 2017.

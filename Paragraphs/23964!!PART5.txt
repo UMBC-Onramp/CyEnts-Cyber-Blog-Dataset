@@ -1,0 +1,9 @@
+
+If you are someone that wants to join into these efforts, please make sure that you understand what you are doing from both the ethical and legal angles, as well as those in your heart.
+What’s more, you should keep in mind security concerns.
+Unfortunately, this trend has been taken up by crooks as well: our colleagues over at Talos recently conducted research on how malefactors were creating similar packages that were, in fact, malware.
+Aside from that, some activists are also calling for their supporters to bombard commercial organizations with demands to provide some sort of assistance, or, conversely, to abandon some types of activities.
+Among these calls are also quite dangerous ones — for example, to replace security software with less effective products.
+These calls to action in hacktivist groups are also ripe for impersonation for criminals that are opportunistic.
+These targeted campaigns may also lead to spear phishing attacks .
+Tips to stay safe Think for yourself.

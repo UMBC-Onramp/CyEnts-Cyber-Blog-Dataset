@@ -1,0 +1,7 @@
+
+This logic is: POST params Invoked Command cert writefile img, name with nonempty value readfile img set to empty string \"\", name execcmd anything else invoke original legitimate logic Figure 7:
+Webshells respond to POSTs All incoming and outgoing requests are base64 encoded/decoded and RC4 encrypted/decrypted.
+The scheme is simple.
+The first six characters of the data are a random key generated per request as a sort of nonce, with the static RC4 key appended.
+This nonce + phrase together act as the RC4 key.
+The phrase is not sent over the wire, only the nonce.

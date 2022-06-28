@@ -1,0 +1,11 @@
+
+Figure 4 - WinSpy Builder The controller has options to retrieve screenshots, keylogs, and various reports from the victim’s machine.
+It also has the ability to interact with file system to upload and download files as well as execute new payloads.
+Figure 5 - WinSpy Controller Figure 6 - WinSpy File Browser Command and Control
+The WinSpy payloads have multiple communication methods for reporting status, attacker interaction, and data exfiltration each of which are described below.
+Method 1 - I am online :
+It reports back to the authors server on port 14001 to report the victim's online status with \"/P\" and it receives the same command in response to acknowledge.
+Figure 7 - Online Status Method 2 - Victim Information: It also reports back to the WinSpy author’s server on port 27171 using a secondary protocol shown below.
+The request contains the victim’s IP address as well as unique identifier generated at build time of the payload.
+The server responds with a keep alive in response to this request.
+Figure 8 - Victim Information Figure 9 - Victim information Method

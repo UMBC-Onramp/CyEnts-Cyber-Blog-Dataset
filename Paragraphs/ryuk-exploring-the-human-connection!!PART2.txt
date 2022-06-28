@@ -1,0 +1,4 @@
+
+We structured our research using the Diamond threat model and challenged our existing hypotheses with fresh insights.
+Introduction to The Diamond Model Within Cyber Threat intelligence research, a popular approach is to model the characteristics of an attack using The Diamond Model of Intrusion Analysis .
+This model relates four basic elements of an intrusion: adversary, capabilities, infrastructure and victim.

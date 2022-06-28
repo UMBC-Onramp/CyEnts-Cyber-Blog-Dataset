@@ -1,0 +1,6 @@
+
+3 - SMTP Exfiltration: It relays keylog data through SMTP if configured.
+It relays emails through an SMTP server running on port 37 on the WinSpy author’s server using preconfigured authentication parameters.
+Port 37 is typically used by NTP protocol but in this case the author has reconfigured it for SMTP relay.
+The X-Mailer \"SysMon v1.0.0\" sticks out like a sore thumb.
+Figure 10 - SMTP Exfiltration Method 4 - FTP Exfiltration: If configured with a custom FTP server, the WinSpy payload will upload all intercepted data and report to the remote server periodically.

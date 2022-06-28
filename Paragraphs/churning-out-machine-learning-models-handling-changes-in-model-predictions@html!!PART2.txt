@@ -1,0 +1,8 @@
+
+A key concept from the paper is the principle of CACE : change anything, change everything .
+Because ML models deliberately find nonlinear dependencies between input data, small changes in our data can create cascading effects on model accuracy and downstream systems that consume those model predictions.
+This creates an inherent conflict in cyber security modeling: (1) we need to update models over time to adjust to current threats and (2) changing models can lead to unpredictable outcomes that we need to mitigate.
+Ideally, when we update a model, the only change in model outputs are improvements, e.g. fixes to previous errors.
+Both false negatives (missing malicious activity) and false positives (alerts on benign activity), have significant impact and should be minimized.
+Since no ML model is perfect, we mitigate mistakes with orthogonal approaches: whitelists and blacklists, external intelligence feeds, rule-based systems, etc.
+Combining with other information also provides context for alerts that may not otherwise be present.

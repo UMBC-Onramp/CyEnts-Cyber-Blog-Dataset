@@ -1,0 +1,9 @@
+
+Figure 18:
+Contents of Dropped VBS File Banking Trojan Analysis Like the Trojan from the first campaign, this sample is executed through search-order hijacking.
+In this case, the binary abused is a legitimate Windows tool, Certmgr.exe, that loads Cryptui.dll.
+Since this tool depends on a legitimate DLL named cryptui.dll, the search order path will find the malicious Trojan with the same name in the same directory and load it into its process space.
+The malicious DLL exports 21 functions.
+Only DllEntryPoint contains real code that is necessary to start the execution of the malicious code.
+The other functions return hardcoded values that serve no real purpose.
+On execution, the Trojan creates a mutex called \"correria24\" to allow only one instance of it to run at a time.

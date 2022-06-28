@@ -1,0 +1,3 @@
+Introduction FireEye recently observed a sophisticated campaign targeting individuals within the Mongolian government.
+Targeted individuals that enabled macros in a malicious Microsoft Word document may have been infected with Poison Ivy , a popular remote access tool (RAT) that has been used for nearly a decade for key logging, screen and video capture, file transfers, password theft, system administration, traffic relaying, and more.
+The threat actors behind this attack demonstrated some interesting techniques, including: Customized evasion based on victim profile – The campaign used a publicly available technique to evade AppLocker application whitelisting applied to the targeted systems.

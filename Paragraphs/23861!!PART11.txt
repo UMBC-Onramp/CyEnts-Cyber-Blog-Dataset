@@ -1,0 +1,12 @@
+
+FxiOS/39
+Mobile/15E148 Version/15.0 Always use a VPN that masks your traffic.
+Some exploits are delivered through GSM operator MitM attacks, when browsing HTTP sites or by DNS hijack.
+Using a VPN to mask the traffic makes it difficult for your GSM operator to target you directly over the Internet.
+It also complicates the targeting process if the attackers have control over your data stream, such as while in roaming.
+Please note that not all VPNs are the same and not any VPN is fine to use.
+Without favoring any specific VPN provider, here’s a few things to consider when you shop for a VPN subscription with anonymity being a top priority:
+Purchase means just that — no “free” VPNs.
+Look for services that you can accept payment with cryptocurrencies.
+Look for services that do not require you to provide any registration info.
+Try to avoid VPN apps — instead, use open-source tools such as OpenVPN, WireGuard and VPN profiles.

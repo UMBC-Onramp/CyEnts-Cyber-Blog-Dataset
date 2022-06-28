@@ -1,0 +1,8 @@
+
+NitlovePOS uses this feature to store payment card information; the mailslot name that is created comes as a hardcoded string in the binary (once de-obfuscated); \"\\\\.\\mailslot\\95d292040d8c4e31ac54a93ace198142\" Once the mailslot is created, an infinite loop will keep querying the allocated space.
+Thread 3:
+Memory Scrapping NitlovePOS scans running processes for payment data and but will skip System and “System Idle Process.”
+It will try to match track 1 or track 2 data and, if found, will write the data into the mailslot created by Thread 2.
+This information is then sent via POST it to the C2 using SSL, which makes network-level detection more difficult.
+Possible Control Panel During our research we observed what appears to be a test control panel on a different, but probably related, server that matches with NitlovePOS.
+This panel is called “nitbot,” which is similar to the “nit_love” string found in the binary and was located in a directory called “derpmo” which is similar to the “derpos” used in this case.

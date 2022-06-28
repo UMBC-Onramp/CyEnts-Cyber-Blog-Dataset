@@ -1,0 +1,5 @@
+
+Figure 2 shows the OLE streams for a normal and a purged document,\nextracted using oledump .\nIn
+the original document, the Module1 PerformanceCache is 1291 bytes, while it is 0\nbytes in the VBA purged document.
+The purged document has no SRP streams and the _VBA_PROJECT stream has been reduced to 7 bytes.
+Figure 2: Analyzing VBA purged document\nwith oledump Testing the Effectiveness of VBA Purging Mandiant’s Red Team created a command line, C# tool called OfficePurge to test\nthis technique.

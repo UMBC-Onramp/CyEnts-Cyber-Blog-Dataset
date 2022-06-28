@@ -1,0 +1,7 @@
+
+These unique string values are thought to be unique and random per compiled sample.
+Initial Execution Once executed, the SUNSHUTTLE backdoor enumerates the victim’s MAC address and compares it to a hardcoded MAC address value “c8:27:cc:c2:37:5a”.
+If a match is found the backdoor exits.
+The MAC address is likely a default MAC address for the Windows sandbox network adapter.
+Figure 1:
+Mac address check Configuration If the check is successful, the SUNSHUTTLE backdoor then enters a routine named “﻿main_define_internal_settings”, which handles creation of the configuration file if one doesn’t already exist in the directory from which SUNSHUTTLE is running.

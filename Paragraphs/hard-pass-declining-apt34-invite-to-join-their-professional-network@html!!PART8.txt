@@ -1,0 +1,6 @@
+
+FireEye examined the original file ERFT-Details.xls , which was observed with at least two unique MD5 file hashes: 96feed478c347d4b95a8224de26a1b2c caf418cbf6a9c4e93e79d4714d5d3b87 A snippet of the VBA code, provided in Figure 2, creates System.doc in the target directory from base64-encoded text upon opening.
+Figure 2:
+Screenshot of VBA code from System.doc The spreadsheet also creates a scheduled task named \"windows update check\" that runs the file C:\\Users\\<user_name>\\.templates\\System Manager.exe every minute.
+Upon closing the spreadsheet, a final VBA function will rename System.doc to System Manager.exe .
+Figure 3 provides a snippet of VBA code that creates the scheduled task, clearly obfuscated to avoid simple detection.

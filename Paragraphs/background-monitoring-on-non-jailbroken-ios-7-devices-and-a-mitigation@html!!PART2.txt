@@ -1,0 +1,13 @@
+
+We have been collaborating with Apple on this issue.
+Fig.1 Background Monitoring We have created a proof-of-concept \"monitoring\" app on non-jailbroken iOS 7.0.x devices.
+This “monitoring” app can record all the user touch/press events in the background, including, touches on the screen, home button press, volume button press, and TouchID press, and then this app can send all user events to any remote server, as shown in Fig.1.
+Potential attackers can use such information to reconstruct every character the victim inputs.
+Note that the demo exploits the latest 7.0.4 version of iOS system on a non-jailbroken iPhone 5s device successfully.
+We have verified that the same vulnerability also exists in iOS versions 7.0.5, 7.0.6, and 6.1.x.
+Based on the findings, potential attackers can either use phishing to mislead the victim to install a malicious/vulnerable app or exploit another remote vulnerability of some app, and then conduct background monitoring.
+Fig.2 Background App Refresh
+Settings Fig.3 Killing An App on iOS7 iOS7 provides settings for \"background app refresh\".
+Disabling unnecessary app's background refreshing contributes to preventing the potential background monitoring.
+However, it can be bypassed.
+For example, an app can play music in the background without turning on its \"background app refresh\" switch.

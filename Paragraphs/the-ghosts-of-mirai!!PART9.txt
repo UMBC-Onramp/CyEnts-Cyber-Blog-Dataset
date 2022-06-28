@@ -1,0 +1,5 @@
+
+Eventually, the “Light The Sylveon” author announced through a post on his twitter account that he was going to abandon the project.
+Unlike SILEX, however, SYLVEON is a conventional IoT malware that was clearly based on the Mirai source code with some added attacks.
+Interestingly enough, the group greek.
+Helios and a certain Thar3seller, which were a group previously associated with other IoT malware campaigns, currently claim to be the authors of this variant.

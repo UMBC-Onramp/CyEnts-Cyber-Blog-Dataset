@@ -1,0 +1,10 @@
+Real Quick
+In case you’re thrown by that fantastic title, our lawyers made us change the name of this project so we wouldn’t get sued.
+SCANdalous—a.k.a.
+Scannah Montana a.k.a.
+Scanny McScanface a.k.a.
+“Scan I Kick It?
+(Yes You Scan)”—had another name before today that, for legal reasons, we’re keeping to ourselves.
+A special thanks to our legal team who is always looking out for us, this blog post would be a lot less fun without them.
+Strap in folks.
+Introduction Advanced Practices is known for using primary source data obtained through Mandiant Incident Response , Managed Defense , and product telemetry across thousands of FireEye clients.

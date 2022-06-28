@@ -1,0 +1,9 @@
+
+Feature Representations
+How do we represent these differences to a model?
+The easiest and most obvious option is to calculate some statistics on each path.
+Features such as folder depth, path length, entropy, and counting things such as numbers, letters, and special characters in the PDB filename are easy to compute.
+However, upon evaluation against our dataset, these features did not help to separate the classes very well.
+The following are some graphics detailing the distributions of these features between our classes of malicious and benign samples: While there is potentially some separation between benign and malicious distributions, these features alone would likely not lead to an effective classifier (we tried).
+Additionally, we couldn’t easily translate these differences into explicit detection rules.
+There was more information in the paths that we needed to extract, so we began to look at how to encode the directory names themselves.

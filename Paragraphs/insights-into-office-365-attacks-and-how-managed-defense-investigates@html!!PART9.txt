@@ -1,0 +1,5 @@
+
+Note that Azure AD logs are only available for 30 days.
+Cloud App Security Portal For cases where OAuth abuse has been observed, information about cloud applications can be found in Microsoft’s Cloud App Security portal ( portal.cloudappsecurity.com ).
+Access to this portal requires an E5 license or a standalone Cloud App license.
+For more background on OAuth abuse, be sure to check out our blog post: Shining a Light on OAuth Abuse with PwnAuth .

@@ -1,0 +1,3 @@
+
+Image generation\ncapabilities and even commercial services are already moving beyond\nmerely headshots and facial generations to full-body shots and\nadvanced video generations, and end users will enjoy increasing\ncontrol over and ease of content generation, both through being able\nto steer generations towards particular attributes at more granular\nlevels, and by being able to use an increasing amount of both free and\ncommercial low-code or no-code applications for content creation.
+This blog post highlights the need for the research community to\ncontinue to focus attention on the development of technical detection\nand mitigation capabilities for synthetic media, given its ready\napplicability to current information operations tactics.

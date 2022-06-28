@@ -1,0 +1,10 @@
+
+The packer is programmed in Visual C++ and the malware itself is written in pure assembly.
+Technical Details
+The goal of the packer is to decrypt the true malware part and use a RunPE technique to run it from memory.
+To obtain the malware from memory, after the decryption is finished and is loaded into the memory, we dumped it to obtain an unpacked version.
+The first action of the malware is to get all functions needed in runtime and make a dynamic IAT to try obfuscating the Windows call in a static analysis.
+FIGURE 2.
+THE MALWARE GETS ALL FUNCTIONS NEEDED IN RUNTIME The next action of the malware is trying to create a mutex with a hardcoded name.
+It is important to know that the malware has 95% of the strings encrypted inside.
+Consider that each sample of the malware has different strings in a lot of places; values as keys or seeds change all the time to avoid what we, as an industry do, namely making vaccines or creating one decryptor without taking the values from the specific malware sample to decrypt the strings.

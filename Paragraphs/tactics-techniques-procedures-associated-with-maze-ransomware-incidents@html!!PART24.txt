@@ -1,0 +1,9 @@
+
+Language Query Using PowerShell, Current User A104-482 - Host CLI - Discovery:
+Language Query Using reg query A104-494 - Host CLI - Discovery: MAZE, Dropping Ransomware
+Note Burn Directory A104-495 - Host CLI - Discovery: MAZE, Traversing Directories and
+Dropping Ransomware
+Note, DECRYPT-FILES.html Variant A104-496 - Host CLI - Discovery: MAZE, Traversing Directories and
+Dropping Ransomware
+Note, DECRYPT-FILES.txt Variant A104-027 - Host CLI - Discovery:
+Process Discovery A104-028 - Host CLI - Discovery: Process Discovery with PowerShell A104-029 - Host CLI - Discovery:

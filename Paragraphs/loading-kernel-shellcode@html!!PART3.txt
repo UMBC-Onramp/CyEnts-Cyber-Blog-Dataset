@@ -1,0 +1,7 @@
+
+This causes the next instruction to attempt to access invalid memory in the NULL page.
+What the code is trying to do doesn’t make sense in the user mode environment, and it has crashed as a result.
+In contrast, kernel mode is a perfect fit.
+Figure 2 shows WinDbg’s dt command being used to display the _KPCR type defined within ntoskrnl.pdb, highlighting the field at offset 0x38 named IdtBase.
+Figure 2: KPCR structure
+Given the rest of the code in this sample, accessing the IdtBase field of the KPCR made perfect sense.

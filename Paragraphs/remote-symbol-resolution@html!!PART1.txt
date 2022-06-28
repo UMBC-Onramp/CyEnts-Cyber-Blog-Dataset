@@ -1,0 +1,5 @@
+Introduction The following blog discusses a couple of common techniques that malware uses to obscure its access to the Windows API.
+In both forms examined, analysts must calculate the API start address and resolve the symbol from the runtime process in order to determine functionality.
+After introducing the techniques, we present an open source tool we developed that can be used to resolve addresses from a process running in a virtual machine by an IDA script.
+This gives us an efficient way to quickly add readability back into the disassembly.
+Techniques When performing an analysis, it is very common to see malware try to obscure the API it uses.

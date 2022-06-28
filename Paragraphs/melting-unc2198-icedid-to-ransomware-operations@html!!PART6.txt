@@ -1,0 +1,12 @@
+
+One of the new UNC groups created in October 2020 was given the designation UNC2374.
+UNC2374 began as its own distinct cluster where BEACON, WINDARC, and SYSTEMBC were observed during an incident at a Managed Defense customer.
+Initial similarities in tooling did not constitute a strong enough link to merge UNC2374 with UNC2198 yet.
+Two and a half months following the creation of UNC2374, we amassed enough data points to merge UNC2374 into UNC2198.
+Some of the data points used in merging UNC2374 into UNC2198 include: UNC2198 and UNC2374 Cobalt Strike Team Servers used self-signed certificates with the following subject on TCP port 25055: C = US, ST = CA, L = California, O = Oracle Inc, OU =
+Virtual Services, CN = oracle.com UNC2198 and UNC2374 deployed WINDARC malware to identical file paths: %APPDATA%\\teamviewers\\msi.dll
+The same code signing certificate used to sign an UNC2198 BEACON loader was used to sign two UNC2374 SYSTEMBC tunneler payloads.
+UNC2374 and UNC2198 BEACON C2 servers were accessed by the same victim system within a 10-minute time window during intrusion operations.
+The other UNC group created in October 2020 was given the designation UNC2414.
+Three separate intrusions were attributed to UNC2414, and as the cluster grew, we surfaced similarities between UNC2414 and UNC2198.
+A subset of the data points used to merge UNC2414 into UNC2198 include: UNC2198 and UNC2414 BEACON servers used self-signed certificates using the following subject on TCP port 25055: C = US, ST = CA, L = California, O = Oracle Inc, OU =

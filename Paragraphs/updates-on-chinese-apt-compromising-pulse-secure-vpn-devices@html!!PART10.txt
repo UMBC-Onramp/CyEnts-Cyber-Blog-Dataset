@@ -1,0 +1,5 @@
+
+This practice aligns with the actor’s objective for long-term persistence and evading detection and demonstrates a familiarity with the internal hostnames in the victim environment.
+The actors operated solely by utilizing Windows-based utilities to carry out tasks.
+Some of the utilities observed were net.exe, quser.exe, powershell.exe, powershell_ise.exe, findstr.exe, netstat.exe, cmd.exe, reg.exe and tasklist.exe.
+Move Laterally Most lateral movement originated from compromised Pulse Secure VPN appliances to internal systems within the environment.

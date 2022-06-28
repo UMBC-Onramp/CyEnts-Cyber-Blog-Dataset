@@ -1,0 +1,9 @@
+Introduction This blog post is the next episode in the FireEye Labs Advanced Reverse Engineering (FLARE) team Script Series.
+Today, we are sharing something quite unusual.
+It is not a tool or a virtual machine distribution, nor is it a plugin or script for a popular reverse engineering tool or framework.
+Rather, it is a profile created for a consumer software application completely unrelated to reverse engineering or malware analysis… until now.
+The software is named VoiceAttack , and its purpose is to make it easy for users to control other software on their computer using voice commands.
+With FLARE’s new profile for VoiceAttack , users can completely control IDA Pro with their voice!
+Have you ever dreamed of telling IDA Pro to decompile a function or show you the strings of a binary?
+Well dream no more!
+Not only does our profile give you total control of the software, it also provides shortcuts and other cool features not previously available.

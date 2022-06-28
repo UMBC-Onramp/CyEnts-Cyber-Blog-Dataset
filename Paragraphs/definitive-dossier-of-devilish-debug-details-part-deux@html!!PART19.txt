@@ -1,0 +1,7 @@
+
+This is not to say that other model families could not be used to build strong classifiers.
+Many other options ranging from Logistic Regression to Deep Learning could be considered.
+We fed our featurized training set into a Decision Tree , having set a couple ‘hyperparameters’ such as max depth and minimum samples per leaf, etc.
+We were also able to use a sliding scale of these hyperparameters to dynamically create trees and, essentially, see what shook out.
+Examining a trained decision tree such as the one in Figure 6 allowed us to immediately build new signatures.
+Figure 6: Example decision tree and decision paths We found several other interesting tidbits within our decision trees.

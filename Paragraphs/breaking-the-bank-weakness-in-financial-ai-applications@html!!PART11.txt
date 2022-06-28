@@ -1,0 +1,4 @@
+
+Additionally, operators can influence recommendation systems without access to sophisticated AI technologies; instead, using knowledge of the market and mass trades to degrade the application's performance.
+We have previously observed malicious actors targeting trading platforms and exchanges, as well as compromising bank networks to conduct manipulated trades.
+Both state-sponsored and financially motivated actors have incentives to exploit automated trading tools to generate profit, destabilize markets, or weaken foreign currencies.

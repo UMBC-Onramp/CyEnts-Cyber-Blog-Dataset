@@ -1,0 +1,8 @@
+
+Mail client usage : Outlook or third-party mail clients used by attackers.
+Mail can be synced locally to the attacker’s machine and accessed later.
+Phase 5: Complete Mission Direct deposit update : A request sent to the HR department to update the victim’s direct deposit information, redirecting payment to the BEC actor.
+W-2 scam : A request sent to the HR department for W-2 forms, used to harvest PII for tax fraud.
+Wire transfer : A wire transfer requested for an unpaid invoice, upcoming M&A, charities, etc.
+Third-party account abuse : Abuse of the compromised user’s privileged access to third-party accounts and services, such as access to a corporate rewards site.
+How Managed Defense Responds to O365 BECs In this section, we’re going to walk through how Managed Defense investigates a typical O365 BEC case.

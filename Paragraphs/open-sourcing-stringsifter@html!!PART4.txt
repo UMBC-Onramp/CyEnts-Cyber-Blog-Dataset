@@ -1,0 +1,4 @@
+
+Encouragingly, we have also observed users at the opposite ends of the experience spectrum find the tool to be useful – from beginners detonating their first piece of malware as part of a FireEye training course – to expert malware researchers triaging incoming samples on the front lines.
+By making StringSifter publicly available, we hope to enable a broad set of personas, use cases, and creative downstream applications.
+We will also welcome external contributions to help improve the tool’s accuracy and utility in future releases.

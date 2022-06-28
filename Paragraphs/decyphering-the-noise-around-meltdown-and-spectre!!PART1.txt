@@ -1,0 +1,7 @@
+By McAfee on Jan 04, 2018 The McAfee Advanced Threat Research (ATR) Team has closely followed the attack techniques that have been named Meltdown and Spectre throughout the lead-up to their announcement on January 3.
+In this post, McAfee ATR offers a simple and concise overview of these issues, to separate fact from fiction, and to provide insight into McAfee’s capabilities and approach to detection and prevention.
+There has been considerable speculation in the press and on social media about the impact of these two new techniques, including which processors and operating systems are affected.
+The speculation has been based upon published changes to the Linux kernel.
+McAfee ATR did not want to add to any confusion until we could provide our customers and the general public solid technical analysis.
+A fully comprehensive writeup comes from Google Project Zero in this informative technical blog , which allowed ATR to validate our conclusions.
+For more on McAfee product compatibility, see this business Knowledge Center article and this Consumer Support article.

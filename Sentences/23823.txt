@@ -1,0 +1,55 @@
+To be absolutely sure your phone isn’t tracking you or listening in on any conversations, you might turn it off.
+
+It seems logical; that way, even if the phone is infected with serious spyware, it can’t do anything.
+
+In addition, turning off or restarting a smartphone is one of the most reliable ways to fight such infections; in many cases, spyware “lives” only until the next reboot because it cannot gain a permanent foothold in the operating system.
+
+At the same time, the vulnerabilities that allow malware to work even after a reboot are rare and expensive to exploit.
+
+However, this tactic might not work forever.
+
+Researchers have come up with a technique to bypass it using a method they have named NoReboot.
+
+In essence, this attack is a fake restart.
+
+What is NoReboot, and how does the attack work?
+
+We want to note right off the bat that NoReboot is not a feature of any real spyware in use by attackers; rather, it’s a so-called proof of concept that researchers demonstrated under laboratory conditions.
+
+At this point it is hard to say whether the method will actually gain traction.
+
+For the demonstration, the researchers used an iPhone they “infected” beforehand.
+
+Unfortunately, they haven’t shared the technical details.
+
+Here’s what happens in the demonstration: The spy malware, which transfers the image from the camera, runs on the iPhone; The user tries to shut off the phone the usual way, using the power and volume buttons; The malware takes control and shows a perfect fake instead of the standard iOS shutdown screen; After the user drags the power-off slider, which also looks perfectly normal, the smartphone’s screen goes dark and the phone no longer responds to any of the user’s actions; When the user presses the power button again, the malware displays a perfect replica of the iOS boot animation.
+
+During the entire process, the phone is continually transferring the image from the phone’s front camera to another device without the user’s knowledge.
+
+As is often the case, seeing is believing, and we recommend checking out the researchers’ video: How to protect yourself against NoReboot Again, at least for now NoReboot is only a demonstration of the feasibility of an attack.
+
+The attack is alarming, to be sure, but don’t forget that malware needs to get onto a smartphone before it can do any damage.
+
+Here are some tips to help you prevent that from happening: Keep in mind that it’s much harder for attackers to infect a smartphone remotely than if they have physical access to it.
+
+Be careful not to let someone else get hold of your smartphone — especially for a long period of time — and install a reliable device lock.
+
+People most often install malware on their smartphones on their own, voluntarily.
+
+Be careful about what you download and avoid installing unnecessary apps — that is, those you can easily live without — as a general rule.
+
+Don’t root or jailbreak your smartphone (at least if you haven’t been using *nix systems for many years).
+
+Superuser rights make malware’s work exponentially easier .
+
+If you have an Android device, we recommend installing an antivirus solution — to block Trojans from penetrating the system.
+
+Let your smartphone die a natural death from time to time — that is, wait for the charge to run out completely.
+
+The phone will then most certainly restart without any fakes, and there’s an excellent chance that spies will disappear from the system.
+
+You can speed up the process by using a resource-hungry app, such as a game or benchmark-test utility.
+
+
+
+

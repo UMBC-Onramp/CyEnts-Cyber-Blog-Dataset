@@ -1,0 +1,3 @@
+
+Once the model is trained, we can use the URL Transformer to perform several different tasks, such as generatively predicting the next character in the input sequence by using the sequence embedding () as an input to another neural network with as softmax output over the possible vocabulary of characters.
+A specific example of this is shown in Figure 1, where we take the embedding of the input “firee”() and use it to predict the next most likely character, “y.”

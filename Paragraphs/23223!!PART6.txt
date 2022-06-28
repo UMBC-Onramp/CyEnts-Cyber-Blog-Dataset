@@ -1,0 +1,5 @@
+
+Backing up your files doesn’t have to be a chore: See our guide to automatic backup .
+However you decide to back up your data, don’t delay.
+Having a backup in the event of a ransomware attack — or if the cat walks across the keyboard and deletes your report — means you don’t have to lose any work.
+For a successful backup, don’t forget a few important rules: Connect the backup hard drive only when you’re writing to or reading from it.

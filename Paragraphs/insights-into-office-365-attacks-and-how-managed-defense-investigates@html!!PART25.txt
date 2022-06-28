@@ -1,0 +1,7 @@
+
+-StartDate mm/dd/yyyy -EndDate (Get-Date) -ResultSize 5000
+-IPAddresses 1.2.3.4, 2.3.4.5 | Export-CSV \\path\\to\\file.csv –NoTypeInformation -Encoding utf8 Search-UnifiedAuditLog -StartDate mm/dd/yyyy -EndDate (Get-Date) -ResultSize 5000
+-FreeText \"Opera\" | Export-CSV \\path\\to\\file.csv –NoTypeInformation -Encoding utf8 Analyze Message Traces We’ll use PowerShell to query message traces for the compromised users we’ve identified.
+If the email was sent within the past 10 days, use the Get-MessageTrace cmdlet, which immediately returns results and allows teams to query IP addresses.
+For older emails, use the Start-HistoricalSearch cmdlet and download the report later from the Mail Flow section of the Security & Compliance center.
+Querying for the last 10 days of mail sent by the victim in PowerShell: Get-MessageTrace -StartDate (Get-Date).AddDays(-10) -EndDate (Get-Date) -SenderAddress

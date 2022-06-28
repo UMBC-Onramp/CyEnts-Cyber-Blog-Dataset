@@ -1,0 +1,5 @@
+Since at least 2017, there has been a significant increase in public disclosures of ransomware incidents impacting industrial production and critical infrastructure organizations.
+Well-known ransomware families like WannaCry, LockerGoga, MegaCortex, Ryuk, Maze, and now SNAKEHOSE (a.k.a.
+Snake / Ekans), have cost victims across a variety of industry verticals many millions of dollars in ransom and collateral costs.
+These incidents have also resulted in significant disruptions and delays to the physical processes that enable organizations to produce and deliver goods and services.
+While lots of information has been shared about the victims and immediate impacts of industrial sector ransomware distribution operations, the public discourse continues to miss the big picture.

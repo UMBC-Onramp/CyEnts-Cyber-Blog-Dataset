@@ -1,0 +1,9 @@
+
+We first observed ID 99 in six different samples of version 4.1.1, growing to 35 different samples in version 5.04.
+Based on our dataset we observed 71 unique unpacked samples linked to ID 99.
+Being involved with several versions (consistency over time), in combination with the number of unique samples (volume) and the number of infections (based on industry malware detections) can effectively show which affiliate was the most aggressive and possibly the most important to the RaaS network.
+Affiliate vs. Salesperson & Disruption An active affiliate can be compared to a top salesperson in any normal commercial organization.
+Given that the income of the RaaS network is largely dependent on the performance of its top affiliates, identifying and disrupting a top affiliate’s activity can have a crippling effect on the income of the RaaS network, internal morale and overall RaaS performance.
+This can be achieved through arrests of an affiliate and/or co-conspirers.
+Another way is disrupting the business model and lowering the ransomware’s profits through offering free decryption tools or building vaccines that prevent encryption.
+The disruption will increase the operational costs for the criminals, making the RaaS of less interest.

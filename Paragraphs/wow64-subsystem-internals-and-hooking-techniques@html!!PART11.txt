@@ -1,0 +1,5 @@
+
+These two values are then stored in the context’s EIP and ESP variables respectively.
+The r14 stack pointer is then incremented one more time to get the location where the __stdcall arguments are (remember stdcall passes all arguments on the stack).
+This argument array is important for later, remember it.
+The arguments pointer is moved into r11, so in C this means that r11 is equivalent to an array of stack slots where each slot is an argument uint32_t r11[argCount].

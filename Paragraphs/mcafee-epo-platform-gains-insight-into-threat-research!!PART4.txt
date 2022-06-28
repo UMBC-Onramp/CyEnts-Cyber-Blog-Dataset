@@ -1,0 +1,9 @@
+
+We are committed to rapidly addressing issues as they arise, and providing recommendations through security bulletins and knowledgebase articles.
+McAfee Labs Security Advisories : These are a free notification service backed by our global research team.
+McAfee Labs Security Advisories map high-profile threats to the McAfee technologies that protect your environment.
+What next?
+You can expect the dashboard to evolve and provide more detail in future versions.
+Please let us know what you would like to see.
+
+

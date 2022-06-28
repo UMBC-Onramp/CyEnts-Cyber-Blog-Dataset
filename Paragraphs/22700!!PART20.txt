@@ -1,0 +1,6 @@
+
+As far as we know, no flights were cancelled and no ransom was paid.
+Hancock Health, a US clinic, fared less well, paying 4 BTC (then $55,000) after SamSam ransomware struck its systems.
+Explaining the company’s decision to pay the ransom , CEO Steve Long cited an approaching snowstorm, coupled with one of the worst flu seasons in memory.
+The clinic just did not have the time to restore its computers independently.
+In all, more than 170 municipal agencies in the United States fell victim to ransomware in 2019 , with ransom demands reaching as high as $5 million.

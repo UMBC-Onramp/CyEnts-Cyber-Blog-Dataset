@@ -1,0 +1,3 @@
+
+We regularly reproduce this approach in our OT-focused red team engagements to expose similar attack paths across client infrastructure and to identify environment specific opportunities to prevent and detect network propagation techniques across intermediary systems.
+In this blog post, we share another case study from one of our OT Red Team engagements to illustrate the tactics, techniques, and procedures (TTPs) that can be leveraged by sophisticated threat actors to breach the protected perimeter between an IT network and an OT network.

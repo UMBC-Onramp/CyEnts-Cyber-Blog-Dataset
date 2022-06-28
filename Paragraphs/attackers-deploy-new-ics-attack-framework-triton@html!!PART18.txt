@@ -1,0 +1,5 @@
+
+If an error was detected, the communication library’s method SafeAppendProgramMod attempted to reset the controller to the previous state using a TriStation protocol command.
+If this failed, trilog.exe attempted to write a small ‘dummy’ program to memory.
+We assess that this was an anti-forensics technique to hide the presence of the attacker code on the Triconex controller.
+Working with the asset owner, Mandiant ran trilog.exe in a lab environment with a valid Triconex controller and discovered a conditional check in the malware that prevented the payload binary from persisting in the environment.

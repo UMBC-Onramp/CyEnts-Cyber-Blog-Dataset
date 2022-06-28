@@ -1,0 +1,5 @@
+
+Any traffic on those ports was received by the socket and processed by the Listener.
+In the previous architecture, packets were redirected using a Diverter module that utilized WinDivert for Windows and netfilter for Linux.
+Each incoming and outgoing packet was examined by the Diverter, which kept a running list of connections.
+Packets destined for outbound ports were redirected to a default Listener, which would respond to any packet with an echo of the same data.

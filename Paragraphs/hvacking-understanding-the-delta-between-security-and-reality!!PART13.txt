@@ -1,0 +1,4 @@
+
+This implied the data being copied was from the last packet sent and the destination for the copied data was taken from the first malformed packet.
+Registers R8 and R10 held the source and destination port numbers, respectively, which in this case were both 0xBAC0 (accounting for endianness), or 47808, the standard BACnet port.
+R4 held a memory address which, when examined, showed a section of memory that looks to have been overwritten.

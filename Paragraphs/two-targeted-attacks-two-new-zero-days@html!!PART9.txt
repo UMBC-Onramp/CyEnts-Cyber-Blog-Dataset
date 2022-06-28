@@ -1,0 +1,3 @@
+
+As such, the Null Page protection implemented in Windows versions 7 (after MS13-031) and later does not apply.
+The steps taken by the 64-bit exploit variants are: Map memory page: ntdll!ZwAllocateVirtualMemory(…) Build a malformed win32k!tagWND structure at the mapped page such that it is properly validated in the kernel Trigger vulnerability Attacker’s callback in win32k!tagWND.lpfnWndProc executes in kernel-mode Callback overwrites EPROCESS.Token to elevate privileges Spawns a child process that inherits the elevated access token 64-bit Windows 8 and later users are not affected by this exploit.

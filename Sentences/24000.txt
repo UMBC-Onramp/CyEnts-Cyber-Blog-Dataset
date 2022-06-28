@@ -1,0 +1,41 @@
+Google has fixed 28 vulnerabilities by releasing update 100.0.4896.60 for its Chrome browser.
+
+At least 9 of them have a high severity rating — adding to CVE-2022-1096, another high severity vulnerability which Google patched with a separate update just a few days ago.
+
+So in total, the Chrome developers have released patches for 10 high severity vulnerabilities in less than a week.
+
+In other words, if you have not rebooted your computer for quite some time or did not restart your browser recently, then it’s time to update.
+
+CVE-2022-1096 vulnerability So far Google has not published details about any of the vulnerabilities — as per the company’s security policy, access to a detailed description of the bugs remains restricted until the majority of active users update their browser.
+
+But it is already clear that it is the CVE-2022-1096 vulnerability (the one that Google closed with a separate patch on Friday, March 25, just four days before the major update) that may cause real problems.
+
+CVE-2022-1096 belongs to the Type Confusion class, that means it is connected to some error in data types handling in the V8 engine.
+
+The vulnerability is pretty dangerous, judging by the fact that Google addressed this bug separately with an emergency patch.
+
+What’s more, according to the patch release notes, Google was aware that an exploit for this vulnerability already existed on March 25.
+
+The next day, Microsoft fixed the same vulnerability in its Chromium-based Edge browser.
+
+Summing up the available information, it is reasonable to assume that an exploit for the vulnerability not only exists, but is actively being used by attackers.
+
+Another 28 new vulnerabilities Of the 28 vulnerabilities that the latest update addresses, most (20) were discovered by independent researchers, and the remaining eight by Google’s internal experts.
+
+Of the nine vulnerabilities with a high severity level, four (CVE-2022-1125, CVE-2022-1127, CVE-2022-1131, CVE-2022-1133) belong to the use-after-free class; three more (CVE-2022-1128, CVE-2022-1129, CVE-2022-1132) are related to inappropriate implementations in various components, another one (CVE-2022-1130) has to do with an insufficient validation of untrusted input in WebOTP and the remaining one (CVE-2022-1134), like the aforementioned CVE-2022-1096, is a Type Confusion problem in V8 engine.
+
+How to stay safe?
+
+First, you need to update your browser to the latest version — at the time of this writing, it is 100.0.4896.60.
+
+If your version of Chrome is older, that means your browser has not been updated automatically and we recommend updating it manually using our step-by-step instructions .
+
+If you use Microsoft Edge, then don’t forget to update it too — this is done in the same way as with Google Chrome.
+
+We also recommend that you to follow the news and timely update the most critical programs , including security solutions, browsers, office suites and the operating system itself.
+
+In addition, we recommend using reliable security solutions that can automatically detect and prevent attempts to exploit vulnerabilities, so you can protect yourself from attacks even before official patches are released.
+
+
+
+

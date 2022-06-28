@@ -1,0 +1,10 @@
+
+Here we imported the userhooks.cpp from scdbg, an extension of the libemu sctest that includes some 250 API hooks.
+As it turns out, very few changes were required to get it working.
+In Figure 2, we can see the results of testing it against a fairly complex shellcode that: allocates virtual memory copies code to the new alloc creates a new thread downloads an executable checks the registry for the presence of Antivirus software Note that while this shellcode would normally do process injection, scdbg handles it all inline for simplified analysis.
+Figure 2:
+Complex shellcode running with hooks imported from scdbg Another large feature to test was the scdbg debug shell.
+When testing software in an emulated environment, having interactive debug tools available is extremely handy.
+Figure 3 shows an example of setting a breakpoint, single stepping, and examining memory of code running in the emulator.
+Figure 3:
+Imported scdbg debug shell running with Unicorn Engine and libemu shim layer Conclusion

@@ -1,0 +1,5 @@
+
+The following screen, from the well-known SANS Digital Forensics and Incident Response poster, explains where the logs can be found.
+Source: SANS DFIR
+Poster 2015.
+Basic RDP security measures Outside access to a network can be necessary, but it always comes with risk.

@@ -1,0 +1,13 @@
+
+FIGURE 3.
+CREATION OF A MUTEX AND CHECK TO SEE IF IT ALREADY EXISTS If the mutex exists, the malware finishes with a call to “ExitProcess.”
+This is done to avoid re-launching of the ransomware.
+After this mutex operation the malware calculates a CRC32 hash of a part of its data using a special seed that changes per sample too.
+This CRC32 operation is based on a CRC32 polynomial operation instead of tables to make it faster and the code-size smaller.
+The next step is decrypting this block of data if the CRC32 check passes with success.
+If the check is a failure, the malware will ignore this flow of code and try to use an exploit as will be explained later in the report.
+FIGURE 4.
+CALCULATION OF THE CRC32 HASH OF THE CRYPTED CONFIG AND DECRYPTION
+IF IT PASSES THE CHECK
+In the case that the malware passes the CRC32 check and decrypts correctly with a key that changes per sample, the block of data will get a JSON file in memory that will be parsed.
+This config file has fields to prepare the keys later to encrypt the victim key and more information that will alter the behavior of the malware.

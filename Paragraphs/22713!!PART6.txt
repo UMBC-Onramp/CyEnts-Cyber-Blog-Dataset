@@ -1,0 +1,7 @@
+
+Some are bizarre and unrelated — we even saw a suicide note.
+Screenshots of correspondence showing credentials for fake cryptocurrency accounts In other cases it looks like the “credentials” got on Lightshot as if by accident or carelessness.
+For example, we saw screenshots that appeared to be password recovery e-mails for cryptocurrency wallets.
+Fake password reset e-mails for equally fake cryptocurrency accounts If a user goes to the URL in the screenshot in pursuit of easy pickings, they will find themselves on a website posing as a cryptocurrency exchange.
+Entering the credentials gets them into a fake account that appears to hold an impressive amount of cryptocurrency, say, 0.8 BTC (more than $45,000 at the time of posting).
+And from inside the account, the victim can try to withdraw the funds and transfer them to their own account.

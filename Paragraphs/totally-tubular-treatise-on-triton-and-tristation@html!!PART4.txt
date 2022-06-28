@@ -1,0 +1,4 @@
+
+To us, the Triconex systems, software and associated terminology sound foreign and complicated, and the TriStation protocol is no different.
+Attempting to understand the protocol from ground zero would take a considerable amount of time and reverse engineering effort – so why not learn from TRITON itself?
+With the TRITON framework containing TriStation communication functionality, we pursued studying the framework to better understand this mysterious protocol.

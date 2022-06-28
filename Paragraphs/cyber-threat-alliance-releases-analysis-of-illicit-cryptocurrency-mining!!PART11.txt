@@ -1,0 +1,9 @@
+
+Although public cryptocurrencies like Bitcoin may be closely tied to monetary value, private or custom blockchains are also at risk and also need to prepare against future attacks.
+Private blockchains, including non-currency-related ones, may carry unique risks.
+Large blockchains such as Bitcoin are considered immutable due to the difficulty of changing historical ledger data.
+Private blockchains inherently lack the same scale of adoption and thus may be more susceptible to attacks.
+The 51% attack is a well-known threat that can take advantage of a smaller network and have a severe impact on the blockchain’s integrity.
+With some nation-states already turning to cryptocurrencies to solve economic issues, it is likely that some nation-states will use illicit mining to gain revenue.
+State-sponsored actors have already been implicated in the theft of cryptocurrencies, as McAfee has reported .
+Legitimately mined cryptocurrency has been implicated in obfuscating state-sponsored cyber operations, hiding purchases of VPN accounts, servers, and domain registrations.

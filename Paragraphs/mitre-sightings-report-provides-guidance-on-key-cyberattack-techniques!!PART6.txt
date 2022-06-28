@@ -1,0 +1,7 @@
+
+It is followed by Command and Script Interpreter (T1059) , representing 15.77%.
+These techniques have been employed across all major platforms, attacking Linux , Windows, and macOS.
+The other techniques combined accounted for less than 11% of all sightings.
+Zero-trust strategies can play a critical role in defending against these techniques.
+Again, quoting from the report, “Adversaries are attempting to appear as legitimate users.
+Therefore, creating strong baselines and restricting permissions is key to detecting and disrupting adversary behaviors.”

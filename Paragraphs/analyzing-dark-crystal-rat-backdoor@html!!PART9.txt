@@ -1,0 +1,7 @@
+
+> de4dot -f dfsds.exe -o dfsds_deob.exe de4dot v3.1.41592.3405
+Copyright (C) 2011-2015 de4dot@gmail.com
+Latest version and source code: https://github.com/0xd4d/de4dot Detected .NET
+Reactor (C:\\Users\\user\\Desktop\\intelfirst\\dfsds.exe) Cleaning C:\\Users\\user\\Desktop\\intelfirst\\dfsds.exe Renaming all obfuscated symbols Saving C:\\Users\\user\\Desktop\\intelfirst\\dfsds_deob.exe Figure 9: de4dot successfully deobfuscates dfsds.exe After deobfuscating dfsds.exe, we ran dnSpy again on the resulting dfsds_deob.exe.
+When we decompiled SchemaServerManager.
+Main again, the results were much different, as shown in Figure 10.

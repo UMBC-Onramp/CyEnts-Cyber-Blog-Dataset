@@ -1,0 +1,4 @@
+Introduction Cyber criminals tend to favor cryptocurrencies because they provide a certain level of anonymity and can be easily monetized.
+This interest has increased in recent years , stemming far beyond the desire to simply use cryptocurrencies as a method of payment for illicit tools and services.
+Many actors have also attempted to capitalize on the growing popularity of cryptocurrencies, and subsequent rising price, by conducting various operations aimed at them.
+These operations include malicious cryptocurrency mining (also referred to as cryptojacking), the collection of cryptocurrency wallet credentials, extortion activity, and the targeting of cryptocurrency exchanges.

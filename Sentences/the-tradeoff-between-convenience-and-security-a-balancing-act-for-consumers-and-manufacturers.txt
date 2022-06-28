@@ -1,0 +1,59 @@
+By Steve Povolny on Jan 06, 2020 This week McAfee Advanced Threat Research (ATR) published new findings, uncovering security flaws in two popular IoT devices: a connected garage door opener and a “smart” ring, which, amongst many uses, utilizes near field communication (NFC) to open door locks.
+
+I’d like to use these cases as examples of a growing concern in the area of product security.
+
+The industry of consumer devices has seen some positive momentum for security in recent years.
+
+For example, just a few years back, nearly every consumer-grade router shipped with a default username and password, which, if left unchanged, represented a serious security concern for home networks.
+
+At a minimum, most routers at least now ship with a unique password printed on the physical device itself, dramatically increasing the overall network security.
+
+Despite positive changes such as this, there is a long way to go.
+
+If we think about the history of garage doors, they began as a completely manual object, requiring the owner to lift or operate it physically.
+
+The first overhead garage door was invented in the early 1920s, and an electric version came to market just a few years later.
+
+While this improved the functionality of the device and allowed for “remote” entry, it wasn’t until many years later that an actual wireless remote was added, giving consumers the ability to allow wireless access into their home.
+
+This was the beginning of an interesting tradeoff for consumers – an obvious increase in convenience which introduced a potential new security concern.
+
+The same concept applies to the front door.
+
+Most consumers still utilize physical keys to secure the front door to their homes.
+
+However, the introduction of NFC enabled home door locks, which can be opened using compatible smart rings, adds both convenience and potentially compromised security.
+
+For example, upon investigating the McLear NFC Ring, McAfee ATR uncovered a design insecurity, which could allow an attacker to easily clone the NFC Ring and gain entry to a home utilizing an NFC enabled smart lock.
+
+While the NFC Ring modernizes physical household security, the convenience that comes with technology implementation also introduces a security issue.
+
+The issue here is at a higher level; where and when do we draw the line for convenience versus security?
+
+The numerous benefits technology enhancements bring are exciting and often highly valuable; but many are unaware of the lengths cyber criminals will go to (for example, we once uncovered a vulnerability in a coffee pot which we were able to leverage to gain access to a home Wi-Fi network ) and the many ways new features can reduce the security of a system.
+
+As we move towards automation and remote access to nearly every computerized system on the planet, it’s our shared responsibility to maintain awareness of this fact and demand a higher bar for the products that we buy.
+
+So what can be done?
+
+The responsibility is shared between consumers and manufacturers, and there are a few options: For consumers: Practice proper cyber hygiene.
+
+From a technical perspective, consumers have many tools at their disposal, even when security concerns do manifest.
+
+Implement a strong password policy, put IoT devices on their own, separate, network, utilize dual-factor authentication when possible, minimize redundant systems and patch quickly when issues are found.
+
+Do your research.
+
+Consumers should ensure they are aware of the security risks associated with products available on the market.
+
+For product manufacturers: Manufacturer supported awareness.
+
+Product manufacturers can help by clearly stating the level of security their product provides in comparison with the technology or component they seek to advance.
+
+Embrace vulnerability disclosure.
+
+Threat actors are constantly tracking flaws which they can weaponize; conversely, threat researchers are constantly working to uncover and secure product vulnerabilities.
+
+By partnering with researchers and responding quickly, vendors have a unique opportunity
+
+

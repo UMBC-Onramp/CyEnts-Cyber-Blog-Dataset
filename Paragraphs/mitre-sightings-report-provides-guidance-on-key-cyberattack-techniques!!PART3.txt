@@ -1,0 +1,7 @@
+
+The Sightings Report is based on a research project run by MITRE Engenuity’s Center for Threat-Informed Defense (Center) in collaboration with Fortinet’s FortiGuard Labs and several other Center participants.
+The researchers analyzed more than one million attacks using the MITRE ATT&CK® framework , collected over 28 months (April 1, 2019, to July 31, 2021), to provide contextual, actionable threat intelligence to explain how attackers are conducting their nasty business.
+This threat intelligence report provides crucial visibility into which TTPs are being used the most by cyber adversaries.
+Its “high resolution” visibility helps security professionals identify those threats they are most likely to face.
+This enables them to quickly prioritize and fine-tune their defenses, including what security technologies to deploy and where.
+The research from the Sightings Report paints “a picture of common adversary behavior, including which techniques adversaries use, how their use changes over time, and how adversaries sequence techniques.

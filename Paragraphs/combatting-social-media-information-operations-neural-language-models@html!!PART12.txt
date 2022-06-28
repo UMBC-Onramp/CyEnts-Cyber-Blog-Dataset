@@ -1,0 +1,5 @@
+
+Observe how these text generations are formatted like something we might expect to encounter scrolling through social media – they are short yet biting, express certainty and outrage regarding political issues, and contain emphases like an exclamation point.
+They also contain idiosyncrasies like hashtags and emojis that positionally manifest at the end of the generated text, depicting a semantic style regularly exhibited by actual users.
+Figure 2: Fine-tuning GPT-2 using the IRA datasets for the language modeling task.
+Example generations are primed with the same phrase from Figure 1, “It’s disgraceful that.”

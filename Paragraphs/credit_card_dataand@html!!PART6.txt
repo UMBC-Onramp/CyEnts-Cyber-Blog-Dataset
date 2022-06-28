@@ -1,0 +1,10 @@
+
+Click image to enlarge.
+As with the majority of phishing attacks, this campaign uses PHP mail utility to send the attacker the stolen credentials.
+The advantage of using this technique is that the attacker can host their phishing kits on a number of websites and still get the stolen credentials and other information from a single email account.
+This enables attackers to extend their reach.
+Figure 8:
+Stolen information is sent to an email address using mail() function Tips to Secure your Netflix Account To learn more about securing your Netflix account, Netflix provides additional information on how to keep your account safe from phishing scams and other fraudulent activity at https://www.netflix.com/security.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,10 @@
+
+Below is a comparison of a Bitpaymer initial email (left) and a standard Ryuk initial email (right).
+A comparison of a Bitpaymer initial email (left) and a standard Ryuk initial email (right)
+The shared language implies that text once unique to a Bitpaymer campaign was borrowed for a Ryuk campaign, possibly by an operator running simultaneous ransom campaigns of both Bitpaymer and Ryuk or the imitation can be considered as the sincerest form of flattery.
+Different Initial Email Response May Be Different Adversaries?
+A more dramatic scripted communication difference has been observed in the initial email response from Ryuk adversaries.
+The initial email response is typically identical within ransomware families belonging to the same campaign.
+When significant differences in length, language, and initial ransom amount appear in the initial email response we are comfortable assuming they belong to unique groups with unique modus operandi.
+This would mean that Ryuk in being spread by more than one actor group.
+Below are two such Ryuk examples: Post Payment Bitcoin Activity A final indicator that multiple groups are running simultaneous Ryuk campaigns can be observed in the activity of bitcoin after it hits a ransom address.

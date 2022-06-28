@@ -1,0 +1,9 @@
+
+This guide should help organizations in that process.
+Read the report today .
+*Note: The recommendations in this report will help organizations mitigate the risk of and contain ransomware events.
+However, this report does not cover all aspects of a ransomware incident response.
+We do not discuss investigative techniques to identify and remove backdoors (ransomware operators often have multiple backdoors into victim environments), communicating and negotiating with threat actors, or recovering data once a decryptor is provided.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

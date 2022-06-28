@@ -1,0 +1,9 @@
+
+As its gaming population has steadily grown, reaching more than 140 million monthly active players in August 2021, Minecraft has never been more popular 12 years after its initial release.
+Evidently, cybercriminals cannot pass up the opportunity to target such a large userbase.
+FortiGuard Labs recently discovered a variant of the Chaos ransomware that appears to target Minecraft gamers in Japan.
+This variant not only encrypts certain files but also destroys others, rendering them unrecoverable.
+If gamers fall prey to the attack, choosing to pay the ransom may still lead to a loss of data.
+In this report we will take a look at how this new ransomware variant works.
+Ransomware Lure Being Posted to Japanese Minecraft Forums Gamers create “alt” (alternative) accounts within Minecraft for various purposes (both good and bad): they allow them to antagonize/troll other players without having their main account banned, they provide cover for an alternative in-game identity/personality, they help avoid getting their main account banned for using cheats (gaining an unfair advantage over other gamers), etc.
+FortiGuard Labs has discovered a variant of Chaos ransomware being hidden in a file pretending to contain a list of “Minecraft Alt” accounts that leads us to believe that the effort is to target Minecraft gamers in Japan.

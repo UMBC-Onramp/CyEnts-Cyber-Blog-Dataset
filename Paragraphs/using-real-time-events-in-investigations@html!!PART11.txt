@@ -1,0 +1,9 @@
+
+Table 7 provides an example of a real-time IPv4 network event recorded by our solution.
+Field Example Timestamp (UTC) 2020-03-10 16:46:51.690 Sequence Number 2895588 PID 9392 Process + Path C:\\Windows\\Temp\\legitservice.exe Username TEST-DOMAIN\\BackupAdmin Local IP Address 10.0.0.52
+Local Port 57472 Remote IP Address 10.0.0.51 Remote Port 443 Protocol TCP Table 7:
+Example real-time network connection event Based on this real-time IPv4 network event, the malicious executable C:\\Windows\\Temp\\legitservice.exe made an outbound TCP connection to 10.0.0.51:443 .
+Registry Key Events By using historical evidence to investigate relevant timeframes and commonly abused registry keys, we can identify malicious or leveraged keys.
+Real-time registry key events are useful for linking processes to the modified registry keys.
+They can also show when an attacker deletes or renames a registry key.
+This is useful to an analyst because the only available timestamp recorded in the registry is the last modified time of a registry key, and this timestamp is updated if a parent key is updated.

@@ -1,0 +1,7 @@
+
+.NET
+Executable Methods A .NET executable is just another binary following the Portable Executable (PE) format.
+There are plenty of resources describing the PE file format , the .NET metadata and the .NET token tables in detail.
+I recommend our readers to take a quick detour and refresh their memory on those topics before continuing.
+This post won’t go into further details but will focus on the .NET methods instead.
+Each .NET method in a .NET assembly is identified by a token.

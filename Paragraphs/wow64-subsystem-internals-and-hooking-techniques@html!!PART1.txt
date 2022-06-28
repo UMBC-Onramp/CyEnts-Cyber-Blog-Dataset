@@ -1,0 +1,6 @@
+Microsoft is known for their backwards compatibility.
+When they rolled out the 64-bit variant of Windows years ago they needed to provide compatibility with existing 32-bit applications.
+In order to provide seamless execution regardless of application bitness, the WoW (Windows on Windows) system was coined.
+This layer, which will be referred to as ‘WOW64’ from here on out, is responsible for translating all Windows API calls from 32-bit userspace to the 64-bit operating system kernel.
+This blog post is broken up into two sections.
+First we start by diving deep into the WOW64 system.

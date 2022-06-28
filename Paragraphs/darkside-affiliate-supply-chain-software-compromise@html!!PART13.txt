@@ -1,0 +1,5 @@
+
+Mandiant observed the fronted domain lumiahelptipsmscdnqa.microsoft[.]com and hard-coded domain max-ghoster1.azureedge[.]net used for C2 server communication.
+The communication between SMOKEDHAM and its C2 server consists of JSON data exchanged via HTTP POST requests.
+The backdoor initiates requests to the C2 server and the C2 server may include commands to execute in the responses.
+The JSON data exchanged between SMOKEDHAM and its C2 server contains three fields: ID, UUID, and Data.

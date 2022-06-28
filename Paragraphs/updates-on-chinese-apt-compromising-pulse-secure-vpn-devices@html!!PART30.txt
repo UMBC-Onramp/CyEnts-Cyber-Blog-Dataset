@@ -1,0 +1,9 @@
+
+AUT23574 It parses the input file for web results code WEB20174.
+If it finds a web result code, it looks for file extensions: .css .jpg .png .gif .ico .js .jsp
+These strings indicate the type of data that is collected from web requests: Web login, IP: %s,
+User: %s, Realm: %s, Roles: %s, Browser: %s Agent login, IP: %s,
+User: %s, Realm: %s, Roles: %s, Client: %s Logout, IP: %s,
+User: %s, Realm: %s, Roles: %s Session end, IP: %s,
+User: %s, Realm: %s, Roles: %s New session, IP: %s,
+User: %s, Realm: %s, Roles: %s, New IP: %s Host check, Policy: %s

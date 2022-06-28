@@ -1,0 +1,6 @@
+
+Some threat actors even sell these curated botnets as a service.
+We have been closely monitoring the current state of the IoT botnet threat landscape through the perspective of an IoT device with the help of a honeypot system.
+This article describes our observations over the last few weeks.
+Where are These Attacks Coming From?
+To simulate what it would be like for a new IoT device to be connected to the internet for the first time, we set up a fresh honeypot system to capture what kinds of attacks it would receive.

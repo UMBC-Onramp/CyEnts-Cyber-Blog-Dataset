@@ -1,0 +1,6 @@
+
+After decryption, we can see out.dex in zipped format.
+The dex file has spy functions to steal SMS messages, contacts, multimedia files, and device location from infected devices.
+The control server in second stage is different from the first stage’s.
+The encryption methodology and the server folder structures on the remote server are identical to the first stage.
+We found one victim’s GPS location information and recorded audio files (.3gp) among the encrypted data on the control server.

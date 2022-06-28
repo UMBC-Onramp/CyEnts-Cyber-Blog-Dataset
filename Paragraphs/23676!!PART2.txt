@@ -1,0 +1,7 @@
+
+That all sounds simple, but you don’t have to look too closely to see that when you agree to install a proxyware client on a work computer, it’s not harmless at all.
+Install proxyware and you’re exposing your corporate network to risks that far outweigh any income you might earn from the deal.
+To put it bluntly, no other questionable Internet money-making scheme comes with such a variety of undesirable consequences.
+Today we explain why proxyware is dangerous.
+What is proxyware?
+Researchers at Cisco Talos coined the term proxyware and have reported on the phenomenon in depth .

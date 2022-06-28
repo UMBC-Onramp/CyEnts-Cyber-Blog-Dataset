@@ -1,0 +1,6 @@
+
+And “switch_number” is modified each time after being used, then once the code branch task is finished it goes back to the “while” statement to check the “switch_number” again.
+This technique really causes trouble for security researchers trying to analyze the function’s intention and trace its code.
+Figure 4.1 is a pseudo code in C that reveals the obfuscated code flow.
+Strings are Encrypted All constant strings are encrypted and are only decrypted just before being used.
+The constant strings are usually very useful hints for researchers to quickly locate the key point of the malware.

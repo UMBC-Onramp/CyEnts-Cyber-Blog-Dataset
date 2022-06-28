@@ -1,0 +1,6 @@
+
+This complicates the theory of \"ground up\" development, so did they base their code on something else?
+While learning from the TriStation functionality within TRITON, we continued to explore legitimate TriStation software.
+We began our search for \"TS1131.exe\" and hit dead ends sorting through TriStation DLLs until we came across a variety of TriStation utilities in MSI form.
+We ultimately stumbled across a juicy archive containing \"Trilog v4.\" Upon further inspection, this file installed \"TriLog.exe,\" which the original TRITON executable mimicked, and a couple of supporting DLLs, all of which were timestamped around August 2006.
+When we saw the DLL file description \"Tricon Communications Interface\" and original file name \"TricCom.DLL\", we knew we were in the right place.

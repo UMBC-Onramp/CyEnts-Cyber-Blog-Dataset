@@ -1,0 +1,14 @@
+
+The C2 IP address is rated as \"Malicious\" by the FortiGuard Web Filtering service.
+The VB script is detected as “ VBS/Agent.
+OQP!tr ” and the xml file is detected as “ VBS/Agent.
+AK!tr ”.
+The RAT loader and the final payload AsyncRAT are detected as “W32/PossibleThreat”.
+The FortiGuard AntiVirus service is supported by FortiGate , FortiMail, FortiClient , and FortiEDR .
+The Fortinet AntiVirus engine is a part of each of those solutions as well.
+As a result, customers who have these products with up-to-date protections are protected.
+FortiEDR’s real time protection detects process hollowing during execution and blocks the RAT from connecting to the C2 server.
+Fortinet’s Phishing Simulation Service, FortiPhish, can also be used to proactively test the susceptibility of your organization to these kinds of phishing attacks.
+MITRE ATT&CK T1566.002:
+Phishing: Spearphishing Link T1059.005:
+Command and Scripting Interpreter: Visual Basic T1027: Obfuscated Files T1127.001: Trusted Developer Utilities Proxy Execution: MSBuild T1218.009: Signed Binary Proxy Execution: Regsvcs T1055.012: Process Injection:

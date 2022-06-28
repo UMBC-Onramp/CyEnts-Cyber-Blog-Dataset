@@ -1,0 +1,8 @@
+
+If you don’t want to lose your photos, documents, and other files, you cannot avoid picking up a few antiransomware skills and habits.
+What is ransomware?
+Ransomware is malware that searches a hard drive for user-valuable information (such as documents, tables, images, and databases) and encrypts everything it finds, locking the files.
+Next, the ransomware displays a message demanding payment to restore the data.
+If the victim pays, one of several scenarios may play out:
+Sometimes the attackers actually send the decryption key with instructions; Some attackers simply take the victim’s money and vanish;
+In some cases, the cybercriminals cannot recover the data even if they want to — some ransomware damages files irrevocably.

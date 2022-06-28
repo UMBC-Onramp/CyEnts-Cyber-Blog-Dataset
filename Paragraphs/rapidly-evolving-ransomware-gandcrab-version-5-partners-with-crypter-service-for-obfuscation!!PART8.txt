@@ -1,0 +1,8 @@
+
+(Earlier they were in plain text.)
+The exploit with dynamic calls and obfuscated strings.
+The second exploit is covered under CVE-2018-8120, which in Windows 7, Windows Server 2008 R2 and Windows Server 2008 allows an elevation of privileges from the kernel.
+Thanks to a faulty object in the token of the System process, changing this token in the malware results in executing the malware with System privileges.
+Executing the exploit CVE-2018-8120.
+You can read more about this exploit on mcafee.com.
+The malware checks the version of the operating system and type of user and whether it can get the token elevation information of its own process before employing the use of exploits.

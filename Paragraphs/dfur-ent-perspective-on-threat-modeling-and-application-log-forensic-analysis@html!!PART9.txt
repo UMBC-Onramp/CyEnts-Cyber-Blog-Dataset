@@ -1,0 +1,8 @@
+
+They quickly learned that they needed to solve the following operational issues before they could effectively investigate application attacks: Inconsistency during manual analysis .
+DFUR analysts took different approaches to searching their Splunk ES instance, and they would reach different conclusions.
+Playbooks were needed to define a standard investigative methodology for common incident scenarios.
+No documentation of log fields or sources .
+Some DFUR analysts were not aware of all relevant data sources that were available when investigating security incidents.
+This led to findings that were based on a small part of the picture.
+A data dictionary was needed that defines the log sources and fields in the DFUR Splunk ES instance and the retention time for each log source.

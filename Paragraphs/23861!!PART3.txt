@@ -1,0 +1,5 @@
+
+How to stay safe from Pegasus and other advanced mobile spyware First of all, we should start by saying that Pegasus is a toolkit sold to nation states at relatively high prices .
+The cost of a full deployment may easily reach millions of USD.
+Similarly, other APT mobile malware may be deployed through zero-click 0-day exploits.
+These are extremely expensive — as an example, Zerodium, an exploit brokerage firm pays up to $2.5 million for an Android zero-click infection chain with persistence: From the start, this draws an important conclusion — nation state sponsored cyberespionage is a vastly resourceful endeavor.

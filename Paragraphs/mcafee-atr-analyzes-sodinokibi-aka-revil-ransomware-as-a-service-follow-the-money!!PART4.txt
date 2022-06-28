@@ -1,0 +1,5 @@
+
+More than a week later, on June 17 th , 2019, “Lalartu” posted another one with an attachment to it:
+In this posting we see a screenshot with partial TXIDs and the amounts.
+With the help of the Chainalysis software and team, we were able to retrieve the full TXIDs.
+With that list we were able to investigate the transactions and start mapping them out with their software: From the various samples we have researched, the amounts asked for payment are between 0.44 and 0.45 BTC, an average of 4,000 USD.

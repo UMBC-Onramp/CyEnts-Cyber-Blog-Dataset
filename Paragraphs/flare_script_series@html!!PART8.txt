@@ -1,0 +1,8 @@
+
+Next, we use the DebugUtils function get_call_list to find the three push arguments for each time string_decoder is called.
+Once the call_list is generated, we iterate all calling addresses and associated arguments.
+In this example, the output string is decoded to the stack.
+Because we are only executing the string decoder function and won’t have the same stack setup as the malware, we must allocate memory for the output string.
+We use the third parameter, the length, to specify the size of the memory allocation.
+Once we allocate memory for the output string, we set the newly allocated memory address as the second parameter to receive the output bytes.
+Finally, we run the string_decoder function by using the DebugUtils call function and read the result from our allocated buffer.

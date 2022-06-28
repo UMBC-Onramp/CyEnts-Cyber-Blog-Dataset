@@ -1,0 +1,201 @@
+By Alexandre Mundo on Jul 31, 2018 Update: On August 9 we added our analysis of Versions 4.2.1 and 4.3.
+
+The GandCrab ransomware first appeared in January and has been updated rapidly during its short life.
+
+It is the leading ransomware threat.
+
+The McAfee Advanced Threat Research team has reverse engineered Versions 4.0 through 4.3 of the malware.
+
+The first versions (1.0 and 1.1) of this malware had a bug that left the keys in memory because the author did not correctly use the flags in a crypto function.
+
+One antimalware company released a free decryption tool, posted on NoMoreRansom.org , with help of Romanian police and Europol.
+
+The hack was confirmed by the malware author in a Russian forum: Figure 1.
+
+Confirmation by the author of the hack of GandCrab servers.
+
+The text apologizes to partners for the hack and temporarily shuts down the program.
+
+It promises to release an improved version within a few days.
+
+The second version of GandCrab quickly appeared and improved the malware server’s security against future counterattacks.
+
+The first versions of the ransomware had a list of file extensions to encrypt, but the second and later versions have replaced this list with an exclusion list.
+
+All files except those on the list were encrypted.
+
+Old versions of the malware used RSA and AES to encrypt the files, and communicated with a control server to send the RSA keys locked with an RC4 algorithm.
+
+The GandCrab author has moved quickly to improve the code and has added comments to mock the security community, law agencies, and the NoMoreRansom organization.
+
+The malware is not professionally developed and usually has bugs (even in Version 4.3), but the speed of changes is impressive and increases the difficulty of combating it.
+
+Entry vector GandCrab uses several entry vectors: Remote desktop connections with weak security or bought in underground forums Phishing emails with links or attachments Trojanized legitimate programs containing the malware, or downloading and launching it Exploits kits such as RigEK and others The goal of GandCrab, as with other ransomware, is to encrypt all or many files on an infected system and insist on payment to unlock them.
+
+The developer requires payment in cryptocurrency, primarily DASH, because it complex to track, or Bitcoin.
+
+The malware is usually but not always packed.
+
+We have seen variants in .exe format (the primary form) along with DLLs.
+
+GandCrab is effectively ransomware as a service; its operators can choose which version they want.
+
+Version 4.0 The most important change in Version 4.0 is in the algorithm used to encrypt files.
+
+Earlier versions used RSA and AES; the latest versions use Salsa20.
+
+The main reason is for speed.
+
+RSA is a powerful but slow algorithm.
+
+Salsa20 is quick and the implementation is small.
+
+The ransomware checks the language of the system and will not drop the malicious payload if the infected machine operates in Russian or certain other former Soviet languages: Figure 2.
+
+Checking the language of the infected system.
+
+GandCrab encrypts any file that does not appear on the following file-extension exclusion list: The ransomware does not encrypt files in these folders: GandCrab leaves these files unencrypted: The ransomware generates a pair of RSA keys before encrypting any file.
+
+The public key encrypts the Salsa20 key and random initialization vector (IV, or nonce)) generated later for each file.
+
+The encryption procedure generates a random Salsa20 key and a random IV for each file, encrypts the file with them, and encrypts this key and IV with a pair of RSA keys (with the public RSA key created at the beginning).
+
+The private key remains encrypted in the registry using another Salsa20 key and IV encrypted with an RSA public key embedded in the malware.
+
+After encryption, the file key and IV are appended to the contents of the file in a new field of 8 bytes, increasing the original file size.
+
+This method makes GandCrab very strong ransomware because without the private key to the embedded public key, it is not possible to decrypt the files.
+
+Without the new RSA private key, we cannot decrypt the Salsa20 key and IV that are appended to the file.
+
+Finally, the ransomware deletes all shadow volumes on the infected machine and deletes itself.
+
+Version 4.1 This version retains the Salsa20 algorithm, fixes some bugs, and adds a new function.
+
+This function, in a random procedure from a big list of domains, creates a final path and sends the encrypted information gathered from the infected machine.
+
+We do not know why the malware does this; the random procedure usually creates paths to remote sites that do not exist.
+
+For example, one sample of this version has the following hardcoded list of encrypted domains.
+
+(This is only a small part of this list.)
+
+The ransomware selects one domain from the list and creates a random path with one of these words: Later it randomly chooses another word to add to the URL it creates: Afterward it makes a file name, randomly choosing three or four combinations from the following list: Finally the malware concatenates the filename with a randomly chosen extension: At this point, the malware sends the encrypted information using POST to the newly generated URL for all domains in the embedded list, repeating the process of generating a path and name for each domain.
+
+Another important change in this version is the attempt to obfuscate the calls to functions such as VirtualAlloc and VirtualFree.
+
+Figure 3.
+
+New functions to obfuscate the code.
+
+Version 4.1.2
+
+This version has appeared with some variants.
+
+Two security companies revealed a vaccine to prevent infections by previous versions.
+
+The vaccine involved making a special file in a folder with a special name before the ransomware infects the system.
+
+If this file exists, the ransomware finishes without dropping the payload.
+
+The file gets its name from the serial number of the Windows logic unit hard disk value.
+
+The malware makes a simple calculation with this name and creates it in the %appdata% or %program files% folder (based in the OS) with the extension .lock.
+
+Figure 4.
+
+Creating the special file.
+
+The GandCrab author reacted quickly, changing the operation to make this value unique and use the Salsa20 algorithm with an embedded key and IV with text referring to these companies.
+
+The text and the value calculated were used to make the filename; the extension remained .lock.
+
+One of the security companies responded by making a free tool to make this file available for all users, but within hours the author released another Version 4.1.2 with the text changed.
+
+The malware no longer creates any file, instead making a mutex object with this special name.
+
+The mutex remains and keeps the .lock extension in the name.
+
+Figure 5.
+
+Creating a special mutex instead of a special lock file.
+
+The vaccine does not work with the second Version 4.1.2 and Version 4.2, but it does work with previous versions.
+
+Version 4.2 This version has code to detect virtual machines and stop running the ransomware within them.
+
+It checks the number of remote units, the size of the ransomware name running compared with certain sizes, installs a VectoredExceptionHandler, and checks for VMware virtual machines using the old trick of the virtual port in a little encrypted shellcode: Figure 6.
+
+Detecting VMware.
+
+The malware calculates the free space of the main Windows installation logic unit and finally calculates a value.
+
+If this value is correct for the ransomware, it runs normally.
+
+If the value is less than 0x1E, it waits one hour to start the normal process.
+
+(It blocks automatic systems that do not have “sleep” prepared.)
+
+If the value is greater than 0x1E, the ransomware finishes its execution.
+
+Figure 7.
+
+Checking for virtual machines and choosing a path.
+
+Version 4.2.1 This version appeared August 1.
+
+The change from the previous version is a text message to the company that made the vaccine along with a link to a source code zero-day exploit that attacks one of this company’s products.
+
+The code is a Visual Studio project and can be easily recompiled.
+
+This code has folders in Russian after loading the project in Visual Studio.
+
+Version 4.3 This version also appeared August 1.
+
+This version has several changes from previous versions.
+
+It removes the code to detect virtual machines and a few other odd things in Version 4.2.
+
+This code had some failure points; some virtual machines could not be detected.
+
+It implemented an exploit against one product of the antivirus company that made the vaccine against Version 4.0 through the first release of Version 4.1.2.
+
+This code appears after the malware encrypts files and before it deletes itself.
+
+Figure 8.
+
+Running an exploit against a product of the company that made a vaccine.
+
+New code in some functions makes static analysis with Interactive Disassembler more complex.
+
+This is an easy but effective trick: The ransomware makes a delta call (which puts the address of the delta offset at the top of the stack) and adds 0x11 (the size of the special code, meaning the malware author is using a macro) to the value in the ESP register.
+
+ESP now points to an address after the block of the special code and makes a jump in the middle of the opcodes of this block.
+
+This technique makes it appear like another instruction, in this case “pop eax,” which extracts the value after adding 0x11 from the top of the stack (ESP register).
+
+The code later makes an unconditional jump to this address in EAX.
+
+This way the ransomware follows its normal code flow.
+
+Figure 9.
+
+New code to make static analysis more difficult.
+
+Conclusion GandCrab is the leading ransomware threat for any person or enterprise.
+
+The author uses many ways to install it—including exploits kits, phishing mails, Trojans, and fake programs.
+
+The developer actively updates and improves the code to make analysis more difficult and to detect virtual machines.
+
+The code is not professionally written and continues to suffer from bugs, yet the product is well promoted in underground forums and has increased in value.
+
+McAfee detects this threat as Ran-GandCrab4 in Versions 4.0 and later.
+
+Previous ones are also detected.
+
+Indicators of compromise MITRE ATT&CK
+
+This sample uses the following MITRE ATT&CK techniques: File deletion System information discovery Execution through API Execution through WMIC Application process discovery: to detect antimalware and security products as well as normal programs Query registry: to get information about keys that the malware needs make or read Modify registry File and directory discovery: to search for files to encrypt Encrypt files Process discovery: enumerating all processes on the endpoint to kill some special ones Create files Elevation of privileges Hashes 9a80f1866450f2f10fa69b1eb8747c344d6ef038468014c59cc50497f9e4675d – version 4.0 d9466be5c387eb2fbf619a8cd0922b167ea7fa06b63f13cd330ca974cae1d513 – version 4.0 43b57d2b16c44041916f3b0562712d5dca4f8a42bc00f00a023b4a0788d18276 – version 4.0 786e3c693fcdf55466fd6e5446de7cfeb58a4311442e0bc99ce0b0985c77b45d – version 4.0 f5e74d939a5b329dddc94b75bd770d11c8f9cc3a640dccd8dff765b6997809f2 – version 4.1 8ecbfe6f52ae98b5c9e406459804c4ba7f110e71716ebf05015a3a99c995baa1 – version 4.1 e454123d852e6a40eed1f2552e1a1ad3c00991541d812fbf24b70611bd1ec40a – version 4.1 0aef79fac6331f9eca49e711291ac116e7f6fbaeb5a1f3eb7fea9e2e4ec6a608 – version 4.1 3277c1649972ab5b43ae9e87087b70ea4825956bfdddd1034f7b0680e6d46efa – version 4.1 a92af825bd95b6514f22dea08a4eb6d3491cbad45e69a5b9653b0148ee9f9832 – version 4.1 ce093ffa19f020a2b73719f653b5e0423df28ef1d59035d55e99154a85c5c668 – version 4.1.2 (first) a1aae5ae7a3722b83dc1c9b0831c973641b246808de4f3670f2fd916cf498d38 – version 4.1.2 (second) 3b0096d6798b1887cffa1288583e93f70e656270119087ceb2f832b69b89260a – version 4.2 e8e948e36fed93061062406693d1b2c402dd8e5788506bfbb50dbd86a5540829 – version 4.2 Domain http://gandcrabmfe6mnef.onion
+
+

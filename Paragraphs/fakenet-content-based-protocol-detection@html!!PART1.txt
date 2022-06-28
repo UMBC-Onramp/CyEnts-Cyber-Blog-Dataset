@@ -1,0 +1,10 @@
+I (Matthew Haigh) recently contributed to FLARE’s FakeNet-NG network simulator by adding content-based protocol detection and configuration.
+This feature is useful for analyzing malware that uses a protocol over a non-standard port; for example, HTTP over port 81.
+The new feature also detects and adapts to SSL so that any protocol can be used with SSL and handled appropriately by FakeNet-NG.
+We were motivated to add this feature since it was a feature of the original FakeNet and it was needed for real world malware.
+What is FakeNet-NG FakeNet-NG simulates a network so malware analysts can run samples with network functionality without the risks of an Internet connection.
+Analysts can examine network-based indicators via FakeNet-NG’s textual and pcap output.
+It is plug-and-play, configurable, and works on both Windows and Linux.
+FakeNet-NG simulates common protocols to trick malware into thinking it is connected to the Internet.
+FakeNet-NG supports the following protocols: DNS, HTTP, FTP, POP, SMTP, IRC, SSL, and TFTP.
+Previous Design Previously FakeNet-NG employed Listener modules, which were bound to configurable ports for each protocol.

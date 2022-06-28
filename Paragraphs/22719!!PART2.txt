@@ -1,0 +1,9 @@
+
+Here’s why.
+What is Desktop Window Manager?
+Pretty much everyone is familiar with the windowed interface of modern operating systems:  each program opening in a separate window that doesn’t necessarily take up the whole screen.
+Windows may overlap, for example, one casting a shadow over others as if it were physically blocking the light.
+In Microsoft Windows, the component responsible for rendering features such as shadows and transparency is Desktop Window Manager.
+To understand why Desktop Window Manager is important in a cybersecurity context, consider that programs don’t just draw their windows on the screen; they put the necessary information in a buffer.
+Desktop Window Manager grabs that information from each program’s buffer and creates the overall composite view that the user sees.
+When a user moves one window over another, the open programs don’t know anything about whether their windows should be casting a shadow or having a shadow cast on them, for example.

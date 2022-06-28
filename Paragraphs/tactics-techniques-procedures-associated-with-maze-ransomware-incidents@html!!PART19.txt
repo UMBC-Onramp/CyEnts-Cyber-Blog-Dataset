@@ -1,0 +1,8 @@
+
+Notably, the aforementioned MAZE panel has an option to specify the date on which ransom demands will double, likely to create a sense of urgency to their demands.
+Five days after data was exfiltrated from a victim environment the actor copied a MAZE ransomware binary to 15 hosts within the victim environment and successfully executed it on a portion of these systems.
+Attackers employed batch scripts and a series to txt files containing host names to distribute and execute MAZE ransomware on many servers and workstations across the victim environment.
+An actor deployed MAZE ransomware to tens of hosts, explicitly logging into each system using a domain administrator account created earlier in the intrusion.
+Immediately following the exfiltration of sensitive data, the actors began deployment of MAZE ransomware to hosts across the network.
+In some cases, thousands of hosts were ultimately encrypted.
+The encryption process proceeded as follows: A batch script named start.bat was used to execute a series of secondary batch scripts with names such as xaa3x.bat or xab3x.bat .

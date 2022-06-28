@@ -1,0 +1,3 @@
+
+Getting a Clearer View of Where Actions Are Taking Place This brings us to the next project we have been working on as part of the CTID, which is called Attack Flow .
+With Attack Flow, we aim to show how attacks are moving from left to right on the kill chain or MITRE ATT&CK® framework.

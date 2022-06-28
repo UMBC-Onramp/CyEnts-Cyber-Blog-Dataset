@@ -1,0 +1,101 @@
+By Christiaan Beek and Raj Samani on Sep 17, 2018 Politics and ransomware .
+
+No, it’s not a lost single from the Oasis back catalogue, but in fact a relatively recent tactic by ransomware developers looking to exploit the profiles of major politicians to install ransomware on victims’ computers.
+
+Donald Trump, Angela Merkel, and now Barack Obama all serve as lures for the unsuspecting.
+
+Despite its claims, does the “Obama campaign” deliver the ransomware it advertises?
+
+Well, perhaps not.
+
+The Obama campaign Recently identified by the MalwareHunterTeam and documented by Bleeping Computer, the Obama campaign displayed some confusing characteristics.
+
+For example, it encrypted only .exe files and asked for a tip to decrypt the files.
+
+This campaign does not behave like normal ransomware variants, which typically target user data files rather than .exe files.
+
+This unorthodoxy got us thinking: Was there a nation-state behind this campaign?
+
+At present, there is not enough evidence to confirm its source, although the language resources are in simplified Chinese.
+
+We discovered the following graph inside the ransomware: As the MalwareHunterTeam documented, the ransomware attempts to kill processes associated with certain antimalware products: .rdata:004DAC80
+
+0000001B C taskkill /f /im kavsvc.exe .rdata:004DAC9B 00000019
+
+C taskkill /f /im
+
+KVXP.kxp .rdata:004DACB4 00000018
+
+C taskkill /f /im
+
+Rav.exe .rdata:004DACCC
+
+0000001B C taskkill /f /im Ravmon.exe .rdata:004DACE7
+
+0000001D C taskkill /f /im Mcshield.exe .rdata:004DAD04
+
+0000001D C taskkill /f /im
+
+VsTskMgr.exe .rdata:004DAD21
+
+00000024
+
+C SOFTWARE\\\\360Safe\\\\safemon\\\\ExecAccess .rdata:004DAD45
+
+00000023
+
+C SOFTWARE\\\\360Safe\\\\safemon\\\\MonAccess .rdata:004DAD68 00000024
+
+C SOFTWARE\\\\360Safe\\\\safemon\\\\SiteAccess .rdata:004DAD8C
+
+00000025
+
+C SOFTWARE\\\\360Safe\\\\safemon\\\\UDiskAccess Note, however, that the access protection enabled within McAfee software prevented the termination of this process: These curiosities made us wonder about the purpose of the ransomware.
+
+Was this indeed ransomware and, if so, why encrypt only .exe files?
+
+Our initial suspicions were immediately confirmed when we found a cryptocurrency coin mining component within the malware.
+
+In fact, the miner sample was almost identical to the ransomware component, with almost 80% code reuse.
+
+These similarities are highlighted below.
+
+Executable extension search function: Code flow in the “Obama campaign” ransomware.
+
+Code flow in the coin miner sample.
+
+We also found this URL pointing to an FTP server: FtpMoney812345 db ‘ftp://money8:12345678@xxxxxxxxxx.net/88.txt The Trump campaign A ransomware campaign leveraging images of Donald Trump has been previously documented.
+
+Is it possible that the two politicians are aligned with the same cybercriminal group looking to exploit their profiles?
+
+As previously reported, this variant was only a development version—encrypting files with AES and using the following .encrypted extension: However, this ransomware can “decrypt” the files if one clicks on an “unlock files” button.
+
+Code referencing decryption by button click: And for unlocking files: The Angela Merkel campaign The use of Angela Merkel and her profile is new to the discussion.
+
+“Her” campaign encrypts files using the .angelamerkel extension.
+
+The original name of this ransomware was ChromeUpadter.exe; it also uses AES to encrypt files.
+
+It employs the Euro in its ransom demands.
+
+Perhaps a European figure evokes the Euro?
+
+This ransomware encrypts the following files: Malware developers are fond of exploiting famous names to lure unsuspecting victims.
+
+Although it would be simple to claim an increase in politically motivated ransomware, or rather ransomware that leverages the profiles of political figures, there is no significant evidence to suggest they are from the same threat actor.
+
+Equally, these campaigns might not even be ransomware, certainly in the case of the Obama campaign.
+
+Does this examination suggest three separate campaigns?
+
+There are some links and, no, they are not between Obama and Trump.
+
+The Trump and Merkel ransomware are 46% identical in code.
+
+We are left wondering whose campaign is the most successful.
+
+We shall see.
+
+
+
+

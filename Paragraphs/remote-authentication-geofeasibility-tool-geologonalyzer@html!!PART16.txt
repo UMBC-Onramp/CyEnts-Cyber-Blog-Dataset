@@ -1,0 +1,12 @@
+
+Ensure that remote access authentication logs for each identified access platform are recorded, forwarded to a log aggregation utility, and retained for at least one year.
+Whitelist IP address ranges that are confirmed as legitimate for remote access users based on baselining or physical location registrations.
+If whitelisting is not possible, blacklist IP address ranges registered to physical locations or cloud hosting providers that should never legitimately authenticate to your remote access portal.
+Utilize either SIEM capabilities or GeoLogonalyzer.py to perform GeoFeasibility analysis of all remote access on a regular frequency to establish a baseline of accounts that legitimately perform unexpected logon activity and identify new anomalies.
+Investigating anomalies may require contacting the owner of the user account in question.
+FireEye Helix analyzes live log data for all techniques utilized by GeoLogonalyzer, and more!
+Download GeoLogonalyzer today.
+Acknowledgements Christopher Schmitt, Seth Summersett, Jeff Johns, and Alexander Mulfinger.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

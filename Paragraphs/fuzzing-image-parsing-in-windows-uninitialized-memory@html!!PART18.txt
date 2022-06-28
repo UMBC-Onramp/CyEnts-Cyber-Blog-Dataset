@@ -1,0 +1,5 @@
+
+For this, a binary instrumentation script was written, which logged all the instructions executed along with its registers and accessed memory values.
+Diffing two distinct execution traces by comparing the instruction pointer (RIP) value, I found a control flow change in windowscodecs!CCCITT::Expand2DLine due to a usage of an uninitialized value.
+Back tracing the uninitialized value using TTD trace was exceptionally useful for finding the root cause.
+The following section shows the allocation, population and use of the uninitialized value, which leads to the control flow change and deviance in the pixel outputs.

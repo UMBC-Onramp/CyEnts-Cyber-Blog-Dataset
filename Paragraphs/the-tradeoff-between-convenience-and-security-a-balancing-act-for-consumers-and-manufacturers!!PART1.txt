@@ -1,0 +1,4 @@
+By Steve Povolny on Jan 06, 2020 This week McAfee Advanced Threat Research (ATR) published new findings, uncovering security flaws in two popular IoT devices: a connected garage door opener and a “smart” ring, which, amongst many uses, utilizes near field communication (NFC) to open door locks.
+I’d like to use these cases as examples of a growing concern in the area of product security.
+The industry of consumer devices has seen some positive momentum for security in recent years.
+For example, just a few years back, nearly every consumer-grade router shipped with a default username and password, which, if left unchanged, represented a serious security concern for home networks.

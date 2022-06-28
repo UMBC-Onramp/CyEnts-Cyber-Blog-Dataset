@@ -1,0 +1,6 @@
+
+Figure 4:
+Interesting strings scattered throughout the module A quick internet search for “ clrjit.dll ” and “ VirtualProtect ” quickly takes us to a few publications describing a technique commonly referred to as Just-In-Time Hooking.
+In essence, JIT Hooking involves installing a hook at the compileMethod() function where the JIT compiler is about to compile the MSIL into assembly (x86, x64, etc).
+With the hook in place, the malware can easily replace each method body with the real MSIL that contains the original malware logic.
+To fully understand this process, let’s explore the .NET executable, the .NET methods, and how MSIL turns into x86 or x64 assembly.

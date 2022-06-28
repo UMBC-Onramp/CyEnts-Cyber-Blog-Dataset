@@ -1,0 +1,4 @@
+
+In the case of Cobalt Strike, this means it can be executed from the start of the executable headers and will load itself into memory.
+Within the Cobalt Strike framework, the payload in this case is typically an implant known as Beacon.
+Beacon is designed to be a memory resident backdoor used to maintain command and control (C2) over an infected Windows system.

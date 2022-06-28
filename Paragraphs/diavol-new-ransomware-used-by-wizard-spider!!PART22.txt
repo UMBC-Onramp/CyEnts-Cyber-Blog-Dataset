@@ -1,0 +1,7 @@
+
+Allegedly, these gangs cooperate on various operations.
+They are also both notoriously known for double ransoming their victims (data theft and encryption).
+Summary
+In this blog, we presented a complete analysis of the new ransomware family - Diavol.
+Currently, the source of the intrusion is unknown.
+The parameters used by the attackers, along with the errors in the hardcoded configuration, hint to the fact that Diavol is a new tool in the arsenal of its operators which they are not yet fully accustomed to.

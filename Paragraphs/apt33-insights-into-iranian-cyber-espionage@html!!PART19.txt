@@ -1,0 +1,4 @@
+
+APT33’s use of multiple custom backdoors suggests that they have access to some of their own development resources, with which they can support their operations, while also making use of publicly available tools.
+The ties to SHAPESHIFT may suggest that APT33 engages in destructive operations or that they share tools or a developer with another Iran-based threat group that conducts destructive operations.
+Appendix Malware Family Descriptions Malware Family Description Availability DROPSHOT Dropper that has been observed dropping and launching the TURNEDUP backdoor, as well as the SHAPESHIFT wiper malware Non

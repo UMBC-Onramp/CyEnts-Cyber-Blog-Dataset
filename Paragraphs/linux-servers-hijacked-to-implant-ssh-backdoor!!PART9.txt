@@ -1,0 +1,8 @@
+
+The 24-byte payload is used to encrypt the exfiltrated data that i s then sent back to the C2 server , as we’ll see in the next section.
+Cryptography Data sent back to the C2 server is encrypted using a variant of the Blowfish encryption algorithm that was used to secure game assets on the Nin tendo and , more recently, incorp o rated into a reverse-engineering challenge from Kaspersky Lab .
+Below is publicly available encryption code that was reverse-engineered from the DS : Figure 9.
+Reverse-engineered Nintendo DS encryption routine, from https://github.com/RocketRobz/NTR_Launcher_3D/blob/master/twlnand-side/BootLoader/source/encryption.c.
+Then we have the decompiled encryption routine from the preloaded library: Figure 10.
+Corresponding encryption routine from the malware.
+Note, in particular, the use of the constants 0x12, 0x112, 0x212, and 0x312 , which differs from the standard Blowfish implementation.

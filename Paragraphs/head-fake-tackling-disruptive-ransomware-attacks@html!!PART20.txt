@@ -1,0 +1,5 @@
+
+Figure 15: Event log entries related to the uninstallation of AV agents and disablement of real-time monitoring The DoppelPaymer ransomware was found in an Alternate Data Stream (ADS) in randomly named files on disk.
+ADSs are attributes within NTFS that allow for a file to have multiple data streams, with only the primary being visible in tools such as Windows Explorer.
+After ransomware execution, files are indicated as encrypted by being renamed with a “.locked” file extension.
+In addition to each “.locked” file, there is a ransom note with the file name “readme2unlock.txt” which provides instructions on how to decrypt files.

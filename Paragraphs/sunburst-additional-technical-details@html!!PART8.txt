@@ -1,0 +1,7 @@
+
+The list of hashes and their corresponding strings can be viewed at this FireEye GitHub page .
+SUNBURST uses the aforementioned FNV-1A plus XOR algorithm to compute the hash of each process name, service name, and driver filename on the system.
+If a blocklisted process or driver name is found, SUNBURST pauses and tries again later.
+The backdoor continues past this check only when there are no processes nor drivers from the blocklist present.
+If a blocklisted service is found, SUNBURST attempts to disable the blocklisted service by manipulating the service configuration in the Windows Registry.
+It sets the registry value HKLM\\SYSTEM\\CurrentControlSet\\services\\<service_name>\\Start to the value 4 , which corresponds to SERVICE_DISABLED .

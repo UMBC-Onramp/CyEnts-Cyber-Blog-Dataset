@@ -1,0 +1,55 @@
+By Raj Samani and Christiaan Beek on May 11, 2018 This blog was co-written with Brook Schoenfield.
+
+That adversaries adopt new techniques is a known fact.
+
+However, the speed they include new innovative techniques to bypass end-point security and or evade sandboxing appears to be at an ever-increasing pace.
+
+Indeed, adversary adoption is often faster than the InfoSec industry can implement and test effective countermeasures.
+
+For example, in December 2017, a tool was released to hide PowerShell in a graphic file.
+
+Within 7 days of the release, McAfee Advanced Threat Research started to see the technique being exploited by a Nation State actor.
+
+From announcement to inclusion, test and use in production within 7 days is impressive.
+
+This week, security-researchers from Kaspersky discovered that an actor was applying the so-called Process Doppelgänging technique in what has been named the “SynAck” ransomware.
+
+(https://securelist.com/synack-targeted-ransomware-uses-the-doppelganging-technique/85431/)
+
+So What is the Process Doppelgänging Technique in a Nutshell?
+
+Using this technique gives the malware writer an ability to run malicious code/executable under the cover of a legitimate executable by using the transaction features of the NTFS filesystem (Windows Transactional NTFS API).
+
+McAfee Detects and Protects Since the initial release of this technique in December 2017, McAfee Labs has been investigating this technique and how we might protect our customers.
+
+In contrast to adversaries who can release mistakes in code and implementation, we simply cannot.
+
+We have to thoroughly test to ensure that when we release our solution it detects correctly and does not disrupt or break other software.
+
+McAfee’s Product Security Incident Team (PSIRT), working in coordination with McAfee’s product teams 1 delivered a protection to Process Doppelgänging in two of McAfee’s product suites (see below for more detail).
+
+McAfee’s protection has tested effective against EnSilo’s original proof of concept (PoC) and other examples.
+
+As an example, we tested recent malware using the technique against our detection feature with success: McAfee’s protection prevents execution of a file if changes to it are contained within a Windows NTFS transaction.
+
+There are no legitimate uses for the Transactional API to be used in this way, so far as McAfee know.
+
+Details of products that include protection against Process Doppelgänging follow: ENS 10.5.4, released April 24, 2018 VSE 8.8 patch 11, released April 24, 2018 ENS 10.6, Public Beta available March 9, 2018.
+
+Release is targeted around June 1, 2018 WSS 16.0.12 will include the same protection.
+
+  Release of WSS is targeted for the end of May, or the beginning of June, 2018.
+
+What Is Protected Windows 7 & 8 -> McAfee protection is effective Win 10 RS3 -> McAfee protection is effective Win 10 RS4 -> Microsoft has implemented the same protection as McAfee EnSilo have documented that attempts to exploit Win 10 Pre RS3 results in a Windows crash, “Blue Screen of Death” (BSOD).
+
+McAfee’s testing confirms Ensilo’s results.
+
+Users may not see a detection alert with some versions of McAfee products under some versions of Windows.
+
+McAfee testing indicates that all versions of product under every Windows version listed above are protected.
+
+1 McAfee thanks McAfee Software Engineer, Alnoor Allidina for the diligence and insight that lead to the Process Dopplegänging protection.
+
+
+
+

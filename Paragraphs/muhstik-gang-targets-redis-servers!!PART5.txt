@@ -1,0 +1,5 @@
+
+As you can observe from the screenshot below, we are able to achieve code execution by dumping the contents of / etc /passwd .
+Proof of concept of executing system commands inside the Redis session Payload: Muhstik bot timeline of attacks on CVE-2022-0543
+On March 11, Juniper Threat Labs observed attacks launching this exploit from our telemetry.
+The attack attempts to download “ russia.

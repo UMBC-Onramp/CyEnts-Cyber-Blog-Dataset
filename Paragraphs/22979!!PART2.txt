@@ -1,0 +1,7 @@
+
+In an official Android app store, be it Google Play or Huawei AppGallery, employees of the respective owner companies screen every application submitted by developers, weeding out any that are clearly malicious.
+These are large companies that protect their reputations and customers’ security, and they have both the resources and the motivation to help keep users malware-free.
+Sometimes, however, malware does get through , and even into Google Play, although the chances of encountering it there are much lower than on message boards, torrent trackers, or some other sites.
+Proudly small, independent marketplaces tend not to run many checks, typically because they lack the resources, and as a result, the apps they host could be anything in disguise, even a Trojan.
+We should mention here that downloading malware to an Android device is not usually enough to infect it.
+Unless the malware relies on some kind of zero-day uber-exploit to get superuser permissions , installing a dangerous app in Android requires some effort.

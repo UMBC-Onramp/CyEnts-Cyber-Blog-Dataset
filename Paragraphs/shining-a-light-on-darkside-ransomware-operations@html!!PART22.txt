@@ -1,0 +1,8 @@
+
+For more comprehensive recommendations for addressing ransomware, please refer to our blog post: \" Ransomware Protection and Containment Strategies: Practical Guidance for Endpoint Protection, Hardening, and Containment \" and the linked white paper .
+Acknowledgements Beyond the comparatively small number of people who are listed as authors on this report are hundreds of consultants, analysts and reverse-engineers who tirelessly put in the work needed to respond to intrusions at breakneck pace and still maintain unbelievably high analytical standards.
+This larger group has set the foundation for all of our work, but a smaller group of people contributed more directly to producing this report and we would like to thank them by name.
+We would like to specifically thank Bryce Abdo and Matthew Dunwoody from our Advanced Practices team and Jay Smith from FLARE, all of whom provided analytical support and technical review.
+Notable support was also provided by Ioana Teaca, and Muhammadumer Khan.
+Appendix A:
+DARKSIDE Ransomware Analysis DARKSIDE is a ransomware written in C that may be configured to encrypt files on fixed and removable disks as well as network shares.

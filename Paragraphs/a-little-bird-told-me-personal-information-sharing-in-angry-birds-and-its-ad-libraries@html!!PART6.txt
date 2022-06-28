@@ -1,0 +1,6 @@
+
+[caption id=\"attachment_4897\"
+align=\"aligncenter\" width=\"546\"] Figure 3: Rovio asks for email and gender information during registration.[/caption] Figure 4 shows another way Angry Birds collects personal information.
+  Rovio offers a newsletter to update Angry Birds players with new games, episodes, and special offers.
+  During newsletter signup, Rovio collects the player’s first and last name, email address, date of birth, country of residence, and gender.
+This information is aggregated with the user’s Rovio account profile by matching the player’s email address.

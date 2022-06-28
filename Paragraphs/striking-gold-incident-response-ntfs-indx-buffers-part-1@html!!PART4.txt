@@ -1,0 +1,5 @@
+
+In the scenario we used during the webinar, we identified a directory as being of interest because we did a keyword search for \"1.rar\".
+The results of the search indicated that the slack space of an INDX attribute contained the suspicious filename \"1.rar\".
+The INDX attribute had the $MFT record number 49.
+Before we can parse the data, we need to extract the valid index attribute's content.

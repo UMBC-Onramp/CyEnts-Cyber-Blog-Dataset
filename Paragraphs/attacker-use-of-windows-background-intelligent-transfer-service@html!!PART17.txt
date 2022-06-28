@@ -1,0 +1,10 @@
+
+Unfortunately, while this was successful in identifying a previously unknown persistence mechanism associated with this threat group, manual QMGR database analysis would not scale across multiple systems or environments.
+Adapting the existing BitsParser to parse the Windows 10 version of the QMGR database enabled Mandiant consultants to efficiently identify additional infected systems across multiple environments.
+{ \"JobType\": \"download\", \"JobPriority\": \"normal\", \"JobState\": \"queued\", \"JobName\": \"System update\", \"CommandExecuted\": \"C:\\\\Users\\\\REDACTED\\\\AppData\\\\Local\\\\Microsoft\\\\Windows\\\\INetCache\\\\IE\\\\REDACTED\\\\mail.exe\", \"Files\": [ { \"DestFile\": \"C:\\\\Users\\\\REDACTED\\\\AppData\\\\Local\\\\Microsoft\\\\Windows\\\\INetCache\\\\IE\\\\REDACTED\\\\mail.exe\", \"SourceURL\": \"http://127.0.0.1/tst/56/\", \"DownloadByteSize\": 0 } ] } Figure 4: BitsParser output shows the malicious BITS job launching mail.exe
+Conclusion The Background Intelligent Transfer Service continues to provide utility to applications and attackers alike.
+The BITS QMGR database can present a useful source of data in an investigation or hunting operation.
+BitsParser may be utilized with other forensic tools to develop a detailed view of attacker activity.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

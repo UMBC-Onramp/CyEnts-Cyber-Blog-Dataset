@@ -1,0 +1,14 @@
+
+The web version of Amazon requires the user to complete a CAPTCHA after ten incorrect password attempts (Figure 1), to prevent password cracking.
+However, Amazon’s mobile apps haven’t adopted such protection using CAPTCHA (Figure 2 and Figure 3).
+This design flaw provides attackers the chance to crack any Amazon account’s password using brute force.
+Figure 2.
+Amazon Android App Figure 3.
+Amazon iOS
+App
+Furthermore, Amazon doesn’t have a strong password strength requirement.
+It accepts commonly used weak passwords such as \"123456\" and \"111111\".
+We know that the weaker the password, the easier for hackers to break into an account.
+Therefore, allowing weak passwords puts account safety to potential security risks.
+Given that there are many well-known previous password leakages , attackers can use these password leakages as knowledge bases to conduct password cracking.
+As a proof of concept, we figured out the password of one Amazon account we setup within 1000 attempts, using the latest version (2.8.0) of Amazon’s Android shopping client.

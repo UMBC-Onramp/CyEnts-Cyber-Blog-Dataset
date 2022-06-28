@@ -1,0 +1,11 @@
+
+The username reminder and password reset action was performed the day before from an Indonesia-based IP address The user account was logged in from the same suspicious IP address shortly after The legitimate user always logs in from California, so the Indonesia source IP login activity was highly suspicious Figure 4:
+Remote access analytics based on user activity The DFUR analyst clicked on the Application Activity tab in the User Activity Enrichment dashboard to see what actions were performed by the user while they were logged in from the suspicious IP address.
+The analyst identified the user account logged in from the suspicious IP address and performed an email address change and added two (2) new bank accounts, as seen in Figure 5.
+Figure 5: Application activity timeline filtered based on IP address The DFUR analyst confirmed that the two (2) bank accounts were added by the user to the care provider with organization ID 754354, as seen in Figure 6.
+Figure 6: Bank accounts added and assigned to a provider By clicking on the organization ID in the Splunk results table, the DFUR analyst triggered a drill-down action to automatically open the Organization Enrichment Dashboard and populate the organization ID value with the results from the previous panel (Figure 7).
+The DFUR analyst determined that the bank routing information for the new bank accounts was inconsistent with the organization’s mailing address.
+Figure 7:
+Organization Enrichment Dashboard The activity indicated that the attacker had access to the user’s primary email and successfully reset the DFUR account password.
+The DFUR analyst confirmed that no other accounts were targeted by the suspicious IP address (Figure 8).
+Figure 8: IP Address Enrichment dashboard Attack Scenario #2: Credential Stuffing Later that afternoon, the DFUR team began receiving reports of account lockouts in the patient and provider portals when users tried to login.

@@ -1,0 +1,8 @@
+
+However, identifying relevant strings by hand is time consuming and prone to human error.
+Larger binaries produce upwards of thousands of strings that can quickly evoke analyst fatigue, relevant strings occur less often than irrelevant ones, and the definition of \"relevant\" can vary significantly among analysts.
+Mistakes can lead to missed clues that would have reduced overall time spent performing malware analysis, or even worse, incomplete or incorrect investigatory conclusions.
+Earlier this year, the FireEye Data Science (FDS) and FireEye Labs Reverse Engineering (FLARE) teams published a blog post describing a machine learning model that automatically ranked strings to address these concerns.
+Today, we publicly release this model as part of StringSifter , a utility that identifies and prioritizes strings according to their relevance for malware analysis.
+Goals StringSifter is built to sit downstream from the Strings program; it takes a list of strings as input and returns those same strings ranked according to their relevance for malware analysis as output.
+It is intended to make an analyst's life easier, allowing them to focus their attention on only the most relevant strings located towards the top of its predicted output.

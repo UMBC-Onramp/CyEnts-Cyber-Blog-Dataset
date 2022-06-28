@@ -1,0 +1,5 @@
+Operational Technology Threats in 2021:
+Ransomware, Remote Access Trojans and Targeted Threat Groups Organizations with operational technology (OT) networks face many unique — and often complicated — considerations when it comes to cybersecurity threats.
+One of the main challenges facing the community is the convergence of an increasingly OT-aware and capable threat landscape with the digital transformation of the industrial community.
+This comes at a time when organizations have historically prioritized preventive-based controls (segmentation, patching, authentication, anti-malware, etc.)
+well beyond the ability to get visibility into their OT networks as well as the ability to detect and respond to issues.

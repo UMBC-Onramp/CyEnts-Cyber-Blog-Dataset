@@ -1,0 +1,8 @@
+
+Note, this is a proactive measure due to the scope of SolarWinds functionality, not based on investigative findings.
+Acknowledgements This blog post was the combined effort of numerous personnel and teams across FireEye coming together.
+Special thanks to: Andrew Archer, Doug Bienstock, Chris DiGiamo, Glenn Edwards, Nick Hornick, Alex Pennino, Andrew Rector, Scott Runnels, Eric Scales, Nalani Fraser, Sarah Jones, John Hultquist, Ben Read, Jon Leathery, Fred House, Dileep Jallepalli, Michael Sikorski, Stephen Eckels, William Ballenthin, Jay Smith, Alex Berry, Nick Richard, Isif Ibrahima, Dan Perez, Marcin Siedlarz, Ben Withnell, Barry Vengerik, Nicole Oppenheim, Ian Ahl, Andrew Thompson, Matt Dunwoody, Evan Reese, Steve Miller, Alyssa Rahman, John Gorman, Lennard Galang, Steve Stone, Nick Bennett, Matthew McWhirt, Mike Burns, Omer Baig.
+Also special thanks to Nick Carr, Christopher Glyer, and Ramin Nafisi from Microsoft.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,5 @@
+
+Technical Analysis Common Malware Tricks Over the years, a variety of malware tricks have been developed and employed differently by various malicious actors.
+These include anti-debugging, anti-analysis, anti-reversing, and virtually every “anti-everything” concept that malicious authors can think of.
+One of the most common malware tricks is hiding its APIs .
+The main purpose of this strategy is to avoid being detected by signature-based detection tools that looks for specific combinations of APIs used by malware.

@@ -1,0 +1,5 @@
+FireEye Labs recently discovered a malicious phishing domain designed to steal a variety of information – including credentials and mobile numbers – from customers of several banks in India.
+Currently, we have not observed this domain being used in any campaigns.
+The phishing websites appear to be in the earlier stages of development and through this post we hope users will be able to identify these types of emerging threats in the future.
+FireEye phishing detection technology identified a newly registered domain, “csecurepay[.]com”, that was registered on Oct. 23, 2016.
+The website purports to offer online payment gateway services, but is actually a phishing website that leads to the capturing of victim logon credentials – and other information – for multiple banks operating in India.

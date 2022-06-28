@@ -1,0 +1,4 @@
+
+Cryptocurrency Miner Distribution Techniques In order to maximize profits, cyber criminals widely disseminate their miners using various techniques such as incorporating cryptojacking modules into existing botnets, drive-by cryptomining attacks, the use of mobile apps containing cryptojacking code, and distributing cryptojacking utilities via spam and self-propagating utilities.
+Threat actors can use cryptojacking to affect numerous devices and secretly siphon their computing power.
+Some of the most commonly observed devices targeted by these cryptojacking schemes are: User endpoint machines Enterprise servers Websites Mobile devices Industrial control systems Cryptojacking in the Cloud Private sector companies and governments alike are increasingly moving their data and applications to the cloud , and cyber threat groups have been moving with them.

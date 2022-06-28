@@ -1,0 +1,7 @@
+
+How It Works The user-space application (kscldr.exe) copies the driver from a PE-COFF resource to the disk and registers it as a Windows kernel service.
+The driver implements device write and I/O control routines to allow interaction from the user application.
+Its driver entry point first registers dispatch routines to handle CreateFile, WriteFile, DeviceIoControl, and CloseHandle.
+It then creates a device named \\Device\\kscldr and a symbolic link making the device name accessible from user-space.
+When the user application opens the device file and invokes WriteFile, the driver calls ExAllocatePoolWithTag specifying a PoolType of NonPagedPool ( which is executable ), and writes the buffer to the newly allocated memory.
+After the write operation, the user application can call DeviceIoControl to call into the shellcode.

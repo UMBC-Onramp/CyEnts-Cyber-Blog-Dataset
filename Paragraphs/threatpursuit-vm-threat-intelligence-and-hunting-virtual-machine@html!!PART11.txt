@@ -1,0 +1,7 @@
+
+Figure 8:
+Full FIN11 page Within the FIN11 report, we review the associated threat intelligence tags that contain finished intelligence products.
+However, we are interested in the collection of raw IOCs (Figure 9) that we could leverage to pivot off or enrich our own datasets.
+Figure 9: Downloaded FIN11 indicators Using the Malware Information Sharing Platform (MISP )as our collection point, we are going to upload and triage our indicators using our local MISP instance running on ThreatPursuit VM.
+Please note you will need to ensure your local MISP instance is running correctly with the configuration of your choosing.
+We select the “Add Event” button, begin populating all needed fields to prepare our import, and then click “Submit”, as shown in Figure 10.

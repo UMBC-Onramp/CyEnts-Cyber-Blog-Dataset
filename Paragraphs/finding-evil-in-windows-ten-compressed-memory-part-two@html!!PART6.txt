@@ -1,0 +1,10 @@
+
+Figure 2:
+Locating and viewing the marker page from the kernel debugger After allocating additional memory using ram_eater , we check to see if the marker page has been sent to the virtual store.
+Each entry in the output of the !vm extension can be treated as an index in to nt!MmPagingFile (see Figure 3).
+Figure 3: PTE of a compressed page in the virtual store an confirmation of virtual store’s PageFile index In the PTE displayed in Figure 3, the PageFile index ( MMPTE_SOFTWARE.PageFileLow ) is 2 and corresponds to the “No Name for Paging File” entry in the !
+vm extension’s output.
+From general observation, we know that on a default Windows configuration, the last entry corresponds to the virtual store.
+It is possible to configure systems with more than a single PageFile on disk, so do not assume that PageFile index 2 will always correlate to the virtual store.
+A more thorough option to validate page file indices is to disassemble nt!MmStoreCheckPagefiles .
+This function contains references to two global variables, the number of active PageFiles, as well as an array of pointers to each nt!_MMPAGING_FILE structure (see Figure 4).

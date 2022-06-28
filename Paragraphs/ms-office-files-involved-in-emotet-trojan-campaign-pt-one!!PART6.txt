@@ -1,0 +1,7 @@
+
+It then calls the DllMain() function where it loads and decrypts a 32-bit Dll into its memory from a “Resource” named “HITS”.
+The decrypted Dll is the core of this Emotet, which will be referred to as “X.dll” in this analysis due to a hardcoded constant string in its code, as shown below. 10024030 ; Export Ordinals Table for X.dll 10024032 aX_dll          db 'X.dll' ,0 10024038
+aDllregisterser db 'DllRegisterServer',0 Figure 3.1 shows the relevant functions used to decrypt and deploy the decrypted “X.dll”, which is in memory.
+The EntryPoint() function of “X.dll” is called after its deployment.
+“X.dll” checks if the export function name from the command line parameter is “DllRegisterServer”.
+If not, it runs the command line again with “DllRegisterServer” instead of the random string, like \"C:\\Windows\\system32\\rundll32.exe c:\\programdata\\puihoud.dll,DllRegisterServer\" (see step 1 & 2 in Figure 3.3).

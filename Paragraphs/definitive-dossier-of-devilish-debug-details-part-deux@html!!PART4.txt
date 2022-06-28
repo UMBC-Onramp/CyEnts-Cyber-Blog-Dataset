@@ -1,0 +1,5 @@
+
+Figure 1:
+Ratio of vendors calling file bad/total number of vendors The vast majority of these samples had VT detection ratios below 0.3, and in those cases we labeled the binaries as benign.
+For the remainder of samples we tried two strategies – marking them all as malicious, or removing them from the training set entirely.
+Our classification performance did not change much between these two policies, so in the end we scrapped the remainder of the samples to reduce label noise.

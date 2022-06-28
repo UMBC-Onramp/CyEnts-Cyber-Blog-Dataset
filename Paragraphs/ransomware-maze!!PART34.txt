@@ -1,0 +1,9 @@
+
+The most important thing here is that the developers appear to have carefully selected the researchers and waited for them to answer as a psychological trick, and it worked, because all of them replied, trolling the malware developers over the version of their malware detected on the 28th.
+Here is one response from a malware developer to this trolling that contains some interesting facts: FIGURE 32.
+RESPONSE FROM A MALWARE DEVELOPER It is not known if one person is behind the malware or not.
+It is curious that they said “I” instead of “we” twice in their answer.
+So, perhaps it was written by one person for trolling purposes, or perhaps the developer of the malware really is only one person (or they want researchers to think that is the case).
+Another important fact in the note is the talk about the tools used by one of the researchers for regular malware analysis.
+Why are they mentioning regular malware analysis?
+Is it because they are reversing malware themselves for fun or could it be their day job?

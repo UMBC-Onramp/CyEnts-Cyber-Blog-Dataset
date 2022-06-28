@@ -1,0 +1,4 @@
+
+Figure 5.1 demonstrates Agent Tesla sending stolen data as a value of “p=” in the body of HTTP POST.
+Each item of stolen data before encryption is kept in the structure — “header” + “data”.
+The “header” contains the basic information of the victim’s system: “Packet number” + ”Separator” + “Victim ID” + ”Separator” + “Date and Time” + ”Separator string” + “UserName/ComputerName” + ”Separator”

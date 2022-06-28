@@ -1,0 +1,5 @@
+
+Plus, because the real patient monitor is still online, it will constantly send data to the central monitoring station.
+One way to account for these factors is to use Address Resolution Protocol (ARP) spoofing.
+If the patient monitor is ARP spoofed, then the attacker, instead of the central monitoring station, would receive the data packets.
+This step would allow the attacker to determine which ports are in use and stop the patient monitor’s data from getting to the central monitoring station.

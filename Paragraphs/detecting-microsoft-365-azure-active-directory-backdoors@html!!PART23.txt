@@ -1,0 +1,5 @@
+
+Remember, an attacker may also use this to harvest credentials, so it is important to reset the password for these accounts (Figure 25).
+Figure 25: PTASpy.csv log activity Mitigations
+In order for this attack to be successful, an attacker must gain administrative privileges on a server running Azure AD Connect and/or gain global administrator rights within M365.
+Simple practices such as limiting and properly protecting global administrator accounts as well as properly protecting Tier 0 assets can greatly reduce the risk of an attacker successfully using the AADInternals PowerShell against your organization.

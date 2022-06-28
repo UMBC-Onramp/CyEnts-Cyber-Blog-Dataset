@@ -1,0 +1,4 @@
+
+  
+The element-wise product shows how individual elements in q and k contribute to the dot product, which encodes the relationship between each word and every other context-providing word as the network learns from new text sequences.
+The dot product is finally normalized by a softmax function that outputs attention scores to be fed into the next layer of the neural network.

@@ -1,0 +1,6 @@
+
+GIVE WRITE PERMISSIONS IN MEMORY After gaining permission, which is granted only for 1 byte, the malware patches this byte with a 0xC3 value (the opcode of “ret”) and restores the previous permissions with “VirtualProtect”, again in the same address and byte, removing the write permission.
+FIGURE 13.
+PATCH
+THE FUNCTION WITH A RET OPCODE AND RESTORE MEMORY PERMISSIONS
+This is done to avoid having a debugger attach to it in runtime.

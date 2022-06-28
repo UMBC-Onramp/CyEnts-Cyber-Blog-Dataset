@@ -1,0 +1,8 @@
+
+The past year has been unique, as we witnessed an unprecedented combination of global events.
+Business operations shifted in response to the worldwide pandemic and threat actors continued to escalate the sophistication and aggressiveness of their attacks, while in parallel leveraged unexpected global events to their advantage.
+We discuss all of this and much more in the full report, which is available for download today .
+But first, here is a sneak preview of the most popular M-Trends metric where we answer the critical question: Are organizations getting better at detecting attacks?
+In short, yes!
+Back in 2011, we reported a 416-day global median dwell time, indicating that attackers were operating undetected on a system or network for over a year on average.
+This time, from Oct. 1, 2019 through Sept. 30, 2020, the median dwell time has decreased to only 24 days.

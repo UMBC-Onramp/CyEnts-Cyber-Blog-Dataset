@@ -1,0 +1,6 @@
+
+Read the white paper for a detailed overview of each technique, including practical remediation and hardening strategies, and check out our auditing script, Azure AD Investigator .
+Detections FireEye Helix Detection MITRE Technique Detection Logic MICROSOFT
+AZURE ACTIVE
+DIRECTORY [Risky Sign-In]
+T1078.004 Alert on suspicious logon activity as detected by Azure Identity Protection OFFICE 365 [Federated Domain Set]

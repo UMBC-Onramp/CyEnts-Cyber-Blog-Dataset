@@ -1,0 +1,11 @@
+
+Social media has been a part of our lives for more than a decade.
+Recently, nation-states have infamously used social media platforms to spread misinformation.
+In 2019, we expect criminals to begin leveraging those tactics for their own gain.
+Equally, the continued growth of the Internet of Things in the home will inspire criminals to target those devices for monetary gain.
+One thing is certain: Our dependency on technology has become ubiquitous.
+Consider the breaches of identity platforms, with reports of 50 million users being affected.
+It is no longer the case that a breach is limited to that platform.
+Everything is connected, and you are only as strong as your weakest link.
+In the future, we face the question of which of our weakest links will be compromised.
+—Raj Samani, Chief Scientist and McAfee Fellow, Advanced Threat Research Twitter @Raj_Samani

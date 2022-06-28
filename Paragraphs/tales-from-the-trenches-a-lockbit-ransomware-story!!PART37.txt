@@ -1,0 +1,12 @@
+
+They started by asking for a network domain name (to identify the correct victim), then the attacker addressed the ransom amount.
+Usually, the attackers do proper research on their victims and tailor the ransom amount accordingly, which was the case here as well.
+Hence, negotiating on the amount of the ransom did not prove to be useful: “We know who you are, so don’t play negotiate games.”
+Trouble in Hacker Paradise
+Subsequently, making the bitcoin transaction to the provided address, the helpdesk page would automatically update after six confirmations and show the download link for the decryptor.
+“After 6 transaction confirmations, in a few hours decryptor will be built automatically.
+Don’t worry you will get it instantly once it’s built.”
+Since there was nothing else to do than wait and hope for the decryptor now, an attempt was made into obtaining some more information from the attacker by asking about their methods.
+See a snippet of this conversation below.
+Figure 41:
+Attacker communication The ‘weak passwords’ is, of course, entirely in line with the brute force attack mentioned earlier.

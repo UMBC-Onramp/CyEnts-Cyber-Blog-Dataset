@@ -1,0 +1,12 @@
+
+Using various forensic tools, we are capable of this as demonstrated below.
+The SleuthKit We can use the SleuthKit tools to extract both the INDX root and allocation data.
+To extract the INDX attribute using the SleuthKit, the first step is to identify the $MFT record IDs for the attributes of the inode.
+We want the content of the index root attribute (attribute type 0x90 or 144d) and the index allocation attribute (attribute type 0xA0 or 160d).
+To identify the attribute IDs, run the command: istat -f ntfs ntfs.dd 49 The istat command returns inode information from the $MFT.
+In the command we are specifying the NTFS file system with the \"-f\" switch.
+The tool reads a raw image named \"ntfs.dd\" and locates record number 49.
+The result of our output (truncated) was as follows: ....
+Attributes: Type: $STANDARD_INFORMATION (16-0)
+Name: Resident size: 72 ...
+Type: $I30 (144-6) Name: $I30 Resident size: 26 Type: $I30 (160-7) Name: $I30 Non-Resident size: 4096

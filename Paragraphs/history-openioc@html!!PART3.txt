@@ -1,0 +1,5 @@
+
+Practical limitations on staffing, resources, time, and money would prevent investigations from covering anything other than a very small percentage of most enterprises.
+Responders would only be able to examine what they had direct access to, with their corresponding conclusions constrained by time and budget.
+This level of investigation was almost never enough to give confidence on anything other than the hosts that had been examined - responders were unable to confirm whether other systems were still compromised, or whether the adversary still had footholds in other parts of the network.
+Creating a standard way of recording Threat Intelligence into an Indicator was part of what allowed Mandiant to bring a new approach to IR, including the use of an automated solution, such as Mandiant for Intelligent Response® (MIR®) .

@@ -1,0 +1,8 @@
+
+Financial institutions can also leverage AI applications to help customize a client's trade portfolio.
+AI applications can analyze a client's previous trade activity and propose future trades analogous to those already found in a client's portfolio.
+Potential Exploitation Actors could influence recommendation systems to redirect a hedge fund toward irreversible bad trades, causing the company to lose money (e.g., flooding the market with trades that can confuse the recommendation system and cause the system to start trading in a way that damages the company).
+Moreover, many of the automated trading tools used by hedge funds operate without human supervision and conduct trade activity that directly affects the market.
+This lack of oversight could leave future automated applications more vulnerable to exploitation as there is no human in the loop to detect anomalous threat activity.
+Threat Actors Conducting Suboptimal Trades We assess with moderate confidence that manipulating trade recommendation systems poses a moderate risk to AI-based portfolio managers.
+The diminished human involvement with trade recommendation systems coupled with the irreversibility of trade activity suggest that adverse recommendations could quickly escalate to a large-scale impact.

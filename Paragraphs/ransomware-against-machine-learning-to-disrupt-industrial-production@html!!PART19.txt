@@ -1,0 +1,7 @@
+
+Revisit recovery requirements based on the exercise results.
+In general, repeatedly practicing various threat scenarios will improve awareness and ability to respond to real incidents.
+Review operations, business processes, and workflows to identify assets that are critical to maintaining continuous industrial operations.
+Whenever possible, introduce redundancy for critical assets with low tolerance to downtime.
+The right amount and type of redundancy is unique for each organization and can be determined through risk assessments and cost-benefit analyses.
+Note that such analyses cannot be conducted without involving business process owners and collaborating across IT and OT.

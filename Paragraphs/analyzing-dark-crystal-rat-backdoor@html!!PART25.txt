@@ -1,0 +1,4 @@
+
+Table 3 shows the keywords used in responses along with the description of each capability.
+Keyword Description shell Execute a shell command deleteall Recursively delete all files from C:, D:, F:, and G: closecd Close the CD-ROM drive door setwallpaper Change the background wallpaper ddos Send TCP and UDP packets to a given host or IP address logoff Log off the current user keyboardrecorder Replay keystrokes as if the user had typed them fm_newfolder Create a new folder fm_rename Rename or move a file desktopHide Hide desktop icons keyloggerstart Start logging keystrokes exec_cs_code Compile and execute C# code msgbox Open a Windows MessageBox fm_upload Transfer a file from the C2 to the client rdp Re-spawn the malware running as an administrator fm_zip
+Build a ZIP file from a directory tree and transfer it from the client to the C2 webcam Take a webcam picture fm_unzip

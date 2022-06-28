@@ -1,0 +1,6 @@
+
+According to the actor, the tool offered the following: Windows Build Specifics Written in C++ (no dependencies)
+Miner component based on XMRig
+Easy cryptor and VPS hosting options Web panel (Figure 7) Uses TLS for secured communication Download and execute Auto-update ability Cleanup routine Receive remote commands Perform privilege escalation Features \"game mode\" (mining stops if user plays game)
+Proxy feature (based on XMRig)
+Support (for €20/month) Kills other miners from list Hidden from TaskManager Configurable pool, coin, and wallet (via panel) Can mine the following Cryptonight-based coins:

@@ -1,0 +1,7 @@
+
+It is unusual for Chinese espionage actors to remove a large number of backdoors across several victim environments on or around the time of public disclosure.
+This action displays an interesting concern for operational security and a sensitivity to publicity.
+Both UNC2630 and UNC2717 display advanced tradecraft and go to impressive lengths to avoid detection.
+The actors modify file timestamps and regularly edit or delete forensic evidence such as logs, web server core dumps, and files staged for exfiltration.
+They also demonstrate a deep understanding of network appliances and advanced knowledge of a targeted network.
+This tradecraft can make it difficult for network defenders to establish a complete list of tools used, credentials stolen, the initial intrusion vector, or the intrusion start date.

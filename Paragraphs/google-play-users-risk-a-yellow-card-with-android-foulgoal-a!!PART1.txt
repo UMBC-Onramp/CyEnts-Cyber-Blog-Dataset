@@ -1,0 +1,10 @@
+By Raj Samani on Jul 12, 2018
+This blog post was co-written by Irfan Asrar.
+English soccer fans have enthusiastically enjoyed the team’s current run in the World Cup, as the tune “Three Lions” plays in their heads, while hoping to end 52 years of hurt.
+Meanwhile a recent spyware campaign distributed on Google Play has hurt fans of the beautiful game for some time.
+Using major events as social engineering is nothing new, as phishing emails have often taken advantage of disasters and sporting events to lure victims.
+“Golden Cup” is the malicious app that installs spyware on victims’ devices.
+It was distributed via Google Play, and “offered” the opportunity to stream games and search for records from the current and past World Cups.
+McAfee Mobile Security identifies this threat as Android/FoulGoal.
+A; Google has removed the malicious applications from Google Play.
+Once Golden Cup is installed it appears to be a typical sporting app, with multimedia content and general information about the event.

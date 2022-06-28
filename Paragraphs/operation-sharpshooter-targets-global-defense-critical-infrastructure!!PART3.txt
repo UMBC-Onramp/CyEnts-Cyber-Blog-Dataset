@@ -1,0 +1,8 @@
+
+Our research focuses on how this actor operates, the global impact, and how to detect the attack.
+We shall leave attribution to the broader security community.
+Read our full analysis of Operation Sharpshooter.
+Have we seen this before?
+This campaign, while masquerading as legitimate industry job recruitment activity, gathers information to monitor for potential exploitation.
+Our analysis also indicates similar techniques associated with other job recruitment campaigns.
+Global impact In October and November 2018, the Rising Sun implant has appeared in 87 organizations across the globe, predominantly in the United States, based on McAfee telemetry and our analysis.

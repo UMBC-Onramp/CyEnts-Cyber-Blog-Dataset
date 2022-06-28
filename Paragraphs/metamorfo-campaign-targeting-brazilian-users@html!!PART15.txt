@@ -1,0 +1,7 @@
+
+The malware attempts to resolve “www.goole[.]com” (most likely a misspelling).
+If successful, it sends a request to hxxp://api-api[.]com/json in order to detect the external IP of the victim.
+The result is parsed and execution continues only if the country code matches “BR”, as shown in Figure 19.
+Figure 19:
+Country Code Check
+The malware creates an empty file in %appdata%\\Mariapeirura on first execution, which serves as a mutex lock, before attempting to send any collected information to the C2 server.

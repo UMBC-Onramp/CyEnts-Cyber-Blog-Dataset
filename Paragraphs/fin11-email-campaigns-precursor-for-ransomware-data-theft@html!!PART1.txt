@@ -1,0 +1,2 @@
+Mandiant Threat Intelligence recently promoted a threat cluster to a named FIN (or financially motivated) threat group for the first time since 2017.
+ We have detailed FIN11's various tactics, techniques and procedures in a report that is available now by signing up for Mandiant Advantage Free .

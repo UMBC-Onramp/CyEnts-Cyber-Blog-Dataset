@@ -1,0 +1,7 @@
+
+·
+ Prevent recovery by deleting shadow copies: VSSMOD drops and executes wscpy.exe in the current working directory, depending on the OS version (Windows Server 2003 or Vista and newer) and architecture (32 or 64-bit).
+Deleting the shadow copies snapshots is performed using the IVssBackupComponents COM object to call the DeleteSnapshots method.
+The dropped binaries are also kept in plaintext in the resource section under \" TEXT ”.
+These binaries contained a PDB reference source file that was used to compile the malware binary: D:\\Projects\\Repository\\LockCry.divided\\WipeShadowCopies64\\RelNoCRT\\WipeShadowCopies64.pdb D:\\Projects\\Repository\\LockCry.divided\\WipeShadowCopies64\\x64\\RelNoCRT\\WipeShadowCopies64.pdb D:\\Development\\Master\\onion\\locker.divided\\WipeShadowCopies64\\RelNoCRT_Win2003\\WipeShadowStorageWin2003_32.pdb D:\\Development\\Master\\onion\\locker.divided\\WipeShadowCopies64\\x64\\RelNoCRT_Win2003\\WipeShadowStorageWin2003_64.pdb · Encryption: As mentioned before, FINDFILES will queue an APC object with a file or directory path.
+For the APC to get executed, the main function calls SleepEx API in its final steps to set the thread to an alertable state.

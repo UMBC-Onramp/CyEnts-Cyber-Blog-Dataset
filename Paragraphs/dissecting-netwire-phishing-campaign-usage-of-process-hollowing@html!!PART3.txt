@@ -1,0 +1,7 @@
+
+We have observed an increasing number of attackers relying on cloud-based file storage services that bypass firewall restrictions to host their payload.
+Figure 1:
+Malicious script hosted on Google Drive As seen in Figure 2, attempting to open the script raises an alert from Internet Explorer saying that the publisher could not be verified.
+In our experience, many users will choose to ignore the warning and open the document.
+Figure 2:
+Alert raised by Internet Explorer Upon execution, after multiple levels of obfuscation, a PowerShell script is executed that loads a .NET assembly from a remote URL, functions of which are then used to inject the final payload (NETWIRE Trojan) into a benign Microsoft executable using process hollowing.

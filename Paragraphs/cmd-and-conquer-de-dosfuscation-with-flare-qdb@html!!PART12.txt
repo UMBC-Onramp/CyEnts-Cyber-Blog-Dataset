@@ -1,0 +1,6 @@
+
+This analysis system only had one vCPU, which can be seen in the set \"a=1\" output on line 620.
+After this, the script executes goto del, which branches to a batch label that ultimately deletes the script and other dropped files.
+Figure 8: Anti-sandbox measure This is a batch-oriented spin on a common sandbox evasion trick.
+It works because many malware analysis sandboxes run with a single CPU to minimize hypervisor resources, whereas most modern systems have at least two CPU cores.
+Now that we can easily read the script’s commands, it is trivial to circumvent this evasion by, for example, increasing the number of vCPUs available to the VM.

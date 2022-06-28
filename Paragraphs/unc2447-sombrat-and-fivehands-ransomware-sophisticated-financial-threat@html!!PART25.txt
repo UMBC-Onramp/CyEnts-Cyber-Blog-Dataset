@@ -1,0 +1,29 @@
+
+PowerShell.
+Ransom.
+F Dropped:Heur.
+BZC.MNT.Boxter.826.0A2B3A87 Heur.
+BZC.PZQ.Boxter.829.A15701BD DEATHRANSOM Generic.mg.c50ab1df254c1855 Trojan.
+Ransomware.
+GenericKD.35760206 HELLOKITTY Generic.mg.136bd70f7aa98f52 Generic.mg.06ce6cd8bde75626
+Generic.mg.af568e8a6060812f Generic.mg.d96adf82f061b1a6 Generic.
+Malware.
+PfVPk!12.299C21F3 Gen:Variant.
+Ransom.
+HelloKitty.1 Generic.
+Malware.
+PfVPk!12.606CCA24 Generic.
+Malware.
+PfVPk!12.1454636C
+BEACON Generic.mg.74c688a22822b2ab Generic.mg.7d6e57cbc112ebd3 Trojan.
+Agent.
+DDSN MITRE
+ATT&CK Tactic Description Initial Access T1078 Valid Accounts Execution T1047 Windows Management Instrumentation T1053.005 Scheduled Task / Job: Scheduled Task T1059.001 Command and Scripting Interpreter: PowerShell
+T1106 Execution through API Defense Evasion T1045 Software Packing T1055 Process Injection T1140
+Deobfuscate / Decode Files or Information Discovery T1012 Query Registry T1046 Network Service Scanning T1057 Process Discovery T1082
+System Information Discovery T1124 System Time Discovery T1135 Network Share Discovery Collection T1560.003 Archive Collected Data: Archive via Custom Method Impact T1485 Data Destruction T1486 Data Encrypted for Impact T1490 Inhibit System Recovery Command and Control T1071.001 Application Layer Protocol: Web Protocols T1090.002 Proxy:
+External Proxy T1572  Protocol
+Tunneling T1573.002 Encrypted Channel: Asymmetric Cryptography Exfiltration T1041 Exfiltration over C2 Channel Acknowledgements Thanks to Nick Richard for technical review, Genevieve Stark and Kimberly Goody for analytical contributions, and Jon Erickson, Jonathan Lepore, and Stephen Eckels for analysis incorporated into this blog post.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

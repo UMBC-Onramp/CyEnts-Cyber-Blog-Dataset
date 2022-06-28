@@ -1,0 +1,9 @@
+
+Ransomware — any malicious program that forces the victim to pay a ransom to the attacker.
+Ransomware includes blockers , cryptors , and wipers disguised as cryptors.
+Blocker — a type of ransomware that blocks or simulates the blocking of a computer or mobile device.
+Such malware typically shows a persistent message with a payment demand on top of all other windows.
+Cryptomalware (cryptor) — a type of ransomware that encrypts user files so they cannot be used.
+Wiper — a type of malware designed to wipe (erase) data on the victim’s device.
+Sometimes ransomware simulating a cryptor actually turns out to be a wiper, damaging files irreparably; so even if the ransom is paid, it is still impossible to recover the data.
+RaaS (Ransomware-as-a-Service) — a criminal scheme whereby creators lease ransomware to anyone who wants to distribute it for a cut of the proceeds.

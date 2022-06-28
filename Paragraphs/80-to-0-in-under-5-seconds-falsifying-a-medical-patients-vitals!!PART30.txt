@@ -1,0 +1,10 @@
+
+Vendors can encrypt network traffic between the devices and add authentication.
+These two steps would drastically increase the difficulty of this type of attack.
+Vendors also typically recommend that medical equipment is run on a completely isolated network with very strict network-access controls.
+If medical facilities follow these recommendations, attackers would require physical access to the network, greatly helping to reduce the attack surface.
+One goal of the McAfee Advanced Threat Research team is to identify and illuminate a broad spectrum of threats in today’s complex and constantly evolving landscape.
+Through responsible disclosure we aim to assist and encourage the industry toward a more comprehensive security posture.
+As part of our policy, we reported this research to the vendor whose products we tested and will continue to work with other vendors to help secure their products.
+
+

@@ -1,0 +1,7 @@
+
+The Malicious document containing the string with the actor’s jabber account.
+Circling back to the forums we found an older posting under one of the nicknames we could link to Rubella.
+In this posting the actor is asking for advice on how to add a registry key using C#.
+They placed another screenshot to show the community what they were doing.
+This behavior clearly shows a lack of skill but at the same time his thirst for knowledge.
+Older posting where the actor asks for help.

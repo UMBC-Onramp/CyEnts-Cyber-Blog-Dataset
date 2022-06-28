@@ -1,0 +1,6 @@
+
+There is some evidence to suggest the threat actor may have used the vulnerability to disable multi-factor authentication options on the SonicWall VPN, although this has not been confirmed.
+The threat actor leveraged TeamViewer (TeamViewer_Setup.exe) to establish persistence within the victim environment.
+Available evidence suggests that the threat actor downloaded TeamViewer directly from the following URL and also browsed for locations from which they could download the AnyDesk utility.
+hxxps://dl.teamviewer[.]com/download/version_15x/
+TeamViewer_Setup.exe The threat actor appeared to download the file rclone.exe directly from rclone[.]org - hxxps://downloads.rclone[.]org/v1.54.0/rclone-v1.54.0-windows-amd64.zip.

@@ -1,0 +1,13 @@
+
+What if the system could be controlled by an attacker while being undetected?
+  
+This scenario becomes more concerning considering the type of environments controlled by this device.
+Normal Programming Controlling the standard functions of the device from just a root shell requires a much deeper understanding of how the device works in a normal setting.
+Typically, the Delta eBMGR is programmed by an installer to perform a specific set of tasks.
+These tasks can range from managing access control, to building lighting, to HVAC, and more.
+Once programmed, the controller is connected to several external input/output (I/O) modules.
+These modules are utilized for both controlling the state of an attached device and relaying information back to the manager.
+To replicate these “normal conditions”, we had a professional installer program our device with a sample program and attach the appropriate modules.
+Figure 27 shows how each component is connected in our sample programming.
+  
+For our initial testing, we did not actually have the large items such as the pump, boiler and heating valve.

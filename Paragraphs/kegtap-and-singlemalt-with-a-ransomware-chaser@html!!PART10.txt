@@ -1,0 +1,11 @@
+
+ Notably, BEACON is the backdoor observed most frequently across these incidents.
+We have observed actors executing encoded PowerShell commands that ultimately executed instances of the PowerShell EMPIRE backdoor.
+The actors were observed using BEACON to execute PowerLurk's Register-MaliciousWmiEvent cmdlet to register WMI events used to kill processes related to security tools and utilities, including Task Manager, WireShark, TCPView, ProcDump, Process Explorer, Process Monitor, NetStat, PSLoggedOn, LogonSessions, Process Hacker, Autoruns, AutorunsSC, RegEdit, and RegShot.
+In at least once case, attackers have maintained access to a victim environment using stolen credentials to access corporate VPN infrastructure configured to require only single-factor authentication.
+Escalate Privileges
+The most commonly observed methods for escalating privileges in these incidents have involved the use of valid credentials.
+The actors used a variety of techniques for accessing credentials stored in memory or on disk to access privileged accounts.
+The actors used valid credentials obtained using MimiKatz variants to escalate privileges.
+ We’ve observed Mimikatz being executed both from the file system of victim hosts and via PowerShell cmdlets executed via Cobalt Strike BEACON.
+Actors have gained access to credentials via exported copies of the ntds.dit Active Directory database and SYSTEM and SECURITY registry hives from a Domain Controller.

@@ -1,0 +1,7 @@
+
+It can also be used to avoid vaccines that are made before the malware creates the mutex name in the machine.
+–noshares ->
+With this switch the malware will not crypt network shares, only the local machine.
+–path x ->
+Where x is a full path.
+In this case the malware will crypt all files in all folders starting from this path unless they are blacklisted names, extensions or folder names.

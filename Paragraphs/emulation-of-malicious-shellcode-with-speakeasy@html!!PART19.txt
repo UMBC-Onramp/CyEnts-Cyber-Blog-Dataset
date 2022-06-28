@@ -1,0 +1,5 @@
+
+This file currently contains debug interrupt instructions (int3), so if the malware attempts to execute the data it exits and will be logged in the report.
+Using this, we can easily label the malware as a downloader that downloads additional code.
+Configuration fields also exist for file system and registry emulation.
+Files and registry paths can similarly be configured to return data to samples that expect to be running on a live Windows system.

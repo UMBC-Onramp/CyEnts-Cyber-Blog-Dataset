@@ -1,0 +1,4 @@
+
+The malware performs the following activities: Builds imports by dynamically loading APIs Decrypts strings needed for control server communications Performs control server communications Handles commands issued by the control server Uninstalls self from the system The malicious thread dynamically loads the APIs it needs at the beginning of its execution using LoadLibrary() and GetProcAddress().
+APIs from the following libraries are loaded at runtime: Kernel32.dll Ws2_32/wsock32.dll Apvapi32.dll Oleaut32.dll Iphlp.dll Urlmon.dll A dynamic API loaded by the malware.
+Based on packet capture analysis of previous implants from 2017, the following strings are used in control server communications:

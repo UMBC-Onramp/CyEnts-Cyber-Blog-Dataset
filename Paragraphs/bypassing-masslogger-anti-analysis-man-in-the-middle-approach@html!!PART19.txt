@@ -1,0 +1,4 @@
+
+However, due to the unique way MassLogger hooks compileMethod() , we cannot use the vtable hooking technique implemented by many of the aforementioned projects.
+Therefore, I’d like to share the following project: JITM , which is designed use inline hooking implemented by PolyHook library.
+JITM comes with a wrapper for compileMethod() which logs all the method body headers and MSIL bytes to a JSON file before calling the original compileMethod() .

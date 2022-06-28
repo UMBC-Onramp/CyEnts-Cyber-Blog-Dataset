@@ -1,0 +1,59 @@
+At Kaspersky’s recent Security Analyst Summit , our experts presented a detailed report on FinSpy (aka FinFisher) spyware and its distribution methods, including some previously unknown ones.
+
+You can read more about their findings in Securelist’s post .
+
+In this article, meanwhile, we explore what kind of malware FinSpy is and how you can protect yourself from it.
+
+What is FinSpy (FinFisher)?
+
+A commercial spyware program used by law enforcement and government agencies worldwide, FinSpy first lit up researchers’ radar in 2011, when documents related to it appeared on WikiLeaks.
+
+Source code appeared online in 2014, but FinSpy’s story didn’t end there: After a redevelopment and to this day, the malware continues to infect devices around the world.
+
+FinSpy is versatile, with versions for computers running Windows, macOS, and Linux, as well as mobile devices with Android and iOS .
+
+Its capabilities vary depending on the platform, but in all cases the malware employs various means to transmit bundles of data about them covertly to its handlers.
+
+How FinSpy spreads The spyware has several ways to infiltrate Windows machines.
+
+For example, it can hide in infected distribution packages including installers for TeamViewer, VLC Media Player, WinRAR, and others.
+
+Downloading and running the modified application sets in motion a multistep infection chain .
+
+Additionally, our researchers found the malware loader in components that load before the operating system: UEFI (Unified Extensible Firmware Interface, the interface through which the operating system communicates with the hardware) and MBR (Master Boot Record, needed to start Windows).
+
+Either way, simply booting up the computer installs FinSpy.
+
+A smartphone or tablet can pick up FinSpy through a link in a text message.
+
+In some cases (for example, if the victim’s iPhone is not jailbroken ), the attacker may need physical access to the device, which somewhat complicates the task.
+
+Also, it seems that physical access is necessary for the attackers to infect Linux machines, but we cannot say for sure.
+
+What data does FinSpy steal?
+
+FinSpy has extensive user-surveillance capabilities.
+
+For example, PC versions of the malware can: Turn on the microphone and record or transmit everything it hears; Record or transmit in real time everything the user types on the keyboard; Turn on the camera and record or transmit images from it; Steal files the user interacts with: accesses, modifies, prints, receives, deletes, and so forth; Take screenshots or capture a section of the screen the user clicks; Steal e-mails from the Thunderbird, Outlook, Apple Mail, and Icedove clients; Intercept contacts, chats, calls, and files in Skype.
+
+In addition, the Windows version of FinSpy can eavesdrop on VoIP calls, intercept certificates and encryption keys for certain protocols, and download and run forensic data collection tools.
+
+On top of all that, the Windows version of FinSpy can infect BlackBerry smartphones, so even that now-exotic platform is not overlooked.
+
+As for the mobile versions of FinSpy , they can listen and record calls (voice or VoIP), read text messages, and monitor user activity in instant messaging apps such as WhatsApp, WeChat, Viber, Skype, Line, Telegram, Signal, and Threema.
+
+The mobile spyware also sends the operators a list of the victim’s contacts, calls, calendar events, geolocation data, and much more.
+
+How to avoid FinSpy
+
+Unfortunately, it is not easy to protect yourself completely from government-level spyware.
+
+That said, you can take some precautions against FinSpy and other surveillance apps: Download apps only from trusted sources, whether for mobile or desktop or laptop programs.
+
+Additionally, Android users should forbid installation from unknown sources to reduce their chances of infection; Stop and think before you click on links in e-mails and messages from strangers.
+
+If you must click, first carefully check where the link leads; Don’t jailbreak your smartphone or tablet; Android rooting and iOS jailbreaking make break-ins much easier; Don’t leave devices unattended where strangers have access; Install reliable protection on all of your devices.
+
+
+
+

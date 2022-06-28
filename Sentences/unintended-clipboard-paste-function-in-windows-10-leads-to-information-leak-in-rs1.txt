@@ -1,0 +1,35 @@
+By Steve Povolny on Jun 14, 2018 The McAfee Labs Advanced Threat Research team has been investigating the Windows 10 platform.
+
+We have submitted several vulnerabilities already and have disclosed our research to Microsoft.
+
+ Please refer to our vulnerability disclosure policy for further details or the post from earlier this week on Windows 10 Cortana vulnerabilities.
+
+Early last year, a trivial “information leak” was reported in Windows 10.
+
+ 
+
+This technique no longer works on most current builds of Windows 10, but a variation of this simple method works quite well on some versions of Windows 10, specifically RS1 (RedStone 1).
+
+The issue is simple to describe and execute.
+
+ For a local attack, you can use a physical keyboard; if there is a network vector that would allow one to remotely reach the Windows login screen (such as RDP), you can use the software-based keyboard accessible from the lock screen.
+
+ On all versions of Windows 10, the “paste” function appears to be intentionally forbidden from the Windows lock screen, including the “Hey Cortana” function.
+
+The original finding demonstrated CTRL+V could be used to paste clipboard contents.
+
+ 
+
+This is now disabled, even on RS1.
+
+ 
+
+However, we have found a way to bypass this restriction using the keyboard shortcut CTRL + SHIFT + INSERT, allowing us to access in plain text the clipboard contents, whatever they may be.
+
+ While we are continuing to explore this technique to force-copy functions (and access arbitrary content), for now we can access whatever happens to be copied.
+
+In the demo this is a password allowing login.
+
+
+
+

@@ -1,0 +1,6 @@
+
+Based on other campaigns with similar behavior, most of the targeted organizations are English speaking or have an English-speaking regional office.
+This actor has used recruiting as a lure to collect information about targeted individuals of interest or organizations that manage data related to the industries of interest.
+The McAfee Advanced Threat Research team has observed that the majority of targets were defense and government-related organizations.
+Targeted organizations by sector in October 2018.
+Colors indicate the most prominently affected sector in each country.

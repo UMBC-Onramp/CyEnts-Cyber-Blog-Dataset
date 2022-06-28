@@ -1,0 +1,14 @@
+
+In the end there were still some samples from which we had to pull the configs manually.
+The JSON file contains different values and fields; for a comparison to GandCrab we focused on the PID and SUB field of each sample as these values appeared to have a similar characteristic as the ID and SUB_ID field in the GandCrab samples.
+FIGURE 6.
+REVIL JSON CONFIG VALUES Interpreting the Data Structures With the data we gathered, we used the same analysis methodology on Sodinokibi  as we did on GandCrab.
+We discovered that Sodinokibi has a RaaS structure very similar to GandCrab and with the Parent-Child relationship structure being nearly identical.
+Below we compared activity of GandCrab affiliate number 99 with the activity of the Sodinokibi affiliate number 19.
+FIGURE 7.
+THE ACTIVITY OF GANDCRAB ID
+NO 99 (PARENT) AND ITS CORRESPONDING SUB (CHILDREN) FIGURE 8.
+THE ACTIVITY OF SODINOKIBI PID NO 19 (PARENT) AND ITS CORRESPONDING SUB (CHILDREN)
+It needs to be said that the timespan for the GandCrab overview was generated over a long period of time with a larger total of samples than the Sodinokibi overview.
+Nevertheless, the similarity is quit striking.
+The activity of both ID numbers displays a tree-shaped structure with the parent ID number at the root and branching out to the respective SUB numbers linked to multiple samples.

@@ -1,0 +1,6 @@
+
+Otherwise, execution stops and retries at a random later time.
+Anti-Analysis Blocklists SUNBURST's behavior is affected by the presence of malware analysis and security software.
+To disguise the strings used to detect these security tools, UNC2452 calculated and embedded a hash value for each string.
+While it is trivial for the backdoor to check for the existence of a hashed process name, it is computationally expensive to determine what string a hash value corresponds to (the “preimage”).
+However, thanks to some hard work by members of the information security community, the hashes have been successfully brute-forced.

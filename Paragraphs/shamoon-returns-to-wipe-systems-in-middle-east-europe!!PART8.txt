@@ -1,0 +1,9 @@
+
+We also observed that in some cases the date is briefly modified on the system, faking the date of each file.
+ The files dropped on the system are stored in C:\\\\Windows\\System32\\. Before creating the malicious service, Shamoon elevates its privilege by impersonating the token.
+It first uses LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient.
+Metasploit uses a similar technique to elevate privileges.
+Elevating privileges is critical for malware to perform additional system modifications, which are usually restricted.
+Shamoon creates the new malicious service MaintenaceSrv.
+It creates the service with the option Autostart (StartType: 2) and runs the service with its own process (ServiceType: 0x10):
+If the service is already created, it changes the configuration parameter of the service with the previous configuration.

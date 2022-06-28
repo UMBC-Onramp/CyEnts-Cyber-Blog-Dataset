@@ -1,0 +1,6 @@
+
+The backdoor also determines if the system is joined to an Active Directory (AD) domain and, if so, retrieves the domain name.
+Execution ceases if the system is not joined to an AD domain.
+SUNBURST checks the AD domain name against a blocklist and halts execution if it contains one of the following values: swdev.local emea.sales pci.local apac.lab swdev.dmz cork.lab saas.swi dmz.local lab.local dev.local lab.rio lab.brno lab.na test solarwinds
+We suspect these hard-coded AD domains may be SolarWinds internal domains that UNC2452 wanted to avoid.
+Finally, SUNBURST verifies the system has internet connectivity by ensuring it can resolve the DNS name api.solarwinds.com .

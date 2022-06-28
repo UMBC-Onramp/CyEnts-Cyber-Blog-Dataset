@@ -1,0 +1,8 @@
+
+The threat group appears to have used procured and compromised infrastructure to target Japanese organizations.
+In two days we have observed at least two victims related to this attack.
+We cannot confirm how the organizations were targeted, though similar incidents involving SWC and exploitation of the Flash vulnerability CVE-2015-5119 lured victims with phishing emails.
+Additionally, the limited popularity of the niche site also contributes to our suspicion that phishing emails may have been the lure, and not incidental web browsing.
+Malware Overlap with Other Chinese Threat Groups We believe that this is a concerted campaign against Japanese companies given the nature of the SWC.
+The use of SOGU malware and dissemination method is consistent with the tactics of Chinese APT groups that we track.
+Chinese APT groups have previously targeted the affected Japanese organizations, but we have yet to confirm which group is responsible for this campaign.

@@ -1,0 +1,11 @@
+
+As markets change and adopt cryptocurrencies, we will surely see further responses from cybercriminals.
+Resources https://securingtomorrow.mcafee.com/business/exploring-correlation-bitcoins-boom-evrials-capabilities/ https://securingtomorrow.mcafee.com/mcafee-labs/darknet-markets-will-outlive-alphabay-hansa-takedowns/ https://blogs.mcafee.com/mcafee-labs/weve-hacked-okay-ill-deal-next-week/ https://www.mcafee.com/us/resources/reports/rp-quarterly-threat-q1-2014.pdf https://securingtomorrow.mcafee.com/mcafee-labs/meet-tox-ransomware-for-the-rest-of-us/ https://www.forbes.com/sites/forbestechcouncil/2017/08/03/how-cryptocurrencies-are-fueling-ransomware-attacks-and-other-cybercrimes/2/#25d727c56144 https://threatpost.com/new-ransomware-scam-accepts-bitcoin-payment/102632/
+https://www.mcafee.com/threat-center/threat-landscape-dashboard/ “Dynamic Changes in Underground Markets,” by Charles McFarland.
+Cyber Security Practitioner, Vol.
+2, Issue 11.
+November 2016.
+https://en.wikipedia.org/wiki/Silk_Road_(marketplace) https://www.mcafee.com/us/resources/white-papers/wp-digital-laundry.pdf https://en.wikipedia.org/wiki/Liberty_Reserve https://securingtomorrow.mcafee.com/mcafee-labs/delving-deeply-into-a-bitcoin-botnet https://arstechnica.com/tech-policy/2017/12/bitcoin-fees-rising-high/ https://www.bleepingcomputer.com/news/security/venuslocker-ransomware-gang-switches-to-monero-mining/ https://securingtomorrow.mcafee.com/mcafee-labs/malware-mines-steals-cryptocurrencies-from-victims/
+https://www.theverge.com/2017/9/26/16367620/showtime-cpu-cryptocurrency-monero-coinhive https://gizmodo.com/hackers-hijacking-cpus-to-mine-cryptocurrency-have-now-1822466650 https://techcrunch.com/2018/02/12/browsealoud-coinhive-monero-mining-hack/ https://www.fbi.gov/news/stories/alphabay-takedown https://securingtomorrow.mcafee.com/mcafee-labs/free-ransomware-available-dark-web/
+https://www.bbc.com/news/technology-42338754
+

@@ -1,0 +1,8 @@
+
+Monero mining via RDP advertised on a cybercriminal forum.
+Ransomware:
+The large majority of ransomware is still spread by phishing emails and exploit kits.
+However, specialized criminal groups such as SamSam are known to use RDP to easily enter their victims’ networks almost undetected.
+RDP shop overview Systems for sale: The advertised systems ranged from Windows XP through Windows 10.
+Windows 2008 and 2012 Server were the most abundant systems, with around 11,000 and 6,500, respectively, for sale.
+Prices ranged from around US $3 for a simple configuration to $19 for a high-bandwidth system that offered access with administrator rights.

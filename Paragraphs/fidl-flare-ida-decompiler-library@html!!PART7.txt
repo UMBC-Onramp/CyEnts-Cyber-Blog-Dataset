@@ -1,0 +1,7 @@
+
+Figure 5 shows an example of how FIDL can be used to handle these cases.
+This script targets a DRIDEX sample with MD5 hash 7B82CF2CF9D08191C6828C3F62A2F914.
+This binary uses CRC32 with an XOR key of 0x65C54023 as the hashing algorithm during import resolution.
+Figure 5: IDAPython script to automatically process and markup a DRIDEX sample Running the above script results in output similar to what is shown in Figure 6, with comments labeling which functions are resolved.
+Figure 6:
+The script in Figure 5 inserts comments into the decompiler output annotating decrypted strings You can find FIDL in the FireEye GitHub repository .

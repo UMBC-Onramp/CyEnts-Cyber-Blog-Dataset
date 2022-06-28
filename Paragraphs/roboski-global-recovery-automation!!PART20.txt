@@ -1,0 +1,5 @@
+
+Microsoft resources, including the two resources of interest, SzGeneric and EventWaitHandleRights (highlighted in Figure 5), which are stored as PNG images.
+Figure 5:
+Key resources The resource SzGeneric contains the RoboSki component, which is used to decrypt the contents of the resource EventWaitHandleRights, resulting in a ReZer0 loader.
+To get to the ReZer0 loader, the RoboSki packer first loads the SzGeneric resource and converts the pixel data to RGB order, as denoted in the image below, resulting in the RoboSki component.

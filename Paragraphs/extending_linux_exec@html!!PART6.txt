@@ -1,0 +1,4 @@
+
+Collect & Store Part of the way the appraisal function validates a file is to calculate a hash value, which just determines how mathematically unique the file is, and compare this value against a stored “good” hash value.
+The specific hash function that IMA uses is a configurable option.
+Attest This is effective for locally ensuring integrity of an environment, but what if we also wanted to compare these measured hash values against a list of known bad file hashes through an external or internal blacklist?

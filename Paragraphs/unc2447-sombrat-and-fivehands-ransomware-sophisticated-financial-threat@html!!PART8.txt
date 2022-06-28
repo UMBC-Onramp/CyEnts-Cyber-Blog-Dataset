@@ -1,0 +1,8 @@
+
+Although the backdoor supports dozens of commands, most of them enable the operator to manipulate an encrypted storage file and reconfigure the implant.
+The backdoor's primary purpose is to download and execute plugins provided via the C2 server.
+In contrast to the SOMBRAT version published in November 2020, Mandiant observed additional obfuscation and armoring to evade detection, this SOMBRAT variant has been hardened to discourage analysis.
+Program metadata typically included by the compiler has been stripped and strings have been inlined and encoded via XOR-based routines.
+The SOMBRAT Launcher This SOMBRAT backdoor variant must be deployed alongside four additional resources that serve as launchers.
+They are typically installed to the hardcoded directory path `C:\\ProgramData\\Microsoft`.
+path: `C:\\programdata\\Microsoft\\WwanSvc.bat` - launcher for `WwanSvc.txt` path: `C:\\programdata\\Microsoft\\WwanSvc.txt` - decoder and launcher for `WwanSvc.c` path: `C:\\programdata\\Microsoft\\WwanSvc.c` - decoder and launcher for `WwanSvc.b` path: `C:\\programdata\\Microsoft\\WwanSvc.a` - XOR key path: `C:\\programdata\\Microsoft\\WwanSvc.b` - encoded SOMBRAT backdoor path: `%TEMP%\\<possibly unique random name>` - encrypted storage file path: `%TEMP%\\<possibly unique random name _<integer>` - encrypted storage file path: `C:\\ProgramData\\<possibly unique random name ` - encrypted configuration file Other variations of the filenames were observed such as ntuser and wapsvc.

@@ -1,0 +1,7 @@
+
+From this point forward, all installation steps should be performed within your VM.
+Once you have a VM with a fresh installation of Windows, use one of the following URLs to download the compressed FLARE VM repository onto your VM: https://github.com/fireeye/flare-vm https://flarevm.info Figure 1: Download FLARE VM repo
+Then, use the following steps to install FLARE VM: Decompress the FLARE VM repository to a directory of your choosing.
+Start a new session of PowerShell with escalated privileges.
+FLARE VM attempts to install additional software and modify system settings; therefore, escalated privileges are required for installation.
+Within PowerShell, change directory to the location where you have decompressed the FLARE VM repository.

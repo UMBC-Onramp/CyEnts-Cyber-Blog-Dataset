@@ -1,0 +1,8 @@
+
+Ransomware may result in similar outcomes when it reaches IT-based assets in OT networks, for example human-machine interfaces (HMIs), supervisory control and data acquisition (SCADA) software, and engineering workstations.
+Most of this equipment relies on commodity software and standard operating systems that are vulnerable to a variety of IT threats.
+Mandiant Intelligence is aware of at least one incident in which an industrial facility suffered a plant shutdown due to a large-scale ransomware attack, based on sensitive sources.
+The facility's network was improperly segmented, which allowed the malware to propagate from the corporate network into the OT network, where it encrypted servers, HMIs, workstations, and backups.
+The facility had to reach out to multiple vendors to retrieve backups, many of which were decades old, which delayed complete restoration of production.
+As recently as February 2020, the Cybersecurity Infrastructure and Security Agency (CISA) released Alert AA20-049A describing how a post-compromise ransomware incident had affected control and communication assets on the OT network of a natural gas compression facility.
+Impacts to HMIs, data historians, and polling servers resulted in loss of availability and loss of view for human operators.

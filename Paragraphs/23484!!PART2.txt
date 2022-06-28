@@ -1,0 +1,6 @@
+
+Source code appeared online in 2014, but FinSpy’s story didn’t end there: After a redevelopment and to this day, the malware continues to infect devices around the world.
+FinSpy is versatile, with versions for computers running Windows, macOS, and Linux, as well as mobile devices with Android and iOS .
+Its capabilities vary depending on the platform, but in all cases the malware employs various means to transmit bundles of data about them covertly to its handlers.
+How FinSpy spreads The spyware has several ways to infiltrate Windows machines.
+For example, it can hide in infected distribution packages including installers for TeamViewer, VLC Media Player, WinRAR, and others.

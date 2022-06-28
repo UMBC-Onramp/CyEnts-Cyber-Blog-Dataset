@@ -1,0 +1,7 @@
+
+Nation-states leverage bot battalions to deliver messages or manipulate opinion, and their effectiveness is striking.
+Bots often will take both sides of a story to spur debate, and this tactic works.
+By employing a system of amplifying nodes, as well as testing the messaging (including hashtags) to determine success rates, botnet operators demonstrate a real understanding of how to mold popular opinion on critical issues.
+In one example, an account that was only two weeks old with 279 followers, most of which were other bots, began a harassment campaign against an organization.
+By amplification, the account generated an additional 1,500 followers in only four weeks by simply tweeting malicious content about their target.
+Activities to manipulate public opinion have been well documented and bots well versed in manipulating conversations to drive agendas stand ready.

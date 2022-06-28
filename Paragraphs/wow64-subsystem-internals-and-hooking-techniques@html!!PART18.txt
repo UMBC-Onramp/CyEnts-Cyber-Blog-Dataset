@@ -1,0 +1,5 @@
+
+When system calls are performed this way the 32-bit syscall stub that the WOW64 layer uses is completely skipped in the execution chain.
+This is unfortunate for security products or tracing tools because any inline hooks in-place on these stubs are also bypassed.
+Malware authors know this and utilize “Heaven’s Gate” as a bypass technique in some cases.
+Figure 14 and Figure 15 shows the execution flow of a regular syscall stub through the WOW64 layer, and hooked syscall stub where malware utilizes “Heaven’s Gate”.

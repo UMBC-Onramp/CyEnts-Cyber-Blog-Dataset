@@ -1,0 +1,11 @@
+
+In the case of RC4 encryption, the user's RC4 Kerberos key is directly derived from the user's account password.
+In the case of AES encryption, the user's Kerberos key is derived from the user's password and a salt based on the username and domain name).
+The domain controller receives the request and decrypts the timestamp by looking up the user's Kerberos key.
+An example AS-REQ packet is shown in Figure 5.
+Figure 5: AS-REQ Once preauthentication is successful, the Domain Controller issues an AS-REP response packet that contains various metadata fields, the TGT itself, and an \"Authenticator\".
+The data within the TGT itself is considered sensitive.
+If a user could freely modify the content within the TGT, they could impersonate any user in the domain as performed in the Golden Ticket attack.
+To prevent this from easily occurring, the TGT is encrypted with the long term Kerberos key stored on the Domain Controller.
+This key is derived from the password of the krbtgt account in Active Directory.
+To prevent users from impersonating another user with a stolen TGT blob, Active Directory’s Kerberos implementation uses session keys that are used for mutual authentication between the user, domain, and service.

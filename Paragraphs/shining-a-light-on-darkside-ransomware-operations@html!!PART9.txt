@@ -1,0 +1,9 @@
+
+RaaS affiliates are required to pass an interview after which they are provided access to an administration panel (Figure 2).
+Within this panel, affiliates can perform various actions such as creating a ransomware build, specifying content for the DARKSIDE blog, managing victims, and contacting support.
+Mandiant has identified at least five Russian-speaking actors who may currently, or have previously, been DARKSIDE affiliates.
+Relevant advertisements associated with a portion of these threat actors have been aimed at finding either initial access providers or actors capable of deploying ransomware on accesses already obtained.
+Some actors claiming to use DARKSIDE have also allegedly partnered with other RaaS affiliate programs, including BABUK and SODINOKIBI (aka REvil).
+For more information on these threat actors, please see Mandiant Advantage .
+Figure 2: DARKSIDE affiliate panel Attack Lifecycle Mandiant currently tracks five clusters of threat activity that have involved the deployment of DARKSIDE.
+For more information on uncategorized threats, refer to our post, \" DebUNCing Attribution: How Mandiant Tracks Uncategorized Threat Actors .\"

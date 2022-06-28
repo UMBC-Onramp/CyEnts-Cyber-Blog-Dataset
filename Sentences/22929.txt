@@ -1,0 +1,109 @@
+Following the helicopter money and fake cryptocurrency exchange scams, the Discord scam saga continues, this time with cybercriminals hitting ICO investors.
+
+What ICOs are, and how they work ICO is short for Initial Coin Offering .
+
+Before making them available for free trading on cryptoexchanges, makers of new cryptocurrencies release some tokens — typically to raise initial funds for the project.
+
+On the buyer side, speculators are hoping to profit — that the market rate will increase.
+
+That makes ICOs similar to IPOs (initial public offerings) on the stock market.
+
+The ICO concept is gaining momentum.
+
+According to PwC analysts , ICOs increased from only 49 ICOs in 2016 to more than 1,000 in 2018.
+
+The financial increase is no less impressive: from $252 million to $19.7 billion.
+
+ICO types Several initial placement options are available.
+
+Broadly, there are capped and uncapped placements.
+
+In the former case, the issuer clearly states the sum to be collected and the number of tokens up for trading — as a result, there may not be enough coins to cover the demand.
+
+Uncapped placements continue, as the name suggests, nonstop throughout the ICO.
+
+The organizers never stop collecting money, hoping to bring in as many investors and as much money as possible.
+
+But an unlimited supply may dampen investor interest, of course, so organizers have to hype the placement.
+
+There are also several distribution options.
+
+For example, in some ICOs, advance requests are processed based on an FCFS (First Come First Serve) basis; in others, whoever offers the highest price wins the assets at auction.
+
+Then we have the randomized queue, an alternative format that’s been gaining traction of late, in which the traders register on the project website well in advance but learn their number only after they are in the queue and trading begins.
+
+In other words, potential cryptoinvestors can’t know until the last moment whether they will get the coveted assets.
+
+Those who get nothing risk falling victim to FOMO (fear of missing out, a term investors use for anxiety due to lost profit or opportunity) — that is, getting nervous and letting their guard down.
+
+An ICO that never happened FOMO is at the heart of many scams.
+
+Lately, for example, we’ve been seeing mass messaging to members of cryptocurrency communities in Discord, with emoji-rich text advertising a new round of an uncapped ICO allegedly being held by a (real) leading-edge blockchain startup — Mina in our example, but there are others as well.
+
+Just like every other fraud scheme, this one tries to rush potential victims into following a link to the “official” website.
+
+Incidentally, the real Mina did hold a placement not long ago, in the randomized queue format, and many who registered got no coins.
+
+The new scheme exploits that history.
+
+Scammers warning about scammers in one of the messages in Discord The message contains links to what looks like the real Mina page.
+
+The Mina project is dedicated to creating a minimalistic blockchain, so the Mina website is also minimalistic to the extreme — which spared the scammers the effort of building a comprehensive fake.
+
+Visitors are required to complete a simple registration: name, e-mail address, and, for some reason, a link to their social network page.
+
+The rogue site’s overall style is similar to Mina’s The scammers claim to have streamlined the ICO process: “Make a cryptocurrency payment to the specified wallet and get your tokens.”
+
+In fact, the next prompt, right after registration, requests a cryptocurrency selection and payment amount.
+
+The token “purchasing” process is designed to be as simple as possible — select one of three popular cryptocurrencies … … and then specify the sum you mean to part with (forever)
+
+Once the currency and sum are specified, the payment alone remains — the website offers to copy the address of the scammers’ cryptocurrency wallet or scan its QR code.
+
+Almost there: time to pay Once they have pocketed the money, the criminals apologize for the delay, citing necessary confirmations in the blockchain network, which, unfortunately, is under heavy load at the moment.
+
+They ask investors to be patient and wait for three hours before contacting support, should the coins fail to arrive.
+
+Everything is fine, and the coins are on their way (not really)
+
+It should come as no surprise that the investors will never get their coins — their money are gone for good.
+
+Apparently, some people have already fallen victim to the scheme.
+
+For example, as of the time of this publication, the wallet specified on the fake Mina page had received 0.2 BTC in payments (more than $7,000 — again, as of the time of this publication).
+
+How to avoid ICO cryptoscams To stay clear of the scheme described, follow these simple rules — they’re good for just about any situation.
+
+Think.
+
+Consider the incoming message soberly.
+
+In the fake Mina example, ask yourself why such a generous (weird but generous) offer would have no buzz in specialized communities?
+
+Could the sender be trying to exploit your FOMO?
+
+Why the need to use no link but the one in the letter?
+
+Why does the letter ask you to spread the information among your contacts?
+
+There’s no proof of scam here, but plenty of food for thought.
+
+Check.
+
+Visit the issuer’s official website by typing its address into your browser’s address bar.
+
+Read any coverage of the ICO project on specialized resources.
+
+Check the real cryptoproject servers in Discord, which stay on top of scams and post warnings.
+
+However you choose to research and verify, never drop your guard: Scammers have built entire fake news sites to lend credibility to cyberscams.
+
+Protect.
+
+The human factor is not infallible; we need automatic defenses for added security.
+
+A reliable protection solution, such as Kaspersky Internet Security , will warn you if someone tries to redirect you to a malicious, phishing, or scam website.
+
+
+
+

@@ -1,0 +1,14 @@
+
+KB44755:
+Pulse Connect Secure (PCS) Integrity Assurance Detecting the Techniques
+The following table contains specific FireEye product detection names for the malware families associated with this updated information.
+Platform(s) Detection Name Network Security Email Security Detection On Demand Malware File
+Scanning Malware File Storage Scanning FE_APT_Tool_Linux32_BLOODMINE_1 FE_APT_Tool_Linux_BLOODMINE_1
+FE_APT_Tool_Linux32_BLOODBANK_1 FE_APT_Tool_Linux_BLOODBANK_1 FE_APT_Tool_Linux32_CLEANPULSE_1 FE_APT_Tool_Linux_CLEANPULSE_1 FE_APT_Webshell_PL_RAPIDPULSE_1 FEC_APT_Webshell_PL_RAPIDPULSE_1 Endpoint Security Real-Time Detection (IOC) BLOODBANK (UTILITY) BLOODMINE (UTILITY)
+Helix Establish Foothold WINDOWS METHODOLOGY
+[User Account Created] WINDOWS METHODOLOGY
+[
+User Created - Net Command]
+Escalate Privileges WINDOWS METHODOLOGY [Mimikatz Args] WINDOWS METHODOLOGY [Invoke-Mimikatz Powershell Artifacts] WINDOWS METHODOLOGY [LSASS Memory Access] WINDOWS METHODOLOGY
+[LSASS Generic Dump Activity] Internal Reconnaissance WINDOWS ANALYTICS [Recon Commands]
+Move Laterally WINDOWS ANALYTICS [Abnormal RDP Logon] OFFICE 365 ANALYTICS [Abnormal Logon]

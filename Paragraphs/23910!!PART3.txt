@@ -1,0 +1,8 @@
+
+Since you and your iPhone are already far away from your backpack when you realize you lost it, UWB won’t help you.
+Now anyone who has a relatively modern Apple device — iPhone 7 and newer — can get involved.
+Using Bluetooth, they detect the AirTag nearby and transmit approximate or specific coordinates to your Apple account.
+Now you can use Apple’s Find My service to see where your backpack has ended up — such as in the lost-and-found office or with a new owner.
+What’s key is that all of this happens automatically; you don’t even need to install anything.
+Everything the AirTag search system needs to work is already built into the iOS of hundreds of millions of users.
+But considering that Bluetooth has a maximum distance range of just a few dozen meters, this works only in large cities, where there are a lot of people with iPhones.

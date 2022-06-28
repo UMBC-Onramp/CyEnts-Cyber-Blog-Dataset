@@ -1,0 +1,5 @@
+
+During uninstall (using the 'u' or 'U' <command>)
+the patch jump location is overwritten with what appears to be the original 8 bytes of instructions, and the two additional memory buffers and the code snippet appear to be overwritten with zeros.
+The CLEANPULSE utility is highly specific to a victim environment.
+It does not contain any validation code when patching (i.e. verifying that code is expected prior to modifying it), and it contains hard-coded addresses to patch.

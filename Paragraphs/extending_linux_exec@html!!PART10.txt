@@ -1,0 +1,3 @@
+
+A quick check in VirusTotal of the hash supplied to us by IMA in this example shows that this is a variant of the Kaiten IoT bot .
+Once you are generating logs with IMA and auditd, you can send them to your SIEM using your normal log ingestion process via something like syslog.

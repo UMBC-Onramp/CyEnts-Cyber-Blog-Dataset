@@ -1,0 +1,4 @@
+FortiGuard Labs Threat Research Report Affected Platforms : All OS Impacted Parties :   Online Shoppers Impact :                     Loss of personally identifiable information and/or money Severity Level :         Low Black Friday, one of the biggest retail spending days of the year, is fast approaching.
+According to Adobe Analytics , consumer spending on that day last year reached a whopping $9.03 billion dollars (21.6% Year-over-Year growth), and 2021 is expected to be even bigger.
+Amazon is the industry’s prime online shopping web site for consumers looking to buy goods at discounted prices on Black Friday.
+According to an Amazon blog , sales from Black Friday through Cyber Monday last year topped $4.8 billion worldwide (60% Year-over-Year growth).

@@ -1,0 +1,187 @@
+This blog post is the next episode in the FireEye Labs Advanced Reverse Engineering (FLARE) team Script Series.
+
+Today, we are sharing a new IDAPython library – flare-emu – powered by IDA Pro and the Unicorn emulation framework that provides scriptable emulation features for the x86, x86_64, ARM, and ARM64 architectures to reverse engineers.
+
+Along with this library, we are also sharing an Objective-C code analysis IDAPython script that uses it.
+
+Read on to learn some creative ways that emulation can help solve your code analysis problems and how to use our new IDAPython library to save you lots of time in the process.
+
+Why Emulation?
+
+If you haven’t employed emulation as a means to solve a code analysis problem, then you are missing out!
+
+I will highlight some of its benefits and a few use cases in order to give you an idea of how powerful it can be.
+
+Emulation is flexible, and many emulation frameworks available today, including Unicorn, are cross-platform.
+
+With emulation, you choose which code to emulate and you control the context under which it is executed.
+
+Because the emulated code cannot access the system services of the operating system under which it is running, there is little risk of it causing damage.
+
+All of these benefits make emulation a great option for ad-hoc experimentation, problem solving, or automation.
+
+Use Cases Decoding/Decryption/Deobfuscation/Decompress – Often during malicious code analysis you will come across a function used to decode, decompress, decrypt, or deobfuscate some useful data such as strings, configuration data, or another payload.
+
+If it is a common algorithm, you may be able to identify it by sight or with a plug-in such as signsrch .
+
+Unfortunately, this is not often the case.
+
+You are then left to either opening up a debugger and instrumenting the sample to decode it for you, or transposing the function by hand into whatever programming language fits your needs at the time.
+
+These options can be time consuming and problematic depending on the complexity of the code and the sample you are analyzing.
+
+Here, emulation can often provide a preferable third option.
+
+Writing a script that emulates the function for you is akin to having the function available to you as if you wrote it or are calling it from a library.
+
+This allows you to reuse the function as many times as it’s needed, with varying inputs, without having to open a debugger.
+
+This case also applies to self-decrypting shellcode, where you can have the code decrypt itself for you.
+
+Data Tracking – With emulation, you have the power to stop and inspect the emulation context at any time using an instruction hook.
+
+Pairing a disassembler with an emulator allows you to pause emulation at key instructions and inspect the contents of registers and memory.
+
+This allows you to keep tabs on interesting data as it flows through a function.
+
+This can have several applications.
+
+As previously covered in other blogs in the FLARE script series, Automating Function Argument Extraction and Automating Obfuscated String Decoding , this technique can be used to track the arguments passed to a given function throughout an entire program.
+
+Function argument tracking is one of the techniques employed by the Objective-C code analysis tool introduced later in this post.
+
+The data tracking technique could also be employed to track the this pointer in C++ code in order to markup object member references, or the return values from calls to GetProcAddress/dlsym in order to rename the variables they are stored in appropriately.
+
+There are many possibilities.
+
+Introducing flare-emu The FLARE team is introducing an IDAPython library, flare-emu , that marries IDA Pro’s binary analysis capabilities with Unicorn’s emulation framework to provide the user with an easy to use and flexible interface for scripting emulation tasks.
+
+flare-emu is designed to handle all the housekeeping of setting up a flexible and robust emulator for its supported architectures so that you can focus on solving your code analysis problems.
+
+It currently provides three different interfaces to serve your emulation needs, along with a slew of related helper and utility functions.
+
+emulateRange – This API is used to emulate a range of instructions, or a function, within a user-specified context.
+
+It provides options for user-defined hooks for both individual instructions and for when “call” instructions are encountered.
+
+The user can decide whether the emulator will skip over, or call into function calls.
+
+Figure 1 shows emulateRange used with both an instruction and call hook to track the return value of GetProcAddress calls and rename global variables to the name of the Windows APIs they will be pointing to.
+
+In this example, it was only set to emulate from 0x401514 to 0x40153D .
+
+  
+
+This interface provides an easy way for the user to specify values for given registers and stack arguments.
+
+If a bytestring is specified, it is written to the emulator’s memory and the pointer is written to the register or stack variable.
+
+After emulation, the user can make use of flare-emu ’s utility functions to read data from the emulated memory or registers, or use the Unicorn emulation object that is returned for direct probing in case flare-emu does not expose some functionality you require.
+
+A small wrapper function for emulateRange , named emulateSelection , can be used to emulate the range of instructions currently highlighted in IDA Pro.
+
+Figure 1: emulateRange being used to track the return value of GetProcAddress iterate – This API is used to force emulation down specific branches within a function in order to reach a given target.
+
+The user can specify a list of target addresses, or the address of a function from which a list of cross-references to the function is used as the targets, along with a callback for when a target is reached.
+
+The targets will be reached, regardless of conditions during emulation that may have caused different branches to be taken.
+
+Figure 2 illustrates a set of code branches that iterate has forced to be taken in order to reach its target; the flags set by the cmp instructions are irrelevant.
+
+  Like the emulateRange API, options for user-defined hooks for both individual instructions and for when “call” instructions are encountered are provided.
+
+An example use of the iterate API is for the function argument tracking technique mentioned earlier in this post.
+
+Figure 2:
+
+A path of emulation determined by the iterate API in order to reach the target address emulateBytes – This API provides a way to simply emulate a blob of extraneous shellcode.
+
+The provided bytes are not added to the IDB and are simply emulated as is.
+
+This can be useful for preparing the emulation environment.
+
+For example, flare-emu itself uses this API to manipulate a Model Specific Register (MSR) for the ARM64 CPU that is not exposed by Unicorn in order to enable Vector Floating Point (VFP) instructions and register access.
+
+Figure 3 shows the code snippet that achieves this.
+
+Like with emulateRange , the Unicorn emulation object is returned for further probing by the user in case flare-emu does not expose some functionality required by the user.
+
+Figure 3: flare-emu using emulateBytes to enable VFP for ARM64 API Hooking As previously stated, flare-emu is designed to make it easy for you to use emulation to solve your code analysis needs.
+
+One of the pains of emulation is in dealing with calls into library functions.
+
+While flare-emu gives you the option to simply skip over call instructions, or define your own hooks for dealing with specific functions within your call hook routine, it also comes with predefined hooks for over 80 functions!
+
+These functions include many of the common C runtime functions for string and memory manipulation that you will encounter, as well as some of their Windows API counterparts.
+
+Examples Figure 4 shows a few blocks of code that call a function that takes a timestamp value and converts it to a string.
+
+Figure 5 shows a simple script that uses flare-emu ’s iterate API to print the arguments passed to this function for each place it is called.
+
+The script also emulates a simple XOR decode function and prints the resulting, decoded string.
+
+Figure 6 shows the resulting output of the script.
+
+Figure 4:
+
+Calls to a timestamp conversion function Figure 5: Simple example of flare-emu usage Figure 6: Output of script shown in Figure 5 Here is a sample script that uses flare-emu to track return values of GetProcAddress and rename the variables they are stored in accordingly.
+
+Check out our README for more examples and help with flare-emu .
+
+Introducing objc2_analyzer Last year, I wrote a blog post to introduce you to reverse engineering Cocoa applications for macOS .
+
+That post included a short primer on how Objective-C methods are called under the hood, and how this adversely affects cross-references in IDA Pro and other disassemblers.
+
+An IDAPython script named objc2_xrefs_helper was also introduced in the post to help fix these cross-references issues.
+
+If you have not read that blog post, I recommend reading it before continuing on reading this post as it provides some context for what makes objc2_analyzer particularly useful.
+
+A major shortcoming of objc2_xrefs_helper was that if a selector name was ambiguous, meaning that two or more classes implement a method with the same name, the script was unable to determine which class the referenced selector belonged to at any given location in the binary and had to ignore such cases when fixing cross-references.
+
+Now, with emulation support, this is no longer the case.
+
+objc2_analyzer uses the iterate API from flare-emu along with instruction and call hooks that perform Objective-C disassembly analysis in order to determine the id and selector being passed for every call to objc_msgSend variants in a binary.
+
+As an added bonus, it can also catch calls made to objc_msgSend variants when the function pointer is stored in a register, which is a very common pattern in Clang (the compiler used by modern versions of Xcode).
+
+IDA Pro tries to catch these itself and does a pretty good job, but it doesn’t catch them all.
+
+In addition to x86_64, support was also added for the ARM and ARM64 architectures in order to support reverse engineering iOS applications.
+
+This script supersedes the older objc2_xrefs_helper script, which has been removed from our repo.
+
+And, since the script can perform such data tracking in Objective-C code by using emulation, it can also determine whether an id is a class instance or a class object itself.
+
+Additional support has been added to track ivars being passed as ids as well.
+
+With all this information, Objective-C-style pseudocode comments are added to each call to objc_msgSend variants that represent the method call being made at each location.
+
+An example of the script’s capability is shown in Figure 7 and Figure 8.
+
+Figure 7: Objective-C IDB snippet before running objc2_analyzer Figure 8: Objective-C IDB snippet after running objc2_analyzer
+
+Observe the instructions referencing selectors have been patched to instead reference the implementation function itself, for easy transition.
+
+The comments added to each call make analysis much easier.
+
+Cross-references from the implementation functions are also created to point back to the objc_msgSend calls that reference them as shown in Figure 9.
+
+Figure 9: Cross-references added to IDB for implementation function It should be noted that every release of IDA Pro starting with 7.0 have brought improvements to Objective-C code analysis and handling.
+
+However, at the time of writing, the latest version of IDA Pro being 7.2, there are still shortcomings that are mitigated using this tool as well as the immensely helpful comments that are added.
+
+objc2_analyzer is available, along with our other IDA Pro plugins and scripts , at our GitHub page.
+
+Conclusion flare-emu is a flexible tool to include in your arsenal that can be applied to a variety of code analysis problems.
+
+Several example problems were presented and solved using it in this blog post, but this is just a glimpse of its possible applications.
+
+If you haven’t given emulation a try for solving your code analysis problems, we hope you will now consider it an option.
+
+And for all, we hope you find value in using these new tools!
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

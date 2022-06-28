@@ -1,0 +1,7 @@
+
+A three-month review of its telemetry reveals a spike in the last few weeks, with the majority of visitors coming from the UAE, Canada, Argentina, Djibouti, and Fiji.
+Visual Basic Script (VBS)
+/Wscript
+When you click on the link (the fake pdf attachment), the user’s default browser is launched and directed to a VB Script hosting site.
+This site delivers the initial payload (.vbs), which, once executed, drops subsequent payloads and establishes persistence.
+The VB script “ROSI-AOP Incident Report Details,May 31st.vbs“ contains the next stage payload, “Good.xml”.

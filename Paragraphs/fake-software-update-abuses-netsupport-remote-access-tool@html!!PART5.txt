@@ -1,0 +1,11 @@
+
+The code decrypts and executes the JavaScript code as a function.
+This decrypted function contains code that initiates the network connection.
+In the decoded function, the command and control (C2) URL and a value named tid are hard-coded in the script and protected with some encoded function.
+During its first communication to the server, the malware sends the tid value and the current date of the system in encoded format, and waits for the response from the server.
+It decodes the server response and executes the response as a function, as shown in Figure 4.
+Figure 4:
+Initial Server Communication and Response
+The response from the server is JavaScript code that the malware executes as a function named step2.
+The step2 function uses WScript.
+Network and Windows Management Instrumentation(WMI) to collect the following system information, which it then encodes and sends to the server: Architecture, ComputerName, UserName, Processors, OS, Domain, Manufacturer, Model, BIOS_Version, AntiSpywareProduct, AntiVirusProduct, MACAddress, Keyboard, PointingDevice, DisplayControllerConfiguration, ProcessList; After sending the system information to the server, the response from the server contains two parts: content2 and content3 .

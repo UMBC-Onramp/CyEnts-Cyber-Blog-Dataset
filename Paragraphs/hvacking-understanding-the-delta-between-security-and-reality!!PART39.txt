@@ -1,0 +1,7 @@
+
+Subtracting this from our total 32 bytes, we have 16 bytes left, or 4 instructions total, to set up the argument for system and jump to it.
+A common method to fit more instructions into a small space in memory on ARM is to switch to Thumb mode.
+This is because ARM’s Thumb mode utilizes 16-bit (2-byte) instructions, instead of the regular 32-bit (4-byte) ARM instructions.
+Unfortunately, the processor on this device did not support Thumb mode and therefore this was not an option.
+The challenge to accomplishing our task in only 4 ARM instructions is the limit ARM places on immediate values.
+To jump to system , we needed to use an immediate value as the address to jump to, but memory address are not generally small values.

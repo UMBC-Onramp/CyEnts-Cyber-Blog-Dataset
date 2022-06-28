@@ -1,0 +1,5 @@
+
+Reconnaissance commands were regularly issued to the bots, with the goal of collecting information that would allow the botnet’s operators to zero in on valuable assets.
+The information the attackers looked for was root access, CPU and GPU information and system architecture (ARMV, etc.)
+Most notably, the Blackcat botnet operators were eager to find machines with NVIDIA GPUs , which is a graphic processing unit with higher compute power that translates into faster mining.
+Once the server’s operators get the information on the system’s CPU/GPU, they group the bots in different channels accordingly.

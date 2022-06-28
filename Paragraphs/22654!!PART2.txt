@@ -1,0 +1,9 @@
+
+Our global survey of April 2020 found that nearly half of the 6,000 respondents had never worked from home before.
+Despite that, in 73% of cases, employers didn’t conduct any special training on safe interaction with corporate resources over the Internet, which could have reduced the number of incidents caused by the human factor.
+Corporate IT’s decreased control over devices, software, and user actions led to increased risk.
+Home equipment Many companies didn’t provide their employees with corporate equipment.
+Instead, they allowed staff to work and connect to the office IT infrastructure from home devices, which in many cases are poorly protected.
+According to our survey, 68% of respondents worked at home using their personal computers.
+In the fall, we conducted another study and found even more people in this position.
+About 80% of people surveyed used their home computers for work, even though more than half (51%) of respondents were provided with the necessary equipment by their employers.

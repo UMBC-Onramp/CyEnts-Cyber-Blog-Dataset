@@ -1,0 +1,11 @@
+
+This is making it harder and harder to detect scam websites without doing some digging.
+In fact, someone with moderate technical knowledge can get a professional looking ecommerce site online within several hours, especially if they are using a proven template.
+Users are strongly cautioned to careful review any website they are unfamiliar with before making a purchase.
+Wherever possible, FortiGuard Labs has reached out to the trademark/intellectual property owners being infringed on as a courtesy notification.
+Fortinet Protections All associated URLS for these fraudulent sites have been added to the Web Filtering client.
+Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+

@@ -1,0 +1,7 @@
+
+If they have, the hook function replaces the correct state, stored in canioWriteOutput’s second parameter, with the state asserted by the attacker before calling the real canioWriteOutput function.
+Otherwise, the hook function acts as a simple passthrough for the real deal.
+A positive side effect of this, from the attacker’s perspective, is the touchscreen will show the output as the state the user last requested even after the malware has modified it.
+Implementing this simple state-tracking resolved our prior issue of the attacker-asserted state not persisting.
+With control of the binary output, we moved on to looking at each of the other types of inputs and outputs that can be connected to the modules.
+We used a similar approach in identifying the methods used to read or write data from the modules and then hooking them.

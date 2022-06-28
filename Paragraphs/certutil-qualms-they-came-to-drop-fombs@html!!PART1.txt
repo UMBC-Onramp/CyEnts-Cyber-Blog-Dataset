@@ -1,0 +1,4 @@
+This blog post covers an interesting intrusion attempt that Mandiant Managed Defense thwarted involving the rapid weaponization of a recently disclosed vulnerability combined with the creative use of WMI compiled “.bmf”
+ files and CertUtil for obfuscated execution.
+This intrusion attempt highlights a number of valuable lessons in security, chiefly: attackers work fast – faster than many security teams can react.
+Additionally, patching complex software environments while keeping the business operational makes it difficult to keep pace with attackers exploiting vulnerabilities, especially when these truths are coupled with rapid exploitation with innovative obfuscation methods utilizing the operating systems own feature set against it.

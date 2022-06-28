@@ -1,0 +1,8 @@
+
+The file runsysO.cr is an XOR-encoded PE executable that exploits CVE-2020-0787, and based on the target system's bitness, it will drop one of two embedded SOURBITS payloads.
+Data Theft, Ransomware Deployment and #TTR
+Like other financially motivated threat actors, part of UNC2198’s modus operandi in latter stages of intrusions involves the exfiltration of hundreds of gigabytes of the victim organizations’ data before ransomware is installed.
+Specifically, UNC2198 has used RCLONE, a command line utility used to synchronize cloud storage, to aid in the exfiltration of sensitive data.
+In all observed cases of data theft, RCLONE was used by UNC2198 from the “ C:\\PerfLogs\\rclone.exe ” file path.
+“ Time-to-Ransom \" (TTR) is the delta between first-attributed access time and the time of ransomware deployment.
+TTR serves as a useful gauge of how quickly an organization needs to respond to stave off a threat actor’s successful deployment of ransomware.

@@ -1,0 +1,5 @@
+
+The script will set up the Boxstarter environment and proceed to download and install the ThreatPursuit VM environment, as seen in Figure 3.
+Figure 3: Installation script execution
+The installation process may take upwards of several hours depending on your internet connection speed and the web servers hosting the various files.
+ Figure 4 shows the post-installation desktop environment, featuring the logo and a desktop shortcut.

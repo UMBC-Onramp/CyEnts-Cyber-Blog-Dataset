@@ -1,0 +1,3 @@
+
+Pro Tip: Be sure to account for log data spanning over changes in UTC offset due to regional events such as daylight savings or summer seasons.
+For example, local time zone adjustments will need to change for logs in United States Eastern Time from Virginia, USA from +TIME(5,0,0) to +TIME(4,0,0) the first weekend in March every year and back from +TIME(4,0,0) to +TIME(5,0,0) the first weekend in November to account for daylight and standard shifts .

@@ -1,0 +1,8 @@
+Intro This blog post is the next episode in the FLARE team IDA Pro Script\nseries.
+All scripts and plug-ins are available from our GitHub repo at https://github.com/fireeye/flare-ida .
+Automating the Repetitive I am a big believer in automating repetitive tasks to improve and\nsimplify reverse engineering.
+The task described in this blog comes up\nfrequently in malware analysis: identifying all of the arguments given\nto a function within a program.
+This situation may come up when trying to: Identify the size, location, and possible key used to decrypt\nencoded strings used by the malware.
+Identify each function\npointer used to start a new thread (i.e., the arguments to CreateThread or _ beginthreadex ).
+Identify static strings\nused in API functions that may be used as an indicator (i.e., named\nmutexes and events).
+Identify all of the functions resolved\nat runtime (i.e., all of the arguments to GetProcAddress).

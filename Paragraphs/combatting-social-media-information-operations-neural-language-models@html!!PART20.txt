@@ -1,0 +1,5 @@
+
+The LM fine-tuned on Twitter’s Elections Integrity dataset displayed the lowest perplexity scores when averaged across all held out test datasets, so we selected posts sampled from this dataset to demonstrate classification fine-tuning.
+Figure 5: (A) Training loss histories during GPT-2 fine-tuning for the classification (red) and LM (grey, inset) tasks.
+ (B) ROC curve (red) evaluated on the held out fine-tuning test set, contrasted with random guess (grey dotted).
+To fine-tune for the classification task, we once again processed the selected dataset’s posts through the pre-trained GPT-2 model.

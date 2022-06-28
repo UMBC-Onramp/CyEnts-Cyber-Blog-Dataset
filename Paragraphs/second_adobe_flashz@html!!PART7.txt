@@ -1,0 +1,5 @@
+
+It uses modified DNS TXT record beaconing with an encoding we have not previously observed with SOGU malware, along with a non-standard header, indicating that this is possibly a new variant.
+Figure 6:
+SOGU C2 beaconing The WHOIS registrant email address for the domain did not indicate any prior malicious activity, and the current IP resolution (54.169.89.240) is for an Amazon Web Services IP address.
+Another Quick Turnaround on Leveraging HackingTeam Zero-Days Similar to the short turnaround time highlighted in our blog on the recent APT3/APT18 phishing attacks , the threat actor quickly employed the leaked zero-day vulnerability into a SWC campaign.

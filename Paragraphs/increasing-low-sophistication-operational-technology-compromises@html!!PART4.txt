@@ -1,0 +1,5 @@
+
+Graphical user interfaces (GUI), such as human machine interfaces (HMI), become the low-hanging fruit of process-oriented OT attacks as they provide a user-friendly representation of complex industrial processes, which enables actors to modify control variables without prior knowledge of a process.
+In many cases, the actors showed evidence of compromised control processes via images of GUIs, IP addresses, system timestamps, and videos.
+Low Sophistication Threat Actors Access HMIs and Manipulate Control Processes
+In March 2020, we analyzed a series of screenshots shared by a threat actor who claimed to compromise dozens of control systems across North America, Western and Central Europe, and East Asia.

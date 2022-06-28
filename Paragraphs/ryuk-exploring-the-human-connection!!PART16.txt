@@ -1,0 +1,7 @@
+
+Decryption per file Automatic decryption The main interface of the Ryuk decryptor with the different menu options.
+HERMES File Marker During the decryption process we have found that the decryptor searches for the known file marker string HERMES which is located in the encrypted file.
+The HERMES marker clearly visible within the file The fact that Ryuk ransomware adds HERMES filemarker string was already known, but discovering this specific check routine in the decryptor strengthens the hypotheses that Ryuk is a slightly modified version of Hermes2.1 ransomware kit that is sold online even more.
+Decryptor Issues While examining the decryptor we were astonished by the lack of sophistication and the amount of errors that resided within the code.
+Some of the most prominent issues were: If there is a space in the Windows file path the decryptor will fail the decryption process.
+If there is a quotation mark (“) in the file path the decryptor will report an error that it cannot find the specific file.

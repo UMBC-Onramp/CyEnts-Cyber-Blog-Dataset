@@ -1,0 +1,2 @@
+By Christiaan Beek on Sep 24, 2018 As we look over some of the key issues from the newly released McAfee Labs Threats Report, we read terms such as voice assistant, blockchain, billing fraud, and cryptojacking.
+Although voice assistants fall in a different category, the other three are closely linked and driven by the goal of fast, profitable attacks that result in a quick return on a cybercriminal’s investment.

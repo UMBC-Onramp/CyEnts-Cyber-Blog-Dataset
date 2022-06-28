@@ -1,0 +1,7 @@
+The recent DarkSide attack makes it clear: no system is safe from ransomware.
+And while the attackers say they weren’t out to hurt anyone, only to make money, the impact is the same.
+It could lead to potential disruptions of critical services across the country.
+At the same time, it stokes fears that similar attacks could happen more often in the future.
+The long-term outcome of these attacks, however, is a hyper-focus on ransomware as the top threat to governments and enterprises.
+For example, the federal government recently pledged billions of dollars to fight ransomware.
+There’s no doubt that ransomware remains a major (and evolving) risk.

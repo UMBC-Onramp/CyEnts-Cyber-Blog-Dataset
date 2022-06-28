@@ -1,0 +1,4 @@
+
+The attachment (b430263181959f4dd681e9d5fd15d2a0) in the email is a large NSIS packed file, which when detonated launches a screenshot of a pay slip as decoy to avert the attention of the victim.
+It also drops and launches various components as seen in Figure 1 and Figure 2.
+Figure 2 - Components of WinSpy We observed a second attacker using WinSpy in macro documents (78fc7bccd86c645cc66b1a719b6e1258, f496bf5c7bc6843b395cc309da004345) as well as standalone executables (8859bbe7f22729d5b4a7d821cfabb044, 2b19ca87739361fa4d7ee318e6248d05).

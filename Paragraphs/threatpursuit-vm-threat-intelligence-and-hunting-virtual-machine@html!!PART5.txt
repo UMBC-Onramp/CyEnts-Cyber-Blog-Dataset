@@ -1,0 +1,16 @@
+
+You may need to check for updates, reboot and check again until no more remain.
+Install your specific VM guest tools (e.g., VMware Tools) to allow additional features such as copy/paste and screen resizing.
+Take a snapshot of your machine!
+This allows you to always have a clean state.
+Download and copy install.ps1 to your newly configured VM.
+Open PowerShell as an administrator.
+Next, unblock the install file by running: Unblock-File .\\install.ps1 , as seen in Figure 1.
+Figure 1: Unblock-File installation script Enable script execution by running:
+Set-ExecutionPolicy Unrestricted -f , as seen in Figure 2.
+Figure 2: Set-ExecutionPolicy Unrestricted -f script Finally, execute the installer script as follows: .\\install.ps1
+After executing install.ps1 , you’ll be prompted for the administrator password in order to automate host restarts during installation as several reboots occur.
+Optionally, you may pass your password as a command-line argument via \" .\\install.ps1
+-password <password>\" .
+If you do not have a password set, hitting enter when prompted will also work.
+This will be the last thing you will need to do before the installation is unattended.

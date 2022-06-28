@@ -1,0 +1,6 @@
+
+Malware Appendix
+During the course of the response, Mandiant identified a customized malicious Apache plugin capable of intercepting HTTP requests to an Apache HTTP server.
+The new malware family COOKIEJAR was created to aid in clustering and tracking this activity.
+The COOKIEJAR module installs a pre-connection hook that only runs if the client IP address matches a specified hardcoded adversary-controlled IP address.
+It listens for SSL/TLS connections on the port specified by the Apache server, using a certificate and private key loaded from /tmp/cacert.pem and /tmp/privkey.pem respectively.

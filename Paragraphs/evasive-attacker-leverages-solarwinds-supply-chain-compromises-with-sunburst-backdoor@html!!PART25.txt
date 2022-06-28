@@ -1,0 +1,16 @@
+
+If no arguments are provided returns just the PID and process name.
+       If an argument is provided it also returns the parent PID and username and domain for the process owner.
+KillTask 7 Terminate the given process, by PID.
+GetFileSystemEntries 8 Given a path and an optional match pattern recursively list files and directories WriteFile 9 Given a file path and a Base64 encoded string write the contents of the Base64 decoded string to the given file path.
+Write using append mode.
+Delay for [1s, 2s] after writing is done.
+FileExists 10 Tests whether the given file path exists.
+DeleteFile 11 Deletes the specified file path.
+GetFileHash 12 Compute the MD5 of a file at a given path and return result as a HEX string.
+If an argument is provided, it is the expected MD5 hash of the file and returns an error if the calculated MD5 differs.
+ReadRegistryValue 13
+Arbitrary registry read from one of the supported hives SetRegistryValue 14
+Arbitrary registry write from one of the supported hives.
+DeleteRegistryValue 15
+Arbitrary registry delete from one of the supported hives GetRegistrySubKeyAndValueNames 16 Returns listing of subkeys and value names beneath the given registry path Reboot 17 Attempts to immediately trigger a system reboot.

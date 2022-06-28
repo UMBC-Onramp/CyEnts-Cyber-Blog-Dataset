@@ -1,0 +1,8 @@
+
+ 
+The accounts use a variety of tactics in order to pose as Western media outlets, including the use of identical or near-identical usernames, display names, and profile photos as the accounts of the outlets they imitate.
+Figure 4: @TVSBnews quote-tweets People's Daily video citing alleged U.S. interference in foreign elections Public exposure of high-profile information operations, such as Russia's interference in the 2016 U.S. presidential election, has strengthened perceptions that such operations are effective.
+It also demonstrates the difficulty that open societies face in countering this threat, encouraging current and aspiring information operation sponsors to grow their efforts.
+We anticipate that influence operations conducted in support of the political interests of nation-states will increase in sophistication, volume, and diversity of actors through 2020 and beyond.
+In the last 12 months, Mandiant Threat Intelligence observed and reported on information operations conducted in support of the political interests of numerous countries.
+During Singapore's 2020 general elections, the country's first \"digital\" election, Mandiant Threat Intelligence identified multiple inauthentic accounts.

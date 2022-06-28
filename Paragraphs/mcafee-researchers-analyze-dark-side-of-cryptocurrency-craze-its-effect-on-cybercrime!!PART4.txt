@@ -1,0 +1,7 @@
+
+Essentially, this hijacks a user’s intended payment address to redirect funds.
+Unwitting users could accidentally pay a bad actor, losing their coins with essentially no chance of recovery.
+A Brief Timeline Cybercriminals have always faced the difficulty of securing their profits from government eyes.
+For the cybercriminal, banks present risk.
+If a transfer is deemed illegal or fraudulent, the bank transfer can easily be traced and seized by the bank or law enforcement.
+Trading in traditional currencies requires dealing with highly regulated entities that have a strong motivation to follow the rules.

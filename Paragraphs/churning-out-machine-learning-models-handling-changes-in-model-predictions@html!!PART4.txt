@@ -1,0 +1,12 @@
+
+Let’s define bad churn when retraining a classifier as the percentage of misclassified samples in the test set which the original model correctly classified.
+Churn is often a surprising and non-intuitive concept.
+After all, if the accuracy of our new model is better than the accuracy of our old model, what’s the problem?
+Consider the simple linear classification problem of malicious red squares and benign blue circles in Figure 1.
+The original model, A, makes three misclassifications while the newer model, B, makes only two errors.
+B is the more accurate model.
+Note, however, that B introduces a new mistake in the lower right corner, misclassifying a red square as benign.
+That square was correctly classified by model A and represents an instance of bad churn.
+Clearly, it’s possible to reduce the overall error rate while introducing a small number of new errors which did not exist in the older model.
+Figure 1: Two linear classifiers with errors highlighted in orange.
+The original classifier A has lower accuracy than B. However, B introduces a new error in the bottom right corner.

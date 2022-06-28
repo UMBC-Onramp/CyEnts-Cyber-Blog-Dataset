@@ -1,0 +1,5 @@
+
+This difference in modus operandi suggests that more than one cyber-criminal group is operating Ryuk ransomware.
+Ransom Note and Negotiation Similarities and Differences Similarities between Bitpaymer and Ryuk ransom notes have been observed before.
+While it is not uncommon for ransom notes to share similar language, sequences of phrases tend to remain within the same ransomware family.
+Slight copy+paste modifications are made to the ransom text as a variant is passed along to different groups, but large alterations are rarely made.

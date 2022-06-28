@@ -1,0 +1,159 @@
+By comparison, a phishing attack makes sense: Click a link, land on a malicious page, enter some details, and an attacker steals them.
+
+Try this one on for size, instead: Click a link and an attacker steals your data.
+
+That’s right, today we’re talking about malicious pages that exploit a fundamental CPU feature to steal data without requiring a victim to enter anything.
+
+And the vulnerability in question is very difficult, if not impossible, to fix.
+
+In 2018, researchers proved the scenario was theoretically possible, unveiling the first two variants of the Spectre vulnerability.
+
+Three years later, September 2021 saw the first real-life attack using Spectre v1.
+
+Known as Spook.js, the attack concept is complicated, but we will try to strip it down.
+
+Spectre v1 background News of the first two attacks of this family — Spectre and Meltdown — broke in 2018 .
+
+The attacks exploited the branch prediction mechanism, which is designed to speed up command execution, found in all modern CPUs.
+
+When a user enters a password to log in to a website, if the password is correct, one set of instructions is executed.
+
+If not, another set is executed.
+
+However — and this is where the branch prediction kicks in — before receiving the answer, the CPU starts executing the set of instructions it thinks it will most likely need.
+
+In our example, if the password has been entered correctly a hundred times before, the CPU will assume that this time will be no different.
+
+If it guesses correctly, the user gets a performance boost.
+
+If not, the CPU discards the speculatively executed instructions and runs the other set.
+
+In a Spectre-vulnerability attack, an attempt is made to read a data area to which the program does not have access.
+
+In the first stage of the attack, multiple calls are made to open-access data areas, whereby the branch prediction system is “trained” to perform the forbidden read operation as well.
+
+Using branch prediction, the CPU performs the operation in advance because it is used to the program asking to read data that it is actually allowed to read.
+
+But a check reveals that the program is prohibited from accessing the data, so the speculatively executed computations are discarded.
+
+So far, so good — but the data read by the CPU is stored for some time in the cache, the CPU’s own memory.
+
+Next comes the most interesting part: With no way to read the confidential data from the CPU’s cache directly, the malicious process deploys a so-called side-channel attack to steal it.
+
+That involves measuring the speed of access to certain information.
+
+If it’s relatively small, that means the data is located in the cache.
+
+If large, it is loaded from regular RAM.
+
+A set sequence of read attempts results in a leak of the secret information.
+
+The result is a fundamental CPU flaw whose only fix is to disable branch prediction completely, thus seriously affecting performance.
+
+That said, Specter attacks do have many limitations: The attacker must be able to execute program code on the target computer or mobile device; The attack requires a specific target program coded so as to create the conditions for a successful attack; Even if the attack is successful, data extraction is extremely slow — tens or hundreds of bytes per second — and read errors are far from impossible;
+
+In general, stealing the intended secret data, such as passwords, encryption keys, and so forth, requires a combination of conditions.
+
+Spook.js — real-life application of Spectre v1 We might conclude that Spectre isn’t all that dangerous.
+
+After all, if an attacker can execute code on a target computer, exploiting one of the many vulnerabilities in the operating system or installed programs to escalate privileges and steal data would be far simpler.
+
+That is true, but modern Web pages also contain large amounts of program code that gets executed on the user’s computer, in the browser.
+
+That’s how Spook.js attacks exploit the Spectre v1 vulnerability: An infected page loads, the browser executes the code, and the cybercriminal steals confidential data.
+
+The authors of the report demonstrated some practical attacks.
+
+First, they stole a user password from Tumblr.
+
+Second, they stole data from Lastpass.
+
+Third, they intercepted a user-uploaded image from private storage on a Google server.
+
+A feature of the Google Chrome browser made it all possible.
+
+Since the release of information about Spectre, Chrome’s developers have taken measures to ward off potential attacks by forcing websites to load in isolation.
+
+Because each website creates its own process, malicious code on one page cannot be used to steal data from another resource.
+
+But there is one exception: Multiple pages from the same site or domain are grouped together in a common browser process.
+
+If the malicious code (written in JavaScript, hence the .js in the name of the attack) is run on one of them, data on other pages can be stolen.
+
+Spectre.js attack on Tumblr As a collective blog, Tumblr can host malicious code, at least in theory.
+
+That way, with a malicious page open in one tab, if a user tries to log in to their account on the service in another tab, the browser saves and automatically fills in the username and password — which the malicious code can then steal.
+
+By exploiting the Spectre vulnerability, an attack can interact tangentially with another tab from the same site and steal data by indirect means.
+
+A successful attack using this approach leaves almost no traces.
+
+Specter.js attack on LastPass The attack on the LastPass password manager was different in that the code to steal data using Spectre v1 was embedded in a malicious extension for Google Chrome.
+
+The LastPass extension was also running in the browser.
+
+In some cases, the extensions are also executed in a common browser process, making data theft possible.
+
+Specter.js attack on Google Cloud Storage Another example uses attacks on Google cloud storage: One browser tab contains a malicious page hosted on sites.google.com; another lets users upload images to their private storage in the G Suite service.
+
+In this scenario, an attacker can use malicious code to gain access to the images.
+
+Original image (left) and the one stolen from Google cloud storage using a Spook.js attack.
+
+Source Method limitations Researchers have shown how the attack can be carried out on different CPUs, including several modern ones from Intel and even the new ARM-based Apple M1.
+
+In all cases, the attack was accomplished in Google Chrome.
+
+In principle, several unique features of the browser make Spook.js possible.
+
+Other Chromium-based browsers, such as Microsoft Edge, are also vulnerable to this attack.
+
+However, there are certain limitations.
+
+First is the low speed of data theft (400–600 bytes per second, depending on the CPU), which is why the target file in the last demo is very small.
+
+Second is the large number of errors when stealing data from the CPU cache.
+
+Up to 4% of the data is erroneous; hence the artifacts in the stolen copy of the image.
+
+The attack doesn’t work on AMD processors or in Mozilla Firefox, whose JavaScript engine works differently.
+
+The researchers aren’t ruling out the possibility of a successful attack on AMD chips and Firefox browser, but verifying that will require more study.
+
+Finally, an attack requires uploading malicious code to a page with the same domain name, such as in the case of collective blogs or hosting.
+
+Applying this method to, say, a bank’s website is probably not going to work.
+
+No reason to panic The study of Spook.js is important because researchers have, for the first time, been able to demonstrate a fairly realistic scenario for the exploitation of one of the Spectre vulnerabilities.
+
+Nevertheless, the chances of a real-world attack are low.
+
+First, the developers of Google Chrome, on the back of this research, have beefed up the mechanism for isolating loaded sites from one another.
+
+Second, cybercriminals have many easier ways to steal user data, from traditional malware to social engineering, and this one requires serious knowledge of the low-level workings of modern CPUs.
+
+As a scientific work, Spook.js is set to alter the software landscape through the introduction of new recommendations for website security (for example, the authors propose moving authorization pages to a separate domain name).
+
+Subsequent studies may find ways to make attacks a little easier, but most likely they will lead to more rounds of security enhancements.
+
+Even if Spectre-type vulnerabilities can be exploited en masse, the protection means will be the same as for any malware.
+
+Security vendors will simply add the new types of attacks to the list of those to be monitored and blocked before execution.
+
+It’s also possible that one day researchers will stumble upon a feature of Spectre-like vulnerabilities that necessitates a major reworking of the entire modern IT ecosystem.
+
+That, however, remains unlikely.
+
+Let’s not forget that it took three years to move from a theoretical vulnerability to the first practical attack (and even then, it’s an attack with many limitations).
+
+Spectre may also be used for targeted attacks in which the potential benefit from the stolen data exceeds the costs of the operation.
+
+Even if that scenario is relevant to your organization, you can easily make attacks more difficult by using different browsers for different content.
+
+For example, do not open pages and Web services with sensitive information in the same browser where you get your online entertainment.
+
+Ideally, handle confidential information in an isolated environment, in a virtual machine, or simply on a separate device.
+
+
+
+

@@ -1,0 +1,8 @@
+
+If you were on Android, move to iOS.
+This might confuse attackers for some time; for instance, some threat actors are known to have purchased exploitation systems that only work on a certain brand of phone and OS.
+Get a secondary device, preferably running GrapheneOS, for secure comms.
+Use a prepaid card in it, or, only connect by Wi-Fi and TOR while in airplane mode.
+Avoid messengers where you need to provide your contacts with your phone number.
+Once an attacker has your phone number they can easily target you across many different messengers via this — iMessage, WhatsApp, Signal, Telegram, they are all tied to your phone number.
+An interesting new choice here is Session, which automatically routes your messages through an Onion-style network and doesn’t rely on phone numbers.

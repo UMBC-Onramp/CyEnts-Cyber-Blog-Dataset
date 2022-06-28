@@ -1,0 +1,7 @@
+
+For this example, we were tasked with modeling a case where the attacker was attempting to create a condition that had a high likelihood of causing physical damage and disruption of operations (see Figure 3).
+In this scenario, the attacker attempted to achieve this by lowering the water level in a boiler drum below the safe threshold while not tripping the burner management system or other safety mechanisms.
+If successful, this would result in rapid and extreme overheating in the boiler.
+Opening the feedwater valve under such conditions could result in a catastrophic explosion.
+Figure 3:
+Custom attack model diagram for Big Steam Works Figure 3 describes how a real attacker might pursue their mission after gaining access to the OPC servers and clients.

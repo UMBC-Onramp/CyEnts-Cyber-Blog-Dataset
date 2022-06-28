@@ -1,0 +1,8 @@
+
+The event in Figure 11 shows that the SSDT structure was modified at runtime.
+Figure 11:
+SSDT hook detected by Speakeasy If we look at the malware in IDA Pro, we can confirm that the malware patches the SSDT entry for the ZwQueryDirectoryFile and ZwEnumerateKey APIs that it uses to hide itself from file system and registry analysis.
+The SSDT patch function is shown in Figure 12.
+Figure 12:
+File hiding SSDT patching function shown in IDA Pro After setting up these hooks, the system thread will exit.
+The other entry points (such as the IRP handlers and DriverUnload routines) in the driver are less interesting and contain mostly boilerplate driver code.

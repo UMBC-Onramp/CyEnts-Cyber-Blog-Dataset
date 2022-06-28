@@ -1,0 +1,7 @@
+
+The operating system queries the user about every step: whether they really want to install the app, whether they agree to grant it the permissions it requests, and so on.
+Cybercriminals employ social engineering to persuade people to say yes, often with great success.
+Malicious security from an alternative marketplace Here is an example.
+Not so long ago, a group of researchers reported on Android applications spreading through various fake sites.
+The apps included a fake version of Kaspersky Internet Security for Android.
+The scammers were spreading their fake app with the name “Kaspersky Free Antivirus” (we used to offer a product with that name, but it was for Windows).

@@ -1,0 +1,12 @@
+
+The system information includes: Computer Name User Name IP Address Active Code Page OEM Page OS Version Architecture Details (x32/x64)
+String at 0x68 offset from decrypted config file This information is retrieved from the victim using the following WINAPI calls:
+Format = \"%s;%s;%s;%d;%d;%s;%s %dbit\" GetComputerNameA GetUserNameA Gethostbyname and inet_ntoa GetACP GetOEMPC GetCurrentProcess and IsWow64Process Figure 13:
+System information The collected system information is concatenated together with a semicolon separating each field: WIN732BIT-L-0;Administrator;10.128.62.115;1252;437;d0c;Windows 7 32bit This information is encrypted using an XOR operation.
+The response from the second GET request is used as the encryption key.
+As shown in Figure 10, the second GET request responds with a 4-byte XOR key.
+In this case the key is 0xE5044C18 .
+Once encrypted, the system information is sent in the body of an HTTP POST.
+Figure 14 shows data sent over the network with the POST request.
+Figure 14:
+POST request In the request header, the field Cookie is set with the command ID of the command for which the response is sent.

@@ -1,0 +1,2 @@
+
+Once remote authentication activity is baselined across an environment, analysts can begin to identify authentication activity that deviates from business requirements and normalized patterns, such as: User accounts that authenticate from two distant locations, and at times between which the user probably could not have physically travelled the route.

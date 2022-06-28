@@ -1,0 +1,5 @@
+
+It means that it will appear in the program list using 0% of the processor.
+The mutex value changes either per sample or on a periodic basis to avoid the possibility of vaccines being made against it.
+The malware also has a command to avoid the ‘problem’ of vaccines which will be explained later.
+After the mutex, the malware checks the language previously saved in the stack against, for example, language 0x419 (Russian from the Russian Federation, ru-RU [8] ).

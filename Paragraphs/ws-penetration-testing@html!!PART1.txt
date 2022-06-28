@@ -1,0 +1,6 @@
+Often in discussions with customers and potential customers,\nquestions arise about our penetration testing services , as well as\npenetration testing in general.
+In this post, we want to walk\nthrough
+Mandiant's take on the five W's of penetration testing, in\nhopes of helping those of you who many have some of these same\nquestions.
+For clarity, we are going to walk through these W's in a\nnon-traditional order.
+Why First and foremost, it's important to be upfront\nwith yourself with why you are having a penetration test performed\n(or at least considering one).
+If your organization's primary\nmotivation is compliance and needing to \"check the box,\"\nthen be on the lookout for your people attempting to subtly (or not\nso subtly) hinder the test in order to earn an \"easy pass\"\nby minimizing the number of findings (and therefore the amount of\npotential remediation work required).

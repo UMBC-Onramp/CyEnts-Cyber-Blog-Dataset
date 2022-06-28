@@ -1,0 +1,6 @@
+
+With a mix of the world’s best researchers in their key areas, they take on the challenge of making the (cyber) world safer.
+From testing vulnerabilities in new technologies to examining malware and the techniques of nation-state campaigns, we responsibly disclose our research to organizations and the industry.
+We take what we learn from analyzing attacks to evaluate, adapt, and innovate to improve our technology.
+
+

@@ -1,0 +1,5 @@
+
+Using a legitimate means of remote access enables attackers to blend in with other users and fly under the radar of security monitoring tools.
+Citrix provides extensive security hardening guidance and templates to their customers to mitigate the risk of these types of attacks.
+The guidance is contained in product-specific eDocs, Knowledge Base articles and detailed Common Criteria configurations.
+System administrators (a number of them wearing many hats and juggling multiple projects) may not have the time to review all of the hardening documentation available, so Mandiant and Citrix teamed up to provide guidance on the most significant risks posed to Citrix XenApp and XenDesktop implementations in a single white paper.

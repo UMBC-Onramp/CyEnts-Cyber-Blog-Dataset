@@ -1,0 +1,6 @@
+
+For example, use the IPsec protocol; Use a long and strong management password.
+Even if your current password is strong, change it now, just in case; In general, proceed under the assumption  that your local area network is not secure, meaning if one computer gets infected, then the malware can attack the router from inside your perimeter and gain access by brute-forcing passwords.
+That is why for our part, we strongly recommend using reliable security solutions on all Internet-connected computers.
+
+

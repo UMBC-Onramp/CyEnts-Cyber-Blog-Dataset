@@ -1,0 +1,5 @@
+
+The new malware families, which we will examine later in this post, show APT34 relying on their PowerShell development capabilities, as well as trying their hand at Golang.
+APT34 is an Iran-nexus cluster of cyber espionage activity that has been active since at least 2014.
+They use a mix of public and non-public tools to collect strategic information that would benefit nation-state interests pertaining to geopolitical and economic needs.
+APT34 aligns with elements of activity reported as OilRig and Greenbug, by various security researchers.

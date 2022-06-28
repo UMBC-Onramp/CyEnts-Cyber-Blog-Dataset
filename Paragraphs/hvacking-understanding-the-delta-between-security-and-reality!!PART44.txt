@@ -1,0 +1,4 @@
+
+With one instruction for performing the branch and 16 bytes for the command string, this means we can get all our shell code in 32 bytes, assuming we can load R0 with the address of our string in one instruction.
+By starting our ASCII string for the command directly after the fourth and last instruction, we can copy PC into R0 with the appropriate offset to make it point to the string.
+An added benefit of this approach is that it makes the string’s address independent of where the shell code is placed into memory, since it’s relative to PC.

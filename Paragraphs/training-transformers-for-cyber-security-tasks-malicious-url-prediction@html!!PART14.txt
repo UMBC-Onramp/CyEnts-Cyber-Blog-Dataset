@@ -1,0 +1,9 @@
+
+MixedObjective:
+We trained the model for 15 epochs on the training set, using both the embedded classification features and the embedded next-character prediction features.
+FineTune:
+We pre-trained the model for 15 epochs on the next-character prediction task using the training set, ignoring the malicious/benign labels.
+We then froze weights over the first 16 layers of the model and trained the model for an additional 15 epochs using a binary cross-entropy loss on the classification labels.
+FineTune 20M:
+We performed pre-training on the next-character prediction task using the 20M URL dataset, pre-training for 2 epochs.
+We then froze weights over the first 16 layers of the Transformer and trained for 15 epochs on the binary classification task.

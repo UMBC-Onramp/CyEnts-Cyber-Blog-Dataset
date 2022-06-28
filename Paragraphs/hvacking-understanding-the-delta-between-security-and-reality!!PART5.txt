@@ -1,0 +1,10 @@
+
+With a closer look at the baseboard, we made a few key observations.
+First, the processor is an ARM926EJ core processor, the flash module is a ball grid array (BGA) chip, and there are several unpopulated headers on the board.
+Figure 2 To examine the software more effectively, we needed to determine a method of extracting the firmware.
+The BGA chip used by the system for flash memory will mostly likely hold the firmware; however, this poses another challenge.
+Unlike other chips, BGA chips do not provide pins externally which can be attached to.
+This means to access the chip directly, we would need to desolder the chip from the board.
+This is not ideal since we risk damaging the system.
+We also noticed several unpopulated headers on the board.
+This was promising as we could find an alternative method of exacting the firmware using one of these headers.

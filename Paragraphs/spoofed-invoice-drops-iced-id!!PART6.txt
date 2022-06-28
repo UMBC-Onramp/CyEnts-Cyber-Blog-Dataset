@@ -1,0 +1,5 @@
+
+As can be seen in Figure 7, once running, the malware uses several Windows command-line tools to obtain information about the local environment.
+These include capturing the local IP address (ipconfig), enumerating domain trusts (nltest), and capturing a list of domain administrators (net group), among others.
+The sample then tries to communicate outbound to a command and control (C2) server.
+There are multiple addresses the malware can connect to in the event one of the destinations becomes unavailable.

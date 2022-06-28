@@ -1,0 +1,10 @@
+
+Although this device is not a BACnet server and functions more as a router, this test suite provided several universal test cases which gave us a great place to start.
+BACnet utilizes several types of broadcast packets to communicate.
+Two such broadcast packets, “Who-Is” and “I-Am” packets, are universal to all BACnet devices and Defensics provides modules to work with them.
+Using the Defensics fuzzer to create mutations of these packets, we were able to observe the device encountering a failure point, producing a core dump and immediately rebooting, shown in Figure 5.
+Figure 5 The test case which caused the crash was then isolated and run several more times to confirm the crash was repeatable.
+We discovered during this process that it takes an additional 96 packets sent after the original malformed packet to cause the crash.
+The malformed packet in the series was an “I-Am” packet, as seen below.
+The full packet is not shown due to its size.
+Figure 6 Examining further, we could quickly see that the fuzzer created a packet with a BACnet layer size of 8216 bytes, using “0x22”.

@@ -1,0 +1,10 @@
+
+Make iTunes backups once per month.
+this allows diagnosing and finding infections later, through the use of the wonderful MVT package from Amnesty International (more on that later).
+Trigger sysdiags often and save them to external backups.
+Forensics artifacts can help you determine at a later time if you have been targeted.
+Triggering a sysdiag depends on the phone model — for instance, on some iPhone’s, this is done by pressing Volume Up + Volume Down + Power at the same time.
+You may need to play with this a couple of times, until the phone buzzes.
+Once the sysdiag is created, it will appear in diagnostics: How to protect from advanced spyware on Android A similar list for Android users (for details and reasoning check the list for iOS above):
+Reboot daily.
+Persistence on the latest Android versions is difficult, many APTs and exploit sellers avoid persistence whatsoever!

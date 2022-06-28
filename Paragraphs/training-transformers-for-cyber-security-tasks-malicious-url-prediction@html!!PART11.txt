@@ -1,0 +1,4 @@
+
+Balanced Mixed-Objective Training Prior work has shown that imbuing the training process with additional knowledge outside of the primary task can help constrain the learning process, and ultimately result in better models.
+For instance, a malware classifier might train using loss functions that capture malicious/benign classification, malware family prediction, and tag prediction tasks as a mechanism to provide the classifier with broader understanding of the problem than looking at malicious/benign labels in isolation.
+Inspired by these findings, we also introduced a mixed-objective training regime for our URL Transformer, where we train for binary classification and next-character prediction simultaneously.

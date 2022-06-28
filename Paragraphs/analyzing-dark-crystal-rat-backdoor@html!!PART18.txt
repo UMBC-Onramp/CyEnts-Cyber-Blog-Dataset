@@ -1,0 +1,4 @@
+
+Beacons The first type of URL is a beacon, sent only once when the malware starts up.
+For this sample, the beacon URL was always hxxp://domalo[.]online/ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91dueu3qa54/46kqbjvyklunp1z56txzk hen7gjci3cyx8ggkptx25i74mo6myqpx9klvv3/<hash>.php?data=active, where <hash> is the SHA1 hash of the MHost URL, as described earlier.
+GET requests, format 1 When the malware needs to send data to or receive data from the C2, it sends a message.

@@ -1,0 +1,5 @@
+
+The full Python solution allows database parsing in a much smaller package without the risks and limitations of native code.
+Database Structure The Windows 10 QMGR database contains two tables: Jobs and Files.
+Both tables have two columns: Id and Blob.
+The Id contains a GUID to identify the entry, and the Blob contains binary data which defines the job or file.

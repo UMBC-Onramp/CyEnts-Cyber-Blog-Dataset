@@ -1,0 +1,5 @@
+
+Figure 2: Operational activity for gaming versus non-gaming-related targeting based on observed operations since 2012 The Right Tool for the Job APT41 leverages an arsenal of over 46 different malware families and tools to accomplish their missions, including publicly available utilities, malware shared with other Chinese espionage operations, and tools unique to the group.
+The group often relies on spear-phishing emails with attachments such as compiled HTML (.chm) files to initially compromise their victims.
+Once in a victim organization, APT41 can leverage more sophisticated TTPs and deploy additional malware.
+For example, in a campaign running almost a year, APT41 compromised hundreds of systems and used close to 150 unique pieces of malware including backdoors, credential stealers, keyloggers, and rootkits.

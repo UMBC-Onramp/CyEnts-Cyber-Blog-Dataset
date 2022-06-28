@@ -1,0 +1,5 @@
+
+Figure 4:
+Command line parameter used to bypass AppLocker We found that the malicious SCT file invokes WScript to launch PowerShell in hidden mode with an encoded command, as seen in Figure 5.
+Figure 5: Content of SCT file containing code to launch encoded PowerShell Decoding SCT: Decoy launch and Stage Two PowerShell
+After decoding the PowerShell command, we observed another layer of PowerShell instructions, which served two purposes: 1.

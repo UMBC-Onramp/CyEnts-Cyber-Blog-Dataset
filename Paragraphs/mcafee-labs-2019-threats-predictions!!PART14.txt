@@ -1,0 +1,7 @@
+
+They also used obfuscation mechanisms for communications between the bots and control servers.
+Criminals use botnets for activities such as DDOS for hire, proxies, spam, or other malware delivery.
+Using evasion techniques is critical for criminals to avoid or delay botnet takedowns.
+Advanced persistent threats: Stolen certificates bought on the cybercriminal underground are often used in targeted attacks to bypass antimalware detection.
+Attackers also use low-level malware such as rootkits or firmware-based threats.
+For example, in 2018 ESET discovered the first UEFI rootkit, LoJax.

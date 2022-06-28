@@ -1,0 +1,9 @@
+
+Ree stresses the need for IoT and smart home device manufacturers to step up their security controls and processes.
+Routers, for example, should not allow routing between nodes.
+The Federal Bureau of Investigation recommends that UPnP be turned off, although in some routers it may be turned on by default.
+Implementing a standard security label or certification could also help from a consumer and manufacturer standpoint.
+Manufacturers can validate their devices and have security controls and processes built-in before they go to customers, and customers can know which devices are more secure based on the security label.
+IBM X-Force, Silicon Labs and the ioXt Alliance are presenting a virtual panel at 11 a.m. EDT on July 21, 2021, where experts will discuss three IoT- and operational technology-related security topics — critical infrastructure security, standardizing IoT security and the perceived privacy and security problem.
+Register here
+

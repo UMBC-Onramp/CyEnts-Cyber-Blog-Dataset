@@ -1,0 +1,4 @@
+There’s a certain reliability to everyday objects.
+Take a TV remote for example: It’s hard to imagine one eavesdropping on conversations, but cybersecurity researchers J. J. Lehman and Ofri Ziv from Israeli company Guardicore got one to do just that.
+They reported their findings at RSA Conference 2021 .
+How researchers hacked a remote The subject of Lehman and Ziv’s research was the remote control for the Comcast Xfinity X1 set-top box, which is popular in the United States (with more than 10 million users, according to the researchers).

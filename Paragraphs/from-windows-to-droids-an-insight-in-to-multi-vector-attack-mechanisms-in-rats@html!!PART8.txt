@@ -1,0 +1,7 @@
+
+The various options in the configuration are abbreviations.
+For example \"DUNIN\" stands for date to uninstall, \"FTSV\" stands for FTP server, \"FTUS\" stands for FTP user, and so forth.
+The \"SID2\" value is a unique ID used to identify the infection and is generated at build time.
+Figure 3 - WinSpy Configuration
+The WinSpy controller has options to create a new remote file allowing you to choose various parameters and exfiltration options.
+The author interestingly allows for default command and control and exfiltration options to a server he controls.

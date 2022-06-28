@@ -1,0 +1,7 @@
+
+After successfully escalating privileges on an HP-UX endpoint and a Linux endpoint, UNC1945 installed three backdoors: SLAPSTICK, TINYSHELL, and OKSOLO.
+We observed UNC1945 use IMPACKET with SMBEXEC in a Microsoft Windows environment to execute commands remotely without the need to upload a payload to the target.
+SMBEXEC allows the threat actor to operate like PsExec, but without using RemComSvc.
+There are two main modes of using this tool that benefits attackers.
+Share mode allows the specification of a share that everything will be executed through.
+Server mode permits the output of the executed commands to be sent back by the target machine into a locally shared folder.

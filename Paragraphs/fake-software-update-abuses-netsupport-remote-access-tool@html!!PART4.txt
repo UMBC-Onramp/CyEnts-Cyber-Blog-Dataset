@@ -1,0 +1,8 @@
+
+The author uses the caller and callee function code to get the key for decryption.
+During normal JavaScript analysis, if an analyst finds any obfuscated script, the analyst tries to de-obfuscate or beautify the script for analysis.
+JavaScript beautification tools generally add line breaks and tabs to make the script code look better and easier to analyze.
+The tools also try to rename the local variables and remove unreferenced variables and code from the script, which helps to analyze core code only.
+But in this case, since the malware uses the caller and callee function code to derive the key, if the analyst adds or removes anything from the first or second layer script, the script will not be able to retrieve the key and will terminate with an exception.
+The code snippet in Figure 3 shows this trick.
+Figure 3: Anti-Analysis Trick Implemented in JavaScript (Beautified Code)

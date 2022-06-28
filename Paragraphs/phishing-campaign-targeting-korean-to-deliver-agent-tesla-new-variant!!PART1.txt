@@ -1,0 +1,4 @@
+FortiGuard Labs Threat Research Report Affected platforms: Microsoft Windows Impacted parties: Windows Users Impact: Collects sensitive information from victims’ device Severity level :
+         Critical A phishing campaign was recently caught in the wild by Fortinet’s FortiGuard Labs , that delivers a malicious Microsoft PowerPoint file.
+The content of the phishing email,  written in Korean, asks recipients to open the attached PowerPoint file to review a purchase order.
+I researched what this malicious file does once the PowerPoint file is opened and have been able to confirm that it is spreading a new variant of Agent Tesla.

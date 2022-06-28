@@ -1,0 +1,5 @@
+
+This spear phish contained an attachment that dropped “Malaysian Airlines MH370 5m Video.exe” (MD5: b869dc959daac3458b6a81bc006e5b97).
+The malware sample was crafted to appear as though it was a Flash video, by binding a Flash icon to the malicious executable.
+Interestingly, in this case, the malware sets its persistence in the normal “Run” registry location, but it tries to auto start the payload from the disk directory “c:\\programdata”, which doesn’t exist until Windows 7, so a simple reboot would mitigate this threat on Windows XP.
+This suggests the threat actors did not perform quality control on the malware or were simply careless.

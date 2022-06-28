@@ -1,0 +1,7 @@
+
+License agreement said that by installing the program, the user agreed to pay the company $378.
+But who takes things like that seriously?
+In fact, the installer served to deliver the malware to the hard drive.
+After a certain number of system boots, the AIDS Trojan became active, encrypting file names (including extensions) on the C: drive of the infected computer.
+The names turned into a jumble of random characters, making it impossible to work normally with the files.
+For example, to open or run a file, it was first necessary to work out what extension it should have and to change it manually.

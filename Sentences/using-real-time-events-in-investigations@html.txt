@@ -1,0 +1,169 @@
+To understand what a threat actor did on a Windows system, analysts often turn to the tried and true sources of historical endpoint artifacts such as the Master File Table (MFT), registry hives, and Application Compatibility Cache (AppCompat).
+
+However, these evidence sources were not designed with detection or incident response in mind; crucial details may be omitted or cleared through anti-forensic methods.
+
+By looking at historical evidence alone, an analyst may not see the full story.
+
+Real-time events can be thought of as forensic artifacts specifically designed for detection and incident response, implemented through Enterprise Detection and Response (EDR) solutions or enhanced logging implementations like Sysmon .
+
+During active-attacker endpoint investigations, FireEye Mandiant has found real-time events to be useful in filling in the gaps of what an attacker did.
+
+These events record different types of system activities such as process execution, file write activity, network connections, and more.
+
+During incident response engagements, Mandiant uses FireEye Endpoint Security to track endpoint system events in real-time.
+
+This feature allows investigators to track an attacker on any system by alerting on and reviewing these real-time events.
+
+An analyst can use our solution’s built-in Audit Viewer or Redline to review real-time events.
+
+Let’s look at some examples of Windows real-time events available on our solution and how they can be leveraged during an investigation.
+
+Let’s assume the account TEST-DOMAIN\\BackupAdmin was an inactive Administrator account compromised by an attacker.
+
+Please note the examples provided in this post are based on real-time events observed during engagements but have been recreated or altered to preserve client confidentiality.
+
+Process Execution Events There are many historical process execution artifacts including AppCompat , AmCache , WMI CCM_RecentlyUsedApps , and more .
+
+A single artifact rarely covers all the useful details relating to a process's execution, but real-time process execution events change that.
+
+Our solution’s real-time process execution events record execution time, full process path, process identification number (PID), parent process path, parent PID, user, command line arguments, and even the process MD5 hash.
+
+Table 1 provides an example of a real-time process execution event recorded by our solution.
+
+Field Example Timestamp (UTC) 2020-03-10 16:40:58.235 Sequence Number 2879512 PID 9392 Process Path C:\\Windows\\Temp\\legitservice.exe Username TEST-DOMAIN\\BackupAdmin Parent PID 9103 Parent Process Path C:\\Windows\\System32\\cmd.exe EventType Start ProcessCmdLine \"C:\\Windows\\Temp\\legitservice.exe\"  -b
+
+-m Process MD5 Hash
+
+a823bc31395539816e8e4664e884550f Table 1:
+
+Example real-time process execution event Based on this real-time process execution event, the process C:\\Windows\\System32\\cmd.exe with PID 9103 executed the file C:\\Windows\\Temp\\legitservice.exe with PID 9392 and the MD5 hash a823bc31395539816e8e4664e884550f .
+
+This new process used the command line arguments -b
+
+-m under the user context of TEST-DOMAIN\\BackupAdmin .
+
+We can compare this real-time event with what an analyst might see in other process execution artifacts.
+
+Table 2 provides an example AppCompat entry for the same executed process.
+
+Note the recorded timestamp is for the last modified time of the file, not the process start time.
+
+Field Example File Last Modified (UTC) 2020-03-07 23:48:09 File Path C:\\Windows\\Temp\\legitservice.exe Executed Flag TRUE Table 2: Example AppCompat entry Table 3 provides an example AmCache entry.
+
+Note the last modified time of the registry key can usually be used to determine the process start time and this artifact includes the SHA1 hash of the file.
+
+Field Example Registry Key Last Modified (UTC) 2020-03-10 16:40:58 File Path C:\\Windows\\Temp\\legitservice.exe File Sha1
+
+Hash 2b2e04ab822ef34969b7d04642bae47385be425c Table 3:
+
+Example AmCache entry Table 4 provides an example Windows Event Log process creation event.
+
+Note this artifact includes the PID in hexadecimal notation, details about the parent process, and even a field for where the process command line arguments should be.
+
+In this example the command line arguments are not present because they are disabled by default and Mandiant rarely sees this policy enabled by clients on investigations.
+
+Field Example Write Time (UTC) 2020-03-10 16:40:58 Log Security Source Microsoft Windows security EID 4688
+
+Message A new process has been created.
+
+Creator Subject: Security ID:             TEST-DOMAIN\\BackupAdmin Account Name:            BackupAdmin Account Domain:          TEST-DOMAIN Logon ID:                0x6D6AD Target Subject: Security ID:             NULL SID Account
+
+Name:            - Account Domain:          - Logon ID:                0x0
+
+Process
+
+Information: New Process ID:          0x24b0 New Process Name:        C:\\Windows\\Temp\\legitservice.exe Token Elevation Type:    %%1938
+
+Mandatory Label:         Mandatory Label\\Medium Mandatory Level Creator Process ID:
+
+      0x238f
+
+Creator Process Name:    C:\\Windows\\System32\\cmd.exe Process Command Line: Table 4:
+
+Example Windows event log process creation event If we combine the evidence available in AmCache with a fully detailed Windows Event Log process creation event, we could match the evidence available in the real-time event except for a small difference in file hash types.
+
+File Write Events An attacker may choose to modify or delete important evidence.
+
+If an attacker uses a file shredding tool like Sysinternal’s SDelete, it is unlikely the analyst will recover the original contents of the file.
+
+Our solution’s real-time file write events are incredibly useful in situations like this because they record the MD5 hash of the files written and partial contents of the file.
+
+File write events also record which process created or modified the file in question.
+
+Table 5 provides an example of a real-time file write event recorded by our solution.
+
+Field Example Timestamp (UTC) 2020-03-10 16:42:59.956
+
+Sequence Number 2884312 PID 9392 Process Path C:\\Windows\\Temp\\legitservice.exe Username TEST-DOMAIN\\BackupAdmin Device Path \\Device\\HarddiskVolume2 File Path C:\\Windows\\Temp\\WindowsServiceNT.log File MD5 Hash 30a82a8a864b6407baf9955822ded8f9 Num Bytes Seen Written 8 Size 658 Writes 4 Event reason File closed Closed TRUE Base64 Encoded Data At Lowest Offset Q3JlYXRpbmcgJ1dpbmRvd3NTZXJ2aWNlTlQubG9nJy Bsb2dmaWxlIDogT0sNCm1pbWlrYXR6KGNvbW1hbmQ Text
+
+At Lowest Offset Creating 'WindowsServiceNT.log' logfile : OK....
+
+mimikatz(command Table 5:
+
+Example real-time file write event Based on this real-time file write event, the malicious executable C:\\Windows\\Temp\\legitservice.exe wrote the file C:\\Windows\\Temp\\WindowsServiceNT.log to disk with the MD5 hash 30a82a8a864b6407baf9955822ded8f9 .
+
+Since the real-time event recorded the beginning of the written file, we can determine the file likely contained Mimikatz credential harvester output which Mandiant has observed commonly starts with OK....mimikatz .
+
+If we investigate a little later, we’ll see a process creation event for C:\\Windows\\Temp\\taskassist.exe with the MD5 file hash 2b5cb081721b8ba454713119be062491 followed by several file write events for this process summarized in Table 6.
+
+Timestamp File Path File Size 2020-03-10 16:53:42.351 C:\\Windows\\Temp\\WindowsServiceNT.log 638 2020-03-10 16:53:42.351 C:\\Windows\\Temp\\AAAAAAAAAAAAAAAA.AAA 638 2020-03-10 16:53:42.351 C:\\Windows\\Temp\\BBBBBBBBBBBBBBBB.BBB 638 2020-03-10 16:53:42.351 C:\\Windows\\Temp\\CCCCCCCCCCCCCCCC.CCC 638 … 2020-03-10 16:53:42.382 C:\\Windows\\Temp\\XXXXXXXXXXXXXXXX.XXX 638 2020-03-10 16:53:42.382 C:\\Windows\\Temp\\YYYYYYYYYYYYYYYY.YYY 638 2020-03-10 16:53:42.382 C:\\Windows\\Temp\\ZZZZZZZZZZZZZZZZ.ZZZ 638 Table 6:
+
+Example timeline of SDelete File write events Admittedly, this activity may seem strange at a first glance.
+
+If we do some research on the its file hash, we’ll see the process is actually SDelete masquerading as C:\\Windows\\Temp\\taskassist.exe .
+
+As part of its secure deletion process, SDelete renames the file 26 times in a successive alphabetic manner.
+
+Network Events Incident responders rarely see evidence of network communication from historical evidence on an endpoint without enhanced logging.
+
+Usually, Mandiant relies on NetFlow data, network sensors with full or partial packet capture, or malware analysis to determine the command and control (C2) servers with which a malware sample can communicate.
+
+Our solution’s real-time network events record both local and remote network ports, the leveraged protocol, and the relevant process.
+
+Table 7 provides an example of a real-time IPv4 network event recorded by our solution.
+
+Field Example Timestamp (UTC) 2020-03-10 16:46:51.690 Sequence Number 2895588 PID 9392 Process + Path C:\\Windows\\Temp\\legitservice.exe Username TEST-DOMAIN\\BackupAdmin Local IP Address 10.0.0.52
+
+Local Port 57472 Remote IP Address 10.0.0.51 Remote Port 443 Protocol TCP Table 7:
+
+Example real-time network connection event Based on this real-time IPv4 network event, the malicious executable C:\\Windows\\Temp\\legitservice.exe made an outbound TCP connection to 10.0.0.51:443 .
+
+Registry Key Events By using historical evidence to investigate relevant timeframes and commonly abused registry keys, we can identify malicious or leveraged keys.
+
+Real-time registry key events are useful for linking processes to the modified registry keys.
+
+They can also show when an attacker deletes or renames a registry key.
+
+This is useful to an analyst because the only available timestamp recorded in the registry is the last modified time of a registry key, and this timestamp is updated if a parent key is updated.
+
+Table 8 provides an example of a real-time registry key event recorded by our solution.
+
+Field Example Timestamp (UTC) 2020-03-10 16:46:56.409
+
+Sequence Number 2898196 PID 9392 Process + Path C:\\Windows\\Temp\\legitservice.exe Username TEST-DOMAIN\\BackupAdmin Event Type 3 Path HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\ LegitWindowsService\\ImagePath
+
+Key Path CurrentControlSet\\Services\\LegitWindowsService Original Path HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\LegitWindowsService Value Name ImagePath
+
+Value Type REG_EXPAND_SZ Base64 Encoded Value QwA6AFwAVwBpAG4AZABvAHcAcwBcAFQAZQBtAHAAXABsAG
+
+UAZwBpAHQAcwBlAHIAdgBpAGMAZQAuAGUAeABlAAAAAA== Text C:\\Windows\\Temp\\legitservice.exe Table 8: Example real-time registry key event For our solution's real-time registry events, we can map the event type to the operation performed using Table 9.
+
+Event Type Value Operation 1 PreSetValueKey 2 PreDeleteValueKey 3 PostCreateKey, PostCreateKeyEx, PreCreateKeyEx 4 PreDeleteKey 5 PreRenameKey Table 9:
+
+FireEye Endpoint Security real-time registry key event types Based on this real-time registry key event, the malicious executable C:\\Windows\\Temp\\legitservice.exe created the Windows service LegitWindowsService .
+
+If we investigated the surrounding registry keys, we might identify even more information about this malicious service.
+
+Conclusion The availability of real-time events designed for forensic analysis can fill in gaps that traditional forensic artifacts cannot on their own.
+
+Mandiant has seen great value in using real-time events during active-attacker investigations.
+
+We have used real-time events to determine the functionality of attacker utilities that were no longer present on disk, to determine users and source network addresses used during malicious remote desktop activity when expected corresponding event logs were missing, and more.
+
+Check out our FireEye Endpoint Security page and Redline page for more information (as well as Redline on the FireEye Market ), and take a FireEye Endpoint Security tour today.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

@@ -1,0 +1,7 @@
+
+I would like to callout the following references: ( wbenny ):
+An extremely detailed view of WOW64 internals on ARM ( ReWolf ): A PoC heaven’s gate implementation ( JustasMasiulis ): A very clean C++ heaven’s gate implementation ( MalwareTech ): A WOW64 segmentation explanation WOW64 Internals To understand how the WOW64 system works internally we will explore the call sequence starting in 32-bit usermode before transitioning into the kernel from within a system DLL.
+Within these system DLLs the operating system will check arguments and eventually transition to a stub known as a syscall stub.
+This syscall stub is responsible for servicing the API call in the kernel.
+On a 64-bit system, the syscall stub is straightforward as it directly executes the syscall instruction as shown in Figure 1.
+Figure 1: Native x64 Syscall Stub Figure 2 shows a syscall stub for a 32-bit process running on WOW64 Figure 2:

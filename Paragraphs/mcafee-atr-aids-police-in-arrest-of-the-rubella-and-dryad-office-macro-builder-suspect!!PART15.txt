@@ -1,0 +1,22 @@
+
+ProcessorId:
+Processor information that describes the processor features.
+Name:
+This value comes from the Processor Version member of the Processor Information structure in the SMBIOS information.
+Manufacturer:
+This value comes from the Processor Manufacturer member of the Processor Information structure.
+MaxClockSpeed:
+Maximum speed of the processor, in MHz.
+Then it will collect information from the ‘Win32_BIOS class’ .
+Manufacturer:
+This value comes from the Vendor member of the BIOS Information structure.
+SMBIOSVersion:
+This value comes from the BIOS Version member of the BIOS Information structure IdentificationCode:
+Manufacturer’s identifier for this software element.
+SerialNumber:
+Assigned serial number of the software element.
+ReleaseDate:
+Release date of the Windows BIOS in the Coordinated Universal Time (UTC) format of YYYYMMDDHHMMSS.MMMMMM(+-)OOO.
+Version: Version of the BIOS.
+This string is created by the BIOS manufacturer.
+Then it will collect information from the ‘ Win32_DiskDrive class ’.

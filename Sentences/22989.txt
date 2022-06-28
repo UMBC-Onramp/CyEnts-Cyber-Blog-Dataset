@@ -1,0 +1,109 @@
+When scammers target gamers, they are typically pursuing gaming accounts.
+
+Today, we’re discussing a different target: players’ gold.
+
+As games go, the massively popular World of Warcraft sees scammers target players on a regular basis, one day threatening them with a ban for alleged cheating , the next seeming to offer virtual pets (but not really; it’s a scam, after all).
+
+A user nicknamed Legitamasterr posted on Reddit in late May, describing an original scam used at the World of Warcraft Classic Auction House.
+
+The player, who was trying to buy a stack of Chronoboon Displacers for 66 gold coins, instead had more than 11,000 gold coins deducted from his account.
+
+He had become a victim of a malicious script in an add-on he had installed.
+
+Here is how to protect yourself and avoid a similar fate in World of Warcraft Classic .
+
+What are World of Warcraft add-ons for?
+
+Add-ons are useful and sometimes indispensable in World of Warcraft .
+
+With them, you can customize the interface, filter out in-game chat spam, and do much more.
+
+For example, a popular add-on called WeakAuras can help you set up convenient access to information such as the amount of time before a boss’ next high-damage attack, a warning that you are under a curse that inflicts damage to nearby players, the mana reserve levels of raid healers, and so on.
+
+WeakAuras is essentially a framework: all timers and indicators are added to the base add-Аon using scripts written in Lua programming language, commonly called “auras”.
+
+Many sites offer ready-made assemblies of auras for specific classes, specializations, and even professions.
+
+Sometimes, though, players are looking for something specific, such as an aura for a single quest or an experimental tactic.
+
+Some players versed in programming customize existing scripts or create auras themselves.
+
+And sometimes, in a raid with random partners, an unfamiliar raid leader may demand, “we are using a new tactic to fight this boss — everyone needs to install this aura right now”, and send a link.
+
+Of course, the decision is yours, but anyone who doesn’t install the aura can expect to be kicked out of the raid.
+
+Worse, leaders usually drop those links into raid chats, and most players simply click on the name and install scripts without a second thought.
+
+It is important to remember that using these scripts, which are also linked on message boards or in in-game chats, can be risky.
+
+With no centralized validation mechanism, stuffing auras with malicious surprises is easy, and unless you know Lua, you cannot check the code.
+
+In addition, a deceptive aura may behave like a bona fide script until it is triggered by certain conditions.
+
+Scammers take advantage of that in Azeroth.
+
+A cunning auction The malicious script lies in wait, behaving normally until a player who has installed it stocks up on certain consumables (say, elixirs, ore, or herbs) at the Auction House.
+
+As soon as the player selected the desired item, the script redirects the query to an identical product that the scammer is selling for 10,000 coins.
+
+At the same time, the script replaces the system message confirming the purchase with a fake one, showing the original price, say 5 coins.
+
+That way, despite making and confirming a small purchase, the player finds their account has been charged 10,000 instead.
+
+The scammer can spend the gold in the game, although exchanging it for real money is more typical.
+
+It is with good reason that Blizzard support strongly recommends players refrain from buying gold at reduced rates on third-party websites.
+
+Why the WoW Auction House scam works World of Warcraft is known for showing zero tolerance to cheaters.
+
+Blizzard’s licensing agreement prohibits changes to the game’s source code and the use of tools that give some players advantages over others, as well as any interference with game-play.
+
+So, how did the auction fraud go unnoticed?
+
+It was because the scripts affect the interface only through WeakAuras tools, which are allowed.
+
+As far as the system is concerned, if players want to pay thousands of gold pieces for items worth pennies, that’s their choice.
+
+On top of that, most players need some help to figure out which of their many add-ons caused them to lose money.
+
+That gives cybercriminals the time they need to trick lots of users before their scheme is exposed.
+
+How to avoid becoming a victim, and what to do if you have been robbed Scammers rightly believe players will need some time to realize they are being cheated at the Auction House (controlled by Blizzard), or that the source of the problem is a script that never caused them any trouble before.
+
+Instead of relying on the game, be proactive and keep yourself safe.
+
+Update the WeakAuras add-on During the discussion on Reddit, an expert analyzed the victim’s installed add-ons and scripts, found the malicious one, and reported the finding to WeakAuras’ developers.
+
+The developers fixed the problem, so even if you have the malicious script installed, updating WeakAuras to the latest version should remove it automatically.
+
+That measure is unlikely to be effective against yet-unknown malicious auras.
+
+To protect WeakAuras from dangerous scripts reliably, its developers would need to implement a basic antivirus engine, regularly check existing auras, and add any malicious ones to a database.
+
+That’s a lot of work, though.
+
+In any case, if you have it, update WeakAuras right away.
+
+Double-check transactions and trade offers This particular tip wouldn’t have helped with the scheme we describe above, but it may prove generally useful.
+
+Scammers can try to deceive you without using any tricky add-ons, for example, by replacing an item with something much cheaper immediately after you enter the amount in the window, or by quickly removing a couple of zeros from their payment amount when buying.
+
+Therefore, before confirming any transaction, we recommend waiting an extra few seconds and carefully checking the item and purchase amount.
+
+Consult our online game safe trading guide as well.
+
+Ask for help if you have been harmed If you find yourself in a similar situation, share the news.
+
+Contact support and start a message board thread, and attach screenshots and a list of your add-ons in each case.
+
+You can expect moderators and experienced players to offer advice, help with next steps, and perhaps even find a way to punish the scammers.
+
+In asking for help, you will also help by alerting other players, and you might get your gold back as well, as Legitamasterr did.
+
+Protect yourself It’s critical to install a reliable security solution as well.
+
+Even though it probably won’t detect a cheat script for a WoW add-on, it will keep you safe from most malicious and dangerous sites and programs.
+
+
+
+

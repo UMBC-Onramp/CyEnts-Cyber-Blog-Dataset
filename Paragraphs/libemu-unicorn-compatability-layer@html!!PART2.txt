@@ -1,0 +1,8 @@
+
+It was released in 2007 and includes a built-in Win32 environment that allows shellcodes to resolve API at runtime.
+The library also provides end users with a convenient way to receive callbacks when API functions are hit.
+The original project supported 5 Windows dlls, 51 hooks and 234 opcodes all wrapped in a tight 1mb package.
+Unfortunately it is no longer being updated.
+In late 2015, we saw the Unicorn engine project released by Nguyen Anh Quynh and Dang Hoang Vu.
+This project takes the processor emulators from QEMU and wraps them into an easy to use library.
+Unicorn, however, does not provide a Win32 layer.

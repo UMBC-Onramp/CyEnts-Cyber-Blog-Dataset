@@ -1,0 +1,3 @@
+
+Blackhole wreaks havoc on computers by exploiting vulnerabilities in client applications like IE, Java and Adobe, computers that are vulnerable to exploits launched by Blackhole are likely to become infected with one of several flavors of malware including ransomware , Zeus/Zbot variants and clickfraud trojans like ZeroAccess.
+We started logging hits at 21:31:00 UTC on Sunday 09/22/2013, the campaign has been ongoing, peaking Monday and tapered down through out the week.

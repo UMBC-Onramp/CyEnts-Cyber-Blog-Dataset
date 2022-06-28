@@ -1,0 +1,4 @@
+
+Regardless of whether DROPSHOT is exclusive to APT33, both the malware and the threat activity appear to be distinct from the group using SHAMOON.
+Therefore, we assess there may be multiple Iran-based threat groups capable of carrying out destructive operations.
+Additional Ties Bolster Attribution to Iran APT33’s targeting of organizations involved in aerospace and energy most closely aligns with nation-state interests, implying that the threat actor is most likely government sponsored.

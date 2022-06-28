@@ -1,0 +1,7 @@
+
+The process is identified by the control server sending the PID to the malware.
+The capability to terminate a process.
+Gather network addresses and operating system version Execute arbitrary commands using “cmd.exe /c”
+The capability to execute system commands.
+Spawning arbitrary processes.
+Create processes Write responses from the control server to a file Send information for all drives Write data sent by the control server to a temporary file matching the file path pattern %temp%\\DWS00

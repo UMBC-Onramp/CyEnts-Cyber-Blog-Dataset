@@ -1,0 +1,13 @@
+
+This results in program crash as the decrypted code is invalid.
+In Figure 8 and Figure 9, we can see the decrypted code sections with and without the command line parameter, respectively.
+Figure 8.
+Correct decrypted code Figure 9.
+Incorrect decrypted code
+By using this technique, Locky authors have created a dependency on the first stage downloader for the second stage to be executed properly.
+If a second stage payload such as this is directly analyzed, it will result in a crash.
+Conclusion As of today, the Locky spam campaign is still ongoing, with an added anti-analysis / sandbox evasion technique.
+We expect to see additional Locky spam campaigns and will remain vigilant in order to protect our customers.
+Email Hashes 2cdf62f8aae20026418f143895c769a2009e6b9b3ac59bfa8fc79ca2f326b93a 1fd5c1f0ecc1d54324f3bdc327e7893032482a13c0914ef6f531bd93caef0a06 0ea7d59d7f1494fce8f45a1f35abb07a456de6d8d65327eca8ff84f307a49a06 22645be8553628574a7af3c32a45178e201e9af33b20b36d29b9c012b731da4c 198d8d1a89221c575d957c1f4342741f3675ebb10f95ffe3371150e124f4850e Subscribe to Blogs Get email updates as new blog posts are added.
+
+

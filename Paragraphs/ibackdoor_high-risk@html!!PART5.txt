@@ -1,0 +1,3 @@
+
+The requirements state that apps are not permitted to download code or scripts, with the exception of scripts that “ do not change the primary purpose of the Application by providing features or functionality that are inconsistent with the intended and advertised purpose of the Application as submitted to the App Store .”
+And, for apps that can record audio, “ a reasonably conspicuous audio, visual or other indicator must be displayed to the user as part of the Application to indicate that a Recording is taking place.”

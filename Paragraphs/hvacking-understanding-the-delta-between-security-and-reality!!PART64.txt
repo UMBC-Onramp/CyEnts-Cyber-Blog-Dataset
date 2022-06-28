@@ -1,0 +1,6 @@
+
+By using a combination of static and dynamic analysis, we were able to create a comprehensive malicious library to control the state of any device connected to the manager.
+Taking our Malware to the Next Level Although making changes from a root shell certainly proves that an attacker can control the device once it has been exploited, it is more practical and realistic for the attacker to have complete remote control not contingent on an active shell.
+Since we were already loading a library on startup to manipulate the I/O modules, we decided it would also be feasible to use that same library to create a command-and-control type infrastructure.
+This would allow an attacker to just send commands remotely to the “malware” without having to maintain a constant connection or shell access.
+To bring this concept to life, we needed to create a backdoor and an initialization function was probably the best place to put one.

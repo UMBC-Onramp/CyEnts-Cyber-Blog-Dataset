@@ -1,0 +1,11 @@
+
+One of the most popular is the advice “If you know the enemy and know yourself, you need not fear the result of a hundred battles.
+If you know yourself but not the enemy, for every victory gained you will also suffer a defeat.
+If you know neither the enemy nor yourself, you will succumb in every battle.”
+Applying this advice to information security, let’s focus first on knowing yourself.
+Knowing yourself can roughly be divided into two parts: What do I have that can be of value to an attacker?
+How do I detect, protect, and correct any threats to my identified value?
+Every company has a value, it takes only one criminal mind to see that and to attempt to exploit it.
+Ask yourself what the core of your business is, the secret sauce that people might be after, what will take you out of business, whom you are doing business with, who are your clients, etc.
+Once you have identified your organization’s value, the second part of knowing yourself comes into play.
+You must understand where you to focus your defenses and invest in technology to detect and protect against threats.

@@ -1,0 +1,12 @@
+
+○      This attack scenario is shown in Figure 21: Figure 21.
+Threat model for JSPatch used by an app targeted by MITM Field Survey JSPatch originated from China.
+Since its release in 2015, it has garnered success within the Chinese region.
+According to JSPatch, many popular and high profile Chinese apps have adopted this technology.
+FireEye app scanning found a total 1,220 apps in the App Store that utilize JSPatch.
+We also found that developers outside of China have adopted this framework.
+On one hand, this indicates that JSPatch is a useful and desirable technology in the iOS development world.
+On the other hand, it signals that users are at greater risk of being attacked – particularly if precautions are not taken to ensure the security of all parties involved.
+Despite the risks posed by JSPatch, FireEye has not identified any of the aforementioned applications as being malicious.
+Food For Thought Many applaud Apple’s App Store for helping to keep iOS malware at bay.
+While it is undeniably true that the App Store plays a critical role in winning this acclaim, it is at the cost of app developers’ time and resources.

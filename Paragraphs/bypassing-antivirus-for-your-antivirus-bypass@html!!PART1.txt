@@ -1,0 +1,5 @@
+Chances are you have heard about how easy it can be to evade antivirus.
+Often, this is because the signatures used by vendors are too simplistic and can be successfully duped without changing the functionality of the malware.
+Have you ever attempted to evade AV?
+Is it really that easy?
+In this blog post, I’ll show you how I adapted “malicious” (not really)

@@ -1,0 +1,6 @@
+
+The trojanized update file is a standard Windows Installer Patch file that includes compressed resources associated with the update, including the trojanized SolarWinds.Orion.Core.BusinessLayer.dll component.
+Once the update is installed, the malicious DLL will be loaded by the legitimate SolarWinds.BusinessLayerHost.exe or SolarWinds.BusinessLayerHostx64.exe (depending on system configuration).
+After a dormant period of up to two weeks, the malware will attempt to resolve a subdomain of avsvmcloud[.]com.
+The DNS response will return a CNAME record that points to a Command and Control (C2) domain.
+The C2 traffic to the malicious domains is designed to mimic normal SolarWinds API communications.

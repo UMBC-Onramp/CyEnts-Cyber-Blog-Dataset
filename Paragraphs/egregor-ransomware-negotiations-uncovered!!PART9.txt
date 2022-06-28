@@ -1,0 +1,4 @@
+
+Buying Time: A Victim’s Strategy Deciding whether to pay and negotiating with the attackers is a hotly contested endeavor in the security community.
+Both paying a ransom or deciding not to pay carry consequences.
+We encourage organizations to review X-Force’s Definitive Guide to Ransomware , which lists the main topics companies should consider when the question arises as to whether they should pay a ransom.

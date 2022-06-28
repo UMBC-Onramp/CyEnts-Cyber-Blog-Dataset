@@ -1,0 +1,7 @@
+
+The phishing link inside the email body directs recipients to a page that attempts to mimic a Netflix login page, as seen in Figure 1.
+Figure 1: Fake login page mimicking the Netflix website Upon submitting their credentials, victims are then directed to webpages requesting additional membership details (Figure 2) and payment information (Figure 3).
+These websites also attempt to mimic authentic Netflix webpages and appear legitimate.
+Once the user has entered their information, they are taken to the legitimate Netflix homepage.
+Figure 2:
+Fake webpage asking users to update their personal details Figure 3: Netflix phishing webpage used to steal credit card information Technical Details

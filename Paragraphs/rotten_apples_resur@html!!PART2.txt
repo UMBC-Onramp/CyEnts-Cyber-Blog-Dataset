@@ -1,0 +1,5 @@
+
+At FireEye Labs we have an automated system designed to proactively detect newly registered malicious domains and this system had observed some phishing domains that were designed to appear as legitimate Apple domains.
+Most of the domains reported by this system were suspended in June 2016, which resulted in a loss of momentum for the Zycode phishing campaign.
+Throughout the second quarter of 2016, the Zycode phishing campaign was in hibernation.
+We recently observed a resurgence of the same phishing campaign when our systems detected roughly 90 phony Apple-like domains that were registered from July 2016 to September 2016.

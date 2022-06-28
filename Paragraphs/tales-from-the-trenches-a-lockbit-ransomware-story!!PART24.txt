@@ -1,0 +1,3 @@
+
+LockBit ransomware note Debug file created in execution: LockBit’s first version has some files that are skipped in the encryption process and every time it skips one it will create resultlog6.reg with the log information: Figure 30:
+Debug file created by LockBit High CPU usage: We analyzed the performance of the encryption and we noted how LockBit uses the CPU heavily in the encryption process: Figure 31: LockBit performance in execution PhobosImposter static MUTEX used: In October 2019, the community saw how PhobosImposter was using the mutex XO1XADpO01 in its executions and the same mutex is used by LockBit in this first version.

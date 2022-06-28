@@ -1,0 +1,6 @@
+
+For Windows systems, our detection team typically recommends the Sysinternals Sysmon tool since it provides excellent visibility into the type of files that are being executed on your Windows machines and both integrates and scales well when properly deployed.
+In this post, I’m going to talk about a lesser-known feature of the Linux architecture called the Integrity Measurement Architecture (IMA).
+When coupled with auditd, IMA will allow you to achieve on Linux hosts a similar executable logging capability as the Sysmon tool for Windows.
+The Integrity Measurement Architecture is a component of the Linux kernel’s integrity subsystem.
+For this post, we’re going to focus on a minimum baseline configuration and policy in order to get file execution logs into a format that can be ingested by your SIEM.

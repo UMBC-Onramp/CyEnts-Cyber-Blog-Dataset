@@ -1,0 +1,5 @@
+
+Conclusion In this blog post, we demonstrated how to fine-tune a neural LM on open source datasets containing social media posts previously leveraged in information operations.
+Transfer learning allowed us to classify these posts with a high AUC score, and FireEye’s Threat Analysts can utilize this detection capability in order to discover and triage similar emergent operations.
+Additionally, we showed how Transformer models assign scores to different pieces of text via an attention mechanism.
+This visualization can be used by analysts to tease apart adversary tradecraft based on posts’ linguistic fingerprints and semantic stylings.

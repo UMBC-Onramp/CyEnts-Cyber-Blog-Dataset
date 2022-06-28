@@ -1,0 +1,4 @@
+
+A PACS setup contains multiple components, including a workstation, imaging device, acquisition gateway, PACS controller, database, and archiving—as illustrated in the following graphic: The basic elements of PACS infrastructure.
+The imaging device creates a picture, such as an ultrasound or MRI, which is uploaded to an acquisition gateway.
+Because much of the imaging equipment in use by medical facilities does not align with security best practices, acquisition gateways are placed in the network to enable the digital exchange of the images.

@@ -1,0 +1,5 @@
+
+If the Integrity Checker Tool (ICT) was not run before the appliance was updated, the only evidence of compromise will exist in the system rollback partition which cannot be scanned by the ICT.
+If an upgrade was performed without first using the ICT, a manual inspection of the rollback partition is required to determine if the device was previously compromised.
+To ensure that no malicious logic is copied to a clean device, users must perform upgrades from the appliance console rather than the web interface.
+The console upgrade process follows a separate code path that will not execute files such as DSUpgrade.pm.

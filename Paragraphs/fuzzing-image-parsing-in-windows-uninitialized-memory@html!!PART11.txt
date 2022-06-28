@@ -1,0 +1,4 @@
+
+After spending quite a bit of time debugging the trace, I found the source of uninitialized memory in windowscodecs!CFormatConverter::Initialize .
+Even though the source was found, it was not initially clear why this memory ends up in the calculation of pixels without getting overwritten at all.
+To solve this mystery, additional debugging was done by comparing PoC execution trace against a normal TIFF file decoding.

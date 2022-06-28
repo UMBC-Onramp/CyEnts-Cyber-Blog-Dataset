@@ -1,0 +1,4 @@
+
+We notified Google about our find, and the malicious apps were quickly removed from the store.
+New versions of malicious apps Deletion from Google’s app store does not necessarily defeat malware; historically, its makers simply upload new, slightly modified, versions using different names and from different developer accounts.
+One example of the cycle comes from the VK Music Trojan, which stole VK user accounts and, despite being reported, dug in to Google Play for several years .

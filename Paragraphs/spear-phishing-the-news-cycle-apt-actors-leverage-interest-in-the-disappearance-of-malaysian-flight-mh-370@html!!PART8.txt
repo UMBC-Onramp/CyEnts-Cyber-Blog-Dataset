@@ -1,0 +1,11 @@
+
+The malware that is dropped by the malicious Word document, which we detect as Trojan.
+APT.Plat1, begins to beacon to 59.188.253.216 via TCP over port 80.
+The decoy document opened after exploitation is blank.
+The malicious document dropped the following implants: C:\\Documents and Settings\\Administrator\\Application Data\\Intel\\ResN32.dll (MD5: 2437f6c333cf61db53b596d192cafe64) C:\\Documents and Settings\\Administrator\\Application Data\\Intel\\~y.dll (MD5: d8540b23e52892c6009fdd5812e9c597)
+The implants dropped by this malicious document both included unique PDB paths that can be used to find related samples.
+These paths were as follows:
+E:\\Work\\T5000\\T5 Install\\ResN\\Release\\ResN32.pdb F:\\WORK\\PROJECT\\T5 Install\\InstDll\\Release\\InstDll.pdb This malware family was also described in more detail here .
+The Mongall/Saker Lures Another sample leveraging the missing airliner theme was seen on March 12, 2014.
+The malicious document exploited CVE-2012-0158 and was titled, “Missing Malaysia Airlines Flight 370.doc” (MD5: 467478fa0670fa8576b21d860c1523c6).
+Although the extension looked like a Microsoft Office .DOC file, it was actually an .HTML Application (HTA) file.

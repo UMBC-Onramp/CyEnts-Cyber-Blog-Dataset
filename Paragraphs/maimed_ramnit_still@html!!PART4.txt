@@ -1,0 +1,13 @@
+
+There is no exploit used for infection, simply social engineering and errant clicks.
+As shown in Figure 1, a malicious VBScript is appeneded after the HTML body.
+Upon landing on this page, the victim’s browser will load the news content while it executes a malicious ActiveX component in the background.
+Figure 1:
+Legitimate HTML page appended with malicious VBScript As shown in Figure 2 and Figure 3, the VBScript drops a binary named “svchost.exe” in the %TEMP% folder and executes it upon successful ActiveX execution.
+In a case where the system is compromised, it also tries to connect to a CnC server, fget-career[.]com, which has been involved in campaigns for this trojan before.
+Figure 2:
+The VBScript drops the binary in the %TEMP% folder and executes it Figure 3:
+The full path to “svchost.exe” (using Internet Explorer 11 on Windows 7) Successful execution of the VBScript and the delivery of W32.Ramnit onto the victim’s machine depends on the user’s browser, as well as the browser’s setting.
+Since Chrome and Firefox do not support client-side VBScript, only IE users are susceptible to this attack.
+Fortunately, recent versions of IE do not run code automatically by default.
+Instead, users will see two popup warnings when the browser is rendering potentially dangerous objects such as ActiveX components, as shown in Figure 4 and Figure 5.

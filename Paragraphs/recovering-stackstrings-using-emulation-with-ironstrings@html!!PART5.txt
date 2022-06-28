@@ -1,0 +1,10 @@
+
+Now changes that users make in their IDB file, e.g. by patching instructions to manually enhance analysis, are immediately available during emulation.
+Moreover, the tool more robustly supports different architectures including x86, AMD64, and ARM.
+Stackstrings:
+An Example The disassembly listing in Figure 1 shows an example string obfuscation from the sample I analyzed.
+The malware creates a string at run-time by moving each character into adjacent stack addresses (gray highlights).
+Finally, the sample passes the string’s starting offset as an argument to the InternetOpen API call (blue highlight).
+Manually following these memory moves and restoring strings by hand is a very cumbersome process.
+Especially if malware complicates value assignments using additional instructions like illustrated below.
+Figure 1: Disassembly listing showing stackstring creation and usage Because malware often uses stack memory to create such strings, Jay Smith coined the term stackstrings for this anti-analysis technique.

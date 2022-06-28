@@ -1,0 +1,3 @@
+
+Each credentials of the stolen credentials has an above structure and saved in a global list variable, which later is formatted and sent to the attacker.
+Sending the Stolen Data to the Attacker There are four ways to transport the stolen data to the attacker.

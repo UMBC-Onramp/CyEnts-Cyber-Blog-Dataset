@@ -1,0 +1,4 @@
+
+To decode this script while allowing the full malicious functionality to run as expected, you would have to iteratively and carefully echo and selectively execute a few hundred obfuscated SET commands.
+The irony of BatchEncryption is that batch scripts are viewed as being easy to de-obfuscate, making binary code the safer place to hide logic from the prying eyes of network defenders.
+But BatchEncryption adds a formidable barrier to analysis by its extensive, layered use of environment variables to rebuild the original commands.

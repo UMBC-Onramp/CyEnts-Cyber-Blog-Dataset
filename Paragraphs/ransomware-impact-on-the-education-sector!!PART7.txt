@@ -1,0 +1,9 @@
+
+However, this is not altruistic on their part.
+They mostly want to avoid the hammer brought down by law enforcement, which has little tolerance when these sectors are targeted.
+But there is no guarantee that affiliates will always abide by these rules.
+And given the rate at which the education sector has recently been targeted, they are clearly not exempt from ransomware attacks.
+FortiGuard Labs has identified at least 20 different ransomware infections targeting the education sector.
+Most of these infections occurred in the United States, which outnumbered the other countries by a large margin.
+The Pysa and Ryuk ransomware families were the most common, closely followed by Grief and Babuk ransomware.
+Interestingly, many notable ransomware variants, such as REvil, Blackmatter, Lockbit, DarkSide, and Ragnar Locker, were not found to be targeting schools.

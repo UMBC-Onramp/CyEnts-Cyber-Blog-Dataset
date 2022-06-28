@@ -1,0 +1,5 @@
+
+If an attacker finds a vulnerable version of Flash in use, kits will have exploits to employ.
+Conclusion It is difficult, and perhaps impossible, to prove that software is error free.
+(Alan Turing’s famous proof mathematically shows that automated processes cannot be proved correct through automation.)
+As famed computer scientist Edsger Dijkstra noted, “Testing shows the presence, not the absence of bugs.”

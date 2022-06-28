@@ -1,0 +1,12 @@
+
+Figure 9: Geo-location plot of the IPs for this camp aign Campaign 2: British Apples Gone
+Bad
+Our email attacks research team unearthed another targeted phishing campaign against Apple users in the UK.
+Table 2 is a list of 86 Apple phishing domains that we observed since January 2016.
+Figure 9: Geo-location plot of the IPs for this campaign Phishing Content and Analysis All of these domains have been serving the same phishing content.
+A simple HTTP GET (via the wget utility) to the domain’s main page reveals HTML code containing a meta-refresh redirection to the signin.php page.
+A wget session is shown here: $ wget http://manageAppleid84913[.]net --2016-04-05 16:47:44--  http://manageAppleid84913[.]net/ Resolving manageAppleid84913[.]net (manageAppleid84913[.]net)...
+109.123.121.10 Connecting to manageAppleid84913[.]net (manageAppleid84913[.]net)|109.123.121.10|:80... connected.
+HTTP request sent, awaiting response...
+200 OK Length: 203 [text/html]
+Saving to: ‘index.html.1’ 100%[============================================================================================================>] 203         --.-K/s   in 0s 2016-04-05 16:47:44 (37.8 MB/s) - ‘index.html.1’ saved [203/203] Content of the page is displayed here: <meta http-equiv=\"refresh\" content=\"0;URL=signin.php?c=

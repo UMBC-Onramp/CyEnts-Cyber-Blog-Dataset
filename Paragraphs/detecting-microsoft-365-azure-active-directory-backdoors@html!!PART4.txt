@@ -1,0 +1,10 @@
+
+Backdoor 1: Abusing Pass-Through Authentication Attacker Requirements Local Administrative Access to a server running Pass-through Authentication Or M365 global administrator credentials The AADInternals PowerShell module contains a function called Install-AADIntPTASPY .
+The function works by inserting itself as a man-in-the-middle within the Pass-through Authentication (PTA) process that occurs between Azure AD and the server running the PTA Agent in the on-premises environment.
+Commonly, the PTA Agent runs on the same on-premises server as Azure AD Connect (AAD Connect).
+When PTA is enabled, every logon that occurs against Azure AD gets redirected to the PTA Agent on-premises.
+The PTA Agent asks an on-premises Active Directory Domain Controller if a password is valid for an authenticating account.
+If valid, the PTA Agent responds back to Azure AD to grant the requestor access.
+Figure 1 provides the workflow of Pass-through Authentication and where AADInternals can intercept the request.
+Figure 1: Pass-through Authentication workflow
+Once the function is running, every PTA attempt against Azure AD will be intercepted by the installed AADIntPTASpy module.

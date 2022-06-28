@@ -1,0 +1,7 @@
+
+In fact, the JSPatch author could offer such support to app developers in the near future through more usable and convenient interfaces, granted there is enough demand.
+In this case, all of the above operations could become reality without Apple’s consent.
+Security Impact
+It is a general belief that iOS devices are more secure than mobile devices running other operating systems; however, one has to bear in mind that the elements contributing to this status quo are multi-faceted.
+The core of Apple’s security controls to provide and maintain a secure ecosystem for iOS users and developers is their walled garden – the App Store.
+Apps distributed through the App Store are significantly more difficult to leverage in meaningful attacks.

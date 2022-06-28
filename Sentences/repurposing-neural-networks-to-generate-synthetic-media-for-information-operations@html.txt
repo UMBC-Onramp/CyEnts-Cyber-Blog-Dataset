@@ -1,0 +1,195 @@
+FireEye’s Data Science and Information Operations Analysis teams released this blog post to coincide with our Black Hat USA 2020 Briefing , which details how open source, pre-trained neural networks can be leveraged to generate synthetic media for malicious purposes.
+
+To summarize our presentation, we first demonstrate three successive proof of concepts for how machine learning models can be fine-tuned in order to generate customizable synthetic media in the text, image, and audio domains.
+
+Next, we illustrate examples in which synthetically generated media have been weaponized for information operations (IO), as detected on the front lines by Mandiant Threat Intelligence.
+
+Finally, we outline challenges in detecting synthetically generated content, and lay out potential paths forward in a future where synthetically generated media will increasingly look, speak, and write like us.
+
+Highlights Open source, pre-trained natural language processing, computer vision, and speech recognition neural networks can be weaponized for offensive social media-driven IO campaigns.
+
+Detection, attribution, and response is challenging in scenarios where actors can anonymously generate and distribute credible fake content using proprietary training datasets.
+
+The security community can and should help AI researchers, policy makers, and other stakeholders mitigate the harmful use of open source models.
+
+Background: Synthetic Media, Generative Models, and Transfer Learning Synthetic media is by no means a new development; methods for manipulating media for specific agendas are as old as the media themselves.
+
+In the 1930’s, the chief of the Soviet secret police was photographed walking alongside Joseph Stalin before being retouched out of an official press photo, after he himself was arrested and executed during the Great Purge .
+
+Digital graphic manipulation like this became prominent with the advent of Photoshop.
+
+Then later in the 2010’s, the term “deepfake” was coined.
+
+While deepfake videos, including techniques like face swapping and lip syncing, are concerning in the long term, this blog post focuses on more basic, but we argue more believable, synthetic media generation advancements in the text, static image, and audio domains.
+
+Machine learning approaches for creating synthetic media are underpinned by generative models, which have been effectively misused to fabricate high volume submissions to federal public comment websites and clone a voice to trick an executive into handing over $240,000 .
+
+The pre-training required to produce models capable of synthetic media generation can cost thousands of dollars, take weeks or months of time, and require access to expensive GPU clusters.
+
+However, the application of transfer learning can drastically reduce the amount of time and effort involved.
+
+In transfer learning, we start from a large generic model that has been pre-trained for an initial task where copious data is available.
+
+We then leverage the model’s acquired knowledge to train it further on a different, smaller dataset so that it excels at a subsequent, related task.
+
+This process of training the model further is referred to as fine-tuning , which typically requires less resources compared to pre-training from scratch.
+
+You can think of this in more relatable terms—if you’re a professional tennis player, you don’t need to completely relearn how to swing a racket in order to excel at badminton.
+
+In practice though, the benefits of transfer learning are only\nrealized when people share their pre-trained models.
+
+As illustrated by\nFigure 1, it turns out that it’s commonplace for well-resourced\nindustry and academic researchers to release their model checkpoints\nwhen their state of the art (SOTA) work gets accepted into a top-tier\nconference.
+
+Code is typically released in the form of GitHub\nrepositories with extensive HOWTO guides and well-documented READMEs.\nThis allows anyone to easily reproduce figures from the initial\npapers, and potentially use this source code as a starting point for\ntheir own research or projects.
+
+This process plays out on loop,\nensuring a healthy, self-reinforcing model supply chain and ultimately\na quicker pace of scientific innovation.
+
+However, while this emergent\nmodel sharing ecosystem beneficially lowers the barrier to entry for\nnon-experts, it also gives a leg up to those seeking to leverage open\nsource models for malicious purposes.
+
+Just how much has this barrier to entry been lowered though?\nFine-tuning can be performed in a fraction of the time, cost, data\nsize, and compute compared to training models from scratch.
+
+Whether\nit's a cloud hosted notebook with GPU access, or a cloud GPU instance\nreservation for just a single day, we're talking on the order of just\ntens of dollars to fine-tune one of these models.
+
+Skill-wise,\nfine-tuning is not necessarily trivial, but it’s also not “brain\nsurgery”—authors or other open source contributors often release\nadditional code and tutorials for how to fine-tune.
+
+The pre-trained models covered here were each released just within\nthe last year, so the demonstrations in the next section should be\nseen through the lens of the present moment in time.
+
+However, open\nsource releases are accelerating, and the bar for generating credible\nsynthetic content will likely lower even further in the years to come.
+
+See No Evil As a first proof of concept, we’ll demonstrate how StyleGAN2 can be\nfine-tuned in order to generate custom portraits to impersonate a\ntarget individual.
+
+StyleGAN2, like its\npredecessor StyleGAN, is architected as a generative adversarial\nneural network (or GAN) .
+
+GANs consist of 2 underlying networks\nthat are pitted against each other (hence “adversarial”)
+
+- a\ngenerator, which generates new instances of data, and a discriminator,\nwhich evaluates these instances for authenticity by deciding whether\neach one belongs to the actual training dataset or not.
+
+If you\ngenerate images from pre-trained StyleGAN2 off-the-shelf, it outputs random,\nhigh quality, and highly diverse images that appear in a similar\norientation as the images that it was pre-trained on .
+
+These\nimages are not present in StyleGAN2’s original training set, but are\ncompletely fabricated from the generative model—these people in fact\ndo not exist, and never have.
+
+StyleGAN2 can also be fine-tuned on private datasets to generate\noutputs for custom tasks that the user of the open source model can\ncontrol.
+
+As illustrated in Figure 2, we downloaded a few hundred\nimages of Tom Hanks from online image search services, cropped them so\nthat they were each face-centered and 512x512 pixels as required by\nthe pre-trained model, and simply continued training StyleGAN2 by\npointing it at this new smaller dataset using a slightly smaller\nlearning rate.
+
+After less than a day of fine-tuning on a single GPU,\nwe then used the fine-tuned StyleGAN2 model to generate arbitrarily\nmany fake images of Mr. Hanks, which exhibit a high level of\nresemblance to his authentic online images.
+
+In theory, we could\ncollect cropped images from any target of our choosing and perform the\nsame exercise to generate arbitrarily many fake images of them.
+
+Hear No Evil As a second proof of concept, we’ll switch to the audio domain where\nwe demonstrate how SV2TTS can be fine-tuned on audio samples in order\nto impersonate the voice of a target individual.
+
+SV2TTS is a complex,\n3-stage model that can perform Voice Cloning —or text-to-speech from arbitrary text inputs to captured reference\nspeech in real time.
+
+SV2TTS is comprised of three underlying neural\nnetworks – first, the speaker encoder is trained on thousands of\nspeakers in order to learn an abstract representation of human speech\nand squeeze it into a compressed embedding of floating point
+
+values.\nThen the Synthesizer, which\nis based on Google’s TacoTron2 , takes text as input and returns\na mel spectrogram , a\nnumerical representation of an individual’s voice.
+
+Lastly, the\nvocoder, based\non DeepMind’s WaveNet , takes the mel spectrogram and converts it\ninto an output waveform that can be heard and comprehended.
+
+While pre-trained SV2TTS can be used to generate speech using\narbitrary text from one of a few hundred or so voices, as shown in\nFigure 3 it can also be fine-tuned to generate speech in an\narbitrary voice using arbitrary text.
+
+All we need to do is\ncollect some audio samples, which are freely available to record via\nthe Internet, load up a few of the resulting M4A files into the\npre-trained SV2TTS model, and use it as a feature extractor to\nsynthesize new speech waveforms.
+
+Using Mr. Hanks again as an example,\nwe demonstrate the result of this process on a few pieces of input\ntext that were chosen by us to resemble cell-phone quality commentary\nthat is thematically representative of the types of narratives we see\npushed in IO campaigns.
+
+While the specific examples here are somewhat\nrobotic and show signs of inauthenticity, the timbre of the voice is\n(in our subjective view) similar to that of Mr. Hanks.
+
+Neither the\ntext nor the voices exist in any of the original SVT2TTS training\ndatasets.
+
+It's worth noting that we didn’t even need a GPU to do this\n– the pre-trained model was fine-tuned locally using a basic laptop’s\nCPU cores, which also suggests that quality improvements are possible\nwith greater resourcing.
+
+Speak No Evil Our last proof of concept is in the text domain, where we\ndemonstrate how GPT-2 can be fine-tuned in order to generate custom\nsocial media posts reflecting narratives pushed in a social media IO\ncampaign.
+
+GPT-2 is an open source\nneural network that was trained on the causal language modeling\ntask , whose objective is to predict the next word in a sentence\nfrom previous context.
+
+A pre-trained model ends up being capable of\nlanguage generation: if the model can predict the next word\naccurately, it can be used in turn to predict the following word, and\nthen so on and so forth until eventually, the model produces fully\ncoherent sentences and paragraphs.
+
+The pre-trained GPT-2 model’s outputs display relatively formal\ngrammar, punctuation, and structure that corresponds to the text\npresent within their original prosaic dataset.
+
+To make GPT-2's\ngenerations appear more like posts we might expect to encounter\nscrolling through social media, with their shorter length, informal\ngrammar, erratic punctuation, and syntactic quirks, we fine-tuned it\non a new language modeling task using additional training data.
+
+This\ndata consisted of open source social media posts from accounts\noperated by Russia’s famed Internet Research Agency or IRA “troll\nfactory.”
+
+We fine-tuned GPT-2 on a single GPU for a few hours by processing\nthese social media posts through the pre-trained model , whose\nactivations were then fed through adjustable weights into a linear\noutput layer.
+
+The resulting fake posts are short yet biting, express\noutrage regarding political issues, and contain idiosyncrasies like\nhashtags and emojis that positionally manifest at the end of the\ngenerated text.
+
+Synthetic Media in the Wild IO actors use various tactics that would be readily conducive to\nsynthetic media augmentation.
+
+For example, one influence campaign we\nuncovered and dubbed \"Distinguished\nImpersonator\" involves falsifying journalist personas and\nreaching out to real-world experts and political figures to\ndisingenuously solicit audio and video interviews that advance an\nIranian political agenda.
+
+Another commonly used tactic is the\ndevelopment of cross-platform online personas that are used to\ninfiltrate target groups or disseminate fabricated content to specific\naudiences, such as in the \"Ghostwriter\"\ncampaign that has leveraged website compromises and used multiple\nwell-developed personas to disseminate fabricated content\naligned with Russian security interests.
+
+And other very common\ntechniques include the use of appropriated photos of real individuals\nto backstop false personas, and the repeated use of identical text on\nsocial media to \"astroturf\" political commentary.
+
+Synthetic\nmedia has real potential to exacerbate the use and effectiveness
+
+of\nsuch tactics.
+
+Indeed, we already frequently uncover false personas and networks of\ninauthentic social media accounts using artificially generated profile\nphotos, and this use is widespread.
+
+For example, we’ve uncovered large\nnetworks of inauthentic social media accounts pushing pro-China\nnarratives surrounding the Hong Kong democracy protests and the\nCOVID-19 pandemic making significant use of artificially generated\nphotos.
+
+We identified inauthentic accounts using synthetic profile\nphotos in a recent operation that appeared designed to support\ngovernment officials in a region of Argentina.
+
+And in a social\nmedia-driven influence operation that promoted pro-Cuban government\nand anti-US narratives, the operators behind one network of\ninauthentic accounts didn’t even bother to fully crop out the text box\nplaced by the “thispersondoesnotexist” image generation tool stating\nthat the images were generated with StyleGAN2, prior to use.
+
+The\nexamples of artificially generated images we’ve seen actively used in\nIO campaigns presented in Figure 5 illustrate a common format\nobserved, including closely cropped headshots with blurred\nbackgrounds, anomalies around the ears, neck, and shoulders,\ndifficulties with fully rendering accessories such as glasses and\nearrings, and phantom hair strings being generated outside a credible\narea.
+
+But we can readily envision an escalation of this tactic, in which\nconvincing personas are created using artificially generated profile\nphotos trained on images of real people from a target group or\ngeography that correspond to, say, a particular minority group, and\nare then used to instigate political conflict or incite animosity and\nviolence.
+
+The use of synthetically generated audio interviews in a\ncampaign  resembling Distinguished Impersonator trained on a real\npolitical expert’s voice, would lower an actor’s burden by removing\nthe need to convincingly engage in direct outreach to real people,\nwhich would also make attribution more difficult for investigators by\nreducing available investigative leads such as contact details and\nmodes of communication between actor and target.
+
+And synthetic media\nwould drastically lower barriers for actors seeking to disseminate\ndiverse text-based content at scale, reducing the effort required to\ncreate a large corpus of written content and the need to repeatedly\nreuse snippets of identical text.
+
+Evading Detection Synthetic media doesn’t need to be overwhelmingly credible to\nhave its desired effect.
+
+People are used to consuming short,\nauthoritative, error-riddled social media text at speed without\ndwelling too much on its linguistic features or origin.
+
+Users are\naccustomed to consuming poor-quality audio and video snippets, and the\nmajority of users aren’t going to give a social media account’s\nprofile image more than a cursory glance as they scroll through their\nfeed and ingest written content at rapid speed.
+
+The quality bar does\nnot need to be exceedingly high when it comes to synthetic\ngenerations; it only needs to be “good enough” for even just a subset\nof vocal users to not question it in a world characterized by rapid,\nhigh-volume information consumption.
+
+The unifying theme behind the various potential IO applications\ndiscussed in the previous section is that they would materially help\nthreat actors scale campaigns at low cost and better evade\ndetection.
+
+Fine-tuning in particular presents a problem for blue\nteams, as it allows threat actors to better evade classifiers and\ndetection models that are built for pre-trained outputs.
+
+This is\nworrisome as a would-be threat actor’s fine-tuning datasets would\nlikely be private and unknown to the defender at test time.
+
+This\nconcept is illustrated by the text-based detection experiments we\nconducted in Figure 6.
+
+After releasing GPT-2, OpenAI\nreleased source code along with a fine-tuned classifier based on\nRoBERTa , which does not share the same architecture or tokenizer\nas GPT-2, that can reliably discriminate between GPT-2's own output\ngenerations and its original pre-training data of high-Karma Reddit posts.
+
+We used this RoBERTa model first to verify the findings that one can reliably differentiate\nbetween fabricated, GPT-2 generated text and the authentic GPT-2\npre-training dataset.
+
+When we performed the same exercise using the\nclassifier to try to differentiate our fine-tuned IO text generations\n(i.e.
+
+those previously discussed in Figure 4), the accuracy\nsignificantly dropped.
+
+The fact that the pre-trained score\ndistribution is skewed towards 1 means the detection model for\npre-trained generations, with a classification threshold of 0.5, can\neasily classify the generations as “fake.”
+
+This results in an accuracy\nscore of over 97% for the detection model, as shown in blue in Figure\n6.
+
+However, detection accuracy dipped to around 78% for fine-tuned\ngenerations as the distribution of scores output by the classifier\nshifts closer to chance, as shown in red.
+
+So if threat actors were to\nfine-tune on a custom dataset they themselves collated, this could\npresent a problematic asymmetry between the data used to create the\nsynthetic generations and the data blue teams would have access to—or\neven knowledge of—with which to build a commensurate detection model.
+
+Text with shorter length\nwas previously shown to be more difficult for detection models to\nclassify , and while our tweet-inspired experiments corroborate\nthis finding, further research is required to disentangle how\ndifferent datasets, model complexities, input lengths, and\nhyperparameters will contribute to this effect in the cat-and-mouse\nfuture of generators versus detectors.
+
+Conclusion Synthetic media generation continues to become cheaper, both\nmonetarily and in terms of the computing power required, easier, more\npervasive, and their outputs ever more credible.
+
+Image generation\ncapabilities and even commercial services are already moving beyond\nmerely headshots and facial generations to full-body shots and\nadvanced video generations, and end users will enjoy increasing\ncontrol over and ease of content generation, both through being able\nto steer generations towards particular attributes at more granular\nlevels, and by being able to use an increasing amount of both free and\ncommercial low-code or no-code applications for content creation.
+
+This blog post highlights the need for the research community to\ncontinue to focus attention on the development of technical detection\nand mitigation capabilities for synthetic media, given its ready\napplicability to current information operations tactics.
+
+Multiple\navenues of research can and should be pursued, including statistical\napproaches to detection like machine\nlearning classifiers and model\nwatermarking , as well as the signature-based identification of\nfingerprints and forensic indicators (e.g. Figure 5).
+
+Secondly,\nthere’s the human aspect to all of this, including the importance of\nensuring communities of researchers from different disciplines\ncoalesce around approaches to overcoming the detection challenges,\nthreat modeling how synthetic media may be deployed in future IO\ncampaigns so that any potential effects can be pre-emptively\naddressed, and encouraging commercial providers of synthetic media\ngeneration capabilities to acknowledge and account for the potential\nabuse of their services by threat actors.
+
+Outside of community\nefforts, there also remains the need for raising awareness and\neducating consumers of social media and other content about the risks\nof synthetic media in a responsible manner that doesn’t misrepresent\nthe threat, as well developing legal and regulatory approaches to\ndealing with information operations and synthetic media.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

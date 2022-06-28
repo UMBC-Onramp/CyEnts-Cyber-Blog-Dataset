@@ -1,0 +1,11 @@
+
+The file plugin.py contains a class named Plugin ; the only thing that is needed is to implement its run method.
+Each plug-in receives an instance of a SWFObject as a parameter.
+The code will interact with this object and return data in a custom format, defined by the user.
+This way, the user's plug-ins can be written to produce data that can be directly ingested by their infrastructure.
+Let's see how easy it is to create plug-ins by walking through one that is included, named binary_data .
+This plugin returns all embedded data in a SWF file by default.
+If the user specifies an optional parameter pattern then the plug-in searches for matches of that byte sequence within the embedded data, returning a dictionary of embedded data and the offset at which the pattern was found.
+First, we define the optional argument pattern to be supplied by the user (line 2 and line 4): Afterwards, implement a custom run method and all other code needed to support it: This is a simple but useful plugin and illustrates how to interact with FLASHMINGO.
+The plug-in has a logging facility accessible through the property “ml” (line 2).
+By default it logs to FLASHMINGO’s main logger.

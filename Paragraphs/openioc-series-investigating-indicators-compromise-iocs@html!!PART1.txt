@@ -1,0 +1,5 @@
+Written by Devon Kerr & Will Gibb
+The Back to Basics: OpenIOC blog series previously discussed how Indicators of Compromise (IOCs) can be used to codify information about malware or utilities and describe an attacker's methodology.
+Also touched on were the parts of an IOC, such as the metadata, references, and definition sections.
+This blog post will focus on writing IOCs by providing a common investigation scenario, following along with an incident response team as they investigate a compromise and assemble IOCs.
+Our scenario involves a fictional organization, \"Acme Widgets Co.\", which designs, manufactures and distributes widgets.

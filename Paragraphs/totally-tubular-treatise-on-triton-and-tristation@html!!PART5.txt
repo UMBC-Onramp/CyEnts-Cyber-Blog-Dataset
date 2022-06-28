@@ -1,0 +1,7 @@
+
+Work smarter, not harder, amirite?
+The TRITON framework has a multitude of functionalities, but we started with the basic components: TS_cnames.pyc
+# Compiled at: 2017-08-03 10:52:33 TsBase.pyc # Compiled at: 2017-08-03 10:52:33 TsHi.pyc # Compiled at: 2017-08-04 02:04:01 TsLow.pyc
+# Compiled at: 2017-08-03 10:46:51 TsLow.pyc (Figure 1) contains several pieces of code for error handling, but these also present some cues to the protocol structure.
+Figure 1: TsLow.pyc function print_last_error()
+In the TsLow.pyc’s function for print_last_error we see error handling for “TCM Error”.

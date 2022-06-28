@@ -1,0 +1,16 @@
+
+Propagation We have been monitoring an indiscriminate spam campaign that started on Wednesday, May 20, 2015.
+  
+The spam emails referred to possible employment opportunities and purported to have a resume attached.
+The “From” email addresses were spoofed Yahoo!
+Mail accounts and contained the following “Subject” lines:
+Subject: Any Jobs?
+Subject:
+Any openings?
+Subject:
+Internship Subject:
+Internship questions Subject: Internships?
+Subject:
+Job Posting Subject: Job questions Subject: My Resume Subject: Openings?
+The email came with an attachment named CV_[4 numbers].doc or My_Resume_[4 numbers].doc , which is embedded with a malicious macro.
+To trick the recipient into enabling the malicious macro, the document claims to be a “protected document.”

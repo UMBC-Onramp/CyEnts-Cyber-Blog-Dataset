@@ -1,0 +1,9 @@
+
+In the case that this field is false, it will crypt all files.
+wipe ->
+If this option is ‘true’, the malware will destroy the target files in the folders that are described in the json field “wfld”.
+This destruction happens in all folders that have the name or names that appear in this field of the config in logic units and network shares.
+The overwriting of the files can be with trash data or null data, depending of the sample.
+wht ->
+This field has some subfields: fld -> Folders that should not be crypted; they are whitelisted to avoid destroying critical files in the system and programs.
+fls -> List of whitelists of files per name; these files will never be crypted and this is useful to avoid destroying critical files in the system.

@@ -1,0 +1,11 @@
+
+It then installs a hook to execute its own version of compileMethod() (method 0x06000499 ).
+This method replaces the ILCode and ILCodeSize fields of the info argument to the original compileMethod() with the real malware’s MSIL bytes.
+In addition to replacing the MSIL bytes, MassLogger also patches the method body header at module initialization time.
+As seen from Figure 13, the method body header of method 0x060003DD on disk (at file offset 0x3CE0) is different from the header in memory (at RVA 0x5AE0 ).
+The only two things remaining quite consistent are the least significant two bits indicating whether the method is tiny or fat.
+To successfully defeat this anti-analysis technique, we must recover the real MSIL bytes as well as the correct method body headers.
+Figure 13:
+Same method body with different headers when resting on disk vs. loaded in memory Defeating JIT Method Body Replacement With JITM To automatically recover the MSIL and the method body header, one possible approach suggested by another FLARE team member is to install our own hook at compileMethod() function before loading and allowing the MassLogger module constructor to run.
+  
+There are multiple tutorials and open-sourced projects on hooking compileMethod() using both managed hooks (the new compileMethod() is a managed method written in C#) and native hooks (the new compileMethod() is native and written in C or C++).

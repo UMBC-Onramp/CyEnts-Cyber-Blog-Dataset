@@ -1,0 +1,5 @@
+
+AndroidOS.MobOk.i, a Trojan that signs up for paid subscriptions; Trojan.
+AndroidOS.Subscriber.l, another Trojan that signs up for paid subscriptions; Trojan.
+AndroidOS.Whatreg.b, the most complex Trojan in the list, signs in to the WhatsApp account on the victim’s phone, intercepting the login confirmation text.
+The device can then become a site for various types of illegal activity such as spam distribution or illegal trading.

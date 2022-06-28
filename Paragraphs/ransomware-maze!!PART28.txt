@@ -1,0 +1,5 @@
+
+It is not known why they included this email address because it has no relation to the ransom note and is not used anywhere else.
+Perhaps it is a means of mocking the administrator of a site that frequently reports on ransomware?
+FIGURE 26.
+C2C IP ADDRESSES EXTRACTED FROM THE MEMORY The connections to the C2C IP addresses, in a pcap using Wireshark, can be seen perfectly: FIGURE 27.

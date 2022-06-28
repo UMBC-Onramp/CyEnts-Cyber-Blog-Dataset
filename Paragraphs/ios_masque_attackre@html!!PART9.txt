@@ -1,0 +1,6 @@
+
+As an example, the Chrome web browser by Google [6] registers four\nURL schemes: \"com.google.sso.75882956776-quflk872g5nq29l4p16ql1u6956mehe1\",\n\"googlechrome\", \"googlechromes\",\n\"googlechrome-x-callback\",\n\"com.google.sso.chrome\".
+One enterprise-signed app that\nregisters the same set of URL schemes on iOS 8.1.3 and earlier\nversions is able to hijack web links when the user clicks them from\nthe emails in Gmail app, from web pages displayed by Safari or from\nSMS messages.
+Demo Video 2 describes one such attack scenario.
+Previous studies [9] have also recognized the risk in the way iOS\nhandling the URL schemes.
+However, bypassing prompt for trust gave\nenterprise-signed apps the leverage to exploit this issue silently.

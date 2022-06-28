@@ -1,0 +1,6 @@
+
+This report contains events of interest that are logged during emulation.
+Like most emulators, all Windows API calls are logged along with arguments.
+All entry points are emulated and tagged with their corresponding API listings.
+In addition to API tracing, other specific events are called out including file, registry and network access.
+All decoded or “memory resident” strings are dumped and displayed in the report to revealed useful information not found within static string analysis.

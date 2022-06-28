@@ -1,0 +1,5 @@
+
+Next, we noted that ten lines in Figure 10 hold base64-encoded data.
+Once the sample was successfully deobfuscated, it was time to move on to extracting its configuration and to follow the sample’s code path to its persistence capabilities and initial beacon.
+Figure 10: Deobfuscating dfsds.exe shows that the method begins with some path manipulation and then accesses Base64-encoded data Configuration, Persistence and Initial Beacon Recall that in Figure 10 we found that the method SchemaServerManager.
+Main has a local variable containing Base64-encoded data; decoding that data revealed what it contains.

@@ -1,0 +1,10 @@
+
+Although one reaction is to marvel at the level of innovation displayed by the threat actor(s), we are not discussing five new, never-before-seen malware variants—rather the reuse of code from implants seen eight years prior.
+The Oceansalt malware uses large parts of code from the Seasalt implant, which was linked to the Chinese hacking group Comment Crew.
+The level of reuse is graphically depicted below: Code Visualization of Recent Oceansalt with Older Seasalt Oceansalt, 2018.
+Seasalt, 2010.
+Who is Behind the Oceansalt Attack?
+Originally taking the title APT1, the Comment Crew was seen as the threat actor conducting offensive cyber operations against the United States almost 10 years before.
+The obvious suspect is Comment Crew and, although this may seem a logical conclusion, we have not seen any activity from this group since they were initially exposed.
+Is it possible that this group has returned and, if so, why target South Korea?
+It is possible that the source code developed by Comment Crew has now been used by another adversary.

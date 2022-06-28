@@ -1,0 +1,6 @@
+
+One very simple way to solve this problem, without losing a ton of information, is to simply cut off a keyword list after a certain number of entries.
+For example, take the top 50 occurring folder names (across both good and bad files), and save them as a keyword list.
+Then match this list against every path in the dataset.
+To create features, one-hot encode each match.
+Rather than arbitrarily setting a cutoff, we wanted to know a bit more about the distribution and understand where might be a good place to set a limit – such that we would cover enough of the samples without drastically increasing the number of features for our model.

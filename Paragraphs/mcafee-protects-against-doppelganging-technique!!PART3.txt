@@ -1,0 +1,7 @@
+
+From announcement to inclusion, test and use in production within 7 days is impressive.
+This week, security-researchers from Kaspersky discovered that an actor was applying the so-called Process Doppelgänging technique in what has been named the “SynAck” ransomware.
+(https://securelist.com/synack-targeted-ransomware-uses-the-doppelganging-technique/85431/)
+So What is the Process Doppelgänging Technique in a Nutshell?
+Using this technique gives the malware writer an ability to run malicious code/executable under the cover of a legitimate executable by using the transaction features of the NTFS filesystem (Windows Transactional NTFS API).
+McAfee Detects and Protects Since the initial release of this technique in December 2017, McAfee Labs has been investigating this technique and how we might protect our customers.

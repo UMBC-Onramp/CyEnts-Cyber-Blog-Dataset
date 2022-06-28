@@ -1,0 +1,5 @@
+
+Same with the WHOIS information: The Infection Chain When the user opens the XLL file, the Excel file triggers on xlAutoOpen in a similar fashion to a macro.
+The following image shows the export name is the same.
+The export attempts to contact the following URL: hxxp://dmequest[.]com/dme/images/portfolio/products/1/csrsc.exe hosted on 68[.]67.75.66.
+Analysis reveals that the IP address serving the executable file belongs to a webhosting reseller in Florida in the United States.

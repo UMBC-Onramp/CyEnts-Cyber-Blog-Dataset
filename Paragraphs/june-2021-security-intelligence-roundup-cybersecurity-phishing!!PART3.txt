@@ -1,0 +1,9 @@
+
+This piece is a top-level look at what zero trust is for and what use cases might call for it.
+For example, if you’re using a lot of remote employees or a lot of different access rights, zero trust can make your defenses simpler.
+After all, it assumes everyone is a potential threat.
+3-Minute Read 🕒
+What’s Behind Rising Ransomware Costs?
+It’s a vicious cycle: more and more companies are willing to pay million dollar ransoms to high-end threat actors.
+Then, these attackers see more potential for ill-gotten gains.
+The rising costs of ransomware come from this cycle.

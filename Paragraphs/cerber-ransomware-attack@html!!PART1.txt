@@ -1,0 +1,5 @@
+Ransomware is a common method of cyber extortion for financial gain that typically involves users being unable to interact with their files, applications or systems until a ransom is paid.
+Accessibility of cryptocurrency such as Bitcoin has directly contributed to this ransomware model.
+Based on data from FireEye Dynamic Threat Intelligence (DTI), ransomware activities have been rising fairly steadily since mid-2015.
+On June 10, 2016, FireEye’s HX detected a Cerber ransomware campaign involving the distribution of emails with a malicious Microsoft Word document attached.
+If a recipient were to open the document a malicious macro would contact an attacker-controlled website to download and install the Cerber family of ransomware.

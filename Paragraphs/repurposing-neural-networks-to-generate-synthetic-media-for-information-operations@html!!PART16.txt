@@ -1,0 +1,4 @@
+
+For example, one influence campaign we\nuncovered and dubbed \"Distinguished\nImpersonator\" involves falsifying journalist personas and\nreaching out to real-world experts and political figures to\ndisingenuously solicit audio and video interviews that advance an\nIranian political agenda.
+Another commonly used tactic is the\ndevelopment of cross-platform online personas that are used to\ninfiltrate target groups or disseminate fabricated content to specific\naudiences, such as in the \"Ghostwriter\"\ncampaign that has leveraged website compromises and used multiple\nwell-developed personas to disseminate fabricated content\naligned with Russian security interests.
+And other very common\ntechniques include the use of appropriated photos of real individuals\nto backstop false personas, and the repeated use of identical text on\nsocial media to \"astroturf\" political commentary.

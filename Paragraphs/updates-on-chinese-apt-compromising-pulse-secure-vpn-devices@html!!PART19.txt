@@ -1,0 +1,6 @@
+
+Notably, compromised organizations operate in verticals and industries aligned with Beijing’s strategic objectives as outlined in China’s 14th Five Year Plan.
+Many manufacturers also compete with Chinese businesses in the high tech, green energy, and telecommunications sectors.
+Despite this, we have not directly observed the staging or exfiltration of any data by Chinese espionage actors that could be considered a violation of the Obama-Xi agreement.
+Targets of Chinese cyber espionage operations are often selected for their alignment with national strategic goals, and there is a strong correlation between pillar industries listed in policy white papers and targets of Chinese cyber espionage activity.
+China has outlined eight key areas of vital economic interest for development and production which it views as essential to maintaining global competitiveness, under the following categories: energy, healthcare, railway transportation, telecommunications, national defense and stability, advanced manufacturing, network power, and sports and culture.

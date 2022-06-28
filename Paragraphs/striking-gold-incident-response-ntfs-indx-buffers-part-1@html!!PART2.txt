@@ -1,0 +1,5 @@
+
+Part 4:
+The Internal Structures of an INDX Structure Part 1: Extracting an INDX Record An INDX buffer in the NTFS file system tracks the contents of a folder.
+INDX buffers can be resident in the $MFT (Master File Table) as an index root attribute (attribute type 0x90) or non-resident as an index allocation attribute (attribute 0xA0) (non-resident meaning that the content of the attribute is in the data area on the volume.)
+INDX root attributes have a dynamic size in the MFT, so as the contents change, the size of the attributes change.

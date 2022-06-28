@@ -1,0 +1,11 @@
+
+For example, you can configure the output format at the top of the ironstrings.py file.
+The script’s README file explains the options in more detail.
+Conclusion This blog post explains how our new IDAPython script ironstrings works and how you can use it to automatically recover stackstrings in IDA Pro.
+Overcoming anti-analysis techniques is just one of many useful applications of code emulation for malware analysis.
+This post shows that flare-emu provides the ideal base for this by integrating IDA Pro and Unicorn.
+The detailed discussion of flare-emu ’s hook functions will help you to write your own powerful automation scripts.
+Please reach out to us with questions, suggestions and feedback via the flare-emu and flare-ida GitHub issue trackers.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

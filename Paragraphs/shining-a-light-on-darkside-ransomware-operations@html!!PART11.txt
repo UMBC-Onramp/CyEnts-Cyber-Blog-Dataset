@@ -1,0 +1,4 @@
+
+We have some evidence that suggests UNC2628 has partnered with other RaaS including SODINOKIBI (REvil) and NETWALKER.
+In multiple cases we have observed suspicious authentication attempts against corporate VPN infrastructure immediately prior to the start of interactive intrusion operations.
+The authentication patterns were consistent with a password spraying attack, though available forensic evidence was insufficient to definitively attribute this precursor activity to UNC2628.

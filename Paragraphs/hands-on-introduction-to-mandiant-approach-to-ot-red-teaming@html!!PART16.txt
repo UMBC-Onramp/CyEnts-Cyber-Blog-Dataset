@@ -1,0 +1,5 @@
+
+We highlight that all the tools used for this intrusion are known and publicly available.
+An attacker with access to Big Steam Works could have used these methods as they represent low-hanging fruit and can often be prevented with simple security mitigations.
+Phase 2 – Custom Attack Modeling For roughly a week, Mandiant gathered additional information from client documentation and research on industrial steaming boilers.
+We then mirrored the process an attacker would follow to design a destructive attack on the target process given the results achieved during phase 1.

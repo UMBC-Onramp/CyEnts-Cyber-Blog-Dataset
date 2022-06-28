@@ -1,0 +1,13 @@
+
+Standalone binaries for Windows, Mac, and Linux are available on the capa Releases page .
+To install capa from PyPi use the command pip install flare-capa .
+The source code is available at our capa GitHub page .
+The project page on GitHub contains detailed documentation, including thorough installation instructions and a walkthrough of capa explorer .
+Please use GitHub to ask questions, discuss ideas, and submit issues.
+We highly encourage you to contribute to capa’s rule corpus.
+The improved IDA Pro plugin makes it easier than ever before.
+If you have any issues or ideas related to rules, please let us know on the GitHub repository .
+Remember, when you share a rule with the community, you scale your impact across hundreds of reverse engineers in dozens of organizations.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

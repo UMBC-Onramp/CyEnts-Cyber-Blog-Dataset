@@ -1,0 +1,8 @@
+Thanks to Val Saengphaibul who helped contribute to this blog.
+FortiGuard Labs Research Affected Platforms: Windows Impacted Users: Windows users Impact:
+Compromised machines are under the control of the threat actor Severity Level: Medium Since the dawn of phishing, fraudulent invoicing and purchasing schemes have been one of the most common lures.
+The usual modus operandi involves appealing to the recipient’s desire to avoid incurring a debt, especially where a business may be involved.
+FortiGuard Labs recently came across an interesting phishing e-mail masquerading as a purchase order addressed to a Ukrainian manufacturing organization that deals with raw materials and chemicals.
+The e-mail contained a PowerPoint attachment that is in reality a sophisticated, multi-stage effort to deploy the Agent Tesla RAT (Remote Access Trojan).
+What makes this campaign unique is the usage of PPAM, which is a file format that is not very common.
+A PPAM is a Microsoft PowerPoint add-in that gives developers extra functionality, such as extra commands, custom macros, and new tools.

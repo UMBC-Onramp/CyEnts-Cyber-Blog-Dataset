@@ -1,0 +1,7 @@
+
+StringSifter is designed to be seamlessly plugged into a user’s existing malware analysis stack.
+Once its GitHub repository is cloned and installed locally, it can be conveniently invoked from the command line with its default arguments according to: strings <sample_of_interest
+> | rank_strings
+We are also providing Docker command line tools for additional portability and usability.
+For a more detailed overview of how to use StringSifter, including how to specify optional arguments for customizable functionality, please view its README file on GitHub .
+We have received great initial internal feedback about StringSifter from FireEye’s reverse engineers, SOC analysts, red teamers, and incident responders.

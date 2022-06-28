@@ -1,0 +1,6 @@
+
+This has an additional advantage for cybercriminals as this also allows for the origination IP address to be hidden, meaning many websites (good and bad) often share the same IP address.
+Not only does this make attribution difficult, it gives a bad actor another layer of anonymity.
+How do People Come Across these Sites?
+People usually find these sites via simple keyword searches in search engines.
+They simply type in the specific product they are looking for and either the product shows up in the shopping tab or is promoted via keyword placement.

@@ -1,0 +1,6 @@
+As vehicles become both increasingly complex and better connected to the Internet, their newfound versatility may be manipulated for malicious purposes.
+Three of the most concerning potential threats looking ahead to the next few years are those posed by manipulating vehicle operation , ransomware and using vehicular systems as command and control (C2) infrastructure for illicit cyber activity.
+Car Hacking?
+Vehicles have come a long way in terms of the high-tech features and connectivity that come standard in most new models.
+Modern cars are controlled almost entirely by software, and many drivers don’t realize the most complex digital device they own may be in their driveway .
+Of the growing number of devices in the “Internet of Things” (IoT), vehicles are among the most significant additions to the global Internet.

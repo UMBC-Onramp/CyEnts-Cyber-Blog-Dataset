@@ -1,0 +1,51 @@
+Researchers have discovered a critical vulnerability CVE-2022-22965 , in Spring, an open source framework for the Java platform.
+
+Unfortunately, details about the vulnerability were leaked to the public before the official announcement was published and the relevant patches were released.
+
+The vulnerability immediately attracted attention of information security specialists, as it potentially poses a serious threat to many web applications.
+
+In resemblance to the overhyped Log4Shell , the new vulnerability was named Spring4Shell.
+
+The creators of the VMware Spring framework have already released patches to fix vulnerable applications, so we recommend that all companies using Spring Framework versions 5.3 and 5.2 immediately upgrade to versions 5.3.18 or 5.2.20.
+
+What is Spring4Shell
+
+and why this vulnerability is so dangerous?
+
+The vulnerability belongs to the RCE class, that is, it allows an attacker to remotely execute malicious code.
+
+At the moment, according to the CVSS v3.0 calculator , its severity is 9.8 out of 10.
+
+The vulnerability affects Spring MVC and Spring WebFlux applications running under Java Development Kit version 9 or later.
+
+Researchers reported the discovered vulnerability to VMware on Tuesday night, but already on Wednesday proof of concept for the vulnerability was published on GitHub.
+
+The PoC was quickly removed, but not until it was noticed by security experts (some of whom confirmed the danger of the vulnerability).
+
+And it’s very unlikely that such a potent exploit has gone unnoticed by cybercriminals.
+
+The Spring framework is quite popular among Java developers, which means that potentially many applications could be vulnerable.
+
+According to a post by Bleeping Computer , Java applications vulnerable to Spring4Shell could become a cause of compromise for a huge number of servers.
+
+Moreover, according to the same post, the vulnerability is already being actively exploited in the wild.
+
+Conditions for exploiting a Spring4Shell vulnerability The only Spring4Shell exploitation method known at the time of publication requires a specific confluence of circumstances.
+
+For the exploit to be successful, the following components should be utilized on the attacked side: Java Development Kit version 9 or later; Apache Tomcat as a servlet container; WAR (Web Application Resource) file format instead of default JAR; Dependencies on spring-webmvc or spring-webflux; Spring framework versions 5.3.0 to 5.3.17, 5.2.0 to 5.2.19, or older.
+
+However, it’s quite possible that there are more yet unknown options of exploitations and the very same vulnerability can be exploited in some other way.
+
+How to protect yourself from Spring4Shell
+
+The main advice for anyone who uses the Spring framework is to upgrade to secure versions 5.3.18 or 5.2.20.
+
+The Apache Software Foundation has also released patched versions of Apache Tomcat 10.0.20, 9.0.62, and 8.5.78, in which the attack vector is closed on the Tomcat side.
+
+The Spring developers have also released patched versions of the Spring Boot 2.5.12 and 2.6.6 extensions that depend on the patched version of Spring Framework 5.3.18.
+
+If for some reason you cannot update the above software, then you should use one of the workarounds published on the official Spring website.
+
+
+
+

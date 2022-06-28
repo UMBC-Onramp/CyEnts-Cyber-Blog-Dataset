@@ -1,0 +1,4 @@
+
+The compile date of the payload was 2014-02-11, and the last modified date of the exploit code was also 2014-02-11.
+This suggests that this instantiation of the exploit was very recent and was deployed for this specific strategic Web compromise of the Veterans of Foreign Wars website.
+A possible objective in the SnowMan attack is targeting military service members to steal military intelligence.

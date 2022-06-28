@@ -1,0 +1,3 @@
+
+The absence of this typo in the SNAKEHOSE and MegaCortex samples could indicate that one of these malware authors identified and corrected the error when initially copying the OT-processes from the LockerGoga list, or that the LockerGoga author failed to properly incorporate the processes from some theoretical common source of origin, such as a dark web post.
+Figure 2: ‘proficyclient.exe’ spelling in kill lists deployed with LockerGoga (left) and SNAKEHOSE (right)

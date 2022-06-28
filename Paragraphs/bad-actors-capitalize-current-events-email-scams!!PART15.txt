@@ -1,0 +1,4 @@
+
+This is because of the one major weakness security software cannot address: the human element.
+Training programs constantly remind and teach users how to spot malicious email/phishing/spearphishing scams for a good reason.
+Out of thousands of recipients, it only takes a few to respond to make it all worthwhile to an attacker.

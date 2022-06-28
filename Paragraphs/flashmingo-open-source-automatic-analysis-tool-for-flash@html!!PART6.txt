@@ -1,0 +1,9 @@
+
+Figure 1 shows the relationship between FLASHMINGO, its plug-ins, and the SWFObject .
+Figure 1: High level software structure
+Several useful plug-ins covering a wide range of common analysis are already included with FLASHMINGO, including: Find suspicious method names.
+Many samples contain method names used during development, like “run_shell” or “find_virtualprotect”.
+This plug-in flags samples with methods containing suspicious substrings.
+Find suspicious constants.
+The presence of certain constant values in the bytecode may point to malicious or suspicious code.
+For example, code containing the constant value 0x5A4D may be shellcode searching for an MZ header.

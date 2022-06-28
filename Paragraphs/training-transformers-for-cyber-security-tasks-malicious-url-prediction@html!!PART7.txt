@@ -1,0 +1,3 @@
+
+Similarly, we can use the embedding produced after the classification token to predict other properties of the input sequences, such as their likelihood of maliciousness.
+Figure 1: High-level overview of the URL Transformer architecture Loss Functions and Training Regimes With the model architecture in hand, we now turn to the question of how we train the model to most effectively detect malicious URLs.

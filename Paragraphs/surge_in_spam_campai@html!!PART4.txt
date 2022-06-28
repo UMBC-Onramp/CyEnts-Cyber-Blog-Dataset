@@ -1,0 +1,7 @@
+
+At the time of discovery, most of the samples that we see are being detected by only one vendor, according to VirusTotal.
+Figure 8.
+Obfuscated JavaScript code
+Conclusions The volume of Locky ransomware downloaders observed is increasing and it may potentially replace the Dridex downloader as the top spammer.
+One of the latest victims of Locky is Methodist Hospital [1], where the victim was reportedly forced to pay a ransom to retrieve their encrypted data.
+This suggests that the cybercriminals are earning more from ransomware and this drives their aggressive campaigns.

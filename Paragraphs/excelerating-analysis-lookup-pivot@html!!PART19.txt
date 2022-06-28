@@ -1,0 +1,5 @@
+
+For this example, we also formatted all cells with timestamp values to reflect the format FireEye Mandiant typically uses during analysis by selecting all the appropriate cells, right-clicking and choosing “Format Cells”, and using a “Custom” format of “YYYY-MM-DD HH:MM:SS”.
+Figure 14:
+PivotTable with suspicious locations and timeframe IP Address Anomalies Geolocation anomalies may not always be valuable.
+However, using a similar configuration as the previous example, we can identify suspicious source IP addresses.

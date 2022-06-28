@@ -1,0 +1,7 @@
+
+The mutex name is “MoneyP#666”.
+The resources crypted with the ransom note and the bat file are called “SIXSIX1” for the batch file and the another one for the ransom note “SIXSIX”.
+The name of the batch file is “clearsystems-10-1.bat”.
+The key for the XOR operation to decrypt the ransom note and the batch file is: “Clopfdwsjkjr23LKhuifdhwui73826ygGKUJFHGdwsieflkdsj324765tZPKQWLjwNVBFHewiuhryui32JKG” The batch file is different to the other versions, in this case not changing the boot config of the target victim.
+FIGURE 16.
+Another version of the batch file The email addresses to contact are: icarsole@protonmail.com and unlock@eaqltech.su .

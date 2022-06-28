@@ -1,0 +1,6 @@
+
+The Avaddon ransomware group halted its operations in June.
+It had begun its operations in 2019.
+The Ragnarok ransomware gang, in operation since 2019, shut itself down in August and released its decryption key.
+Darkside first appeared in 2020 and closed in May after compromising a major US pipeline company.
+FonixCrypter ransomware gave up its criminal life in January and released a decryption tool and its master decryption key.

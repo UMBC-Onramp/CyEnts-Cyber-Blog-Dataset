@@ -1,0 +1,4 @@
+
+Such use entails substantial customization and adds to users’ risks of finding and installing malicious extensions.
+The relaxed, seemingly safe environment actually represents further threat, increasing the success rate of social engineering techniques — bait goes down easier in a cozy chat with people you believe are your friends.
+We recommend following the same digital hygiene rules on Discord as you do elsewhere on the Web: Don’t click suspicious links or download obscure files; scrutinize offers that sound too good to be true; and refrain from sharing any personal or financial information.

@@ -1,0 +1,4 @@
+Following recent scams involving fake cryptocurrency exchanges and fake news sites , we recently uncovered a third campaign, one using fake DEX exchanges and aimed at cryptocurrency enthusiasts on the Discord messaging app.
+Here’s how the new scheme works.
+A word about cryptocurrency exchanges First, what’s a DEX?
+Two types of cryptocurrency exchanges exist: centralized (CEX) and decentralized (DEX).

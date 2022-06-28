@@ -1,0 +1,159 @@
+By McAfee Labs on Dec 04, 2019 With 2019’s headlines of ransomware, malware, and RDP attacks almost behind us, we shift our focus to the cybercrime threats ahead.
+
+Cybercriminals are increasing the complexity and volume of their attacks and campaigns, always looking for ways to stay one step ahead of cybersecurity practices – and more often using the world’s evolving technology against us.
+
+Continuing advancements in artificial intelligence and machine learning have led to invaluable technological gains, but threat actors are also learning to leverage AI and ML in increasingly sinister ways.
+
+AI technology has extended the capabilities of producing convincing deepfake video to a less-skilled class of threat actor attempting to manipulate individual and public opinion.
+
+AI-driven facial recognition, a growing security asset, is also being used to produce deepfake media capable of fooling humans and machines.
+
+Our researchers also foresee more threat actors targeting corporate networks to exfiltrate corporate information in two-stage ransomware campaigns.
+
+With more and more enterprises adopting cloud services to accelerate their business and promote collaboration, the need for cloud security is greater than ever.
+
+As a result, the number of organizations prioritizing the adoption container technologies will likely continue to increase in 2020.
+
+Which products will they rely on to help reduce container-related risk and accelerate DevSecOps?
+
+The increased adoption of robotic process automation and the growing importance to secure system accounts used for automation raises security concerns tied to Application Programming Interface (API) and their wealth of personal data.
+
+The threatscape of 2020 and beyond promises to be interesting for the cybersecurity community.
+
+–Raj Samani, Chief Scientist and McAfee Fellow, Advanced Threat Research Twitter @Raj_Samani
+
+Predictions Broader Deepfakes Capabilities for Less-Skilled Threat Actors Adversaries to Generate Deepfakes to Bypass Facial Recognition Ransomware Attacks to Morph into Two-Stage Extortion Campaigns Application Programming Interfaces (API) Will be Exposed as The Weakest Link Leading to Cloud-Native Threats DevSecOps Will Rise to Prominence as Growth in Containerized Workloads Causes Security Controls to ‘Shift Left’ Broader Deepfakes Capabilities for Less-skilled Threat Actors By Steve Grobman
+
+The ability to create manipulated content is not new.
+
+Manipulated images were used as far back as World War II in campaigns designed to make people believe things that weren’t true.
+
+What’s changed with the advances in artificial intelligence is you can now build a very convincing deepfake without being an expert in technology.
+
+There are websites set up where you can upload a video and receive in return, a deepfake video.
+
+There are very compelling capabilities in the public domain that can deliver both deepfake audio and video abilities to hundreds of thousands of potential threats actors with the skills to create persuasive phony content.
+
+Deepfake video or text can be weaponized to enhance information warfare.
+
+Freely available video of public comments can be used to train a machine-learning model that can develop a deepfake video depicting one person’s words coming out of another’s mouth.
+
+Attackers can now create automated, targeted content to increase the probability that an individual or groups fall for a campaign.
+
+In this way, AI and machine learning can be combined to create massive chaos.
+
+In general, adversaries are going to use the best technology to accomplish their goals, so if we think about nation-state actors attempting to manipulate an election, using deepfake video to manipulate an audience makes a lot of sense.
+
+Adversaries will try to create wedges and divides in society, or if a cybercriminal can have a CEO make what appears to be a compelling statement that a company missed earnings or that there’s a fatal flaw in a product that’s going to require a massive recall.
+
+Such a video can be distributed to manipulate a stock price or enable other financial crimes We predict the ability of an untrained class to create deepfakes will enhance an increase in quantity of misinformation.
+
+Adversaries to Generate Deepfakes to Bypass Facial Recognition By Steve Povolny Computer-based facial recognition, in its earliest forms, has been around since the mid-1960s.
+
+While dramatic changes have since taken place, the underlying concept remains: it provides a means for a computer to identify or verify a face.
+
+There are many use cases for the technology, most related to authentication and to answer a single question: is this person who they claim to be?
+
+As time moves onwards, the pace of technology has brought increased processing power, memory and storage to facial recognition technology.
+
+New products have leveraged facial recognition in innovative ways to simplify everyday life, from unlocking smart phones, to passport ID verification in airports, and even as a law enforcement aid to identify criminals on the street.
+
+One of the most prevalent enhancements to facial recognition is the advancement of artificial intelligence (AI).
+
+A recent manifestation of this is deepfakes, an AI-driven technique producing extremely realistic text, images, and videos that are difficult for humans to discern real from fake.
+
+Primarily used for the spread of misinformation, the technology leverages capabilities.
+
+Generative Adversarial Networks (GANs), a recent analytic technology, that on the downside, can create fake but incredibly realistic images, text, and videos.
+
+Enhanced computers can rapidly process numerous biometrics of a face, and mathematically build or classify human features, among many other applications.
+
+While the technical benefits are impressive, underlying flaws inherent in all types of models represent a rapidly growing threat, which cyber criminals will look to exploit.
+
+As technologies are adopted over the coming years, a very viable threat vector will emerge, and we predict adversaries will begin to generate deepfakes to bypass facial recognition.
+
+It will be critical for businesses to understand the security risks presented by facial recognition and other biometric systems and invest in educating themselves of the risks as well as hardening critical systems.
+
+Ransomware Attacks to Morph into Two-Stage Extortion Campaigns By John Fokker In McAfee’s 2019 threat predictions report , we predicted cyber criminals would partner more closely to boost threats; over the course of the year, we observed exactly that.
+
+Ransomware groups used pre-infected machines from other malware campaigns , or used remote desktop protocol (RDP) as an initial launch point for their campaign.
+
+These types of attacks required collaboration between groups.
+
+This partnership drove efficient, targeted attacks which increased profitability and caused more economic damage.
+
+In fact,  Europol’s Internet Organised Crime Threat Assessment (IOCTA),  named ransomware the top threat that companies, consumers, and the public sector faced in 2019.
+
+Based on what McAfee Advanced Threat Research (ATR) is seeing in the underground, we expect criminals to exploit their extortion victims even more moving forward.
+
+The rise of targeted ransomware created a growing demand for compromised corporate networks.
+
+This demand is met by criminals who specialize in penetrating corporate networks and sell complete network access in one-go.
+
+Here are examples of underground ads offering access to businesses: Figure 1 RDP access to a Canadian factory is being offered Figure 2 Access to an Asian Food, Consumer and Industrial company being offered For 2020, we predict the targeted penetration of corporate networks will continue to grow and ultimately give way to two-stage extortion attacks.
+
+In the first stage cybercriminals will deliver a crippling ransomware attack, extorting victims to get their files back.
+
+In the second stage criminals will target the recovering ransomware victims again with an extortion attack, but this time they will threaten to disclose the sensitive data stolen before the ransomware attack.
+
+During our research on Sodinobiki we observed two-stage attacks, with cryptocurrency miners installed before an actual ransomware attack took place.
+
+For 2020, we predict that cybercriminals will increasingly exfiltrate sensitive corporate information prior to a targeted ransomware attack to sell the stolen data online or to extort the victim and increase monetization.
+
+Application Programming Interfaces (API) Will Be Exposed as The Weakest Link Leading to Cloud-Native Threats By Sekhar Sarukkai
+
+A recent study showed that more than three in four organizations treat API security differently than web app security, indicating API security readiness lags behind other aspects of application security.
+
+The study also showed that more than two-thirds of organizations expose APIs to the public to enable partners and external developers to tap into their software platforms and app ecosystems.
+
+APIs are an essential tool in today’s app ecosystem including cloud environments, IoT, microservices, mobile, and Web-based customer-client communications.
+
+Dependence on APIs will further accelerate with a growing ecosystem of cloud applications built as reusable components for back-office automation (such as with Robotic Process Automation) and growth in the ecosystem of applications that leverage APIs of cloud services such as Office 365 and Salesforce.
+
+Threat actors are following the growing number of organizations using API-enabled apps because APIs continue to be an easy – and vulnerable – means to access a treasure trove of sensitive data.
+
+Despite the fallout of large-scale breaches and ongoing threats, APIs often still reside outside of the application security infrastructure and are ignored by security processes and teams.
+
+Vulnerabilities will continue to include broken authorization and authentication functions, excessive data exposure, and a failure to focus on rate limiting and resource limiting attacks.
+
+Insecure consumption-based APIs without strict rate limits are among the most vulnerable.
+
+Headlines reporting API-based breaches will continue into 2020, affecting high-profile apps in social media, peer-to-peer, messaging, financial processes, and others, adding to the hundreds of millions of transactions and user profiles that have been scraped in the past two years.
+
+The increasing need and hurried pace of organizations adopting APIs for their applications in 2020 will expose API security as the weakest link leading to cloud-native threats, putting user privacy and data at risk until security strategies mature.
+
+Organizations seeking improvement in their API security strategy should pursue a more complete understanding of their Cloud Service APIs through comprehensive discovery across SaaS, PaaS and IaaS environments, implement policy-based authorization, and explore User and Entity Behavior Analytics (UEBA) technology to detect anomalous access patterns.
+
+DevSecOps Will Rise to Prominence as Growth in Containerized Workloads Causes Security Controls to ‘Shift Left’
+
+By Sekhar Sarukkai DevOps teams can continuously roll out micro-services and interacting, reusable components as applications.
+
+As a result, the number of organizations prioritizing the adoption of container technologies will continue to increase in 2020.
+
+Gartner predicts that “by 2022, more than 75 percent of global organizations will be running containerized applications in production – a significant increase from fewer than 30 percent today.”
+
+1 Container technologies will help organizations modernize legacy applications and create new cloud-native applications that are scalable and agile.
+
+Containerized applications are built by assembling reusable components on software defined Infrastructure-as-Code (IaC) which is deployed into Cloud environments.
+
+Continuous Integration / Continuous Deployment (CI/CD) tools automate the build and deploy process of these applications and IaC, creating a challenge for pre-emptive and continuous detection of application vulnerabilities and IaC configuration errors.
+
+To adjust to the rise in containerized applications operating in a CI/CD model, security teams will need to conduct their risk assessment at the time of code build, before deployment.
+
+This effectively shifts security “left” in the deployment lifecycle and integrates security into the DevOps process, a model frequently referred to as DevSecOps.
+
+Additionally, threats to containerized applications are introduced nor only by IaC misconfigurations or application vulnerabilities, but also abused network privileges which allow lateral movement in an attack.
+
+To address these run-time threats, organizations are increasingly turning to cloud-native security tools developed specifically for container environments.
+
+Cloud Access Security Brokers (CASB) are used to conduct configuration and vulnerability scanning, while Cloud Workload Protection Platforms (CWPP) work as traffic enforcers for network micro-segmentation based on the identity of the application, regardless of its IP.
+
+This approach to application identity-based enforcement will push organizations away from the five-tuple approach to network security which is increasingly irrelevant in the context of ephemeral container deployments.
+
+When CASB and CWPP solutions integrate with CI/CD tools, security teams can meet the speed of DevOps, shifting security “left” and creating a DevSecOps practice within their organization.
+
+  Governance, compliance, and overall security of cloud environments will improve as organizations accelerate their transition to DevSecOps with these cloud-native security tools.
+
+1 Gartner Best Practices for Running Containers and Kubernetes in Production, Arun Chandrasekaran, 25 February 2019
+
+

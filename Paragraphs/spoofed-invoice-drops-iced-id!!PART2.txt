@@ -1,0 +1,6 @@
+
+FortiGuard Labs recently encountered such a scenario, where a fuel company in Kyiv, Ukraine received a spearphishing e-mail that contained an attached invoice—seemingly from another fuel provider—that was spoofed.
+The attachment is a zip file that contains the IcedID Trojan.
+IcedID has been observed as far back as 2017.
+Its primary function is to steal banking credentials and personal information.
+It is also capable of deploying additional malware from the same group or partner organizations.

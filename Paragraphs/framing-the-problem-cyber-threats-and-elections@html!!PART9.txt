@@ -1,0 +1,5 @@
+
+Though this is an often-discussed risk, there is limited evidence of intrusion activity targeting core election infrastructure.
+Of the activity described here, FireEye has observed a full spectrum of campaigns by Russian-nexus actors, from carrying out intrusions into organizations and stealing data, leaking that data through online personas and fronts, as well as targeting of election infrastructure.
+From limited observations, China has for the most part focused solely on cyber espionage operations, as in the case of activity FireEye reported on in the targeting the 2018 Cambodian election .
+From various motivations, FireEye has also witnessed limited evidence of activity from hacktivists and criminal entities in targeting parts of the election ecosystem.

@@ -1,0 +1,6 @@
+
+By preserving registers and flags in this way the malicious logic is able to execute and perform its malicious logic as a passive observer if desired, only effecting the control flow in specific conditions.
+This is employed in two locations, the LDAP and RADIUS authentication routines, DSAuth::LDAPAuthServer::authenticate and DSAuth::RadiusAuthServer::checkUsernamePassword respectively.
+LDAP Auth Bypass In the typical execution of DSAuth::LDAPAuthServer::authenticate the legitimate application constructs the C++ object DSAuth::LDAPAuthServer::ldap then passes it to DSLdapServer::bind with the username and password for login.
+This bind may fail or succeed which determines the authentication failure or success of the LDAP protocol.
+The malicious logic inserted into the application redirects execution before DSLdapServer::bind just after the ldap object is constructed.

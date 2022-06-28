@@ -1,0 +1,7 @@
+
+Figure 9:
+Python construct library structure Figure 10: Structure parsing and XOR decryption The resultant ReZer0 loader is then executed in memory and subsequently decrypts and executes an embedded payload, which, in this case, is an instance of the Agent Tesla RAT.
+The ReZer0 loader operates in the same manner as described by 360 Total Security and Fortinet .
+As mentioned in those blog posts, the ReZer0 loader exhibits anti-analysis features such as detection of virtual machines or sandboxes and can bypass anti-virus software.
+Due to these anti-analysis features, the results from dynamic analysis, including sandboxes, may be incomplete or wildly inaccurate.
+By using automated component and configuration extraction (ACCE) to statically extract the configuration data, the researchers bypassed all dynamic anti-analysis features that would otherwise prevent accurate and reliable analysis.

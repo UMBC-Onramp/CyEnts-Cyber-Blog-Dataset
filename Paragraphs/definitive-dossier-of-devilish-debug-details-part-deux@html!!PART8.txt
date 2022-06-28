@@ -1,0 +1,6 @@
+
+Normalization As with any dataset, we had to undertake some steps to normalize the paths.
+For example, the occurrence of individual usernames, while perhaps interesting from an intelligence perspective, would be represented as distinct entities when in fact they have the same semantic meaning.
+Thus, we had to detect and replace usernames with <username> to normalize this representation.
+Other folder idiosyncrasies such as version numbers or randomly generated directories could similarly be normalized into <version> or <random>.
+A typical normalized path might therefore go from this: C:\\Users\\jsmith\\Documents\\Visual Studio 2013\\Projects\\mkzyu91952\\mkzyu91952\\obj\\x86\\Debug\\mkzyu91952.pdb To this: c:\\users\\<username>\\documents\\visual studio 2013\\projects\\<random>\\<random>\\obj\\x86\\debug\\mkzyu91952.pdb You may notice that the PDB filename itself was not normalized.

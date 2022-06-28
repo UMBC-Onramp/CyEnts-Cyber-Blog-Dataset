@@ -1,0 +1,9 @@
+
+In any event, the first issues to be eliminated are often the easiest to fix.
+As the program’s effectiveness improves, resources are available to address harder problems.
+Brad Arkin spoke about a strategy shift in the fall of 2014.
+We expected that shift to take time, and that is what we see in the data: In 2016, the number of newly discovered issues began to decline.
+However, the steep increase in vulnerabilities in 2015 and 2016 requires some additional examination.
+When security researchers focus on a code base, they generally start by finding the easiest-to-discover issues.
+As these are found and fixed, researchers probe deeper, shifting to techniques that increase in difficulty.
+Due to this ever-increasing difficulty, we often see a decrease in discoveries; it takes more time and effort to uncover tricky issues.

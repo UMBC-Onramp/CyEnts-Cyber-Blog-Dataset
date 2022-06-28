@@ -1,0 +1,12 @@
+
+These developments demonstrate the continued upward trend of threat actors conducting cryptocurrency mining operations, which we expect to see a continued focus on throughout 2018.
+Notably, malicious cryptocurrency mining may be seen as preferable due to the perception that it does not attract as much attention from law enforcement as compared to other forms of fraud or theft.
+Further, victims may not realize their computer is infected beyond a slowdown in system performance.
+Due to its inherent privacy-focused features and CPU-mining profitability, Monero has become one of the most attractive cryptocurrency options for cyber criminals.
+We believe that it will continue to be threat actors' primary cryptocurrency of choice, so long as the Monero blockchain maintains privacy-focused standards and is ASIC-resistant.
+If in the future the Monero protocol ever downgrades its security and privacy-focused features, then we assess with high confidence that threat actors will move to use another privacy-focused coin as an alternative.
+Because of the anonymity associated with the Monero cryptocurrency and electronic wallets, as well as the availability of numerous cryptocurrency exchanges and tumblers, attribution of malicious cryptocurrency mining is very challenging for authorities, and malicious actors behind such operations typically remain unidentified.
+Threat actors will undoubtedly continue to demonstrate high interest in malicious cryptomining so long as it remains profitable and relatively low risk.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

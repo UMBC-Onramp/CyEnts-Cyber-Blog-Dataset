@@ -1,0 +1,4 @@
+
+According to an April 2020 post on a black-market website, an “Oracle Solaris SSHD Remote Root Exploit” was available for approximately $3,000 USD, which may be identifiable with EVILSUN.
+Additionally, we confirmed a Solaris server exposed to the internet had critical vulnerabilities, which included the possibility of remote exploitation without authentication.
+Establish Foothold and Maintain Persistence The threat actor used a Solaris Pluggable Authentication Module backdoor we refer to as SLAPSTICK to establish a foothold on a Solaris 9 server.

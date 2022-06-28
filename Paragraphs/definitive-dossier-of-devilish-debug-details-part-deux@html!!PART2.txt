@@ -1,0 +1,7 @@
+
+Rarely do we encounter static malware features with such an interesting tie to the human behind the keyboard, rather than the functionality of the file.
+Second, file paths are an incredibly complex artifact with many different possible encodings.
+We had personally been dying to find an excuse to spend more time figuring out how to parse and encode paths in a more useful way.
+This presented an opportunity to dive into this space and test different approaches to representing file paths in various models.
+The objectives of our project were: Build a large data set of PDB paths and apply some statistical methods to find potentially new signature terms and logic.
+Investigate whether applying machine learning classification approaches to this problem could improve our detection above writing hand-crafted signatures.

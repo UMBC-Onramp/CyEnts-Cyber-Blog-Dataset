@@ -1,0 +1,5 @@
+
+Obfuscation gives the attackers an edge, and makes it harder for security vendors to protect their customers.
+By using instant messaging applications, attackers get user data in real time and victims have little to respond once their personal information is compromised.
+Indicators of Compromise (IOC) FireEye Email Security utilizing FAUDE (FireEye Advanced URL Detection Engine) protects customers from these types of phishing threats.
+Unlike traditional anti-phishing techniques dependent on static inspection of phishing URL content, FAUDE uses multiple artificial intelligence (AI) and machine learning (ML) engines to more effectively thwart these attacks.

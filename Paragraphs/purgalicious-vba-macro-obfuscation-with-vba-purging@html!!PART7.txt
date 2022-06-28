@@ -1,0 +1,9 @@
+
+OfficePurge supports Microsoft Office Word, Excel and\nPublisher documents that follow the CFBF file format.
+In the following\nexamples, we used OfficePurge and a VBA payload from the public\ntoolkit Unicorn to\ntest the effectiveness of VBA purging a Microsoft Office Word document\nthat contained a Base64 encoded PowerShell payload (Figure 3).
+Figure 3:
+Macro payload generated with Unicorn The strings output (Figure 4) for the original Word document shows\nUnicorn’s Base64 encoded PowerShell payload, which is detected by many\nsecurity products.
+On the other hand, the output for the VBA purged\ndocument does not fully show the Base64 encoded payload because the PerformanceCache is removed.
+The CompressedSourceCode still contains the Base64\nencoded payload, but Microsoft’s custom compression algorithm splits\nthe strings, making it harder for static analysis to detect it.
+Figure 4:
+Strings output with a purged\nand non-purged document Both documents were submitted to online sandboxes to test detection\ncapabilities of various products.

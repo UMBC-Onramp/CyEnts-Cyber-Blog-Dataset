@@ -1,0 +1,4 @@
+
+The remaining emails were composed in well-written English and featured signature blocks impersonating the managing director of a legitimate global shipping and logistics/supply chain management company based in Bangladesh.
+While the sender email addresses did not match the signature blocks featured in each of the samples, in all cases the signature blocks themselves imitated authentic companies that may have a legitimate interest in the products or services of the targeted corporation.
+In two instances, emails used the encrypted email service Tutanota (ex. imports[@]tutanota[.]com[.]de.).

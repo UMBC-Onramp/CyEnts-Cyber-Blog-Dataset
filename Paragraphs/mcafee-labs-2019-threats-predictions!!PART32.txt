@@ -1,0 +1,7 @@
+
+Soon we may hear infected IoT devices themselves exclaiming: “Assistant!
+Open the back door!”
+Cybercriminals to Increase Attacks on Identity Platforms and Edge Devices Under Siege Large-scale data breaches of identity platforms—which offer centralized secure authentication and authorization of users, devices, and services across IT environments—have been well documented in 2018.
+Meanwhile, the captured data is being reused to cause further misery for its victims.
+In 2019, we expect to see large-scale social media platforms implement additional measures to protect customer information.
+However, as the platforms grow in numbers, we predict criminals will further focus their resources on such attractive, data-rich environments.

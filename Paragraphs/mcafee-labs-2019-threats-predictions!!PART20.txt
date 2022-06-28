@@ -1,0 +1,7 @@
+
+Even if you stop the attack in the middle of the chain, discovering the initial and final stages is as important for protecting against future attempts.
+Be curious, be creative, connect your defenses Tackling sophisticated attacks based on synergic threats requires questioning every threat.
+What if this ransomware hit was part of something bigger?
+What if this phishing email pivots to a technique that employees are not trained for?
+What if we are missing the real goal of the attack?
+Bearing these questions in mind will not only help capture the big picture, but also get the most of security solutions.

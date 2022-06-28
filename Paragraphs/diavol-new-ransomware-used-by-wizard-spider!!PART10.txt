@@ -1,0 +1,7 @@
+
+Inspecting the network traffic to 173.232.146.118 showed that the HTTP Cookie header contains the string “ diavol_session ”.
+·
+ Stop services and processes: To maximize its effect on the target machine and to encrypt as many files as possible, the ransomware terminates running processes that can lock access to valuable files, such as databases, office applications, financial\\accounting software, web servers, and virtual machines.
+SERVPROC terminates services using the Service Control Manager (SCM) API.
+This API requires administrator permissions, which suggests the attackers are aware of this requirement and have taken appropriate steps beforehand.
+The sample attempts to stop the following services: sqlservr.exe , sqlmangr.exe , RAgui.exe , QBCFMonitorService.exe , supervise.exe , fdhost.exe , Culture.exe , RTVscan.exe , Defwatch.exe , wxServerView.exe , sqlbrowser.exe , winword.exe , GDscan.exe , QBW32.exe , QBDBMgr.exe , qbupdate.exe,axlbridge.exe , 360se.exe , 360doctor.exe , QBIDPService.exe , wxServer.exe , httpd.exe , fdlauncher.exe , MsDtSrvr.exe , tomcat6.exe , java.exe , wdswfsafe.exe .

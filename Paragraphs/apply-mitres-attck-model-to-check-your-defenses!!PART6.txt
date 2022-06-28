@@ -1,0 +1,7 @@
+
+Would your environment create enough visibility to detect and deal with these techniques?
+Statistics When we looked at the first quarter, we noticed that the three techniques were the most popular in the category of Privilege Escalation: Exploitation of vulnerability Process injection Valid accounts To determine your coverage and detection capacity, you should ask if the exploits used completely new vulnerabilities (no patches available) or if they had existed for a while.
+Would your environment have the right patches installed or are you missing them and have to take action?
+When we looked at the categories of Exfiltration and Command and Control, most campaigns exfiltrated their data over a control server channel using a common port.
+That translates to either TCP port 80 (HTTP) or TCP port 443 (HTTPS).
+We all use these ports from inside the network to communicate to the internet.

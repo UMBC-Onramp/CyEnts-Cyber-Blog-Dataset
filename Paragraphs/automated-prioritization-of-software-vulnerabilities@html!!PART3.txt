@@ -1,0 +1,5 @@
+
+The predictions from our model are then used to score vulnerabilities faster than traditional approaches, like CVSS, while providing a different method for measuring severity, which better reflects real-world impact.
+Our work uses nowcasting to address this important gap of prioritizing early-stage CVEs to know if they are urgent or not.
+Nowcasting is the economic discipline of determining a trend or a trend reversal objectively in real time.
+In this case, we are recognizing the value of linking social media responses to the release of a CVE after it is released, but before it is scored by CVSS.

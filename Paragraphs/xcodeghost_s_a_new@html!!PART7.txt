@@ -1,0 +1,5 @@
+
+Figure 7:
+Construct the CnC domain character by character The FireEye iOS dynamic analysis platform has successfully detected an app  (“自由邦”)  [2] infected by XcodeGhost S and this app has been taken down from App Store in cooperation with Apple.
+It is a shopping app for travellers and is available on both U.S. and CN App Stores.
+As shown in Figure 8, the infected app’s version is 2.6.6, updated on Sep. 15.

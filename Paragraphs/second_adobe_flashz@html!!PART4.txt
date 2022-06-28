@@ -1,0 +1,6 @@
+
+The final component is delivering a malicious SWF file, which we confirmed exploits CVE-2015-5122 on Adobe Version 18.0.0.203 for Windows in Figure 3.
+Figure 3:
+Malicious SWF download SOGU Malware, Possible New Variant After successful exploitation, the SWF file dropped a SOGU variant—a backdoor widely used by Chinese threat groups and also known as “Kaba”—in a temporary directory under “AppData\\Local\\”.
+The directory contains the properties and configuration in Figure 4.
+Filename: Rdws.exe Size: 413696 bytes MD5: 5a22e5aee4da2fe363b77f1351265a00 Compile Time: 2015-07-13 08:11:01 SHA256: df5f1b802d553cddd3b99d1901a87d0d1f42431b366cfb0ed25f465285e38d27 SSDeep: 6144:

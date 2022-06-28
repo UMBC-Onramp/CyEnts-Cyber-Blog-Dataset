@@ -1,0 +1,9 @@
+
+GitHub:
+Using mainly capabilities provided by the Discord API, the author was able to execute arbitrary code on a user’s computer.
+It might look something like this: A malicious chatbot launches an arbitrary program on a user’s computer after receiving a command through a Discord chat.
+Source In one attack scenario, malicious code relies on a locally installed Discord client to launch automatically on startup.
+Installing a bot from an untrusted source can lead to such an infection.
+The researchers also looked at another Discord misuse scenario that doesn’t rely on the user having installed a Discord client.
+In this case, the malware uses the chat service to communicate.
+Thanks to the public API, uncomplicated registration process, and basic data encryption, a backdoor can easily and conveniently use Discord to send data about the infected system to its operator and, in turn, receive commands to execute code, upload new malicious modules, and more.

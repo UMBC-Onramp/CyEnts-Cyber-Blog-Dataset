@@ -1,0 +1,8 @@
+
+Some email communications have included the recipient’s name or employer name in the subject line and/or email body.
+Despite this uniformity, the associated TTPs have otherwise changed regularly—both between campaigns and across multiple spam runs seen in the same day.
+Notable ways that these campaigns have varied over time include: Early campaigns were delivered via Sendgrid and included in-line links to Sendgrid URLs that would redirect users to attacker-created Google documents.
+In contrast, recent campaigns have been delivered via attacker-controlled or compromised email infrastructure and have commonly contained in-line links to attacker-created Google documents, although they have also used links associated with the Constant Contact service.
+The documents loaded by these in-line links are crafted to appear somewhat relevant to the theme of the email campaign and contain additional links along with instructions directing users to click on them.
+When clicked, these links download malware binaries with file names masquerading as document files.
+Across earlier campaigns these malware binaries were hosted on compromised infrastructure, however, the attackers have shifted to hosting their malware on legitimate web services, including Google Drive, Basecamp, Slack, Trello, Yougile, and JetBrains.

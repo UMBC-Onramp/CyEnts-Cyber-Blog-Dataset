@@ -1,0 +1,12 @@
+
+The code to our knowledge, however, has never been made public.
+Alternatively, this could be a “false flag” operation to suggest that we are seeing the re-emergence of Comment Crew.
+Creating false flags is a common practice.
+What Really Matters It is likely that reactions to this research will focus on debating the identity of the threat actor.
+Although this question is of great interest, answering it will require more than the technical evidence that private industry can provide.
+These limitations are frustrating.
+However, we can focus on the indicators of compromise presented in this report to detect, correct, and protect our systems, regardless of the source of these attacks.
+Perhaps more important is the possible return of a previously dormant threat actor and, further, why should this campaign occur now?
+Regardless of whether this is a false flag operation to suggest the rebirth of Comment Crew, the impact of the attack is unknown.
+However, one thing is certain.
+Threat actors have a wealth of code available to leverage new campaigns, as previous research from the Advanced Threat Research team has revealed.

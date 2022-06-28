@@ -1,0 +1,4 @@
+
+In addition, the malware developers don’t check to see if the API calls are successful.
+KILLPR use CreateToolhelp32Snapshot , Process32First and Process32Next APIs to enumerate the running processes in the system.
+The sample attempts to terminate the following list of processes: DefWatch , ccEvtMgr , ccSetMgr , SavRoam , dbsrv12 , sqlservr , sqlagent , Intuit.

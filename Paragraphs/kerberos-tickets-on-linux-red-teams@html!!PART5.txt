@@ -1,0 +1,4 @@
+
+After the Domain Controller validates the request, a service ticket is issued that will authenticate the user to the CIFS (SMB) service on SQLSERVER.ACMENET.CORP.
+The user receives the service ticket from the Domain Controller and initiates an SMB negotiation with SQLSERVER.ACMENET.CORP.
+During the authentication process, the user provides a Kerberos blob inside an “AP-REQ” structure that includes the service ticket previously obtained.

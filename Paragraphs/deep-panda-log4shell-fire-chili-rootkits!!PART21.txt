@@ -1,0 +1,7 @@
+
+Furthermore, we introduced the previously unknown Fire Chili rootkit and two compromised digital signatures, one of which we also directly linked to Winnti.
+Although both Deep Panda and Winnti are known to use rootkits as part of their toolset, Fire Chili is a novel strain with a unique code base different from the ones previously affiliated with the groups.
+The reason these tools are linked to two different groups is unclear at this time.
+It’s possible that the groups’ developers shared resources, such as stolen certificates and C2 infrastructure, with each other.
+This may explain why the samples were only signed several hours after being compiled.
+Fortinet Solutions FortiEDR detects and blocks these threats out-of-the-box without any prior knowledge or special configuration.

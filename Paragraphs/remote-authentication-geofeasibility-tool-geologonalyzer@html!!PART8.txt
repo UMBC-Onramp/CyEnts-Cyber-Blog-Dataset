@@ -1,0 +1,4 @@
+
+Applicable log sources include, but are not limited to: VPN Email client or web applications Remote desktop environments such as Citrix Internet-facing applications Usage GeoLogonalyzer’s built-in –csv input type accepts CSV formatted input with the following considerations: Input must be sorted by timestamp.
+Input timestamps must all be in the same time zone, preferably UTC, to avoid seasonal changes such as daylight savings time.
+Input format must match the following CSV structure – this will likely require manually parsing or reformatting existing log formats: YYYY-MM-DD HH:MM:SS, username, source IP, optional source hostname, optional VPN client details GeoLogonalyzer’s code comments include instructions for adding customized log format support.

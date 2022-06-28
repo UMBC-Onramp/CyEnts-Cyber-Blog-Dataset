@@ -1,0 +1,4 @@
+
+Interestingly, one of the apps is now available from the store as a “basic” version and with in-app purchases enabled, whereas a couple of months back it relied on the extra downloadable module.
+From this we conclude that their owners are continuing to experiment with monetization options.
+Facebook-account-stealing version Third, we found several more apps were found in which the described above malicious functionality was not the core one.

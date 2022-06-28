@@ -1,0 +1,7 @@
+
+These tools combine password dictionaries with the vast number of credentials stolen in recent large data breaches.
+Five years later, RDP shops are even larger and easier to access.
+The McAfee Advanced Threat Research team looked at several RDP shops, ranging in size from 15 to more than 40,000 RDP connections for sale at Ultimate Anonymity Service (UAS), a Russian business and the largest active shop we researched.
+We also looked at smaller shops found through forum searches and chats.
+During the course of our research we noticed that the size of the bigger shops varies from day to day with about 10%.
+The goal of our research was not to create a definitive list of RDP shops; rather, we sought a better understanding of the general modus operandi, products offered, and potential victims.

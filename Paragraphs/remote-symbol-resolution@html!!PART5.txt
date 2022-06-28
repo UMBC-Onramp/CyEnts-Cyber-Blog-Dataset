@@ -1,0 +1,5 @@
+
+Figure 3: API redirection code from an Andromeda sample
+This code was found in a memory injection.
+Here we can see what looks to be a detours style trampoline, where the first instruction was stolen from the actual Windows API and placed in a small stub with an immediate jump taken back to the original API + x bytes.
+In this situation, the malware accesses all of the API through these stubs and we have no clear resolution as to which stub points where.

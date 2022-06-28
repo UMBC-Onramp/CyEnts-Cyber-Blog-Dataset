@@ -1,0 +1,7 @@
+
+Helpful as the hacker is, they even provided clear instructions on how to access this .onion address with the Tor browser.
+Although the ransom note claims there was private data obtained, Northwave did not find any evidence for this on the compromised systems.
+Figure 40:
+LockBit recovery page The image above shows the helpdesk which the attacker uses for communication with their victims.
+It provides the functionality for a trial in which two files can be decrypted ‘for warranty’, showing that the attacker indeed has the correct key(s) for restoring the data.
+For this, it is always essential to test files from different (critical) servers since keys might differ per server.

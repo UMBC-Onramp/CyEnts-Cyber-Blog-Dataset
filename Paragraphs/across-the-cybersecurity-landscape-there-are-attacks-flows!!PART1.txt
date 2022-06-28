@@ -1,0 +1,5 @@
+FortiGuard Labs has been working with MITRE Engenuity’s Center for Threat Informed Defense (CTID) on various research projects that advance the state of the art in threat-informed cybersecurity.
+Fortinet has been an active member of the Center and is also a research sponsor because we see the value in giving defenders and executives expansive visibility into the ever-evolving threat landscape.
+For example, we played a leading role in the Center’s project called Sightings, in which analyzed data from Center participants and other data contributors provides an accurate depiction of the most used cyberattacker tactics, techniques, and procedures (TTPs).
+An overview of the project can be found in my blog titled: MITRE Sightings Report Provides Guidance on Key Cyberattack Techniques .
+The Sightings project generated very valuable threat intelligence for organizations by building a “heat map” and showing what is known about the attackers’ techniques, but that threat intelligence can also be extended and enhanced.

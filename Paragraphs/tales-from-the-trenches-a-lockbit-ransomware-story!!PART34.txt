@@ -1,0 +1,5 @@
+
+In this specific case the victim chose to pay the ransom.
+The first step for recovery was to get in contact with the hacker following the instructions from the ransom note (Restore-my-files.txt) as depicted below.
+Figure 39:
+LockBit ransomware note Interestingly, as opposed to earlier known cases of LockBit (or .abcd virus) where contact with the attacker occurred via email addresses mentioned in the ransom note, in this case, the attacker developed an online ‘help desk’ accessible via a .onion address.

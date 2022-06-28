@@ -1,0 +1,7 @@
+
+For our purposes we need to construct not one model, but two, in order to calculate the churn between models.
+We have split the data set into three pieces: January through August is used as training data September and October are used to simulate running the model in production and retraining (test 1 in Figure 2).
+November and December are used to evaluate the models from step 1 and 2 (test 2 in Figure 2).
+Figure 2:
+A comparison of our experimental setup versus the original EMBER data split.
+EMBER has a ten-month training set and a two-month test set.

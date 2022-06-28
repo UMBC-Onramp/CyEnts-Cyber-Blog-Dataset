@@ -1,0 +1,5 @@
+
+The payload used is a variant of Muhstik bot that can be used to launch DDOS attacks CVE-2022-0543:
+Redis Lua Sandbox Escape and Remote Code Execution “ Redis is a very widely used service for caching, but it’s also used as a message broker.
+Clients talk to a Redis server over a socket, send commands, and the server changes its state (i.e. its in-memory structures), in response to such commands.
+Redis embeds the Lua programming language as its scripting engine, which is made available through the eval command.

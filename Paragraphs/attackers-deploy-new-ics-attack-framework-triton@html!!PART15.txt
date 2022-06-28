@@ -1,0 +1,4 @@
+
+The malware was named to masquerade as the legitimate Triconex Trilog application.
+This application is used for reviewing logs and is a part of the TriStation application suite.
+The malware was delivered as a Py2EXE compiled python script dependent on a zip file containing standard Python libraries, open source libraries, as well as the attacker-developed Triconex attack framework for interacting with the Triconex controllers.

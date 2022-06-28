@@ -1,0 +1,8 @@
+
+Backend evasion code After looking at the list of blocked hosts, we could deduce that the attackers were trying to block web crawlers.
+Data Theft
+The attackers behind this phishing campaign attempted to steal credentials, credit card data, and other sensitive information.
+The stolen data is sent to email addresses and Telegram channels controlled by the attacker.
+We uncovered a Telegram channel where data is being sent using the Telegram Bot API shown in Figure 9.
+Figure 9:
+Chat log While using php mail() function to send stolen credentials is quite common, in the near past, encrypted instant messaging applications such as Telegram have been used for sending phished information back to command and control servers.

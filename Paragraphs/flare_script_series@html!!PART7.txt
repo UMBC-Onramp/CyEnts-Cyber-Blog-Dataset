@@ -1,0 +1,13 @@
+
+We begin by starting the process with Windbg and executing until the program’s entry point.
+Next, we start a Python interactive shell within Windbg using pykd and import flaredbg.
+Next, we create a DebugUtils object, which contains the functions we need to control the debugger.
+We then allocate 0x3A-bytes of memory for the output string.
+We use the newly allocated memory as the second parameter and setup the remainder of the arguments.
+Finally, we call the string_decoder function at virtual address 0x401000, and read the output string buffer.
+After proving we can decode a string with flare-dbg , let’s automate all calls to the string_decoder function.
+An example debugger script is shown in Figure 2.
+The full script is available in the examples directory in the github repository.
+Figure 2.
+Example basic debugger script Let’s break this script down.
+First, we identify the function virtual address of the string decoder function and create a DebugUtils object.

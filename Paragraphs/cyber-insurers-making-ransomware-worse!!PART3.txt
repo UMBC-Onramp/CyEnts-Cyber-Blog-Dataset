@@ -1,0 +1,9 @@
+
+On the one hand, the former use monetary support to help their clients recover if and when they fall victim to the latter.
+On the other, cyber insurance companies normalize the fulfillment of ransom demands.
+Paying up puts all organizations at greater risk of an incident in the future.
+The issue is that insurers take a straight and narrow approach to the question of whether to pay.
+Insurers are concerned about the costs of recovery and business disruption.
+Is it cheaper for an organization to pay the ransom?
+Or is it cheaper if an organization attempts to restore their systems and data using existing backups?
+Download the Definitive Guide to Ransomware Why Ransomware Victims Shouldn’t Pay Up There’s a lot of uncertainty associated with the latter scenario.

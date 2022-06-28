@@ -1,0 +1,7 @@
+
+It's important to note that the process listing that gets returned to the emulated samples is configurable via JSON config files supplied at runtime.
+For more information on these configuration options please see the Speakeasy README on our GitHub repository .
+An example of this configurable process listing is shown in Figure 4.
+Figure 4:
+Process listing configuration field supplied to Speakeasy Pivoting to User Mode
+Once the malware locates the services.exe process, it will attach to its process context and begin inspecting user mode memory in order to locate the addresses of exported user mode functions.

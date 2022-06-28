@@ -1,0 +1,5 @@
+
+This way, when a debugger attaches to the process internally, the system calls this function but, instead of creating a thread to start the debugging, the “ret” opcode forces the function to return without creating it.
+In brief, it prevents a debugger from being attached correctly.
+It is done before enumerating the system process.
+The malware checks the language of the machine with function “GetUserDefaultUILanguage” and saves the value in the stack; it is not checked automatically after the call, but it is important later.

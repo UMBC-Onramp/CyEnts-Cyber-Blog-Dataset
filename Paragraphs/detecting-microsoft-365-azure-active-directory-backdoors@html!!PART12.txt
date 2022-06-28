@@ -1,0 +1,6 @@
+
+In this method, an attacker will require: A valid UserPrincipalName and valid ImmutableId.
+Figure 6 shows how the Get-MsolUser command can obtain a user’s ImmutableId from Azure AD.
+Figure 6: Get-MsolUser—list user UPN & ImmutableId IssuerURI This can be obtained by converting a managed domain to a federated domain.
+Figures 7 through 10 show how the AADInternals ConvertTo-AADIntBackdoor command (Figure 8) can be used to allow attacker to register their own IssuerURI for a federated domain.
+Figure 7: Get-msoldomain—list of registered domains and authentication Figure 8: ConvertTo-AADIntBackdoor—convert domain to federated authentication Figure 9:

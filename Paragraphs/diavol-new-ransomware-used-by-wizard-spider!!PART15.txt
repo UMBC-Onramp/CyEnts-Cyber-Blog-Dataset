@@ -1,0 +1,13 @@
+
+·
+Find files to encrypt: FINDFILES traverses the file and directories in a given path.
+This routine is invoked multiple times: -
+Depending on the “-p” command-line or hardcoded configuration. -
+According to ENMDSKS results.
+-
+According to SMBFAST results.
+-
+According to SMB results.
+First, the routine checks to see if the given file or folder is not in the exclusion list.
+Then the routine determines whether the current item is in the list of files to delete.
+If not, it queues an APC on the current thread that gets the path to the item as an argument.

@@ -1,0 +1,7 @@
+
+(For more info, please see the github project page here .)
+The 2017 Ranion variant analyzed below was “protected” by the Confuser project.
+The following 2021 variant of Ranion was “protected” using the ConfuserEx project.
+While ConfuserEx is able to do what it says, which is “protect” .NET
+applications, in this case it is protecting malware from being detected by the AV industry via evasion techniques.
+Conclusion - Ranion Ransomware HiddenTear-based Ranion is a low-profile, low-cost RaaS that has not achieved the same success of other, more notorious ransomware gangs.

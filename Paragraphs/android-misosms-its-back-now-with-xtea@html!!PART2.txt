@@ -1,0 +1,8 @@
+
+The new variant also abandons SMTP email as the transport method.
+It now handles all CnC communication natively in C++, making it harder for an analyst to analyze the malware by disassembling its ARM code.
+The newer version also hard codes specific public DNS servers such as the following: resolver1.opendns.com
+nscache.prserv.com resolver1.qwest.net resolver2.opendns.com google-public-dns-b.google.com google-public-dns-a.google.com mx1.oray.net.cn 183.136.132.176 183.136.132.170
+The new MisoSMS attempts to resolve its CnC domain name(puk[dot]nespigt[dot]iego[dot]net) from one of these DNS servers.
+In this way, MisoSMS stays quiet in sandbox environments, which typically use internal DNS servers and cut off access to outside networks.
+If the malware cannot access the hard-coded DNS servers, it does nothing and is therefore not detected.

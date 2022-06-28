@@ -1,0 +1,8 @@
+
+In this blog post, we will show an example of Speakeasy’s effectiveness at automatically extracting network indicators from a Cobalt Strike Beacon sample acquired from an online malware aggregate.
+Background Dynamic analysis of Windows malware has always been a crucial step during the malware analysis process.
+Understanding how malware interacts with the Windows API and extracting valuable host-based and network-based indicators of compromise (IOCs) are critical to assessing the impact malware has on an affected network.
+Typically, dynamic analysis is performed in an automated or targeted fashion.
+Malware can be queued to execute within a sandbox to monitor its functionality, or manually debugged to reveal code paths not executed during sandbox runs.
+Code emulation has been used historically for testing, validation and even malware analysis.
+Being able to emulate malicious code lends many benefits from both manual and automated analysis.

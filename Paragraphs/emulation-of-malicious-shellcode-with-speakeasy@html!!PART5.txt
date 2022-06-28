@@ -1,0 +1,6 @@
+
+API hooking within a hypervisor (especially from a kernel mode perspective) can be difficult to attribute to the malware itself.
+For example, sandbox solutions will often hook heap allocator API calls without knowing if the malware author intended to allocate memory, or if a lower-level API was responsible for the memory allocation.
+However, emulation has disadvantages as well.
+Since we are removing the operating system from the analysis phase, we, as the emulator, are now responsible for providing the expected inputs and outputs from API calls and memory access that occur during emulation.
+This requires substantial effort in order to successfully emulate malware samples that are expected to the run on a legitimate Windows system.

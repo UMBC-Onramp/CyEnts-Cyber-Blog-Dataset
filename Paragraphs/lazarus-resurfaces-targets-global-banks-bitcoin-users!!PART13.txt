@@ -1,0 +1,4 @@
+
+no= XORed + base64 encoded “<Computername> \\ <username>” mode= XORed + base64 encoded Process listing + Registry key flag Command and control server domain Persistence The persistence mechanism of the malware is performed only for the downloaded implant.
+Persistence is established for the implant via the visual basic macro code initially executed upon document loading by the victim.
+This persistence is also performed ONLY if the malware successfully executes the downloaded implant.

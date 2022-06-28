@@ -1,0 +1,7 @@
+
+The following set of examples highlights two IRS/tax-themed scams.
+  
+The first is a malicious email pretending to originate from the U.S. Internal Revenue Service (IRS) containing a maliciously crafted Microsoft Excel file to deliver malware (Emotet).
+The second is a phishing scam that asks a recipient to send personally identifiable information (PII) via written correspondence to a phone number.
+IRS-themed email delivering
+Emotet This attack starts with an IRS impersonation email that contains a ZIP attachment called “W-9 form.zip”.

@@ -1,0 +1,10 @@
+
+Conclusions Both App Store and iOS treat it as a feature to allow apps from\ndifferent developers to bear the same URL schemes.
+Fixing URL scheme\nhijacking may not be easy for Apple.
+With this article and a previous\none [3], we have disclosed two out of four Masque Attacks, with the\nother two still being fixed by Apple.
+As suggested in our VB’14 paper\n[7], Apple may improve its architecture to collaborate with security\nvendors for a better enterprise-level security solution.
+We address\nthis problem in this article to help users better protect themselves.
+We thank FireEye team member Joshua Chang for his help in creating\nthe demo videos and Kyrksen Storer for improving this blog.
+[1] https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html [2] http://support.apple.com/en-us/HT204245 [3] https://www.fireeye.com/blog/threat-research/2014/11/masque-attack-all-your-ios-apps-belong-to-us.html [6] https://itunes.apple.com/us/app/chrome-web-browser-by-google/id535886823?mt=8 [7] https://www.virusbtn.com/virusbulletin/archive/2014/11/vb201411-Apple-without-shell [8] http://support.apple.com/en-us/HT6584 [9] http://software-security.sans.org/blog/2010/11/08/insecure-handling-url-schemes-apples-ios/ Subscribe to Blogs Get email updates as new blog posts are added.
+
+

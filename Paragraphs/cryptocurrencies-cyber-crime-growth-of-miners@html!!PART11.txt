@@ -1,0 +1,5 @@
+
+Filezilla stealer Desktop file grabber (.txt and more) Can download and execute files Update ability USB spreader functionality PHP web panel Figure 6: Felix HTTP Sample Advertisement #4 (Miner + RAT)
+In January 2018, FireEye iSIGHT Intelligence observed actor \"ups\" selling a miner for any Cryptonight-based cryptocurrency (e.g., Monero and Dashcoin) for either Linux or Windows operating systems.
+In addition to being a miner, the tool allegedly provides local privilege escalation through the CVE-2016-0099 exploit, can download and execute remote files, and receive commands.
+Buyers could purchase the Windows or Linux tool for €200 EUR, or €325 EUR for both the Linux and Windows builds, payable via Monero, bitcoin, ether, or dash.

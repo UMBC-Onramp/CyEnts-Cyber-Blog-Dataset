@@ -1,0 +1,4 @@
+
+The relevancy classifier scored 0.85 The severity classifier using the CNN scored 0.65 The severity classifier using a Logistic Regression model, without embeddings, scored 0.54 Next, we evaluate how well this approach can be used to forecast CVSS ratings.
+In this evaluation, all tweets must occur a minimum of five days ahead of CVSS scores.
+The severity forecast score for a CVE is defined as the maximum severity score among the tweets which are relevant and associated with the CVE.

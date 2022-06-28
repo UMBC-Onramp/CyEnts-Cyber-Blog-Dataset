@@ -1,0 +1,13 @@
+
+We have no evidence of these exploits being used by the same actors.
+ 
+Instead, we have only observed each exploit being used separately, in unrelated attacks.
+About CVE-2014-4148 Mitigation Microsoft has released security update MS14-058 that addresses CVE-2014-4148.
+Since TTF exploits target the underlying operating system, the vulnerability can be exploited through multiple attack vectors, including web pages.
+In the past, exploit kit authors have converted a similar exploit (CVE-2011-3402) for use in browser-based attacks.
+More information about this scenario is available under Microsoft’s response to CVE-2011-3402:
+MS11-087 .
+Details This TTF exploit is packaged within a Microsoft Office file.
+Upon opening the file, the font will exploit a vulnerability in the Windows TTF subsystem located within the win32k.sys kernel-mode driver.
+The attacker’s shellcode resides within the Font Program (fpgm) section of the TTF.
+The font program begins with a short sequence of instructions that quickly return.

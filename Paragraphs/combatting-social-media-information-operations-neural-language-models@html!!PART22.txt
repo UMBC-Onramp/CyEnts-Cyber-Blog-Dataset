@@ -1,0 +1,4 @@
+
+The example social media post above came from the benign dataset, so this sample’s label was set to CLS = 0
+during fine-tuning.
+Figure 5A shows the evolution of classification and auxiliary LM losses during fine-tuning, and Figure 5B displays the ROC curve for the fine-tuned classifier on its test set consisting of around 66,000 social media posts.

@@ -1,0 +1,7 @@
+
+The Attack
+The vulnerabilities in CVE-2021-35395 affect software built with the Realtek Jungle SDK (versions v2.x up to v3.4.14B) that utilize an SDK-provided management interface over HTTP.
+Among these vulnerabilities is a command injection on the “formWsc” page caused by a failure to sanitize input.
+Upon receiving the peerPin parameter, the server copies the submitted value directly into a shell command string which is then executed: \"iwpriv wlan%d-vxd set_mib pin= %s \" The “%s” (in bold) is replaced by the contents of peerPin.
+By adding a semicolon to terminate the iwpriv statement, it is possible to execute arbitrary commands on the device.
+For example, given an HTTP POST request containing “peerPin=12345;malicious_command”, the device will first execute the iwpriv command as expected, but will then also execute malicious_command .

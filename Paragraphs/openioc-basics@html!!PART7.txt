@@ -1,0 +1,6 @@
+
+Definition :
+This is the content of the IOC, containing the artifacts that an investigator decided to codify in the IOC.
+For example, these may include the MD5 of a file, a registry path or something found in process memory.
+Inside the definition, indicators are listed out or combined into expressions that consist of two terms and some form of Boolean logic.
+One thing about the OpenIOC format that makes it particularly useful is the ability to combine similar terms using Boolean AND & OR logic.

@@ -1,0 +1,7 @@
+
+For at least the past decade, there has been a trend towards integrating DCS and SIS designs for various reasons including lower cost, ease of use, and benefits achieved from exchanging information between the DCS and SIS.
+We believe TRITON acutely demonstrates the risk associated with integrated designs that allow bi-directional communication between DCS and SIS network hosts.
+Safety Instrumented Systems Threat Model and Attack Scenarios Figure 2: Temporal Relationship Between Cyber Security and Safety The attack lifecycle for disruptive attacks against ICS is similar to other types of cyber attacks, with a few key distinctions.
+First, the attacker’s mission is to disrupt an operational process rather than steal data.
+Second, the attacker must have performed OT reconnaissance and have sufficient specialized engineering knowledge to understand the industrial process being controlled and successfully manipulate it.
+Figure 2 represents the relationship between cyber security and safety controls in a process control environment.

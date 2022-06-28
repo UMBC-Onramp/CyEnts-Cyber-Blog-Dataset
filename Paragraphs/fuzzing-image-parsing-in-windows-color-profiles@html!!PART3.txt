@@ -1,0 +1,5 @@
+
+Furthermore, understanding of its file format internals provides us with information that can be used to optimize fuzzing, select a good corpus, and prepare fuzzing dictionaries.
+History of Color Management in Windows Windows started to ship Image Color Management (ICM) version 1.0 on Windows 95, and version 2.0 beginning with Windows 98 onwards.
+A major overhaul to Windows Color System (WCS) 1.0 happened in Windows Vista onwards.
+While ICC color profiles are binary files, WCS color profiles use XML as its file format.

@@ -1,0 +1,9 @@
+
+This attacker appears to be amateur, as we will explore more later on.
+Note that this could be a ruse to mask a more sophisticated attacker.
+The original malware used by the attacker is based off the Demonbot variant of Mirai and focuses on the Hadoop YARN exploit .
+The second variant the attacker used is based off the variant of Mirai developed by Scarface.
+  While Demonbot focuses on attacking Hadoop, the developer Scarface attempted to make the bot more “user friendly” and focused on Internet of Things devices.
+Scarface is known to make his code more readily available to novice actors, but has the reputation of including backdoors in the code to allow him access to victims of others.
+While the Scarface variant is considerably more advanced than Demonbot, the attacker is still only attempting the DVR exploit on port 60001.
+This Priority attacker has been active from September 10, 2020 up until the publishing of this blog.

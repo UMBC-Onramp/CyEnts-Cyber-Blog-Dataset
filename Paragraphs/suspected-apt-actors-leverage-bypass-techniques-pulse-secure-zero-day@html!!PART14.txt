@@ -1,0 +1,6 @@
+
+While we cannot make the same connections, the third party assessment is consistent with our understanding of APT5 and their historic TTPs and targets.
+APT5 has shown significant interest in compromising networking devices and manipulating the underlying software which supports these appliances.
+They have also consistently targeted defense and technology companies in the U.S., Europe, and Asia.
+As early as 2014, Mandiant Incident Response discovered APT5 making unauthorized code modifications to files in the embedded operating system of another technology platform.
+In 2015, APT5 compromised a U.S. telecommunications organization providing services and technologies for private and government entities.

@@ -1,0 +1,9 @@
+
+CVE-2022-25075 / 25076 / 25077 / 25078 / 25079 / 25080 / 25081 / 25082 / 25083 / 25084 are a family of similar vulnerabilities targeting TOTOLINK A810R, A830R, A860R, A950RG, A3100R, A3600R, T6, and T10 routers.
+(Figure 4).
+Interestingly, the samples caught on 20 Feb 2022 contained a typo in the URL, where “downloadFile.cgi” was used instead of “downloadFlile.cgi” used by the devices.
+This had been fixed in samples captured three days later, suggesting active development and operation of this campaign.
+Apart from TOTOLINK products, this campaign also targets discontinued D-Link products (DIR-810L, DIR-820L/LW, DIR-826L, DIR-830L and DIR-836L) via CVE-2021-45382 (Figure 5).
+Note that updated firmware is not available as these products have reached their end of life/support cycles.
+It is interesting to note that this campaign also attempts to exploit CVE-2021-4045 (Figure 6), a vulnerability for the TP-Link Tapo C200 IP camera, which we have not observed in other Mirai-based campaigns.
+While the current implementation of the exploit is incorrect, device owners should still update their camera firmware to fix this vulnerability.

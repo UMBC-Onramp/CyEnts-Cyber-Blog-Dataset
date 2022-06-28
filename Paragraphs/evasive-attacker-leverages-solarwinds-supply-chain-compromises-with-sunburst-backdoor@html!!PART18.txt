@@ -1,0 +1,7 @@
+
+If any service was transitioned to disabled the Update method exits and retries later.
+The sample retrieves a driver listing via the WMI query Select * From Win32_SystemDriver.
+If any blocklisted driver is seen the Update method exits and retries.
+If all blocklist tests pass, the sample tries to resolve api.solarwinds.com to test the network for connectivity.
+Network Command and Control (C2)
+If all blocklist and connectivity checks pass, the sample starts generating domains in a while loop via its DGA.

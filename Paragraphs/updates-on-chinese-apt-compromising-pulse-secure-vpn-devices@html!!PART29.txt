@@ -1,0 +1,4 @@
+
+Technical Annex BLOODMINE BLOODMINE is a utility for parsing Pulse Secure Connect log files.
+It extracts information related to logins, Message IDs and Web Requests and copies the relevant data to another file.
+The sample takes three command line arguments Filename to read Filename to write Timeout interval It parses the input file for login status codes: AUT31504 AUT24414 AUT22673 AUT22886

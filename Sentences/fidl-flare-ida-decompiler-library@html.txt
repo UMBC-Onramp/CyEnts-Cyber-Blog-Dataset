@@ -1,0 +1,81 @@
+IDA Pro and the Hex Rays decompiler are a core part of any toolkit for reverse engineering and vulnerability research.
+
+In a previous blog post we discussed how the Hex-Rays API can be used to solve small, well-defined problems commonly seen as part of malware analysis.
+
+Having access to a higher-level representation of binary code makes the Hex-Rays decompiler a powerful tool for reverse engineering.
+
+However, interacting with the HexRays API and its underlying data sources can be daunting, making the creation of generic analysis scripts difficult or tedious.
+
+This blog post introduces the FLARE IDA Decompiler Library (FIDL) , FireEye’s open source library which provides a wrapper layer around the Hex-Rays API.
+
+Background Output from the Hex-Rays decompiler is exposed to analysts via an Abstract Syntax Tree (AST).
+
+Out of the box, processing a binary using the Hex-Rays API means iterating this AST using a tree visitor class which visits each node in the tree and issues a callback.
+
+  For every callback we can check to see what kind of node we are visiting (calls, additions, assignments, etc.)
+
+and then process that node.
+
+For more information on these constructs see our previous blog post.
+
+The Problem While powerful, this workflow can be difficult to use when creating a generic API for several reasons: The order nodes are visited in, is not always obvious based on the decompiler output When visiting a node, we have no context about where we are in the AST Any problem which requires multiple steps requires multiple visitors or complicated logic in our callback function The amount of cases to handle when walking up or down the AST can increase exponentially Handling each of these cases in a single visitor callback function is untenable, so we need a way to more flexibly interact with the decompiler.
+
+FIDL FIDL, the FLARE IDA Decompiler Library , is our implementation of a wrapper around the Hex-Rays API.
+
+FIDL’s main goal is to abstract away the lower level details of the default decompiler API.
+
+FIDL solves multiple problems: Provides analysts an easy-to-understand API layer which can be used to write more complicated binary processing scripts Abstracts away the minutiae of processing the AST Provides helper implementations for commonly needed functionality when working with the decompiler Provides documented examples on how to use various Hex-Rays APIs Many of FIDL’s benefits are exposed to users via the controlFlowinator class.
+
+When constructing this object FIDL will parse the AST for us and provides a high-level summary of a function using information extracted via the decompiler including APIs called, their parameters, and a summary of local variables and parameters for the function.
+
+Figure 1 shows a subset of information available via a controlFlowinator next to the decompilation of the function.
+
+Figure 1: Sample output available as part of a controlFlowinator When parsing the AST during construction, the controlFlowinator also combines nodes representing the same logical expression into a more digestible form where each block translates roughly to one line of pseudocode.
+
+Figure 2 and Figure 3 show the AST and controlFlowinator representations of the same function.
+
+Figure 2:
+
+The default rendering of the AST of a function Figure 3:
+
+The control flow graph created by the controlFlowinator for the function shown in Figure 2
+
+Compared to the default AST, this graph is organized by potential code paths that can be taken through a function.
+
+This gives analysts a much more logical structure to iterate when trying to determine context for a particular expression.
+
+Readily available access to variables and API calls used in a function makes creating scripts to leverage the Hex-Rays API much more straightforward.
+
+In our previous blog post we introduced a script which uses the HexRays API to rename global variables based on the parameter to GetProcAddress.
+
+Figure 4 shows this script rewritten using the FIDL API.
+
+This new script is both easier to understand and does not rely on manually walking the AST.
+
+Figure 4: Script that uses the FIDL API to map all calls to GetProcAddress to global variables Rather than calling GetProcAddress malware commonly manually revolves needed imports by walking the Export Address Table (EAT) and comparing the hashes of a DLL’s exports looking for pre-computed values.
+
+As an analyst being able to quickly or automatically map these functions to their intended API makes it easier for us to identify which functions we should spend time analyzing.
+
+Figure 5 shows an example of how FIDL can be used to handle these cases.
+
+This script targets a DRIDEX sample with MD5 hash 7B82CF2CF9D08191C6828C3F62A2F914.
+
+This binary uses CRC32 with an XOR key of 0x65C54023 as the hashing algorithm during import resolution.
+
+Figure 5: IDAPython script to automatically process and markup a DRIDEX sample Running the above script results in output similar to what is shown in Figure 6, with comments labeling which functions are resolved.
+
+Figure 6:
+
+The script in Figure 5 inserts comments into the decompiler output annotating decrypted strings You can find FIDL in the FireEye GitHub repository .
+
+Conclusion While the Hex-Rays decompiler is a powerful source of information during reverse engineering, writing generic scripts and plugins using the default API is difficult and requires handling numerous edge cases.
+
+This post introduced the FIDL library , a wrapper around the Hex-Rays API, which fixes this by reducing the amount of low-level details an analyst needs to understand in order to create a script leveraging the decompiler and should make the creation of these scripts much faster.
+
+In future blog posts we will publish more scripts and analysis utilizing this library.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

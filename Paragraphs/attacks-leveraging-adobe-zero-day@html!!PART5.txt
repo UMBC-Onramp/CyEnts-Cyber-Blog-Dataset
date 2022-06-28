@@ -1,0 +1,8 @@
+
+Due to the publication of the vulnerability prior to patch availability, it is likely that additional criminal and nation state groups will attempt to exploit the vulnerability in the near term.
+FireEye Solutions Detections FireEye Email Security, Endpoint Security with Exploit Guard enabled, and Network Security products will detect the malicious document natively.
+Email Security and Network Security customers who have enabled the riskware feature may see additional alerts based on suspicious content embedded in malicious documents.
+ Customers can find more information in our FireEye Customer Communities post .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

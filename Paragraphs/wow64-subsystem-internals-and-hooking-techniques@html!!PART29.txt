@@ -1,0 +1,7 @@
+
+Figure 19 shows the locations of the arguments for each calling convention.
+Once the first 4 arguments are relocated all further arguments can be moved in a loop since it’s simply moving stack values into lower slots.
+This is relatively easy to implement using external masm files in MSVC.
+Raw bytes will need to be emitted at points rather than using the assembler due to the mix of architectures.
+Alternatively, GCC or Clang inline assembly could be used.
+ReWolf’s work achieves the opposite direction of 32-bit -> 64-bit and implements the shellcode via msvc inline asm.

@@ -1,0 +1,47 @@
+There's often a lot of rhetoric in the press and in the security community around threats to the utilities industry, and risk exposure surrounding critical infrastructure.
+
+We've determined that the utilities industry (power, water, waste) has been, and likely will continue to be, a target for cyber espionage primarily from Chinese APT groups.
+
+We also anticipate that U.S. utilities infrastructure is vulnerable to computer network attack (CNA) from a variety of threat actors motivated by a desire to disrupt, deny access, or destroy.
+
+It's important to recognize the difference between actors seeking to steal data or intellectual property, and actors seeking to destroy systems or cause mass destruction.
+
+Often the distinction between computer network exploitation (CNE) and CNA gets lost in media coverage that bundles diverse cyber activity together.
+
+The type of cyber activity has implications for how we tackle the problem, thus it's key to distinguish.
+
+As part of our incident response and managed defense work, Mandiant has observed Chinese APT groups exploiting the computer networks of U.S. utilities enterprises servicing or providing electric power to U.S. consumers, industry, and government.
+
+The most likely targeted information for data theft in this industry includes smart grid technologies, water and waste management expertise, and negotiations information related to existing or pending deals involving Western utilities companies operating in China.
+
+Why would Chinese APT Groups Seek to Exploit Utilities?
+
+Since 2010, Mandiant has responded to what we assessed were Chinese cyber espionage incidents occurring at multiple utilities companies involved in electric power generation.
+
+We recognize the PRC's utilities sector for electric power development, construction, operations, and distribution is heavily concentrated on a select few state-owned enterprises (SOE) with close ties to the central government.
+
+We suspect these relationships provide APT groups with a fundamental incentive to conduct espionage to attain advanced technology and operations expertise.
+
+By way of possible motivation, the PRC is in the midst of a historic makeover that involves the transformation of urban infrastructures, which, by 2025, is likely to produce 15 mega-cities with an average of 25 million inhabitants, or about the entire population of the United States.
+
+[i] The impacts from this transition are intensifying pressures on an already fragile and outdated utilities infrastructure in China that currently struggles to provide sufficient electric power, water, and waste treatment.
+
+We believe APT groups are stealing data that will allow them to improve historic PRC urbanization efforts and the modernization of infrastructure, which is receiving billions of government investment dollars for development.
+
+While we have tracked multiple attributed Chinese APT groups active in the utilities industries, we certainly don't discount that other, non-Chinese state-sponsored (or independent) actors could be engaged in data theft related to utilities.
+
+The Risk of Disruptive Cyber Attacks Computer network attacks (CNA) - that is, offensive cyber operations meant to disrupt or destroy-are also a threat to the utilities industry from state actors in times of major conflict.
+
+Perpetrators may include hostile adversaries, possibly nation-states, during times of escalated tensions, or terrorist operatives who gain the required expertise.
+
+The threat of a state-sponsored actor or proxy targeting this industry using CNA is a growing concern, particularly in the case of Iran, though wide-scale data theft is the primary type of threat we've observed to this point.
+
+Several large US news outlets did recently report that Iranian-based actors infiltrated some of the US' industrial control systems, however, and some have speculated their motivation in doing so was to map the network or identify resources for future attack scenarios.
+
+For more intelligence reporting and specific details related to data theft in the utilities industry, the involved actors, and other threats, consider subscribing to the Mandiant Intelligence Center .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

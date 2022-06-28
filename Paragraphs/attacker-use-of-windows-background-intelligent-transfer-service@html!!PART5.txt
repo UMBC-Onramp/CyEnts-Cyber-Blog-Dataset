@@ -1,0 +1,5 @@
+
+The tool can be run internally by Mandiant consultants via our endpoint agent allowing BITS data to be acquired from many hosts across an enterprise.
+BitsParser has been successfully used in many investigations to uncover attacker downloads, uploads, and persistence.
+In order to process the custom database format, BitsParser utilizes the open source ANSSI-FR library.
+The library allows parsing of both active and deleted entries from BITS database files, and it can fully extract relevant information from job and file records.

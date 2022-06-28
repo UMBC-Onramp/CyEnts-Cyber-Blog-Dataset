@@ -1,0 +1,10 @@
+
+Attempts have been made for larger scale Sybil attacks such as one in 2016 .
+Dictionary Attacks Blockchain may be a relatively new technology but that does not mean that old attacks cannot work.
+Mostly due to insecure user behavior, dictionary attacks can leverage some implementations of blockchain.
+Brain wallets, or wallets based on weak passwords, are insecure, yet people still use them.
+These wallets are routinely stolen, as was the case with the nearly BTC60 stolen from the following wallet:
+This wallet recorded two transactions as recently as March 5, 2018.
+One incoming and one outgoing transaction occurred within roughly 15 minutes.
+Source: https://blockchain.info .
+Exchanges Under Attack The biggest players, and targets, in blockchain are cryptocurrency exchanges.

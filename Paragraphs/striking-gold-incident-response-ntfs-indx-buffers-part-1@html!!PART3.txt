@@ -1,0 +1,8 @@
+
+When an INDX root attribute shrinks, the surrounding attributes shift and overwrite any old data.
+Therefore, it is not possible to recover slack entries from INDX root attributes.
+On the other hand, the file system driver allocates INDX allocation attributes in multiples of 4096, even though the records may only be 40 bytes.
+As file system activity adds and removes INDX records from an allocation attribute, old records may still be recoverable in the slack space found between the last valid entry and the end of the 4096 chunk.
+This is very interesting to a forensic investigator.
+Fortunately, many forensic tools support extracting the INDX allocation attributes from images of an NTFS file system.
+Scenario Let's say that during your investigation you identified a directory of interest that you want to examine further.

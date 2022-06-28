@@ -1,0 +1,6 @@
+
+The quick response from Managed Defense gave us just enough information to build a profile of the C2 and let our automated system take it from there.
+Over the next couple months, SCANdalous identified numerous servers matching UNC1878’s profile.
+This allowed us to not only analyze and attribute new network infrastructure, it also helped us observe when and how they were changing their operations over time.
+Conclusion There are hundreds more stories to tell, but the point is the same.
+When we find value in an analytical workflow, we ask ourselves how we can do it better and faster.

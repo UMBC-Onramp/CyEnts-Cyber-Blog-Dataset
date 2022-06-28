@@ -1,0 +1,5 @@
+
+Before the reorganization, it was common to observe multiple Chinese espionage groups targeting the same organization, often targeting the same types of information.
+Post-2015, this duplication of efforts is rare.
+Chinese espionage groups developed more efficient and purposeful targeting patterns by transitioning away from spearphishing and relying on end user software vulnerabilities and instead began exploiting networking devices and web facing applications in novel ways.
+Chinese APT actors also began to leverage supply chain vulnerabilities and to target third party providers to gain access to primary targets.

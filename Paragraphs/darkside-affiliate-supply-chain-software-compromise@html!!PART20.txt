@@ -1,0 +1,4 @@
+
+Five days later, UNC2465 returned and deployed additional tools such as a keylogger, Cobalt Strike BEACON, and conducted credential harvesting via dumping LSASS memory.
+Ransomware groups continue to adapt and pursue opportunistic access to victims.
+UNC2465’s move from drive-by attacks on website visitors or phishing emails to this software supply chain attack shows a concerning shift that presents new challenges for detection.

@@ -1,0 +1,5 @@
+
+The decryptor uses the “GetVersionExW” function to determine the windows version, from Windows 8.1.
+the value returned by this API has changed and the decryptor isn’t designed to handle this value.
+The decryptor doesn’t remove the .RYUK extension and replace it with the original extension.
+So, there is no way the name of the file can give an indication towards the type of the file, something that can be extremely labor intensive for enterprise victims.

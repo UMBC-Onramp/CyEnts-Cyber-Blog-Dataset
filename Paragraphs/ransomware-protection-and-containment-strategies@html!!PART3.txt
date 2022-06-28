@@ -1,0 +1,10 @@
+
+In our latest report, Ransomware Protection and Containment Strategies: Practical Guidance for Endpoint Protection, Hardening, and Containment , we discuss steps organizations can proactively take to harden their environment to prevent the downstream impact of a ransomware event.
+These recommendations can also help organizations with prioritizing the most important steps required to contain and minimize the impact of a ransomware event after it occurs.
+Ransomware is commonly deployed across an environment in two ways: Manual propagation by a threat actor after they’ve penetrated an environment and have administrator-level privileges broadly across the environment: Manually run encryptors on targeted systems.
+Deploy encryptors across the environment using Windows batch files (mount C$ shares, copy the encryptor, and execute it with the Microsoft PsExec tool).
+Deploy encryptors with Microsoft Group Policy Objects (GPOs).
+Deploy encryptors with existing software deployment tools utilized by the victim organization.
+Automated propagation: Credential or Windows token extraction from disk or memory.
+Trust relationships between systems – and leveraging methods such as Windows Management Instrumentation (WMI), SMB, or PsExec to bind to systems and execute payloads.
+Unpatched exploitation methods (e.g., EternalBlue – addressed via Microsoft Security Bulletin MS17-010 ).

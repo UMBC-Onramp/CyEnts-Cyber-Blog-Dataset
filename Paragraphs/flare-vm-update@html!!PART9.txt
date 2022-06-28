@@ -1,0 +1,12 @@
+
+Fakenet-NG Yara Malware Analyst Pack Conclusion The FLARE team continues to support and improve FLARE VM to be the de facto distribution for security research, incident response, and malware analysis on Windows platform.
+We greatly appreciate the numerous bug reports, tool requests, and feature recommendations from everyone.
+We hope FLARE VM, along with many other FLARE open source projects, can help you do your work better, easier, and faster.
+We are always looking for talented folks to join our team.
+The FLARE Team may be a good place for you if: You eat, sleep, and speak disassembly and malware all day long.
+You would like to push the state of the art for reverse engineering and malware analysis.
+Please check out our careers page , or send us an email.
+Happy Reversing!
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

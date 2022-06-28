@@ -1,0 +1,7 @@
+
+To detect strings in global memory, the script additionally searches for strings in all memory locations that have been written to.
+Using flare-emu Hooks to Recover Stackstrings If you’re not already familiar with flare-emu , I recommend reading our previous blog post .
+It discusses some of the interfaces the tool provides.
+Other helpful resources are the examples and the project documentation available on the flare-emu GitHub .
+The stackstrings script uses flare-emu ’s iterateAllPaths API.
+The function iterates multiple code paths through a function.

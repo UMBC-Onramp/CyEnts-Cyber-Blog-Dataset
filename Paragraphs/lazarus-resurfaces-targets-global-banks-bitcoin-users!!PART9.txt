@@ -1,0 +1,3 @@
+
+Since the decoy document is a benign file and does not contain any macros the victim does not suspect any malicious behavior.
+Implant Analysis As part of the implant initialization activities the implant does the following; Checks the string passed to it through command line “/haobao” in case of 535f212b320df049ae8b8ebe0a4f93e3bd25ed79 “/pumpingcore” in case of e8faa68daf62fbe2e10b3bac775cce5a3bb2999e If the malware does not find this string in its cmdline arguments, it simply quits without going any further.

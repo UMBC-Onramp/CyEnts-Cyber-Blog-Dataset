@@ -1,0 +1,5 @@
+In November of last year, we uncovered a major flaw in iOS we dubbed “ Masque Attack ” that allowed for malicious apps to replace existing, legitimate ones on an iOS device via SMS, email, or web browsing.
+In total, we have notified Apple of five security issues related to four kinds of Masque Attacks.
+Today, we are sharing Masque Attack II in the series – part of which has been fixed in the recent iOS 8.1.3 security content update [2].
+Masque Attack II includes bypassing iOS prompt for trust and iOS URL scheme hijacking.
+iOS 8.1.3 fixed the first part whereas the iOS URL scheme hijacking is still present.

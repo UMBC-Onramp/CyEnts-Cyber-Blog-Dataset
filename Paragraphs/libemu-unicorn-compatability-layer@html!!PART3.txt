@@ -1,0 +1,5 @@
+
+As an experiment, we were curious to see what it would take to bring the libemu Win32 environment into Unicorn.
+This task actually turned out to be quite simple since it was nicely self contained.
+In the process of exploring this it also made sense to write a basic shim layer to support the libemu API and translate its inner workings over to Unicorn.
+Lets start with the common libemu API: The API is actually very similar to Unicorn: The major differences are that Unicorn does everything through an opaque uc_engine* handle, while libemu uses a series of structs such as emu, emu_cpu, and emu_memory: In general, the emu and emu_memory structures are passed directly as arguments to API wrappers such as emu_cpu_get, emu_memory_get and the emu_memory_read/write functions.

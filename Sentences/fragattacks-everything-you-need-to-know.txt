@@ -1,0 +1,127 @@
+A cybersecurity researcher discovered a new category of Wi-Fi vulnerabilities recently.
+
+But the surprising news is that this new category is actually very old.
+
+ Called FragAttacks, these 12 Wi-Fi vulnerabilities have existed since the late 90s.
+
+But they’re new to the cybersecurity world because people only recently discovered and described them.
+
+Researchers unveiled the details on May 12, some nine months after discovery.
+
+The researchers will present their work at the USENIX Security conference at Black Hat USA in late July and early August.
+
+How Does This Vulnerability Work?
+
+Discovered and described by Belgian security researcher, Mathy Vanhoef, these FragAttacks (short for fragmentation and aggregation attacks) affect most Wi-Fi devices shipped since the late 1990s.
+
+Vanhoef is well known in wireless security circles because he found the KRACK Wi-Fi vulnerability about four years ago.
+
+He believes that every Wi-Fi product features at least one of the vulnerabilities described.
+
+The flaws affect all recent Wi-Fi security protocols, from the oldest wired equivalent privacy (WEP) specification to the newest Wi-Fi Protected Access 3 (WPA3) specification.
+
+What they all have in common is they exploit Wi-Fi’s fragmentation feature.
+
+One of the mundane functions of how Wi-Fi works is that it’s constantly breaking data into smaller units, fragments, and then taking those smaller pieces and reassembling them into larger pieces.
+
+This shuffling of data chunks, which happens constantly and on the fly, could enable threat actors within radio range to insert malicious frames into networks that would otherwise be protected by WPA encryption.
+
+Three of these vulnerabilities exist in the form of flaws in the Wi-Fi standard itself.
+
+The rest result from programming errors made by Wi-Fi makers.
+
+These enable attackers to compromise devices on the network and steal data.
+
+What Can FragAttacks Do?
+
+When attackers exploit FragAttacks, they could run malicious code, take control of devices, capture data and use the devices to launch other attacks.
+
+The good news is these attacks aren’t easy, or even possible at scale.
+
+In order to exploit FragAttacks, the attackers must be in radio range of the network.
+
+They also require users to take action or unusual network settings.
+
+As such, FragAttacks aren’t practical as large-scale attacks.
+
+Researchers have never found FragAttacks being exploited in the wild.
+
+However, cyber attackers now know they exist.
+
+And the clock is ticking.
+
+A Closer Look Attackers can exploit FragAttacks to steal data via a Wi-Fi network, bypassing Wi-Fi encryption that should be protecting the data.
+
+(One notable exception: you cannot bypass HTTPS encryption by exploiting FragAttacks.)
+
+Worse, threat actors can use FragAttacks to mount attacks against devices connected to the Wi-Fi network, including Internet of Things (IoT) devices.
+
+Those vulnerabilities open up the same access to poorly secured devices attackers would have if they logged on to the network.
+
+Some of these vulnerabilities can be used to inject malicious, unencrypted Wi-Fi frames that look like handshake messages.
+
+Threat actors could also intercept a device owner’s information by tricking the client into using a malicious DNS server.
+
+Or, they could bypass the NAT firewall, giving the attacker potential access to devices connected to the Wi-Fi network.
+
+Multiple Types of Attack The flaws enable three different types of attack: An aggregation attack exploits the frame aggregation feature of Wi-Fi.
+
+In this attack, the threat actor tricks a victim into changing the setting on specific packets.
+
+This allows the attacker to intercept traffic by making it use a malicious DNS server.
+
+A mixed key attack exploits the fact that the fragmentation feature of Wi-Fi assumes broken-up packets are encrypted using the same key as the larger original packet.
+
+By mixing fragments encrypted with different keys, attackers can exfiltrate data from the network.
+
+And the third enables a fragment cache attack.
+
+This exploits non-reassembled fragments left in memory and involves injecting a malicious fragment in the fragment cache of the targeted access point.
+
+When a victim connects and sends a fragmented frame, it can be reassembled with the malicious fragments.
+
+Vanhoef showed these with three examples.
+
+In one, he exploited the aggregation design flaw to steal a username and password.
+
+In another, he was able to remote-control a home smart power socket, turning it on and off.
+
+And in the third, he took control of an old Windows 7 PC.
+
+How to Protect Against FragAttacks You can protect your business or agency’s Wi-Fi networks from FragAttacks by following well-known practices for general Wi-Fi safety.
+
+Always use HTTPS to encrypt all web traffic.
+
+Some browsers, such as Firefox, can alert users when visited websites don’t use HTTPS, but they have to be actively configured to do so.
+
+Use an application that encrypts files transfer locally over the network.
+
+Urge or require employees to use the HTTPS Everywhere browser plugin.
+
+Update your WiFi and broadband firmware often.
+
+Some of these vulnerabilities have been fixed by some vendors; some fixes are coming soon.
+
+Find out if there are any devices on the network that do not receive updates and replace them with devices that do.
+
+Users should always use a virtual private network (VPN) when connecting via any public WiFi network.
+
+Update all your devices, including IoT devices .
+
+Add WiFi security training for remote workers and focus on keeping separate work-home networks and systems.
+
+Raise awareness that home devices, like smart TVs and home IoT devices, are open to attack.
+
+Peruse Vanhoef’s Github information and tools.
+
+These include descriptions of each FragAttack vulnerability, a research paper on the issue, examples that show the vulnerabilities, their practical exploitation and tools for testing for vulnerabilities.
+
+The content also includes advice from companies that have addressed the issue.
+
+FragAttacks are new and rare and in some cases, highly theoretical.
+
+But they’re still out there, so it’s vital as always to follow good Wi-Fi security measures.
+
+
+
+

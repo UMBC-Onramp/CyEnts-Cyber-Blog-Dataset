@@ -1,0 +1,20 @@
+
+This unorthodoxy got us thinking: Was there a nation-state behind this campaign?
+At present, there is not enough evidence to confirm its source, although the language resources are in simplified Chinese.
+We discovered the following graph inside the ransomware: As the MalwareHunterTeam documented, the ransomware attempts to kill processes associated with certain antimalware products: .rdata:004DAC80
+0000001B C taskkill /f /im kavsvc.exe .rdata:004DAC9B 00000019
+C taskkill /f /im
+KVXP.kxp .rdata:004DACB4 00000018
+C taskkill /f /im
+Rav.exe .rdata:004DACCC
+0000001B C taskkill /f /im Ravmon.exe .rdata:004DACE7
+0000001D C taskkill /f /im Mcshield.exe .rdata:004DAD04
+0000001D C taskkill /f /im
+VsTskMgr.exe .rdata:004DAD21
+00000024
+C SOFTWARE\\\\360Safe\\\\safemon\\\\ExecAccess .rdata:004DAD45
+00000023
+C SOFTWARE\\\\360Safe\\\\safemon\\\\MonAccess .rdata:004DAD68 00000024
+C SOFTWARE\\\\360Safe\\\\safemon\\\\SiteAccess .rdata:004DAD8C
+00000025
+C SOFTWARE\\\\360Safe\\\\safemon\\\\UDiskAccess Note, however, that the access protection enabled within McAfee software prevented the termination of this process: These curiosities made us wonder about the purpose of the ransomware.

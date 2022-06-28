@@ -1,0 +1,6 @@
+
+If a DGA domain is decoded to a company domain name, is that company compromised?
+When the backdoor is in “passive” mode it uses the DGA encoding which embeds victim AD domain names.
+This means that any system where the backdoor is present may have started trying to contact DNS servers where an attacker could then activate the backdoor to begin active C2 communications.
+In most cases this did not occur and backdoors for non-targets were disabled by the operator.
+Therefore, it cannot be assumed that an organization experienced follow-on activity if their domain is decoded from any DNS logs.

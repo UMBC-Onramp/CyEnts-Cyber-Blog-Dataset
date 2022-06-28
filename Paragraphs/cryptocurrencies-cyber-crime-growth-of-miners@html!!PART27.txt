@@ -1,0 +1,6 @@
+
+This custom miner connected to the mining pool wss[:]//ws[.]l33tsite[.]info:8443, which was likely done to avoid Coinhive's fees.
+In April 2018, researchers with Trend Micro also discovered a JavaScript code based on Coinhive injected into an AOL ad platform.
+The miner used the following private mining pools: wss[:]//wsX[.]www.datasecu[.]download/proxy and wss[:]//www[.]jqcdn[.]download:8893/proxy.
+Examination of other sites compromised by this campaign showed that in at least some cases the operators were hosting malicious content on unsecured AWS S3 buckets.
+Since July 16, 2017, FireEye has observed the Neptune Exploit Kit redirect to ads for hiking clubs and MP3 converter domains.

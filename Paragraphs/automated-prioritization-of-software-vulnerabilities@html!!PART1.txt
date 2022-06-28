@@ -1,0 +1,4 @@
+Introduction If a software vulnerability can be detected and remedied, then a potential intrusion is prevented.
+While not all software vulnerabilities are known, 86 percent of vulnerabilities leading to a data breach were patchable , though there is s o m e risk of inadvertent damage when applying software patches.
+When new vulnerabilities are identified they are published in the Common Vulnerabilities and Exposures (CVE) dictionary by vulnerability databases , such as the National Vulnerability Database (NVD).
+The Common Vulnerabilities Scoring System (CVSS) provides a metric for prioritization that is meant to capture the potential severity of a vulnerability.

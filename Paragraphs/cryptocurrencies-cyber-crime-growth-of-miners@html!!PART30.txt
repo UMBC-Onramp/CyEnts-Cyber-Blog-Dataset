@@ -1,0 +1,9 @@
+
+In March 2014, another form of Android malware – \"Android.
+Trojan.
+MuchSad.
+A\" or \"ANDROIDOS_KAGECOIN.HBT\" – was observed mining Bitcoin, Litecoin, and Dogecoin currencies.
+The malware was disguised as copies of popular applications, including \"Football Manager Handheld\" and \"TuneIn Radio.\" Variants of this malware have reportedly been downloaded by millions of Google Play users.
+In April 2014, Android malware named \"BadLepricon,\" which mined Bitcoin, was identified.
+The malware was reportedly being bundled into wallpaper applications hosted on the Google Play store, at least several of which received 100 to 500 installations before being removed.
+In October 2014, a type of mobile malware called \"Android Slave\" was observed in China; the malware was reportedly capable of mining multiple virtual currencies.

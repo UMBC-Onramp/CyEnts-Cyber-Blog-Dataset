@@ -1,0 +1,5 @@
+
+In this instance, we created another sheet called “PivotTable 1” to place the PivotTable: Figure 11: PivotTable creation
+Now that the PivotTable is created, we must select how we want to populate the PivotTable using our data.
+Remember, we are trying to determine the locations from which all users logged in.
+We will want a row for each user and a sub-row for each location the user has logged in from.

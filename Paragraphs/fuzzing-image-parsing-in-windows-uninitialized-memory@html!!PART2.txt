@@ -1,0 +1,5 @@
+
+This makes detection of these vulnerabilities slightly more complicated than memory corruption vulnerabilities.
+While direct uninitialized memory usage can cause a crash and can be detected, information leakage doesn’t usually cause any crashes.
+Detecting it requires compiler instrumentations such as MemorySanitizer or binary instrumentation/recompilation tools such as Valgrind.
+Detour: Detecting Uninitialized Memory in Linux Let's take a little detour and look at detecting uninitialized memory in Linux and compare with Windows’ built-in capabilities.

@@ -1,0 +1,7 @@
+
+For the attacker, this was a relatively straightforward process since the ransomware spreads itself.
+The deployment of the ransomware on one single host remotely instructed the other hosts in the network to run the following PowerShell command: Figure 2: PowerShell execution to download LockBit
+This command retrieves a .png file from a website that has probably been compromised.
+There are two versions of the .png file, one for .NET version 4 and one for version 3.5.
+The PowerShell command checks which version it needs by getting the version number of the common language runtime that is running the current process.
+If this starts with ‘V4’, the .png for version 4 is downloaded; otherwise it downloads the .png for version 3.5 via the URLs below: https://espet[.]se/images/rs35.png https://espet[.]se/images/rs40.png What is interesting in this case is that each distinct host downloads the ransomware itself.

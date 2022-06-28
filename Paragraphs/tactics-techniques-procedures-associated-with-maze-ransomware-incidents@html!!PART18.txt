@@ -1,0 +1,9 @@
+
+An actor has been observed exfiltrating data to FTP servers using a base64-encoded PowerShell script designed to upload any files with .7z file extensions to a predefined FTP server using a hard-coded username and password.
+This script appears to be a slight variant of a script first posted to Microsoft TechNet in 2013.
+A different base64-encoded PowerShell command was also used to enable this functionality in a separate incident.
+Actors deploying MAZE ransomware have also used the utility WinSCP to exfiltrate data to an attacker-controlled FTP server.
+An actor has been observed employing a file replication utility and copying the stolen data to a cloud file hosting/sharing service.
+Prior to deploying MAZE ransomware threat actors employed the 7zip utility to archive data from across various corporate file shares.
+These archives were then exfiltrated to an attacker-controlled server via FTP using the WinSCP utility.
+In addition to data theft, actors deploy MAZE ransomware to encrypt files identified on the victim network.

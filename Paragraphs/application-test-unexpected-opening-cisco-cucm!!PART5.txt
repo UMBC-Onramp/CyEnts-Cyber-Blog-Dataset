@@ -1,0 +1,5 @@
+
+The chained attack could enable an attacker with low privileges on the appliance to escalate their privilege to root shell access.
+At that point, the attacker could have full control of the appliance, and the access could be used to move laterally inside the internal network and attack internal assets and other users.
+We also discovered a local file read vulnerability in one of the application’s endpoints.
+This could allow an attacker to read any locally accessible file on the web server through the vulnerable endpoint.

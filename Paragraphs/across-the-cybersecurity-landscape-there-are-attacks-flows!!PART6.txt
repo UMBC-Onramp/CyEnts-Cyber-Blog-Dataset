@@ -1,0 +1,4 @@
+
+When executives have information on each asset’s value coupled with the attack flow information, they have all that’s needed to make a “threat-informed” decision about which of their defenses should be fortified first.
+Value in Knowing the Potential Outcomes Using the same data, cyber-defense teams will be able to quickly know for instance: If 90% of the attacks follow a specific path of techniques, they will then be able to move more quickly to identify the attack path taken on an active investigation.
+This ability will be possible after we have an extensive dataset of attack flows to examine and do data analysis on the attack flow corpus.

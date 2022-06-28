@@ -1,0 +1,12 @@
+
+It passes the Agent Tesla payload in memory and adds a path of the target process “RegAsm.exe”.
+“RegAsm.exe” is an official component of Microsoft .Net
+Framework.
+The attacker uses it as a target process in which to inject malware to protect itself from being detected.
+A number of Windows API functions are called in the .Net module to deploy the Agent Tesla payload into the target process.
+These are: CreateProcess() with CREATE_SUSPENDED flag: This creates a suspended RegAsm.exe process.
+VirtualAllocEx(), NtUnmapViewOfSection(), ReadProcessMemory(), WriteProcessMemory(): These move the Agent Tesla payload to a newly-allocated memory within the suspended RegAsm.exe process.
+SetThreadContext()/Wow64SetThreadContext(), GetThreadContext()/Wow64GetThreadContext(): These modify the RegAsm.exe’s registry value and points its EIP register to the entry point of the copied Agent Tesla payload.
+ResumeThread(): This resumes the execution of the RegAsm.exe process from where the EIP points to.
+Once completed, the Agent Tesla runs on behalf of RegAsm.exe to steal the victim’s information.
+Agent Tesla Payload Agent Tesla provides many features, like Keylogger, obtaining Clipboard data, stealing browser cookies and saved software credentials, as well as capturing screenshots of the victim’s device.

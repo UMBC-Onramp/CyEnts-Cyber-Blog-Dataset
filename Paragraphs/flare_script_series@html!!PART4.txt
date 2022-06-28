@@ -1,0 +1,7 @@
+
+Approach The first task is to find the string decoder function and get a basic understanding of the inputs and outputs of the function.
+The next task is to identify each time the string decoder function is called and all of the arguments to each call.
+Without using IDA, a handy Python project for binary analysis is Vivisect .
+Vivisect contains several heuristics for identifying functions and cross-references.
+Additionally, Vivisect can emulate and disassemble a series of opcodes, which can help us identify function arguments.
+If you haven’t already, be sure to check out the FLARE scripting series post on tracking function arguments using emulation , which also uses Vivisect.

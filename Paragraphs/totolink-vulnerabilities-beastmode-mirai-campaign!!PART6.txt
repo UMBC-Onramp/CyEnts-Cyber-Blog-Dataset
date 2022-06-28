@@ -1,0 +1,9 @@
+
+Once devices are infected by Beastmode, the botnet can be used by its operators to perform a variety of DDoS attacks commonly found in other Mirai-based botnets, including: attack_app_http attack_tcp_ack attack_tcp_syn attack_udp_plain attack_udp_vse attack_udp_ovhhex attack_udp_stdhex attack_udp_CLAMP Conclusion Even though the original Mirai author was arrested in fall 2018, this article highlights how threat actors, such as those behind the Beastmode campaign, continue to rapidly incorporate newly published exploit code to infect unpatched devices using the Mirai malware.
+By continuously monitoring the evolving threat landscape, FortiGuard Labs researchers identify new vulnerabilities exploited by Mirai variants and malware targeting IoT devices to bring greater awareness to such threats and better secure our customers’ networks.
+Fortinet Protections Fortinet customers are protected by the following: The following generic FortiGuard IPS signatures detect exploitation attempts from Beastmode and other Mirai-based botnets: Mirai.
+Botnet HTTP.Unix.
+Shell.
+IFS.Remote.
+Code.
+Execution FortiGuard Labs also provides IPS signatures against the following vulnerabilities.

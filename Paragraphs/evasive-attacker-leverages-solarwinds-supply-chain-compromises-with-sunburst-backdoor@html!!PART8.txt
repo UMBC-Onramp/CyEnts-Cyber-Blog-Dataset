@@ -1,0 +1,6 @@
+
+Attacker Hostnames Match Victim Environment The actor sets the hostnames on their command and control infrastructure to match a legitimate hostname found within the victim’s environment.
+This allows the adversary to blend into the environment, avoid suspicion, and evade detection.
+Detection Opportunity
+The attacker infrastructure leaks its configured hostname in RDP SSL certificates, which is identifiable in internet-wide scan data.
+This presents a detection opportunity for defenders -- querying internet-wide scan data sources for an organization’s hostnames can uncover malicious IP addresses that may be masquerading as the organization.

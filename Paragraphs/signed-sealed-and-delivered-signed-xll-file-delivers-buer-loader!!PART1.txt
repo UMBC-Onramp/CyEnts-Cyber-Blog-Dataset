@@ -1,0 +1,4 @@
+FortiGuard Labs Threat Research Report Affected Platforms: Windows Impacted Users: Any organization or individual Impact:
+Remote attackers gain control of the vulnerable systems Severity Level: Moderate Introduction - Signed XLL File Delivers Buer Loader FortiGuard Labs has discovered a malicious spam campaign that uses the names of two well-known corporate entities as a social engineering lure to trick a target into opening a maliciously crafted Microsoft Excel document.
+When opened, the document contacts a remote server that downloads a malicious payload from a predefined website.
+What makes this campaign different from similar malicious spam campaigns is the use of a signed Microsoft Excel file with an .XLL file extension, rather than the standard .XLS file extension.

@@ -1,0 +1,6 @@
+
+For example, the following is a brief portion of the encoded string taken from the code.
+This encoded string strHTML goes through a complex sequence of around 23 decrypting/decoding functions that include number system conversions, pseudo-random pattern modifiers followed by XOR decoding using a fixed key or password “zycode” for the actual HTML phishing content to be finally created (refer to Figure 15 and Figure 16 in Appendix 1 for complete code).
+Phishing detection systems that rely solely on the HTML in the response section will completely fail to detect the code generated using this technique.
+Once loaded into the web browser, this obfuscated JavaScript creates an iCloud phishing page.
+This page is shown in Figure 1.

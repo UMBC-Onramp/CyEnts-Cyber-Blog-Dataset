@@ -1,0 +1,9 @@
+
+Are they: Random\nindividuals on the Internet?
+Specific threat actors, such\nas state-sponsored attackers, organized criminals, or hacktivist\ngroups?
+An individual or malware that is behind the\nfirewall and on your internal corporate network?
+Your own\nemployees (\"insider threats\")?
+Your customers\n(or attackers who may compromise customers'\nsystems/accounts)?
+Your vendors, service providers, and\nother business partners (or attackers who may have compromised\ntheir systems)?
+The answer to this will help drive\nthe type of testing to be performed and the types of test user\naccounts (if any) to provision.
+The next section will describe some\npossible penetration test types, but it's helpful to also discuss\nthe types of attackers you would like the penetration test to\nsimulate.

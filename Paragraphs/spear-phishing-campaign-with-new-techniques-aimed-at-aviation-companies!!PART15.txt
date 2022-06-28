@@ -1,0 +1,8 @@
+
+To maintain its foothold, it installs a scheduled task if the payload is running as an administrator.
+The reason it checks for admin rights is that a task created with elevated privileges does not prompt the user to allow execution.
+If the payload isn’t running as an administrator, it will add an entry to the Registry Run keys, causing the program to run every time the user logs in.
+(See Mitre ATT&CK technique – Persistence .)
+Keylogging is the most prevalent type of input capture, and it’s used to steal credentials.
+This is done by intercepting the user’s keystrokes using Hooking API callbacks.
+This technique works by hooking into the Windows native API functions intended for processing keystroke data, and the callback function is invoked every time the user types something.

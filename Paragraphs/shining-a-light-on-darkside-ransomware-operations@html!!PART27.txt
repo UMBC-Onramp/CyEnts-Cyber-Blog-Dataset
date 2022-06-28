@@ -1,0 +1,24 @@
+
+..Á.
+000000B0  3E 43 A7 59
+E1 F0 C4 5D AE E1 20 2E 77 D9 CA
+3C  >
+C§YáðÄ]®á .wÙÊ
+< 000000C0  
+AD C6 BC 84 75
+1C E7 0B F0 30 2A 51 13 7A B2 66  .Æ¼„u.ç.ð0*Q.z²f
+000000D0  44 73 79 E1 E4 69
+C3 CA 1B C1 76 63 65 95 EA CA  
+DsyáäiÃÊ.Ávce•êÊ
+000000E0  F6 10 68
+0D CE 36 61 F9 57 B9 19 50 31 D4 E1 70  
+ö.h.
+Î6aùW¹.P1Ôáp
+000000F0  EC 7B 33 1E 4F 17 E1 80 1D BC CF 8C D8 C5 66 41  ì{3.O.á€.¼ÏŒØÅfA 00000100  E5 0A 00 00 02
+6E 01 02 15 03 43 01
+8E 24 0E 72  å....
+n....C.Ž$.r <cut> Figure 5: Partial decrypted configuration
+The sample's 0x80-byte RSA public key blob begins at offset 0x80.
+The DWORD value at offset 0x100 is multiplied by 64 and an amount of memory equivalent to the result is allocated.
+The remaining bytes, which start at offset 0x104, are aPLib-decompressed into the allocated buffer.
+The decompressed bytes include the ransom note and other elements of the malware's configuration described as follows (e.g., processes to terminate, files to ignore).

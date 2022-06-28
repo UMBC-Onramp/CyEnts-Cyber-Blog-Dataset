@@ -1,0 +1,5 @@
+
+To help reduce the scope of functions we needed to investigate, we began by focusing our attention on controlling binary output (BO).
+Our first challenge was how to find the code that handles changing the state of a binary output.
+A couple of key factors helped point us in the right direction.
+First, the documentation for the controller indicates the devices talk to the I/O modules over a Controller Area Network Bus (CAN bus), which is common for PLC devices.

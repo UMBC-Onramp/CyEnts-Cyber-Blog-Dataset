@@ -1,0 +1,7 @@
+
+Use secure channels to share it, not Lightshot, or better still, don’t share it at all; If you’ve already used Lightshot and now regret sharing something, get the URL by searching your messages, go there, and click Report abuse ; or send a request to support@skillbrains.com ; Use your operating system’s built-in tools and shortcuts for creating screenshots.
+In Windows, use the Snipping Tool or the Print Screen button; Mac users can press Cmd-Shift-3 to save a full-screen capture or Cmd-Shift-4 to select an area to screenshot.
+To be clear, we do not recommend logging in to others’ accounts, even just out of curiosity.
+And to avoid accidentally giving your login credentials to phishers, use a reliable security solution that will alert you if you stray onto a suspicious website.
+
+

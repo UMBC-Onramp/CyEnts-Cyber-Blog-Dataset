@@ -1,0 +1,8 @@
+
+(Special thanks to Casey Smith, @subTee, for important pointers regarding this step).
+Figure 5:
+The class definition of the embedded serialized object.
+Now we have the open-source component of CactusTorch , and the JavaScript code in Figure 2 makes sense.
+We can see how the malicious shellcode is executed on the targeted system.
+In Figure 2, line 29 the code invokes the flame(x,x) function with two arguments: the executable to launch and the shellcode.
+The .NET assembly embedded in the CactusTorch script runs the following steps to execute the malicious shellcode:

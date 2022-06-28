@@ -1,0 +1,6 @@
+
+The following log files are hard coded in the malware, but additional log paths may be specified: /var/run/utmp /var/log/wtmp /var/log/btmp /var/log/lastlog /var/log/faillog /var/log/syslog /var/log/messages /var/log/secure /var/log/auth.log OKSOLO is a publicly available backdoor that binds a shell to a specified port.
+It can be compiled to support password authentication or dropped into a root shell.
+OPENSHACKLE is a reconnaissance tool that collects information about logged-on users and saves it to a file.
+OPENSHACKLE registers Windows Event Manager callback to achieve persistence.
+ProxyChains allows the use of SSH, TELNET, VNC, FTP and any other internet application from behind HTTP (HTTPS) and SOCKS (4/5) proxy servers.

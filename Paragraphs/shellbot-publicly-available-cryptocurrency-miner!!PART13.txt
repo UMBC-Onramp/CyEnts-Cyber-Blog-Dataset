@@ -1,0 +1,10 @@
+
+Often, botnets using widespread code can be used by anyone, but they can see more meaningful activity from specific actors and groups.
+Links to Romanian-Speaking Operators What IBM found throughout its research, especially during the infiltration of IRC servers, are clues to an operation being managed by Romanian-speaking bot masters.
+For one, X-Force found Perl scripts stating flood.ro as the author, and some instances of ShellBot were hosted on a Romanian news site.
+The Perl scripts further linked to Romanian-speakers’ IRC channels on multiple servers.
+One of the operators used the Romanian hostname blackcat.ro on IRC.
+All threat actors conversing in the channels were fluent in Romanian.
+These links to Romania line up with threat intelligence on ShellBot by other security researchers in the past few years.
+Links to the Outlaw Gang
+The Romanian threat group tracked as Outlaw, which was identified in 2018, has been observed to use ShellBot to target different organizations.

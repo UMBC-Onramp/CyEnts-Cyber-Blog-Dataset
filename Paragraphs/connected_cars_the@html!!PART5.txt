@@ -1,0 +1,6 @@
+
+Since many modern vehicles can be better described as a computer attached to four wheels and an engine, their mobility and power present challenges to this means of countering threat activity.
+We have already witnessed malware designed to hijack IoT devices for malicious purposes; vehicular systems’ greater computing power, compared to connected home thermostats, can significantly enhance their value as a C2 node .
+Locating vehicles used to route malicious traffic would present a major challenge to law enforcement investigation, largely due to their mobility.
+We have not yet observed threat actors using connected vehicle systems to route malicious traffic, but it is most likely that a vehicle would be used as a final hop point to the intended target network.
+The perpetrators may use the vehicle only once, choosing to hijack the connectivity of a different vehicle on their next operation, and so on.

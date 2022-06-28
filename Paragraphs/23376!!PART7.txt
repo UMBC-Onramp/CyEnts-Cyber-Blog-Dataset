@@ -1,0 +1,10 @@
+
+To avoid falling prey to cybercriminals, make sure your accounts and devices are secure.
+Protect your accounts with strong passwords, enable two-factor authentication, and generally max out the platform’s security settings (see our guides for Steam , Battle.net , Origin , Twitch , and Discord users).
+Download apps only from official sources to minimize the chances of picking up BloodyStealer or other malware.
+Be wary of links in e-mails and messages from strangers.
+Before entering your credentials on any website, make sure it’s genuine.
+Use a reliable security solution.
+For example, Kaspersky Security Cloud blocks BloodyStealer and doesn’t interfere with gameplay .
+
+

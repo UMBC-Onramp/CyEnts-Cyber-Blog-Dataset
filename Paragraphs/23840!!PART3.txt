@@ -1,0 +1,6 @@
+
+The last one seems to be the most unpleasant vulnerability.
+A bug in the HTTP protocol stack theoretically allows attackers not only to make the affected computer execute arbitrary code, but also to spread the attack over the local network (according to Microsoft terminology, the vulnerability is classified as wormable — that is, it can be used to create a worm ).
+This vulnerability is relevant for Windows 10, Windows 11, Windows Server 2022, and Windows Server 2019.
+However, according to Microsoft, it’s dangerous for users of Windows Server 2019 and Windows 10 version 1809 only if they enable HTTP Trailer Support using the EnableTrailerSupport key in the registry.
+Experts also expressed concern about the presence of another serious vulnerability in Microsoft Exchange Server — CVE-2022-21846 (which, by the way, is not the only Exchange bug on the list, just the most dangerous).

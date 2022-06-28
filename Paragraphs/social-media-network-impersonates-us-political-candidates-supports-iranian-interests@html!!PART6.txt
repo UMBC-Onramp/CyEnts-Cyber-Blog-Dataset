@@ -1,0 +1,8 @@
+
+For example, one account in the network, @AlexRyanNY, created in 2010, had only two visible tweets prior to 2017, one of which, from 2011, was in Persian and of a personal nature.
+Subsequently in 2017, @AlexRyanNY claimed in a tweet to be “an Iranian who supported Hillary” in a tweet directed at a Democratic political strategist.
+This account, using the display name “Alex Ryan” and claiming to be a Newsday correspondent, appropriated the photograph of a genuine individual also with the first name of Alex.
+We note that it is possible that the account was compromised from another individual or that it was merely repurposed by the same actor.
+Additionally, while most of the accounts in the network had their interface languages set to English, we observed that one account had its interface language set to Persian.
+Impersonation of U.S. Political Candidates Some Twitter accounts in the network impersonated Republican political candidates that ran for House of Representatives seats in the 2018 U.S. congressional midterms.
+These accounts appropriated the candidates’ photographs and, in some cases, plagiarized tweets from the real individuals’ accounts.

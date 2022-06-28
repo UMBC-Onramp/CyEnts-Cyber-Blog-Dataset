@@ -1,0 +1,5 @@
+
+It is not, however, the only threat users face.
+Malicious bots Another recent study demonstrates how easy it is to exploit Discord’s bot system.
+The bots extend chat server functionality in various ways, and Discord offers a vast array of options for customizing users’ own chats.
+One example of chat-related malicious code was recently published on (and fairly quickly removed from)

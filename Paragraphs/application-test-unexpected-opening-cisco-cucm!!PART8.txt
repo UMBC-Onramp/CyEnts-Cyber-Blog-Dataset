@@ -1,0 +1,11 @@
+
+The Next Steps: Reducing the Risk of Compromise So, what should you do about it?
+We recommend you install the latest patch for the Cisco Unified Communications Products from the Cisco security advisories.
+The patches for both the CUCM and the CUCM IM & Presence are shown in the charts below.
+Links to the advisories are located in the References section.
+A continuous penetration testing program can also help discover and fix these types of vulnerabilities.
+Learn more about X-Force Red’s penetration testing services here .
+On July 21, 2021, X-Force Red will be hosting a virtual panel session about threats against and vulnerabilities exposing Internet of Things (IoT) devices.
+The presenters will include IoT industry leaders such as the ioXt Alliance and Silicon Labs.
+Register here References CUCM IM & Presence SQL injection vulnerability leads to arbitrary code execution: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-imp-inj-ereCOKjR CUCM IM & Presence SQL injection vulnerability leads to local file disclosure and path traversal vulnerabilities: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-imp-trav-inj-dM687ZD6 CUCM cross-site scripting vulnerability leads to attack on other appliance users: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-xss-Q4PZcNzJ https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-inf-disc-wCxZNjL2
+

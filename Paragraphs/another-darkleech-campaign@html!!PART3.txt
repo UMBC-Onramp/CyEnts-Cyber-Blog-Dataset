@@ -1,0 +1,4 @@
+
+During most of the campaign’s run, delivery[.]globalcdnnode[.]com appeared to have gone dark, no longer serving the exploit kit’s landing page as expected and then stopped resolving altogether, yet tons of requests kept flowing.
+This left some scratching their heads as to whether the noise was a real threat.
+Indeed, it was a real threat, as Blackhole showed up to the party a couple of days later; this was confirmed by actually witnessing a system get attacked on a subsequent visit to the URL.

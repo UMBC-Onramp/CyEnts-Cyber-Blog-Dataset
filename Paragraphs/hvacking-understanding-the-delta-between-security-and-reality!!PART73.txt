@@ -1,0 +1,10 @@
+
+  Consider some of the industries we found that could be impacted.
+Industries such as hospitals, government, and telecommunication may have severe consequences when these systems malfunction.
+For example, the eBMGR is used to maintain positive/negative pressure rooms in medical facilities or hospitals, where the slightest change in pressurization could have a life-threating impact due to the spread of airborne diseases.
+  Suppose instead a datacenter was targeted.
+Datacenters need to be kept at a cool temperature to ensure they do not overheat.
+If an attacker were to gain access to the vulnerable controller and use it to raise heat to critical levels and disable alarms, the result could be physical damage to the server hardware in mass, as well as downtime costs, not to mention potential permanent loss of critical data.
+  
+According to the Ponemon Institute (https://www.ponemon.org/library/2016-cost-of-data-center-outages), the average cost of a datacenter outage was as high as $740,357 in 2016 and climbing.
+Microsoft was a prime example of this; in 2018, the company suffered a massive datacenter outage (https://devblogs.microsoft.com/devopsservice/?p=17485) due to a cooling failure, which impacted services for around 22 hours.

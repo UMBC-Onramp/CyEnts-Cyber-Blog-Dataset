@@ -1,0 +1,10 @@
+
+Appendix:
+Detailed Example of Kerberos Authentication in Active Directory To illustrate how Kerberos works, we have selected a common scenario where a user John Smith with the account
+ACMENET.CORP\\sa_jsmith wishes to authenticate to a Windows SMB (CIFS) file share in the Acme Corporation domain, hosted on the server SQLSERVER.ACMENET.CORP.
+There are two main types of Kerberos ticket types used in Active Directory: Ticket Granting Ticket (TGT) and service tickets.
+Service tickets are obtained from the Ticket Granting Service (TGS).
+The TGT is used to authenticate the identity of a particular entity in Active Directory, such as a user account.
+Service tickets are used to authenticate a user to a specific service hosted on a domain- joined system.
+A valid TGT can be used to request service tickets from the Key Distribution Center (KDC).
+In Active Directory environments, the KDC is hosted on a Domain Controller.

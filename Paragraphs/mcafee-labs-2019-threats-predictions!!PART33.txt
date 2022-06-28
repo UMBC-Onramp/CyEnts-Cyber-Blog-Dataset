@@ -1,0 +1,9 @@
+
+ The struggle between criminals and big-scale platforms will be the next big battleground.
+Triton, malware that attacks industrial control systems (ICS), has demonstrated the capabilities of adversaries to remotely target manufacturing environments through their adjacent IT environments.
+Identity platform and “edge device” breaches will provide the keys to adversaries to launch future remote ICS attacks due to static password use across environments and constrained edge devices, which lack secure system requirements due to design limitations.
+(An edge device is any network-enabled system hardware or protocol within an IoT product.)
+We expect multifactor authentication and identity intelligence will become the best methods to provide security in this escalating battle.
+We also predict identity intelligence will complement multifactor authentication to strengthen the capabilities of identity platforms.
+Identity is a fundamental component in securing IoT.
+In these ecosystems, devices and services must securely identify trusted devices so that they can ignore the rest.

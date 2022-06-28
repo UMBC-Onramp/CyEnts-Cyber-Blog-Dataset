@@ -1,0 +1,11 @@
+
+TailoredTaboo.com mentioned on Twitter Based on all the references, and the way the domain Tailoredtaboo.com was used, we believe that the domain plays a central administrative role for both Rubella and Dryad Macro Builder and can provide insight into the customers of both Macro Builders Conclusion Toolkits that build weaponized Office documents, like Dryad and Rubella, cater to the increasing cybercriminal demand of this type of infection vector.
+With the arrest of the suspect comes an end to the era of Dryad and Rubella Macro Builder.
+Based on his activity, the suspect looked like quite the cybercriminal entrepreneur, but given his young age this is also a worrisome thought.
+If only he would have used his skills for good.
+The lure of quick cash was apparently more enticing than building a solid long-term career.
+We at McAfee never like to see young talented individuals heading down a dark path.
+Indicators of Compromise URL / Website: hxxps://tailoredtaboo.com/auth/check.php
+Hash Builder: Dryad: 7d1603f815715a062e18ae56ca53efbaecc499d4193ea44a8aef5145a4699984 Rubella:
+2a20d3d9ac4dc74e184676710a4165c359a56051c7196ca120fcf8716b7c21b9 Hash related samples: 93db479835802dc22ba5e55a7915bd25f1f765737d1efab72bde11e132ff165a ad2f9ef7142a43094161eae9b9a55bfbb6dff85d890d1823e77fc4254f29ef17 c2c2fdcc36569f6866e19fcda702c823e7bf73d5ca394652ac3a0ccc6ff9c905 3c55e54f726758f5cb0d8ef81be47c6612dba5a73e3a29f82b73a4c773e691a3 74c8389f20e50ae3a9b7d7e69f6ae7ed1a625ccc8bb6a52b3cc435cf94e6e2d3 388ee9bc0acaeec139bc17bceb19a94071aa6ae43af4ec526518b5e1f1f38f07 08694ad23cafe45495fa790bfdc411ab5c81cc2412370633a236c688b07d26aa 428a30b8787d2ba441dba1dbc3acbfd40cf7f2fc143131a87a93f27db96b7a75 93db479835802dc22ba5e55a7915bd25f1f765737d1efab72bde11e132ff165a c777012abe224126dca004561619cb0791096611257099058ece1b8d001277d0 5b773acad7da2f33d86286df6b5e95ae355ac50d143171a5b7ee61d6b3cad6d5 a17e3c2271a94450a7a7c6fcd936f177fc40ea156de4deafdfc14fd5aadfe503 1de0ebc0c375332ec60104060eecad77e0732fa2ec934f483f330110a23b46e1 b7a86965f22ed73de180a9f98243dc5dcfb6ee30533d44365bac36124b9a1541
+

@@ -1,0 +1,12 @@
+
+In January 2021, Mandiant observed a new ransomware deployed against a victim and assigned the name FIVEHANDS.
+Analysis of FIVEHANDS revealed high similarity to DEATHRANSOM, sharing several features, functions, and coding similarities.
+Absent in FIVEHANDS is a language check, similar to HELLOKITTY Both DEATHRANSOM and FIVEHANDS drops a ransom note in all non-excluded directories Technical Comparison of FIVEHANDS, HELLOKITTY and DEATHRANSOM DEATHRANSOM is written in C while the other two families are written in C++.
+DEATHRANSOM uses a distinct series of do/while loops to enumerate through network resources, logical drives, and directories.
+It also uses QueueUserWorkItem to implement thread pooling for its file encryption threads.
+HELLOKITTY is written in C++, but reimplements a significant portion of DEATHRANSOM's functionality using similar loop operations and thread pooling via QueueUserWorkItem.
+The code structure to enumerate network resources, logical drives, and perform file encryption is very similar.
+Additionally, HELLOKITTY and DEATHRANSOM share very similar functions to check for the completion status of their encryption threads before exiting.
+FIVEHANDS is written in C++ and although high level functionality is similar, the function calls and code structure to implement the majority of the functionality is written differently.
+Also, instead of executing threads using QueueUserWorkItem, FIVEHANDS uses IoCompletionPorts to more efficiently manage its encryption threads.
+FIVEHANDS also uses more functionality from the C++ standard template library (STL) than does HELLOKITTY.

@@ -1,0 +1,9 @@
+
+Post encrypted data to remote servers.
+Open URL schemes to identify and launch other apps installed on the device.
+“Side-load” non-App Store apps by prompting the user to click an “Install” button.
+The offending ad library contains identifying data suggesting that it is a version of the mobiSage SDK [1].
+We found 17 distinct versions of the backdoored ad library, with version codes between 5.3.3 and 6.4.4.
+However, in the latest mobiSage SDK publicly released by adSage [2], identified as version 7.0.5, the backdoors are not present.
+We cannot determine with certainty whether the backdoored versions of the library were actually released by adSage, or whether they were created and/or compromised by a third party.
+As of publication of this blog, we have identified 2846 apps published in the App Store containing backdoored versions of mobiSage SDK.

@@ -1,0 +1,4 @@
+
+Figure 5: Downloading the second-stage script and creating a scheduled task The script achieves persistence by copying itself to Appdata/Roaming and using schtasks.exe to create a scheduled task that runs the VBScript every 15 minutes.
+After further de-obfuscation of the downloaded second-stage VBScript, we obtain the PowerShell script that is executed through a shell object, as shown in Figure 6.
+Figure 6: De-obfuscated PowerShell script The PowerShell script downloads two Base64-encoded payloads from paste.ee that contain binary executable files.

@@ -1,0 +1,7 @@
+
+Finding isolated subgraphs was originally researched to help automatically identify inline functions.
+It does this, but it turns out that this graph construct occurs naturally in code without inline functions.
+This isn’t a bad thing as it shows a natural grouping of nodes that could be a good candidate to group to help simplify the overall graph and make analysis easier.
+Once the chooser is active, you can double click (or press Enter) on a row in the chooser to highlight the nodes that make up the subgraph, as seen in Figure 9.
+Figure 9:
+Highlighted isolated subgraph You can create a group for an isolated subgraph by: Right-clicking on the chooser row and selecting \"Create group\", or pressing Insert while a row is selected.

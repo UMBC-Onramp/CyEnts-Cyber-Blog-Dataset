@@ -1,0 +1,5 @@
+
+With the increased adoption of Office 365, we have noticed a surge of attacks on the service— especially attempts to compromise email.
+One threat the McAfee cloud team uncovered was the botnet KnockKnock, which targeted system accounts that typically do not have multifactor authentication.
+We have also seen the emergence of exploits of the trust model in the Open Authorization standard.
+One was launched by Fancy Bear, the Russian cyber espionage group, phishing users with a fake Google security app to gain access to user data.

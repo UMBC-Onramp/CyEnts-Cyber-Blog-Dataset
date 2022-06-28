@@ -1,0 +1,6 @@
+
+A tracker\nobject is created from the Vivisect workspace, and then we get all\ncross-references to the string decoder function ( decStringFunc ).
+Figure 5:
+Argtracker initialization Figure 6 shows the call to getPushArgs() for every reference to the decoder function.
+Only two arguments are\npassed on the stack so the second argument is 2.
+Because registers are\nused to pass parameters, we now need to use the third argument to getPushArgs() by passing in a list of\nregister names that contain arguments to extract: [ ‘eax’, ‘ecx’, ‘edi’ ].

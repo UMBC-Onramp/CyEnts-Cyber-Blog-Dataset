@@ -1,0 +1,6 @@
+FireEye Labs recently identified several widespread malspam (malware spam) campaigns targeting Brazilian companies with the goal of delivering banking Trojans.
+We are referring to these campaigns as Metamorfo.
+Across the stages of these campaigns, we have observed the use of several tactics and techniques to evade detection and deliver the malicious payload.
+In this blog post we dissect two of the main campaigns and explain how they work.
+Campaign #1
+The kill chain starts with an email containing an HTML attachment with a refresh tag that uses a Google URL shortener as the target.

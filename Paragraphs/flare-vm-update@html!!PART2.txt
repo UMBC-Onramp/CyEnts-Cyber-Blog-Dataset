@@ -1,0 +1,7 @@
+
+FLARE VM also includes many new tools such as IDA 7.0, radare and YARA.
+Therefore, we would like to share these updates, especially the new installation process.
+Installation We strongly recommend you use FLARE VM within a virtualized environment for malware analysis to protect and isolate your physical device and network from malicious activities.
+We assume you already have experience setting up and configuring your own virtualized environment.
+Please create a new virtual machine (VM) and perform a fresh installation of Windows.
+FLARE VM is designed to be installed on Windows 7 Service Pack 1 or newer; therefore, you can select a version of windows that best suits your needs.

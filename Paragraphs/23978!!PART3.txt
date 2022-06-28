@@ -1,0 +1,9 @@
+
+According to an Okta’s official statement , its specialists are currently conducting an investigation and the company promises to share details as soon as the investigation is completed.
+It is possible that the published screenshots are related to the January incident, when an unknown actor tried to compromise the account of a technical support engineer working for a third-party subcontractor.
+Updated on March 23, 2022: LAPSUS$ has published their reply to Okta’s official statement in which they accuse the company in attempts to downplay the impact of the breach.
+Who are the LAPSUS$ group and what do we know about them?
+LAPSUS$ gained fame in 2020 when they compromised the Brazilian Ministry of Health’s systems.
+Presumably, this is a Latin American hacker group that steals information from large companies for ransom.
+If the victims refuse to pay, the hackers publish the stolen information on the Internet.
+Unlike many other ransomware groups, LAPSUS$ does not encrypt the data of hacked organizations, but simply threatens to leak the data in case of non-payment of the ransom.

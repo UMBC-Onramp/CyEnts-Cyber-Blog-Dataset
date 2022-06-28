@@ -1,0 +1,14 @@
+
+Figure 8: An App Store app is infected with XcodeGhost S Enterprise Protection FireEye MTP has detected and assisted in Apple’s takedown of thousands of XcodeGhost-infected iOS applications.
+We advise all organizations to notify their employees of the threat of XcodeGhost and other malicious iOS apps.
+Employees should make sure that they update all apps to the latest version.
+For the apps Apple has removed, users should remove the apps and switch to other uninfected apps on App Store.
+FireEye
+MTP management customers have full visibility into which mobile devices are infected in their deployment base.
+We recommend that customers immediately review MTP alerts, locate infected devices/users, and quarantine the devices until the infected apps are removed.
+FireEye NX customers are advised to immediately review alert logs for activities related to XcodeGhost communications.
+[1] h
+ttps://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/ [2] https://itunes.apple.com/us/app/id915233927 [3] http://drops.wooyun.org/papers/9024 [4] https://itunes.apple.com/us/app/pdf-reader-annotate-scan-sign/id368377690?mt=8 [5] https://itunes.apple.com/us/app/winzip-leading-zip-unzip-cloud/id500637987?mt=8 [7] https://www.fireeye.com/blog/threat-research/2015/08/ios_masque_attackwe.html [8] https://www.fireeye.com/blog/threat-research/2015/02/ios_masque_attackre.html [9] https://www.fireeye.com/blog/threat-research/2014/11/masque-attack-all-your-ios-apps-belong-to-us.html [10] https://www.fireeye.com/blog/threat-research/2015/06/three_new_masqueatt.html
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

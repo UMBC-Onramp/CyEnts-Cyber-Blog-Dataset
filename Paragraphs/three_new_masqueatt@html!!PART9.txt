@@ -1,0 +1,3 @@
+
+Other than requiring the same bundle identifier to replace a genuine app in the original Masque Attack [xx], the malicious chrome in this phishing attack uses a different bundle identifier to bypass the installer’s bundle identifier validation.
+Later, when the victim clicks a URL in the Gmail app, the malicious Chrome can take over the rewritten URL scheme and perform more sophisticated attacks.

@@ -1,0 +1,7 @@
+
+Registry artifacts associated with persistence of \"msspcheck.exe.\"
+From there, John double-checks the uniqueness of the additional filename with some search engine queries.
+He can confirm that \"msspcheck.exe\" is a unique filename and update his \"acmCleanup.exe (BACKDOOR)\" IOC.
+By updating his existing IOC, John ensures that he will be able to identify evidence attributed to this specific variant of the backdoor.
+Changes to the original IOC have been indicated in green.
+The updated IOC can be seen below: Figure 1: Augmented IOC for acmCleanup.exe (BACKDOOR)

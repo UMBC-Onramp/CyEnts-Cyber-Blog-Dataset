@@ -1,0 +1,8 @@
+
+Finally, we discovered a way to bypass and evade application security controls to exploit multiple reflected cross-site scripting issues on multiple endpoints.
+An attacker could exploit this vulnerability by constructing a request with an injected malicious payload in the vulnerable parameters and deceive the logged-in users to visit it.
+The malicious payload injected by the attacker is executed within the victim’s browser, in the context of that victim’s session.
+The malicious application allows the attacker to hijack the user session and redirect the victim to an attacker-controlled domain or another client-side attack.
+That might be in-browser keylogging or performing arbitrary actions within the context of the application.
+We also discovered sensitive information disclosure in one of the application endpoints.
+This could allow an authenticated attacker to disclose users’ hashed passwords, which could then be recovered using a dictionary attack.

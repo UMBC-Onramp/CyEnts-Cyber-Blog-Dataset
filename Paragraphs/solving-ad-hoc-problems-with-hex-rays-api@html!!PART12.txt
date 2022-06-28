@@ -1,0 +1,5 @@
+
+Moreover, the numeric value must be in the readable ASCII range (lines 20 and 21).
+Once this kind of expression is found, we will change the type of the right side from a number to a string (lines 26 to 31), and replace its numerical value by the corresponding ASCII character (line 32).
+The modified pseudocode after running this script is shown in Figure 7.
+Figure 7: Assigned values shown as characters You can find the complete scripts in our FLARE GitHub repository under decompiler scripts Conclusion These two admittedly simple examples should be able to give you an idea of the power of IDA’s decompiler API.

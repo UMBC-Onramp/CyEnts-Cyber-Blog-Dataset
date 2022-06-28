@@ -1,0 +1,5 @@
+
+Some of the useful tools in Windows to detect memory corruption vulnerabilities such as PageHeap do not help in detecting uninitialized memory.
+On the contrary, PageHeap fills the memory allocations with patterns, which essentially makes them initialized.
+There are few third-party tools, including Dr.Memory, that use binary instrumentation to detect memory safety issues such as heap overflows, uninitialized memory usages, use-after-frees, and others.
+Detecting Uninitialized Memory in Image Decoding Detecting uninitialized memory in Windows usually requires binary instrumentation, especially when we do not have access to source code.

@@ -1,0 +1,5 @@
+
+Other bugs remain, however, meaning files cannot always be encrypted.
+The latest This section is based on the latest version of the malware (Version 5.0.2 on October 4), though some elements appear in earlier releases of Version 5.
+Starting with this version, the malware uses two exploits to try to elevate privileges in the system.
+The first exploit uses a dynamic call to the function IsWoW64Process to detect whether the operating system is running in 32 or 64 bits.

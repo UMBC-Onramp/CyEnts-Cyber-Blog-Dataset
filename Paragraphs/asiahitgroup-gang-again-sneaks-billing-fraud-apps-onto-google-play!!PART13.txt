@@ -1,0 +1,10 @@
+
+Screens shown when the country of the IP address is Thailand.
+Finally, with Russia no image is shown to the user.
+The app fraudulently charges the user via WAP billing while enabling 3G and disabling Wi-Fi: Figure 14.
+Forcing the use of 3G to start WAP billing fraud.
+We also found similar apps from late 2016 that performed SMS fraud by pretending to be legitimate popular applications and asking the user to pay for them.
+These are similar to text seen in the 2018 campaign as an update but labeled as Term of user: Figure 15.
+Fake-installer behavior asking the user to pay for a popular legitimate app.
+If the user clicks “No,” the app executes as expected.
+However, if the user clicks “Yes,” the app subscribes the user to a premium-rate service by sending an SMS message with a specific keyword to a short number.

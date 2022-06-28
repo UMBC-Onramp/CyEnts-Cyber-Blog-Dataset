@@ -1,0 +1,6 @@
+
+Figure 7: Converted data executed and invoked The parameters stored within ChannelSinkStack are the hex-encoded values for the resource named EventWaitHandleRights and a base XOR key ‘xNksm.’
+Figure 8: ChannelSinkStack parameters RoboSki.
+Component As described above, during execution the RoboSki component is provided as a resource and XOR key parameters, and proceeds to decode and decrypt the ReZer0 loader from the RoboSki packer.
+The component loads the resource and arranges the pixels in BGRA order.
+The component then parses the resource according to the structure below, and XOR decrypts the data using the results of permutations against the base XOR key and a control key.

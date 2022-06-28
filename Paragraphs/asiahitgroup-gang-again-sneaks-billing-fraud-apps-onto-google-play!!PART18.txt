@@ -1,0 +1,4 @@
+
+The campaigns started in late 2016 with very simple fake installers that charged users for copies of popular apps.
+In late 2017, Google Play apps abused WAP-billing services and used IP address geolocation to target specific countries.
+In 2018, Google Play apps used silent background push notifications to trigger the display of a fake update message and to gather data for mobile billing fraud.

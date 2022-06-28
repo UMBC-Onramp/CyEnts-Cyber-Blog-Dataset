@@ -1,0 +1,7 @@
+
+These commands also allow for scrolling with a voice command that commences scrolling in a chosen direction, and another voice command for stopping scrolling.
+There are even voice commands to set the speed of the scroll to slow, medium, or fast.
+In the disassembly view, the cursor can also be moved per “word” on the current line of the disassembly or decompilation, or even per basic block or function.
+Like many other applications, dialogs are a part of IDA Pro’s user interface.
+The ability to easily navigate and interact with items in a dialog with your voice is essential to a smooth user experience.
+Voice commands in the profile enable the user to easily click the OK or Cancel buttons, toggle checkboxes, and tab through controls in the dialog in both directions and in specified increments.

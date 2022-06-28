@@ -1,0 +1,3 @@
+
+However, we have discovered that iOS doesn’t verify the consistency between the bundle identifier in the XML manifest file on the website and the bundle identifier within the app itself.
+If the XML manifest file on the website has a bundle identifier equivalent to that of another genuine app on the device, and the bundle-version in the manifest is higher than the genuine app’s version, the genuine app will be demolished down to a dummy placeholder, whereas the in-house app will still be installed using its built-in bundle id.

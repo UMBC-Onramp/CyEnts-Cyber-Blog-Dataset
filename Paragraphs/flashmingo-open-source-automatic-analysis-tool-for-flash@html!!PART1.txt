@@ -1,0 +1,13 @@
+Adobe Flash is one of the most exploited software components of the last decade.
+Its complexity and ubiquity make it an obvious target for attackers.
+Public sources list more than one thousand CVEs being assigned to the Flash Player alone since 2005.
+Almost nine hundred of these vulnerabilities have a Common Vulnerability Scoring System (CVSS) score of nine or higher.
+After more than a decade of playing cat and mouse with the attackers, Adobe is finally deprecating Flash in 2020.
+To the security community this move is not a surprise since all major browsers have already dropped support for Flash.
+A common misconception exists that Flash is already a thing of the past; however, history has shown us that legacy technologies linger for quite a long time.
+If organizations do not phase Flash out in time, the security threat may grow beyond Flash's end of life due to a lack of security patches.
+As malware analysts on the FLARE team, we still see Flash exploits within malware samples.
+We must find a compromise between the need to analyse Flash samples and the correct amount of resources to be spent on a declining product.
+To this end we developed FLASHMINGO , a framework to automate the analysis of SWF files.
+FLASHMINGO enables analysts to triage suspicious Flash samples and investigate them further with minimal effort.
+It integrates into various analysis workflows as a stand-alone application or can be used as a powerful library.

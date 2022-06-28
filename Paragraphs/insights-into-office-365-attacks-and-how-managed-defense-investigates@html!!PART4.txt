@@ -1,0 +1,10 @@
+
+Once obtained, this personally identifiable information is later used to conduct tax fraud.
+Conversely, APT intrusions are typically more sophisticated and are conducted by state-sponsored threat actors.
+Rather than for financial gain, APT actors are usually tasked to compromise O365 tenants for purposes of espionage, data theft, or destruction.
+Given the wealth of sensitive information housed in any given organization’s O365 tenant, APT actors may not even need to touch a single endpoint to complete their mission, sidestepping the many security controls organizations have implemented and invested in.
+O365
+Logs and Data Sources
+In this section, we’ll touch on the multitude of logs and portals containing forensic data relevant to an O365 investigation.
+Before we can begin investigating an O365 case, we’ll work with our clients to get an “Investigator” account provisioned with the roles required to obtain the forensic data we need.
+For the purposes of this blog post, we’ll quickly list the roles needed for an Investigator account, but during an active Managed Defense investigation, a designated Managed Defense consultant will provide further guidance on account provisioning.

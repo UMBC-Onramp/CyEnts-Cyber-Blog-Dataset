@@ -1,0 +1,9 @@
+
+While monitoring the server, we also observed some change in the script related to this code, as shown in Figure 10.
+Figure 10:
+Artifact Cleaning Commands The highlighted command in one of the variants indicates that it might drop or use this file in the attack.
+The file could be a decoy document.
+Persistence Mechanism
+During our analysis, we observed two variants of this attack with different persistence mechanisms.
+In the first variant, the malware author uses a RUN registry entry to remain persistent in the system.
+In the second variant, the malware author uses the shortcut file (named desktop.ini.lnk ), which is hosted on the server.

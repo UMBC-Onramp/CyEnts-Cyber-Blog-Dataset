@@ -1,0 +1,4 @@
+
+Other security researchers have tracked these malware families under the names BazarLoader and BazarBackdoor or Team9 .
+The operators conducting these campaigns have actively targeted hospitals, retirement communities, and medical centers, even in the midst of a global health crisis , demonstrating a clear disregard for human life.
+Email Campaign TTPs Campaigns distributing KEGTAP, SINGLEMALT and WINEKEY have been sent to individuals at organizations across a broad range of industries and geographies using a series of shifting delivery tactics, techniques and procedures (TTPs).

@@ -1,0 +1,7 @@
+
+Figure 3 shows portions of the reconstructed command dispatching code.
+Figure 3:
+Command dispatch in msageCore.
+High-risk interfaces Each dispatched command ultimately arrives at an Objective-C class in msageCore.
+Table 1 shows a subset of msageCore classes and the corresponding interfaces that they expose.
+msageCore Class Name Interfaces MSageCoreUIManagerPlugin - captureAudio: - captureImage: - openMail: - openSMS: - openApp: - openInAppStore: - openCamera: - openImagePicker: - ... MSageCoreLocation - start: - stop: - setTimer: - returnLocationInfo:webViewId: - ...

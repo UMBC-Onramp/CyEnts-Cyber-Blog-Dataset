@@ -1,0 +1,6 @@
+
+In this case, it is cell G2, which is the IP address.
+Array to look in: This will be the array of data in which Excel will search for the value to look up.
+Excel does exact matching by default for XLOOKUP.
+In the aforementioned example, we are searching in ‘IP Address Intel’!$A$2:$A:$15.
+In other words, we are looking in the other sheet in this workbook titled “IP Address Intel”, then in that sheet, search in the cell range of A2 to A15:

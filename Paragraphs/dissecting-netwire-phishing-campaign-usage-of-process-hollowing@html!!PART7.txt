@@ -1,0 +1,7 @@
+
+Figure 7:
+Formatted PowerShell code The code identifies the installed version of .NET and uses it later to dynamically resolve the path to the .NET installation folder.
+The decoded dropper assembly is passed as an argument to the Load method.
+The resulting class instance is stored as a variable.
+The objects of the dropper are accessed through this variable and method R is invoked.
+Method R of the .NET dropper is responsible for executing the final payload.

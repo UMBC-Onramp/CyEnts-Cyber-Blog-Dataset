@@ -1,0 +1,6 @@
+
+FireEye announced that Operation Ke3chang compromised at least five Ministries of Foreign Affairs in Europe.
+Red October , EvilGrab , and Nettraveler (aka RedStar) targeted both diplomatic missions and commercial industries.
+Technical Trends Estimations of “sophistication” often dominate the coverage of targeted malware attacks.
+But what I find interesting is that simple changes made to existing malware are often more than enough to evade detection.
+Even more surprising is that technically “unsophisticated” malware is often found in the payload of “sophisticated” zero-day exploits.

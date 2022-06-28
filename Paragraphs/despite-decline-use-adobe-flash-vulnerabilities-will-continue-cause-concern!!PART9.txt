@@ -1,0 +1,5 @@
+
+Adobe’s shift in software security strategy has been to make exploiting issues prohibitively expensive so that attackers will find easier, less resource-intensive, and perhaps more reliable methods.
+Rather than chase every flaw, Adobe’s approach focuses on building defensive techniques that protect vulnerabilities, just as standard secure development life cycle techniques attempt to prevent new vulnerabilities from being released.
+Little in software development happens immediately, especially on a large scale.
+There is typically a lag—usually one to two years—between a strategy shift and results.

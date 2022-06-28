@@ -1,0 +1,12 @@
+
+3/18/20 108.61.209.121:443 CN=service-booster[.]com
+692ed54fb1fb189c36d2f1674db47e45 3/18/20 134.122.116.114:443 CN=service-helpes[.]com ad0914f72f1716d810e7bd8a67c12a71
+3/18/20 209.97.130.197:443 CN=helpforyourservice[.]com 00fe3cc532f876c7505ddbf5625de404 3/18/20 192.241.143.121:443 CN=
+serviceshelps[.]com e50998208071b4e5a70110b141542747 3/18/20 45.141.86.95:443 CN=seventhservice-developer[.]com 413ca4fa49c3eb6eef0a6cbc8cac2a71 3/18/20
+198.211.116.199:443 CN=actionshunter[.]com 8e5bedbe832d374b565857cce294f061 3/18/20 45.141.86.155:443 CN=
+sexyservicee[.]com cca37e58b23de9a1db9c3863fe2cd57c 3/19/20 194.26.29.239:443 CN=
+eleventhserviceupdater[.]com 7e0fcb78055f0eb12bc8417a6933068d 3/19/20 45.141.86.206:443 CN=servicedhunter[.]com fdefb427dcf3f0257ddc53409ff71d22
+3/19/20 45.141.86.92:443 CN=service-updateer[.]com 51ba9c03eac37751fe06b7539964e3de 3/19/20 134.122.116.59:443 CN=servicedbooster[.]com db7797a20a5a491fb7ad0d4c84acd7e8 3/19/20 134.122.118.46:443 CN=
+servicedpower[.]com
+7b57879bded28d0447eea28bacc79fb5 3/19/20 134.122.124.26:443 CN=serviceboostnumberone[.]com 880982d4781a1917649ce0bb6b0d9522 3/20/20 45.141.86.97:443 CN=ninethservice-developer[.]com e4a720edfcc7467741c582cb039f20e0 3/20/20 178.62.247.205:443 CN=top-serviceupdater[.]com a45522bd0a26e07ed18787c739179ccb 3/20/20 159.203.36.61:443 CN=
+yourserviceupdater[.]com 7b422c90dc85ce261c0a69ba70d8f6b5 3/20/20 134.122.20.117:443 CN=fifthserviceupdater[.]com

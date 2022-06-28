@@ -1,0 +1,37 @@
+Kaspersky researchers have found a zero-day vulnerability (CVE-2021-28310) in a Microsoft Windows component called Desktop Window Manager (DWM).
+
+We believe several threat actors have already exploited the vulnerability.
+
+Microsoft just released the patch, and we suggest applying it immediately.
+
+Here’s why.
+
+What is Desktop Window Manager?
+
+Pretty much everyone is familiar with the windowed interface of modern operating systems:  each program opening in a separate window that doesn’t necessarily take up the whole screen.
+
+Windows may overlap, for example, one casting a shadow over others as if it were physically blocking the light.
+
+In Microsoft Windows, the component responsible for rendering features such as shadows and transparency is Desktop Window Manager.
+
+To understand why Desktop Window Manager is important in a cybersecurity context, consider that programs don’t just draw their windows on the screen; they put the necessary information in a buffer.
+
+Desktop Window Manager grabs that information from each program’s buffer and creates the overall composite view that the user sees.
+
+When a user moves one window over another, the open programs don’t know anything about whether their windows should be casting a shadow or having a shadow cast on them, for example.
+
+Desktop Window Manager does that job, and as such it is a key service in Windows that has existed in every version of Windows since Vista — and cannot be deactivated in Windows 8 or later versions.
+
+Desktop Window Manager’s vulnerability The vulnerability our advanced exploit prevention technology discovered is an elevation of privilege vulnerability.
+
+That means a program can trick Desktop Window Manager into giving it access that it shouldn’t have.
+
+In this case, the vulnerability allowed the attackers to execute arbitrary code on victims’ machines — it essentially gave them full control over the computers.
+
+How to avoid CVE-2021-28310 exploitation It’s critical to act quickly.
+
+Here’s what you can do: Install the patches Microsoft released on April 13 , immediately and on all vulnerable computers; Protect all of your devices with a robust security solution such as Kaspersky Endpoint Security for Business , whose advanced exploit prevention component blocks attempts to exploit CVE-2021-28310.
+
+
+
+

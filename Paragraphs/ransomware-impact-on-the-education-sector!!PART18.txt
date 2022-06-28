@@ -1,0 +1,4 @@
+
+Backdoor infections lead to information leaks that may be vital to an institution's research effort or steal PII of students, parents, and faculty.
+A publicized attack can lead to financial loss, brand damage, and loss of faith and reputation by its affiliates and partners.
+Even worse, not only can ransomware be deployed against a vulnerable network, but access to a compromised network can also be sold on the black market to other ransomware gangs.

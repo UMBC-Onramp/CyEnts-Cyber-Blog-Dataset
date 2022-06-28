@@ -1,0 +1,6 @@
+
+Initialize which is responsible for all C2 communications and dispatching.
+The HTTP thread begins by delaying for a configurable amount of time that is controlled by the SetTime command.
+The HTTP thread will delay for a minimum of 1 minute between callouts.
+The malware uses HTTP GET or HTTP POST requests.
+If the sample is attempting to send outbound data the content-type HTTP header will be set to \"application/octet-stream\" otherwise to \"application/json\".

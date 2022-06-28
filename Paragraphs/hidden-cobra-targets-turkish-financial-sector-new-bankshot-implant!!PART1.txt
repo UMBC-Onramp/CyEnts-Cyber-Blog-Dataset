@@ -1,0 +1,6 @@
+By Ryan Sherstobitoff on Mar 08, 2018
+This post was prepared with contributions from Asheer Malhotra, Charles Crawford, and Jessica Saavedra-Morales.
+On February 28, the McAfee Advanced Threat Research team discovered that the cybercrime group Hidden Cobra continues to target cryptocurrency and financial organizations.
+In this analysis, we observed the return of Hidden Cobra’s Bankshot malware implant surfacing in the Turkish financial system.
+Based on the code similarity, the victim’s business sector, and the presence of control server strings, this attack resembles previous attacks by Hidden Cobra conducted against the global financial network SWIFT.
+In this new, aggressive campaign we see a return of the Bankshot implant, which last appeared in 2017.

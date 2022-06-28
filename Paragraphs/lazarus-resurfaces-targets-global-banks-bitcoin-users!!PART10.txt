@@ -1,0 +1,8 @@
+
+Unwraps a DLL into memory and calls its one-and-only import using Reflective DLL injection.
+DLL information.
+During our research, we discovered additional variants of the DLL file.
+DLL information As part of Reflective DLL loading the malware performs the following tasks on the DLL it has unwrapped in memory: Copy the unwrapped DLL into new locations in its own memory space.
+Build imports required by the DLL (based on the IAT of the DLL)
+Imports builder code in malware for the DLL imports Call the newly loaded DLL image’s Entry Point (DllMain) with DLL_PROCESS_ATTACH to complete successful loading of the DLL in the malware process.
+DLL Entry Point Call from malware to finish loading of the DLL in memory Call the actual malicious export in the DLL named “CoreDn”

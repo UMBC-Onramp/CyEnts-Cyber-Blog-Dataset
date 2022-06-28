@@ -1,0 +1,305 @@
+By John Fokker and Thomas Roccia on Jul 16, 2019 Everyday thousands of people receive emails with malicious attachments in their email inbox.
+
+Disguised as a missed payment or an invoice, a cybercriminal sender tries to entice a victim to open the document and enable the embedded macro.
+
+This macro then proceeds to pull in a whole array of nastiness and infect a victim’s machine.
+
+Given the high success rate, malicious Office documents remain a preferred weapon in a cyber criminal’s arsenal.
+
+To take advantage of this demand and generate revenue, some criminals decided to create off-the-shelf toolkits for building malicious Office documents.
+
+These toolkits are mostly offered for sale on underground cybercriminal forums.
+
+Announced today, the Dutch National High-Tech Crime Unit (NHTCU) arrested an individual suspected of building and selling such a criminal toolkit named the Rubella Macro Builder.
+
+McAfee Advanced Threat Research spotted the Rubella toolkit in the wild some time ago and was able to provide NHTCU with insights that proved crucial in its investigation.
+
+In the following blog we will explain some of the details we found that helped unmask the suspected actor behind the Rubella Macro Builder.
+
+What is an Office Macro Builder?
+
+An Office Macro Builder is a toolkit designed to weaponize an Office document so it can deliver a malicious payload by the use an obfuscated macro code that purposely tries to bypass endpoint security defenses.
+
+By using a toolkit dedicated to this purpose, an actor can push out higher quantities of malicious documents and successfully outsource the first stage evasion and delivery process to a specialized third party.
+
+Below is an overview with the general workings of an Office Macro Builder.
+
+The Defense evasion shown here is specific to Rubella Office Macro Builder.
+
+Additional techniques can be found in other builders.
+
+Dutch Language OpSec fail….
+
+Rubella Macro Builder is such a toolkit and was offered by an actor by the same nickname “Rubella”.
+
+The toolkit was marketed with colorful banners on different underground forums.
+
+For the price of 500 US Dollars per month you could use his toolkit to weaponize Office documents that bypass end-point security systems and deliver a malicious payload or run a PowerShell Code of your choice.
+
+Rubella advertisement banner In one of Rubella’s forum postings the actor was detailing the toolkit and that it managed to bypass the Windows Anti Malware Scan Interface (AMSI) present in Windows 10.
+
+To prove this success, the post contained a link to a screenshot.
+
+Being a Dutch researcher, this screenshot immediately stood out because of the Dutch version of Microsoft Word that was used.
+
+Dutch is a very uncommon language, only a small percentage of the world’s population speaks it, let alone an even smaller percentage of cybercriminals who use it.
+
+The linked screenshot with the Dutch version of Microsoft Word.
+
+Interestingly enough we reported last year on the individuals behind Coinvault ransomware.
+
+One of the reasons they got caught was the use of flawless Dutch in their code.
+
+With this in the back of our minds we decided to go deeper down the rabbit hole.
+
+Forum Research We looked further into the large amount of posts by Rubella to learn more about the person behind the builder.
+
+The actor Rubella was actually promoting a variety of different, some self-written, products and services, ranging from (stolen) credit card data, a crypto wallet stealer and a malicious loader software to a newly pitched product called Tantalus ransomware-as-a-service.
+
+During our research we were able to link different nicknames used by the actor on several forums across a timespan of many years.
+
+Piecing it all together, Rubella showed a classic growth pattern of an aspiring cybercriminal, started by gaining technical security knowledge on beginner forums with low op-sec and gradually moved to some of the bigger, exclusive forums to offer products and services.
+
+PDB path Breitling One of the posts Rubella placed on a popular hacker forum was promoting a piece of free software the actor coded to spoof email.
+
+The posting contained a link to VirusTotal and included a SHA-256 hash of the software.
+
+This gained our interest since it provided a possibility to link the adversary to the capability.
+
+Email spoofer posting including the VirusTotal link Closer examination of the piece of software on VirusTotal showed that the mail Spoofer contained a debug or PDB path “C:\\Users\\Breitling”.
+
+Even though the username Breitling isn’t very revealing about an actual person, leaving such a specific PDB path within malware is a classic mistake.
+
+By pivoting on the specific PDB path we found additional samples on VirusTotal, including a file that was named RubellaBuilder.exe, which was a version of the Macro builder that Rubella was offering.
+
+Later in the blog post we will take a closer look at the builder itself.
+
+Finding additional samples with the Breitling PDB path Since Breitling was most likely the username used on the development machine, we were wondering if we could find Office documents that were crafted on the same machine and thus also containing the author name Breitling.
+
+We found an Office document with Breitling as author and the document happened to be created with a Dutch version of Microsoft Word.
+
+The Word document containing the author name Breitling.
+
+Closer inspection of the content of the Word document revealed that it also contained a string with the familiar Jabber account of Rubella ; Rubella(@)exploit.im.
+
+The Malicious document containing the string with the actor’s jabber account.
+
+Circling back to the forums we found an older posting under one of the nicknames we could link to Rubella.
+
+In this posting the actor is asking for advice on how to add a registry key using C#.
+
+They placed another screenshot to show the community what they were doing.
+
+This behavior clearly shows a lack of skill but at the same time his thirst for knowledge.
+
+Older posting where the actor asks for help.
+
+A closer look at the screenshot revealed the same PDB path C:\\Users\\Breitling\\. Screenshot with the Breitling PDB path Chatting with Rubella Since Rubella was quite extroverted on the underground forums and had stated Jabber contact details in advertisements we decided to carefully initiate contact with him in the hope that we would get access to some more information.
+
+About a week after we added Rubella to our Jabber contact list, we received a careful “Hi.”
+
+We started talking and posing as a potential buyer, carefully mentioning our interest the Rubella Macro Builder.
+
+During this chat Rubella was quite responsive and as a real businessperson, mentioned that he was offering a new “more exclusive” Macro Builder named Dryad.
+
+Rubella proceeded to share a screenshot of Dryad with us.
+
+Screenshot of Dryad shared by Rubella Eventually we ended our conversation in a friendly manner and told Rubella we would be in touch if we remained interested.
+
+Dryad Macro Builder Based on the information provided from the chat with Rubella we performed a quick search for Dryad Macro Builder.
+
+We eventually found a sample of the Dryad Macro Builder and decided to further analyze this sample and compare it for overlap with the Rubella Macro Builder.
+
+PE Summary
+
+We noticed that the program was coded in .NET
+
+Assembly which is usually a preferred language for less skilled malware coders.
+
+Dynamic Analysis When we ran the application, it asked us to enter a login and password in order to run.
+
+We also noticed a number-generated HWID (Hardware-ID) that was always the same when running the app.
+
+The HWID number is a unique identifier specific to the machine it was running on and was used to register the app.
+
+When trying to enter a random name we detected a remote connection to the website ‘hxxps://tailoredtaboo.com/auth/check.php’ to verify the license.
+
+The request is made with the following parameters ‘hwid=<HWID>&username=<username>&password=<password>’.
+
+Once the app is running and registered it shows the following interface.
+
+In this interface it is possible to see the function proposed by the app and it was similar to the screenshot that was shared during our chat.
+
+Basically, the tool allows the following: Download and execute a malicious executable from an URL Execute a custom command Type of payload can be exe, jar, vbs, pif, scr Modify the dropped filename Load a stub for increase obfuscation Generate a Word or Excel document It contains an Anti
+
+-virus Evasion tab: Use encryption and modify the encryption key Add junk code Add loop code It also contains a tab which is still in development: Create Jscript or VBscript Download and execute Payload URL Obfuscation with base64 and AMSI bypass which are not yet developed.
+
+Reverse Engineering
+
+The sample is coded in .Net
+
+without any obfuscation.
+
+We can see in the following screenshot the structure of the file.
+
+Additionally, it uses the Bunifu framework for the graphic interface.
+
+( https://bunifuframework.com/ )
+
+Main function The main function launches the interface with the pre-configuration options.
+
+We can see here the link to putty.exe (also visible in the screenshots) for the payload that needs to be changed by the user.
+
+Instead of running an executable, it is also possible to run a command.
+
+By default, the path for the stub is the following: We can clearly see here a link with Rubella.
+
+Licensing function To use the program, it requires a license, that the user has to enter from the login form.
+
+The following function shows the login form.
+
+To validate the license the program will perform some check and combine a Hardware ID, a username and a password.
+
+The following function generates the hardware id.
+
+It gets information from ‘Win32_Processor class’ to generate the ID.
+
+It collects information from: UniqueId: Globally unique identifier for the processor.
+
+This identifier may only be unique within a processor family.
+
+ProcessorId:
+
+Processor information that describes the processor features.
+
+Name:
+
+This value comes from the Processor Version member of the Processor Information structure in the SMBIOS information.
+
+Manufacturer:
+
+This value comes from the Processor Manufacturer member of the Processor Information structure.
+
+MaxClockSpeed:
+
+Maximum speed of the processor, in MHz.
+
+Then it will collect information from the ‘Win32_BIOS class’ .
+
+Manufacturer:
+
+This value comes from the Vendor member of the BIOS Information structure.
+
+SMBIOSVersion:
+
+This value comes from the BIOS Version member of the BIOS Information structure IdentificationCode:
+
+Manufacturer’s identifier for this software element.
+
+SerialNumber:
+
+Assigned serial number of the software element.
+
+ReleaseDate:
+
+Release date of the Windows BIOS in the Coordinated Universal Time (UTC) format of YYYYMMDDHHMMSS.MMMMMM(+-)OOO.
+
+Version: Version of the BIOS.
+
+This string is created by the BIOS manufacturer.
+
+Then it will collect information from the ‘ Win32_DiskDrive class ’.
+
+Model:
+
+Manufacturer’s model number of the disk drive.
+
+Manufacturer: Name of the disk drive manufacturer.
+
+Signature: Disk identification.
+
+This property can be used to identify a shared resource.
+
+TotalHead:
+
+Total number of heads on the disk drive.
+
+Then it will collect information from the ‘ Win32_BaseBoard class’ .
+
+Model: Name by which the physical element is known.
+
+Manufacturer: Name of the organization responsible for producing the physical element.
+
+Name, SerialNumber Then it will collect information from the ‘ Win32_VideoController class’ .
+
+DriverVersion Name With all that hardware information collected it will generate a hash that will be the unique identifier.
+
+This hash, the username and password will be sent to the server to verify if the license is valid.
+
+In the source code we noticed the tailoredtaboo.com domain again.
+
+Generate Macro To generate a macro the builder is using several parts.
+
+The format function shows how each file structure is generated.
+
+The structure is the following: To save the macro in the malicious doc it uses the function ‘SaveMacro’:
+
+Evasion Techniques
+
+Additionally, it generates random code to obfuscate the content and adds junk code.
+
+The function GenRandom is used to generate random strings, chars as well as numbers.
+
+It is used to obfuscate the macro generated.
+
+It also uses a Junk Code function to add junk code into the document: For additional obfuscation it uses XOR encryption as well as Base64.
+
+Write Macro
+
+Finally, the function WriteMacro, writes the content previously configured: Under construction We did also notice that the builder uses additional functions that were still under development, as we can see with the “Script Generator” tab.
+
+A message is printed when we click on it and that indicates it is still a function in development.
+
+Additionally, we can see the “Decoy Option” tab which is just a template to create another tab.
+
+The tab does not show anything.
+
+It seems the author left this tab to create another one.
+
+Rubella Similarities Dryad is very similar to the Rubella Builder; many hints present in the code confirm the conversation we had with Rubella.
+
+Unlike Rubella, Dryad did have a scrubbed PDB path.
+
+Both Rubella builder and Dryad Builder are using the Bunifu framework for the graphic design.
+
+The license check is also the same function, using the domain tailoredtaboo.com, Below is the license check function from the Rubella builder: Tailoredtaboo.com Analysis We analyzed the server used to register the builder and discovered additional samples: Most of these samples were Word documents generated with the builder.
+
+A quick search into the domain Tailoredtaboo showed that it had several subdomains, including a control panel on a subdomain named cpanel.tailoredtaboo.com.
+
+The cPanel subdomain had the following login screen in the Dutch language.
+
+The domain tailoredtaboo.com has been linked to malicious content in the past.
+
+On Twitter the researcher @nullcookies reported in April 2018 that he found some malicious files hosted on the specific domain.
+
+In the directory listing of the main domain there were several files also mentioning the name Rubella.
+
+TailoredTaboo.com mentioned on Twitter Based on all the references, and the way the domain Tailoredtaboo.com was used, we believe that the domain plays a central administrative role for both Rubella and Dryad Macro Builder and can provide insight into the customers of both Macro Builders Conclusion Toolkits that build weaponized Office documents, like Dryad and Rubella, cater to the increasing cybercriminal demand of this type of infection vector.
+
+With the arrest of the suspect comes an end to the era of Dryad and Rubella Macro Builder.
+
+Based on his activity, the suspect looked like quite the cybercriminal entrepreneur, but given his young age this is also a worrisome thought.
+
+If only he would have used his skills for good.
+
+The lure of quick cash was apparently more enticing than building a solid long-term career.
+
+We at McAfee never like to see young talented individuals heading down a dark path.
+
+Indicators of Compromise URL / Website: hxxps://tailoredtaboo.com/auth/check.php
+
+Hash Builder: Dryad: 7d1603f815715a062e18ae56ca53efbaecc499d4193ea44a8aef5145a4699984 Rubella:
+
+2a20d3d9ac4dc74e184676710a4165c359a56051c7196ca120fcf8716b7c21b9 Hash related samples: 93db479835802dc22ba5e55a7915bd25f1f765737d1efab72bde11e132ff165a ad2f9ef7142a43094161eae9b9a55bfbb6dff85d890d1823e77fc4254f29ef17 c2c2fdcc36569f6866e19fcda702c823e7bf73d5ca394652ac3a0ccc6ff9c905 3c55e54f726758f5cb0d8ef81be47c6612dba5a73e3a29f82b73a4c773e691a3 74c8389f20e50ae3a9b7d7e69f6ae7ed1a625ccc8bb6a52b3cc435cf94e6e2d3 388ee9bc0acaeec139bc17bceb19a94071aa6ae43af4ec526518b5e1f1f38f07 08694ad23cafe45495fa790bfdc411ab5c81cc2412370633a236c688b07d26aa 428a30b8787d2ba441dba1dbc3acbfd40cf7f2fc143131a87a93f27db96b7a75 93db479835802dc22ba5e55a7915bd25f1f765737d1efab72bde11e132ff165a c777012abe224126dca004561619cb0791096611257099058ece1b8d001277d0 5b773acad7da2f33d86286df6b5e95ae355ac50d143171a5b7ee61d6b3cad6d5 a17e3c2271a94450a7a7c6fcd936f177fc40ea156de4deafdfc14fd5aadfe503 1de0ebc0c375332ec60104060eecad77e0732fa2ec934f483f330110a23b46e1 b7a86965f22ed73de180a9f98243dc5dcfb6ee30533d44365bac36124b9a1541
+
+

@@ -1,0 +1,6 @@
+This blog post continues our Script Series where the FireEye Labs Advanced Reverse Engineering (FLARE) team shares tools to aid the malware analysis community.
+Today, we release ironstrings : a new IDAPython script to recover stackstrings from malware.
+The script leverages code emulation to overcome this common string obfuscation technique.
+More precisely, it makes use of our flare-emu tool, which combines IDA Pro and the Unicorn emulation engine.
+In this blog post, I explain how our new script uses flare-emu to recover stackstrings from malware.
+In addition, I discuss flare-emu ’s event hooks and how you can use them to easily adapt the tool to your own analysis needs.

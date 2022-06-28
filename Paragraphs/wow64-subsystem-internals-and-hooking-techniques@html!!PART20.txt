@@ -1,0 +1,5 @@
+
+The easiest bypass to inline hooks is simply to restore the original function bytes, usually from bytes on disk.
+Malware such as AgentTesla and Conti has been known to utilize this last evasion technique.
+Hooking WOW64 via Inline Hooks As a malware analyst being able to detect when samples attempt to bypass the WOW64 layer can be very useful.
+The obvious technique to detect this is to place inline hooks on the 64-bit syscall stubs as well as the 32-bit syscall stubs.

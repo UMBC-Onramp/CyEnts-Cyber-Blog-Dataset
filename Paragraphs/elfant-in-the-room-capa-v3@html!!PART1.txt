@@ -1,0 +1,2 @@
+Since our initial public release of capa , incident responders and reverse engineers have used the tool to automatically identify capabilities in Windows executables.
+With our newest code and ruleset updates, capa v3 also identifies capabilities in Executable and Linkable Format (ELF) files, such as those used on Linux and other Unix-like operating systems.

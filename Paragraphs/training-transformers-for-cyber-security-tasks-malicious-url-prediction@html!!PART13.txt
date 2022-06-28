@@ -1,0 +1,4 @@
+
+Evaluation To evaluate our URL Transformer model and better understand the impact of the three training regimes discussed earlier, we collected a training dataset of over 1M labeled malicious and benign URLs, which was split into roughly 700K training samples, 100K validation samples, and 200k test samples.
+Additionally, we also developed an unlabeled pre-training dataset of 20M URLs.
+Using this data, we performed four different training runs for our Transformer model: DecodeToLabel (Baseline): Using strictly the binary cross-entropy loss on the embedded classification features over the entire sequence, we trained the model for 15 epochs using the training set.

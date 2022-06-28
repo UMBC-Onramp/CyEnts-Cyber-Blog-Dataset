@@ -1,0 +1,8 @@
+
+The most recent transaction log is stored to a file called edb.log , and three older transaction logs with numerical suffixes are typically present.
+Parsing ESE Databases
+In order to support investigations on Windows 10 systems, we updated the BitsParser tool to support the new QMGR database format.
+To accomplish this, we needed a Python-based ESE database parser.
+Research led us to libesedb , which is a full ESE database implementation written in C with a Python wrapper.
+With no other Python options available, we initially used libesedb in BitsParser to parse the Windows 10 QMGR database.
+However, we sought a solution that did not rely on native executables and would be more compact for improved efficiency in large scale deployments.

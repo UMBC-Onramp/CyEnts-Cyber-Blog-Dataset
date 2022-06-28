@@ -1,0 +1,7 @@
+
+For more information on our clustering methodology, check out our post about how we analyze, separate, or merge these clusters at scale .
+Expansion Pivoting on the command and control (C2) domain allowed us to begin building a profile of UNC1878 network infrastructure.
+WHOIS records for cylenceprotect[.]com (Figure 3) revealed that the domain was registered on January 27, 2020, with the registrar \"Hosting Concepts B.V. d/b/a Openprovider\", less than two days before we saw this domain used in activity impacting the Managed Defense customer.
+Domain Name: cylenceprotect.com
+Registry Domain ID: 2485487352_DOMAIN_COM-VRSN Registrar WHOIS Server: whois.registrar.eu Registrar URL: http://www.registrar.eu Updated Date: 2020-01-28T00:35:43Z Creation Date: 2020-01-27T23:32:18Z Registrar Registration Expiration Date: 2021-01-27T23:32:18Z Registrar: Hosting Concepts B.V. d/b/a Openprovider Figure 3: WHOIS record for the domain
+cylenceprotect[.]com Turning our attention to the server, the domain resolved to 45.76.20.140, an IP address owned by the VPS provider Choopa.

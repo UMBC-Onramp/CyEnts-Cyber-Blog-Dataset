@@ -1,0 +1,13 @@
+
+This can potentially bypass application whitelisting since all processes spawned during the attack are legitimate Microsoft executables.
+Technical Details
+The initial document contains VBScript code.
+When the user opens it, Wscript is spawned by iexplore to execute this file.
+The script uses multiple layers of obfuscation to bypass static scanners, and ultimately runs a PowerShell script for executing the binary payload.
+Obfuscation techniques used during different levels of script execution are shown in Figure 3 and Figure 4.
+Figure 3:
+Type 1 obfuscation technique, which uses log functions to resolve a wide character Figure 4:
+Type 2 obfuscation technique, which uses split and replace operations This script then downloads and executes another encoded .vbs
+script from a paste.ee URL, as seen in Figure 5.
+Paste.ee is a less regulated alternative to Pastebin and we have seen multiple attacks using this service to host the payload.
+Since the website uses TLS, most firewall solutions cannot detect the malicious content being downloaded over the network.

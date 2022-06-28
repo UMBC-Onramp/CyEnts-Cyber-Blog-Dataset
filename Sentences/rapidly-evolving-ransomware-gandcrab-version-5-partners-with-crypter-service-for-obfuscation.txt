@@ -1,0 +1,251 @@
+By Alexandre Mundo , John Fokker and Thomas Roccia on Oct 10, 2018 The GandCrab ransomware, which first appeared in January, has been updated rapidly during its short life, with Version 5.0.2 appearing this month.
+
+In this post we will examine the latest version and how the authors have improved the code (and in some cases have made mistakes).
+
+McAfee gateway and endpoint products are able to protect customers from known variants of this threat.
+
+The GandCrab authors have moved quickly to improve the code and have added comments to provoke the security community, law enforcement agencies, and the NoMoreRansom organization.
+
+Despite the agile approach of the developers, the coding is not professional and bugs usually remain in the malware (even in Version 5.0.2), but the speed of change is impressive and increases the difficulty of combating it.
+
+The group behind GandCrab has achieved cult status in underground forums; the authors are undoubtedly confident and have strong marketing skills, but flawless programming is not one of their strengths.
+
+Underground alliances On September 27, the GandCrab crew announced Version 5 with the same showmanship as its earlier versions.
+
+GandCrab ransomware has gained a lot of attention from security researchers as well as the underground.
+
+The developers market the affiliate program like a “members-only club” and new affiliates are lining up to join, in the hope of making easy money through the large-scale ransomware extortion scheme.
+
+The prospect of making money not only attracts new affiliates, but also leads to the formation of new alliances between GandCrab and other criminal services that strengthen the malware’s supply and distribution networks.
+
+One of these alliances became obvious during Version 4, in which the ransomware started being distributed through the new Fallout exploit kit.
+
+This alliance was again emphasized in the GandCrab Version 5 announcement, as the GandCrab crew openly endorsed FalloutEK.
+
+The GandCrab Version 5 announcement.
+
+With Version 5, yet another alliance with a criminal service has been formed.
+
+The malware crypter service NTCrypt announced that it is partnering with the GandCrab crew.
+
+A crypter service provides malware obfuscation to evade antimalware security products.
+
+The NTCrypt-GandCrab partnership announcement offering a special price for GandCrab users.
+
+The partnership between GandCrab and NTCrypt was established in a novel way.
+
+At the end of September, the GandCrab crew started a “crypt competition” on a popular underground forum to find a new crypter service they could partner with.
+
+NTCrypt applied and eventually won the competition.
+
+The “crypt competition” announcement.
+
+This novel approach emphasizes once more the cult status GandCrab has in the underground community.
+
+For a criminal business such as GandCrab, building these alliances makes perfect sense: They increase the ease of operation and a trusted affiliate network minimizes their risk exposure by allowing them to avoid less-trusted suppliers and distributors.
+
+For the security community it is worrisome to see that GandCrab’s aggressive marketing strategy seems to be paying off.
+
+It is generating a strong influx of criminal interest and allows the GandCrab crew to form alliances with other essential services in the cybercriminal supply chain.
+
+GandCrab overview GandCrab Version 5 uses several mechanisms to infect systems.
+
+The following diagram shows an overview of GandCrab’s behavior.
+
+GandCrab Version 5 Infection Entry vector GandCrab uses several entry vectors: Remote desktop connections with weak security or bought in underground forums Phishing emails with links or attachments Trojanized legitimate programs containing the malware, or downloading and launching it Exploits kits such as RigEK and others such as FalloutEK PowerShell scripts or within the memory of the PowerShell process (the later mainly in Version 5.0.2) Botnets such as Phorpiex (an old botnet that spread not only this malware but many others)
+
+The goal of GandCrab, as with other ransomware , is to encrypt all or many files on an infected system and insist on payment to unlock them.
+
+The developer requires payment in cryptocurrency, primarily Dash (or Bitcoin in some older versions), because it is complex to track and quick to receive the payment.
+
+The malware is usually, but not always, packed.
+
+We have seen variants in .exe format (the primary form) along with DLLs.
+
+GandCrab is effectively ransomware as a service; its operators can choose which version they want.
+
+Version 5.0 This version has two releases.
+
+The first works only on Windows 7 or later due to a big mistake in the compiling time.
+
+Version 5.0 carries two exploits that try to elevate privileges.
+
+It checks the version of the operating system and the TokenIntegrityLevel class of the process.
+
+If the SID Subauthority is SECURITY_MANDATORY_LOW_RID (0x1000), it tries to execute the exploits if it also passed one previous check of a mutex value.
+
+One release is the exploit released in August on Twitter and GitHub by the hacker “SandboxEscaper.”
+
+The Twitter handle for this hacker is https://twitter.com/sandboxescaper .
+
+This exploit tries to use a problem with the Task System in Windows when the operating system improperly handles calls to an advanced local procedure call.
+
+The GandCrab authors claim there is no CVE of this exploit, but that is incorrect.
+
+It falls under CVE-2018-8440.
+
+This exploit can affect versions Windows 7 through Windows 10 Server.
+
+More information about this exploit can be found at this link .
+
+In the first release of Version 5.0, the malware authors wrote the code exploit using normal calls to the functions.
+
+Thus at compiling time the binary has the IAT filled with the DLL needed for some calls.
+
+This DLL does not exist in Windows Vista and XP, so the malware fails to run in these systems, showing an error.
+
+Import of xpsprint.dll that will not run on Windows XP or Vista.
+
+The exploit using direct calls.
+
+This release published an HTML file after encrypting the user’s files, but this file was faulty because it did not always have the information needed to decrypt the user’s files.
+
+The second release uses dynamic calls and obfuscates the strings of the exploit, as shown in the previous image.
+
+(Earlier they were in plain text.)
+
+The exploit with dynamic calls and obfuscated strings.
+
+The second exploit is covered under CVE-2018-8120, which in Windows 7, Windows Server 2008 R2 and Windows Server 2008 allows an elevation of privileges from the kernel.
+
+Thanks to a faulty object in the token of the System process, changing this token in the malware results in executing the malware with System privileges.
+
+Executing the exploit CVE-2018-8120.
+
+You can read more about this exploit on mcafee.com.
+
+The malware checks the version of the operating system and type of user and whether it can get the token elevation information of its own process before employing the use of exploits.
+
+In some cases, it fails to infect.
+
+For example, in Windows XP the second release of Version 5 runs but does not encrypt the files.
+
+(We thank fellow researcher Yassine Lemmou, who shared this information with us.)
+
+We and Lemmou know where the problem is in Version 5.0.2.
+
+A few changes to the registry could make the malware run correctly, but we do not want to help the malware authors fix their product.
+
+Even though GandCrab’s authors quickly repair mistakes as they are pointed out, they still fail to find some of the basic errors by themselves.
+
+(McAfee has had no contact with GandCrab’s developers.)
+
+The second release writes a random extension of five letters instead of using the normal .CRAB or .KRAB extension seen in previous versions.
+
+The malware keeps this information as binary data in a new registry entry in the subkey “ext_data\\data” and in the value entry of “ext.”
+
+A new registry entry to hold the random extension.
+
+The malware tries creating this new entry in the root key of HKEY_LOCAL_MACHINE.
+
+If it cannot—for example, because the user does not have admin rights—it places the entry in the root key HKEY_CURRENT_USER.
+
+This entry is deleted in some samples after the files have been encrypted.
+
+Version 5.0.1 This version fixed some internal bugs in the malware but made no other notable changes.
+
+Version 5.0.2 This version changes the random extension length from 5 to 10 characters and fixes some internal bugs.
+
+Other bugs remain, however, meaning files cannot always be encrypted.
+
+The latest This section is based on the latest version of the malware (Version 5.0.2 on October 4), though some elements appear in earlier releases of Version 5.
+
+Starting with this version, the malware uses two exploits to try to elevate privileges in the system.
+
+The first exploit uses a dynamic call to the function IsWoW64Process to detect whether the operating system is running in 32 or 64 bits.
+
+The dynamic call to IsWoW64Process with obfuscated strings.
+
+Depending on the result, the malware has two embedded DLLs, encrypted with a simple operation XOR 0x18.
+
+Decrypting the DLL to load with the exploit and fix the header.
+
+The malware authors use a clever trick with fuzzing to avoid detection: The first two bytes of the DLL are trash, something that is later fixed, as we see in the preceding image.
+
+After decryption and loading the exploit, this DLL creates a mutex in the system and some pipes to communicate with the main malware.
+
+The malware creates a pipe that the DLL reads later and prepares strings as the mutex string for the DLL.
+
+Preparing the string for the DLL.
+
+The DLL has dummy strings for these strings.
+
+Creating the new mutex and relaunching the process.
+
+This mutex is checked when the malware starts.
+
+The function returns a 1 or 0, depending on whether it can open the mutex.
+
+Later, this result is checked and if the mutex can be opened the malware will avoid checking the version and will not use the two new exploits to elevate privileges.
+
+Opening the new mutex to check if there is a need to run the exploits.
+
+As with GandCrab Version 4.x and later, the malware later checks the version.
+
+If it is Vista or later, it tries to get the “TokenIntegrityLevel” class and relaunch the binary to elevate its privilege with a call to “ShellExecuteExW” with the “runas” application.
+
+If the system is Windows XP, the code will avoid that and continue in its normal flow.
+
+This mutex is never created for the main malware; it is created for the DLL loaded using the exploit.
+
+To better understand this explanation, this IDA snippet may help: Explaining the check of mutex and exploits.
+
+This version changes the desktop wallpaper, which is created at runtime and is filled with the extension generated to encrypt the files.
+
+(The ransom note text or HTML has the name: <extension_in_uppercase>_DECRYPT.
+
+<txt|html>) and the user name of the machine.)
+
+Creating the new wallpaper at runtime.
+
+The username is checked with “SYSTEM.”
+
+If the user is “SYSTEM,” the malware puts the name “USER” in the wallpaper.
+
+Checking the name of the user for the wallpaper.
+
+The wallpaper is created in the %TEMP% folder with the name pidor.bmp.
+
+Creating the wallpaper in the temp folder.
+
+Here is an example of strings used in the wallpaper name and to check the name of the user and the format string, whether it is another user, or the final string in the case of SYSTEM user with USER in uppercase.
+
+The name of the wallpaper and special strings.
+
+Finally, the wallpaper is set for any user other than SYSTEM: Changing the wallpaper.
+
+The malware detects the language of the system and decrypts the strings and writes the correct ransom note in the language of the system.
+
+Coverage Customers of McAfee gateway and endpoint products are protected against the latest GandCrab versions.
+
+Detection names include Ran-Gandcrabv4!
+
+and many others.
+
+An independent researcher, Twitter user Valthek, has also created several vaccines.
+
+(McAfee has verified that these vaccines are effective.)
+
+The version for GandCrab 4.x through 5.0.2 can prevent the files from being encrypted.
+
+For Version 4.x, the deletion of shadow volumes cannot be avoided but at least the files themselves are kept safe.
+
+For Version 5.x, encrypting the files can be avoided but not the creation and changing of the wallpaper, which the malware will still corrupt.
+
+The malware cannot create random extensions to encrypt the files but will prepare the string.
+
+Running the vaccine a second time removes the wallpaper if it is in the %TEMP% folder.
+
+The vaccine has versions with and without persistence.
+
+The version with persistence creates a random filename in a special folder and writes a special random entry in the registry to run each time with the system.
+
+In this case, the machine will always be protected against this malware (at least in its current state of October 10, and perhaps in the future).
+
+Indicators of compromise These samples use the following MITRE ATT&CK ™ techniques: File deletion System information discovery Execution through API Execution through WMIC Application process discovery: to detect antimalware and security products as well as normal programs Query registry: to get information about keys that the malware needs to create or read Modify registry File and directory discovery: to search for files to encrypt Discovery of network shares to encrypt them Encrypt files Process discovery: enumerating all processes on the endpoint to kill some special ones Create files Elevation of privileges Change wallpaper Flood the network with connections Create mutants Hashes e168e9e0f4f631bafc47ddf23c9848d7: Version 5.0 6884e3541834cc5310a3733f44b38910:
+
+Version 5.0 DLL 2d351d67eab01124b7189c02cff7595f: Version 5.0.2 41c673415dabbfa63905ff273bdc34e9: Version 5.0.2 1e8226f7b587d6cd7017f789a96c4a65: DLL for 32-bit exploit fb25dfd638b1b3ca042a9902902a5ff9: DLL for 64-bit exploit df1a09dd1cc2f303a8b3d5097e53400b: botnet related to the malware (IP 92.63.197.48)
+
+
+
+

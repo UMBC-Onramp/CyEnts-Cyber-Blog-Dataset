@@ -1,0 +1,7 @@
+
+If one does take the lead, its security features will quite rightly fall under the microscope of the media, though not perhaps before its privacy concerns have been fully examined in prose.
+(Last year we highlighted privacy as the key concern for home IoT devices.
+Privacy will continue to be a concern, but cybercriminals will put more effort into building botnets, demanding ransoms, and threatening the destruction of property of both homes and businesses).
+This opportunity to control a home’s or office’s devices will not go unnoticed by cybercriminals, who will engage in an altogether different type of writing in relation to the market winner, in the form of malicious code designed to attack not only IoT devices but also the digital assistants that are given so much license to talk to them.
+Smartphones have already served as the door to a threat.
+In 2019, they may well become the picklock that opens a much larger door.

@@ -1,0 +1,4 @@
+
+What they all have in common is they exploit Wi-Fi’s fragmentation feature.
+One of the mundane functions of how Wi-Fi works is that it’s constantly breaking data into smaller units, fragments, and then taking those smaller pieces and reassembling them into larger pieces.
+This shuffling of data chunks, which happens constantly and on the fly, could enable threat actors within radio range to insert malicious frames into networks that would otherwise be protected by WPA encryption.

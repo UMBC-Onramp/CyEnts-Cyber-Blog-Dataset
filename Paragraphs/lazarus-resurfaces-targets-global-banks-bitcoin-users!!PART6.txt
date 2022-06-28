@@ -1,0 +1,5 @@
+
+Furthermore, this campaign deploys a one-time data gathering implant that relies upon downloading a second stage to gain persistence.
+The implants contain a hardcoded word “haobao” that is used as a switch when executing from the Visual Basic macro.
+Malicious Document Analysis The malicious document contains two payloads as encrypted string arrays embedded in Visual Basic macro code.
+The payloads are present as encrypted string arrays that are decrypted in memory, written to disk and launched in sequence (second stage malicious binary launched first and then the decoy document).

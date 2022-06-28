@@ -1,0 +1,16 @@
+
+It runs the command “screencap –p” on the shell of the device and captures a screenshot of the infected device.
+The native service also implements other functionality such as deleting a file, saving FTP information to /data/local/tmp/ftpInformation.
+If the string “GPSLocationInfo” is sent to the native service on the local socket, it creates GPSLocations.txt at /data/local/tmp/GPSLocations.txt
+but does not save the current GPS location.
+This perhaps indicates an upcoming feature.
+Android Remote Controller Component 1 - GPSTracker.apk
+The startup routine for the GPSTracker class is exactly the same as the one for GlobalService class.
+It gets the value from an \"StartGPSTracker\" intent which holds the value for an 'interval' variable as an integer.
+ 
+This app records the GPS location of the device at regular intervals (5 minutes).
+It records the location only if the previous location is 200 meters apart from the current location.
+When a location has to be added to the database all previous locations are deleted.
+Therefore it only maintains the last known location.
+This app monitors all incoming messages.
+If an SMS with \"[gmyl]\"(Short for (g)ive (m)e (y)our (l)ocation) at the beginning arrives on the device, the corresponding SMS_RECEIVED intent is aborted and the database is queried.

@@ -1,0 +1,7 @@
+
+And this year quite a number of zero-days were used in targeted attacks.
+Exploits Quite a few zero-day exploits appeared in the wild this year, including eleven discovered by FireEye.
+These exploits included techniques to bypass ASLR and application sandboxes.
+The exploits that I consider the most significant are the following: CVE-2013-0640 , which was used in the MiniDuke attacks, CVE-2013-1347 , which was used in a watering hole attack on the Department of Labor website, CVE-2013-3893 , which was deployed by the same group, DeputyDog, which compromised Bit9 earlier in the year, CVE-2013-3906 , which was used in both targeted attacks and in cybercrime campaigns DeputyDog in a watering hole attack.
+Evasion
+The malware samples used by several advanced persistent threat (APT) actors were slightly modified this year, possibly as an evasive response to increased scrutiny, in order to avoid detection.

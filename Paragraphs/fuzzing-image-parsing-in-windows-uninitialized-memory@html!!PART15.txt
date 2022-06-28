@@ -1,0 +1,4 @@
+
+As there is no read or write into uninitialized memory before HrProcessCopy, I traced the execution back from HrProcessCopy and compared the execution traces with a normal tiff decoding trace.
+A difference was found in the way windowscodecs!CLibTiffDecoderBase::UnpackLine behaved with the PoC file compared to a normal TIFF file, and one of the function parameters in UnpackLine was a pointer to the uninitialized buffer.
+The UnpackLine function has a series of switch-case statements working with bits per sample (BPS) of TIFF images.

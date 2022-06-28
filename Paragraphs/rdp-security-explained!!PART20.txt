@@ -1,0 +1,12 @@
+
+Often RDP is exposed specifically to allow external users onto the network, so this may not be a feasible solution, however it should be considered and the quantity of services reachable within the internal network should be minimized.
+Consider using an account-naming convention that does not reveal organizational information There are many options for account naming conventions, ranging from firstname.lastname to not deriving usernames from name data; all having their pros and cons.
+However, some of the more commonly used account naming conventions such as firstname.lastname, make it very easy to guess usernames and email addresses.
+This can be a security concern as spammers and hackers will readily use this information.
+Conclusion When trying to run an efficient IT organization, having remote access to certain computer systems might be essential.
+Unfortunately, when not implemented correctly, the tools that make remote access possible also open your systems up to unwanted guests.
+In the last few years there have been far too many examples of where vulnerable RDP access gave way to a full-scale network compromise.
+In this article we have shown that RDP access can be hardened with some easy steps.
+Please take the time to review your RDP security posture.
+
+

@@ -1,0 +1,5 @@
+
+Figure 11
+So, how did the wrong destination address get passed to memcpy?
+To answer this, we needed a better understanding of how the system processes incoming packets along with what code is responsible for setting up the buffers sent to memcpy.
+We can use ps to evaluate the system as it is running to see that the main process spawns 19 threads: Table 1 The function wherein we found the “scNetMove” was called “scBIPRxTask” and was only referenced in one other location outside of the main binary; the initialization function for the application’s networking, shown in Figure 12.

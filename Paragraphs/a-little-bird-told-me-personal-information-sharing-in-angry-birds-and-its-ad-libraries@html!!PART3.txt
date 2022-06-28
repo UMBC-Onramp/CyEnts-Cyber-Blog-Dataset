@@ -1,0 +1,11 @@
+
+Once a Rovio account is created and personal information uploaded, the user can do little to stop this personal information sharing.
+Their data might be in multiple locations: Angry Birds Cloud, Burstly (ad mediation platform), and third-party ad networks such as Jumptap and Millennial Media.
+Users can avoid sharing personal data by playing Angry Birds without Rovio account, but that won’t stop the game from sharing device information.
+In this blog post, we examine the personal information Angry Birds collects.
+We also demonstrate the relationships between the app, the ad mediation platform, and the ad clouds — showing how the information flows among the three.
+We also spell out the evidence, such as network packet capture (PCap) from FireEye Mobile Threat Prevention (MTP), to support our information flow chart.
+Finally, we reveal how the multi-stage information sharing works by tracking the code paths from the reverse-engineered source code.
+To investigate the mechanism and contents of the information sharing, we researched different versions of Angry Birds.
+We found that multiple versions of the game can share personal information in clear text, including email, address, age, and gender.
+Angry Birds’ data management service, “ad-x.co.uk,” shares information in the penultimate version of the game (V4.0.0), which was offered in the Google Play store through March 4.

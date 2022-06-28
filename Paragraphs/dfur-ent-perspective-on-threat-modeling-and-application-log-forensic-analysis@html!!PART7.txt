@@ -1,0 +1,8 @@
+
+One example was the user-agent in authentication log events had been extracted as the username field.
+Application updates sometimes affected Splunk ingestion and parsing.
+DFUR analysts identified servers that didn't have a startup script to ensure log forwarding was enabled upon system reboot.
+Application updates changed the logging output format which broke field extractions.
+DFUR analysts didn't have a way to determine when log sources weren't operating as expected.
+Time zone misconfigurations .
+DFUR analysts determined their log sources had multiple time zone configurations which made correlation difficult.

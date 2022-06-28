@@ -1,0 +1,5 @@
+
+As the reader can understand, Clop changes very quickly in strings and name of resources to make it more complex to detect the malware.
+We also observed that the .BAT files were not present in earlier Clop ransomware versions.
+Global Spread Based on the versions of Clop we discovered we detected telemetry hits in the following countries: Switzerland
+Great Britain Belgium United States The Netherlands Croatia Porto Rico Germany Turkey Russia Denmark Mexico Canada Dominican Republic Vaccine The function to check a file or a folder name using the custom hash algorithm can be a problem for the malware execution due if one of them is found in execution, the malware will avoid it.

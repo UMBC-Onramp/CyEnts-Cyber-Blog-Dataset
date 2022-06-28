@@ -1,0 +1,6 @@
+
+Generally, Mandiant uses caution even with novel malware such as SOMBRAT and WARPRISM and clusters each use rigorously according to all observed activity.
+For more information on uncategorized threats, refer to our post, \" DebUNCing Attribution: How Mandiant Tracks Uncategorized Threat Actors .\"
+SonicWall SMA 100 Series Appliance Vulnerability CVE-2021-20016 is a critical SQL injection vulnerability that exploits unpatched SonicWall Secure Mobile Access SMA 100 series remote access products.
+A remote, unauthenticated attacker could submit a specially crafted query in order to exploit the vulnerability.
+Successful exploitation would grant an attacker the ability to access login credentials (username, password) as well as session information that could then be used to log into a vulnerable unpatched SMA 100 series appliance.

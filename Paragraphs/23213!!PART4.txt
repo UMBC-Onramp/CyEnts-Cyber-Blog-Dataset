@@ -1,0 +1,7 @@
+
+Fake Minecraft targets Android users Minecraft remains very popular cyberattack bait, including on smartphones and tablets.
+Back in 2020, we found more than 20 malicious apps on Google Play disguised as mods for the game, and this year saw a repeat .
+The game also serves as a front for Hqwar malware, which reports an installation error and prompts the user to uninstall the app.
+In fact, that removes only the icon; the malware remains, working in stealth mode to harvest online bank credentials.
+Vesub Trojan disguised as Brawl Stars and PUBG
+Another example of cunning malware, Vesub, hides in pirated versions of Brawl Stars and PUBG for Android.

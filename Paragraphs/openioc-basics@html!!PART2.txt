@@ -1,0 +1,5 @@
+
+Before we continue, it's important to mention that IOCs are not signatures, and they aren't meant to function as a signature would.
+It is often understated, but an IOC is meant to be used in combination with human intelligence.
+IOCs are designed to aid in your investigation, or the investigations of others with whom you share threat intelligence.
+IOC Use Cases: There are several use cases for codifying your IOCs, and these typically revolve around your objectives as an investigator.

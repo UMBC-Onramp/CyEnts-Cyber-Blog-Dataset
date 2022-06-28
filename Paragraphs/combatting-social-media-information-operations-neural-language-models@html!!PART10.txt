@@ -1,0 +1,4 @@
+
+After combining these four datasets, we sampled English-language social media posts from them to use as input for our fine-tuned LM.
+Fine-tuning experiments were carried out in PyTorch using the 355 million parameter pre-trained GPT-2 model from HuggingFace’s transformers library , and were distributed over up to 8 GPUs.
+As opposed to other pre-trained LMs, GPT-2 conveniently requires minimal architectural changes and parameter updates in order to be fine-tuned on new downstream tasks .

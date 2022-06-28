@@ -1,0 +1,7 @@
+
+After gathering information from Dark Crystal RAT about its capabilities and C2 message format, another way to illustrate the capabilities and test our understanding of the messages was to write a proof-of-concept server.
+Here is a code snippet that we wrote containing a barebones DCRat server written in Python .
+Unlike a real RAT server, this one does not have a user interface to allow the attacker to pick and launch commands.
+Instead, it has a pre-scripted command list that it sends to the RAT.
+When the server starts up, it uses the Python BaseHTTPServer to begin listening for incoming web requests (lines 166-174).
+Incoming POST requests are assumed to hold a file that the RAT is uploading to the server; this server assumes all file uploads are screenshots and saves them to “screen.png” (lines 140-155).

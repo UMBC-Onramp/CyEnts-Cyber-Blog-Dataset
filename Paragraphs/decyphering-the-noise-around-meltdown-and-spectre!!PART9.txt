@@ -1,0 +1,5 @@
+
+Thus, major cloud vendors have rushed to issue patches and software updates in advance of the public disclosure of these issues.
+Additionally, both Meltdown and Spectre are exceptionally hard to detect as they do not leave forensic traces or halt program execution.
+This makes post-infection investigations and attack attribution much more complex.
+Recommendations Because we believe that Meltdown and Spectre may offer real-world adversaries significant value, we must consider how they can be used.

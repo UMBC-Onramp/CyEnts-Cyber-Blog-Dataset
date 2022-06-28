@@ -1,0 +1,9 @@
+
+They are executed when the victim views the document.
+The malicious site falcancoin.io embedded in the Flash file.
+Implant directory contained in the malicious Flash file.
+The implants (DLLs) are disguised as ZIP files and communicate with three control servers, two of them Chinese-language online gambling sites.
+These URLs can be found hardcoded in the implants’ code.
+Hardcoded control server URLs.
+Analyzing Bankshot
+The sample (a2e966edee45b30bb6bb5c978e55833eec169098) is a Windows DLL that serves as a backdoor and contains a variety of capabilities.

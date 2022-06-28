@@ -1,0 +1,4 @@
+During a recent investigation at a telecommunications company led by Mandiant Managed Defense , our team was tasked with rapidly identifying systems that had been accessed by a threat actor using legitimate, but compromised domain credentials.
+This sometimes-challenging task was made simple because the customer had enabled the Logon Tracker module within their FireEye Endpoint Security product.
+Logon Tracker is an Endpoint Security Innovation Architecture module designed to simplify the investigation of lateral movement within Windows enterprise environments.
+Logon Tracker improves the efficiency of investigating lateral movement by aggregating historical logon activity and provides a mechanism to monitor for new activity.

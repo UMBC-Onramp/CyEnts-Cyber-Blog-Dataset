@@ -1,0 +1,15 @@
+
+This is the content that gets loaded and executed by JPEngine, the component provided by the JSPatch framework embedded in the target app.
+To change the behavior of the running app, one simply needs to modify the content of this JavaScript blob.
+Below we show several possibilities for performing malicious actions that are against Apple’s App Review Guidelines .
+Although the examples below are from a jailbroken device, we have demonstrated that they will work on non-jailbroken devices as well.
+Example 1: Load arbitrary public frameworks into app process a .
+     Example public framework : /System/Library/Frameworks/Accounts.framework b .
+     Private APIs used by public framework:
+[ACAccountStore init] , [ACAccountStore allAccountTypes]
+The target app discussed above, when running, loads the frameworks shown in Figure 8 into its process memory: Figure 8.
+iOS frameworks loaded by the target app Note that the list above – generated from the Apple-approved iOS app binary – does not contain Accounts.framework .
+Therefore, any “dangerous” or “risky” operations that rely on the APIs provided by this framework are not expected to take place.
+However, the JavaScript code shown in Figure 9 invalidates that assumption.
+Figure 9.
+JavaScript patch code that loads the Accounts.framework into the app process If this JavaScript code were delivered to the target app as a hot patch, it could dynamically load a public framework, Accounts.framework , into the running process.

@@ -1,0 +1,7 @@
+
+Instead of an invoice, the ZIP archive contains a Locky downloader written in JavaScript.
+Figure 3.
+Locky spam email JavaScript based Downloader Updates In this campaign
+, few updates were seen in both the JavaScript based downloader and the Locky payload.
+The JavaScript downloader does the following: Iterates over an array of URLs hosting the Locky payload.
+If a connection to one of the URLs fails, the JavaScript sleeps for 1,000 ms before continuing to iterate over the array of URLs.

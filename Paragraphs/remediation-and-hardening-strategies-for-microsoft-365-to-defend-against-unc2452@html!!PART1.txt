@@ -1,0 +1,4 @@
+UPDATE (Mar. 18):
+ Mandiant recently observed targeted threat actors modifying mailbox folder permissions of user mailboxes to maintain persistent access to the targeted users' email messages.
+This stealthy technique is not usually monitored by defenders and provides threat actors a way to access the desired email messages using any compromised credentials.
+The white paper, blog post and Azure AD Investigator tool have been updated to reflect these findings.

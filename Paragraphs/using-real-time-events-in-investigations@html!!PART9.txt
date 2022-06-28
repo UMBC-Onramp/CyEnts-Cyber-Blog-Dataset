@@ -1,0 +1,4 @@
+
+Timestamp File Path File Size 2020-03-10 16:53:42.351 C:\\Windows\\Temp\\WindowsServiceNT.log 638 2020-03-10 16:53:42.351 C:\\Windows\\Temp\\AAAAAAAAAAAAAAAA.AAA 638 2020-03-10 16:53:42.351 C:\\Windows\\Temp\\BBBBBBBBBBBBBBBB.BBB 638 2020-03-10 16:53:42.351 C:\\Windows\\Temp\\CCCCCCCCCCCCCCCC.CCC 638 … 2020-03-10 16:53:42.382 C:\\Windows\\Temp\\XXXXXXXXXXXXXXXX.XXX 638 2020-03-10 16:53:42.382 C:\\Windows\\Temp\\YYYYYYYYYYYYYYYY.YYY 638 2020-03-10 16:53:42.382 C:\\Windows\\Temp\\ZZZZZZZZZZZZZZZZ.ZZZ 638 Table 6:
+Example timeline of SDelete File write events Admittedly, this activity may seem strange at a first glance.
+If we do some research on the its file hash, we’ll see the process is actually SDelete masquerading as C:\\Windows\\Temp\\taskassist.exe .

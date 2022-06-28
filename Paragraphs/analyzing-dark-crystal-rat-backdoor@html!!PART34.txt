@@ -1,0 +1,14 @@
+
+The C# version is relatively new.
+This explained why we could not find much detailed prior reporting about it.
+Figure 21:
+A YouTube demonstration revealed that Dark Crystal RAT previously existed in a Java version, and the C# version we analyzed is in beta Figure 22 shows another capture from the video at 6:28.
+The functionality displayed on the screen lines up nicely with the “msgbox”, “browseurl”, “clipboard”, “speak”, “opencd”, “closecd”, and other capabilities we discovered and enumerated in Table 6.
+Figure 22:
+A YouTube demonstration confirmed many of the Dark Crystal RAT capabilities we found in reverse engineering Conclusion In this post we walked through our analysis of the sample that the threat intel team provided to us and all its components.
+Through our initial triage, we found that its “dfsds.exe” component is Dark Crystal RAT.
+We found that Dark Crystal RAT was a .NET executable, and reverse engineered it.
+We extracted the malware’s configuration, and through dynamic analysis discovered the syntax of its C2 communications.
+We implemented a small proof-of-concept server to test the correct format of commands that can be sent to the malware, and how to interpret its uploaded screenshots.
+Finally, we took a second look at how actual threat actors would download and use Dark Crystal RAT.
+To conclude, indicators of compromise for this version of Dark Crystal RAT (MD5: 047af34af65efd5c6ee38eb7ad100a01) are given in Table 4.

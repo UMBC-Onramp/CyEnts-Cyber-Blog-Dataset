@@ -1,0 +1,3 @@
+By Charles McFarland on Jun 13, 2018 On May 19 researchers discovered a series of vulnerabilities in the blockchain-based EOS platform that can lead to remote control over participating nodes.
+Just four days prior, a mining pool server for the IOT platform HDAC was compromised, impacting the vast majority of miners.
+In January the largest-ever theft of cryptocurrencies occurred against the exchange Coincheck, resulting in the loss of US$532 million in NEM coin.

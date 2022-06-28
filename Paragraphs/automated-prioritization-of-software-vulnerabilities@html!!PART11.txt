@@ -1,0 +1,6 @@
+
+Conceptually, word embeddings may help a classifier use these embeddings to implicitly associate relationships such as: device + infected = zombie where an entity called device has a mechanism applied called infected (malicious software infecting it) then it becomes a zombie .
+To address issues where social media tweets differ linguistically from natural language, we leverage previous research and software from the Natural Language Processing (NLP) community.
+This addresses specific nuances like less consistent capitalization, and stemming to account for a variety of special characters like ‘@’ and ‘#’.
+Figure 3:
+Tweet demonstrating value of identifying named entities in tweets in order to gauge severity Named Entity Recognition (NER) identifies the words that construct nouns based on their context within a sentence, and benefits from our embeddings incorporating cyber security words.

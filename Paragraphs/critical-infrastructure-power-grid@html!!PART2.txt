@@ -1,0 +1,4 @@
+
+The term \" critical infrastructure \" conjures up images of highways, electrical grids, pipelines, government facilities and utilities.
+But the U.S. government definition also includes economic security and public health.
+The Department of Homeland Security defines critical infrastructure as \"Systems and assets, whether physical or virtual, so vital to the United States that the incapacity or destruction of such systems and assets would have a debilitating impact on security, national economic security, national public health or safety, or any combination of those matters.\" [1] Certainly the U.S. definition is expansive, but some key cyber actors go a step further to include a more abstract \"information \" asset.

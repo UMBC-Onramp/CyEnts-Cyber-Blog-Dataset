@@ -1,0 +1,343 @@
+Introduction Apple has made a significant effort to build and maintain a healthy and clean app ecosystem.
+
+The essential contributing component to this status quo is the App Store, which is protected by a thorough vetting process that scrutinizes all submitted applications.
+
+While the process is intended to protect iOS users and ensure apps meet Apple’s standards for security and integrity, developers who have experienced the process would agree that it can be difficult and time consuming.
+
+The same process then must be followed when publishing a new release or issuing a patched version of an existing app, which can be extremely frustrating when a developer wants to patch a severe bug or security vulnerability impacting existing app users.
+
+The developer community has been searching for alternatives, and with some success.
+
+A set of solutions now offer a more efficient iOS app deployment experience, giving app developers the ability to update their code as they see fit and deploy patches to users’ devices immediately.
+
+While these technologies provide a more autonomous development experience, they do not meet the same security standards that Apple has attempted to maintain.
+
+Worse, these methods might be the Achilles heel to the walled garden of Apple’s App Store.
+
+In this series of articles, FireEye mobile security researchers examine the security risks of iOS apps that employ these alternate solutions for hot patching, and seek to prevent unintended security compromises in the iOS app ecosystem.
+
+As the first installment of this series, we look into an open source solution: JSPatch .
+
+Episode 1.
+
+JSPatch JSPatch is an open source project – built on top of Apple’s JavaScriptCore framework – with the goal of providing an alternative to Apple’s arduous and unpredictable review process in situations where the timely delivery of hot fixes for severe bugs is vital.
+
+In the author’s own words ( bold added for emphasis): JSPatch bridges Objective-C and JavaScript using the Objective-C runtime.
+
+You can call any Objective-C class and method in JavaScript by just including a small engine.
+
+That makes the APP obtaining the power of script language: add modules or replacing Objective-C code to fix bugs dynamically .
+
+JSPatch Machinery
+
+The JSPatch author, using the alias Bang, provided a common example of how JSPatch can be used to update a faulty iOS app on his blog: Figure 1 shows an Objc implementation of a UITableViewController with class name JPTableViewController that provides data population via the selector tableView:didSelectRowAtIndexPath: .
+
+At line 5, it retrieves data from the backend source represented by an array of strings with an index mapping to the selected row number.
+
+In many cases, this functions fine; however, when the row index exceeds the range of the data source array, which can easily happen, the program will throw an exception and subsequently cause the app to crash.
+
+Crashing an app is never an appealing experience for users.
+
+Figure 1.
+
+Buggy Objc code without JSPatch Within the realm of Apple-provided technologies, the way to remediate this situation is to rebuild the application with updated code to fix the bug and submit the newly built app to the App Store for approval.
+
+While the review process for updated apps often takes less time than the initial submission review, the process can still be time-consuming, unpredictable, and can potentially cause loss of business if app fixes are not delivered in a timely and controlled manner.
+
+However, if the original app is embedded with the JSPatch engine, its behavior can be changed according to the JavaScript code loaded at runtime.
+
+This JavaScript file ( hxxp://cnbang.net/bugfix.JS in the above example) is remotely controlled by the app developer.
+
+It is delivered to the app through network communication.
+
+Figure 2 shows the standard way of setting up JSPatch in an iOS app.
+
+This code would allow download and execution of a JavaScript patch when the app starts: Figure 2.
+
+Objc code enabling JSPatch in an app JSPatch is indeed lightweight.
+
+In this case, the only additional work to enable it is to add seven lines of code to the application:didFiishLaunchingWithOptions: selector.
+
+Figure 3 shows the JavaScript downloaded from hxxp://cnbang.net/bugfix.JS that is used to patch the faulty code.
+
+Figure 3.
+
+JSPatch hot patch fixing index out of bound bug in Figure 1 Malicious Capability Showcase JSPatch is a boon to iOS developers.
+
+In the right hands, it can be used to quickly and effectively deploy patches and code updates.
+
+But in a non-utopian world like ours, we need to assume that bad actors will leverage this technology for unintended purposes.
+
+Specifically, if an attacker is able to tamper with the content of JavaScript file that is eventually loaded by the app, a range of attacks can be successfully performed against an App Store application.
+
+Target App
+
+We randomly picked a legitimate app [1] with JSPatch enabled from the App Store.
+
+The logistics of setting up the JSPatch platform and resources for code patching are packaged in this routine [AppDelegate excuteJSPatch:] , as shown in Figure 4 [2] : Figure 4.
+
+JSPatch setup in the targeted app There is a sequence of flow from the app entry point (in this case the AppDelegate class) to where the JavaScript file containing updates or patch code is written to the file system.
+
+This process involves communicating with the remote server to retrieve the patch code.
+
+On our test device, we eventually found that the JavaScript patch code is hashed and stored at the location shown in Figure 5.
+
+The corresponding content is shown in Figure 6 in Base64-encoded format: Figure 5.
+
+Location of downloaded JavaScript on test device Figure 6.
+
+Encrypted patch content While the target app developer has taken steps to secure this sensitive data from prying eyes by employing Base64 encoding on top of a symmetric encryption, one can easily render this attempt futile by running a few commands through Cycript .
+
+The patch code, once decrypted, is shown in Figure 7: Figure 7.
+
+Decrypted original patch content retrieved from remote server
+
+This is the content that gets loaded and executed by JPEngine, the component provided by the JSPatch framework embedded in the target app.
+
+To change the behavior of the running app, one simply needs to modify the content of this JavaScript blob.
+
+Below we show several possibilities for performing malicious actions that are against Apple’s App Review Guidelines .
+
+Although the examples below are from a jailbroken device, we have demonstrated that they will work on non-jailbroken devices as well.
+
+Example 1: Load arbitrary public frameworks into app process a .
+
+     Example public framework : /System/Library/Frameworks/Accounts.framework b .
+
+     Private APIs used by public framework:
+
+[ACAccountStore init] , [ACAccountStore allAccountTypes]
+
+The target app discussed above, when running, loads the frameworks shown in Figure 8 into its process memory: Figure 8.
+
+iOS frameworks loaded by the target app Note that the list above – generated from the Apple-approved iOS app binary – does not contain Accounts.framework .
+
+Therefore, any “dangerous” or “risky” operations that rely on the APIs provided by this framework are not expected to take place.
+
+However, the JavaScript code shown in Figure 9 invalidates that assumption.
+
+Figure 9.
+
+JavaScript patch code that loads the Accounts.framework into the app process If this JavaScript code were delivered to the target app as a hot patch, it could dynamically load a public framework, Accounts.framework , into the running process.
+
+Once the framework is loaded, the script has full access to all of the framework’s APIs.
+
+Figure 10 shows the outcome of executing the private API [ACAccountStore allAccountTypes], which outputs 36 account types on the test device .
+
+This added behavior does not require the app to be rebuilt, nor does it require another review through the App Store.
+
+Figure 10.
+
+The screenshot of the console log for utilizing Accounts.framework
+
+The above demonstration highlights a serious security risk for iOS app users and app developers.
+
+The JSPatch technology potentially allows an individual to effectively circumvent the protection imposed by the App Store review process and perform arbitrary and powerful actions on the device without consent from the users.
+
+The dynamic nature of the code makes it extremely difficult to catch a malicious actor in action.
+
+We are not providing any meaningful exploit in this blog post, but instead only pointing out the possibilities to avoid low-skilled attackers taking advantage of off-the-shelf exploits.
+
+Example 2: Load arbitrary private frameworks into app process a. Example private framework: /System
+
+/Library/PrivateFrameworks/BluetoothManager.framework b. Private APIs used by example framework: [ BluetoothManager connectedDevices] , [BluetoothDevice name]
+
+Similar to the previous example, a malicious JSPatch JavaScript could instruct an app to load an arbitrary private framework, such as the BluetoothManager.framework , and further invoke private APIs to change the state of the device.
+
+iOS private frameworks are intended to be used solely by Apple-provided apps.
+
+While there is no official public documentation regarding the usage of private frameworks, it is common knowledge that many of them provide private access to low-level system functionalities that may allow an app to circumvent security controls put in place by the OS.
+
+The App Store has a strict policy prohibiting third party apps from using any private frameworks.
+
+However, it is worth pointing out that the operating system does not differentiate Apple apps’ private framework usage and a third party app’s private framework usage.
+
+It is simply the App Store policy that bans third party use.
+
+With JSPatch, this restriction has no effect because the JavaScript file is not subject to the App Store’s vetting.
+
+Figure 11 shows the code for loading the BluetoothManager.framework and utilizing APIs to read and change the states of Bluetooth of the host device.
+
+Figure 12 shows the corresponding console outputs.
+
+Figure 11.
+
+JavaScript patch code that loads the BluetoothManager.framework into the app process Figure 12.
+
+The screenshot of the console log for utilizing BluetoothManager.framework Example 3: Change system properties via private API a .
+
+     Example dependent framework: b /System/Library/Frameworks/CoreTelephony.framework b .
+
+Private API used by example framework: [CTTelephonyNetworkInfo updateRadioAccessTechnology:] Consider a target app that is built with the public framework CoreTelephony.framework .
+
+Apple documentation explains that this framework allows one to obtain information about a user’s home cellular service provider.
+
+It exposes several public APIs to developers to achieve this, but [CTTelephonyNetworkInfo updateRadioAccessTechnology:] is not one of them.
+
+However, as shown in Figure 13 and Figure 14, we can successfully use this private API to update the device cellular service status by changing the radio technology from CTRadioAccessTechnologyHSDPA to CTRadioAccessTechnologyLTE without Apple’s consent.
+
+Figure 13.
+
+JavaScript code that changes the Radio Access Technology of the test device Figure 14.
+
+Corresponding execution output of the above JavaScript code via Private API Example 4: Access to Photo Album (sensitive data) via public APIs a .
+
+     Example loaded framework: /System/Library/Frameworks/Photos.framework b .
+
+     Public APIs : [PHAsset fetchAssetsWithMediaType:options:]
+
+Privacy violations are a major concern for mobile users.
+
+Any actions performed on a device that involve accessing and using sensitive user data (including contacts, text messages, photos, videos, notes, call logs, and so on) should be justified within the context of the service provided by the app.
+
+However, Figure 15 and Figure 16 show how we can access the user’s photo album by leveraging the private APIs from built-in Photo.framework to harvest the metadata of photos.
+
+With a bit more code, one can export this image data to a remote location without the user’s knowledge.
+
+Figure 15.
+
+JavaScript code that access the Photo Library Figure 16.
+
+Corresponding output of the above JavaScript in Figure 15 Example 5: Access to Pasteboard in real time a .
+
+     Example Framework: /System/Library/Frameworks/UIKit.framework b .
+
+     APIs: [UIPasteboard strings], [UIPasteboard items], [UIPasteboard string]
+
+iOS pasteboard is one of the mechanisms that allows a user to transfer data between apps.
+
+Some security researchers have raised concerns regarding its security , since pasteboard can be used to transfer sensitive data such as accounts and credentials.
+
+Figure 17 shows a simple demo function in JavaScript that, when running on the JSPatch framework, scrapes all the string contents off the pasteboard and displays them on the console.
+
+Figure 18 shows the output when this function is injected into the target application on a device.
+
+Figure 17.
+
+JavaScript code that scraps the pasteboard which might contain sensitive information Figure 18.
+
+Console output of the scraped content from pasteboard by code in Figure 17 We have shown five examples utilizing JSPatch as an attack vector, and the potential for more is only constrained by an attacker’s imagination and creativity.
+
+Future Attacks Much of iOS’ native capability is dependent on C functions (for example, dlopen() , UIGetImageScreen() ).
+
+Due to the fact that C functions cannot be reflectively invoked, JSPatch does not support direct Objective C to JavaScript mapping.
+
+In order to use C functions in JavaScript, an app must implement JSExtension, which packs the C function into corresponding interfaces that are further exported to JavaScript.
+
+This dependency on additional Objective C code to expose C functions casts limitations on the ability of a malicious actor to perform operations such as taking stealth screenshots, sending and intercepting text messages without consent, stealing photos from the gallery, or stealthily recording audio.
+
+But these limitations can be easily lifted should an app developer choose to add a bit more Objective C code to wrap and expose these C functions.
+
+In fact, the JSPatch author could offer such support to app developers in the near future through more usable and convenient interfaces, granted there is enough demand.
+
+In this case, all of the above operations could become reality without Apple’s consent.
+
+Security Impact
+
+It is a general belief that iOS devices are more secure than mobile devices running other operating systems; however, one has to bear in mind that the elements contributing to this status quo are multi-faceted.
+
+The core of Apple’s security controls to provide and maintain a secure ecosystem for iOS users and developers is their walled garden – the App Store.
+
+Apps distributed through the App Store are significantly more difficult to leverage in meaningful attacks.
+
+To this day, two main attack vectors make up all previously disclosed attacks against the iOS platform: 1.
+
+     Jailbroken iOS devices that allow unsigned or ill-signed apps to be installed due to the disabled signature checking function.
+
+In some cases, the sandbox restrictions are lifted, which allows apps to function outside of the sandbox. 2.
+
+     App sideloading via Enterprise Certifications on non-jailbroken devices.
+
+FireEye published a series of reports that detailed attacks exploiting this attack surface, and recent reports show a continued focus on this known attack vector.
+
+However, as we have highlighted in this report, JSPatch offers an attack vector that does not require sideloading or a jailbroken device for an attack to succeed.
+
+It is not difficult to identify that the JavaScript content, which is not subject to any review process, is a potential Achilles heel in this app development architecture.
+
+Since there are few to zero security measures to ensure the security properties of this file, the following scenarios for attacking the app and the user are conceivable: ● Precondition : 1) App embeds JSPatch platform; 2) App Developer has malicious intentions.
+
+○
+
+Consequences : The app developer can utilize all the Private APIs provided by the loaded frameworks to perform actions that are not advertised to Apple or the users.
+
+Since the developer has control of the JavaScript code, the malicious behavior can be temporary, dynamic, stealthy, and evasive.
+
+Such an attack, when in place, will pose a big risk to all stakeholders involved.
+
+○      Figure 19 demonstrates a scenario of this type of attack: Figure 19.
+
+Threat model for JSPatch used by a malicious app developer ● Precondition : 1) Third-party ad SDK embeds JSPatch platform; 2) Host app uses the ad SDK; 3) Ad SDK provider has malicious intention against the host app.
+
+○
+
+Consequences : 1) Ad SDK can exfiltrate data from the app sandbox; 2) Ad SDK can change the behavior of the host app; 3) Ad SDK can perform actions on behalf of the host app against the OS.
+
+○      This attack scenario is shown in Figure 20: Figure 20.
+
+Threat model for JSPatch used by a third-party library provider The FireEye discovery of iBackdoor in 2015 is an alarming example of displaced trust within the iOS development community, and serves as a sneak peek into this type of overlooked threat.
+
+● Precondition : 1) App embeds JSPatch platform; 2) App Developer is legitimate; 3) App does not protect the communication from the client to the server for JavaScript content; 4)
+
+A malicious actor performs a man-in-the-middle (MITM) attack that tampers with the JavaScript content.
+
+○
+
+Consequences : MITM can exfiltrate app contents within the sandbox; MITM can perform actions through Private API by leveraging host app as a proxy.
+
+○      This attack scenario is shown in Figure 21: Figure 21.
+
+Threat model for JSPatch used by an app targeted by MITM Field Survey JSPatch originated from China.
+
+Since its release in 2015, it has garnered success within the Chinese region.
+
+According to JSPatch, many popular and high profile Chinese apps have adopted this technology.
+
+FireEye app scanning found a total 1,220 apps in the App Store that utilize JSPatch.
+
+We also found that developers outside of China have adopted this framework.
+
+On one hand, this indicates that JSPatch is a useful and desirable technology in the iOS development world.
+
+On the other hand, it signals that users are at greater risk of being attacked – particularly if precautions are not taken to ensure the security of all parties involved.
+
+Despite the risks posed by JSPatch, FireEye has not identified any of the aforementioned applications as being malicious.
+
+Food For Thought Many applaud Apple’s App Store for helping to keep iOS malware at bay.
+
+While it is undeniably true that the App Store plays a critical role in winning this acclaim, it is at the cost of app developers’ time and resources.
+
+One of the manifestations of such a cost is the app hot patching process, where a simple bug fix has to go through an app review process that subjects the developers to an average waiting time of seven days before updated code is approved.
+
+Thus, it is not surprising to see developers seeking various solutions that attempt to bypass this wait period, but which lead to unintended security risks that may catch Apple off guard.
+
+JSPatch is one of several different offerings that provide a low-cost and streamlined patching process for iOS developers.
+
+All of these offerings expose a similar attack vector that allows patching scripts to alter the app behavior at runtime, without the constraints imposed by the App Store’s vetting process.
+
+Our demonstration of abusing JSPatch capabilities for malicious gain, as well as our presentation of different attack scenarios, highlights an urgent problem and an imperative need for a better solution – notably due to a growing number of app developers in China and beyond having adopted JSPatch.
+
+Many developers have doubts that the App Store would accept technologies leveraging scripts such as JavaScript.
+
+According to Apple’s App Store Review Guidelines, apps that download code in any way or form will be rejected.
+
+However, t he JSPatch community argues it is in compliance with Apple’s iOS Developer Program Information, which makes an exception to scripts and code downloaded and run by Apple's built-in WebKit framework or JavascriptCore, provided that such scripts and code do not change the primary purpose of the application by providing features or functionality that are inconsistent with the intended and advertised purpose of the application as submitted to the App Store.
+
+The use of malicious JavaScript (which presumably changes the primary purpose of the application) is clearly prohibited by the App Store policy.
+
+JSPatch is walking a fine line, but it is not alone.
+
+In our coming reports, we intend to similarly examine more solutions in order to find a better solution that satisfies Apple and the developer community without jeopardizing the users security experience.
+
+Stay tuned!
+
+[1] We have contacted the app provider regarding the issue.
+
+In order to protect the app vendor and its users, we choose to not disclose the identity before they have this issue addressed.
+
+[2] The redacted part is the hardcoded decryption key.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

@@ -1,0 +1,8 @@
+
+At one victim, we observed UNC1945 moving laterally via Remote Desktop Protocol (RDP) to a Windows server before viewing the Server Manager Panel, viewing and modifying RDP-related system firewall rules and checking the application settings of two endpoint security services.
+Internal Reconnaissance Mandiant investigations found that the threat actor maintains various tools to interact with victim networks.
+In addition to custom tools, the UNC1945 VMs contained various tools (e.g. network scanners, exploits and reconnaissance; see Associated Tools and Malware section).
+In some intrusions, UNC1945 employed a SPARC executable identified as a reconnaissance tool.
+Based on publicly available information, this executable could be referred to as Luckscan or BlueKeep, the latter of which is part of the BKScan toolkit (see Figure 6).
+Figure 6: SPARC executable recon tool command line used by the threat actor
+According to open sources, BlueKeep, aka “bkscan” scanner , works both unauthenticated and authenticated (i.e. when Network Level Authentication is enabled).

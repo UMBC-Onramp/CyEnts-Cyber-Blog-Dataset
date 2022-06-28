@@ -1,0 +1,4 @@
+
+CT partnered with IBM X-Force to uncover how attackers delivered the commercial RATs .
+While analyzing the delivery of RoboSki samples, X-Force isolated a sample of 21 phishing emails addressed to organizations worldwide in and around mid-February 2021 with attachments including RoboSki-packed malware.
+The emails, which feature global trade themes, lead to the delivery of malware, such as Agent Tesla, FormBook, njRAT, NetWire and the Remcos RAT.

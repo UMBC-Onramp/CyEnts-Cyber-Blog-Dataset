@@ -1,0 +1,465 @@
+Continuing our discussion of image parsing vulnerabilities in Windows , we take a look at a comparatively less popular vulnerability class: uninitialized memory.
+
+In this post, we will look at Windows’ inbuilt image parsers—specifically for vulnerabilities involving the use of uninitialized memory.
+
+The Vulnerability: Uninitialized Memory In unmanaged languages, such as C or C++, variables are not initialized by default.
+
+Using uninitialized variables causes undefined behavior and may cause a crash.
+
+There are roughly two variants of uninitialized memory: Direct uninitialized memory usage: An uninitialized pointer or an index is used in read or write.
+
+This may cause a crash.
+
+Information leakage (info leak) through usage of uninitialized memory: Uninitialized memory content is accessible across a security boundary.
+
+An example: an uninitialized kernel buffer accessible from user mode, leading to information disclosure.
+
+In this post we will be looking closely at the second variant in Windows image parsers, which will lead to information disclosure in situations such as web browsers where an attacker can read the decoded image back using JavaScript.
+
+Detecting Uninitialized Memory Vulnerabilities Compared to memory corruption vulnerabilities such as heap overflow and use-after-free, uninitialized memory vulnerabilities on their own do not access memory out of bound or out of scope.
+
+This makes detection of these vulnerabilities slightly more complicated than memory corruption vulnerabilities.
+
+While direct uninitialized memory usage can cause a crash and can be detected, information leakage doesn’t usually cause any crashes.
+
+Detecting it requires compiler instrumentations such as MemorySanitizer or binary instrumentation/recompilation tools such as Valgrind.
+
+Detour: Detecting Uninitialized Memory in Linux Let's take a little detour and look at detecting uninitialized memory in Linux and compare with Windows’ built-in capabilities.
+
+Even though compilers warn about some uninitialized variables, most of the complicated cases of uninitialized memory usage are not detected at compile time.
+
+For this, we can use a run-time detection mechanism.
+
+MemorySanitizer is a compiler instrumentation for both GCC and Clang, which detects uninitialized memory reads.
+
+A sample of how it works is given in Figure 1.
+
+$ cat sample.cc #include <stdio.h> int main() { int *arr = new int[10]; if(arr[3] == 0) { printf(\"Yay!\\n\"); } printf(\"%08x\\n\", arr[3]); return 0; } $ clang++ -fsanitize=memory -fno-omit-frame-pointer -g sample.cc $ ./a.out ==
+
+29745==WARNING: MemorySanitizer: use-of-uninitialized-value #0 0x496db8  (/home/dan/uni/a.out+0x496db8)
+
+#1 0x7f463c5f1bf6  (/lib/
+
+x86_64-linux-gnu/libc.so.6+0x21bf6) #2 0x41ad69  (/home/dan/uni/a.out+0x41ad69)
+
+SUMMARY:
+
+MemorySanitizer: use-of-uninitialized-value (/home/dan/uni/a.out+0x496db8)
+
+Exiting Figure 1: MemorySanitizer detection of uninitialized memory Similarly, Valgrind can also be used to detect uninitialized memory during run-time.
+
+Detecting Uninitialized Memory in Windows Compared to Linux, Windows lacks any built-in mechanism for detecting uninitialized memory usage.
+
+While Visual Studio and Clang-cl recently introduced AddressSanitizer support , MemorySanitizer and other sanitizers are not implemented as of this writing.
+
+Some of the useful tools in Windows to detect memory corruption vulnerabilities such as PageHeap do not help in detecting uninitialized memory.
+
+On the contrary, PageHeap fills the memory allocations with patterns, which essentially makes them initialized.
+
+There are few third-party tools, including Dr.Memory, that use binary instrumentation to detect memory safety issues such as heap overflows, uninitialized memory usages, use-after-frees, and others.
+
+Detecting Uninitialized Memory in Image Decoding Detecting uninitialized memory in Windows usually requires binary instrumentation, especially when we do not have access to source code.
+
+One of the indicators we can use to detect uninitialized memory usage, specifically in the case of image decoding, is the resulting pixels after the image is decoded.
+
+When an image is decoded, it results in a set of raw pixels.
+
+If image decoding uses any uninitialized memory, some or all of the pixels may end up as random.
+
+In simpler words, decoding an image multiple times may result in different output each time if uninitialized memory is used.
+
+This difference of output can be used to detect uninitialized memory and aid writing a fuzzing harness targeting Windows image decoders.
+
+An example fuzzing harness is presented in Figure 2.
+
+#define ROUNDS 20 unsigned char* DecodeImage(char *imagePath) { unsigned char *pixels = NULL; // use GDI or WIC to decode image and get the resulting pixels ... ... return pixels; } void Fuzz(char *imagePath) { unsigned char *refPixels = DecodeImage(imagePath); if(refPixels !
+
+= NULL) { for(int i = 0; i < ROUNDS; i++) { unsigned char *currPixels = DecodeImage(imagePath); if(!ComparePixels(refPixels, currPixels))
+
+{ // the reference pixels and current pixels don't match // crash now to let the fuzzer know of this file CrashProgram(); } free(currPixels); } free(refPixels); } } Figure 2:
+
+Diff harness The idea behind this fuzzing harness is not entirely new; previously, lcamtuf used a similar idea to detect uninitialized memory in open-source image parsers and used a web page to display the pixel differences.
+
+Fuzzing With the diffing harness ready, one can proceed to look for the supported image formats and gather corpuses.
+
+Gathering image files for corpus is considerably easy given the near unlimited availability on the internet, but at the same time it is harder to find good corpuses among millions of files with unique code coverage.
+
+Code coverage information for Windows image parsing is tracked from WindowsCodecs.dll.
+
+Note that unlike regular Windows fuzzing, we will not be enabling PageHeap this time as PageHeap “initializes” the heap allocations with patterns.
+
+Results
+
+During my research, I found three cases of uninitialized memory usage while fuzzing Windows built-in image parsers.
+
+Two of them are explained in detail in the next sections.
+
+Root cause analysis of uninitialized memory usage is non-trivial.
+
+We don’t have a crash location to back trace, and have to use the resulting pixel buffer to back trace to find the root cause—or use clever tricks to find the deviation.
+
+CVE-2020-0853 Let’s look at the rendering of the proof of concept (PoC) file before going into the root cause of this vulnerability.
+
+For this we will use lcamtuf’s HTML, which loads the PoC image multiple times and compares the pixels with reference pixels.
+
+Figure 3: CVE-2020-0853 As we can see from the resulting images (Figure 3), the output varies drastically in each decoding and we can assume this PoC leaks a lot of uninitialized memory.
+
+To identify the root cause of these vulnerabilities, I used Time Travel Debugging (TTD) extensively.
+
+Tracing back the execution and keeping track of the memory address is a tedious task, but TTD makes it only slightly less painful by keeping the addresses and values constant and providing unlimited forward and backward executions.
+
+After spending quite a bit of time debugging the trace, I found the source of uninitialized memory in windowscodecs!CFormatConverter::Initialize .
+
+Even though the source was found, it was not initially clear why this memory ends up in the calculation of pixels without getting overwritten at all.
+
+To solve this mystery, additional debugging was done by comparing PoC execution trace against a normal TIFF file decoding.
+
+The following section shows the allocation, copying of uninitialized value to pixel calculation and the actual root cause of the vulnerability.
+
+Allocation and Use of Uninitialized Memory windowscodecs!CFormatConverter::Initialize allocates 0x40 bytes of memory, as shown in Figure 4.
+
+0:000
+
+>
+
+r rax=0000000000000000 rbx=0000000000000040 rcx=0000000000000040 rdx=0000000000000008 rsi=000002257a3db448 rdi=0000000000000000 rip=00007ffaf047a238 rsp=000000ad23f6f7c0 rbp=000000ad23f6f841 r8=000000ad23f6f890  r9=0000000000000010 r10=000002257a3db468 r11=000000ad23f6f940 r12=000000000000000e r13=000002257a3db040 r14=000002257a3dbf60 r15=0000000000000000 iopl=0
+
+         nv up ei pl zr
+
+na po nc cs=0033  ss=002b
+
+  ds=002b
+
+  es=002b
+
+  fs=0053  gs=002b
+
+             efl=00000246 windowscodecs!CFormatConverter::Initialize+0x1c8: 00007ffa`f047a238 ff15ea081200    call    qword ptr [windowscodecs!_imp_malloc (00007ffa`f059ab28)]
+
+ds:00007ffa`f059ab28={msvcrt!malloc (00007ffa`f70e9d30)} 0:000
+
+> k # Child-SP          
+
+RetAddr               Call Site 00
+
+000000ad`23f6f7c0 00007ffa`f047c5fb
+
+     windowscodecs!CFormatConverter::Initialize+0x1c8 01 000000ad`23f6f890 00007ffa`f047c2f3     windowscodecs!CFormatConverter::Initialize+0x12b 02 000000ad`23f6f980 00007ff6`34ca6dff     windowscodecs!CFormatConverterResolver::Initialize+0x273 //
+
+Uninitialized memory after allocation : 0:000
+
+> db @rax 00000225`7a3dbf70  d0 b0 3d 7a 25 02 00 00-60 24 3d 7a 25 02 00 00  ..
+
+=
+
+z%...`$=z%...
+
+00000225`7a3dbf80  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+
+00000225`7a3dbf90  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+
+00000225`7a3dbfa0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+
+00000225`7a3dbfb0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+
+00000225`7a3dbfc0  00 00 00 00 00 00 00 00-64 51 7c 26 c3 2c 01 03  ........dQ|&.,
+
+.. 00000225`7a3dbfd0  f0 00 2f 6b 25 02 00 00-f0 00 2f 6b 25 02 00 00  ../k%...../k%...
+
+00000225`7a3dbfe0  60 00 3d 7a 25 02 00 00-60 00 3d 7a 25 02 00 00  `.=z%...
+
+`.=z%...
+
+Figure 4: Allocation of memory The memory never gets written and the uninitialized values are inverted in windowscodecs!CLibTiffDecoderBase::HrProcessCopy and further processed in windowscodecs!GammaConvert_16bppGrayInt_128bppRGBA and in later called scaling functions.
+
+As there is no read or write into uninitialized memory before HrProcessCopy, I traced the execution back from HrProcessCopy and compared the execution traces with a normal tiff decoding trace.
+
+A difference was found in the way windowscodecs!CLibTiffDecoderBase::UnpackLine behaved with the PoC file compared to a normal TIFF file, and one of the function parameters in UnpackLine was a pointer to the uninitialized buffer.
+
+The UnpackLine function has a series of switch-case statements working with bits per sample (BPS) of TIFF images.
+
+In our PoC TIFF file, the BPS value is 0x09—which is not supported by UnpackLine —and the control flow never reaches a code path that writes to the buffer.
+
+This is the root cause of the uninitialized memory, which gets processed further down the pipeline and finally shown as pixel data.
+
+Patch After presenting my analysis to Microsoft, they decided to patch the vulnerability by making the files with unsupported BPS values as invalid.
+
+This avoids all decoding and rejects the file in the very early phase of its loading.
+
+CVE-2020-1397 Figure 5: Rendering of CVE-2020-1397
+
+Unlike the previous vulnerability, the difference in the output is quite limited in this one, as seen in Figure 5.
+
+One of the simpler root cause analysis techniques that can be used to figure out a specific type of uninitialized memory usage is comparing execution traces of runs that produce two different outputs.
+
+This specific technique can be helpful when an uninitialized variable causes a control flow change in the program and that causes a difference in the outputs.
+
+For this, a binary instrumentation script was written, which logged all the instructions executed along with its registers and accessed memory values.
+
+Diffing two distinct execution traces by comparing the instruction pointer (RIP) value, I found a control flow change in windowscodecs!CCCITT::Expand2DLine due to a usage of an uninitialized value.
+
+Back tracing the uninitialized value using TTD trace was exceptionally useful for finding the root cause.
+
+The following section shows the allocation, population and use of the uninitialized value, which leads to the control flow change and deviance in the pixel outputs.
+
+Allocation windowscodecs!TIFFReadBufferSetup allocates 0x400 bytes of memory, as shown in Figure 6.
+
+windowscodecs!TIFFReadBufferSetup: ...
+
+allocBuff = malloc(size); *(v3 + 16) |= 0x200u; *(v3 + 480) =
+
+allocBuff
+
+; 0:000
+
+>
+
+k # Child-SP          RetAddr           Call Site 00 000000aa`a654f128
+
+00007ff9`4404d4f3 windowscodecs!TIFFReadBufferSetup 01 000000aa`a654f130 00007ff9`4404d3c9 windowscodecs!TIFFFillStrip+0xab 02
+
+000000aa`a654f170 00007ff9`4404d2dc
+
+windowscodecs!TIFFReadEncodedStrip+0x91 03 000000aa`a654f1b0 00007ff9`440396dd
+
+windowscodecs!CLibTiffDecoderBase::ReadStrip+0x74 04 000000aa`a654f1e0 00007ff9`44115fca windowscodecs!CLibTiffDecoderBase::GetOneUnpackedLine+0x1ad 05 000000aa`a654f2b0 00007ff9`44077400 windowscodecs!CLibTiffDecoderBase::HrProcessCopy+0x4a 06
+
+000000aa`a654f2f0 00007ff9`44048dbb windowscodecs!CLibTiffDecoderBase::HrReadScanline+0x20 07 000000aa`a654f320 00007ff9`44048b40 windowscodecs!CDecoderBase::CopyPixels+0x23b 08 000000aa`a654f3d0 00007ff9`44043c95
+
+windowscodecs!CLibTiffDecoderBase::CopyPixels+0x80 09 000000aa`a654f4d0 00007ff9`4404563b windowscodecs!CDecoderFrame::CopyPixels+0xb5 After allocation: 0:000
+
+> !
+
+heap -p
+
+-a @rax address 0000029744382140 found in _HEAP @ 29735190000 HEAP_ENTRY
+
+Size Prev Flags            UserPtr UserSize - state 0000029744382130 0041
+
+0000  [00]   0000029744382140    00400 - (busy) unknown!noop // Uninitialized memory after allocation 0:000> db @rax 00000297`44382140  40 7c 5e 97 29 5d 5f ae-73 31 98 70 b8 4f da ac  @|^.)]_.s1.p.
+
+O..
+
+00000297`44382150  06 51
+
+54 18 2e 2a 23 3a-4f
+
+ab 14 27 e9 c6 2c 83  .QT
+
+..
+
+*#:O..'..,.
+
+00000297`44382160  3a 25 b2 f6 9d e7 3c 09-cc a5 8e 27 b0 73 41 a9  :%....<....'.sA.
+
+00000297`44382170  fb 9b 02 b5 81 3e ea 45-4c 0f ab a7 72 e3 21 e7  .....
+
+>.EL...
+
+r.!.
+
+00000297`44382180  c8 44 84 3b c3 b5 44 8a-c9 6e 4b 2e 40 31 38 e0  .D.;
+
+..
+
+D..nK.@18.
+
+00000297`44382190  85 f0 bd 98 3b 0b ca b8-78 b1 9d d0 dd 4d 61 66  ....;...
+
+x....
+
+Maf 00000297`443821a0  16
+
+7d 0a e2 40 fa f8 45-4f 79 ab 95 d8 54 f9 44  .}..@
+
+..EOy...
+
+T.D 00000297`443821b0  66 26 28 00 b7 96 52 88-15 f0 ed 34 94 5f 6f 94  f&(...
+
+R....4._o.
+
+Figure 6: Allocation of memory Partially Populating the Buffer 0x10 bytes are copied from the input file to this allocated buffer by TIFFReadRawStrip1.
+
+The rest of the buffer remains uninitialized with random values, as shown in Figure 7.
+
+if ( !TIFFReadBufferSetup(v2, a2, stripCount) ) { return 0i64; } if ( TIFFReadRawStrip1(v2, v3, sizeToReadFromFile, \"TIFFFillStrip\") !
+
+= sizeToReadFromFile ) 0:000
+
+> r rax=0000000000000001 rbx=000002973519a7e0 rcx=000002973519a7e0 rdx=0000000000000000 rsi=0000000000000000 rdi=0000000000000010 rip=00007ff94404d58c rsp=000000aaa654f128 rbp=0000000000000000 r8=0000000000000010
+
+  r9=00007ff94416fc38 r10=0000000000000000 r11=000000aaa654ef60 r12=0000000000000001 r13=0000000000000000 r14=0000029744377de0 r15=0000000000000001 iopl=0         nv up ei pl nz na pe nc cs=0033  ss=002b
+
+  ds=002b
+
+  es=002b  fs=0053  gs=002b
+
+             efl=00000202 windowscodecs!TIFFReadRawStrip1: 00007ff9`4404d58c 488bc4          mov     rax,rsp 0:000
+
+> k # Child-SP          RetAddr           Call Site 00 000000aa`a654f128 00007ff9`4404d491
+
+windowscodecs!TIFFReadRawStrip1 01 000000aa`a654f130 00007ff9`4404d3c9 windowscodecs!TIFFFillStrip+0x49 02
+
+000000aa`a654f170 00007ff9`4404d2dc
+
+windowscodecs!TIFFReadEncodedStrip+0x91 03 000000aa`a654f1b0 00007ff9`440396dd
+
+windowscodecs!CLibTiffDecoderBase::ReadStrip+0x74 04 000000aa`a654f1e0 00007ff9`44115fca windowscodecs!CLibTiffDecoderBase::GetOneUnpackedLine+0x1ad 05 000000aa`a654f2b0 00007ff9`44077400 windowscodecs!CLibTiffDecoderBase::HrProcessCopy+0x4a 06
+
+000000aa`a654f2f0 00007ff9`44048dbb windowscodecs!CLibTiffDecoderBase::HrReadScanline+0x20 07 000000aa`a654f320 00007ff9`44048b40 windowscodecs!CDecoderBase::CopyPixels+0x23b 08 000000aa`a654f3d0 00007ff9`44043c95
+
+windowscodecs!CLibTiffDecoderBase::CopyPixels+0x80 09 000000aa`a654f4d0 00007ff9`4404563b
+
+windowscodecs!CDecoderFrame::CopyPixels+0xb5 0:000>
+
+db 00000297`44382140 00000297`44382140  5b cd 82 55 2a 94 e2 6f-d7 2d a5 93 58 23 00
+
+6c  
+
+[..U*..o.-..X#.l
+
+             // 0x10 bytes from file 00000297`44382150  06 51
+
+54 18 2e 2a 23 3a-4f
+
+ab 14 27 e9 c6 2c 83  .QT
+
+..
+
+*#:O..'..,.
+
+            // uninitialized memory 00000297`44382160  3a 25 b2 f6 9d e7 3c 09-cc a5 8e 27 b0 73 41 a9  :%....<....'.sA.
+
+00000297`44382170  fb 9b 02 b5 81 3e ea 45-4c 0f ab a7 72 e3 21 e7  .....
+
+>.EL...
+
+r.!.
+
+00000297`44382180  c8 44 84 3b c3 b5 44 8a-c9 6e 4b 2e 40 31 38 e0  .D.;
+
+..
+
+D..nK.@18.
+
+00000297`44382190  85 f0 bd 98 3b 0b ca b8-78 b1 9d d0 dd 4d 61 66  ....;...
+
+x....
+
+Maf 00000297`443821a0  16
+
+7d 0a e2 40 fa f8 45-4f 79 ab 95 d8 54 f9 44  .}..@
+
+..EOy...
+
+T.D 00000297`443821b0  66 26 28 00 b7 96 52 88-15 f0 ed 34 94 5f 6f 94  f&(...
+
+R....4._o.
+
+Figure 7: Partial population of memory Use of Uninitialized Memory 0:000> r rax=0000000000000006 rbx=0000000000000007 rcx=0000000000000200 rdx=0000000000011803 rsi=0000029744382150 rdi=0000000000000000
+
+rip=00007ff94414e837 rsp=000000aaa654f050 rbp=0000000000000001 r8=0000029744382550  r9=0000000000000000 r10=0000000000000008 r11=0000000000000013 r12=00007ff94418b7b0 r13=0000000000000003 r14=0000000023006c00 r15=00007ff94418bbb0 iopl=0
+
+         nv up ei pl nz na po nc cs=0033  ss=002b
+
+  ds=002b
+
+  es=002b
+
+  fs=0053  gs=002b
+
+             efl=00000206 windowscodecs!CCCITT::Expand2DLine+0x253: 00007ff9`4414e837 0fb606          movzx   eax,byte ptr [rsi] ds:00000297`44382150=06             ;
+
+Uninitialized memory being accessed 0:000> db 00000297`44382140 00000297`44382140  5b cd 82 55 2a 94 e2 6f-d7 2d a5 93 58 23 00
+
+6c  
+
+[..U*..o.-..X#.l
+
+             // 0x10 bytes from file 00000297`44382150  06 51
+
+54 18 2e 2a 23 3a-4f
+
+ab 14 27 e9 c6 2c 83  .QT
+
+..
+
+*#:O..'..,.
+
+             // uninitialized memory 00000297`44382160  3a 25 b2 f6 9d e7 3c 09-cc a5 8e 27 b0 73 41 a9  :%....
+
+<....'.sA.
+
+00000297`44382170  fb 9b 02 b5 81 3e ea 45-4c 0f ab a7 72 e3 21 e7  .....
+
+>.EL...
+
+r.!.
+
+00000297`44382180  c8 44 84 3b c3 b5 44 8a-c9 6e 4b 2e 40 31 38 e0  .D.;
+
+..
+
+D..nK.@18.
+
+00000297`44382190  85 f0 bd 98 3b 0b ca b8-78 b1 9d d0 dd 4d 61 66  ....;...
+
+x....
+
+Maf 00000297`443821a0  16
+
+7d 0a e2 40 fa f8 45-4f 79 ab 95 d8 54 f9 44  .}..@
+
+..EOy...
+
+T.D 00000297`443821b0  66 26 28 00 b7 96 52 88-15 f0 ed 34 94 5f 6f 94  f&(...
+
+R....4._o.
+
+0:000
+
+> k # Child-SP          RetAddr           Call Site 00 000000aa`a654f050 00007ff9`4414df80 windowscodecs!CCCITT::Expand2DLine+0x253 01 000000aa`a654f0d0 00007ff9`4412afcc windowscodecs!CCCITT::CCITT_Expand+0xac 02
+
+000000aa`a654f120 00007ff9`4404d3f0 windowscodecs!CCITTDecode+0x7c 03
+
+000000aa`a654f170 00007ff9`4404d2dc windowscodecs!TIFFReadEncodedStrip+0xb8 04 000000aa`a654f1b0 00007ff9`440396dd windowscodecs!CLibTiffDecoderBase::ReadStrip+0x74 05 000000aa`a654f1e0 00007ff9`44115fca windowscodecs!CLibTiffDecoderBase::GetOneUnpackedLine+0x1ad 06 000000aa`a654f2b0 00007ff9`44077400 windowscodecs!CLibTiffDecoderBase::HrProcessCopy+0x4a 07
+
+000000aa`a654f2f0 00007ff9`44048dbb windowscodecs!CLibTiffDecoderBase::HrReadScanline+0x20 08
+
+000000aa`a654f320 00007ff9`44048b40 windowscodecs!CDecoderBase::CopyPixels+0x23b 09 000000aa`a654f3d0 00007ff9`44043c95
+
+windowscodecs!CLibTiffDecoderBase::CopyPixels+0x80 0a 000000aa`a654f4d0 00007ff9`4404563b
+
+windowscodecs!CDecoderFrame::CopyPixels+0xb5 Figure 8:
+
+Reading of uninitialized value Depending on the uninitialized value (Figure 8), different code paths are taken in Expand2DLine, which will change the output pixels, as shown in Figure 9.
+
+{ { if ( v11 !=
+
+1 || a2 ) { unintValue = *
+
+++allocBuffer | (unintValue << 8);          // uninit mem read } else { unintValue <<= 8; ++allocBuffer; } --v11; v16 += 8; } v29 = unintValue >
+
+> (v16 - 8); dependentUninitValue
+
+=
+
+*
+
+(l + 2i64 * v29); v16 -=
+
+*(l + 2i64 * v29 + 1); if ( dependentUninitValue >= 0 )
+
+             // path 1 break; if ( dependentUninitValue < '\\xC0' ) return 0xFFFFFFFFi64;                     // path 2 } if ( dependentUninitValue <= 0x3F )
+
+              // path xx break; Figure 9: Use of uninitialized memory in if conditions Patch Microsoft decided to patch this vulnerability by using calloc instead of malloc , which initializes the allocated memory with zeros.
+
+Conclusion Part Two of this blog series presents multiple vulnerabilities in Windows’ built-in image parsers.
+
+In the next post, we will explore newer supported image formats in Windows such as RAW, HEIF and more.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

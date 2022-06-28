@@ -1,0 +1,18 @@
+
+Figure 3 shows a memory report generated from emulating a Beacon shellcode sample.
+Here we can trace the malware walking the PEB in order to find the address of kernel32.dll.
+The malware then manually resolves and calls the function pointer for the “VirtualAlloc” API, and proceeds to decode and copy itself into the new buffer to pivot execution.
+Figure 3: Memory trace report Configuration Speakeasy is highly configurable and allows users to create their own “execution profiles”.
+Different levels of analysis can be specified in order to optimize individual use cases.
+The end goal is allowing users easy switching of configuration options with no code changes.
+Configuration profiles are currently structured as JSON files.
+If no profile is provided by the user, a default configuration is provided by the framework.
+The individual fields are documented within the Speakeasy project.
+Figure 4 shows a snippet of the network emulator configuration subsection.
+Here, users can specify what IP addresses get returned when a DNS lookup occurs, or in the case of some Beacon samples, what binary data gets returned during a TXT record query.
+HTTP responses have custom responses configured as well.
+Figure 4:
+Network configuration Many HTTP stagers will retrieve a web resource using a HTTP GET request.
+Often, such as with Cobalt Strike or Metasploit stagers, this buffer is then immediately executed so the next stage of execution can begin.
+This response can be easily configured with Speakeasy configurations.
+In the configuration in Figure 4, unless overridden, the framework will supply the data contained in the referenced default.bin file.

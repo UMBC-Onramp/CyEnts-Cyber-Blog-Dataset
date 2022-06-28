@@ -1,0 +1,13 @@
+
+FIGURE 18.
+CLEAN MEMORY OF VARS
+If the malware was running as SYSTEM after the exploit, it will revert its rights and finally finish its execution.
+FIGURE 19.
+REVERT THE SYSTEM PRIVILEGE EXECUTION LEVEL Code Comparison with GandCrab Using the unpacked Sodinokibi sample and a v5.03 version of GandCrab, we started to use IDA and BinDiff to observe any similarities.
+Based on the Call-Graph it seems that there is an overall 40 percent code overlap between the two: FIGURE 20.
+CALL-GRAPH COMPARISON
+The most overlap seems to be in the functions of both families.
+Although values change, going through the code reveals similar patterns and flows:
+Although here and there are some differences, the structure is similar:
+We already mentioned that the code part responsible for the random URL generation has similarities with regards to how it is generated in the GandCrab malware.
+Sodinokibi is using one function to execute this part where GandCrab is using three functions to generate the random URL.

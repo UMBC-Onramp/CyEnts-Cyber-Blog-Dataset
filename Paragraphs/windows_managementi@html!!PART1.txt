@@ -1,0 +1,1 @@
+Windows Management Instrumentation (WMI) is a remote management framework that enables the collection of host information, execution of code, and provides an eventing system that can respond to operating system events in real time.

@@ -1,0 +1,9 @@
+
+The tool appears to have gone through at least three iterations over time.
+The initial tool and exploits is believed to have had limited availability, and may have been employed by a handful of distinct attack groups.
+As the exploited vulnerability was remediated, someone with access to the tool modified it to use a newer exploit when one became available.
+These two newer versions likely did not achieve the widespread distribution that the original tool/exploits did and may have been retained privately, not necessarily even by the same actors.
+We would like to thank Barry Vengerik, Joshua Homan, Steve Davis, Ned Moran, Corbin Souffrant, Xiaobo Chen for their assistance on this research.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

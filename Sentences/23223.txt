@@ -1,0 +1,115 @@
+Recent years have seen ransomware grow from an abstract curiosity into a major problem anyone can face — and that hundreds of thousands of people already have .
+
+Now a mass industry , ransomware even shows a division of labor, with some criminals writing malicious code and others selecting targets and using the code to infect them, earning a percentage of the ransom.
+
+In the past couple of years, ransomers have focused increasingly on organizations, but that does not mean ordinary users are in the clear — people still get hit, sometimes even by accident.
+
+If you don’t want to lose your photos, documents, and other files, you cannot avoid picking up a few antiransomware skills and habits.
+
+What is ransomware?
+
+Ransomware is malware that searches a hard drive for user-valuable information (such as documents, tables, images, and databases) and encrypts everything it finds, locking the files.
+
+Next, the ransomware displays a message demanding payment to restore the data.
+
+If the victim pays, one of several scenarios may play out:
+
+Sometimes the attackers actually send the decryption key with instructions; Some attackers simply take the victim’s money and vanish;
+
+In some cases, the cybercriminals cannot recover the data even if they want to — some ransomware damages files irrevocably.
+
+Ransomware can get onto your computer in a variety of ways.
+
+For example, you might plug in an infected flash drive or download something from a shady website.
+
+E-mails with dangerous attachments or links to malicious sites are the most common sources of infection.
+
+Perhaps the most unpleasant aspect of many ransomware programs is their ability to spread across devices on the same network.
+
+That means if your home desktop picks up malware, you can expect an attack on your laptop as well.
+
+And one piece of ransomware on a work device can bring all corporate communications to a standstill.
+
+What to do if your data gets encrypted If your data gets encrypted, don’t panic.
+
+It’s a bad situation, but you may still be able to recover your files : Do not pay.
+
+Each ransom payment represents a financial contribution to malware development and a signal to the cybercriminals that the scheme is profitable.
+
+And it may not work — you may get nothing even if you comply.
+
+Use the Crypto Sheriff service on the No More Ransom website to find out what malware has infected your drive.
+
+A decryptor may already exist for it, in which case you can use it to recover your data without spending a dime.
+
+No More Ransom , which is supported by Europol and various anticybercrime companies, hosts dozens of decryptors.
+
+If you’re unable to find a decryptor for the ransomware that attacked you, keep checking; one might be released any day.
+
+How to stay safe from ransomware Now that you know the enemy, it’s time to learn a few information hygiene rules that can help you avoid ransomware.
+
+1.
+
+Make backups Regularly save important files and documents to a cloud storage and to an external hard drive.
+
+You can limit photo backups to once a week or even every month, but be sure to back up important, current documents every few days or even daily.
+
+Backing up your files doesn’t have to be a chore: See our guide to automatic backup .
+
+However you decide to back up your data, don’t delay.
+
+Having a backup in the event of a ransomware attack — or if the cat walks across the keyboard and deletes your report — means you don’t have to lose any work.
+
+For a successful backup, don’t forget a few important rules: Connect the backup hard drive only when you’re writing to or reading from it.
+
+Any drive connected to the computer at the time of a ransomware attack will be encrypted as well.
+
+Protect access to cloud storage with a strong password and two-factor authentication.
+
+2.
+
+Be careful with messages E-mail attachments and infected websites are the most common hiding places for ransomware Trojans, so treat all unexpected e-mails and messages as potential sources of danger.
+
+What makes a message suspicious, though?
+
+It’s a gray area requiring consideration and judgment.
+
+Make sure you know the sender.
+
+Treat content, attachments and links in e-mails from strangers with the utmost skepticism.
+
+This applies to messages in messaging apps, social networks, and forums as well.
+
+If you have any concerns , consign the message to your spam folder, especially if it promises unexpected payouts.
+
+To encounter such messages less often, configure spam filtering and mail traffic scanning in your security solution.
+
+If you receive a suspicious link or file that you weren’t expecting from someone you do know, contact them by phone or in another format; their account or mailbox may have been compromised.
+
+3.
+
+Avoid suspicious websites Not limiting themselves to links in e-mails, cybercriminals employ a formidable array of tricks to dupe victims into downloading malware.
+
+If clicking on a banner results in an unexpected Web resource appearing, or the screen prompting you to download something, close the page immediately.
+
+You are very likely seeing an infection attempt.
+
+4.
+
+Update software in a timely manner To penetrate devices, cybercriminals often exploit known vulnerabilities that developers have already patched.
+
+Anyone who doesn’t update their software regularly is at particular risk.
+
+Turn on automatic updates wherever possible, and regularly check for updates for apps that don’t update automatically.
+
+5.
+
+Install a security solution Modern security solutions can identify and block malware in real time.
+
+For example, Kaspersky Internet Security includes a range of tools to protect users against ransomware.
+
+Even in the unlikely event that a particularly cunning piece of malware makes it past file antivirus protection, it won’t be able to do much: Kaspersky Internet Security analyzes the actions of running apps and blocks attempts to encrypt files or rolls back the actions of malicious programs if they manage to damage any data.
+
+
+
+

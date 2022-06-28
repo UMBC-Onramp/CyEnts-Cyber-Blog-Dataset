@@ -1,0 +1,6 @@
+
+New RoboSki Version — The Technical Details As identified by X-Force, the RoboSki packer file typically arrives within a malicious email archive attachment.
+CT further analyzed the packer and its embedded components to understand the execution flow leading to a commodity RAT payload and how that execution flow differed from previous RoboSki packers.
+Figure 4:
+Mapping of RoboSki packer to final payload RoboSki.
+Packer CT analysts found that the RoboSki packer contains numerous .NET

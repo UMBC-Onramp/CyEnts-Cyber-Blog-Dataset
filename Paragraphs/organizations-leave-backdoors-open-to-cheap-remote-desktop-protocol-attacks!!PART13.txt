@@ -1,0 +1,8 @@
+
+In addition to selling RDP, some of these shops offer a lively trade in social security numbers, credit card data, and logins to online shops.
+The second-largest RDP shop we researched, BlackPass, offered the widest variety of products.
+The most prolific of these brokers provide one-stop access to all the tools used to commit fraud: RDP access into computers, social security numbers and other integral data to set up loans or open bank accounts.
+For legal and ethical reasons, we did not purchase any of the products offered.
+Therefore, we cannot determine the quality of the services.
+RDP ransomware attack scenario Is it possible to find a high-value victim using an RDP shop?
+The Advanced Threat Research team put this theory to the test.

@@ -1,0 +1,4 @@
+
+It is necessary to resolve exported functions in order to invoke the Win32 API and therefore have meaningful impact on a targeted system.
+In most cases, Beacon included, these functions are located by walking the process environment block (commonly called the PEB).
+From the PEB, shellcode can access a list of all loaded modules within a process’s virtual address space.

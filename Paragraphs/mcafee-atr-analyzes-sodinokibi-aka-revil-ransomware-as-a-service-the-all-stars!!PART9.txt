@@ -1,0 +1,10 @@
+
+FIGURE 3.
+THE ACTIVITY OF ID NUMBER 41 (PARENT) AND ITS CORRESPONDING SUB_IDs (CHILDREN) ID
+Increments Overall, we observed a gradual increment in the ID number over time.
+The earlier versions generally had lower ID numbers and higher ID numbers appeared with the later versions.
+However, there were relatively lower ID numbers that appeared in many versions, as shown in figure 3.
+This observation aligned with our theory that the ID number corresponds with a particular affiliate.
+Certain affiliates remained partners for a long period of time, spreading different versions of GandCrab; this explains the ID number appearing over a longer period and in different versions.
+This theory has also been acknowledged by several (anonymous) sources.
+Determining Top ID’s/Affiliates When we applied the theory that the ID corresponded with an affiliate, we observed different activity amongst the affiliates.

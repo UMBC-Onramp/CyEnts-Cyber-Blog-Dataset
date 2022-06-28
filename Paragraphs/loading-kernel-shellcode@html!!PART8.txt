@@ -1,0 +1,7 @@
+
+The script will cause prompts to appear asking you to supply and use a password for a test signing certificate.
+Once the build completes, visit the bin directory and copy kscldr.exe to your debug target.
+Before you can commence using your custom copy of this tool, you’ll need to follow just a few more steps to prepare the target system to allow it.
+Preparing the Debug Target To debug kernel shellcode, I wrote a Windows software-only driver that loads and runs shellcode at privilege level 0.
+Normally, Windows only loads drivers that are signed with a special cross-certificate , but Windows allows you to enable testsigning to load drivers signed with a test certificate.
+We can create this test certificate for free, and it won’t allow the driver to be loaded on production systems, which is ideal.

@@ -1,0 +1,11 @@
+
+Unfortunately, those efforts don’t scale.
+Disabling support for macros in documents from the Internet and increasing user awareness are two ways to reduce the likelihood of infection.
+If you can, consider blocking connections to websites you haven’t explicitly whitelisted.
+However, these controls may not be sufficient to prevent all infections or they may not be possible based on your organization.
+FireEye Endpoint Security with Exploit Guard helps to detect exploits and techniques used by ransomware attacks (and other threat activity) during execution and provides analysts with greater visibility.
+This helps your security team conduct more detailed investigations of broader categories of threats.
+This information enables your organization to quickly stop threats and adapt defenses as needed.
+Conclusion Ransomware has become an increasingly common and effective attack affecting enterprises, impacting productivity and preventing users from accessing files and data.
+Mitigating the threat of ransomware requires strong endpoint controls, and may include technologies that allow security personnel to quickly analyze multiple systems and correlate events to identify and respond to threats.
+HX with Exploit Guard uses behavioral intelligence to accelerate this process, quickly analyzing endpoints within your enterprise and alerting your team so they can conduct an investigation and scope the compromise in real-time.

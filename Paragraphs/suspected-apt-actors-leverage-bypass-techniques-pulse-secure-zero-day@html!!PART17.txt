@@ -1,0 +1,5 @@
+
+Organizations should examine available forensic evidence to determine if an attacker compromised user credentials.
+Ivanti highly recommends resetting all passwords in the environment and reviewing the configuration to ensure no service accounts can be used to authenticate to the vulnerability.
+Additional detections, mitigations and relevant MITRE ATT&CK techniques are included in the Technical Annex.
+Sample hashes and analysis are included to enable defenders to quickly assess if their respective appliances have been affected.

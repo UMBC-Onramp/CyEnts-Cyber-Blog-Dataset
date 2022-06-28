@@ -1,0 +1,193 @@
+By Christiaan Beek on Mar 11, 2018 The nonperishable nature of medical data makes an irresistible target for cybercriminals.
+
+The art of hacking requires significant time and effort, encouraging experienced cybercriminals to plot their attacks based on the return they will see from their investment.
+
+Those who have successfully gained access to medical data have been well rewarded for their efforts.
+
+One seller stated in an interview that “someone wanted to buy all the … records specifically,” claiming that the effort had netted US$100,000.
+
+While at a doctor’s appointment with my wife watching a beautiful 4D ultrasound of our unborn child, I noticed the words “saving data to image” flash on the screen.
+
+Although this phrase would not catch the attention of most people, given my research on how cybercriminals are targeting the health care industry , I quickly began to wonder why an ultrasound of our child would not instead save to a file.
+
+Intrigued, I decided to dig into the world of medical imaging and its possible security risks.
+
+The results were disturbing; ultimately, we were able to combine attack vectors to reconstruct body parts from the images and make a three-dimensional model.
+
+PACS Most hospitals or medical research facilities use PACS, for picture archiving and communication system, so that images such as ultrasounds, mammograms, MRIs, etc. can be accessed from the various systems within their facility, or through the cloud.
+
+A PACS setup contains multiple components, including a workstation, imaging device, acquisition gateway, PACS controller, database, and archiving—as illustrated in the following graphic: The basic elements of PACS infrastructure.
+
+The imaging device creates a picture, such as an ultrasound or MRI, which is uploaded to an acquisition gateway.
+
+Because much of the imaging equipment in use by medical facilities does not align with security best practices, acquisition gateways are placed in the network to enable the digital exchange of the images.
+
+The acquisition gateway also often acts as the server connecting to the hospital’s information system (using the HL7 protocol) to enrich images with patient data.
+
+The PACS controller is the central unit coordinating all traffic among the different components.
+
+The final component in the PACS infrastructure is the database and archiving system.
+
+The system ensures that all images are correctly stored and labeled for either short- or long-term storage.
+
+Larger implementations might have multiple imaging devices and acquisition gateways in various locations, connected over the Internet.
+
+During our investigation, we noticed many small medical practices around the world using free, open-source PACS software, which was not always securely implemented.
+
+To determine how many PACS servers are connected depends on on how you search using Shodan, a search engine for finding specific types of computers connected to the Internet.
+
+Some servers connect over TCP 104; others use HTTP TCP 80 or HTTPS TCP 443.
+
+A quick search revealed more than 1,100 PACS directly connected to the Internet, not behind a recommended layer of network security measures or virtual private networks (VPNs).
+
+PACS systems connected to the Internet.
+
+Darker colors represent more systems.
+
+Our eyebrows began to rise very early in our research, as we came across “IE 6 support only” messages or ActiveX controls and old Java support; many of these products are vulnerable to a plethora of exploits.
+
+For example, one of the PACS generated an error page when we changed one parameter.
+
+This is a very basic common way of testing if the application developers did proper input sanitation check to prevent attackers inserting code or generating failures that could reveal data about the application and can give clues to compromise the system.
+
+A stack-trace error.
+
+The stack-trace dump revealed the use of Apache Tomcat Version 7.0.13, which has more than 40 vulnerabilities.
+
+When communicating with the DICOM (digital imaging and communications in medicine) port, TCP 104, it is possible to grab the banner of a server and get a response.
+
+As we queried, we recorded different responses.
+
+Let’s look at one: \\x02\\x00\\x00\\x00\\x00\\xbe\\x00\\x01\\x00\\x00ANY-SCP         FINDSCU         \\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x10\\x00\\x00\\x151.2.840.10008.3.1.1.1!\\x00\\x00\\x1b\\x01\\x00\\x00\\x00@\\x00\\x00\\x131.2.840.10008.1.2.1P\\x00\\x00>Q\\x00\\x00\\x04\\x00\\x00@\\x00R\\x00\\x00\"1.2.826.0.1.3680043.2.135.1066.101U\\x00\\x00\\x0c1.4.16/WIN32
+
+The FINDSCU string refers to the findscu tool, which can be used to query a PACS system.
+
+The DICOM standard defines three data models for the query/retrieve service.
+
+Each data model has been assigned with one unique ID for the C-FIND, one for the C-MOVE, and one for C-GET; so all together there are nine unique IDs, three for each model.
+
+In the preceding banner, we retrieved two of those IDs:
+
+2.840.10008.1.2.1: A transfer unique ID that defines the value “Explicit VR Little Endian” for data transfer 2.826.0.1.3680043.2.135.1066.101:
+
+A value referring to the implementation class Another value in the banner, “1.4.16/WIN32,” refers to the implementation version.
+
+In the context of the medical servers, this refers to the version of XAMPP, aka Apache with MariaDB, PHP, and Perl.
+
+This server was running Apache 2.4.9, which is publicly known to contain nine vulnerabilities.
+
+In other cases, there was no need to search for vulnerabilities.
+
+The management interface was wide open and could be accessed without credentials.
+
+What does this mean?
+
+It is possible to access the images.
+
+Vulnerabilities In addition to expensive commercial PACS systems, open-source or small-fee PACS are available for small health care institutions or practices.
+
+As we investigated these systems, we found that our fears were well founded.
+
+One web server/client setup used the defaults “admin/password” as credentials without enforcing a change when the server is started for the first time.
+
+We found more problems: Unencrypted traffic between client and server Click jacking Cross-site scripting (reflected) Cross-site scripting stored as cross-site request forgery Document object model–based link manipulation Remote creation of admin accounts Disclosure of information Many of these are ranked on the list of OWASP Top 10 Most Critical Web Application Security Risks list, which highlights severe flaws that should be addressed in any product delivered to a customer.
+
+We have reported the vulnerabilities we discovered to these vendors following our responsible disclosure process.
+
+They cooperated with us in investigating the vulnerabilities and taking appropriate actions to fix the issues.
+
+But why should we spend so much time and effort in researching vulnerabilities when there are many other ways to retrieve medical images from the Internet?
+
+Medical Image Formats The medical world uses several image formats for different purposes.
+
+Each format has different requirements and works with different equipment, protocols, etc.
+
+A few format examples: NifTi Neuroimaging Informatics Technology Initiative Dicom Digital Imaging and Communications in Medicine MINC Medical Imaging NetCDF
+
+NRRD
+
+Nearly Raw Raster Data Searching open directories and FTP servers while using several search engines, we gathered thousands of images—some of them complete MRI scans, mostly in DICOM format.
+
+One example: An open directory of images.
+
+The DICOM format originated in the 1980s, before cybersecurity was a key component.
+
+The standard format contains a detailed list of tags such as patient name, station name, hospital, etc.
+
+All are included as metadata with the image.
+
+Opening an image with a text editor presents the following screen:
+
+An example of the DICOM file format.
+
+The file begins with the prefix DICM, an indicator that we are dealing with a DICOM file.
+
+  Other (now obscured) strings in this example include the hospital’s name, city, patient name, and more.
+
+The Health Insurance Portability and Accountability Act requires a secure medical imaging workflow, which includes the removal or anonymizing of metadata in DICOM files.
+
+Researching the retrieved files from open sources and directories, we discovered most of the images still contained this metadata, such as in the following example, from which we extracted (obscured) personally identifiable information (PII).
+
+Metadata discovered in a DICOM file.
+
+Combining Vulnerabilities and Metadata We combined possible vulnerabilities and the metadata to create a test scenario, installing information from a dummy patient, including an x-ray picture of a knee, to the vulnerable PACS server.
+
+Our test patient record, followed by an x-ray of a knee.
+
+Using vulnerability information gathered in an earlier phase of research, we launched an attack to gain access to the PACS server.
+
+Once we had access, we downloaded the image from our dummy patient and altered the metadata of the image series, changing all references of “knee” to “elbow.”
+
+Altered metadata of the test patient image.
+
+We then saved the picture and uploaded it to the server.
+
+Checking the records of our dummy patient, we found our changes were successful.
+
+Changes successfully updated.
+
+Reconstructing Body Parts In the medical imaging world, a large array of software can investigate and visualize images in different ways, for example, in 3D. We took our collection of images, and using a demo version of 3D software, we reconstructed complete 3D models of vertebrae, pelvis, knees, etc.
+
+and, in one case, we reconstructed a partial face.
+
+Because we firmly believe in protecting privacy, the following example—a series of images from a pelvis—comes from a demo file that accompanies the software.
+
+An example of a series of images.
+
+After selecting areas of interest and adjusting the levels, we generated a 3D model of the pelvis: A 3D model of the pelvis.
+
+The application that generated the 3D model has a feature that allowed us to export the model in several data formats to be used by other 3D drawing programs.
+
+After the export, we imported the data into a 3D drawing program and converted the file to STL, a popular format for 3D objects and printers.
+
+In short, we began with files from open directories, transformed them into a 3D model, and printed a tangible model using a 3D printer: Our 3D model of a pelvis.
+
+Conclusion When we began our investigation into the security status of medical imaging systems, we never expected we would conclude by reconstructing body parts.
+
+The amount of old software used in implementations of PACS servers and the amount of vulnerabilities discovered within the software itself are concerning.
+
+We investigated relatively few open-source vendors, but it begs the question: What more could we have found if we had access to professional hardware and software?
+
+Default accounts, cross-site scripting, or vulnerabilities in the web server could lead to access to the systems.
+
+Our research demonstrates that once inside the systems, the data and pictures can be permanently altered.
+
+In May 2017, one report claimed that through artificial intelligence pictures could be studied to determine how long a person will live.
+
+What if criminals could obtain that information and use it for extortion?
+
+We understand the need for quickly sharing medical data for diagnosis and treatment and for storing medical images.
+
+We advise health care organizations to be careful when sharing images on open directories for research purposes and to at least scrape the PII data from the images.
+
+For organizations using a PACS, ask your vendor about its security features.
+
+Employ a proper network design in which the sharing systems are properly secured.
+
+Think not only about internal security but also about the use of VPNs and two-factor authentication when connecting with external systems.
+
+For more on the health care industry follow @McAfee_Labs and catch up on all threats statistics from Q417 in the March Threats Report .
+
+
+
+

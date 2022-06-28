@@ -1,0 +1,3 @@
+
+The increasing need and hurried pace of organizations adopting APIs for their applications in 2020 will expose API security as the weakest link leading to cloud-native threats, putting user privacy and data at risk until security strategies mature.
+Organizations seeking improvement in their API security strategy should pursue a more complete understanding of their Cloud Service APIs through comprehensive discovery across SaaS, PaaS and IaaS environments, implement policy-based authorization, and explore User and Entity Behavior Analytics (UEBA) technology to detect anomalous access patterns.

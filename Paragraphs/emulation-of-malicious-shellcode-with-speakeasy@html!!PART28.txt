@@ -1,0 +1,7 @@
+
+Figure 11:
+Individual memory blocks acquired from emulation If we just run strings on these memory dumps, we can quickly locate interesting strings along with the Beacon configuration data, which is shown in Figure 12.
+Figure 12: Configuration string data for the malware
+In a triage level of analysis, we may only care about the indicators of compromise for a malware variant of a known family.
+However, if full reverse engineering of the sample is required, we can also recover the decoded version of the Beacon malware in its DLL form.
+By simply doing a primitive grep for the “MZ” magic bytes, we find the only hits are the memory dumps related to the original sample’s allocation and the virtual allocated buffer that the malware copies itself to (Figure 13).

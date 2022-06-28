@@ -1,0 +1,9 @@
+Possibly the biggest story of 2021 — an investigation by the Guardian and 16 other media organizations, published in July — suggested that over 30,000 human rights activists, journalists and lawyers across the world may have been targeted using Pegasus.
+Pegasus is a so-called “legal surveillance software” developed by the Israeli company NSO.
+The report, called the Pegasus Project , alleged that the malware was deployed widely through a variety of exploits, including several iOS zero-click zero-days.
+Based on forensic analysis of numerous mobile devices, Amnesty International’s Security Lab found that the software was repeatedly used in an abusive manner for surveillance.
+The list of targeted individuals includes 14 world leaders and many other activists, human rights advocates, dissidents and opposition figures.
+Later in July, representatives from the Israeli government visited the offices of NSO as part of an investigation into the claims.
+In October, India’s Supreme Court commissioned a technical committee to investigate the use of Pegasus to spy on its citizens.
+Apple announced, in November, that it was taking legal action against NSO Group for developing software that targets its users with “malicious malware and spyware.”
+Last but not least, in December, Reuters published that US State Department phones were hacked with the NSO Pegasus malware, as alerted by Apple.

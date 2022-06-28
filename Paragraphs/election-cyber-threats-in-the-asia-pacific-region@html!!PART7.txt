@@ -1,0 +1,4 @@
+
+Malicious actors create and spread disinformation with the intent to mislead an electorate by causing reputational damage to an individual or political party, or by casting doubt regarding a particular issue or political process.
+Influence campaigns also seek to exacerbate existing societal divisions.
+In the Asia-Pacific region, Mandiant Threat Intelligence observed pro-China threat actors spoof Taiwanese media outlet TVBS (官方網站) to promote narratives in line with the People's Republic of China's (PRC's) political interests in a coordinated, inauthentic manner.

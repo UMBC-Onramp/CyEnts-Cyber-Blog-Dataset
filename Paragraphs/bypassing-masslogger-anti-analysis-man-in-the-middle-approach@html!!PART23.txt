@@ -1,0 +1,4 @@
+
+Therefore, JITM also include the following Python 2.7 helper script to automate this process: Scripts\\addsection.py .
+With the method body header and MSIL of each method added to a new PE section as shown in Figure 16, we can easily parse the .NET metadata and fix each method’s RVA to point to the correct method body within the new section.
+Unfortunately, I did not find any Python library to easily parse the .NET metadata and the MethodDef table.

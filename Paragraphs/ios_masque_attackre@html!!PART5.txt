@@ -1,0 +1,6 @@
+
+In Demo Video 1, we explain this issue with concrete examples.
+We’ve also found other approaches to bypass “Don’t Trust” protection through iOS springboard.
+We confirmed these problems on iOS 7.1.2, 8.1.1, 8.1.2 and 8.2 beta.
+Recently Apple fixed these issues and acknowledged our findings in CVE-2014-4494 in the iOS 8.1.3 security content [2].
+As measured by the App Store on 2 Feb 2015 [4], however, 28% devices use iOS version 7 or lower, which are still vulnerable.

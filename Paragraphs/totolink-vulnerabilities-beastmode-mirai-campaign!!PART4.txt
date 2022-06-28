@@ -1,0 +1,9 @@
+
+A couple of older vulnerabilities were also found in the samples analyzed by FortiGuard Labs researchers, namely CVE-2017-17215 (Figure 7) targeting Huawei HG532 routers, and CVE-2016-5674 (Figure 8) targeting NUUO
+NVRmini2, NVRsolo, Crystal Devices, and NETGEAR ReadyNAS Surveillance products.
+While affecting a variety of products, these vulnerabilities are all similar in that they allow threat actors to inject commands to be executed after successful exploitation.
+This usually involves using the wget command to download shell scripts to infect the device with Beastmode.
+In addition, exploits lead to slightly different shell scripts.
+Snippets of the scripts downloaded from the successful exploitation of CVE-2021-45382, CVE-2022-26186, and CVE-2022-25075, respectively are shown below (Figure 9).
+As shown in the above figure, each script downloads the same file to different filenames but is executed with different parameters.
+For instance, successful exploitation of CVE-2021-45382, a vulnerability involving a function named “DDNS” within D-Link router firmware, leads to the download and execution (Figure 5) of the shell script “ddns.sh”.

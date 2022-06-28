@@ -1,0 +1,43 @@
+The term \"critical infrastructure\" has earned its spot on the board of our ongoing game of cyber bingo--right next to \"Digital Pearl Harbor,\" \"Cyber 9/11,\" \"SCADA\" and \"Stuxnet.\" With \"critical infrastructure\" thrown about in references to cyber threats nearly every week, we thought it was time for a closer look at just what the term means-and what it means to other cyber threat actors.
+
+The term \" critical infrastructure \" conjures up images of highways, electrical grids, pipelines, government facilities and utilities.
+
+But the U.S. government definition also includes economic security and public health.
+
+The Department of Homeland Security defines critical infrastructure as \"Systems and assets, whether physical or virtual, so vital to the United States that the incapacity or destruction of such systems and assets would have a debilitating impact on security, national economic security, national public health or safety, or any combination of those matters.\" [1] Certainly the U.S. definition is expansive, but some key cyber actors go a step further to include a more abstract \"information \" asset.
+
+Russian officials view information content, flow and influencers as an enormous component of critical infrastructure.
+
+Iran and China similarly privilege the security of their information assets in order to protect their governments.
+
+The bottom line?
+
+U.S. companies, who may have never considered themselves a plausible target for cyber threats, could become victims of offensive or defensive state cyber operations.
+
+Earlier this year several media outlets-including the New York Times and Washington Post-disclosed that they had been the victims of China-based intrusions.
+
+The Times and the Post linked the intrusions on their networks to their reporting on corruption in the upper echelons of the Chinese Communist Party and other issues.
+
+These media outlets weren't sitting on plans for a new fighter jet or cutting edge wind turbines-information often assumed to be at risk for data theft.
+
+Rather, the reporters at the Times and Post were perched in key positions to influence U.S. government and public views of the Chinese leadership, possibly in a negative light.
+
+The Chinese government had conducted these intrusions against what it deemed critical infrastructure that supported the flow of valuable information.
+
+Who's up next?
+
+State actors motivated to target critical infrastructure (by their own definition or the U.S.') won't just be the usual attention grabbers in cyberspace.
+
+We estimate that Iran, Syria, and North Korea all have interest and would be able to conduct or direct some level of network operations.
+
+These states are also likely to conduct operations in the near term to identify red lines and gauge corporate and government reactions.
+
+With little reputational loss at stake, we expect actors sponsored by or associated with these states to target an array of critical infrastructure targets.
+
+Companies who serve as key information brokers-for the public or the U.S. government-should be particularly attuned to the criticality their work is assigned by a variety of cyber threat actors.
+
+http://www.nist.gov/itl/upload/preliminary-cybersecurity-framework.pdf Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

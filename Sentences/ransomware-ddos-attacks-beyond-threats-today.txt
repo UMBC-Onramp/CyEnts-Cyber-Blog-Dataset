@@ -1,0 +1,147 @@
+The recent DarkSide attack makes it clear: no system is safe from ransomware.
+
+And while the attackers say they weren’t out to hurt anyone, only to make money, the impact is the same.
+
+It could lead to potential disruptions of critical services across the country.
+
+At the same time, it stokes fears that similar attacks could happen more often in the future.
+
+The long-term outcome of these attacks, however, is a hyper-focus on ransomware as the top threat to governments and enterprises.
+
+For example, the federal government recently pledged billions of dollars to fight ransomware.
+
+There’s no doubt that ransomware remains a major (and evolving) risk.
+
+However, this IT tunnel vision makes it easy to miss the forest for the trees.
+
+You don’t want to let distributed-denial-of-service (DDoS) attacks and other problems slip behind network defenses unnoticed.
+
+Here’s a look at four threats just as frightening as ransomware, and what enterprises can do about them.
+
+Third-Party Software Problems Third-party software solutions are key to keeping business running smoothly, but come with the risk of undetected or zero-day threats.
+
+Left unchecked, at-risk third-party programs could provide lateral access points for threat actors to compromise key systems.
+
+Consider the SolarWinds attack in February.
+
+Threat actors managed to infiltrate a software update package with malicious code.
+
+They then pushed it out to more than 18,000 businesses, along with government agencies such as the U.S. Department of Homeland Security and the Department of the Treasury.
+
+The most frightening part of this third-party problem?
+
+Trust.
+
+Companies remain vigilant for ransomware attacks on their networks.
+
+Meanwhile, trusted third-party providers often get a free pass into corporate systems because they’ve never been the source of problems in the past.
+
+The result is an infosec complacency that can lead to serious security risk.
+
+On average, it now takes 280 days for companies to detect security risks, even when they’re actively looking.
+
+The solution starts with zero trust security .
+
+By setting up protective frameworks that use authentication rather than assumption, enterprises can reduce the risk of third-party compromise.
+
+It’s worth taking the time to look at all third-party interactions, even those deemed safe in the past.
+
+This increases the chances of detection and identification of security risks outside the network perimeter.
+
+MITM Attacks The rising use of remote connections has created a perfect storm for man-in-the-middle (MITM) malware attacks.
+
+This type of attack listens in on digital connections and could exfiltrate key data.
+
+Often designed for minimal impact, these attacks can go unnoticed for weeks or months.
+
+In the past, the fear around MITM attacks has been the risk of data eavesdropping.
+
+People feared threat actors could capture unencrypted data, such as plaintext emails, and then use it to compromise systems at scale.
+
+As noted by Ars Technica , however, MITM attacks are now evolving to target supposedly secure HTTPS protected websites.
+
+Known as cross-protocol attacks, these efforts leverage the function of transport layer security protocols.
+
+With them, they can protect the integrity of TCP connections rather than the server itself.
+
+This makes it possible for attackers to redirect HTTPS traffic to a substitute file transfer protocol server.
+
+From there, that could empower cross-site scripting or cookie-stealing attacks.
+
+Standard MITM attacks can often be prevented with robust VPN solutions.
+
+However, security experts recommend stricter enforcement of two current protections, application layer protocol negotiation and server name indication.
+
+This will help deal with new MITM efforts.
+
+DDoS Attacks Internet of things (IoT) devices are now commonplace across enterprises in all industries.
+
+So, DDoS attacks have increased in a big way.
+
+Threat actors can ramp up attack volumes rapidly, giving companies almost no time to respond before critical systems come crashing down.
+
+For cyber criminals, DDoS offers a low-cost, high-return attack type.
+
+IoT devices are cheap, plentiful and many are easy to compromise thanks to minimal or non-existent factory security settings.
+
+Companies are often willing to pay once they realize online services won’t be coming back up anytime soon unless the attackers turn down the traffic.
+
+The result is a frightening scenario for enterprises.
+
+Sudden, high-volume attacks from disparate sources could knock critical services offline for days or weeks.
+
+That, in turn, leads to major revenue and reputation loss.
+
+When it comes to defending against DDoS attacks, two components are critical.
+
+First is preparation.
+
+These attacks are a matter of when, not if.
+
+Companies need incident response plans in place that find potential weak points, critical control mechanisms and simple ways of reducing their impact — such as blocking traffic from specific locations.
+
+It’s also a good idea to outsource DDoS protection where possible.
+
+Using a trusted provider with cloud experience and a reputation for reliable work and real-time detection can give you more lead time to mitigate DDoS impacts and other problems.
+
+Social Engineering Efforts Despite how simple it is, social engineering efforts, such as phishing, remain popular.
+
+Why?
+
+Because they continue to see success.
+
+By collecting both publicly available and private corporate data, attackers can build social profiles that appear real, compromise corporate accounts and gain access to high-level systems and services.
+
+Consider the Colonial Pipeline attack.
+
+While the initial effort was ransomware, cyber criminals have leveraged the desire for improved enterprise defenses to craft a targeted phishing campaign.
+
+Companies have been receiving emails that discuss how severe this attack was and then encourage them to download ‘ransomware system updates’ — which are really links to malware.
+
+Similar campaigns have been carried out around COVID-19 vaccines, natural disaster relief and nearly every other news-worthy event in the last five years.
+
+For enterprises, the prevalence of phishing attacks is the most frightening thing about them.
+
+While on their own they represent minimal risk, increasing volume and velocity means that one of these efforts is bound to break through.
+
+Even worse?
+
+Staff who fall for these attacks may not be aware they’ve done it.
+
+Or, they may be worried about the consequences if they come clean about their mistake.
+
+Mitigating the risk of social engineering efforts relies on education.
+
+That’s because this is an inherently human problem.
+
+Social attacks are designed to take advantage of our natural, social tendencies.
+
+By educating staff about common phishing techniques, appropriate threat responses and making it clear that risk reporting — either of a potential phish or already clicked links — will be met with immediate action, companies can create a culture that prioritizes safety over speed.
+
+Watching for Threats Beyond Ransomware While ransomware remains a substantive risk, other threats are similarly frightening.
+
+But at the same time, compromised third-party software, MITM attacks, DDoS attacks and social engineering can be mitigated with robust security management.
+
+
+
+

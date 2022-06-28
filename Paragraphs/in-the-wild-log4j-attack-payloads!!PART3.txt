@@ -1,0 +1,6 @@
+
+It will also host that Java class using its o wn HTTP server so that the vulnerable server can download it and thus results into remote code execution (RCE) Commands in JNDIExploit
+CommandTemplate.class ReverseShellTemplate.class
+This tool was initially deployed on GitHub in November 2020 but the original repo has been taken down; however, multiple clones of this tool resurfaced on Github.
+Malware Installation
+The following is a list of malware families we discovered that resulted from exploitation of the log4j vulnerability CVE-2021-44228.

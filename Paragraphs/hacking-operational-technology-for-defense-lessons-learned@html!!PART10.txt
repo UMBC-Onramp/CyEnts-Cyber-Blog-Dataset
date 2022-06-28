@@ -1,0 +1,6 @@
+
+Figure 2:
+Information sources and target information from enterprise networks For this engagement, we leveraged the domain administrator credentials obtained in the previous phase to gain access to Microsoft System Center Configuration Manager (SCCM) in the IT network.
+Logged into the SCCM console, we leveraged software deployment features for collection to establish C&C over user workstations belonging to pre-selected departments in the client organization.
+Mandiant chose the specific groups based on the names of their departments and the description attributes, which suggested a high likelihood of member users with high privilege access for network infrastructure or application management.
+This included members of the following groups: network management, firewall administration, control engineering, and smart meter operations.

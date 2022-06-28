@@ -1,0 +1,8 @@
+
+Was this attack just a first-stage reconnaissance operation, or will there be more?
+We will continue to monitor this campaign and will report further when we or others in the security industry receive more information.
+ The McAfee Advanced Threat Research team encourages our peers to share their insights and attribution of who is responsible for Operation Sharpshooter.
+Indicators of compromise MITRE ATT&CK™ techniques Account discovery File and directory discovery Process discovery System network configuration discovery System information discovery System network connections discovery System time discovery Automated exfiltration Data encrypted Exfiltration over command and control channel Commonly used port Process injection Hashes 8106a30bd35526bded384627d8eebce15da35d17 66776c50bcc79bbcecdbe99960e6ee39c8a31181 668b0df94c6d12ae86711ce24ce79dbe0ee2d463 9b0f22e129c73ce4c21be4122182f6dcbc351c95 31e79093d452426247a56ca0eff860b0ecc86009 Control servers 34.214.99.20/view_style.php 137.74.41.56/board.php
+kingkoil.com.sg/board.php
+Document URLs hxxp://208.117.44.112/document/Strategic Planning Manager.doc hxxp://208.117.44.112/document/Business Intelligence Administrator.doc hxxp://www.dropbox.com/s/2shp23ogs113hnd/Customer Service Representative.doc?dl=1 McAfee detection RDN/Generic Downloader.x Rising-Sun Rising-Sun-DOC
+

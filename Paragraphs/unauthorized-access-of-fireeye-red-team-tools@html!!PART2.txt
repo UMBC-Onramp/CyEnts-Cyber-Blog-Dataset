@@ -1,0 +1,4 @@
+
+You can find a list of the countermeasures on the FireEye GitHub repository found HERE .
+Red Team Tools and Techniques A Red Team is a group of security professionals authorized and organized to mimic a potential adversary’s attack or exploitation capabilities against an enterprise’s security posture.
+Our Red Team’s objective is to improve enterprise cyber security by demonstrating the impacts of successful attacks and by showing the defenders (i.e., the Blue Team) how to counter them in an operational environment.

@@ -1,0 +1,6 @@
+
+In other words, if someone gets hold of your seed phrase, they will be able to log in to your account and get their hands on your cryptocurrency.
+Hence the interest on the part of scammers.
+E-mail threatening to block your account
+The scam starts with a mass e-mail that exploits one of the favorite psychological tricks of cybercriminals: intimidation.
+Victims are threatened that if they do not urgently verify their MetaMask account, it will be suspended.

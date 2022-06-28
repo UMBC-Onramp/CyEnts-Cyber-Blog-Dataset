@@ -1,0 +1,8 @@
+
+In 2020, researchers identified 468 new vulnerabilities related to ICS, a 49% increase year-over-year from 2019, and a significant jump compared to increases in previous years.
+Figure 3:
+New ICS-related vulnerabilities identified per year, 2011-2020 (Source: X-Force Red)
+Remote Desktop Protocol (RDP) targeting came in third place at 12% of intrusions.
+Across all sectors, RDP makes up a much smaller percentage of overall infection vectors (7% overall in 2020), suggesting that adversaries capitalize on RDP more when targeting OT-connected organizations.
+Phishing accounted for the initial infection vector in only 8% of intrusions remediated by X-Force in 2020 and 2021.
+Across all sectors, phishing typically makes up one-third of infection vectors, suggesting that phishing is not an infection vector of choice for actors targeting industrial companies.

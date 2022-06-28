@@ -1,0 +1,13 @@
+
+The Transform Hospital Group cosmetic surgery chain was the victim of one of the most high-profile incidents of 2020.
+The REvil hacker group encrypted and stole 900GB of Transform’s data , including pre- and post-operation photographs of patients, which the attackers threatened to publish.
+In addition, cryptomalware operators adopted a range of new tactics in 2020.
+For example, the REvil group started auctioning off stolen information.
+Cybercriminals have also united into cartel-type organizations.
+The first was the Maze group, which began posting information stolen by the LockBit cryptor.
+According to the cybercriminals , they are now working closely with LockBit, providing their platform for data leakage as well as sharing their knowledge.
+They also boasted that another notable group would soon be joining the cartel: RagnarLocker, a trailblazer in organizing DDoS attacks on victims’ resources as an additional lever of pressure on companies it extorts.
+Conclusion In a span of three decades, ransomware has evolved from a relatively harmless toy into a serious threat to users of all platforms, and especially to businesses.
+To guard against attacks, be sure to observe a few security rules — and if somehow, a hack succeeds, it is important to seek help from experts and not simply do the cybercriminals’ bidding.
+
+

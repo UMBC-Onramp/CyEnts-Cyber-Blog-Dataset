@@ -1,0 +1,5 @@
+
+However, Apple also allows developers to add exceptions (“NSAllowsArbitraryLoads”) in the app’s Info.plist to allow http connection.
+As shown in Figure 6, the XcodeGhost S sample reads the setting of “NSAllowsArbitraryLoads” under the “NSAppTransportSecurity” entry in the app’s Info.plist and picks different CnC servers (http/https) based on this setting.
+Figure 6: iOS 9 adoption in XcodeGhost S
+Further, the CnC domain strings are concatenated character by character to bypass the static detection in XcodeGhost S, such behavior is shown in Figure 7.

@@ -1,0 +1,10 @@
+
+The “Heating System” binary variable simply controls the on/off state of the system.
+Controlling the Device Like when we first started looking for vulnerabilities, we want to ensure our method of controlling the device is not dependent on code which could vary from controller to controller.
+Therefore, we want to find a method that allows us to control all the I/O devices attached to a Delta eBMGR, ensuring we are not dependent on this device’s specific programming.
+As on any Linux-based system, the installer-defined programming at its lowest level utilizes system calls, or functions, to control the attached hardware.
+By finding a way to manipulate these functions, we would therefore have a universal method of controlling the modules regardless of the installer programming.
+  
+A very common way of gaining this type of control when you have root access to a system is through the use of function hooking.
+The first challenge for this approach is simply determining which function to hook.
+In our case, this required an extensive amount of reverse engineering and debugging of the system while it was running normally.

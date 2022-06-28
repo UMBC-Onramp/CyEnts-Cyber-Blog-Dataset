@@ -1,0 +1,6 @@
+
+UNC2447 may tamper with windows security settings, firewall rules, and antivirus protection.
+SOMBRAT Overview SOMBRAT was first reported by Blackberry Cylance in November 2020 as \" The CostaRicto Campaign: Cyber-Espionage Outsourced \" as a potential espionage-for-hire criminal group.
+Mandiant has now observed SOMBRAT alongside FIVEHANDS ransomware intrusions.
+The SOMBRAT backdoor is packaged as a 64-bit Windows executable.
+It communicates with a configurable command and control (C2) server via multiple protocols, including DNS, TLS-encrypted TCP, and potentially WebSockets.

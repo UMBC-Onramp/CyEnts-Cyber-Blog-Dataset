@@ -1,0 +1,5 @@
+
+Our weighing scheme gives all samples correctly classified by the original model a weight of one and all other samples have a weight of: w = α – β |0.5 – P old ( χ i )|, where P old ( χ i ) is the output of the old model on sample χ i and α , β are adjustable hyperparameters.
+We train this reduced churn operator model (RCOP) using an α of 0.9, a β of 0.6 and the same training data as the incremental model.
+RCOP produces 0.09% bad churn, 99.38% accuracy on test 2.
+Results Figure 3 shows both accuracy and bad churn of each model on test set 2.

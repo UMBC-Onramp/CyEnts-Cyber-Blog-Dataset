@@ -1,0 +1,3 @@
+
+AirTags contain protection against this kind of stalking: if the tag is constantly moving around while being far away from the iPhone it’s tied to, the built-in speaker starts beeping.
+However, it didn’t take long for tinkerers to figure out that there’s a workaround: modified AirTags with the beeper disabled have recently started showing up on the market.

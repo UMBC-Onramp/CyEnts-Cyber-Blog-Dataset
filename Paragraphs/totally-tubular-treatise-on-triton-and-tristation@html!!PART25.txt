@@ -1,0 +1,4 @@
+
+Value at 0x0 Message Type 1 Connection Request 2 Connection Response 3 Disconnect Request 4 Disconnect Response 5 Execution Command 6 Ping Command 7 Connection Limit Reached 8 Not Connected 9 MPS Are Dead 10 Access Denied 11
+Connection Failed Appendix B: TriStation Execution Command Function Codes
+The following table consists of hex values at offset 6 in the TriStation UDP packets and the associated dictionary definitions, extracted verbatim from the TRITON framework in library TS_cnames.pyc.

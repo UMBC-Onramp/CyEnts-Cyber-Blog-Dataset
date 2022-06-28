@@ -1,0 +1,6 @@
+
+GetRegistrySubKeyAndValueNames 16 Returns listing of subkeys and value names beneath the given registry path.
+Reboot 17 Attempts to immediately trigger a system reboot.
+SUNBURST sends messages back to the C2 server using a protocol that consists of UTF-8 strings and an appended 4-byte error DWORD and 8-byte userID.
+These are bare DEFLATE compressed and single-byte XOR encoded with the XOR key prepended to the message.
+Message payloads of length 10,000 or less are turned into JSON documents that resemble the Orion Improvement Program (OIP) messages used legitimately by SolarWinds.

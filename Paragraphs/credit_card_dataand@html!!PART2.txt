@@ -1,0 +1,6 @@
+
+This campaign is interesting because of the evasion techniques that were used by the attackers: The phishing pages were hosted on legitimate, but compromised web servers.
+Client-side HTML code was obfuscated with AES encryption to evade text-based detection.
+Phishing pages were not displayed to users from certain IP addresses if its DNS resolved to companies such as Google or PhishTank.
+At the time of posting, the phishing websites we observed were no longer active.
+Attack Flow The attack seems to start with an email notification – sent by the attackers – that asks the user to update their Netflix membership details.

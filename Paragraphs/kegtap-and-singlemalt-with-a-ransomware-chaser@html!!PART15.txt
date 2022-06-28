@@ -1,0 +1,7 @@
+
+Some baseline approaches to this have been captured as follows.
+Activity associated with the KEGTAP loader can often be identified via a review of system startup folders and Userinit values under the HKLM\\SOFTWARE\\Microsoft\\Windows
+NT\\CurrentVersion\\Winlogon registry key.
+%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\adobe.lnk Figure 3:
+Example LNK file associated with KEGTAP persistence within a system’s startup folders SINGLEMALT employs BITS to maintain persistence through reboot and can often be identified via a review of anomalous BITS jobs.
+SINGLEMALT uses a well-documented BITS persistence mechanism that intentionally creates a job to download a non-existent URL, which will trigger a failure event.

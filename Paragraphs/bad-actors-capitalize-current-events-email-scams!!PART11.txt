@@ -1,0 +1,12 @@
+
+Official W8 forms can be found here .
+Refugee war scams Spam commonly uses techniques such as current events (sports, tax season), using money as an incentive to click, playing on our natural greed (tax refunds, free money) and use the threat of running out of time to get us to take immediate action.
+In the example below,  all three techniques are employed, albeit in a more unusual way – with an impassioned plea give money to others with the subject line “URGENT RESPONSE REQUIRED!
+(UKRAINE).”
+While the email does not contain a malicious attachment or link, the scammer is asking for a response.
+This is likely to contain a follow up message for further information.
+Perhaps the threat actor may engage in dialog with the victim and will ask the victim to send payment via wire transfer, third-party payment processors (such as Venmo, Zelle, etc.), or via cryptocurrency.
+The email address of the sender uses a gmail.com email address to likely evade spam filters.
+Bitcoin Variation The screenshot below highlights a brazenly opportunistic scam with the subject line “URGENT DONATION RESPONSE FOR WAR REFUGEE CAMP IN UKRAINE.”
+It purports to originate from a trusted organization, The United Nations.
+Red flags are the forged email address of the UN High Commissioner “info@seca[.]cam” in the “From” line, as well as some grammatical and punctuation errors.

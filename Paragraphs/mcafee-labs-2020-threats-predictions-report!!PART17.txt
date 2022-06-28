@@ -1,0 +1,9 @@
+
+Additionally, threats to containerized applications are introduced nor only by IaC misconfigurations or application vulnerabilities, but also abused network privileges which allow lateral movement in an attack.
+To address these run-time threats, organizations are increasingly turning to cloud-native security tools developed specifically for container environments.
+Cloud Access Security Brokers (CASB) are used to conduct configuration and vulnerability scanning, while Cloud Workload Protection Platforms (CWPP) work as traffic enforcers for network micro-segmentation based on the identity of the application, regardless of its IP.
+This approach to application identity-based enforcement will push organizations away from the five-tuple approach to network security which is increasingly irrelevant in the context of ephemeral container deployments.
+When CASB and CWPP solutions integrate with CI/CD tools, security teams can meet the speed of DevOps, shifting security “left” and creating a DevSecOps practice within their organization.
+  Governance, compliance, and overall security of cloud environments will improve as organizations accelerate their transition to DevSecOps with these cloud-native security tools.
+1 Gartner Best Practices for Running Containers and Kubernetes in Production, Arun Chandrasekaran, 25 February 2019
+

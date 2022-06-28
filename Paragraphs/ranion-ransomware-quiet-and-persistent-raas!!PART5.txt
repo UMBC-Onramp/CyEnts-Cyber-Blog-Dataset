@@ -1,0 +1,10 @@
+
+The master decryption key can decrypt all files, regardless of the victim, that had previously been encrypted by FonixCrypter.
+Debut and Rebranding: Ads for Blackmatter ransomware went up on cyber underground forums in July.
+While Blackmatter is not a rebrand of another ransomware, affiliation with the Darkside gang is rumored.
+Haron ransomware debuted in July and is based on Thanos and Abaddon ransomware.
+Doppelpaymar ransomware was rebranded as Grief (PayOrGrief).
+SynAck ransomware was rebranded as El_Cometa in August.
+The average life span of the ransomware listed above, that either disappeared or rebranded itself in 2021, is a bit less than two years.
+Reasons for halting operations vary from one ransomware group to another, but they usually do so to escape the unwanted attentions of law enforcement and security researchers.
+Ranion Still Going Four Years Later The Ranion ransomware variant that FortiGuard Labs recently came across bucks that trend.

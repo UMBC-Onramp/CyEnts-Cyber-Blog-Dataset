@@ -1,0 +1,4 @@
+Working as security consultants is highly rewarding.
+Companies depend on us to view their environment from the perspective of an attacker and find vulnerabilities that could enable threats to succeed.
+One of the most impactful parts of our role is when we’re the first to find a major vulnerability that could lead to a widespread compromise beyond just our client.
+That’s what happened this year with the Cisco Unified Communications Manager (CUCM) IM & Presence appliance.

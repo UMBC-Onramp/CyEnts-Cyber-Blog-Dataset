@@ -1,0 +1,6 @@
+
+FIGURE 19.
+EXPORT OF THE RSA PUBLIC KEY BLOB GENERATED IN RUNTIME FIGURE 20.
+EXPORT OF THE RSA PRIVATE KEY BLOB GENERATED IN RUNTIME Just like other ransomware, this malware has an RSA Public BLOB embedded that will be imported to protect the RSA private BLOB of the victim.
+Only the malware developers have the RSA private blob to decrypt their public RSA Blob.
+FIGURE 21.

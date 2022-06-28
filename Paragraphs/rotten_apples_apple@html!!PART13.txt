@@ -1,0 +1,3 @@
+
+It has also been observed that instead of names, the attackers have used numbers (such as 545454@qq[.]com and 891495200@qq[.]com) in their email addresses.
+Geo-location: As seen in Figure 9, we observed all of these domains pointing to 13 unique IP addresses distributed across the U.S. and China, suggesting that these attacks were perhaps targeting users from these regions .

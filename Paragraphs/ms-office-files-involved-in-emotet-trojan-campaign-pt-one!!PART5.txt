@@ -1,0 +1,9 @@
+
+It terminates execution and pops up an error message when it runs on a 32-bit Windows because the file is not found.
+“rundll32.exe” is a system file that loads and runs 32-bit dynamic-link library (DLL) files.
+It uses the command line syntax “rundll32.exe DLLname,<Export Function>”, where the “Export Function” is optional.
+“puihoud.dll” is the DLL name for this Emotet and the subsequent export function name (“tjpleowdsyf”) is a random string.
+In an analysis tool, I found it only has one export function, called “DllRegisterServer()”.
+Let’s see what happens with a random export function.
+Start Emotet in Rundll32
+Once the Emotet file (“puihoud.dll”) is loaded by “rundll32.exe”, its entry point function is called the very first time.

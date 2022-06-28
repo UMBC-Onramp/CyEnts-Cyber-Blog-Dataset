@@ -1,0 +1,10 @@
+
+On October 15, 2013, at 12:15:37 UTC, the Sysinternals PsExec utility was created in \"C:$RECYCLE.BIN\".
+Approximately four hours later, at 16:11:03 UTC, the attacker used the Internet Explorer browser to access text files located in \"C:$RECYCLE.BIN\".
+Between 16:11:03 UTC and 16:11:06 UTC, the attacker accessed two text files which were no longer present on the system.
+At 16:17:55 UTC, the attacker mounted the remote hidden share \"\\10.20.30.101C$\".
+At 16:20:29 UTC, the attacker executed the Windows \"tree\" command, resulting in the creation of a prefetch file, a command which produces a filesystem listing.
+At 17:37:37 UTC, the attacker created one WinRAR archive, \"C:$Recycle.
+Bina.rar\" which contained two text files, \"c.txt\" and \"a.txt\".
+These text files contained output from the Windows \"tree\" and \"ipconfig\" commands.
+No further evidence was present on the system.

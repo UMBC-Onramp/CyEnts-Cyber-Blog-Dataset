@@ -1,0 +1,4 @@
+Last week got us up close and personal with Darkleech and Blackhole with our external careers web site.
+The fun didn’t end there, this week we saw a tidal wave of Darkleech activity linked to a large-scale malvertising campaign identified by the following URL:
+hXXp://delivery[.]globalcdnnode[.]com/7f01baa99716452bda5bba0572c58be9/afr-zone.php
+Again Darkleech was up to its tricks, injecting URLs and sending victims to a landing page belonging to the Blackhole Exploit Kit, one of the most popular and effective exploit kits available today.

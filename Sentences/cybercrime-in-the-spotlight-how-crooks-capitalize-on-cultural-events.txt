@@ -1,0 +1,69 @@
+By John Fokker on Jul 03, 2018
+
+Every four years, everyone’s head around the globe turns toward the television.
+
+The Olympics, the World Cup – world events like these have all eyes viewing friendly competition between nations.
+
+Operating under such a big spotlight, these events have been heavily guarded by physical security to ensure no participants or attendees are harmed.
+
+But what about digital security?
+
+In 2018, many aspects of these events have become digitized, which is great for event organizers and viewers, but also for cybercriminals.
+
+In fact, reports are already circulating that hackers are targeting attendees of this year’s 2018 FIFA World Cup .
+
+Why These Events?
+
+The cultural value placed in these international games is precisely the reason cybercriminals target them.
+
+The more something is valued, the more people are willing to make sacrifices for it.
+
+Cybercriminals know that, and hope to capitalize on it.
+
+In cases like the World Cup, fans may be willing to expose themselves to a more hostile environment in order to feel a part of the event.
+
+The same goes for companies that are associated with the sporting events, as they can fall victims to attacks just as individuals do.
+
+Types of Attacks Both innocent tourists and fans at home may have to deal with threats that result from their involvement in these events.
+
+Given the fact that internet access has increased all over the world, many tourists are vulnerable to rogue access-point attacks in public places.
+
+Attackers can use these points to harvest credentials and gain access to a victim’s device and accounts.
+
+Malware can also be placed within ATM machines, ready to rip off tourists withdrawing currency from their banks.
+
+As for fans at home, many phishing and waterhole attacks have been designed around these events to entice fans to visit malicious sites or open emails that appear to be related to the games.
+
+However, for nation-state attacks, a lot of groundwork is done before these global events even begin.
+
+Our McAfee Labs team saw this firsthand in the period leading up to the Pyeongchang 2018 Olympic Winter Games.
+
+A nation-state hacker pretended to be a supplier to the Olympics and sent out weaponized mail to organizations of interest that contained malware developed well before the event had started.
+
+The Implications
+
+Whether the objective behind the threat is disruption or financial gain, these attacks all do have one thing in common — they impact the overall feeling of safety at these events and take away from what is supposed to feel like a worldwide celebration of sport.
+
+Now, when fans wish to part of a big event such as the World Cup, they can no longer just focus on which jersey they’re wearing that day.
+
+They have to worry about their bank accounts being robbed or becoming extorted.
+
+Beyond the individual implications, the nation-state attacks that take place at these events can rear their head in an ugly way, as they can actually worsen international relations much more than a healthy sporting rivalry ever could.
+
+So the question is – now what?
+
+On an individual level, visitors to these events must maintain overall good digital security hygiene.
+
+This means leaving unnecessary devices at home, enabling two-factor authentication, using a VPN service, and overall remaining alert and vigilant for scams.
+
+Beyond that, we must all recognize that our physical and digital lives are converging at a fast pace, and we now have a large digital attack surface that is not yet properly safeguarded.
+
+And with both cybercriminals and nation-state actors showing such a heightened interest in global cultural events, cybersecurity must become an essential part of organizing such an event.
+
+Only then can countries host a successful and safe sporting event for everyone.
+
+To learn more about what McAfee is doing to help face the threats to these events, be sure to follow us at @McAfee and @McAfee_Labs .
+
+
+
+

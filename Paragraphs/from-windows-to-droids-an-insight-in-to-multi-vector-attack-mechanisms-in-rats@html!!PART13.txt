@@ -1,0 +1,10 @@
+
+\\\\\\CHATROOM Download chat logs Download chat logs /CD \\\\\\PCACTIVETIME /CD \\\\\\PCACTIVETIME Download PC active time report Download PC active time report /RF{FilePath} /RF{FilePath} Execute remote file in specified path Execute remote file in specified path /WO & /WE
+/WO & /WE
+Webcam init and enable Webcam init and enable /SO /SO
+Start microphone recording Start microphone recording /AR{Command} /AR{Command
+} Run command on remote machine Run command on remote machine /AM{Message} /AM{Message}
+Sends message to remote machine Sends message to remote machine Android Components In the process of investigating the Windows modules for WinSpy we also discovered various Android components that can be employed to engage in surveillance of a target.
+We have found three different applications that are a part of the surveillance package.
+One of the applications requires commandeering via a windows controller and requires physical access to the device while the other two applications can be deployed in a client-server model and allow remote access through a second Android device.
+Figure 11 - Deployment Scenarios for Android Components Windows Physical Controller: The Windows controller requires physical access to the device and allows the attacker to retrieve screenshots from the infected device.

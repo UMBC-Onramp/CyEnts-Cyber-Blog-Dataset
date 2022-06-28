@@ -1,0 +1,6 @@
+
+This suggests that multiple developers have been involved in preparing the malware for this latest wave of attacks.
+In our last post, we observed that Shamoon is a modular wiper that can be used by other groups.
+With these recent attacks, this supposition seems to be confirmed.
+We have learned that the adversaries prepared months in advance for this attack, with the wiper execution as the goal.
+This post provides additional insight about the attack and a detailed analysis of the .Net tool kit.

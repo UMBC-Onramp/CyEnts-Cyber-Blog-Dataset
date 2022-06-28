@@ -1,0 +1,7 @@
+
+Do not allow RDP connections over the open Internet To be very clear… RDP should never be open to the Internet.
+The internet is continuously being scanned for open port 3389 (the default RDP port).
+Even with a complex password policy and multi-factor authentication you can be vulnerable to denial of service and user account lockout.
+A much safer alternative is to use a Virtual Private Network (VPN).
+A VPN will allow a remote user to securely access their corporate network without exposing their computer to the entire Internet.
+The connection is mutually encrypted, providing authentication for both client and server, preferably using a dual factor, while creating a secure tunnel to the corporate network.

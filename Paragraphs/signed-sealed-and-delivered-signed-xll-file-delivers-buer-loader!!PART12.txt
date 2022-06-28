@@ -1,0 +1,9 @@
+
+Almost all of these port 22 connections originate from a reportedly compromised server.
+Since this is a shared server hosting multiple websites, this information indicates that the provider may not mind hosting malicious websites.
+Conclusion While the use of malicious XLL files is not new, it is rarely used.
+But couple that with the fact that a valid digital signature was used (at the time of the attack) and the level of sophistication and resourcefulness of these attackers increases in the minds of threat researchers.
+Even though the email lure used was basic, this may only indicate that the group behind this campaign was simply testing the effectiveness of their techniques.
+However, the techniques used in this campaign are harder to spot than the average attack.
+The examples in this blog highlight a carefully thought-out campaign by the attacker, who took the needed time and steps to ensure that their work would not be detected before infection.
+Thankfully, Fortinet customers running the latest definition sets are already protected against this campaign.

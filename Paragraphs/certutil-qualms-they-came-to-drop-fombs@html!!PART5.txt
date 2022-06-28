@@ -1,0 +1,6 @@
+
+FireEye has observed this methodology executed numerous times by both ethical hackers and unauthorized threat actors in addition to Certutil’s benign use as a part of legitimate business applications and operations.
+Shortly after the second-stage payload was downloaded, we observed several file write events related to `l.rar` (MD5: 4084eb4a41e3a01db2fe6f0b91064afa).
+Of particular note were: cmd.exe  cmd /c mofcomp.exe C:\\Windows\\temp\\l.rar cmd.exe cmd /c del C:\\Windows\\temp\\l.rar
+The aforementioned commands utilize Window's \"cmd.exe\" interpreter to run \"mofcomp.exe\" on the newly obtained \"l.rar\".
+This process is designed to parse a file containing MOF statements and add any class and class instances defined in the file to the WMI repository , and subsequently delete the aforementioned file.

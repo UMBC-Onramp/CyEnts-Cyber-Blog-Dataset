@@ -1,0 +1,11 @@
+
+I received three C2 modules.
+I will elaborate on how they work on the victim’s device in the following sections.
+Module1 - Stealing Credentials from a Victim’s Browsers A Self-Extracting packer protects this module.
+It decrypts a PE file when it runs, overrides the existing code of “certutil.exe”, and then gets it executed.
+The unpacked PE file is a freeware called “WebBrowserPassView” developed by NirSoft.
+It was designed as a password recovery tool but has been abused by malicious actors to steal the victim’s credentials.
+A user interface displays the saved credentials stored within several web browsers.
+Figure 3.1 shows what this module looks like when I open it in my test environment.
+This Emotet variant uses WebBrowserPassView v2.06.
+Its thread-module passes command line parameters like “/scomma C:\\Users\\Bobs\\AppData\\Local\\Temp\\7B3C.tmp” to the process, which can switch WebBrowserPassView to a No-Window mode and save the retrieved credentials to a given temporary file.

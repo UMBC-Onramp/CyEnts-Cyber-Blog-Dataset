@@ -1,0 +1,6 @@
+
+A response SMS is crafted as shown below: \"[himl]<>DATE><LATITUDE##LONGTITUDE\" The string “himl” is short for (h)ere (i)s (m)y (l)ocation.
+Only the last known location is sent as a response to the user.
+Component 2 - GPSTrackerClient.apk
+This app acts as the controller to the GPSTracker.apk.
+While the GPSTracker.apk is installed on the victim's device, the GPSTrackerClient.apk is installed on the device from which the monitoring takes place.

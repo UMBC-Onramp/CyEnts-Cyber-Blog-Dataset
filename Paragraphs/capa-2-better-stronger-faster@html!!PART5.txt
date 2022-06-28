@@ -1,0 +1,5 @@
+
+Once you've finished writing your rule you can save it to your capa rules directory by clicking the Save button.
+The rule generator saves exactly what is displayed in the Preview pane.
+It’s that simple!
+We’ve found that using the capa explorer rule generator significantly reduces the amount of time spent writing new capa rules.

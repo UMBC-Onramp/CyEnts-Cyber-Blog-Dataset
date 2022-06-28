@@ -1,0 +1,8 @@
+
+These scripts are split into many files, and are downloaded at different times.
+The VBScript-embedded-in-HTML is the entry of the scripts.
+In the following section I will explain what they can do according to their behaviors.
+1.
+Upgrading – Task Scheduler:
+The malware seeks to obtain a new version (if applicable) every two hours to be executed on the victim’s system.
+To do this the VBScript-embedded-in-HTML performs a command-line command to add a recurring task into Task Scheduler.

@@ -1,0 +1,4 @@
+
+During these engagements, we emulate real actor behaviors to learn about our target and to determine the best paths for IT/OT network propagation.
+For this engagement, we simulated an end-to-end OT-specific attack scenario in which we tested the security controls and response capabilities of an organization to protect smart grid meter control infrastructure from an external attacker.
+Mandiant leveraged weaknesses in people, process, and technology to gain remote access from the public Internet and to achieve a set of pre-approved objectives in the OT environment.

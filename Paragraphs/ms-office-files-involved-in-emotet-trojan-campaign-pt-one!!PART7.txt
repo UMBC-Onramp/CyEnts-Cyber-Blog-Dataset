@@ -1,0 +1,5 @@
+
+It then calls ExitProcess() to exit the first “rundll32.exe”.
+In Figure 3.2 it is about to call the API CreateProcessW() to run the new command.
+When Emotet is running with the “DllRegisterServer” export function, it will normally exit from X.dll’s EntryPoint() as well as puihoud.dll’s EntryPoint() (step 3 in Figure 3.3).
+Next, rundll32 calls the API GetProcAddress() to gather the export function “DllRegisterServer” from “puihoud.dll” and call it.

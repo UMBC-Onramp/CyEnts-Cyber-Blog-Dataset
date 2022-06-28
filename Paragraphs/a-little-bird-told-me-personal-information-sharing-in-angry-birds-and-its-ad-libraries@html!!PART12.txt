@@ -1,0 +1,18 @@
+
+\"data\":[{\"imageUrl\":\"http://cdn.skyrocketapp.com/79...
+2c.jpg\",\"adType\":{\"width\":300, \"height\":250, \"extendedProperty\":80}, \"dataType\": 64, \"textAdType\":0,\"destType\":1,\"destParms\":\"\",\"cookie\":[{\"name\":\"fXXXg\", \"value\": \"ref=1XXX2&cr 1XXX8 =2,1&cr1XXX8=1&aoXXX8=\", \"path\":\"/\", \"domain\": \"neptune.appads.com\", \"expires\":\"Sat, 05 Apr 2014 XXX GMT\", \"maxage\": 2…0}, {\"name\":\"vw\",\"value\":\"ref=1XXX2&...},...,\"cbi\":\"http://bs.serving-sys.com/
+Burstin...25&rtu=-1\",\"cbia\":[\"http://bs….\":1,\"expires\":60},...
+\"color\":{\"bg\":\"0…0\"}, \"isInterstitial\":1} 2.
+In this PCap, the ad is fetched by including the customer id 1XXX8 into the HTTP POST request to jumptap.com, i.e. Millennial Media: HTTP/1.1 200 OK Cache-Control: private Content-Type: text/html Date: Thu, XX Mar 2014 XX:XX:
+XX GMT Server: Microsoft-IIS/7.5 ServerName: P-ADS-OR-WEBC #17 X-AspNet-Version: 4.0.30319 X-Powered-
+By: ASP.NET X-ReqTime: 475 X-Stats: geo-0;rcf88626-255;rcf75152-218 Content-Length: 2537
+Connection: keep-alive GET /img/1547/1XXX2.jpg
+HTTP/1.1 Host: i.jumptap.com Connection: keep-alive Referer: http://bar/ X-Requested-With: com.rovio.angrybirds User-Agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; Ascend Y300
+Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko)
+Version/4.0
+Mobile Safari/534.30 Accept-Encoding: gzip,deflate Accept-Language: en-US Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7 {\"type\":\"ip\",\"Id\":\"8XXX5\",\"width\":320,\"height\":50,\"cookie\":[],\"data\":[{\"data\":\"<!-- AdPlacement : banner_ingame_burstly…\",\"adType\":{\"width\":320, \"height\":50, \"extendedProperty\":2064 },\"dataType\":1, \"textAdType\":0, \"destType\":10, \"destParms\":\"\", \"cookie\":[{\"name\":\"...\", \"value\":\"ref=...&cr 1XXX8 =4,1&cr1XXX8=2,1\", \"path\":\"/\", \"domain\":\"neptune.appads.com\", \"expires\":\"Sat, 0X Apr 2014 0X:XX:
+XX GMT\", \"maxage\":2XXX0}, {\"name\":\"vw\",..., \"crid\":7XXX2, \"aoid\":3XXX3, \"iTrkData\":\"...\", \"clkData\":\"...\",\"feedName\":\"Nexage\"}]} In this pcap, the advertisement is retrieved from jumptap.com.
+We can use the same customer i
+d “1XXXX8” to easily track the PCap of different ad libraries.
+3.
+For example, in another PCap from turn.com, customer id remains the same: HTTP/1.1 200 OK Cache-Control: private Content-Type: text/html

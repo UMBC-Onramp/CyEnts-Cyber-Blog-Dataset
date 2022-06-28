@@ -1,0 +1,6 @@
+
+The fake website lets you add the mining machine to your shopping cart To proceed to checkout, the victim has to sign in or register.
+There are two possible reasons to implement this requirement: for greater authenticity or to build a database of addresses and passwords for account hacking purposes.
+Despite registering (using a disposable e-mail address, of course), we never received a registration confirmation message.
+Fake Bitmain authorization page
+In any event, the system allows the user to sign in and finalize the order.

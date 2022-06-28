@@ -1,0 +1,5 @@
+
+Immediately after compromising a system, the malware sets up a cron job it downloads from Pastebin, which in turn calls the same script and executes it again each minute.
+This is presumably one mechanism by which updates to the cron jobs can be pushed to the botnet.
+The main shell script uploaded during the attack to the victim machine starts to download and execute other components of Gitpaste-12.
+First, it downloads and sets up cron job, which periodically downloads and executes script from Pastebin:

@@ -1,0 +1,4 @@
+
+Then, as shown in Figure 9, the script then downloads the Beastmode binary, which is saved as “ddns” and executed with the “ddns.exploit” parameter.
+The parameter (highlighted in blue) allows the infected device to register itself as part of the “ddns.exploit” sub-group within the botnet.
+It could then be used by the botnet operators to assess the viability of specific exploits by measuring the number of bots or simply for ease of management.

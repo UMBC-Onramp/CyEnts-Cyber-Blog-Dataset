@@ -1,0 +1,9 @@
+
+Due to the nature of any patch or update, we suggest first applying manual updates on noncritical systems, to ensure compatibility with software that involves the potential use of low-level operating system features.
+McAfee teams are working to ensure compatibility with released patches where applicable.
+While the world wonders about the potential impact of today’s critical disclosures, we also see a positive message.
+This was another major security flaw discovered and communicated by the information security community, as opposed to the discovery or leak of “in the wild” attacks.
+Will this disclosure have negative aspects?
+Most likely yes, but the overall effect is more global attention to software and hardware security, and a head start for the good guys on developing more robust systems and architectures for secure computing.
+
+

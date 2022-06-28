@@ -1,0 +1,10 @@
+
+A utility company received a phish with subject, “easement to bore to our stairwell area.”
+While not all financial institutions saw seemingly tailored subjects, numerous appeared fairly unique, as shown in Table 1.
+Subject Lure Wave re: <redacted> outdoors environment (1 out of 3) 1st accepted: follow up with butch & karen 1st
+re: appraisal for <redacted> - smysor rd 2nd re: <redacted> financing 2nd Table 1: Sample financial industry subject lures Several insurance companies that were targeted saw less specific subjects, but still appropriate for the industry, such as those in Table 2.
+Subject Lure Wave fw: certificate of insurance 1st
+fw: insurance for plow 1st please get this information 1st question & number request 1st claim status 2nd applications for medicare supplement & part d 2nd Table 2: Sample insurance industry subject lures Interestingly, one insurance company with offices in eastern Texas received a phish with a subject related to a local water authority and an ongoing water project.
+While no public information was found to tie the company to the other organization or project, the subject appeared to be very customized.
+Some patterns were observed, as seen in Table 3.
+Additionally, UNC2529 targeted the same IT services organization in both waves using the same lure (1 and 5 in Table 3).

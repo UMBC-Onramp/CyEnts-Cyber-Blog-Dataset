@@ -1,0 +1,5 @@
+
+Sentry nodes will not be included in the new group, and they halt the graph traversal when searching for reachable nodes.
+For example, in Figure 5, selecting the green node first treats it as the starting node, and selecting the red node second treats it as a sentry node.
+Running the “Create unique-reachable group” plug-in option creates a new group made of the green node and all blue nodes.
+This can be useful when you are done analyzing a subset of the current graph, and wish to hide the details behind a group node so you can concentrate on the rest of the graph.

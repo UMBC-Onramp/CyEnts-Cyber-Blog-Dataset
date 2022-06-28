@@ -1,0 +1,7 @@
+
+As a quick first step, since we know at least a handful of IP addresses are potentially malicious, we can filter on the “Threat Intel” column for all rows that match “TMP.OGRE” and reveal logons with source IP addresses related to known threat actors.
+Now we have timeframes and suspected compromised accounts to pivot off of for additional hunting through other data.
+PIVOT!
+PIVOT!
+PIVOT!
+One of the most useful tools for highlighting anomalies by summarizing data, performing frequency analysis and quickly obtaining other statistics about a given dataset is Excel’s PivotTable function .

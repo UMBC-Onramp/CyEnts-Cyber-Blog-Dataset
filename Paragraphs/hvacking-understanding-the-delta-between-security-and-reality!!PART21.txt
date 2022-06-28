@@ -1,0 +1,5 @@
+
+Within the memory which is overwritten, there is an address to the destination of a later memcpy call.
+This means there is a buffer overflow vulnerability that leads to an arbitrary write condition.
+The first malformed packet overwrites a section of memory with attacker-defined data – in this case, the address where the attacker wishes to write to.
+After an additional 95 packets are read by the system, the address controlled by the attacker will be put into memcpy as the destination buffer.

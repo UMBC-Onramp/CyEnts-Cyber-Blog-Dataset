@@ -1,0 +1,7 @@
+
+These statements are not if-else statements, nor do they both have to exist in order for the IOC to have a match.
+When investigating a host, if the \"MS 1atent time services\" service is present, this IOC would have a match; regardless of whether or not the malicious file the IOC described was present on the host as well.
+In our next post we're going to have a crash course in writing IOC definitions using the Mandiant IOC editor, IOCe.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

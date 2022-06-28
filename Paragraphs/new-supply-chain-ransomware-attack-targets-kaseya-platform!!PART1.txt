@@ -1,0 +1,4 @@
+FortiGuard Labs Breaking Update A new global supply chain ransomware attack is currently targeting users of the Kaseya VSA platform—software that provides remote management of IT operations spanning service desk ticketing to performance monitoring and reporting.
+As a central management console, the Kaseya VSA platform is used by numerous managed service providers to remotely monitor and deploy software, updates, etc. to multiple machines simultaneously in a multi-user environment.
+Unofficial reports have identified the REvil ransomware threat actors as being behind this supply chain attack.
+REvil has been attributed to the DarkSide actors who most recently attacked Colonial Pipeline and JBS foods back in May.

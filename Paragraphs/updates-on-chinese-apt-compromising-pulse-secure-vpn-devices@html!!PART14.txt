@@ -1,0 +1,5 @@
+
+Complete Mission
+The threat actor’s objectives appear to be stealing credentials, maintaining long-term persistent access to victim networks, and accessing or exfiltrating sensitive data.
+Mandiant has observed the attackers: Staging data related to sensitive projects, often in C:\\Users\\Public Naming exfiltration archives to resemble Windows Updates (KB) or to match the format KB<digits>.zip
+Using the JAR/ZIP file format for data exfiltration Deleting exfiltrated archives Analysis of new malware families is included in the Technical Annex to enable defenders to quickly assess if their respective appliances have been affected.

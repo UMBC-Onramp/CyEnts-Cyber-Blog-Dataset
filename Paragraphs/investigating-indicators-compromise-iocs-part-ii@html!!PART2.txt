@@ -1,0 +1,6 @@
+
+Table 2:
+Summary of significant artifacts John examines the timeline in order to surmise the following chain of activities: On October 15, 2013, at approximately 16:17:56 UTC, the attacker performed a type 3 network logon, described here , to \"ACMWH-KIOSK\" from \"ACM-BOBBO\" using the ACME domain service account, \"backupDaily.\" A few seconds later, the attacker copied two executables, \"acmCleanup.exe\" and \"msspcheck.exe,\" from \"ACM-BOBBO\" to \"C:$RECYCLE.BIN.\" By generating MD5 hashes of both files, John determines that \"acmCleanup.exe\" is identical to the similarly named file on \"ACM-BOBBO\", which means it won't require malware analysis.
+Since the MD5 hash of \"msspcheck.exe\" was not previously identified, John sends binary to a malware analyst, whose analysis reveals that \"msspcheck.exe\" is a variant of the \"acmCleanup.exe\" malware.
+About a minute later, at 16:19:02 UTC, the attacker executed the Sysinternals PsExec remote command execution utility, which ran for approximately three minutes.
+During this time period, event logs recorded the start and stop of the \"WCE SERVICE\" service, which corresponds to the execution of the Windows Credentials Editor (WCE).

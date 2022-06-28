@@ -1,0 +1,4 @@
+
+Since the “ -s ” command-line parameter was not provided, and as the configured address is 127.0.0.1 (localhost), the ransomware didn’t register itself or retrieve configuration updates.
+The FROMNET routine sends a request to the server using the WinINet API as well and returns the data from the response.
+To get an updated configuration and override the hardcoded values, the ransomware sends HTTP GET requests using the same headers as before, to: hxxp://173[.]232[.]146[.]118/Bnyar8RsK04ug/<unique_victim_id>/qqq123/<object_name>

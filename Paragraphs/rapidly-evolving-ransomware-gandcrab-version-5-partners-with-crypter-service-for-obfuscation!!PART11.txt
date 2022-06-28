@@ -1,0 +1,7 @@
+
+A new registry entry to hold the random extension.
+The malware tries creating this new entry in the root key of HKEY_LOCAL_MACHINE.
+If it cannot—for example, because the user does not have admin rights—it places the entry in the root key HKEY_CURRENT_USER.
+This entry is deleted in some samples after the files have been encrypted.
+Version 5.0.1 This version fixed some internal bugs in the malware but made no other notable changes.
+Version 5.0.2 This version changes the random extension length from 5 to 10 characters and fixes some internal bugs.

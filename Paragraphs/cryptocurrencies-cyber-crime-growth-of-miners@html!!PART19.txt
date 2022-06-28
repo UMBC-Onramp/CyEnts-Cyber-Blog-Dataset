@@ -1,0 +1,5 @@
+
+In most cases, successful attacks occur due to misconfigured applications and/or weak security controls and passwords.
+In February 2018, Bleeping Computer also reported on hackers who breached Tesla's cloud servers to mine Monero.
+Attackers identified a Kubernetes console that was not password protected, allowing them to discover login credentials for the broader Tesla Amazon Web services (AWS) S3 cloud environment.
+Once the attackers gained access to the AWS environment via the harvested credentials, they effectively launched their cryptojacking operations.

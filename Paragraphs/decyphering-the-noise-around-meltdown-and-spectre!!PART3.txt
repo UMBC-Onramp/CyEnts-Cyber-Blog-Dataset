@@ -1,0 +1,5 @@
+
+There is no loss of computing time if the condition arrives at a new value because the processor must in any event wait for the value’s computation.
+Invalid speculative executions are thrown away.
+The fact that invalid speculations are tossed is a key attribute exploited by Meltdown and Spectre.
+Despite the clearing of invalid speculative execution results without affecting memory or CPU registers, data from the execution may be retained in the processor caches.

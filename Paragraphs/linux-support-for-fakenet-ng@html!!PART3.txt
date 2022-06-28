@@ -1,0 +1,7 @@
+
+A Tale of Two Modes On Linux, FakeNet-NG can be deployed in MultiHost mode on a separate host dedicated to network simulation, or in the experimental SingleHost mode for analyzing software locally.
+Windows only supports SingleHost mode.
+FakeNet-NG is configured by default to run in NetworkMode: Auto , which will automatically select SingleHost mode on Windows or MultiHost mode on Linux.
+Table 1 lists the currently supported NetworkMode settings by operating system.
+SingleHost
+MultiHost Windows Default (Auto) Unsupported Linux Experimental Default (Auto) Table 1: FakeNet-NG NetworkMode support per platform FakeNet-NG’s support for SingleHost mode on Linux currently has limitations.

@@ -1,0 +1,9 @@
+
+It’s unlikely they sent that message, but speaking of contacting the bank, make sure to get that phone number from an official source, such as its website.
+Whatever you do, don’t use any contact details from the suspicious text.
+Is there a way to automatically filter out phishing through SMS messages?
+Of course there is!
+Many security solutions have long used built-in filters to catch suspicious links in text messages and messaging apps, warn you about them, and make sure you don’t lose money just because you let your guard down for a moment.
+For example, you’ll benefit from such filters in Kaspersky Internet Security for Android .
+
+

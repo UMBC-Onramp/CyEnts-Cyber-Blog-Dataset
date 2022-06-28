@@ -1,0 +1,5 @@
+
+In order to extract information from or modify the decompiled code, we have to interact with the ctree nodes via methods dependent on the node type.
+However, the following question arises: “How do we reach the nodes?”
+This is done via a class exposed by Hex-Rays: the tree visitor ( ctree_visitor_t ).
+This class has two virtual methods, visit_insn and visit_expr , that are executed when a statement or expression is found while traversing the ctree.

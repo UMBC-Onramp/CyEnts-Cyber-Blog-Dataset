@@ -1,0 +1,5 @@
+
+That is true, but modern Web pages also contain large amounts of program code that gets executed on the user’s computer, in the browser.
+That’s how Spook.js attacks exploit the Spectre v1 vulnerability: An infected page loads, the browser executes the code, and the cybercriminal steals confidential data.
+The authors of the report demonstrated some practical attacks.
+First, they stole a user password from Tumblr.

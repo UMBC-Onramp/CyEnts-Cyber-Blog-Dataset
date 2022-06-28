@@ -1,0 +1,9 @@
+
+struct tag_plugin_header_t { uint32_t xor_val; uint32_t param_2; the second parameter of the pfn_init uint32_t len_1; uint32_t len_2; uint32_t pfn_init; uint32_t pfn_cleanup; uint32_t param_3; the third parameter of the pfn_init uint32_t unused; } plugin_header_t; struct tag_plugin_t { plugin_header_t header; uint8_t encoded_plugin[]; } plugin_t; Figure 15: Encoded plugins format As shown in Figure 15, the plugin data starts with a 32-byte long header followed by the encoded plugin DLL.
+The plugin encoding is implemented as a combination of rolling DWORD/BYTE XOR with initial value specified by the plugin_header_t.xor_val value.
+The plugin_header_t.len_1 stores the number of DWORDS to be decoded with plugin_header_t.xor_val which is incremented by 4 after each iteration.
+The plugin_header_t.len_2 specifies the number of bytes to be decoded at the current position after the previous operation with the current value of the plugin_header_t.xor_val (only the least significant byte is taken).
+In this mode the plugin_header_t.xor_val value is incremented by one after each iteration.
+The plugins are expected to export at least two functions—one for initialization and another to clean up the resources before unloading.
+The initialization routine takes four parameters—two from the header and two calculated by the backdoor, as shown Figure 16.
+pfn_init(implant_id, plugin_header_t.param_2, plugin_header_t.param_3, p_plugin_image_in_memory) Figure 16:

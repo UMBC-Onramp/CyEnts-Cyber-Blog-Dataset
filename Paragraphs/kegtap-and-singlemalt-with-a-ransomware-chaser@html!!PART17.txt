@@ -1,0 +1,11 @@
+
+The scheduled tasks created by ANCHOR are often unnamed, although that is not always the case.
+The identification of named scheduled tasks associated with ANCHOR persistence may be constructed according to the following pattern: < Random directory within %APPDATA% > autoupdate#< random number >.
+All unnamed scheduled tasks should be reviewed, particularly those with a creation date consistent with the time of the suspected compromise.
+Although it is a low fidelity indicator, ANCHOR activity may also sometimes be identified by searching for binaries within the C:\\Windows\\SysWOW64 directory that have a file name matching the following pattern: < 8 random lowercase chars >.exe.
+Stacking or sorting on file creation timestamps in the C:\\Windows\\SysWOW64 directory may also help identify malicious files, as the directory should be mostly static.
+Post-exploitation activity associated with the deployment of ransomware following these campaigns is typically conducted using the Cobalt Strike attack framework.
+The BEACON payload associated with Cobalt Strike can often be identified via a review of existing registered services and service creation events (Event ID 7045), both markers of the mechanism it most commonly employs to maintain persistence.
+The following are additional strategies that may aid in identifying associated activity: Organizations can review web proxy logs in order to identify HXXP requests for file storage, project management, collaboration or communication services with a referrer from a Google Docs document.
+During the associated post-compromise activity, attackers have commonly staged their tools and data in the PerfLogs directory and C$ share.
+While collecting data used to enable later-stage operations, the attackers commonly leave instances of ntds.dit and exports of the SYSTEM and SECURITY registry hives on impacted systems.

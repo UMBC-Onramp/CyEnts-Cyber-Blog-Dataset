@@ -1,0 +1,4 @@
+
+The data in the last packet, which does not need to be malformed, is what will be written to the location set in the earlier malformed packet.
+Assuming the last packet is also controlled by the attacker, this is now a write-what-where condition.
+Kicking the Dog With a firm grasp on the discovered vulnerability, the next logical step was to attempt to create a working exploit.

@@ -1,0 +1,11 @@
+
+The Top Tactics A deeper look at those six tactics that account for 90% of all attacks reveals even more helpful information.
+Five of those tactics involve defensive evasion , which involves exploiting security gaps to prevent detection.
+The report’s detailed analysis of this tactic provides crucial insight into how attackers try to get around security holes, enabling defenders to identify similar weaknesses in their defenses and effectively close those gaps.
+It also identifies which parts of the ATT&CK matrix attackers focus on to best hide their efforts.
+The second most common tactic employed is privilege escalation , which makes sense given that most enterprise systems today are protected using privilege isolation.
+This information helps security teams assess and correct their internal functions, such as using admin user privilege levels for basic tasks like emailing and browsing.
+Remember that attackers will struggle to take over a system when an unprivileged user is compromised.
+It’s All in the Technique Many of the specific techniques identified in the report are heavily focused on “living off the land.”
+This means using legitimate systems, tools, or functions already present on a system to move around the device or network without attracting attention.
+T1053 (Schedule Task/Job) is the most common of these techniques, representing over 24% of all sightings.

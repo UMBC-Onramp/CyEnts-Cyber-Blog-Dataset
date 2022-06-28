@@ -1,0 +1,4 @@
+
+Furthermore, we expect that as financially motivated threat actors continue to impact industrial sector organizations, become more familiar with OT, and identify dependencies across IT and OT systems, they will develop capabilities—and potentially intent—to disrupt other systems and environments running industrial software products and technology.
+Ransomware Deployments in Both IT and OT Systems Have Impacted Industrial Production As a result of adversaries’ post-compromise strategy and increased awareness of industrial sector targets, ransomware incidents have effectively impacted industrial production regardless of whether the malware was deployed in IT or OT.
+Ransomware incidents encrypting data from servers and computers in corporate networks have resulted in direct or indirect disruptions to physical production processes overseen by OT networks.

@@ -1,0 +1,4 @@
+
+Using this test data, our next step is to build\nconditional detection logic in formats such as YARA rules, which can\nidentify VBA purged documents and allow us to hunt for previously\nundetected malicious documents.
+Under the “sample-data” folder in the\nOfficePurge GitHub repo, we have added original and purged documents\nfor each supported file type with a macro that will spawn calc.exe.\nSHA256 hashes are included at the end of this post.
+As mentioned before, this technique involves removing PerformanceCache data from the _VBA_PROJECT stream.

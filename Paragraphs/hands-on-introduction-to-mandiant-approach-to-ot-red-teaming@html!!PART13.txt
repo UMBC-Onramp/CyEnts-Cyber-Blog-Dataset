@@ -1,0 +1,5 @@
+
+In close to six hours, we achieved administrative control on several Big Steam Works' OLE for Process Control (OPC) servers and clients in their DCS environment.
+We highlight that the test did not rely on weaknesses of the DCS, but instead weak password implementations in the target environment.
+Figure 2 details our attack path: Figure 2:
+Active testing in Big Steam Work's OT network We collected network traffic using Wireshark to map network communications and identify protocols we could use for credential harvesting, lateral movement, and privilege escalation.

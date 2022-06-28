@@ -1,0 +1,4 @@
+
+These services generally lack the centralized rights management that would enable them to protect confidential data.
+Healthcare in attackers’ sights During the pandemic, with the healthcare sector weighed down by a colossal burden, cybercriminals tried to attack its agencies, hospitals, and even doctors directly.
+In March 2020, for example, the servers of the US Department of Health and Human Services (HHS) experienced a massive DDoS attack .

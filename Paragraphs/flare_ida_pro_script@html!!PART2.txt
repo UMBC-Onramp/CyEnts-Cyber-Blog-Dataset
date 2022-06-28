@@ -1,0 +1,5 @@
+
+To assist reverse engineers who face similar obstacles we are\nreleasing a new IDA Python utility as part of our FLARE IDA script\nrelease: argtracker .
+This tool is not meant\nas a stand-alone plug-in, but rather as an aid to quickly write and\ndevelop your own custom analysis scripts within IDA.
+With argtracker , you can request all\narguments to a given function, and then analyze, decode, or emulate in\nany way you see fit.
+Usage Starting off with a simple example, let's consider a Gh0st variant.\nThis malware family traditionally has its own wrapper function around\nthe Win32 function _ beginthreadex to launch\nnew threads.

@@ -1,0 +1,3 @@
+
+How to protect healthcare from ransomware Ransomware threats to healthcare institutions around the world are on the rise .
+To minimize infection risk, we recommend prioritizing the protection of remote access tools and e-mail systems, the two most common entry points for ransomware .

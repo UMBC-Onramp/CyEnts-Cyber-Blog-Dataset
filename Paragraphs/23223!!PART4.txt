@@ -1,0 +1,7 @@
+
+What to do if your data gets encrypted If your data gets encrypted, don’t panic.
+It’s a bad situation, but you may still be able to recover your files : Do not pay.
+Each ransom payment represents a financial contribution to malware development and a signal to the cybercriminals that the scheme is profitable.
+And it may not work — you may get nothing even if you comply.
+Use the Crypto Sheriff service on the No More Ransom website to find out what malware has infected your drive.
+A decryptor may already exist for it, in which case you can use it to recover your data without spending a dime.

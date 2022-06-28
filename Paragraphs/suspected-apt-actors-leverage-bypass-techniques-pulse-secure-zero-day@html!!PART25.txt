@@ -1,0 +1,5 @@
+
+The file with the SHA256 hash d72daafedf41d484f7f9816f7f076a9249a6808f1899649b7daa22c0447bb37b is a modified Perl script associated with a PulseSecure web-based tool which causes usernames, passwords and information associated with logins to this application to be written to the file /tmp/
+dsstartssh.statementcounters .
+Retrieval of these login credentials must be achieved through other means such as an interactive login or a webshell.
+Persistence is achieved by the addition of compromised code which is continually served when requesting this PulseSecure webpage.

@@ -1,0 +1,6 @@
+
+Out of the box, processing a binary using the Hex-Rays API means iterating this AST using a tree visitor class which visits each node in the tree and issues a callback.
+  For every callback we can check to see what kind of node we are visiting (calls, additions, assignments, etc.)
+and then process that node.
+For more information on these constructs see our previous blog post.
+The Problem While powerful, this workflow can be difficult to use when creating a generic API for several reasons: The order nodes are visited in, is not always obvious based on the decompiler output When visiting a node, we have no context about where we are in the AST Any problem which requires multiple steps requires multiple visitors or complicated logic in our callback function The amount of cases to handle when walking up or down the AST can increase exponentially Handling each of these cases in a single visitor callback function is untenable, so we need a way to more flexibly interact with the decompiler.

@@ -1,0 +1,13 @@
+
+vss sql
+svc$ memtas mepocs sophos veeam backup Figure 10: Service-related strings
+The version observed in May 2021 is additionally configured to stop and delete services containing the strings listed in Figure 11.
+GxVss GxBlr GxFWD GxCVD GxCIMgr Figure 11:
+Additional service-related strings in May version Any process name containing one of the strings listed in Figure 12 is terminated.
+sql oracle ocssd dbsnmp synctime agntsvc isqlplussvc xfssvccon mydesktopservice ocautoupds encsvc firefox tbirdconfig mydesktopqos ocomm dbeng50 sqbcoreservice excel infopath msaccess mspub onenote outlook powerpnt steam thebat thunderbird visio winword wordpad notepad Figure 12: Process-related strings File Encryption Based on its configuration, the malware targets fixed and removable disks as well as network shares.
+Some processes may be terminated so associated files can be successfully encrypted.
+However, the malware does not terminate processes listed in Figure 13.
+vmcompute.exe vmms.exe vmwp.exe svchost.exe TeamViewer.exe explorer.exe Figure 13:
+Processes not targeted for termination
+The malware uses the strings listed in Figure 14 to ignore certain directories during the encryption process.
+windows appdata application data boot google mozilla program files program files (x86) programdata system volume information tor browser windows.old intel msocache perflogs x64dbg public all users default Figure 14:

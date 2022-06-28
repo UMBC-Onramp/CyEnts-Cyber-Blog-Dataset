@@ -1,0 +1,10 @@
+
+Observe that there are options to download the RAT itself, as well as a few plugins; the DCLIB extension is consistent with the plugin loading code we found in the RAT.
+Figure 17:
+The website files.dcrat[.]ru allows users to download Dark Crystal RAT and some of its plugins Figure 18 shows some additional plugins, including plugins with the ability to resist running in a virtual machine, disable Windows Defender, and disable webcam lights on certain models.
+No plugins were bundled with the sample we studied.
+Figure 18: Additional plugins listed on the Dark Crystal RAT website Figure 19 lists software downloads on the RAT page.
+We took some time to look at these files; here are some interesting things we discovered: The DCRat listed on the website is actually a “builder” that packages a build of the RAT and a configuration for the attacker to deploy.
+This is consistent with the name DCRatBuild.exe shown back in Figure 4.
+In our brief testing of the builder, we found that it had a licensing check.
+We did not pursue bypassing it once we found public YouTube videos of the DCRat builder in operation, as we show later.

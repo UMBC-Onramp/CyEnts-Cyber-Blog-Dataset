@@ -1,0 +1,9 @@
+
+The DLL has an export function that is invoked by the NSIS executable.
+This export function has code to read and decrypt the data file, which yields the second stage payload (a portable executable file).
+The DLL then spawns itself (dropper) in SUSPENDED_MODE and injects the decrypted PE using process hollowing.
+Analysis of Injected Code (Second Stage Payload)
+The second stage payload is a highly obfuscated executable.
+It consists of a routine that decrypts a chunk of code, executes it, and re-encrypts it.
+At the entry point, the executable contains code that checks the OS major version, which it extracts from the Process Environment Block (PEB).
+If the OS version value is less than 6 (prior to Windows Vista), the executable terminates itself.

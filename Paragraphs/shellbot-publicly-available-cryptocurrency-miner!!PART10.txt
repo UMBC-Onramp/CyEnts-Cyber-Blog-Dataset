@@ -1,0 +1,11 @@
+
+The process begins with the removal of previous versions of the ShellBot malware and those of other cryptominers that might be resident on the machine/device.
+Once the machine is clean of potential rivals, the operators go on to install their own miner.
+An archive is then unpacked into a .cache directory, in which the script .x is executed.
+This launches XMRig as well as XHide (process hider) on the infected machine.
+Figure 6:
+Cryptominer download #Armv – the DDoS Channel Botnets of all types, and especially those that command infected devices, are often used for distributed denial-of-service (DDoS) attacks.
+With a simple command, operators order the bots to browse to the target website and attempt to flood it with traffic and cause a denial of service.
+The botnets had a channel for bots that took part in DDoS attacks.
+The floods lasted 500 seconds each and did not appear very powerful.
+It is possible that the channel had a few low-value devices on it or was used as a testing ground.

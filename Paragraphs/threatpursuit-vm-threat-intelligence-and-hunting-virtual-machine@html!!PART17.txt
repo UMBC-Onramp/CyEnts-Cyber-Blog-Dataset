@@ -1,0 +1,9 @@
+
+Figure 18:
+AppAnyRun Execution Report on 3c43d080b5badfdde7aff732c066d1b2 We now have a confident signature hit, but with different named detections on the malware family.
+This is a common challenge for threat analysts and researchers.
+However we have gained interesting information about the malware itself such as its execution behavior, encryption methods, dropped files, timelines and command and control server and beacon information.
+This is more than enough for us to pivot across our own datasets to hunt for previously seen activities and prepare to finalize our report.
+Once we are confident in our analysis, we can start to model and attribute the malware characteristics.
+We can leverage other threat exchange communities and intelligence sources to further enrich the information we collected on the sample.
+Enrichment allows the analysts to greater extrapolate context such as timings, malware similarity, associated infrastructures, and prior targeting information.

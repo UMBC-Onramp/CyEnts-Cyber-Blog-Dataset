@@ -1,0 +1,13 @@
+
+Several sandbox style applications exist that use hooking or other monitoring techniques but typically target user mode applications.
+Having similar sandbox monitoring work for kernel mode code would require deep system level hooks that would likely produce significant noise.
+Driver Emulation Emulation has proven to be an effective analysis technique for malicious drivers.
+No custom setup is required, and drivers can be emulated at scale.
+In addition, maximum code coverage is easier to achieve than in a sandbox environment.
+Often, rootkits may expose malicious functionality via I/O request packet (IRP) handlers (or other callbacks).
+On a normal Windows system these routines are executed when other applications or devices send input/output requests to the driver.
+This includes common tasks such as reading, writing, or sending device I/O control (IOCTLs) to a driver to execute some type of functionality.
+Using emulation, these entry points can be called directly with doped IRP packets in order to identify as much functionality as possible in the rootkit.
+As we discussed in the first Speakeasy blog post, additional entry points are emulated as they are discovered.
+A driver’s DriverMain entry point is responsible for initializing a function dispatch table that is called to handle I/O requests.
+Speakeasy will attempt to emulate each of these functions after the main entry point has completed by supplying a dummy IRP.

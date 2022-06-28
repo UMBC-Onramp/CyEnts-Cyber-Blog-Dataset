@@ -1,0 +1,4 @@
+
+To assist with this, the last feature of the plug-in hides everything but the group you’re interested in allowing you to focus on your reverse engineering.
+Right clicking on a collapsed group node, or a node that that belongs to an uncollapsed group (as highlighted by IDA in yellow), brings up the plug-in option “Complement & expand group” and “Complement group”, respectively.
+When this runs the plug-in creates a group of all nodes other than the group you’re interested in.

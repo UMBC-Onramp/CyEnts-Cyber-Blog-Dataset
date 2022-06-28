@@ -1,0 +1,9 @@
+
+The study describes a real-life attack example: a fake website offering Zoom Web conferencing client downloads.
+The website looks like the real one, and the malicious file is hosted on a Discord server.
+That gets around restrictions on downloading files from untrusted sources.
+The rationale is that the servers of a popular application used by millions are less likely to be blocked by antimalware solutions.
+The malicious “lifehack” is as obvious as are the means of combating it: High-quality security solutions look at more than just the download source to determine the level of threat a file may pose.
+Kaspersky tools immediately detect malicious functionality the first time a user tries to download the file, for example, and then, with the help of a cloud-based security system, let all other users know the file should be blocked.
+All services that permit uploads of user-generated content face issues of misuse.
+Free Web hosting sites see phishing pages created on them, for example, and file-sharing platforms are used for spreading Trojans.

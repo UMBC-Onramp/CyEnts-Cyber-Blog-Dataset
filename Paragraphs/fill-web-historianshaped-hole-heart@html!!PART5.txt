@@ -1,0 +1,6 @@
+
+To have Redline collect any web history data regardless of browser, just leave this field empty.
+You may also notice that enabling advanced parameters activates a field for History Files Location .
+As you may have guessed, this is where you can specify a path to a profile folder or history file to analyze directly, as you were able to do in Web Historian.
+Figure 2:
+Configuring Redline to Collect Browser History Data Now that you have finished configuring your script, choose a location to save your analysis session and then hit OK .

@@ -1,0 +1,11 @@
+
+MVT is further boosted by a list of IoCs (indicators of compromise) collected from high profile cases and made available by Amnesty International.
+What to do if you got infected with Pegasus
+So you followed all these recommendations carefully and still got infected.
+Sadly, this is the reality we live in nowadays.
+I feel for you, really.
+You may not be a bad guy at all — on the contrary, I’m sure you’re one of the good guys.
+Perhaps you spoke against powerful people, or participated in some protests against a questionable decision from certain political figures, or simply used encryption software or been in the wrong place at the wrong time.
+Look on the bright side — you know you’ve been infected, because artifacts and knowledge allowed you to determine that.
+Think of the following things: Who targeted you and why?
+Try to figure out what it was that brought you into the attention of the big guys.

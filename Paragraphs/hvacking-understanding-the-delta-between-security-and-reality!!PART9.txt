@@ -1,0 +1,5 @@
+
+With minimal further investigation, it was determined that this is a Delta-controller-specific binary was responsible for the main functions of the device.
+Finding a Vulnerability With a device-specific binary listening on the network via an open port, we had an ideal place to start looking for a vulnerability.
+We used the common approach of network fuzzing to start our investigation.
+To implement network fuzzing for BACnet, we turned to a tool produced by Synopsys called Defensics, which has a module designed for BACnet servers.

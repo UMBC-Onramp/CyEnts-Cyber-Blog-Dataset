@@ -1,0 +1,10 @@
+By Christiaan Beek and John Fokker on Jul 13, 2018 How often do we get a chance to learn what goes on in the minds of cybercriminals?
+Two members of McAfee’s Advanced Threat Research team recently did, as they attended a court case against two cybercriminal brothers.
+The brothers, Dennis and Melvin, faced a judge in Rotterdam, in the Netherlands.
+This case was one of the first in the world in which ransomware developers appeared in court and were convicted for creating and spreading ransomware.
+They were responsible for creating the ransomware families CoinVault and BitCryptor .
+CoinVault, the better known of the two, made its appearance in late 2014.
+The technically skilled programmers had examined the source code of CryptoLocker, the notorious ransomware family that first struck in 2013.
+The brothers were not very impressed and agreed that they could do a better job.
+What might have started out as a fun technical challenge turned into a criminal business.
+The CoinVault and BitCryptor campaigns were not as widespread as CTB-Locker, CryptoWall, or Locky ransomware campaigns.

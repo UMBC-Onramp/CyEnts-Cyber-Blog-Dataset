@@ -1,0 +1,6 @@
+FireEye Labs recently observed an attack against the government sector in Central Asia.
+The attack involved the new HAWKBALL backdoor being delivered via well-known Microsoft Office vulnerabilities CVE-2017-11882 and CVE-2018-0802.
+HAWKBALL is a backdoor that attackers can use to collect information from the victim, as well as to deliver payloads.
+HAWKBALL is capable of surveying the host, creating a named pipe to execute native Windows commands, terminating processes, creating, deleting and uploading files, searching for files, and enumerating drives.
+Figure 1 shows the decoy used in the attack.
+Figure 1: Decoy used in attack The decoy file, doc.rtf (MD5: AC0EAC22CE12EAC9EE15CA03646ED70C), contains an OLE object that uses Equation Editor to drop the embedded shellcode in %TEMP% with the name 8.t.

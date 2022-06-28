@@ -1,0 +1,6 @@
+
+Threat to Healthcare Though we have no reason to believe there is a sudden, elevated threat to healthcare, the criticality of these systems has probably never been greater, and thus the risk to this sector will be elevated throughout this crisis.
+The threat of disruption is especially disconcerting as it could affect the ability of these organizations to provide safe and timely care.
+This threat extends beyond hospitals to pharmaceutical companies, as well as manufacturing, administration and logistics organizations providing vital support.
+Additionally, many critical public health resources lie at the state and local level.
+Though there is some anecdotal evidence suggesting some ransomware actors are avoiding healthcare targets, we do not expect that all actors will practice this restraint.

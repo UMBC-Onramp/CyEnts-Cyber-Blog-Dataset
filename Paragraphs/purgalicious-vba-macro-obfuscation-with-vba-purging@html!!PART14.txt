@@ -1,0 +1,10 @@
+
+\"Michael Bailey (@mykill),\nJonell Baltazar, Alyssa Rahman (@ramen0x3f), Joseph\nReyes\" description = \"This file has a\nsuspicious _VBA_PROJECT header and a small _VBA_PROJECT\nstream.
+This may be evidence of the VBA purging tool\nOfficePurge or a tool-generated document.\" strings: $vba_proj = { 5F 00 56 00 42 00 41 00\n5F 00 50 00 52 00 4F 00 4A 00 45 00 43 00 54 00 00 00 00 00
+00\n00 00 00 } $cc61 = {CC 61 FF FF 00 00 00} condition: uint32(0) =
+=
+0xe011cfd0 and (\nuint32(@vba_proj[1] + 0x78)
+>
+=
+0x07 ) and (\nuint32(@vba_proj[1] + 0x78) < 0xff ) and $cc61 } Searching with the two rules shared here reveals a wide range of\nthreat actors and malware types leveraging VBA purging, or at least\nsome type of automated document generation.
+On VirusTotal, you’re\nlikely to see a number of Emotet payloads caught by this rule, which\nis understandable given how heavily it relies on malicious email\nattachments.

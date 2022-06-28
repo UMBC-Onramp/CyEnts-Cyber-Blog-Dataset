@@ -1,0 +1,5 @@
+
+Even though RDP misuse has been around for many years, it does seem to have gained an increased popularity amongst criminals focused on targeted ransomware.
+Recent statistics showed that RDP is the most dominant attack vector , being used in 63.5% of disclosed targeted ransomware campaigns in Q1 of 2019.
+Source:
+Coveware Q1 statistics Securing RDP Given the dire circumstances highlighted above it is wise to question if externally accessible RDP is an absolute necessity for any organization.

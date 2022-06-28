@@ -1,0 +1,10 @@
+
+Updates from Incident Response Investigations We continue to suspect that multiple groups including UNC2630 and UNC2717 are responsible for this activity, despite the use of similar exploits and tools.
+There is a high degree of variation in attacker actions within victim environments, with actors inconsistently using a combination of tools and command and control IP addresses.
+Reverse engineers on the FLARE team have identified four additional malware families specifically designed to manipulate Pulse Secure devices (Table 1).
+These utilities have similar functions to the 12 previously documented malware families: harvesting credentials and sensitive system data, allowing arbitrary file execution, and removing forensic evidence.
+Please see the Technical Annex for detailed analysis of these code families.
+Malware Family Description Actor BLOODMINE BLOODMINE is a utility for parsing Pulse Secure Connect log files.
+It extracts information related to logins, Message IDs and Web Requests and copies the relevant data to another file.
+UNC2630 BLOODBANK BLOODBANK is a credential theft utility that parses two files containing password hashes or plaintext passwords and expects an output file to be given at the command prompt.
+UNC2630 CLEANPULSE CLEANPULSE is a memory patching utility that may be used to prevent certain log events from occurring.

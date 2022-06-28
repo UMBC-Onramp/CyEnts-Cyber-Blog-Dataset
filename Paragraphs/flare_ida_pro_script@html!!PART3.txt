@@ -1,0 +1,5 @@
+
+This function typically has a function prototype shown in\nFigure 1.
+Figure 1: Gh0st malware MyCreateThread\nfunction prototype Suppose we’d like to quickly find all values of the lpStartAddress parameter so that we can perform\nsome automated analysis of each thread function.
+We can use argtracker for exactly this purpose using the code\nin Figure 2.
+The full source code for this example can be found in examples/argtracker_example1.py in our flare-ida GitHub repo.

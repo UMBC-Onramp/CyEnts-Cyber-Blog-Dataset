@@ -1,0 +1,8 @@
+
+We observed UNC2630 harvesting credentials from various Pulse Secure VPN login flows, which ultimately allowed the actor to use legitimate account credentials to move laterally into the affected environments.
+In order to maintain persistence to the compromised networks, the actor utilized legitimate, but modified, Pulse Secure binaries and scripts on the VPN appliance.
+This was done to accomplish the following: Trojanize shared objects with malicious code to log credentials and bypass authentication flows, including multifactor authentication requirements.
+We track these trojanized assemblies as SLOWPULSE and its variants.
+Inject webshells we currently track as RADIALPULSE and PULSECHECK into legitimate Internet-accessible Pulse Secure VPN appliance administrative web pages for the devices.
+Toggle the filesystem between Read-Only and Read-Write modes to allow for file modification on a typically Read-Only filesystem.
+Maintain persistence across VPN appliance general upgrades that are performed by the administrator.

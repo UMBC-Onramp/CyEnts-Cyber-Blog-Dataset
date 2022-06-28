@@ -1,0 +1,3 @@
+
+Update as of July 7 th : This sophisticated supply-chain ransomware attack initially leveraged a vulnerability in the Kaseya VSA software to gain access to victim organizations, and then used REvil’s RaaS to infect those organizations with ransomware.
+For that reason, FortiGuard Labs is providing a separate Outbreak Alert analysis for both the initial exploitation of the Kaseya vulnerability and for the subsequent REvil ransomware attack.

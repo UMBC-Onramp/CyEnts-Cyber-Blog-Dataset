@@ -1,0 +1,18 @@
+
+On top of that, JavaScript downloaders seem to be the preferred medium for delivering its payload as it could be easily obfuscated to create new variants.
+Technical Analysis of a Locky Payload Sample MD5 Sum: 3F118D0B888430AB9F58FC2589207988 (First seen on 2016-02-24 in VirusTotal) Persistence Mechanism
+The malware does not contain a persistence mechanism.
+An external tool or installer is required if the attacker desires persistence.
+The malware contains the ability to install the following registry key for persistence; this functionality is disabled in this variant.
+HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Locky <path_to_malware
+> File System Artifacts
+The malware encrypts files on the system and creates new files with the encrypted contents in the same directory with the following naming convention: <system identifier><16 random hex
+digits>.locky The <system identifier> value is the ASCII hexadecimal representation of the first eight bytes of the MD5 hash of the GUID of the system volume.
+The malware drops a ransom note provided by the C2 server in all directories with encrypted files and on the desktop of the current user: _Locky_recover_instructions.txt
+The malware drops an image on the desktop of the current user: _
+Locky_recover_instructions.bmp
+Registry Artifacts
+The malware creates the registry key HKCU\\Software\\Locky.
+id is set to a unique identifier generated for the compromised system.
+pubkey is set to a binary buffer that contains a public RSA key.
+paytext is set to a binary buffer containing the recovery instructions.

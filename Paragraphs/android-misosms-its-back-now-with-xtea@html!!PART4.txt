@@ -1,0 +1,9 @@
+
+Figure 1 shows MisoSMS registering a newly infected device with the CnC server.
+The first four bytes in the encrypted payload mark the length of the message.
+The rest of the payload contains information about the infected device.
+[caption id=\"attachment_5080\" align=\"aligncenter\" width=\"621\"] Figure 1 - New Infection Registration[/caption] Figure 2 and Figure 3 show the SMS exfiltration mechanism, as seen in Figure 1, the first four bytes of the encrypted payload contains the length indicator of the payload.
+The intercepted SMS message is sent to the CnC with the Device ID of the already compromised device.
+[caption id=\"attachment_5078\"
+align=\"aligncenter\" width=\"640\"] Figure 2 - Encrypted
+CnC Communication containing stolen SMS[/caption] [caption id=\"attachment_5079\" align=\"aligncenter\" width=\"640\"] Figure 3 - Decrypted CnC Communication containing stolen SMS[/caption]

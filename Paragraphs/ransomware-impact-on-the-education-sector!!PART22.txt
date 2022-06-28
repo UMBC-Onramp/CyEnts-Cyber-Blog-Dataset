@@ -1,0 +1,46 @@
+
+Web.
+UI.RadAsyncUpload.
+Handling.
+Arbitrary.
+File.
+Upload PHPUnit.
+Eval-stdin.
+PHP.Remote.
+Code.
+Execution Apache.
+Struts.2.Jakarta.
+Multipart.
+Parser.
+Code.
+Execution ThinkPHP.Controller.
+Parameter.
+Remote.
+Code.
+Execution Dasan.
+GPON.Remote.
+Code.
+Execution NTP.Monlist.
+Command.
+DoS Nmap.
+Script.
+Scanner SolarWinds.
+SUNBURST.Backdoor Port.
+Scanning Backdoor.
+DoublePulsar Qualys.
+Vulnerability.
+Scanner Mirai.
+Botnet XcodeGhost Andromeda.
+Botnet Torpig.
+Mebroot.
+Botnet Zeroaccess.
+Botnet Backdoor.
+Cobalt.
+Strike.
+Beacon Kaseya.
+VSA.Remote.
+Code.
+Execution Darkside.
+Botnet The Fortinet fabric can offer end to end protection to educational institutions using the following technologies - FortiMail (blocking phishing attacks and malicious attachments), Web Filtering (blocking malicious URLs), FortiEDR (real-time and cloud-based protection), FortiSandbox (identifying and preventing unknown attacks), FortiToken (multi-factor authentication), and intent-based segmentation (preventing lateral movement).
+Organizations are also strongly encouraged to conduct ongoing end-user training designed to educate and inform personnel about the latest phishing/spearphishing techniques and how to spot and respond to them.
+This should include encouraging employees to never open attachments from someone they don't know and always treat emails from unrecognized/untrusted senders with caution.

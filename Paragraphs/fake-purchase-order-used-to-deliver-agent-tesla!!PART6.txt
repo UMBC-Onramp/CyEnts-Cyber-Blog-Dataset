@@ -1,0 +1,7 @@
+
+Phase 3 While the file extension gives the impression of a Microsoft dynamic link library (.dll), 19.dll is in actuality a PowerShell script containing instructions in a large amount of hexadecimal data.
+Once executed, the hexadecimal data will be transformed into additional PowerShell commands that will run in memory.
+For example, new registry keys will be added to assist with persistence.
+If captured and reviewed, the entries that stand out the most are two large, compressed byte arrays — $nona and $STRDYFUGIHUYTYRTESRDYUGIRI.
+As can be seen in Figure 9 , the byte arrays are then decompressed for use.
+Once decompressed, these can be saved as executable Windows files.

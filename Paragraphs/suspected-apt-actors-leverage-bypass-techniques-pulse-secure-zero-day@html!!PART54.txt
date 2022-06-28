@@ -1,0 +1,9 @@
+
+This information is not known, nor is the structure of it.
+The sequences scanned for generally have start and end scan sequences which in order scanned for, are: USER_START_FLAG: 3C 05 08 75 73 65 72 4E 61 6D 65 05 01 3E 05 00
+USER_END_FLAG:
+3C 2F 05 08 75 73 65 72 4E 61 6D 65 05 01
+3E 00 PASSWORD_START_FLAG: 3C 05 08 70 61 73 73 77
+6F 72 64 05 01 3E 00 PASSWORD_END_FLAG:
+3C 2F 05 08 70 61 73 73 77
+6F 72 64 05 01 3E 00 AUTHNUM_START_FLAG: 3C 05

@@ -1,0 +1,10 @@
+
+In order to understand it, we need to look at how the WOW64 system initializes itself.
+For a detailed explanation of this refer to (wbenny).
+For now, we can look at the important parts in wow64cpu!RunSimulatedCode .
+Figure 7: 64bit registers are saved in RunSimulatedCode Figure 7 depicts the retrieval of the 64-bit TEB which is used to access Thread Local Storage at slot index 1.
+Then the moving of a function pointer table into register r15.
+The TLS data retrieved is an undocumented data structure WOW64_CPURESERVED that contains register data and CPU state information used by the WOW64 layer to set and restore registers across the 32-bit and 64-bit boundaries.
+Within this structure is the WOW64_CONTEXT structure, partially documented on the Microsoft website .
+I have listed both structures at the end of this post.
+We’ll look at how this context structure is used later, but for our understanding of the jmp earlier all we need to know is that r15 is a function pointer table.

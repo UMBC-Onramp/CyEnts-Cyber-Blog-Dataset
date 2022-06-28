@@ -1,0 +1,4 @@
+
+  In June 2018 ESET and Sophos found a new version of this variant pretending to be the popular game Fortnite.
+The fake game was distributed via a YouTube video by asking the user to download the fake app from a specific URL.
+This recent campaign shows that the cybercriminals behind this threat are still active tricking users into installing these fake applications.

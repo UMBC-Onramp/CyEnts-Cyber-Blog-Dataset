@@ -1,0 +1,4 @@
+
+From the disassembly we can also see that the stolen instructions are of variable length.
+In order to resolve where these functions go, we would have to: enumerate all of the stubs calculate how many bytes are in the first instruction extract the jmp address subtract the stolen byte count to find the API entrypoint resolve the calculated address for this specific process instance rename the stub to a meaningful value
+In this sample, looking for cross references on where the value is set does not yield any results.

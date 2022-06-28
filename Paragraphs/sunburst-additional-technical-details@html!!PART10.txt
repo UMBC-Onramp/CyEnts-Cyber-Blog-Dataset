@@ -1,0 +1,6 @@
+
+SUNBURST will not treat the services it has disabled as members of the blocklist anymore.
+Therefore, during an incident response, forensic teams should consider recovering and decoding this configuration key to parse out which services SUNBURST attempted to disable.
+Domain Generation Algorithm In this section we describe how SUNBURST uses an intermediary command and control (C2) coordinator to retrieve its final C2 server.
+The C2 coordinator instructs the backdoor to continue or halt beaconing.
+It also redirects SUNBURST to its final C2 server via DNS CNAME records.

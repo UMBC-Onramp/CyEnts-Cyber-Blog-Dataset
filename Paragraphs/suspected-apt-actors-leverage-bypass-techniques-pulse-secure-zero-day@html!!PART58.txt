@@ -1,0 +1,7 @@
+
+After this the sample uses python file read/write APIs to insert long strings of assembly that represent the logic known as LOCKPICK.
+This file is different from the other patchers we’ve identified in that it is python and specifically targets system integrity routines.
+Detecting the Techniques
+The following table contains specific FireEye product detection names for the malware families associated with the exploitation of Pulse Secure VPN device.
+Platform(s) Detection Name Network Security Email Security Detection On
+ Demand Malware File Scanning Malware File Storage Scanning FE_APT_Webshell_PL_HARDPULSE_1 FEC_APT_Webshell_PL_HARDPULSE_1 APT.Webshell.

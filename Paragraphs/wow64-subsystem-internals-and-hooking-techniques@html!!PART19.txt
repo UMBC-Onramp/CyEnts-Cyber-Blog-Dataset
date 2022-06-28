@@ -1,0 +1,3 @@
+
+Figure 14: NtResumeThread transitioning through the WOW64 layer Figure 15: NtResumeThread inline hook before transitioning through the WOW64 layer As seen in Figure 15, when using the Heaven’s Gate technique, execution begins after the inline hook and WOW64 layer is done.
+This is an effective bypass technique, but one that is easy to detect from a lower level such as a driver or hypervisor.

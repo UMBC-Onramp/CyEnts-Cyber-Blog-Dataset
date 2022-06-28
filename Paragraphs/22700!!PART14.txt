@@ -1,0 +1,5 @@
+
+The model helped ransomware spread even more widely.
+Extortionists began targeting government and municipal organizations in addition to businesses and home users.
+The HDDCryptor, which infected more than 2,000 San Francisco Municipal Transportation Agency computers, serves as a prime example.
+The cybercriminals demanded 100 BTC (then about $70,000) to restore the systems, but the agency’s IT department managed to solve the problem on its own.

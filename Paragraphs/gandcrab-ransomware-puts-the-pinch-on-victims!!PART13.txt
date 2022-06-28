@@ -1,0 +1,8 @@
+
+It implemented an exploit against one product of the antivirus company that made the vaccine against Version 4.0 through the first release of Version 4.1.2.
+This code appears after the malware encrypts files and before it deletes itself.
+Figure 8.
+Running an exploit against a product of the company that made a vaccine.
+New code in some functions makes static analysis with Interactive Disassembler more complex.
+This is an easy but effective trick: The ransomware makes a delta call (which puts the address of the delta offset at the top of the stack) and adds 0x11 (the size of the special code, meaning the malware author is using a macro) to the value in the ESP register.
+ESP now points to an address after the block of the special code and makes a jump in the middle of the opcodes of this block.

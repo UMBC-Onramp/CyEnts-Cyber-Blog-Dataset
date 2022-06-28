@@ -1,0 +1,4 @@
+
+=A2 Reference cell A2 (in this case our EDT timestamp).
+Note this is not an absolute reference, so we can use this formula for the rest of the rows.
++TIME This tells Excel to take the value of the data in cell A2 as a “time” value type and add the following amount of time to it: (4,0,0) The TIME function in this instance requires three values, which are, from left to right: hours, minutes, seconds.

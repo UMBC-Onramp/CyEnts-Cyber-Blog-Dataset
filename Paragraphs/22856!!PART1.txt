@@ -1,0 +1,3 @@
+Updated on May 17, 2021.
+Media outlets are reporting an attack by ransomware on the Health Service Executive (HSE), Ireland’s healthcare system.
+The HSE decided to shut down key information systems for thorough investigation and protection against further threat spread.

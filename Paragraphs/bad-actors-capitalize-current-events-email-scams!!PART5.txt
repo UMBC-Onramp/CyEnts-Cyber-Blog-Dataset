@@ -1,0 +1,7 @@
+
+The “From” address is clearly seen in the email.
+It was sent from an automotive tire shop located in Japan, which is most likely compromised and serves as an open mail relay: Microsoft takes action Microsoft announced in January 2022 that Excel 4.0 macros are disabled by default starting in Excel (Build 16.0.14427.10000).
+The move came as no surprise because the feature is continuously abused by threat actors.
+Other welcome news from Microsoft is the restricted usage of macros in Access, Excel, PowerPoint, Visio, and Word by default starting in April 2022 via the disablement of VBA macros (also abused by Emotet).
+Based on the examples shown above, we can see this did not deter the attacker one bit from abusing Excel 4.0 macros.
+Also, administrators are able to control the usage of Excel 4.0 macros via group policy settings, as well as cloud and ADMX policies.

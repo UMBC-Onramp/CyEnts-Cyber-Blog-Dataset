@@ -1,0 +1,10 @@
+
+The source port does not change.
+Through these basic tests we learn a great deal: The two devices are speaking over unencrypted UDP The payload contains counters and patient information The broadcast address does not require the devices to know each other’s address
+beforehand When the data is sent distinct packets contain the waveform Attacking the protocol
+Our reconnaissance tells us we may have the right conditions for a replay attack.
+Such an attack would not satisfy our goal of modifying data in real time across the network; however, it would provide more insight about the requirements and may prove useful in reaching our goal.
+After capturing the packets from the simulated heartbeat, we attempted to replay the captures using Python’s Scapy library.
+We did this with the patient monitor turned off and the central monitoring station listening for information.
+After several attempts, this test was unsuccessful.
+This failure shows the system expects more than just a device sending data packets to a specific IP address.

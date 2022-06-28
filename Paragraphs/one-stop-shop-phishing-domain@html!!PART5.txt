@@ -1,0 +1,6 @@
+
+Figure 6 shows the front end.
+Figure 6:
+Nsecurepay front end Conclusion Phishing has its own development lifecycle.
+It usually starts off with building the tools and developing the “hooks” for luring victims into providing their financial information.
+Once the phishing website (or websites) is fully operational, we typically begin to see a wave of phishing emails pointing to it.

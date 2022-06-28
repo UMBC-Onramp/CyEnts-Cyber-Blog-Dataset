@@ -1,0 +1,7 @@
+
+At a minimum, most routers at least now ship with a unique password printed on the physical device itself, dramatically increasing the overall network security.
+Despite positive changes such as this, there is a long way to go.
+If we think about the history of garage doors, they began as a completely manual object, requiring the owner to lift or operate it physically.
+The first overhead garage door was invented in the early 1920s, and an electric version came to market just a few years later.
+While this improved the functionality of the device and allowed for “remote” entry, it wasn’t until many years later that an actual wireless remote was added, giving consumers the ability to allow wireless access into their home.
+This was the beginning of an interesting tradeoff for consumers – an obvious increase in convenience which introduced a potential new security concern.

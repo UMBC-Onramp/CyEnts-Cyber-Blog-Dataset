@@ -1,0 +1,5 @@
+
+TAPIBrowser Legal Copyright                 : Copyright (C) 2000
+Legal Trademarks                : Original Filename               : TAPIBrowser.
+EXE Private Build                   : Product Name                    : TAPIBrowser Application Product Version                 : 1, 0, 0, 1: The structure of the file is awkward; it only contains three sections: .rdata, .hidata and .rsrc and the entry point located inside .
+hidata : When executed, it will copy itself to disk using a well-known hiding technique via NTFS Alternate Data Streams (ADS) as: ~\\Local Settings\\Temp:defrag.scr Then will create a vbs script and save it to disk, again using ADS: ~\\Local

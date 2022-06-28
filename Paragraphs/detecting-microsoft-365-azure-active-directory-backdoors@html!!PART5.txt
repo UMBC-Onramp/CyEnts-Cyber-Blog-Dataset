@@ -1,0 +1,7 @@
+
+The module will record the user’s password attempt and reply back to Azure AD on behalf of the PTA Agent.
+This reply advises Azure AD the password attempt was valid and grants the user access to the cloud, even if the password is incorrect.
+If an attacker has implanted AADIntPTASpy , they can log in as any user that attempts to authenticate using PTA—and will be granted access.
+Additionally, all password attempts that are registered by the AADIntPTASpy module are recorded within a log file on the server (Default location: C:\\PTASpy\\PTASPy.csv ).
+Figure 2 shows how the log file can be decoded to reveal a user’s password in cleartext.
+Figure 2: PTASpy.csv decoded passwords Not only will this function allow an attacker to login as any user who authenticates via PTA, but it will also act as a repository for collecting user passwords who are legitimately logging into Azure AD.

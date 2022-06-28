@@ -1,0 +1,2 @@
+
+Conclusion In our blog series about Sodinokibi we began by analyzing the code we asked ourselves the question, “Why Persian?”

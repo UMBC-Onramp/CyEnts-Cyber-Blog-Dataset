@@ -1,0 +1,10 @@
+
+GandCrab RaaS System GandCrab was a prime example of a Ransomware-as-a-Service.
+RaaS follows a structure where the developers are offering their product to affiliates, partners or advertisers who are responsible for spreading the ransomware and generating infections.
+The developers take a percentage of the earned income and provide the other portion to the affiliates.
+FIGURE 1.
+HIGH LEVEL OVERVIEW OF THE GANDCRAB RAAS MODEL Operating a RaaS model can be lucrative for both parties involved: Developer’s perspective : The malware author/s request a percentage per payment for use of the ransomware product.
+This way the developers have less risk than the affiliates spreading the malware.
+The developers can set certain targets for their affiliates regarding the amount of infections they need to produce.
+In a way, this is very similar to a modern sales organization in the corporate world.
+Subsequently, a RaaS model offers malware authors a safe haven when they operate from a country that does not regard developing malware as a crime.

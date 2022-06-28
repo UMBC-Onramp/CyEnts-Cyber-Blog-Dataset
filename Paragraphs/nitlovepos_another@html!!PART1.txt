@@ -1,0 +1,6 @@
+There has been a proliferation of malware specifically designed to extract payment card information from Point-of-Sale (POS) systems over the last two years.
+In 2015, there have already been a variety of new POS malware identified including a new Alina variant , FighterPOS and Punkey .
+During our research into a widespread spam campaign, we discovered yet another POS malware that we’ve named NitlovePOS.
+The NitlovePOS malware can capture and ex-filtrate track one and track two payment card data by scanning the running processes of a compromised machine.
+It then sends this data to a webserver using SSL.
+We believe the cybercriminals assess the hosts compromised via indiscriminate spam campaigns and instruct specific victims to download the POS malware.

@@ -1,0 +1,247 @@
+In the recent release of iOS 8.4, Apple fixed several vulnerabilities including vulnerabilities that allow attackers to deploy two new kinds of Masque Attack (CVE-2015-3722/3725, and CVE-2015-3725).
+
+We call these exploits Manifest Masque and Extension Masque, which can be used to demolish apps, including system apps (e.g., Apple Watch, Health, Pay and so on), and to break the app data container.
+
+In this blog, we also disclose the details of a previously fixed, but undisclosed, masque vulnerability: Plugin Masque, which bypasses iOS entitlement enforcement and hijacks VPN traffic.
+
+Our investigation also shows that around one third of iOS devices still have not updated to versions 8.1.3 or above, even 5 months after the release of 8.1.3, and these devices are still vulnerable to all the Masque Attacks.
+
+We have disclosed five kinds of Masque Attacks, as shown in the following table.
+
+Name Consequences disclosed till now Mitigation status App Masque * Replace an existing app * Harvest sensitive data Fixed in iOS 8.1.3 [6] URL Masque * Bypass prompt of trust
+
+* Hijack inter-app communication Partially fixed in iOS
+
+8.1.3 [11] Manifest Masque * Demolish other apps (incl.
+
+Apple Watch, Health, Pay, etc.)
+
+during over-the-air installations Partially fixed in iOS 8.4 Plugin Masque * Bypass prompt of trust * Bypass VPN plugin entitlement * Replace an existing VPN plugin * Hijack device traffic * Prevent device from rebooting * Exploit more kernel vulnerabilities Fixed in iOS 8.1.3 Extension Masque * Access another app’s data * Or prevent another app to access its own data Partially fixed in iOS 8.4 Manifest Masque Attack leverages the CVE-2015-3722/3725 vulnerability to demolish an existing app on iOS when a victim installs an in-house iOS app wirelessly using enterprise provisioning from a website.
+
+The demolished app (the attack target) can be either a regular app downloaded from official App Store or even an important system app, such as Apple Watch, Apple Pay, App Store, Safari, Settings, etc.
+
+This vulnerability affects all iOS 7.x
+
+and iOS 8.x versions prior to iOS 8.4.
+
+We first notified Apple of this vulnerability in August 2014.
+
+Extension Masque Attack can break the restrictions of app data container.
+
+A malicious app extension installed along with an in-house app on iOS 8 can either gain full access to a targeted app’s data container or prevent the targeted app from accessing its own data container.
+
+On June 14, security researchers Luyi, Xiaofeng et al. disclosed several severe issues on OS X, including a similar issue with this one [5].
+
+They did remarkable research, but happened to miss this on iOS.
+
+Their report claimed: “this security risk is not present on iOS ”.
+
+However, the data container issue does affect all iOS 8.x versions prior to iOS 8.4, and can be leveraged by an attacker to steal all data in a target app’s data container.
+
+We independently discovered this vulnerability on iOS and notified Apple before the report [5] was published, and Apple fixed this issue as part of CVE-2015-3725.
+
+In addition to these two vulnerabilities patched on iOS 8.4, we also disclose the detail of another untrusted code injection attack by replacing the VPN Plugin, the Plugin Masque Attack.
+
+We reported this vulnerability to Apple in Nov 2014, and Apple fixed the vulnerability on iOS 8.1.3 when Apple patched the original Masque Attack (App Masque)
+
+[6, 11].
+
+However, this exploit is even more severe than the original Masque Attack.
+
+The malicious code can be injected to the neagent process and can perform privileged operations, such as monitoring all VPN traffic, without the user’s awareness.
+
+We first demonstrated this attack in the Jailbreak Security Summit [7] in April 2015.
+
+Here we categorize this attack as Plugin Masque Attack.
+
+We will discuss the technical details and demonstrate these three kinds of Masque Attacks.
+
+Manifest Masque: Putting On the New, Taking Off the Old To distribute an in-house iOS app with enterprise provisioning wirelessly, one has to publish a web page containing a hyperlink that redirects to a XML manifest file hosted on an https server [1].
+
+The XML manifest file contains metadata of the in-house app, including its bundle identifier, bundle version and the download URL of the .ipa file, as shown in Table 1.
+
+When installing the in-house iOS app wirelessly, iOS downloads this manifest file first and parse the metadata for the installation process.
+
+<a href=\"itms-services://?action=downloadmanifest&url=
+
+https://example.com/manifest.
+
+plist\">Install
+
+App</a> <plist> <array> <dict> ...
+
+<key>url</key> <string>
+
+https://XXXXX.com/another_browser.ipa</string> ... <key>bundle-identifier</key> <string
+
+>com.google.chrome.ios</string> … <key>bundle-version</key> <string>1000.0</string> </dict>
+
+<dict> … Entries For Another App </dict> <array> </plist
+
+> Table 1.
+
+An example of the hyperlink and the manifest file According to Apple’s official document [1], the bundle-identifier field should be “Your app’s bundle identifier, exactly as specified in your Xcode project”.
+
+However, we have discovered that iOS doesn’t verify the consistency between the bundle identifier in the XML manifest file on the website and the bundle identifier within the app itself.
+
+If the XML manifest file on the website has a bundle identifier equivalent to that of another genuine app on the device, and the bundle-version in the manifest is higher than the genuine app’s version, the genuine app will be demolished down to a dummy placeholder, whereas the in-house app will still be installed using its built-in bundle id.
+
+The dummy placeholder will disappear after the victim restarts the device.
+
+Also, as shown in Table 1, a manifest file can contain different apps’ metadata entries to distribute multiple apps at a time, which means this vulnerability can cause multiple apps being demolished with just one click by the victim.
+
+By leveraging this vulnerability, one app developer can install his/her own app and demolish other apps (e.g. a competitor’s app) at the same time.
+
+In this way, attackers can perform DoS attacks or phishing attacks on iOS.
+
+Figure 1.
+
+Phishing Attack by installing “malicious Chrome” and demolishing the genuine one Figure 1 shows an example of the phishing attack.
+
+When the user clicks a URL in the Gmail app, this URL is rewritten with the “googlechrome-x-callback://” scheme and supposed to be handled by Chrome on the device.
+
+However, an attacker can leverage the Manifest Masque vulnerability to demolish the genuine Chrome and install “malicious Chrome” registering the same scheme.
+
+Other than requiring the same bundle identifier to replace a genuine app in the original Masque Attack [xx], the malicious chrome in this phishing attack uses a different bundle identifier to bypass the installer’s bundle identifier validation.
+
+Later, when the victim clicks a URL in the Gmail app, the malicious Chrome can take over the rewritten URL scheme and perform more sophisticated attacks.
+
+What’s worse, an attacker can also exploit this vulnerability to demolish all system apps (e.g. Apple Watch, Apple Pay UIService, App Store, Safari, Health, InCallService, Settings, etc.).
+
+Once demolished, these system apps will no longer be available to the victim, even if the victim restarts the device.
+
+Here we demonstrate this DoS attack on iOS 8.3 to demolish all the system apps and one App Store app (i.e. Gmail) when the victim clicks only once to install an in-house app wirelessly.
+
+Note that after rebooting the device, all the system apps still remain demolished while the App Store app would disappear since it has already been uninstalled.
+
+Extension Masque: Breaking The Data Container Apple introduces the app extension feature [2] on iOS 8.
+
+Different\ntypes of the app extension provide various new ways for the developer\nto extend the app’s functionality on iOS 8.
+
+For example, the app can\nappear as a widget on the Today screen, add new buttons in the Action\nsheet, offer photo filters within the iOS
+
+Photos app, or display a new\nsystem-wide custom keyboard [3].
+
+In addition, the watch extension [4]\non iPhone delegates all logic of a watch app on iOS 8.2/8.3 after the\nrelease of Apple Watch.
+
+An app extension can execute code and is\nrestricted to access data within its data container.
+
+Extensions are\ndistributed as a part of the iOS app, which can be leveraged as\npotential new attack vectors by attackers.
+
+We independently discovered that the extension within an iOS 8 app\ncould either gain full access to other apps’ data containers or\nprevent other apps from accessing their own data containers, as long\nas the extension uses the same bundle identifier as the target app.
+
+An\nattacker can lure a victim to install an in-house app using enterprise\nprovisioning from a website and to enable the malicious extension of\nthe in-house app on his/her device.
+
+The effect of such attack is related to the installation sequence of\nthe malicious extension and the target app.
+
+Note that an extension\ncannot be installed standalone; it must be distributed as a part of an\napp.
+
+So in the following content when we refer to installing an\nextension we mean installing an app carrying that extension.
+
+If installed before the target app, the malicious\nextension can break the data container and gain full access to the\ntarget app's data container without users’ awareness, while the\ntarget app would work normally.
+
+If the malicious extension\nis installed after the target app, the target app can no\nlonger access its own data container.
+
+Thus the functionality of the\ntarget app will be seriously disturbed and the app will even crash\n(causing denial-of-service).
+
+In this circumstance, if the victim\ntries to reinstall the target app, the target app would recover.
+
+But\nthis falls into the prior case again -- the victim app is now\ninstalled after the malicious app, so the malicious extension\ncan gain full access to the target app's container.
+
+Here is a demo for breaking the data container attack.
+
+In this demo,\na malicious extension can access all the files within the Gmail app’s\ndata container and upload them to the attacker’s server.
+
+Plugin Masque: Executing Untrusted Code with Privilege Apart of the iOS extension, the VPN plugin is another type of bundle\nin an .ipa file.
+
+Compared to iOS extension that can be embedded in any\niOS 8 app without any special entitlement, both the VPN app and the\nVPN plugin need to be provisioned with the\n“com.apple.networking.vpn.configuration” entitlement to provide\nsystem-wide VPN service.
+
+So far only in a few exclusive iOS developers\ncan distribute such VPN client (e.g. Cisco Anyconnect, Junos Pulse,\nOpenVPN etc.)
+
+on iOS.
+
+After installation, the VPN plugin is loaded\nwithout any user interface by a privileged system process, neagent [8].
+
+Figure 2 shows the directory structure of the Junos Pulse .ipa\nfile, the VPN plugin (SSLVPNJuniper.vpnplugin) locates in the Payload\ndirectory, along with the ordinary app (Junos Pulse.app) providing the\nuser interface to configure the VPN.
+
+Figure 2.
+
+Directory Layout of the Junos Pulse App We discovered that if an in-house app embeds a malicious VPN Plugin\nthat has the same bundle id as the legitimate VPN Plugin on the\nvictim’s iOS, the malicious VPN Plugin can be successfully installed\nand replace the legitimate one without any special entitlement\n(e.g.
+
+“com.apple.networking.vpn.configuration”).
+
+  Later, when the\nvictim launches the ordinary VPN app to access the VPN service, the\nuntrusted code in the malicious VPN Plugin will be loaded by the neagent process and perform privileged operation, such as\nhijacking/monitoring all the VPN traffic.
+
+Injecting code to the neagent process to escape the sandbox is also a critical\nexploit used in the PanGu 8 [8, 12] jailbreak tool.
+
+By leveraging the\nVPN plugin vulnerability, it is possible to jailbreak an iOS device\nwith 8.1.2 or before over-the-air directly with other kernel\nexploits.
+
+This vulnerability is related to CVE-2014-4493 and was\npatched in iOS 8.1.3.
+
+We first disclose and demonstrate this attack in\nthe Jailbreak Security Summit [7] in April 2015.
+
+This vulnerability is related to CVE-2014-4493 and was patched in\niOS 8.1.3.
+
+We first disclosed and demonstrated this attack in the\nJailbreak Security Summit [7] in April 2015.
+
+Here is a demo for the untrusted code execution attack.
+
+In this\ndemo, the in-house app containing a malicious VPN plugin is installed\non victim’s device.
+
+After the user configures VPN use the original\nJunos Pulse app, the PoC code of the malicious VPN plugin is loaded\nand executed by neagent .
+
+while(1) { syslog(LOG_ERR, \"[+] =========
+
+**
+
+**** PoC DYLIB
+
+LOADED\n*
+
+***** =========
+
+=
+
+\"); sleep(3); } Table 2.
+
+PoC code of the malicious VPN Plugin Note that successfully launching this attack doesn’t require the\nuser to touch/trust the in-house app.
+
+Even if the user force\nuninstalling the VPN app being attacked, the app will come back again\nafter reboot.
+
+That means the user can't uninstall the app easily.
+
+Even\nif the user tries to power off the phone by long-pressing the power\nbutton, the neagent daemon running attacker's code will be keep\nrunning in the background and stops the device from a real reboot.
+
+The\nphone screen will be totally black and looks like the device is\nrebooting, however, neagent can keep running with the\nattacker's code in the background.
+
+iOS Update Gap in Enterprise Networks
+
+The release of iOS 8.1.3 (where App Masque, URL Masque, and Plugin\nMasque issues were fixed or partially fixed) was in January 2015, and\niOS is well known for its fast adoption of new versions.
+
+However, our\nrecent monitoring of iOS web traffic in several high-profile networks\nshows surprising results.
+
+As shown in Figure 3, nearly one third of\nthe iOS traffic that we monitored is still from devices with versions\nbelow 8.1.3 even 5 months after its release.
+
+The devices behind that\ntraffic are still vulnerable to all the Masque Attacks, including the\nApp Masque, URL Masque, and Plugin Masque.
+
+We urge everyone,\nespecially enterprise users, to keep up with the latest iOS updates.
+
+Figure 3.
+
+iOS version ratios based on network traffic monitored by FireEye Conclusions To summarize, although Apple has fixed or partially fixed the\noriginal Masque Attack [6, 11] on iOS 8.1.3, there are still other\nattack surfaces to exploit vulnerabilities in the installation process\non iOS.
+
+We disclose the details of three variants of Masque Attack in\nthis article to help users realize the risk and better protect\nthemselves.
+
+Moreover, around one third of iOS devices that we\nmonitored are still vulnerable to all the Masque Attacks because they\nhave not been upgraded.
+
+We suggest that all iOS users keep their\ndevices up-to-date.
+
+[2] https://developer.apple.com/app-extensions/ [3] https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/NotificationCenter.html [4] https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html [5] https://drive.google.com/file/d/0BxxXk1d3yyuZOFlsdkNMSGswSGs/view [6] https://www.fireeye.com/blog/threat-research/2014/11/masque-attack-all-your-ios-apps-belong-to-us.html [7] http://thecyberwire.com/events/docs/nsmail.pdf [8] https://cansecwest.com/slides/2015/CanSecWest2015_Final.pdf
+
+[9] https://itunes.apple.com/us/app/cisco-anyconnect/id392790924?mt=8 [11] https://www.fireeye.com/blog/threat-research/2015/02/ios_masque_attackre.html [12]
+
+http://en.pangu.io/ Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

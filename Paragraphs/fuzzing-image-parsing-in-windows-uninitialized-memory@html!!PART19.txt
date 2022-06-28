@@ -1,0 +1,13 @@
+
+Allocation windowscodecs!TIFFReadBufferSetup allocates 0x400 bytes of memory, as shown in Figure 6.
+windowscodecs!TIFFReadBufferSetup: ...
+allocBuff = malloc(size); *(v3 + 16) |= 0x200u; *(v3 + 480) =
+allocBuff
+; 0:000
+>
+k # Child-SP          RetAddr           Call Site 00 000000aa`a654f128
+00007ff9`4404d4f3 windowscodecs!TIFFReadBufferSetup 01 000000aa`a654f130 00007ff9`4404d3c9 windowscodecs!TIFFFillStrip+0xab 02
+000000aa`a654f170 00007ff9`4404d2dc
+windowscodecs!TIFFReadEncodedStrip+0x91 03 000000aa`a654f1b0 00007ff9`440396dd
+windowscodecs!CLibTiffDecoderBase::ReadStrip+0x74 04 000000aa`a654f1e0 00007ff9`44115fca windowscodecs!CLibTiffDecoderBase::GetOneUnpackedLine+0x1ad 05 000000aa`a654f2b0 00007ff9`44077400 windowscodecs!CLibTiffDecoderBase::HrProcessCopy+0x4a 06
+000000aa`a654f2f0 00007ff9`44048dbb windowscodecs!CLibTiffDecoderBase::HrReadScanline+0x20 07 000000aa`a654f320 00007ff9`44048b40 windowscodecs!CDecoderBase::CopyPixels+0x23b 08 000000aa`a654f3d0 00007ff9`44043c95

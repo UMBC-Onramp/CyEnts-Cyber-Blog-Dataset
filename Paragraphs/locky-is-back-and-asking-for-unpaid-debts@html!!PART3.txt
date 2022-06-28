@@ -1,0 +1,9 @@
+
+Uses a custom XOR-based decryption routine to decrypt the Locky payload.
+Ensures the decrypted binary is of a predefined size.
+In Figure 4 below, the size of the decrypted binary had to be greater than 143,360 bytes and smaller than 153,660 bytes to be executed.
+Figure 4.
+Payload download function in JavaScript 5.
+     Checks (Figure 5) that the first two bytes of the binary contain the “MZ” header signature.
+Figure 5: MZ header check 6.
+     Executes the decrypted payload by passing it the command line parameter, “123”.

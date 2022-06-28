@@ -1,0 +1,239 @@
+This blog post continues our Script Series where the FireEye Labs Advanced Reverse Engineering (FLARE) team shares tools to aid the malware analysis community.
+
+Today, we release ironstrings : a new IDAPython script to recover stackstrings from malware.
+
+The script leverages code emulation to overcome this common string obfuscation technique.
+
+More precisely, it makes use of our flare-emu tool, which combines IDA Pro and the Unicorn emulation engine.
+
+In this blog post, I explain how our new script uses flare-emu to recover stackstrings from malware.
+
+In addition, I discuss flare-emu ’s event hooks and how you can use them to easily adapt the tool to your own analysis needs.
+
+Introduction Analyzing strings in binary files is an important part of malware analysis.
+
+Although simple, this reverse engineering technique can provide valuable information about a program’s use and its capabilities.
+
+This includes indicators of compromise like file paths and domain names.
+
+Especially during advanced analysis, strings are essential to understand a disassembled program’s functionality.
+
+Malware authors know this, and string obfuscation is one of the most common anti-analysis techniques reverse engineers encounter.
+
+Due to the prevalence of obfuscated strings, the FLARE team has already developed and shared various tools and techniques to deal with them.
+
+In 2014 we published an IDA Pro plugin to automate the recovery of constructed strings in malware .
+
+In 2016, we released FLOSS ; a standalone open-source tool to automatically identify and decode strings in malware.
+
+Both solutions rely on vivisect , a Python-based program analysis and emulation framework.
+
+Although vivisect is a robust tool, it may fail to completely analyze an executable file or emulate its code correctly.
+
+And just like any tool, vivisect is susceptible to anti-analysis techniques.
+
+With missing, incomplete, or erroneous processing by vivisect, dependent tools cannot provide the best results.
+
+Moreover, vivisect does not provide an easy-to-use graphical interface to interactively change and enhance program analysis.
+
+I encountered all these shortcomings recently, when I analyzed a GandCrab ransomware sample (version 5.0.4, SHA256 hash: 72CB1061A10353051DA6241343A7479F73CB81044019EC9A9DB72C41D3B3A2C7).
+
+The malware contains various anti-analysis techniques to hinder disassembly and control-flow analysis.
+
+Before I could perform any efficient reverse engineering in IDA Pro, I had to overcome these hurdles.
+
+I used IDAPython to remove various anti-analysis instruction patterns which then allowed the disassembler to successfully identify all functions in the binary.
+
+Many of the recovered functions contained obfuscated strings.
+
+Unfortunately, my changes did not propagate to vivisect, because it performs its own independent analysis on the original binary.
+
+Consequently, vivisect still failed to recognize most functions correctly and I couldn’t use one of our existing solutions to recover the obfuscated strings.
+
+While I could have tried to feed my patches in IDA Pro back to vivisect or to create a modified binary, I instead created a new IDAPython script that does not depend on vivisect.
+
+Thus, circumventing the mentioned shortcomings.
+
+It uses IDA Pro’s program analysis and Unicorn’s emulation engine.
+
+The easy integration of these two tools is powered by flare-emu .
+
+Using IDA Pro instead of vivisect resolves multiple limitations of our previous implementations.
+
+Now changes that users make in their IDB file, e.g. by patching instructions to manually enhance analysis, are immediately available during emulation.
+
+Moreover, the tool more robustly supports different architectures including x86, AMD64, and ARM.
+
+Stackstrings:
+
+An Example The disassembly listing in Figure 1 shows an example string obfuscation from the sample I analyzed.
+
+The malware creates a string at run-time by moving each character into adjacent stack addresses (gray highlights).
+
+Finally, the sample passes the string’s starting offset as an argument to the InternetOpen API call (blue highlight).
+
+Manually following these memory moves and restoring strings by hand is a very cumbersome process.
+
+Especially if malware complicates value assignments using additional instructions like illustrated below.
+
+Figure 1: Disassembly listing showing stackstring creation and usage Because malware often uses stack memory to create such strings, Jay Smith coined the term stackstrings for this anti-analysis technique.
+
+Note that malware can also construct strings in global memory.
+
+Our new script handles both cases; strings constructed on the stack and in global memory.
+
+ironstrings:
+
+Stackstring Recovery Using flare-emu
+
+The new IDAPython script is an evolution of our existing solutions.
+
+It combines FLOSS’s stackstring recovery algorithm and functionality from our IDA Pro plugin.
+
+The script relies on IDA Pro’s program analysis and emulates code using Unicorn.
+
+The combination of both tools is powered by flare-emu .
+
+Fe , short for flare-emu , is the chemical symbol for iron and hence the script is named ironstrings .
+
+To recover stackstrings, ironstrings enumerates all disassembled functions in a program except for library and thunk functions as identified by IDA Pro.
+
+For each function, the script emulates various code paths through the function and searches for stackstrings based on two heuristics:
+
+Before all call instructions in the function.
+
+As stackstrings are often constructed and then passed to other functions, i.e. Windows APIs like CreateFile or InternetOpenUrl .
+
+At the end of a basic block containing more than five memory writes.
+
+The number of memory writes is configurable.
+
+This heuristic is helpful if the same memory buffer is used multiple times in a function and if the string construction spans multiple basic blocks.
+
+If any of these conditions apply, the script searches the function’s current stack frame for printable ASCII and UTF-16 strings.
+
+To detect strings in global memory, the script additionally searches for strings in all memory locations that have been written to.
+
+Using flare-emu Hooks to Recover Stackstrings If you’re not already familiar with flare-emu , I recommend reading our previous blog post .
+
+It discusses some of the interfaces the tool provides.
+
+Other helpful resources are the examples and the project documentation available on the flare-emu GitHub .
+
+The stackstrings script uses flare-emu ’s iterateAllPaths API.
+
+The function iterates multiple code paths through a function.
+
+It first finds possible paths from function start to function end.
+
+The tool then forces the emulation down all identified code paths independent from the actual program state.
+
+This extensive code coverage allows ironstrings to recover strings constructed from many different emulation runs.
+
+A key feature of flare-emu are the various hook functions that get triggered by different emulation events.
+
+These hooks, or callbacks, enable the development of very powerful automation tasks.
+
+The available hooks are a combination of Unicorn’s standard hooks, e.g., to hook memory access events, and multiple convenience hooks provided by flare-emu .
+
+The following section briefly describes the available callbacks in flare-emu and illustrates how the ironstrings script uses them to recover obfuscated strings.
+
+instructionHook:
+
+This Unicorn standard hook is triggered before an instruction is emulated.
+
+ironstrings uses this hook to initiate the stackstrings extraction if a basic block contained enough memory writes, for example.
+
+memAccessHook: This Unicorn standard hook is triggered when memory read or write events occur during emulation.
+
+In the stackstrings script this function stores data about all memory writes.
+
+callHook:
+
+This flare-emu hook is activated before each function call.
+
+The hook’s return value is ignored.
+
+In the stackstrings script this hook triggers the extraction of stackstrings.
+
+preEmuCallback:
+
+This flare-emu hook is called before each emulation run.
+
+It is only available in the iterate and the iterateAllPaths functions.
+
+The hook’s return value is ignored.
+
+ironstrings does not use this hook.
+
+targetCallback:
+
+This flare-emu hook gets called whenever one of the specified target addresses is hit.
+
+It is only available in the iterate and the iterateAllPaths functions.
+
+The hook’s return value is ignored.
+
+The stackstrings script does not use this hook.
+
+The code in Figure 2 shows the callback functions that flare-emu ’s API currently supports, their signatures, and examples of how to use them.
+
+All callbacks receive an argument named hookData.
+
+This named dictionary allows the user to provide application specific data to use before, during, and after emulation.
+
+Often, this dictionary is named userData in the user-defined callbacks, as in the examples below, due to its naming in Unicorn.
+
+ironstrings uses this to access function analysis data and store recovered strings across its various hooks.
+
+The dictionary also provides access to the EmuHelper object and emulation meta data.
+
+Figure 2: flare-emu example hook implementations Installation Download and install flare-emu as described at the GitHub installation page .
+
+ironstrings is available, along with our other IDA Pro plugins and scripts, at our ironstrings GitHub page .
+
+Note that both flare-emu and ironstrings were written using the new IDAPython API available in IDA Pro 7.0 and higher.
+
+They are not backwards compatible with previous program versions.
+
+Usage and Options To run the script in IDA Pro, go to File – Script File...
+
+(ALT+F7) and select ironstrings.py .
+
+The script runs automatically on all functions, prints its results to IDA Pro's output window, and adds comments at the locations where it recovered stackstrings.
+
+Figure 3 shows the script’s output of the recovered stackstring locations from the GandCrab sample.
+
+Analysis of this malware takes the script about 15 seconds.
+
+Figure 3: Deobfuscated stackstrings and locations where they were identified Figure 4 shows the disassembly listing of the stackstring creation example discussed at the beginning of this post after running ironstrings .
+
+Figure 4:
+
+Commented stackstring after running ironstrings After analyzing a sample, the script provides a summary and a unique listing of all recovered strings.
+
+The output for the ransomware sample is shown in Figure 5.
+
+Here the tool failed to analyze two functions due to invalid memory operations during Unicorn’s code emulation.
+
+Figure 5: Script summary and unique string listing Note that you can modify various options to change the script’s behavior.
+
+For example, you can configure the output format at the top of the ironstrings.py file.
+
+The script’s README file explains the options in more detail.
+
+Conclusion This blog post explains how our new IDAPython script ironstrings works and how you can use it to automatically recover stackstrings in IDA Pro.
+
+Overcoming anti-analysis techniques is just one of many useful applications of code emulation for malware analysis.
+
+This post shows that flare-emu provides the ideal base for this by integrating IDA Pro and Unicorn.
+
+The detailed discussion of flare-emu ’s hook functions will help you to write your own powerful automation scripts.
+
+Please reach out to us with questions, suggestions and feedback via the flare-emu and flare-ida GitHub issue trackers.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

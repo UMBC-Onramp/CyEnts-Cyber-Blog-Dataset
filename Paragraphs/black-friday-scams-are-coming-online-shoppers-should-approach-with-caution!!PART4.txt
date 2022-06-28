@@ -1,0 +1,8 @@
+
+The malicious code works as follows: As previously stated, the malware monitors the victim’s clipboard for any copy/paste operations.
+When the victim copies any data into the clipboard, the malware searches for three criteria: Clipboard text is 54 characters long (which is the length of a wallet address preceded by the string “bitcoincash:”)
+Clipboard text is not “bitcoincash:<attacker’s wallet>”because replacing the wallet address would no longer be necessary Clipboard text contains “bitcoincash:” to make sure the user is currently involved in trying to transfer Bitcoin Cash If all three of the criteria match, then the malware replaces the clipboard information with the attacker’s Bitcoin Cash wallet address.
+The attacker is hoping that the victim will not notice the overwritten crypto wallet address when the victim pastes it during the crypto transaction.
+Figure 1 shows a part of the malware code that searches the clipboard for potential cryptocurrency wallet addresses.
+The malware also sets different flags depending on the type of cryptocurrency it is testing for.
+Looking at the criteria above, we can see the malware uses flag5 to test for Bitcoin Cash.

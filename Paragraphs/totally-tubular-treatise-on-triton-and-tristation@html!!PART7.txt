@@ -1,0 +1,11 @@
+
+We also have indications that message type 5 is for all Execution Command Requests and Responses, so it is curious to observe that the TRITON developers called this “Command Reply.”
+(We won’t understand this naming convention until later.)
+Next we examine TsLow.pyc’s print_last_error function (Figure 3) to look at “TS Error” and “TS_names.”
+We begin by looking at the ts_err variable and see that it references ts_result.
+Figure 3: TsLow.pyc function print_last_error() with ts_err highlighted
+We follow that thread to ts_result, which defines a few variables in the next 10 bytes (Figure 4): dir, cid, cmd, cnt, unk, cks, siz = struct.unpack('<, ts_packet[0:10]).
+Now things are heating up.
+What fun.
+There’s a lot to unpack here, but the most interesting thing is how this piece script breaks down 10 bytes from ts_packet into different variables.
+Figure 4: ts_result with ts_packet header variables highlighted Figure 5: tcm_result Referencing tcm_result (Figure 5) we see that it defines type and size as the first four bytes (offset 0 – 3) and tcm_result returns the packet bytes 4:-2 (offset 4 to the end minus 2, because the last two bytes are the CRC-16 checksum).

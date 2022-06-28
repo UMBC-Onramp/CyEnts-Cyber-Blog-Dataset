@@ -1,0 +1,10 @@
+
+This newer variant simply overwrites the MBR with zeroes.
+How to Repair a Damaged MBR Fixing an MBR is relatively easy in modern Windows.
+After the affected machine reboots (sometimes it requires a few reboots), the system enters automatic repair mode.
+First, choose Advanced Options, Troubleshoot.
+Another Advanced Option should then let you use the Command Prompt.
+From the Command Prompt, type and run \"bootrec.exe /fixmbr\".
+An alternative and more straightforward option would be to choose Startup Repair on the screen to run the Command Prompt.
+The downside of selecting Startup Repair is that it will take longer to complete the job.
+If the automatic repair mode does not kick in for some reason, you'll need to boot the system off a recovery disk or drive.

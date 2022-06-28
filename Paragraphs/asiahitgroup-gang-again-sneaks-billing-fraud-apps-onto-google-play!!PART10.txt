@@ -1,0 +1,7 @@
+
+Functionality to send an SMS message to a premium-rate number.
+Closer Look to Previous Campaigns While looking for patterns in the 2018 campaign, we found the app DJ Mixer–Music Mixer.
+As soon as this application executes, it checks if the device has an Internet connection.
+If the device is offline, the app shows the error message “You connect to internet to continue” and ends its execution.
+If the device is online, the app executes a web request to a specific URL: Figure 10.
+Web request to the AsiaHitGroup Gang URL.

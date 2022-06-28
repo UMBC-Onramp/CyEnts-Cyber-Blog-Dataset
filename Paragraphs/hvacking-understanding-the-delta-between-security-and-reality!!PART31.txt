@@ -1,0 +1,6 @@
+
+The check came back with only NX enabled.
+This also held true for each of the shared libraries where the vulnerable code is located.
+As discussed above, the vulnerability allows for a write-what-where condition, which leads us to the most important question: what do we want to write where?
+Ultimately, we want to write shellcode somewhere in memory and then jump to that shellcode.
+Since the attacker controls the last packet sent, it is plausible that the attacker could have their shellcode on the stack.

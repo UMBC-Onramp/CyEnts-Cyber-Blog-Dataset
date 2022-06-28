@@ -1,0 +1,5 @@
+
+Case 11 of the switch statement typically calls the routines DSMap::setPrivacyKeyNames then DSAuth::RealmSignin::runSecondaryAuth .
+The malicious logic in this variant overwrites the call to DSAuth::RealmSignin::runSecondaryAuth with mov eax, 1.
+This forces application flow as if DSAuth::RealmSignin::runSecondaryAuth always succeeds, without ever calling it.
+We were not able to recover a file with these patches applied as the attacker removed their patches after use.

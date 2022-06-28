@@ -1,0 +1,4 @@
+
+The {<rnd_guid_0>} emulator class ID defines a registry key LocalServer and its default value will be executed by the task.
+If the dropper is started within a non-elevated PowerShell process, the sequence is generally the same but instead of a task, the malware hijacks one of the well-known classes, Microsoft PlaySoundService ({2DEA658F-54C1- 4227-AF9B-260AB5FC3543}) or MsCtfMonitor ({01575CFE-9A55-4003-A5E1-F38D1EBDCBE1}), by creating an associated TreatAs registry key under their definition in the registry database.
+The TreatAs key's default registry value points to the {<rnd_guid_0>} emulator class essentially achieving the same execution sequence as in the elevated privilege case.

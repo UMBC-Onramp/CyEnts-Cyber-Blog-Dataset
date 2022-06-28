@@ -1,0 +1,12 @@
+
+Date: Thu, 06 Mar 2014 07:30:54
+GMT Server: Microsoft-IIS/7.5 ServerName: P-ADS-OR-WEBB #6 X-AspNet-Version: 4.0.30319 X-Powered-
+By: ASP.NET X-ReqTime: 273 X-Stats: geo-0;rcf88626-272 Content-Length: 4714 Connection: keep-alive GET /server/
+ads.js?pub=24… PvctPFq&acp=0.51 HTTP/1.1 Host: ad.turn.com
+Connection: keep-alive Referer: http://bar/ Accept: */* X-Requested-With: com.rovio.angrybirds User-Agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; Ascend Y300
+Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko)
+Version/4.0
+Mobile Safari/534.30 Accept-Encoding: gzip,deflate Accept-Language: en-US Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7 {\"type\":\"ip\",\"Id\":\"0...
+b\",\"width\":320,\"height\":50,\"cookie\":[],\"data\":[{\"data\":\"<!-- AdPlacement : banner_ingame_burstly --> \\\"http://burstly.ads.nexage.com:80...\" destParms\":\"\", \"cookie\":[{\"name\":\"f...g\", \"value\":\"ref=1...
+0&cr 1XXXX8 =k,1&cr...
+8=i, 1\",\"path\":\"/\", \"domain\":\"neptune.appads.com\", \"expires\":\"Sat, 0X Apr 2014 0X:XX:

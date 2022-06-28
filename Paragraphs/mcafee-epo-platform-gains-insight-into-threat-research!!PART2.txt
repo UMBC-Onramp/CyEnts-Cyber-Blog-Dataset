@@ -1,0 +1,10 @@
+
+The Security Resources section of the McAfee ePO ™ console Version 5.10.0 will contain multiple windows providing the latest news.
+The first window in the section shows an updated list of the most recent threats research published by the McAfee Labs team.
+This includes both malware and vulnerability research.
+For example, this week we released a report that shows it is possible to emulate and modify a patient’s vital signs in real time on a medical network using a patient monitor and central monitoring station.
+We also include research related to new malware campaigns.
+All our content is mapped to the MITRE ATT&CK framework and includes all known indicators of compromise, as well as detailing how McAfee products protect against the documented campaign.
+Top threats The section includes a condensed version of the Threat Landscape Dashboard , which contains the top threats across exploit kits, campaigns, ransomware, and vulnerabilities.
+The following screen shows how the summary will appear in the McAfee ePO console, allowing readers to easily review and click through these threats for more detail.
+The latest McAfee ePO console will offer an easy review of analysis gathered by McAfee Labs and the Advanced Threat Research team.

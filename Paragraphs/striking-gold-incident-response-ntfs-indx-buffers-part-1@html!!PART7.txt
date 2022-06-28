@@ -1,0 +1,10 @@
+
+INDX_ROOT.bin icat -f ntfs ntfs.dd 49-160-7 > INDX_ALLOCATION.bin
+The icat command uses the NTFS module to identify the record (49) attribute (144-6 and 144-7), and outputs the attribute data into the respective files INDX_ROOT.bin and INDX_ALLOCATION.bin.
+EnCase We can use EnCase to extract the INDX allocation data.
+To use EnCase version 6.x to gather the content of the INDX buffers, in the explorer tree, right click the folder icon.
+The \"Copy/UnErase...\" option applied to a directory will copy the content of the INDX buffer as a binary file.
+Specify a location to save the file.
+Note that the \"Copy Folders...\" option will copy the directory and its contents and will NOT extract the INDX structure.
+FTK We can use the Forensic Toolkit (FTK) to extract the INDX allocation data.
+Using FTK or FTK Imager, the INDX allocation attributes appear in the file list pane.

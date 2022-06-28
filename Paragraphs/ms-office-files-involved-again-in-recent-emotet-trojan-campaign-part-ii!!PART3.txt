@@ -1,0 +1,5 @@
+
+All the received modules are fileless.
+That is, they only exist in memory and are processed by the X.dll (the core of Emotet) running in Rundll32.exe.
+Figure 1.1 is a screenshot of X.dll’s code and memory.
+The bottom is a C2’s response packet, just decrypted in memory by calling a function of 10012371.

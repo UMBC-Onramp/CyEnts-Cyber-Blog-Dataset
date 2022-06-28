@@ -1,0 +1,3 @@
+
+A good setup might include a Wireguard always-on VPN to a server under your control, that uses pihole to filter out bad stuff and logs all the traffic for further inspection.
+How to get by without iMessage I was talking to my friend Ryan Naraine recently, and he said — “iMessage and FaceTime — these are the reasons why people use iPhones!”

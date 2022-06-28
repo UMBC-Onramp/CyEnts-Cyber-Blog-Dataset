@@ -1,0 +1,6 @@
+
+Figure 3: Extracting Kerberos data After manipulating the data retrieved, it is possible to use the CCACHE in smbclient as shown in Figure 4.
+In this example, a domain administrator ticket was obtained and used to access the domain controller’s C$ share.
+Figure 4:
+Compromising domain controller with extracted tickets The Python script and instructions can be found on the FireEye Github.
+Conclusion By obtaining privileged access to a domain-joined Linux system, it is often possible to scrape Kerberos tickets useful for lateral movement.

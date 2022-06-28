@@ -1,0 +1,9 @@
+
+The device owner rebooted their device regularly and did so in the next 24 hours following the attack.
+The attackers tried to target them a few more times but eventually gave up after getting kicked a few times through reboots.
+NoReboot:
+A fake restart to gain a foothold in the system Disable iMessage.
+iMessage is built into iOS and is enabled by default, making it an attractive exploitation vector.
+Because it’s enabled by default, it is a top delivery mechanism for zero-click chains and for many years, iMessage exploits were in high demand, with top payouts at exploit brokerage companies.
+“During the last few months, we have observed an increase in the number of iOS exploits, mostly Safari and iMessage chains, being developed and sold by researchers from all around the world.
+The zero-day market is so flooded by iOS exploits that we’ve recently started refusing some (of) them ,” Zerodium’s founder Chaouki Bekrar wrote back in 2019 to WIRED .

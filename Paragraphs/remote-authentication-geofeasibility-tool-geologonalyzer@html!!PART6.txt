@@ -1,0 +1,4 @@
+
+Harry’s logon source change can be normalized to 4,250 miles per hour, which is likely infeasible with modern travel technology.
+By focusing on the changes in logon sources, analysts do not have to manually review the many times that Harry might have logged in from Dallas before and after logging on from Sydney.
+Cloud Data Hosting Provider Analysis Attackers understand that organizations may either be blocking or looking for connections from unexpected locations.

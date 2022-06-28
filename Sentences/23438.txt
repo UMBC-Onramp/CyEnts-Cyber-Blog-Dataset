@@ -1,0 +1,61 @@
+Google has released an emergency update for the Chrome browser that addresses three vulnerabilities: CVE-2021-37974 , CVE-2021-37975 , and CVE-2021-37976 .
+
+Google experts consider one of the vulnerabilities as critical and the other two as highly dangerous.
+
+What’s worse: according to Google cybercriminals have already exploited two of these three vulnerabilities.
+
+Therefore, Google advices all Chrome users to immediately update browser to version 94.0.4606.71.
+
+These vulnerabilities are also relevant to other browsers based on the Chromium engine — for instance, Microsoft recommends updating Edge to version 94.0.992.38.
+
+Why these vulnerabilities in Google Chrome are dangerous CVE-2021-37974 and CVE-2021-37975 are use-after-free (UAF) class vulnerabilities — they exploit incorrect use of heap memory and, as a result, can lead to arbitrary code execution on the targeted computer.
+
+The first one, CVE-2021-37974, is related to the Safe Browsing component, a Google Chrome subsystem that warns users about unsafe websites and downloads.
+
+The CVSS v3.1 severity rating for this vulnerability is 7.7 out of 10.
+
+The second vulnerability, CVE-2021-37975, was found in Crome’s V8 JavaScript engine.
+
+This one is considered the most dangerous of all three — 8.4 on CVSS v3.1 scale, which makes it a ‘critical’ risk vulnerability.
+
+Unknown malefactors are already using this vulnerability in their attacks on Chrome users.
+
+The cause of the third vulnerability, CVE-2021-37976, is data overexposure caused by the core of Google Chrome.
+
+It’s slightly less dangerous — 7.2 on the CVSS v3.1 scale, however it is also already being used by cybercriminals.
+
+How cybercriminals can exploit these vulnerabilities Exploitation of all three vulnerabilities requires the creation of a malicious web page.
+
+All attackers need is to create a website with an embedded exploit and a way to lure victims to it.
+
+As a result, exploits for two use-after-free vulnerabilities allows the attackers to execute arbitrary code on the computers of unpatched Chrome users who have accessed the page.
+
+That can lead to the compromise of their system.
+
+An exploit for the third vulnerability, CVE-2021-37976, makes it possible for the attackers to gain access to the victim’s confidential information.
+
+Google will most likely reveal more details on the vulnerabilities after the majority of users have up-dated their browsers.
+
+In any case, it’s not worth delaying the update — much better do it as soon as possible.
+
+How to stay safe The first step for everyone is to update browsers on all devices that have access to the Internet.
+
+Quite often the update is installed automatically when the browser is restarted, however many users do not restart their computer for a long time, so their browser may remain vulnerable for several days or even weeks.
+
+In any case, we recommend checking the version of Chrome.
+
+Here’s how to do it: click on the Customise and Control Google Chrome button at the top-right corner of the browser window and choose Help -> About Google Chrome .
+
+If your browser version is not the latest available, Chrome will automatically start the update.
+
+For extra protection we recommend users to install security solutions on all devices with Internet access.
+
+This way, even you’re caught without an up-to-date browser, proactive protection technologies will minimize the possibility of successful vulnerability exploitation.
+
+We also recommend employees of corporate information security departments to use security solutions on all devices , monitor security updates and employ automatic update delivery and control system.
+
+It would be also reasonable to prioritize the installation of browser updates.
+
+
+
+

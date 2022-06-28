@@ -1,0 +1,12 @@
+
+In the context of the medical servers, this refers to the version of XAMPP, aka Apache with MariaDB, PHP, and Perl.
+This server was running Apache 2.4.9, which is publicly known to contain nine vulnerabilities.
+In other cases, there was no need to search for vulnerabilities.
+The management interface was wide open and could be accessed without credentials.
+What does this mean?
+It is possible to access the images.
+Vulnerabilities In addition to expensive commercial PACS systems, open-source or small-fee PACS are available for small health care institutions or practices.
+As we investigated these systems, we found that our fears were well founded.
+One web server/client setup used the defaults “admin/password” as credentials without enforcing a change when the server is started for the first time.
+We found more problems: Unencrypted traffic between client and server Click jacking Cross-site scripting (reflected) Cross-site scripting stored as cross-site request forgery Document object model–based link manipulation Remote creation of admin accounts Disclosure of information Many of these are ranked on the list of OWASP Top 10 Most Critical Web Application Security Risks list, which highlights severe flaws that should be addressed in any product delivered to a customer.
+We have reported the vulnerabilities we discovered to these vendors following our responsible disclosure process.

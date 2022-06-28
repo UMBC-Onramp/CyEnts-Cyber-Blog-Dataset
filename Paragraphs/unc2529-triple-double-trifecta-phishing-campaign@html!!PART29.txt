@@ -1,0 +1,11 @@
+
+Next, the backdoor ensures that it is the only DOUBLEBACK instance currently executing on the compromised system.
+To do that, the malware generates a host-based pseudo-unique GUID and uses it as a mutex name.
+The algorithm first generates a pseudo-unique host identifier that is based on the system volume's serial number and a hardcoded salt value, as shown in Figure 10.
+# oberserved salt =
+0x436ea76d def gen_host_id(vol_ser_num, salt): salted_val =
+(vol_ser_num + salt) & 0xffffffff md5 = hashlib.md5(bytes(salted_val.to_bytes(4, 'little')))
+second_dword = struct.unpack('<i', md5.digest()[4:8])[0] return (salted_val + second_dword) & 0xffffffff Figure 10:
+Host ID generation algorithm Next, the malware passes the generated host ID to another algorithm that generates a pseudo-unique GUID based on the input, as shown in Figure 11.
+# src is the host ID def gen_guid(src): b = bytearray() xor =
+0xaabbccdd for _ in range(4): b += src.to_bytes(4, byteorder='little') src ^= xor xor =

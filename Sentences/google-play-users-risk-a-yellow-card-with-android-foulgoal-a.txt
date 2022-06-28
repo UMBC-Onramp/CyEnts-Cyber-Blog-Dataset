@@ -1,0 +1,79 @@
+By Raj Samani on Jul 12, 2018
+
+This blog post was co-written by Irfan Asrar.
+
+English soccer fans have enthusiastically enjoyed the team’s current run in the World Cup, as the tune “Three Lions” plays in their heads, while hoping to end 52 years of hurt.
+
+Meanwhile a recent spyware campaign distributed on Google Play has hurt fans of the beautiful game for some time.
+
+Using major events as social engineering is nothing new, as phishing emails have often taken advantage of disasters and sporting events to lure victims.
+
+“Golden Cup” is the malicious app that installs spyware on victims’ devices.
+
+It was distributed via Google Play, and “offered” the opportunity to stream games and search for records from the current and past World Cups.
+
+McAfee Mobile Security identifies this threat as Android/FoulGoal.
+
+A; Google has removed the malicious applications from Google Play.
+
+Once Golden Cup is installed it appears to be a typical sporting app, with multimedia content and general information about the event.
+
+Most of this data comes from a web service without malicious activity.
+
+However, in the background and without user consent the app silently transfers information to another server.
+
+Data captured Golden Cup captures a considerable amount of encrypted data from the victim’s device: Phone number Installed packages Device model, manufacturer, serial number Available internal storage capacity Device ID Android version IMEI, IMSI
+
+This spyware may be just the first stage of a greater infection due to its capability to load dex files from remote sources.
+
+The app connects to its control server and tries to download, unzip, and decrypt a second stage.
+
+Android/FoulGoal.
+
+A detects when the screen is on or off and records this in its internal file scrn.txt, with the strings “on” or “off” to track when users are looking at their screens: The Message Queuing Telemetry Transport protocol serves as the communication channel between the device and the malicious server to send and receive commands.
+
+Data encryption User data is encrypted with AES before it is sent to the control server.
+
+Cryptor class provides the encryption and decryption functionality.
+
+The doCrypto function is defined as a common function.
+
+As the first parameter of the function, “1” represents encryption and “2” is decryption mode:
+
+The encryption key is generated dynamically using the SecureRandom function, which generates a unique value on the device to obfuscate the data.
+
+The addKey function embeds the encryption key into the encryption data.
+
+The data with the key is uploaded to the control server.
+
+We believe the malware author uses this AES encryption technique for any information to be uploaded to escape the detection by Google Bouncer and network inspection products.
+
+Our initial analysis suggests there were at least 300 infections, which we suspect occurred between June 8‒12, before the first World Cup matches began.
+
+The second round The second phase of the attack leverages an encrypted dex file.
+
+The file has a .data extension and is downloaded and dynamically loaded by the first-stage malware; it is extracted with the same mechanism used to upload the encrypted files.
+
+The location of the decryption key can be identified from the size of the contents and a fixed number in the first-stage malware.
+
+After decryption, we can see out.dex in zipped format.
+
+The dex file has spy functions to steal SMS messages, contacts, multimedia files, and device location from infected devices.
+
+The control server in second stage is different from the first stage’s.
+
+The encryption methodology and the server folder structures on the remote server are identical to the first stage.
+
+We found one victim’s GPS location information and recorded audio files (.3gp) among the encrypted data on the control server.
+
+Variants We have also discovered two other variants of this threat created by the same authors and published to Google Play as dating apps.
+
+Although all the apps have been removed from Google Play, we still see indications of infections from our telemetry data, so we know these apps are active on some users’ devices.
+
+Our telemetry data indicates that although users around the world have downloaded the app, the majority of downloads took place in the Middle East, most likely as a result of a World Cup–themed Twitter post in Hebrew directing people to download the app for a breakdown of the latest events.
+
+McAfee Mobile Security users are protected against all the variants of this threat, detected as   Android/FoulGoal.
+
+A.
+
+

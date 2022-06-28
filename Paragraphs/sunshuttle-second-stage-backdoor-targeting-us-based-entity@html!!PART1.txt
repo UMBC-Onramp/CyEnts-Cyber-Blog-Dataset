@@ -1,0 +1,6 @@
+Executive Summary In August 2020, a U.S.-based entity uploaded a new backdoor that we have named SUNSHUTTLE to a public malware repository.
+SUNSHUTTLE is a second-stage backdoor written in GoLang that features some detection evasion capabilities.
+Mandiant observed SUNSHUTTLE at a victim compromised by UNC2452, and have indications that it is linked to UNC2452, but we have not fully verified this connection.
+Please see the Technical Annex for relevant MITRE ATT&CK techniques (T1027, T1027.002, T1059.003, T1071.001, T1105, T1140, T1573.001).
+The activity discussed in this blog post is also detailed in a Microsoft blog post .
+We thank the team at Microsoft and other partners for their great collaboration in tracking this actor.

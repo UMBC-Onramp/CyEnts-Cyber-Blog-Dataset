@@ -1,0 +1,5 @@
+Gaining insight into the files being executed on your system is a great first step towards improved visibility on your endpoints.
+Taking this a step further, centrally storing logs of file execution data so they can be used for detection and hunting provides an excellent opportunity to find evil on your network.
+A SIEM, and to some degree your entire security monitoring program, is only as good as the data you are collecting.
+Process execution data is incredibly valuable for enabling a multitude of detection and hunting scenarios, which means it’s something you should consider collecting and storing.
+Customers of our Threat Analytics Platform (TAP) cloud-based SIEM solution frequently ask us about tools that can help them collect this type of file execution data.

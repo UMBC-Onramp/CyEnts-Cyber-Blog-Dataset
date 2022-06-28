@@ -1,0 +1,6 @@
+Home is where the ‘smart’ is.
+A recent study revealed the average American household has 25 connected or Internet of Things (IoT) devices.
+The number of consumers who have smart home devices connected to their home internet has grown by 38% since the pandemic began.
+The findings don’t surprise Brad Ree, the chief technology officer (CTO) of Internet of Things solutions at the ioXt Alliance .
+Nor do they surprise Adam Laurie, IBM Security X-Force Red ’s lead hardware hacker.
+Ree has more than 80 connected devices in his home.

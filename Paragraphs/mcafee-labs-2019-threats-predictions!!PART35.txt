@@ -1,0 +1,13 @@
+
+The increase in interest was primarily in relation to ICS, consumer, medical, and “smart city” verticals.
+(See Figure 1.)
+Smart edge devices, combined with high-speed connectivity, are enabling IoT ecosystems, but the rate at which they are advancing is compromising the security of these systems.
+Figure 1:
+The number of conference sessions on the security of IoT devices has increased, matching the growing threat to poorly protected devices.
+Most IoT edge devices provide no self-defense (isolating critical functions, memory protection, firmware protection, least privileges, or security by default) so one successful exploit owns the device.
+IoT edge devices also suffer from “break once, run everywhere” attacks—due to insecure components used across many device types and verticals.
+(See articles on WingOS and reverse engineering.)
+McAfee Advanced Threat Research team engineers have demonstrated how medical device protocols can be exploited to endanger human life and compromise patients’ privacy due to assumed trust.
+These examples illustrate just a few of many possible scenarios that lead us to believe adversaries will choose IoT edge devices as the path of least resistance to achieve their objectives.
+Servers have been hardened over the last decade, but IoT hardware is far behind.
+By understanding an adversary’s motives and opportunities (attack surface and access capability), we can define a set of security requirements independent of a specific attack vector.

@@ -1,0 +1,4 @@
+
+ Mandiant would like to thank the members of Microsoft’s Detection and Response Team (DART) for their collaboration on this research.
+In December 2020, FireEye uncovered and publicly disclosed a widespread attacker campaign that is being tracked as UNC2452 .
+In some, but not all, of the intrusions associated with this campaign where Mandiant has visibility, the attacker used their access to on-premises networks to gain unauthorized access to the victim’s Microsoft 365 environment.

@@ -1,0 +1,5 @@
+
+For a tiny method, the method body header is one byte long .
+The two least-significant bits are 10 to indicate that this is the tiny method, and the six most-significant bits tell us the size of the MSIL to follow (i.e. how long the MSIL is).
+In this case, the six most-significant bits are 000010 , which tells us the method body is two bytes long.
+The entire method body for 0x06000495 is 0A 16 2A , followed by a NULL byte, which has been disassembled by dnSpy as shown in Figure 9.

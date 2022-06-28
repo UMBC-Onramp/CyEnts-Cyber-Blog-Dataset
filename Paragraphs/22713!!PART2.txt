@@ -1,0 +1,5 @@
+
+It consists of an app for Windows, macOS, or Ubuntu and the prnt.sc cloud portal and lets users share screenshots quickly and easily: One click or shortcut sends an image to the cloud and returns an URL for sharing.
+Anyone can see published screenshots without authentication ; you don’t even need a Lightshot account.
+That makes the service fast and convenient but not very secure.
+Moreover, to view a screenshot, you don’t even need the exact link; the URLs are sequential, so if you replace a character in one of them with the next in order, for example, another image will open.

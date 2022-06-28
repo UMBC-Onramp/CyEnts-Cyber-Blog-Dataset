@@ -1,0 +1,2 @@
+
+There is a lot of value in understanding the flow of the attack as well as its potential outcomes and affected assets, including the ability to: Easily explain to executives the outcomes of attacks Allow executives to fully understand the impact of each attack on each asset Guide defenders where to look next when they find a specific TTP in their environment Replay more realistic attacks following the specific order in which they are executed, instead of done without any specific order

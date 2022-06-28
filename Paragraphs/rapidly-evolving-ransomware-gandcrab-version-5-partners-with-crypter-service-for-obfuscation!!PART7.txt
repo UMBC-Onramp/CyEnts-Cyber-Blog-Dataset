@@ -1,0 +1,14 @@
+
+The Twitter handle for this hacker is https://twitter.com/sandboxescaper .
+This exploit tries to use a problem with the Task System in Windows when the operating system improperly handles calls to an advanced local procedure call.
+The GandCrab authors claim there is no CVE of this exploit, but that is incorrect.
+It falls under CVE-2018-8440.
+This exploit can affect versions Windows 7 through Windows 10 Server.
+More information about this exploit can be found at this link .
+In the first release of Version 5.0, the malware authors wrote the code exploit using normal calls to the functions.
+Thus at compiling time the binary has the IAT filled with the DLL needed for some calls.
+This DLL does not exist in Windows Vista and XP, so the malware fails to run in these systems, showing an error.
+Import of xpsprint.dll that will not run on Windows XP or Vista.
+The exploit using direct calls.
+This release published an HTML file after encrypting the user’s files, but this file was faulty because it did not always have the information needed to decrypt the user’s files.
+The second release uses dynamic calls and obfuscates the strings of the exploit, as shown in the previous image.

@@ -1,0 +1,5 @@
+
+In many cases, this functions fine; however, when the row index exceeds the range of the data source array, which can easily happen, the program will throw an exception and subsequently cause the app to crash.
+Crashing an app is never an appealing experience for users.
+Figure 1.
+Buggy Objc code without JSPatch Within the realm of Apple-provided technologies, the way to remediate this situation is to rebuild the application with updated code to fix the bug and submit the newly built app to the App Store for approval.

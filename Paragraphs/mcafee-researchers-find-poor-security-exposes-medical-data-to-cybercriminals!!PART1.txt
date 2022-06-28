@@ -1,0 +1,6 @@
+By Christiaan Beek on Mar 11, 2018 The nonperishable nature of medical data makes an irresistible target for cybercriminals.
+The art of hacking requires significant time and effort, encouraging experienced cybercriminals to plot their attacks based on the return they will see from their investment.
+Those who have successfully gained access to medical data have been well rewarded for their efforts.
+One seller stated in an interview that “someone wanted to buy all the … records specifically,” claiming that the effort had netted US$100,000.
+While at a doctor’s appointment with my wife watching a beautiful 4D ultrasound of our unborn child, I noticed the words “saving data to image” flash on the screen.
+Although this phrase would not catch the attention of most people, given my research on how cybercriminals are targeting the health care industry , I quickly began to wonder why an ultrasound of our child would not instead save to a file.

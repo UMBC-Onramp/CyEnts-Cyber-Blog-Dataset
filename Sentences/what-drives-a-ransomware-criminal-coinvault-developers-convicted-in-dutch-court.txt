@@ -1,0 +1,129 @@
+By Christiaan Beek and John Fokker on Jul 13, 2018 How often do we get a chance to learn what goes on in the minds of cybercriminals?
+
+Two members of McAfee’s Advanced Threat Research team recently did, as they attended a court case against two cybercriminal brothers.
+
+The brothers, Dennis and Melvin, faced a judge in Rotterdam, in the Netherlands.
+
+This case was one of the first in the world in which ransomware developers appeared in court and were convicted for creating and spreading ransomware.
+
+They were responsible for creating the ransomware families CoinVault and BitCryptor .
+
+CoinVault, the better known of the two, made its appearance in late 2014.
+
+The technically skilled programmers had examined the source code of CryptoLocker, the notorious ransomware family that first struck in 2013.
+
+The brothers were not very impressed and agreed that they could do a better job.
+
+What might have started out as a fun technical challenge turned into a criminal business.
+
+The CoinVault and BitCryptor campaigns were not as widespread as CTB-Locker, CryptoWall, or Locky ransomware campaigns.
+
+Nor did they profit as much from it, but this case is nevertheless uncommon.
+
+It is rare that the developers of ransomware are caught, let alone confess their crimes.
+
+This case gives us an opportunity to understand what drove them down a path to cybercrime.
+
+The challenge Why would someone write malicious code and infect thousands of people?
+
+The judge asked the brothers the same question.
+
+Their response was “Because it was a technical challenge.”
+
+“But didn’t you realize you were dealing with people?”
+
+the judge responded.
+
+Both brothers answered that they did not; they were dealing with computers and never met their victims face to face.
+
+The judge and prosecutor did not accept their explanation.
+
+CoinVault had a built-in helpdesk function to directly communicate with their victims, thus registering their pleas.
+
+The brothers standard reaction was merciless: “Just pay the money; otherwise we won’t decrypt.”
+
+According to the prosecutor, they had plenty of opportunities to see the consequences of their actions but choose to ignore them for money.
+
+At the trial they said they were sorry and tearfully regretted what they had done.
+
+But were these mere crocodile tears because they got caught?
+
+During CoinVault’s lifespan, several versions of the ransomware were released.
+
+Every new version was a reaction to blogs written by security researchers and takedowns performed by law enforcement.
+
+Instead of realizing that they were making a mistake and stopping, the brothers saw it as a challenge, a digital game of cat and mouse, and constantly improved their malicious code.
+
+Their continuing to improve the ransomware shows a lack of empathy with their victims.
+
+Was there no one in their social surroundings who could straighten their moral compasses and talk sense into them?
+
+The payment A ransomware criminal must decide the amount of ransom to charge.
+
+Generally the more targeted a ransomware attack is, the higher the ransom demand will be.
+
+CoinVault’s infections were not targeted at one organization; they charged only US$250.
+
+The two brothers explained that they chose that price to be low enough for an average person to pay while still making a good profit.
+
+The prosecutor remarked ironically that they were “very noble [to keep] their ransom demand affordable.”
+
+The infection The two brothers did not directly infect their victims with ransomware; they took a multistep approach.
+
+Their distribution method was via newsgroup channels.
+
+They hooked a small piece of malicious code to known software or license-key generators before posting the software packages on the newsgroups.
+
+Once victims installed the package or ran the key generator, they would become part of a botnet through the software the brothers named Comhost, which can record keystrokes, search for credentials, and steal Bitcoin wallets.
+
+Comhost can also upload and execute binaries received from the control server they named Sonar.
+
+(We believe Sonar is modified a version of the popular Solar botnet software.)
+
+The Sonar botnet panel.
+
+Once they had accumulated enough bots, they simply pushed CoinVault to all their victims and locked thousands of computers at once.
+
+This method made it hard for victims to figure out how they were attacked, because weeks could pass between the initial infection and the encryption.
+
+By spreading their ransomware via newsgroups with pirated software, they discouraged victims from going to the police out of fear of prosecution and copyright-violation fines.
+
+The CoinVault lock screen.
+
+The arrest In April 2015, The National High Tech Crime Unit of the Dutch Police seized the control servers for CoinVault.
+
+After the police investigated, the two brothers, aged 18 and 22 at the time, were arrested in Amersfoort, Netherlands, on September 14, 2015.
+
+Systems were infected not only in the Netherlands, but also in the United States, Germany, France, and the United Kingdom.
+
+Their mistakes?
+
+Using flawless Dutch in the ransom notes and one time they did not use a Tor connection to log in into their control server, instead using their home connection.
+
+Flawless Dutch in the ransomware code.
+
+Although they used an obfuscator tool (Confuser) for their code, in some of the samples the full name of one of the authors was present, because they did not clean up the debugging path.
+
+Example: c:\\Users\\**********\\Desktop\\Coinvault\\coinvault-cleaned\\obj\\Debug\\coinvault.pdb From grabbing keys to No More Ransom During the investigation the Dutch police obtained all the decryption keys for CoinVault and partnered with the private sector to build a decryption tool for CoinVault ransomware, successfully mitigating a large portion of the damage caused by CoinVault.
+
+This effort idea gave birth to No More Ransom, an online portal supported by the public and private sector with the largest repository on the planet of free ransomware decryption tools.
+
+No More Ransom now has decryptors for 85 ransomware versions.
+
+This global initiative has prevented millions of dollars from falling into the hands of cybercriminals.
+
+McAfee is proud to be one of the founding members of No More Ransom.
+
+Nomoreransom.org The next steps Extorting people with ransomware is wrong, and perpetrators must be held accountable.
+
+It is sad to see two talented young people choose a pathway to cybercrime and waste their skills—skills sorely needed in the cybersecurity sector.
+
+We hope they will have learned a lesson as they endure the consequences of their actions.
+
+The sentencing will take place in about two weeks.
+
+Perhaps after they serve their time, they will find someone willing to give them a second chance.
+
+
+
+

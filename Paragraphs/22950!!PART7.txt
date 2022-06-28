@@ -1,0 +1,9 @@
+
+A while ago, for example, Google Play carried a fake Madgicx advertising network app and a fake TikTok ad-management app that would insistently prompt for the user’s Facebook account data and, if user provided it, would steal the account.
+Apps from alternative stores Finally, many such apps remain available from alternative stores even after Google removes them from its store.
+Which is no surprise; even Google, with vastly more resources than the average company, can’t always promptly moderate the great volume of existing apps.
+Yet we decided to mention this aspect here, as it provides clear evidence that alternative stores are unsafe to use.
+If still intending to use them for whatsoever reason, at least install a reliable mobile antivirus to protect you against dangerous apps.
+That said, as we see from this story, as well as many other episodes of malware getting into the official Google app store , even if you download your apps only from Google Play, you are still better off with an antivirus on your smartphone.
+
+

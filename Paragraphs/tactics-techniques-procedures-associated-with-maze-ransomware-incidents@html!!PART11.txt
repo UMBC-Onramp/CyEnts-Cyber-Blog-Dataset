@@ -1,0 +1,12 @@
+
+An actor logged into an internet-facing system via RDP.
+The account used to grant initial access was a generic support account.
+It is unclear how the actor obtained the account's password.
+An actor exploited a misconfiguration on an Internet-facing system.
+This access enabled the actor to deploy tools to pivot into the internal network.
+An actor logged into a Citrix web portal account with a weak password.
+This authenticated access enabled the actor to launch a Meterpreter payload on an internal system.
+Establish Foothold & Maintain Presence
+The use of legitimate credentials and broad distribution of BEACON across victim environments appear to be consistent approaches used by actors to establish their foothold in victim networks and to maintain presence as they look to meet their ultimate objective of deploying MAZE ransomware.
+Despite these commonplace behaviors, we have observed an actor create their own domain account to enable latter-stage operations.
+Across multiple incidents, threat actors deploying MAZE established a foothold in victim environments by installing BEACON payloads on many servers and workstations.

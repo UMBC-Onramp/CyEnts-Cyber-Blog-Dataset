@@ -1,0 +1,4 @@
+
+When the TGT is requested, the Domain Controller generates a session key and places it in two places: the TGT itself (which is encrypted with the krbtgt key and unreadable by the end user), and in a separate structure called the Authenticator.
+The Domain Controller encrypts the Authenticator with the user's personal Kerberos key.
+When Windows receives the AS-REP packet back from the domain controller, it caches the TGT ticket data itself into memory.

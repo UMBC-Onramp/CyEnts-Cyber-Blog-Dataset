@@ -1,0 +1,10 @@
+
+Network Communication HAWKBALL is a backdoor that communicates to a single hard-coded C2 server using HTTP.
+The C2 server is obtained from the decrypted config file, as shown in Figure 5.
+The network request is formed with hard-coded values such as User-Agent.
+The malware also sets the other fields of request headers such as: Content-Length: <content_length> Cache-Control: no-cache Connection: close The malware sends an HTTP GET request to its C2 IP address using HTTP over port 443.
+Figure 8 shows the GET request sent over the network.
+Figure 8:
+Network request The network request is formed with four parameters in the format shown in Figure 9.
+Format = \"?t=%d&&s=%d&&p=%s&&k=%d\" Figure 9: GET request parameters formation Table 1 shows the GET request parameters.
+Value Information T Initially set to 0 S Initially set to 0 P String from decrypted config at 0x68

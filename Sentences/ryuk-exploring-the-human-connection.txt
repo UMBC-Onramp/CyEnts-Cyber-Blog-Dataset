@@ -1,0 +1,235 @@
+By John Fokker and Alexandre Mundo on Feb 19, 2019
+
+In collaboration with Bill Siegel and Alex Holdtman from Coveware.
+
+At the beginning of 2019, McAfee ATR published an article describing how the hasty attribution of Ryuk ransomware to North Korea was missing the point.
+
+Since then, collective industry peers discovered additional technical details on Ryuk’s inner workings , the overlap between Ryuk and Hermes2.1, and a detailed description of how the ransomware is piggybacking the infamous and ever evolving Trickbot as a primary attack vector.
+
+In this blog post we have teamed up with Coveware to take a closer look at the adversary and victim dynamics of Ryuk Ransomware.
+
+We structured our research using the Diamond threat model and challenged our existing hypotheses with fresh insights.
+
+Introduction to The Diamond Model Within Cyber Threat intelligence research, a popular approach is to model the characteristics of an attack using The Diamond Model of Intrusion Analysis .
+
+This model relates four basic elements of an intrusion: adversary, capabilities, infrastructure and victim.
+
+For the Ryuk case described above the model can be applied as follows: “An Adversary , cyber-criminal(s), have a capability (Ryuk Ransomware) that is being spread via a TrickBot infection Infrastructure targeting specific victims .
+
+Diamond model of Intrusion Analysis The Diamond Model offers a holistic view of an intrusion that is a helpful guideline to shape the direction of intelligence research.
+
+By searching for relationships between two elements one can gather new evidence.
+
+For instance, by analyzing and reverse engineering a piece of malware one might uncover that a certain server is being used for command and control infrastructure, thus linking capability with infrastructure (as shown below).
+
+Linking Infrastructure and Capability Alternatively, one might search underground forums to find information on adversaries who sell certain pieces of malware, thus linking an adversary with a capability.
+
+For instance, finding the underground forum advertisement of Hermes2.1.
+
+Linking Adversary and Capability Analysis of Competing Hypotheses In our earlier publication we explained The Analysis of Competing Hypotheses (ACH), the process of challenging formed hypotheses with research findings.
+
+By following this method, we concluded that the strongest hypothesis is not the one with the most verifying evidence, but the one with the least falsifying evidence.
+
+In order to construct a hypothesis with the least falsifying evidence we welcome research published by our industry peers to dissimilate insights that challenge our hypotheses.
+
+When we combined all the evidence with links on the diamond model, we discovered that one essential link wasn’t made, the link between adversary and victim.
+
+Seeking New Insights Between Adversary and Victim Despite published research, the direct link between adversary and victim remained relatively unexplored.
+
+Unlike most cybercrime, ransomware and digital extortion frequently creates a strong social connection between adversary and victim.
+
+The adversary has certain needs and views the victim as the means to fulfill those needs.
+
+The connection between an adversary and victim often generates valuable insights, especially in cases where (extensive) negotiation take place.
+
+Luckily, one of our NoMoreRansom partners, Coveware, is specialized in ransomware negotiations and has gained valuable insights help us link adversary and victim.
+
+The social connection between Adversary and Victim Ransom Amounts and Negotiations By aggregating ransomware negotiation and payment data, Coveware is able to identify strain-specific ransomware trends.
+
+With regards to Ryuk, it should be noted that ransom amounts average more than 10x the average, making it the costliest type of ransomware.
+
+Coveware also observed that some Ryuk ransoms were highly negotiable, while others were not.
+
+The bar-belled negotiation results generated an average ransom payment of $71k, a 60% discount from an average opening ask of $145k.
+
+The bar-belled negotiation outcomes meant that some victims were stonewalled.
+
+These victims either lost their data or took on staggering financial risk to pay the ransom.
+
+The outcomes also imply that in certain cases the adversary would rather receive infrequent large windfalls (often in excess of 100BTC), while in other cases the adversary was keen to monetize every attack and accept lower amounts to ensure payment.
+
+This difference in modus operandi suggests that more than one cyber-criminal group is operating Ryuk ransomware.
+
+Ransom Note and Negotiation Similarities and Differences Similarities between Bitpaymer and Ryuk ransom notes have been observed before.
+
+While it is not uncommon for ransom notes to share similar language, sequences of phrases tend to remain within the same ransomware family.
+
+Slight copy+paste modifications are made to the ransom text as a variant is passed along to different groups, but large alterations are rarely made.
+
+Below is a comparison of a Bitpaymer initial email (left) and a standard Ryuk initial email (right).
+
+A comparison of a Bitpaymer initial email (left) and a standard Ryuk initial email (right)
+
+The shared language implies that text once unique to a Bitpaymer campaign was borrowed for a Ryuk campaign, possibly by an operator running simultaneous ransom campaigns of both Bitpaymer and Ryuk or the imitation can be considered as the sincerest form of flattery.
+
+Different Initial Email Response May Be Different Adversaries?
+
+A more dramatic scripted communication difference has been observed in the initial email response from Ryuk adversaries.
+
+The initial email response is typically identical within ransomware families belonging to the same campaign.
+
+When significant differences in length, language, and initial ransom amount appear in the initial email response we are comfortable assuming they belong to unique groups with unique modus operandi.
+
+This would mean that Ryuk in being spread by more than one actor group.
+
+Below are two such Ryuk examples: Post Payment Bitcoin Activity A final indicator that multiple groups are running simultaneous Ryuk campaigns can be observed in the activity of bitcoin after it hits a ransom address.
+
+Surprisingly, despite the differences between negotiation outcome and initial communications, Coveware observed little difference between the BTC wallets (blacked out to protect victims) associated with the above cases.
+
+Initial comparison showed no meaningful discrepancy in difference between the time of a ransom payment and the time of a corresponding withdraw.
+
+Additionally, the distribution of funds upon withdrawal was consistently split between two addresses.
+
+Coveware will continue to monitor the funds associated with campaigns for meaningful indicators.
+
+Ryuk Negotiating Profiles With few exceptions, the rest of the email replies during a Ryuk extortion negotiation are extremely short and blunt.
+
+Typical replies and retorts are generally less than 10 written words and often just a single number if the ransom amount is the point of discussion.
+
+This correspondence is unique to Ryuk.
+
+One reply did contain quite a remarkable expression; “ à la guerre comme à la guerre,” to contextualize the methods and reasons for the cyber criminals’ attacks on western companies.
+
+The French expression originates from the seventeenth century and literally translates to “in war as in war” and loosely translates to: “In Harsh times one has to do with what’s available”.
+
+The striking thing about this expression is that is prominently featured in volume 30 of the collected works of the Soviet Revolutionary leader Vladimir Lenin .
+
+Lenin uses the expression to describe the struggle of his people during the war against western capitalism.
+
+This concept of “The capitalistic West versus the Poor east” is actually something McAfee ATR sees quite often expressed by cyber criminals from some of the Post-Soviet republics.
+
+This expression may be a clear indicator of the origin and cultural view of the criminals behind Ryuk.
+
+Ryuk poses existential risk to certain industries Even though the average ransom discounts of Ryuk are large (~60%), the absolute level of the ransom is extreme.
+
+Accordingly, we have seen evidence that links ransom demands to the size of the network footprint of the victim company.
+
+However, this doesn’t mean that the ransom demand correlates to the victims actual operational and financial size.
+
+Companies in the IT Hosting and the Freight and Logistics industries have been particularly susceptible to this discrepancy.
+
+Coveware has assisted at least 3 companies that have had to unwind their business when an affordable ransom amount, could not be reached.
+
+Typically, downtime costs are 10x the ransom amount, but in these industries downtime costs can be particularly extreme.
+
+IT Hosting companies are of note as the size and number of their servers can make them appear like a large organization.
+
+Unfortunately, the business of hosting involves high fixed costs, low operating margins, and zero tolerance of downtime by end clients.
+
+  Hosting companies that get attacked typically have a few hours to restore service before their clients drop them for alternatives.
+
+Moreover, these companies suffer irreparable harm to their reputations, and may trigger SLA breaches that leave them exposed to liability.
+
+  
+
+The inability to pay a six-figure ransom has caused multiple hosting companies to shut down.
+
+Freight and Logistics firms are also acutely exposed.
+
+These firms also present like larger firms given the volume of data they move and their network footprint.
+
+Additionally, attacks against Freight and Logistics firms can cause immediate supply chain issues for the victims’ end clients, who are subsequently forced to route through other service providers.
+
+Similar to IT Hosting, Freight and Logistics firms have low operating margins and end clients with little tolerance for service interruptions.
+
+The inability to pay or negotiate a large ransom has materially impacted several firms in this industry.
+
+Ryuk Decryptor findings and issues When victims do pay the exorbitant ransom amount, the criminals will provide a decryptor to unlock a their files.
+
+This decryptor is actually framework that needs to be loaded with a victim’s private RSA key, provided by the criminals, in order to decrypt.
+
+Ensuring that the provided decryptor will only work for this specific victim.
+
+This setup allows the criminals to quickly load a victim’s key in the framework and offer a custom decryptor with minimal code change while the underlaying framework remains the same.
+
+From Coveware’s experience we have learned that the decryption process is quite cumbersome and full of possible fatal errors.
+
+Luckily Coveware was able to share the Ryuk decryptor with McAfee ATR in order to take a closer look at the issues and level of sophistication of the decryptor.
+
+Once launched the first thing the decryptor does is to search the HKEY_CURRENT_USER Hive for a value pair named “svchos” in the path “SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run” and delete the specific entry.
+
+This removes the persistence of the malware.
+
+Afterwards it will reboot the system and remove any remaining Ryuk malware still receding on the system.
+
+Deleting the “svchos” value from the registry.
+
+Once rebooted the user needs to run the tool again and the decryptor will provide two options to decrypt.
+
+Decryption per file Automatic decryption The main interface of the Ryuk decryptor with the different menu options.
+
+HERMES File Marker During the decryption process we have found that the decryptor searches for the known file marker string HERMES which is located in the encrypted file.
+
+The HERMES marker clearly visible within the file The fact that Ryuk ransomware adds HERMES filemarker string was already known, but discovering this specific check routine in the decryptor strengthens the hypotheses that Ryuk is a slightly modified version of Hermes2.1 ransomware kit that is sold online even more.
+
+Decryptor Issues While examining the decryptor we were astonished by the lack of sophistication and the amount of errors that resided within the code.
+
+Some of the most prominent issues were: If there is a space in the Windows file path the decryptor will fail the decryption process.
+
+If there is a quotation mark (“) in the file path the decryptor will report an error that it cannot find the specific file.
+
+The decryptor uses the “GetVersionExW” function to determine the windows version, from Windows 8.1.
+
+the value returned by this API has changed and the decryptor isn’t designed to handle this value.
+
+The decryptor doesn’t remove the .RYUK extension and replace it with the original extension.
+
+So, there is no way the name of the file can give an indication towards the type of the file, something that can be extremely labor intensive for enterprise victims.
+
+When choosing the manual option in the decryptor, the user has to supply a path of the specific file or choose “0” to finish.
+
+However, choosing a “0” will put the decryptor into an infinite loop.
+
+Looking at the decryptor, it is very worrisome to see that the criminals behind Ryuk can get away with such bad programming.
+
+It shows a clear lack of empathy towards their victims and the absence of solid coding skills.
+
+Victims who do pay the exorbitant ransom demand are far from in the clear.
+
+The decryptor offered by the criminals has a very high risk of malfunctioning, resulting in permanent damage to their precious files.
+
+Victims should always make an exact copy of the encrypted hard disk before trying to use the decryptor.
+
+Call to action in piecing the different parts together By combining all the fresh insights with the information that was already discovered by ourselves and industry peers we can start defining our leading hypotheses around Ryuk.
+
+Based on this hypothesis, we will actively look for falsifying evidence.
+
+We encourage the security community to participate in this process.
+
+We realize that only by collaboration can we piece the different parts of the Ryuk puzzle together.
+
+By now it should be without question that involvement of the DPRK is the least likely hypothesis.
+
+Our leading Hypothesis on Ryuk until proven otherwise is; Ryuk is a direct descendant from Hermes2.1 with slight modifications, based on the code overlap in the ransomware as well as the decryptor.
+
+Ryuk is not designed to be used in a largescale corporate environment, based on all the scalability issues in the decryptor.
+
+At this moment there are several actors or actor-groups spreading Ryuk, based on the extortion modus operandi and different communications with the victims.
+
+The actors or actor-groups behind Ryuk have a relationship with one of the Post-Soviet republics, based on the Russian found in one of the encrypted files and the cultural references observed in the negotiations.
+
+The actors behind Ryuk most likely have an affiliation or relationship with the actors behind Trickbot and, based on their TTP, are better skilled at exploitation and lateral movement than pure Ransomware development.
+
+Conclusion In the last seven months Ryuk has proven to be a highly profitable form of ransomware, despite the poor programming behind it and its decryptor.
+
+The criminals have proven to be ruthless and several of their victims were forced to wind down their businesses after they were unable to afford the exorbitant ransom.
+
+When a company does give in to the high demands it is extra painful to see a situation occur where they are permanently unable to recover their files due to the faulty decryptor.
+
+A solid data loss prevention strategy still remains the best advice against all forms of ransomware, for general prevention advice please visit NoMoreRansom .
+
+Always seek professional assistance when you are faced with a targeted ransomware attack such as Ryuk.
+
+
+
+

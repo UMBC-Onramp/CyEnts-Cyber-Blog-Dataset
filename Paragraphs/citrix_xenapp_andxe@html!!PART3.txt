@@ -1,0 +1,5 @@
+
+This white paper covers risks and official Citrix hardening guidance for the following topics: Environment and Application Jailbreaking Network Boundary Jumping Authentication Weaknesses Authorization Weaknesses Inconsistent Defensive Measures Non-configured or Misconfigured Logging and Alerting The white paper is available here.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

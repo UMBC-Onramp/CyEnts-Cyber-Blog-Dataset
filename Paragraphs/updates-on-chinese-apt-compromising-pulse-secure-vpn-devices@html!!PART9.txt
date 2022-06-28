@@ -1,0 +1,10 @@
+
+This allowed the actor to maintain access to systems with short-cycle credential rotation policies and provided a sufficient level of access to operate freely within their target environment.
+The actors also maintained their foothold into the targeted environments exclusively through Pulse Secure webshells and malware without relying on backdoors deployed on internal Windows or Linux endpoints.
+Escalate Privileges Mandiant observed the actors use three credential harvesting techniques on Windows systems: Targeting of clear text passwords and hashes from memory using the credential harvesting tool Mimikatz.
+Instead of being copied locally and executed on the target system, Mandiant saw evidence of the Mimikatz binary on the source system of an RDP session (i.e. the threat actor’s system that was connected to the VPN) through an RDP mapped drive.
+Copying and exfiltration of the SAM, SECURITY, and SYSTEM registry hives which contained cached NTLM hashes for Local and Domain accounts.
+Leveraging the Windows Task Manager process to target the Local Security Authority Subsystem Service (LSASS) process memory for NTLM hashes.
+In addition to these privilege escalation techniques, the actors specifically targeted separate privileged accounts belonging to individuals whose unprivileged accounts were previously compromised (likely through the Pulse Secure credential harvesting malware families).
+It is unclear how the account associations were made by the actor.
+Internal Reconnaissance Mandiant found evidence that the actors renamed their own workstations that they connected to the VPN of victim networks to mimic the naming convention of their target environment.

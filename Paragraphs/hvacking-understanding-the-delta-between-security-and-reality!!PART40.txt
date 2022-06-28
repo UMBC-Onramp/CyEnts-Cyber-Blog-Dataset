@@ -1,0 +1,4 @@
+
+Immediate values in ARM are limited to 12 bits; eight of these bits are for the value itself and the other 4 are used for bit shifting.
+This means that an immediate value can only be one byte long (two hex digits) but that byte can be zero padded in any fashion you like.
+Therefore, loading a full memory address of 4 bytes using immediate values would take all 4 instructions, whether using MOV or ADD.

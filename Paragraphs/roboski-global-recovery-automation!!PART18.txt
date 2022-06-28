@@ -1,0 +1,4 @@
+
+The license codes observed within the configuration of multiple payloads for packaging were: License code A830299B3222E31F1F2765E3AC4D37FD was observed four times and associated with C2 addresses 184.140.53.148:1011 and 79.134.225.14:1011.
+License code 8896DBA4C4FC821D8BAAC764BC9822E3 appeared in eight instances, associated with C2 addresses 91.241.19.107:1313 and 176.111.174.14:2804.
+In addition, the configuration of Remcos RAT contains the field ‘server_password,’ with both of these license codes using the password ‘Yes’— although it is possibly defined as the default password.

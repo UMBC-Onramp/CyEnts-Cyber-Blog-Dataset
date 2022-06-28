@@ -1,0 +1,4 @@
+Written by Will Gibb & Devon Kerr
+In our blog post \"Investigating with Indicators of Compromise (IOCs) - Part I ,\" we presented a scenario involving the \"Acme Widgets Co.,\" a company investigating an intrusion, and its incident responder, John.
+John's next objective is to examine the system \"ACMWH-KIOSK\" for evidence of attacker activity.
+Using the IOCs containing the tactics, techniques and procedures (TTPs) he developed during the analysis of \"ACM-BOBBO,\" John identifies the following IOC hits: Table 1: IOC hit summary After reviewing IOC hits in Redline™ , John performs Live Response and put together the following timeline of suspicious activity on \"ACMWH-KIOSK\".

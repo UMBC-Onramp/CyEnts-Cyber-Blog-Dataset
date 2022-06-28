@@ -1,0 +1,6 @@
+
+This script obfuscates the call to JSON.stringify by storing pieces of the exploit in the variables shown in Figure 6.
+Figure 6: Obfuscation using variables Using these variables, the JavaScript calls JSON.stringify with malformed parameters in order to trigger CVE-2015-2419 which in turn will cause native code execution, as shown in Figure 7.
+Figure 7:
+Call to JSON.Stringify JavaScript 3 The third JavaScript has code that adds additional JavaScript, similar to the second JavaScript.
+This additional JavaScript adds a flash object that exploits CVE-2018-4878 , as shown in Figure 8.

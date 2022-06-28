@@ -1,0 +1,10 @@
+
+Once the macro is executed, it will reach out to the URL shortener Bit.ly to download the next phase of the dropper.
+The address used is: hXXp://www[.]bitly[.]com/awnycnxbcxncbrpopor/ Phase 2 The call out to Bitly will be redirected to a location on MediaFire – a file hosting site (hXXp://download2261[.]mediafire[.]com/6lcqxbws032g/wctsdmx4dsh95xs/19.htm).
+As possibly inferred, this was a campaign and not simply directed at one recipient.
+There were multiple files made available over several days, as shown below in Figure 4.
+Each of the files is very similar (with minor tweaks) to the download location of the next step.
+Figure 5, below, shows 19.htm as it appears if downloaded directly.
+If we arrange the file into a more readable format, we get a better sense of what it’s trying to do.
+As seen in Figure 6 , the file attempts to taskkill several applications and services followed by adding a scheduled task into the Windows Task scheduler.
+The script then attempts to download and execute another file from MediaFire - hXXp://www[.]mediafire[.]com/file/otza6n31talvvle/19.dll.

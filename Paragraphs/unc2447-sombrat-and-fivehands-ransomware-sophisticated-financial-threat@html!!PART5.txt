@@ -1,0 +1,7 @@
+
+This vulnerability only impacted the SMA 100 series and was patched by SonicWall in February 2021.
+For more information on this vulnerability, please refer to SonicWall PSIRT advisory SNWLID-2021-0001 .
+WARPRISM WARPRISM is a PowerShell dropper that has been observed by Mandiant delivering SUNCRYPT, BEACON, and MIMIKATZ.
+WARPRISM is used to evade endpoint detection and will load its payload directly into memory.
+WARPRISM may be used by multiple groups.
+FOXGRABBER FOXGRABBER is a command line utility used to harvest FireFox credential files from remote systems.

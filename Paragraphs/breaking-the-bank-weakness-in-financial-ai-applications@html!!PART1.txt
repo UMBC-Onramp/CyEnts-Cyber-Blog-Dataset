@@ -1,0 +1,6 @@
+Currently, threat actors possess limited access to the technology required to conduct disruptive operations against financial artificial intelligence (AI) systems and the risk of this targeting type remains low.
+However, there is a high risk of threat actors leveraging AI as part of disinformation campaigns to cause financial panic.
+As AI financial tools become more commonplace, adversarial methods to exploit these tools will also become more available, and operations targeting the financial industry will be increasingly likely in the future.
+AI Compounds Both Efficiency and Risk Financial entities increasingly rely on AI-enabled applications to streamline daily operations, assess client risk, and detect insider trading.
+However, researchers have demonstrated how exploiting vulnerabilities in certain AI models can adversely affect the final performance of a system.
+Cyber threat actors can potentially leverage these weaknesses for financial disruption or economic gain in the future.

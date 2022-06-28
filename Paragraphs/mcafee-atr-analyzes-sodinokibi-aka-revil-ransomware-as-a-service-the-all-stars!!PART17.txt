@@ -1,0 +1,4 @@
+
+Around February 2019, there was a noticeable change in some of GandCrab’s infections behavior.
+Managed Service Providers (MSP) were now targeted through vulnerable systems and their customers got infected with GandCrab on a large scale, something we had not seen performed before by any of the affiliates.
+Interestingly, shortly after the retirement of GandCrab, the MSP modus operandi was quickly adopted by Sodinokibi, another indication that a former GandCrab affiliate had moved to Sodinokibi.

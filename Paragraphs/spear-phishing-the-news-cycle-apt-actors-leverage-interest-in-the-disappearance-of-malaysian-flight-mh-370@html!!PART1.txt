@@ -1,0 +1,5 @@
+While many advanced persistent threat (APT) groups have increasingly embraced strategic Web compromise as a malware delivery vector, groups also continue to rely on spear-phishing emails that leverage popular news stories.
+The recent tragic disappearance of flight MH 370 is no exception.
+This post will examine multiple instances from different threat groups, all using spear-phishing messages and leveraging the disappearance of Flight 370 as a lure to convince the target to open a malicious attachment.
+“Admin@338” Targets an APAC Government and U.S. Think Tank
+The first spear phish from group “Admin@338” was sent to a foreign government in the Asian Pacific region on March 10, 2014 – just two days after the flight disappeared.

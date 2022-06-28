@@ -1,0 +1,7 @@
+
+Once infected, PYSA uses various tools, such as ProcDump, Mimikatz, and Advanced IP Scanner, to enable lateral movement and information reconnaissance.
+PYSA is double-extortion ransomware, as it steals information from the compromised machine andencrypts
+ files, demanding money from the victim to decrypt their files and not release the stolen information to the public.
+The Grief ransomware hit a school district in Mississippi in May 2021.
+According to one public report, Grief’s leak site stated that ransomware software stole 10GB worth of data, including internal documents and personal information.
+Another school district in Washington state and schools in Virginia was also reportedly attacked by Grief.

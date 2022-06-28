@@ -1,0 +1,4 @@
+
+It is reasonable to suspect that a significant portion of the last two years’ worth of newly discovered issues are in code that has been carried into the latest versions.
+Those flaws contrast with the most recent vulnerability, CVE-2018-4878, which bypasses and abuses protections that were likely put into place after Adobe’s shift in strategy.
+The code that CVE-2018-4878 abuses was intended to make exploitation of byte arrays “more expensive.”

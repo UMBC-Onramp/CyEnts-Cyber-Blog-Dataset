@@ -1,0 +1,5 @@
+
+config1 config2 Host <redacted> HostName <redacted>
+Port 900 User <redacted> IdentityFile <redacted> KbdInteractiveAuthentication no PasswordAuthentication
+no NoHostAuthenticationForLocalhost yes StrictHostKeyChecking no UserKnownHostsFile /dev/null RemoteForward 33002 127.0.0.1:22 Host <redacted> HostName <redacted> Port 443 User <redacted> IdentityFile <redacted> KbdInteractiveAuthentication no PasswordAuthentication
+no NoHostAuthenticationForLocalhost yes StrictHostKeyChecking no UserKnownHostsFile /dev/null ServerAliveInterval 30 ServerAliveCountMax 3 RemoteForward 2224 <redacted>:22 Figure 3: SSH config files used by UNC1945 at different incidents As part of this multi-stage operation, UNC1945 dropped a custom QEMU Virtual Machine (VM) on multiple hosts, which was executed inside of any Linux system by launching a ‘start.sh’ script.

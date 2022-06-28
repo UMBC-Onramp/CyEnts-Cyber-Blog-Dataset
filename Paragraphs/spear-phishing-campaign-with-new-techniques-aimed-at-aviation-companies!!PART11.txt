@@ -1,0 +1,7 @@
+
+Next, it allocates space for the payload using VirtualAllocEx, with size set to the payload length and page protection to PAGE_EXECUTE_READWRITE (0x40).
+It then injects the payload into the allocated space using WriteProcessMemory.
+The thread context is changed to point to the payload by calling SetThreadContext and the thread is finally resumed via ResumeThread to execute the payload AsyncRAT.
+After successfully injecting and executing the AsyncRAT payload, the loader exits.
+AsyncRAT AsyncRAT then takes command and control of the infected machine via a C2 server.
+As mentioned in the introduction, the AsyncRAT is an open-source Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection.

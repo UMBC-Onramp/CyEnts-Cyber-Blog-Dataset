@@ -1,0 +1,6 @@
+
+The grammar and word usage was near perfect—not what we commonly observe—and the names in the email were proof of a well-prepared campaign.
+More than 200 cases in the Netherlands alone were filed with regards to these infections.
+With attacks growing in number, the Dutch High Tech Crime Unit began an investigation.
+The unit approached McAfee’s Advanced Threat Research team to assist in identifying samples and answering questions.
+Following our research, we were kept updated and were informed that in the early morning of December 14 operation “Bakovia” started.

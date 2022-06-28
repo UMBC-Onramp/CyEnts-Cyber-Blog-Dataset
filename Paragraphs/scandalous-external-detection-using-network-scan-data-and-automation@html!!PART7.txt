@@ -1,0 +1,7 @@
+
+Figure 2: Timeline of QUADAGENT C2 servers discovered throughout 2018 APT33 RULER.HOMEPAGE, POSHC2, and POWERTON
+A month after that aforementioned intrusion, Managed Defense discovered a threat actor using RULER.HOMEPAGE to download and execute POSHC2.
+All the RULER.HOMEPAGE servers were previously identified due to our efforts.
+Our team developed a profile for POSHC2 and began tracking their deployment in the wild.
+The threat actor pivoted to a novel PowerShell backdoor, POWERTON.
+Our team repeated our workflow and began illuminating those C2 servers as well.

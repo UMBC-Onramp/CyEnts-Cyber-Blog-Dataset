@@ -1,0 +1,9 @@
+
+For mapping their techniques and associated campaigns, we use the MITRE Adversarial Tactics, Techniques, and Common Knowledge model (ATT&CK).
+The matrix covers hundreds of techniques, and can be applied for different purposes.
+In this case, we will focus on the risk versus mapping the defensive architecture.
+In Q1 of 2018, we mapped the targeted attacks discovered by ourselves and our peers in the industry.
+The following example comes from one adversary we tracked, showing the techniques they used: With MITRE’s Navigator tool you can select an actor or malware family.
+After making the selection, the boxes in the matrix show which techniques the actor or malware has used.
+From these techniques we can learn how our environments protect against these techniques and where we have gaps.
+The goal is not to create coverage or signatures for each technique; the matrix helps organizations understand how attackers behave.

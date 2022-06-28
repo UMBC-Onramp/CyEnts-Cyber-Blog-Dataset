@@ -1,0 +1,5 @@
+
+Each block is cryptographically hashed, and must include the hash of the previous block, thus forming the \"chain\" in blockchain.
+In order for miners to compute the complex hashing of each valid block, they must use a machine's computational resources.
+The more blocks that are mined, the more resource-intensive solving the hash becomes.
+To overcome this, and accelerate the mining process, many miners will join collections of computers called \"pools\" that work together to calculate the block hashes.

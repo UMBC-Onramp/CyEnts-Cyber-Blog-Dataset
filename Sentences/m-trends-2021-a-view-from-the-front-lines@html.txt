@@ -1,0 +1,53 @@
+We are thrilled to launch M-Trends 2021 , the 12 th edition of our annual FireEye Mandiant publication.
+
+The past year has been unique, as we witnessed an unprecedented combination of global events.
+
+Business operations shifted in response to the worldwide pandemic and threat actors continued to escalate the sophistication and aggressiveness of their attacks, while in parallel leveraged unexpected global events to their advantage.
+
+We discuss all of this and much more in the full report, which is available for download today .
+
+But first, here is a sneak preview of the most popular M-Trends metric where we answer the critical question: Are organizations getting better at detecting attacks?
+
+In short, yes!
+
+Back in 2011, we reported a 416-day global median dwell time, indicating that attackers were operating undetected on a system or network for over a year on average.
+
+This time, from Oct. 1, 2019 through Sept. 30, 2020, the median dwell time has decreased to only 24 days.
+
+This means—for the first time in M-Trends history—the median dwell time has dropped to under one month.
+
+Although this drop in dwell time is promising, it is critical for organizations to remember that cyber adversaries typically only need a few days to achieve their objective, such as identifying and stealing the crown jewels of a victim organization or launching a crippling ransomware attack.
+
+Organizations across the globe must remain vigilant, to prepare for the next incident.
+
+There is much more to unpack in the M-Trends 2021 report.
+
+Here is a quick rundown of what to expect: By the Numbers : A large and diverse set of metrics including attacker dwell time, detection by source, industry targeting, growing threat techniques, sophisticated malware families, and more.
+
+Ransomware : Front-line stories on how this harmful threat is evolving, challenges with recovery, and best practice hardening strategies to effectively combat this threat.
+
+Newly Named Threat Groups :
+
+More on FIN11, a financially motivated threat group that we promoted in 2020, which has been active since at least 2016 and is most recently known for operations involving ransomware and extortion.
+
+Pandemic-Related Threats : Breakdown of countless espionage campaigns targeting ground-breaking research in the race to learn more about COVID-19.
+
+UNC2452/SUNBURST :
+
+UNC2452’s headline-making compromise of environments via an implant in the SolarWinds Orion platform, mapped to the attack lifecycle framework with details at every stage.
+
+Case Studies : Mandiant engagements involving the rise of insider threats and how to be more prepared, plus advanced red teaming tactics that enabled access to executive emails without any exploits.
+
+For over a decade, the mission of M-Trends has always been the same: to arm security professionals with insights on the latest attacker activity as seen directly on the front lines, backed by actionable learnings to improve organizations’ security postures within an evolving threat landscape.
+
+Download the M-Trends 2021 report today, and then for more information, check out the FireEye Mandiant Virtual Summit .
+
+Starting today and running through April 15, the event includes a variety of sessions, with three related to M-Trends : one that provides an overview of the report and highlights key topics , another focused on our “By the Numbers” chapter coupled with mitigation solutions related to these metrics, and one covering the report through a lens from the EMEA region .
+
+Register now !
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

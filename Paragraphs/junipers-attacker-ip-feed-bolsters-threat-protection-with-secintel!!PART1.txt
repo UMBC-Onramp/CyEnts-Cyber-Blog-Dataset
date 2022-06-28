@@ -1,0 +1,4 @@
+Juniper Threat Labs (JTL) has a network of sensors throughout the world that we use to monitor cyber security threats.
+These threats can range from Brute Force attacks against logins, such as SSH, FTP, telnet and RDP, to more sophisticated attacks against SMB, Citrix and databases.
+  
+The JTL sensors are designed to mimic the majority of common operating systems currently on the internet in both up-to-date patched and unpatched systems.

@@ -1,0 +1,13 @@
+
+ReZer0 loader -> Agent Tesla payload) and report configuration at each layer.
+By adopting the ACCE workflow, reverse engineers can develop modules based upon analysis of a few samples, and then leverage that module to extract results from thousands of other related malware variants.
+The primary difference between the newly analyzed RoboSki packer and previous RoboSki packers is the way the ReZer0 loader is encrypted.
+Previously, written code for parsing the PNG pixels of the image resource was used in conjunction with new code for obtaining and using the resource name and initial XOR key using construct, regex patterns and an internal library.
+Figure 11:
+Construct Figure 12: Construct PAYLOAD_SPEC The referenced resource is acquired, PNG pixels are parsed and the resulting data is parsed using the construct PAYLOAD_SPEC.
+Subsequently, the ReZer0 loader is decrypted and dispatched for further processing.
+The configuration output for the RoboSki packer (MD5: 9b792353406c1c8bf440fa5417aee5b2), which contained the LokiBot sample with C2 domains previously observed in other campaigns.
+Figure 13:
+Configuration output Threat Hunting Using ACCE Output After adding a parser module to automatically extract the RoboSki component and ReZer0 loader from the new RoboSki packer variant, the researchers used VirusTotal to find additional samples using the new RoboSki packer variant.
+As a result, 55 samples were selected to test against the new parser module.
+Two variations in the initial RoboSki packer were observed:

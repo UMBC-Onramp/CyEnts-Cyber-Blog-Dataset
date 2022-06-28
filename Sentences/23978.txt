@@ -1,0 +1,55 @@
+Hackers belonging to the LAPSUS$ cybercrime group have published screenshots, allegedly taken from inside Okta’s information systems.
+
+If the claims are true, they have access not only to the company’s website, but also to a number of other internal systems, including quite critical ones.
+
+LAPSUS$ claims that they did not steal any data from the company itself, and that their targets were mainly Okta’s customers.
+
+Judging by the dates on the screenshots, the attackers had access to the systems as early as January 2022.
+
+What is Okta and why could the breach be so dangerous?
+
+Okta develops and maintains identity and access management systems.
+
+In particular, they provide a single sign-on solution.
+
+A huge number of large companies employ Okta’s solutions.
+
+Kaspersky Lab experts believe that the hacker’s access to Okta’s systems can explain a number of the rather high-profile data leaks from large companies, for which hackers from LAPSUS$ have already claimed responsibility.
+
+How cybercriminals gain access to Okta’s systems?
+
+At the moment there is no conclusive evidence that the hackers really gained access.
+
+According to an Okta’s official statement , its specialists are currently conducting an investigation and the company promises to share details as soon as the investigation is completed.
+
+It is possible that the published screenshots are related to the January incident, when an unknown actor tried to compromise the account of a technical support engineer working for a third-party subcontractor.
+
+Updated on March 23, 2022: LAPSUS$ has published their reply to Okta’s official statement in which they accuse the company in attempts to downplay the impact of the breach.
+
+Who are the LAPSUS$ group and what do we know about them?
+
+LAPSUS$ gained fame in 2020 when they compromised the Brazilian Ministry of Health’s systems.
+
+Presumably, this is a Latin American hacker group that steals information from large companies for ransom.
+
+If the victims refuse to pay, the hackers publish the stolen information on the Internet.
+
+Unlike many other ransomware groups, LAPSUS$ does not encrypt the data of hacked organizations, but simply threatens to leak the data in case of non-payment of the ransom.
+
+Notable victims of LAPSUS$ include Nvidia, Samsung and Ubisoft.
+
+In addition, they recently released 37 GB of code believed to be related to internal Microsoft projects.
+
+How to stay safe?
+
+At the moment it is impossible to say with absolute certainty that the incident really happened.
+
+The publication of screenshots in itself is a rather strange move that may be aimed at self-promotion of the hackers, an attack on Okta’s reputation, or an attempt to hide the real method by which LAPSUS$ gained access to one of Okta’s clients.
+
+That said, to play it safe our experts recommend Okta’s clients to employ the following protective measures: Enforce especially stringent monitoring of network activity and in particular of any activity related to authentication in internal systems; Provide staff with an additional cybersecurity hygiene training and prepare them to be alert and report on any suspicious activity; Perform a security audit of your organization’s IT infrastructure to reveal gaps and vulnerable systems; Restrict access to remote management tools from external IP addresses; Ensure that remote control interfaces can only be accessed from a limited number of endpoints; Follow the principle of offering staff limited privileges and grant high-privileged accounts only to those who need this to fulfil their job; Use ICS network traffic monitoring, analysis and detection solutions for better protection from attacks potentially threatening technological process and main enterprise assets.
+
+Companies that do not have the internal resources to monitor suspicious activity in their IT infrastructure can employ the external experts .
+
+
+
+

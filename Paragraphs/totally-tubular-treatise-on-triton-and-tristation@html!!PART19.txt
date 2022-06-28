@@ -1,0 +1,7 @@
+
+The gaps in TriStation implementation show us why the actors encountered problems interacting with the Triconex controllers when using TRITON in the wild.
+You can see more of the Trilog and Triconex DLL files on VirusTotal.
+Item Name MD5 Description Tr1com40.dll 069247df527a96a0e048732ca57e7d3d
+Tricom Communcations DLL Data1.cab e6a3c93a6d433cbaf6f573b6c09d76c4 Parent of Tr1com40.dll Trilog v4.1.360R 13a3b83ba2c4236ca59aba679941c8a5 RAR Archive of TriLog TridCom.dll 5c2ed617fdec4779cb33c89082a43100 Trident Communications DLL
+Afterthoughts
+Seeing Triconex systems targeted with malicious intent was new to the world six months ago.

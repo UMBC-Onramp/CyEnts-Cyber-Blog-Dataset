@@ -1,0 +1,7 @@
+
+Figure 2 gives a breakdown of the types of vulnerabilities in IoT edge devices, highlighting weak points to address by building identity and integrity capabilities into edge hardware to ensure these devices can deflect attacks.
+Figure 2: Insecure protocols are the primary attack surface in IoT edge devices.
+IoT security must begin on the edge with a zero-trust model and provide a hardware root of trust as the core building block for protecting against hack and shack attacks and other threats.
+McAfee predicts an increase in compromises on identity platforms and IoT edge devices in 2019 due to the adoption of smart cities and increased ICS activity.
+
+

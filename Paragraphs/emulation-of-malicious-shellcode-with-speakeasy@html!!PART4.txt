@@ -1,0 +1,6 @@
+
+Emulation of CPU instructions allows for total instrumentation of binary code where control flow can be influenced for maximum code coverage.
+While emulating, all functionality can be monitored and logged in order to quickly extract indicators of compromise or other useful intelligence.
+Emulation provides several advantages over execution within a hypervisor sandbox.
+A key advantage is noise reduction.
+While emulating, the only activity that can be recorded is either written by the malware author, or statically compiled within the binary.

@@ -1,0 +1,9 @@
+
+Consequently, we expect that additional actors will continue to develop this capability.
+The following are some real-world examples of cryptojacking worms: In May 2017, Proofpoint reported a large campaign distributing mining malware \"Adylkuzz.\" This cryptocurrency miner was observed leveraging the EternalBlue exploit to rapidly spread itself over corporate LANs and wireless networks.
+This activity included the use of the DoublePulsar backdoor to download Adylkuzz.
+Adylkuzz infections create botnets of Windows computers that focus on mining Monero.
+Security researchers with Sensors identified a Monero miner worm, dubbed \"Rarogminer,\" in April 2018 that would copy itself to removable drives each time a user inserted a flash drive or external HDD.
+In January 2018, researchers at F5 discovered a new Monero cryptomining botnet that targets Linux machines.
+PyCryptoMiner is based on Python script and spreads via the SSH protocol.
+The bot can also use Pastebin for its command and control (C2) infrastructure.

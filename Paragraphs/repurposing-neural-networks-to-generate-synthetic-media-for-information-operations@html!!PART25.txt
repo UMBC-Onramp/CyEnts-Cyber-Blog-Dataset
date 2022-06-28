@@ -1,0 +1,7 @@
+
+Multiple\navenues of research can and should be pursued, including statistical\napproaches to detection like machine\nlearning classifiers and model\nwatermarking , as well as the signature-based identification of\nfingerprints and forensic indicators (e.g. Figure 5).
+Secondly,\nthere’s the human aspect to all of this, including the importance of\nensuring communities of researchers from different disciplines\ncoalesce around approaches to overcoming the detection challenges,\nthreat modeling how synthetic media may be deployed in future IO\ncampaigns so that any potential effects can be pre-emptively\naddressed, and encouraging commercial providers of synthetic media\ngeneration capabilities to acknowledge and account for the potential\nabuse of their services by threat actors.
+Outside of community\nefforts, there also remains the need for raising awareness and\neducating consumers of social media and other content about the risks\nof synthetic media in a responsible manner that doesn’t misrepresent\nthe threat, as well developing legal and regulatory approaches to\ndealing with information operations and synthetic media.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

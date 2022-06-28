@@ -1,0 +1,8 @@
+
+However, memcpy is a very common function, so we needed to determine where exactly this crash was coming from.
+If the destination address for the memcpy was getting corrupted, then the crash in memcpy was simply collateral damage from the buffer overflow – so what code was causing the buffer overflow to occur?
+A good place to start this analysis would be the backtrace; however, as seen above, the backtrace was corrupted from our input.
+Since this device uses an ARM processor, we could look at the LR registers for clues on what code called this memcpy.
+Here, LR was pointing to 0x401e68a8 which, when referencing the memory map of the process, falls in “main.so”.
+After calculating the offset to use for static analysis, we arrived at the code in Figure 10.
+Figure 10 The LR register was pointing to the instruction which is called after memcpy returns.

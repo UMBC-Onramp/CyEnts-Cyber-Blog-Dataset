@@ -1,0 +1,101 @@
+It’s common knowledge in the cybersecurity industry that attackers are evolving, and their attacks are becoming more sophisticated.
+
+As a result, the harm and cost to targeted victims and organizations are also steadily increasing.
+
+This situation demands a smart and innovative response from security practitioners because no organization can defend against every threat.
+
+Trying to protect against all the adversarial TTPs (tactics, techniques, and procedures) threat actors deploy would be extraordinarily costly and difficult to maintain for most enterprises.
+
+Perhaps the greatest challenge is scale.
+
+More than 370 attack techniques have been documented to date, and every quarter or so, another technique or implementation of a technique appears.
+
+Keeping track of attack techniques and launching appropriate and timely countermeasures can overwhelm most defense systems and security professionals.
+
+Narrowing down the scope and scale of potential attacks is a critical first line of defense.
+
+Fortunately, help is on the way in the form of a just-published research paper titled 2021 ATT&CK Sightings Report that addresses the question: “Which of these techniques do we need to prioritize and prepare to fight?”
+
+The Sightings Report is based on a research project run by MITRE Engenuity’s Center for Threat-Informed Defense (Center) in collaboration with Fortinet’s FortiGuard Labs and several other Center participants.
+
+The researchers analyzed more than one million attacks using the MITRE ATT&CK® framework , collected over 28 months (April 1, 2019, to July 31, 2021), to provide contextual, actionable threat intelligence to explain how attackers are conducting their nasty business.
+
+This threat intelligence report provides crucial visibility into which TTPs are being used the most by cyber adversaries.
+
+Its “high resolution” visibility helps security professionals identify those threats they are most likely to face.
+
+This enables them to quickly prioritize and fine-tune their defenses, including what security technologies to deploy and where.
+
+The research from the Sightings Report paints “a picture of common adversary behavior, including which techniques adversaries use, how their use changes over time, and how adversaries sequence techniques.
+
+Defenders can use this information to create a threat-informed defense against what they are most likely to see, not just the latest cyberthreat headlines.”
+
+The Extremely Useful Takeaway The biggest takeaway from the research data is that 90% of all attacks arise from only 15 techniques across six tactics.
+
+This intel is extremely useful as it significantly narrows down the most likely threats from the entire corpus of more than 370 possible techniques across 14 tactics.
+
+The MITRE ATT&CK framework has been the de facto standard for mapping and responding to cyberattacks of all types.
+
+Using it to analyze aggregated global threat data from various sources and then presenting according to the prevalence of potential attacks gives defenders a unique opportunity to change the economics of the attack cycle.
+
+Instead of testing for all techniques and their respective defenses—which can be very costly and time-consuming—defenders can now prioritize specific techniques and build defenses around them while focusing their red team efforts on trying new strategies for implementing those techniques.
+
+The Top Tactics A deeper look at those six tactics that account for 90% of all attacks reveals even more helpful information.
+
+Five of those tactics involve defensive evasion , which involves exploiting security gaps to prevent detection.
+
+The report’s detailed analysis of this tactic provides crucial insight into how attackers try to get around security holes, enabling defenders to identify similar weaknesses in their defenses and effectively close those gaps.
+
+It also identifies which parts of the ATT&CK matrix attackers focus on to best hide their efforts.
+
+The second most common tactic employed is privilege escalation , which makes sense given that most enterprise systems today are protected using privilege isolation.
+
+This information helps security teams assess and correct their internal functions, such as using admin user privilege levels for basic tasks like emailing and browsing.
+
+Remember that attackers will struggle to take over a system when an unprivileged user is compromised.
+
+It’s All in the Technique Many of the specific techniques identified in the report are heavily focused on “living off the land.”
+
+This means using legitimate systems, tools, or functions already present on a system to move around the device or network without attracting attention.
+
+T1053 (Schedule Task/Job) is the most common of these techniques, representing over 24% of all sightings.
+
+It is followed by Command and Script Interpreter (T1059) , representing 15.77%.
+
+These techniques have been employed across all major platforms, attacking Linux , Windows, and macOS.
+
+The other techniques combined accounted for less than 11% of all sightings.
+
+Zero-trust strategies can play a critical role in defending against these techniques.
+
+Again, quoting from the report, “Adversaries are attempting to appear as legitimate users.
+
+Therefore, creating strong baselines and restricting permissions is key to detecting and disrupting adversary behaviors.”
+
+This information gives defenders an upper hand in effectively preparing and hardening their systems since it’s clear from the global data on these TTPs that attackers are trying to appear as legitimate users.
+
+Without strong baselines of normal end-user behavior and company-approved applications and the ability to restrict access to systems and resources based on policy, detection and mitigation of threats designed to look like “normal” behavior can be nearly impossible.
+
+Fortunately, defenders aren’t left to figure out how best to defend against these threats.
+
+The report also provides deeper insight into how organizations can go about detecting and containing these threats using open-source tools and intel, as well as which techniques are generally seen together to facilitate proactive threat hunting, which is one of the most potent actions cyber defenders can take to lessen the impact of an attack.
+
+Low Cost, High Return Intelligence With this research paper, the Center has provided the cybersecurity community with valuable, up-to-date intelligence that can be widely used to prioritize defensive actions.
+
+And it provides it in a low-cost way while providing a high return.
+
+Because of the specific insight and guidance it provides, cyberdefenders worldwide can build threat-informed defenses using curated, high-fidelity data.
+
+Security is everyone’s responsibility, and if we have more secure organizations, the internet and the digital economy will be more stable and predictable.
+
+And that’s a win for everyone.
+
+Fortinet has been at the forefront of cybersecurity innovation and research for more than 20 years.
+
+We are proud to have been able to leverage this expertise in our participation in the Sightings research project with the Center.
+
+Read and learn more in the report or view the infographic .
+
+
+
+

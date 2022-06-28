@@ -1,0 +1,6 @@
+
+The best way to handle this is to write shellcode which is capable of transitioning back to 32-bit mode, execute the callback, then go back to 64-bit mode to continue execution in the wow64log DLL.
+The segment transitions themselves are rather easy at this point, we know we just need to use 0x23 or 0x33 segment selectors when jumping.
+But we also need to deal with the calling convention differences between 64-bit and 32-bit.
+Our shellcode will therefore be responsible for moving 64-bit arguments’ register/stack slots to the 32-bit arguments register/stack slots.
+Enforcing that 32-bit callbacks may only be __cdecl makes this easier as all arguments are on the stack and the shellcode has full control of stack layout and cleanup.

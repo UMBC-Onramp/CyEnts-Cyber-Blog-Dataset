@@ -1,0 +1,95 @@
+Cryptocurrency scams seem to be gaining momentum by the day.
+
+Hard on the heels of scammers tricking Discord users by offering nonexistent coins on fake exchanges , inventing stories about lucky winners on fake news sites , and simulating helicopter money , a new scheme is exploiting Lightshot’s screen-sharing tool to get money from overly curious cryptoinvestors.
+
+Convenient doesn’t mean safe
+
+Lightshot is a tool for creating, customizing, and quickly sending screenshots.
+
+It consists of an app for Windows, macOS, or Ubuntu and the prnt.sc cloud portal and lets users share screenshots quickly and easily: One click or shortcut sends an image to the cloud and returns an URL for sharing.
+
+Anyone can see published screenshots without authentication ; you don’t even need a Lightshot account.
+
+That makes the service fast and convenient but not very secure.
+
+Moreover, to view a screenshot, you don’t even need the exact link; the URLs are sequential, so if you replace a character in one of them with the next in order, for example, another image will open.
+
+The process can even be automated.
+
+A simple script for brute-forcing URLs and downloading content from them takes just a few minutes to write.
+
+Such openness is not a bug; the service warns users that every uploaded image is public .
+
+However, given that leaks of valuable information through Lightshot regularly make the news , clearly not everyone reads the fine print.
+
+How to leak data in Lightshot
+
+So what if screenshots enter the public domain?
+
+Who cares about sharing gaming records or jokes from work messages?
+
+Think creatively: Lightshot users can dox themselves in any of at least three very plausible ways.
+
+Take, for example, an employee who snaps a screenshot of an interface to get help with setting up a new program.
+
+Sounds fine.
+
+Now, what if a confidential document is open, partially hidden under the application window?
+
+Or if someone shares a hilariously stupid work e-mail with a trusted friend, just for a laugh?
+
+Or someone shows off an intimate chat but forgets to blur names and addresses?
+
+Made public in Lightshot, those screenshots could spell serious trouble.
+
+Online troublemakers hunt for revealing photos for fun; trolls can use them for harassment; and cybercriminals can use the threat of exposure to extort money from victims.
+
+A trap for busybodies At the same time, even those who keep valuable data private and always check screenshots for unwanted extras may find the service still has a few pitfalls.
+
+For example, on any given day the Lightshot portal might contain screenshots with details for accessing a cryptocurrency wallet.
+
+Sometimes, the screenshots appear to suggest the account was shared deliberately.
+
+Some display requests for help.
+
+Some are bizarre and unrelated — we even saw a suicide note.
+
+Screenshots of correspondence showing credentials for fake cryptocurrency accounts In other cases it looks like the “credentials” got on Lightshot as if by accident or carelessness.
+
+For example, we saw screenshots that appeared to be password recovery e-mails for cryptocurrency wallets.
+
+Fake password reset e-mails for equally fake cryptocurrency accounts If a user goes to the URL in the screenshot in pursuit of easy pickings, they will find themselves on a website posing as a cryptocurrency exchange.
+
+Entering the credentials gets them into a fake account that appears to hold an impressive amount of cryptocurrency, say, 0.8 BTC (more than $45,000 at the time of posting).
+
+And from inside the account, the victim can try to withdraw the funds and transfer them to their own account.
+
+In that case, the exchange asks for a small commission.
+
+It’s mere peanuts compared with the full sum, but it’s fake and will do nothing but line the scammers’ pockets.
+
+And, of course, “peanuts” is relative:
+
+A commission of 0.001–0.0015 BTC, for example, at current bitcoin rates, comes to approximately $60–$90.
+
+All in all, the scheme seems to work well, and it does have a certain elegance.
+
+At the time of posting, about 0.1 BTC (roughly $6,000) had been transferred to the “commissions” wallet.
+
+How to save your money and secure your data Convenience does not mean security or privacy — often quite the opposite.
+
+Lightshot is a prime example.
+
+Here are a few tips for working safely with screenshots: Before installing Lightshot, consider whether you really want to share screenshots by making them public; If you decide to go ahead, remember that confidential information — banking details, passwords, other personal information — is the bread and butter of cybercriminals.
+
+Use secure channels to share it, not Lightshot, or better still, don’t share it at all; If you’ve already used Lightshot and now regret sharing something, get the URL by searching your messages, go there, and click Report abuse ; or send a request to support@skillbrains.com ; Use your operating system’s built-in tools and shortcuts for creating screenshots.
+
+In Windows, use the Snipping Tool or the Print Screen button; Mac users can press Cmd-Shift-3 to save a full-screen capture or Cmd-Shift-4 to select an area to screenshot.
+
+To be clear, we do not recommend logging in to others’ accounts, even just out of curiosity.
+
+And to avoid accidentally giving your login credentials to phishers, use a reliable security solution that will alert you if you stray onto a suspicious website.
+
+
+
+

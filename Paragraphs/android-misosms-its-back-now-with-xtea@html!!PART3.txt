@@ -1,0 +1,4 @@
+
+The new MisoSMS also uses a variant of the XTEA encryption algorithm to communicate with its CnC server.
+The request and responses of the CnC server are structured so that the first four bytes of the request and response contain the length of the encrypted blob of data.
+By skipping the first four bytes, we can decrypt the communications using the key embedded in the native binary.

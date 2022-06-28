@@ -1,0 +1,4 @@
+
+Three key attributes caught our eye with this particular campaign: Masquerading as a member of Cambridge University to gain victims’ trust to open malicious documents, The usage of LinkedIn to deliver malicious documents, The addition of three new malware families to APT34’s arsenal.
+FireEye’s platform successfully thwarted this attempted intrusion, stopping a new malware variant dead in its tracks.
+Additionally, with the assistance of our FireEye Labs Advanced Reverse Engineering (FLARE), Intelligence, and Advanced Practices teams, we identified three new malware families and a reappearance of PICKPOCKET, malware exclusively observed in use by APT34.

@@ -1,0 +1,5 @@
+
+User accounts that log on from multiple source hostnames or with multiple VPN clients.
+GeoLogonalyzer can help address these and similar situations by processing authentication logs containing timestamps, usernames, and source IP addresses.
+GeoLogonalyzer can be downloaded from our FireEye GitHub .
+GeoLogonalyzer Features IP Address GeoFeasibility Analysis For a remote authentication log that records a source IP address, it is possible to estimate the location each logon originated from using data such as MaxMind’s free GeoIP database .

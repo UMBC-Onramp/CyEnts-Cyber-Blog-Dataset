@@ -1,0 +1,3 @@
+
+It is known that malware developers often check the language on potential victim’s machines to avoid the CIS countries, so we can guess that the check for the “Korean” language was a trick designed to mislead, but it is impossible to know that for sure.
+Of course, the “Korean” language can be changed manually, or it could be a Korean packer, but it is impossible to say with certainty.

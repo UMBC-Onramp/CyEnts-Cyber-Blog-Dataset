@@ -1,0 +1,7 @@
+
+Figure 16 shows the results when Dark Crystal RAT is run on a system that has been configured to redirect all traffic to domalo[.]online to the proof-of-concept server we wrote.
+Figure 16:
+The results when a Dark Crystal RAT instance communicates with the proof-of-concept server Other Work and Reconnaissance After reverse engineering Dark Crystal RAT, we continued reconnaissance to see what additional information we could find.
+One limitation to our analysis was that we did not wish to allow the sample to communicate with the real C2, so we kept it isolated from the Internet.
+To learn more about Dark Crystal RAT we tried two approaches: the first was to browse the Dark Crystal RAT website (files.dcrat[.]ru) using Tor, and the other was to take a look at YouTube videos of others’ experiments with the “real” Dark Crystal RAT server.
+Dark Crystal RAT Website We found that Dark Crystal RAT has a website at files.dcrat[.]ru, shown in Figure 17.

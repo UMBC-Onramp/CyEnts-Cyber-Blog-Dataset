@@ -1,0 +1,4 @@
+
+They have taken interest in subject matter of direct importance to the Democratic People's Republic of Korea (DPRK) such as Korean unification efforts and North Korean defectors.
+In the past year, FireEye iSIGHT Intelligence has discovered newly developed wiper malware being deployed by TEMP.Reaper, which we detect as RUHAPPY.
+While we have observed other suspected North Korean threat groups such as TEMP.Hermit employ wiper malware in disruptive attacks, we have not thus far observed TEMP.Reaper use their wiper malware actively against any targets.

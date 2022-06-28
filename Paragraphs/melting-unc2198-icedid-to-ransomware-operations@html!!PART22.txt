@@ -1,0 +1,6 @@
+
+#9 A100-878 Command and Control - MAZE Ransomware, C2 Check-in A101-030 Command and Control - MAZE Ransomware, C2 Beacon, Variant #1 A101-031 Command and Control - MAZE Ransomware, C2 Beacon, Variant #2 A101-032 Command and Control - MAZE Ransomware, C2 Beacon, Variant #3 A104-734 Protected Theater - MAZE, PsExec Execution A104-487 Protected Theater - MAZE Ransomware, Encoded PowerShell Execution A104-485 Protected Theater - MAZE Ransomware Execution, Variant #1 A104-486 Protected Theater - MAZE Ransomware Execution, Variant #2 A104-491 Host CLI - MAZE, Create Target.lnk A104-494 Host CLI - MAZE, Dropping Ransomware
+Note
+Burn Directory A104-495 Host CLI - MAZE, Traversing Directories and
+Dropping Ransomware
+Note, DECRYPT-FILES.html Variant A104-496 Host CLI - MAZE, Traversing Directories and

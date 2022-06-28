@@ -1,0 +1,6 @@
+
+Chain of Attack While examining customer alerts and telemetry, we noticed several infiltrations into victim networks that were achieved via a Log4Shell exploitation of vulnerable VMware Horizon servers.
+These attacks spawned a new PowerShell process to download and execute a chain of scripts that ended with the installation of a malicious DLL.
+The encoded PowerShell command downloads another PowerShell script from a remote server and executes it.
+The next stage PowerShell script downloads three additional files from the same server: 1.bat , syn.exe and 1.dll .
+The script then executes 1.bat , which in turn executes syn.exe and proceeds to delete all three files from the disk.

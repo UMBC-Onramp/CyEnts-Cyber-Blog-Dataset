@@ -1,0 +1,9 @@
+
+If the flag is 0 and the second dword is not 0 (it should be the size of the attached module to this packet), it executes the module on the victim’s device.
+If the flag is 1, it goes to the flag 0’s branch.
+I’ll explain this part in more detail in the next part of this analysis.
+Relocate and Persistent Once Emotet receives a valid response from the C2 server, it relocates the downloaded Emotet dll file from “C:\\Windows\\ProgramData\\puihoud.dll” (in my analysis environment) into the “%LocalAppData%” folder.
+  
+Moreover, to remain in the victim’s device, Emotet makes itself persistent by adding the relocated file into the auto-run group in the system registry.
+Emotet is then able to run at system startup.
+Figure 6.1 is a screenshot of the Registry Editor displaying the auto-run item in the system registry.

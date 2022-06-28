@@ -1,0 +1,5 @@
+
+Here it uses a function called “pk_alloc,” which takes the size of the packet to create as its only argument.
+We noticed that the size was another static value and not the size received from the socket read function.
+This time the static value passed is 1476 bytes.
+This allocated buffer is what will become the destination for the memcpy.

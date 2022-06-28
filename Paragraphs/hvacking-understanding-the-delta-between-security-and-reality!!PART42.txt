@@ -1,0 +1,5 @@
+
+0x4006425C – the address of a BL system (branch to system ) instruction in boot.so.
+0x40054510 – the address of the system entry in “boot.so”’s GOT.
+0x402874A4 – the direct address of system in libuClibc-0.9.30.so.
+Next, we compared these options to the values in the registers at the time the shellcode is about to execute using GDB, shown in Figure 25.

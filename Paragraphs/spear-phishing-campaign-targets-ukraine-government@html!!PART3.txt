@@ -1,0 +1,7 @@
+
+Their activity was first reported by FireEye Threat Intelligence in early 2018.
+They gradually increased in sophistication and leveraged both custom and open-source malware.
+The 2018 campaign used standalone EXE or self-extracting RAR (SFX) files to infect victims.
+However, their recent activity showed increased sophistication by leveraging malicious LNK files.
+The group used open-source QUASARRAT and the RATVERMIN malware, which we have not seen used by any other groups.
+Domain resolutions and malware compile times suggest this group may have been active as early as 2014.

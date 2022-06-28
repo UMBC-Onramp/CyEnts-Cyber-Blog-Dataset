@@ -1,0 +1,7 @@
+
+The important part of our code is the ctree visitor mentioned earlier, which is shown in Figure 6.
+Figure 6:
+Custom ctree visitor The logic implemented here is pretty straightforward.
+We define our subclass of a ctree visitor (line 1) and override its visit_expr method.
+This will only kick in when an assignment is found (line 9).
+Another condition to be met is that the left side of the assignment is a variable and the right side a number (line 15).

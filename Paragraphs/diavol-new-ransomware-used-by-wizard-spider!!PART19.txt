@@ -1,0 +1,8 @@
+
+Finally, ENCDEFILE calls MoveFile API and appends a “ .lock64 ” extension to the filename.
+Once all APCs are dequeued and completed, the thread returns following the call to SleepEx .
+·
+ Change the desktop wallpaper : Before the process terminates, CHNGDESK is invoked.
+First, it captures the desktop window and sets the background color to black.
+It then writes \" All your files are encrypted!
+For more information see “README-FOR-DECRYPT.txt \" with DrawText API to a bitmap image and saves it as \" encr.bmp \" in the public pictures folder.

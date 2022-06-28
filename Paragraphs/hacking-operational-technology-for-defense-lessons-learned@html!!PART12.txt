@@ -1,0 +1,12 @@
+
+While not impossible, bypassing this setup would require more time and resources.
+We instead decided to search for other plausible attack propagation paths.
+Figure 3:
+Formal communication path from enterprise to OT network Reviewing the firewall configuration files, we identified a dedicated communication path for management access to a Microsoft Windows patch management server in a DMZ between the IT network and the OT network.
+This patch management server was running on a virtual machine in the DMZ network, while the administration console for the underlying hypervisor software itself was hosted in the IT network.
+Mandiant logged into the administration console for the hypervisor software using IT network domain administrator credentials.
+We then leveraged guest machine administration features via direct console access to execute commands on the patch management server in the DMZ network.
+The compromise of the patch management server in the DMZ allowed us to pivot via SMB connections to Microsoft Windows-based intermediary systems in the OT network.
+Figure 4:
+Remote attack propagation path from IT network to OT network
+Lastly, we compromised Microsoft Windows server systems in the OT network to complete the objectives of the exercise.

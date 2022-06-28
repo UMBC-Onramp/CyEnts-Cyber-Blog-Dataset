@@ -1,0 +1,6 @@
+
+If the victim refused to pay the ransom, the cybercriminals threatened to publish the stolen files.
+The technique proved effective and was later adopted by many other ransomware operations, including REvil and DoppelPaymer, which we discuss below.
+In another innovation, the cybercriminals began reporting their attacks to the media.
+In late 2019, the Maze group told Bleeping Computer about its hack of the company Allied Universal , attaching a few of the stolen files as evidence.
+In its e-mail conversations with the website’s editors, the group threatened to send spam from Allied Universal’s servers, and it later published the hacked company’s confidential data on the Bleeping Computer forum.

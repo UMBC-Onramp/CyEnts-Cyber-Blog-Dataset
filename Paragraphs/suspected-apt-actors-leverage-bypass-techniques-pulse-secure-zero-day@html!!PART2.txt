@@ -1,0 +1,8 @@
+
+A final patch to address the vulnerability will be available in early May 2021.
+Pulse Secure has been working closely with Mandiant, affected customers, government partners, and other forensic experts to address these issues.
+There is no indication the identified backdoors were introduced through a supply chain compromise of the company’s network or software deployment process.
+Introduction Mandiant is currently tracking 12 malware families associated with the exploitation of Pulse Secure VPN devices.
+These families are related to the circumvention of authentication and backdoor access to these devices, but they are not necessarily related to each other and have been observed in separate investigations.
+It is likely that multiple actors are responsible for the creation and deployment of these various code families.
+The focus of this report is on the activities of UNC2630 against U.S. Defense Industrial base (DIB) networks, but detailed malware analysis and detection methods for all samples observed at U.S. and European victim organizations are provided in the technical annex to assist network defenders in identifying a large range of malicious activity on affected appliances.

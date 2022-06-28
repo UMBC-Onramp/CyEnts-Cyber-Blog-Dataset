@@ -1,0 +1,9 @@
+
+What if all my other defenses would fail to discover the suspicious activity?
+Which defensive components in my network would be able to inspect the outgoing traffic and block or flag the exfiltration attempts?
+Conclusion In this post, we highlighted one approach and application of the ATT&CK model.
+There are many ways to apply it for red teaming, threat hunting, and other tasks.
+At McAfee we embrace the model and are applying it to different levels and purposes in our organization.
+We are not only using it but also contribute to the model by describing newly discovered techniques used by adversaries.
+
+

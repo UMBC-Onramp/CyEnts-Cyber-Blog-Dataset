@@ -1,0 +1,6 @@
+
+The target code to patch appears to be the byte sequence: 89 4C 24 08 FF 52 04.
+This appears as the last bytes in the patched code, and is the 8-bytes written when the uninstall 'u' command is given.
+These bytes correspond to the following two instructions: .data:0804B138
+89 4C 24 08                 mov     [esp+8], ecx .data:0804B13C
+FF 52 04                       call    dword ptr [edx+4] This byte sequence occurs at the hard-coded patch address the utility expects, dslogserver.

@@ -1,0 +1,8 @@
+
+In fact, just a week ago, it added several more exploits, two of which are fairly recent:
+OptiLink ONT1GEW GPON Remote Code Execution (formTracert function) CVE-2021-1498 (Cisco HyperFlex HX Remote Code Execution) CVE-2021-31755 (Tenda Router AC11 Remote Code Execution)
+Unknown 1 (Unidentified target)
+Sample request: Here is a list of other vulnerabilities this malware variant tries to exploit: Figure 14 List of other vulnerabilities being targeted by Manga Conclusion As the number of installed IoT devices continues to explode, especially given the current lack of security standards available to protect them, IoT will be a hotbed for malware operations for the foreseeable future, as we have demonstrated in this article.
+And interestingly, Mirai variants are still very active in terms of attack and development.
+Solutions Every artifact collected from our honeypot systems and other sources are automatically processed to ensure that our customers are protected from these attacks.
+That said, the following precautions are highly recommended: As credential brute-forcing is still the primary way malwares get into IoT devices, setting usernames and passwords that are difficult to guess can go a long way towards securing them.

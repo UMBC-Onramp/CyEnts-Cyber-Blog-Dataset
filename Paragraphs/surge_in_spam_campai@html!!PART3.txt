@@ -1,0 +1,4 @@
+
+Figure 7.
+Locky Downloader Mechanism The preference for JavaScript downloaders could be due to the ease to transform or obfuscate the script via automation to generate new variants as depicted in Figure 8.
+As a result, the traditional signature-based solution may not keep up with the variants where its behavioral intent is the same.

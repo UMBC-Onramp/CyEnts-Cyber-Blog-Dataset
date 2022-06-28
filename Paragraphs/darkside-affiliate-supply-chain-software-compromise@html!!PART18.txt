@@ -1,0 +1,19 @@
+
+SMOKEDHAM created a persistence mechanism for NGROK by adding VirtualHost.vbs to the WindNT value under the current users Run registry key.
+reg.exe add HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run /v WindNT /d
+C:\\ProgramData\\WindNT\\VirtualHost.vbs Keylogger Deployment This attacker utilized an additional keylogging utility named C:\\ProgramData\\psh\\console.exe.
+The keylogging utility was configured to capture and record keystrokes to C:\\ProgramData\\psh\\System32Log.txt.
+Mandiant then observed the attacker use UltraVNC to download two LNK files that reference the keylogging utility.
+The downloaded files were named desktop.lnk and console.lnk, respectively, and were placed in the following persistence locations: C:\\Users\\[username]\\Start Menu\\Programs\\Startup\\desktop.lnk %
+APPDATA%\\Microsoft\\Windows\\Start
+Menu\\Programs\\Startup\\desktop.lnk %APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\console.lnk
+Cobalt Strike
+Beacon The attacker used UltraVNC to download an in-memory dropper for Cobalt Strike to C:\\ProgramData\\Cisco Systems\\Cisco Jabber\\update.exe.
+Update.exe was a Go based dropper created using the ScareCrow framework.
+The attacker executed C:\\ProgramData\\Cisco Systems\\Cisco Jabber\\update.exe using Command Prompt.
+cmd.exe /c '
+C:\\ProgramData\\Cisco Systems\\Cisco Jabber\\update.exe'&&exit
+The execution of ScareCrow framework dropper C:\\ProgramData\\Cisco
+Systems\\Cisco Jabber\\update.exe resulted in the creation of a Cobalt Strike stageless payload to C:\\ProgramData\\Cisco\\update.exe, which then established a connection to a Cobalt Strike Beacon server located at w2doger[.]xyz when executed.
+Mandiant observed the attacker using UltraVNC to download and store a file named update.lnk in the %APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\ directory.
+Mandiant was not able to recover update.lnk at the time of writing, but suspects that this file was created to add persistence to the Cobalt Strike stageless payload.

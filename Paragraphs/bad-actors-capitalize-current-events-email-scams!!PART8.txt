@@ -1,0 +1,7 @@
+
+This example contains an attachment, titled “W8-ENFORM.PDF.”
+While not malicious, this PDF file is essentially a photocopy of the IRS W-8 form.
+It is simply the W8 form from the IRS with an appended number added by the bad actors at the end of the document.
+Red flags within the body of the email are the improper usage of grammar, typos, and punctuation: This scam uses social engineering verbiage to target nonresident aliens of the United States based on “official” records discovery.
+However, in a weird miscue, the email contains a contradictory statement: “if you are a USA citizen and resident, this W8BEN-FORM is not meant for you…”
+The email continues with instructions to reply back and to state on the attached form that the recipient is, indeed, a U.S. citizen/resident.

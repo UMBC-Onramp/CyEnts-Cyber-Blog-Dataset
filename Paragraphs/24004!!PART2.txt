@@ -1,0 +1,11 @@
+
+The vulnerability immediately attracted attention of information security specialists, as it potentially poses a serious threat to many web applications.
+In resemblance to the overhyped Log4Shell , the new vulnerability was named Spring4Shell.
+The creators of the VMware Spring framework have already released patches to fix vulnerable applications, so we recommend that all companies using Spring Framework versions 5.3 and 5.2 immediately upgrade to versions 5.3.18 or 5.2.20.
+What is Spring4Shell
+and why this vulnerability is so dangerous?
+The vulnerability belongs to the RCE class, that is, it allows an attacker to remotely execute malicious code.
+At the moment, according to the CVSS v3.0 calculator , its severity is 9.8 out of 10.
+The vulnerability affects Spring MVC and Spring WebFlux applications running under Java Development Kit version 9 or later.
+Researchers reported the discovered vulnerability to VMware on Tuesday night, but already on Wednesday proof of concept for the vulnerability was published on GitHub.
+The PoC was quickly removed, but not until it was noticed by security experts (some of whom confirmed the danger of the vulnerability).

@@ -1,0 +1,5 @@
+
+For this we will use lcamtuf’s HTML, which loads the PoC image multiple times and compares the pixels with reference pixels.
+Figure 3: CVE-2020-0853 As we can see from the resulting images (Figure 3), the output varies drastically in each decoding and we can assume this PoC leaks a lot of uninitialized memory.
+To identify the root cause of these vulnerabilities, I used Time Travel Debugging (TTD) extensively.
+Tracing back the execution and keeping track of the memory address is a tedious task, but TTD makes it only slightly less painful by keeping the addresses and values constant and providing unlimited forward and backward executions.

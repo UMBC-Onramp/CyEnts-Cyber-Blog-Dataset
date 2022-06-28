@@ -1,0 +1,9 @@
+
+Figure 1 shows the infection flow.
+Figure 1: Infection Flow In-Depth Analysis of JavaScript The initial JavaScript file contains multiple layers of obfuscation.
+Like other malicious scripts, the first layer has obfuscation that builds and executes the second layer as a new function.
+The second layer of the JavaScript contains the dec function, which is used to decrypt and execute more JavaScript code.
+Figure 2 shows a snapshot of the second layer.
+Figure 2:
+Second Layer of Initial JavaScript File
+In the second JavaScript file, the malware author uses a tricky method to make the analysis harder for reverse engineers.

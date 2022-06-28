@@ -1,0 +1,4 @@
+
+In fact, everything in a .NET assembly, whether it’s a module, a class, a method prototype, or a string, is identified by a token.
+Let’s look at method identified by the token 0x0600049D , as shown in Figure 5.
+The most-significant byte ( 0x06 ) tells us that this token is a method token (type 0x06 ) instead of a module token (type 0x00 ), a TypeDef token (type 0x02 ), or a LocalVarSig token (type 0x11 ), for example.

@@ -1,0 +1,11 @@
+
+The hook’s return value is ignored.
+ironstrings does not use this hook.
+targetCallback:
+This flare-emu hook gets called whenever one of the specified target addresses is hit.
+It is only available in the iterate and the iterateAllPaths functions.
+The hook’s return value is ignored.
+The stackstrings script does not use this hook.
+The code in Figure 2 shows the callback functions that flare-emu ’s API currently supports, their signatures, and examples of how to use them.
+All callbacks receive an argument named hookData.
+This named dictionary allows the user to provide application specific data to use before, during, and after emulation.

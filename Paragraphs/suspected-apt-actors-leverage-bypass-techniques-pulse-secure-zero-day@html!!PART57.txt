@@ -1,0 +1,12 @@
+
+The sample embeds the usage information: usage: /home
+/bin/bash clear_log.sh [logfile] [keyword(regex)] LOCKPICK
+The file libcrypto.so (SHA256: 2610d0372e0e107053bc001d278ef71f08562e5610691f18b978123c499a74d8 ) is a shared object containing cryptographic logic from openssl.
+The sample contains a modification to the routine bnrand_range that breaks the security of the random numbers generated.
+There are three paths in this routine for generating a random big number between a given range.
+The first case is unmodified and generates a zeroed big number, the other two cases are patched so that a constant value overwrites the generated random value and always returns success.
+This breaks the random number generation by replacing it with a value the attacker knows in all cases.
+LOCKPICK
+Patcher The file with the hash b990f79ce80c24625c97810cb8f161eafdcb10f1b8d9d538df4ca9be387c35e4 is a patcher utility responsible for inserting the malicious logic known as LOCKPICK.
+The patcher starts by running sed on the integrity checker script built into the appliance to insert an early exit routine.
+This is inserted by the command sed -i '12aexit 0' /home/bin/check_integrity.sh which when applied causes this script to exit without performing its intended checks.

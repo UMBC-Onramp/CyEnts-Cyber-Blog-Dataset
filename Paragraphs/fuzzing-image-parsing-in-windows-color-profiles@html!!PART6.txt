@@ -1,0 +1,6 @@
+
+Another approach is to find a harness for open source Color Management Systems such as Little CMS (LCMS).
+Both of these end up pointing to very small set of APIs with functionality to open color profiles and create color transformations.
+Given this information, a simple initial harness was written: #include <stdio.h> #include <Windows.h> #include <Icm.h> #pragma comment(lib, \"mscms.lib\") int main(int argc, char** argv) { char dstProfilePath[] = \"sRGB
+Color Space Profile.icm\"; tagPROFILE destinationProfile;
+HPROFILE   hDstProfile = nullptr; destinationProfile.dwType = PROFILE_FILENAME; destinationProfile.pProfileData = dstProfilePath; destinationProfile.cbDataSize = (strlen(dstProfilePath) + 1); hDstProfile = OpenColorProfileA(&destinationProfile, PROFILE_READ, FILE_SHARE_READ, OPEN_EXISTING); if (nullptr == hDstProfile) { return -1; } tagPROFILE sourceProfile; HPROFILE   hSrcProfile = nullptr; HTRANSFORM hColorTransform = nullptr; DWORD dwIntent[] = { INTENT_PERCEPTUAL, INTENT_PERCEPTUAL }; HPROFILE hProfileList[2]; sourceProfile.dwType = PROFILE_FILENAME; sourceProfile.pProfileData =

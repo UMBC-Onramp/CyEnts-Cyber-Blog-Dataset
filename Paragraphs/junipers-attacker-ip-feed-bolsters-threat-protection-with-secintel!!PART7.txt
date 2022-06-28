@@ -1,0 +1,6 @@
+
+IPs are collected within a broker, then separated into attack threat types and aggregated into various categories that will be used to enhance this feed, as well as create new feeds that can be acted on via Juniper firewalls and routers.
+Each attacker IP is assigned a threat value from 1 -10, with 10 being the highest severity.
+As time goes on, if no additional malicious activity is seen by our sensors from a particular IP, its threat level will wane and then drop off completely.
+The IPs that are harvested from these sensors are then automatically vetted and cross-referenced with a DNS threat feed that maps out related domains, IPs and infrastructure to mitigate potential false positives.
+This will also include reputation data from other companies and partners who are participating in research to identify insecure or compromised systems on the internet.

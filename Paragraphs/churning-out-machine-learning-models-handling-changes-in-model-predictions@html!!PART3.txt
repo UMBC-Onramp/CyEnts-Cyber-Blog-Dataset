@@ -1,0 +1,11 @@
+
+However, CACE !
+These integrated systems can suffer unintended side effects from a model update.
+Even when the overall model accuracy has increased, individual changes in model output are not guaranteed to be improvements.
+Introduction of new false negatives or false positives in an updated model, called churn , creates the potential for new vulnerabilities and negative interactions with cyber security infrastructure that consumes model output.
+In this article, we discuss churn, how it creates technical debt when considering the larger cyber security product, and methods to reduce it.
+Prediction Churn Whenever we retrain our cyber security-focused ML models, we need to able to calculate and control for churn.
+Formally, prediction churn is defined as the expected percent difference between two different model predictions (note that prediction churn is not the same as customer churn, the loss of customers over time, which is the more common usage of the term in business analytics).
+It was originally defined by Cormier et al .
+for a variety of applications.
+For cyber security applications, we are often concerned with just those differences where the newer model performs worse than the older model.

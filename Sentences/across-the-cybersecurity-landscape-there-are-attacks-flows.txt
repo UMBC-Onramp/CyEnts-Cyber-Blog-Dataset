@@ -1,0 +1,63 @@
+FortiGuard Labs has been working with MITRE Engenuity’s Center for Threat Informed Defense (CTID) on various research projects that advance the state of the art in threat-informed cybersecurity.
+
+Fortinet has been an active member of the Center and is also a research sponsor because we see the value in giving defenders and executives expansive visibility into the ever-evolving threat landscape.
+
+For example, we played a leading role in the Center’s project called Sightings, in which analyzed data from Center participants and other data contributors provides an accurate depiction of the most used cyberattacker tactics, techniques, and procedures (TTPs).
+
+An overview of the project can be found in my blog titled: MITRE Sightings Report Provides Guidance on Key Cyberattack Techniques .
+
+The Sightings project generated very valuable threat intelligence for organizations by building a “heat map” and showing what is known about the attackers’ techniques, but that threat intelligence can also be extended and enhanced.
+
+Getting a Clearer View of Where Actions Are Taking Place This brings us to the next project we have been working on as part of the CTID, which is called Attack Flow .
+
+With Attack Flow, we aim to show how attacks are moving from left to right on the kill chain or MITRE ATT&CK® framework.
+
+ The result is good empirical data that indicates not only how attackers are moving through networks but also what assets they’re hitting in the process.
+
+The flow gives a clear view of where specific actions will take place so that IT leadership will know what defense strategies to prioritize.
+
+Without Attack Flow, it’s extremely difficult for executives to grasp how these attacks map to specific assets within their environments and under their responsibility, especially because multiple attack flows are possible.
+
+Cyber defenders also have a hard time understanding where to look after identifying specific TTPs in their networks.
+
+Our Attack Flow intelligence will shed light on these two common hurdles.
+
+What Is An Attack Flow?
+
+Jon Baker, the Center’s director of research, defines an attack flow as: “…a machine-readable representation of a sequence of actions and assets along with knowledge properties about those actions and assets.
+
+This representation is composed of five main objects: the flow itself, a list of actions, a list of assets, a list of knowledge properties, and a list of causal relationships between the actions and assets.
+
+Each of these five objects includes a set of required and optional fields.
+
+For example, an action must have a description and a name, whereas an asset may—but not must!—have an associated state.\" This Attack Flow Project boils down to two things: 1) mapping the flow of actions and 2) identifying what is the ultimate goal of that flow so cyber defenders know what their next step should be.
+
+In this example , each action is in a red box (and references a MITRE ATT&CK technique), each asset is in a blue box, and some select properties are shown in a green box.
+
+As you can see, different flows have different outcomes—with different impacts on the organization.
+
+One path leads to “Cryptocurrency” while the other leads to “Data.”
+
+Having this type of information can help executives and IT security teams in deciding which defenses to prioritize based on the predictable outcomes they are most likely to see.
+
+When executives have information on each asset’s value coupled with the attack flow information, they have all that’s needed to make a “threat-informed” decision about which of their defenses should be fortified first.
+
+Value in Knowing the Potential Outcomes Using the same data, cyber-defense teams will be able to quickly know for instance: If 90% of the attacks follow a specific path of techniques, they will then be able to move more quickly to identify the attack path taken on an active investigation.
+
+This ability will be possible after we have an extensive dataset of attack flows to examine and do data analysis on the attack flow corpus.
+
+There is a lot of value in understanding the flow of the attack as well as its potential outcomes and affected assets, including the ability to: Easily explain to executives the outcomes of attacks Allow executives to fully understand the impact of each attack on each asset Guide defenders where to look next when they find a specific TTP in their environment Replay more realistic attacks following the specific order in which they are executed, instead of done without any specific order
+
+What’s Next The next phase of our Attack Flow Project with the Center will focus on building tools and a dataset library of attacker flows.
+
+These items can then be used by organizations worldwide to assist in better defending against cyberattacks.
+
+This is much like the other research projects that Center has done over the years, like the adversary emulation plans—but on steroids.
+
+Learn more about FortiGuard Labs threat research and the FortiGuard Security Subscriptions and Services portfolio .
+
+Learn more about the Fortinet free cybersecurity training initiative , the Fortinet NSE Training program , Security Academy program , and Veterans program .
+
+
+
+

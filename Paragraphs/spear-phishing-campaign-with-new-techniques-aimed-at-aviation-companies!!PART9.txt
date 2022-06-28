@@ -1,0 +1,6 @@
+
+The projFUD.dll, available in VirusTotal, is the RAT loader DLL in use.
+We observed that a few bytes of the file have been tweaked to avoid hash-based detection.
+The description and copyright mentions “VLC MEDIA PLAYER”.
+However, the file is not signed.
+Although the namespace and class name “ProjFUD.PA” in the loader is same as the one reported in the snip3 campaign, the PDB string retrieved from the loader DLL is different.

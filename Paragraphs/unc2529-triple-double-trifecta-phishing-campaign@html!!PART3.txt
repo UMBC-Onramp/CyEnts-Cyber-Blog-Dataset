@@ -1,0 +1,8 @@
+
+http://<fqdn>/downld-id_<string>
+http://<fqdn>/downld-id-<string> http://<fqdn>/files-upload_<string> http://<fqdn>/files-upload-<string> http://<fqdn>/get_file-id_<string> http://<fqdn>/get_file-id-<string> http://<fqdn>/zip_download_<string> http://<fqdn>/zip_download-<string
+>
+The first stage payload downloaded from these URLs consisted of a Zip compressed file containing a corrupt decoy PDF document and a heavily obfuscated JavaScript downloader.
+Mandiant tracks the downloader as DOUBLEDRAG.
+Interestingly, the PDF documents were obtained from public websites, but corrupted by removing bytes to render them unreadable with a standard PDF viewer.
+It is speculated that the victim would then attempt to launch the JavaScript (.js) file, which can be executed natively with Windows Script Host by simply double clicking on the file.

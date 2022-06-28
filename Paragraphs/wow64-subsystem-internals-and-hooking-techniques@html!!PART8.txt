@@ -1,0 +1,6 @@
+
+It’s interesting to note at this point the architecture of the WOW64 layer.
+From the perspective of the 64-bit kernel the execution of 32-bit (Wow64) usermode applications is essentially a big while loop.
+The loop executes x86 instructions in the processor's 32-bit execution mode and occasionally exits the loop to service a system call.
+Because the kernel is 64-bit, the processor mode is temporarily switched to 64-bit, the system call serviced, then the mode switched back and the loop continued where it was paused.
+One could say the WOW64 layer acts like an emulator where the instructions are instead executed on the physical CPU.

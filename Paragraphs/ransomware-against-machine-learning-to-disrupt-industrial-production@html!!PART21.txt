@@ -1,0 +1,9 @@
+
+While the systems are further away from direct control of physical processes, there is a much higher likelihood of attacker presence.
+Note, that every organization is different, with unique internal architectures and processes, stakeholder needs, and customer expectations.
+Therefore, all recommendations should be carefully considered in the context of the individual infrastructures.
+ For instance, proper network segmentation is highly advisable for mitigating the spread of ransomware.
+However, organizations with limited budgets may instead decide to leverage redundant asset diversification, host-based firewalls, and hardening as an alternative to segregating with hardware firewalls.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

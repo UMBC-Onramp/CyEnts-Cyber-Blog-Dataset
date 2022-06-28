@@ -1,0 +1,11 @@
+A cybersecurity researcher discovered a new category of Wi-Fi vulnerabilities recently.
+But the surprising news is that this new category is actually very old.
+ Called FragAttacks, these 12 Wi-Fi vulnerabilities have existed since the late 90s.
+But they’re new to the cybersecurity world because people only recently discovered and described them.
+Researchers unveiled the details on May 12, some nine months after discovery.
+The researchers will present their work at the USENIX Security conference at Black Hat USA in late July and early August.
+How Does This Vulnerability Work?
+Discovered and described by Belgian security researcher, Mathy Vanhoef, these FragAttacks (short for fragmentation and aggregation attacks) affect most Wi-Fi devices shipped since the late 1990s.
+Vanhoef is well known in wireless security circles because he found the KRACK Wi-Fi vulnerability about four years ago.
+He believes that every Wi-Fi product features at least one of the vulnerabilities described.
+The flaws affect all recent Wi-Fi security protocols, from the oldest wired equivalent privacy (WEP) specification to the newest Wi-Fi Protected Access 3 (WPA3) specification.

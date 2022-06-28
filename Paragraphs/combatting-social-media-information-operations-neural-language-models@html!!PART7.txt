@@ -1,0 +1,5 @@
+
+Fine-tuning not only requires less data compared to training from scratch, but typically also requires less compute time and resources.
+In this blog post, we will show how to perform transfer learning from a pre-trained GPT-2 model in order to better understand and detect information operations on social media.
+Transformers have shown that Attention is All You Need , but here we will also show that Attention is All They Need: while transfer learning may allow us to more easily detect information operations activity, it likewise lowers the barrier to entry for actors seeking to engage in this activity at scale.
+Understanding Information Operations Activity Using Fine-Tuned Neural Generations In order to study the thematic and linguistic characteristics of a common type of social media-driven information operations activity, we first fine-tuned an LM that could perform text generation.

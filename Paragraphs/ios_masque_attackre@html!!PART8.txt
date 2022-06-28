@@ -1,0 +1,5 @@
+
+16 of these 28 apps are not from Facebook.
+At least 8048 App\nStore apps register the same URL scheme “fb118493188254996” and many\nof these apps are from different developers.
+Attackers can either publish an “aggressive” app into the App Store,\nor craft and distribute an enterprise-signed/ad-hoc malware that\nregisters app URL schemes identical to the ones of legitimate popular\napps.
+Through this , attackers can mimic a legitimate app’s UI to\ncarry out phishing attacks to steal login credentials or gather data\nintended to be shared between two trusted apps.

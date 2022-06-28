@@ -1,0 +1,7 @@
+
+Introduction Analyzing strings in binary files is an important part of malware analysis.
+Although simple, this reverse engineering technique can provide valuable information about a program’s use and its capabilities.
+This includes indicators of compromise like file paths and domain names.
+Especially during advanced analysis, strings are essential to understand a disassembled program’s functionality.
+Malware authors know this, and string obfuscation is one of the most common anti-analysis techniques reverse engineers encounter.
+Due to the prevalence of obfuscated strings, the FLARE team has already developed and shared various tools and techniques to deal with them.

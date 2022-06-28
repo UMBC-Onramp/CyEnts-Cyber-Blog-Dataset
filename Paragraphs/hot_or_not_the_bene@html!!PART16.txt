@@ -1,0 +1,3 @@
+
+This dependency on additional Objective C code to expose C functions casts limitations on the ability of a malicious actor to perform operations such as taking stealth screenshots, sending and intercepting text messages without consent, stealing photos from the gallery, or stealthily recording audio.
+But these limitations can be easily lifted should an app developer choose to add a bit more Objective C code to wrap and expose these C functions.

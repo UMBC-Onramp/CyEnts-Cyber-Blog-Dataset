@@ -1,0 +1,9 @@
+
+We can make similar observations about the patient monitor’s broadcast packets, including the 10-second time delay and patient data in plaintext.
+In these packets we see that the source port is incrementing but the destination port, 7000, is the same as the central monitoring station’s.
+  After reviewing many of these packets, we find that offset 0x34 of the payload has a counter that increments by 0xA, or 10, with each packet.
+Without potentially damaging the patient monitor, there is no good way to extract the firmware to review its code.
+However, the central monitoring station must have code to receive these packets.
+With a bit of digging through the central station’s binaries, we found the section parsing the broadcast packets from the patient monitor.
+The first line of code parses the payload of the packet plus 12 bytes.
+If we count in 12 bytes from the payload on the Wireshark capture, we can see the start of the patient data in clear text.

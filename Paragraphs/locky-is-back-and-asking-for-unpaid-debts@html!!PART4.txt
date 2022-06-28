@@ -1,0 +1,5 @@
+
+Locky Payload Updates The Locky ransomware downloaded in this campaign requires a command line argument to properly execute.
+This command line parameter, “123” in the analyzed sample, is passed to the binary by the first stage JavaScript-based downloader.
+This command line parameter value is used in the code unpacking stage of the ransomware.
+Legitimate binaries typically verify the number of arguments passed or compare the command line parameter with the expected value and gracefully exit if the check fails.

@@ -1,0 +1,9 @@
+
+Email spoofer posting including the VirusTotal link Closer examination of the piece of software on VirusTotal showed that the mail Spoofer contained a debug or PDB path “C:\\Users\\Breitling”.
+Even though the username Breitling isn’t very revealing about an actual person, leaving such a specific PDB path within malware is a classic mistake.
+By pivoting on the specific PDB path we found additional samples on VirusTotal, including a file that was named RubellaBuilder.exe, which was a version of the Macro builder that Rubella was offering.
+Later in the blog post we will take a closer look at the builder itself.
+Finding additional samples with the Breitling PDB path Since Breitling was most likely the username used on the development machine, we were wondering if we could find Office documents that were crafted on the same machine and thus also containing the author name Breitling.
+We found an Office document with Breitling as author and the document happened to be created with a Dutch version of Microsoft Word.
+The Word document containing the author name Breitling.
+Closer inspection of the content of the Word document revealed that it also contained a string with the familiar Jabber account of Rubella ; Rubella(@)exploit.im.

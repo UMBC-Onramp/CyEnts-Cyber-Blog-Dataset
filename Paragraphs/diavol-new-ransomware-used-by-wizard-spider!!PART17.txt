@@ -1,0 +1,6 @@
+
+The APC routine checks if the argument is directory and will create the “ README_FOR_DECRYPT.txt ” ransom note regardless of whether the files in the directory were encrypted.
+If the argument is a file, the ENCDEFILE routine will be called.
+Unlike most other ransomwares, Diavol does not use any symmetric encryption but only RSA to encrypt the files.
+ENCDEFILE checks the file size.
+If it is less than 2,000,000 bytes, then only up to the first 11,700 bytes will be encrypted.

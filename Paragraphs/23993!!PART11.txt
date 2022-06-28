@@ -1,0 +1,11 @@
+
+The incident with the mods for Cities: Skylines ended, thankfully, without too much drama.
+The malicious developer was banned, and it seems they had no intention of causing serious damage to players.
+But they created a rather complex mechanism of penetration users’ computers that exploited peculiarities of the community.
+And most importantly, they tried to bring users out from the control of the official platform for distributing mods.
+In a worst-case scenario such a backdoor could be used to deliver malicious code that, for example, would steal passwords from the game service or mine cryptocurrency on player’s computer.
+Tracking the activity of such “shapeshifter programs” is standard functionality of any reliable security solution.
+On top of that our Kaspersky Security Cloud also features a special gaming mode that provides protection with a minimal impact to computer’s performance.
+So when experimenting with your favorite game, don’t forget about taking precautions.
+
+

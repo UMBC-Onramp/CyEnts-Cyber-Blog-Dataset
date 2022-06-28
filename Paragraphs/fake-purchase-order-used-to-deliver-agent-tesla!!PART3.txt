@@ -1,0 +1,8 @@
+
+The e-mail originated at an address of 194[.]99[.]46[.]38 that corresponds to slot0.warongsoto.com .
+This is hosted on a run-of-the-mill VPS server.
+Visiting the server, we noticed that the site states that the server control panel is controlled by VESTA.
+Recent CVE data highlights that Vesta Control Panel is affected by remote command execution and elevation of privilege vulnerabilities that ultimately allow for full compromise of the system ( CVE-2020-10786 and CVE-2020-10787 ).
+The domain itself appears to be either abandoned or at least unused with no active content hosted.
+It was registered in the United States in October 2021.
+The originating e-mail address does not appear to reference an actual individual and a search for other instances of this being used elsewhere came up empty.

@@ -1,0 +1,14 @@
+
+windowscodecs!CLibTiffDecoderBase::CopyPixels+0x80 09 000000aa`a654f4d0 00007ff9`4404563b windowscodecs!CDecoderFrame::CopyPixels+0xb5 After allocation: 0:000
+> !
+heap -p
+-a @rax address 0000029744382140 found in _HEAP @ 29735190000 HEAP_ENTRY
+Size Prev Flags            UserPtr UserSize - state 0000029744382130 0041
+0000  [00]   0000029744382140    00400 - (busy) unknown!noop // Uninitialized memory after allocation 0:000> db @rax 00000297`44382140  40 7c 5e 97 29 5d 5f ae-73 31 98 70 b8 4f da ac  @|^.)]_.s1.p.
+O..
+00000297`44382150  06 51
+54 18 2e 2a 23 3a-4f
+ab 14 27 e9 c6 2c 83  .QT
+..
+*#:O..'..,.
+00000297`44382160  3a 25 b2 f6 9d e7 3c 09-cc a5 8e 27 b0 73 41 a9  :%....<....'.sA.

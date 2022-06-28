@@ -1,0 +1,4 @@
+
+This should include encouraging employees to never open attachments from someone they don't know and always treat emails from unrecognized/untrusted senders with caution.
+Since it has been reported that many phishing and spearphishing attacks are being delivered as part of social engineering distribution mechanisms, end-users within an organization must also be made aware of the various types of attacks currently in use.
+This can be accomplished through regular training sessions and impromptu tests using predetermined templates originating from an organizations' internal security department.

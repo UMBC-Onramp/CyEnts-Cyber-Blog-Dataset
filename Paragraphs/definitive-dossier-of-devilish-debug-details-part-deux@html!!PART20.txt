@@ -1,0 +1,7 @@
+
+Some terms that resulted in completely or almost-completely malicious subgroups are: Directory Term Example Hashes \\poe\\ a6b2aa2b489fb481c3cd9eab2f4f4f5c 92904dc99938352525492cd5133b9917 444be936b44cc6bd0cd5d0c88268fa77 \\xampp\\ 4d093061c172b32bf8bef03ac44515ae
+4e6c2d60873f644ef5e06a17d85ec777 52d2a08223d0b5cc300f067219021c90 \\temporary projects\\ a785bd1eb2a8495a93a2f348c9a8ca67 c43c79812d49ca0f3b4da5aca3745090 e540076f48d7069bacb6d607f2d389d9 \\stub\\ 5ea538dfc64e28ad8c4063573a46800c
+adf27ce5e67d770321daf90be6f4d895 c6e23da146a6fa2956c3dd7a9314fc97
+We also found the term ‘WindowsApplication1’ to be quite useful.
+89% of the files in our dataset containing this directory were malicious.
+Cursory research indicates that this is the default directory generated when using Visual Studio to compile a Windows binary.

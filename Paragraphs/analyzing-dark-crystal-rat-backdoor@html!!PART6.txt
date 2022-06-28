@@ -1,0 +1,6 @@
+
+Main method that is called from the entry point method, and observed that it makes many calls to ExporterServerManager.
+InstantiateIndexer with different integer arguments, as shown in Figure 6.
+We browsed to the ExporterServerManager.
+InstantiateIndexer method, and found that it is structured as a giant switch statement with many goto statements and labels; Figure 7 shows an excerpt.
+This does not look like typical dnSpy output, as dnSpy often reconstructs a close approximation of the original C# code, albeit with the loss of comments and local variable names.

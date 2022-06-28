@@ -1,0 +1,9 @@
+
+  dr2o.exe e6531d4c246ecf82a2fd959003d76cca  dro.exe
+600e5df303765ff73dccff1c3e37c03a  dro.exe
+c8b0769eb21bb103b8fbda8ddaea2806  jews2.exe
+4d877072fd81b5b18c2c585f5a58a56e  
+load33.exe 9c6398de0101e6b3811cf35de6fc7b79  load.exe ac8358ce51bbc7f7515e656316e23f8d  Pony.exe 3309274e139157762b5708998d00cee0  Pony.exe b3962f61a4819593233aa5893421c4d1  pos.exe 6cdd93dcb1c54a4e2b036d2e13b51216  pos.exe
+We focused on the “pos.exe” malware and suspected that it maybe targeted Point of Sale machines.
+We speculate that once the attackers have identified a potentially interesting host form among their victims, they can then instruct the victim to download the POS malware.
+While we have observed many downloads of the various EXE’s hosed on that server, we have only observed three downloads of “pos.exe”.

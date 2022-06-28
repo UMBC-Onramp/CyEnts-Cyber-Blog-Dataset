@@ -1,0 +1,18 @@
+
+I then elaborated on what kind of software clients the Agent Tesla targets and what kind of data it is able to collect from them, as well as how the stolen data is sent to the attacker via the HTTP Post method.
+Fortinet Protections Fortinet customers are already protected from this malware by FortiGuard’s Web Filtering , AntiVirus, FortiEDR , and CDR (content disarm and reconstruction) services, as follows:
+The malicious Macro inside the PowerPoint sample can be disarmed by the FortiGuard CDR (content disarm and reconstruction) service.
+All relevant URLs have been rated as \" Malicious Websites \" by the FortiGuard Web Filtering service.
+The PowerPoint sample attached to the phishing email and the standalone VBS file are detected as \" VBA/Agent.
+BLY!tr \" and \" VBS/AgentTesla.
+VTO!tr.dldr \" and are blocked by the FortiGuard AntiVirus service.
+FortiEDR detects the downloaded executable file as malicious based on its behavior.
+FortiMail protects Fortinet customers by blocking phishing emails and applying FortiGuard’s Web Filtering, AntiVirus, and CDR (content disarm and reconstruction) technologies.
+In addition to these protections, we suggest that organizations have their end users also go through the FREE NSE training : NSE 1 – Information Security Awareness .
+It includes a module on Internet threats that is designed to help end users learn how to identify and protect themselves from phishing attacks.
+IOCs URLs Involved in the Campaign: \"hxxps[:]//onedayiwillloveyouforever[.]blogspot[.]com/p/divine111.html\" \"hxxps[:]//madarbloghogya[.]blogspot[.]com/p/divineback222.html\" \"hxxps[:]//bitbucket[.]org/!api/2.0/snippets/hogya/5X7My8/b271c1b3c7a78e7b68fa388ed463c7cc1dc32ddb/files/divine1-2\" \"hxxp[:]//149[.]56.200[.]165/rump/1.txt\" \"hxxps[:]//bitbucket[.]org/!api/2.0/snippets/hogya/nxq8od/c73df176f221868c33d4b3033ec04dc173d4ba4c/files/divine1-
+1\" \"hxxp[:]//69[.]174.99[.]181/webpanel-divine/mawa/7dd66d9f8e1cf61ae198.php\" Sample SHA-256 Involved in the Campaign: [새 구매 주문서 .ppa /
+new purchase order.ppa] AA121762EB34D32C7D831D7ABCEC34F5A4241AF9E669E5CC43A49A071BD6E894 [UYA-update.vbs / GTQ.vbs]
+0BBF16E320FB942E4EA09BB9E953076A4620F59E5FFAEFC3A2FFE8B8C2B3389C Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+

@@ -1,0 +1,7 @@
+
+TEARDROP does not have code overlap with any previously seen malware.
+We believe that this was used to execute a customized Cobalt Strike BEACON.
+Mitigation : FireEye has provided two Yara rules to detect TEARDROP available on our GitHub .
+Defenders should look for the following alerts from FireEye HX:
+MalwareGuard and WindowsDefender: Process Information file_operation_closed file-path*: “c:\\\\windows\\\\syswow64\\\\netsetupsvc.dll actor-process: pid: 17900
+Window’s defender Exploit Guard log entries: (Microsoft-Windows-Security-Mitigations/KernelMode event ID 12) Process”\\Device\\HarddiskVolume2\\Windows\\System32\\svchost.exe” (PID XXXXX) would have been blocked from loading the non-Microsoft-signed binary ‘\\Windows\\SysWOW64\\NetSetupSvc.dll’

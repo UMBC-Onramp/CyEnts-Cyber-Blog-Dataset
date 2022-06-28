@@ -1,0 +1,5 @@
+
+The main landing page for the attacks is a specific URL seeded on the IHCSA website (hxxp://www.ihcsa[.]or[.]jp/zaigaikoukan/zaigaikoukansencho-1/), where users are redirected to the HackingTeam Adobe Flash framework hosted on the second compromised Japanese website.
+We observed in the past week this same basic framework across several different SWCs exploiting the “older” CVE-2015-5119 Adobe Flash vulnerability in Figure 2.
+Figure 2:
+First portion of exploit chain The webpage (hxxp://cosmetech[.]co[.]jp/css/movie.html) is built with the open source framework Adobe Flex and checks if the user has at least Adobe Flash Player version 11.4.0 installed.

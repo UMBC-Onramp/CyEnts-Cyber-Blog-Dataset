@@ -1,0 +1,13 @@
+
+Leaving aside the current pros and cons performance-wise, we took a look at the innovation from a security perspective.
+Bad news: Just a few months after the release of the first Apple M1 computers, virus writers had already adapted several malware families to the new processor.
+What makes Apple M1 malware unique?
+In terms of malicious functionality, absolutely nothing distinguishes M1 malware from “regular” malware.
+It can run natively on Mac computers with M1 chips, that’s the difference.
+Developers recompiled their code and adapted the malware to the new architecture to make it work more efficiently.
+Essentially, the M1 adaptation drive is just more evidence that virus writers are motivated to keep their creations up to date.
+Does that mean old malware doesn’t work on computers with the Apple M1?
+Unfortunately, malware adapted for M1 is an addition, not merely a replacement.
+Apple uses the Rosetta 2 system to make the transition from one platform to another seamless.
+Roughly speaking, it translates old program code written for the Intel x86 series into a form that the M1 can digest.
+Rosetta doesn’t distinguish legitimate programs from malicious ones; it runs x86 malware as readily as any other app.

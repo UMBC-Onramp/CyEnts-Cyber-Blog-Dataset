@@ -1,0 +1,4 @@
+
+FIGURE 8.
+The BAT file to disable the shadow volumes and more security The next action is to create a mutex with the name hardcoded “Fany—Fany—6-6-6” and later make a call to the function “WaitForSingleObject” and check the result with 0.
+ If the value is 0 it means that the mutex was created for this instance of the malware but if it gets another value, it means that the mutex was made from another instance or vaccine and, in this case, it will finish the execution of the malware.

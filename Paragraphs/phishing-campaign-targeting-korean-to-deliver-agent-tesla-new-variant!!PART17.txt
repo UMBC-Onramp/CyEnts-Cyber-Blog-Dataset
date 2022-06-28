@@ -1,0 +1,15 @@
+
+The “data” contains the stolen information, like credentials and cookies.
+Figure 5.2 shows an example of data with packet number “6”, which contains the basic information (“header” part) and the Stolen Data (“data” part) that is base64-encoded cookies.
+“0de264895c1ed90486c73c6eb110af6c2222264a0854b0047b9ead88b718f7d0\" is the Separator string that is hardcoded in Agent Tesla.
+The Victim ID is a MD5 hash value generated from the system’s hardware information.
+Agent Tesla provides seven kinds of packets to send data/status to the attacker.
+Each packet has a packet number to identify the packet.
+They are “0”, “1”, “2”, “3”, “4”, “5” and “6”.
+Packet “0”:
+It is always the first packet to tell the attacker that Agent Tesla has started.
+It only contains the “header” data.
+Packet “1”: It is sent once every 120 seconds.
+It is like a heartbeat to tell the attacker that Agent Tesla is alive.
+It only contains the “header” data.
+Packet “2”: It is sent every 60 seconds and only contains the “header” data.

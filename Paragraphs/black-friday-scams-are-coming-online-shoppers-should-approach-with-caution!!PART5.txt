@@ -1,0 +1,4 @@
+
+If one of the three criteria is not satisfied, the malware moves onto the next cryptocurrency target, Ethereum (flag6), and checks for: Clipboard text is 42 characters long, which is the length of an Ethereum wallet Clipboard is NOT already the attacker’s Bitcoin or Ethereum wallet Wallet address starts with“0”.
+This is because Ethereum wallet addresses start with “0x”.
+If all conditions match, the malware replaces the clipboard with the attacker’s Ethereum wallet address.

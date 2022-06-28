@@ -1,0 +1,8 @@
+
+There is no remote vector to these techniques; an attacker must first deliver code to the victim.
+To protect against malicious JavaScript, we always urge caution when browsing the Internet.
+Allow scripting languages to execute only from trusted sites.
+McAfee Windows Security Suite or McAfee Endpoint Security (ENS) can provide warnings if you visit a known dangerous site.
+These McAfee products can also provide an alternate script-execution engine that prevents known malicious scripts from executing.
+  
+As operating systems are changed to mitigate Meltdown and Spectre, organizations and individuals should apply those updates as soon as possible.

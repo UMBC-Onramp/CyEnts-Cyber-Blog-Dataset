@@ -1,0 +1,9 @@
+
+Once decrypted, the Domain Controller examines the Authenticator and verifies the contents.
+If this operation succeeds, the user is considered authenticated by the Domain Controller and the requested service ticket is created.
+The Domain Controller generates the service ticket requested for cifs/SQLSERVER.ACMENET.CORP.
+The data within the service ticket is also considered sensitive.
+If a user could manipulate the service ticket data, they could impersonate any user on the domain to the service as performed in the Silver Ticket attack.
+To prevent this from easily happening, the Domain Controller encrypts the service ticket with the Kerberos key of the computer the user is authenticating to.
+All domain-joined computers in Active Directory possess a randomly generated computer account credential that both the computer and Domain Controller are aware of.
+The Domain Controller also generates a second session key specific to the service ticket and places a copy in both the encrypted service ticket and a new Authenticator structure.

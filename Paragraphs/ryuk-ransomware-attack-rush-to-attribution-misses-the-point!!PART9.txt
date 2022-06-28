@@ -1,0 +1,13 @@
+
+By following this method, we find the strongest hypothesis is not the one with the most verifying evidence, but the one with the least falsifying evidence.
+Examining competing hypotheses is a scientific approach to investigating cyber incidents.
+It may not help with the race to attribution, but it ensures the output is based on available evidence.
+The most likely hypothesis in the Ryuk case is that of a cybercrime operation developed from a tool kit offered by a Russian-speaking actor.
+From the evidence, we see sample similarities over the past several months that indicate a tool kit is being used.
+The actors have targeted several sectors and have asked a high ransom, 500 Bitcoin.
+Who is responsible?
+We do not know.
+But we do know how the malware works, how the attackers operate, and how to detect the threat.
+That analysis is essential because it allows us to serve our customers.
+
+

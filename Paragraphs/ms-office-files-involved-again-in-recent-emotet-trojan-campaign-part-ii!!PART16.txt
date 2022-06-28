@@ -1,0 +1,7 @@
+
+The section outlined in red is like the packet header.
+It contains the packet type (0x3EA) that tells the C2 server what kind of data is in the packet, a sha256 hash code (69 35 … 3C 4A) of the data, a module ID (0x14), as well as the Victim’s ID.
+The subsequent data, marked in blue, starts with a data size (0x398) of the following data (from 10 55 52 4C … to the end), which are the compressed web browser credentials.
+This thread-module uses eleven C2 servers to receive data stolen from the victim’s device.
+The IP and Ports of these C2 servers are encrypted in memory and get decrypted before submitting the stolen data.
+The three downloaded modules have the same C2 server list, which can be found in the “IOC” section at the end of this analysis.

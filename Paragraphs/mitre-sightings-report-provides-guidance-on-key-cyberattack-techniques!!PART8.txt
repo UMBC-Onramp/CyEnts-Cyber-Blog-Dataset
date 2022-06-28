@@ -1,0 +1,13 @@
+
+Fortunately, defenders aren’t left to figure out how best to defend against these threats.
+The report also provides deeper insight into how organizations can go about detecting and containing these threats using open-source tools and intel, as well as which techniques are generally seen together to facilitate proactive threat hunting, which is one of the most potent actions cyber defenders can take to lessen the impact of an attack.
+Low Cost, High Return Intelligence With this research paper, the Center has provided the cybersecurity community with valuable, up-to-date intelligence that can be widely used to prioritize defensive actions.
+And it provides it in a low-cost way while providing a high return.
+Because of the specific insight and guidance it provides, cyberdefenders worldwide can build threat-informed defenses using curated, high-fidelity data.
+Security is everyone’s responsibility, and if we have more secure organizations, the internet and the digital economy will be more stable and predictable.
+And that’s a win for everyone.
+Fortinet has been at the forefront of cybersecurity innovation and research for more than 20 years.
+We are proud to have been able to leverage this expertise in our participation in the Sightings research project with the Center.
+Read and learn more in the report or view the infographic .
+
+

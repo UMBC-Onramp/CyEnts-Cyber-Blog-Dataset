@@ -1,0 +1,4 @@
+
+It is possible the appearance of the same file path in a limited sample set may suggest that the same malicious actor has been involved in several campaigns delivering various malware .
+File path %AppData%\\notes\\logs.dat, seen in a RoboSki-packed Remcos sample, was also observed within other files that matched YARA rules for Remcos RAT and Agent Tesla.
+The presence of %AppData%\\seguridad\\logs.dat in a RoboSki-packed Remcos sample may suggest that a Spanish-speaking company may have had their security logs accessed.

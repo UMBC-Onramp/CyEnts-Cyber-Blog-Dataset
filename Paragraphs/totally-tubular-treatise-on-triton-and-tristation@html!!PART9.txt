@@ -1,0 +1,4 @@
+
+When looking back at the ts_result packet header definitions, we begin to see some gaps in the TRITON developer's knowledge: dir, cid, cmd, cnt, unk, cks, siz = struct.unpack('<, ts_packet[0:10]).
+We're clearly speculating based on naming conventions, but we get an impression that offsets 4, 5 and 6 could be \"direction\", \"controller ID\" and \"command\", respectively.
+Values such as \"unk\" show that the developer either did not know or did not care to identify this value.

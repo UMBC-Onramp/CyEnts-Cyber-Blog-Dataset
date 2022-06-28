@@ -1,0 +1,9 @@
+
+John noted that the earliest event log entries present on the system start approximately two minutes after the creation of \"a.rar\".
+It is likely that the attacker cleared the event logs before disconnecting from the system.
+John identified the lateral movement to the 10.20.30.101 host, from \"ACM-BOBBO\" through registry keys that recorded the mount of the hidden C$ share.
+By recording this type of artifact in an IOC, John will be able to quickly see if the attacker has pivoted to another part of the Acme Widgets Co. network when investigating 10.20.30.101.
+He included artifacts looking for other common hidden shares such as IPC$ and ADMIN$. The effectiveness of an IOC may be influenced by the environment the IOC was created for.
+This IOC, for example, may generate a significant number of false-positives in an environment where these hidden shares are legitimately used.
+At Acme Widgets Co., however, the use of hidden shares is considered highly suspicious.
+Figure 4 IOC for Lateral Movement (Methodology)

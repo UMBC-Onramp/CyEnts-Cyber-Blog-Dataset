@@ -1,0 +1,3 @@
+
+To do so, the launcher first decodes the RC4 key provided in the <first_4_chars_of_rnd_guid_0> value (see Figure 5) and then uses it to decrypt the payload.
+Once the payload is decrypted, the launcher allocates virtual memory enough to house the image in memory, copies it there, and finally creates a thread around the entry point specified in the dropper.

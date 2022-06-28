@@ -1,0 +1,4 @@
+
+Figure 9: Persistence Keys The VBS code in this file (Figure 10) has the ability to recreate the whole chain and download the same ZIP archive.
+Figure 10:
+Contents of VBS Script Next, the Trojan searches for several folders in the Program Files directories, including: C:\\\\Program Files\\\\AVG C:\\\\Program Files\\\\AVAST Software C:\\\\Program Files\\\\Diebold\\\\Warsaw C:\\\\Program Files\\\\Trusteer\\\\Rapport C:\\\\Program Files\\\\Java C:\\\\Program Files (x86)\\\\scpbrad If any of the folders are found, this information, along with the hostname and Operating System version, is sent to a hardcoded domain with the hardcoded User-Agent value “Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20100101 Firefox/12.0” in the format shown in Figure 11.

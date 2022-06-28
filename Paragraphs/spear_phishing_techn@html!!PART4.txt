@@ -1,0 +1,7 @@
+
+In April 2016, a security researcher demonstrated a way to bypass this using regsvr32.exe, a legitimate Microsoft executable permitted to execute in many AppLocker policies.
+The regsvr32.exe executable can be used to download a Windows Script Component file (SCT file) by passing the URL of the SCT file as an argument.
+This technique bypasses AppLocker restrictions and permits the execution of code within the SCT file.
+We observed implementation of this bypass in the macro code to invoke regsvr32.exe, along with a URL passed to it which was hosting a malicious SCT file, as seen in Figure 3.
+Figure 3:
+ Command after de-obfuscation to bypass AppLocker via regsv32.exe Figure 4 shows the entire command line parameter used to bypass AppLocker.

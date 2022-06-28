@@ -1,0 +1,5 @@
+
+Let’s assume the account TEST-DOMAIN\\BackupAdmin was an inactive Administrator account compromised by an attacker.
+Please note the examples provided in this post are based on real-time events observed during engagements but have been recreated or altered to preserve client confidentiality.
+Process Execution Events There are many historical process execution artifacts including AppCompat , AmCache , WMI CCM_RecentlyUsedApps , and more .
+A single artifact rarely covers all the useful details relating to a process's execution, but real-time process execution events change that.

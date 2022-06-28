@@ -1,0 +1,4 @@
+
+The script contained TCP forwarding settings that could be used by the threat actor in conjunction with the SSH tunnels to give direct access from the threat actor VM to the command and control server to obfuscate interaction with customer infrastructure.
+The VM was running a version of the Tiny Core Linux OS with pre-loaded scripts and tools.
+Also, we analyzed the Virtual Machine file system timestamps, which coincided with UNC1945's overall operational timeline.

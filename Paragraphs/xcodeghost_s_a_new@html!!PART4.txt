@@ -1,0 +1,5 @@
+
+We encourage them to update to the latest version iOS 9 as quickly as possible.
+Figure 5: Distribution of iOS versions running infected apps Some enterprises have taken steps to block the XcodeGhost DNS query within their network to cut off the communication between employees’ iPhones and the attackers’ CnC servers to protect them from being hijacked.
+However, until these employees update their devices and apps, they are still vulnerable to potential hijacking of the XcodeGhost CnC traffic -- particularly when outside their corporate networks.
+Given the number of infected devices detected within a short period among so many U.S enterprises, we believe that XcodeGhost continues to be an ongoing threat for enterprises.

@@ -1,0 +1,11 @@
+
+The QMGR Database BITS jobs and associated state information are stored in local “queue manager” (QMGR) database files in the %ALLUSERSPROFILE%\\Microsoft\\Network\\Downloader directory.
+The database is stored to files named qmgr0.dat and qmgr1.dat.
+The two-file scheme appears to be used for back up and synchronization purposes.
+The second file largely contains duplicate job and file information, though some unique or older entries can be found in the file.
+Windows 10 Changes The Background Intelligent Transfer Service has largely remained unchanged since its introduction.
+However, Windows 10 introduced significant changes to the service, including an all new database format.
+On Windows 10 the QMGR database is stored using the Extensible Storage Engine (ESE) format.
+ESE databases have been used in many other Microsoft products including Exchange, Active Directory, and Internet Explorer.
+Windows 10 stores the QMGR database in a single file called qmgr.db .
+Separate transaction log files are maintained in the same directory.

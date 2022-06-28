@@ -1,0 +1,20 @@
+
+This \"proxifier\" provides proxy server support to any application.
+PUPYRAT (aka Pupy) is an open source, multi-platform (Windows, Linux, OSX, Android), multi-function RAT (Remote Administration Tool) and post-exploitation tool mainly written in Python.
+It features an all-in-memory execution guideline and leaves very low footprint.
+It can communicate using various transports, migrate into processes (reflective injection), and load remote Python code, Python packages and Python C-extensions from memory.
+STEELCORGI is a packer for Linux ELF programs that uses key material from the executing environment to decrypt the payload.
+When first starting up, the malware expects to find up to four environment variables that contain numeric values.
+The malware uses the environment variable values as a key to decrypt additional data to be executed.
+SLAPSTICK is a Solaris PAM backdoor that grants a user access to the system with a secret, hard-coded password.
+TINYSHELL is a lightweight client/server clone of the standard remote shell tools (rlogin, telnet, ssh, etc.), which can act as a backdoor and provide remote shell execution as well as file transfers.
+Detections FE_APT_Trojan_Linux_STEELCORGI_1
+FE_APT_Trojan_Linux_STEELCORGI_2
+FE_HackTool_Linux64_EVILSUN_1 FE_HackTool_Linux_EVILSUN_1 HackTool.
+Linux.
+EVILSUN.MVX HXIOC UUID: e489ce60-f315-4d1a-a888-77782f687eec EVILSUN (FAMILY) 90005075FE_Trojan_Linux_LEMONSTICK_1
+FE_APT_Tool_Win32_OPENSHACKLE_1 FE_APT_Tool_Win_OPENSHACKLE_1 HXIOC UUID: 4a56fb0c-6134-4450-ad91-0f622a92701c OPENSHACKLE (UTILITY) 90005006
+FE_APT_Backdoor_Linux64_SLAPSTICK_1 FE_APT_Backdoor_Linux_SLAPSTICK_1 FE_Backdoor_Win_PUPYRAT_1 FE_APT_Pupy_RAT FE_Ransomware_Win64_ROLLCOAST_1 FE_Ransomware_Win_ROLLCOAST_1 HXIOC, 45632ca0-a20b-487f-841c-c74ca042e75a; ROLLCOAST RANSOMWARE (FAMILY) Ransomware.
+Win.
+ROLLCOAST.MVX Hashes d5b9a1845152d8ad2b91af044ff16d0b (SLAPSTICK) 0845835e18a3ed4057498250d30a11b1 (STEELCORGI)
+6983f7001de10f4d19fc2d794c3eb534 2eff2273d423a7ae6c68e3ddd96604bc d505533ae75f89f98554765aaf2a330a

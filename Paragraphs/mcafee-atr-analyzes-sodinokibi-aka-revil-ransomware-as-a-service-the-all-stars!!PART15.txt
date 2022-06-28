@@ -1,0 +1,4 @@
+
+We are not the only ones that noticed these similarities – security reporter Brian Krebs published an article where he highlights the similarities between GandCrab and a new ransomware named Sodinokibi or REvil, and certain postings that were made on several underground forums.
+Affiliates Switching RaaS Families….
+On two popular underground Forums a user named UNKN , aka unknown , placed an advertisement on the 4 th of July 2019, for a private ransomware as a service (RaaS) he had been running for some time.

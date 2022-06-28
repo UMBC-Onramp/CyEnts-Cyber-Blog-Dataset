@@ -1,0 +1,9 @@
+
+What makes smishing more dangerous than typical phishing Most of us have more or less gotten used to e-mail phishing, and people by and large know how to recognize and avoid it.
+Text messages are a more unexpected channel for scams, so people are less likely to think a short message will represent a scam.
+Beyond that, although people trust text messages more, texts tend to be less secure than e-mail.
+Nowadays, every halfway decent e-mail service has an intelligent built-in spam filter.
+The filters aren’t perfect, but scammers need to keep inventing new moves to get past them.
+Unfortunately, when it comes to flexibility and accuracy, mobile operators’ spam filters leave something to be desired.
+People also typically read their text messages on the go or between other tasks.
+That, combined with a lowered expectation of danger in text messages, means they tend to look less closely at text messages, making an attack more likely to succeed.

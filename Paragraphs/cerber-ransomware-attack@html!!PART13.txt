@@ -1,0 +1,9 @@
+
+Traditional defenses don’t have the granular view required to do this, nor can they connect the dots of discreet individual processes that may be steps in an attack.
+This takes behavioral intelligence that is able to quickly analyze a wide array of processes and alert on them so analysts and security teams can conduct a complete investigation into what has, or is, transpiring.
+This can only be done if those professionals have the right tools and the visibility into all endpoint activity to effectively find every aspect of a threat and deal with it, all in real-time.
+Also, at FireEye, we go one step ahead and contact relevant authorities to bring down these types of campaigns.
+Click here for more information about Exploit Guard technology.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

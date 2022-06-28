@@ -1,0 +1,6 @@
+
+Observe that the MHost and BHost values in Figure 11 are identical, so this sample did not have a backup C2 endpoint.
+In dnSpy it is possible to give classes and methods meaningful names just as it is possible to name identifiers in IDA Pro.
+For example, the method SchemaServerManager.
+StopCustomer picks the name of a random running process.
+By right-clicking the StopCustomer identifier and choosing Edit Method, it is possible to change the method name to PickRandomProcessName , as shown in Figure 12.

@@ -1,0 +1,6 @@
+The FireEye Front Line Applied Research & Expertise (FLARE)
+Team attempts to always stay on top of the most current and emerging threats.
+As a member of the FLARE Reverse Engineer team, I recently received a request to analyze a fairly new credential stealer identified as MassLogger.
+Despite the lack of novel functionalities and features, this sample employs a sophisticated technique that replaces the Microsoft Intermediate Language (MSIL) at run time to hinder static analysis.
+At the time of this writing, there is only one publication discussing the MassLogger obfuscation technique in some detail.
+Therefore, I decided to share my research and tools to help analyze MassLogger and other malware using a similar technique .

@@ -1,0 +1,12 @@
+
+However, this type of social engineering continues to be successful.
+When a legitimate site is compromised to host exploits or malware, the positive reputation of the site is leveraged to trick users into clicking “Yes” and becoming infected.
+The potential impact of this particular threat is compounded by the fact that the compromised site is ranked in the Alexa Top 100 for most visited sites internationally, and is in the Top 25 for most popular websites in China [1].
+FireEye appliances detect this infection at multiple levels.
+FireEye’s multiflow detection traces out the complete attack chain, as well as CnC communication.
+While the CnC host has been suspended for a long time, the worm’s presence alone can be a pain for the victim because it adds itself into all HTML files that it can access.
+Additionally, it adds itself to the startup registry and impacts the machine’s performance.
+So the question that you need to ask yourself is this: If a Top 100 Alexa domain is still infected by this veteran malware, are you?
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

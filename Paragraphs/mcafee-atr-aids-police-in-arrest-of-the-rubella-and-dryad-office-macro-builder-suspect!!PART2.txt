@@ -1,0 +1,4 @@
+
+These toolkits are mostly offered for sale on underground cybercriminal forums.
+Announced today, the Dutch National High-Tech Crime Unit (NHTCU) arrested an individual suspected of building and selling such a criminal toolkit named the Rubella Macro Builder.
+McAfee Advanced Threat Research spotted the Rubella toolkit in the wild some time ago and was able to provide NHTCU with insights that proved crucial in its investigation.

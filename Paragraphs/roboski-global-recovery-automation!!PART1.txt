@@ -1,0 +1,7 @@
+In a recent collaboration to investigate a rise in malware infections featuring a commercial remote access trojan (RAT), IBM Security X-Force and Cipher Tech Solutions (CT), a defense and intelligence security firm, investigated malicious activity that spiked in the first quarter of 2021.
+With over 1,300 malware samples collected, the teams analyzed the delivery of a new variant of the RoboSki packer, which is widely used to thwart detection and deliver commodity RATs to enterprise networks.
+CT automated the capability to rapidly extract configuration data from malware to produce actionable indicators of compromise (IOCs).
+Analysts tested the ability to statically extract configuration data, bypassing dynamic anti-analysis features using data processed by CT , discovering approximately 1,300 additional samples.
+The RoboSki-packed malware samples feature new capabilities, such as the ability to load resources and convert pixelated data to RGB order, resulting in the RoboSki component, and decoding and decrypting a ReZer0 loader.
+The ReZer0 loader can embed malware or fetch it from remote servers and is known for its ability to deliver encrypted payloads and anti-sandbox checks.
+Layering loaders is a tactic many malware distributors use to evade anti-virus detection and security scanners.

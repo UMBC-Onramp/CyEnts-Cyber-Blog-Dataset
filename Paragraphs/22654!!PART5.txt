@@ -1,0 +1,6 @@
+
+The growth in demand has attracted interest from cybercriminals.
+Security gaps were also discovered in legitimate videoconferencing software.
+For example, a year ago, a vulnerability was detected and eliminated in the Microsoft Teams corporate messaging service that had allowed an attacker to gain access to all accounts in an organization.
+Around the same time, the developers of Zoom for macOS fixed bugs that allowed outsiders to take control of a user’s device.
+Employees have often used personal accounts on free services such as Google Docs to collaborate on documents and exchange files.

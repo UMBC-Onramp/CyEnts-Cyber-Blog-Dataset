@@ -1,0 +1,4 @@
+
+Once the exploit is successful, the payload makes itself persistent by adding a Windows shortcut (.LNK) file pointing to the malware in the “Startup” folder in the start menu.
+It beacons outbound to comer4s.minidns[.]net:8070.
+The network callback pattern, shown below, is known by researchers as “Mongall” or “Saker”: GET /3010FC080[REDACTED]

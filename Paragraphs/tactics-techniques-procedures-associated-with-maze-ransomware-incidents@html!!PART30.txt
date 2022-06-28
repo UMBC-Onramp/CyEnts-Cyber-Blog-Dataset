@@ -1,0 +1,10 @@
+
+Permission Groups Discovery T1018:
+Remote System Discovery T1033: System Owner/User Discovery Lateral Movement T1076:
+Remote Desktop Protocol T1028:
+Windows Remote Management Collection T1074:
+Data Staged T1005:
+Data from Local System T1039: Data from Network Shared Drive Command and Control T1043:
+Commonly Used Port T1219:
+Remote Access Tools T1105:
+Remote File Copy T1071: Standard Application Layer Protocol T1032: Standard Cryptographic Protocol Exfiltration T1020: Automated Exfiltration T1002:

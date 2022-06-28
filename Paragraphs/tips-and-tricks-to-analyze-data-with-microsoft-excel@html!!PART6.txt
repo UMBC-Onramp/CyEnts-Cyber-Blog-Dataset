@@ -1,0 +1,5 @@
+
+Temporal analysis will often turn up new evidence by identifying events that precede or follow an event of interest.
+Equally critical is producing an accurate timeline for reporting.
+Timestamps and time zones can be frustrating, and things can get confusing when the systems being analyzed span various time zones.
+Mandiant tracks all timestamps in Coordinated Universal Time (UTC) format in its investigations to eliminate any confusion of both time zones and time adjustments such as daylight savings and regional summer seasons.

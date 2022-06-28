@@ -1,0 +1,3 @@
+
+As a result, we can expect mature actors to gradually broaden their selection from only IT and business processes, to also OT assets monitoring and controlling physical processes.
+This is apparent in ransomware families such as SNAKEHOSE, which was designed to execute its payload only after stopping a series of processes that included some industrial software from vendors such as General Electric and Honeywell.

@@ -1,0 +1,4 @@
+
+As a result, they are better positioned to negotiate and can often demand much higher ransoms—which are commonly commensurate with the victims’ perceived ability to pay and the value of the ransomed assets themselves.
+For more information, including technical detail, on similar activity, see our recent blog posts on FIN6 and TEMP.MixMaster .
+Figure 1: Comparison of indiscriminate vs. post-compromise ransomware approaches Historical incidents involving the opportunistic deployment of ransomware have often been limited to impacting individual computers, which occasionally included OT intermediary systems that were either internet-accessible, poorly segmented, or exposed to infected portable media.

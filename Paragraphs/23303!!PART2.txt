@@ -1,0 +1,10 @@
+
+Having analyzed the situation, MikroTik experts found no new vulnerabilities in the company’s routers; however, old ones may still pose a threat.
+Therefore, to ensure your router has not joined the Mēris botnet (or any other botnet, for that matter), you need to follow a few recommendations.
+Why MikroTik devices are joining the botnet A few years ago, security research discovered a vulnerability in MikroTik routers : Winbox, a configuration tool for MikroTik routers through which many devices were compromised.
+Although MikroTik fixed the vulnerability back in 2018, apparently not all users updated their routers.
+Furthermore, even among those who did, not everyone followed the manufacturer’s additional password-change recommendations.
+If a user didn’t change the password, then even updated firmware could let attackers log in to the router and start exploiting it again.
+According to MikroTik , the routers that are now infected with Mēris are the same devices that were compromised back in 2018.
+The company has published indicators of device compromise and issued recommendations.
+How to tell if your MikroTik router is part of a botnet When a router joins a botnet, cybercriminals change a number of settings in the device firmware.

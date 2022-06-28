@@ -1,0 +1,3 @@
+
+The patcher modifies content in /tmp/data as this directory holds the extracted upgrade image the newly upgraded system will boot into.
+This results in a persistence mechanism which allows the attacker to maintain access to the system across updates.

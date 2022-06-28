@@ -1,0 +1,8 @@
+In the recent release of iOS 8.4, Apple fixed several vulnerabilities including vulnerabilities that allow attackers to deploy two new kinds of Masque Attack (CVE-2015-3722/3725, and CVE-2015-3725).
+We call these exploits Manifest Masque and Extension Masque, which can be used to demolish apps, including system apps (e.g., Apple Watch, Health, Pay and so on), and to break the app data container.
+In this blog, we also disclose the details of a previously fixed, but undisclosed, masque vulnerability: Plugin Masque, which bypasses iOS entitlement enforcement and hijacks VPN traffic.
+Our investigation also shows that around one third of iOS devices still have not updated to versions 8.1.3 or above, even 5 months after the release of 8.1.3, and these devices are still vulnerable to all the Masque Attacks.
+We have disclosed five kinds of Masque Attacks, as shown in the following table.
+Name Consequences disclosed till now Mitigation status App Masque * Replace an existing app * Harvest sensitive data Fixed in iOS 8.1.3 [6] URL Masque * Bypass prompt of trust
+* Hijack inter-app communication Partially fixed in iOS
+8.1.3 [11] Manifest Masque * Demolish other apps (incl.

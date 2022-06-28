@@ -1,0 +1,7 @@
+
+As of July 2, PublicWWW yielded at least 23,000 websites hosting Coinhive code.
+An example of Coinhive script embedded within a website.
+Beyond using browsers to gather system resources, malware authors have become increasingly sophisticated in other ways.
+They have taken advantage of widespread vulnerabilities such as EternalBlue to propagate, or have implemented other techniques for evasion.
+The Smominru attack was a very profitable campaign leveraging this approach.
+It used “living off the land” techniques to evade detection and increase its ability to mine Monero.

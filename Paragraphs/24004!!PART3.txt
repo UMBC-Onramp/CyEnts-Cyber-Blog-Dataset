@@ -1,0 +1,6 @@
+
+And it’s very unlikely that such a potent exploit has gone unnoticed by cybercriminals.
+The Spring framework is quite popular among Java developers, which means that potentially many applications could be vulnerable.
+According to a post by Bleeping Computer , Java applications vulnerable to Spring4Shell could become a cause of compromise for a huge number of servers.
+Moreover, according to the same post, the vulnerability is already being actively exploited in the wild.
+Conditions for exploiting a Spring4Shell vulnerability The only Spring4Shell exploitation method known at the time of publication requires a specific confluence of circumstances.

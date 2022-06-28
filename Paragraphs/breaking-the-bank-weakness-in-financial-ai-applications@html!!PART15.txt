@@ -1,0 +1,8 @@
+
+Quant-fund managers and high-speed traders can use this capability to strategically plan future activity, such as the optimal time of the day to trade.
+Additionally, financial insurance underwriters can use these tools to observe the impact of market-moving activity and generate better risk assessments.
+Potential Exploitation By exploiting inherent weaknesses in an AI model, threat actors could lull a company into a false sense of security regarding the way a trade will play out.
+Specifically, threat actors could find out when a company is training their model and inject corrupt data into a dataset being used to train the model.
+Subsequently, the end application generates an incorrect simulation of potential trades and their consequences.
+These models are regularly trained on the latest financial information to improve a simulation's performance, providing threat actors with multiple opportunities for data poisoning attacks.
+Additionally, some high-speed traders speculate that threats could flood the market with fake sell orders to confuse trading algorithms and potentially cause the market to crash .

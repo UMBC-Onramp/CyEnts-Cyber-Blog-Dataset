@@ -1,0 +1,3 @@
+
+The software repeatedly reads User Name, Server Address, Server Port, and similar information from the system registry through these value-names under the subkeys \" HKCU\\Software\\Microsoft\\Internet Account Manager\\Accounts \" and \" HKCU\\Software\\Microsoft\\Office\\Outlook\\OMI Account Manager\\Accounts \", which are the places to save the settings and credentials for Microsoft Outlook and Microsoft Outlook Express.
+This time, the command line parameter string to this software is \"/scomma C:\\Users\\Bobs\\AppData\\Local\\Temp\\8042.tmp\", where \"/scomma\" allows the process to run without a window and save the retrieved information to the temporary file followed.

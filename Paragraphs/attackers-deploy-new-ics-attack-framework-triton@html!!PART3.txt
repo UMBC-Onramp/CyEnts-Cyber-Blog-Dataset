@@ -1,0 +1,6 @@
+
+The targeting of critical infrastructure as well as the attacker’s persistence, lack of any clear monetary goal and the technical resources necessary to create the attack framework suggest a well-resourced nation state actor.
+ 
+Specifically, the following facts support this assessment: The attacker targeted the SIS suggesting an interest in causing a high-impact attack with physical consequences.
+This is an attack objective not typically seen from cyber-crime groups.
+The attacker deployed TRITON shortly after gaining access to the SIS system, indicating that they had pre-built and tested the tool which would require access to hardware and software that is not widely available.

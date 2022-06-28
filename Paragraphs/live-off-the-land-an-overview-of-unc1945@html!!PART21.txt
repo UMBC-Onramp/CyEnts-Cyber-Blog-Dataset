@@ -1,0 +1,11 @@
+
+abaf1d04982449e0f7ee8a34577fe8af Netblocks 46.30.189.0/24 66.172.12.0/24 ATT&CK Tactic Category Techniques Initial Access T1133 External Remote Services T1190 Exploit Public-Facing Application Execution T1059 Command and Scripting Interpreter T1059.001 PowerShell
+T1064 Scripting Persistence T1133 External Remote Services Lateral Movement T1021.001 Remote Desktop Protocol T1021.004 SSH Defense Evasion T1027 Obfuscated Files or Information T1070.004 File Deletion T1070.006 Timestomp
+T1064 Scripting T1553.002 Code Signing Discovery T1046 Network Service Scanning T1082 System Information Discovery T1518.001 Security Software Discovery Lateral Movement T1021.001 Remote Desktop Protocol T1021.004 SSH Command and Control T1071 Application Layer Protocol T1090
+Proxy T1105 Ingress Tool Transfer T1132.001 Standard Encoding For more information, check out our Bring Your Own Land blog post.
+Additionally, Mandiant experts from the FLARE team will present an in-depth view into UNC1945 on Thursday, Nov. 12.
+Register today to reserve your spot for this discussion , where the presenters from FLARE and Mandiant Managed Defense will also answer questions from the audience.
+Finally, for more intelligence on these types of threats, please register for Mandiant Advantage Free , a no-cost version of our threat intelligence platform.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

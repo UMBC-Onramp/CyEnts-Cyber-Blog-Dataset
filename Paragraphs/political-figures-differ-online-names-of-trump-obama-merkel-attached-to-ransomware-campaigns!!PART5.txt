@@ -1,0 +1,6 @@
+
+“Her” campaign encrypts files using the .angelamerkel extension.
+The original name of this ransomware was ChromeUpadter.exe; it also uses AES to encrypt files.
+It employs the Euro in its ransom demands.
+Perhaps a European figure evokes the Euro?
+This ransomware encrypts the following files: Malware developers are fond of exploiting famous names to lure unsuspecting victims.

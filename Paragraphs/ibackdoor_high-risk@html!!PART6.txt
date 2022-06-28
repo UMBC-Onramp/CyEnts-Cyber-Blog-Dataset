@@ -1,0 +1,4 @@
+
+The backdoored versions of mobiSage clearly violate these requirements, yet thousands of affected apps made it past the App Store review process.
+Technical Details As shown in Figure 1, the backdoored mobiSage library includes two key components, separately implemented in Objective-C and JavaScript.
+The Objective-C component, which we refer to as msageCore , implements the underlying functionality of the backdoors and exposes interfaces to the JavaScript context through a WebView.

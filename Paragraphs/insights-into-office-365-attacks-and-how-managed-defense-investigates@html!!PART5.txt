@@ -1,0 +1,3 @@
+
+At a minimum, the Investigator account should have the following roles: Exchange Admin Roles View-only audit logs View-only configuration View-only recipients Mailbox Search Message Tracking eDiscovery Rights eDiscovery Manager role Azure Active Directory Roles Global Reader Unified Audit Log (UAL)
+The Unified Audit Log records activity from various applications within the Office 365 suite, and can be considered O365’s main log source.

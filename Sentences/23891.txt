@@ -1,0 +1,35 @@
+Apple has released an urgent update for iOS and iPadOS that fixes the CVE-2022-22620 vulnerability.
+
+They recommend updating devices as soon as possible, as the company have reason to believe that the vulnerability is already being actively exploited by unknown actors.
+
+Why vulnerability CVE-2022-22620 is dangerous As usual, Apple experts do not disclose the details of the vulnerability until the investigation is completed, and the majority of users have the patches installed.
+
+At the moment, they only say that the vulnerability belongs to the Use-After-Free (UAF) class, therefore it is related to incorrect use of dynamic memory in applications.
+
+Its exploitation allows the attacker to create malicious web content, the processing of which can lead to arbitrary code execution on the victim’s device.
+
+Simply put, the most likely attack scenario is an infection of an iPhone or iPad device after visiting a malicious web page.
+
+Which devices and apps are vulnerable to CVE-2022-22620 exploitation Judging by the description of the bug, the vulnerability was found in the WebKit engine used in many applications for macOS, iOS and Linux.
+
+In particular, all browsers for iOS and iPadOS are based on this open source engine — that is, not only iPhone’s default Safari, but also Google Chrome, Mozilla Firefox and any others.
+
+So even if you do not use Safari, this vulnerability still affects you directly.
+
+Apple released updates for iPhones 6s and newer; all models of iPad Pro, iPad Air version 2 and newer, iPad starting with the 5th generation, iPad mini starting with 4th generation, and iPod touch media player starting with the 7th generation.
+
+How to stay safe The patches that Apple released on February 10 changes memory management mechanisms and thus prevents exploitation of CVE-2022-22620.
+
+So in order to protect your device, it should be enough to install iOS 15.3.1 and iPadOS 15.3.1 updates.
+
+Your device needs to be connected to a Wi-Fi network to install the patch.
+
+If your device does not yet show a notification that the update is ready for installation, you can force your system into updating a little bit quicker: go to the system settings yourself (Settings → General → Software update) and check the availability of software updates.
+
+In order to get alerts about the latest cyberthreats directly related to your devices and apps, we recommend using the Kaspersky Security Cloud , available for Windows, macOS, Android and iOS operating systems.
+
+When a new vulnerability in the software you use, or a data leak on the website you visit is discovered, you will get a notification with advice on how to protect yourself.
+
+
+
+

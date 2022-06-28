@@ -1,0 +1,6 @@
+
+For the older VS versions this was done manually.
+For newer VS versions and the respective open-source projects we were able to automate the process using vcpgk and Docker.
+We then used the IDA Pro FLAIR utilities to convert gigabytes of executable code into pattern files and then into signatures.
+This process required extensive research and much trial and error.
+For instance, we spent two weeks testing and exploring the various FLAIR options to understand the best combination.

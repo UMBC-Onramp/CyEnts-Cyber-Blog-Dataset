@@ -1,0 +1,4 @@
+
+In many cases, even when a publicly available API designed to access the undocumented structures can be leveraged on a live system, incident responders and memory forensic analysts don’t have the luxury of utilizing them.
+DFIR analysts operating on memory extractions or snapshots ultimately using tools which must recreate the job of an API by manually parsing and traversing structures and reimplementing algorithms used.
+Unfortunately, these structures and algorithms are not always up to date in the analysts’ toolkit, leading to incomplete extractions or completely broken investigations.

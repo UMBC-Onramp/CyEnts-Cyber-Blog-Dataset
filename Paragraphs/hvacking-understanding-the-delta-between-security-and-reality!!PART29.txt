@@ -1,0 +1,6 @@
+
+This program was put in the init script of the system, so it would run on boot and continually “kick the dog”, effectively disabling the hardware watchdog.
+Note: no actual dogs were harmed in the research or creation of this exploit.
+If anything, they were given extra treats and contributed to the coding of the watchdog patch.
+Here are some very recent photos of this researcher’s dogs for proof.
+Figure 20 With both the hardware and software watchdog timers pacified, we could continue to determine if our previously discovered vulnerability was exploitable.

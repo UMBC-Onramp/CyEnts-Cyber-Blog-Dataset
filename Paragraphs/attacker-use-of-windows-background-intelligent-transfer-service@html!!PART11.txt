@@ -1,0 +1,5 @@
+
+variable Download Size 8 Transfer Size 8 unknown 1 Drive (UTF-16) variable Volume GUID (UTF-16) variable The database is processed by enumerating entries in the Jobs table, parsing each job data, finding correlated files, and parsing the corresponding records in the Files table.
+This allows the BitsParser to combine related information and output jobs with their associated files including relevant metadata.
+Recovering Deleted Records Active jobs have entries in the Jobs and Files tables.
+Records are deleted upon job completion or cancellation.

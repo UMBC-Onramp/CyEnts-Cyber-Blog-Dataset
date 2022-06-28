@@ -1,0 +1,13 @@
+
+Like Web Historian, Redline will only export data currently in the table view.
+If you applied any filtering or tags, those will affect the data as it is exported.
+In addition to the features that have always been available in Web Historian, Redline also allows you to review your web history with its full suite of analytical capabilities and investigative tools.
+Check out the Redline user guide for a full description of these capabilities.
+Here are just a few of the most popular: Timeline provides a chronological listing of all web-based events (e.g., URL last browsed to, File Download Started, etc.) in a single heterogeneous display.
+You can employ this to follow the activities of a user or attacker as they played out on the system.
+You can also quickly reduce your target investigative scope using the Timeline's powerful filtering capabilities.
+Use tags and comments to mark-up your findings as you perform your investigation, making it easier to keep track of what you have seen while moving forward.
+You can then go back and export those results into your favorite reporting solution.
+Use Indicators of Compromise (IOCs) as a quick way to determine if your system contains any potential security breaches or other evidence of compromise.
+Visit http://www.openioc.org/ to learn more about IOCs.
+Last but not least, Redline gives you the ability to examine an entire system worth of metadata.

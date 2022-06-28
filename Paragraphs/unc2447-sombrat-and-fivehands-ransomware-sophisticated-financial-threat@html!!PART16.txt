@@ -1,0 +1,11 @@
+
+DEATHRANSOM and HELLOKITTY implement the file encryption operations using a very similar code structure and flow.
+FIVEHANDS implements its file encryption with a differing code structure and uses different embedded encryption libraries.
+In addition to the symmetric key, HELLOKITTY and FIVEHANDS also encrypts file metadata with the public key and appends this to the encrypted file.
+DEATHRANSOM generates an RSA key pair while HELLOKITTY and FIVEHANDS use an embedded RSA or NTRU public key.
+DEATHRANSOM Encryption DEATHRANSOM creates an RSA-2048 public and private key pair.
+Using an Elliptic-curve Diffie–Hellman (ECDH) routine implemented with Curve25519, it computes a shared secret using two input values: 1) 32 random bytes from a RtlGenRandom call and 2) a hardcoded 32 byte value (attacker's public key).
+It also create a Curve25519 public key.
+The shared secret is SHA256 hashed and used as the key to Salsa20 encrypt the RSA public and private keys.
+The RSA public key is used to encrypt the individual symmetric keys that are used to encrypt each file.
+A Base64 encoded version of the encrypted RSA keys and the victim’s Curve25519 public key is included in the ransom note, providing the threat actors the information needed to decrypt the victim's files.

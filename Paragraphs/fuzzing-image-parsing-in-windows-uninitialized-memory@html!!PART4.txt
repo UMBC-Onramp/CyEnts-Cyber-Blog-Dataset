@@ -1,0 +1,9 @@
+
+29745==WARNING: MemorySanitizer: use-of-uninitialized-value #0 0x496db8  (/home/dan/uni/a.out+0x496db8)
+#1 0x7f463c5f1bf6  (/lib/
+x86_64-linux-gnu/libc.so.6+0x21bf6) #2 0x41ad69  (/home/dan/uni/a.out+0x41ad69)
+SUMMARY:
+MemorySanitizer: use-of-uninitialized-value (/home/dan/uni/a.out+0x496db8)
+Exiting Figure 1: MemorySanitizer detection of uninitialized memory Similarly, Valgrind can also be used to detect uninitialized memory during run-time.
+Detecting Uninitialized Memory in Windows Compared to Linux, Windows lacks any built-in mechanism for detecting uninitialized memory usage.
+While Visual Studio and Clang-cl recently introduced AddressSanitizer support , MemorySanitizer and other sanitizers are not implemented as of this writing.

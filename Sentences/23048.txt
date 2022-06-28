@@ -1,0 +1,61 @@
+For employees facing hundreds of e-mails, the temptation to speed-read and download attachments on autopilot can be great.
+
+Cybercriminals, of course, take advantage, sending out seemingly important documents that might contain just about anything from phishing links to malware.
+
+Our experts recently discovered two very similar spam campaigns distributing the IcedID and Qbot banking Trojans .
+
+Spam with malicious documents Both e-mails were disguised as business correspondence.
+
+In the first case, the attackers demanded compensation for some bogus reason or said something about canceling an operation.
+
+Attached to the message was a zipped Excel file named CompensationClaim plus a series of numbers.
+
+The second spam mailing had to do with payments and contracts and included a link to the hacked website where the archive containing the document was stored.
+
+In both cases, the attackers’ aim was to persuade the recipient to open the malicious Excel file and run the macro in it, thus downloading either IcedID or (less commonly)
+
+Qbot to the victim’s machine.
+
+IcedID and Qbot The IcedID and Qbot banking Trojans have been around for years, with IcedID first coming to researchers’ attention back in 2017 and Qbot in service since 2008 .
+
+Moreover, attackers are constantly honing their techniques.
+
+For example, at one point they hid the main component of IcedID in a PNG image using a trick called steganography that is pretty hard to detect.
+
+Today, both malware programs are available on the shadow market; in addition to their creators, numerous clients distribute the Trojans.
+
+The malware’s main task is to steal bank card details and login credentials for bank accounts, preferably business accounts (hence the businesslike e-mails).
+
+To achieve their objectives, the Trojans employ various methods.
+
+For example, they may: Inject a malicious script into a Web page to intercept user-entered data; Redirect online banking users to a fake login page; Steal data saved in the browser.
+
+Qbot can also log keystrokes to intercept passwords.
+
+Unfortunately, theft of payment data is not the only trouble that awaits victims.
+
+For example, IcedID can download other malware, including ransomware, to infected devices.
+
+Meanwhile, Qbot’s tricks include stealing e-mail threads for use in further spam campaigns, and providing its operators with remote access to victims’ computers.
+
+On work machines in particular, the consequences can be serious.
+
+How to stay safe from banking Trojans No matter how crafty cybercriminals can be, you don’t need to reinvent the wheel to stay safe.
+
+Both of the spam campaigns in question rely on recipients taking risky actions — if they don’t open the malicious file and let it execute the macro, the scheme simply will not work.
+
+To reduce your chances of becoming a victim: Check the sender’s identity, including the domain name.
+
+Someone claiming to be a contractor or a corporate client but using a Gmail address, for example, may be suspicious.
+
+And if you simply don’t know who the sender is, check with colleagues; Prohibit macros by default, and treat documents that require you to enable macros or other content with suspicion.
+
+Never run a macro unless you’re absolutely sure the file needs it — and is safe; Install a reliable security solution .
+
+If you work on a personal device, or your employer is lax when it comes to workstation protection, make sure it’s protected.
+
+Our products detect both IcedID and Qbot.
+
+
+
+

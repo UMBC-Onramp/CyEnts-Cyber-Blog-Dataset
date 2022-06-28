@@ -1,0 +1,21 @@
+
+$SI Created $SI Modified File Name File Path File Size File MD5 File Attributes File Deleted 2019-10-14 23:13:04 2019-10-14 23:33:45 Default.rdp C:\\Users\\ attacker\\Documents\\ 485 c482e563df19a40 1941c99888ac2f525 Archive FALSE Event Gen Time Event ID Event Message Event Category Event User Event System 2019-10-14 23:13:06 4648
+A logon was attempted using explicit credentials.
+Subject: Security ID:
+  DomainCorp\\Administrator
+Account Name:  Administrator Account Domain:  DomainCorp
+Logon ID:  0x1b38fe
+Logon GUID:  {00000000-0000-0000-0000-000000000000} Account Whose Credentials Were Used: Account Name:  
+VictimUser Account Domain:
+  DomainCorp
+Logon GUID:  {00000000-0000-0000-0000-000000000000} Target Server: Target Server Name:
+DestinationServer Additional Information: Process Information: Process ID:
+  0x5ac Process Name:  C:\\Program Files\\Internet Explorer\\iexplore.exe Network Information: Network Address: - Port
+:   - Logon Administrator SourceSystem KeyModified
+Key Path KeyName ValueName ValueText Type 2019-10-14 23:33:46 HKEY_USER\\Software\\Microsoft\\Terminal Server
+Client\\Servers\\ DestinationServer UsernameHInt
+VictimUser REG_SZ Since these raw artifact data sets have different column headings and data types, they would be difficult to review in one timeline.
+If we format the data using Excel string concatenation, we can make the data easy to combine into a single timeline view.
+To format the data, we can use the “&” operation with a function to join information we may need into a “Summary” field.
+An example command to join the relevant file system data delimited by ampersands could be “=D2 & \" | \" & C2 & \" | \" & E2 & \" | \" & F2 & \" | \" & G2 & \" | \" & H2”.
+Combining this format function with a “Timestamp” and “Timestamp Type” column will complete everything we need for streamlined analysis.

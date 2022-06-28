@@ -1,0 +1,9 @@
+
+One of the most critical takeaways from nearly every research of this kind is that criminals overwhelmingly target known vulnerabilities with available patches.
+This makes cyber hygiene a top priority.
+Similarly, it reemphasizes the need to backup critical data.
+If regular backups are not implemented or are not properly managed, it could cost the institutions hundreds of thousands of dollars to replace affected devices.
+However, even when a victim has secured backups and an excellent recovery plan in place, attackers will still threaten to leak stolen data.
+If the ransom is not paid, they release everything on the dark web.
+ 
+Therefore, it is imperative to have a solid prevention and recovery plan against ransomware in place, including the encryption of all data at rest.

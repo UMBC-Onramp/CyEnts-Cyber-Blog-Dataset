@@ -1,0 +1,6 @@
+
+This means that investigators that inspect a process listing via memory forensics will see the innocuous-looking command line `powershell.exe` rather than references to the uncommon filename such as `WwanSvc.c`.
+SOMBRAT Network Communications The SOMBRAT backdoor can communicate with its C2 server using both DNS and a proxy-aware, TLS-encrypted stream protocol.
+By default, the backdoor uses the DNS protocol; however, this can be reconfigured by the C2 server.
+Mandiant observed the domains feticost[.]com and celomito[.]com used for DNS C2 communications.
+When the backdoor communicates via its DNS protocol, it constructs and resolves FQDNs, interpreting the DNS results to extract C2 messages.

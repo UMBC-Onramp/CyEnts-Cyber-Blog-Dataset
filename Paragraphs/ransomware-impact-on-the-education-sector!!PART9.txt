@@ -1,0 +1,5 @@
+
+Harvested emails are often sold on the dark web and can be used for future attacks.
+IPS Detection in Education Sectors IPS detection provides some interesting insights into malware prevalence.
+While it does not identify all ransomware in the wild, it does capture which ransomware is triggering IPS systems.
+The tables below show the top five IPS detections triggered between August 11 th and September 10 th , 2021, in the education sector in the US and worldwide.

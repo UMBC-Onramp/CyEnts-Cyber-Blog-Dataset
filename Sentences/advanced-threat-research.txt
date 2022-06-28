@@ -1,0 +1,59 @@
+By Christiaan Beek and Raj Samani on Dec 20, 2017 In our recent research, we interviewed the actors behind ransomware campaigns.
+
+One of the interesting findings was cybercriminals seemed to have a sense of absolute safety when conducting criminal operations.
+
+Cybercrime is an area of crime like no other, perceived as low-risk with high returns, which contributes greatly to its rapid growth.
+
+Today, with the arrest of individuals suspected of infecting computer systems by spreading the CTB Locker malware , a clear message has been sent—involvement in cybercrime is not zero-risk.
+
+CTB Locker CTB Locker, also known as Critroni, is known as one of the largest ransomware families—helping to drive a new ransomware surge of 165 percent in 2015 as one of the top three ransomware families, and earning a spot as No. 1 just a year later.
+
+Operation Tovar, in which law enforcement agencies took down the infrastructure responsible for spreading CryptoLocker, created a need for more malware—CTB Locker and CryptoWall malware families helped to fill the gap.
+
+In June 2014, the CTB Locker authors began to advertise the malware family on the underground scene at a cost of $3,000USD, where people could buy the first versions for $1,500USD.
+
+The authors also offered an affiliate program, which made CTB Locker infamous.
+
+By sharing a percentage of the received ransoms, the affiliates ran the greater risk—because they had to spread the ransomware—but they also enjoyed the higher profits.
+
+By using exploit kits and spam campaigns, the malware was distributed all over the world, mostly targeting “Tier 1” countries, those in which the victims could afford to pay and most likely would pay the ransom.
+
+Midway through 2015, we gained unique information from an affiliate server that helped us tremendously in the subsequent investigations.
+
+A CTB Locker affiliate server.
+
+An example of CTB Locker source code.
+
+Besides the use of an affiliate server in CTB Locker’s infrastructure, two other components complete the setup: a gateway server and a payment server.
+
+Attacks Begin to Grow During 2016, a massive spam campaign struck the Netherlands.
+
+Emails in Dutch seemed to originate from one of the largest telco providers.
+
+The emails claimed to have the latest bill attached.
+
+There was no bill, of course, rather CTB Locker asking for around $400USD of ransom to return files.
+
+The grammar and word usage was near perfect—not what we commonly observe—and the names in the email were proof of a well-prepared campaign.
+
+More than 200 cases in the Netherlands alone were filed with regards to these infections.
+
+With attacks growing in number, the Dutch High Tech Crime Unit began an investigation.
+
+The unit approached McAfee’s Advanced Threat Research team to assist in identifying samples and answering questions.
+
+Following our research, we were kept updated and were informed that in the early morning of December 14 operation “Bakovia” started.
+
+The initial research was on the CTB Locker ransomware but based on information from the U.S. Secret Service, it was determined that the same suspected gang was also linked to distribution of Cerber ransomware—another major family.
+
+The Arrests During the operation in East Romania, six houses were searched whereby the investigators seized a significant amount of hard-drives, laptops, external-storage, crypto-currency mining rigs, and hundreds of SIM cards.
+
+Suspects were arrested for allegedly spreading CTB Locker ransomware, and other suspects allegedly responsible for spreading Cerber were arrested at the airport in Bucharest.
+
+Watch video of arrests.
+
+The law enforcement action emphasizes the value of public-private partnerships and underscores the determination behind the McAfee mantra “Together is power.”
+
+
+
+

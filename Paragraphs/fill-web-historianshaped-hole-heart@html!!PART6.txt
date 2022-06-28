@@ -1,0 +1,5 @@
+
+Redline will run the script, which will require Administrator privileges and may trigger a UAC prompt before running depending on how your system is configured.
+After a brief collecting and processing time, your web history data will be ready for review.
+Reviewing your Data For the actual review of your web history data, you should feel right at home in Redline.
+Just like Web Historian, Redline uses a sortable, searchable, configurable table view for each of the individual categories of web history data.

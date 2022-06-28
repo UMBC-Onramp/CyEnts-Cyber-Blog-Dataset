@@ -1,0 +1,5 @@
+
+What What type of penetration test do you want\nperformed?
+For organizations new to penetration testing, we\nrecommend starting with an external network penetration test, which\nwill assess your Internet-accessible systems in the same way that an\nattacker anywhere in the world could access them.
+Beyond that, there\nare several options: Internal network penetration test\n- A penetration test of your internal corporate network.
+Typically\nwe start these types of assessments with only a network connection\non the corporate networks, but a common variant is what we call an\n\"Insider Threat Assessment,\" where we start with one of\nyour standard workstations and a standard user account.

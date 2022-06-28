@@ -1,0 +1,7 @@
+
+Once the XLL file finishes downloading csrsc.exe, the downloaded file is saved as: %PUBLIC%\\srtherhaeth[.]eXe
+Further Insight into srtherhaeth.exe The downloaded file is Buer Loader.
+First discovered in 2019, Buer Loader is Malware-as-a-Service that was first used by threat actors to deliver banking Trojans and various other malware.
+As it gained popularity it was later adopted by Ryuk threat actors to help establish an initial foothold on targeted networks.
+Once this foothold was established, the infamous Ryuk ransomware was then deployed.
+Buer Loader has evolved since then and the following provides further insight into this latest version.

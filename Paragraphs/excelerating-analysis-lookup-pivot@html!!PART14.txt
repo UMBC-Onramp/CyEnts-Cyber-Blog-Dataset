@@ -1,0 +1,3 @@
+
+Figure 9: Data to be returned from ‘IP Address Intel’ sheet Because this is leveraging dynamic arrays and spilling, all three cells of the returned data will populate, as seen in Figure 4.
+Now that our dataset is completely enriched by either using VLOOKUP or XLOOKUP, we can start hunting for anomalous activity.

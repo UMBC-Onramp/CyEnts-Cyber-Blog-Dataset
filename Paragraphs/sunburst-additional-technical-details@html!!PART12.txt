@@ -1,0 +1,11 @@
+
+A user ID is generated based on three values: MAC address of the first available, non-loopback network interface Domain name HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography\\MachineGuid value SUNBURST takes the MD5 hash of these combined values and encodes it using a custom XOR scheme.
+We believe this value is used by UNC2452 to track unique victims.
+SUNBURST uses four different forms of subdomains to signify the operating mode of the backdoor.
+Each form contains slightly different information.
+However, in two of the forms, investigators can recover the domain names of victim organizations.
+We recommend reviewing DNS logs to confirm the presence of a victim’s domain in SUNBURST C2 coordinator traffic.
+When SUNBURST is in its initial mode, it embeds the domain of the victim organization in its DGA-generated domain prefix.
+Once the malware transitions to an “active” mode, the malware uses the other two forms of subdomains.
+These do not include the AD domain, but instead include encodings of either the list of running and stopped services or a timestamp.
+The open-source community has done a fantastic job reverse engineering many of the subdomain forms.

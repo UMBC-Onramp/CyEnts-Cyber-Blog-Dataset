@@ -1,0 +1,6 @@
+
+Configuring Web History Data Collection Web Historian provided three options for choosing how to find web history data that you want to analyze: scan my local system, scan a profile folder, and parse an individual history file.
+Redline allows you to accomplish all three of these operations using a single option, Analyze this Computer , which is found under the Main Menu in the upper left corner.
+Specifying the path to a profile folder or a history file will require some additional configuration:
+Figure 1: Finding your web history data Web Historian (Left) vs. Redline (Right)
+Click on Analyze this Computer to begin configuring your analysis session.

@@ -1,0 +1,11 @@
+
+It decrypts the configuration with XOR 0xCC ​​​​​​​ and, like the dropper, patches the backdoor’s .data section with it.
+The configuration contains the backdoor’s version, C2 server address and service parameters.
+Finally, the loader reflectively loads the Milestone backdoor and calls its exports.
+Fire Chili Rootkit As part of our research, we have collected four driver samples — two pairs of 32-bit and 64-bit samples.
+One pair was compiled in early August 2017 and the second pair was compiled ten days later.
+All four driver samples are digitally signed with stolen certificates from game development companies, either the US-based Frostburn Studios or the Korean 433CCR Company (433씨씨알 주식회사).
+The signatures made with Frostburn Studios’ certificate are even timestamped.
+Two of the samples are on VirusTotal and have a very low detection rate.
+The rootkit starts by ensuring the victim machine is not running in safe mode.
+It then checks the operating system version.

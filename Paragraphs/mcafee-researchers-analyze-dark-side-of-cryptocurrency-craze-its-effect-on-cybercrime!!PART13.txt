@@ -1,0 +1,8 @@
+
+However, at a cost of around $250 per coin, Bitcoin miners did not immediately see higher profits than they could manage with focused scraper malware.
+Criminals needed more reliable ways of acquiring coins.
+Ransomware, a potentially lucrative form of malware, was already on the rise using other digital currencies.
+In late 2013, the major ransomware family CryptoLocker included a new option for ransomware victims—to pay via Bitcoin.
+The tactic effectively created a frenzy of copycat malware.
+Now malware developers could outpace the profits of scraper malware as well as secure currency for the underground market.
+Ransomware quickly enjoyed several immensely successful campaigns, many of which, including Locky and Samsa, are still popular.

@@ -1,0 +1,3 @@
+
+With them, you can customize the interface, filter out in-game chat spam, and do much more.
+For example, a popular add-on called WeakAuras can help you set up convenient access to information such as the amount of time before a boss’ next high-damage attack, a warning that you are under a curse that inflicts damage to nearby players, the mana reserve levels of raid healers, and so on.

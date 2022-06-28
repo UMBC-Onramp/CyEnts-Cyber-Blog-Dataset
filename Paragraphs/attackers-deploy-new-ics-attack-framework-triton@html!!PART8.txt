@@ -1,0 +1,5 @@
+
+Even if cyber security measures fail, safety controls are designed to prevent physical damage.
+To maximize physical impact, a cyber attacker would also need to bypass safety controls.
+The SIS threat model below highlights some of the options available to an attacker who has successfully compromised an SIS.
+Attack Option 1: Use the SIS to shutdown the process The attacker can reprogram the SIS logic to cause it to trip and shutdown a process that is, in actuality, in a safe state.

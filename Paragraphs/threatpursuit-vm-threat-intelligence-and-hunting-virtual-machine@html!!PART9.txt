@@ -1,0 +1,5 @@
+
+We may also use these IOCs in order to develop and apply analytical products that establish clusters of analogous nodes such as MITRE ATT&CK tactics and techniques, or APT groups.
+On the other hand, our goal can be as simple as triaging a malware sample behavior, hunting for indicators, or proving or disproving a hypothesis.
+Let's look at how we might start.
+Open Hunting To start our use case, let’s say we are interested in reviewing latest threat actor activity reported for the quarter.

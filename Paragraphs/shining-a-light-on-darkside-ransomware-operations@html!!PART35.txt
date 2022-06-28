@@ -1,0 +1,6 @@
+
+Strings used to ignore directories The files listed in Figure 15 are ignored.
+$recycle.bin config.msi $windows.~bt $windows.~ws Figure 15:
+Ignored files The version observed in May 2021 is additionally configured to ignore the files listed in Figure 16.
+autorun.inf boot.ini bootfont.bin bootsect.bak desktop.ini iconcache.db ntldrntuser.dat ntuser.dat logntuser.ini thumbs.db Figure 16:
+Additional ignored files in May version Additional files are ignored based on the extensions listed in Figure 17.

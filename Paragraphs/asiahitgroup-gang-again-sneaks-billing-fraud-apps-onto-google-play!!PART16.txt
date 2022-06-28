@@ -1,0 +1,8 @@
+
+Connections Among Campaigns All of these campaigns rely on billing-fraud apps targeting users in Southeast and Central Asia and offer some similarities in behavior such as the use of almost the same text and images to trick users into subscribing to premium-rate services.
+Other potential connections among the three campaigns suggest that all the apps are likely from the same actor group.
+For example, apps from all campaigns use the same string as debug log tag: Figure 16.
+The “SonLv” string used as a log tag occurs in all campaigns.
+There is also a notable similarity in package and classes names and in the use of a common framework (telpoo.frame) to perform typical tasks such as database, networking, and interface support: Figure 17.
+Common package and classes names in all campaigns.
+Finally, apps from the Google Play campaigns use the domain vilandsoft[.]com to check for updates.

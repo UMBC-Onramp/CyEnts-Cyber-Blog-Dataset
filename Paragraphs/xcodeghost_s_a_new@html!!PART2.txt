@@ -1,0 +1,6 @@
+
+More specifically, we found that: XcodeGhost has entered into U.S. enterprises and is a persistent security risk Its botnet is still partially active A variant we call XcodeGhost S reveals more advanced samples went undetected After monitoring XcodeGhost related activity for four weeks, we observed 210 enterprises with XcodeGhost-infected applications running inside their networks, generating more than 28,000 attempts to connect to the XcodeGhost Command and Control (CnC) servers -- which, while not under attacker control, are vulnerable to hijacking by threat actors.
+Figure 1 shows the top five countries XcodeGhost attempted to callback to during this time.
+Figure 1.
+Top five countries XcodeGhost attempted to callback in a four-week span The 210 enterprises we detected with XcodeGhost infections represent a wide range of industries.
+Figure 2 shows the top five industries affected by XcodeGhost, sorted by the percentage of callback attempts to the XcodeGhost CnC servers from inside their networks:

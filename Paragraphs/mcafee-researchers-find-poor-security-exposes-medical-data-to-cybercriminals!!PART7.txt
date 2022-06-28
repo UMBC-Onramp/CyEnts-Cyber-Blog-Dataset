@@ -1,0 +1,14 @@
+
+For example, one of the PACS generated an error page when we changed one parameter.
+This is a very basic common way of testing if the application developers did proper input sanitation check to prevent attackers inserting code or generating failures that could reveal data about the application and can give clues to compromise the system.
+A stack-trace error.
+The stack-trace dump revealed the use of Apache Tomcat Version 7.0.13, which has more than 40 vulnerabilities.
+When communicating with the DICOM (digital imaging and communications in medicine) port, TCP 104, it is possible to grab the banner of a server and get a response.
+As we queried, we recorded different responses.
+Let’s look at one: \\x02\\x00\\x00\\x00\\x00\\xbe\\x00\\x01\\x00\\x00ANY-SCP         FINDSCU         \\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x10\\x00\\x00\\x151.2.840.10008.3.1.1.1!\\x00\\x00\\x1b\\x01\\x00\\x00\\x00@\\x00\\x00\\x131.2.840.10008.1.2.1P\\x00\\x00>Q\\x00\\x00\\x04\\x00\\x00@\\x00R\\x00\\x00\"1.2.826.0.1.3680043.2.135.1066.101U\\x00\\x00\\x0c1.4.16/WIN32
+The FINDSCU string refers to the findscu tool, which can be used to query a PACS system.
+The DICOM standard defines three data models for the query/retrieve service.
+Each data model has been assigned with one unique ID for the C-FIND, one for the C-MOVE, and one for C-GET; so all together there are nine unique IDs, three for each model.
+In the preceding banner, we retrieved two of those IDs:
+2.840.10008.1.2.1: A transfer unique ID that defines the value “Explicit VR Little Endian” for data transfer 2.826.0.1.3680043.2.135.1066.101:
+A value referring to the implementation class Another value in the banner, “1.4.16/WIN32,” refers to the implementation version.

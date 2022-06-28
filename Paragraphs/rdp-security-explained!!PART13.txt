@@ -1,0 +1,6 @@
+
+Microsoft TechNet describes configuration and usage of restricted mode here .
+Encryption There are four levels of encryption supported by standard RDP: Low, Client Compatible, High, and FIPS
+Complian t. This is configured on the Remote Desktop server.
+This can be further improved upon by using Enhanced RDP Security.
+When Enhanced RDP security is used, encryption and server authentication are implemented by external security protocols, e.g. TLS or CredSSP.

@@ -1,0 +1,5 @@
+
+The next change is the hardcoded public key of the malware that is different to the previous version.
+Another change is the file created; the first version creates the file with the name “Favourite” but this version creates this file with the name “Comone”.
+However, the algorithm of crypto of the files and the mark in the file crypted is the same.
+Another difference is in the ransom note that is now clearer with some changes in the text and now has 3 emails instead of one to contact the ransomware developers.

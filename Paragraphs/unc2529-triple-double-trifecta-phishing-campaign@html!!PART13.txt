@@ -1,0 +1,12 @@
+
+As described in the previous section, the initial infection vector starts with phishing emails that contain a link to download a malicious payload that contains an obfuscated JavaScript downloader.
+Once executed, DOUBLEDRAG reaches out to its C2 server and downloads a memory-only dropper.
+The dropper, DOUBLEDROP, is implemented as a PowerShell script that contains both 32-bit and 64-bit instances of the backdoor DOUBLEBACK.
+The dropper performs the initial setup that establishes the backdoor’s persistence on the compromised system and proceeds by injecting the backdoor into its own process (PowerShell.exe) and then executing it.
+The backdoor, once it has the execution control, loads its plugins and then enters a communication loop, fetching commands from its C2 server and dispatching them.
+One interesting fact about the whole ecosystem is that only the downloader exists in the file system.
+The rest of the components are serialized in the registry database, which makes their detection somewhat harder, especially by file-based antivirus engines.
+Ecosystem in Details DOUBLEDRAG Downloader component The downloader is implemented as a heavily obfuscated JavaScript code.
+Despite the relatively large amount of the code, it boils down to the following snippet of code (Figure 3), after de-obfuscation.
+\"C:\\Windows\\System32\\cmd.exe\" /c oqaVepEgTmHfPyC & Po^wEr^sh^elL -nop -w hidden -ep bypass -enc <base64_encoded_ps_code>
+Figure 3: De-obfuscated JavaScript downloader The <base64_encoded_ps_code> downloads and executes a PowerShell script that implements the DOUBLEDROP dropper.

@@ -1,0 +1,18 @@
+
+Coverage Customers of McAfee gateway and endpoint products are protected against the latest GandCrab versions.
+Detection names include Ran-Gandcrabv4!
+and many others.
+An independent researcher, Twitter user Valthek, has also created several vaccines.
+(McAfee has verified that these vaccines are effective.)
+The version for GandCrab 4.x through 5.0.2 can prevent the files from being encrypted.
+For Version 4.x, the deletion of shadow volumes cannot be avoided but at least the files themselves are kept safe.
+For Version 5.x, encrypting the files can be avoided but not the creation and changing of the wallpaper, which the malware will still corrupt.
+The malware cannot create random extensions to encrypt the files but will prepare the string.
+Running the vaccine a second time removes the wallpaper if it is in the %TEMP% folder.
+The vaccine has versions with and without persistence.
+The version with persistence creates a random filename in a special folder and writes a special random entry in the registry to run each time with the system.
+In this case, the machine will always be protected against this malware (at least in its current state of October 10, and perhaps in the future).
+Indicators of compromise These samples use the following MITRE ATT&CK ™ techniques: File deletion System information discovery Execution through API Execution through WMIC Application process discovery: to detect antimalware and security products as well as normal programs Query registry: to get information about keys that the malware needs to create or read Modify registry File and directory discovery: to search for files to encrypt Discovery of network shares to encrypt them Encrypt files Process discovery: enumerating all processes on the endpoint to kill some special ones Create files Elevation of privileges Change wallpaper Flood the network with connections Create mutants Hashes e168e9e0f4f631bafc47ddf23c9848d7: Version 5.0 6884e3541834cc5310a3733f44b38910:
+Version 5.0 DLL 2d351d67eab01124b7189c02cff7595f: Version 5.0.2 41c673415dabbfa63905ff273bdc34e9: Version 5.0.2 1e8226f7b587d6cd7017f789a96c4a65: DLL for 32-bit exploit fb25dfd638b1b3ca042a9902902a5ff9: DLL for 64-bit exploit df1a09dd1cc2f303a8b3d5097e53400b: botnet related to the malware (IP 92.63.197.48)
+
+

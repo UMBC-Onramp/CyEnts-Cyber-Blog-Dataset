@@ -1,0 +1,3 @@
+
+Each of these batch scripts contained a series of commands that employed the copy command, WMIC, and PsExec to copy and execute a kill script (windows.bat) and an instance of MAZE ransomware (sss.exe) on hosts across the impacted environment Notably, forensic analysis of the impacted environment revealed MAZE deployment scripts targeting ten times as many hosts as were ultimately encrypted.
+Implications Based on our belief that the MAZE ransomware is distributed by multiple actors, we anticipate that the TTPs used throughout incidents associated with this ransomware will continue to vary somewhat, particularly in terms of the initial intrusion vector.

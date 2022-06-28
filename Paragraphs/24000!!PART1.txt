@@ -1,0 +1,4 @@
+Google has fixed 28 vulnerabilities by releasing update 100.0.4896.60 for its Chrome browser.
+At least 9 of them have a high severity rating — adding to CVE-2022-1096, another high severity vulnerability which Google patched with a separate update just a few days ago.
+So in total, the Chrome developers have released patches for 10 high severity vulnerabilities in less than a week.
+In other words, if you have not rebooted your computer for quite some time or did not restart your browser recently, then it’s time to update.

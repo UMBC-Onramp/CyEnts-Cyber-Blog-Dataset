@@ -1,0 +1,8 @@
+
+LockBit sample digitally signed Tales from the Underground When we researched the underground community for LockBit we came across a posting on several popular underground forums.
+ A threat actor named Lockbi or LockBit is offering LockBit as a “bespoke” ransomware as a service for limited partners/affiliates.
+We suspect LockBit ransomware to be more “bespoke”, not only from its own announcements, but subsequently we have not seen any affiliate identifiers present in the ransomware, which is normally a clear sign of an actor trying to upscale operations and service a larger number of affiliates.
+The advertisement provides a general description that matches the LockBit behavior we have seen in the wild and from our analysis.
+As many other cyber-criminal services, LockBit does not allow the use of the software in any of the CIS countries.
+This is commonly done to avoid prosecution if the threat actor resides in one of those nations.
+What we also noticed was a mention around multi-threading.

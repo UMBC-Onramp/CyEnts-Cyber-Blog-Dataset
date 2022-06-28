@@ -1,0 +1,6 @@
+
+They also include the negative publicity that often comes with supporting those who abide by ransomware’s business model.
+How cyber insurers view ransom payments is relevant given the proportion of claims that involve ransomware in some way.
+Ransomware incidents accounted for 41% of cyber insurance claims filed in the first half of 2020 — an increase of 260%.
+During that same period, ransom demands increased by 47%.
+Cyber insurance claims covered anywhere from as low as $1,000 to as high as $2 million per ransomware event.

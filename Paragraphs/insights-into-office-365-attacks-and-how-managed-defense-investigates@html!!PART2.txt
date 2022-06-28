@@ -1,0 +1,7 @@
+
+The term “BEC” typically refers to a type of fraud committed by financially motivated attackers.
+BEC actors heavily rely on social engineering to carry out their schemes, ultimately defrauding organizations and even personnel.
+One common BEC scheme involves compromising a C-suite executive’s account via phishing.
+Once the victim unwittingly enters their credentials into a web form masquerading as the legitimate Office 365 login portal, attackers log in and instruct others in the organization to conduct a wire transfer, perhaps under the guise of an upcoming acquisition that has yet to be publicly announced.
+However, we’ve also observed more effective schemes where attackers compromise those in financial positions and patiently wait until an email correspondence has begun about a due payment.
+Attackers seize this opportunity by sending a doctored invoice (sometimes based on a legitimate invoice that had been stolen earlier) on behalf of the compromised user to another victim responsible for making payments.

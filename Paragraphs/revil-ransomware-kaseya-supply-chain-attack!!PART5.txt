@@ -1,0 +1,5 @@
+
+The compromised VSA agents then launched a PowerShell command that disabled anti-malware protections, then installed and executed the REvil ransomware payload.
+The ransomware encrypted data across devices it infected, rendering it impossible to access .
+The supply chain attack currently unfolding was most probably planned well ahead of the time it was actively launched over the long holiday weekend.
+Many major attacks, especially those that rely on ransomware or destructive malware, are carefully planned ahead of time and unleashed when security teams are not working in full capacity.

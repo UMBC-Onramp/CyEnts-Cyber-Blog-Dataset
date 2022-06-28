@@ -1,0 +1,10 @@
+
+The provided bytes are not added to the IDB and are simply emulated as is.
+This can be useful for preparing the emulation environment.
+For example, flare-emu itself uses this API to manipulate a Model Specific Register (MSR) for the ARM64 CPU that is not exposed by Unicorn in order to enable Vector Floating Point (VFP) instructions and register access.
+Figure 3 shows the code snippet that achieves this.
+Like with emulateRange , the Unicorn emulation object is returned for further probing by the user in case flare-emu does not expose some functionality required by the user.
+Figure 3: flare-emu using emulateBytes to enable VFP for ARM64 API Hooking As previously stated, flare-emu is designed to make it easy for you to use emulation to solve your code analysis needs.
+One of the pains of emulation is in dealing with calls into library functions.
+While flare-emu gives you the option to simply skip over call instructions, or define your own hooks for dealing with specific functions within your call hook routine, it also comes with predefined hooks for over 80 functions!
+These functions include many of the common C runtime functions for string and memory manipulation that you will encounter, as well as some of their Windows API counterparts.

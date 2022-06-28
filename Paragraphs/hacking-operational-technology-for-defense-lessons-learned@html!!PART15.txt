@@ -1,0 +1,8 @@
+
+Focusing collection, detection, and hunting efforts on assets or information that are likely to be compromised during these phases presents defenders with strategic opportunities to hunt for and detect targeted adversary activity before it poses a risk to control systems.
+In a previous blog post stating our approach to OT security, we highlighted that IT networks close to production networks and OT intermediary systems remain the best zones to detect OT targeted attacks, a.k.a.
+“ The Funnel of Opportunity ”.
+As actors pivot across systems and networks to gather information and elevate privileges, they leave footprints that can be tracked before they propagate to critical systems.
+An actor who covertly performs internal reconnaissance and propagates to the OT network is already positioned to cause damage on mission critical assets and is unlikely to be discovered.
+Early detection of adversary activity before reaching critical OT systems will decrease the dwell time and the risk of an incident.
+OT defenders can prioritize collection and detection, alert triage, and incident response efforts by becoming familiar with the types of information and services that OT focused threat actors commonly search for during internal reconnaissance in IT networks and network propagation across OT intermediary systems.

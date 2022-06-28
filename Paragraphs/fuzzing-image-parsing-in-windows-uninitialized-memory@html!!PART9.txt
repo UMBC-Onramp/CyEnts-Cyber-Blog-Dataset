@@ -1,0 +1,7 @@
+
+Results
+During my research, I found three cases of uninitialized memory usage while fuzzing Windows built-in image parsers.
+Two of them are explained in detail in the next sections.
+Root cause analysis of uninitialized memory usage is non-trivial.
+We don’t have a crash location to back trace, and have to use the resulting pixel buffer to back trace to find the root cause—or use clever tricks to find the deviation.
+CVE-2020-0853 Let’s look at the rendering of the proof of concept (PoC) file before going into the root cause of this vulnerability.

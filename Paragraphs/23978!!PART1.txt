@@ -1,0 +1,2 @@
+Hackers belonging to the LAPSUS$ cybercrime group have published screenshots, allegedly taken from inside Okta’s information systems.
+If the claims are true, they have access not only to the company’s website, but also to a number of other internal systems, including quite critical ones.

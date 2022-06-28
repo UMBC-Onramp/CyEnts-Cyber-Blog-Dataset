@@ -1,0 +1,2 @@
+Our researchers analyzed the HermeticRansom malware also known as Elections GoRansom.
+By and large, this is a fairly simple cryptor.

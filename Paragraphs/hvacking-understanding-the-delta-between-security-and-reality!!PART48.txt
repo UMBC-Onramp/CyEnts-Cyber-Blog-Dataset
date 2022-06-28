@@ -1,0 +1,4 @@
+
+0x81 is the first byte of the BVLC layer, indicating this where our address needs to go within the last packet to ensure that only the address we want is overwritten.
+We also need to ensure there are not any bytes after our address, otherwise we will continue to overwrite the GOT past our target address.
+Since this application is a multi-threaded application, this could cause the application to crash before our shellcode has a chance to execute.

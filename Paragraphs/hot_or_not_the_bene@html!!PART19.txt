@@ -1,0 +1,4 @@
+
+However, as we have highlighted in this report, JSPatch offers an attack vector that does not require sideloading or a jailbroken device for an attack to succeed.
+It is not difficult to identify that the JavaScript content, which is not subject to any review process, is a potential Achilles heel in this app development architecture.
+Since there are few to zero security measures to ensure the security properties of this file, the following scenarios for attacking the app and the user are conceivable: ● Precondition : 1) App embeds JSPatch platform; 2) App Developer has malicious intentions.

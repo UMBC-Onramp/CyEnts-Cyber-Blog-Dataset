@@ -1,0 +1,133 @@
+According to FortiGuard Labs , 2022 is shaping up to be a banner year for cybercriminals, with ransomware on the rise and an unprecedented number of attackers lining up to find a victim.
+
+Attacks will continue to span the entire attack surface, leaving IT teams scrambling to cover every possible avenue of attack.
+
+This will be incredibly challenging because the attack surface will simultaneously be expanding as organizations transition to more hybrid environments and workspaces, adopt more AI and ML-based technologies , develop new connectivity options, and deploy additional business-critical applications and devices into the cloud.
+
+By understanding what the future may hold in relation to cyber threats, we give ourselves the best possible chance of defeating them.
+
+Attack Framework - Left to Right Attacks are often discussed in terms of left-hand and right-hand threats when viewed through an attack chain such as the MITRE ATT&CK framework.
+
+On the left are efforts spent pre-attack, which includes planning, development, and weaponization strategies.
+
+We predict that cybercriminals will spend more time and effort on reconnaissance and discovering zero-day capabilities to exploit new technologies and expanding network environments.
+
+In addition to redoubled efforts on the left-hand side of the attack chain, we will also see a significant increase in the rate at which new attacks can be launched on the right due to the expanding Crime-as-a-Service market.
+
+In addition to the sale of ransomware- and other malware-as-a-service offerings, we will likely see new criminal solutions, including phishing- and botnets-as-a-service, as well as an increase in the sale of access to pre-compromised targets.
+
+We will also see an increase in new attacks.
+
+Organizations should prepare for the targeting of new attack vectors, such as Linux platforms.
+
+Linux still runs the back-end systems of most networks and until recently, it has largely been ignored by the hacker community.
+
+But we have already begun to see new Linux-based attacks like Vermilion Strike, which is a malicious implementation of the Beacon feature of Cobalt Strike that can target Linux systems with remote access capabilities without being detected.
+
+Similarly, Microsoft is actively integrating WSL (Windows Subsystem for Linux) into Windows 11.
+
+WSL is a compatibility layer for running Linux binary executables natively on Windows.
+
+We have already seen malicious test files in the wild targeting WSL.
+
+These files act as loaders, many with malicious payloads.
+
+They just lack the ability to inject those payloads into the WSL system.
+
+And we are also seeing more botnet malware being written for Linux platforms.
+
+This expands the attack surface further, to the network edge.
+
+We expect to see even more activity targeting edge devices that had traditionally been overlooked by cybercriminals.
+
+From Top to Bottom We expect to see new exploits targeting satellite networks over the next year.
+
+There are a half dozen major satellite internet providers already in place.
+
+Satellite base stations serve as the entry point to the satellite network, essentially connecting everyone, everywhere—including cybercriminals to their targets—so this is where a lot of threats will be lurking.
+
+But there will also be millions of terminals from which to launch an attack.
+
+We have already begun to see new threats targeting satellite-based networks, such as ICARUS, which is a proof-of-concept DDoS attack that leverages direct global accessibility to satellites to launch attacks from numerous locations.
+
+The biggest targets will be organizations that rely on satellite-based connectivity to run their businesses, those that deliver critical services to remote locations, and organizations that provide services to clients in motion, such as cruise liners, cargo ships, and commercial airlines.
+
+Other attacks, such as ransomware, are sure to follow.
+
+At the smaller end of the scale, we also expect to see an increase in digital theft by attackers targeting crypto wallets.
+
+While banks have largely been able to fend off attacks targeting wire transfers using encryption and multi-factor authentication, many digital wallets sit unprotected on laptops and smartphones.
+
+We have already seen new attacks emerging that target digital wallets.
+
+A new fake Amazon gift card generator specifically targets digital wallets by replacing the victim’s wallet with that of the attacker.
+
+And ElectroRAT targets them by combining social engineering with custom cryptocurrency applications and a new Remote Access Trojan (RAT) to target multiple operating systems, including Windows, Linux, and macOS.
+
+We expect to see more malware designed to target stored crypto credentials and drain digital wallets, especially as more businesses adopt digital wallets to make purchases.
+
+Core to the Edge We also predict that attacks will continue to span the network, including an increase in attacks targeting Operational Technology (OT) systems.
+
+According to a recent CISA (U.S. Cybersecurity & Infrastructure Security Agency) report, ransomware attacks are increasingly targeting critical infrastructure and \"have demonstrated the rising threat of ransomware to operational technology (OT) assets and control systems.\
+
+" This is being spurred by the near-universal convergence of IT and OT networks which has enabled some attacks to target OT systems through the compromised home networks and devices of remote workers.
+
+Traditionally, attacks on OT systems were the domain of highly specialized threat actors who knew their way around ICS and SCADA systems.
+
+But even those highly specialized capabilities and tools are now being included in attack kits available for purchase on the dark web, making them available to a much broader set of far less technical attackers.
+
+And at the other end of the network, we also see new edge-based challenges emerging.
+
+\"Living off the land\" is a technique that allows malware and threat actors to leverage existing toolsets and capabilities within compromised environments.
+
+This enables attacks and data exfiltration to look like normal system activity and go unnoticed.
+
+Living off the land attacks are effective because they use legitimate tools to carry out their malicious actions.
+
+And now, as edge devices become more powerful, with more native capabilities and, of course, more privileges, we expect to see new attacks designed to \"live off the edge.\" Malware living in these edge environments will use local resources to monitor edge activities and data and then steal, hijack, or even ransom critical systems, applications, and information while avoiding detection.
+
+Where Do You Start with the Expanding Attack Surface?
+
+Defending against this new wave of threats requires a holistic, integrated approach to security.
+
+Point products need to be replaced with security devices designed to interoperate as a unified solution regardless of where they are deployed.
+
+They need to protect every user, every device, and every application with a unified policy that can follow data and transactions from end to end.
+
+Centralized management will also help ensure that policies are enforced consistently, configurations and updates are delivered promptly, and that suspicious events that may occur anywhere across the network—including to, between, and within cloud environments—are centrally collected and correlated.
+
+Organizations are strongly urged to extend their efforts by hardening their Linux and other traditionally lower-profile devices.
+
+They should also have tools in place designed to protect, detect, and respond to threats targeting these devices.
+
+Similarly, organizations need to take a security-first approach when adopting new technologies, whether upgrading your Windows-based systems or adding satellite-based connectivity, to ensure that protections are in place before adding them to your network.
+
+Additionally, behavioral analytics should be deployed to detect “left hand” threats.
+
+Discovering and blocking an attack during initial reconnaissance and probing efforts can help raise threat awareness and prevent problems arising later in the attack chain.
+
+Security tools should be selected based on their ability to detect and prevent both known and unknown threats and respond to active threats in real-time before beachheads can be established or malicious payloads can be delivered.
+
+To help, AI and machine learning capabilities need to be deployed pervasively across the network to baseline normal behavior and respond instantly to changes and detect and disable sophisticated threats before they can execute their payloads.
+
+They are also essential in correlating massive amounts of collected data to detect malicious behavior, including using threat feeds and attack profiles to predict the most likely places an attack may occur and proactively bolstering those defenses.
+
+Other advanced technologies, like deception, should also be considered to turn a traditionally passive network into an active defense system.
+
+Threats show no sign of slowing down.
+
+If your network and security tools are not ready to protect your organization from the next generation of threats now, tomorrow may be too late to make the critical changes you need.
+
+Broad deployment, deep integration, and dynamic automation, combined with high performance and hyperscalability, are the hallmarks of any security system designed to protect the way today's organizations need to run their business.
+
+ To combat these evolving threats, organizations need to adopt a Security Fabric platform founded on a cybersecurity mesh architecture.
+
+Read or access the full predictions for 2022.
+
+Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+
+
+
+

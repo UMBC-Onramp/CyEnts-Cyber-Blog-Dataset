@@ -1,0 +1,8 @@
+
+The three least significant bytes tell us the ID of the method, in this case it’s 0x49D ( 1181 in decimal).
+This ID is also referred to as the Method ID (MID) or the Row ID of the method.
+Figure 5: Method details for method 0x0600049D To find out more information about this method, we look within the tables of the “ #~ ” stream of the .NET
+metadata streams in the .NET metadata directory as show in Figure 6.
+We traverse to the entry number 1181 or 0x49D of the Method table to find the method metadata which includes the Relative Virtual Address (RVA) of the method body, various flags, a pointer to the name of the method, a pointer to the method signature, and finally, an pointer to the parameters specification for this method.
+Please note that the MID starts at 1 instead of 0 .
+Figure 6: Method details from the PE file header For method 0x0600049D , the RVA of the method body is 0xB690 .

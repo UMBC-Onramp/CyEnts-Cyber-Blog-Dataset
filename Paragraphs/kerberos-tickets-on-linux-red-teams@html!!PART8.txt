@@ -1,0 +1,8 @@
+
+We have published a new tool called SSSDKCMExtractor that will decrypt relevant secrets in the SSSD database and pull out  the credential cache Kerberos blob.
+This blob can be converted into a usable Kerberos CCache file that can be passed to other tools, such as Mimikatz , Impacket , and smbclient .
+CCache files can be converted into Windows format using tools such as Kekeo .
+We leave it as an exercise to the reader to convert the decrypted Kerberos blob into a usable credential cache file for pass-the-cache and pass-the-ticket operations.
+Using SSSDKCMExtractor is simple.
+An example SSSD KCM database and key are shown in Figure 2.
+Figure 2: SSSD KCM files Invoking SSSDKCMExtractor with the --database and --key parameters will parse the database and decrypt the secrets as shown in Figure 3.

@@ -1,0 +1,10 @@
+
+Right-clicking in a highlighted isolated subgraph node and selecting \"SimplifyGraph ->
+Create isolated subgraph\".
+Doing either of these prompts you for text for the new graph node to create.
+If you manually create/delete groups using IDA you may need to refresh the chooser's knowledge of the current function groups (right-click and select \"Refresh groups\" in the chooser).
+You can right click in the chooser and select \"Clear highlights\" to remove the current highlights.
+As you navigate to new functions the chooser updates to show isolated subgraphs in the current function.
+Closing the chooser removes any active highlights.
+Any custom colors you applied prior to running the plug-in are preserved and reapplied when the current highlights are removed.
+Isolated subgraph calculations operates on the original control flow graph, so isolated subgroups can't be nested.

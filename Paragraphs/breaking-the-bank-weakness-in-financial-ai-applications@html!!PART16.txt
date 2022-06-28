@@ -1,0 +1,3 @@
+
+FireEye Threat Intelligence has previously examined how financially motivated actors can leverage data manipulation for profit through pump and dump scams and stock manipulation.
+Threat Actors Conducting Insider Trading FireEye assesses with moderate confidence that the current risk of threat actors leveraging these attacks is low as exploitations of trade simulations require sophisticated technology as well as additional insider intelligence regarding when a financial company is training their model.

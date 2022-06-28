@@ -1,0 +1,5 @@
+
+Network segmentation should also be monitored to ensure it is not bypassed.
+Further, do not over-rely on preventive measures alone.
+Once the organization has a defensible architecture in place it is important to actively defend that architecture with appropriately skilled personnel who understand OT and can detect key threat behaviors such as the tactics, techniques and procedures of OT threat groups and ransomware operators.
+With the number of reported vulnerabilities rising quickly, X-Force also sees vulnerability exploitation as an initial infection vector that is likely to continue over time for industrial companies with a connected OT environment.

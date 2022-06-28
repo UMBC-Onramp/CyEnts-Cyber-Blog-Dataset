@@ -1,0 +1,4 @@
+
+An attacker can leverage this issue to launch an app containing a Masque Attack.
+By crafting and distributing an enterprise-signed malware that registers app URL schemes identical to the ones used by legitimate popular apps, an attacker may hijack legitimate apps’ URL schemes and mimic their UI to carry out phishing attacks, e.g. stealing the login credentials.
+iOS doesn’t protect users from this attack because it doesn’t prompt for trust to the user when launching such an enterprise-signed malware for the first time through app URL scheme.

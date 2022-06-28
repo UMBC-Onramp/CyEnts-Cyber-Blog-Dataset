@@ -1,0 +1,8 @@
+
+John can assume PsExec was used to execute WCE, which is reasonable given the timeline of events and artifacts present on the system.
+About seven minutes, later the registry recorded the modification of a Run key associated with persistence for \"msspcheck.exe.\" Finally, at 16:48:11 UTC, the attacker logged off from \"ACMWH-KIOSK\".
+John found no additional evidence of compromise.
+Since the IOCs are living documents, John's next step is to update his IOCs with relevant findings from his investigation of the kiosk system.
+John updates the \"acmCleanup.exe (BACKDOOR)\" IOC with information from the \"msspcheck.exe\" variant of the attacker's backdoor including: File metadata like filename and MD5.
+A uniquely named process handle discovered by John's malware analyst.
+A prefetch entry for the \"msspcheck.exe\" binary.

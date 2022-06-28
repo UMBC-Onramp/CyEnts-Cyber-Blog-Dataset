@@ -1,0 +1,4 @@
+
+Thus a malicious app can disguise itself as a music app to conduct background monitoring.
+Before Apple fixes this issue, the only way for iOS users to avoid this security risk is to use the iOS task manager to stop the apps from running in the background to prevent potential background monitoring.
+iOS7 users can press the Home button twice to enter the task manager and see preview screens of apps opened, and then swipe an app up and out of preview to disable unnecessary or suspicious applications running on the background, as shown in Fig.3.

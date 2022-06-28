@@ -1,0 +1,7 @@
+
+As the actor moves closer to their goals, it becomes more difficult to assess both the probability of success and the actual impact of their actions due to nuances specific to the client environment and additional safety and security controls built into the process.
+However, the analysis holds significant value as it illustrates the overall structure of the physical process and potential attacker behaviors aimed at achieving specific end goals.
+Furthermore, it proceeds directly from the results obtained during the first phase of the red teaming.
+The model presents one feasible combination of actions that an attacker could perform to access devices governing the boiler drum and modify the water level while remaining undetected.
+With the level of access obtained from phase 1, the attacker would likely be able to compromise engineering workstations (EWS) for the boiler drum's controller using similar tools.
+This would likely enable the actor to perform actions such as changing the drum level setpoints, modifying the flow of steam scaling, or modifying water flow scaling.

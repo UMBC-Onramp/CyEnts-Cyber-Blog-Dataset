@@ -1,0 +1,4 @@
+
+Table 1 shows the results of three models: randomly guessing the severity, modeling based on the volume of tweets covering a CVE, and the ML-based approach described earlier in the post.
+The scoring metric in Table 2 is precision at top K using our logistic regression model.
+For example, where K=100, this is a way for us to identify what percent of the 100 most severe vulnerabilities were correctly predicted.

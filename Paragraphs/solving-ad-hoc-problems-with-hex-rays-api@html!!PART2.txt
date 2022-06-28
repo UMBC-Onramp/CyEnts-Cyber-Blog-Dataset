@@ -1,0 +1,10 @@
+
+In this blog, we aim to close that gap by showcasing examples where scripting Hex-Rays goes a long way.
+Overview of a Decompiler In order to understand how the decompiler works, it’s helpful to first review the normal compilation process.
+Compilation and decompilation center around the concept of an Abstract Syntax Tree (AST) .
+In essence, a compiler takes the source code, splits it into tokens according to a grammar, then these tokens are grouped into logical expressions.
+In this phase of the compilation process, referred to as parsing, the code structure is represented as a complex object, the AST.
+From the AST, the compiler will produce assembly code for the specified platform.
+A decompiler takes the opposite route.
+From the given assembly code, it works back to produce an AST, and from this to produce pseudocode.
+From all the intermediate steps between code and assembly, we are stressing the AST so much because most of the time you will spend using the Hex-Rays API, you will actually be reading and/or modifying the Abstract Syntax Tree (or ctree in Hex-Rays terminology).

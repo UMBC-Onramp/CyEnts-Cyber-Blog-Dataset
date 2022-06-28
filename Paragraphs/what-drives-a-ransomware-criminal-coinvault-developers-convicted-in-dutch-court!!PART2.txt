@@ -1,0 +1,12 @@
+
+Nor did they profit as much from it, but this case is nevertheless uncommon.
+It is rare that the developers of ransomware are caught, let alone confess their crimes.
+This case gives us an opportunity to understand what drove them down a path to cybercrime.
+The challenge Why would someone write malicious code and infect thousands of people?
+The judge asked the brothers the same question.
+Their response was “Because it was a technical challenge.”
+“But didn’t you realize you were dealing with people?”
+the judge responded.
+Both brothers answered that they did not; they were dealing with computers and never met their victims face to face.
+The judge and prosecutor did not accept their explanation.
+CoinVault had a built-in helpdesk function to directly communicate with their victims, thus registering their pleas.

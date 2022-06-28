@@ -1,0 +1,8 @@
+
+filename is based on static analysis.
+This looks like a specific beacon to indicate that the malware is ready to receive commands.
+The optional HTTP data with king.jpg looks like a beacon to inform the control server that the malware is ready to accept new commands: Commands received from the control server are encoded DWORDs After decoding, these DWORDs should be in the range 123459h to 123490h
+Malware checking to make sure a received command is in the correct range.
+The command index calculator and jump to the appropriate command.
+The command index table and command handler address table.
+Implant Capabilities Based on the responses received from the control server, the malware can carry out the following malicious tasks: Recursively generate a list of files in a directory and send to the control server Terminate a specific process.

@@ -1,0 +1,4 @@
+
+The efficiency of ransomware groups places a significant burden on defenders to rapidly respond before ransomware deployment.
+As ransomware groups continue to gain operational expertise through successful compromises, they will continue to shorten their TTR while scaling their operations.
+Understanding the TTPs fundamental to a specific operation like UNC2198 provides an edge to defenders in their response efforts.

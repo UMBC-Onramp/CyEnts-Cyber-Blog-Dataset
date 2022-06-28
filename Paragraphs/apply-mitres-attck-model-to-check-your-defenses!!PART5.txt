@@ -1,0 +1,4 @@
+
+Having more visibility into their methods leads us to the right responses, and helps us contain and eradicate attacks in a coordinated way.
+By comparing the multiple actors from your initial risk assessment, you can build the matrix from the perspective of high/medium/low risk and map it against your defenses.
+Although some adversaries might not have a history of attacking you and your sector, it is still good to ask yourself “What if we were a target?”

@@ -1,0 +1,5 @@
+Introduction Machine learning (ML) is playing an increasingly important role in cyber security.
+Here at FireEye, we employ ML for a variety of tasks such as: antivirus , malicious PowerShell detection , and correlating threat actor behavior .
+While many people think that a data scientist’s job is finished when a model is built, the truth is that cyber threats constantly change and so must our models.
+The initial training is only the start of the process and ML model maintenance creates a large amount of technical debt.
+Google provides a helpful introduction to this topic in their paper “Machine Learning: The High-Interest Credit Card of Technical Debt. ”

@@ -1,0 +1,8 @@
+
+This expands the attack surface further, to the network edge.
+We expect to see even more activity targeting edge devices that had traditionally been overlooked by cybercriminals.
+From Top to Bottom We expect to see new exploits targeting satellite networks over the next year.
+There are a half dozen major satellite internet providers already in place.
+Satellite base stations serve as the entry point to the satellite network, essentially connecting everyone, everywhere—including cybercriminals to their targets—so this is where a lot of threats will be lurking.
+But there will also be millions of terminals from which to launch an attack.
+We have already begun to see new threats targeting satellite-based networks, such as ICARUS, which is a proof-of-concept DDoS attack that leverages direct global accessibility to satellites to launch attacks from numerous locations.

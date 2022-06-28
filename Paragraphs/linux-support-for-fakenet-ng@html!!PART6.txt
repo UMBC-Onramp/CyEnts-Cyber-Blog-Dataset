@@ -1,0 +1,11 @@
+
+LinuxFlushDnsCommand :
+Specifies the command to flush the DNS resolver cache.
+When using FakeNet-NG in SingleHost mode on Linux, this ensures that name resolution requests are forwarded to a DNS service such as the FakeNet-NG DNS listener instead of using cached answers.
+The setting is not applicable on all distributions of Linux, but is populated by default with the correct command for Ubuntu Linux.
+Refer to your distribution’s documentation for the proper command for this behavior.
+Starting FakeNet-NG on Linux Before using FakeNet-NG, also be sure to disable any services that may bind to ports corresponding to the FakeNet-NG listeners you plan to use.
+An example is Ubuntu’s use of a local dnsmasq service.
+You can use netstat to find such services and should refer to your Linux distribution’s documentation to determine how to disable them.
+You can start FakeNet-NG by invoking fakenet with root privileges, as shown in Figure 1.
+Figure 1: Starting FakeNet-NG on Linux You can alter FakeNet-NG’s configuration by either directly editing the file displayed in the first line of FakeNet-NG’s output, or by creating a copy and specifying its location with the -c command-line option.

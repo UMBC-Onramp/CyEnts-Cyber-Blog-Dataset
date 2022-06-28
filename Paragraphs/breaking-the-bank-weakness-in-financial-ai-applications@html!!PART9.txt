@@ -1,0 +1,4 @@
+
+Threat actors can also use AI applications to replicate the voice of a company's leadership to conduct fraudulent trades for financial gain.
+We have observed one example where a manipulated video likely impacted the outcome of a political campaign.
+Portfolio Management Use Several financial institutions are employing AI applications to select stocks for investment funds , or in the case of AI-based hedge funds , automatically conduct trades to maximize profits.

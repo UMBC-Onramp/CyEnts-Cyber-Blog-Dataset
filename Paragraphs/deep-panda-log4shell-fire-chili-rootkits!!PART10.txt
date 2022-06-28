@@ -1,0 +1,6 @@
+
+The driver has four global lists, one for each aspect, that contain the artifacts to hide.
+The driver’s IOCTLs allow dynamic configuration of the lists through its control device \\Device\\crtsys .
+As such, the dropper uses these IOCTLs to hide the driver’s registry key, the loader and backdoor files, and the loader process.
+Files The rootkit implements a filesystem minifilter using code based on Microsoft’s official driver code samples.
+Prior to registering the minifilter instance, it dynamically creates an instance in the registry named Sfdev32TopInstance with altitude 483601 .

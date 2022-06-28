@@ -1,0 +1,4 @@
+
+Across our testbed of 206 samples, 28% of the 186,000 total functions are recognized as library code by our function signatures.
+As our implementation can recognize around 100,000 functions/sec, library function identification overhead is negligible and capa is approximately 25% faster than in 2020!
+Finally, we introduced a new feature class that rule authors can use to match recognized library functions: function-name .

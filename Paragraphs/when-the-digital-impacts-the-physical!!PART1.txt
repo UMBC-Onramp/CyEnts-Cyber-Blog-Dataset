@@ -1,0 +1,6 @@
+By Steve Povolny on Oct 09, 2018
+Cyberattacks have always been, well, cyber.
+Their immediate effects were on our data, our digital information, and our devices…until they weren’t.
+The interconnected nature of the world and the way it’s built in 2018 has brought us exciting and revolutionary innovations, but it has also been leveraged by hackers to extend the impact of a cyberattack beyond the digital sphere into the physical.
+Pacemakers can be hacked, shocks can be sent to patients remotely.
+Critical infrastructure can be taken down , rendering cities powerless.

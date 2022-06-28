@@ -1,0 +1,5 @@
+
+Account abuse, credential harvesting, and extortion: By accessing a system via RDP, attackers can obtain almost all data stored on a system.
+This information can be used for identity theft, account takeovers, credit card fraud, and extortion, etc.
+Cryptomining: In the latest McAfee Labs Threats Report , we wrote about the increase in illegal cryptocurrency mining due to the rising market value of digital currencies.
+We found several criminal forums actively advertising Monero mining as a use for compromised RDP machines.

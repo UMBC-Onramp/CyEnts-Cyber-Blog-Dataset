@@ -1,0 +1,7 @@
+
+So far, so good — but the data read by the CPU is stored for some time in the cache, the CPU’s own memory.
+Next comes the most interesting part: With no way to read the confidential data from the CPU’s cache directly, the malicious process deploys a so-called side-channel attack to steal it.
+That involves measuring the speed of access to certain information.
+If it’s relatively small, that means the data is located in the cache.
+If large, it is loaded from regular RAM.
+A set sequence of read attempts results in a leak of the secret information.

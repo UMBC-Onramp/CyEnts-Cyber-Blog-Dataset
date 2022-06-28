@@ -1,0 +1,10 @@
+
+Conclusion “The Illicit Cryptocurrency Mining Threat” represents the first joint industry initiative to educate enterprises and consumers about the growing threat of cryptocurrency mining.
+By improving security postures and adhering to proper security practices, we can increase the difficulty of these attacks succeeding, thus disrupting malicious behavior.
+Illicit cryptocurrency mining is not a fad.
+This problem will likely grow in relation to the value of cryptocurrencies.
+Current infection methods will give way to new techniques and exploits.
+The attraction of stealing cryptocurrencies may lead actors to develop targeted attacks against private implementations of blockchain as they become more prevalent.
+For more on illicit cryptomining threats, read the introductory blog, key findings summary, and the full report to learn about this important research.
+
+

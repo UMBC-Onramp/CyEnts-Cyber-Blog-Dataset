@@ -1,0 +1,4 @@
+
+To address this scenario BITS jobs can be created with a user-specified notification command, which will be executed after the job completes or in case of errors.
+The notification commands associated with BITS jobs can specify any executable or command to run.
+Attackers have utilized this feature as a method for maintaining persistence of malicious applications.

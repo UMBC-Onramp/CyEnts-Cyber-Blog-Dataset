@@ -1,0 +1,5 @@
+
+The real estate category generally included office and apartment buildings.
+From available metadata in the search results, we also managed to find instances of education, healthcare, government, food, hospitality, real estate, child care and financial institutions using the vulnerable product.
+With a bit more digging, we were easily able to find other targets through publicly available information.
+While it is not common practice to post sensitive documents online, we’ve found many documents available that indicate that these devices are used as part of the company’s building automation plans.

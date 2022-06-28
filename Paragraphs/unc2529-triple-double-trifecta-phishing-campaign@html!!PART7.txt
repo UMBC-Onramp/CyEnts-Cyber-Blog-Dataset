@@ -1,0 +1,5 @@
+
+Three of these domains were registered after the observed second wave.
+Tailored Targeting UNC2529 displayed indications of target research based on their selection of sender email addresses and subject lines which were tailored to their intended victims.
+For example, UNC2529 used a unique username, masquerading as an account executive for a small California-based electronics manufacturing company, which Mandiant identified through a simple Internet search.
+The username of the email address was associated with both sender domains, tigertigerbeads<.>com and the compromised HVAC company.

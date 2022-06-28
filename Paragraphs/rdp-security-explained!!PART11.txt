@@ -1,0 +1,10 @@
+
+Limiting the number of logon attempts per user can prevent such attacks.
+A failed logon attempt is logged under Windows Event ID 4625.
+An RDP logon falls under logon type 10, RemoteInteractive.
+The account lockout threshold can be specified in the local group policy under security settings: Account Policies.
+For logging purposes, it is best to log both failed and successful logons.
+Additionally, it is important to note that “specific security layer for RDP connections” needs to be enabled.
+Otherwise, you will be unable to tell that the logon attempt came over RDP or see the source IP address.
+A comparison is shown below.
+Event log network logon (type 3) note no source network address Event log RDP logon (type 10) note the source network address present Use a Firewall to restrict access Firewall rules can be created to restrict Remote Desktop access so that only a specific IP address or a range of IP addresses can access a given device.

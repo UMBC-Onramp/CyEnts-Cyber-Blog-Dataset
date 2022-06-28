@@ -1,0 +1,4 @@
+
+In the case of AirTags, they need to be connected to an Apple account, which is hard to create anonymously without providing a real name and usually a credit card number.
+If the police report a case of illegal tracking, Apple turns over this data — admittedly, you need to convince the police to request such data, and according to testimonials by victims in different countries, this doesn’t always happen.
+Ultimately, it’s the same story we always see: AirTags are a handy piece of technology that criminals can also use for malicious purposes.

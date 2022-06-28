@@ -1,0 +1,4 @@
+
+It contains the following strings which it likely tries to extract and target.
+PRIMARY SECONDARY remoteaddr user@ logicUR logicTim passw@ userAge realm Sourc CLEANPULSE CLEANPULSE is a memory patching utility that may be used to prevent certain log events from occurring.
+The utility inserts two strings from the command line into the target process and patches code to conditionally circumvent a function call in the original executable.

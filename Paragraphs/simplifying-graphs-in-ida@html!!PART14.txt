@@ -1,0 +1,19 @@
+
+When you’re done analyzing the current group, right click on the complement node and select IDA’s “Ungroup nodes” command.
+Figure 10:
+Group complement Example Workflow
+As an example that exercises the plug-in, let’s revisit the function in Figure 1.
+This is a large command-and-control dispatch function for a piece of malware.
+It contains a large if-else-if series of inlined strcmp comparisons that branch to the logic for each command when the input string matches the expected command.
+Find all of the inline strcmp’s and create groups for those.
+Run Edit -> Plugins -> SimplifyGraph to bring up the plug-in chooser.
+In this function nearly every isolated subgraph is a 7-node inlined strcmp implementation.
+Go through in the chooser to verify, and create a group.
+This results in a graph similar to Figure 11.
+Figure 11:
+Grouped strcmp When an input string matches a command string, the malware branches to code that implements the command.
+To further simplify the graph and make analysis easier, run the Unique-Reachable algorithm on each separate command by right clicking on the first node after each string-comparison and selecting SimplifyGraph ->
+Create unique-reachable group.
+After this we now have a graph as in Figure 12.
+Figure 12:
+Grouped command logic Now perform your reverse engineering on each separate branch in the dispatch function.

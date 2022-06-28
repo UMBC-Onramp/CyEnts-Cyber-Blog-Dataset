@@ -1,0 +1,95 @@
+With smishing all the rage, media in the United States , Italy , and Brazil have been cranking out alarming stories about new scams.
+
+The German police even issued an official warning about one such campaign.
+
+The phenomenon has raked in massive sums, as evidenced by its search popularity.
+
+So, what is smishing?
+
+Rise in search popularity of “smishing” on Google in the past few years What is smishing, and how does it work?
+
+Smishing is phishing spread through text (SMS) messages rather than by e-mail; hence the term: smishing =
+
+SMS + phishing.
+
+Some classifications include phishing over messaging apps as part of smishing, but we consider that a separate category and won’t be discussing it here.
+
+The goal, as with any other phishing attempt, is to trick recipients into divulging sensitive information, typically their online banking password or bank card information.
+
+To do that, scammers send text messages, generally about an invented problem — a delivery issue, unpaid bill, or blocked account, for example — that the recipient has to resolve by clicking on a link.
+
+After that, things can go one of two ways: Scenario 1 infects the victim with malware disguised as a legitimate application but whose actual purpose is to request important information; Scenario 2 takes the victim to a Web page disguised as a legitimate website but whose actual purpose is to request important information.
+
+The choice of scenario really depends on the scammer’s comfort zone — malware or fake websites.
+
+The victim’s outcome is the same either way.
+
+Similar scams have resulted in the theft of thousands of dollars , euros , and pounds .
+
+Why has SMS phishing become so popular recently, and what makes it more dangerous than typical phishing?
+
+What makes smishing more dangerous than typical phishing Most of us have more or less gotten used to e-mail phishing, and people by and large know how to recognize and avoid it.
+
+Text messages are a more unexpected channel for scams, so people are less likely to think a short message will represent a scam.
+
+Beyond that, although people trust text messages more, texts tend to be less secure than e-mail.
+
+Nowadays, every halfway decent e-mail service has an intelligent built-in spam filter.
+
+The filters aren’t perfect, but scammers need to keep inventing new moves to get past them.
+
+Unfortunately, when it comes to flexibility and accuracy, mobile operators’ spam filters leave something to be desired.
+
+People also typically read their text messages on the go or between other tasks.
+
+That, combined with a lowered expectation of danger in text messages, means they tend to look less closely at text messages, making an attack more likely to succeed.
+
+In other words, when people get a message, they’re likely to disregard their mental checklist of warning signs and just click through.
+
+Finally, SMS messages display fewer signs that would help you recognize a scam.
+
+When you get an e-mail, you can look at the sender’s address, assess design and layout, and consider how plausible the message is overall — in short, you can look for standard red flags.
+
+With texts, even legitimate messages look a lot like one another, with short messages often employing nonstandard language and no design to speak of; and scammers with the technical skills can realistically spoof the sender’s info, replacing the sender’s real number with a fake one.
+
+How to protect yourself from smishing As with traditional phishing, you have strong defenses against smishing.
+
+Do not click on links or share any of your information in a text thread.
+
+As a general rule, the less activity, the better; Use two-factor authentication wherever you have the option.
+
+That way, even having a stolen password won’t help criminals raid your account.
+
+Contact your bank immediately if you suspect criminals have gotten access to your account.
+
+The bank can freeze your card, change your passwords, and advise you about further steps.
+
+We’ll close with a few FAQs to clear up any lingering questions.
+
+Should I respond to fraudulent messages, just to have them remove me from their mailing list?
+
+Do not do that.
+
+Responding simply confirms that your phone number is active.
+
+Unsubscribing can be hard even with legitimate companies; don’t expect a fair deal from people breaking the law.
+
+What if it’s not smishing but an important message from my bank?
+
+If you have any doubts, contact your bank directly.
+
+It’s unlikely they sent that message, but speaking of contacting the bank, make sure to get that phone number from an official source, such as its website.
+
+Whatever you do, don’t use any contact details from the suspicious text.
+
+Is there a way to automatically filter out phishing through SMS messages?
+
+Of course there is!
+
+Many security solutions have long used built-in filters to catch suspicious links in text messages and messaging apps, warn you about them, and make sure you don’t lose money just because you let your guard down for a moment.
+
+For example, you’ll benefit from such filters in Kaspersky Internet Security for Android .
+
+
+
+

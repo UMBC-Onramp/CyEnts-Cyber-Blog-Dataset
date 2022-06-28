@@ -1,0 +1,3 @@
+We recently discovered that a version of popular WhatsApp mod FMWhatsApp includes an embedded Trojan.
+The Trojan, called Triada, downloads other malware to users’ devices.
+Here’s how it happened and why using modified versions of WhatsApp is dangerous.

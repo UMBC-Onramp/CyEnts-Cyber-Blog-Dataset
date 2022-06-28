@@ -1,0 +1,7 @@
+
+The malware uses both strings.
+During its execution, LockBit will create a snapshot of the processes running in the system and will search to see if certain processes are part of this list with the function “OpenProcess” and, in case the process is present, it will finish it with the “TerminateProcess” function.
+The list of processes that LockBit will check are: wxServer wxServerView sqlservr
+RAgui supervise Culture RTVScan DefWatch
+sqlbrowser winword QBW32 QBDBMgr qbupdate QBCFMonitorService axlbridge QBIDPService httpd fdlauncher MsDtSrvr tomcat6 zhudongfangyu vmware-usbarbitator64 vmware-converter dbsrv12
+This “process check function” is performed through a trick using the “PathRemoveExtensionA” function and removing the .exe extension from the list.

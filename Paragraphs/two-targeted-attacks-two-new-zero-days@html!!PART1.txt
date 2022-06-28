@@ -1,0 +1,6 @@
+The FireEye Labs team has identified two new zero-day vulnerabilities as part of limited, targeted attacks against some major corporations.
+Both zero-days exploit the Windows Kernel, with Microsoft assigning CVE-2014-4148 and CVE-2014-4113 to and addressing the vulnerabilities in their October 2014 Security Bulletin .
+FireEye Labs have identified 16 total zero-day attacks in the last two years – uncovering 11 in 2013 and five in 2014 so far.
+Microsoft commented: “On October 14, 2014, Microsoft released MS14-058 to fully address these vulnerabilities and help protect customers.
+We appreciate FireEye Labs using Coordinated Vulnerability Disclosure to assist us in working toward a fix in a collaborative manner that helps keep customers safe.”
+In the case of CVE-2014-4148, the attackers exploited a vulnerability in the Microsoft Windows TrueType Font (TTF) processing subsystem, using a Microsoft Office document to embed and deliver a malicious TTF to an international organization.

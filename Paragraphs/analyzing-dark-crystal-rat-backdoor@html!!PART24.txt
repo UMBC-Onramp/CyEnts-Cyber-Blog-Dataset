@@ -1,0 +1,4 @@
+
+upload is a file with the data being sent to the server.
+Table 2 shows possible <message_type> values along with the type of file being uploaded.
+<message_type> Type of File jpg Screenshot zipstealerlog Cookie stealer log wav Microphone recording file Uploaded file bmp Webcam image RD.jpg Remote control screenshot Table 2: Message types when files are uploaded to the server Capabilities By analyzing the code that handles the responses to the comm message (format 2), it was possible for us to inventory the malware’s capabilities.

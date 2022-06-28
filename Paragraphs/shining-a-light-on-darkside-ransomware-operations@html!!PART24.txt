@@ -1,0 +1,8 @@
+
+An external tool or installer was required if the attacker desired persistence.
+A DARKSIDE version observed in May 2021 implement a persistence mechanism through which the malware creates and launches itself as a service with a service name and description named using eight pseudo-randomly defined lowercase hexadecimal characters (e.g., \".e98fc8f7\") that are also appended by the malware to various other artifacts it created.
+  
+This string of characters is referenced as <ransom_ext> .
+:
+Service Name: <ransom_ext>
+Description: <ransom_ext>

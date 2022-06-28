@@ -1,0 +1,293 @@
+By McAfee Labs on Apr 17, 2018 This post was researched and written by Brook Schoenfield with the assistance of Tim Hux, Abhishek Karnik, Asheer Malhotra, and Steve Povolny McAfee Advanced Threat Research team analysts have studied Adobe Flash Player for years because it is a popular target for attacks.
+
+As always, we advise customers to remain current with McAfee’s latest DAT versions.
+
+In this post we want to provide some insight into the history of Flash exploitation and possible future trends.
+
+Morphisec published an analysis of a new set of Flash flaws, CVE-2018-4878, that have been exploited in the wild.
+
+Hardik Shah of McAfee Labs posted a technical analysis of CVE-2018-4878’s mechanisms on March 2: “The number of Flash Player exploits has recently declined, due to Adobe’s introduction of various measures to strengthen Flash’s security.
+
+Occasionally, however, an exploit still arises.
+
+On January 31, Kr-Cert reported a zero-day vulnerability, identified as CVE-2018-4878, being exploited in the field.
+
+(Adobe has released an update to fix this flaw .)”
+
+Details about McAfee protections covering CVE-2018-4878 appear at the end of this article.
+
+This post will examine the history of Flash’s issues since the first Common Vulnerabilities and Exposures (CVE) list for Flash was published in 2006.
+
+By examining some of the data, both users and owners of sites that employ Flash can better understand Flash flaws and why Flash will continue to interest attackers, even though Adobe will discontinue development of Flash in 2020.
+
+We examined historical Flash data regarding vulnerabilities.
+
+We also accounted for the current distribution and uses of Flash.
+
+Through this analysis, we believe that despite Adobe announcing Flash’s end of life, a number of sites will continue to use and depend upon Flash for at least the immediate future, even as sites convert to alternative technologies.
+
+(See the list of example sites, below.)
+
+Flash continues to offer attackers an exploitable collection of flaws for the immediate future.
+
+The following chart uses CVE data.
+
+Although not every exploitable and exploited condition receives a CVE entry, most flaws that are discovered through security research or reported against major software vendors’ products eventually gains a CVE number that is posted to the CVE database kept by Mitre.
+
+Therefore, CVE offers a convenient repository of vulnerability data to aid research.
+
+Searching the entire database for every instance of “Flash Player” or “Adobe Flash Player” returned 1,050 CVE entries from the years 2006-2017.
+
+There was a steady increase in reported vulnerabilities between 2006 and 2014.
+
+Then we saw a big jump in 2015 and 2016.
+
+Of the 1,050 issues, about 79% (830) gave attackers some sort of code execution capability, though not every one of those 830 flaws allowed remote code execution.
+
+Still, an attacker gains a significant advantage from running any code.
+
+The McAfee Labs analysis shows that CVE-2018-4878 was another example of remote code execution, which usually leads to full compromise.
+
+This point suggests that Flash vulnerabilities will remain a significant target.
+
+The data source CVE Details offers the following distribution of Flash CVE vulnerabilities: Source: CVE Details .
+
+In 2015 through 2017, 81% of flaws resulted in code execution of one form or another.
+
+CVE Details also assigns Flash issues with Common Vulnerability Scoring System scores .
+
+Many issues from 2015–2017 earned scores above 9, which is considered severe.
+
+2015: 294 vulnerabilities ≥ 9 2016: 224 vulnerabilities ≥ 9 2017: 60 vulnerabilities ≥ 9 These severe scores further highlight why attackers remain interested in exploiting Flash weaknesses; they offer significant “attacker value” for the effort required to exploit them.
+
+  
+
+Looking at the historical distribution of issues, we see a spike in 2015.
+
+Then the spike drops off.
+
+It was in the latter part of 2014 that Adobe adopted a change in their software security strategy.
+
+“’Finding and fixing bugs isn’t the way to go, it’s … making it harder and more expensive for [attackers] to achieve an outcome,” said Adobe’s Chief Security Officer, Brad Arkin, at a conference in October 2014.
+
+He urged organizations to stop patching every vulnerability and instead increase the cost of exploitation to frustrate attackers.
+
+“The bad guys aren’t stupid,” he added.
+
+“They are going to apply their resources in the [most] cost efficient way possible, and so they seek to minimize the cost of developing an exploit.”
+
+Adobe’s shift in software security strategy has been to make exploiting issues prohibitively expensive so that attackers will find easier, less resource-intensive, and perhaps more reliable methods.
+
+Rather than chase every flaw, Adobe’s approach focuses on building defensive techniques that protect vulnerabilities, just as standard secure development life cycle techniques attempt to prevent new vulnerabilities from being released.
+
+Little in software development happens immediately, especially on a large scale.
+
+There is typically a lag—usually one to two years—between a strategy shift and results.
+
+In any event, the first issues to be eliminated are often the easiest to fix.
+
+As the program’s effectiveness improves, resources are available to address harder problems.
+
+Brad Arkin spoke about a strategy shift in the fall of 2014.
+
+We expected that shift to take time, and that is what we see in the data: In 2016, the number of newly discovered issues began to decline.
+
+However, the steep increase in vulnerabilities in 2015 and 2016 requires some additional examination.
+
+When security researchers focus on a code base, they generally start by finding the easiest-to-discover issues.
+
+As these are found and fixed, researchers probe deeper, shifting to techniques that increase in difficulty.
+
+Due to this ever-increasing difficulty, we often see a decrease in discoveries; it takes more time and effort to uncover tricky issues.
+
+Coupling the increasing difficulty of finding problems against the increase in effectiveness of a software security program, we find a distribution like what we have seen with Flash CVE reporting from 2015 through 2017.
+
+Until 2015, attackers exploited relatively easy-to-find cross-site scripting errors, but these largely disappeared after 2014.
+
+Suddenly, in 2015, there is a huge jump in the discovery of difficult-to-uncover memory issues and code execution opportunities.
+
+The leap in the CVE numbers reflects more technically challenging issues surfacing just as Adobe’s software strategy was making its shift.
+
+The new strategy had not had time to be fully effective by 2015.
+
+Plus, Flash, like all complex software, carries a large amount of legacy code.
+
+Just when researchers were digging deeper and harder into the code base, Adobe’s software security change required not just chasing vulnerability fixes, but also generating protective code and designs—all of which take time to implement.
+
+This typical situation explains the influx of critical new issues in 2015, and their subsequent continuous reductions.
+
+Still, no single or collection of security techniques is perfect.
+
+In 2017, Flash marked 70 new issues.
+
+So far in 2018, three have been discovered.
+
+The most recent, CVE-2018-4878, is technically challenging and appears to be within protections that Adobe has placed within byte arrays to prevent these memory structures from being misused.
+
+“[CVE-2018-4878] bypassed the byte array mitigation feature that was introduced to prevent ‘length corruption’ attacks in Flash,” wrote McAfee’s Hardik Shah in “How Hackers Bypassed an Adobe Flash Protection Mechanism.”
+
+It is just as possible to unwittingly add an exploitation opportunity when implementing software protections as when writing any other code.
+
+Of the 73 vulnerabilities discovered in 2017 and 2018, there is no method, without tracking code changes, to know when each of the flaws was introduced.
+
+It is likely that some of them arose in code carried forward from earlier versions, that is, from legacy code.
+
+Software implementers have a compelling argument to reuse as much code as possible in each new version.
+
+It is cheaper because it saves time.
+
+In a product with a history as long as Flash’s (more than 10 years), some of its code was written for a different threat landscape, not for today’s attackers and their more sophisticated tools and techniques.
+
+It is reasonable to suspect that a significant portion of the last two years’ worth of newly discovered issues are in code that has been carried into the latest versions.
+
+Those flaws contrast with the most recent vulnerability, CVE-2018-4878, which bypasses and abuses protections that were likely put into place after Adobe’s shift in strategy.
+
+The code that CVE-2018-4878 abuses was intended to make exploitation of byte arrays “more expensive.”
+
+To measure the popularity of Flash, we turned to Q-Success’ W3Techs web survey data.
+
+The following table shows the use of four client-side languages, with Flash declining steadily since 2011.
+
+JavaScript, on the other hand, today is nearly ubiquitous, at 95%.
+
+The two leading languages are graphed in the chart that follows the table.
+
+Historical Yearly Trends in the Usage of Client-Side Programming Languages for Websites Usage (in % of sites) of Client-Side Programming Languages for Websites Chart data as of March 8, 2018.
+
+Source for table and chart : © 2009-2018 Q-Success DI Gelbmann GmbH
+
+From W3Techs data, we can see that Flash use has declined steadily, to only 5% of surveyed web sites.
+
+Doesn’t that suggest that Flash exploitation would also decline or even stop?
+
+Unfortunately, it does not.
+
+The following W3Techs chart shows that although the number of sites using Flash is fairly low, enough high-traffic sites employ it to keep Flash popular.
+
+High-Traffic Sites That Still Use Adobe Flash Source: PublicWWW .
+
+If popular websites continue to use Flash, then Flash Player will remain in use on users’ machines for some time.
+
+Adobe has promised to continue supporting Flash Player until the end of 2020.
+
+Unfortunately, this means merely that software updates, features, and patches will no longer be added; it does not effectively change Flash’s overall use.
+
+Only the end of websites requiring Flash will remove its vulnerabilities from the security picture.
+
+A highly targeted attack may need to compromise only a single computer to access an organization’s digital infrastructure and gain access to strategic targets.
+
+That single computer could be running an unpatched or dated version of Flash.
+
+As the use of Flash has declined, client-side JavaScript has become the de facto browser programming language.
+
+Yet JavaScript’s takeover does not fully solve the problem because it can deliver a Flash payload.
+
+Although some of the Flash vulnerabilities we have analyzed can be exploited remotely, many cannot.
+
+An attacker often requires some interaction by the victim to run a Flash exploit.
+
+JavaScript has become an increasingly common delivery mechanism for this purpose.
+
+DIY: Exploits in a Kit Perhaps more important to attackers is the easy availability of Flash exploits ready to use in numerous exploit “kits.”
+
+Kits package all the necessary code to exercise a set of known vulnerabilities.
+
+Access to readily available exploits in a kit means far less attacker effort.
+
+Kits also “lower the technical bar.”
+
+Attackers need not understand how an exploit works; they can simply leverage the packages without knowing the technical details.
+
+Old Flash exploits are still available, along with new ones such as CVE-2018-4878, according to Tim Hux of the McAfee Advanced Threat Research team.
+
+“The Bizarro Sundown (aka GreenFlash) and ThreadKit exploit kits added the exploit to their lists last month,” he said.
+
+“The Rig and Magnitude exploit kits added this flaw to their arsenals this month.”
+
+Adding a new exploit does not mean the old ones are no longer available.
+
+Exploit kits are additive.
+
+The Rig kit, which appeared in 2014, contains the following Flash exploits: CVE-2013-0634
+
+           CVE-2015-3113 CVE-2014-0497
+
+           CVE-2015-5119 CVE-2014-0515           CVE-2015-5122 CVE-2014-0569           CVE-2015-7645 CVE-2015-0311           CVE-2016-1019 CVE-2015-0359           CVE-2016-4117 CVE-2015-3090 Old exploits do not die, they just get used less often as software is upgraded to fix earlier versions.
+
+If an attacker finds a vulnerable version of Flash in use, kits will have exploits to employ.
+
+Conclusion It is difficult, and perhaps impossible, to prove that software is error free.
+
+(Alan Turing’s famous proof mathematically shows that automated processes cannot be proved correct through automation.)
+
+As famed computer scientist Edsger Dijkstra noted, “Testing shows the presence, not the absence of bugs.”
+
+(“Software Engineering Techniques, ” NATO Science Committee, page 16.)
+
+In other words, even software that has passed a battery of security tests before release may still contain exploitable conditions.
+
+From our analysis of the relationship between Flash CVEs and Flash’s ongoing use, especially on high-traffic sites, McAfee’s Advanced Threat Research team believes that Flash vulnerabilities will continue to offer attackers a means toward malicious ends.
+
+However, Adobe’s shift in security strategy is an excellent step in reducing the number of newly discovered issues, which should maintain their decline.
+
+McAfee protections for CVE-2018-4878 McAfee’s malware engine can parse Flash for malicious content.
+
+Customers who have turned on automatic updates or who update regularly have been protected against seven new variants of CVE-2018-4878 since February 6.
+
+McAfee Host Intrusion Prevention signatures 8001, 1149, 6011, and 6010 detect CVE-2018-4878 exploits.
+
+8001 and 1149:
+
+On by default, but log only, not block.
+
+Customers can select block.
+
+8001:
+
+Suspicious exploit behavior, log only, available in HIPS, not in ENS 1149: CMD tool access by a Windows mail client or Internet Explorer, log only, available in HIPS, not in ENS 6011 and 6010:
+
+Off by default.
+
+Enabling them may result in an increase of false positives.
+
+6011:
+
+Generic application invocation protection, not present in ENS 6010:
+
+Generic application hooking protection, not present in ENS Recent campaigns exploiting Flash Player Issues CVE-2018-4878: Currently being exploited in a massive spam mail campaign.
+
+https://www.trendmicro.com/vinfo/us/security/news/vulnerabilities-and-exploits/north-korean-hackers-allegedly-exploit-adobe-flash-player-vulnerability-cve-2018-4878-against-south-korean-targets CVE-2017-11292:
+
+Black Oasis Advanced Persistent Threat https://threatpost.com/adobe-patches-flash-zero-day-exploited-by-black-oasis-apt/128467/ CVE-2016-4117:
+
+Hidden Cobra APT/CryptXXX Ransomware/Erebus APT https://www.proofpoint.com/us/threat-insight/post/cryptxxx-new-ransomware-actors-behind-reveton-dropping-angler
+
+http://securityaffairs.co/wordpress/48415/cyber-crime/scarcruft-apt.html CVE-2016-1019:
+
+Cerber and Locky ransomware/Hidden Cobra
+
+APT https://blog.trendmicro.com/trendlabs-security-intelligence/look-adobe-flash-player-cve-2016-1019-zero-day-vulnerability/
+
+https://www.proofpoint.com/us/threat-insight/post/killing-zero-day-in-the-egg CVE-2015-3133:
+
+CryptoWall Ransomware
+
+https://nakedsecurity.sophos.com/2015/06/29/latest-flash-hole-already-exploited-ransomware/ CVE-2015-0311:
+
+TeslaCrypt and FessLeak Ransomware https://blog.trendmicro.com/trendlabs-security-intelligence/analyzing-cve-2015-0311-flash-zero-day-vulnerability/ http://malware.dontneedcoffee.com/2015/01/cve-2015-0311-flash-up-to-1600287.html CVE-2014-8439:
+
+Cerber Ransomware https://www.f-secure.com/weblog/archives/00002768.html CVE-2015-7645:
+
+Cerber and Alpha Crypt Ransomware http://malware.dontneedcoffee.com/2015/10/cve-2015-7645.html
+
+McAfee does not control or audit third-party benchmark data or the websites referenced in this document.
+
+You should visit the referenced website and confirm whether referenced data is accurate.
+
+McAfee and the McAfee logo are trademarks or registered trademarks of McAfee, LLC or its subsidiaries in the US and other countries.
+
+Other marks and brands may be claimed as the property of others.
+
+Copyright © 2018 McAfee, LLC
+
+

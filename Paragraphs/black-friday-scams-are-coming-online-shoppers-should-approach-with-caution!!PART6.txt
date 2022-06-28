@@ -1,0 +1,5 @@
+
+Figure 2 shows some of the cryptocurrency wallets the attacker owns (Bitcoin, Ethereum, Binancecoin, Litecoin, Dogecoin, and Ripple) that it tries to replace the victim’s alt-coin wallet address with.
+We also found that the malicious winlogin.exe was distributed by a number of droppers with enticing names, such as Crunchyroll Breaker.exe, Netflix Tools.exe, Multi Gift Tools.exe, etc.
+Free generator of this sort has been around and scammed people for years.
+But given the market power of Amazon, this new scam is especially enticing.

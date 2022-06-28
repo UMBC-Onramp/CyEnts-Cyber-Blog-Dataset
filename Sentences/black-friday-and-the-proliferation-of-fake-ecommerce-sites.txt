@@ -1,0 +1,173 @@
+FortiGuard Labs Threat Research Report Black Friday and Cyber Monday kick off the holiday shopping season.
+
+In fact, 30% of all retail sales occur between Black Friday and Christmas Day.
+
+And since the advent of Cyber Monday, brick and mortar and ecommerce stores alike stand to generate a significant portion of their annual revenue over this shopping “holiday” weekend, often allowing retailers to catch up on revenue and meet goals and sales numbers for the year.
+
+In the lead-up to this event, FortiGuard Labs has observed more and more scams involving counterfeit websites that appear to be legitimate ecommerce sites.
+
+We say “appear to be” because to the untrained eye these sites may look safe, but if you aren’t paying attention they can steal your payment (and possibly payment information) via a purchase you thought was legitimate.
+
+Fake ecommerce sites are quickly becoming the latest threat to consumers and they cover a wide range of products to lure potential buyers.
+
+We recently came across a live, active scam that leverages the look and feel of the world’s largest companies and their respective trademarks to compel and lure victims into making purchases from their site.
+
+These sites are in no way affiliated with the trademark/IP owner, and are recognizable in part because they use the same template over and over in a digital game of whack-a-mole (meaning that as soon as one site gets shut down another one immediately pops up somewhere else).
+
+Several of the high-profile brands we have documented include: Blink (Amazon) Oculus (Facebook)
+
+Other well known brand names infringed include: Coleman (Camping Gear)
+
+Ninja (Home Appliances)
+
+Nu Wave (Home Appliances) Ryobi (Power tools) Makita  (Power tools)
+
+We also observed others that have since been taken down: Keurig Nespresso Common Framework The websites we’ve observed have the following characteristics in common:
+
+The domain names have only been registered for a few days to a few months All sites are registered with the same registrar They use .TOP
+
+and .SHOP top level domains (.com is also common)
+
+They use stolen imagery They contain numerous grammatical errors and inconsistencies in statements Social Media buttons do not resolve anywhere or go to accounts that either do not exist or have been deleted Their webhosting providers utilize content delivery networks (CDN) to remain anonymous (via an IP address that cannot be traced) Milwauketools.shop (Recently registered on 10/21/21)
+
+Milwaukee Tools is a well-known and globally established tool company based out of the United States.
+
+Milwaukee Tools products are usually sold via authorized retailers online or in stores.
+
+We came across a recently registered online site, milwauketools[.]shop , that had the look and feel of a professional ecommerce retailer.
+
+What caught our eye immediately (besides the misspelled domain name) was the very low price on the “2696-26 M18 LITHIUM-ION CORDLESS 6-TOOL COMBO KIT” for $99.00.
+
+Except for discontinued models/lines, such greatly reduced prices (this kit normally sells for $659) is oftentimes the hallmark of a scam.
+
+However, to the untrained eye—the limited time offer via the countdown timer, the professional look and feel of the site—will likely catch the attention of an impulse buyer.
+
+And that is what the bad actor behind this site is hoping for.
+
+They are hoping for an impulse buyer who isn’t paying attention to fall prey to their scam.
+
+Red Flags Although the About US and Our Culture sections of this website appear to be written by someone with a good grasp of the English language (likely stolen from a legitimate site), the “milwauketools” (figure 3) string is indicative of a small error that tells us that this is not related to the official Milwaukee Tools organization, even though the trademarked logo in the screenshot below has the correct spelling.
+
+This suggests that the actor was following a template during the creation of this site: Another red flag is that the domain was created on the 21 st , which at the time of writing this blog made it only five days old.
+
+Looking at the source code of the shopping cart, we see the string “刷新按钮“, which translates to a “refresh button”.
+
+Perhaps this is indicative of the origins of the group behind this site, or the shopping cart was repurposed from elsewhere.
+
+A visit to the actual company website (milwaukeetool.com) reveals that they do not sell direct, which is often the case of many major brands: A Bing.com shopping query highlighted that the lowest official price for this 2696-26 M18 LITHIUM-ION CORDLESS 6-TOOL COMBO KIT is $613.00 (USD).
+
+Further Scrutiny As we dug deeper by using OSINT (Open Source Intelligence) searches on the major search engines, we found 19 more online retail sites using the same template and shopping carts as the Milwauketools.shop, suggesting that these are all part of a larger scam.
+
+This was further confirmed when we determined that they have all been registered with the same registrar.
+
+Included in our findings were websites selling Oculus (Facebook), Blink (Amazon), and many more.
+
+The Oculus Template:
+
+However, if we dig further, we can see that the Oculus Quest 2 is using a template similar to the Milwauketools.shop site.
+
+It also contains the same countdown timer and limited time offer, along with the low price of $99 USD for something that has a $699 MSRP.
+
+The blink Template: The blink template has the same professional look: And again, the blink template looks convincing.
+
+But if we scrutinize further, we again see the same countdown timer and the same limited time offer of $99 USD for something that has a $379 MSRP:
+
+It is important to note that these similarities are repeated across all the sites we have identified.
+
+Additional Respected Brands All in the Same Family
+
+Finally, the About Us section for each of these sites not only contains the same verbiage, but are templated in a similar fashion, albeit with a slight difference from the MilwaukeTools.shop page: Assessment Each of these fraudulent domains is, on average, only several months old, with the oldest of them at the time of writing (Intexpool-us.com) being over 5 months old.
+
+In the screenshot below, we list the domains of other imitation retail sites FortiGuard Labs found, their similar creation dates, and their common registrar and CDN use, along with their use of a common template: Questions and Answers How is all this possible?
+
+Isn’t building a website only to have it taken down a huge waste of time?
+
+Website and ecommerce software have evolved considerably over the past decade.
+
+With the widespread usage of content management systems (CMS), where CMS and shopping carts are often bundled together with a content delivery network (CDN) by a webhost, bad actors are able to deploy ecommerce sites in record fashion.
+
+What exactly is a CDN?
+
+A CDN essentially enables the fast and efficient delivery of website content to requests from all over the world.
+
+It performs this by storing local caches of the website in various geographic locations.
+
+It does this by linking together a network of servers to deliver content as quickly and cheaply as possible.
+
+A CDN provider places servers at internet exchange points (IXPs) between different Internet providers so they can distribute content geographically closer to website visitors, allowing them to experience faster page loads.
+
+CDNs were once the realm of only large corporations.
+
+However, as the price of the CDN has come down, many webhosting providers who offer shopping carts are also providing CDN services.
+
+This has an additional advantage for cybercriminals as this also allows for the origination IP address to be hidden, meaning many websites (good and bad) often share the same IP address.
+
+Not only does this make attribution difficult, it gives a bad actor another layer of anonymity.
+
+How do People Come Across these Sites?
+
+People usually find these sites via simple keyword searches in search engines.
+
+They simply type in the specific product they are looking for and either the product shows up in the shopping tab or is promoted via keyword placement.
+
+Other routes to market include social media promotions.
+
+I and/or My Company Owns Intellectual Property that is Being Infringed?
+
+What Can I Do?
+
+Outside of consulting your own legal counsel (if you have the budget or have in-house counsel), you will have to rely on the registrars of the domain to take action.
+
+Due to the anonymity of WHOIS records, along with the anonymity of the true IP address of the bad actor due to their use of CDN, it can be very difficult to figure out who or what is behind the domain in question.
+
+Contacting the listed registrar in the WHOIS records is the best course of action, as many reputable registrars have an abuse contact form for domains violating their terms of service agreement.
+
+Do We Know Who These Threat Actors Are?
+
+Unfortunately, no.
+
+As the registrar of the domains and usage of CDN for these sites allow a high degree of anonymity, we don’t know who these scammers really are or if they are working alone or as part of a larger group.
+
+However, due to the usage of the same templates and the same modus operandi, it is highly likely that this is the work of one group.
+
+But there is also the possibility that this template may simply be being reused by multiple individuals and scammers.
+
+Dos and Don’ts Do perform due diligence and scrutinize websites for inconsistencies, such as mismatched fonts, inconsistent use of colors, changes in language usage, different prices or descriptions in various text, etc.
+
+Do check WHOIS records to see how long the domain has been in existence.
+
+Do look for typos and grammar (as most corporations hire copy editors) Do send an email to the company that you think might be being impersonated before you make a purchase.
+
+Don’t impulsively buy an item if it is super cheap.
+
+Like the old adage, if it’s too good to be true, it probably is.
+
+Don’t panic.
+
+If you feel you have been the victim of a scam, please call your credit card company right away and inform them of a potential scam.
+
+Conclusion of the Proliferation of Fake Ecommerce As the internet matures, so does software.
+
+As a result, the gap between professional vs individual ecommerce websites has shrunken considerably.
+
+An area that once was relegated to the expertise of web developers over a decade ago—the ability to build and deploy a usable (and untraceable) shopping cart as part of a counterfeit website scam—can now be easily designed by anybody with a working knowledge of content management systems (CMS).
+
+This is making it harder and harder to detect scam websites without doing some digging.
+
+In fact, someone with moderate technical knowledge can get a professional looking ecommerce site online within several hours, especially if they are using a proven template.
+
+Users are strongly cautioned to careful review any website they are unfamiliar with before making a purchase.
+
+Wherever possible, FortiGuard Labs has reached out to the trademark/intellectual property owners being infringed on as a courtesy notification.
+
+Fortinet Protections All associated URLS for these fraudulent sites have been added to the Web Filtering client.
+
+Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+
+
+

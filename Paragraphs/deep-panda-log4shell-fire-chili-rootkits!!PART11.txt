@@ -1,0 +1,10 @@
+
+The rootkit sets only one callback for a postoperation routine for IRP_MJ_DIRECTORY_CONTROL .
+When it receives an IRP with a minor function of IRP_MN_QUERY_DIRECTORY and a filename from the global file list, the callback changes the filename to “.”
+and the filename length to 0 (in the FILE_BOTH_DIR_INFORMATION structure).
+The global file list is initialized with the path of the driver by default ( *\\SYSTEM32\\DRIVERS\\CRTSYS.SYS ).
+Processes There are two mechanisms pertaining to processes: Preventing process termination.
+Hiding a process.
+To prevent the termination of a process, the rootkit denies the PROCESS_TERMINATE access right of the processes it protects.
+Using ObRegisterCallbacks , it registers a preoperation callback routine that triggers whenever a handle to a process or thread is created or duplicated in the system.
+When the handle access originates from user-mode and the image path or PID of the handle target are in the global process list, the driver removes the PROCESS_TERMINATE permission from the DesiredAccess parameter.

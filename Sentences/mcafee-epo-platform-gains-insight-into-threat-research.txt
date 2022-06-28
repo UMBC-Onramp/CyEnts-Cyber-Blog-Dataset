@@ -1,0 +1,45 @@
+By Christiaan Beek and Raj Samani on Aug 14, 2018 The latest update to the McAfee® ePolicy Orchestrator® platform offers a new add-in to provide insight into the latest analysis carried out by McAfee Labs and the Advanced Threat Research team.
+
+The Security Resources section of the McAfee ePO ™ console Version 5.10.0 will contain multiple windows providing the latest news.
+
+The first window in the section shows an updated list of the most recent threats research published by the McAfee Labs team.
+
+This includes both malware and vulnerability research.
+
+For example, this week we released a report that shows it is possible to emulate and modify a patient’s vital signs in real time on a medical network using a patient monitor and central monitoring station.
+
+We also include research related to new malware campaigns.
+
+All our content is mapped to the MITRE ATT&CK framework and includes all known indicators of compromise, as well as detailing how McAfee products protect against the documented campaign.
+
+Top threats The section includes a condensed version of the Threat Landscape Dashboard , which contains the top threats across exploit kits, campaigns, ransomware, and vulnerabilities.
+
+The following screen shows how the summary will appear in the McAfee ePO console, allowing readers to easily review and click through these threats for more detail.
+
+The latest McAfee ePO console will offer an easy review of analysis gathered by McAfee Labs and the Advanced Threat Research team.
+
+Top stories Want to know more?
+
+The Top Stories section offers the latest information from McAfee news sources, including new product releases and new blog content (beyond threats analysis).
+
+Support and product advisories At the bottom right of the screen you will find Security Product Advisories: Support Notification Service: McAfee SNS is a proactive notification service that allows McAfee to communicate critical information in a timely manner on product upgrades, releases, and end-of-life notices.
+
+SNS is a vital information link during critical incidents, providing you with the updates you need to ensure that your systems and organization are protected.
+
+Product Security Bulletins : McAfee is focused on ensuring the security of our customers’ computers, networks, devices, and data.
+
+We are committed to rapidly addressing issues as they arise, and providing recommendations through security bulletins and knowledgebase articles.
+
+McAfee Labs Security Advisories : These are a free notification service backed by our global research team.
+
+McAfee Labs Security Advisories map high-profile threats to the McAfee technologies that protect your environment.
+
+What next?
+
+You can expect the dashboard to evolve and provide more detail in future versions.
+
+Please let us know what you would like to see.
+
+
+
+

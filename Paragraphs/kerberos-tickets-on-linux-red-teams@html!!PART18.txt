@@ -1,0 +1,11 @@
+
+This Authenticator is encrypted with the first session key (the TGT session key).
+The service ticket, Authenticator, and metadata are bundled in a TGS-REP packet and forwarded back to the user.
+An example TGS-REP packet is shown in Figure 8.
+Figure 8: TGS-REP
+Once Windows receives the TGS-REP for cifs/SQLSERVER.ACMENET.CORP, Windows extracts the service ticket from the packet and caches it into memory.
+It also decrypts the Authenticator with the TGT specific session key to obtain the new service specific session key.
+Using both pieces of information, it is now possible for the user to authenticate to the remote file share.
+Windows negotiates a SMB connection with SQLSERVER.ACMENET.CORP.
+It places a Kerberos blob in an \"ap-req\" structure.
+This Kerberos blob includes the service ticket received from the domain controller, a new Authenticator structure, and metadata.

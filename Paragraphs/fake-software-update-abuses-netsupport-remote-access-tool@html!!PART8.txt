@@ -1,0 +1,25 @@
+
+It sets the attribute’s execution policy to bypass and window-style to hidden to hide itself from the end user.
+Components of the Attack Figure 7 shows the index of the malicious server where we have observed the malware author updating the script content.
+Figure 7:
+Index of Malicious Server 7za.exe: 7zip standalone executable LogList.rtf: Password-protected archive file Upd.cmd: Batch script to install the NetSupport Client Downloads.txt: List of IPs (possibly the infected systems)
+Get.php:
+Downloads LogList.rtf Upd.cmd
+This file is a batch script that extracts the archive file and installs the remote control tool on the system.
+The script is obfuscated with the variable substitution method.
+This file was regularly updated by the malware during our analysis.
+After de-obfuscating the script, we can see the batch commands in the script (Figure 8).
+Figure 8: De-Obfuscated Upd.cmd Script The script performs the following tasks: Extract the archive using the 7zip executable with the password mentioned in the script.
+After extraction, delete the downloaded archive file (loglist.rtf).
+Disable Windows Error Reporting and App Compatibility.
+Add the remote control client executable to the firewall’s allowed program list.
+Run remote control tool (client32.exe).
+Add Run registry entry with the name “ManifestStore” or downloads shortcut file to Startup folder.
+Hide the files using attributes.
+Delete all the artifacts (7zip executable, script, archive file).
+Note: While analyzing the script, we found some typos in the script (Figure 9).
+Yes, malware authors make mistakes too.
+This script might be in beta phase.
+In the later version of script, the author has removed these typos.
+Figure 9:
+Registry Entry Bloopers Artifact Cleaning As mentioned, the script contains code to remove the artifacts used in the attack from the victim’s system.

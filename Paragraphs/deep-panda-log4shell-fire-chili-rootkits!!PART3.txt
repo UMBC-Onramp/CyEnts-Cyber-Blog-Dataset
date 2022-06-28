@@ -1,0 +1,6 @@
+
+syn.exe is a program that loads its first command-line argument using LoadLibrary , in this case, 1.dll .
+The 1.dll module is the final payload, a backdoor that we have dubbed Milestone.
+Its code is based on the leaked source code of Gh0st RAT /Netbot
+Attacker and is packed with Themida.
+The backdoor copies itself to %APPDATA%\\newdev.dll and creates a service named msupdate2 by creating the service entry directly in the registry.

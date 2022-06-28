@@ -1,0 +1,9 @@
+
+Happy Easter Easter is a long way off, but I must present you with a very early Easter Egg because it is such a neat little find.
+During my journey through cmd.exe, I noticed a variable named fDumpParse having only one cross-reference that seemed to control an interesting behavior.
+The lone cross-reference and the relevant code are shown in Figure 10.
+Although fDumpParse is inaccessible anywhere else in the code, it controls whether a function is called to dump information about the command that has been parsed.
+Figure 10: fDumpParse evaluation and cross-refs (EDI is NULL)
+To experiment with this, you can use De-DOSfuscator’s --fDumpParse switch.
+You will then be greeted with a command prompt that is more transparent about what it has parsed.
+Figure 11 shows an example along with a graphical representation of the abstract syntax tree (AST) of parsed command tokens.

@@ -1,0 +1,7 @@
+
+Mandiant was able to forensically link the use of WARPRISM, BEACON, SOMBRAT and FIVEHANDS to the same actor.
+Mandiant suspects that HELLOKITTY activity in late-2020 may be related to the overall affiliate program and that usage shifted to FIVEHANDS ransomware beginning in January 2021.
+In April 2021, Mandiant observed a private FIVEHANDS TOR chat using a HELLOKITTY favicon (Figure 1).
+Figure 1:
+FIVEHANDS
+Hello Kitty icon When affiliate-based ransomware is observed by Mandiant, uncategorized clusters are assigned based on the infrastructure used, and in the case of UNC2447 were based on the SOMBRAT and Cobalt Strike BEACON infrastructure used across 5 intrusions between November 2020 and February 2021.

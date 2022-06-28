@@ -1,0 +1,5 @@
+
+● Precondition : 1) App embeds JSPatch platform; 2) App Developer is legitimate; 3) App does not protect the communication from the client to the server for JavaScript content; 4)
+A malicious actor performs a man-in-the-middle (MITM) attack that tampers with the JavaScript content.
+○
+Consequences : MITM can exfiltrate app contents within the sandbox; MITM can perform actions through Private API by leveraging host app as a proxy.

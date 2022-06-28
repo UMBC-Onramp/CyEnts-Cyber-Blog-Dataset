@@ -1,0 +1,4 @@
+
+In recent campaigns, the malware payloads have been hosted on numerous URLs associated with one or more of these legitimate services.
+In cases where the payloads have been taken down, the actors have sometimes updated their Google documents to contain new, working links.
+Some campaigns have also incorporated customization, including emails with internal references to the recipients’ organizations (Figure 1) and organizations’ logos embedded into the Google Docs documents (Figure 2).

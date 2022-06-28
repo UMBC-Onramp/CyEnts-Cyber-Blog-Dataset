@@ -1,0 +1,3 @@
+Operational technology (OT) asset owners have historically considered red teaming of OT and industrial control system (ICS) networks to be too risky due to the potential for disruptions or adverse impact to production systems.
+While this mindset has remained largely unchanged for years, Mandiant's experience in the field suggests that these perspectives are changing; we are increasingly delivering value to customers by safely red teaming their OT production networks.
+This increasing willingness to red team OT is likely driven by a couple of factors, including the growing number and visibility of threats to OT systems, the increasing adoption of IT hardware and software into OT networks, and the maturing of OT security teams.

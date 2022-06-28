@@ -1,0 +1,3 @@
+
+These methods appear to have been used in some of the incidents we described, as some of the shared screenshots of compromised OT systems also showed the actor’s web browser tabs displaying similar Shodan queries and remote access tools.
+Figure 6: Hacktivist tutorial describing how to access the HMI of an industrial gas and liquid burner Low Sophistication OT Compromises Pose A Growing Risk

@@ -1,0 +1,9 @@
+
+Rather, the compromises appear to be driven by threat actors who are motivated to achieve ideological, egotistical, or financial objectives by taking advantage of an ample supply of internet-connected OT systems.
+As the actors are not interested in causing specific physical outcomes, they target whatever is available on the internet.
+Mandiant has observed an increase in compromises of internet-accessible OT assets over the past several years.
+In this blog post we discuss previously undisclosed compromises and place them in context alongside publicly known incidents.
+Although none of these incidents have appeared to significantly impact the physical world, their increasing frequency and relative severity calls for analysis on their possible risks and implications.
+Visit our website to learn more about Mandiant’s OT security practice or contact us directly to request Mandiant services or threat intelligence .
+Compromises of Internet-Exposed OT Are Increasing in Frequency While Mandiant has monitored threat actors claiming to share or sell access to internet-exposed OT systems since at least 2012, we have seen a significant increase in the frequency and relative severity of incidents in the past few years.
+The most common activity we observe involves actors trying to make money off exposed OT systems, but we also see actors simply sharing knowledge and expertise.

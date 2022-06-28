@@ -1,0 +1,12 @@
+
+For example, the attacker corrupts a Flash Vector object and then accesses the corrupted object from within Flash to access memory.
+We have discussed this technique and other ASLR bypass approaches in our blog .
+One minor difference between the previous approaches and this attack is the heap spray address, which was changed to 0x1a1b2000 in this exploit.
+Code execution
+Once the attacker’s code has full memory access through the corrupted Flash Vector object, the code searches through loaded libraries gadgets by machine code.
+The attacker then overwrites the vftable pointer of a flash.
+Media.
+Sound() object in memory to point to the pivot and begin ROP.
+After successful exploitation, the code repairs the corrupted Flash Vector and flash.
+Media.
+Sound to continue execution.

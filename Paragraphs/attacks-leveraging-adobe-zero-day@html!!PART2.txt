@@ -1,0 +1,4 @@
+
+We have observed TEMP.Reaper operators directly interacting with their command and control infrastructure from IP addresses assigned to the STAR-KP network in Pyongyang.
+The STAR-KP network is operated as a joint venture between the North Korean Government's Post and Telecommunications Corporation and Thailand-based Loxley Pacific.
+Historically, the majority of their targeting has been focused on the South Korean government, military, and defense industrial base; however, they have expanded to other international targets in the last year.

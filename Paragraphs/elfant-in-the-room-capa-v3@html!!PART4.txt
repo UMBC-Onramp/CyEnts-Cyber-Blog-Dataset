@@ -1,0 +1,3 @@
+
+Note that the rule is explicit about which APIs are found on each OS, making it easy for both humans and machines to interpret the matching logic.
+Figure 2: capa rule using the os feature to distinguish OS specific features We’ve also added arch (such as arch: i386 for 32-bit Intel code) and format (such as format: elf for ELF files) features to distinguish between CPU architectures and file formats.

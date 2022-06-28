@@ -1,0 +1,12 @@
+
+Did the actor have access to a Triconex controller and TriStation 1131 software suite?
+When did development first start?
+How did the threat actor reverse engineer the protocol, and to what extent?
+What is the protocol structure?
+FireEye’s Advanced Practices Team was born to investigate adversary methodologies, and to answer these types of questions, so we started with a deeper look at the TRITON’s own Python scripts.
+Glossary: TRITON – Malware framework designed to operate Triconex SIS controllers via the TriStation protocol.
+TriStation – UDP network protocol specific to Triconex controllers.
+TRITON threat actor – The human beings who developed, deployed and/or operated TRITON.
+Diving into TRITON's Implementation of TriStation TriStation is a proprietary network protocol and there is no public documentation detailing its structure or how to create software applications that use TriStation.
+The current TriStation UDP/IP protocol is little understood, but natively implemented through the TriStation 1131 software suite.
+TriStation operates by UDP over port 1502 and allows for communications between designated masters (PCs with the software that are “engineering workstations”) and clients (Triconex controllers with special communications modules) over a network.

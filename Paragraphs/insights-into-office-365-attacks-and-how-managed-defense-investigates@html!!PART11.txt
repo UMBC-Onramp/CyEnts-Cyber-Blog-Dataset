@@ -1,0 +1,5 @@
+
+Additionally, only the most recent 1000 items will be shown in the preview pane.
+Anatomy of an O365 BEC As mentioned earlier, BECs are one of the more prevalent threats to O365 tenants seen by Managed Defense today.
+Sometimes, Mandiant analysts respond to several BEC cases at our customers within the same week.
+With this frontline experience, we’ve compiled a list of commonly observed tactics and techniques to advise our readers about the types of activities one should anticipate.

@@ -1,0 +1,10 @@
+In this blog post we will describe: How attackers use the Background Intelligent Transfer Service (BITS) Forensic techniques for detecting attacker activity with data format specifications Public release of the BitsParser tool A real-world example of malware using BITS persistence Introduction Microsoft introduced the Background Intelligent Transfer Service (BITS) with Windows XP to simplify and coordinate downloading and uploading large files.
+Applications and system components, most notably Windows Update, use BITS to deliver operating system and application updates so they can be downloaded with minimal user disruption.
+Applications interact with the Background Intelligent Transfer Service by creating jobs with one or more files to download or upload.
+The BITS service runs in a service host process and can schedule transfers to occur at any time.
+Job, file, and state information is stored in a local database.
+How Attackers Use BITS As is the case with many technologies, BITS can be used both by legitimate applications and by attackers.
+When malicious applications create BITS jobs, files are downloaded or uploaded in the context of the service host process.
+This can be useful for evading firewalls that may block malicious or unknown processes, and it helps to obscure which application requested the transfer.
+BITS transfers can also be scheduled allowing them to occur at specific times without relying on long-running processes or the task scheduler.
+BITS transfers are asynchronous, which can result in situations where the application that created a job may not be running when the requested transfers complete.

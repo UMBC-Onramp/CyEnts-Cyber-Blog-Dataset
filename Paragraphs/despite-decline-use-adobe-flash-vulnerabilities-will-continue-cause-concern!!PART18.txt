@@ -1,0 +1,7 @@
+
+DIY: Exploits in a Kit Perhaps more important to attackers is the easy availability of Flash exploits ready to use in numerous exploit “kits.”
+Kits package all the necessary code to exercise a set of known vulnerabilities.
+Access to readily available exploits in a kit means far less attacker effort.
+Kits also “lower the technical bar.”
+Attackers need not understand how an exploit works; they can simply leverage the packages without knowing the technical details.
+Old Flash exploits are still available, along with new ones such as CVE-2018-4878, according to Tim Hux of the McAfee Advanced Threat Research team.

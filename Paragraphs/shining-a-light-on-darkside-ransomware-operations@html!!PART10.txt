@@ -1,0 +1,6 @@
+
+These clusters may represent different affiliates of the DARKSIDE RaaS platform.
+Throughout observed incidents, the threat actor commonly relied on various publicly available and legitimate tools that are commonly used to facilitate various stages of the attack lifecycle in post-exploitation ransomware attacks (Figure 3).
+Additional details on three of these UNC groups are included below.
+Figure 3: TTPs seen throughout DARKSIDE ransomware engagements UNC2628 UNC2628 has been active since at least February 2021.
+Their intrusions progress relatively quickly with the threat actor typically deploying ransomware in two to three days.

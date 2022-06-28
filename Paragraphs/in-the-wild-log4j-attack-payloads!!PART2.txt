@@ -1,0 +1,8 @@
+
+These attacks are initiated using a tool called “JNDIExploit”, a java-based exploitation framework that specifically targets JNDI vulnerabilities.
+Local JNDI vulnerabilities have existed in the past before Log4j exposed them to the outside world.
+At Blackhat 2016, researchers presented their paper on JNDI attacks.
+The JNDIExploit tool can start its own LDAP and HTTP server and is capable of receiving different types of payloads, including command execution and reverse shell.
+JNDIExploit usage For instance, when the URL has the “ Basic/Command” string, it will execute whatever command is in the URL after that.
+If the URL has the “Basic / ReverseShell ” string, it will invoke a reverse shell.
+It does this by dynamically generating a Java class that will perform the command and sends the location of that Java class as a response to the LDAP query.

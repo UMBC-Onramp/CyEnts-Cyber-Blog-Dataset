@@ -1,0 +1,14 @@
+
+I/O requests as well as callbacks used for device addition, removal, and unloading.
+Reviewing the emulation report for the malware’s DriverEntry function (identified in the JSON report with an “ep_type” of “entry_point”), shows that the malware finds the base address of the Windows kernel.
+The malware does this by using the ZwQuerySystemInformation API to locate the base address for all kernel modules and then looking for one named “ntoskrnl.exe”.
+The malware then manually finds the address of the PsCreateSystemThread API.
+This is then used to spin up a system thread to perform its actual functionality.
+Figure 2 shows the APIs called from the malware's entry point.
+Figure 2: Key functionality in the tcprelay.sys entry point Hiding the Driver Object
+The malware attempts to hide itself before executing its main system thread.
+The malware first looks up the “DriverSection” field in its own DRIVER_OBJECT structure.
+This field holds a linked list containing all loaded kernel modules and the malware attempts to unlink itself to hide from APIs that list loaded drivers.
+In the “mem_access” field in the Speakeasy report shown in Figure 3, we can see two memory writes to the DriverSection entries before and after itself which will remove itself from the linked list.
+Figure 3:
+Memory write events representing the tcprelay.sys malware attempting to unlink itself in order to hide As noted in the original Speakeasy blog post , when threads or other dynamic entry points are created at runtime, the framework will follow them for emulation.

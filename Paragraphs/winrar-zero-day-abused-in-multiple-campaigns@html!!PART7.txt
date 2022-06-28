@@ -1,0 +1,5 @@
+
+The payload is executed the next time Windows starts up.
+SappyCache tries to fetch the next-stage payload using three approaches: 1) Decrypting a File: The malware tries to read the file at %temp%\\..\\GuiCache.db.
+If it is successful, it tries to decrypt it using RC4 to get the C2 URLs, as shown in Figure 9.
+Figure 9: Decrypting file at GuiCache.db 2) Decrypting a Resource: If it is not successful in retrieving the C2 URL using the previous method, the malware tries to retrieve the encrypted C2 URLs from a resource section, as shown in Figure 10.

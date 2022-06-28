@@ -1,0 +1,3 @@
+
+The augmented IOC will continue to identify the exact malware discovered on Bob's PC.
+This improved IOC will also identify malware which has things in common with that backdoor: Malware which uses the same Mutex, a process attribute that will prevent the machine from being infected multiple times with the same backdoor Malware which performs DNS queries for the malicious domain \"23vsx.evil.com\" Malware which has a specific set of import functions; in this case which correspond to reverse shell and keylogger functionality Beginning on October 11, the attacker accessed the system and executed the Windows command \"ipconfig\" at 20:24:00 UTC, resulting in the creation of a prefetch file.

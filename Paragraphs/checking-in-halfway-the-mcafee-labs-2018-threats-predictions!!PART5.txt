@@ -1,0 +1,4 @@
+
+In fact, the use of this technology and application of human-machine teaming has been cited as a reason top talent will accept a job at a cybersecurity firm in the first place.
+However, we have yet to see them actively leveraged by cybercriminals in attacks this year.
+In lieu of AI, attacks in 2018 have rather used more traditional techniques, but for non-traditional purposes.

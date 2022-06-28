@@ -1,0 +1,4 @@
+
+The GandCrab author has moved quickly to improve the code and has added comments to mock the security community, law agencies, and the NoMoreRansom organization.
+The malware is not professionally developed and usually has bugs (even in Version 4.3), but the speed of changes is impressive and increases the difficulty of combating it.
+Entry vector GandCrab uses several entry vectors: Remote desktop connections with weak security or bought in underground forums Phishing emails with links or attachments Trojanized legitimate programs containing the malware, or downloading and launching it Exploits kits such as RigEK and others The goal of GandCrab, as with other ransomware, is to encrypt all or many files on an infected system and insist on payment to unlock them.

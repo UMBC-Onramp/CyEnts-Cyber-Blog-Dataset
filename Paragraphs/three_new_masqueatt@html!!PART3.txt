@@ -1,0 +1,5 @@
+
+They did remarkable research, but happened to miss this on iOS.
+Their report claimed: “this security risk is not present on iOS ”.
+However, the data container issue does affect all iOS 8.x versions prior to iOS 8.4, and can be leveraged by an attacker to steal all data in a target app’s data container.
+We independently discovered this vulnerability on iOS and notified Apple before the report [5] was published, and Apple fixed this issue as part of CVE-2015-3725.

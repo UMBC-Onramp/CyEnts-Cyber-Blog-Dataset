@@ -1,0 +1,9 @@
+
+In all other cases, the malware starts with the well-known class GUIDs of the PlaySoundService and MsCtfMonitor classes and attempts to find which of them has the TreatAs registry key under their definition.
+Once the TreatAs key is found, its default registry value points to the registry key that has the RC4-encrypted backdoor image and the encoded RC4 key both described in the previous section of the post.
+With the backdoor image loaded in memory and decrypted, the malware spawns a suspended process around msiexec.exe and inject its image into it.
+The backdoor PE file exports a single function that is used to lay down its own image in memory and execute its DllMain entry point.
+The export function allocates the needed memory, relocates the image, if needed, resolves the imports and finally executes the backdoor’s DllMain function.
+At this point the backdoor is running inside the hijacked msiexec.exe and the instance inside the PowerShell process terminates itself.
+Executing as Injected in the msiexec.exe Process Overview
+The DOUBLEBACK backdoor executes its main functionality while injected in a dedicated msiexec.exe process (provided BitDefender AV is not found running on the system).

@@ -1,0 +1,6 @@
+
+If the generated value matches any value in the array, it terminates the process related to the corresponding window.
+Other than these two anti-analysis techniques, it also has code to check the internet connectivity by trying to reach the URL: www.msftncsi[.]com/ncsi.txt.
+To remain persistent in the system, the malware installs a scheduled task and a shortcut file in %startup% folder.
+The scheduled task is named “Opera Scheduled Autoupdate {Decimal Value of GetTickCount()}”.
+The malware then communicates with the malicious URL to download the final payload, which is a Monero miner.

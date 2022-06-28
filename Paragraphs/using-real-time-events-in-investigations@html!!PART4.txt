@@ -1,0 +1,10 @@
+
+We can compare this real-time event with what an analyst might see in other process execution artifacts.
+Table 2 provides an example AppCompat entry for the same executed process.
+Note the recorded timestamp is for the last modified time of the file, not the process start time.
+Field Example File Last Modified (UTC) 2020-03-07 23:48:09 File Path C:\\Windows\\Temp\\legitservice.exe Executed Flag TRUE Table 2: Example AppCompat entry Table 3 provides an example AmCache entry.
+Note the last modified time of the registry key can usually be used to determine the process start time and this artifact includes the SHA1 hash of the file.
+Field Example Registry Key Last Modified (UTC) 2020-03-10 16:40:58 File Path C:\\Windows\\Temp\\legitservice.exe File Sha1
+Hash 2b2e04ab822ef34969b7d04642bae47385be425c Table 3:
+Example AmCache entry Table 4 provides an example Windows Event Log process creation event.
+Note this artifact includes the PID in hexadecimal notation, details about the parent process, and even a field for where the process command line arguments should be.

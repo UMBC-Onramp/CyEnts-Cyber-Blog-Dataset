@@ -1,0 +1,9 @@
+
+Figure 3: Snippet of the encoded text on page source The decoding is done by a Web Open Font Format (WOFF) font file, which happens upon loading the page in a browser and will not be visible in the page content itself.
+Figure 4 shows the substitution cipher method and the WOFF font file.
+The attacker does this to evade detection by security vendors.
+Many security vendors use static or regex signature-based rules, so this method will break those naïve-based conditions.
+Figure 4: WOFF substitution cipher Loading this custom font which decodes the text is done inside the Cascading Style Sheets (CSS).
+This technique is rare as JavaScript functions are traditionally used to encrypt and decrypt HTML text.
+Figure 5: CSS file for loading WOFF font file Figure 5 shows the CSS file used to load the WOFF font file.
+We have also seen the same CSS file, style.css, being hosted on the following domains: hxxps://www.lifepointecc[.]com/wp-content/sinin/style.css hxxps://candyman-shop[.]com/auth/DHL_HOME/style.css hxxps://mail.rsi-insure[.]com/vendor/ship/dhexpress/style.css hxxps://www.scriptarticle[.]com/thro/HOME/style.css These legitimate-looking domains are not hosting any phishing websites as of now; instead, they appear to be a repository for attackers to use in their phishing campaigns.

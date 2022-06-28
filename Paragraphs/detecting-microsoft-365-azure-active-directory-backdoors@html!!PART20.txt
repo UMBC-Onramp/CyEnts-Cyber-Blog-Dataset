@@ -1,0 +1,8 @@
+
+Figure 20:
+Unified Audit Log >
+Create new alert policy Figure 21:
+Unified Audit Log filtered for domain related events Using Azure Sentinel, more granular Directory Administration Activities can be modified for suspicious activity.
+This includes additions, deletions and modifications of domains and their authentication settings (Figure 22).
+Monitoring for OfficeActivity Operations in Azure Sentinel can allow an organization to validate if this is normalized activity or if an attacker is working on setting up a backdoor for PTA or federation.
+Table: OfficeActivity Operation: Set-AcceptedDomain Operation: Set-MsolDomainFederationSettings Operation: Add-FederatedDomain Operation: New-Accepted Domain Operation: Remove-Accepted Domain Operation: Remove-FederatedDomain Figure 22:

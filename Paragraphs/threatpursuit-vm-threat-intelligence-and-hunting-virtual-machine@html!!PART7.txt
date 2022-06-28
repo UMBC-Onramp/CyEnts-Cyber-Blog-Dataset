@@ -1,0 +1,6 @@
+
+You will know when the install is finished with the VM's logo placed on the background.
+Figure 4: ThreatPursuit VM desktop installed Custom Install Is the standard installation too much for you?
+We provide a custom installation method that allows you to choose which chocolatey packages get installed.
+For additional details, see the Custom Install steps at our GitHub repository.
+Installing Additional Packages Since ThreatPursuit VM uses the Chocolatey Windows package manager, it's easy to install additional packages not included by default.

@@ -1,0 +1,7 @@
+
+Phase 4: Internal Reconnaissance Outlook searching :
+The victim’s mailbox queried by attackers for emails of interest.
+While not recorded in audit logs, it may be available to export if it was not deleted by attackers.
+O365 searching :
+Searches conducted within SharePoint and other O365 applications for content of interest.
+While not recorded in audit logs, SharePoint and OneDrive file interactions are recorded in the UAL.

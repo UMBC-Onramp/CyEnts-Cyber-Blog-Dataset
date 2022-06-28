@@ -1,0 +1,5 @@
+
+Figure 3:
+Language check from Fortinet blog HELLOKITTY ransomware—used to target Polish video game developer CD Projekt Red—is reportedly built from DEATHRANSOM.
+HELLOKITTY is named after a mutex named ‘HELLOKITTYMutex,’ used when the malware executable is launched (see Figure 4).
+Figure 4: HELLOKITTY mutex shown in Process Explorer CEMIG (Companhia Energética de Minas Gerais), a Brazilian electric power company, revealed on Facebook in late December 2020 that it was a victim of HELLOKITTY cyber attack .

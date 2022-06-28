@@ -1,0 +1,9 @@
+
+Layers, Like an Onion They can prevent a ransomware attack by taking a layered approach.
+First, they can invest in a security awareness training program that educates their workforce about some of the most common types of ransomware delivery vectors in circulation today.
+Organizations should specifically focus on using phishing simulations to familiarize all their employees with malware borne by email-based attacks.
+In doing so, organizations will take a step forward towards building a positive security culture .
+Second, organizations need to blend those human controls with technical security measures.
+Data backups are just the beginning.
+Take phishing as a delivery vector, for instance.
+Organizations can use disallow lists to prevent company inboxes from receiving mail from blocked websites or from opening email attachments in unusual formats.

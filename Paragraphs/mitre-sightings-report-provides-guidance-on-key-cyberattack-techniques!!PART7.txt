@@ -1,0 +1,3 @@
+
+This information gives defenders an upper hand in effectively preparing and hardening their systems since it’s clear from the global data on these TTPs that attackers are trying to appear as legitimate users.
+Without strong baselines of normal end-user behavior and company-approved applications and the ability to restrict access to systems and resources based on policy, detection and mitigation of threats designed to look like “normal” behavior can be nearly impossible.

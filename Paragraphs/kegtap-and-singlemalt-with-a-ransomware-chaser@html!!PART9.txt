@@ -1,0 +1,7 @@
+
+Maintain Presence Beyond the preliminary phases of each intrusion, we have seen variations in how these attackers have maintained presence after establishing an initial foothold or moving laterally within a network.
+In addition to the use of common post-exploitation frameworks such as Cobalt Strike, Metasploit and EMPIRE, we have observed the use of other backdoors, including ANCHOR, that we also believe to be under control of the actors behind TrickBot.
+The loaders associated with this activity can maintain persistence through reboot by using at least four different techniques, including creating a scheduled task, adding itself to the startup folder as a shortcut, creating a scheduled Microsoft BITS job using /setnotifycmdline, and adding itself to the Userinit value under the following registry key: HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon.
+Actors have downloaded POWERTRICK, Metasploit Meterpreter, and Cobalt Strike BEACON payloads following the initial compromise.
+BEACON payloads have commonly been executed after moving laterally to new hosts within the victim network.
+ The attackers have employed Cobalt Strike payloads crafted to maintain persistence through reboot via a scheduled task on critical systems in victim environments.

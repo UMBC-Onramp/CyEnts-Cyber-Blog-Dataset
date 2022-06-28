@@ -1,0 +1,13 @@
+
+Figure 1 illustrates the infrastructure overlaps and connections we observed between the strategic Web compromise campaign leveraging the VFW’s website, the DeputyDog, and the Ephemeral Hydra operations.
+Figure 1:
+Ties between Operation SnowMan, DeputyDog, and Ephemeral Hydra Links to DeputyDog and Ephemeral Hydra Other tradecraft similarities between the actor(s) responsible for this campaign and the actor(s) responsible for the DeputyDog/Ephemeral Hydra campaigns include: The use of zero-day exploits to deliver a remote access Trojan (RAT)
+The use of strategic web compromise as a vector to distribute remote access Trojans The use of a simple single-byte XOR encoded (0x95) payload obfuscated with a .jpg extension The use of Gh0stRat with the “HTTPS” packet flag The use of related command-and-control (CnC) infrastructure during the similar time frames We observed many similarities from the exploitation side as well.
+At a high level, this attack and the CVE-2013-3163 attack both leveraged a Flash file that orchestrated the exploit, and would call back into IE JavaScript to trigger an IE flaw.
+The code within the Flash files from each attack are extremely similar.
+They build ROP chains and shellcode the same way, both choose to corrupt a Flash Vector object, have some identical functions with common typos, and even share the same name.
+Conclusion These actors have previously targeted a number of different industries, including: U.S. government entities Japanese firms Defense industrial base (DIB) companies Law firms Information technology (IT) companies Mining companies Non-governmental organizations (NGOs)
+The proven ability to successfully deploy a number of different private and public RATs using zero-day exploits against high-profile targets likely indicates that this actor(s) will continue to operate in the mid to long-term.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

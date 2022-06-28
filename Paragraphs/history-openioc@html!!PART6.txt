@@ -1,0 +1,4 @@
+
+The version we released in 2011 as \"1.0\" had already been revised and improved upon internally several times before its Open Source debut.
+We continue to update the standard as needed, allowing for features and requests that we have received over time from other users or interested parties.
+Unlike traditional \"signatures,\" OpenIOC provides the ability to use logical comparison of Indicators in an IOC, providing more flexibility and discrimination than simple lists of artifacts.

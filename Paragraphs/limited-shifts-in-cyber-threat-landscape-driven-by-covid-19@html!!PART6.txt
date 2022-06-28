@@ -1,0 +1,6 @@
+
+Additionally, an attack on state and local governments, which have been a major target of ransomware actors, could have a disruptive effect on treatment and prevention efforts.
+Remote Work The sudden and unanticipated shift of many workers to work from home status will represent an opportunity for threat actors.
+Organizations will be challenged to move quickly to ensure sufficient capacity, as well as that security controls and policies are in place.
+Disruptive situations can reduce morale and increase stress, leading to adverse behavior such as decreasing users’ reticence to open suspicious messages, and even increasing the risk of insider threats.
+Distractions while working at home can cause lowered vigilance in scrutinizing and avoiding suspicious content as workers struggle to balance work and home responsibilities at the same time.

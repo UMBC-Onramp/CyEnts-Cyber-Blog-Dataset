@@ -1,0 +1,8 @@
+
+Actors primarily used Procdump and Mimikatz to collect credentials used to enable later stages of their intrusion.
+Notably, both Bloodhound and PingCastle were also used, presumably to enable attackers' efforts to understand the impacted organization's Active Directory configuration.
+In this case the responsible actors also attempted to exfiltrate collected credentials to multiple different cloud file storage services.
+Reconnaissance Mandiant has observed a broad range of approaches to network, host, data, and Active Directory reconnaissance across observed MAZE incidents.
+The varied tools and approaches across these incidents maybe best highlights the divergent ways in which the responsible actors interact with victim networks.
+In some intrusions, reconnaissance activity occurred within three days of gaining initial access to the victim network.
+The responsible actor executed a large number of reconnaissance scripts via Cobalt Strike to collect network, host, filesystem, and domain related information.

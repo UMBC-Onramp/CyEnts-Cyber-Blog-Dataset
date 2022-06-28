@@ -1,0 +1,12 @@
+
+With this account, belonging to the administrator group, the attacker immediately obtained the proverbial “keys to the kingdom” with all the necessary permissions to perform a successful attack.
+Unfortunately, this is not a unique case; external facing systems should always have multi-factor authentication enabled when possible.
+Besides, a security organization should have a least privilege strategy when it comes to accessing systems.
+Targeted ransomware attackers are successfully leveraging the “human factor” integrally.
+It is no longer the typical “end-user clicking on a malicious link” causing the complete lock-up of a company.
+The human factor in targeted ransomware attacks goes much deeper.
+Attackers successfully leverage weaknesses in security policy and misconfigurations across an entire organization; from end-user to Domain Administrator.
+Infiltrating the Network To infiltrate the network, the attacker had to take several steps to make sure the ransomware attack was successful.
+An attacker always wants to infect as many systems as possible to effectively halt the business process and urge the victim to pay the ransom.
+Credentials & Privileges As mentioned previously, the attacker was successful in guessing the password of the Administrator account using a brute force attack.
+With this, the attacker immediately had all the necessary privileges for deploying the ransomware successfully.

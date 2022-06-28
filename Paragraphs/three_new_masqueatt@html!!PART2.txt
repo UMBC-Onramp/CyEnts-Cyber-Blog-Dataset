@@ -1,0 +1,10 @@
+
+Apple Watch, Health, Pay, etc.)
+during over-the-air installations Partially fixed in iOS 8.4 Plugin Masque * Bypass prompt of trust * Bypass VPN plugin entitlement * Replace an existing VPN plugin * Hijack device traffic * Prevent device from rebooting * Exploit more kernel vulnerabilities Fixed in iOS 8.1.3 Extension Masque * Access another app’s data * Or prevent another app to access its own data Partially fixed in iOS 8.4 Manifest Masque Attack leverages the CVE-2015-3722/3725 vulnerability to demolish an existing app on iOS when a victim installs an in-house iOS app wirelessly using enterprise provisioning from a website.
+The demolished app (the attack target) can be either a regular app downloaded from official App Store or even an important system app, such as Apple Watch, Apple Pay, App Store, Safari, Settings, etc.
+This vulnerability affects all iOS 7.x
+and iOS 8.x versions prior to iOS 8.4.
+We first notified Apple of this vulnerability in August 2014.
+Extension Masque Attack can break the restrictions of app data container.
+A malicious app extension installed along with an in-house app on iOS 8 can either gain full access to a targeted app’s data container or prevent the targeted app from accessing its own data container.
+On June 14, security researchers Luyi, Xiaofeng et al. disclosed several severe issues on OS X, including a similar issue with this one [5].

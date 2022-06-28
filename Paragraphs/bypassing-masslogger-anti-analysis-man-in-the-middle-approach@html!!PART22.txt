@@ -1,0 +1,6 @@
+
+The only thing left to do is to rebuild the .NET metadata
+so we can perform static analysis.
+Figure 15: Sample jitm.json
+Rebuilding the Assembly Since the decrypted method body headers and MSIL bytes may not fit in the original .NET assembly properly, the easiest thing to do is to add a new section and a section header to MassLogger.
+There are plenty of resources on how to add a PE section header and data , none of which is trivial or easy to automate.

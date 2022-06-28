@@ -1,0 +1,6 @@
+
+Within this mode, strong authentication takes place before the remote desktop connection is established, using the Credential Security Support Provider (CredSSP) either through TLS or Kerberos.
+NLA can also help to protect against man-in-the-middle attacks, where credentials are intercepted.
+However, be aware that NLA over NTLM does not provide strong authentication and should be disabled in favor of NLA over TLS (with valid certificates).
+Microsoft TechNet describes configuration and usage of NLA in Windows Server 2008 R2 here .
+Interestingly, BlueKeep, mentioned above, is partially mitigated by having NLA enabled.

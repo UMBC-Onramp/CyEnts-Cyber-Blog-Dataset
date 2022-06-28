@@ -1,0 +1,461 @@
+By ATR Operational Intelligence Team on Apr 30, 2020 Co-authored by Marc RiveroLopez.
+
+In collaboration with Northwave As we highlighted previously across two blogs, targeted ransomware attacks have increased massively over the past months.
+
+In our first article , we discussed the growing pattern of targeted ransomware attacks where the primary infection stage is often an info-stealer kind of malware used to gain credentials/access to determine if the target would be valuable for a ransomware attack.
+
+In the second part , we described the reconnaissance phase of an attacker that controls an infected host or a valid account to access a remote service.
+
+Many of them are using a similar manual modus operandi as we highlighted in the earlier blogs.
+
+We believe there is real opportunity to learn from incident response cases and previous attacks, hence why this blog is dubbed ‘tales from the trenches’.
+
+In collaboration with Northwave , this article describes a real-life case of a targeted ransomware attack.
+
+During one of their recent incident responses, Northwave encountered a relatively new family of ransomware called LockBit performing a targeted attack.
+
+First sighted in late 2019, under the name .abcd virus, this piece of ransomware was more a revision than evolution when compared with earlier attacks.
+
+Like the previous posts in this blog series, we describe the different stages of the attack and recovery, including a thorough analysis of the ransomware and the attackers behind it.
+
+In this blog we’ll cover: Targeted Countries Attack Analysis Initial Access Network Infiltration Credentials and Privileges Lateral Movement Ransomware Deployment Malware Analysis Payload Analysis Technical Analysis Insights from the Underground Recovery Conclusion LockBit Telemetry Map We gathered telemetry through our McAfee Global Threat Intelligence GTI database on the different LockBit samples we analyzed in our research.
+
+The global spread is currently limited as this ransomware is relatively new and heavily targeted.
+
+Figure 1: Telemetry map Initial Access As in all ransomware cases, the attacker has to gain initial access to the network somehow.
+
+In this particular case the attacker performed a brute force attack on a web server containing an outdated VPN service.
+
+Based on our research it took several days for the brute force to crack the password of the ‘Administrator’ account.
+
+With this account, belonging to the administrator group, the attacker immediately obtained the proverbial “keys to the kingdom” with all the necessary permissions to perform a successful attack.
+
+Unfortunately, this is not a unique case; external facing systems should always have multi-factor authentication enabled when possible.
+
+Besides, a security organization should have a least privilege strategy when it comes to accessing systems.
+
+Targeted ransomware attackers are successfully leveraging the “human factor” integrally.
+
+It is no longer the typical “end-user clicking on a malicious link” causing the complete lock-up of a company.
+
+The human factor in targeted ransomware attacks goes much deeper.
+
+Attackers successfully leverage weaknesses in security policy and misconfigurations across an entire organization; from end-user to Domain Administrator.
+
+Infiltrating the Network To infiltrate the network, the attacker had to take several steps to make sure the ransomware attack was successful.
+
+An attacker always wants to infect as many systems as possible to effectively halt the business process and urge the victim to pay the ransom.
+
+Credentials & Privileges As mentioned previously, the attacker was successful in guessing the password of the Administrator account using a brute force attack.
+
+With this, the attacker immediately had all the necessary privileges for deploying the ransomware successfully.
+
+In other cases, as we described in our second blog , the attacker often uses known post-exploitation frameworks, for privilege escalation, lateral movement and performing any additional actions on their objective.
+
+Since quite a few of these frameworks are readily available we often call this the “GitHubification” of attack tools.
+
+In this case however, the attacker could actually skip this step and continue with the network reconnaissance and deployment of the ransomware immediately, since a high privileged account was already compromised.
+
+Lateral Movement With the administrator-level account, the attacker used SMB to perform network reconnaissance, resulting in an overview of accessible hosts.
+
+Subsequently, the attacker used the internal Microsoft Remote Access Server (RAS) to access these systems using either the administrator or the LocalSystem account.
+
+The LocalSystem account is a built-in Windows account.
+
+It is the most authoritative account on a Windows local instance (more potent than any admin account).
+
+Using these accounts, the attacker owned these systems and could do anything they wanted, including turning off any end-point security products.
+
+Interestingly, both the lateral movement and the deployment of the ransomware was entirely automated.
+
+Deployment of the Ransomware
+
+This specific case was a classic hit and run.
+
+After gaining access to the initial system using the brute-forced administrator account, the attacker logged in and deployed the ransomware almost immediately.
+
+For the attacker, this was a relatively straightforward process since the ransomware spreads itself.
+
+The deployment of the ransomware on one single host remotely instructed the other hosts in the network to run the following PowerShell command: Figure 2: PowerShell execution to download LockBit
+
+This command retrieves a .png file from a website that has probably been compromised.
+
+There are two versions of the .png file, one for .NET version 4 and one for version 3.5.
+
+The PowerShell command checks which version it needs by getting the version number of the common language runtime that is running the current process.
+
+If this starts with ‘V4’, the .png for version 4 is downloaded; otherwise it downloads the .png for version 3.5 via the URLs below: https://espet[.]se/images/rs35.png https://espet[.]se/images/rs40.png What is interesting in this case is that each distinct host downloads the ransomware itself.
+
+Hence, the attacker only needed access to one system with an account having enough privileges to automatically make all other hosts in the network download and execute it.
+
+Malware Analysis For our analysis, we will use the file found in our investigation, the details of which are: File name: rs35.png SHA1 488e532e55100da68eaeee30ba342cc05810e296 SHA256 ca57455fd148754bf443a2c8b06dc2a295f014b071e3990dd99916250d21bc75 size 546.00 KB PDB c:\\users\\user\\work\\code\\dotnet\\regedit-64\\regedit-64\\obj\\release\\rs35.pdb guid 84e7065-65fe-4bae-a122-f967584e31db Technical Analysis
+
+The file we found in our investigation was a dropper renamed as a .png file.
+
+When first opening the .png
+
+files we were expecting a real image file, with perhaps some steganography inside, but what we saw instead was the header of a portable executable, so no steganography pictures this time.
+
+The PE was compiled in Microsoft Visual C# v7.0 / Basic .NET, .NET executable -> Microsoft.
+
+Figure 3: Static analysis of LockBit Entropy
+
+-wise it seems quite tidy too, not showing any stray sections or big spikes in the graph.
+
+This behavior indicates that the writer of the malware did not use obfuscation.
+
+Figure 4: Entropy analysis Figure 5: Portex visualization of LockBit This file is a .NET launcher.
+
+Examining the Main() function in the code shows that an array containing a particularly long AES encrypted base64 string (in the variable named ‘exeBuffer’) carries the executable for the actual ransomware.
+
+Figure 6: .NET launcher buffer This encrypted string is decrypted using the key ENCRYPTION29942.
+
+The first 32 bytes of the long ExeBuffer string are used as the salt in the encryption scheme, where ENCRYPTION29942 is the passphrase.
+
+Figure 7:
+
+Launcher calls & functions Remarkably, the script checks for the existence of vbc.exe on its designated host.
+
+Usually, this binary is a digitally signed executable from Microsoft; however, in this case, the malware uses it for process hollowing.
+
+By statically analyzing the file we can spot the usage of: NtUnmapViewOfSection LockBit uses this API in order to unmap the original code in execution NtWriteVirtualMemory
+
+The malware writes the base address of the injected image into the PEB via NtWriteVirtualMemory VirtualAllocEx
+
+To allocate the space before injecting the malicious code The VBC utility is the visual basic compiler for Windows and LockBit uses it to compile and execute the code on the fly directly in execution.
+
+If the vbc utility does not exist on the system, the malware downloads the original vbc.exe file from the same malicious URL as seen before.
+
+After executing vbc.exe, the malware replaces the objects in memory with the code for deploying the ransomware (as deduced from the exeBuffer).
+
+Figure 8: If VBC does not exist, the launcher will download it Payload Analysis Analysis of the exeBuffer shows several appealing elements.
+
+It starts with a UAC Bypass via {3E5FC7F9-9A51-4367-9063-A120244FBEC7} exploiting the ICMLuaUtil elevated COM Interface-Object [1] , as seen in other ransomware families like Trickbot and MedusaLocker.
+
+Subsequently, the script uses another variant of the UAC Bypass.
+
+The CLSID {D2E7041B-2927-42fb-8E9F-7CE93B6DC937} refers to the ColorDataProxy COM Object which is classified as the same Bypass method in hfiref0x’s UACME #43 [2] .
+
+In order to be stealthier, LockBit ransomware loads its modules dynamically instead of having them hardcoded in the IAT and uses LoadLibraryA. This method is employed to avoid detection by static engines.
+
+Figure 9.
+
+Name of the modules in the code
+
+In execution, the malware accesses the Service Manager using the function “OpenSCManagerA” and saves the handle.
+
+It checks if it fails the last error with the “GetLastError” function, against the error ERROR_ACCESS_DENIED.
+
+Figure 10.
+
+Access to the Service Manager Upon access to the Service Manager, LockBit creates a thread to manage services, terminate processes and delete the shadow volumes plus the contents of the recycle bin.
+
+In this thread the malware has the name of services that it will try to manage hardcoded to try to make them more obfuscated: Figure 11.
+
+Hardcoded service names The list of services LockBit tries to stop are: DefWatch (Symantec Antivirus) ccEvtMgr (Norton AntiVirus Event Manager) ccSetMgr (Common Client Settings Manager Service of Symantec)
+
+SavRoam (Symantec Antivirus) sqlserv sqlagent sqladhlp Culserver RTVscan (Symantec Antivirus Program) sqlbrowser SQLADHLP QBIDPService ( QuickBooks by Intuit .)
+
+QuickBoooks.
+
+FCS ( QuickBooks by Intuit .)
+
+QBCFMonitorService ( QuickBooks by Intuit .)
+
+sqlwriter msmdsrv (Microsoft SQL Server Analysis or Microsoft SQL Server) tomcat6 (Apache Tomcat) zhundongfangyu (this belongs to the 360 security product from Qihoo company) vmware-usbarbitator64 vmware-converter dbsrv12 (Creates, modifies, and deletes SQL Anywhere services.)
+
+dbeng8 (Sybase’s Adaptive Server Anywhere version 8 database program) wrapper (Java Service?)
+
+If one of these services is found by the malware querying the status of it, with the function “QueryServiceStatusEx”, LockBit will get all the depending modules when correct and safe and it will stop the service with the function “ControlService”.
+
+Figure 12.
+
+Stopping target service LockBit will prepare Unicode obfuscated strings that contain a command to delete the shadow volumes and disable the protections in the next boot of the system.
+
+Figure 13.
+
+Prepare the commands to delete shadow volumes and disable protections on boot The malware has these strings in the rdata section, as widely observed in all malware families, and in its own code as show in the previous screenshots.
+
+The malware uses both strings.
+
+During its execution, LockBit will create a snapshot of the processes running in the system and will search to see if certain processes are part of this list with the function “OpenProcess” and, in case the process is present, it will finish it with the “TerminateProcess” function.
+
+The list of processes that LockBit will check are: wxServer wxServerView sqlservr
+
+RAgui supervise Culture RTVScan DefWatch
+
+sqlbrowser winword QBW32 QBDBMgr qbupdate QBCFMonitorService axlbridge QBIDPService httpd fdlauncher MsDtSrvr tomcat6 zhudongfangyu vmware-usbarbitator64 vmware-converter dbsrv12
+
+This “process check function” is performed through a trick using the “PathRemoveExtensionA” function and removing the .exe extension from the list.
+
+Using this technique, the check process is more obfuscated.
+
+Figure 14.
+
+Remove extension and check the process name In our analysis, we saw how the ransomware dynamically uses the function “IsWow64Process” to check if the victim OS is running a x64 system and then uses the functions “Wow64DisableWow64FsRedirection” and “Wow64RevertWow64FsResdirection”.
+
+If the malware can access the functions, it will use the first to destroy all shadow volumes and the protections of the OS in the next boot and, later, will recover the redirection with the other function.
+
+In the case that it cannot get these functions, LockBit will delete the shadow volume directly through the function “ShellExecuteA” or with the function “CreateProcessA”.
+
+Deletion of files within the recycle bin is executed with the function “SHEmptyRecycleBinW”.
+
+Figure 15.
+
+Delete the contents of the recycle bin Static analysis of the sample shows that LockBit will check the machine to see if it has support for  AES instructions in the processor with the “cpuid” opcode.
+
+Figure 16.
+
+Check for AES instruction support in the CPU Another check made by the ransomware is for the existence of the SS2 set of instructions: Figure 17.
+
+Check for SSE2 instructions in the CPU After finishing this process, the malware will try to delete itself with the next command using “ShellExecuteExW”:
+
+Image 18.
+
+Auto-deletion of the malware The Ransom Note The ransom note is rather compact because the author hardcoded the content right in the code without using any obfuscation or encryption.
+
+The text file containing the ransom note is created in every directory after encryption and called Restore-My-Files.txt .
+
+Figure 19:
+
+Content that is placed in Restore-My-Files.txt Victim Information Stored in the Registry Key LockBit in execution will create two keys in the infected system with the values full and public.
+
+Those keys are created in the following hive HKEY_CURRENT_USER\\SOFTWARE\\LockBit .
+
+The data stored in these keys belongs to the infected victim in order to be able to identify them in the future.
+
+Figure 20:
+
+LockBit registry keys Lastly, after finishing the encryption, the desktop wallpaper is changed to a message for the user, saying that LockBit encrypted the host.
+
+Figure 21:
+
+LockBit wallpaper after encryption LockBit Filemarker Some of the ransomware we analyzed shares a common file marker across all the encrypted files in order to verify the origin.
+
+This digital marker can be used there in the control panel in order to verify that this was the ransomware that encrypted the files.
+
+This is an example for the first version of LockBit, where file marker was using: C8 41 D0 BE AB 3F 0D 59
+
+7B BF CF 40 C8 81 63 CD If we compare two encrypted files, we can spot how the file marker matches in both encrypted files: Figure 22:
+
+File marker used by LockBit SMB Spreading Analyzing LockBit in our environment, we identified the possibility to spread locally in the same local network.
+
+Analyzing the network traffic, we spotted the use of multiple ARP requests to find other hosts in the same network segment.
+
+Figure 23:
+
+LockBit ARP traffic captured in the analysis If these ARP requests finally find a host alive, LockBit will start a legitimate SMB connection to be able to deploy the ransomware in other machines.
+
+Figure 24:
+
+LockBit SMB traffic captured in the analysis If the SMB connection is successful, LockBit will execute the following PowerShell command to download the .NET launcher that will decompress and execute LockBit in a new system: LockBit Ransomware Evolution: LockBit is new on the scene, but we noticed the authors added several new features and improved the ransomware several times.
+
+That means there is an active group behind it which is probably getting feedback on its actions.
+
+This is an example of the development cycle; this graph was extracted, analyzing statically all the internal functions and comparing them across the samples: For this investigation, we found different LockBit versions with different features between them: LockBit Version 1 This first version contains unique features compared to other versions we found in the wild.
+
+These features are: IPLO (IPLogger geolocalization service)
+
+Persistence through the COM interface and the HIVE Current Version Run A different extension used in the encrypted files Debug file created for debugging purposes HIGH CPU Usage in the encryption process The reusage of a MUTEX observed in other ransomware families IPLO.RU geo-localization service: One of the interesting items we found was that LockBit tries to identify the victim’s geo-location, through the URL IPLO.RU, requesting a static TXT file in that service.
+
+Figure 25:
+
+LockBit IPLO.RU geolocation traffic captured in the analysis The communication to this page is through HTTPS; we intercepted the traffic to get the reply from the remote server: Figure 26:
+
+SSL decrypted traffic Analyzing statically the code in LockBit, we found that this URL is not resolved dynamically in execution; it is hardcoded in the binary:
+
+Figure 27:
+
+Hardcoded URL of IPLO service Creating persistence through Current version Run and COM task schedule:
+
+There are many ways to gain persistence in a system.
+
+This first version of LockBit uses a task schedule through the COM interface to gain persistence.
+
+Figure 28:
+
+Persistence using the COM interface LockBit also uses a reboot persistence method by using the Windows registry hive: HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run Using the CurrentVersion\\Run hive serves to survive the reboot if the system shuts down.
+
+LockBit is actually using two persistence methods, CLSID and CurrentVersion\\Run .abcd extension used: The first version of LockBit uses the .abcd extension every time it encrypts a file; this is a unique difference between this version and the other versions found.
+
+Ransom note used: LockBit in this first version used a different ransom note with a different message: Figure 29:
+
+LockBit ransomware note Debug file created in execution: LockBit’s first version has some files that are skipped in the encryption process and every time it skips one it will create resultlog6.reg with the log information: Figure 30:
+
+Debug file created by LockBit High CPU usage: We analyzed the performance of the encryption and we noted how LockBit uses the CPU heavily in the encryption process: Figure 31: LockBit performance in execution PhobosImposter static MUTEX used: In October 2019, the community saw how PhobosImposter was using the mutex XO1XADpO01 in its executions and the same mutex is used by LockBit in this first version.
+
+We analyzed the base code of both samples and we did not find any code overlap but is a quite a random string to use casually.
+
+This is the function used to create the mutex: Figure 32.
+
+Creation and check of the hardcoded mutex LockBit Version 2 This LockBit version came out with the following changes: Appended extension changed The debug function removed Some of the samples came packed wither with UPX or a Delphi packer One sample digitally signed Appended extension changed: For this version, LockBit started to append the extension .lockbit in all the encrypted files as a file marker: Debug log function removed: LockBit, in this new version, removed the functionality whereby it stored all the skipped files in the encryption process.
+
+Sample delivery with different protections: In this version we found LockBit samples packed in UPX and other custom packers, adding certain protections to the samples: Extensive usage of PEB during the execution The use of IsDebuggerPresent, OutputDebugString and GetLastError All these protections are enabled by the use of packers in the delivery.
+
+Mutex change:
+
+The prior version of LockBit used a static mutex in all the encryptions but, in this release, it changed to be a dynamic value for every infection.
+
+Samples digitally signed: For all the versions we found for LockBit, only this version had a sample digitally signed: Figure 33:
+
+LockBit sample digitally signed LockBit Version 3 Ransomware note changed:
+
+For this version LockBit adapted the ransomware note and used a new one: Figure 34: LockBit 2nd version of the ransomware note LockBit debug enabled: After all the hunting progress we made, we found several samples of LockBit with some kind of status feature enabled, showing a progress window during the encryption: Figure 35:
+
+LockBit debug enabled This mode was only available for certain sample compilations and the status screen was different depending on the LockBit sample analyzed: Figure 36:
+
+LockBit sample digitally signed Tales from the Underground When we researched the underground community for LockBit we came across a posting on several popular underground forums.
+
+ A threat actor named Lockbi or LockBit is offering LockBit as a “bespoke” ransomware as a service for limited partners/affiliates.
+
+We suspect LockBit ransomware to be more “bespoke”, not only from its own announcements, but subsequently we have not seen any affiliate identifiers present in the ransomware, which is normally a clear sign of an actor trying to upscale operations and service a larger number of affiliates.
+
+The advertisement provides a general description that matches the LockBit behavior we have seen in the wild and from our analysis.
+
+As many other cyber-criminal services, LockBit does not allow the use of the software in any of the CIS countries.
+
+This is commonly done to avoid prosecution if the threat actor resides in one of those nations.
+
+What we also noticed was a mention around multi-threading.
+
+Ransomware families are often programmed to run multi-threaded to ensure quick and overall encryption and prevent the encryption process getting stuck on a large file.
+
+However, LockBit was specifically advertised as single threaded and the threat actor Lockbi ensures that there are no speed issues when it comes to its encryption capability.
+
+Figure 37:
+
+The LockBit advertisement In the advertisement it is listed that one of the features of the ransomware is a local subnet scanner and SMB propagation method, something we can confirm based on our analysis.
+
+Also noteworthy is the use of a Jabber-bot to perform the essential functions, such as chatting, decryption and banning, replacing the need for a labor intensive admin panel that is hosted somewhere on the internet.
+
+Figure 38: LockBit profile including the 10,5 BTC deposit
+
+It seems that LockBit has joined the underground scene with a clear determination to do business; the authors have put a down a deposit in excess of 10,5 BTC, a bit shy of 75K USD.
+
+Putting a deposit in escrow is a way to demonstrate that the seller is invested financially and not out to scam potential partners.
+
+The seller would lose their deposit if they did not keep to their end of the deal.
+
+Our telemetry shows that LockBit activity is still limited today but we can definitely expect to see more bespoke LockBit attacks in the near future.
+
+Recovery Going back to the real-life case, there were no recent offline backups.
+
+So, with the backup servers (including the backups) encrypted as well and a complete rebuild not being an option, there was no way for a successful and swift recovery other than by paying the ransom.
+
+Both McAfee’s and Northwave’s perspective is that ransoms should not be paid.
+
+Paying does not only support the criminal business model, but as we have shown in our research , it also finances other forms of crime, such as the online drug trade.
+
+In this specific case the victim chose to pay the ransom.
+
+The first step for recovery was to get in contact with the hacker following the instructions from the ransom note (Restore-my-files.txt) as depicted below.
+
+Figure 39:
+
+LockBit ransomware note Interestingly, as opposed to earlier known cases of LockBit (or .abcd virus) where contact with the attacker occurred via email addresses mentioned in the ransom note, in this case, the attacker developed an online ‘help desk’ accessible via a .onion address.
+
+Helpful as the hacker is, they even provided clear instructions on how to access this .onion address with the Tor browser.
+
+Although the ransom note claims there was private data obtained, Northwave did not find any evidence for this on the compromised systems.
+
+Figure 40:
+
+LockBit recovery page The image above shows the helpdesk which the attacker uses for communication with their victims.
+
+It provides the functionality for a trial in which two files can be decrypted ‘for warranty’, showing that the attacker indeed has the correct key(s) for restoring the data.
+
+For this, it is always essential to test files from different (critical) servers since keys might differ per server.
+
+In negotiations with an attacker, always try to obtain this knowledge since it is also relevant for your recovery strategy.
+
+If it is only one key, you know you can use one tool for the entire network; however, if encrypted servers use distinct keys, recovery becomes increasingly more difficult.
+
+After successful decryption of two different files (from distinct servers), the chat with the attacker began.
+
+They started by asking for a network domain name (to identify the correct victim), then the attacker addressed the ransom amount.
+
+Usually, the attackers do proper research on their victims and tailor the ransom amount accordingly, which was the case here as well.
+
+Hence, negotiating on the amount of the ransom did not prove to be useful: “We know who you are, so don’t play negotiate games.”
+
+Trouble in Hacker Paradise
+
+Subsequently, making the bitcoin transaction to the provided address, the helpdesk page would automatically update after six confirmations and show the download link for the decryptor.
+
+“After 6 transaction confirmations, in a few hours decryptor will be built automatically.
+
+Don’t worry you will get it instantly once it’s built.”
+
+Since there was nothing else to do than wait and hope for the decryptor now, an attempt was made into obtaining some more information from the attacker by asking about their methods.
+
+See a snippet of this conversation below.
+
+Figure 41:
+
+Attacker communication The ‘weak passwords’ is, of course, entirely in line with the brute force attack mentioned earlier.
+
+Additionally, this conversation indicates that there is a larger group behind this attack, where roles between different participants are separated.
+
+The helpdesk seems to be an actual helpdesk, merely following a script of actions.
+
+After waiting for several hours and six confirmations further, the decryption tool should have been ready for download.
+
+However, this is where things progressed differently.
+
+There seemed to be some technical issues causing the decryptor not to generate automatically for which the helpdesk kindly apologized.
+
+Unfortunately, this continued for two dubious days with multiple excuses before the attacker sent a link to the decryptor via the chat.
+
+It appeared that they were ineffective in solving the technical issues; hence they chose to send it via SendSpace.
+
+Once downloaded, the recovery phase could start.
+
+In this phase, all servers were decrypted, scanned and cleaned (or rebuilt) in a quarantined network.
+
+Subsequently, after implementing the appropriate technical and security measures, each host joined a new clean network.
+
+Conclusion As we highlighted in the first two articles, targeted ransomware attacks have increased massively over the past months.
+
+Many of them are all using a similar, quite manual, attack pattern as we highlighted.
+
+In this article, we provided an in-depth view of a relatively new ransomware family named LockBit.
+
+Based on a real-life case as encountered by Northwave, we described a typical ransomware attack including the modus operandi of attackers, the recovery process, an insight in the underground that advertises the ransomware and a full technical break-down of the ransomware itself.
+
+Additionally, during our analysis, we were able to obtain multiple samples of the LockBit ransomware with which we could provide an extensive list of IOCs.
+
+ McAfee will continue monitoring this threat.
+
+Learn from the articles, identify which technology can give you visibility inside your network.
+
+What digital evidence sources do you have, and can you detect fast enough to preserve and respond?
+
+If you were not able to prevent the ‘initial access stage’, make sure to have a strong Defense-in-Depth by having multiple defence technologies in place.
+
+In case a ransomware attack does strike your organization, have a proper backup procedure in place to successfully restore operations on your own?
+
+For additional ransomware prevention tips please visit www.NoMoreRansom.org .
+
+To learn more about how McAfee products can defend against these types of attacks, visit see our blog on how ENS 10.7 Rolls Back the Curtain on Ransomware .
+
+MITRE TAXONOMY Technique ID Technique Description T1107 File Deletion T1055 Process Injection T1112
+
+Modify Registry
+
+T1215 Kernel Modules and Extensions T1060 Registry Run Keys / Start Folder T1179
+
+Hooking T1055 Process Injection T1179 Hooking T1124
+
+System Time Discovery T1046 Network Service Scanning T1083 File and Directory Discovery T1016
+
+System Network Configuration Discovery T1012 Query Registry T1082 System Information Discovery T1057 Process Discovery T1063 Security Software Discovery T1047 Windows Management Instrumentation T1035 Service Execution T1075
+
+Pass the Hash IOC’s SHA256 Compile TimeStamp ffbb6c4d8d704a530bdd557890f367ad904c09c03f53fda5615a7208a0ea3e4d 1992:06:20 286bffaa9c81abfb938fe65be198770c38115cdec95865a241f913769e9bfd3f 2009:02:12 76a77def28acf51b2b7cdcbfaa182fe5726dd3f9e891682a4efc3226640b9c78
+
+2009:02:12
+
+faa3453ceb1bd4e5b0b10171eaa908e56e7275173178010fcc323fdea67a6869 2009:02:12 70cb1a8cb4259b72b704e81349c2ad5ac60cd1254a810ef68757f8c9409e3ea6 2019:11:29 ec88f821d22e5553afb94b4834f91ecdedeb27d9ebfd882a7d8f33b5f12ac38d 2019:12:01 13849c0c923bfed5ab37224d59e2d12e3e72f97dc7f539136ae09484cbe8e5e0 2019:12:11 6fedf83e76d76c59c8ad0da4c5af28f23a12119779f793fd253231b5e3b00a1a 2019:12:17 c8205792fbc0a5efc6b8f0f2257514990bfaa987768c4839d413dd10721e8871 2019:12:18 15a7d528587ffc860f038bb5be5e90b79060fbba5948766d9f8aa46381ccde8a 2020:01:23 0f5d71496ab540c3395cfc024778a7ac5c6b5418f165cc753ea2b2befbd42d51 2020:01:23 0e66029132a885143b87b1e49e32663a52737bbff4ab96186e9e5e829aa2915f
+
+2020:01:23 410c884d883ebe2172507b5eadd10bc8a2ae2564ba0d33b1e84e5f3c22bd3677 2020:02:12 e3f236e4aeb73f8f8f0caebe46f53abbb2f71fa4b266a34ab50e01933709e877 2020:02:16 0f178bc093b6b9d25924a85d9a7dde64592215599733e83e3bbc6df219564335 2020:02:16 1b109db549dd0bf64cadafec575b5895690760c7180a4edbf0c5296766162f18 2020:02:17 26b6a9fecfc9d4b4b2c2ff02885b257721687e6b820f72cf2e66c1cae2675739 2020:02:17 69d9dd7fdd88f33e2343fb391ba063a65fe5ffbe649da1c5083ec4a67c525997 2020:02:17 0a937d4fe8aa6cb947b95841c490d73e452a3cafcd92645afc353006786aba76 2020:02:17 1e3bf358c76f4030ffc4437d5fcd80c54bd91b361abb43a4fa6340e62d986770 2020:02:17 5072678821b490853eff0a97191f262c4e8404984dd8d5be1151fef437ca26db 2020:02:20 ca57455fd148754bf443a2c8b06dc2a295f014b071e3990dd99916250d21bc75 2020-02-20
+
+

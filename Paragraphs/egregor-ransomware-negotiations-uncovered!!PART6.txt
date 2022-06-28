@@ -1,0 +1,6 @@
+
+What’s in a Ransom?
+After reviewing elaborate chat logs between Egregor actors and representatives from victimized organizations, we obtained interesting insights about how the ransom amount was fixed and the overall negotiation process.
+In a common flow of events, upon initial contact with victims, X-Force and Cylera analysts observed Egregor ransomware actors making an initial demand for a ransom payment that depended on the victim and their perceived ability to pay.
+Analysis of approximately 50 ransom negotiations in Egregor chat logs from December 2020 shows that ransom demands varied wildly.
+Average initial ransom demand $5,024,000 Average ransom payment $387,700 Highest initial ransom demand $35,000,000 Lowest initial ransom demand $100,000 Sum of all ransom demands $226,080,000 Figure 1:

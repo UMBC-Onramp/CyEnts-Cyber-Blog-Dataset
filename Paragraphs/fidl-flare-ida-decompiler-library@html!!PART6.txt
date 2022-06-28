@@ -1,0 +1,8 @@
+
+This gives analysts a much more logical structure to iterate when trying to determine context for a particular expression.
+Readily available access to variables and API calls used in a function makes creating scripts to leverage the Hex-Rays API much more straightforward.
+In our previous blog post we introduced a script which uses the HexRays API to rename global variables based on the parameter to GetProcAddress.
+Figure 4 shows this script rewritten using the FIDL API.
+This new script is both easier to understand and does not rely on manually walking the AST.
+Figure 4: Script that uses the FIDL API to map all calls to GetProcAddress to global variables Rather than calling GetProcAddress malware commonly manually revolves needed imports by walking the Export Address Table (EAT) and comparing the hashes of a DLL’s exports looking for pre-computed values.
+As an analyst being able to quickly or automatically map these functions to their intended API makes it easier for us to identify which functions we should spend time analyzing.

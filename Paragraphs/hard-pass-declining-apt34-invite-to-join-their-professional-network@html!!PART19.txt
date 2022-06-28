@@ -1,0 +1,21 @@
+
+Interesting strings identified in the binary are shown in Figure 9.
+GetAsyncKeyState >---------------------------------------------------\\n\\n c:\\\\windows\\\\temp\\\\log.txt [ENTER] [CapsLock] [CRTL] [PAGE_UP] [PAGE_DOWN] [HOME]
+[LEFT]
+[RIGHT] [DOWN]
+[PRINT] [PRINT SCREEN] (1 space) [INSERT] [SLEEP] [PAUSE] \\n---------------CLIPBOARD------------\\n \\n\\n >>>  (2 spaces) c:\\\\windows\\\\temp\\\\log.txt Figure 9: Strings identified in a LONGWATCH binary Detecting the Techniques FireEye detects this activity across our platforms, including named detection for TONEDEAF, VALUEVAULT, and LONGWATCH.
+Table 2 contains several specific detection names that provide an indication of APT34 activity.
+Signature Name FE_APT_Keylogger_Win_LONGWATCH_1 FE_APT_Keylogger_Win_LONGWATCH_2 FE_APT_Keylogger_Win32_LONGWATCH_1 FE_APT_HackTool_Win_PICKPOCKET_1
+FE_APT_Trojan_Win32_VALUEVAULT_1
+FE_APT_Backdoor_Win32_TONEDEAF TONEDEAF BACKDOOR
+[DNS] TONEDEAF BACKDOOR [upload] TONEDEAF BACKDOOR
+[URI] Table 1: FireEye Platform Detections Endpoint Indicators Indicator MD5 Hash (if applicable)
+Code Family System.doc b338baa673ac007d7af54075ea69660b TONEDEAF 50fb09d53c856dcd0782e1470eaeae35
+TONEDEAF ERFT-Details.xls 96feed478c347d4b95a8224de26a1b2c TONEDEAF DROPPER caf418cbf6a9c4e93e79d4714d5d3b87 TONEDEAF DROPPER b.exe
+9fff498b78d9498b33e08b892148135f VALUEVAULT WindowsNTProgram.exe 021a0f57fe09116a43c27e5133a57a0a LONGWATCH PE86.dll d8abe843db508048b4d4db748f92a103 PICKPOCKET PE64.dll
+6eca9c2b7cf12c247032aae28419319e PICKPOCKET Table 2:
+APT34 Endpoint Indicators from this blog post Network Indicators hxxp[://]www[.]cam-research-ac[.]com offlineearthquake[.]com c[.]cdn-edge-akamai[.]com 185[.]15[.]247[.]154 Acknowledgements A huge thanks to Delyan Vasilev and Alex Lanstein for their efforts in detecting, analyzing and classifying this APT34 campaign.
+ Thanks to Matt Williams, Carlos Garcia and Matt Haigh from the FLARE team for the in-depth malware analysis.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

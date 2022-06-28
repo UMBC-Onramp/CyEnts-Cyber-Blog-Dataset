@@ -1,0 +1,4 @@
+
+LockBit sample digitally signed LockBit Version 3 Ransomware note changed:
+For this version LockBit adapted the ransomware note and used a new one: Figure 34: LockBit 2nd version of the ransomware note LockBit debug enabled: After all the hunting progress we made, we found several samples of LockBit with some kind of status feature enabled, showing a progress window during the encryption: Figure 35:
+LockBit debug enabled This mode was only available for certain sample compilations and the status screen was different depending on the LockBit sample analyzed: Figure 36:

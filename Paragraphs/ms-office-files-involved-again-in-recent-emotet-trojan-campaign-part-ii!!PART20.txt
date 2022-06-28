@@ -1,0 +1,14 @@
+
+All relevant URLs have been rated as \" Malicious Websites \" by the FortiGuard Web Filtering service.
+The captured Excel sample and the downloaded Emotet dll file are detected as \" VBA/Emotet.2826!tr.dldr \" and \" W32/Emotet.
+B185!tr \" and are blocked by the FortiGuard AntiVirus service.
+FortiEDR detects both the Excel file and Emotet dll file as malicious based on its behavior.
+In addition to these protections, Fortinet also provides multiple solutions designed to help train users in detecting and understanding phishing threats: We encourage organizations to have their end users take our FREE NSE Training : NSE 1 – Information Security Awareness .
+It includes a module on Internet threats designed to help end-users learn how to identify and protect themselves from various types of phishing attacks.
+This training can then be reinforced using our FortiPhish phishing simulation service.
+It uses real-world attack scenarios to train users, test awareness and vigilance, and reinforce proper practices for handling phishing incidents.
+IOCs C2 Server List in the three thread-modules: 144[.]217[.]88[.]125:443 67[.]205[.]162[.]68:8080 54[.]36[.]98[.]59:7080 45[.]184[.]36[.]10:8080 47[.]110[.]149[.]223:8080 159[.]65[.]1[.]71:8080
+51[.]178[.]186[.]134:443 131[.]100[.]24[.]199:8080 51[.]91[.]142[.]158:80
+51[.]79[.]205[.]117:8080 176[.]31[.]163[.]17:8080 Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+

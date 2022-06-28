@@ -1,0 +1,5 @@
+
+The return value is still\na list of dictionaries whose keys are the recovered arguments.
+In\naddition to the stack arguments that can be accessed based on their\norder (1,2.. n), the register arguments can be recovered by using the\nregister name as the dictionary key.
+As in the first example, the\nresult is a tuple that contains the effective address where the\nregister was modified prior to the call instruction, and the value.
+Figure 6: Argtracker requesting\nparameters and processing them How it Works argtracker relies heavily upon Vivisect to\nperform additional analysis on the malware.

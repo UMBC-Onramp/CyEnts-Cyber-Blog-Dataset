@@ -1,0 +1,4 @@
+
+The remote control supports voice commands, for which it is equipped with a microphone and a quite capable processor.
+Two data transfer technologies are implemented in the device.
+For switching channels and other simple actions, a standard infrared transmitter is used, which has the important advantage of consuming minimal energy so that the remote does not need frequent charging, allowing it to operate on ordinary batteries for an extended period of time.

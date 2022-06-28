@@ -1,0 +1,8 @@
+
+For a more detailed description of the profile and commands available, see the Github page .
+Macros A series of voice commands can perform multi-step actions not otherwise reachable by individual keyboard shortcuts.
+For example, wouldn’t it be nice to have commands to toggle the visibility of opcode bytes (see Figure 1)?
+Currently, you have to open the Options menu, select the General menu item, input a value in the Number of opcode bytes text field, and click the OK button.
+Well, now you can simply say “show opcodes” or “hide opcodes” and it will be so!
+Figure 1:
+Configuring the number of opcode bytes to show in IDA Pro's disassembly view Defining a Unicode string in IDA Pro is a multi-step exercise, whether you navigate to the Edit->Strings menu or use the “string literals” keyboard shortcut Alt+A followed by pressing the U key as shown in Figure 2.

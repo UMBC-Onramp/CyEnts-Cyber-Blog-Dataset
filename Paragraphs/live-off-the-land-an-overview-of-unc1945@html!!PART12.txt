@@ -1,0 +1,5 @@
+
+After successfully authenticating, SLAPSTICK displays a welcome message, as seen in Figure 5.
+Figure 5: SLAPSTICK backdoor welcome banner UNC1945 used ProxyChains to download PUPYRAT, an open source, cross-platform multi-functional remote administration and post-exploitation tool mainly written in Python.
+At one target, the threat actor used a virtual machine to initiate a brute-force of SSH targeting Linux and HP-UX endpoints.
+Beginning with seemingly random usernames and shifting to legitimate Linux and Windows accounts, the threat actor successfully established SSH connections on a Linux endpoint.

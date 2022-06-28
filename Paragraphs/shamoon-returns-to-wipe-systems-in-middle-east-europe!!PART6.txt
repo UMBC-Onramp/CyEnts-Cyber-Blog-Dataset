@@ -1,0 +1,9 @@
+
+These resources are decrypted by the dropper and contain: MNU: The communication module LNG:
+The wiper component PIC: The 64-bit version of the dropper Shamoon 2018 needs an argument to run and infect machines.
+It decrypts several strings in memory that gather information on the system and determine whether to drop the 32-bit or 64-bit version.
+It also drops the file key8854321.pub (MD5: 41f8cd9ac3fb6b1771177e5770537518) in the folder c:\\Windows\\Temp\\key8854321.pub.
+The malware decrypts two files used later:
+C:\\Windows\\inf\\mdmnis5tQ1.pnf C:\\Windows\\inf\\averbh_noav.pnf
+Shamoon enables the service RemoteRegistry, which allows a program to remotely modify the registry.
+It also disables remote user account control by enabling the registry key LocalAccountTokenFilterPolicy.

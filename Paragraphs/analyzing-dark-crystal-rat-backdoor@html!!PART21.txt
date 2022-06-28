@@ -1,0 +1,6 @@
+
+These messages are GET requests of the form hxxp://domalo[.]online /ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91dueu3qa54/46kqbjvyklunp1z56txzkhen7gj ci3cyx8ggkptx25i74mo6myqpx9klvv3/akcii239myzon0xwjlxqnn3b34w/ <user_hash> .
+<mes sage_hash> , where: <user_hash> is calculated as described above for getdata messages.
+<message_hash> is also calculated as described above for getdata messages, but describes the type of message the malware is expecting to receive in the server’s response.
+<message_hash> may also be the string comm .
+Table 1 shows possible <message_types> that may be incorporated into <message_hash> as part of format 2 messages to instruct the server which type of response is desired.

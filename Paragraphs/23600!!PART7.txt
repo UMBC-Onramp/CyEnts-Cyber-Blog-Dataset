@@ -1,0 +1,4 @@
+
+That kind of scenario appears quite dangerous; it greatly simplifies the work of attackers, who then do not need to create a communication interface with infected computers but can instead use something already available.
+At the same time, it somewhat complicates the detection of malicious activity; conversations between the backdoor and its operator look like regular user activity in a popular chat.
+Protection for gamers Although the aforementioned threats apply to all Discord users, they relate mainly to those who use Discord as a game add-in: for voice and text communication, streaming, collecting gaming statistics, and so on.

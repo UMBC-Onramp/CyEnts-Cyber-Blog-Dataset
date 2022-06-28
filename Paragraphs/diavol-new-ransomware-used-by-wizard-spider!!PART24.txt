@@ -1,0 +1,17 @@
+
+- No clear evidence of double extortion in the environment was found.
+Fortinet Solutions FortiEDR detects and blocks the Diavol and Conti ransomwares attacks out-of-the-box without any prior knowledge or special configuration.
+It does this using its post-execution prevention engine to identify malicious activities, such as encrypting files or wiping the shadow copy, and then blocking them in real-time, as can be seen in figures 13 and 14:
+The FortiGuard AntiVirus service is supported by, and the FortiGuard AntiVirus engine is included in Fortinet’s FortiGate , FortiMail, FortiClient , and FortiEDR solutions.
+FortiGuard AntiVirus has coverage in place for the following samples: 85ec7f5ec91adf7c104c7e116511ac5e7945bcf4a8fdecdcc581e97d8525c5ac (Diavol, locker.exe) W32/Malicious_Behavior.
+VEX 426ba2acf51641fb23c2efe686ad31d6398c3dd25c2c62f6ba0621455a3f7178 (Conti v3, locker64.dll) W64/BazarLoader.
+AD!tr 4bfd58d4e4a6fe5e91b408bc190a24d352124902085f9c2da948ad7d79b72618 (Conti, locker.exe) W32/Conti.
+F!tr.ransom All network IOCs have been added to the FortiGuard WebFiltering blocklist.
+In addition, as part of our membership in the Cyber Threat Alliance, details of this threat were shared in real time with other Alliance members to help create better protections for customers.
+Appendix A: MITRE ATT&CK Techniques ID Description T1027 Obfuscated Files or Information T1082 System Information Discovery T1071.001 Application Layer Protocol: Web Protocols T1489 Service Stop T1562.001 Impair Defenses: Disable or Modify Tools T1135 Network Share Discovery T1490 Inhibit System Recovery T1559.001 Inter-Process Communication: Component Object Model T1486 Data Encrypted for Impact T1485 Data Destruction Appendix B: IOCs File Hashes (SHA256) 85ec7f5ec91adf7c104c7e116511ac5e7945bcf4a8fdecdcc581e97d8525c5ac (Diavol, locker.exe) 426ba2acf51641fb23c2efe686ad31d6398c3dd25c2c62f6ba0621455a3f7178 (Conti v3, locker64.dll) 4bfd58d4e4a6fe5e91b408bc190a24d352124902085f9c2da948ad7d79b72618 (Conti, locker.exe)
+File Names locker.exe locker64.dll wscpy.exe encr.bmp README_FOR_DECRYPT.txt File Paths %
+PUBLIC%\\Pictures\\encr.bmp IPs 173[.]232[.]146[.]118 URLs hxxp://<server_address>//BnpOnspQwtjCA/register hxxp://173[.]232[.]146[.]118/Bnyar8RsK04ug/ Domains r2gttyb5vqu6swf5[.]onion Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+

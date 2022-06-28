@@ -1,0 +1,5 @@
+
+One of the indicators we can use to detect uninitialized memory usage, specifically in the case of image decoding, is the resulting pixels after the image is decoded.
+When an image is decoded, it results in a set of raw pixels.
+If image decoding uses any uninitialized memory, some or all of the pixels may end up as random.
+In simpler words, decoding an image multiple times may result in different output each time if uninitialized memory is used.

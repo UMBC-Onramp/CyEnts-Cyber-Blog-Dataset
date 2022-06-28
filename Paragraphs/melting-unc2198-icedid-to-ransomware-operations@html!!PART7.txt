@@ -1,0 +1,3 @@
+
+Virtual Services, CN = oracle.com UNC2198 and UNC2414 installed BEACON as C:\\Windows\\int32.dll UNC2198 and UNC2414 installed the RCLONE utility as C:\\Perflogs\\rclone.exe UNC2198 and UNC2414 were proven to be financially motivated actors that had leveraged ICEDID as initial access: UNC2198 had deployed MAZE UNC2414 had deployed EGREGOR
+The merge between UNC2198 and UNC2414 was significant because it revealed UNC2198 has access to EGREGOR ransomware.

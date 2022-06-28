@@ -1,0 +1,5 @@
+
+Figure 8 shows the API set that the malware uses to inject a user mode module into the services.exe process.
+The malware executes a shellcode stub as the target of the APC that will then execute a loader for the injected DLL.
+All of this can be recovered from the memory dump package and analyzed later.
+Figure 8: Logged APIs used by tcprelay.sys rootkit to inject into user mode via an APC Network Hooks After injecting into user mode, the kernel component will attempt to install network obfuscation hooks (presumably to hide the user mode implant).

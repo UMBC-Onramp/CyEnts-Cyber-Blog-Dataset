@@ -1,0 +1,6 @@
+
+The public key encrypts the Salsa20 key and random initialization vector (IV, or nonce)) generated later for each file.
+The encryption procedure generates a random Salsa20 key and a random IV for each file, encrypts the file with them, and encrypts this key and IV with a pair of RSA keys (with the public RSA key created at the beginning).
+The private key remains encrypted in the registry using another Salsa20 key and IV encrypted with an RSA public key embedded in the malware.
+After encryption, the file key and IV are appended to the contents of the file in a new field of 8 bytes, increasing the original file size.
+This method makes GandCrab very strong ransomware because without the private key to the embedded public key, it is not possible to decrypt the files.

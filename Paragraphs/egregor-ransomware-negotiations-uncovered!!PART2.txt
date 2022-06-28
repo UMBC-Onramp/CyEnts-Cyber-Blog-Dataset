@@ -1,0 +1,6 @@
+
+The chat correspondence had negotiations with approximately 40 victim organizations they chatted with.
+The activity uncovered in these chat transcripts provides valuable insight into how some ransomware actors operate – from how they conduct ransom payment negotiations, to the strategies and operational structure they used.
+Although law enforcement took action against Egregor operations in February 2021, this discovery provides the following insightful takeaways: Defining the Ransom Demand – Initial ransom amounts ranged from $100,000 to $35 million.
+The average initial ransom demanded was $5 million.
+During one negotiation, the threat actors indicated that their initial ransom demand is 5-10% of the potential estimated loss associated with a data leak.

@@ -1,0 +1,5 @@
+
+Attack Scenario #1: Account Takeover The next morning, the DFUR security team was notified by their customer service team of a veterinarian provider with the username ‘labradorable’ who hadn’t received their daily claims payment and noticed their banking information in the DFUR portal was changed overnight.
+A DFUR analyst opened the User Activity Enrichment dashboard (Figure 3) and searched for the username to see recent actions performed by the account.
+Figure 3:
+User Activity Enrichment dashboard The analyst reviewed the Remote Access Analytics in the dashboard and identified the following anomalies (Figure 4):

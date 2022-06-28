@@ -1,0 +1,12 @@
+
+Techniques we might have otherwise used to start narrowing down a native sample’s functionality, such as looking at what DLLs it imports and what functions from those DLLs that it uses, yielded no useful results for this .NET
+sample.
+As shown in Figure 3, dfsds.exe imports only the function _CorExeMain from mscoree.dll.
+We could have opened dfsds.exe in IDA Pro, but IDA Pro is usually not the most effective way of analyzing .NET
+samples; in fact, the free version of IDA Pro cannot handle .NET
+Common Language Infrastructure (CLI) intermediate code.
+Figure 2: CFF Explorer shows that dfsds.exe is a .NET executable.
+Figure 3:
+The import table for dfsds.exe is not useful as it contains only one function.
+Instead of using a disassembler like IDA Pro on dfsds.exe, we used a .NET decompiler.
+Luckily for the reverse engineer, decompilers operate at a higher level and often produce a close approximation of the original C# code.

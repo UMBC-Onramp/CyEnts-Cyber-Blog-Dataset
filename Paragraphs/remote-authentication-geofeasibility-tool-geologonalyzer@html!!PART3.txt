@@ -1,0 +1,5 @@
+
+User accounts that usually log on from IP addresses registered to one physical location such as a city, state, or country, but also have logons from locations where the user is not likely to be physically located.
+User accounts that log on from a foreign location at which no employees reside or are expected to travel to, and your organization has no business contacts at that location.
+User accounts that usually log on from one source IP address, subnet, or ASN, but have a small number of logons from a different source IP address, subnet, or ASN.
+User accounts that usually log on from home or work networks, but also have logons from an IP address registered to cloud server hosting providers.

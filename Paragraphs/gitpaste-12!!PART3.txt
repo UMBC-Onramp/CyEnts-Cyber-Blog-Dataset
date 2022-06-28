@@ -1,0 +1,6 @@
+
+Next, it downloads from GitHub ( https://raw.githubusercontent[.]com/cnmnmsl-001/-/master/shadu1 ) and executes it.
+The malware begins by preparing the environment.
+This means stripping the system of its defenses, including firewall rules, selinux, apparmor, as well as common attack prevention and monitoring software.
+The shadu1 script contains comments in the Chinese language and has multiple commands available to attackers to disable different security capabilities, as discussed above.
+The following example has some commands that disable cloud security agents, which clearly indicates the threat actor intends to target public cloud computing infrastructure provided by Alibaba Cloud and Tencent.

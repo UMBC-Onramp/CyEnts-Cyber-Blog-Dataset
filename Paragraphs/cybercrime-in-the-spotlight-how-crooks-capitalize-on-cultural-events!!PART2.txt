@@ -1,0 +1,7 @@
+
+In cases like the World Cup, fans may be willing to expose themselves to a more hostile environment in order to feel a part of the event.
+The same goes for companies that are associated with the sporting events, as they can fall victims to attacks just as individuals do.
+Types of Attacks Both innocent tourists and fans at home may have to deal with threats that result from their involvement in these events.
+Given the fact that internet access has increased all over the world, many tourists are vulnerable to rogue access-point attacks in public places.
+Attackers can use these points to harvest credentials and gain access to a victim’s device and accounts.
+Malware can also be placed within ATM machines, ready to rip off tourists withdrawing currency from their banks.

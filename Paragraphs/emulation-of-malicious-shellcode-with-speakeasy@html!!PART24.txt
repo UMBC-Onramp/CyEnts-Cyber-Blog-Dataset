@@ -1,0 +1,7 @@
+
+The following call instruction is often used by shellcode to get its current program counter by following it with a “pop” instruction.
+This allows the malware to discover where it is executing from in memory.
+Since we are reasonably certain this sample is shellcode, we will invoke Speakeasy with the command line shown in Figure 7.
+Figure 7:
+Command line used to emulate malware sample
+This will instruct Speakeasy to emulate the sample from offset zero as x86 shellcode.

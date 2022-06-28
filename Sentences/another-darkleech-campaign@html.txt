@@ -1,0 +1,101 @@
+Last week got us up close and personal with Darkleech and Blackhole with our external careers web site.
+
+The fun didn’t end there, this week we saw a tidal wave of Darkleech activity linked to a large-scale malvertising campaign identified by the following URL:
+
+hXXp://delivery[.]globalcdnnode[.]com/7f01baa99716452bda5bba0572c58be9/afr-zone.php
+
+Again Darkleech was up to its tricks, injecting URLs and sending victims to a landing page belonging to the Blackhole Exploit Kit, one of the most popular and effective exploit kits available today.
+
+Blackhole wreaks havoc on computers by exploiting vulnerabilities in client applications like IE, Java and Adobe, computers that are vulnerable to exploits launched by Blackhole are likely to become infected with one of several flavors of malware including ransomware , Zeus/Zbot variants and clickfraud trojans like ZeroAccess.
+
+We started logging hits at 21:31:00 UTC on Sunday 09/22/2013, the campaign has been ongoing, peaking Monday and tapered down through out the week.
+
+During most of the campaign’s run, delivery[.]globalcdnnode[.]com appeared to have gone dark, no longer serving the exploit kit’s landing page as expected and then stopped resolving altogether, yet tons of requests kept flowing.
+
+This left some scratching their heads as to whether the noise was a real threat.
+
+Indeed, it was a real threat, as Blackhole showed up to the party a couple of days later; this was confirmed by actually witnessing a system get attacked on a subsequent visit to the URL.
+
+Figure 1.
+
+– Session demonstrating exploit via IE browser and Java.
+
+The server returned the (obfuscated) Blackhole Landing page; no 404 this time.
+
+Figure 2 – request and response to to delivery[.]globalcdnnode[.]com.
+
+The next stage was to load a new URL for the malicious jar file.
+
+At this point, the unpatched Windows XP system running vulnerable Java quickly succumbed to CVE-2013-0422 .
+
+Figure 3 – Packet capture showing JAR file being downloaded.
+
+Figure 4.
+
+– Some of the Java class files visible in the downloaded Jar.
+
+Even though our system was exploited and the browser was left in a hung state, it did not receive the payload.
+
+Given the sporadic availability during the week of both the host and exploit kit’s landing page, it’s possible the system is or was undergoing further setup and this is the prelude to yet another large-scale campaign.
+
+We can’t say for sure
+
+but we know this is not the last time we will see it or the crimeware actor behind it.
+
+Registrant:
+
+Name: Alexey Prokopenko Organization: home
+
+Address: Lenina 4, kv 1 City: Ubileine Province/state: LUGANSKA OBL Country: UA Postal Code: 519000 Email: alex1978a
+
+@bigmir.net
+
+By the way, this actor has a long history of malicious activity online too.
+
+The campaign also appears to be abusing Amazon Web Services.
+
+globalcdnnode.com
+
+Server:           ns-293.awsdns-36.com
+
+Address:    205.251.193.37#53 globalcdnnode.com origin = ns-293.awsdns-36.com mail addr =
+
+awsdns-hostmaster.amazon.com
+
+At time of this writing, the domain delivery[.]globalcdnnode[.]com was still resolving, using fast-flux DNS techniques to resolve to a different IP address every couple minutes, thwarting attempts at shutting down the domain by constantly being on the move.
+
+Figure 5.
+
+– The familiar Plesk control panel, residing on the server.
+
+This was a widespread campaign, indirectly affecting many web sites via malvertising techniques.
+
+The referring hosts run the gamut from local radio stations to high profile news, sports, and shopping sites.
+
+Given the large amounts of web traffic these types of sites see, its not surprising there was a tidal wave of requests to delivery[.]globalcdnnode[.]com.
+
+Every time a page with the malvertisement was loaded, a request was made to hXXp://delivery.globalcdnnode.com/7f01baa99716452bda5bba0572c58be9/afr-zone.php, in the background.
+
+To give an example of what this activity looked like from DTI, you can see the numbers in the chart below.
+
+Figure 6.
+
+– DTI graph showing number of Darkleech detections logged each day.
+
+By using malvertising and or posing as a legitimate advertiser or content delivery network, the bad guys infiltrate the web advertisement ecosystem.
+
+This results in their malicious content getting loaded in your browser, often times in the background , while you browse sites that have nothing to do with the attack (as was the case in our careers site).
+
+Imagine a scenario where a good portion of enterprise users have a home page set to a popular news website .
+
+More than likely, the main web page has advertisements, and some of those ads could be served from 3 rd party advertiser networks and or CDNs.
+
+If just one of those advertisements on the page is malicious, visitors to that page are at risk of redirection and or infection, even though the news website’s server is itself clean.
+
+So, when everybody shows up to work on Monday and opens their browsers, there could be a wave of clients making requests to exploit kit landing pages, if Darkleech is lurking in those advertisement waters, you could end up with a leech or 2 attached to your network.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

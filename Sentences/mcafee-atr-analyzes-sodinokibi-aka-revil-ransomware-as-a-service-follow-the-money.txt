@@ -1,0 +1,109 @@
+By John Fokker and Christiaan Beek on Oct 14, 2019 Episode 3: Follow the Money
+
+This is the third installment of the McAfee Advanced Threat Research (ATR) analysis of Sodinokibi and its connections to GandCrab, the most prolific Ransomware-as-a-Service (RaaS) Campaign of 2018 and mid 2019.
+
+The Talking Heads once sang “We’re on a road to nowhere.”
+
+This expresses how challenging it can be when one investigates the financial trails behind a RaaS scheme with many affiliates, etc.
+
+However, we persisted, and we prevailed.
+
+By linking underground forum posts with bitcoin transfer traces, we were able to uncover new information on the size of the campaign and associated revenue; even getting detailed insights into what the affiliates do with their earnings following a successful attack.
+
+With the Sodinokibi ransomware a unique BTC wallet is generated for each victim.
+
+As long as no payment is made, no trace of the BTC wallet will be available on the blockchain.
+
+The blockchain operates as a public ledger of all bitcoin transactions that have happened.
+
+When no currencies are exchanged, no transactions are recorded.
+
+Although many victims hit the news, we understand that if they paid, sharing that with the research community is maybe a bridge too far.
+
+On one of the underground forums we discovered the following post: In this post the actors are expanding their successful activity and offering a 60 percent cut as a start and, after three successful payments by the affiliate (read successful ransomware infections and payments received from the victims), the cut increases to 70 percent of the payments received.
+
+This is very common as we saw in the past with RaaS schemes like GandCrab and Cryptowall.
+
+Responding to this post is an actor with the moniker of ‘Lalartu’ and his comments are quite interesting, hinting he was involved with GandCrab.
+
+As a site-note: “Lalartu’ means ‘ghost/phantom’.
+
+Its origins are from the Sumerian civilization where Lalartu was seen as a vampiric demon.
+
+Researching the moniker of ‘Lalartu’ through our data, we went back in time a month or so and discovered a posting from the actor on June 4 th of 2019, again referencing GandCrab.
+
+We observe here a couple of transaction IDs (TXID) on the bitcoin ledger, however they are incomplete.
+
+More than a week later, on June 17 th , 2019, “Lalartu” posted another one with an attachment to it:
+
+In this posting we see a screenshot with partial TXIDs and the amounts.
+
+With the help of the Chainalysis software and team, we were able to retrieve the full TXIDs.
+
+With that list we were able to investigate the transactions and start mapping them out with their software: From the various samples we have researched, the amounts asked for payment are between 0.44 and 0.45 BTC, an average of 4,000 USD.
+
+In the above screenshot we see the transactions where some of these amounts are transferred from a wallet, or bitcoins are bought at an exchange and transferred to the wallets associated with the affiliate(s).
+
+Based on the list shared by Lalartu in his post, and the average value of bitcoin around the dates, within 72 hours a value of 287,499.00 USD of ransom had been transferred.
+
+Taking the list of transactions as a starting point in our graph-analysis, we colored the lines red and started from there to investigate the wallets involved and interesting transactions: Although it might look like spaghetti, once you dive in, very interesting patterns can be discovered.
+
+We see victims paying to their assigned wallets; from there it takes an average of two to three transactions before it goes to an ‘affiliate’ or ‘distribution’ wallet.
+
+From that wallet we see the split happening as the moniker ‘UNKN’ mentioned in his forum post we started this article with.
+
+The 60 or 70 percent stays with the affiliate and the remaining 40/30 percent is forwarded in multiple transactions towards the actors behind Sodinokibi.
+
+Once we identified a couple of these transactions, we started to dig in both directions.
+
+What is the affiliate doing with the money and where is the money going for the Sodinokibi actors?
+
+We picked one promising affiliate wallet and started to dig deeper down and followed the transactions.
+
+As described above, the affiliate is getting money transferred mostly through an exchange (since this is being advised by the actors in the ransom note).
+
+This is what we see in the example below.
+
+Incoming ransomware payments via Coinbase.com are received.
+
+The affiliate seems to pay some fee to a service but also sends BTC into Bitmix.biz a popular underground bitcoin mixer that is obfuscating the next transactions to make it difficult to link the transactions back to the ‘final’ wallet or cash-out in a (crypto) currency.
+
+We also observed examples where the affiliates were paying for services, they bought on Hydra Market.
+
+Hydra Market is a Russian underground marketplace where many services and illegal products are offered with payment in BTC.
+
+Tracing down the route of splits, we started to search for the 30 or 40 percent cuts of the ransom payments of 0.27359811 BTC or, if the price was doubled, 0.54719622 BTC.
+
+Using the list of amounts and querying the transactions and transfers discovered, we observed a wallet that was receiving a lot of these smaller payments.
+
+Due to ongoing research we will not publish the wallet but here is a graph representation of a subset of transactions: It seems like a spider, but many incoming ‘split’ transfers, and only a few outgoing ones with larger amounts of bitcoins, were observed.
+
+If we take the average of $2,500 – $5,000 USD as a ransom ask, and the mentioned split of 30/40 percent for the actor maintaining the Sodinokibi ransomware and affiliate infrastructure, they make $700 – $1,500 USD per paid infection.
+
+We already saw in the beginning of this article that the affiliate Lalartu claimed to have made 287k USD in 72 hours, which is an 86k USD profit for the actor from one affiliate only.
+
+In episode 2, The All-Stars , we explained how the structure is setup and how each affiliate has its own id.
+
+As far as we tracked the samples and extracted the amount of id-numbers, we counted over 41 affiliates being active.
+
+The data showed a in a relatively short amount of time the velocity and number of infections was high.
+
+Taken this velocity combined with a few payments per day, we can imagine that the actors behind Sodinokibi are making a fortune.
+
+Following the traces of one particular affiliate, we ended up seeing large amounts of bitcoins being transferred into a wallet which had a total value of 443 BTC, around 4,5 million USD with the average bitcoin price.
+
+We do understand that there are situations in which executives decide to pay the ransom but, by doing that, we keep this business model alive and also fund other criminal markets.
+
+Conclusion In this blog we focused on insights into the financial streams behind ransomware.
+
+By linking underground forum posts with bitcoin transfer traces, we were able to uncover new information on the size of the campaign and associated revenue.
+
+In some cases, we were able even to get detailed insights into what the affiliates do with their earnings following a “successful” attack.
+
+It shows that paying ransomware is not only keeping the ‘ransom-model’ alive but is also supporting other forms of crime.
+
+In the next and final episode, “Crescendo” McAfee ATR reveals insights gleaned from a global network of honey pots.
+
+
+
+

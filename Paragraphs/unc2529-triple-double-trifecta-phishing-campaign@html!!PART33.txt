@@ -1,0 +1,7 @@
+
+The main logical modules of the backdoor are its configuration, plugin management, and communications.
+In the following sections we will describe the first two, while a future blog post will focus on the communications and the evolution of the backdoor.
+Configuration The backdoor uses an embedded configuration that contains the C2 URLs and a key (more about the key in the second part of the post).
+The configuration data is formatted as shown in Figure 12.
+struct tag_config_header_t { uint32_t xor_val_1; uint32_t xor_val_2; uint32_t xor_val_3; uint32_t xor_val_4; } config_header_t; struct tag_config_t { config_header_t header; uint8_t encoded_config[]; } config_t; Figure 12:
+Encoded configuration format The length of the encoded_config data is provided by the XOR-ing of the xor_val_1 and xor_val_2 fields of the config_header_t structure.

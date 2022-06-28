@@ -1,0 +1,6 @@
+
+Gamarue Botnet
+In addition, the C2 domains azmtool[.]us, becharnise[.]ir, newcesarnex[.]com and klimsourcinq[.]com were reported in February as being related to the Gamarue Botnet.
+In these instances, each of the domains was present in varying RoboSki-packed LokiBot samples.
+File Path Observations Some file paths have noticeable misspellings, such as %AppData%\\microsift.exe, which was observed in a RoboSki-packed AsyncRAT sample.
+We found that additional file paths, such as %Temp%\\windefendllinici.exe in RoboSki-packed AsyncRAT samples, may be associated with files compiled in February 2021 that matched YARA signatures for Nanocore, and password stealers, several of which communicate with the RoboSki-packed AsyncRAT C2 domain laboratoriogenfarp.linkpc[.]net.

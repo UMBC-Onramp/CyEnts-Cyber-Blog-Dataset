@@ -1,0 +1,7 @@
+
+See Figure 4 and Figure 5 for example campaign emails.
+Figure 4.
+Urgent Invoice Campaign Figure 5.
+Other Campaigns The ZIP attachment as depicted in Figure 6 contains a malicious JavaScript downloader that downloads and installs the Locky ransomware.
+Figure 6.
+Zipped Content In Figure 7, it is interesting to see that the recent Locky campaign seems to prefer using a JavaScript-based downloader in comparison to Microsoft Word and Excel macro-based downloaders, which were seen being used in its early days.

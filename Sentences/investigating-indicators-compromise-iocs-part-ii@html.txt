@@ -1,0 +1,65 @@
+Written by Will Gibb & Devon Kerr
+
+In our blog post \"Investigating with Indicators of Compromise (IOCs) - Part I ,\" we presented a scenario involving the \"Acme Widgets Co.,\" a company investigating an intrusion, and its incident responder, John.
+
+John's next objective is to examine the system \"ACMWH-KIOSK\" for evidence of attacker activity.
+
+Using the IOCs containing the tactics, techniques and procedures (TTPs) he developed during the analysis of \"ACM-BOBBO,\" John identifies the following IOC hits: Table 1: IOC hit summary After reviewing IOC hits in Redline™ , John performs Live Response and put together the following timeline of suspicious activity on \"ACMWH-KIOSK\".
+
+Table 2:
+
+Summary of significant artifacts John examines the timeline in order to surmise the following chain of activities: On October 15, 2013, at approximately 16:17:56 UTC, the attacker performed a type 3 network logon, described here , to \"ACMWH-KIOSK\" from \"ACM-BOBBO\" using the ACME domain service account, \"backupDaily.\" A few seconds later, the attacker copied two executables, \"acmCleanup.exe\" and \"msspcheck.exe,\" from \"ACM-BOBBO\" to \"C:$RECYCLE.BIN.\" By generating MD5 hashes of both files, John determines that \"acmCleanup.exe\" is identical to the similarly named file on \"ACM-BOBBO\", which means it won't require malware analysis.
+
+Since the MD5 hash of \"msspcheck.exe\" was not previously identified, John sends binary to a malware analyst, whose analysis reveals that \"msspcheck.exe\" is a variant of the \"acmCleanup.exe\" malware.
+
+About a minute later, at 16:19:02 UTC, the attacker executed the Sysinternals PsExec remote command execution utility, which ran for approximately three minutes.
+
+During this time period, event logs recorded the start and stop of the \"WCE SERVICE\" service, which corresponds to the execution of the Windows Credentials Editor (WCE).
+
+John can assume PsExec was used to execute WCE, which is reasonable given the timeline of events and artifacts present on the system.
+
+About seven minutes, later the registry recorded the modification of a Run key associated with persistence for \"msspcheck.exe.\" Finally, at 16:48:11 UTC, the attacker logged off from \"ACMWH-KIOSK\".
+
+John found no additional evidence of compromise.
+
+Since the IOCs are living documents, John's next step is to update his IOCs with relevant findings from his investigation of the kiosk system.
+
+John updates the \"acmCleanup.exe (BACKDOOR)\" IOC with information from the \"msspcheck.exe\" variant of the attacker's backdoor including: File metadata like filename and MD5.
+
+A uniquely named process handle discovered by John's malware analyst.
+
+A prefetch entry for the \"msspcheck.exe\" binary.
+
+Registry artifacts associated with persistence of \"msspcheck.exe.\"
+
+From there, John double-checks the uniqueness of the additional filename with some search engine queries.
+
+He can confirm that \"msspcheck.exe\" is a unique filename and update his \"acmCleanup.exe (BACKDOOR)\" IOC.
+
+By updating his existing IOC, John ensures that he will be able to identify evidence attributed to this specific variant of the backdoor.
+
+Changes to the original IOC have been indicated in green.
+
+The updated IOC can be seen below: Figure 1: Augmented IOC for acmCleanup.exe (BACKDOOR)
+
+John needs additional information before he can start to act.
+
+He knows two things about the attacker that might be able to help him out:
+
+The attacker is using a domain service account to perform network logons.
+
+The attacker has been using WCE to obtain credentials and the \"WCE SERVICE\" service appears in event logs.
+
+John turns to his security event and incident management (SEIM) system, which aggregates logs from his domain controllers, enterprise antivirus and intrusion detection systems.
+
+A search of type 3 network logons using the \"backupDaily\" domain account turns up 23 different systems accessed using that account.
+
+John runs another query for the \"WCE SERVICE\" and sees that logs from 3 domain controllers contain that service event.
+
+John needs to look for IOCs across all Acme machines in a short period of time.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

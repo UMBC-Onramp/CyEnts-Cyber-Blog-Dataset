@@ -1,0 +1,4 @@
+
+This scripting language is compiled into bytecode and placed within a Do ActionScript ByteCode ( DoABC ) tag.
+If a SWF file contains a DoABC tag, the bytecode is extracted and executed by a proprietary stack-based virtual machine (VM), known as AVM2 in the case of AS3, shipped within Adobe’s Flash player.
+The design of the AVM2 was based on the Java VM and was similarly plagued by memory corruption and logical issues that allowed malicious AS3 bytecode to execute native code in the context of the Flash player.

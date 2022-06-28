@@ -1,0 +1,12 @@
+
+In July, REvil struck again, affecting customers of the managed services provider Kaseya.
+ Attackers exploited an authentication bypass vulnerability in the Kaseya VSA (Virtual System Administrator) software, allowing attackers to distribute a malicious payload to downstream customers through hosts managed by the software.
+Because the prime goal of ransomware gangs is financial gain, the education sector was generally thought to be outside of bad guys’ targets.
+However, a report from the Federal Bureau of Investigation (FBI)
+ has suggested otherwise.
+ 
+The FBI released a Flash alert on March 16 th , warning the public of the PYSA ransomware increasingly targeting education institutions in the US and UK.
+PYSA, also known as Mespinoza, is an abbreviation for “Protect Your System Amigo” and is thought to have a close kinship to the Vurten ransomware.
+PYSA was first spotted in December 2019.
+At that time, it added a “.locked” file extension to the files it encrypted, but it later switched to the more familiar “.pysa” file extension.
+PYSA’s entry points are generally attributed to three methods: spam emails, intrusion to a Windows host with RDP exposed to the internet, and brute force attacks against a central management console as well as some Active Directory (AD) accounts.

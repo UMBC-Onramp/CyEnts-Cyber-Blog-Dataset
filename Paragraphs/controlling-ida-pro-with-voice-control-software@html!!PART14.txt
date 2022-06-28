@@ -1,0 +1,4 @@
+
+Instead of wrestling with this feature to try to make it work for this purpose, a very large and growing collection of “input recognition” commands was created.
+These commands are designed to recognize common words used in the names of functions and variables, as well as full function names as found in the C runtime libraries and the Windows APIs.
+Once recognized, the word or function name is copied to the user’s clipboard and pasted into the text field.

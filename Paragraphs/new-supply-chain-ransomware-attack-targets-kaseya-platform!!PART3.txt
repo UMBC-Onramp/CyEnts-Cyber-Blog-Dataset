@@ -1,0 +1,3 @@
+
+A PATCH WILL BE REQUIRED TO BE INSTALLED PRIOR TO RESTARTING THE VSA.\" Reports of the attack first surfaced when Huntress Labs, a managed detection and response (MDR) provider, first discovered the attack and posted their findings on Reddit.
+Timing the attack for the Independence Day holiday in the United States, this supply chain ransomware attack has impacted hundreds of organizations worldwide, both large and small, across all industries and managed service providers.

@@ -1,0 +1,7 @@
+
+A shortcut (.lnk) file is added to the startup folder.
+This file references the ransomware and Windows will execute the file immediately after the infected user logs in.
+Common persistence methods such as run and runonce key are also used.
+A Solid Defense Mitigating ransomware malware has become a high priority for affected organizations because passive security technologies such as signature-based containment have proven ineffective.
+Malware authors have demonstrated an ability to outpace most endpoint controls by compiling multiple variations of their malware with minor binary differences.
+By using alternative packers and compilers, authors are increasing the level of effort for researchers and reverse-engineers.

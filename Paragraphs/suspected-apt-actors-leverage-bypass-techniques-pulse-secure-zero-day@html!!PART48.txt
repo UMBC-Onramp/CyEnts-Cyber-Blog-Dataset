@@ -1,0 +1,12 @@
+
+The sample begins by retrieving all auth servers via the API AuthAdmin::getAllAuthServers .
+and logs the results.
+Next, the sample logs all roles via the API DSRole::GeneralAdmin::getRoles and writes the values to the file.
+The sample may also retrieve and log additional information depending on the device configuration.
+HARDPULSE The file compcheckjava.cgi (SHA256: 1d3ab04e21cfd40aa8d4300a359a09e3b520d39b1496be1e4bc91ae1f6730ecc ) has the ability to read and write arbitrary files and may execute arbitrary commands depending on the implementation of a particular library function.
+The sample responds to HTTP GETs and PUTs.
+The GET path is not relevant, but the PUT path first checks if the incoming requests checkcode POST param is equal to a hardcoded passcode.
+If this check passes the sample inspects the param hashid to determine if it's non-empty.
+If non-empty the sample displays a prompt to the user that includes hardware information and then base64 decodes the param hashid and checks it against pulsesecure.
+If this matches a recoveryToken is generated which is the MD5 hash of 16 random bytes, with the result hash truncated to 8 characters.
+This token is then displayed to the user via the URL https://ive-host/dana-na/auth/recover[.]cgi?token=<varies> and the sample exits.

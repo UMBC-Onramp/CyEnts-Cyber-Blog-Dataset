@@ -1,0 +1,4 @@
+
+While the NFC Ring modernizes physical household security, the convenience that comes with technology implementation also introduces a security issue.
+The issue here is at a higher level; where and when do we draw the line for convenience versus security?
+The numerous benefits technology enhancements bring are exciting and often highly valuable; but many are unaware of the lengths cyber criminals will go to (for example, we once uncovered a vulnerability in a coffee pot which we were able to leverage to gain access to a home Wi-Fi network ) and the many ways new features can reduce the security of a system.

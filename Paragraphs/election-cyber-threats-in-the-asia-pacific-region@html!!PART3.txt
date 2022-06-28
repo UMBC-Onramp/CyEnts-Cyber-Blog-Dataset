@@ -1,0 +1,11 @@
+
+We believe that China's primary motives for elections targeting includes monitoring political developments, internal stability, and supporting Belt and Road Initiative (BRI) investments.
+Examples of Chinese cyber espionage targeting electoral support organizations include: Targeting candidates and related staff associated with the November 2019 Hong Kong District Council elections with a malicious macro document.
+Targeting the Australian Parliament in February 2019, three months before the country's general elections.
+Compromising Cambodia's National Election Commission in mid-2018 based on the use of AIRBREAK malware by APT40, possibly looking to understand the impact of the election outcome on Belt and Road Initiative (BRI) plans.
+See our blog post for more details about this campaign.
+A spear phishing campaign targeting multiple government agencies in Southeast Asia in the spring of 2018 to deliver FIREPIT payloads.
+The nature of the lure material and targeting indicate the activity was potentially an effort to monitor an upcoming election in the affected country.
+Specifically, Mandiant has observed multiple instances in which organizations such as electoral boards and commissions that support or help administer elections have been targeted.
+Both Russian and Chinese cyber espionage operations have targeted election administrators and government officials since at least 2014.
+Observed TTPs include phishing and strategic website compromise (SWC), also known as watering hole attacks.

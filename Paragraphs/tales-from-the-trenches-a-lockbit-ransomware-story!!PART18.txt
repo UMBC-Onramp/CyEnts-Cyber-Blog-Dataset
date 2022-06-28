@@ -1,0 +1,7 @@
+
+In the case that it cannot get these functions, LockBit will delete the shadow volume directly through the function “ShellExecuteA” or with the function “CreateProcessA”.
+Deletion of files within the recycle bin is executed with the function “SHEmptyRecycleBinW”.
+Figure 15.
+Delete the contents of the recycle bin Static analysis of the sample shows that LockBit will check the machine to see if it has support for  AES instructions in the processor with the “cpuid” opcode.
+Figure 16.
+Check for AES instruction support in the CPU Another check made by the ransomware is for the existence of the SS2 set of instructions: Figure 17.

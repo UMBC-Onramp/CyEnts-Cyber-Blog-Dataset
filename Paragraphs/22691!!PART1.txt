@@ -1,0 +1,4 @@
+A few months ago, Apple unveiled three series of computers powered by its own M1 chip, designed to replace Intel’s processors.
+The chips are notable for being based on the ARM architecture instead of the x86 architecture traditionally used in personal computers.
+In essence, the Apple M1 is a direct relative of the iPhone and iPad processors.
+If everything goes according to plan, Apple will be able to switch completely to its own processors and unify its software under a single architecture.

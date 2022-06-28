@@ -1,0 +1,5 @@
+
+And according to haveibeenpwned[.]com, this email address has also been exposed in four separate breaches.)
+Contained within the email is an attachment with the file name “Detailed Invoice.xll.”
+Looking at the attachment we can see that it is digitally signed and chains appropriately.
+The digital signature is assigned to HORUM, with a reference email address of admin[@]khorum[.]ru: The certificate appears to be valid until 3/24/2022: Visiting the website directly offers no further details as to what entity is behind this campaign:

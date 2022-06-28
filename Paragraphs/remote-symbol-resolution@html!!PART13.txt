@@ -1,0 +1,3 @@
+
+Figure 7: Decompiler output from the xdata sample after symbol resolution Going back to the Andromeda sample, the API information can be restored with the brief idajs script shown in Figure 8.
+Figure 8: small idajs script to remotely resolve and rename Andromeda API hook stubs For IDAPython users, a python remote lookup client is also available.

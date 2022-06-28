@@ -1,0 +1,4 @@
+
+HTTP request from initial attack CWP has been plagued by security issues, including 37 0-day vulnerabilities disclosed by the Zero Day Initiative in 2020 .
+Among these is a failure to sanitize the service_restart paramet er , which follows a similar set of vulnerabilities in 2018 .
+Because of the number of vulnerabilities in CWP, the intentional encryption and obfuscation of the ir source code ostensibly f or security reasons , and CWP ’s failure to respond to ZDI’s recent disclosures, it is difficult to ascertain which versions of CWP are or remain vulnerable to this attack.

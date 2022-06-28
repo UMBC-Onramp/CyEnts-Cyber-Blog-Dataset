@@ -1,0 +1,4 @@
+
+Application Programming Interfaces (API) Will Be Exposed as The Weakest Link Leading to Cloud-Native Threats By Sekhar Sarukkai
+A recent study showed that more than three in four organizations treat API security differently than web app security, indicating API security readiness lags behind other aspects of application security.
+The study also showed that more than two-thirds of organizations expose APIs to the public to enable partners and external developers to tap into their software platforms and app ecosystems.

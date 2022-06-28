@@ -1,0 +1,10 @@
+
+It could not happen in the Diverter because of the TCP handshake.
+The Diverter could not sample data from data-less handshake packets, and if the Diverter completed the handshake, the connection could not easily be passed to a different socket at the Listener without disrupting the connection.
+Figure 1: HTTP taste() example Proxy We ultimately decided to add a proxy Listener that maintains full-duplex connections with the client and the Listener, with both sides unaware of the other.
+This solves the handshake problem and maintains socket autonomy at the Listener.
+The proxy is also easily configurable and enables new functionality.
+We substituted the proxy for the echo-server default Listener, which would receive traffic destined for unbound ports.
+The proxy peeks at the data on the socket, polls the Listeners, and creates a new connection with the Listener that returns the highest score.
+The echo-server always returns a score of one, so it will be chosen if no better option is detected.
+The analyst controls which Listeners are bound to ports and which Listeners are polled by the proxy.

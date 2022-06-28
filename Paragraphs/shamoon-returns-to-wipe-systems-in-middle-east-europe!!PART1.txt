@@ -1,0 +1,7 @@
+By Alexandre Mundo , Thomas Roccia , Jessica Saavedra-Morales and Christiaan Beek on Dec 14, 2018 Destructive malware has been employed by adversaries for years.
+Usually such attacks are carefully targeted and can be motivated by ideology, politics, or even financial aims.
+Destructive attacks have a critical impact on businesses, causing the loss of data or crippling business operations.
+When a company is impacted, the damage can be significant.
+Restoration can take weeks or months, while resulting in unprofitability and diminished reputation.
+Recent attacks have demonstrated how big the damage can be.
+Last year NotPetya affected several companies around the world.

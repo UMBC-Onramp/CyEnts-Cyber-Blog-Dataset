@@ -1,0 +1,5 @@
+
+Let’s start with how most cyberattacks begin – with a phishing email.
+The Phishing Email The phishing email is written in Korean and its translated content has been included on the right side of the image in Figure 1.1.
+The attacker attempts to lure the recipient into opening the attached file to confirm a purchase order.
+Fortinet’s FortiMail has identified this phishing email as SPAM and added a tag “[SPAM detected by FortiMail]” to the subject to warn the recipient, as shown in Figure 1.1.

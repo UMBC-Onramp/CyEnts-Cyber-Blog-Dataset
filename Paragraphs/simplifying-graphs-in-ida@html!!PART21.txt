@@ -1,0 +1,7 @@
+
+A node d dominates n if every path to n must go through d.
+The immediate dominator p of node n is basically the closest dominator to n, where there is no node t where p dominates t, and t dominates n.
+A node z post-dominates a node n if every path from n to the exit node must go through z.
+The immediate post-dominator x of node n is the closest post-dominator, where there is no node t where t post-dominates n and x post-dominates t. The immediate dominator relationship forms a tree of nodes, where every node has an immediate dominator other than the entry node.
+The Lengauer-Tarjan algorithm can efficiently calculate the immediate dominator tree of a graph.
+It can also calculate the immediate post-dominator tree by reversing the direction of each edge in the same graph.

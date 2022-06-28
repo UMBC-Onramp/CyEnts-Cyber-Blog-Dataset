@@ -1,0 +1,6 @@
+
+With this knowledge, defenders can define ways to stop threat activity before it reaches critical production systems, or at least during early phases of the intrusion.
+Applying Our Approach in the Real World: Big Steam Works During this engagement, we were tasked with gaining access to critical control systems and designing a destructive attack in an environment where industrial steaming boilers are operated with an Distributed Control System (DCS).
+In this description, we redacted customer information—including the name, which we refer to as \"Big Steam Works\"—and altered sensitive details.
+However, the overall attack techniques remain unchanged.
+The main objective of Big Steam Works is to deliver steam to a nearby chemical production company.

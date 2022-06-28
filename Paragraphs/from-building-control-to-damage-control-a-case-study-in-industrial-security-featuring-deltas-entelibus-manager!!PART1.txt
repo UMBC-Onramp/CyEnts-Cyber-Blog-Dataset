@@ -1,0 +1,7 @@
+By Mark Bereza on Aug 09, 2019 Management.
+Control.
+It seems that you can’t stick five people in a room together without one of them trying to order the others around.
+This tendency towards centralized authority is not without reason, however – it is often more efficient to have one person, or thing, calling the shots.
+For an example of the latter, one needs look no further than Delta’s enteliBUS Manager, or eBMGR.
+Put simply, this device aims to centralize control for various pieces of hardware often found in corporate or industrial settings, whether it be temperature and humidity controls for a server room, a boiler and its corresponding alarms and sensors in a factory, or access control and lighting in a business.
+The advantages seem obvious, too – it can be configured to adjust fan speeds according to thermostat readings or sound an alarm if pressure crosses a certain threshold, all with little human interaction.

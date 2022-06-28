@@ -1,0 +1,9 @@
+
+For a high-level, non-technical walk through of this vulnerability, please refer to our summary blog post here .
+Exploring the Attack Surface
+The first task when researching a new device is to understand how it works from both a software and hardware perspective.
+Like many devices in the ICS realm, this device has three main software components; the bootloader, system applications, and user-defined programming.
+While looking at software for an attack vector is important, we do not focus on any surface which is defined by the users since this will potentially change for every install.
+Therefore, we want to focus on the bootloader and the system applications.
+With the operating system, it is common for manufacturers to implement custom code to operate the device regardless of an individual user’s programming.
+This custom code is often where most vulnerabilities exist and extends across the entire product install base.

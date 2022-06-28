@@ -1,0 +1,4 @@
+
+This is done to try obfuscating this call, though such suspicious behavior may cause an antivirus program to stop it anyway, but it is proof that the malware coders have skills in programming and a good understanding of Windows behavior.
+It is important to understand that this “path” used in the command with non-existent folders is random and does not need to use the same number of folders to make the obfuscation.
+After the deletion process, the malware gets the function “Wow64RevertWow64FsRedirection” using the function “GetProcAddress” and calls it in a dynamic way to leave the system in the same state as before.

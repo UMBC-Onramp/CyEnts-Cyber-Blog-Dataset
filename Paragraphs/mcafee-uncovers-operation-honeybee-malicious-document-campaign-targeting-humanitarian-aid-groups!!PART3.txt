@@ -1,0 +1,12 @@
+
+This document, “International Federation of Red Cross and Red Crescent Societies – DPRK Country Office,” drops an implant with the control server address 1113427185.ifastnet.org, which resolves to the same server used by the implants dropped in the Honeybee case.
+The directory contents of control server 1113427185.ifastnet.org.
+The directory contents of ftp.byethost11.com, from Honeybee samples.
+Log files of compromised machines from February 2018 Honeybee samples.
+MaoCheng Dropper Aside from finding the malicious documents, the Advanced Threat Research team discovered a Win32-based executable dropper.
+This dropper uses a stolen digital signature from Adobe Systems.
+This certificate is also used by another Korean-language malware compiled January 16 (hash: 35904f482d37f5ce6034d6042bae207418e450f4) with an interesting program database (PDB) path.
+D:\\Task\\DDE Attack\\MaoCheng\\Release\\Dropper.pdb
+The malware is a Win32 executable that pretends to be a Word document based on its icon.
+This is a dropper for the same type of malware as observed with the other Word documents.
+This sample also dropped a decoy document with the author name Honeybee.

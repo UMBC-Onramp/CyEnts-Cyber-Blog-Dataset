@@ -1,0 +1,5 @@
+
+We have also observed differences in both targeting and tactics, techniques and procedures (TTPs) associated with the group using SHAMOON and APT33.
+For example, we have observed SHAMOON being used to target government organizations in the Middle East, whereas APT33 has targeted several commercial organizations both in the Middle East and globally.
+APT33 has also utilized a wide range of custom and publicly available tools during their operations.
+In contrast, we have not observed the full lifecycle of operations associated with SHAMOON, in part due to the wiper removing artifacts of the earlier stages of the attack lifecycle.

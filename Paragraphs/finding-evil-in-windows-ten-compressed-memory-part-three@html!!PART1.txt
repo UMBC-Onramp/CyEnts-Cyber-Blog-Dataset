@@ -1,0 +1,6 @@
+This is the final post in the three-part series: Finding Evil in Windows 10 Compressed Memory .
+In the first post ( Volatility and Rekall Tools ), the FLARE team introduced updates to both memory forensic toolkits.
+These updates enabled these open source tools to analyze previously inaccessible compressed data in memory.
+This research was shared with the community at the 2019 SANS
+DFIR Austin conference and is available on GitHub ( Volatility and Rekall ).
+In the second post ( Virtual Store Deep Dive ), we looked at the structures and algorithms involved in locating and extracting compressed pages from the Store Manager.

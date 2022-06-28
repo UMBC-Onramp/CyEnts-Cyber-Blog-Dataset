@@ -1,0 +1,4 @@
+
+In the latter case, the backdoor's main functionality will be executed inside the same PowerShell process and no new instance of msiexec.exe will be created.
+The injection process involves finding the backdoor's image under the appropriate registry key.
+Note, that the backdoor instance we have observed in the first wave does not handle situations when the malware ecosystem is installed as an administrator—such cases would end up with the backdoor not able to locate its image for injecting.

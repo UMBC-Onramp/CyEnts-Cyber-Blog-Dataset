@@ -1,0 +1,15 @@
+
+Even if every member of Advanced Practices was dedicated to external detection, we would still not have enough time or resources to keep up with the amount of manual work required.
+But that’s the key word: Manual .
+Our workflow consumed hours of individual analyst actions, and we had to change that.
+This was the beginning of SCANdalous:
+An automated system for external detection using third-party network scan data.
+A couple of nice things about computers: They’re great at multitasking, and they don’t forget.
+The tasks that were taking us hours to do—if we had time, and if we remembered to do them every day—were now taking SCANdalous minutes if not seconds.
+This not only afforded us additional time for analysis, it gave us the capability to expand our scope.
+Now we not only look for specific groups, we also search for common malware, tools and frameworks in general.
+We deploy weak signals (or broad signatures) for software that isn’t inherently bad, but is often used by threat actors.
+Our external detection was further improved by automating additional collection tasks, executed by SCANdalous upon a discovery—we call them follow-on actions.
+For example, if an interesting open directory is identified, acquire certain files.
+These actions ensure the team never misses an opportunity during “non-working hours.”
+If SCANdalous finds something interesting on a weekend or holiday, we know it will perform the time-sensitive tasks against the server and in defense of our clients.

@@ -1,0 +1,8 @@
+
+The following are just some of the Maltego plugins that can be configured post installation to help with the enrichment and collection process: VirusTotal Public API ThreatCrowd Shodan API Targeting the suspected payload, we attempt to pivot using its MD5 hash value (113dd1e3caa47b5a6438069b15127707) to discover additional artifacts, such as infrastructure, domain record history, previously triaged reports, similar malware samples, timestamps, and the rich headers.
+Importing our hash into Maltego CE, we can proceed to perform a range of queries to hunt and retrieve interesting information related to our FIN11 malware, as seen in Figure 13.
+Figure 13:
+Maltego CE querying MD5 hash Quite quickly we pull back indicators; in this case, generic named detection signatures from a range of anti-malware vendors.
+Using VirusTotalAPI Public, we perform a series of collection and triage queries across a variety of configured open sources, as shown in Figure 14.
+Figure 14:
+Automating enrichment and analysis of targeted infrastructure A visual link has been made public for quick reference.

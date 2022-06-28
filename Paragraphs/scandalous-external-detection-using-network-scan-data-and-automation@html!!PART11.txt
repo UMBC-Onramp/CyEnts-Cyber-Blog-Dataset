@@ -1,0 +1,4 @@
+
+Of course, raw volume isn’t everything, so let’s dive a little deeper.
+When an analyst discovers that an IP address has been used by an adversary against a named organization, they denote that usage in our knowledge store.
+While the time at which this observation occurs does not always correlate with when it was used in an intrusion, knowing when we became aware of that use is still valuable.

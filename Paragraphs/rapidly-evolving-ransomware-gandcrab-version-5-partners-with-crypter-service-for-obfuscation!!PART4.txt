@@ -1,0 +1,5 @@
+
+For the security community it is worrisome to see that GandCrab’s aggressive marketing strategy seems to be paying off.
+It is generating a strong influx of criminal interest and allows the GandCrab crew to form alliances with other essential services in the cybercriminal supply chain.
+GandCrab overview GandCrab Version 5 uses several mechanisms to infect systems.
+The following diagram shows an overview of GandCrab’s behavior.

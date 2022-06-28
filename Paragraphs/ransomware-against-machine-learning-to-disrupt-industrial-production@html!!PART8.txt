@@ -1,0 +1,5 @@
+
+Most importantly, many of the tactics, techniques, and procedures (TTPs) often used by financial actors in the past, resemble those employed by high-skilled actors across the initial and middle stages of the attack lifecycle of past OT security incidents.
+Therefore, financial crime actors are likely capable of pivoting to and deploying ransomware in OT intermediary systems to further disrupt operations.
+Organized Financial Crime Actors Have Demonstrated an Ability to Disrupt OT Assets
+An actor’s capability to obtain financial benefits from post-compromise ransomware deployment depends on many factors, one of which is the ability to disrupt systems that are the most relevant to the core mission of the victim organizations.

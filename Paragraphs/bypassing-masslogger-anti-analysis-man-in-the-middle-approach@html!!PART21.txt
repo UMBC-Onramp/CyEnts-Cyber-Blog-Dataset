@@ -1,0 +1,7 @@
+
+An alternative approach to executing MassLogger’s entry point is to call the RuntimeHelpers.
+PrepareMethod() API to force the JIT compiler to run on all methods.
+This approach is better because it avoids running the malware, and it potentially can recover methods not called in the sample’s natural code path.
+However, additional work is required to force all methods to be compiled properly.
+To load and recover MassLogger methods, first run the following command (Figure 14): jitm.exe Bin-123.exe [optional_timeout] Figure 14: Command to run jitm Once the timeout expires, you should see the files jitm.log and jitm.json created in the current directory.
+jitm.json contains the method tokens, method body headers and MSIL bytes of all methods recovered from Bin-123.exe .

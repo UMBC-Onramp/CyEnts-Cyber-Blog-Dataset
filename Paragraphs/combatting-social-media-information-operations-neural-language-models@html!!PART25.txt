@@ -1,0 +1,4 @@
+
+Transfer learning also allowed us to generate credible synthetic text with low perplexity scores.
+One of the barriers actors face when devising effective information operations is adequately capturing the nuances and context of the cultural climate in which their targets are situated.
+Our exercise here suggests this costly step could be bypassed using pre-trained LMs, whose generations can be fine-tuned to embody the zeitgeist of social media.

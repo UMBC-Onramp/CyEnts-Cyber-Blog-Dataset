@@ -1,0 +1,4 @@
+
+To show the impact beyond LED lights flashing, McAfee’s ATR contracted a local Delta installer to build a small datacenter simulation with a working Delta system.
+This includes both heating and cooling elements to show the impact of an attack in a true HVAC system.
+In this demonstration we show both normal functionality of the target system, as well as the full attack chain, end-to-end, by raising the temperature to dangerous levels, disabling critical alarms and even faking the controller into thinking it is operating normally.

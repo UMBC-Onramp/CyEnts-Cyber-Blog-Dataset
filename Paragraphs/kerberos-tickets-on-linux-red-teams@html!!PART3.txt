@@ -1,0 +1,5 @@
+
+ACMENET.CORP\\sa_jsmith wishes to authenticate to a Windows SMB (CIFS) file share in the Acme Corporation domain, hosted on the server SQLSERVER.ACMENET.CORP.
+There are two main types of Kerberos tickets used in Active Directory: Ticket Granting Ticket (TGT) and service tickets.
+Service tickets are obtained from the Ticket Granting Service (TGS).
+The TGT is used to authenticate the identity of a particular entity in Active Directory, such as a user account.

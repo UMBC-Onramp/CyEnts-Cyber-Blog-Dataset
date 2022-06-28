@@ -1,0 +1,12 @@
+By Douglas McKee and Mark Bereza on Aug 09, 2019 The McAfee Labs Advanced Threat Research team is committed to uncovering security issues in both software and hardware to help developers provide safer products for businesses and consumers.
+We recently investigated an industrial control system (ICS) produced by Delta Controls.
+The product, called “enteliBUS Manager”, is used for several applications, including building management.
+Our research into the Delta controller led to the discovery of an unreported buffer overflow in the “main.so” library.
+This flaw, identified by CVE-2019-9569, ultimately allows for remote code execution, which could be used by a malicious attacker to manipulate access control, pressure rooms, HVAC and more.
+We reported this research to Delta Controls on December 7 th , 2018.
+Within just a few weeks, Delta responded, and we began an ongoing dialog while a security fix was built, tested and rolled out in late June of 2019.
+We commend Delta for their efforts and partnership throughout the entire process.
+The vulnerable firmware version tested by McAfee’s Advanced Threat Research team is 3.40.571848.
+It is likely earlier versions of the firmware are also vulnerable, however ATR has not specifically tested these.
+We have confirmed the patched firmware version 3.40.612850 effectively remediates the vulnerability.
+This blog is intended to provide a deep and thorough technical analysis of the vulnerability and its potential impact.

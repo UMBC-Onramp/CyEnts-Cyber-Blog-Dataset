@@ -1,0 +1,3 @@
+
+The dropper saves the encrypted payload along with the information related to its decryption and execution in the compromised system’s registry database, effectively achieving a file-less malware execution.
+Setup The dropper's main goal is to serialize the chosen payload along with the loading scripts into the compromised system's registry database and to ensure that the payload will be loaded following a reboot or a user login (see the Persistence Mechanism section).

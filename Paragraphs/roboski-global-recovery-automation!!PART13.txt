@@ -1,0 +1,6 @@
+
+In that campaign, Blade Eagle targeted organizations in the Middle East and West Asia.
+We also found that C2 domains uyeco[.]pw and zolta[.]icu were seen in a recent malspam campaign in which malicious executable file formats were abused and used in a way that hid them from email scanners and anti-malware software, ultimately to deliver the NanoCore RAT.
+The infection tactics, techniques and procedures (TTPs) were similar to the ones used to deliver the RoboSki-packed malware, via emails themed with purchase orders in archived files.
+LokiBot Other observed overlaps include RoboSki-packed LokiBot C2 domains: alphastand[.]trade alphashtand[.]top alphastand[.]win
+kbfvzoboss[.]bid These were previously observed in a campaign using Microsoft Publisher files to deliver the Pony malware .

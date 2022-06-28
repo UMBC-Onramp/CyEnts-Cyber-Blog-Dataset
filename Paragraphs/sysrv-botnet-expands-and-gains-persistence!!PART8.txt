@@ -1,0 +1,6 @@
+
+In later samples, the miner component is merged with the worm into a single binary.
+The miner is a version of XMRig which mines for the following mining pools: Xmr-eu1.nanopool.org:14444 f2pool.com:13531 minexmr.com:5555 As of poolwatch.io, these pools are three of the top four Monero mining pools.
+Combined together, they almost have 50% of the network hash rate.
+The threat actor’s criteria appears to be top mining pools with high reward rates.
+top monero mining pools The profit from mining is saved into the following wallet address: 49dnvYkWkZNPrDj3KF8fR1BHLBfiVArU6Hu61N9gtrZWgbRptntwht5JUrXX1ZeofwPwC6fXNxPZfGjNEChXttwWE3WGURa How profitable is this miner?

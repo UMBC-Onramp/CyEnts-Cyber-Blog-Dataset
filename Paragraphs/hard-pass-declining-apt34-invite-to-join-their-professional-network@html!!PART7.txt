@@ -1,0 +1,11 @@
+
+We explore additional technical details of TONEDEAF in the malware appendix of this post.
+Retracing the steps preceding exploit detection, FireEye identified that System.doc was dropped by a file named ERFT-Details.xls .
+Combining endpoint- and network-visibility, we were able to correlate that ERFT-Details.xls originated from the URL http://www.cam-research-ac[.]com/Documents/ERFT-Details.xls .
+Network evidence also showed the access of a LinkedIn message directly preceding the spreadsheet download.
+Managed Defense reached out to the impacted customer’s security team, who confirmed the file was received via a LinkedIn message.
+The targeted employee conversed with \"Rebecca Watts\", allegedly employed as \"Research Staff at University of Cambridge\".
+The conversation with Ms. Watts, provided in Figure 1, began with the solicitation of resumes for potential job opportunities.
+Figure 1: Screenshot of LinkedIn message asking to download TONEDEAF
+This is not the first time we’ve seen APT34 utilize academia and/or job offer conversations in their various campaigns.
+These conversations often take place on social media platforms, which can be an effective delivery mechanism if a targeted organization is focusing heavily on e-mail defenses to prevent intrusions.

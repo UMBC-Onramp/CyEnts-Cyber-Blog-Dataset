@@ -1,0 +1,3 @@
+
+[ESC] [20/06/17]  [Clipboard]
+Vewgbprxvhvjktmyxofjvpzgazqszaoo Figure 1: Sample MassLogger log Just Decompile It Like many other .NET malwares, MassLogger obfuscates all of its methods names and even the method control flow.

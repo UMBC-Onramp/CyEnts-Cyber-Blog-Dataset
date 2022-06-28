@@ -1,0 +1,4 @@
+
+In multiple instances, the actors have launched attacks against Kerberos, including the use of RUBEUS, the MimiKatz Kerberos module, and the Invoke-Kerberoast cmdlet.
+Reconnaissance The approaches taken to perform host and network reconnaissance across these incidents varied; however, a significant portion of observed reconnaissance activity has revolved around Activity Directory enumeration using publicly available utilities such as BLOODHOUND, SHARPHOUND or ADFind, as well as the execution of PowerShell cmdlets using Cobalt Strike BEACON.
+BEACON has been installed on a large number of systems across these intrusions and has been used to execute various reconnaissance commands including both built-in host commands and PowerShell cmdlets.

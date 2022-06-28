@@ -1,0 +1,9 @@
+
+Who did it?
+This pursuit is understandable yet fundamentally flawed.
+Attribution is crucial, but there will always be unanswered questions.
+Our approach focuses on answering the What and How questions by analyzing the malware, the infrastructure involved, and the incident response performed at the victim’s site.
+Our approach is always to analyze competing hypotheses.
+When investigating an incident, we form several views and compare all the artifacts to support these hypotheses.
+We try not only to seek verifying evidence but also actively try to find evidence that falsifies a hypothesis.
+Keeping our eyes open for falsifying facts and constantly questioning our results are essential steps to avoid conformation bias.

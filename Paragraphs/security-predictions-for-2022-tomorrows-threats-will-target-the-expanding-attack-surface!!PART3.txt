@@ -1,0 +1,9 @@
+
+Linux still runs the back-end systems of most networks and until recently, it has largely been ignored by the hacker community.
+But we have already begun to see new Linux-based attacks like Vermilion Strike, which is a malicious implementation of the Beacon feature of Cobalt Strike that can target Linux systems with remote access capabilities without being detected.
+Similarly, Microsoft is actively integrating WSL (Windows Subsystem for Linux) into Windows 11.
+WSL is a compatibility layer for running Linux binary executables natively on Windows.
+We have already seen malicious test files in the wild targeting WSL.
+These files act as loaders, many with malicious payloads.
+They just lack the ability to inject those payloads into the WSL system.
+And we are also seeing more botnet malware being written for Linux platforms.

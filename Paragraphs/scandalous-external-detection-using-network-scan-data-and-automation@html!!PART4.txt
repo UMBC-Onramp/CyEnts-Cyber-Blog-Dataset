@@ -1,0 +1,5 @@
+
+APT39 SSH Tunneling After observing APT39 in a series of intrusions, we determined they frequently created Secure Shell (SSH) tunnels with PuTTY Link to forward Remote Desktop Protocol connections to internal hosts within the target environment.
+Additionally, they preferred using BitVise SSH servers listening on port 443.
+Finally, they were using servers hosted by WorldStream B.V.
+Independent isolation of any one of these characteristics would produce a lot of unrelated servers; however, the aggregation of characteristics provided a strong signal for newly established infrastructure of interest.

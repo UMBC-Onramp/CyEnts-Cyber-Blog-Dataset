@@ -1,0 +1,9 @@
+
+Some of the most common activities attackers perform on these systems include password-dumping, reconnaissance and data theft.
+Seeing that the attacker had staged file archives and utilities in the \"$Recycle.
+Bin\" folder, John also created an IOC to find artifacts present there.
+This IOC was designed to identify files in the root of the \"$Recycle.
+Bin\" directory; or to identify if a user (notably, the attacker) tried to access the \"$Recycle.
+Bin\" folder by manually typing it in the address bar of Explorer by checking TypedPaths in the Registry.
+This is an example of encapsulating an attacker's TTPs in an OpenIOC form.
+Figure 3: IOC for Unusual Files in \"C:RECYCLER\" and \"C:$RECYCLE.BIN\" (Methodology)

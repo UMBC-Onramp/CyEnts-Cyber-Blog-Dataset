@@ -1,0 +1,4 @@
+
+Term Co-Occurrence Since we had the bag-of-words vectors created for each path, we were also able to evaluate term co-occurrence across benign and malicious files.
+When we evaluated the co-occurrence of pairs of terms, we found some other interesting pairings that indeed paint two very different pictures of development environments (Figure 3).
+Correlated with Malicious Files Correlated with Benign Files users, desktop src, retail documents, visual studio 2012 obj, x64 local, temporary projects src, x86 users, projects src, win32 users, documents retail, dynamic appdata, temporary projects src, amd64 users, x86 src, x64 Figure 3: Correlated pairs with malicious and benign files Keyword Lists Our bag-of-words representation of the PDB paths then gave us a distinct set of nearly 70,000 distinct terms.

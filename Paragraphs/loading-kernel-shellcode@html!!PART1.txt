@@ -1,0 +1,7 @@
+In the wake of recent hacking tool dumps, the FLARE team saw a spike in malware samples detonating kernel shellcode.
+Although most samples can be analyzed statically, the FLARE team sometimes debugs these samples to confirm specific functionality.
+Debugging can be an efficient way to get around packing or obfuscation and quickly identify the structures, system routines, and processes that a kernel shellcode sample is accessing.
+This post begins a series centered on kernel software analysis, and introduces a tool that uses a custom Windows kernel driver to load and execute Windows kernel shellcode.
+I’ll walk through a brief case study of some kernel shellcode, how to load shellcode with FLARE’s kernel shellcode loader , how to build your own copy, and how it works.
+As always, only analyze malware in a safe environment such as a VM; never use tools such as a kernel shellcode loader on any system that you rely on to get your work done.
+A Tale of Square Pegs and Round Holes Depending upon how a shellcode sample is encountered, the analyst may not know whether it is meant to target user space or kernel space.

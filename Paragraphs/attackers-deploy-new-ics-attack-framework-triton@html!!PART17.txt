@@ -1,0 +1,4 @@
+
+Once invoked, trilog.exe checked the status of the controller, then read the configuration information exposed by the TriStation protocol.
+If the controller was in a running state, trilog.exe encoded the two payload files inject.bin and imain.bin and passed them to the communication libraries to be appended to the controller’s program memory and execution table.
+After payload files were inserted into memory on the Triconex controller, the script initiated a countdown, periodically checking the status of the controller.

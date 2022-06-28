@@ -1,0 +1,21 @@
+A Joint Whitepaper from Mandiant and Citrix Throughout the course of Mandiant’s Red Team and Incident Response engagements, we frequently identify a wide array of misconfigured technology solutions, including Citrix XenApp and XenDesktop.
+
+We often see attackers leveraging stolen credentials from third parties, accessing Citrix solutions, breaking out of published applications, accessing the underlying operating systems, and moving laterally to further compromise the environment.
+
+Our experience shows that attackers are increasingly using Citrix solutions to remotely access victim environments post-compromise, instead of using traditional backdoors, remote access tools, or other types of malware.
+
+Using a legitimate means of remote access enables attackers to blend in with other users and fly under the radar of security monitoring tools.
+
+Citrix provides extensive security hardening guidance and templates to their customers to mitigate the risk of these types of attacks.
+
+The guidance is contained in product-specific eDocs, Knowledge Base articles and detailed Common Criteria configurations.
+
+System administrators (a number of them wearing many hats and juggling multiple projects) may not have the time to review all of the hardening documentation available, so Mandiant and Citrix teamed up to provide guidance on the most significant risks posed to Citrix XenApp and XenDesktop implementations in a single white paper.
+
+This white paper covers risks and official Citrix hardening guidance for the following topics: Environment and Application Jailbreaking Network Boundary Jumping Authentication Weaknesses Authorization Weaknesses Inconsistent Defensive Measures Non-configured or Misconfigured Logging and Alerting The white paper is available here.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

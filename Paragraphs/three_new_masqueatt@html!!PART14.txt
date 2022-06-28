@@ -1,0 +1,11 @@
+
+Compared to iOS extension that can be embedded in any\niOS 8 app without any special entitlement, both the VPN app and the\nVPN plugin need to be provisioned with the\n“com.apple.networking.vpn.configuration” entitlement to provide\nsystem-wide VPN service.
+So far only in a few exclusive iOS developers\ncan distribute such VPN client (e.g. Cisco Anyconnect, Junos Pulse,\nOpenVPN etc.)
+on iOS.
+After installation, the VPN plugin is loaded\nwithout any user interface by a privileged system process, neagent [8].
+Figure 2 shows the directory structure of the Junos Pulse .ipa\nfile, the VPN plugin (SSLVPNJuniper.vpnplugin) locates in the Payload\ndirectory, along with the ordinary app (Junos Pulse.app) providing the\nuser interface to configure the VPN.
+Figure 2.
+Directory Layout of the Junos Pulse App We discovered that if an in-house app embeds a malicious VPN Plugin\nthat has the same bundle id as the legitimate VPN Plugin on the\nvictim’s iOS, the malicious VPN Plugin can be successfully installed\nand replace the legitimate one without any special entitlement\n(e.g.
+“com.apple.networking.vpn.configuration”).
+  Later, when the\nvictim launches the ordinary VPN app to access the VPN service, the\nuntrusted code in the malicious VPN Plugin will be loaded by the neagent process and perform privileged operation, such as\nhijacking/monitoring all the VPN traffic.
+Injecting code to the neagent process to escape the sandbox is also a critical\nexploit used in the PanGu 8 [8, 12] jailbreak tool.

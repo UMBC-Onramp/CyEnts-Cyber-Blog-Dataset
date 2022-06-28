@@ -1,0 +1,5 @@
+
+The malware tries to write the subkey and the entries in the HKEY_LOCAL_MACHINE hive at first glance and, if it fails, it will write them in the HKEY_CURRENT_USER hive.
+FIGURE 11.
+EXAMPLE OF REGISTRY ENTRIES AND SUBKEY IN THE HKLM HIVE
+The information that the malware gets from the victim machine can be the user name, the machine name, the domain where the machine belongs or, if not, the workgroup, the product name (operating system name), etc.

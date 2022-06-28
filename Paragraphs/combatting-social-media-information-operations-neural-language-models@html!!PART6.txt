@@ -1,0 +1,7 @@
+
+In terms of representing text, word embeddings were a popular way to initialize just the first layer of neural networks, but such shallow representations required being trained from scratch for each new NLP task and in order to deal with new vocabulary.
+GPT-2 instead pre-trains all the model’s layers using hierarchical representations , which better capture language semantics and are readily transferable to other NLP tasks and new vocabulary.
+This transfer learning method is advantageous because it allows us to avoid starting from scratch for each and every new NLP task.
+In transfer learning, we start from a large generic model that has been pre-trained for an initial task where copious data is available.
+We then leverage the model’s acquired knowledge to train it further on a different, smaller dataset so that it excels at a subsequent, related task.
+This process of training the model further is referred to as fine-tuning, which involves re-learning portions of the model by adjusting its underlying parameters.

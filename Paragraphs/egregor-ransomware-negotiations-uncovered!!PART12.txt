@@ -1,0 +1,3 @@
+
+Key Takeaways Despite the holiday wishes and reduced ransom in some instances, the December 2020 chat logs obtained by X-Force and Cylera demonstrate that many Egregor attacks were a successful, ruthless criminal operation.
+Although the threat actors have ceased from using the Egregor ransomware family specifically, and only since the law enforcement activity in February 2021, X-Force analysts believe that a new infrastructure can be mounted and the same code can be used again in its original form or as modified code.

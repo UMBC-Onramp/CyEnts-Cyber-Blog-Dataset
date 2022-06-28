@@ -1,0 +1,7 @@
+
+There is already considerable activity in the security research community on these techniques.
+Sample code for two of the three variants was posted by the Graz University (in an appendix of the Spectre paper).
+Erik Bosman has also tweeted that he has built an exploit , though this code is not yet public.
+An earlier example of side-channel exploitation based upon memory caches was posted to GitHub in 2016 by one Meltdown-Spectre researcher Daniel Gruss.
+Despite these details, as of this writing no known exploits have yet been seen in the wild.
+McAfee ATR will continue to monitor researchers’ and attackers’ interest in these techniques and provide updates accordingly.

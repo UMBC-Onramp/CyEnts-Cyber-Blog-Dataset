@@ -1,0 +1,4 @@
+
+The first model uses an n-gram approach where sequences of two, three, and four tokens are input into a logistic regression model.
+The second approach uses a one-dimensional Convolutional Neural Network (CNN), comprised of an embedding layer, a dropout layer then a fully connected layer, to extract features from the tweets.
+Evaluating Data To evaluate the performance of our approach, we curated a dataset of 6,000 tweets containing the keywords vulnerability or ddos from Dec 2017 to July 2018.

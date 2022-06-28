@@ -1,0 +1,6 @@
+
+To use VoiceAttack, you must first train Windows Speech Recognition to recognize your voice.
+Instructions on how to do so can be found here .
+This process only takes a few minutes at minimum, but the more time you spend training, the better the experience you will have with it.
+What Does the IDA Pro Profile Provide?
+FLARE’s IDA Pro profile for VoiceAttack maps every advertised keyboard shortcut in IDA Pro to a voice command.

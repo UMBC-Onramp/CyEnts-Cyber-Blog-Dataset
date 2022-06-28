@@ -1,0 +1,5 @@
+
+This tool not only automates most of the rule writing process but also eliminates the need to context switch between IDA Pro and your favorite text editor allowing you to codify your malware knowledge while it’s fresh in your mind.
+To learn more about capa explorer and the rule generator check out the README .
+Library Function Identification Using FLIRT As we wrote hundreds of capa rules and inspected thousands of capa results, we recognized that the tool sometimes shows distracting results due to embedded library code.
+We believe that capa needs to focus its attention on the programmer’s logic and ignore supporting library code.

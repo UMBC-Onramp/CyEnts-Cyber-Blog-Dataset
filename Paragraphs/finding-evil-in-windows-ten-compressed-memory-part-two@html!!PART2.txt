@@ -1,0 +1,5 @@
+
+We track down a compressed page in memory, beginning at its virtual address within a known process.
+A WinDbg kernel debugger setup is used in this walkthrough, but a similar process could be followed from within a memory snapshot or extraction using Volatility or Rekall .
+Finding a Compressed Page The operating system used in this demo is Windows 10.0.15063.0 (x64) and the structure definitions shown will be applicable across any 1703 build.
+Note that the two global offsets nt!SmGlobals and nt!MmPagingFile will need to be located for each revision.

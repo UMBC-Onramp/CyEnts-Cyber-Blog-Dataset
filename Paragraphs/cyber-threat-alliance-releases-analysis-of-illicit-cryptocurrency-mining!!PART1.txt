@@ -1,0 +1,8 @@
+By Charles McFarland on Sep 19, 2018
+In response to the explosive increase in cryptomining campaigns in Q4 2017, the Cyber Threat Alliance has formed a cryptomining subcommittee to assess the threat.
+This committee comprises expert researchers from major cybersecurity companies, including McAfee.
+The committee has now released “The Illicit Cryptocurrency Mining Threat,” an in-depth report on the current state of unlawful cryptomining.
+In the report we explain what led to the recent rise in cryptomining-based attacks, their impact, defense recommendations, and predictions for future evolution of the attack.
+As members of the Cyber Threat Alliance and the cybersecurity community, we hope that individuals and enterprises can use our research to protect themselves from this threat and improve global security.
+The Rise of Illicit Cryptocurrency Mining To understand the cryptomining threat we need to go back only to late 2017 and early 2018 to see the dramatic growth of cryptomining incidents.
+Since 2017, the combined data of several CTA members shows a 459% increase in detections of mining malware.

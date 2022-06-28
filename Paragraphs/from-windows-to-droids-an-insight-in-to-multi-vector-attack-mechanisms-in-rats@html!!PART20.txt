@@ -1,0 +1,12 @@
+
+It takes the phone number of the phone to be tracked and sends it an SMS that contains \"[gmyl]\".
+The GPSTracker.apk then responds with the location in an SMS message as described in the above section.
+It then uses the native maps functionality, i.e., Google Maps, to point to the location sent by GPSTracker.
+It is also worthwhile to note that the two modules do not authenticate each other by any means therefore it allows anyone infected with GPSTracker.apk to be controlled just by sending SMS messages with a given structure.
+Conclusion These attacks and tools reaffirm that we live in an age of digital surveillance and intellectual property theft.
+Off-the-shelf RATs have continued to proliferate over the years and attackers have continued to increasingly use these tools.
+With the widespread adoption of mobile platforms such as Android, a new market continues to emerge with the demand for RATs to support these platforms.
+We will continue to see more implementations of RATs and payloads to support multiple platforms and attackers will continue to take advantage of these new attack surfaces to infiltrate their targets.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,12 @@
+
+This seems particularly relevant when (at the time of writing) 3,865,098 instances of port 3389 are showing as open on Shodan.
+Prior to this, RDP was already on our radar.
+Last July, McAfee ATR did a deep dive on Remote Desktop Protocol (RDP) marketplaces and described the sheer ease with which cybercriminals can obtain access to a large variety of computer systems, some of which are very sensitive.
+One of the methods of RDP misuse that we discussed was how it could aid deploying a targeted ransomware campaign.
+At that time one of the most prolific targeted ransomware groups was SamSam.
+To gain an initial foothold on its victims’ networks, SamSam would often rely on weakly protected RDP access.
+From its RDP launchpad, it would proceed to move laterally through a victim’s network, successfully exploiting and discovering additional weaknesses, for instance in a company’s Active Directory (AD).
+In November 2018, the FBI and the Justice department indicted two Iranian men for developing and spreading the SamSam ransomware extorting hospitals, municipalities and public institutions, causing over $30 million in losses.
+Unfortunately, this did not stop other cybercriminals from using similar tactics, techniques and procedures (TTPs).
+The sheer number of vulnerable systems in the wild make it a “target” rich environment for cybercriminals.
+In the beginning of 2019 we dedicated several blogs to the Ryuk ransomware family that has been using RDP as an initial entry vector.

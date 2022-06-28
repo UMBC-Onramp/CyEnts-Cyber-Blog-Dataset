@@ -1,0 +1,6 @@
+
+Although this is only one part of what the profile provides, many users will find this in itself very useful.
+When developing this profile, I was shocked to discover just how many keyboard shortcuts there really are for IDA Pro and what can be accomplished with them.
+Some of my favorite shortcuts are found under the View->Open Subviews and Windows menus.
+With this profile, I can simply say “show strings” or “show structures” or “show window x” to change the tab I am currently viewing or open a new view in a tab without having to move my mouse cursor anywhere.
+The next few paragraphs describe some other useful commands to make any reverse engineer’s job easier.

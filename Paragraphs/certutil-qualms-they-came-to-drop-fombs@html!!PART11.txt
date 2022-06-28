@@ -1,0 +1,4 @@
+
+5976   4804    177   4925 2019-06-28 09:33:21 UTC+0000 ...... mshta.exe       17768   5976     12    320 2019-09-20 14:20:00 UTC+0000 ...... mshta.exe        9356   5976     12    306 2019-09-20 11:12:04 UTC+0000 ...... mshta.exe       22416   5976     12    310 2019-09-20 11:31:14 UTC+0000 ...... mshta.exe       23240   5976     13    318 2019-09-20 14:20:01 UTC+0000 ...... mshta.exe       15116   5976     12    311 2019-09-20 11:31:23 UTC+0000
+This matched our initial findings and gave us some further context.
+Unfortunately, the initially-acquired forensic evidence, including the endpoint triage package and the memory image, did not provide a conclusive filesystem narrative around that date.

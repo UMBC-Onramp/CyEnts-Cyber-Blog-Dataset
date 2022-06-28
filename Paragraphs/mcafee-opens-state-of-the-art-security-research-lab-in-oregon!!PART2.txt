@@ -1,0 +1,4 @@
+
+Although we have smaller labs in other locations, the new McAfee Advanced Threat Research Lab was created to serve two purposes.
+First, it gives our talented researchers an appropriate work space with access to high-end hardware and electronics for discovery, analysis, automation, and exploitation of vulnerabilities in software, firmware, and hardware.
+Second, the lab will serve as a demo facility, where the Advanced Threat Research team can showcase current research and live demos to customers or potential customers, law enforcement partners, academia, and even vendors.

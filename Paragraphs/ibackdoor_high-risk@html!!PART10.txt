@@ -1,0 +1,5 @@
+
+In previous blogs we have described a number of “Masque” attacks utilizing enpublic apps [5, 6, 7], which affect pre-iOS 9 devices.
+The attacks include background monitoring of SMS or phone calls, breaking the app sandbox, stealing email messages, and demolishing arbitrary app installations.
+Figure 4:
+Installing “enpublic” apps to bypass Apple App Store review We can observe the functionality of the ad library by examining the implementations of some of the selected interfaces.

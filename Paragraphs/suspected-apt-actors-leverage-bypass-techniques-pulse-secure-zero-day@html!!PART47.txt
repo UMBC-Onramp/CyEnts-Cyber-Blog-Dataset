@@ -1,0 +1,8 @@
+
+If the file /tmp/data/root/home/bin/check_integrity.sh exists and is non-empty, then check if the file contains the string exit 1 by executing: grep -c -s 'exit 1' /tmp/data/root/home/bin/check_integrity.sh
+If the file does contain this content, then execute the following to switch the content to exit 0 :
+sed -i 's/exit 1/exit 0/g' /tmp
+/data/root/home/bin/check_integrity.sh PULSEJUMP
+The file with SHA256: 7fa71a7f76ef63465cfeacf58217e0b66fc71bc81d37c44380a6f572b8a3ec7a is a system information and credential harvesting Perl script.
+The sample writes information from multiple sources to the file /tmp/
+dsactiveuser.statementcounters in append mode.

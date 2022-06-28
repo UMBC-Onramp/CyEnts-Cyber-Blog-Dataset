@@ -1,0 +1,6 @@
+
+The wallet works as an extension for Google Chrome, Firefox, Microsoft Edge and Brave desktop browsers, and there are also apps for iOS and Android.
+MetaMask can be used to make purchases and create and monetize content on a decentralized network.
+As with similar wallets, access is secured by a user password created at registration, and an app-generated private key consisting of 64 alphanumerical characters, plus a seed phrase — a series of 12 (less often 24) words.
+And whereas nearly all cryptowallet owners understand that the password and private key must not be shared with anyone, some, especially cryptocurrency newbies, underestimate the need to keep the seed phrase secret.
+Keep in mind however that the seed phrase is essentially a verbal representation of the private key, allowing you to restore access to the account.

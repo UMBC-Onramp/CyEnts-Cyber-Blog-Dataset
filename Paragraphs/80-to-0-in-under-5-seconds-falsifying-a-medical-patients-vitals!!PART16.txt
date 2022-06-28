@@ -1,0 +1,13 @@
+
+The central monitor responds to the patient monitor on port 2000 with a new source port.
+Immediately following, we see the data packets being sent to the new source port, 3627, named in the previous exchange.
+This exam provides insight into why the replay attack did not work.
+The central station defines for each connection which ports will be open for the incoming data; we need to consider this when attempting a replay attack.
+Modifying our previous Scapy scripts to account for the handshake, we retested the replay attack.
+With the new handshake code in place, the test still failed.
+Taking another look at the “SYN,ACK” packets provides a potential reason for the failure.
+At offset 0x3D is a counter that needs to be incremented each time one of these packets is sent.
+In this case the patient monitor’s source IP address is embedded in the payload at offsets 0x2A and 0x30.
+This embedded IP address is not as important for this attack because during the replay our scripts can become the patient monitor’s IP; however, this will become more important later.
+The newly discovered counter needs to be accounted for and incremented.
+Emulating a patient monitor By taking these new findings into account our replay attack becomes successful.

@@ -1,0 +1,7 @@
+
+Figure 10: Complex system calls go through Wow64SystemServiceEx We’ll look at this routine in a moment as it’s the meat of this blog post, but for now let’s finish this call trace.
+Once Wow64SystemServiceEx returns from doing the system call the return value in eax is moved into the WOW64_CONTEXT structure and then the 32-bit register states are restored.
+There’s two paths for this, a common case and a case that appears to exist only to be used by NtContinue and other WOW64 internals.
+A flag at the start of the WOW64_CPURESERVED structure retrieved from the TLS slot is checked, and controls which restore path to follow as shown in Figure 11.
+Figure 11: CPU state is restored once the system call is done; there’s a simple path and a complex one handling XMM registers The simpler case will build a jmp that uses the segment selector 0x23 to transition back to 32-bit mode after restoring all the saved registers in the WOW64_CONTEXT .
+The more complex case will additionally restore some segments, xmm values, and the saved registers in the WOW64_CONTEXT structure and then will do an iret to transition back.

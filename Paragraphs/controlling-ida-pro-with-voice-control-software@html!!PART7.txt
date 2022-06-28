@@ -1,0 +1,6 @@
+
+Now you can simply say “make Unicode string” and the work is done for you.
+Figure 2: String literals dialog in IDA Pro Reversing a C++ application?
+The Create struct from selection action is a very helpful feature in this case, but it requires you to navigate to the Edit->Structs menu in order to use it.
+The voice command “create struct from selection” does this for you automatically.
+The “look it up” command will copy the currently highlighted token in the disassembly and search Google for it using your default browser.

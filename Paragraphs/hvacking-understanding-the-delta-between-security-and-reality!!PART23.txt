@@ -1,0 +1,6 @@
+
+When developing an exploit, the ability to dynamically debug the target is extremely valuable.
+To this end, the team first had to cross-compile debugging tools such as gdbserver for the device’s specific kernel and architecture.
+Since the device runs an old version of the Linux kernel, we used an old version of Buildroot to build gdbserver and later other applications.
+Using a USB drive to transfer gdbserver onto the device, an initial attempt to debug the running application was made.
+A few seconds after connecting the debugger to the application, the device initiated a reboot, as shown in Figure 16.

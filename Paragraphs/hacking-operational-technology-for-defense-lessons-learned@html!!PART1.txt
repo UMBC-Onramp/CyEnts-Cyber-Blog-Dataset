@@ -1,0 +1,4 @@
+High-profile security incidents in the past decade have brought increased scrutiny to cyber security for operational technology (OT).
+However, there is a continued perception across critical infrastructure organizations that OT networks are isolated from public networks—such as the Internet.
+In Mandiant’s experience, the concept of an ‘air gap’ separating OT assets from external networks rarely holds true in practice.
+In 2018, we released a blog post presenting the tools and techniques that TEMP.Veles used during the TRITON incident to traverse from an external compromise of the information technology (IT) network of a critical infrastructure organization to the safety systems located deep in the OT network.

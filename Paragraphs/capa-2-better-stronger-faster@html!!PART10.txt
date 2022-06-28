@@ -1,0 +1,10 @@
+
+This feature matches at the file-level scope.
+We’ve already started using this new capability to recognize specific implementations of cryptography routines, such as AES provided by Crypto++ , as shown in the example rule in Figure 7.
+Figure 7:
+Example rule using function-name to recognize AES via Crypto++ As we developed rules for interesting behaviors, we learned a lot about where uncommon techniques are used legitimately.
+For example, as malware analysts, we most commonly see the cpuid instruction alongside anti-analysis checks, such as in VM detection routines.
+Therefore, we naively crafted rules to flag this instruction.
+But, when we tested it against our testbed, the rule matched most modern programs because this instruction is often legitimately used in high-optimized routines, such as memcpy , to opt-in to newer CPU features.
+In hindsight, this is obvious, but at the time it was a little surprising to see cpuid in around 15% of all executables.
+With the new FLIRT support, capa recognizes the optimized memcpy routine embedded by Visual Studio and won’t flag the embedded cpuid instruction, as its not part of the programmer’s code.

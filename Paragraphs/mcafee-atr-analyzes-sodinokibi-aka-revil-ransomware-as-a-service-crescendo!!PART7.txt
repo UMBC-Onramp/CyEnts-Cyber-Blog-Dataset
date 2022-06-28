@@ -1,0 +1,7 @@
+
+This tool is not considered malicious and was developed by a legitimate company but can be used for profiling purposes.
+The usage of reconnaissance tools to profile the machine is interesting as it indicates potential manual lateral movement attempts by the actor on the target system.
+July 20 th to 30 th Intrusion Activity observed during this period utilized tools similar to those used in other intrusions we have observed in multiple regions, including those by Affiliate ID 34.
+In this activity McAfee ATR identified NLBrute being executed again to target victims over RDP; a pattern we have seen over and over again in intrusions involving Sodinokibi.
+ A series of logins from Iran were observed between July 25 th and July 30 th , 2019.
+We have also seen crypto currency mining apps deployed in most of the intrusions involving Sodinokibi, which may suggest some interesting side activity for these groups.

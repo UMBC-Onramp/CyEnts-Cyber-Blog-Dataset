@@ -1,0 +1,8 @@
+
+Companies are hailing from across the globe, including the U.K., South Africa, Canada, Argentina, Mexico, Indonesia, New Zealand, and Kenya.
+Since the situation continues to evolve, these details may change over time.
+What Are the Criminals Demanding?
+REvil initially published a ransom demand on their “Happy Blog” accessible through a TOR browser asking for $70M in Bitcoin to release a decryptor that would help all related victims unlock files encrypted in the attack.
+Figure 1:
+REvil’s post to their “Happy Blog” Dark Web page Unlike the case in singular attacks, REvil members do not appear to have exfiltrated data from their victims prior to the data encryption phase.
+A plausible reason could be rushing to set up the attack and worrying that data exfiltration would take very long and be an operation that could expose the gang prematurely.

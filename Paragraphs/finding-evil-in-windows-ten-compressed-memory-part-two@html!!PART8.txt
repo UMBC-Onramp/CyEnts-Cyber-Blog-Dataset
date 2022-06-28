@@ -1,0 +1,11 @@
+
+This is a straightforward process if symbols are available (see Figure 5).
+Figure 5:
+Dumping nt!SmGlobals The first thing to observe is that both SMKM_STORE_MGR and SMKM are located at offset 0x0 , or directly at nt!SmGlobals .
+Viewed as a memory dump, nt!SmGlobals appears as an array of pointers.
+Viewed as a two-dimensional array (32x32) of SMKM_STORE_METADATA elements, each element in the array of pointers points to an array of 32 SMKM_STORE_METADATA structures.
+Each SMKM_STORE_METADATA structure represents a store.
+To locate our SM_PAGE_KEY ’s corresponding store, we need to find the store index associated with the page key inside the SMKM_STORE_MGR.sGlobalTree B+tree container.
+The store index is a compound value that yields both indices needed to select the particular SMKM_STORE_METADATA element.
+Let’s traverse the SMKM_STORE_MGR ’s global B+tree (Figure 6).
+Recall that we are interested in a store manager page key value of 0x201a3061 .

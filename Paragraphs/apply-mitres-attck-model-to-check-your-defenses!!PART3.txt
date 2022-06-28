@@ -1,0 +1,5 @@
+
+After wrapping up the knowing yourself part, what can we learn from the enemy?
+Ask yourself “Who would likely be interested in attacking me?”
+By going through the list of known adversaries and cybercriminal groups, you can create a list based on which geographies and vectors they target and classify them by risk.
+Here is a simplified example: Once you have your list and risk classification ready, you must next study the tactics, techniques, and procedures used by these adversaries.

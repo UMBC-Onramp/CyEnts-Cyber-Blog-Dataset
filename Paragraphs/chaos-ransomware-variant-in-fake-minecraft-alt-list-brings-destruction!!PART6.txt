@@ -1,0 +1,7 @@
+
+The ransom note also states that the attacker is available only on Saturdays and apologizes for any inconvenience caused.
+The malware does not include code to identify the language setting of the compromised machine and the ransom note is available in Japanese only.
+This, combined with the formal language of the ransom note, indicates this Chaos ransomware variant specifically targets Japanese Windows users.
+The ransomware also deletes shadow copies from the compromised machine, which prevents the victim from being able to recover any files that had been encrypted, making it doubly destructive.
+FortiGuard Labs previously released a blog about shadow copy deletion carried out by ransomware.
+Luckily this Chaos ransomware variant does not have any code to steal data from the compromised machine.

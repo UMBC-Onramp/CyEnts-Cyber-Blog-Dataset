@@ -1,0 +1,5 @@
+
+Figure 8: If VBC does not exist, the launcher will download it Payload Analysis Analysis of the exeBuffer shows several appealing elements.
+It starts with a UAC Bypass via {3E5FC7F9-9A51-4367-9063-A120244FBEC7} exploiting the ICMLuaUtil elevated COM Interface-Object [1] , as seen in other ransomware families like Trickbot and MedusaLocker.
+Subsequently, the script uses another variant of the UAC Bypass.
+The CLSID {D2E7041B-2927-42fb-8E9F-7CE93B6DC937} refers to the ColorDataProxy COM Object which is classified as the same Bypass method in hfiref0x’s UACME #43 [2] .

@@ -1,0 +1,6 @@
+
+Was this indeed ransomware and, if so, why encrypt only .exe files?
+Our initial suspicions were immediately confirmed when we found a cryptocurrency coin mining component within the malware.
+In fact, the miner sample was almost identical to the ransomware component, with almost 80% code reuse.
+These similarities are highlighted below.
+Executable extension search function: Code flow in the “Obama campaign” ransomware.

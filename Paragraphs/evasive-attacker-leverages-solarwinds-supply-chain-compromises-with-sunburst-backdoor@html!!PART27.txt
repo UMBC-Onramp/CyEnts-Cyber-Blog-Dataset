@@ -1,0 +1,4 @@
+
+We have found multiple hashes with this backdoor and we will post updates of those hashes.
+MITRE ATT&CK Techniques Observed ID Description T1012 Query Registry T1027 Obfuscated Files or Information T1057 Process Discovery T1070.004 File Deletion T1071.001 Web Protocols T1071.004 Application Layer Protocol: DNS T1083 File and Directory Discovery T1105
+Ingress Tool Transfer T1132.001 Standard Encoding T1195.002 Compromise Software Supply Chain T1518 Software Discovery T1518.001 Security Software Discovery T1543.003 Windows Service T1553.002 Code Signing T1568.002 Domain Generation Algorithms T1569.002 Service Execution T1584 Compromise Infrastructure Immediate Mitigation Recommendations Prior to following SolarWind’s recommendation to utilize Orion Platform release 2020.2.1 HF 1, which is currently available via the SolarWinds Customer Portal, organizations should consider preserving impacted devices and building new systems using the latest versions.

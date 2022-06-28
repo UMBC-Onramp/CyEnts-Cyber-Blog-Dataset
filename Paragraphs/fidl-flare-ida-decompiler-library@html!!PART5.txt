@@ -1,0 +1,8 @@
+
+Figure 1 shows a subset of information available via a controlFlowinator next to the decompilation of the function.
+Figure 1: Sample output available as part of a controlFlowinator When parsing the AST during construction, the controlFlowinator also combines nodes representing the same logical expression into a more digestible form where each block translates roughly to one line of pseudocode.
+Figure 2 and Figure 3 show the AST and controlFlowinator representations of the same function.
+Figure 2:
+The default rendering of the AST of a function Figure 3:
+The control flow graph created by the controlFlowinator for the function shown in Figure 2
+Compared to the default AST, this graph is organized by potential code paths that can be taken through a function.

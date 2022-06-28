@@ -1,0 +1,11 @@
+
+     There was code to download a decoy document from the Internet and open it in a second winword.exe process using the Start-Process cmdlet.
+When the victim enables macros, they will see the decoy document shown in Figure 6.
+This document contains the content described in the spear phishing email.
+Figure 6: Decoy downloaded and launched on the victim’s screen 2.
+     After launching the decoy document in the second winword.exe process, the PowerShell script downloads and runs another PowerShell script named f0921.ps1 as shown in Figure 7.
+Figure 7: PowerShell to download and run decoy decoy document and third-stage payload Third Stage PowerShell Persistence
+The third stage PowerShell script configures an encoded PowerShell command persistently as base64 string in the HKCU: \\Console\\FontSecurity registry key.
+Figure 8 shows a portion of the PowerShell commands for writing this value to the registry.
+Figure 8:
+Code to set registry with encoded PowerShell script Figure 9 shows the registry value containing encoded PowerShell code set on the victims’ system.

@@ -1,0 +1,9 @@
+
+You can also safely uninstall all FLARE VM packages by executing “choco uninstall flarevm.installer.flare”.
+Our new FLARE VM is also updated to use Python 3.7 as the default Python interpreter.
+As a result, many python scripts may fail to execute.
+To maintain support for older scripts, we keep Python 2.7 installed in parallel with Python 3.7.
+We can easily switch between different versions by using the Python launcher.
+Run “py -2.7 <path_to_python_script>” to use Python 2.7, or “py <path_to_python_script>” to use the default Python 3.7 interpreter.
+For more details on the Python launcher, please refer to the following URL: https://docs.python.org/3/using/windows.html#launcher.
+Additionally, the new FLARE VM changes the location where Fakenet-NG saves its output when launched via the shortcut in the FLARE folder or taskbar pin.

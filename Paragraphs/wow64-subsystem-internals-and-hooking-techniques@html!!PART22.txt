@@ -1,0 +1,4 @@
+
+To solve the first challenge ntdll kindly provides the exports NtWow64ReadVirtualMemory64 , NtWow64WriteVirtualMemory64 , and NtWow64QueryInformationProcess64 .
+Using these it is possible to read memory, write memory, and retrieve the PEB of a 64-bit module from a 32-bit process.
+However, the second challenge is much harder as either shellcode or a JIT will be required to craft a callback stub of the right bitness.

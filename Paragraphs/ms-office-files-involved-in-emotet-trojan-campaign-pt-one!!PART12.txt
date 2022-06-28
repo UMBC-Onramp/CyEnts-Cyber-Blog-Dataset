@@ -1,0 +1,10 @@
+
+That is a sha256 hash code of the entire following data, starting at offset+28h.
+0x2C , at offset+28h, is the size of the following data.
+The next 0x10 is the length of the victim’s ID (“BOBSXPC_9C09B592”), which is a combination of the computer name and the system driver’s volume number.
+To obtain this information, Emotet calls APIs like GetComputerName(), GetWindowsDirectoryW(), and GetVolumeInformationW().
+The following dword 0x29C220DD is a hash code of Emotet Dll’s full path.
+0x13465AA is a constant value defined in its code.
+It may be a malware ID of this Emotet.
+0x2710 is another constant value, and I suppose it is a sort of version of this variant.
+0x19E7D is a combination of the victim’s system information, including Windows version, architecture, and so on.

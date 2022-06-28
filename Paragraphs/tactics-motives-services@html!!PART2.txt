@@ -1,0 +1,5 @@
+
+Attackers' tactics and motives are evolving and as a result our security strategies also need to adapt.
+Today, we announced two new service offerings that will further help our clients improve their protective, detective, and responsive security controls and leverage Mandiant's extensive experience responding to some of the most serious cyber security incidents.
+Our first new service offering addresses attackers' expanding motives.
+We are starting to see attackers with destructive motives and what could be more damaging than attacking a nation's critical infrastructure.

@@ -1,0 +1,5 @@
+
+TS_cnames.pyc TS_names and tr1com40.dll share 202 of 220 combined table strings.
+The remaining strings are unique to each, as seen here: TS_cnames.
+TS_names (2017 pyc) Tr1com40.dll (2006 CPP) Go to DOWNLOAD mode <200> Not set <209> Unk75 Bad message from module Unk76 Bad message type Unk77 Bad TMI version number Unk78 Module did not respond Unk79
+Open Connection: Invalid SAP %d Unk81 Unsupported message for this TMI version Unk83 Wrong command TS_cnames.pyc TS_names and Tridcom.dll (1999 CPP) shared only 151 of 268 combined table strings, showing a much smaller overlap with the seemingly older CPP library.

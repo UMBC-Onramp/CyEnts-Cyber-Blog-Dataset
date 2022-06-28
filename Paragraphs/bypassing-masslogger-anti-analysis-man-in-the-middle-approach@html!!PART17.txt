@@ -1,0 +1,8 @@
+
+We can easily find out that the compileMethod() function has the following prototype (Figure 11): CorJitResult __stdcall compileMethod ( ICorJitInfo                       *comp,               /* IN */ CORINFO_METHOD_INFO               * info ,               /* IN */ unsigned /* code:CorJitFlag */    flags,               /* IN */ BYTE                              **nativeEntry,       /* OUT */ ULONG                             *nativeSizeOfCode    /* OUT */ ); Figure 11: compileMethod() function protype Figure 12 shows the CORINFO_METHOD_INFO structure.
+struct CORINFO_METHOD_INFO { CORINFO_METHOD_HANDLE       ftn; CORINFO_MODULE_HANDLE       scope; BYTE * ILCode ; unsigned ILCodeSize ; unsigned                    maxStack; unsigned                    EHcount; CorInfoOptions              options; CorInfoRegionKind           regionKind; CORINFO_SIG_INFO            args; CORINFO_SIG_INFO            locals; }; Figure 12:
+CORINFO_METHOD_INFO structure The ILCode is a pointer to the MSIL of the method to compile, and the ILCodeSize tells us how long the MSIL is.
+The return value of compileMethod() is an error code indicating success or failure.
+In case of success, the nativeEntry pointer is populated with the address of the executable memory region containing the x86 or the x64 instruction that is compiled from the MSIL.
+MassLogger JIT Hooking Let’s come back to MassLogger.
+As soon as the main module initialization runs, it first decrypts MSIL of the other methods.

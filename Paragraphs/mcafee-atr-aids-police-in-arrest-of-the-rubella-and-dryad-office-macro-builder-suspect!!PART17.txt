@@ -1,0 +1,10 @@
+
+This hash, the username and password will be sent to the server to verify if the license is valid.
+In the source code we noticed the tailoredtaboo.com domain again.
+Generate Macro To generate a macro the builder is using several parts.
+The format function shows how each file structure is generated.
+The structure is the following: To save the macro in the malicious doc it uses the function ‘SaveMacro’:
+Evasion Techniques
+Additionally, it generates random code to obfuscate the content and adds junk code.
+The function GenRandom is used to generate random strings, chars as well as numbers.
+It is used to obfuscate the macro generated.

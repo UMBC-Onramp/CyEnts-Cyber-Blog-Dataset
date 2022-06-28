@@ -1,0 +1,6 @@
+
+To make a long story short, if you want the full Cities: Skylines experience, use mods.
+Vengeance mods Now let’s go directly to events.
+On February 10, 2022, the creators of the aforementioned Traffic Manager:
+President Edition mod published a warning about malicious extensions for the game: The creators of Traffic Manager: President Edition accuse the author of other mods of distributing malware.
+Source The malicious functionality was relatively harmless: the extension randomly changed the speed limits on roads in the game.

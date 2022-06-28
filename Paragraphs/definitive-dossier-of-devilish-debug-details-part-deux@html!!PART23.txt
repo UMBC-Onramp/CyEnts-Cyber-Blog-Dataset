@@ -1,0 +1,13 @@
+
+These signatures have since been deployed and discovered new malware samples.
+We answered a number of our own general research questions about PDB paths, and were able to dispel some theories we had not fully tested with data.
+While building an independent classifier was not the primary goal, improvements can surely be made to improve the end model accuracy.
+Generating an even larger, more diverse dataset would likely make the biggest impact on our accuracy, recall, and precision.
+Further hyperparameter tuning and feature engineering could also help.
+There is a large amount of established research into text classification using various deep learning methods such as LSTMs , which could be applied effectively to a larger dataset.
+PDB paths are only one small family of file paths that we encounter in the field of cyber security.
+Whether in initial infection, staging, or another part of the attack lifecycle, the file paths found during forensic analysis can reveal incredibly useful information about adversary activity.
+We look forward to further community research on how to properly extract and represent that information.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

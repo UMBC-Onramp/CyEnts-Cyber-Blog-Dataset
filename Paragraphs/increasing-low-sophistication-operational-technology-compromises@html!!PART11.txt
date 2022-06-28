@@ -1,0 +1,8 @@
+
+Each of the low sophistication incidents we observe is unique and poses a different level of risk, which we normally determine by examining the actor’s previous work and reputation, the target’s industry, and the nature of the compromised process, among other things.
+While low sophistication incidents do not appear to commonly impact physical environments, they remain concerning for the following reasons.
+Each incident provides threat actors with opportunities to learn more about OT, such as the underlying technology, physical processes, and operations.
+These opportunities can increase an adversary's ability and enhance their tradecraft.
+Even low-sophistication intrusions into OT environments carry the risk of disruption to physical processes, mainly in the case of industries or organizations with less mature security practices.
+As the number of intrusions increase, so does the risk of process disruption.
+The publicity of these incidents normalizes cyber operations against OT and may encourage other threat actors to increasingly target or impact these systems.

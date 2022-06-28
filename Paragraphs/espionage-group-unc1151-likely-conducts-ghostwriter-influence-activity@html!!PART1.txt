@@ -1,0 +1,5 @@
+In July 2020, Mandiant Threat Intelligence released a public report detailing an ongoing influence campaign we named “Ghostwriter.”
+Ghostwriter is a cyber-enabled influence campaign which primarily targets audiences in Lithuania, Latvia and Poland and promotes narratives critical of the North Atlantic Treaty Organization’s (NATO) presence in Eastern Europe.
+Since releasing our public report, we have continued to investigate and report on Ghostwriter activity to Mandiant Intelligence customers.
+We tracked new incidents as they happened and identified activity extending back years before we formally identified the campaign in 2020.
+A new report by our Information Operations analysis, Cyber Espionage analysis, and Mandiant Research teams provides an update on Ghostwriter , highlighting two significant developments.

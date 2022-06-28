@@ -1,0 +1,7 @@
+
+As described above, the affiliate is getting money transferred mostly through an exchange (since this is being advised by the actors in the ransom note).
+This is what we see in the example below.
+Incoming ransomware payments via Coinbase.com are received.
+The affiliate seems to pay some fee to a service but also sends BTC into Bitmix.biz a popular underground bitcoin mixer that is obfuscating the next transactions to make it difficult to link the transactions back to the ‘final’ wallet or cash-out in a (crypto) currency.
+We also observed examples where the affiliates were paying for services, they bought on Hydra Market.
+Hydra Market is a Russian underground marketplace where many services and illegal products are offered with payment in BTC.

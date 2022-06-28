@@ -1,0 +1,6 @@
+
+Even if the victim opts to pay ransom, the Ranion decrypter only decrypts the encrypted files but does not remove the RAT.
+The Ranion affiliate can then turn to other RaaS services that are willing to purchase existing corporate access (recent Lockbit 2.0 and Blackmatter RaaS quickly come to mind) and sell that compromised victim for additional profit.
+This scheme can surely be “educational,” but it’s only good for ransomware affiliates.
+1 AUP is available for purchase The Ranion Ransomware Delivery Method The Ranion ransomware’s delivery method recently observed by FortiGuard Labs is very straightforward.
+It was done through a spearphishing email with a zip file attachment that included the Ranion ransomware executable.

@@ -1,0 +1,6 @@
+
+We independently discovered that the extension within an iOS 8 app\ncould either gain full access to other apps’ data containers or\nprevent other apps from accessing their own data containers, as long\nas the extension uses the same bundle identifier as the target app.
+An\nattacker can lure a victim to install an in-house app using enterprise\nprovisioning from a website and to enable the malicious extension of\nthe in-house app on his/her device.
+The effect of such attack is related to the installation sequence of\nthe malicious extension and the target app.
+Note that an extension\ncannot be installed standalone; it must be distributed as a part of an\napp.
+So in the following content when we refer to installing an\nextension we mean installing an app carrying that extension.

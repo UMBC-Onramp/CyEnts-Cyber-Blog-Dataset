@@ -1,0 +1,9 @@
+
+In essence, this attack is a fake restart.
+What is NoReboot, and how does the attack work?
+We want to note right off the bat that NoReboot is not a feature of any real spyware in use by attackers; rather, it’s a so-called proof of concept that researchers demonstrated under laboratory conditions.
+At this point it is hard to say whether the method will actually gain traction.
+For the demonstration, the researchers used an iPhone they “infected” beforehand.
+Unfortunately, they haven’t shared the technical details.
+Here’s what happens in the demonstration: The spy malware, which transfers the image from the camera, runs on the iPhone; The user tries to shut off the phone the usual way, using the power and volume buttons; The malware takes control and shows a perfect fake instead of the standard iOS shutdown screen; After the user drags the power-off slider, which also looks perfectly normal, the smartphone’s screen goes dark and the phone no longer responds to any of the user’s actions; When the user presses the power button again, the malware displays a perfect replica of the iOS boot animation.
+During the entire process, the phone is continually transferring the image from the phone’s front camera to another device without the user’s knowledge.

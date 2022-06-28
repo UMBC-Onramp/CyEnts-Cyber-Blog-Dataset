@@ -1,0 +1,6 @@
+
+Identifying sophisticated activity of this nature often requires the subject matter expertise of human analysts.
+After all, such content is purposefully and convincingly manufactured to imitate authentic online activity, making it difficult for casual observers to properly verify.
+The actors behind such operations are not transparent about their affiliations, often undertaking concerted efforts to mask their origins through elaborate false personas and the adoption of other operational security measures.
+With these operations being intentionally designed to deceive humans, can we turn towards automation to help us understand and detect this growing threat?
+Can we make it easier for analysts to discover and investigate this activity despite the heterogeneity, high traffic, and sheer scale of social media?

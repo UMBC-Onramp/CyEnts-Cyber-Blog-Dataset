@@ -1,0 +1,7 @@
+
+Example of ransom note of the first version of the malware After this, Clop will continue with the next file with the same process however, the check of the name based with the hash is avoided now.
+Second Version of
+the Malware
+The second version found by the end of February has some changes if it is compared with the first one.
+The hash of this version is: “ed7db8c2256b2d5f36b3d9c349a6ed0b”.
+The first change is some changes in the strings in plain text of the code to make the execution in the “EraseTape” call and “FindAtomW” call more slowly.

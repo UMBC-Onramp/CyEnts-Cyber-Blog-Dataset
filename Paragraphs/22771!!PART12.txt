@@ -1,0 +1,13 @@
+
+When much of the world switched to remote work, the number of such attacks skyrocketed.
+This is the modus operandi of the Ryuk, REvil, and other ransomware campaigns; Server application vulnerabilities.
+Attacks on server-side software give cybercriminals access to the most sensitive of data.
+A recent example came in March, when ransomware DearCry attacked through a zero-day vulnerability in Microsoft Exchange.
+Insufficiently protected server-side software can serve as an entry point for a targeted attack.
+Security issues also crop up in enterprise VPN servers, some examples of which we saw last year; Botnet-based delivery.
+To ensnare even more victims and increase profits, ransomware operators use botnets .
+Zombie network operators provide other cybercriminals with access to thousands of compromised devices, which automatically look for vulnerable systems and download ransomware onto them.
+That is how, for example, the Conti and DoppelPaymer ransomware spread; Supply-chain attacks.
+The REvil campaign best highlights this threat vector: the group compromised an MSP provider and then distributed ransomware to its customers’ networks; Malicious attachments.
+E-mails containing malicious macros in attached Word documents are still a popular option for malware delivery.
+One of our Top 5 villains, NetWalker, used malicious attachments to ensnare victims — its operators sent out mailings with “COVID-19” in the subject line.

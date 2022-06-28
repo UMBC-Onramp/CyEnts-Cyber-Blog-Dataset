@@ -1,0 +1,6 @@
+
+The script ( step2 function) decodes both parts.
+The decoded content3 part contains the function named as step3 , as shown in Figure 5.
+Figure 5: Decrypting and Executing Response step3 The step3 function contains code that writes decoded content2 into a %temp% directory as Update.js .
+Update.js contains code to download and execute the final payload.
+The step3 function also sends the resulting data, such as runFileResult and _tempFilePath, to the server, as shown in Figure 6.

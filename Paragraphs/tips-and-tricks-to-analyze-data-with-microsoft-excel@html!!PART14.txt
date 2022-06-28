@@ -1,0 +1,9 @@
+
+Note the use of \"$\" to ensure that the start and end of the range are an absolute reference and are not automatically updated by Excel if we copy this formula to other cells.
+B2
+This is the cell that contains the value we want to search for and count occurrences of in our range of $B$2:$B$25.
+ Note that this parameter is not an absolute reference with a preceding \"$\".
+This allows us to fill the formula down through all rows and ensure that we are counting the applicable user name.
+To summarize, this formula will search the username column of all logon data and count how many times the user of each logon has logged on in total across all data points.
+When most user accounts log on regularly, a compromised account being used to logon for the first time may clearly stand out when reviewing total log on counts.
+If we have a specific time frame in mind, it may be helpful to know which accounts first logged on during that time.

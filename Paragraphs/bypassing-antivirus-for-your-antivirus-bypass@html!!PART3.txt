@@ -1,0 +1,5 @@
+
+While Windows Defender will block calling Find-AvSignature.ps1 when attempting to use iex (new-object net.webclient).downloadstring… ...
+it will NOT block you from performing a wget on the page and then viewing the page’s content.
+Now we’re getting somewhere, but we can’t simply write the contents to disk.
+From here, we are going to find out where Defender is catching the file by writing the file to the disk one line at a time.

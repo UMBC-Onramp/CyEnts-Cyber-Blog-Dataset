@@ -1,0 +1,7 @@
+
+Notably, this registrant address was also used to create multiple Italian-language domains towards the end of November 2019.
+Figure 4:
+AT&T email lure Figure 5: Canada Post email lure Shift to Post-Compromise Distribution Maximizes Impact Actors using MAZE have increasingly shifted to deploying the ransomware post-compromise.
+This methodology provides an opportunity to infect more hosts within a victim’s environment and exfiltrate data, which is leveraged to apply additional pressure on organizations to pay extortion fees.
+Notably, in at least some cases, the actors behind these operations charge an additional fee, in addition to the decryption key, for the non-release of stolen data.
+Although the high-level intrusion scenarios preceding the distribution of MAZE ransomware are broadly similar, there have been notable variations across intrusions that suggest attribution to distinct teams.

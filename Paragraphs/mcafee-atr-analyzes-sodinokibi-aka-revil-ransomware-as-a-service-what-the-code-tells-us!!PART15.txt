@@ -1,0 +1,6 @@
+
+After relaunching itself with the ‘runas’ command the malware instance will finish.
+FIGURE 8.
+CHECK IF OS IS WINDOWS VISTA MINIMAL AND CHECK OF EXECUTION LEVEL
+The malware’s next action is to check if the execute privilege is SYSTEM.
+When the execute privilege is SYSTEM, the malware will get the process “Explorer.exe”, get the token of the user that launched the process and impersonate it.

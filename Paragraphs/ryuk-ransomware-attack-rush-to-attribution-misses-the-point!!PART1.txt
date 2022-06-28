@@ -1,0 +1,4 @@
+By John Fokker and Christiaan Beek on Jan 09, 2019 Senior analyst Ryan Sherstobitoff contributed to this report.
+During the past week, an outbreak of Ryuk ransomware that impeded newspaper printing services in the United States has garnered a lot of attention.
+To determine who was behind the attack many have cited past research that compares code from Ryuk with the older ransomware Hermes to link the attack to North Korea.
+Determining attribution was largely based on the fact that the Hermes ransomware has been used in the past by North Korean actors, and code blocks in Ryuk are similar to those in Hermes.

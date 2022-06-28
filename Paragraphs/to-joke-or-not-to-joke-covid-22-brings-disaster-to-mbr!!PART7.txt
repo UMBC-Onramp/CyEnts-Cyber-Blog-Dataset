@@ -1,0 +1,4 @@
+
+You will also want to create recovery media beforehand, or else you will need to use a working machine, which can be difficult for home users after the damage is done.
+Conclusion on COVID-22 Brings Disaster to MBR What looks to be a mere joke program is designed to bring destruction to impacted systems.
+This time, luck was on the victim's side as the malware did not touch any user data, but the user may not be so lucky next time.

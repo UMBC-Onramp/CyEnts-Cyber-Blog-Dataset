@@ -1,0 +1,10 @@
+
+The commandline argument e or E must be supplied as the fourth argument.
+Example command line: ./patcher input.bin output.bin backdoorkey e f2b1bd703c3eb05541ff84ec375573cbdc70309ccb82aac04b72db205d718e90
+The sample uses the HTTP query parameter id and responds with HTTP headers \"Cache-Control: no-cache\\n\" and \"Content-type: text/html\\n\\n\".
+224b7c45cf6fe4547d3ea66a12c30f3cb4c601b0a80744154697094e73dbd450 64c87520565165ac95b74d6450b3ab8379544933dd3e2f2c4dc9b03a3ec570a7 78d7c7c9f800f6824f63a99d935a4ad0112f97953d8c100deb29dae24d7da282 705cda7d1ace8f4adeec5502aa311620b8d6c64046a1aed2ae833e2f2835154f Execute sed on PulseSecure system files Remounts filesystem as writable: system(\"/bin/mount -o remount,rw /dev/root /\")
+Unexpected execution of other system commands such as tar , cp , rm MITRE
+ATT&CK Techniques
+The following list of MITRE ATT&CK techniques cover all malware samples described in this report as well as those observed throughout the lifecycle of UNC2630 and UNC2717.
+T1003-OS Credential Dumping T1016-System Network Configuration Discovery T1021.001-Remote Desktop Protocol T1027-Obfuscated Files or Information T1036.005-Match Legitimate Name or Location T1048-Exfiltration Over Alternative Protocol T1049-System Network Connections Discovery T1053-Scheduled Task/Job T1057-Process Discovery T1059-Command and Scripting Interpreter T1059.003-Windows Command Shell T1070-Indicator Removal on Host T1070.001-Clear Windows Event Logs T1070.004-File Deletion T1071.001-Web Protocols T1082-System Information Discovery T1098-Account Manipulation T1105-Ingress Tool Transfer T1111-Two-Factor Authentication Interception T1133-External Remote Services T1134.001 Access Token Manipulation: Token Impersonation/Theft T1136-Create Account T1140-Deobfuscate/Decode Files or Information T1190-Exploit Public-Facing Application T1505.003-Web Shell T1518-Software
+Discovery T1554-Compromise Client Software Binary T1556.004-Network Device Authentication T1592.004

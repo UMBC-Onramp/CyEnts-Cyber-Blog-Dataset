@@ -1,0 +1,6 @@
+
+These sensors are located in every continent, with the exception of Antarctica, and focus on locations that might be tempting to attackers, as well as locations that are a focus for certain threat groups.
+We monitor the attack locations and look for trends of which locations have become a hotbed of activity.
+The map below is an example of attacks happening in real-time, showing the point of origin of attacks against the Juniper Threat Labs’ sensors.
+Juniper Threat Labs also employs various types of sensors within its intelligence network.
+These sensors pick up numerous attacks on all 65,535 different network ports.

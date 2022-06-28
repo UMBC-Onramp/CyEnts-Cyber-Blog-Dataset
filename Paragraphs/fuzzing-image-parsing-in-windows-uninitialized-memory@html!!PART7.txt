@@ -1,0 +1,6 @@
+
+This difference of output can be used to detect uninitialized memory and aid writing a fuzzing harness targeting Windows image decoders.
+An example fuzzing harness is presented in Figure 2.
+#define ROUNDS 20 unsigned char* DecodeImage(char *imagePath) { unsigned char *pixels = NULL; // use GDI or WIC to decode image and get the resulting pixels ... ... return pixels; } void Fuzz(char *imagePath) { unsigned char *refPixels = DecodeImage(imagePath); if(refPixels !
+= NULL) { for(int i = 0; i < ROUNDS; i++) { unsigned char *currPixels = DecodeImage(imagePath); if(!ComparePixels(refPixels, currPixels))
+{ // the reference pixels and current pixels don't match // crash now to let the fuzzer know of this file CrashProgram(); } free(currPixels); } free(refPixels); } } Figure 2:

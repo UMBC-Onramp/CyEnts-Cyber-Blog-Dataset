@@ -1,0 +1,9 @@
+
+The VM contained numerous tools such as network scanners, exploits and reconnaissance tools.
+Tiny Core Linux pre-loaded tools included Mimikatz, Powersploit, Responder, Procdump, CrackMapExec, PoshC2, Medusa, JBoss Vulnerability Scanner and more.
+Efforts to decrease operational visibility included placing tool and output files within temporary file system mount points that were stored in volatile memory.
+Additionally, UNC1945 used built-in utilities and public tools to modify timestamps and selectively manipulate Unix log files.
+UNC1945 employed anti-forensics techniques with the use of a custom ELF utility named LOGBLEACH.
+The actor used built-in Linux commands to alter the timestamps of files and directories and used LOGBLEACH to clean logs to thwart forensic analysis, as seen in Figure 4.
+$ ./b -C -y
+-a $ mv b /usr/lib64/libXbleach.so.1 $ cd /usr/lib64/ $ touch -acm -r librpmio.so.3.2.2 $ touch -acm -r

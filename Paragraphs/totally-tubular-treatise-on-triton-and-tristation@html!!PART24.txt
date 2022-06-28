@@ -1,0 +1,3 @@
+
+Recommended Reading Attackers Deploy New ICS Attack Framework “TRITON” and Cause Operational Disruption to Critical Infrastructure Attack Induced Common-Mode Failures on PLC-Based Safety System in a Nuclear Power Plant: Practical Experience Report Analyzing the TRITON industrial malware Repository containting original and decompiled files of TRISIS/TRITON/HATMAN malware
+TRISIS Malware Analysis of Safety System Targeted Malware Appendix A: TriStation Message Type Codes The following table consists of hex values at offset 0 in the TriStation UDP packets and the associated dictionary definitions, extracted verbatim from the TRITON framework in library TS_cnames.pyc.

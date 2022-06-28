@@ -1,0 +1,4 @@
+
+This binary was targeted by the actor because it is executed by the Pulse Secure appliance during a system upgrade.
+The actor’s script verifies that the umount binary executes with a specific set of arguments, which are identical to the arguments used by the Pulse Secure appliance to executes the binary.
+The inserted malicious bash script remounts the filesystem as read-write and iterates through a series of bash routines to inject the ATRIUM webshell, hide SLOWPULSE from a legacy file integrity bash script, remove or add itself from the umount file, and validate the web process was running after a reboot to return the filesystem back to read-only.

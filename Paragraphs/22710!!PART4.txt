@@ -1,0 +1,6 @@
+
+This incident smacks strongly of the CamScanner episode , in which the app’s developers implemented an advertisement SDK from an unverified source and it turned out to be malicious.
+That’s also how malware got into APKPure.
+Looks like APKPure version 3.17.18 was likewise fitted with an advertisement SDK, one with an embedded Trojan dropper , which Kaspersky solutions detect as HEUR:Trojan-Dropper.
+AndroidOS.Triada.ap.
+When launched, it unpacks and runs its payload , which is the dangerous part.

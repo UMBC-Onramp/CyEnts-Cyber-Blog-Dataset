@@ -1,0 +1,10 @@
+
+Moving forward it would be reasonable to anticipate additional frameworks, such as TRITON, designed for usage against other SIS controllers and associated technologies.
+If Triconex was within scope, we may see similar attacker methodologies affecting the dominant industrial safety technologies.
+Basic security measures do little to thwart truly persistent threat actors and monitoring only IT networks is not an ideal situation.
+Visibility into both the IT and OT environments is critical for detecting the various stages of an ICS intrusion.
+Simple detection concepts such as baseline deviation can provide insight into abnormal activity.
+While the TRITON framework was actively in use, how many traditional ICS “alarms” were set off while the actors tested their exploits and backdoors on the Triconex controller?
+How many times did the TriStation protocol, as implemented in their Python scripts, fail or cause errors because of non-standard traffic?
+How many TriStation UDP pings were sent and how many Connection Requests?
+How did these statistics compare to the baseline for TriStation traffic?

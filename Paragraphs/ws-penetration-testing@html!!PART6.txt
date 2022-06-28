@@ -1,0 +1,6 @@
+
+If budgets were\nnot an issue, you would want to do all of the above, but in reality\nyou will need to prioritize your efforts on what makes sense for\nyour organization.
+Keep in mind that the best approach may change\nover time as your organization matures.
+Where In what physical location should the test take\nplace?
+Many types of penetration testing can be done remotely, but\nsome require the testers to visit your facility.
+Physical social\nengineering engagements and wireless assessments clearly need to be\nperformed at one (or more) of your locations.

@@ -1,0 +1,11 @@
+
+The threat actors were seen using rclone to exfiltrate hundreds of gigabytes of data over the SMB protocol to the pCloud cloud-based hosting and storage service.
+The threat actor deployed the file power_encryptor.exe in a victim environment, encrypting files and creating ransom notes over the SMB protocol.
+Mandiant observed the threat actor navigate to ESXi administration interfaces and disable snapshot features prior to the ransomware encryptor deployment, which affected several VM images.
+UNC2465 UNC2465 activity dates back to at least April 2019 and is characterized by their use of similar TTPs to distribute the PowerShell-based .NET
+backdoor SMOKEDHAM in victim environments.
+In one case where DARKSIDE was deployed, there were months-long gaps, with only intermittent activity between the time of initial compromise to ransomware deployment.
+In some cases, this could indicate that initial access was provided by a separate actor.
+UNC2465 used phishing emails and legitimate services to deliver the SMOKEDHAM backdoor.
+SMOKEDHAM is a .NET backdoor that supports keylogging, taking screenshots, and executing arbitrary .NET commands.
+During one incident, the threat actor appeared to establish a line of communication with the victim before sending a malicious Google Drive link delivering an archive containing an LNK downloader.

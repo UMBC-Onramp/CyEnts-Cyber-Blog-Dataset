@@ -1,0 +1,16 @@
+
+The generalized targeting of organizations involved in energy and petrochemicals mirrors previously observed targeting by other suspected Iranian threat groups, indicating a common interest in the sectors across Iranian actors.
+Figure 1 shows the global scope of APT33 targeting.
+Figure 1: Scope of APT33 Targeting Spear
+Phishing APT33 sent spear phishing emails to employees whose jobs related to the aviation industry.
+These emails included recruitment themed lures and contained links to malicious HTML application (.hta) files.
+The .hta files contained job descriptions and links to legitimate job postings on popular employment websites that would be relevant to the targeted individuals.
+An example .hta
+file excerpt is provided in Figure 2.
+To the user, the file would appear as benign references to legitimate job postings; however, unbeknownst to the user, the .hta file also contained embedded code that automatically downloaded a custom APT33 backdoor.
+Figure 2: Excerpt of an APT33 malicious .hta
+file We assess APT33 used a built-in phishing module within
+the publicly available ALFA
+TEaM Shell (aka ALFASHELL) to send hundreds of spear phishing emails to targeted individuals in 2016.
+Many of the phishing emails appeared legitimate – they referenced a specific job opportunity and salary, provided a link to the spoofed company’s employment website, and even included the spoofed company’s Equal Opportunity hiring statement.
+However, in a few cases, APT33 operators left in the default values of the shell’s phishing module.

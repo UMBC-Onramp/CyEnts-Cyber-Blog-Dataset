@@ -1,0 +1,7 @@
+
+In February 2021, we saw the botnet remove the minexmr mining pool and only use f2pool.
+Then, in March 2021, Juniper Threat Labs noticed a significant uptick in activity, as recorded by our sensors.
+In addition to incorporating more exploits, the botnet now combines the worm and the miner into a single binary.
+Our researchers believe the threat actor will have better control and management with a single binary as the binary is constantly updated.
+Sysrv also added nanopool as a new mining pool.
+We also identified new development in the loader script where it tries to add ssh keys to infected system.

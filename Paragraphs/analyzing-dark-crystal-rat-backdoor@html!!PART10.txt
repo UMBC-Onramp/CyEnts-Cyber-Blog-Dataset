@@ -1,0 +1,5 @@
+
+Contrasting the new output with the obfuscated version shown previously in Figure 6, we found the deobfuscated code much more readable.
+In the deobfuscated version, all the calls to ExporterServerManager.
+InstantiateIndexer were removed; as suspected, it was apparently a string decoding routine.
+In contrast, the class names shown in the Assembly Explorer did not change; the obfuscator must have irrecoverably replaced the original class names with meaningless ones obtained from a standard list.

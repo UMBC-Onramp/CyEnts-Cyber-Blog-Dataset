@@ -1,0 +1,4 @@
+
+All but one of the file name patterns for the ZIP, PDF and JS files were document_<state>_client-id_<4 digit number>.extension, such as “document_Ohio_client-id_8902.zip”.
+Each of the observed DOUBLEDRAG downloaders used in the first wave attempted to download a second-stage memory-only dropper, which Mandiant tracks as DOUBLEDROP, from either hxxp://p-leh[.]com/update_java.dat or hxxp://clanvisits[.]com/mini.dat.
+The downloaded file is a heavily obfuscated PowerShell script that will launch a backdoor into memory.

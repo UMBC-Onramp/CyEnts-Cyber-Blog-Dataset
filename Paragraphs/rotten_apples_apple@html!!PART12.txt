@@ -1,0 +1,4 @@
+
+The Apple credential phishing detection teams could use this information, as it highlights that all domains registered with these email addresses, registrant names and addresses, as well as their combinations, are potentially malicious and serving phishing content.
+This information could be used to block all future domains registered by the same entities.
+Patterns emerging from this data reveal that for such campaigns, attackers prefer to use email addresses from Chinese services such as qq.com, 126.com and 138.com.

@@ -1,0 +1,12 @@
+
+Here are some of the tools, but there are many more:
+MISP OpenCTI
+Elasticsearch, Kibana, Logstash Splunk Threat Hunter Playbook CSIRO Data61 Constellation Maltego RStudio MITRE CALDERA Jupyter Notebook Python SilkETW
+For a full list of tools, please visit our GitHub repository .
+Installation Similar to FLARE-VM and Commando VM , it's recommended to install ThreatPursuit VM in a virtual machine.
+The following is an overview of the minimal and recommended installation requirements.
+Requirements Windows 10 1903 or greater 60 GB Hard Drive 4 GB RAM Recommended Windows 10 1903 80+ GB Hard Drive 6+ GB RAM 1 network adapter OpenGL Graphics Card 1024mb Enable Virtualization support for VM Required for Docker (MISP, OpenCTI)
+Standard Install The easiest way to install ThreatPursuit VM is to use the following steps.
+This will install all the default tools and get you finding evil in no time!
+Create and configure a new Windows 10 VM with the aforementioned requirements.
+Ensure VM is updated completely.

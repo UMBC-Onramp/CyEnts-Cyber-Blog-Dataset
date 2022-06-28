@@ -1,0 +1,5 @@
+
+Each of these approaches has their place, but this post teaches a way to use debugger scripting to automatically self-decode all obfuscated strings.
+Challenge To decode all obfsucated strings, we need to find the following: the string decoder function, each time it is called, and all arguments to each of those instances.
+We then need to run the function and read out the result.
+The challenge is to do this in a semi-automated way.

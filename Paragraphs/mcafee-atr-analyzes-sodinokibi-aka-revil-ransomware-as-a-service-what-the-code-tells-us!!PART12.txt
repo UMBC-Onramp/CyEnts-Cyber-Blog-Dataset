@@ -1,0 +1,13 @@
+
+net ->
+This value can be false or true.
+By default, it is usually true, meaning that the malware will send information about the victim if they have Internet access to the domain list in the field “dmn” in the config.
+nbody ->
+A big string encoded in base64 that is the template for the ransom note that will appear in each folder where the malware can create it.
+nname ->
+The string of the name of the malware for the ransom note file.
+It is a template that will have a part that will be random in the execution.
+exp ->
+This field is very important in the config.
+By default it will usually be ‘false’, but if it is ‘true’, or if the check of the hash of the config fails, it will use the exploit CVE-2018-8453.
+The malware has this value as false by default because this exploit does not always work and can cause a Blue Screen of Death that avoids the malware’s goal to encrypt the files and request the ransom.

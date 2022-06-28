@@ -1,0 +1,10 @@
+
+In this example the command line arguments are not present because they are disabled by default and Mandiant rarely sees this policy enabled by clients on investigations.
+Field Example Write Time (UTC) 2020-03-10 16:40:58 Log Security Source Microsoft Windows security EID 4688
+Message A new process has been created.
+Creator Subject: Security ID:             TEST-DOMAIN\\BackupAdmin Account Name:            BackupAdmin Account Domain:          TEST-DOMAIN Logon ID:                0x6D6AD Target Subject: Security ID:             NULL SID Account
+Name:            - Account Domain:          - Logon ID:                0x0
+Process
+Information: New Process ID:          0x24b0 New Process Name:        C:\\Windows\\Temp\\legitservice.exe Token Elevation Type:    %%1938
+Mandatory Label:         Mandatory Label\\Medium Mandatory Level Creator Process ID:
+      0x238f

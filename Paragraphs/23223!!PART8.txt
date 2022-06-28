@@ -1,0 +1,7 @@
+
+3.
+Avoid suspicious websites Not limiting themselves to links in e-mails, cybercriminals employ a formidable array of tricks to dupe victims into downloading malware.
+If clicking on a banner results in an unexpected Web resource appearing, or the screen prompting you to download something, close the page immediately.
+You are very likely seeing an infection attempt.
+4.
+Update software in a timely manner To penetrate devices, cybercriminals often exploit known vulnerabilities that developers have already patched.

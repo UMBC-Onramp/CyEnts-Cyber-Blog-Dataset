@@ -1,0 +1,7 @@
+
+This means that the listeners do not have to be exposed at all; everything can be decided by the proxy.
+The user can set the Hidden option in the configuration file to False to ensure the Listener will be bound to the port indicated in the configuration file.
+Setting Hidden to True will force any packets to go through the proxy before accessing the Listener.
+For example, if the analyst suspects that malware is using FTP on port 80, she can ‘hide’ HTTP from catching the traffic, and let the proxy detect FTP and forward the packet to the FTP Listener.
+Additional configuration options exist for choosing which protocols are polled by the proxy.
+See Figure 2 and Figure 3 for configuration examples.

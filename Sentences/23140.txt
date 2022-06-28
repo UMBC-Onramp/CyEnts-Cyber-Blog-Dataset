@@ -1,0 +1,47 @@
+With the colossal amount of telephone scamming these days, you’d be hard-pressed to find a phone owner anywhere on the planet who hasn’t been a scammer’s target at least once .
+
+But like all forms of cold calling, phone scams are resource-intensive and highly inefficient.
+
+Therefore, some scammers try to optimize the process by getting potential victims to call them.
+
+One tool they use is good old-fashioned spam.
+
+“If you didn’t make this purchase, please call us” We recently detected several waves of spam e-mails, seemingly from reputable companies, notifying recipients of substantial purchases.
+
+The item in question is usually a high-end device such as the latest Apple Watch or a gaming laptop purchased from Amazon or paid for through PayPal.
+
+Fake PayPal/Amazon purchase confirmations with vishing phone numbers Other, more exotic variants crop up from time to time.
+
+For example, we detected an e-mail about the purchase of $1,999 worth of “Cryptocurrency (Bitcoin)”:
+
+Fake PayPal notification, including the scammers’ phone number, of a “Cryptocurrency (Bitcoin)”
+
+purchase Other, similar notifications mention the purchase of security software licenses — we’ve seen some referring to Norton and even Kaspersky (although our product lineup has never included a “Kaspersky Total Protection.”)
+
+Fake notifications about the purchase of Norton and “Kaspersky Total Protection” licenses with vishing phone numbers The scam relies on recipients being so alarmed by the not-insubstantial loss that they will act rashly, hoping to get their money back.
+
+Of course, their money hasn’t gone anywhere — at least, not yet.
+
+This particular strain of spam e-mails contain no links, but they do include a phone number that the victim is asked to call if they want to change or cancel the order.
+
+Sometimes the number sits unobtrusively somewhere at the bottom of the text.
+
+Other times it is highlighted in red and repeated several times in the message.
+
+What happens if you call?
+
+Most likely the scammers will try to wangle your login credentials for some financial service or bank card details.
+
+Alternatively, they might try to trick you into transferring money or even installing a Trojan on your computer, which has been known to happen .
+
+The only limits are the scammers’ imagination and vishing skills.
+
+How to guard against such e-mails The particulars may change, but all scams have certain elements in common: the use of some sort of trick to get someone to do something.
+
+Vishing is no different.
+
+Follow these guidelines for safety: Do not call back; Log in to your account with the service in question — type the address into your browser; don’t click on any links in the message — and check your orders or recent activity page; Check your balance and the list of recent transactions on all of your cards, if you have reason for concern; Install a reliable antivirus utility with protection against financial attacks, phishing, and online fraud.
+
+
+
+

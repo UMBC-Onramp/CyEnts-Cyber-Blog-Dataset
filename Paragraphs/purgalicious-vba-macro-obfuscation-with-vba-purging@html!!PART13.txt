@@ -1,0 +1,9 @@
+
+Remove performance cache in _VBA_PROJECT\nstream.
+Replace the entire stream with _VBA_PROJECT\nheader.
+byte[] data =\nUtils.
+HexToByte(\"CC-61-FF-FF-00-00-00\"); A little bit of Googling shows this header was built based on Microsoft’s\nspecifications .
+ 
+But if we compare a purged and unpurged document,\nit looks like that header actually varies from specifications in\npractice (Figure 7).
+Figure 7:
+Comparison of purged and\nunpurged document This header isn’t necessarily proof that a document is malicious or\nwas created with OfficePurge, but it could be a good indicator that\nthe document was created programmatically versus with Office products.\nWith anomalies such as this, we can start building a rule similar to\nthe following, which will search for documents with a “small” _VBA_PROJECT stream and this suspicious stream header: rule FEYE_OLE_VBAPurged_2 { meta: author =

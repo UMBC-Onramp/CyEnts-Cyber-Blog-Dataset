@@ -1,0 +1,8 @@
+By McAfee Labs on Oct 02, 2019 Episode 1: What the Code Tells Us McAfee’s Advanced Threat Research team (ATR) observed a new ransomware family in the wild, dubbed Sodinokibi (or REvil), at the end of April 2019.
+Around this same time, the GandCrab ransomware crew announced they would shut down their operations.
+Coincidence?
+Or is there more to the story?
+In this series of blogs, we share fresh analysis of Sodinokibi and its connections to GandCrab, with new insights gleaned exclusively from McAfee ATR’s in-depth and extensive research.
+Episode 1: What the Code Tells Us Episode 2: The All-Stars Episode 3: Follow the Money Episode 4:
+Crescendo In this first instalment we share our extensive malware and post-infection analysis and visualize exactly how big the Sodinokibi campaign is.
+Background Since its arrival in April 2019, it has become very clear that the new kid in town, “Sodinokibi” or “REvil” is a serious threat.

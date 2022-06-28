@@ -1,0 +1,4 @@
+
+Starting from a singular intrusion at a Managed Defense client, we were able to discover UNC1878 activity at multiple customers.
+Using our analysis of the early stages of their activity allowed us to pivot and pursue this actor across otherwise unrelated investigations.
+As we refine and expand our understanding of UNC1878’s tradecraft, our team enables Mandiant and Managed Defense to efficiently identify, respond to, and eradicate a financially motivated threat actor whose end goal could cripple targeted organizations.

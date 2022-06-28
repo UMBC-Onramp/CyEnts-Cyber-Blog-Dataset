@@ -1,0 +1,6 @@
+
+To compute attention scores, the Transformer performs a dot product between a Query vector q and a Key vector k : q encodes the current hidden state, representing the word that searches for other words in the sequence to pay attention to that may help supply context for it.
+k encodes the previous hidden states, representing the other words that receive attention from the query word and might contribute a better representation for it in its current context.
+Figure 3 displays how this dot product is computed based on single neuron activations in q and k using an attention visualization tool called bertviz .
+Columns in Figure 3 trace the computation of attention scores from the highlighted word on the left, “America,” to the complete sequence of words on the right.
+For example, to decide to predict “#” following the word “America,” this part of the model focuses its attention on preceding words like “ban,” “Immigrants,” and “disgrace,” (note that the model has broken “Immigrants” into “Imm” and “igrants” because “Immigrants” is an uncommon word relative to its component word pieces within pre-trained GPT-2's original training dataset).

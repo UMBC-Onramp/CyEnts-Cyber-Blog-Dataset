@@ -1,0 +1,8 @@
+
+FIGURE 3.
+SAVE ADDRESS OF FUNCTIONS TO USE LATER IN A DYNAMIC WAY Later, the malware enters in a big block of trash code that also includes some elements to decrypt strings and important information for later.
+The malware uses some tricks to detect debuggers at this point.
+The most important of those are: A big use of the PEB field “ IsDebuggerPresent ”.
+This field is a Boolean field that is filled from Windows with 1 (True) if the application is running inside of a debugger or 0 (False) if it is not.
+FIGURE 4.
+HIGH USE OF THE “ISDEBUGGERPRESENT” PEB FIELD TO DETERMINE IF THE APPLICATION IS RUNNING IN A DEBUGGER

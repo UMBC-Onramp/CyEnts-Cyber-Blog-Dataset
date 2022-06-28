@@ -1,0 +1,4 @@
+
+Trend Titanium OriginalFilename: VizorHtmlDialog.exe Figure 5:
+Rdws.exe version information The threat group likely used Trend Micro, a security software company headquartered in Japan, as the basis for the fake file version information deliberately, given the focus of this campaign on Japanese organizations.
+SOGU Command and Control The SOGU variant calls out to a previously unobserved command and control (CnC) domain, “amxil[.]opmuert[.]org” over port 443 in Figure 6.

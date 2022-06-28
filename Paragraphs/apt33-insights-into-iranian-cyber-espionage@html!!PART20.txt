@@ -1,0 +1,5 @@
+
+-Public NANOCORE
+Publicly available remote access Trojan (RAT) available for purchase.
+It is a full-featured backdoor with a plugin framework Public NETWIRE Backdoor that attempts to steal credentials from the local machine from a variety of sources and supports other standard backdoor features.
+Public TURNEDUP Backdoor capable of uploading and downloading files, creating a reverse shell, taking screenshots, and gathering system information Non-Public Indicators of Compromise APT33 Domains Likely Used in Initial Targeting Domain boeing.servehttp[.]com alsalam.ddns[.]net ngaaksa.ddns[.]net ngaaksa.sytes[.]net vinnellarabia.myftp[.]org APT33 Domains / IPs Used for C2 C2 Domain

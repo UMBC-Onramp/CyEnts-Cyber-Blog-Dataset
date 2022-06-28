@@ -1,0 +1,11 @@
+FireEye Email Security recently encountered various phishing campaigns, mostly in the Americas and Europe, using source code obfuscation with compromised or bad domains.
+These domains were masquerading as authentic websites and stole personal information such as credit card data.
+The stolen information was then shared to cross-platform, cloud-based instant messaging applications.
+Coming off a busy holiday season with a massive surge in deliveries, this post highlights a phishing campaign involving a fake DHL tracking page.
+While phishing attacks targeting users of shipping services is not new, the techniques used in these examples are more complex than what would be found in an off-the-shelf phishing kit.
+This campaign uses a WOFF-based substitution cypher, localization specific targeting, and various evasion techniques which we unravel here in this blog.
+Attack Flow The attack starts with an email imitating DHL, as seen in Figure 1 .
+The email tries to trick the recipient into clicking on a link, which would take them to a fake DHL website.
+In Figure 2, we can see the fake page asking for credit card details that, if submitted, would give the user a generic response while in the background the credit card data is shared with the attackers.
+Figure 1: DHL phishing attempt Figure 2:
+Fake website imitating DHL tracking This DHL phishing campaign uses a rare technique for obfuscating its source page.

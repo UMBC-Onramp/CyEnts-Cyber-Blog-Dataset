@@ -1,0 +1,7 @@
+
+We detect this implant as Backdoor.
+APT.WinHTTPHelper .
+The Admin@338 group discussed above has used variants of this same malware family in previous targeted attacks .
+This specific implant beacons out to dpmc.dynssl[.]com:443 and www.dpmc.dynssl[.]com:80.
+The domain dpmc.dynssl[.]com resolved to the following IPs:
+IP Address First Seen Last Seen 31.193.133.101 31.193.133.101 2013-11-01 2013-11-01 2013-11-29 2013-11-29 58.64.153.157 58.64.153.157 2014-01-10 2014-01-10 2014-03-08 2014-03-08 59.188.0.197 59.188.0.197 2014-03-14 2014-03-14 2014-03-17 2014-03-17 139.191.142.168 139.191.142.168 2014-03-17 2014-03-17 2014-03-19 2014-03-19 The www.dpmc.dynssl[.]com domain resolved to following IPs:

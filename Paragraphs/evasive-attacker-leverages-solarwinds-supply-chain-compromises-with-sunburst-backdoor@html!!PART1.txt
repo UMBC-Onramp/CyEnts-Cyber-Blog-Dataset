@@ -1,0 +1,8 @@
+Executive Summary We have discovered a global intrusion campaign.
+We are tracking the actors behind this campaign as UNC2452.
+FireEye discovered a supply chain attack trojanizing SolarWinds Orion business software updates in order to distribute malware we call SUNBURST.
+The attacker’s post compromise activity leverages multiple techniques to evade detection and obscure their activity, but these efforts also offer some opportunities for detection.
+The campaign is widespread, affecting public and private organizations around the world.
+FireEye is releasing signatures to detect this threat actor and supply chain attack in the wild.
+These are found on our public GitHub page .
+FireEye products and services can help customers detect and block this attack.

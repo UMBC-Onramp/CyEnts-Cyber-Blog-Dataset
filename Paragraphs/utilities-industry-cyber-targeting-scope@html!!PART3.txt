@@ -1,0 +1,7 @@
+
+The most likely targeted information for data theft in this industry includes smart grid technologies, water and waste management expertise, and negotiations information related to existing or pending deals involving Western utilities companies operating in China.
+Why would Chinese APT Groups Seek to Exploit Utilities?
+Since 2010, Mandiant has responded to what we assessed were Chinese cyber espionage incidents occurring at multiple utilities companies involved in electric power generation.
+We recognize the PRC's utilities sector for electric power development, construction, operations, and distribution is heavily concentrated on a select few state-owned enterprises (SOE) with close ties to the central government.
+We suspect these relationships provide APT groups with a fundamental incentive to conduct espionage to attain advanced technology and operations expertise.
+By way of possible motivation, the PRC is in the midst of a historic makeover that involves the transformation of urban infrastructures, which, by 2025, is likely to produce 15 mega-cities with an average of 25 million inhabitants, or about the entire population of the United States.

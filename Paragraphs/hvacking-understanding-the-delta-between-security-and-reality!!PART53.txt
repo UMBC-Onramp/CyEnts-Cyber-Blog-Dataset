@@ -1,0 +1,10 @@
+
+The state of these items can be tracked through either LEDs on the modules or the touchscreen interface, hence it was unnecessary for us to acquire them for testing purposes.
+Despite this, it is still important to note which type of input or output each “device”, virtual or otherwise, is connected to on the modules.
+Figure 27 The programming to control these devices is surprisingly simple.
+Essentially, based on the inputs, an output is rendered.
+Figure 28 shows the programming logic present on the device during our testing.
+Figure 28
+There are three user-defined software variables: “Heating System”, “Room Temp Spt”, and “Heating System Enable Spt”.
+  Here, “spt” indicates a set point.
+These can be defined by an operator at run time and help determine when an output should be turned on or off.

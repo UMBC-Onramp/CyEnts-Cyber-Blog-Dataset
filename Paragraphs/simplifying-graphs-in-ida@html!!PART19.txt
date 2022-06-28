@@ -1,0 +1,17 @@
+
+* IDASDK: path to the extracted IDA 7.0 (or newer) SDK.
+This Should have `include` and `lib` paths beneath it.
+* BOOSTDIR: path to the extracted Boost library.
+Should have `boost` and `libs` paths beneath it.
+The easiest way is to use the Microsoft command-line build tools: * For IDA7.0:
+Launch VS2013 x64 Native Tools Command Prompt, then run: ``` msbuild SimplifyGraph.sln /property:
+Configuration=
+ReleaseIDA70_32 /property:
+Platform=x64 msbuild SimplifyGraph.sln /property:
+Configuration=ReleaseIDA70_64 /property:
+Platform=x64
+``` * For IDA6.95: Launch VS2013 x86 Native Tools Command Prompt, then run: ``` msbuild SimplifyGraph.sln /property:
+Configuration=ReleaseIDA695_32 /property:
+Platform=Win32
+msbuild SimplifyGraph.sln /property:
+Configuration=ReleaseIDA695_64 /property:

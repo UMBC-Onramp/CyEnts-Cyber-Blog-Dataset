@@ -1,0 +1,7 @@
+
+If attaching to nsiproxy.sys fails, the rootkit attaches to \\Device\\Tcp instead, intercepting IOCTL_TCP_QUERY_INFORMATION_EX (0x120003) and hiding network connections in a similar manner.
+By default, the global network list is initialized with the following process paths: *\\SYN.EXE *\\SVCHOST.EXE
+As a result, TCP connections of all services running under svchost.exe are hidden, not just the ones of the Milestone backdoor.
+Attribution The Milestone backdoor is actually the same Infoadmin RAT that was used by Deep Panda back in the early 2010s, referenced in blogs from 2013 and 2015 .
+Although many backdoors are based on Gh0st RAT code, Milestone and Infoadmin are distinguishable from the rest.
+Besides having profoundly similar code, both backdoors incorporate identical modifications of Gh0st RAT code not seen in other variants.

@@ -1,0 +1,15 @@
+
+                 shl     eax, 8 .text:1019295D                 or      eax, ecx .text:1019295F
+                 mov     ecx, ebx .text:10192961
+                 mov     [esi+0Ch], eax  ; 0x441 .text:10192964
+                 call    sub_1002E2B3
+The buffer is allocated with fixed size 0x2000: .text:101A647E
+                 push    2000h .text:101A6483
+                 mov     ecx, esi .text:101A6485                 call    sub_101A6257    ; alloc 0x2000 buffer, store in esi+0xDC …… .text:101A627F
+                 push    0 .text:101A6281                 push    edi             ; 0x2000 .text:101A6282
+                 call    sub_105EBEB0 .text:101A6287                 pop     ecx .text:101A6288                 pop     ecx .text:101A6289                 mov     [esi+0DCh], eax Since the size is controlled by the attacker, it’s possible to overflow the fixed size buffer with certain data.
+A datasize of 0x441 results in a value here of 0x1100 passed to sub_100F88F8, which memcopies 0x2200 bytes in 0x11 chunks of 0x200.
+The last memcpy overflows the fixed size 0x2000 buffer into a adjacent heap memory.
+Attackers spray the heap with array of Vector, 0x7fe * 4 + 8 ==
+0x2000, and create holes of such size, which will be allocated by the said object.
+while (_local_2 < this._bp35) // _bp35 ==

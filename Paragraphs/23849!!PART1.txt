@@ -1,0 +1,4 @@
+The gaming community is discussing a recent vulnerability in the Dark Souls III videogame.
+This RCE vulnerability allows attackers to remotely execute arbitrary code on a victim’s computer.
+Apparently, the vulnerability also affects earlier games in the Dark Soul series: because of this the developers have taken the unusual step of temporarily deactivating PvP servers across Dark Souls Remastered, Dark Souls II, and Dark Souls III.
+According to the developers , they also plan to turn off servers for Dark Souls: Prepare To Die as well.

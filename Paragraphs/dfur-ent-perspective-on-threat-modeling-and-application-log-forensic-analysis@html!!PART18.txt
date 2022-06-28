@@ -1,0 +1,9 @@
+
+The code contains pre-indexed data and CSV files referenced by searches contained in four Splunk XML dashboards.
+All data, such as IP addresses and usernames, was fabricated for the purposes of the demo and any association with organizations, users, or pets is coincidental.
+Watch the recording of our SANS DFIR Summit presentation .
+Download the \"DFUR\" Splunk application in FireEye GitHub .
+If you need assistance investigating application attacks or developing log analysis capabilities, contact us at investigations@mandiant.com.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

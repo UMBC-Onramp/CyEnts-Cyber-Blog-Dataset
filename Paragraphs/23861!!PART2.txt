@@ -1,0 +1,4 @@
+
+Over the past few months I have received a lot of questions from concerned users worldwide on how to protect their mobile devices from Pegasus and other similar tools and malware.
+We are trying to address this in the current article, with the observation that no list of defence techniques can ever be exhaustive.
+Additionally, as attackers change their modus operandi, protection techniques should also be adapted.

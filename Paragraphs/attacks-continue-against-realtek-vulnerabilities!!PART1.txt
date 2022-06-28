@@ -1,0 +1,4 @@
+As we predicted in last week’s post , threat actors continue to utilize new Realtek vulnerabilities disclosed by IoT Inspector Research Lab to distribute malware.
+Starting on August 19 th , Juniper Threat Labs observed a new set of attacks in the wild on IoT firmware built with the Realtek SDK, this time targeting CVE-2021-35395, which was just disclosed on August 16 by IoT Inspector.
+(Some of these attacks were previously noted in a SAM Seamless Network blog post .)
+These attacks are ongoing.

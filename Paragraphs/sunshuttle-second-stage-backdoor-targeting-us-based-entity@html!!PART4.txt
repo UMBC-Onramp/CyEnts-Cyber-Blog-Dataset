@@ -1,0 +1,4 @@
+
+SUNSHUTTLE would function as second-stage backdoor in such a compromise for conducting network reconnaissance alongside other SUNBURST-related tools.
+Technical Annex Mandiant Threat Intelligence discovered a sample of the SUNSHUTTLE backdoor uploaded to an online multi-Antivirus scan service.
+SUNSHUTTLE is a backdoor, written in GO, that reads an embedded or local configuration file, communicates with its C2 server over HTTPS and supports commands including remotely updating its configuration, file upload and download, and arbitrary command execution.

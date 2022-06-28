@@ -1,0 +1,3 @@
+
+Figure 1: emulateRange being used to track the return value of GetProcAddress iterate – This API is used to force emulation down specific branches within a function in order to reach a given target.
+The user can specify a list of target addresses, or the address of a function from which a list of cross-references to the function is used as the targets, along with a callback for when a target is reached.

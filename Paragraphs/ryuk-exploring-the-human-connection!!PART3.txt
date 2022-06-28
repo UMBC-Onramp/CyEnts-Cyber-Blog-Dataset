@@ -1,0 +1,6 @@
+
+For the Ryuk case described above the model can be applied as follows: “An Adversary , cyber-criminal(s), have a capability (Ryuk Ransomware) that is being spread via a TrickBot infection Infrastructure targeting specific victims .
+Diamond model of Intrusion Analysis The Diamond Model offers a holistic view of an intrusion that is a helpful guideline to shape the direction of intelligence research.
+By searching for relationships between two elements one can gather new evidence.
+For instance, by analyzing and reverse engineering a piece of malware one might uncover that a certain server is being used for command and control infrastructure, thus linking capability with infrastructure (as shown below).
+Linking Infrastructure and Capability Alternatively, one might search underground forums to find information on adversaries who sell certain pieces of malware, thus linking an adversary with a capability.

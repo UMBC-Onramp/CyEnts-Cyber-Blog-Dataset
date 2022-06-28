@@ -1,0 +1,7 @@
+
+We created a Splunk application called “ Dog and Feline Urgent Response (DFUR) ” available on the FireEye GitHub that contains pre-indexed data and dashboards that you can use to follow along with the following attack scenarios.
+But, enough kitten around.
+Let’s introduce you to DFUR!
+DFUR:
+Dog and Feline Urgent Response DFUR is a long-standing organization in the pet wellness industry that provides care providers, pet owners, and insurance providers with application services.
+Care providers, such as veterinarians, use DFUR to process patient records, submit prescriptions, and order additional care services Pet owners use DFUR to make appointments, pay bills, and see diagnostic test results Insurance providers use DFUR to receive and pay claims to pet care providers Application users log into a web portal that forwards logon and user transaction logs to DFUR’s Splunk ES instance.

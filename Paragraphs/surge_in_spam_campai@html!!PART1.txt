@@ -1,0 +1,11 @@
+FireEye Labs is detecting a significant spike in Locky ransomware downloaders due to a pair of concurrent email spam campaigns impacting users in over 50 countries.
+Some of the top affected countries are depicted in Figure 1.
+Figure 1.
+Affected countries As seen in Figure 2, the steep spike starts on March 21, 2016, where Locky is running campaigns that coincide with the new Dridex campaigns that were discussed in the blog, “Stop Scanning My Macro”.
+Figure 2.
+Detection on spam delivered malware Prior to Locky’s emergence in February 2016, Dridex was known to be responsible for a relatively higher volume of email spam campaigns.
+However, as shown in Figure 3, we can see that Locky is catching up with Dridex’s spam activities.
+This is especially true for this week, as we are seeing more Locky-related spam themes than Dridex.
+On top of that, we also are seeing Dridex and Locky running campaigns on the same day, which resulted in an abnormal detection spike.
+Figure 3.
+Dridex versus Locky spam campaign over time Locky Ransomware spam The new Locky spam campaign uses several themes such as “invoice notice”, “attached image”, and “attached document themes”.

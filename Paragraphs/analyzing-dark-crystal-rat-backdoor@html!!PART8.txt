@@ -1,0 +1,9 @@
+
+InstantiateIndexer looks like it may be a deobfuscation routine Deobfuscation De4dot is a .NET deobfuscator that knows how to undo many types of obfuscations.
+Running de4dot -d (for detect) on dfsds.exe (Figure 8) informed us that .NET
+Reactor was used to obfuscate it.
+> de4dot -d dfsds.exe de4dot v3.1.41592.3405 Copyright (C) 2011-2015
+de4dot@gmail.com
+Latest version and source code: https://github.com/0xd4d/de4dot Detected .NET
+Reactor (C:\\...\\dfsds.exe) Figure 8: dfsds.exe is obfuscated with .NET
+Reactor After confirming that de4dot can deobfuscate dfsds.exe, we ran it again to deobfuscate the sample into the file dfsds_deob.exe (Figure 9).

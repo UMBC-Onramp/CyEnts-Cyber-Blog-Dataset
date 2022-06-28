@@ -1,0 +1,16 @@
+
+There are many procedural and technical controls that could help prevent a system being compromised.
+Most larger enterprises are complex and identifying all publicly exposed software and services can be challenging.
+We’ve worked on many cases where system administrators didn’t believe their system was directly accessible from the internet only to later confirm it was.
+Prioritizing particular patches can be difficult and if you don’t think a RCE vulnerability is exposed then the Risk level might be incorrectly classified as low.
+A combination of controls is typically the best approach.
+In Managed Defense we assume these controls are imperfect and attackers will find a way to bypass them.
+Deploying strong monitoring capabilities combined with a team of analysts hunting through lower fidelity signatures or “weak signals” can uncover otherwise unnoticed adversaries.
+Learn more about Mandiant Managed Defense here .
+ Catch an on-demand recap on this and the Top 5 Managed Defense attacks this year.
+Weaver Build Timeline 2019-09-20:
+Weaver Patch released 2019-09-20: Exploit observed in Managed Defense 2019-09-22:
+Exploit POC blogged 2019-10-03:
+First public mention outside China References Microsoft certutil page Microsoft mofcomp page bmfdec GitHub page Weaver Threat Alert Volatility GitHub page Subscribe to Blogs Get email updates as new blog posts are added.
+
+

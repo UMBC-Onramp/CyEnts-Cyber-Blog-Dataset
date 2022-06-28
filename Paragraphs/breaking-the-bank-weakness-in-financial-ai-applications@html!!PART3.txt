@@ -1,0 +1,8 @@
+
+It should be noted that adversarial AI research demonstrates how anomalies in a model do not necessarily point users toward a wrong answer, but redirect users away from the more correct output.
+Additionally some cases of compromise require threat actors to obtain a copy of the model itself, through reverse engineering or compromising the machine learning pipeline of the target.
+The following are some vulnerabilities that assume this white-box knowledge of the models under attack: Classifiers are used for detection and identification, such as object recognition in driverless cars and malware detection in networks.
+Researchers have demonstrated how these classifiers can be susceptible to evasion , meaning objects can be misclassified due to inherent weaknesses in the mode (Figure 1).
+Figure 1:
+Examples of classifier evasion where AI models identified 6 as 2 Researchers have highlighted how data poisoning can influence the outputs of AI recommendation systems.
+By changing reward pathways, adversaries can make a model suggest a suboptimal output such as reckless trades resulting in substantial financial losses.

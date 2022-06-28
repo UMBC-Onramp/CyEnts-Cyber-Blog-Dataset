@@ -1,0 +1,8 @@
+
+Several other service names and descriptions have been observed among different samples.
+While it has the same name as the legitimate Microsoft newdev.dll , it has only two of the real newdev.dll's exports plus an additional ServiceMain export.
+Overall, the backdoor has capabilities similar to Gh0st RAT’s, with notable differences.
+Its C2 communication is uncompressed, unlike Gh0st RAT communication which is zlib-compressed.
+There are differences in commands as well.
+For example, in the CMD command, some variants first copy cmd.exe to dllhost.exe to avoid detection by security products that monitor CMD executions.
+Additionally, the backdoor supports a command that sends information about the current sessions on the system to the server.

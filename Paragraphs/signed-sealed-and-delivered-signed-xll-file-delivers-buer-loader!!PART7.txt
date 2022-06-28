@@ -1,0 +1,10 @@
+
+Further analysis shows that this is most likely a compromised server and, based on experience, it is probably controlled by affiliates of the bad actors or the bad actors themselves.
+Taking a deeper inspection of the server we see that it contains an open directory that is public.
+In the folder where csrsc.exe resides, a directory timestamp appears to have been changed to look like it is one of the original files from 2016.
+However, analysis revealed that the csrsc.exe file was actually compiled in 2021.
+The directory also contains several other files from June 2021 that may be from a different campaign.
+We have also observed older campaigns over the past several years being downloaded from this same IP address.
+Some of these campaigns involve serving fake data recovery software as well as PayPal themed phishing sites.
+However, it is difficult to determine if these attackers are all related, or if this is simply a leased server used by multiple threat actors.
+A passive DNS entry of domains that resolved to this IP address highlights a variety of businesses entities, but overall, they appear to be a random collection of websites of customers belonging to the webhosting reseller.

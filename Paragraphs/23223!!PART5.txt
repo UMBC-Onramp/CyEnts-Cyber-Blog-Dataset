@@ -1,0 +1,7 @@
+
+No More Ransom , which is supported by Europol and various anticybercrime companies, hosts dozens of decryptors.
+If you’re unable to find a decryptor for the ransomware that attacked you, keep checking; one might be released any day.
+How to stay safe from ransomware Now that you know the enemy, it’s time to learn a few information hygiene rules that can help you avoid ransomware.
+1.
+Make backups Regularly save important files and documents to a cloud storage and to an external hard drive.
+You can limit photo backups to once a week or even every month, but be sure to back up important, current documents every few days or even daily.

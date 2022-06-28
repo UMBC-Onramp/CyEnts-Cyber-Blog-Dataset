@@ -1,0 +1,9 @@
+
+The malware configures multiple concurrent persistence mechanisms by creating command processor, screensaver, startup.run and runonce registry entries.
+The executable uses native Windows utilities such as WMIC and/or VSSAdmin to delete backups and shadow copies.
+Files are encrypted and messages are presented to the user requesting payment.
+Rather than waiting for the payload to be downloaded or started around stage four or five of the aforementioned attack cycle, Exploit Guard provides coverage for most steps of the attack cycle – beginning in this case at the second step.
+The most common way to deliver ransomware is via Word documents with embedded macros or a Microsoft Office exploit.
+FireEye Exploit Guard detects both of these attacks at the initial stage of the attack cycle.
+PowerShell Abuse When the victim opens the attached Word document, the malicious macro writes a small piece of VBScript into memory and executes it.
+This VBScript executes PowerShell to connect to an attacker-controlled server and download the ransomware (profilest.exe), as seen in Figure 1.

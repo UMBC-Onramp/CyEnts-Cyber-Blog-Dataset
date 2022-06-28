@@ -1,0 +1,7 @@
+
+Let’s add a count of how many times they logged in from each location as well.
+We will use the “Date” field to do this for this example: Figure 12: PivotTable field definitions Examining this table, we can immediately see there are two users with source location anomalies: Ginger Breadman and William Brody have a small number of logons from “FarFarAway”, which is abnormal for these users based on this data set.
+We can add more data to this PivotTable to get a timeframe of this suspicious activity by adding two more “Date” fields to the “Values” area.
+Excel defaults to “Count” of whatever field we drop in this area, but we will change this to the “Minimum” and “Maximum” values by using the “Value Field Settings”, as seen in Figure 13.
+Figure 13:
+Adding min and max dates Now we have a PivotTable that shows us anomalous locations for logons, as well as the timeframe in which the logons occurred, so we can hone our investigation.

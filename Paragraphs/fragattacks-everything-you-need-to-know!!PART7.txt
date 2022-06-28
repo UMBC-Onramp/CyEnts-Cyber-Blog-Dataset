@@ -1,0 +1,11 @@
+
+Always use HTTPS to encrypt all web traffic.
+Some browsers, such as Firefox, can alert users when visited websites don’t use HTTPS, but they have to be actively configured to do so.
+Use an application that encrypts files transfer locally over the network.
+Urge or require employees to use the HTTPS Everywhere browser plugin.
+Update your WiFi and broadband firmware often.
+Some of these vulnerabilities have been fixed by some vendors; some fixes are coming soon.
+Find out if there are any devices on the network that do not receive updates and replace them with devices that do.
+Users should always use a virtual private network (VPN) when connecting via any public WiFi network.
+Update all your devices, including IoT devices .
+Add WiFi security training for remote workers and focus on keeping separate work-home networks and systems.

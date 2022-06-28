@@ -1,0 +1,3 @@
+
+However, Figure 15 and Figure 16 show how we can access the user’s photo album by leveraging the private APIs from built-in Photo.framework to harvest the metadata of photos.
+With a bit more code, one can export this image data to a remote location without the user’s knowledge.

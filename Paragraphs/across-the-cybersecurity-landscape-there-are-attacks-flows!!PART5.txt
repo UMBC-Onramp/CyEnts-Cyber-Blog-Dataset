@@ -1,0 +1,5 @@
+
+In this example , each action is in a red box (and references a MITRE ATT&CK technique), each asset is in a blue box, and some select properties are shown in a green box.
+As you can see, different flows have different outcomes—with different impacts on the organization.
+One path leads to “Cryptocurrency” while the other leads to “Data.”
+Having this type of information can help executives and IT security teams in deciding which defenses to prioritize based on the predictable outcomes they are most likely to see.

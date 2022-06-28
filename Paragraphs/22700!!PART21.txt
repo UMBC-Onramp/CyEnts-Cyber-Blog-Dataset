@@ -1,0 +1,7 @@
+
+Updating operating systems in such organizations can be difficult, so cybercriminals often used old — and therefore more accessible — exploits.
+2020:
+Rising scale and data leak extortion In addition to the rising scale of infection , as well as the consequences and ransom amounts, 2020 is memorable for a new hybrid approach that saw ransomware, before encrypting data, sending it to the cybercriminal operators.
+Threats to leak the information to competitors or to publish it followed.
+Given hypersensitivity about personal data these days, that could be fatal for a business.
+The tactic was first mastered by the Maze group back in 2019, but in 2020 it became a genuine trend.

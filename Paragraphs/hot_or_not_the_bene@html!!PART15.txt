@@ -1,0 +1,9 @@
+
+Figure 17 shows a simple demo function in JavaScript that, when running on the JSPatch framework, scrapes all the string contents off the pasteboard and displays them on the console.
+Figure 18 shows the output when this function is injected into the target application on a device.
+Figure 17.
+JavaScript code that scraps the pasteboard which might contain sensitive information Figure 18.
+Console output of the scraped content from pasteboard by code in Figure 17 We have shown five examples utilizing JSPatch as an attack vector, and the potential for more is only constrained by an attacker’s imagination and creativity.
+Future Attacks Much of iOS’ native capability is dependent on C functions (for example, dlopen() , UIGetImageScreen() ).
+Due to the fact that C functions cannot be reflectively invoked, JSPatch does not support direct Objective C to JavaScript mapping.
+In order to use C functions in JavaScript, an app must implement JSExtension, which packs the C function into corresponding interfaces that are further exported to JavaScript.

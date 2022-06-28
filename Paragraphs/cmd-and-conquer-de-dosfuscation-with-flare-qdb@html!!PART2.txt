@@ -1,0 +1,5 @@
+
+I will also share an Easter Egg that I found by flipping only a single bit in the process address space of cmd.exe.
+Finally, I will share the script that I added to flare-qdb so you can de-obfuscate malicious command scripts yourself by executing them (in a safe environment, of course).
+But first, I’ll talk about the analysis that led me to this solution.
+At First Glance Figure 1 shows a batch script (MD5 hash 6C8129086ECB5CF2874DA7E0C855F2F6) that has been obfuscated using the BatchEncryption tool referenced in Daniel Bohannon’s paper.

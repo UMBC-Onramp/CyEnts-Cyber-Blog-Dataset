@@ -1,0 +1,7 @@
+
+But it is always more convenient to work without an intermediary, which is why some virus writers adapted their handiwork for the Apple M1.
+Are older computers immune to M1 malware?
+The new malicious programs for the Apple M1 are not fundamentally new; they’re modifications of old ones.
+Cybercriminals tend to release the updated versions in a hybrid format, compatible with both platforms.
+How many varieties of M1 malware are out there?
+Our researchers have reliably identified four families already adapted for the M1.

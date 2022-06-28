@@ -1,0 +1,4 @@
+
+Thus the primary question of our research became “Is it possible in real time to modify a patient’s vitals being transmitted over the network?”
+Setup When performing a vulnerability assessment of any device, it is best to first operate the device as originally designed.
+Tracking vital signs is the essence of the patient monitor, so we looked for a way to accurately simulate those signs for testing.

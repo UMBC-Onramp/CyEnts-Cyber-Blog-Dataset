@@ -1,0 +1,8 @@
+
+We have not yet observed real attacks using these vulnerabilities.
+However, the proofs of concept are already in public, so exploitation can begin at any time.
+How to stay safe First, you need to update your operating system (and other programs from Microsoft) as soon as possible.
+In general, it is usually wise not to delay installing patches for critical software.
+Second, any computer or server connected to the Internet must be equipped with a reliable security solution capable not only of preventing the exploitation of known vulnerabilities, but also of detecting attacks with yet-unknown exploits.
+
+

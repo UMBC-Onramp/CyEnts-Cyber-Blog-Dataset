@@ -1,0 +1,10 @@
+
+Therefore, all nodes in the ctree will have the op property, which indicates the node type (variable, number, logical expression, etc.).
+The type of op (ctype_t) is an enumeration where all constants are named either cit_<xyz> (for statements) or cot_<xyz> (for expressions).
+Keep this in mind, as it will be very important.
+A quick way to inspect all ctype_t constants and their values is to execute the following code snippet:
+This produces the following output: Let’s dive a bit deeper and explain the two types of nodes: expressions and statements.
+It is useful to think about expressions as the “the little logical elements” of your code.
+They range from simple types such as variables, strings or numerical constants, to small code constructs (assignments, comparisons, additions, logical operations, array indexing, etc.).
+These are of type cexpr_t , a large structure containing several members.
+The members that can be accessed depend on its op value.

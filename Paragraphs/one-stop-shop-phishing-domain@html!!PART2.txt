@@ -1,0 +1,8 @@
+
+Prior to publication, FireEye notified the Indian Computer Emergency Response Team.
+Phishing Template Presentation and Techniques Step 1 URL: hxxp://csecurepay[.]com/load-cash-step2.aspx
+When navigating to the URL, the domain appears to be a payment gateway and requests that the user enter their bank account number and the amount to be transferred, as seen in Figure 1.
+The victim is allowed to choose their bank from a list that is provided.
+Figure 1: Bank information being requested By looking at the list, it is clear that only Indian banks are being targeted at this time.
+A total of 26 banks are available and these are named in the Appendix.
+Step 2 URL:  hxxp://csecurepay[.]com/

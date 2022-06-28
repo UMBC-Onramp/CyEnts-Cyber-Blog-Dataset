@@ -1,0 +1,8 @@
+
+Form-filling services serve as spam channels.
+The list goes on.
+Platform owners do try to combat the abuse, but with mixed results.
+Discord developers also clearly need to implement at least some basic means of user protection.
+For example, files used on a particular chat server need not be made available to the whole world.
+Checking and automatically blocking known malware also seems wise.
+Regardless, this is Discord’s least exotic problem, and combating it is really no different than dealing with any other method of malware distribution.

@@ -1,0 +1,8 @@
+
+A further three large financial institutions in Turkey were victims of this attack.
+The implant has so far not surfaced in any other sector or country.
+This campaign suggests the attackers may plan a future heist against these targets by using Bankshot to gather information.
+Bankshot implants are distributed from a domain with a name similar to that of the cryptocurrency-lending platform Falcon Coin, but the similarly named domain is not associated with the legitimate entity.
+The malicious domain falcancoin.io was created December 27, 2017, and was updated on February 19, only a few days before the implants began to appear.
+These implants are variations of earlier forms of Bankshot, a remote access tool that gives an attacker full capability on a victim’s system.
+This implant also contains functionality to wipe files and content from the targeted system to erase evidence or perform other destructive actions.

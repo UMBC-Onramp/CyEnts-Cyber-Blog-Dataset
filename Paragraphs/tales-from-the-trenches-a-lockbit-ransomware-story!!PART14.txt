@@ -1,0 +1,14 @@
+
+Figure 10.
+Access to the Service Manager Upon access to the Service Manager, LockBit creates a thread to manage services, terminate processes and delete the shadow volumes plus the contents of the recycle bin.
+In this thread the malware has the name of services that it will try to manage hardcoded to try to make them more obfuscated: Figure 11.
+Hardcoded service names The list of services LockBit tries to stop are: DefWatch (Symantec Antivirus) ccEvtMgr (Norton AntiVirus Event Manager) ccSetMgr (Common Client Settings Manager Service of Symantec)
+SavRoam (Symantec Antivirus) sqlserv sqlagent sqladhlp Culserver RTVscan (Symantec Antivirus Program) sqlbrowser SQLADHLP QBIDPService ( QuickBooks by Intuit .)
+QuickBoooks.
+FCS ( QuickBooks by Intuit .)
+QBCFMonitorService ( QuickBooks by Intuit .)
+sqlwriter msmdsrv (Microsoft SQL Server Analysis or Microsoft SQL Server) tomcat6 (Apache Tomcat) zhundongfangyu (this belongs to the 360 security product from Qihoo company) vmware-usbarbitator64 vmware-converter dbsrv12 (Creates, modifies, and deletes SQL Anywhere services.)
+dbeng8 (Sybase’s Adaptive Server Anywhere version 8 database program) wrapper (Java Service?)
+If one of these services is found by the malware querying the status of it, with the function “QueryServiceStatusEx”, LockBit will get all the depending modules when correct and safe and it will stop the service with the function “ControlService”.
+Figure 12.
+Stopping target service LockBit will prepare Unicode obfuscated strings that contain a command to delete the shadow volumes and disable the protections in the next boot of the system.

@@ -1,0 +1,6 @@
+
+  
+Despite this, UNC2628 has maintained access via the collection of legitimate credentials, the creation of attacker-controlled domain accounts (spservice), and via the creation of Windows services intended to launch BEACON.
+Notably, UNC2628 has repeatedly loaded BEACON with a service named ‘CitrixInit’.
+UNC2628 has also employed F-Secure Lab s' Custom Command and Control (C3) framework, deploying relays configured to proxy C2 communications through the Slack API.
+Based on this actor's other TTPs they were likely using C3 to obfuscate Cobalt Strike BEACON traffic.

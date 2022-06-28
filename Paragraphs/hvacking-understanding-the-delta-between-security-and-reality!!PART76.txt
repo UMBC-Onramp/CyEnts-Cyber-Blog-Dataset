@@ -1,0 +1,19 @@
+
+As a result, industrial control hardware like the eBMGR PLC may be overlooked from various angles including network or Internet exposure, vulnerability assessment and patch management, asset inventory, and even access controls or configuration reviews.
+For example, a principle of least privilege policy may be appropriate, and a network isolation or protected network segment may help provide boundaries of access to adversaries.
+An awareness of security research and an appropriate patching strategy can minimize exposure time for known vulnerabilities.
+We recommend a thorough review and validation of each of these important security tenants to bring these critical assets under the same scrutiny as other infrastructure.
+One goal of the McAfee Advanced Threat Research team is to identify and illuminate a broad spectrum of threats in today’s complex and constantly evolving landscape.
+As per McAfee’s vulnerability public disclosure policy, McAfee’s ATR informed and worked directly with the Delta Controls team.
+  
+This partnership resulted in the vendor releasing a firmware update which effectively mitigates the vulnerability detailed in this blog, ultimately providing Delta Controls’ consumers with a way to protect themselves from this attack.
+We strongly recommend any businesses using the vulnerable firmware version (571848 or prior) update as soon as possible in line with your patch policy and testing strategy.
+Of special importance are those systems which are Internet-facing.
+McAfee customers are protected via the following signature, released on August 6th: McAfee Network Security Platform 0x45d43f00 BACNET:
+Delta enteliBUS Manager (eBMGR)
+Remote Code Execution Vulnerability.
+We’d like to take a minute to recognize the outstanding efforts from the Delta Controls team, which should serve as a poster-child for vendor/researcher relationships and the ability to navigate the unique challenges of responsible disclosure.
+ We are thrilled to be collaborating with Delta, who have embraced the power of security research and public disclosure for both their products as well as the common good of the industry.
+Please refer to the following statement from Delta Controls which provides insight into the collaboration with McAfee and the power of responsible disclosure.
+
+

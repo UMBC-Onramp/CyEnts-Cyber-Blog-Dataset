@@ -1,0 +1,8 @@
+
+WRSA.exe (WebRoot antivirus product)
+If some of these processes are discovered, the malware will wait 5 seconds using “Sleep” and later another 5 seconds.
+After those “sleep”, the malware will continue with their normal flow.
+If these processes are not detected, it will access to their own resources and extract it with the name “OFFNESTOP1”.
+That resource is encrypted but has inside a “.bat” file.
+FIGURE 7.
+Access to the first resource crypted The decryption is a simple XOR operation with bytes from this string: “Po39NHfwik237690t34nkjhgbClopfdewquitr362DSRdqpnmbvzjkhgFD231ed76tgfvFAHGVSDqhjwgdyucvsbCdigr1326dvsaghjvehjGJHGHVdbas”.

@@ -1,0 +1,7 @@
+
+And synthetic media\nwould drastically lower barriers for actors seeking to disseminate\ndiverse text-based content at scale, reducing the effort required to\ncreate a large corpus of written content and the need to repeatedly\nreuse snippets of identical text.
+Evading Detection Synthetic media doesn’t need to be overwhelmingly credible to\nhave its desired effect.
+People are used to consuming short,\nauthoritative, error-riddled social media text at speed without\ndwelling too much on its linguistic features or origin.
+Users are\naccustomed to consuming poor-quality audio and video snippets, and the\nmajority of users aren’t going to give a social media account’s\nprofile image more than a cursory glance as they scroll through their\nfeed and ingest written content at rapid speed.
+The quality bar does\nnot need to be exceedingly high when it comes to synthetic\ngenerations; it only needs to be “good enough” for even just a subset\nof vocal users to not question it in a world characterized by rapid,\nhigh-volume information consumption.
+The unifying theme behind the various potential IO applications\ndiscussed in the previous section is that they would materially help\nthreat actors scale campaigns at low cost and better evade\ndetection.

@@ -1,0 +1,6 @@
+
+Hardik Shah of McAfee Labs posted a technical analysis of CVE-2018-4878’s mechanisms on March 2: “The number of Flash Player exploits has recently declined, due to Adobe’s introduction of various measures to strengthen Flash’s security.
+Occasionally, however, an exploit still arises.
+On January 31, Kr-Cert reported a zero-day vulnerability, identified as CVE-2018-4878, being exploited in the field.
+(Adobe has released an update to fix this flaw .)”
+Details about McAfee protections covering CVE-2018-4878 appear at the end of this article.

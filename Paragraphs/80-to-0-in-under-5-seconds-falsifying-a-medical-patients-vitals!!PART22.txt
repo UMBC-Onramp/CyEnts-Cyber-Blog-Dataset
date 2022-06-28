@@ -1,0 +1,7 @@
+
+Because we have already shown that emulation works, the attacker simply has to send replacement data to the central station while appearing as the patient monitor.
+For example, consider the following original packet coming from the patient monitor:
+The patient monitor sends a packet with the patient’s heartbeat stored at offset 0x71 in the payload.
+The patient monitor in this screen capture is at IP address 126.4.153.150.
+An attacker can ARP spoof the patient monitor with a Kali virtual machine.
+The ARP packets indicate that the central station, IP address 126.1.1.1, is at MAC address 00:0c:29:

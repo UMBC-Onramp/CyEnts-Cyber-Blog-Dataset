@@ -1,0 +1,9 @@
+
+Instead of saving directly to the desktop, to reduce clutter, Fakenet-NG will store all its output in “Desktop\\fakenet_logs”.
+Compared to older versions this version of FLARE VM comes with many new tools and software packages.
+Most notably, this release adds the following: IDA Free 7.0 radare2 to support 64-bit disassembly The labs for the Practical Malware Analysis book pdfid, pdf-parser, and PdfStreamdumper to analyze malicious PDF documents The Malcode Analyst Pack Yara for signature matching The Cygwin Linux environment on windows PowerShell transcription and script block logging PowerShell transcripts can be found in “Desktop\\PS_Transcripts” Available Packages While we attempt to make the tools available as shortcuts within the FLARE folder, there are several available from command-line only.
+Please see the online documentation for the most up to date list.
+Here is an incomplete list of some major tools available on FLARE VM:
+Disassemblers: IDA Free 5.0 and IDA Free 7.0 Binary Ninja Radare2 and Cutter Debuggers: OllyDbg and OllyDbg2 x64dbg Windbg File Format parser: CFF Explorer, PEView, PEStudio PdfStreamdumper, pdf-parser, pdfid ffdec offvis and officemalscanner PE-bear Decompilers: RetDec Jd-gui and bytecode-viewer dnSpy IDR VBDecompiler Py2ExeDecompiler
+Monitoring tools: SysInternal suite RegShot Utilities:
+Hex Editors (010 editor, HxD and File Insight) FLOSS (FireEye Labs Obfuscated String Solver)

@@ -1,0 +1,13 @@
+
+Both incremental training and RCOP work as expected producing less churn than the standard retrain, while showing accuracy improvements over the baseline.
+In general, there is usually a trend of increasing accuracy being correlated with increasing bad churn: there is no free lunch.
+That increasing accuracy occurs due to changes in the decision boundary, the more improvement the more changes occur.
+It seems reasonable the increasing decision boundary changes correlate with an increase in bad churn although we see no theoretical justification for why that must always be the case.
+Unexpectedly, both the incremental model and RCOP produce more accurate models with less churn than the standard retrain.
+We would have assumed that given their additional constraints both models would have less accuracy with less churn.
+The most direct comparison is RCOP versus the standard retrain.
+Both models use identical data sets and model parameters, varying only by the weights associated with each sample.
+RCOP reduces the weight of incorrectly classified samples by the baseline model.
+That reduction is responsible for the improvement in accuracy.
+A possible explanation of this behavior is mislabeled training data.
+Multiple authors have suggested identifying and removing points with label noise, often using the misclassifications of a previously trained model to identify those noisy points.

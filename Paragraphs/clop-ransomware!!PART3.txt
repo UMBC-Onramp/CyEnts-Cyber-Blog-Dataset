@@ -1,0 +1,4 @@
+
+We discovered the following Clop ransomware samples which were signed with a certificate: This malware is prepared to avoid running under certain conditions, for example in the first version it requests to be installed as a service; if that will not succeed, it will terminate itself.
+The malware’s first action is to compare the keyboard of the victim computer using the function “GetKeyboardLayout”  against the hardcoded values.
+This function returns the user keyboard input layout at the moment the malware calls the function.

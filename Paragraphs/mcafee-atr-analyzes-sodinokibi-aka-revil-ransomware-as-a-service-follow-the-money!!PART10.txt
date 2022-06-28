@@ -1,0 +1,5 @@
+
+In episode 2, The All-Stars , we explained how the structure is setup and how each affiliate has its own id.
+As far as we tracked the samples and extracted the amount of id-numbers, we counted over 41 affiliates being active.
+The data showed a in a relatively short amount of time the velocity and number of infections was high.
+Taken this velocity combined with a few payments per day, we can imagine that the actors behind Sodinokibi are making a fortune.

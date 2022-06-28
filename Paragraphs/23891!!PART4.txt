@@ -1,0 +1,7 @@
+
+Your device needs to be connected to a Wi-Fi network to install the patch.
+If your device does not yet show a notification that the update is ready for installation, you can force your system into updating a little bit quicker: go to the system settings yourself (Settings → General → Software update) and check the availability of software updates.
+In order to get alerts about the latest cyberthreats directly related to your devices and apps, we recommend using the Kaspersky Security Cloud , available for Windows, macOS, Android and iOS operating systems.
+When a new vulnerability in the software you use, or a data leak on the website you visit is discovered, you will get a notification with advice on how to protect yourself.
+
+

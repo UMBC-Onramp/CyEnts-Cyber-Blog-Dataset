@@ -1,0 +1,10 @@
+
+If no calling convention is supplied, stdcall is assumed.
+Currently, if an API call is attempted that is not supported, Speakeasy will log the unsupported API and move on to the next entry point.
+An example handler for the Windows HeapAlloc function exported by kernel32.dll is shown in Figure 1.
+Figure 1: Example handler for Windows HeapAlloc function All entry points are emulated by default.
+For example, for DLLs, all exports are emulated, and for drivers, the IRP major functions are each emulated.
+In addition, dynamic entry points that are discovered during runtime are followed.
+Some examples of dynamic entry points include threads that are created or callbacks that are registered.
+Attributing activity to specific entry points can be crucial to seeing the whole picture when trying to identify the impact of a malware infection.
+Reporting Currently, all events captured by the emulator are logged and represented by a JSON report for easy post processing.

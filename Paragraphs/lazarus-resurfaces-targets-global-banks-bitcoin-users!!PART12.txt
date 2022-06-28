@@ -1,0 +1,8 @@
+
+The presence of a specific registry key on the system HKEY_CURRENT_USER\\Software\\Bitcoin\\Bitcoin-
+Qt The malware appends an indicator (flag) specifying whether the above registry key was found in the user’s registry: This key is checked again as part of the command and control communication and is sent as a duplicate value to the command and control in the HTTP POST request as well (explained in the below).
+Malware checking for the presence of the registry key Exfiltration Preparation In preparation of the exfiltration of information collected from the endpoint, the malware performs the following activities: Encode the collected information using a simple byte based XOR operation using the byte key: 0x34.
+Base64 encode (standard) the XORed data.
+Again, check for the presence of the Registry Key: HKCU\\Software\\Bitcoin\\Bitcoin-Qt Command and Control Server Communication
+Once the malware has performed all these activities it sends an HTTP POST request to the CnC server: www[dot]worker.co.kr for md5 BDAEDB14723C6C8A4688CC8FC1CFE668 www[dot]palgong-cc.co.kr for md5 D4C93B85FFE88DDD552860B148831026
+In the format: HTTP POST to www[dot]worker.co.kr /board2004/Upload/files/main.asp?idx=%d&no=%s&mode=%s OR HTTP POST to www[dot]palgong-cc.co.kr /html/course/course05.asp?idx=%d&no=%s&mode=%s where idx= 20 (14h) if the Registry key does not exist; 24 (18h) if the key exists.

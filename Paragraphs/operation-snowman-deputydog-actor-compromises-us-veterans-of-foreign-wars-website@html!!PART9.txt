@@ -1,0 +1,6 @@
+
+The threat actor responsible for Operation DeputyDog also used the “HTTPS” version of the Gh0st .
+We also observed another “HTTPS” Gh0st variant connecting to a related command and control server at me[.]scieron[.]com.
+MD5 Hash CnC Domain 758886e58f9ea2ff22b57cbbb015166e 758886e58f9ea2ff22b57cbbb015166e book.flnet[.]org book.flnet[.]org 0294f9280491f85d898ebe471f0fb58e 0294f9280491f85d898ebe471f0fb58e icybin.flnet[.]org icybin.flnet[.]org 9d20566a327076b7152bbf9ed20292c4 9d20566a327076b7152bbf9ed20292c4 me.scieron[.]com
+me.scieron[.]com The me[.]scieron[.]com domain previously resolved to 58.64.199.22.
+The book[.]flnet[.]org domain also resolved to another IP in the same subnet 58.64.199.0/24.

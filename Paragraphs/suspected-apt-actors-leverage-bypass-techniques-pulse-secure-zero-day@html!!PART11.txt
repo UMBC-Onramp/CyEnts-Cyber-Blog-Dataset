@@ -1,0 +1,5 @@
+
+With this modification the attacker can spoof successful authentication.
+Figure 4: ACE Auth Bypass Variant SLOWPULSE Variant 4
+RealmSignin Two Factor Auth Bypass This variant bypasses the RealmSignin::runSecondaryAuth procedure of the Pulse Secure VPN.
+The inserted logic modifies the execution flow of a specific step of the login process to spoof successful authentication.

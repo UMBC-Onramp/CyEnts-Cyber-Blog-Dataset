@@ -1,0 +1,5 @@
+
+Attribution of both historic TA505 activity and more recent FIN11 activity is complicated by the actors’ use of criminal service providers.
+Like most financially motivated actors, FIN11 doesn’t operate in a vacuum.
+We believe that the group has used services that provide anonymous domain registration, bulletproof hosting, code signing certificates, and private or semi-private malware.
+Outsourcing work to these criminal service providers likely enables FIN11 to increase the scale and sophistication of their operations.

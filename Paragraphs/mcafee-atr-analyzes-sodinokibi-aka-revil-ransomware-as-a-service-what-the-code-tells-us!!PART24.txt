@@ -1,0 +1,4 @@
+
+The next action of the malware is its main function, encrypting the files in all logic units and network shares, avoiding the white listed folders and names of files and extensions, and dropping the ransom note prepared from the template in each folder.
+FIGURE 16.
+CRYPT FILES IN THE LOGIC UNITS AND NETWORK SHARES After finishing this step, it will create the image of the desktop in runtime with the text that comes in the config file prepared with the random extension that affect the machine.

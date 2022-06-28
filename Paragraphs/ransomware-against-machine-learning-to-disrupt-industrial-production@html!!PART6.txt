@@ -1,0 +1,4 @@
+
+In 2017, we also observed campaigns such as NotPetya and BadRabbit, where wiper malware with worm-like capabilities were released to disrupt organizations while masquerading as ransomware.
+While these types of campaigns pose a threat to industrial production, the adoption of post-compromise deployment presents three major twists in the plot.
+As threat actors tailor their attacks to target specific industries or organizations, companies with high-availability requirements (e.g., public utilities, hospitals, and industrial manufacturing) and perceived abilities to pay ransoms (e.g., higher revenue companies) become prime targets.

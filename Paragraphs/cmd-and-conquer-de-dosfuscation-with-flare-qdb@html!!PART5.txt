@@ -1,0 +1,6 @@
+
+Taking Cmd of the Situation I decided to see if it would be easier to instrument cmd.exe to log commands rather than de-obfuscating the script myself.
+To begin, I debugged cmd.exe, set a breakpoint on CreateProcessW, and executed a program from the command prompt.
+Figure 3 shows the call stack for CreateProcessW as cmd.exe executes notepad.
+Figure 3:
+Call stack for CreateProcessW in cmd.exe Starting from cmd!ExecPgm, I reviewed the disassembly of the above functions in cmd.exe to trace the origin of the command string up the call stack.

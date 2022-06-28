@@ -1,0 +1,5 @@
+FireEye recently observed a targeted attack on a U.S.-based financial institution via a spear-phishing email.
+The payload used in this campaign is a tool called WinSpy, which is sold by the author as a spying and monitoring tool.
+The features in this tool resemble that of many other off-the-shelf RATs (Remote Administration Tools) available today.
+We also observed a second campaign by a different attacker where the WinSpy payload was implanted in macro documents to attack various other targets in what appears to be a spam campaign.
+The command-and-control (CnC) infrastructure used in the attack against the financial institution is owned and controlled by author of WinSpy.

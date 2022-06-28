@@ -1,0 +1,5 @@
+
+We also can see a function called to get the amount of time to wait between packets, with the result plugged into the Windows sleep function.
+This code block confirms what we saw with Wireshark and gives us confidence the communication is consistent.
+Having gained basic knowledge of the central monitoring station, the next step was to perform the same test on the patient monitor.
+With the central station powered down, we booted the patient monitor and watched the network traffic using Wireshark.

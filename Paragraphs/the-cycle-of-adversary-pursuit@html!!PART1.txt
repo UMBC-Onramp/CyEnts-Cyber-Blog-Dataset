@@ -1,0 +1,8 @@
+When we discover new intrusions, we ask ourselves questions that will help us understand the totality of the activity set.
+How common is this activity?
+Is there anything unique or special about this malware or campaign?
+What is new and what is old in terms of TTPs or infrastructure?
+Is this being seen anywhere else?
+What information do I have that substantiates the nature of this threat actor?
+To track a fast-moving adversary over time, we exploit organic intrusion data, pivot to other data sets, and make that knowledge actionable for analysts and incident responders, enabling new discoveries and assessments on the actor.
+The FireEye Advanced Practices team exists to know more about the adversary than anyone else, and by asking and answering questions such as these, we enable analyst action in security efforts.

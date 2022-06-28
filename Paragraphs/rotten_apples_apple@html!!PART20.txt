@@ -1,0 +1,16 @@
+
+Additionally, the domains were serving phony Apple webpages in Chinese, indicating that they were targeting Chinese users.
+The second campaign we detected was launched against Apple users in the UK.
+This campaign used sophisticated evasion techniques (such as code obfuscation) to evade phishing detection systems and, whenever successful, was able to collect Apple IDs and personal and credit card information from its victims.
+Organizations could use the information provided in this blog to protect their users from such sophisticated phishing campaigns by writing signatures for their phishing detection and prevention systems.
+Credits and Acknowledgements Special thanks to Yichong Lin, Jimmy Su, Mary Grace and Gaurav Dalal for their support.
+Appendix 1 Figure 15: Obfuscated JavaScript served by the phishing site.
+In Green we have highlighted functions with: number system converters, pseudo-random pattern decoders, bit level binary operas Figure 16: Obfuscated JS served by the phishing site.
+In Green we have highlighted functions with: number system converters, pseudo-random pattern decoders, bit level binary operaters.
+While in Red we have: XOR deco ders.
+Appendix 2 Figure 17: Obfuscated JavaScript content served by the site Figure 18:
+Deobfuscated HTML content For more information on phishing, please visit:
+https://support.apple.com/HT203126 http://www.apple.com/legal/more-resources/phishing/ https://support.apple.com/HT204759
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

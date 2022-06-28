@@ -1,0 +1,5 @@
+
+When the user wants to authenticate to the remote file share, Windows first checks if a valid TGT is present in memory on the user's workstation.
+If a TGT isn't present, a new TGT is requested from the Domain Controller in the form of an AS-REQ request.
+To prevent password cracking attacks ( AS-REP Roasting ), by default, Kerberos Preauthentication is performed first.
+Windows creates a timestamp and encrypts the timestamp with the user's Kerberos key (Note: User Kerberos keys vary based on encryption type.

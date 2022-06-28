@@ -1,0 +1,4 @@
+
+Figure 6: Conversion to RGB order
+This differs from previous RoboSki packer versions, wherein the component was stored as string data and decoded using string replacement and the Base32 algorithm or string replacement, string reversal and the Base64 algorithm.
+The converted data is then executed and invoked in a series of module calls, depicted in the image below, in which the component is executed from its O5.Ga namespace/class and passed parameters from the class named ChannelSinkStack.

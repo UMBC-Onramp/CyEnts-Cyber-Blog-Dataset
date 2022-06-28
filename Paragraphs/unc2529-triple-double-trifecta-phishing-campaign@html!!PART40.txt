@@ -1,0 +1,5 @@
+
+The threat actor made extensive use of obfuscation and fileless malware to complicate detection to deliver a well coded and extensible backdoor.
+UNC2529 is assessed as capable, professional and well resourced.
+The identified wide-ranging targets, across geography and industry suggests a financial crime motive.
+DOUBLEBACK appears to be an ongoing work in progress and Mandiant anticipates further actions by UNC2529 to compromise victims across all industries worldwide.

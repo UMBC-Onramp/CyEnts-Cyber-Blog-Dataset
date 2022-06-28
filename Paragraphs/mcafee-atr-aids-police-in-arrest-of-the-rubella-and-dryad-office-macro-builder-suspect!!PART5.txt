@@ -1,0 +1,10 @@
+
+Rubella advertisement banner In one of Rubella’s forum postings the actor was detailing the toolkit and that it managed to bypass the Windows Anti Malware Scan Interface (AMSI) present in Windows 10.
+To prove this success, the post contained a link to a screenshot.
+Being a Dutch researcher, this screenshot immediately stood out because of the Dutch version of Microsoft Word that was used.
+Dutch is a very uncommon language, only a small percentage of the world’s population speaks it, let alone an even smaller percentage of cybercriminals who use it.
+The linked screenshot with the Dutch version of Microsoft Word.
+Interestingly enough we reported last year on the individuals behind Coinvault ransomware.
+One of the reasons they got caught was the use of flawless Dutch in their code.
+With this in the back of our minds we decided to go deeper down the rabbit hole.
+Forum Research We looked further into the large amount of posts by Rubella to learn more about the person behind the builder.

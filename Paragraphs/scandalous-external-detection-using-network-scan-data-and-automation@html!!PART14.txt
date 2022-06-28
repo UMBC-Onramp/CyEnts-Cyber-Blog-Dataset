@@ -1,0 +1,7 @@
+
+SCANdalous
+Case Studies Today in Advanced Practices, SCANdalous is a core element of our external detection work.
+It has provided us with a new lens through which we can observe threat activity on a scale and scope beyond our organic data, and enriches our workflows in support of Mandiant.
+Here are a few of our favorite examples: FIN6 In early 2019, SCANdalous identified a Cobalt Strike C2 server that we were able to associate with FIN6.
+Four hours later, the server was used to target a Managed Defense client, as discussed in our blog post, Pick-Six: Intercepting a FIN6 Intrusion, an Actor Recently Tied to Ryuk and LockerGoga Ransomware .
+FIN7 In late 2019, SCANdalous identified a BOOSTWRITE C2 server and automatically acquired keying material that was later used to decrypt files found in a FIN7 intrusion worked by Mandiant consultants, as discussed in our blog post, Mahalo FIN7: Responding to the Criminal Operators’ New Tools and Techniques .

@@ -1,0 +1,5 @@
+
+As a malware analyst, determining which API is used is one of the first things we must resolve in order to determine the capabilities of the code.
+Two common obfuscations we are going to look at in this blog are encoded function pointer tables and detours style hook stubs.
+In both of these scenarios the entry point to the API is not directly visible in the binary.
+For an example of what we are talking about, consider the code in Figure 1, which was taken from a memory dump of xdata crypto ransomware sample C6A2FB56239614924E2AB3341B1FBBA5.

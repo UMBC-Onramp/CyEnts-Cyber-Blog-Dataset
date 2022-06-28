@@ -1,0 +1,67 @@
+With the buzz in the security industry this year about sharing threat intelligence, it's easy to get caught up in the hype, and believe that proper, effective sharing of Indicators or Intelligence is something that can just be purchased along with goods or services from any security vendor.
+
+It's really a much more complex problem than most make it out to be, and one that we've been working on for a while.
+
+A large part of our solution for managing Threat Indicators is using the OpenIOC standard format.
+
+Since its founding, Mandiant sought to solve the problem of how to conduct leading-edge Incident Response (IR) - and how to scale that response to an entire enterprise.
+
+We created OpenIOC as an early step in tackling that problem.
+
+Mandiant released OpenIOC to the public as an Open Source project under the Apache 2 license in November of 2011, but OpenIOC had been used internally at Mandiant for several years prior.
+
+IR is a discipline that usually requires highly trained professionals doing very resource-intensive work.
+
+Traditionally, these professionals would engage in time-intensive investigations on only a few hosts on a compromised network.
+
+Practical limitations on staffing, resources, time, and money would prevent investigations from covering anything other than a very small percentage of most enterprises.
+
+Responders would only be able to examine what they had direct access to, with their corresponding conclusions constrained by time and budget.
+
+This level of investigation was almost never enough to give confidence on anything other than the hosts that had been examined - responders were unable to confirm whether other systems were still compromised, or whether the adversary still had footholds in other parts of the network.
+
+Creating a standard way of recording Threat Intelligence into an Indicator was part of what allowed Mandiant to bring a new approach to IR, including the use of an automated solution, such as Mandiant for Intelligent Response® (MIR®) .
+
+Mandiant's new strategy for IR enabled investigators, who previously could only get to a few hosts in an engagement, to now query entire enterprises in only slightly more time.
+
+Using OpenIOC as a standardized format, the Indicators of Compromise (IOCs) were recorded once, and then used to help gather the same information and conduct the same testing on every host across the enterprise via the automated solution.
+
+Incident Responders could now spend only a little more time, but cover an exponentially larger number of hosts during the course of an investigation.
+
+Recording the IOCs in OpenIOC had other benefits as well.
+
+Indicators from one investigation could be shared with other investigations or organizations, and allow investigators to look for the exact same IOCs wherever they were, without having to worry about translation problems associated with ambiguous formats, such as lists or text documents.
+
+One investigator could create an IOC, and then share it with others, who could put that same IOC into their investigative system and look for the same evil as the first person, with little to no additional work.
+
+The format grew organically over time.
+
+We always intended that the format be expandable and improvable.
+
+Instead of trying to map out every possible use case, Mandiant has updated the format and expanded the dictionaries of IOC Terms as new needs have arisen over time.
+
+The version we released in 2011 as \"1.0\" had already been revised and improved upon internally several times before its Open Source debut.
+
+We continue to update the standard as needed, allowing for features and requests that we have received over time from other users or interested parties.
+
+Unlike traditional \"signatures,\" OpenIOC provides the ability to use logical comparison of Indicators in an IOC, providing more flexibility and discrimination than simple lists of artifacts.
+
+An extensive library of Indicator Terms allows for a variety of information from hosts and networks to be recorded, and if something is not covered in the existing terms, additional terms may be added.
+
+Upcoming features like parameters will allow for further expansion of the standard, including customization for application or organization specific use cases.
+
+Having the OpenIOC standard in place is tremendously powerful, providing benefits for scaling detection and investigation, both of which are key parts of managing the threat lifecycle.
+
+OpenIOC enables easy, standardized information sharing once implemented, without adding much to workloads or draining resources.
+
+And it is freely available as Open Source; so that others can benefit from some of the methods we have already found to work well in our practice.
+
+We hope that as we improve it, you can take even more advantage of what OpenIOC has to offer in your IR and Threat Intelligence workflows.
+
+Next up in the Back to Basics: OpenIOC series, we'll talk about some of the basics of what OpenIOC is and what using it involves - and some of the upcoming things in the future of OpenIOC.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

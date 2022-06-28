@@ -1,0 +1,16 @@
+
+Bankshot was first reported by the Department of Homeland Security on December 13, 2017, and has only recently resurfaced in newly compiled variants.
+The sample we analyzed is 99% similar to the documented Bankshot variants from 2017.
+Bankshot implants hosted on falcancoin.io.
+The Bankshot implant is attached to a malicious Word document with the filename Agreement.docx.
+The document appears to be an agreement template for Bitcoin distribution between an unknown individual in Paris and a to-be-determined cryptocurrency exchange.
+The author of this document is test-pc.
+It was created February 26 and was submitted from the Netherlands.
+The document contains an embedded Flash script that exploits CVE-2018-4878 and downloads and executes the DLL implant from falcancoin.io.
+We discovered two more documents, written in Korean, that exploit the same vulnerability as Agreement.docx.
+These documents appear to be part of the same campaign and may have been used on different targets.
+These documents also communicated with falcancoin.io to install Bankshot and also contain themes around cryptocurrency security.
+Two Flash files exploit CVE-2018-4878.
+843c17b06a3aee22447f021307909890b68828b9 (February 25) 343ebca579bb888eb8ccb811f9b52280c72e484c (February 25 Malicious documents in the attack.
+Malicious document exploiting CVE-2018-4878.
+The implants are downloaded via a Flash file embedded in the malicious document.

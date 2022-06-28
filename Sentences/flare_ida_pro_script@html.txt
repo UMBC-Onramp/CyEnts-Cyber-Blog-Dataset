@@ -1,0 +1,127 @@
+Intro This blog post is the next episode in the FLARE team IDA Pro Script\nseries.
+
+All scripts and plug-ins are available from our GitHub repo at https://github.com/fireeye/flare-ida .
+
+Automating the Repetitive I am a big believer in automating repetitive tasks to improve and\nsimplify reverse engineering.
+
+The task described in this blog comes up\nfrequently in malware analysis: identifying all of the arguments given\nto a function within a program.
+
+This situation may come up when trying to: Identify the size, location, and possible key used to decrypt\nencoded strings used by the malware.
+
+Identify each function\npointer used to start a new thread (i.e., the arguments to CreateThread or _ beginthreadex ).
+
+Identify static strings\nused in API functions that may be used as an indicator (i.e., named\nmutexes and events).
+
+Identify all of the functions resolved\nat runtime (i.e., all of the arguments to GetProcAddress).
+
+To assist reverse engineers who face similar obstacles we are\nreleasing a new IDA Python utility as part of our FLARE IDA script\nrelease: argtracker .
+
+This tool is not meant\nas a stand-alone plug-in, but rather as an aid to quickly write and\ndevelop your own custom analysis scripts within IDA.
+
+With argtracker , you can request all\narguments to a given function, and then analyze, decode, or emulate in\nany way you see fit.
+
+Usage Starting off with a simple example, let's consider a Gh0st variant.\nThis malware family traditionally has its own wrapper function around\nthe Win32 function _ beginthreadex to launch\nnew threads.
+
+This function typically has a function prototype shown in\nFigure 1.
+
+Figure 1: Gh0st malware MyCreateThread\nfunction prototype Suppose we’d like to quickly find all values of the lpStartAddress parameter so that we can perform\nsome automated analysis of each thread function.
+
+We can use argtracker for exactly this purpose using the code\nin Figure 2.
+
+The full source code for this example can be found in examples/argtracker_example1.py in our flare-ida GitHub repo.
+
+Figure 2:
+
+Example argtracker usage In this sample code, we start by creating a new Vivisect workspace.\nVivisect (see installation instructions at the end) is a separate\nbinary analysis framework written in Python and is used heavily by argracker .
+
+The workspace contains analysis\ninformation similar to an IDB file for IDA.
+
+Using this workspace, a\nnew ArgTracker instance is created.
+
+For each\ncode cross-reference to MyCreateThread , we\ncall tracker.getPushArgs(xref, 7) .
+
+This\nfunction takes as parameters: The location of the call instruction being analyzed: xref
+
+The number of stack arguments to\nextract: 7 An optional list of register names that contain\narguments to extract, which defaults to being empty This malware sample uses the _ cdecl calling convention where all arguments are pushed on the stack, so all\nseven arguments should be able to be recovered by argtracker .
+
+The third optional argument is\nexplained in the next example.
+
+The return from getPushArgs() is a list of\nresult dictionaries.
+
+Each dictionary contains numbered keys ranging\nfrom 1,2,..n where n is the number of stack arguments requested.
+
+In\nthe sample code in Figure 2 we obtain the lpStartAddress values by retrieving the tuple with\nkey 3, since lpStartAddress is the third\nparameter to the function we analyzed.
+
+The values in the tuple are\n( va, value) , where va is the effective address that argtracker observed the data value being passed as a parameter.
+
+The sample\nscript merely prints this information out, but real scripts would\nbegin actual analysis with these results.
+
+The reason that getPushArgs() returns a\nlist is for situations like in Figure 3, where separate code paths can\nsetup function arguments to a single call instruction.
+
+Each entry in\nthe result list contains the complete set of arguments if the\ndifferent code paths were taken.
+
+Figure 3: Multipath argtracker handling For a more complex example, suppose you have an annoying piece of\nmalware that decodes all of its strings at runtime.
+
+In this example,\nthe function that decodes the strings has the function prototype shown\nin Figure 4.
+
+The function has a non-standard calling convention, and\nwe are using IDA’s __ usercall annotation to\nallow us to specify that it takes two parameters on the stack ( inptr and tempPtr ), and\nthree arguments in registers ( outPtr in ecx , strLen in edi , and key in eax ).
+
+Note: setting a function prototype in this way is not necessary for argracker , and is merely done here for\nillustrative purposes.
+
+Figure 4:
+
+Example function prototype The examples/ argtracker_example2.py in\nour flare-ida GitHub repo shows how argtracker can be used in this situation.
+
+In this\nexample we really only care about three of these parameters: i nptr, strLen, and key .
+
+  Figure 5 shows basic initialization of the\nVivisect workspace using a helper function in the jayutils file (also in our GitHub rep).
+
+A tracker\nobject is created from the Vivisect workspace, and then we get all\ncross-references to the string decoder function ( decStringFunc ).
+
+Figure 5:
+
+Argtracker initialization Figure 6 shows the call to getPushArgs() for every reference to the decoder function.
+
+Only two arguments are\npassed on the stack so the second argument is 2.
+
+Because registers are\nused to pass parameters, we now need to use the third argument to getPushArgs() by passing in a list of\nregister names that contain arguments to extract: [ ‘eax’, ‘ecx’, ‘edi’ ].
+
+The return value is still\na list of dictionaries whose keys are the recovered arguments.
+
+In\naddition to the stack arguments that can be accessed based on their\norder (1,2.. n), the register arguments can be recovered by using the\nregister name as the dictionary key.
+
+As in the first example, the\nresult is a tuple that contains the effective address where the\nregister was modified prior to the call instruction, and the value.
+
+Figure 6: Argtracker requesting\nparameters and processing them How it Works argtracker relies heavily upon Vivisect to\nperform additional analysis on the malware.
+
+A separate Vivisect\nworkspace (.viv file) is created to store the analysis, so you may be\nasked to specify the path to the original malware file if the script\ncannot find the file based on information stored in the IDB.
+
+Each\nfunction that contains a function call whose arguments are desired is\nemulated by Vivisect and all memory reads,  memory writes, and\nregister modifications are tracked.
+
+The script then traces backwards\nfrom the call instruction under observation, queuing separate branch\nsources as they are encountered, until either all conditions specified\nby the user are met, or the function start is reached.
+
+The Python script has been used successfully on both 32-bit x86 and\n64-bit x64 disassembly, but the 32-bit analysis has been tested much\nmore extensively.
+
+Other processor types have not been tried.
+
+One important caveat for this is that Vivisect’s emulation used by argtracker is only run at the function\nlevel.
+
+Vivisect returns fake stub data for data that is non-constant\nwithin the function, such as uninitialized global data or function\nparameters, to allow analysis to complete.
+
+You should sanity-check the\nresults of argtracker to make sure that\nthese stub values aren’t affecting the results.
+
+Installation As with our other IDA Pro plug-ins, clone the git repository at https://github.com/fireeye/flare-ida .
+
+The python directory can either be copied to the %IDADIR%\\python directory, or it can be in any\ndirectory found in your PYTHONPATH environment variable.
+
+Clone the Vivisect repository from https://github.com/vivisect/vivisect and add the package to your PYTHONPATH environment variable if you\ndon’t already have it installed.
+
+Test the installation by running the following Python commands\nwithin IDA Pro and ensure no error messages are produced: import vivisect import flare.argtracker Conclusion We hope you find argtracker as useful as\nwe do and that it speeds up your analysis.
+
+Stay tuned for more helpful\nreverse engineering code and blog posts from the FLARE Team.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

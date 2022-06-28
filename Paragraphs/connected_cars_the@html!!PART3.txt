@@ -1,0 +1,4 @@
+
+In contrast to ransomware that infects ordinary computer systems, vehicles are more likely susceptible to ransomware attacks when their disablement causes knock-on effects.
+For example, where a single driver might be able to reinstall his car’s software with the help of a mechanic to remedy a ransomware infection, a group of vehicles disabled on a busy highway could cause far more serious disruption.
+Victims or municipal authorities may have little choice but to pay the ransom to reopen a busy commuting route.

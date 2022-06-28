@@ -1,0 +1,6 @@
+
+For certain functions, it also packs and pads the data in to the appropriate format.
+TsLow is an additional attacker module that implements the TriStation UDP wire protocol.
+The TsBase library primarily depends on the ts_exec method.
+This method takes the function code and expected response code, and serializes the commands payload over UDP.
+It checks the response from the controller against the expected value and returns a result data structure indicating success or a False object representing failure.

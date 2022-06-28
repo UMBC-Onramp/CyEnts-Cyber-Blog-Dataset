@@ -1,0 +1,6 @@
+
+To verify that the malware resolves the environment variable for %APPDATA%, it checks for the string config/systemprofile.
+Figure 6:
+Verify whether malware is running as a system profile If the malware is running as a system profile, the string d0c from the decrypted config file is used to create the mutex.
+Otherwise, the string _cu is appended to d0c and the mutex is named d0c_cu (Figure 7).
+Figure 7: Mutex creation After the mutex is created, the malware writes another entry in the logfile in %TEMP% with the values 32 and 0.

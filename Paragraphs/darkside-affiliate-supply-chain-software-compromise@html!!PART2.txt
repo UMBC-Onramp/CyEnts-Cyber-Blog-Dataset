@@ -1,0 +1,4 @@
+
+While no ransomware was observed here, Mandiant believes that affiliate groups that have conducted DARKSIDE intrusions may use multiple ransomware affiliate programs and can switch between them at will.
+Sometime in May 2021 or earlier, UNC2465 likely Trojanized two software install packages on a CCTV security camera provider website.
+Mandiant determined the installers were malicious in early June and notified the CCTV company of a potential website compromise, which may have allowed UNC2465 to replace legitimate downloads with the Trojanized ones.

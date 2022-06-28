@@ -1,0 +1,3 @@
+Background monitoring mobile applications has become a hot topic on mobile devices.
+Existing reports show that such monitoring can be conducted on jailbroken iOS devices.
+FireEye mobile security researchers have discovered such vulnerability, and found approaches to bypass Apple's app review process effectively and exploit non-jailbroken iOS 7 successfully.

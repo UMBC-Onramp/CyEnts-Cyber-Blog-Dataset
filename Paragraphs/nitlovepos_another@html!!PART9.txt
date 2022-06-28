@@ -1,0 +1,8 @@
+
+If it is not successful, NitlovePOS will sleep for five minutes and restart the searching effort.
+NitlovePOS has three main threads: Thread 1 :  SSL C2 Communications Thread 2 : MailSlot monitoring waiting for CC.
+Thread 3 :
+Memory Scrapping Thread 1:  
+C2 Communications NitlovePOS is configured to connect to one of three hardcoded C2 servers:
+systeminfou48[.]ru infofinaciale8h[.]ru helpdesk7r[.]ru
+All three of these domains resolve to the same IP address: 146.185.221.31 .

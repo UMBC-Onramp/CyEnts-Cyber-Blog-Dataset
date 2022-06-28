@@ -1,0 +1,9 @@
+
+The apps are designed to download an extra module as well.
+With that module downloaded, more functions become available, enabling the apps to hide their icons, run the browser, play YouTube videos, open Google Play app pages, and so forth.
+This time, the list of compromised apps included, in addition to Minecraft mods, a file recovery utility called File Recovery – Recover Deleted Files .
+Version 1.1.0, available from Google Play until February 2021 had a malicious payload.
+That version has been removed, and version 1.1.1, which is now on Google Play, is safe.
+Simplified version with paid subscription on Google Play Second, we found a couple of Minecraft modpacks with basic functionality, a configuration in which the apps occasionally show full screen ads, even with the app inactive, but are unable to hide their icons or run the browser, YouTube, or Google Play.
+For extra monetization, the in-app purchases function is used.
+One of the malicious Minecraft modpacks in Google Play

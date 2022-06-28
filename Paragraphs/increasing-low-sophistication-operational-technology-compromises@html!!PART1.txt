@@ -1,0 +1,4 @@
+Attacks on control processes supported by operational technology (OT) are often perceived as necessarily complex.
+This is because disrupting or modifying a control process to cause a predictable effect is often quite difficult and can require a lot of time and resources.
+However, Mandiant Threat Intelligence has observed simpler attacks, where actors with varying levels of skill and resources use common IT tools and techniques to gain access to and interact with exposed OT systems.
+The activity is typically not sophisticated and is normally not targeted against specific organizations.

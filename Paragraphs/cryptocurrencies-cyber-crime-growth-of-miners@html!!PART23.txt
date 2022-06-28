@@ -1,0 +1,5 @@
+
+According to their reporting, the new variant no longer aims at stealing bank card data, but instead is limited to downloading and executing modules from a remote server.
+Drive-By Cryptojacking In-Browser FireEye iSIGHT Intelligence has examined various customer reports of browser-based cryptocurrency mining.
+Browser-based mining scripts have been observed on compromised websites, third-party advertising platforms, and have been legitimately placed on websites by publishers.
+While coin mining scripts can be embedded directly into a webpage's source code, they are frequently loaded from third-party websites.

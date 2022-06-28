@@ -1,0 +1,8 @@
+
+The Enigmatic “Hajime” Hajime was dubbed as the successor to the first generation of Mirai.
+Built on the same principle and goals as of its predecessor, it tries to propagate to IOT devices by means of brute-forcing credentials using a password list of common default device passwords.
+However, unlike Mirai, Hajime utilizes a decentralized peer-to-peer network to issue commands to its bots.
+This makes it much harder to locate the Command-and-Control (C2) server for a takedown.
+Aside from its sophisticated bot network communication, it is also one of the most mysterious variants due to its vague intentions.
+Commands sent to Hajime bots are in the form of structured messages that are passed along in the peer-to-peer network.
+One of these commands instruct bots to download and execute binaries, internally called \"modules\".

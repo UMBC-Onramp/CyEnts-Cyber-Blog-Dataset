@@ -1,0 +1,7 @@
+
+But that makes the latter part of the ”Internet of Things,” a growing collection of connected devices which are potentially vulnerable to cyberattack.
+In fact, there have already been reports of threats to these medical devices.
+Just last year , the FBI recalled half a million pacemakers, as a crucial flaw was discovered that could expose users to an attack.
+Additionally, security researchers recently revealed a chain of vulnerabilities in a particular pacemaker brand that an attacker could exploit to control implanted pacemakers remotely and cause physical harm to patients.
+Cybercriminals have also set their sights on larger targets when it comes to hacking health care devices and institutions.
+We’ve seen a handful of hospitals taken offline in recent ransomware attacks , all due to the use of outdated or vulnerable systems.

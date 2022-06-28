@@ -1,0 +1,6 @@
+
+SLOWPULSE
+During our investigation into the activities of UNC2630, we uncovered a novel malware family we labeled SLOWPULSE.
+This malware and its variants are applied as modifications to legitimate Pulse Secure files to bypass or log credentials in the authentication flows that exist within the legitimate Pulse Secure shared object libdsplibs.so .
+Three of the four discovered variants enable the attacker to bypass two-factor authentication.
+A brief overview of these variants is covered in this section, refer to the Technical Annex for more details.

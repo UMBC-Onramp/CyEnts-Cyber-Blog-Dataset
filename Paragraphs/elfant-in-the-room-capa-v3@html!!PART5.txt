@@ -1,0 +1,10 @@
+
+To learn more about these and capa’s rule syntax see the rule format documentation on GitHub.
+Unfortunately, rules with these new features are not backwards compatible with older versions of capa.
+Therefore, you should prefer to upgrade your capa installation to take advantage of our enhanced rules.
+Substring Features To make many rules easier to read, we’ve added a convenience feature named substring that acts like a literal string match with implied leading and trailing wildcards.
+This makes it easier to match file path components, such as /.ssh/id_rsa .
+Previously, users had to wrap a substring with forward slashes and escape special characters with backslashes, leading to nearly incomprehensible character sequences.
+Now, a substring feature clearly describes a literal string found as part of a longer string.
+Figure 3 shows how much easier it is to read a substring feature.
+Figure 3: Old- and new-style ways of describing a substring Figure 4 shows a capa rule using a substring feature to describe a persistence location on Linux.

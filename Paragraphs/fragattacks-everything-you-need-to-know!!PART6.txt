@@ -1,0 +1,6 @@
+
+Vanhoef showed these with three examples.
+In one, he exploited the aggregation design flaw to steal a username and password.
+In another, he was able to remote-control a home smart power socket, turning it on and off.
+And in the third, he took control of an old Windows 7 PC.
+How to Protect Against FragAttacks You can protect your business or agency’s Wi-Fi networks from FragAttacks by following well-known practices for general Wi-Fi safety.

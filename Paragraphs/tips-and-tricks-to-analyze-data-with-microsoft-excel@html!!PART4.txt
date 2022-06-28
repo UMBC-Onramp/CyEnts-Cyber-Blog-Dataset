@@ -1,0 +1,11 @@
+
+Timestamp Timestamp Type Event 2019-10-14 23:13:04 $SI Created C:\\Users\\attacker\\Documents\\ | Default.rdp | 485 | c482e563df19a401941c99888ac2f525  |
+Archive | FALSE 2019-10-14 23:13:06 Event Gen Time 4648 | A logon was attempted using explicit credentials.
+Subject: Security ID:
+  DomainCorp\\Administrator
+Account Name:  Administrator Account Domain:  DomainCorp
+Logon ID:  0x1b38fe
+Logon GUID:  {00000000-0000-0000-0000-000000000000} Account Whose Credentials Were Used: Account Name:  
+VictimUser Account Domain:
+  DomainCorp
+Logon GUID:  {00000000-0000-0000-0000-000000000000} Target Server: Target Server Name:

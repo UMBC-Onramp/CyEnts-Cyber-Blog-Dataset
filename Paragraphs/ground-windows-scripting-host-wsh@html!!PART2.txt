@@ -1,0 +1,6 @@
+
+I think that the majority of folks reading this blog have encountered malware that maintains persistence via the startup folder.
+The startup folder is a directory that may contain binaries, scripts or shortcut files.
+A folder exists for each user on the system as well as for \"all users.\" On Windows 7, for example, the Administrator startup folder resides at \"C:UsersAdministratorAppDataRoamingMicrosoftWindowsStart MenuProgramsStartup\".
+When a user successfully authenticates, Windows will attempt to execute any binary, run any script, or follow-up and execute any shortcut that is present within that user's startup folder.
+If scripts or applications are placed in the \"all users\" startup folder, these will be executed shortly after the system boots.

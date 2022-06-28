@@ -1,0 +1,4 @@
+
+The core functionality of the DOUBLEDRAG JavaScript file and the BIFF8 macro is to download a file from a hardcoded URL.
+This Excel file was also found within Zip files, as seen in the first wave, although only one of the observed Zip files included a corresponding corrupt decoy PDF document.
+Additional DOUBLEBACK samples were extracted from DOUBLEDROP samples uploaded to a public malware repository, which revealed additional command and control servers (C2), hxxps://barrel1999[.]com/admin4/client.php, hxxps://widestaticsinfo[.]com/admin4/client.php, hxxps://secureinternet20[.]com/admin5/client.php, and hxxps://adsinfocoast[.]com/admin5/client.php.

@@ -1,0 +1,3 @@
+
+The intent is a \"com.google.system.service.
+StartUpReceiver\" intent with the extra field of \"interval\" which holds a string of the form “interval@@hostname@@port@@username@@password@@working_directory@@delete_after_upload” The hostname, port, username, and password are used to connect to the attackers' FTP server to send screenshots, which is explained, in a later section.

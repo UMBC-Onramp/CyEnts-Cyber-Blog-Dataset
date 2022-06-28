@@ -1,0 +1,5 @@
+
+We identified that this domain was used to host a malicious document from a previous 2017 campaign targeting the Sikorsky program. hxxp://deltaemis.com/CRCForm/3E_Company/Sikorsky/E4174/JobDescription.doc
+A third malicious document (dc06b737ce6ada23b4d179d81dc7d910a7dbfdde) created January 19, 2018 drops e8faa68daf62fbe2e10b3bac775cce5a3bb2999e which is compiled January 15, 2018.
+This implant communicates to a South Korean IP address 221.164.168.185 which resolves to palgong-cc.co.kr.
+McAfee ATR analysis finds the dropped implants have never been seen before in the wild and have not been used in previous Lazarus campaigns from 2017.

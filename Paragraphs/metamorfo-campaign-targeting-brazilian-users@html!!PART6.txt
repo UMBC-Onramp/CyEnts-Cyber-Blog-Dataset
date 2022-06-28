@@ -1,0 +1,7 @@
+
+As seen in Figure 7, these files are: car.dat (randomly generated name given to Windows tool)
+i4.dt (VBS script that downloads the same zip file)
+id (ID given to host) cryptui.dll (malicious Trojan) Figure 7: Contents of ZIP Archive Persistence
+The string found in the file C:\\\\Users\\\\Public\\\\Administrador\\\\car.dat is extracted and used to add the registry key Software\\Microsoft\\Windows\\CurrentVersion\\Run\\<string from car.dat> for persistence, as shown in Figure 8.
+Figure 8: Reading from car.dat File
+The sample also looks for a file named i4.dt in the same directory and extracts the contents of it, renames the file to icone.vbs, and creates a new persistent key (Figure 9) in \\Software\\Microsoft\\Windows\\CurrentVersion\\Run to open this file.

@@ -1,0 +1,5 @@
+
+Similar emulation frameworks exist to emulate user mode binaries.
+Speakeasy attempts to differentiate from other emulation frameworks the following ways: Architected specifically around emulation of Windows malware Supports emulation of kernel mode binaries to analyze difficult to triage rootkits Emulation and API support driven by current malware trends to provide the community with a means to extract indicators of compromise with no extra tooling Completely configurable emulation environment requiring no additional code The project currently supports kernel mode drivers, user mode Windows DLLs and executables, as well as shellcode.
+Malware samples can be automatically emulated, with reports generated for later post processing.
+The ongoing project goal will be continuing to add support for new or popular malware families.

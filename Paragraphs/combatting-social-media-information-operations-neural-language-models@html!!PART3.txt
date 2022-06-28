@@ -1,0 +1,5 @@
+
+In this blog post, we will illustrate an example of how the FireEye Data Science (FDS) team works together with FireEye’s Information Operations Analysis team to better understand and detect social media information operations using neural language models.
+Highlights A new breed of deep neural networks uses an attention mechanism to home in on patterns within text, allowing us to better analyze the linguistic fingerprints and semantic stylings of information operations using modern Transformer models.
+By fine-tuning an open source Transformer known as GPT-2, we can detect social media posts being leveraged in information operations despite their syntactic differences to the model’s original training data.
+Transfer learning from pre-trained neural language models lowers the barrier to entry for generating high-quality synthetic text at scale, and this has implications for the future of both red and blue team operations as such models become increasingly commoditized.

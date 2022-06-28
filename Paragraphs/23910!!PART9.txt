@@ -1,0 +1,5 @@
+
+But this isn’t even the most frightful scenario.
+In theory one can hack the AirTag and modify its behavior in the software.
+Clear steps in this direction have already been made: For instance, last May a researcher successfully gained access to the device’s protected firmware.
+This will be most dangerous for Apple and users if someone manages to exploit the network of hundreds of millions of iPhones to track people illegally without the knowledge of the manufacturer, the owners of the smartphones that are taking part in a search operation, and the victims themselves.

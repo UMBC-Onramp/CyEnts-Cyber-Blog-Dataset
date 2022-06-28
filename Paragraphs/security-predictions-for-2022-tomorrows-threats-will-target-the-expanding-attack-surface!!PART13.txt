@@ -1,0 +1,4 @@
+
+Other advanced technologies, like deception, should also be considered to turn a traditionally passive network into an active defense system.
+Threats show no sign of slowing down.
+If your network and security tools are not ready to protect your organization from the next generation of threats now, tomorrow may be too late to make the critical changes you need.

@@ -1,0 +1,8 @@
+
+Figure 1 shows the stages of the payload execution from the malicious macro.
+Figure 1:
+Stages of payload execution used in this attack Social Engineering and Macro-PowerShell Level 1 Usage Targets of the campaign received Microsoft Word documents via email that claimed to contain instructions for logging into webmail or information regarding a state law proposal.
+When a targeted user opens the malicious document, they are presented with the messages shown in Figure 2, asking them to enable macros.
+Figure 2:
+Lure suggesting the user to enable Macros to see content Bypassing Application Whitelisting Script Protections (AppLocker)
+Microsoft application whitelisting solution AppLocker prevents unknown executables from running on a system.

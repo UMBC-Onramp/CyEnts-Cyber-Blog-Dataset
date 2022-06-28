@@ -1,0 +1,5 @@
+
+Encrypted configuration file Persistence Method
+The SUNSHUTTLE malware was not observed setting its own persistence.
+It is likely the persistence is set outside of the execution of SUNSHUTTLE.
+Network Communications SUNSHUTTLE uses the cookie header to pass values to the C2.

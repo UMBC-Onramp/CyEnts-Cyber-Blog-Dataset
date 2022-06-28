@@ -1,0 +1,6 @@
+
+At each iteration of training, we compute a loss multiplier such that each loss contribution is fixed prior to backpropagation.
+This ensures that neither loss term dominates during training.
+Specifically, for minibatch i , let the net loss L Mixed be computed as follows:
+Given hyperparameters a and b , defined such that a + b : = 1, we compute constant a so that the net loss contribution of L CLS to L Mixed is a and the net contribution of L Next to L Mixed is b .
+For our evaluations, we set a := b := 0.5, effectively requiring that the model equally balance its ability to generate the next character and accurately predict malicious URLs.

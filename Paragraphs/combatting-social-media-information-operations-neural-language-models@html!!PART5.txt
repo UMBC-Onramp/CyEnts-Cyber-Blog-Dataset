@@ -1,0 +1,3 @@
+
+GPT-2 uses an attention mechanism to selectively focus the model on relevant pieces of text sequences and identify relationships between positionally distant words.
+In terms of architectures, Transformers use attention to decrease the time required to train on enormous datasets; they also tend to model lengthy text and scale better than other competing feedforward and recurrent neural networks.

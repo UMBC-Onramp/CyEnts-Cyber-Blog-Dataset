@@ -1,0 +1,5 @@
+
+It’s our hope that providing voice control for the world’s most popular disassembler will further empower users with repetitive stress injuries or disabilities to more effectively put their reverse engineering skills to use with this new accessibility option as well as helping the community at large work more efficiently.
+Check out our video demonstration of some of the features of the profile to see it in action. &amp;amp;nbsp; How Does It Work?
+Voice attack is an inexpensive software application that utilizes the Windows Speech Recognition (WSR) feature to enable the creation of user-defined, voice-activated macros.
+The user specifies a key word or phrase, then defines one or more actions to be taken when that word or phrase is recognized.

@@ -1,0 +1,6 @@
+
+ 
+The malware then forces a machine reboot after displaying the following pop-up message: Because MBR has information about the partitions of the hard drive and acts as a loader for the operating system (OS), the compromised machine will not be able to load the OS upon reboot.
+The good news for the users is that the malware does not destroy nor steal any files on the compromised device, meaning the victim can still recover user files from the hard drive.
+The malware also does not demand ransom.
+While the result is almost identical to another MBR wiper that Sonicwall posted a blog about in April 2020, our analysis did not show any resemblance in their wiper codes.

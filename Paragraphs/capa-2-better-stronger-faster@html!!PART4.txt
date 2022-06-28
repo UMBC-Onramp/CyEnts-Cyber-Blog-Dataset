@@ -1,0 +1,8 @@
+
+The rule generator automatically formats any changes that you make in the Editor pane and adds them to the Preview pane.
+Figure 3 shows how to manipulate a rule using the Editor pane.
+Figure 3: capa explorer editor pane The Preview pane is an editable textbox containing the final rule text.
+You can edit any of the text displayed.
+The rule generator automatically formats any changes that you make in the Preview pane and adds them to the Editor pane.
+Figure 4 shows how to edit a rule directly in the Preview pane.
+Figure 4: capa explorer preview pane As you make edits the rule generator lints your rule and notifies you of any errors using messages displayed underneath the Preview pane.

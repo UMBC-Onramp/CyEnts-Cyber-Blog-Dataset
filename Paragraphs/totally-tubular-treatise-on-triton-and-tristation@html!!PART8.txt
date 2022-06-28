@@ -1,0 +1,4 @@
+
+Now that we know where tcm_result leaves off, we know that the ts_reply “cmd” is a single byte at offset 6, and corresponds to the values in the TS_cnames.pyc array and TS_names (Figure 6).
+The TRITON script also tells us that any integer value over 100 is a likely “command reply.”
+Sweet.

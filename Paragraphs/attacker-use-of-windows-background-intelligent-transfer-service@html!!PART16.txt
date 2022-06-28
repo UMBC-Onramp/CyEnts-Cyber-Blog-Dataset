@@ -1,0 +1,13 @@
+
+A full understanding of the persistence mechanism would allow Mandiant to hunt for additional evidence of attacker activity across the environment and in other engagements.
+As focus intensified, Mandiant consultants identified evidence to indicate that the BITS service launched the KEGTAP backdoor.
+Analysts identified entries in the Microsoft-Windows-Bits-Client operational event log which associated the BITS service activity with the file mail.exe .
+3 | Information | The BITS service created a new job: System update, with owner REDACTED 61 | Warning | BITS stopped transferring the System update transfer job that is associated with the http://127.0.0.1/tst/56/ URL.
+The status code is 2147954429.
+64
+| Warning | The BITS job System update is configured to launch C:\\Users\\REDACTED\\AppData\\Local\\Microsoft\\Windows\\INetCache\\IE\\REDACTED\\mail.exe after transfer of http://127.0.0.1/
+tst/12/.
+The service failed to launch the program with error 2147942402, BITS will continue trying to launch the program periodically until it succeeds.
+Figure 3: Event log entries showing the creation of a BITS job for persistence Mandiant consultants were able to confirm the details of the BITS job by interacting with the host and examining the QMGR database.
+The malicious BITS job was set to attempt an HTTP transfer of a nonexistent file from the local host.
+As this file would never exist, BITS would trigger the error state and launch the notify command, which in this case was KEGTAP.

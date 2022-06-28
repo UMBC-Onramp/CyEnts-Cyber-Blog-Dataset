@@ -1,0 +1,5 @@
+
+Plugins initialization routine prototype The current backdoor's implementation provides support for up to 32 plugins with each of them mapped and initialized in the backdoor's process space.
+Additional Notes
+The first backdoor instance we observed back in December 2020 was a stable and well-written code, but it was clearly a work in progress.
+For example, the early instance of the malware spawns a thread to secure delete the DOUBLEDROP dropper from disk which indicates that an earlier variant of this malware launched a copy of the dropper from the file system.

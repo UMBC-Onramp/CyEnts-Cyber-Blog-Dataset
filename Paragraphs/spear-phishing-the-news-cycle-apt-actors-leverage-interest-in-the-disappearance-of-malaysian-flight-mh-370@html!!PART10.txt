@@ -1,0 +1,6 @@
+
+HTTP/1.1 User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Wis NT 5.0; .NET
+CLR 1.1.4322) Host: comer4s.minidns.net:8070 Cache-Control: no-cache The sample also drops a decoy file called “aa.doc” into the temp folder and displays the decoy content shown below: The “Tranchulas” Lures On March 18, 2014 a sample entitled “Malysia Airline MH370 hijacked by Pakistan.zip” was sent as a ZIP file (MD5: 7dff5c4ae1b1fea7ecbf7ab787da3468) that contained a Windows screensaver file disguised as a PDF (MD5: b03edbb264aa0c980ab2974652688876).
+The ZIP file was hosted on 199.91.173.43.
+This IP address was previously used to host malicious files.
+The screen saver file drops “winservice.exe” (MD5: 828d4a66487d25b413cb19ef8ee7c783) which begins beaconing to 199.91.173.45.

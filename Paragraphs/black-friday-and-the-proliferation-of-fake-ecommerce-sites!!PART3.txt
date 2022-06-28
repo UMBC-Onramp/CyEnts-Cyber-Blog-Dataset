@@ -1,0 +1,10 @@
+
+These sites are in no way affiliated with the trademark/IP owner, and are recognizable in part because they use the same template over and over in a digital game of whack-a-mole (meaning that as soon as one site gets shut down another one immediately pops up somewhere else).
+Several of the high-profile brands we have documented include: Blink (Amazon) Oculus (Facebook)
+Other well known brand names infringed include: Coleman (Camping Gear)
+Ninja (Home Appliances)
+Nu Wave (Home Appliances) Ryobi (Power tools) Makita  (Power tools)
+We also observed others that have since been taken down: Keurig Nespresso Common Framework The websites we’ve observed have the following characteristics in common:
+The domain names have only been registered for a few days to a few months All sites are registered with the same registrar They use .TOP
+and .SHOP top level domains (.com is also common)
+They use stolen imagery They contain numerous grammatical errors and inconsistencies in statements Social Media buttons do not resolve anywhere or go to accounts that either do not exist or have been deleted Their webhosting providers utilize content delivery networks (CDN) to remain anonymous (via an IP address that cannot be traced) Milwauketools.shop (Recently registered on 10/21/21)

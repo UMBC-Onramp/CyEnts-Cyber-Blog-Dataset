@@ -1,0 +1,7 @@
+
+To take a proactive approach at preventing BECs, make sure the following best practices are implemented in a O365 tenant.
+Additionally, FireEye Email Security offers protections against phishing and the Helix platform’s O365 ruleset can alert on anomalous activity as soon as it happens.
+Recommended Best Practices Ensure mailbox audit logging is enabled on all accounts Disable Legacy Authentication protocols Enable multi-factor authentication (MFA) Enforce strong passwords and a password expiration policy Forward O365 audit logs to a centralized logging platform for extended retention Enforce an account lockout policy in Azure/on-premise Active Directory Restrict mail forwarding to external domains Acknowledgements Special thanks to Doug Bienstock, Glenn Edwards, Josh Madeley, and Tim Martin for their research and assistance on the topic.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

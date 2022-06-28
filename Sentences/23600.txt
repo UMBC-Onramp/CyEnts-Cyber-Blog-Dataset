@@ -1,0 +1,93 @@
+In the six years since the launch of Discord’s chat and VoIP service, the platform has become a popular tool for building communities of interest, especially among gamers.
+
+However, just like any other platform that hosts user-generated content, Discord can be exploited.
+
+Discord’s extensive customization options also open the door to attacks on ordinary users, both on and off the chat server.
+
+Recent research into Discord security has revealed several cyberattack scenarios linked to its chat service, some of which can be truly dangerous for users.
+
+Here’s how to protect yourself.
+
+Malware being spread through Discord Malicious files distributed through Discord represent the most obvious threat.
+
+A recent study identified several dozen types of malware.
+
+We call this threat “obvious” simply because sharing files through Discord is very easy; every file uploaded to the platform is assigned a permanent URL, formatted as follows: cdn.discordapp.com/attachments/{channel ID}/{file ID}/{file name} Most files are freely available for download by anyone with the link.
+
+The study describes a real-life attack example: a fake website offering Zoom Web conferencing client downloads.
+
+The website looks like the real one, and the malicious file is hosted on a Discord server.
+
+That gets around restrictions on downloading files from untrusted sources.
+
+The rationale is that the servers of a popular application used by millions are less likely to be blocked by antimalware solutions.
+
+The malicious “lifehack” is as obvious as are the means of combating it: High-quality security solutions look at more than just the download source to determine the level of threat a file may pose.
+
+Kaspersky tools immediately detect malicious functionality the first time a user tries to download the file, for example, and then, with the help of a cloud-based security system, let all other users know the file should be blocked.
+
+All services that permit uploads of user-generated content face issues of misuse.
+
+Free Web hosting sites see phishing pages created on them, for example, and file-sharing platforms are used for spreading Trojans.
+
+Form-filling services serve as spam channels.
+
+The list goes on.
+
+Platform owners do try to combat the abuse, but with mixed results.
+
+Discord developers also clearly need to implement at least some basic means of user protection.
+
+For example, files used on a particular chat server need not be made available to the whole world.
+
+Checking and automatically blocking known malware also seems wise.
+
+Regardless, this is Discord’s least exotic problem, and combating it is really no different than dealing with any other method of malware distribution.
+
+It is not, however, the only threat users face.
+
+Malicious bots Another recent study demonstrates how easy it is to exploit Discord’s bot system.
+
+The bots extend chat server functionality in various ways, and Discord offers a vast array of options for customizing users’ own chats.
+
+One example of chat-related malicious code was recently published on (and fairly quickly removed from)
+
+GitHub:
+
+Using mainly capabilities provided by the Discord API, the author was able to execute arbitrary code on a user’s computer.
+
+It might look something like this: A malicious chatbot launches an arbitrary program on a user’s computer after receiving a command through a Discord chat.
+
+Source In one attack scenario, malicious code relies on a locally installed Discord client to launch automatically on startup.
+
+Installing a bot from an untrusted source can lead to such an infection.
+
+The researchers also looked at another Discord misuse scenario that doesn’t rely on the user having installed a Discord client.
+
+In this case, the malware uses the chat service to communicate.
+
+Thanks to the public API, uncomplicated registration process, and basic data encryption, a backdoor can easily and conveniently use Discord to send data about the infected system to its operator and, in turn, receive commands to execute code, upload new malicious modules, and more.
+
+That kind of scenario appears quite dangerous; it greatly simplifies the work of attackers, who then do not need to create a communication interface with infected computers but can instead use something already available.
+
+At the same time, it somewhat complicates the detection of malicious activity; conversations between the backdoor and its operator look like regular user activity in a popular chat.
+
+Protection for gamers Although the aforementioned threats apply to all Discord users, they relate mainly to those who use Discord as a game add-in: for voice and text communication, streaming, collecting gaming statistics, and so on.
+
+Such use entails substantial customization and adds to users’ risks of finding and installing malicious extensions.
+
+The relaxed, seemingly safe environment actually represents further threat, increasing the success rate of social engineering techniques — bait goes down easier in a cozy chat with people you believe are your friends.
+
+We recommend following the same digital hygiene rules on Discord as you do elsewhere on the Web: Don’t click suspicious links or download obscure files; scrutinize offers that sound too good to be true; and refrain from sharing any personal or financial information.
+
+As for the Trojans and backdoors, Discord-based or simply distributed through the platform, they are not special or essentially different from other kinds of malware.
+
+Use a reliable antivirus app to stay safe, keep it running at all times — including when you install any software or add bots to a chat server — and pay attention to its warnings.
+
+Performance need not be a concern.
+
+For example, our security products include a game mode that minimizes overhead without compromising protection.
+
+
+
+

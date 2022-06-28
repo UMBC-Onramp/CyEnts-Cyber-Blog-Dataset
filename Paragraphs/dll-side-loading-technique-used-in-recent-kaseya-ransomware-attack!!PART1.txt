@@ -1,0 +1,5 @@
+FortiGuard Labs Threat Research Report Affected Platforms : Windows Impacted parties : Windows Users Impact :
+Data encryption, Data destruction Threat Severity : Critical Introduction to the Kaseya Ransomware Attack
+In this article we examine the ransomware used in the recent Kaseya attack .
+We will see what happens when a machine is infected by this ransomware by looking at some of the visible Indicators of Compromise, such as modified wallpaper, several “<random string>-readme.txt” files in different folders, and changes in the filenames with < random string > extensions.
+We will also discuss in more details how DLL side-loading was implemented along with other malware tricks that the ransomware used.

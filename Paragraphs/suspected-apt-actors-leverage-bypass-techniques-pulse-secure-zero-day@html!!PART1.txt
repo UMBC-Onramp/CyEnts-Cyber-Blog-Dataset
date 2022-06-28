@@ -1,0 +1,4 @@
+Executive Summary Mandiant recently responded to multiple security incidents involving compromises of Pulse Secure VPN appliances.
+This blog post examines multiple, related techniques for bypassing single and multifactor authentication on Pulse Secure VPN devices, persisting across upgrades, and maintaining access through webshells.
+The investigation by Pulse Secure has determined that a combination of prior vulnerabilities and a previously unknown vulnerability discovered in April 2021, CVE-2021-22893 , are responsible for the initial infection vector.
+Pulse Secure’s parent company, Ivanti, released mitigations for a vulnerability exploited in relation to these malware families and the Pulse Connect Secure Integrity Tool for their customers to determine if their systems are impacted.

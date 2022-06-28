@@ -1,0 +1,6 @@
+
+However, security experts recommend stricter enforcement of two current protections, application layer protocol negotiation and server name indication.
+This will help deal with new MITM efforts.
+DDoS Attacks Internet of things (IoT) devices are now commonplace across enterprises in all industries.
+So, DDoS attacks have increased in a big way.
+Threat actors can ramp up attack volumes rapidly, giving companies almost no time to respond before critical systems come crashing down.

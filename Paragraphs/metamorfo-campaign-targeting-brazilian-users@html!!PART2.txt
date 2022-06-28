@@ -1,0 +1,8 @@
+
+ Figure 1 shows a sample email, and Figure 2 show the contents of the HTML file.
+Figure 1:
+Malicious Email with HTML Attachment Figure 2:
+Contents of HTML File When the URL is loaded, it redirects the victim to a cloud storage site such as GitHub, Dropbox, or Google Drive to download a ZIP file.
+ An example is shown in Figure 3.
+Figure 3: URL Shortener Redirects to Github Link
+The ZIP archive contains a malicious portable executable (PE) file with embedded HTML application (HTA).

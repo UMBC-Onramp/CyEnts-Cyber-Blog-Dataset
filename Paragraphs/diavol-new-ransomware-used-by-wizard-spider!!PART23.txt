@@ -1,0 +1,4 @@
+
+As the attack progressed, we found more Conti payloads named locker.exe in the network, strengthening the possibility the threat actor is indeed Wizard Spider.
+Despite a few similarities between Diavol, Conti, and other related ransomware, it’s still unclear, however, whether there’s a direct link between them.
+And, there are a couple of major differences from attacks previously attributed to Wizard Spider & Co., namely: - No checks and balances to ensure the payload will not execute on Russian victims.

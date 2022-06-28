@@ -1,0 +1,12 @@
+
+To get the values for the “Longitude” and “Threat Intel” columns, we repeat the process by using a similar function and, adjusting the column index number to reference the appropriate columns, then use the fill handle to fill in the rest of the column in our O365 data sheet:
+For Longitude: =
+VLOOKUP(G2,'IP Address Intel'!$A$2:$D$15, 3 ,0)
+For Threat Intel: =
+VLOOKUP(G2,'IP Address Intel'!$A$2:$D$15, 4 ,0)
+Bonus Option:
+XLOOKUP The XLOOKUP function in Excel is a more efficient way to reference the threat intelligence data sheet.
+XLOOKUP is a newer function introduced to Excel to replace the legacy VLOOKUP function and, at the time of writing this post, is only available to “O365 subscribers in the Monthly channel”, according to Microsoft.
+In this instance, we will also leverage Excel’s dynamic arrays and “spilling” to fill in this data more efficiently, instead of making an XLOOKUP function for each column.
+NOTE:
+To utilize dynamic arrays and spilling, the data we are seeking to enrich cannot be in the form of a “Table” object.

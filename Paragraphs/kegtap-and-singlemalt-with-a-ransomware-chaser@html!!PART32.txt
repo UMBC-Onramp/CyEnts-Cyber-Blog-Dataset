@@ -1,0 +1,10 @@
+
+ciscocheckapi[.]com 97ca76ee9f02cfda2e8e9729f69bc208 1/31/20 81.17.25.210:443 CN=update-wind[.]com 877bf6c685b68e6ddf23a4db3789fcaa 1/31/20 31.7.59.141:80 CN=updatewinsoftr[.]com 07f9f766163c344b0522e4e917035fe1 2/2/20 155.138.214.247:80 CN=cleardefencewin[.]com 61df4864dc2970de6dcee65827cc9a54 2/2/20
+155.138.214.247:443 CN=cleardefencewin[.]com
+61df4864dc2970de6dcee65827cc9a54 2/2/20 45.76.231.195:443 CN=checkwinupdate[.]com d8e5dddeec1a9b366759c7ef624d3b8c 2/2/20 45.76.231.195:80 CN=
+checkwinupdate[.]com d8e5dddeec1a9b366759c7ef624d3b8c 2/3/20 46.19.142.154:443 CN=
+havesetup[.]net cd354c309f3229aff59751e329d8243a 2/3/20 95.179.219.169:80 CN=jomamba[.]best 80b7001e5a6e4bd6ec79515769b91c8b 2/3/20 140.82.60.155:80 CN=updatemanagir[.]us ec16be328c09473d5e5c07310583d85a 2/3/20 209.222.108.106:80 CN=
+timesshifts[.]com 2bb464585f42180bddccb50c4a4208a5 2/3/20 66.42.118.123:443 CN=conhostservice[.]com 6c21d3c5f6e8601e92ae167a7cff721c 2/4/20 80.240.18.106:443 CN=microsoftupdateswin[.]com 27cae092ad6fca89cd1b05ef1bb73e62 2/4/20 95.179.215.228:443 CN=
+iexploreservice[.]com 26010bebe046b3a33bacd805c2617610
+2/12/20 155.138.216.133:443 CN=defenswin[.]com e5005ae0771fcc165772a154b7937e89 2/12/20 45.32.130.5:443 CN=
+avrenew[.]com f32ee1bb35102e5d98af81946726ec1b 2/14/20 45.76.167.35:443 CN=freeallsafe[.]com 85f743a071a1d0b74d8e8322fecf832b 2/14/20 45.63.95.187:443 CN=

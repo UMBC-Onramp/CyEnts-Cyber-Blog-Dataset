@@ -1,0 +1,14 @@
+
+Skyrocket.com is an app monetization service provided by Burstly .
+The following PCap shows that Angry Birds retrieves the customer ID from Skyrocket.com through an HTTP GET request: HTTP/1.1 200 OK Cache-Control: private Content-Type: text/html
+Date: Thu, 06 Mar 2014 07:12:25
+GMT Server: Microsoft-IIS/7.5 ServerName: P-ADS-OR-WEBA #5 X-AspNet-Version: 4.0.30319 X-Powered-
+By: ASP.NET X-ReqTime: 2 X-Stats: geo-0 Content-Length: 9606
+Connection: keep-alive GET /7…
+.4/ad/image/1...
+c.jpg HTTP/1.1 User-Agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-us;
+Ascend Y300
+Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko)
+Version/4.0
+Mobile Safari/534.30 Host: cdn.skyrocketapp.com
+Connection: Keep-Alive {\"type\":\"ip\",\"Id\":\"9XXX8\",...

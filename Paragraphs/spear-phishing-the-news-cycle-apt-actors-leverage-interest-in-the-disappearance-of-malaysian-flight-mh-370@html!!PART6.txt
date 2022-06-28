@@ -1,0 +1,9 @@
+
+In addition to the above activity attributed to the Admin@338 group, a number of other malicious documents abusing the missing Flight 370 story were also seen in the wild.
+Other threat groups likely sent these other documents.
+The Naikon Lures On March 9, 2014, a malicious executable entitled the “Search for MH370 continues as report says FBI agents on way to offer assistance.pdf .exe
+“ (MD5: 52408bffd295b3e69e983be9bdcdd6aa) was seen circulating in the wild.
+This sample beacons to the CnC net.googlereader[.]pw:443.
+We have identified this sample, via forensic analysis, as Backdoor.
+APT.Naikon.
+It uses a standard technique of changing its icon to make it appear to be a PDF, in order to lend to its credibility.

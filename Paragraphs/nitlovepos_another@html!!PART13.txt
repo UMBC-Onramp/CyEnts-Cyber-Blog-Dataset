@@ -1,0 +1,14 @@
+
+The information contained in the NitlovePOS beacon matches the fields that are displayed in the Nitbot control panel.
+These include the machines GIUD that is transmitted in the User-Agent header as well as an identifier “HWAWAWAWA,” which aligns with the “group name” that can be used by the cybercriminals to track various campaigns.
+The control panel contains a view that lists the “tracks,” or stolen payment card data.
+This indicates that this panel is for malware capable of stealing data from POS machines that matches up with the capability of the NitlovePOS malware.
+Conclusion Even cybercriminals engaged in indiscriminate spam operations have POS malware available and can deploy it to s subset of their victims.
+Due to the widespread use of POS malware, they are eventually discovered and detection increases.
+However, this is followed by the development of new POS with very similar functionality.
+Despite the similarity, the detection levels for new variants are initially quite low.
+This gives the cybercriminals a window of opportunity to exploit the use of a new variant.
+We expect that new versions of functionally similar POS malware will continue to emerge to meet the demand of the cybercrime marketplace.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

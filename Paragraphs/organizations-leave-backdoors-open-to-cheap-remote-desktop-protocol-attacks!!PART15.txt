@@ -1,0 +1,6 @@
+
+This is definitely not something you want to discover on a Russian underground RDP shop, but the story gets worse.
+From bad to worse Two of the IP addresses presented a screenshot of the accessible login screens.
+A login screen that matches the configuration offered in the RDP shop.
+A closer look at the screenshots shows that the Windows configuration (preceding screen) is identical to the system offered in the RDP shop.
+There are three user accounts available on this system, one of which is the administrator account.

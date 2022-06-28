@@ -1,0 +1,6 @@
+
+Using these accounts, the attacker owned these systems and could do anything they wanted, including turning off any end-point security products.
+Interestingly, both the lateral movement and the deployment of the ransomware was entirely automated.
+Deployment of the Ransomware
+This specific case was a classic hit and run.
+After gaining access to the initial system using the brute-forced administrator account, the attacker logged in and deployed the ransomware almost immediately.

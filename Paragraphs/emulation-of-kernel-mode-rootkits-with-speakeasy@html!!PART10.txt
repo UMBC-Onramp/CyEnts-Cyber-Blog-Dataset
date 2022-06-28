@@ -1,0 +1,5 @@
+
+The malware does this so it can later inject an encoded, memory-resident DLL into the services.exe process.
+Figure 5 shows the APIs used by the rootkit to resolve its user mode exports.
+Figure 5: Logged APIs used by tcprelay.sys rootkit to resolve exports for its user mode implant
+Once the exported functions are resolved, the rootkit is ready to inject the user mode DLL component.

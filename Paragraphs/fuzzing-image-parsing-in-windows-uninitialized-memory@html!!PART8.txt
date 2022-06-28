@@ -1,0 +1,6 @@
+
+Diff harness The idea behind this fuzzing harness is not entirely new; previously, lcamtuf used a similar idea to detect uninitialized memory in open-source image parsers and used a web page to display the pixel differences.
+Fuzzing With the diffing harness ready, one can proceed to look for the supported image formats and gather corpuses.
+Gathering image files for corpus is considerably easy given the near unlimited availability on the internet, but at the same time it is harder to find good corpuses among millions of files with unique code coverage.
+Code coverage information for Windows image parsing is tracked from WindowsCodecs.dll.
+Note that unlike regular Windows fuzzing, we will not be enabling PageHeap this time as PageHeap “initializes” the heap allocations with patterns.

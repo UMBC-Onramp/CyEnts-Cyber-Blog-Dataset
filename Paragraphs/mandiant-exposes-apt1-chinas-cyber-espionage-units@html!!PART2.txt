@@ -1,0 +1,12 @@
+
+Highlights of the report include:
+Evidence linking APT1 to China's 2nd Bureau of the People's Liberation Army (PLA) General Staff Department's (GSD) 3rd Department (Military Cover Designator 61398).
+A timeline of APT1 economic espionage conducted since 2006 against 141 victims across multiple industries.
+APT1's modus operandi (tools, tactics, procedures) including a compilation of videos showing actual APT1 activity .
+The timeline and details of over 40 APT1 malware families.
+The timeline and details of APT1's extensive attack infrastructure.
+Mandiant is also releasing a digital appendix with more than 3,000 indicators to bolster defenses against APT1 operations.
+This appendix includes: Digital delivery of over 3,000 APT1 indicators, such as domain names, and MD5 hashes of malware.
+Thirteen (13) X.509 encryption certificates used by APT1.
+A set of APT1 Indicators of Compromise (IOCs) and detailed descriptions of over 40 malware families in APT1's arsenal of digital weapons.
+IOCs that can be used in conjunction with Redline ™, Mandiant's free host-based investigative tool, or with Mandiant Intelligent Response® (MIR) , Mandiant's commercial enterprise investigative tool.

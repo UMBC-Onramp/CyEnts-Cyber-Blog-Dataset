@@ -1,0 +1,7 @@
+
+Muhstik Bot First sighting exploiting CVE-2021-44228: December 11, 2021
+The attacker sends the following request to a vulnerable server whic h leads to download and execution of Exploit.class on the target.
+This Java class downloads ‘log ’ from 68[.]183.165.105 in Linux environments and ‘ s. cmd ’ from 172[.]105.241.146 on Windows environments using powershell .
+Log is a shell script that downloads multiple pty ELF files, each built for a different architecture (i.e., MIPS, ARM, Intel ) .
+These are variants of Muhstik bot which is the same malware targeting Confluence servers back in September .
+S.cmd is a powershell script that installs Monero miner and saves the earnings from the mining to this wallet “46QBumovWy4dLJ4R8wq8JwhHKWMhCaDyNDEzvxHFmAHn92EyKrttq6LfV6if5UYDAyCzh3egWXMhnfJJrEhWkMzqTPzGzsE”.

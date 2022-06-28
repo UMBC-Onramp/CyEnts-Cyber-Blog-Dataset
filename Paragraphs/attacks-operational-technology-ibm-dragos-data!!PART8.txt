@@ -1,0 +1,4 @@
+
+After ransomware, which made up 30% of attacks, remote access trojans (RATs) were the second-most common attack vector against organizations with connected OT networks in 2020 and 2021, making up 16% of intrusions on these organizations.
+Malware like Adwind, jRAT, Trickbot and Emotet were some of the most common malware types associated with these RAT operations.
+A group Dragos tracks as STIBNITE uses spearphishing to drop PoetRAT to gather information, take screenshots, transfer files and execute commands on victim systems for the purpose of identifying access points into ICS networks.

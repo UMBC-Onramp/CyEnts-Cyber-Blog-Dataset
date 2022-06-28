@@ -1,0 +1,8 @@
+
+Graph mode is great until the function becomes complex.
+IDA is often forced to place adjacent nodes relatively far apart, or have edges in the graph cross and have complex paths.
+Using the overview graph becomes extremely difficult due to the density of nodes and edges, as seen in Figure 1.
+Figure 1:
+An annoying function IDA has a built-in mechanism to help simplify graphs: creating groups of nodes, which replaces all of the selected nodes with a new group node representative.
+This is done by selecting one or more nodes, right-clicking, and selecting “Group nodes”, as shown in Figure 2.
+Doing this manually is certainly possible, but it becomes tedious to follow edges in complex graphs and correctly select all of the relevant nodes without missing any, and without making mistakes.

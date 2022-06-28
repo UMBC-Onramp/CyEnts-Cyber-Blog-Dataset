@@ -1,0 +1,6 @@
+
+You should reduce the amount of domain administrators within the organization in general and avoid accessing the RDP server or other externally exposed systems via these accounts, to avoid inadvertently making credentials accessible.
+In general, ‘least privilege’ administration models should be used.
+Microsoft provides guidance in this area, including how best to use domain admin accounts, here .
+Consider Placement Within the Network Where possible, RDP servers should be placed within a DMZ or other restricted area of the network.
+The idea here is that if an attack is successful, its scope is reduced and confined to the RDP server alone.

@@ -1,0 +1,2 @@
+By Raj Samani and Ryan Sherstobitoff on Oct 17, 2018 A wall eight feet high with three strands of barbed wire is considered sufficient to deter a determined intruder, at least according to the advice offered by the CISSP professional certification.
+Although physical controls can be part of a multifaceted defense, an electronic attack affords the adversary time to develop the necessary tools to bypass any logical wall set before them.

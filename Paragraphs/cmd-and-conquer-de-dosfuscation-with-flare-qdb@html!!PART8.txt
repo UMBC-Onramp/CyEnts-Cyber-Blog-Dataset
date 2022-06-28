@@ -1,0 +1,5 @@
+
+I/O streams in a single command, cmd.exe represents I/O redirection with a linked list.
+For example, the command in Listing 1 shows redirection of standard output (stream #1 is implicit) to shares.txt and standard error (stream #2 is explicitly referenced) to errors.txt.
+net use > shares.txt 2>errors.txt
+Listing 1: Command-line I/O redirection example Figure 5 shows the command data structure and the I/O redirection linked list in block diagram format.

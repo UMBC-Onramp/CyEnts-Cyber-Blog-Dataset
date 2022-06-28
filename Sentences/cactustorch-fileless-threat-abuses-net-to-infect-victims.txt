@@ -1,0 +1,111 @@
+By McAfee on Jul 26, 2018 McAfee Labs has noticed a significant shift by some actors toward using trusted Windows executables, rather than external malware, to attack systems.
+
+One of the most popular techniques is a “fileless” attack.
+
+Because these attacks are launched through reputable executables, they are hard to detect.
+
+Both consumers and corporate users can fall victim to this threat.
+
+In corporate environments, attackers use this vector to move laterally through the network.
+
+One fileless threat, CactusTorch, uses the DotNetToJScript technique, which loads and executes malicious .NET
+
+assemblies straight from memory.
+
+These assemblies are the smallest unit of deployment of an application, such as a .dll
+
+or .exe.
+
+As with other fileless attack techniques, DotNetToJScript does not write any part of the malicious .NET assembly on a computer’s hard drive; hence traditional file scanners fail to detect these attacks.
+
+In 2018 we have seen rapid growth in the use of CactusTorch, which can execute custom shellcode on Windows systems.
+
+The following chart shows the rise of CactusTorch variants in the wild.
+
+Source: McAfee Labs.
+
+The DotNetToJScript tool kit Compiling the DotNetToJScript tool gives us the .NET executable DotNetToJScript.exe, which accepts the path of a .NET assembly and outputs a JavaScript file.
+
+Figure 1: Using DotNetToJScript.exe to create a malicious JavaScript file.
+
+The DotNetToJScript tool kit is never shipped with malware.
+
+The only component created is the output JavaScript file, which is executed on the target system by the script host (wscript.exe).
+
+For our analysis, we ran some basic deobfuscation and found CactusTorch , which had been hidden by some online tools: Figure 2:
+
+CactusTorch code.
+
+Before we dive into this code, we need to understand .NET
+
+and its COM exposure.
+
+When we install the .NET framework on any system, several .NET libraries are exposed via Microsoft’s Component Object Model (COM).
+
+Figure 3: COM exposing the .NET library System.
+
+Security.
+
+Cryptography.
+
+FromBase64Transform.
+
+If we look at the exposed interfaces, we can see IDispatch, which allows the COM object to be accessed from the script host or a browser.
+
+Figure 4: Exposed interfaces in a .NET library.
+
+To execute malicious code using the DotNetToJScript vector, an attack uses the following COM objects: Text.
+
+ASCIIEncoding Security.
+
+Cryptography.
+
+FromBase64Transform IO.MemoryStream
+
+Runtime.
+
+Serialization.
+
+Formatters.
+
+Binary.
+
+BinaryFormatter Collections.
+
+ArrayList
+
+Now, let’s return to the JavaScript code we saw in Figure 2.
+
+The function base64ToStream()converts the Base64-encoded serialized object to a stream.
+
+Before we can fully understand the logic behind the JavaScript code, we need to examine the functionality of the Base64-encoded serialized object.
+
+Thus our next step is to reverse engineer the embedded serialized object and recreate the class definition.
+
+Once that was done, the class definition looks like the following code, which is responsible for executing the malicious shellcode.
+
+(Special thanks to Casey Smith, @subTee, for important pointers regarding this step).
+
+Figure 5:
+
+The class definition of the embedded serialized object.
+
+Now we have the open-source component of CactusTorch , and the JavaScript code in Figure 2 makes sense.
+
+We can see how the malicious shellcode is executed on the targeted system.
+
+In Figure 2, line 29 the code invokes the flame(x,x) function with two arguments: the executable to launch and the shellcode.
+
+The .NET assembly embedded in the CactusTorch script runs the following steps to execute the malicious shellcode:
+
+Launches a new suspended process using CreateProcessA (to host the shellcode) Allocates some memory with VirtualAllocEx() with an EXECUTE_READWRITE privilege Writes the shellcode in the target’s process memory with WriteProcessMemory() Creates a new thread to execute the shellcode using CreateRemoteThread() Conclusion Fileless malware takes advantage of the trust factor between security software and genuine, signed Windows applications.
+
+Because this type of attack is launched through reputable, trusted executables, these attacks are hard to detect.
+
+McAfee Endpoint Security (ENS) and Host Intrusion Prevention System (HIPS) customers are protected from this class of fileless attack through Signature ID 6118.
+
+Acknowledgements The author thanks the following colleagues for their help with this analysis: Abhishek Karnik Deepak Setty Oliver Devane Shruti Suman References https://ruxcon.org.au/assets/2017/slides/NET-Interop-Full.pdf https://github.com/tyranid/DotNetToJScript https://github.com/mdsecactivebreach/cactustorch MITRE ATT&CK techniques Drive-by compromise Scripting using Windows Script Host Decode information Command-line interface Process injection Hashes 4CF9863C8D60F7A977E9DBE4DB270819 5EEFBB10D0169D586640DA8C42DD54BE 69A2B582ED453A90CC06345886F03833 74172E8B1F9B7F9DB600C57E07368B8F 86C47B9E0F43150FEFF5968CF4882EBB 89F87F60137E9081F40E7D9AD5FA8DEF 8A33BF71E8740BDDE23425BBC6259D8F 8DCCC9539A499D375A069131F3E06610
+
+924B7FB00E930082CE5B96835FDE69A1 B60E085150D53FCE271CD481435C6E1E BC7923B43D4C83D077153202D84EA603 C1A7315FB68043277EE57BDBD2950503 D2095F2C1D8C25AF2C2C7AF7F4DD4908 D5A07C27A8BBCCD0234C81D7B1843FD4 E0573E624953A403A2335EEC7FFB1D83 E1677A25A047097E679676A459C63A42 F0BC5DFD755B7765537B6A934CA6DBDC F6526E6B943A6C17A2CC96DD122B211E CDB73CC7D00A2ABB42A76F7DFABA94E1 D4EB24F9EB1244A5BEAA19CF69434127
+
+

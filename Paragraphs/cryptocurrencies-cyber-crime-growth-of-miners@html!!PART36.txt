@@ -1,0 +1,5 @@
+
+The malware spreads by trying to guess the SSH login credentials of target Linux systems.
+Once that is achieved, the bot deploys a simple base64-encoded Python script that connects to the C2 server to download and execute more malicious Python code.
+Detection Avoidance Methods Another trend worth noting is the use of proxies to avoid detection.
+The implementation of mining proxies presents an attractive option for cyber criminals because it allows them to avoid developer and commission fees of 30 percent or more.

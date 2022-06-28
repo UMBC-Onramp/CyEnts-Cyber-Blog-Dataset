@@ -1,0 +1,5 @@
+
+Using a training set of URLs with malicious and benign labels, we can treat the URL Transformer architecture as a feature extractor, whose outputs we use as the input to a traditional classifier (e.g., FFNN or even a random forest).
+When using a FFNN as our classifier, we can backpropagate the classification loss (e.g., binary cross-entropy) through both the classifier and the Transformer network to adjust the weights to perform classification.
+This training regime is the baseline for our experiments and is how most deep learning models are trained for classification tasks.
+Next-Character Prediction Pre-Training and Fine-Tuning Beyond the baseline classification training regime, the NLP literature suggests that one can learn a self-supervised embedding of the input sequence by training the Transformer to perform a next-character prediction task, then fine-tuning the learned representation for the classification problem.

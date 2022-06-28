@@ -1,0 +1,6 @@
+
+One difference you may notice is the absence of an option to specify the browser(s)
+you would like to target.
+You can now find that option by selecting Show Advanced Parameters from the upper right corner of the window.
+Once advanced parameters are enabled, simply type the name of any browser(s)
+you would like to target, each on its own separate line in the Target Browser field.

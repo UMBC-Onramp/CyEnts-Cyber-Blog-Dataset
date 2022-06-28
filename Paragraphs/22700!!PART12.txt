@@ -1,0 +1,9 @@
+
+Cryptors started to squeeze out blockers .
+Cryptors prevailed for several reasons.
+First, user data is significantly more valuable than system files and applications, which can always be reinstalled.
+With encryption, cybercriminals could demand significantly higher ransoms — and had a better chance of getting paid.
+Second, by 2015, cryptocurrencies were widely used for anonymous money transfers, so the attackers were no longer afraid of being traced.
+Bitcoin and others made it possible to receive large ransoms without lighting up on the radar.
+2016:
+Mass ransomware Ransomware continued to grow as a force in cybersecurity, and 2016 saw an elevenfold increase in the number of ransomware modifications , with the average ransom ranging from 0.5 to hundreds of bitcoins (which were worth a fraction of today’s price).

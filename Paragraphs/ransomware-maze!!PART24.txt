@@ -1,0 +1,7 @@
+
+Generate a new random extension for the victim file.
+Each file has a different extension but does not lose the original extension; the new one is appended to the old one.
+For example, “1.zip” becomes “1.zip.gthf”.
+Crypt the file with the ChaCha algorithm and the key and iv with the RSA public key generated in runtime.
+Write this new block with the key and iv to decrypt at the end of the file.
+Rename the file with the function “MoveFileExW”.

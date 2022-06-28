@@ -1,0 +1,7 @@
+
+If it guesses correctly, the user gets a performance boost.
+If not, the CPU discards the speculatively executed instructions and runs the other set.
+In a Spectre-vulnerability attack, an attempt is made to read a data area to which the program does not have access.
+In the first stage of the attack, multiple calls are made to open-access data areas, whereby the branch prediction system is “trained” to perform the forbidden read operation as well.
+Using branch prediction, the CPU performs the operation in advance because it is used to the program asking to read data that it is actually allowed to read.
+But a check reveals that the program is prohibited from accessing the data, so the speculatively executed computations are discarded.

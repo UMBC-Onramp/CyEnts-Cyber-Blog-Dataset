@@ -1,0 +1,5 @@
+
+Even with an otherwise clean device, this may prove an unpleasant discovery: a phone chosen specifically for its inability to connect to the Internet goes online anyway.
+Earlier, the same researcher analyzed another push-button phone .
+Although he found no malicious functionality, the device had a menu of paid subscriptions for horoscopes and demo games, the full versions of which the user could unlock — and pay for — with a text.
+In other words, your elderly relative or child could press the wrong button on a phone purchased specifically for its lack of Internet and apps and end up paying for the mistake.

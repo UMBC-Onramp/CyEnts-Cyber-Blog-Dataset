@@ -1,0 +1,4 @@
+FLARE VM is the first of its kind reverse engineering and malware analysis distribution on Windows platform.
+Since its introduction in July 2017 , FLARE VM has been continuously trusted and used by many reverse engineers, malware analysts, and security researchers as their go-to environment for analyzing malware.
+Just like the ever-evolving security industry, FLARE VM has gone through many major changes to better support our users’ needs.
+FLARE VM now has a new installation, upgrade, and uninstallation process, which is a long anticipated feature requested by our users.

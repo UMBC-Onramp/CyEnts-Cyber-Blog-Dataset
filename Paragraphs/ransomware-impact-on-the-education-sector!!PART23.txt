@@ -1,0 +1,7 @@
+
+Since it has been reported that many phishing and spearphishing attacks are being delivered as part of social engineering distribution mechanisms, end-users must also be made aware of the various types of attacks currently in use.
+The FortiPhish cloud-based phishing simulation service uses real-world simulated phishing attacks and analysis to test user awareness and vigilance and help hone training efforts.
+Regular training sessions on how to spot emails with malicious attachments or links combined with impromptu tests increase user awareness and helps prevent initial access into the network.
+Zero Trust Network Access (ZTNA) addresses all types of attacks/threats:
+Reduces Attack Surface—ZTNA only allows access to specifically requested applications rather than the network-level access provided by traditional VPN.
+Ensures Endpoint Security Compliance—Checks to ensure the endpoint is compliant with your security policies (no critical vulnerabilities, has adequate security enabled, etc.) and only grants access to compliant endpoints.

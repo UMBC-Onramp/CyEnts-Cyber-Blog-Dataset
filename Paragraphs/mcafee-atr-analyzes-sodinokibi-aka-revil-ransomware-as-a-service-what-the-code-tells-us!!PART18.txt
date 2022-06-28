@@ -1,0 +1,9 @@
+
+It is the key used in the decryptor by the affiliate, but it means that the malware authors can always decrypt any file crypted with any sample as a secondary resource to decrypt the files.
+pk_key ->
+Victim public key derivate from the private key.
+subkey -> Affiliate public key to use.
+stat ->
+The information gathered from the victim machine and used to put in the ransom note crypted and in the POST send to domains.
+rnd_ext ->
+The random extension for the encrypted files (can be from 5 to 10 alphanumeric characters).

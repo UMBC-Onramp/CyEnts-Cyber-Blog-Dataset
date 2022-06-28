@@ -1,0 +1,4 @@
+
+The threat actors’ ultimate goal in some cases was to ransom systems in mass with BitPaymer or DoppelPaymer ransomware (see Figure 1).
+Figure 1: Recent FakeUpdates infection chain Due to campaign proliferation, we have responded to this activity at both Mandiant Managed Defense customers and incident response investigations performed by Mandiant.
+Through Managed Defense network and host monitoring as well as Mandiant’s incident response findings, we observed the routes the threat actor took, the extent of the breaches, and exposure of their various toolkits.

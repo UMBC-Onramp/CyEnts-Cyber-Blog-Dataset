@@ -1,0 +1,9 @@
+
+Then the encryption algorithm is run against portions of its own S-box , transforming it at each step.
+This process is initialized using part of the 24-byte payload received from the C2 server.
+Once the table has been fixed, the actual encryption begins.
+T he malware improves upon the Nintendo implementation by adding cipher-block chaining (CBC) .
+With CBC, each 8-byte plaintext block is first XOR e d against the encrypted output from the previous block, and then that value is encrypted.
+The result is a chain where the encrypted value of each block depends on the value of the previous block.
+To start this process, the first block is XORed against an initialization vector (IV) .
+Here, the IV is itself the XOR of the first and last 8 bytes of the payload from the C2 server.

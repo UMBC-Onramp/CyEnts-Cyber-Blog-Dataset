@@ -1,0 +1,6 @@
+
+However, we did uncover both the patcher and unpatcher utilities.
+We do not provide a hash for this file as we have not recovered it from a system in the field.
+This analysis was performed by replaying the changes performed by the patcher we did recover.
+SLOWPULSE Variant 2 Patcher As part of our investigation into the SLOWPULSE family we were able to recover the utility used by the attacker to insert the malicious logic into the original libdsplibs.so file.
+The file with SHA256: c9b323b9747659eac25cec078895d75f016e26a8b5858567c7fb945b7321722c is responsible for inserting SLOWPULSE V2 malicious logic to log ACE credentials.

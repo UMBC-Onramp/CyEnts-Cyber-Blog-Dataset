@@ -1,0 +1,13 @@
+
+The XML manifest file contains metadata of the in-house app, including its bundle identifier, bundle version and the download URL of the .ipa file, as shown in Table 1.
+When installing the in-house iOS app wirelessly, iOS downloads this manifest file first and parse the metadata for the installation process.
+<a href=\"itms-services://?action=downloadmanifest&url=
+https://example.com/manifest.
+plist\">Install
+App</a> <plist> <array> <dict> ...
+<key>url</key> <string>
+https://XXXXX.com/another_browser.ipa</string> ... <key>bundle-identifier</key> <string
+>com.google.chrome.ios</string> … <key>bundle-version</key> <string>1000.0</string> </dict>
+<dict> … Entries For Another App </dict> <array> </plist
+> Table 1.
+An example of the hyperlink and the manifest file According to Apple’s official document [1], the bundle-identifier field should be “Your app’s bundle identifier, exactly as specified in your Xcode project”.

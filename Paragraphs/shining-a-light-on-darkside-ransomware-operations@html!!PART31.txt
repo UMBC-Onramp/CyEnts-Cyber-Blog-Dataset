@@ -1,0 +1,8 @@
+
+If the OS is older than Windows 10, the malware uses a documented slui.exe file handler hijack technique .
+This involves setting the registry value HKCU\\Software\\Classes\\exefile\\shell\\open\\command\\Default to the malware path and executing slui.exe using the verb \"runas.\"
+If the OS version is Windows 10 or newer, the malware attempts a UAC bypass that uses the CMSTPLUA COM interface .
+The decrypted strings listed in Figure 7 are used to perform this technique.
+Elevation:Administrator!new: {3E5FC7F9-9A51-4367-9063-A120244FBEC7} Figure 7: Decrypted UAC bypass strings Encryption Setup
+The malware generates a pseudo-random file extension based on a MAC address on the system.
+In a DARKSIDE version observed in May 2021, the file extension is generated using a MachineGuid registry value as a seed rather than the MAC address.

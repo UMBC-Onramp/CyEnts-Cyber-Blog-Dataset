@@ -1,0 +1,4 @@
+
+This command prints the word hai to the standard output stream but uses the right-angle bracket to redirect standard output to the NUL device, which discards all data.
+The orange boxes highlight non-null pointers that got my attention during analysis, and the arrows point to the commands I used to discover their contents.
+Figure 4: Exploring the interesting pointers in 2nd argument to cmd!Dispatch Because users can redirect multiple

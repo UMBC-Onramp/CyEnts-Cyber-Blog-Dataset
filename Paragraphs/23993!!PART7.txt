@@ -1,0 +1,5 @@
+
+The game creators settled for very simple compatibility check: they expect the mod developer to check everything themselves, and add incompatible extensions to a special list.
+Chaos/Holy Water took advantage of this feature, and started adding other popular extensions to the incompatibility list of their own mods.
+When users asked the creator why the mod was incompatible with other extensions, and what to do, they referred to the poor quality of code from other developers, and offered their own version of another extension, slightly modifying the original.
+That is how Chaos tried to popularize their modifications and increase the number of their own add-ons for each user.

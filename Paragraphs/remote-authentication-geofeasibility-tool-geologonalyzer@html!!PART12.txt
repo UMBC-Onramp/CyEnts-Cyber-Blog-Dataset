@@ -1,0 +1,5 @@
+
+Examples include logons from different campus buildings or an updated residential IP address.
+Manual analysis of the data could also reveal anomalies such as: Countries or regions where no business takes place, or where there are no employees located Datacenters that are not expected ASN names that are not expected, such as a university Usernames that should not log on to the service Unapproved VPN client software names Hostnames that are not part of the environment, do not match standard naming conventions, or do not belong to the associated user While it may be impossible to determine if a logon pattern is malicious based on this data alone, analysts can use GeoLogonalyzer to flag and investigate potentially suspicious logon activity through other investigative methods.
+GeoLogonalyzer Limitations Reserved Addresses Any RFC1918 source IP addresses, such as 192.168.X.X and 10.X.X.X, will not have a physical location registered in the MaxMind database.
+By default, GeoLogonalyzer will use the coordinates (0, 0) for any reserved IP address, which may alter results.

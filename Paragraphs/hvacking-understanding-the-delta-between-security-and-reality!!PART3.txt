@@ -1,0 +1,11 @@
+
+Yet, how do we access this code?
+As this is a critical system, the firmware and software are not publicly available and there is limited documentation.
+Thus, we are limited to external reconnaissance of the underlying system software.
+Since the most critical vulnerabilities are remote, it made sense to start with a simple network scan of the device.
+A TCP scan showed no ports open and a UDP scan only showed ports 47808 and 47809 to be open.
+Referring to the documentation, we determined this is most likely used for a protocol called Building Automation Control Network (BACnet).
+Using a BACnet-specific network enumeration script, we determined slightly more information: root@kali:~
+# nmap –script bacnet-info -sU
+-p 47808 192.168.7.15
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-10-01 11:03 EDT Nmap scan report for 192.168.7.15 Host is up (0.00032s latency).

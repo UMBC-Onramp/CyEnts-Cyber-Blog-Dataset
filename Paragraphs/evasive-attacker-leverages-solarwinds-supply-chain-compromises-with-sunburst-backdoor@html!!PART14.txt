@@ -1,0 +1,17 @@
+
+Code within the logically unrelated routine SolarWinds.
+Orion.
+Core.
+BusinessLayer.
+BackgroundInventory.
+InventoryManager.
+RefreshInternal invokes the backdoor code when the Inventory Manager plugin is loaded.
+SolarWinds.Orion.Core.BusinessLayer.dll is signed by SolarWinds, using the certificate with serial number 0f:
+e9:73:75:20:22:a6:06:ad:f2:a3:6e:34:5d:c0:ed.
+The file was signed on March 24, 2020.
+Initialization On execution of the malicious SolarWinds.
+Orion.
+Core.
+BusinessLayer.
+OrionImprovementBusinessLayer.
+Initialize method the sample verifies that its lower case process name hashes to the value 17291806236368054941.

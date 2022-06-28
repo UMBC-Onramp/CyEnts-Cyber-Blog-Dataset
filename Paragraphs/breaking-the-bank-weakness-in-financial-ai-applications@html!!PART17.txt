@@ -1,0 +1,9 @@
+
+Despite these limitations, as financial AI tools become more popular, adversarial methods to exploit these tools are also likely to become more commonplace on underground forums and via state-sponsored threats.
+Future financially motivated operations could monitor or manipulate trade simulation tools as another means of gaining advanced knowledge of upcoming market activity.
+Risk Assessment and Modeling Use AI can help the financial insurance sector's underwriting process by examining client data and highlighting features that it considers vulnerable prior to market-moving actions (joint ventures, mergers & acquisitions, research & development breakthroughs, etc.).
+Creating an accurate insurance policy ahead of market catalysts requires a risk assessment to highlight a client's potential weaknesses.
+Financial services can also employ AI applications to improve their risk models .
+Advances in generative adversarial networks can help risk management by stress-testing a firm's internal risk model to evaluate performance or highlight potential vulnerabilities in a firm's model.
+Potential Exploitation
+If a country is conducting market-moving events with a foreign business, state-sponsored espionage actors could use data poisoning attacks to cause AI models to over or underestimate the value or risk associated with a firm to gain a competitive advantage ahead of planned trade activity.

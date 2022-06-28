@@ -1,0 +1,4 @@
+Introduction In December 2017, FireEye's Mandiant discussed an incident response involving the TRITON framework .
+The TRITON attack and many of the publicly discussed ICS intrusions involved routine techniques where the threat actors used only what is necessary to succeed in their mission.
+For both INDUSTROYER and TRITON, the attackers moved from the IT network to the OT (operational technology) network through systems that were accessible to both environments.
+Traditional malware backdoors, Mimikatz distillates, remote desktop sessions, and other well-documented, easily-detected attack methods were used throughout these intrusions.

@@ -1,0 +1,10 @@
+
+During one negotiation, Egregor offered to provide the decryption key, in exchange for the organization publicly announcing that the group does not intentionally target hospitals or charities.
+In a chat with another victim, the threat actors discuss the hardships of COVID-19, even wishing the victim happy holidays.
+What is ‘Egregor’?
+The Egregor ransomware was first reported publicly in mid-2020, making it a relatively new entry into the criminal economy.
+Egregor operators work through an affiliate model, meaning a small group of actors run and maintain the Egregor code base and other actors purchase access to Egregor and use the malware on systems they infect.
+This model is best known as Ransomware as A Service (RaaS).
+Many security analysts speculated that Egregor was the follow-up to the Maze ransomware, pointing to significant technical overlap between the two ransomware families after Maze’s threat actors declared retirement in November 2020.
+Egregor gained significant recognition in 2021 as affiliates shifted from Maze to using this new ransomware family and leaked stolen information from impacted organizations, extorting them in efforts to collect a ransom.
+The impact of Egregor ransomware has been felt worldwide with an estimated $80 million dollars in profit through their operations against at least 150 organizations.

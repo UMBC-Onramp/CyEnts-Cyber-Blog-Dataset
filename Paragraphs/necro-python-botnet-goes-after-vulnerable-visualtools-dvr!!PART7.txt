@@ -1,0 +1,19 @@
+
+Visual Tools DVR Exploit As noted above, this bot added a new exploit to its arsenal.
+The exploit targets Visual Tools DVR VX16 4.2.28.0.
+A poc for this exploit was made available to the public in July, 2021.
+HTTP request made to attack Visual Tools DVR Aside from the bot, the payload will install a XMRig Monero miner with the following wallet.
+45iHeQwQaunWXryL9YZ2egJxKvWBtWQUE4PKitu1VwYNUqkhHt6nyCTQb2dbvDRqDPXveNq94DG9uTndKcWLYNoG2uonhgH
+The scanner function of the bot scans for the following ports and if available, it launches its attack.
+TARGET_PORTS
+=
+[22, 80, 443, 8081, 8081, 7001]
+Juniper Threat Labs is still seeing this Necromorph exploiting the following vulnerabilities: CVE-2020-15568 – TerraMaster TOS before 4.1.29 CVE-2021-2900 – Genexis PLATINUM 4410 2.1 P4410-V2-1.28 CVE-2020-25494 – Xinuos (formerly SCO) Openserver v5 and v6 CVE-2020-28188 – TerraMaster TOS <=
+4.2.06 CVE-2019-12725 – Zeroshell 3.9.0 Detection Exploits used in this attack are detected by Juniper’s NGFW SRX series.
+HTTP:CGI:BASH-CODE-INJECTION HTTP:
+CTS:TERRAMASTER-TOS-INJCTN HTTP:
+CTS:SCO-OPNSRVR-OS-INJ HTTP:CTS:GENEXIS-PLAT-RCE HTTP:
+CTS:ZEROSHELL-CGI-BIN-RCE Juniper Advanced Threat Prevention Cloud detects this bot as follows: Juniper Advanced Threat Prevention DNS Security also detects the DGA domain.
+Indicators of Compromise Domains: gtmpbeaxruxy[.]myftp.org URLs: http://gtmpbeaxruxy[.]myftp.org/setup.py http://gtmpbeaxruxy[.]myftp.org/setup http://gtmpbeaxruxy[.]myftp.org/xmrig http://gtmpbeaxruxy[.]myftp.org/xmrig1 Files: File Hash File Name Eb4a48a32af138e9444f87c4706e5c03d8dc313fabb7ea88c733ef1be9372899 setup E524bd7789b82df11891cc2c12af1ac0ea41dd0b946e1e04a4246cb36321f82f setup.py 0e537db39a7be5493750b7805e3a97da9e6dd78a0c7fca282a55a0241803d803 xmrig F72babf978d8b86a75e3b34f59d4fc6464dc988720d1574a781347896c2989c7 xmrig1 IP Addresses & ports: 107[.]150.8.170:9051 130[.]61.153.38:9050 142[.]93.143.155:9010 185[.]186.240.37:9119 185[.]82.217.167:9051 217[.]12.221.85:9051 23[.]237.60.122:9051 5[.]130.184.36:9999 5[.]61.53.57:9500 51[.]210.202.187:8425 78[.]153.5.183:666 8[.]209.253.198:9000 83[.]234.161.187:9999 85[.]159.44.163:9050 95[.]217.251.233:1080
+
+

@@ -1,0 +1,6 @@
+
+Amazon confirmed our findings and hot fixed the issue.
+Recently, we found two security issues within Amazon’s mobile apps on both Android and iOS platforms: No limitation or CAPTCHA for password attempts Weak password policy Attackers can exploit these two security issues remotely against target Amazon accounts.
+Figure 1.
+Verification Code for Wrong Password Attempts A CAPTCHA (\"Completely Automated Public Turing test to tell Computers and Humans Apart\") is a challenge-response test designed to determine whether the user is a human.
+CAPTCHAs are well adopted for preventing programmed bots from accessing online services for bad purposes, such as conducting denial-of-service attacks, harvesting information and cracking passwords.

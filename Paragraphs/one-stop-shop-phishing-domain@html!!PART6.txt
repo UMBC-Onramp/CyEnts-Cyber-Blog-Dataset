@@ -1,0 +1,11 @@
+
+In this case, we see that phishing websites have been crafted to spoof multiple banks in India.
+These attackers can potentially grab sensitive online banking information and other personal data, and even provided support for multifactor authentication and OTP.
+Moreover, disguising the initial presentation to appear as an online payment gateway service makes the phishing attack seem more legitimate.
+FireEye Labs detects this phishing attack and customers will be protected against the usage of these sites in possible future campaigns.
+Appendix Fake login pages were served for 26 banks.
+The following is a list of some of the banks: -Bank of Baroda - Corporate -Bank of Baroda - Retail -Bank of Maharashtra -HDFC Bank Figure 7: HDFC Bank fake login page -ICICI Bank -IDBI Bank -Indian Bank -IndusInd Bank -Jammu and Kashmir Bank -Kotak
+Bank
+-Lakshmi Vilas Bank - Corporate -Lakshmi Vilas Bank - Retail -State Bank of Hyderabad -State Bank of India -State Bank of Jaipur -State Bank of Mysore -State Bank of Patiala -State Bank of Bikaner -State Bank of Travancore -Tamilnad Mercantile Bank -United Bank of India Subscribe to Blogs Get email updates as new blog posts are added.
+
+

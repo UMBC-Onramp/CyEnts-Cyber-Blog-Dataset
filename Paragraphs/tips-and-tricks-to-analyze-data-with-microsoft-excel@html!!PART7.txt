@@ -1,0 +1,9 @@
+
+Of course, various sources of evidence do not always log time the same way.
+Some may be local time, some may be UTC, and as mentioned, data from sources in various geographical locations complicates things further.
+When compiling timelines, it is important to first know whether the evidence source is logged in UTC or local time.
+If it is logged in local time, we need to confirm which local time zone the evidence source is from.
+Then we can use the Excel TIME()  formula to convert timestamps to UTC as needed.
+This example scenario is based on a real investigation where the target organization was compromised via phishing email, and employee direct deposit information was changed via an internal HR application.
+In this situation, we have three log sources: email receipt logs, application logins, and application web logs.
+The email logs are recorded in UTC and contain the following information: The application logins are recorded in Eastern Daylight Time (EDT) and contain the following: The application web logs are also recorded in Eastern Daylight Time (EDT) and contain the following: To take this information and turn it into a master timeline, we can use the CONCAT function (an alternative to the ampersand concatenation used previously) to make a summary of the columns in one cell for each log source, such as this example formula for the email receipt logs: This is where checking our time zones for each data source is critical.

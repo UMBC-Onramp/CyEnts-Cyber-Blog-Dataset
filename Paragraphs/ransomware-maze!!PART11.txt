@@ -1,0 +1,8 @@
+
+Maze creates a mutex with the name “Global\\x” where x is a special value that is unique per machine.
+For example, in the next screenshot (some information has been deleted to anonymize the machine used for the analysis) is an example of this behavior.
+It is done to avoid two or more executions at the same time.
+FIGURE 14.
+CREATION OF A MUTEX TO AVOID DOUBLE EXECUTION.
+UNIQUE PER MACHINE
+The malware, after creating the mutex, makes calls to the function “GetLastError” to check against two errors: 0x05 -> ERROR_ACCESS_DENIED.

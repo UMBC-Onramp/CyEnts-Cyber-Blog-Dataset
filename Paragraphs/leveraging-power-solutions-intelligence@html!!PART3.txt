@@ -1,0 +1,6 @@
+
+By having consultants inside a dozen or more leading organizations every week of the year, Mandiant gains front-line experience of cutting-edge intrusion activity.
+Second, the Managed Defense™ division operates our software and provides complementary services on a multi-year subscription basis.
+This team develops long-term counter-intrusion experience by constantly assisting another set of customers in a managed security services model.
+Finally, Mandiant's intelligence team acquires data from a variety of sources, fusing it with information from professional services and managed defense.
+The output of all this work includes deliverables such as the annual M-Trends report and last year's APT1 document , both of which are free to the public.

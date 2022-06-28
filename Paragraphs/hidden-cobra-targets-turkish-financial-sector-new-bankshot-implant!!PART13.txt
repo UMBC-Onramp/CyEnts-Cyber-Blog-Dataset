@@ -1,0 +1,6 @@
+
+Overwrite a file with all zeros and mark it for deletion on reboot Wiping files with zeros and marking it for deletion on reboot.
+Delete files using the DeleteFile() API Load an arbitrary library into its process space.
+This may be used to load additional downloaded components of the attack.
+Loading an arbitrary library into its own process space.
+After every action is performed the malware sends a response to the control server indicating whether the action was successful.

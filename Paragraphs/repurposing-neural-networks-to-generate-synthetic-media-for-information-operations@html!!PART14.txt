@@ -1,0 +1,4 @@
+
+A pre-trained model ends up being capable of\nlanguage generation: if the model can predict the next word\naccurately, it can be used in turn to predict the following word, and\nthen so on and so forth until eventually, the model produces fully\ncoherent sentences and paragraphs.
+The pre-trained GPT-2 model’s outputs display relatively formal\ngrammar, punctuation, and structure that corresponds to the text\npresent within their original prosaic dataset.
+To make GPT-2's\ngenerations appear more like posts we might expect to encounter\nscrolling through social media, with their shorter length, informal\ngrammar, erratic punctuation, and syntactic quirks, we fine-tuned it\non a new language modeling task using additional training data.

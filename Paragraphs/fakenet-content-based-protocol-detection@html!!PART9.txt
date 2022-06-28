@@ -1,0 +1,11 @@
+
+While this results in repetitive data, it is often useful to see the original packet along with the modification.
+Example Figure 4 shows verbose (-v) output from FakeNet on Windows responding to an HTTP request on port 81 from a clowncar malware variant (SHA-256 8d2dfd609bcbc94ff28116a80cf680660188ae162fc46821e65c10382a0b44dc).
+Malware such as clowncar use traditional protocols over non-standard ports for many reasons.
+FakeNet gives the malware analyst the flexibility to detect and respond to these cases automatically.
+Figure 4: clowncar malware using HTTP on port 81 Conclusion FLARE’s FakeNet-NG tool is a powerful network-simulation tool available for Windows and Linux.
+The new content-based protocol detection and SSL detection features ensure that FakeNet-NG remains the most useful tool for malware analysts.
+Configuration options give programmers the flexibility necessary to respond to malware using most protocols on any port.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

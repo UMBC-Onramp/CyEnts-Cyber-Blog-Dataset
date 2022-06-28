@@ -1,0 +1,4 @@
+On February 13, 2022, EuroGamer published a post reporting the spread of malicious code among users of the Cities: Skylines game.
+Two days later, the article was updated: nobody was adversely affected, but one of the game mod creators tried to sneak a backdoor into the official store.
+We looked into this interesting case of a potentially serious attack on gamers.
+About Cities: Skylines in brief We apologize in advance to fans of the game, but for everyone else, we think it is necessary to provide a brief description — it’s important for the story.

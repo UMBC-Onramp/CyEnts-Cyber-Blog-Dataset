@@ -1,0 +1,7 @@
+Since the advent of cryptocurrency, scammers of every stripe have sought to get rich from stealing virtual coins.
+With cybercriminals duping both buyers of mining equipment and cryptoinvestors , we spotlight a scam targeting users of the Luno cryptoexchange.
+About Luno The Luno cryptocurrency exchange has been in existence since 2013, and today it serves more than 5 million clients in 40 countries.
+Luno’s primary focus is on emerging markets, allowing users from countries such as Singapore, Malaysia, Indonesia, South Africa, and Nigeria to purchase tokens with local currency.
+Luno is a centralized exchange (CEX), meaning clients’ cryptowallet keys are stored on the exchange.
+Typically, such sites are well protected against hacking and leakage.
+However, account protection becomes much harder when owners spill their credentials to cybercriminals.

@@ -1,0 +1,4 @@
+Mirai has become such a common discovery in the wild that it is beginning to be disregarded as white noise, played off as a simple attack that should be readily stopped by common security products.
+This is dangerous thinking and will lull security professionals and executives into complacency.
+Juniper Threat Labs has discovered a new attack, based off of Mirai from an attacker who originally appeared to be calling themselves “Priority”.
+In later versions, this attacker took that out of the code and started deploying a more advanced version of Mirai.

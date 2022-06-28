@@ -1,0 +1,18 @@
+
+Bale Detection FE_Ransomware_Win_MAZE_1 Endpoint Security WMIC SHADOWCOPY DELETE (METHODOLOGY) MAZE RANSOMWARE (FAMILY)
+Network Security Ransomware.
+Win.
+MAZE Ransomware.
+Maze Ransomware.
+Maze MITRE ATT&CK Mappings Mandiant currently tracks three separate clusters of activity involved in the post-compromise distribution of MAZE ransomware.
+Future data collection and analysis efforts may reveal additional groups involved in intrusion activity supporting MAZE operations, or may instead allow us to collapse some of these groups into larger clusters.
+It should also be noted that ‘initial access’ phase techniques have been included in these mappings, though in some cases this access may have been provided by a separate threat actor(s).
+MAZE Group 1 MITRE ATT&CK Mapping ATT&CK Tactic Category Techniques Initial Access T1133: External Remote Services T1078: Valid Accounts Execution T1059: Command-Line Interface T1086: PowerShell T1064:
+Scripting T1035: Service Execution Persistence T1078:
+Valid Accounts T1050:
+New Service Privilege Escalation T1078: Valid Accounts Defense Evasion T1078: Valid Accounts T1036:
+Masquerading T1027: Obfuscated Files or Information T1064: Scripting Credential Access T1110:
+Brute Force T1003: Credential Dumping Discovery T1087:
+Account Discovery T1482: Domain Trust Discovery T1083:
+File and Directory Discovery T1135:
+Network Share Discovery T1069:

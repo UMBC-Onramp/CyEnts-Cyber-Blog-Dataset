@@ -1,0 +1,8 @@
+
+Keep phone up to date; install latest patches.
+Don’t ever click on links received in text messages.
+Browse the internet with an alternate browser such as Firefox Focus instead of the default Chrome.
+Always use a VPN that masks your traffic.
+Some exploits are delivered through GSM operator MitM attacks, when browsing HTTP sites or by DNS hijack.
+Install a security suite that scans for malware and checks and warns if the device is rooted.
+At a more sophisticated level — both for iOS and Android — always check your network traffic using live IoCs.

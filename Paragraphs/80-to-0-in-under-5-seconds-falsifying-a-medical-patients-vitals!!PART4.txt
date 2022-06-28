@@ -1,0 +1,5 @@
+
+The patient monitor’s firmware could be evaluated for vulnerabilities; however, this would affect only one of the two devices in the system and is the hardest vector to exploit.
+This leaves the communication between the two devices as the most interesting attack vector since if the communication could be compromised, an attack could possibly be device independent, affecting both devices by a remote attack.
+Given this possibility, we chose networking as the first target for this research.
+Dr. Nordeck confirmed that if the information passing to the central monitoring system could be modified in real time, this would be a meaningful and valid concern to medical professionals.

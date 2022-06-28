@@ -1,0 +1,8 @@
+
+Specifically, book[.]flnet[.]org previously resolved to 58.64.199.27.
+Others domain seen resolving to this same /24 subnet were dll[.]freshdns[.]org, ali[.]blankchair[.]com, and cht[.]blankchair[.]com.
+The domain dll[.]freshdns[.]org resolved to 58.64.199.25.
+Both ali[.]blankchair[.]com and cht[.]blankchair[.]com resolved to 58.64.199.22.
+First Seen Last Seen CnC Domain IP 2012-11-12 2012-11-12 2012-11-28 2012-11-28 me.scieron[.]com me.scieron[.]com 58.64.199.22 58.64.199.22 2012-04-09 2012-04-09 2012-10-24 2012-10-24 cht.blankchair[.]com cht.blankchair[.]com 58.64.199.22 58.64.199.22 2012-04-09 2012-04-09 2012-09-18 2012-09-18 ali.blankchair[.]com ali.blankchair[.]com 58.64.199.22 58.64.199.22 2012-11-08 2012-11-08 2012-11-25 2012-11-25 dll.freshdns[.]org dll.freshdns[.]org 58.64.199.25 58.64.199.25 2012-11-23 2012-11-23 2012-11-27 2012-11-27 rt.blankchair[.]com rt.blankchair[.]com 58.64.199.25 58.64.199.25 2012-05-29 2012-05-29 2012-6-28 2012-6-28 book.flnet[.]org book.flnet[.]org 58.64.199.27 58.64.199.27 A number of other related domains resolve to these IPs and other IPs also in this /24 subnet.
+For the purposes of this blog, we’ve chosen to focus on those domains and IP that relate to the previously discussed DeputyDog and Ephemeral Hydra campaigns.
+You may recall that dll[.]freshdns[.]org, ali[.]blankchair[.]com and cht[.]blankchair[.]com were all linked to both Operation DeputyDog and Operation Ephemeral Hydra .

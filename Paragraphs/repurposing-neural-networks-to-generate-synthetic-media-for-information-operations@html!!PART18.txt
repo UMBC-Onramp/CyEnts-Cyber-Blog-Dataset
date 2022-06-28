@@ -1,0 +1,3 @@
+
+The\nexamples of artificially generated images we’ve seen actively used in\nIO campaigns presented in Figure 5 illustrate a common format\nobserved, including closely cropped headshots with blurred\nbackgrounds, anomalies around the ears, neck, and shoulders,\ndifficulties with fully rendering accessories such as glasses and\nearrings, and phantom hair strings being generated outside a credible\narea.
+But we can readily envision an escalation of this tactic, in which\nconvincing personas are created using artificially generated profile\nphotos trained on images of real people from a target group or\ngeography that correspond to, say, a particular minority group, and\nare then used to instigate political conflict or incite animosity and\nviolence.

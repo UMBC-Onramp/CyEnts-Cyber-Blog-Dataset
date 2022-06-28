@@ -1,0 +1,8 @@
+
+You can get the offset De-DOSfuscator needs for offline use via --getoff and use it via --useoff, as with normal operation.
+Wrapping Up I have given you an example of a heavily obfuscated command script and I have shared a useful tool for de-obfuscating it, along with the analytical steps that I followed to synthesize it.
+The De-DOSfuscator script code comes with the latest version of flare-qdb and is accessible as a script entry point (dedosfuscator.exe) when you install flare-qdb.
+It is my hope that this not only helps you to conveniently analyze malicious batch scripts, but also inspires you to devise your own creative ways to employ flare-qdb against malware.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

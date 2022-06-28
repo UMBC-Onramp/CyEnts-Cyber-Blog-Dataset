@@ -1,0 +1,4 @@
+
+One solution to this is to compare the compressed and compiled\nversions of a document’s macros and look for unexpected variations.\nAnother potential option is a YARA rule that searches the _VBA_PROJECT stream for keywords or bytes, which\nshould appear if the p-code is valid.
+But let’s take the easy path first and look for anomalies within\nOfficePurge.
+There’s a section within the code that overwrites the _VBA_PROJECT stream with a static header: //

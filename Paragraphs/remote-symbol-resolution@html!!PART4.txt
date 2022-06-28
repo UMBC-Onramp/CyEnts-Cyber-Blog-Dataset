@@ -1,0 +1,6 @@
+
+In this case, the initial value is loaded from an API hash lookup – again not of immediate value.
+Here we have hit a crossroad, with multiple paths we can take to resolve the problem.
+We can search for a published hash list, extract the hasher and build our own database, or figure out a way to dynamically resolve the decoded API address.
+Before we choose which path to take, let us consider another sample.
+Figure 3 shows code from Andromeda sample, 3C8B018C238AF045F70B38FC27D0D640.

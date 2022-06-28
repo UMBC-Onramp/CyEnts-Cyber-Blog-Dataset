@@ -1,0 +1,6 @@
+
+Attack Scenario Analysis of the exploit chain is ongoing, but available information points to the Flash zero-day being distributed in a malicious document or spreadsheet with an embedded SWF file.
+Upon opening and successful exploitation, a decryption key for an encrypted embedded payload would be downloaded from compromised third party websites hosted in South Korea.
+Preliminary analysis indicates that the vulnerability was likely used to distribute the previously observed DOGCALL malware to South Korean victims.
+Recommendations Adobe stated that it plans to release a fix for this issue the week of Feb. 5, 2018.
+Until then, we recommended that customers use extreme caution, especially when visiting South Korean sites, and avoid opening suspicious documents, especially Excel spreadsheets.

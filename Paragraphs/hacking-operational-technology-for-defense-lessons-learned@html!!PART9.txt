@@ -1,0 +1,5 @@
+
+During the initial stages of our engagement, our actions were in no way different to other less sophisticated intrusions on industrial organizations, such as financially-motivated compromises.
+Defining Our Path to the OT Network Similar to real world threat actors carrying out targeted OT attacks, Mandiant’s OT Red Team dedicates significant effort for internal reconnaissance in the IT network to develop a logical mapping of the extended network architecture and discover targets of interest (people, processes, or technology).
+The information we acquire helps us to (a) define paths to propagate from the IT to the OT network and (b) achieve our final objective in the OT network without raising alarms.
+During OT Red Team engagements across different industries, we follow a real attacker’s cost-benefit analysis to determine which sources or methods are most likely to help us obtain that information.

@@ -1,0 +1,41 @@
+
+In addition, to protect against known vulnerabilities, always keep device software up to date.
+Fortinet customers are protected by the following: Related samples are detected by FortiGuard Antivirus Downloaded URLs and identified C2s are blocked by FortiGuard Web Filtering Service.
+Mentioned exploit attacks are detected using the following IPS signatures: CVE-2021-22986 - F5.iControl.
+REST.Interface.
+Remote.
+Command.
+Execution CVE-2009-4490 - Acme.thttpd.and.minihttpd.
+Command.
+Injection.
+Vulnerability CVE-2018-10088 - XiongMai.uc-httpd.
+Buffer.
+Overflow CVE-2020-28188 - TerraMaster.TOS.Makecvs.
+PHP.Unauthenticated.
+Command.
+Execution CVE-2020-25506 - D-Link.
+ShareCenter.
+Products.
+CGI.Code.
+Execution CVE-2020-29957 - D-Link.
+DIR.825.Buffer.
+Overflow CVE-2021-22502 - Micro.
+Focus.
+Operations.
+Bridge.
+Reporter.
+Command.
+Injection CVE-2021-27561/CVE-2021-27562 - Yealink.
+Device.
+Management.
+Platform.
+Command.
+Injection CVE-2021-22991 - F5.BIG.IP.TMM.URI.Normalization.
+Buffer.
+Overflow VisualDoor RCE - Bash.
+Function.
+Definitions.
+Remote.
+Code.
+Execution OptiLink ONT1GEW GPON RCE - Optilink.
+GPON.Router.formTracert.

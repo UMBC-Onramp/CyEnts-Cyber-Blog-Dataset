@@ -1,0 +1,4 @@
+
+Further investigation of the link and executable showed that every few seconds the malware hash changed with a more current compilation timestamp and different appended data bytes – a technique often used to evade hash-based detection.
+Cerber in Action Initial payload behavior Upon execution, the Cerber malware will check to see where it is being launched from.
+Unless it is being launched from a specific location (%APPDATA%\\&#60GUID&#62), it creates a copy of itself in the victim's %APPDATA% folder under a filename chosen randomly and obtained from the %WINDIR%\\system32 folder.

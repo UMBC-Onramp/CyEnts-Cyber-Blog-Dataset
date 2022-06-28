@@ -1,0 +1,7 @@
+
+We used the term pseudo-ransomware to describe this attack.
+The malware was Hermes version 2.1.
+One of the functions we often see in ransomware samples is that they will not execute if the victim’s system language is one of the following: 419 (Russian) 422 (Ukrainian) 423 (Belarusian)
+That was October 2017.
+Searching earlier events, we noticed a posting from August 2017 in an underground forum in which a Russian-speaking actor offered the malware kit Hermes 2.1 ransomware: What if the actor who attacked the Taiwanese bank simply bought a copy of Hermes and added it to the campaign to cause the distraction?
+Why go to the trouble to build something, when the actor can just buy the perfect distraction in an underground forum?

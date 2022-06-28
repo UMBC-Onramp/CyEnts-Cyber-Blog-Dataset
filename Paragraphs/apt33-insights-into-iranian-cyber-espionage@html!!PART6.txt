@@ -1,0 +1,5 @@
+
+These appear to be mistakes, as minutes after sending the emails with the default values, APT33 sent emails to the same recipients with the default values removed.
+As shown in Figure 3, the “fake mail” phishing module in the ALFA Shell contains default values, including the sender email address (solevisible@gmail[.]com), subject line (“your site hacked by me”), and email body (“Hi Dear Admin”).
+Figure 3:
+ALFA TEaM Shell v2-Fake Mail (Default) Figure 4 shows an example email containing the default values the shell.

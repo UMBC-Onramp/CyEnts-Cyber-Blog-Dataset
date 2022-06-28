@@ -1,0 +1,13 @@
+
+To take advantage of the new Attacker IP feed, make sure to have the SecIntel service configured on the SRX to protect against inbound traffic.
+Step 1) Check to see the feed is enabled in the ATP Cloud Portal.
+Step 2)
+Create a Threat Prevention Policy that will permit, block and log IPs, URLs and domains of a certain threat level.
+The example below uses Juniper best practices and permits from threat level 1-4, logs from 5-7 and then blocks from 8-10.
+Step 3)
+Create a security policy for the SRX Series firewall that uses the SecIntel feature on inbound traffic from the internet.
+In closing, while Juniper Threat Labs has considerable visibility into attacks in the wild, we want to emphasize that no security vendor has full visibility into every attack or every threat actor active on the internet.
+That is why we partner with many third parties to gain a better visibility into the big picture, including the Cyber Threat Alliance where we share our intelligence and we gain insight from other security vendors.
+Our priority is to protect our customers networks and make the internet a safer place for everyone.
+
+

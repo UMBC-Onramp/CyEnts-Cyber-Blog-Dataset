@@ -1,0 +1,6 @@
+
+Of course, we can train this model in a similar way to other supervised deep learning classifiers by: (1) making predictions on samples from a labeled training set, (2) using a loss function to measure the quality of our predictions, and (3) tune model parameters (i.e., weights) via backpropagation .
+However, the nature of the Transformer model allows for several interesting variations to this training regime .
+In fact, one of the reasons that Transformers have become so popular for NLP tasks is because they allow for self-supervised generative pre-training, which takes advantage of massive amounts of unlabeled data to help the model learn general characteristics of the input language before being fine-tuned on the ultimate task at-hand (e.g., question answering, sentiment analysis, etc.).
+Here, we outline some of the training regimes we explored for our URL Transformer model.
+Direct Label Prediction (Decode-To-Label)

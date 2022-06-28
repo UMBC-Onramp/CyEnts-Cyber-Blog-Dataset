@@ -1,0 +1,7 @@
+Over the last few months, FireEye has tracked an in-the-wild campaign that leverages compromised sites to spread fake updates.
+In some cases, the payload was the NetSupport Manager remote access tool (RAT).
+NetSupport Manager is a commercially available RAT that can be used legitimately by system administrators for remotely accessing client computers.
+However, malicious actors are abusing this application by installing it to the victims’ systems without their knowledge to gain unauthorized access to their machines.
+This blog details our analysis of the JavaScript and components used in instances where the identified payload was NetSupport RAT.
+Infection Vector
+The operator behind these campaigns uses compromised sites to spread fake updates masquerading as Adobe Flash, Chrome, and FireFox updates.

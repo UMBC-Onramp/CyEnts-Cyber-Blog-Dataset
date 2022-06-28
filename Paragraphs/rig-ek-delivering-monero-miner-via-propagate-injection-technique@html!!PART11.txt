@@ -1,0 +1,12 @@
+
+Figure 12 shows the code snippet.
+Figure 12:
+Checking integrity level of current process
+If the process is higher than medium integrity level, then the malware proceeds further.
+If the process is lower than medium integrity level, the malware respawns itself with medium integrity.
+The malware creates a file mapping object and writes the dropper file path to it and the same mapping object is accessed by injected code, to read the dropper file path and delete the dropper file.
+The name of the mapping object is derived from the volume serial number of the system drive and a XOR operation with the hardcoded value (Figure 13).
+File Mapping Object Name =
+“Volume Serial Number” + “Volume Serial Number” XOR 0x7E766791 Figure 13: Creating file mapping object name The malware
+then decrypts the third stage payload using XOR and decompresses it with RTLDecompressBuffer.
+The third stage payload is also a PE executable, but the author has modified the header of the file to avoid it being detected as a PE file in memory scanning.

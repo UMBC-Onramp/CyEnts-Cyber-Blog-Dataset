@@ -1,0 +1,6 @@
+
+At Lowest Offset Creating 'WindowsServiceNT.log' logfile : OK....
+mimikatz(command Table 5:
+Example real-time file write event Based on this real-time file write event, the malicious executable C:\\Windows\\Temp\\legitservice.exe wrote the file C:\\Windows\\Temp\\WindowsServiceNT.log to disk with the MD5 hash 30a82a8a864b6407baf9955822ded8f9 .
+Since the real-time event recorded the beginning of the written file, we can determine the file likely contained Mimikatz credential harvester output which Mandiant has observed commonly starts with OK....mimikatz .
+If we investigate a little later, we’ll see a process creation event for C:\\Windows\\Temp\\taskassist.exe with the MD5 file hash 2b5cb081721b8ba454713119be062491 followed by several file write events for this process summarized in Table 6.

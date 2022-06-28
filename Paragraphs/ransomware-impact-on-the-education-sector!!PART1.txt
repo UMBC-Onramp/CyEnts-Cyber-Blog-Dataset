@@ -1,0 +1,5 @@
+FortiGuard Labs Threat Research Report Thanks to Paolo Di Prodi, Fred Gutierrez, and Val Saengphaibul, who helped contribute to this blog.
+Affected platforms: All OS platforms Impacted parties: Education Sectors Impact: Potential ransomware infection, data exfiltration, system compromise in education sectors Severity level: High Several major ransomware incidents that impacted our daily lives occurred in 2021.
+In early May, Colonial Pipeline, the largest refined petroleum pipeline in the United States, was infected by DarkSide ransomware .
+The infection forced the company to shut down their pipeline as a precautionary measure while assessments were being made, leading to long lines of cars at gas stations along the East Coast.
+Later that same month, the REvil ransomware attacked JBS, the world’s largest meat processor, and disrupted the company’s meat productions.

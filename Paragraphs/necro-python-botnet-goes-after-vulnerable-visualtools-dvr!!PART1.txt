@@ -1,0 +1,7 @@
+In the last week of September 2021, Juniper Threat Labs detected a new activity from Necro Python (a.k.a N3Cr0m0rPh , Freakout, Python.
+IRCBot) that is actively exploiting some services, including a new exploit added to its arsenal.
+This new exploit targets Visual Tools DVR VX16 4.2.28.0 from visual-tools.com (no CVE number is assigned to this vulnerability).
+Successful exploitation will download the bot into the system and install a Monero miner.
+Necro was first discovered in January .
+The threat actor made a move in March and in May, adding new exploits to its arsenal.
+Necro bot is an interesting python bot that has many functions which include the following: Network Sniffer Spreading by exploits Spreading by brute-force Using Domain Generation Algorithm Installing a Windows rootkit Receiving and executing bot commands Participating in DDoS attacks Infecting HTML, JS, PHP files Installing Monero Miner

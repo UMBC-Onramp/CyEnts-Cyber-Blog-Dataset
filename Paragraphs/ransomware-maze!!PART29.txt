@@ -1,0 +1,7 @@
+
+CONNECTION IN PCAP WITH THE C2C IP ADDRESSES Maze has some strings in memory that are interesting and something that may be worth further analysis in the future: FIGURE 28.
+CURIOUS STRING FOR
+FUTURE INVESTIGATION
+The webpage for making the payment requested in the ransom note gives a price and verifies that all is correct.
+FIGURE 29.
+MAZE PAYMENT WEBPAGE AFTER DECRYPTING THE RANSOM NOTE Maze has a chat function to contact the operators and receive information about how to obtain the cryptocurrency required to make payment.

@@ -1,0 +1,7 @@
+
+Figure 3: Displaying your web history data for review in both Web Historian (behind) and Redline (front)
+Although similar, Redline does have a few minor differences in how it visualizes your data: Redline does not break the data into pages; instead it will discretely page in large data sets (25k+ rows) automatically as you scroll down through the list.
+To configure the table view, you will need to manipulate the column headers for ordering and resizing, and right-click on a column header to show and hide columns - as opposed to using the column configuration menu in Web Historian.
+Searching and simple filtering is done in each individual table view and is not applied globally.
+To access the find options, either press the magnifying glass in the bottom right corner, or press Ctrl-f while a table view is selected.
+To export your data to a CSV (comma separated values) format file, click on export in the bottom right corner.

@@ -1,0 +1,4 @@
+By McAfee Labs on Apr 17, 2018 This post was researched and written by Brook Schoenfield with the assistance of Tim Hux, Abhishek Karnik, Asheer Malhotra, and Steve Povolny McAfee Advanced Threat Research team analysts have studied Adobe Flash Player for years because it is a popular target for attacks.
+As always, we advise customers to remain current with McAfee’s latest DAT versions.
+In this post we want to provide some insight into the history of Flash exploitation and possible future trends.
+Morphisec published an analysis of a new set of Flash flaws, CVE-2018-4878, that have been exploited in the wild.

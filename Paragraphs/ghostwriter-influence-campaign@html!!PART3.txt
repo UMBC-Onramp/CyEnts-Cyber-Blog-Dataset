@@ -1,0 +1,5 @@
+
+These articles and op-eds, primarily written in English, have been consistently published to a core set of third-party websites that appear to accept user-submitted content, most notably OpEdNews.com, BalticWord.com, and the pro-Russian site TheDuran.com, among others, as well as to suspected Ghostwriter-affiliated blogs.
+Some of these incidents and personas have received public attention from researchers, foreign news outlets, or government entities in Lithuania and Poland, but have not been tied to a broader activity set.
+Others have received little attention and remain relatively obscure.
+Mandiant Threat Intelligence has independently discovered several Ghostwriter personas and identified additional incidents involving some of those personas previously exposed.

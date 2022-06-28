@@ -1,0 +1,11 @@
+
+The malicious DLL is also responsible for terminating the cliconfg.exe process and deleting the malicious NTWDBLIB.dll using: cmd /c taskkill /im cliconfg.exe /f /t && del /f /q
+NTWDBLIB.DLL All the following capabilities described are implemented by the malicious service DLL implant unless specified.
+Variant using North Korean Red Cross Another variant (hash: 9e2c0bd19a77d712055ccc0276fdc062e9351436) of the malicious Word dropper uses the same Base64-decoding scheme with a different custom key.
+This document was created January 10.
+Contents of the decoy document.
+This variant also consists of two CAB files that are dropped to %temp%, depending on the OS (x86 or x64).
+The key differences in this variant: Two CAB files are encoded into the Word document in text boxes instead of being appended in the DOC file There is one CAB file for an x86 system and another for an x64 system
+This malware sample uses uacme.exe with dummy.dll to implement the UAC bypass exe is the program vulnerable to the UAC bypass attack dll runs install.bat to set up the service (same as NTWDBLIB.dll) exe and dummy.dll may be either 64-bit or 32-bit binaries based on the OS.
+Ipnet.dll may also be either 64-bit or 32-bit.
+The Visual Basic macro uses the following command line: cmd /c expand %TEMP%\\setup.cab -F:* %TEMP% && cd /d %TEMP% && del /f /q setup.cab && uacme.exe The control server credential information contained in the CAB files is different: Decoded credential data contained in another ipnet.ini.

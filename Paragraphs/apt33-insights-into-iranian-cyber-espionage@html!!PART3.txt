@@ -1,0 +1,5 @@
+
+From mid-2016 through early 2017, APT33 compromised a U.S. organization in the aerospace sector and targeted a business conglomerate located in Saudi Arabia with aviation holdings.
+During the same time period, APT33 also targeted a South Korean company involved in oil refining and petrochemicals.
+More recently, in May 2017, APT33 appeared to target a Saudi organization and a South Korean business conglomerate using a malicious file that attempted to entice victims with job vacancies for a Saudi Arabian petrochemical company.
+We assess the targeting of multiple companies with aviation-related partnerships to Saudi Arabia indicates that APT33 may possibly be looking to gain insights on Saudi Arabia’s military aviation capabilities to enhance Iran’s domestic aviation capabilities or to support Iran’s military and strategic decision making vis a vis Saudi Arabia.

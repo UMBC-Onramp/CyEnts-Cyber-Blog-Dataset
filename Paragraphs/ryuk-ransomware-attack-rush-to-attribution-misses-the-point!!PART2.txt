@@ -1,0 +1,5 @@
+
+The McAfee Advanced Threat Research team has investigated this incident and determined how the malware works, how the attackers operate, and how to detect it.
+Based on the technical indicators, known cybercriminal characteristics, and evidence discovered on the dark web, our hypothesis is that the Ryuk attacks may not necessarily be backed by a nation-state, but rather share the hallmarks of a cybercrime operation.
+How McAfee approaches attribution Attribution is a critical part of any cybercrime investigation.
+However, technical evidence is often not enough to positively identify who is behind an attack because it does not provide all the pieces of the puzzle.

@@ -1,0 +1,7 @@
+
+We often come across manga-inspired nicknames and avatars in underground forums.
+Technical indicators Looking at research from our industry peers comparing Ryuk and Hermes, we notice that the functionalities are generally equal.
+We agree that the actors behind Ryuk have access to the Hermes source code.
+Let’s dive a bit deeper into Ryuk and compare samples over the last couple of months regarding compilation times and the presence of program database (PDB) paths: We can see the PDB paths are almost identical.
+When we compare samples from August and December 2018 and focus on the checksum values of the executables’ rich headers, they are also identical.
+From a call-flow perspective, we notice the similarities and evolution of the code: The Hermes 2.1 ransomware kit, renamed and redistributed as Ryuk.

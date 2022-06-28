@@ -1,0 +1,12 @@
+
+Figure 16: Overloading the memory operations to read/write/protect 64-bit memory Once these inline hooks are in-place on the 64-bit syscall stubs, any application utilizing Heaven’s Gate will be properly intercepted.
+This hooking technique is very invasive and complicated and can still be bypassed if a sample was to directly execute a syscall instruction rather than using the 64-bit module’s syscalls stub.
+Therefore, a driver or hypervisor is more suitable to detect this evasion technique.
+Instead we can focus on the more common byte restoration evasion techniques and look for a way to hook the WOW64 layer itself.
+This doesn’t involve assembly modifications at all.
+Hooking WOW64 via LogService Thinking back to the WOW64 layer’s execution flow we know that all calls which are sent through the Wow64SystemServiceEx routine may invoke the routine Wow64LogSystemService if the logging DLL is loaded.
+We can utilize this logging DLL and routine to implement hooks which can be written the exact same way as inline hooks, without modifying any assembly.
+The first step to implementing this is to force all API call paths through the Wow64SystemServiceEx routine so that the log routine may be called.
+Remember earlier that those that support TurboThunks will not take this path.
+Lucky for us we know that any TurboThunk entry that points to TurboDispatchJumpAddressEnd will take this path.
+Therefore, by pointing every entry in the TurboThunk table to point at that address, the desired behavior is achieved.

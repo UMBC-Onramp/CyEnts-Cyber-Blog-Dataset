@@ -1,0 +1,12 @@
+
+Speakeasy tracks and tags all memory within the emulation space.
+In the context of kernel mode emulation, this includes all kernel objects (e.g. Driver and Device objects, and the kernel modules themselves).
+Immediately after we observe the malware inject its user mode implant, we see it begin to attempt to hook kernel components.
+This was confirmed during static analysis to be used for network hiding.
+The memory access section of the emulation report reveals that the malware modified the netio.sys driver, specifically code within the exported function named NsiEnumerateObjectsAllParametersEx .
+This function is ultimately called when a user on the system runs the “netstat” command and it is likely that the malware is hooking this function in order to hide connected network ports on the infected system.
+This inline hook was identified by the event captured in Figure 9.
+Figure 9:
+Inline function hook set by the malware to hide network connections In addition, the malware hooks the Tcpip driver object in order to accomplish additional network hiding.
+Specifically, the malware hooks the IRP_MJ_DEVICE_CONTROL handler for the Tcpip driver.
+User mode code may send IOCTL codes to this function when querying for active connections.

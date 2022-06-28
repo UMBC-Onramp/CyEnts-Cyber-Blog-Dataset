@@ -1,0 +1,89 @@
+This year, Canada, multiple European nations, and others will host high profile elections.
+
+The topic of cyber-enabled threats disrupting and targeting elections has become an increasing area of awareness for governments and citizens globally.
+
+To develop solutions and security programs to counter cyber threats to elections, it is important to begin with properly categorizing the threat.
+
+In this post, we’ll explore the various threats to elections FireEye has observed and provide a framework for organizations to sort these activities.
+
+The Election Ecosystem: Targets Historically, FireEye has observed targeting of a wide range of organizations connected to elections.
+
+In considering their role and criticality to the process of elections, these various entities can be grouped into three categories: core election infrastructure, supporting organizations involved in the administration of elections, and other groups that have a participatory role in the electoral process.
+
+All of these entities may be targeted for a variety of reasons to influence or collect intelligence on the electoral process and participants.
+
+FireEye is aware of only limited indications of entities targeted in the first category (light blue area).
+
+Although we have not observed direct evidence that actors have manipulated the electoral process in any major national or regional election by infiltrating the systems or hardware used to record or tally votes, the sheer complexity of these systems prevents us from categorically stating that these systems have not been successfully compromised.
+
+Moving outward into the gray section of the diagram, entities that fall into this category include organizations involved in the administration of elections.
+
+While these organizations may maintain networks separate from voting systems and tabulation platforms, they play important roles in overseeing and communicating results to the public.
+
+FireEye has witnessed breaches into a variety of these organizations, in some cases for the purpose of collecting intelligence or in others to coopt and display false information on publicly-facing systems as part of an influence campaign.
+
+Lastly, FireEye has observed targeting of organizations that are involved in election campaigns and news coverage.
+
+Tactics we have witnessed include disinformation campaigns on adversary-maintained infrastructure and social media platforms.
+
+For example, in August 2017, we observed several inauthentic news websites created to mimic legitimate local and international media organizations ahead of a sub-Saharan African nation’s presidential election.
+
+A subset of the counterfeit domains appears to have been created in coordination with each other, if not by the same actor, to damage the reputation of the presidential nominee for the opposition party.
+
+The Threat Activity To counter and mitigate risks to elections, properly categorizing the specific activity and intent is important.
+
+While terms like “election interference” are often used to describe all of the threats in this space, some of the malicious activity FireEye has witnessed may fall outside this definition.
+
+Broadly speaking most election-related threats can be thought of in four categories: social-media enabled disinformation, cyber espionage, “hack and leak” campaigns, and attacks on critical election infrastructure.
+
+Social-Media Enabled Disinformation : This category includes the activity FireEye has tracked from the Russia-affiliated Internet Research Association (IRA) and various Iranian disinformation operations .
+
+In some cases, this has involved creating fraudulent content on controversial issues and seeking to promote it across social media platforms.
+
+In other examples, disinformation campaigns have focused on amplifying already issues that have organic interest.
+
+Some of these campaigns may also be involved in politically-motivated messaging on social media platforms prior to elections without a specific focus electoral events.
+
+Cyber Espionage : Nation state actors like Russia-nexus APT28 and Sandworm Team, and China-nexus APT40, have carried out cyber espionage operations against multiple types of targets in the election ecosystem.
+
+This has ranged from intrusions into everything from political campaigns to election commissions, likely for a variety of reasons.
+
+In some cases, these actors are possibly seeking to obtain information on policy stances of candidates and political parties.
+
+In other situations—particularly against election administrators or system vendors—it is possible that these intrusions are reconnaissance for further operations, seeking to understand network layouts that may allow them to move into more critical infrastructure.
+
+“Hack and Leak” Campaigns : Some threat actors that FireEye has observed have utilized the data they’ve gained from espionage intrusions to then leak that information with the intent of influencing public perception.
+
+In this manner, they combine the previous two categories of activity.
+
+Notably, this tactic has been employed by Guccifer 2.0 and DC Leaks in the 2016 U.S. election.
+
+In some cases, similar tactics have leveraged compromised infrastructure to carry out disinformation operations, such as in the 2014 Ukrainian presidential campaign in which Russian-nexus actors posted erroneous election results from the compromised Ukrainian election commission website.
+
+Attacks on Critical Election Infrastructure : Compromises into core critical infrastructure such as election management systems, voting systems, electronic pollbooks, and others represent the most critical risks to elections, with the potential to alter or delete votes or voters from voter rolls.
+
+Though this is an often-discussed risk, there is limited evidence of intrusion activity targeting core election infrastructure.
+
+Of the activity described here, FireEye has observed a full spectrum of campaigns by Russian-nexus actors, from carrying out intrusions into organizations and stealing data, leaking that data through online personas and fronts, as well as targeting of election infrastructure.
+
+From limited observations, China has for the most part focused solely on cyber espionage operations, as in the case of activity FireEye reported on in the targeting the 2018 Cambodian election .
+
+From various motivations, FireEye has also witnessed limited evidence of activity from hacktivists and criminal entities in targeting parts of the election ecosystem.
+
+Conclusion While there is increasing global awareness of threats to elections, election administrators and others continue to face challenges in ensuring the integrity of the vote.
+
+To properly counter threats to elections, individuals and organizations involved in the electoral process should: Learn the Playbook of the Adversary : Proactive organizations can learn from the activity of threat actors uncovered in other elections and implement security controls that adapt to new tools and TTPs.
+
+Political campaigns and others should also educate staff and contractors on common spear-phishing tactics used by some of the primary APT groups.
+
+Incorporate Threat Intelligence for Context : Operationally, security organizations can utilize threat intelligence to better differentiate and triage the most important alerts from untargeted commodity malware activity.
+
+Anticipate External Threats : Beyond the internal networks of county governments and political campaigns, election administrators and risk management professionals involved in elections should prepare plans for dealing with leaked and compromised data, understanding how threat actors may utilize this for disinformation campaigns.
+
+I will be speaking about cyber threats and elections during FireEye Virtual Summit , so register today to learn more.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

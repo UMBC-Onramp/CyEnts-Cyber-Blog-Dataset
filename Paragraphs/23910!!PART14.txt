@@ -1,0 +1,11 @@
+
+Apple’s AirTags cost a fair amount of money, a person doing the tracking needs to pair an AirTag with their real account, and the manufacturer is actually trying to make it harder to hide the tags.
+In contrast, developers of spyware and stalkerware apps are doing their best to make them as undetectable as possible.
+In addition to tracking location, tracking apps give the spy a heap of other options.
+In particular, they open access to the victim’s documents, photos and messages, which can be even more dangerous than geolocation.
+So if you’re worried about being tracked, the first thing you need to do is protect your smartphone — it’s the most obvious target .
+Then you can look around for unknown AirTags.
+If you use an iPhone, it will notify you pretty quickly that there’s a tag.
+If you have an Android and you want to protect yourself from being tracked with an AirTag, install the Apple Tracker Detect app.
+
+

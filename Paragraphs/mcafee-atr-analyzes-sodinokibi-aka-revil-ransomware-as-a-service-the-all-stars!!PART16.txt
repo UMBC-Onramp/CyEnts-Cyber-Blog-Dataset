@@ -1,0 +1,8 @@
+
+Below is a screenshot of the posting.
+Interesting is the response from a user with the nickname Lalartu.
+In a reply to the advertisement, Lalartu mentions that he is working with UNKN and his team, as well as that they had been a former GandCrab affiliate, something that was noticed by Bleepingcomputer too.
+Lalartu’s post supports our earlier observations that some top GandCrab affiliates suddenly disappeared and might have moved to a different RaaS family.
+This is something that was suspected but never confirmed with technical evidence.
+We suspect that Lalartu is not the only GandCrab affiliate that has moved to Sodinokibi.
+If top affiliates have a solid and very profitable infection method available, then it does not make sense to retire with the developers.

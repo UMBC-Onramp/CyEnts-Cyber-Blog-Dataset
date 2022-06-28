@@ -1,0 +1,6 @@
+
+Вy incorporating the EternalBlue exploit , which took advantage of some very dangerous vulnerabilities in Windows.
+The Trojan infiltrated networks and installed WannaCry on victims’ computers.
+The malware then continued, spreading to other devices on the local network.
+Inside infected systems, WannaCry behaved normally, encrypting files and demanding a ransom.
+Not two months after the WannaCry outbreak another cryptor appeared, also modified for EternalBlue:

@@ -1,0 +1,6 @@
+FortiGuard Labs Threat Research Report Affected platforms: Windows Impacted parties: Users of Adobe Illustrator 2021, versions 25.4.1 and earlier Impact: Multiple Vulnerabilities leading to Arbitrary Code Execution, Memory Leak and Application Denial of Service Severity level: Critical
+In August of 2021, I discovered and reported multiple zero-day vulnerabilities in Adobe Illustrator to Adobe, Inc.
+On Tuesday, October 26, 2021, Adobe released several security patches that fixed these vulnerabilities.
+They are identified as CVE-2021-40718, CVE-2021-40746, CVE-2021-40747, CVE-2021-40748 and CVE-2021-40749.
+All these vulnerabilities have similar root causes related to a single Illustrator Plugin.
+We suggest users apply the Adobe patches as soon as possible.

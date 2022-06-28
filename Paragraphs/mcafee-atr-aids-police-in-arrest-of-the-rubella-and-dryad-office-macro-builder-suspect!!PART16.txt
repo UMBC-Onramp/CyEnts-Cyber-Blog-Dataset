@@ -1,0 +1,13 @@
+
+Model:
+Manufacturer’s model number of the disk drive.
+Manufacturer: Name of the disk drive manufacturer.
+Signature: Disk identification.
+This property can be used to identify a shared resource.
+TotalHead:
+Total number of heads on the disk drive.
+Then it will collect information from the ‘ Win32_BaseBoard class’ .
+Model: Name by which the physical element is known.
+Manufacturer: Name of the organization responsible for producing the physical element.
+Name, SerialNumber Then it will collect information from the ‘ Win32_VideoController class’ .
+DriverVersion Name With all that hardware information collected it will generate a hash that will be the unique identifier.

@@ -1,0 +1,19 @@
+
+As Ranion is more suited for beginner threat actors, the lack of sophistication in their ransomware delivery might be a reason why Ranion has not gained household status in the ransomware realm.
+This may also be why they have managed to stay under the radar for more than four years.
+Ranion’s ransom message supports eight languages by default (English, Russian, German, French, Spanish, Italian, Dutch, and Persian).
+Any regions in which those languages are primarily used can be a target of Ranion.
+Ranion Ransomware Origin: HiddenTear Copycat?
+Ranion bases its code on the open-source proof-of-concept ransomware known as HiddenTear.
+ There are some code similarities between the two projects.
+The above screenshot is from HiddenTear’s implantation of an encryption function.
+ It can be found at https://github.com/goliate/hidden-tear/blob/master/hidden-tear/hidden-tear/Form1.cs .
+ For comparison, Ranion’s implementation is below: To encrypt files, HiddenTear uses this function.
+Ranion implements its encryption in a similar fashion.
+These are just two examples.
+Overall programming resemblance can be seen in a variety places.
+In addition, Ranion kept their resource section similar to HiddenTear’s as well.
+NOTE:
+This Ranion variant is from 2017 and has a SHA256 hash value of eed03a9564aee24a68b2cade89d7fbe9929e95751a9fde4539c7896fda6bdcb5 To Be FFFFUUUUDDDD To be fully undetectable, the Ranion team has consistently relied on the ConfuserEx project, which is the successor of the now defunct Confuser project.
+It is a free and open-source obfuscator that makes malware harder to analyze by “protecting” .NET
+applications through symbol renaming, anti-debugging, encryption, compression, and other functions.

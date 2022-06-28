@@ -1,0 +1,13 @@
+
+Scripting T1204:
+User Execution T1028:
+Windows Remote Management Persistence T1078:
+Valid Accounts T1050:
+New Service T1136: Create Account Privilege Escalation T1078:
+Valid Accounts T1050:
+New Service Defense Evasion T1078: Valid Accounts T1140: Deobfuscate/Decode Files or Information T1107: File Deletion T1036:
+Masquerading Credential Access T1003: Credential Dumping T1081: Credentials in Files T1171:
+LLMNR/NBT-NS Poisoning Discovery T1087:
+Account Discovery T1482: Domain Trust Discovery T1083:
+File and Directory Discovery T1135:
+Network Share Discovery T1069:

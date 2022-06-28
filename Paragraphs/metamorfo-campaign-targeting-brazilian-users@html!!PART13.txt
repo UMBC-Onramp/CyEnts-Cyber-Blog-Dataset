@@ -1,0 +1,8 @@
+
+Those files are downloaded and saved into random directories named with the following patterns: <current user dir>\\<5 random chars>\\<8 random chars>\\<4 random chars>\\<5 random chars>.exe <current user dir>\\<5 random chars>\\<8 random chars>\\<4 random chars>\\CRYPTUI.dll The execution chain ensures that persistence is set on the affected system using a .lnk
+ file in the Startup directory.
+The .lnk file shown in Figure 17 opens the malicious VBS dropped on the system.
+Figure 17:
+Persistence Key The VBS file (Figure 18) will launch and execute the downloaded legitimate Windows tool, which in this case is Certmgr.exe.
+This tool will be abused using the DLL side loading technique.
+The malicious Cryptui.dll is loaded into the program instead of the legitimate one and executed.

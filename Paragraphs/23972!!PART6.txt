@@ -1,0 +1,4 @@
+
+The victim is asked to enter their wallet seed phrase The scammers prompt the victim to enter their seed phrase into the form, supposedly to unlock the wallet.
+If the user is taken in and enters the secret phrase, they are redirected to the real MetaMask site, however, their wallet is now in cybercriminal hands.
+How to protect your wallet Attackers are constantly coming up with new and increasingly sophisticated ways of defrauding cryptoinvestors.

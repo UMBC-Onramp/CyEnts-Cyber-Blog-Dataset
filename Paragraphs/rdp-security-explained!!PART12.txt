@@ -1,0 +1,11 @@
+
+This can be achieved by simply opening “Windows Firewall with Advanced Security,” clicking on Inbound Rules and scrolling down to the RDP rule.
+A screen shot can be seen below.
+Firewall settings for inbound RDP connections Enable Restricted Admin Mode
+When connecting to a remote machine via RDP, credentials are stored on that machine and may be retrievable by other users of the systems (e.g. malicious attackers).
+Microsoft has added restricted admin mode which instructs the RDP server not to store credentials of users who log in.
+Behind the scenes, the server now uses ‘network’ login rather than ‘interactive’ and therefore uses hashes or Kerberos tickets rather than passwords for authentication.
+Assessment of the pros and cons of this option are recommended before enabling in your environment.
+On the negative side, the use of network login exposes the possibility of credential reuse (pass the hash) attacks against the RDP server.
+Pass the hash is likely possible anyway, internally, via other exposed ports so may not significantly increase exposure there, but when including this option to Internet servers, where other ports are likely (and should be!) restricted, pass the hash is then extended to the Internet.
+Given the pros and cons, avoiding internal escalation of privilege is often prioritized and therefore restricted admin mode is enabled.

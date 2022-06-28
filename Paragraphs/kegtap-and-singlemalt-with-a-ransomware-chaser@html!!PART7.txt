@@ -1,0 +1,4 @@
+
+Post-Compromise TTPs Given the possibility that accesses obtained from these campaigns may be provided to various operators to monetize, the latter-stage TTPs, including ransomware family deployed, may vary across intrusions.
+A notable majority of cases where Mandiant has had visibility into these post-compromise TTPs have been attributable to UNC1878, a financially motivated actor that monetizes network access via the deployment of RYUK ransomware.
+Establish Foothold Once the loader and backdoor have been executed on the initial victim host, the actors have used this initial backdoor to download POWERTRICK and/or Cobalt Strike BEACON payloads to establish a foothold.

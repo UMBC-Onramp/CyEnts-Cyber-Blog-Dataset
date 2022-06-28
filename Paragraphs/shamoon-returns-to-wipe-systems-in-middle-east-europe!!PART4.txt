@@ -1,0 +1,7 @@
+
+As in previous variants, Shamoon Version 3 installs a malicious service that runs the wiper component.
+Once the wiper is running, it overwrites all files with random rubbish and triggers a reboot, resulting in a “blue screen of death” or a driver error and making the system inoperable.
+The variant can also enumerate the local network, but in this case does nothing with that information.
+This variant has some bugs, suggesting the possibility that this version is a beta or test phase.
+The main differences from earlier versions are the name list used to drop the malicious file and the fabricated service name MaintenaceSrv (with “maintenance” misspelled).
+The wiping component has also been designed to target all files on the system with these options: Overwrite file with garbage data (used in this version and the samples we analyzed) Overwrite with a file (used in Shamoon Versions 1 and 2) Encrypt the files and master boot record (not used in this version)

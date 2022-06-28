@@ -1,0 +1,13 @@
+
+If it is successful, it will decrypt the C2 URLs using RC4.
+Figure 10: Decrypting a resource 3)
+Retrieving From C2:
+If it is not successful in retrieving the C2 URLs using those previous two methods, the malware tries to retrieve the payload from four different hardcoded URLs mentioned in the indicators.
+The malware creates the HTTP request using the following information: Computer Name, retrieved using the GetComputerNameA function, as the HTTP parameter ‘name’ (Figure 11).
+Figure 11:
+Retrieving computer name using GetComputerNameA Windows operating system name, retrieved by querying the ProductName value from the registry key SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion, as the HTTP parameter ‘key’ (Figure 12).
+Figure 12:
+Retrieving Windows OS name using ProductName value The module name of the malware, retrieved using the GetModuleFileNameA function, as the HTTP parameter ‘page’ (Figure 13).
+Figure 13:
+Retrieving malware module name using using GetModuleFileNameA
+The list of processes and their module names, retrieved using the Process32First and Module32First APIs, as the HTTP parameter ‘session_data’ (Figure 14).

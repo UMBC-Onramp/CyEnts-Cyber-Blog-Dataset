@@ -1,0 +1,9 @@
+
+You have successfully installed FLARE VM.
+At this point we recommend you power off the VM, switch the VM networking mode to Host-Only, and then take a snapshot to save a clean state of your analysis VM.
+Improvement The biggest improvement for FLARE VM is the ability to perform a proper update and uninstallation.
+The older version of FLARE VM came as a PowerShell script to install many chocolatey packages, one at a time; therefore, we were unable to include new packages when updating FLARE VM.
+In the past, our users had to reinstall FLARE VM completely, which is time consuming, or manually install the new package, which is error prone.
+To solve this issue, we have converted FLARE VM itself into a chocolatey package.
+Whenever a new tool is available we will also release a new version of FLARE VM.
+With this new design we can simply execute “choco upgrade all” to get the newest version of FLARE VM along with any new packages we have released.

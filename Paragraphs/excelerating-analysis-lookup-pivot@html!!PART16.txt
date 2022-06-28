@@ -1,0 +1,7 @@
+
+Location Anomalies Let’s utilize a PivotTable to perform frequency analysis on the location from which users logged in.
+This type of technique may highlight activity where a user account logged in from a location which is unusual for them.
+To create a PivotTable for our data, we can select any cell in our O365 data and select the entire range with Ctrl+A. Then, under the “Insert” tab in the ribbon, select “PivotTable”: Figure 10:
+PivotTable selection This will bring up a window, as seen in Figure 11, to confirm the data for which we want to make a PivotTable (Step 1 in Figure 11).
+Since we selected our O365 log data set with Ctrl+A, this should be automatically populated.
+It will also ask where we want to put the PivotTable (Step 2 in Figure 11).

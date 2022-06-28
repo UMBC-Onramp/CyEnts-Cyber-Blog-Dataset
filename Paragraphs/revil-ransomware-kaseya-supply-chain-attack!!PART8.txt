@@ -1,0 +1,5 @@
+
+Also, the amounts of data to collect post exploitation could be overwhelming.
+Since data was not exfiltrated, REvil has less leverage to pressure victims to pay if they are able to recover from backups using incident response and disaster recovery plans.
+The REvil gang lowered the ransom demand, going from $70M to $50M in hopes of getting paid sooner.
+They allegedly also allow victims to use Monero instead of Bitcoin to pay the ransom and are willing to negotiate the price for a more specific decryptor that will unlock certain file extensions.

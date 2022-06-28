@@ -1,0 +1,121 @@
+FortiGuard Labs Threat Research Report Affected Platforms : All OS Impacted Parties :   Online Shoppers Impact :                     Loss of personally identifiable information and/or money Severity Level :         Low Black Friday, one of the biggest retail spending days of the year, is fast approaching.
+
+According to Adobe Analytics , consumer spending on that day last year reached a whopping $9.03 billion dollars (21.6% Year-over-Year growth), and 2021 is expected to be even bigger.
+
+Amazon is the industry’s prime online shopping web site for consumers looking to buy goods at discounted prices on Black Friday.
+
+According to an Amazon blog , sales from Black Friday through Cyber Monday last year topped $4.8 billion worldwide (60% Year-over-Year growth).
+
+Given the popularity, volume, and money related to this event, cybercriminals would not pass up on this lucrative opportunity to fool consumers any way they can for financial gain.
+
+In this blog, we will elaborate how cybercriminals are using a fake Amazon gift card generator to steal cryptocurrency from their victims and using fake documents to lure those victims into potentially giving out their personal information, such as credentials for online shopping sites, credit card numbers, and home addresses.
+
+We also look at a similar scam preying on high interest in gaming consoles due to the global chip shortage.
+
+Nothing is More Expensive than Free Legitimate gift cards are often used online to purchase items on Amazon.
+
+FortiGuard Labs recently discovered a malicious file named Amazon Gift Tool.exe.
+
+The file was found in a zip file hosted on a publicly available file repository site.
+
+While we don’t know exactly how this tool was presented to potential victims, but criminals most likely advertised the tool as a free Amazon gift card generator.
+
+Obviously, a tool that provides free gift cards does not exist, but the hope of getting something for nothing can be hugely attractive to many people.
+
+However, once the victim executes the fake Amazon gift card generator it drops and executes a malicious winlogin.exe that monitors the victim’s clipboard.
+
+The purpose of the malware is simple.
+
+If the victim tries to add money to their anon-bitcoin wallet by copying and pasting the wallet address, the malware overwrites the victim’s wallet address on the clipboard with its own, resulting in the money potentially going to the attacker.
+
+The malicious code works as follows: As previously stated, the malware monitors the victim’s clipboard for any copy/paste operations.
+
+When the victim copies any data into the clipboard, the malware searches for three criteria: Clipboard text is 54 characters long (which is the length of a wallet address preceded by the string “bitcoincash:”)
+
+Clipboard text is not “bitcoincash:<attacker’s wallet>”because replacing the wallet address would no longer be necessary Clipboard text contains “bitcoincash:” to make sure the user is currently involved in trying to transfer Bitcoin Cash If all three of the criteria match, then the malware replaces the clipboard information with the attacker’s Bitcoin Cash wallet address.
+
+The attacker is hoping that the victim will not notice the overwritten crypto wallet address when the victim pastes it during the crypto transaction.
+
+Figure 1 shows a part of the malware code that searches the clipboard for potential cryptocurrency wallet addresses.
+
+The malware also sets different flags depending on the type of cryptocurrency it is testing for.
+
+Looking at the criteria above, we can see the malware uses flag5 to test for Bitcoin Cash.
+
+If one of the three criteria is not satisfied, the malware moves onto the next cryptocurrency target, Ethereum (flag6), and checks for: Clipboard text is 42 characters long, which is the length of an Ethereum wallet Clipboard is NOT already the attacker’s Bitcoin or Ethereum wallet Wallet address starts with“0”.
+
+This is because Ethereum wallet addresses start with “0x”.
+
+If all conditions match, the malware replaces the clipboard with the attacker’s Ethereum wallet address.
+
+Figure 2 shows some of the cryptocurrency wallets the attacker owns (Bitcoin, Ethereum, Binancecoin, Litecoin, Dogecoin, and Ripple) that it tries to replace the victim’s alt-coin wallet address with.
+
+We also found that the malicious winlogin.exe was distributed by a number of droppers with enticing names, such as Crunchyroll Breaker.exe, Netflix Tools.exe, Multi Gift Tools.exe, etc.
+
+Free generator of this sort has been around and scammed people for years.
+
+But given the market power of Amazon, this new scam is especially enticing.
+
+Consumers are eager to shop as much as they can on Black Friday as a lot of goods go on sale.
+
+Free Amazon gift cards are very attractive to those who want to spend less for the holiday season.
+
+However, be careful with what you wish for and don’t fall a victim to scams like this one.
+
+Gaming Console Phishing Another scam FortiGuard Labs recently observed is related to gaming consoles.
+
+With the ongoing global chip shortages, consumers are still having a hard time getting their hands on the next generation of gaming consoles, such as the PlayStation 5 and Xbox Series X and S systems that debuted late last year.
+
+FortiGuard Labs researchers recently identified a series of malicious PDFs online, with titles like, “how_much_do_xbox_one_cost_on_black_Friday.pdf” and “Walmart_black_Friday_ps5_pickup.pdf”.
+
+The first page of each PDF uses CAPTCHA to prove the user is a human.
+
+The Continue button on the same page does not work as expected because the user gets redirected to a web site as soon as they click the CAPTCHA checkbox.
+
+Unfortunately for us (and fortunately for the readers), the sites the user is redirected to were no longer available at the time of the investigation.
+
+However, based on Fortinet’s Webfiltering data, both sites have been used for Phishing.
+
+As such, the victim may be lured into giving out confidential information such credentials for online shopping sites, credit card numbers, and home address.
+
+Although these scams are not new, users should pay extra attention to the potential scams ahead of the Black Friday shopping spree.
+
+Black Friday Scam Season has Begun While online shopping towards Black Friday is fun and exciting, it also provides cyber criminals with ample opportunities to exploit and monetize a victim’s giving spirit and greed.
+
+If a discount or availability of a hard to find item seem too good to be true, think twice before making a purchase.
+
+Recommended Actions and Precautions Because these criminals are using phishing techniques to socially engineer and lure victims into following the steps laid out by the attacker, it is vital to address these challenges ahead of time.
+
+The most effective tool in the fight against spam and malicious email links and attachments is a secure email gateway with advanced detection and response technologies.
+
+Fortinet's Secure Email Gateway not only sees and effectively stops such threats but can be easily integrated into an organization's larger security strategy, rather than operating as a stand-alone solution, enabling organizations to deploy FortiMail as part of a complete end-to-end security solution.
+
+Organizations are also strongly encouraged to conduct ongoing training designed to educate and inform personnel about the latest phishing/spearphishing techniques and how to spot and respond to them.
+
+This should include encouraging employees to never open attachments from someone they don't know and always treat emails from unrecognized/untrusted senders with caution.
+
+Since it has been reported that many phishing and spearphishing attacks are being delivered as part of social engineering distribution mechanisms, end-users within an organization must also be made aware of the various types of attacks currently in use.
+
+This can be accomplished through regular training sessions and impromptu tests using predetermined templates originating from an organizations' internal security department.
+
+Simple user awareness training on how to spot emails with malicious attachments or links can also help prevent initial access into the network.
+
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+Learn more about Fortinet’s free cybersecurity training, an initiative of Fortinet’s Training Advancement Agenda (TAA) , or about the Fortinet Network Security Expert (NSE) program, Security Academy program , and FortiVets veterans training program.
+
+Fortinet Protections Fortinet customers are already protected from this malware by FortiGuard’s AntiVirus as follows: W32/Fsysna.
+
+UC!tr MSIL/GenKryptik.
+
+EPMK!tr FortiMail users are protected against this phishing attack.
+
+Indicators of Compromise (IOCs): SHA2 D615C3B67026F7F832FCD25E81F698D5374FC92FFBC69C1EA50363B4CA457ADB 11C58EFF77974C97E2854F02E7781E0CC37423E5EB36EAE98CD4230FD6EC4FB0 Learn more about Fortinet’s FortiGuard Labs threat research and intelligence organization and the FortiGuard Security Subscriptions and Services portfolio .
+
+Learn more about Fortinet’s free cybersecurity training , an initiative of Fortinet’s Training Advancement Agenda (TAA), or about the Fortinet Network Security Expert program , Security Academy program , and Veterans program .
+
+Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.
+
+
+
+

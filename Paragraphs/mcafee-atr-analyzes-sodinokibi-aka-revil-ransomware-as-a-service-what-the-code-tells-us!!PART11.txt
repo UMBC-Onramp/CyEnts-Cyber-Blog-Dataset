@@ -1,0 +1,5 @@
+
+ext -> List of the target extensions to avoid encrypting based on extension.
+wfld -> A list of folders where the files will be destroyed if the wipe option is enabled.
+prc -> List of processes to kill for unlocking files that are locked by this/these program/s, for example, “mysql.exe”.
+dmn -> List of domains that will be used for the malware if the net option is enabled; this list can change per sample, to send information of the victim.

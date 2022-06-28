@@ -1,0 +1,8 @@
+
+This account is used by the Azure AD Connect service (Figure 15).
+Figure 15: Azure AD Sign-ins Baseline the IP addresses used by this account and make sure the IPs match those assigned to the on-premises WAN infrastructure.
+If the attacker has configure a PTA Agent on their own infrastructure, seeing an IP that does not match your baseline could be an indicator that a rogue PTA Agent has been configured by the attacker (Figure 16).
+Figure 16:
+Azure AD Sign-in logs—On-Premises Directory Synchronization Services account From Azure AD Sign-ins, monitor and baseline Azure AD Sign-ins to the Azure AD Application Proxy Connector.
+Make sure to validate username, IP and location.
+These events are typically only generated when a new PTA agent is connected to the tenant.

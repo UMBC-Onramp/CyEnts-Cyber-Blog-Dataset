@@ -1,0 +1,11 @@
+
+In addition, thank you to Mandiant frontline responders for harvesting the valuable intrusion data that enables our research.
+Appendix:
+Malware Families PHOTOLOADER is a downloader that has been observed to download ICEDID.
+It makes an HTTP request for a fake image file, which is RC4 decrypted to provide the final payload.
+Host information is sent to the command and control (C2) via HTTP cookies.
+Samples have been observed to contain an embedded C2 configuration that contain the real C2 with a number of non-malicious domains.
+The non-malicious domains are contacted in addition to the real C2.
+WINDARC is a backdoor that hijacks the execution of TeamViewer to perform C2 communication.
+It supports plugins and accepts several backdoor commands.
+The commands include interacting with the TeamViewer tool, starting a reverse shell, loading new plugins, downloading and executing files, and modifying configuration settings.

@@ -1,0 +1,9 @@
+
+To achieve this, we observed some new techniques being used by the author that we have not seen before.
+Clearly over the last few months we have seen more innovative techniques appearing in ransomware.
+Clop Overview
+The Clop ransomware is usually packed to hide its inner workings.
+The sample we analyzed was also signed with the following certificate in the first version (now revoked): FIGURE 1.
+Packer signed to avoid av programs and mislead the user Signing a malicious binary, in this case ransomware, may trick security solutions to trust the binary and let it pass.
+Although this initial certificate was revoked in a few days, another version appeared soon after with another certificate: FIGURE 2.
+New certificate in new version This sample was discovered by MalwareHunterTeam ( https://twitter.com/malwrhunterteam ) on the 26 February, 2019.

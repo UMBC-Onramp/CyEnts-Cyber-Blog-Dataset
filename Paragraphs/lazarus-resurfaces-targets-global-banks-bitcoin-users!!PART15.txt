@@ -1,0 +1,11 @@
+
+McAfee Advanced Threat research determines with confidence that Lazarus is the threat group behind this attack for the following reasons: Contacts an IP address / domain that was used to host a malicious document from a Lazarus previous campaign in 2017 Same author appeared in these recent malicious documents that also appeared back in Lazarus 2017 campaigns Uses the same malicious document structure and similar job recruitment ads as what we observed in past Lazarus campaigns The techniques, tactics and procedures align with Lazarus group’s interest in crypto currency theft Conclusion In this latest discovery by McAfee ATR, despite a short pause in similar operations, the Lazarus group targets crypto currency and financial organizations.
+Furthermore, we have observed an increased usage of limited data gathering modules to quickly identify targets for further attacks.
+This campaign is tailored to identifying those who are running Bitcoin related software through specific system scans.
+Indicators of Compromise MITRE ATT&CK techniques Data encoding Data encrypted Command-Line Interface Account discovery Process Discovery Query registry Hidden files and directories
+Custom cryptographic protocol
+Registry Run Keys / Start Folder Startup Items Commonly used port Exfiltration Over Command and Control Channel IPs
+210.122.7.129 70.42.52.80 221.164.168.185 URLs hxxps://dl.dropboxusercontent.com/content_link/AKqkZsJRuxz5VkEgcguqNE7Th3iscMsSYvivwzAYuTZQWDBLsbUb7yBdbW2lHos/file?dl=1 hxxps://www.dropbox.com/s/q7w33sbdil0i1w5/job description.doc?dl=1 Hashes dc06b737ce6ada23b4d179d81dc7d910a7dbfdde a79488b114f57bd3d8a7fa29e7647e2281ce21f6 7e70793c1ca82006775a0cac2bd75cc9ada37d7c 535f212b320df049ae8b8ebe0a4f93e3bd25ed79 1dd8eba55b16b90f7e8055edca6f4957efb3e1cd afb2595ce1ecf0fdb9631752e32f0e32be3d51bb e8faa68daf62fbe2e10b3bac775cce5a3bb2999e McAfee Detection BackDoor-FDRO!
+Trojan-FPCQ!
+RDN/Generic Downloader.x RDN/Generic Dropper RDN/Generic.dx
+

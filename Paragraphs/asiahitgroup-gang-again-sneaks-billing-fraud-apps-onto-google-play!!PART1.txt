@@ -1,0 +1,4 @@
+By Carlos Castillo on Jun 27, 2018 The McAfee Mobile Research team has found a new billing-fraud campaign of at least 15 apps published in 2018 on Google Play.
+Toll fraud (which includes WAP billing fraud) is a leading category of potentially harmful apps on Google Play, according to the report Android Security 2017 Year in Review.
+This new campaign demonstrates that cybercriminals keep finding new ways to steal money from victims using apps on official stores such as Google Play.
+The AsiaHitGroup Gang has been active since at least late 2016 with the distribution of the fake-installer applications Sonvpay.

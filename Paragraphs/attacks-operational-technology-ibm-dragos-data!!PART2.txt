@@ -1,0 +1,3 @@
+
+This creates significant risk and is made more complicated when many industries also face aging infrastructure and consequences that can manifest in the physical world with impacts on safety and environmental damage.
+To delve deep on the threat landscape for organizations connected to OT and industrial control system (ICS) environments, IBM Security X-Force threat intelligence analysts worked jointly with Dragos , a firm that specializes in OT and ICS cybersecurity, to investigate some of the major intrusion trends that may impact OT and ICS environments.

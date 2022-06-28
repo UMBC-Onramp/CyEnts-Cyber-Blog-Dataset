@@ -1,0 +1,7 @@
+FortiGuard Labs Threat Research Report Affected platforms: Microsoft Windows Impacted parties: Windows Users Impact:
+Obtain sensitive data from the victim's device and deliver additional malware Severity level: Critical Introduction to the Spear Phishing Campaign As we are all aware, spear phishing attacks are far more successful than untargeted ones and are most difficult to detect.
+The FortiGuard Labs team has identified yet another spear phishing campaign, this one targeting aviation companies.
+In this campaign, a malicious link that distributes an AsyncRAT payload is sent to aviation companies with a well-crafted message.
+AsyncRAT, an open-source remote administration tool, is used to steal credentials and other sensitive data.
+It also includes the capability to upload and download files on the compromised machine.
+This blog highlights the various stages of this spear phishing campaign and its newly adapted techniques.

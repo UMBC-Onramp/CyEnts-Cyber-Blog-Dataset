@@ -1,0 +1,5 @@
+
+Ensuring that the provided decryptor will only work for this specific victim.
+This setup allows the criminals to quickly load a victim’s key in the framework and offer a custom decryptor with minimal code change while the underlaying framework remains the same.
+From Coveware’s experience we have learned that the decryption process is quite cumbersome and full of possible fatal errors.
+Luckily Coveware was able to share the Ryuk decryptor with McAfee ATR in order to take a closer look at the issues and level of sophistication of the decryptor.

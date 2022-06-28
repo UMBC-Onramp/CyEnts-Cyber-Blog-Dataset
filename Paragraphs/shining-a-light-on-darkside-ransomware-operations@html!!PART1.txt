@@ -1,0 +1,6 @@
+Update (May 14):
+ Mandiant has observed multiple actors cite a May 13 announcement that appeared to be shared with DARKSIDE RaaS affiliates by the operators of the service.
+This announcement stated that they lost access to their infrastructure, including their blog, payment, and CDN servers, and would be closing their service.
+Decrypters would also be provided for companies who have not paid, possibly to their affiliates to distribute.
+The post cited law enforcement pressure and pressure from the United States for this decision.
+We have not independently validated these claims and there is some speculation by other actors that this could be an exit scam.

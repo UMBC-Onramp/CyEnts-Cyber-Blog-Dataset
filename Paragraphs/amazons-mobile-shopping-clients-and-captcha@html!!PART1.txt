@@ -1,0 +1,2 @@
+Amazon is a popular online retailer serving millions of users.
+Unfortunately, FireEye mobile security researchers have found security issues within Amazon’s mobile apps on both Android and iOS platforms through which attackers can crack the passwords of target Amazon accounts.

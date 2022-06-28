@@ -1,0 +1,4 @@
+By Alexandre Mundo , John Fokker and Thomas Roccia on Oct 10, 2018 The GandCrab ransomware, which first appeared in January, has been updated rapidly during its short life, with Version 5.0.2 appearing this month.
+In this post we will examine the latest version and how the authors have improved the code (and in some cases have made mistakes).
+McAfee gateway and endpoint products are able to protect customers from known variants of this threat.
+The GandCrab authors have moved quickly to improve the code and have added comments to provoke the security community, law enforcement agencies, and the NoMoreRansom organization.

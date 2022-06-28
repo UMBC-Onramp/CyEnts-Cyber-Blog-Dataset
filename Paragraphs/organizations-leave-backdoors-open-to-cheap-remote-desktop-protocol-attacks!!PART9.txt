@@ -1,0 +1,6 @@
+
+Third-party resellers: When comparing “stock” among several RDP shops, we found that the same RDP machines were sold at different shops, indicating that these shops act as resellers.
+Windows Embedded Standard: Windows Embedded Standard, now called Windows IOT, is used in a wide variety of systems that require a small footprint.
+These systems can range from thin clients to hotel kiosk systems, announcement boards, point-of-sale (POS) systems, and even parking meters among others.
+Among the thousands of RDP-access systems offered, some configurations stood out.
+We found hundreds of identically configured Windows Embedded Standard machines for sale at UAS Shop and BlackPass; all these machines were in the Netherlands.

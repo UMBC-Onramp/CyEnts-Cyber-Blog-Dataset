@@ -1,0 +1,5 @@
+
+The files themselves are zipped and encoded in Base64 in the data section of the ad library binary.
+After an affected app is launched, msageCore first decodes the string and extracts msageJS to the app’s data container, setting index.html shown in Figure 7 as the landing page in the ad library WebView to launch msageJS.
+Figure 8: Base64 encoded JavaScript component in zip format.
+When msageJS is launched, it sends a POST request to hxxp://entry.adsage.com/d/ to check for updates.

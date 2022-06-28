@@ -1,0 +1,73 @@
+In almost every post about Android, we recommend installing apps from official sources only, and that won’t change anytime soon.
+
+A recent example illustrates why: Scammers were spreading a banking Trojan disguised as popular media players, a fitness app, a book reader, and one that hit close to home, Kaspersky Internet Security for Android.
+
+Why it is dangerous to install applications from alternative sources Nothing is wrong with third-party app marketplaces per se, but no one can know for sure whether any given store is trustworthy.
+
+In an official Android app store, be it Google Play or Huawei AppGallery, employees of the respective owner companies screen every application submitted by developers, weeding out any that are clearly malicious.
+
+These are large companies that protect their reputations and customers’ security, and they have both the resources and the motivation to help keep users malware-free.
+
+Sometimes, however, malware does get through , and even into Google Play, although the chances of encountering it there are much lower than on message boards, torrent trackers, or some other sites.
+
+Proudly small, independent marketplaces tend not to run many checks, typically because they lack the resources, and as a result, the apps they host could be anything in disguise, even a Trojan.
+
+We should mention here that downloading malware to an Android device is not usually enough to infect it.
+
+Unless the malware relies on some kind of zero-day uber-exploit to get superuser permissions , installing a dangerous app in Android requires some effort.
+
+The operating system queries the user about every step: whether they really want to install the app, whether they agree to grant it the permissions it requests, and so on.
+
+Cybercriminals employ social engineering to persuade people to say yes, often with great success.
+
+Malicious security from an alternative marketplace Here is an example.
+
+Not so long ago, a group of researchers reported on Android applications spreading through various fake sites.
+
+The apps included a fake version of Kaspersky Internet Security for Android.
+
+The scammers were spreading their fake app with the name “Kaspersky Free Antivirus” (we used to offer a product with that name, but it was for Windows).
+
+On Google Play, our mobile antivirus app is currently called Kaspersky Mobile Antivirus: Applock & Web Security .
+
+Ironically, users who downloaded the fake antivirus app received a banking Trojan known as TeaBot, which our security products detect as HEUR: Trojan-Banker.
+
+AndroidOS.Teaban or HEUR:
+
+Trojan-Banker.
+
+AndroidOS.Regon.
+
+Why is this especially problematic in the case of antivirus apps?
+
+It’s because the user not only downloads and installs a banking Trojan disguised like this, but also grants it all of the permissions it requests.
+
+After all, an authentic antivirus app needs a lot of permissions, including very powerful access such as Accessibility services .
+
+Worse, in the absence of actual antivirus protection, the device cannot detect the malware.
+
+Completing installation and granting all requested permissions gives the TeaBot Trojan the ability to do almost anything on the Android device.
+
+Its capabilities are many: from keylogging , stealing Google Authenticator codes, and exploiting Accessibility in other ways all the way to gaining full remote control of the Android device.
+
+How to make sure an app is legit Antivirus isn’t TeaBot’s only disguise.
+
+The malware is also available as fake versions of some well-known government, financial, fitness, and reading apps, among others.
+
+To stay safe, turn off your smartphone’s ability to install applications from unknown sources altogether — Android allows that.
+
+And if you need an app of any kind, find it on an official marketplace.
+
+Be very careful as well about the permissions you grant to applications .
+
+If a fitness app unexpectedly requests permission to use Accessibility, for example, think twice (or more) before answering.
+
+Finally, be sure to use authentic antivirus protection.
+
+With a completely free edition of Kaspersky Internet Security for Android available, there’s no reason to download it from unofficial sources.
+
+You can find our antivirus app in both Google Play and the Huawei AppGallery.
+
+
+
+

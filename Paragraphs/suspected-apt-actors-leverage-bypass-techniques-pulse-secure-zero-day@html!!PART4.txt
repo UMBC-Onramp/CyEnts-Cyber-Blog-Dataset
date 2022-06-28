@@ -1,0 +1,4 @@
+
+In each intrusion, the earliest evidence of attacker activity traced back to DHCP IP address ranges belonging to Pulse Secure VPN appliances in the affected environment.
+In many cases, we were not able to determine how actors obtained administrator-level access to the appliances.
+However, based on analysis by Ivanti, we suspect some intrusions were due to the exploitation of previously disclosed Pulse Secure vulnerabilities from 2019 and 2020 while other intrusions were due to the exploitation of CVE-2021-22893 .

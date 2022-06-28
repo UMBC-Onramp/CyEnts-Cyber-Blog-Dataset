@@ -1,0 +1,4 @@
+
+Given the attack surface of nearly every modern computing system and the relative ease of exploitation, it is highly likely that at least one of the aforementioned variants will be weaponized very quickly.
+McAfee researchers quickly compiled the public exploit code for Spectre and confirmed its efficacy across a number of operating systems, including Windows, Linux, and MacOS.
+Weaponization To assess the potential impact of any vulnerability or attack technique, we must first consider its value to attackers.

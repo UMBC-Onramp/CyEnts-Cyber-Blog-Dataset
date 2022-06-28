@@ -1,0 +1,6 @@
+
+Therefore, CVE offers a convenient repository of vulnerability data to aid research.
+Searching the entire database for every instance of “Flash Player” or “Adobe Flash Player” returned 1,050 CVE entries from the years 2006-2017.
+There was a steady increase in reported vulnerabilities between 2006 and 2014.
+Then we saw a big jump in 2015 and 2016.
+Of the 1,050 issues, about 79% (830) gave attackers some sort of code execution capability, though not every one of those 830 flaws allowed remote code execution.

@@ -1,0 +1,14 @@
+
+The resultant payload distribution is as denoted in the following chart: Figure 14:
+Payload distribution The most common payload observed was Agent Tesla, accounting for over half of the obtained payloads.
+Notably, all the payloads fell into a category of commodity malware such as information stealers or commercial RATs.
+An Ever-Evolving Commodity Malware Scene
+Malware distribution is a continually evolving practice undertaken by potential botnet herders and spam distributors alike, constantly on the quest to bypass organizational security controls to deliver malware.
+As part of that ecosystem, commodity packers, such as RoboSki, are used extensively to spread numerous types of malicious code.
+Keeping up to date about new variations, IOCs and overall delivery TTPs are essential to keeping networks free of malware that could eventually result in more advanced compromises.
+To avoid the associated risks that come with a reliance on digital exchange for operations, the use of automation to rapidly generate indicators can help equip net defenders with the necessary insight to identify and prevent compromise.
+X-Force and CT analysts assess with high confidence that the use of ordering- and logistics-themed phishing emails will persist, especially as global trade continues to recover.
+Organizations especially engaged in the import and export of items worldwide should exercise extreme caution and harden their network environments.
+For up-to-date information about malware campaigns, IOCs and malware reports, join us on X-Force Exchange .
+
+

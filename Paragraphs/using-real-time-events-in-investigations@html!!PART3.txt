@@ -1,0 +1,9 @@
+
+Our solution’s real-time process execution events record execution time, full process path, process identification number (PID), parent process path, parent PID, user, command line arguments, and even the process MD5 hash.
+Table 1 provides an example of a real-time process execution event recorded by our solution.
+Field Example Timestamp (UTC) 2020-03-10 16:40:58.235 Sequence Number 2879512 PID 9392 Process Path C:\\Windows\\Temp\\legitservice.exe Username TEST-DOMAIN\\BackupAdmin Parent PID 9103 Parent Process Path C:\\Windows\\System32\\cmd.exe EventType Start ProcessCmdLine \"C:\\Windows\\Temp\\legitservice.exe\"  -b
+-m Process MD5 Hash
+a823bc31395539816e8e4664e884550f Table 1:
+Example real-time process execution event Based on this real-time process execution event, the process C:\\Windows\\System32\\cmd.exe with PID 9103 executed the file C:\\Windows\\Temp\\legitservice.exe with PID 9392 and the MD5 hash a823bc31395539816e8e4664e884550f .
+This new process used the command line arguments -b
+-m under the user context of TEST-DOMAIN\\BackupAdmin .

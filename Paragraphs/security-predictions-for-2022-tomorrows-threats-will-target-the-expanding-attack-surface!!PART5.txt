@@ -1,0 +1,5 @@
+
+The biggest targets will be organizations that rely on satellite-based connectivity to run their businesses, those that deliver critical services to remote locations, and organizations that provide services to clients in motion, such as cruise liners, cargo ships, and commercial airlines.
+Other attacks, such as ransomware, are sure to follow.
+At the smaller end of the scale, we also expect to see an increase in digital theft by attackers targeting crypto wallets.
+While banks have largely been able to fend off attacks targeting wire transfers using encryption and multi-factor authentication, many digital wallets sit unprotected on laptops and smartphones.

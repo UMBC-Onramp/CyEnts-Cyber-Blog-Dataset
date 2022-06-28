@@ -1,0 +1,4 @@
+
+Malware often wants to inject into user mode since much of the common functionality (such as network communication) within Windows can be more easily accessed.
+In addition, by running in user mode, there is less risk of being detected in the event of faulty code bug-checking the entire machine.
+In order to queue an APC to fire in user mode, the malware must locate a thread in an “alertable” state.

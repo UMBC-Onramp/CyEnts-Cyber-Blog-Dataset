@@ -1,0 +1,6 @@
+
+Perhaps unsurprisingly, persistence and creativity led us to discover one such mistake: a mismatch in the memory sizes used to handle incoming network data created what is often referred to as a buffer overflow vulnerability.
+This seemingly innocuous mistake rendered the eBMGR vulnerable to our carefully crafted network attack, which allows a hacker on the same network to gain complete control of the device’s operating system.
+Worse still, the attack uses what is known as broadcast traffic, meaning they can launch the attack without knowing the location of the targets on the network.
+The result is a twisted version of Marco Polo – the hacker needs only shout “Marco!”
+into the darkness and wait for the unsuspecting targets to shout “Polo!”

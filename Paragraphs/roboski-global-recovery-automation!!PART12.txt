@@ -1,0 +1,8 @@
+
+Several IP addresses and domains have been reported in previous malware campaigns or are associated with recent or ongoing activity delivering a variety of other malware.
+Some malware variants include Eldorado, Telegram Bot, NanoBot, LokiBot and the password stealers Fareit and Redline.
+The following represents a sample of the recent or ongoing campaigns that share or have shared infrastructure overlaps with the RoboSki packer.
+AsyncRAT Some malicious overlaps include domain 8123wsheurope.access[.]ly, which resolved to the RoboSki-packed AsyncRAT C2 IP address 79.134.225[.]44 in December 2020.
+Recently, this domain was reported as being part of activity in which attackers used collaboration platforms, such as Slack, to evade detection and deliver several types of RATs and stealers.
+AsyncRAT has also been active in the past month in attacks on the aviation, travel and cargo industry.
+NanoCore RAT In the same netblock as the AsyncRAT IP address, a RoboSki-packed NanoCore C2 IP address 79.134.225[.]71 resolved to adam9.ddns[.]net, which was a C2 domain reported in late 2020 with relation to activities by the Blade Eagle (Blade Hawk) advanced persistent threat (APT) group.

@@ -1,0 +1,8 @@
+
+DestinationServer Additional Information: Process Information: Process ID:
+  0x5ac Process Name:  C:\\Program Files\\Internet Explorer\\iexplore.exe Network Information: Network Address: - Port:   - | Logon | Administrator | SourceSystem 2019-10-14 23:33:45 $
+SI Modified C:\\Users\\attacker\\Documents\\ | Default.rdp | 485 | c482e563df19a401941c99888ac2f525  |
+Archive | FALSE 2019-10-14 23:33:46 KeyModified HKEY_USER\\Software\\Microsoft\\Terminal Server Client\\Servers\\ |
+DestinationServer | UsernameHInt | VictimUser
+After sorting by timestamp, we can see evidence of the “DomainCorp\\Administrator” account connecting from “SourceSystem” to “DestinationServer” with the “DomainCorp\\VictimUser” account via RDP across three artifact types.
+Time Zone Conversions One of the most critical elements of incident response and forensic analysis is timelining.

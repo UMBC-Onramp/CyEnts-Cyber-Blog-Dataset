@@ -1,0 +1,3 @@
+
+ While attacking universities may not result in the large sums ofransom money that can be obtained by attacking large businesses, stolen information can be used for financial gain,as many university systems include valuable research data as well as contact information and emails for governmentagencies, defense industries, pharmaceutical labs, and other private companies that leverage university researchers.
+We are aware that some Ransomware-as-a-Service providers have a rule that excludes their associates from targeting sectors deemed essential (gas, oil, hospitals, nuclear power plants, etc.), as well as government sectors, military, and non-profit organizations, to which most education sectors belong.

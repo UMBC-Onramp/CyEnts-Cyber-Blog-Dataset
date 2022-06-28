@@ -1,0 +1,5 @@
+
+Later it will generate a random AES key and crypt each byte of the file with this key, next it will put the mark “Clop^_” at the end of the file, after the mark it will put the key used to crypt the file ciphered with the master RSA key that has hardcoded the malware to protect it against third party free decryptors.
+The malware can use 2 different public RSA keys: one exported using the crypto api in a public blob or using the embedded in base64 in the malware.
+The malware will only use the second one if it cannot create the crypto context or has some problem with the crypto api functions.
+The malware does not have support for Windows XP in its use with the crypto functions, because the CSP used in Windows XP has another name, but if run in another operating system starting with Windows Vista, it can change the name in the debugger to acquire the context later and will generate a RSA public blob.

@@ -1,0 +1,6 @@
+
+To receive the data in the background without displaying a notification, Sonvpay implements the method “onNotificationProcessing” and returns “true” to make the notification silent: Figure 2.
+Silent background notification.
+The received data can perform WAP and SMS fraud along with information necessary to display a fake update notification to the user after some time of using the repackaged application.
+This fake notification has only one bogus button.
+If the user scrolls until the end, the misleading phrase “Click Skip is to agree” appears: Figure 3.

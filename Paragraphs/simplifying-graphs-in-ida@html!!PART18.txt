@@ -1,0 +1,8 @@
+
+Future work may incorporate the same prime-products calculations to help automatically identify isolated subgraphs.
+Installation Prebuilt Windows binaries are available from the Releases tab of the GitHub project page .
+The ZIP files contain both IDA 32 and IDA 64 plug-ins for each of the new IDA 7.0 SDK and for the legacy IDA 6.95 SDK.
+Copy the two plug-ins for your version of IDA to the %IDADIR%\\plugins directory.
+Building This plug-in & related files were built using Visual Studio 2013 Update 5.
+Environment Variables Referenced by project: * IDASDK695: path to the extracted IDA 6.95 SDK.
+This should have `include` and `lib` paths beneath it.

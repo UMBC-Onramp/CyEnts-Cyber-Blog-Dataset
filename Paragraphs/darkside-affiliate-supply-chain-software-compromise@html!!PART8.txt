@@ -1,0 +1,5 @@
+
+The former is a clean installer from the original developer and is launched first, installing the software as the user may expect.
+The latter is launched with a command line URL executing the content.
+The smartpss.exe file contained metadata describing itself as MSHTA.exe from Microsoft, a legitimate operating system component, but the MD5 hash was unknown.
+Disassembly analysis of the program showed it was a small application that loaded the IE COM object and launched the function RunHTMLApplication() against the command line argument provided.

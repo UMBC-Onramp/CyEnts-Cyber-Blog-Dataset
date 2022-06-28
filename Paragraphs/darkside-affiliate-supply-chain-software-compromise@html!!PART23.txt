@@ -1,0 +1,7 @@
+
+ (LSASS memory protection)
+FireEye Helix VNC METHODOLOGY
+[Procs] (T1021.005) WINDOWS ANALYTICS [Abnormal RDP Logon] (T1078) WINDOWS ANALYTICS [Recon Commands] (T1204) WINDOWS METHODOLOGY
+[Cleartext Credentials Enabled - UseLogonCredential] (T1003.001) WINDOWS METHODOLOGY
+[LSASS Generic Dump Activity] (T1003.001) WINDOWS METHODOLOGY [LSASS Memory Access] (T1003.001) WINDOWS METHODOLOGY
+[Registry Run Key - reg.exe] (T1547.001) WINDOWS METHODOLOGY [User Created - Net Command] (T1136.001) Yara Detections rule Backdoor_Win_SMOKEDHAM { meta: author = \"Mandiant\" date_created = \"2021-06-10\" md5 = \"9de326bf37270776b78e30d442bda48b\" strings: $C2Method =

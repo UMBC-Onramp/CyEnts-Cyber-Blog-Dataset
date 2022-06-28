@@ -1,0 +1,7 @@
+
+Figure 4 shows WinDbg hitting the breakpoint and displaying the corresponding source code for kscldr.sys.
+Figure 4:
+Breaking in kscldr.sys From the breakpoint, I use WinDbg with source-level debugging to step and trace into the shellcode buffer.
+Figure 5 shows WinDbg’s disassembly of the buffer after doing this.
+Figure 5:
+Tracing into and disassembling the shellcode The disassembly shows the 0x90 and 0xc3 opcodes from before, demonstrating that the shellcode buffer is indeed being executed.

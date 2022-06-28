@@ -1,0 +1,6 @@
+
+If we put shellcode on the stack, we would then have to bypass the No eXecute (NX) protection discovered using the checksec tool.
+Although this is possible, we wondered if there was a simpler method.
+Reexamining the crash dump at the memory location which has been overwritten by the large malformed packet, we found a small contiguous section of heap memory, totaling 32 bytes, which the attacker could control.
+We came to this conclusion because of the presence of 0x22 bytes – the contents of the malformed packet’s payload.
+At the time the overflow occurs, more of this region is filled with 0x22’s, but by the time our write-what-where condition is triggered, many of these bytes get clobbered, leaving us with the 32-byte section shown in Figure 22.

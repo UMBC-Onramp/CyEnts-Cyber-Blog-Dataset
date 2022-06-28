@@ -1,0 +1,4 @@
+
+In March 2018, FireEye iSIGHT Intelligence observed actor \"TH3FR3D\" offering a tool dubbed Felix (Figure 6) that combines a cryptocurrency miner and credential stealer.
+The actor requested payment of $50 USD payable via Bitcoin or Ether.
+According to the advertisement, the Felix tool boasted the following features: Written in C# (Version 1.0.1.0) Browser stealer for all major browsers (cookies, saved passwords, auto-fill) Monero miner (uses minergate.com pool by default, but can be configured)

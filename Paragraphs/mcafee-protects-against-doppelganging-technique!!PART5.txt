@@ -1,0 +1,7 @@
+
+McAfee’s testing confirms Ensilo’s results.
+Users may not see a detection alert with some versions of McAfee products under some versions of Windows.
+McAfee testing indicates that all versions of product under every Windows version listed above are protected.
+1 McAfee thanks McAfee Software Engineer, Alnoor Allidina for the diligence and insight that lead to the Process Dopplegänging protection.
+
+

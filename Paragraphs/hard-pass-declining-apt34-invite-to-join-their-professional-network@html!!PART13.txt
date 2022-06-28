@@ -1,0 +1,6 @@
+
+We suspect this will not be the last time APT34 brings new tools to the table.
+Threat actors are often reshaping their TTPs to evade detection mechanisms, especially if the target is highly desired.
+For these reasons, we recommend organizations remain vigilant in their defenses, and remember to view their environment holistically when it comes to information security.
+Learn more about Mandiant Managed Defense , and catch an on-demand recap on this and the Top 5 Managed Defense attacks this year.
+Malware Appendix TONEDEAF TONEDEAF is a backdoor that communicates with Command and Control servers using HTTP or DNS.

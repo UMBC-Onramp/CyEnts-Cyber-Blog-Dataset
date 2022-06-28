@@ -1,0 +1,5 @@
+
+Instead I will show how my hooking library PolyHook2 can be extended to support cross-architecture hooking using these Windows APIs, and leave the rest as an exercise to the reader.
+This works because PolyHook’s trampolines are not limited to +-2GB and do not spoil registers.
+The internals of how that is achieved is a topic for another post.
+Figure 16 depicts how to overload the C++ API of polyhook to read/write memory using the aforementioned WinAPIs.

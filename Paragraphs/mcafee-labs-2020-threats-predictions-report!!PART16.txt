@@ -1,0 +1,7 @@
+
+Gartner predicts that “by 2022, more than 75 percent of global organizations will be running containerized applications in production – a significant increase from fewer than 30 percent today.”
+1 Container technologies will help organizations modernize legacy applications and create new cloud-native applications that are scalable and agile.
+Containerized applications are built by assembling reusable components on software defined Infrastructure-as-Code (IaC) which is deployed into Cloud environments.
+Continuous Integration / Continuous Deployment (CI/CD) tools automate the build and deploy process of these applications and IaC, creating a challenge for pre-emptive and continuous detection of application vulnerabilities and IaC configuration errors.
+To adjust to the rise in containerized applications operating in a CI/CD model, security teams will need to conduct their risk assessment at the time of code build, before deployment.
+This effectively shifts security “left” in the deployment lifecycle and integrates security into the DevOps process, a model frequently referred to as DevSecOps.

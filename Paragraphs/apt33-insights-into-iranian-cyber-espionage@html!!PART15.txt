@@ -1,0 +1,7 @@
+
+This coupled with the timing of operations – which coincides with Iranian working hours – and the use of multiple Iranian hacker tools and name servers bolsters our assessment that APT33 may have operated on behalf of the Iranian government.
+The times of day that APT33 threat actors were active suggests that they were operating in a time zone close to 04:30 hours ahead of Coordinated Universal Time (UTC).
+The time of the observed attacker activity coincides with Iran’s Daylight Time , which is +0430 UTC.
+APT33 largely operated on days that correspond to Iran’s workweek, Saturday to Wednesday.
+This is evident by the lack of attacker activity on Thursday, as shown in Figure 6.
+Public sources report that Iran works a Saturday to Wednesday or Saturday to Thursday work week, with government offices closed on Thursday and some private businesses operating on a half day schedule on Thursday.

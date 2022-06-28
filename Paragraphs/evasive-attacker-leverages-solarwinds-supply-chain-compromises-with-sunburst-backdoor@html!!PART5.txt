@@ -1,0 +1,9 @@
+
+The list of known malicious infrastructure is available on FireEye’s GitHub page .
+Worldwide Victims Across Multiple Verticals FireEye has detected this activity at multiple entities worldwide.
+The victims have included government, consulting, technology, telecom and extractive entities in North America, Europe, Asia and the Middle East.
+We anticipate there are additional victims in other countries and verticals.
+FireEye has notified all entities we are aware of being affected.
+Post Compromise Activity and Detection Opportunities We are currently tracking the software supply chain compromise and related post intrusion activity as UNC2452.
+After gaining initial access, this group uses a variety of techniques to disguise their operations while they move laterally (Figure 2).
+This actor prefers to maintain a light malware footprint, instead preferring legitimate credentials and remote access for access into a victim’s environment.

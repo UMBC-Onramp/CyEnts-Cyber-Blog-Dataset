@@ -1,0 +1,6 @@
+
+The ransomware exposes the infected machine within the network by running “ netsh advfirewall firewall set rule group=\\\"Network Discovery\\\" new enable=Yes ”, using WinExec API.
+MITRE T1574.002 Hijack Execution Flow:
+DLL Side-Loading Technique While this ransomware has numerous tricks up its sleeves, for this article we will focus on its DLL Side-Loading trick.
+It uses MITRE technique T1574.002 Hijack Execution Flow: DLL Side-Loading.
+This technique is commonly employed by malware by dropping a malicious DLL within a search order of a valid application.

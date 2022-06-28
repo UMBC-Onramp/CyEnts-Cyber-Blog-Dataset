@@ -1,0 +1,5 @@
+
+Further, “mshta hxxp[:]//bitly[.]com/gdhamksgdsadj” is the value of the “soraj.bear.
+GroupName” which is shown in Figure 2, and is the content of a binary profile file (named “o”) of the VBA project.
+It consists of “mshta” and a URL, where “mshta” (“mshta.exe”) is a Windows default program that executes HTML application files, including scripts (like VBScript).
+The URL opened by “mshta” is redirected to another URL, “hxxps[:]//onedayiwillloveyouforever[.]blogspot.com/p/divine111.html”, which contains a piece of code used to write an escaped VBScript code to a current HTML document to be executed by “mshta.exe”.

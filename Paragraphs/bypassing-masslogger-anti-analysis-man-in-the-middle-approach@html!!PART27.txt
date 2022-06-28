@@ -1,0 +1,23 @@
+
+Figure 17:
+Method 0x0600043 before and after fixing the assembly Armed with that knowledge, we can write a simple tool to decrypt the malware configuration and recover all HBIs and NBIs (Figure 18).
+BinderBytes: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA BinderName:
+Mzvmy_Nyrrd BinderOnce: false DownloaderFilename: Hrebxs DownloaderOnce: false DownloaderUrl: Vrwus EmailAddress: appfoil@outlook.com
+EmailClient: smtp.outlook.com EmailEnable: true EmailPass: services000 EmailPort: 587 EmailSendTo: appfoil@outlook.com
+EmailSsl: True EnableAntiDebugger: false EnableAntiHoneypot: false EnableAntiSandboxie: false EnableAntiVMware: false EnableBinder: false EnableBotKiller: false EnableBrowserRecovery: true EnableDeleteZoneIdentifier: false EnableDownloader: false EnableForceUac: false EnableInstall: false EnableKeylogger: true EnableMemoryScan: false EnableMutex: false EnableScreenshot: false EnableSearchAndUpload: false EnableSpreadUsb: false EnableWDExclusion: false EnableWindowSearcher:
+false ExectionDelay: 6 ExitAfterDelivery: false FtpEnable: false FtpHost: ftp://127.0.0.1
+FtpPass: FtpPort: 21 FtpUser: Foo InstallFile:
+Pkkbdphw InstallFolder: %AppData% InstallSecondFolder:
+Eqrzwmf Key: Mutex: Ysjqh PanelEnable: false PanelHost: http://example.com/panel/upload.php SearchAndUploadExtensions: .jpeg, .txt, .docx, .doc,
+SearchAndUploadSizeLimit: 500000 SearchAndUploadZipSize: 5000000
+SelfDestruct: false SendingInterval: 2 Version: MassLogger v1.3.4.0 WindowSearcherKeywords: youtube, facebook, amazon, Figure 18: Decrypted configuration Conclusion Using a JIT compiler hook to replace the MSIL is a powerful technique that makes static analysis almost impossible.
+Although this technique is not new, I haven’t seen many .NET
+malwares making use of it, let alone trying to implement their own adaptation instead of using widely available protectors like ConfuserEx.
+Hopefully, with this blog post and JITM , analysts will now have the tools and knowledge to defeat MassLogger or any future variants that use a similar technique.
+If this is the type of work that excites you; and, if you thrive to push the state of the art when it comes to malware analysis and reverse engineering, the Front Line Applied Research and Expertise (FLARE) team may be a good place for you.
+The FLARE team faces fun and exciting challenges on a daily basis; and we are constantly looking for more team members to tackle these challenges head on.
+Check out FireEye’s career page to see if any of our opportunities would be a good fit for you.
+Contributors (Listed Alphabetically)
+Tyler Dean ( @spresec ): Technical review of the post Michael Durakovich: Technical review of the post Stephen Eckels ( @stevemk14ebr ): Help with porting JITM to use PolyHook Jon Erickson ( @evil-e ): Technical review of the post Moritz Raabe ( @m_r_tz ): Technical review of the post Subscribe to Blogs Get email updates as new blog posts are added.
+
+

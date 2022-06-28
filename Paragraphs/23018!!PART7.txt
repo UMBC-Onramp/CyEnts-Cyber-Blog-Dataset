@@ -1,0 +1,6 @@
+
+If a call supposedly from a bank or government agency comes from a cell number, it’s almost certainly vishing.
+Double those odds if the phone number is from a different region.
+However, an official-looking number is no guarantee of a legitimate call; modern technologies allow caller ID spoofing .
+If a caller tries to extract confidential information, especially in a threatening manner, that too is a sign of vishing.
+In general, any attempt to find out private information is an indication of fraud: any information a real bank or tax office employee needs about you, they probably already have — remember, we’re talking about communication they initiated, not you.

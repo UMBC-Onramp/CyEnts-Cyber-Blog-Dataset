@@ -1,0 +1,3 @@
+
+Regardless of which ransomware family first employed the OT-related processes in a kill list or where the malware authors acquired the list, the seeming ubiquity of this list across malware families suggests that the list itself is more noteworthy than any individual malware family that has implemented it.
+While the OT processes identified in these lists may simply represent the coincidental output of automated process collection from target environments and not a targeted effort to impact OT, the existence of this list provides financial crime actors opportunities to disrupt OT systems.

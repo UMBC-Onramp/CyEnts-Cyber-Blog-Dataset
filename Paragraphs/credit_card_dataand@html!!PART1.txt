@@ -1,0 +1,1 @@
+Introduction Through FireEye’s Email Threat Prevention (ETP) solution, FireEye Labs discovered a phishing campaign in the wild targeting the credit card data and other personal information of Netflix users primarily based in the United States.

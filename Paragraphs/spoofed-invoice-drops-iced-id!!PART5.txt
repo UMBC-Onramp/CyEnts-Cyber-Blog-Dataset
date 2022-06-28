@@ -1,0 +1,13 @@
+
+This action begins the next phase of infection.
+Dropper “main.dll” acts as a dropper for IcedID.
+Static analysis of the file reveals an interesting point.
+What at appears at first glance to be an easy win for IOCs (Indicators of Compromise) because it contains a domain and IP address, turns out to be slightly more complicated.
+In comparing the area of code where the strings in Figure 5 are stored, we find that this area is not called by any functions within “main.dll”.
+To illustrate this, the right-hand side of the very first line in Figure 6 contains “Data XREF:”.
+This indicates that it is referenced elsewhere in the code.
+The strings from Figure 5, however, do not include this information, indicating they are not.
+By investigating further, the story becomes even more interesting.
+This code appears in a StackOverflow question from approximately 10 years ago concerning an issue about downloading an image over HTTP ( https://stackoverflow.com/questions/9389183/downloading-a-picture-with-http-get-only-downloads-a-small-part-of-it ).
+It should be noted that there is no malicious intent with the content of that posting.
+That it is now part of “main.dll” indicates it is a decoy for analysts in the hope the actual indicators won’t be blocked.

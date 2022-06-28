@@ -1,0 +1,8 @@
+We are excited to announce version 2.0 of our open-source tool called capa.
+capa automatically identifies capabilities in programs using an extensible rule set.
+The tool supports both malware triage and deep dive reverse engineering.
+If you haven’t heard of capa before, or need a refresher, check out our first blog post .
+You can download capa 2.0 standalone binaries from the project’s release page and checkout the source code on GitHub .
+capa 2.0 enables anyone to contribute rules more easily, which makes the existing ecosystem even more vibrant.
+This blog post details the following major improvements included in capa 2.0: New features and enhancements for the capa explorer IDA Pro plugin, allowing you to interactively explore capabilities and write new rules without switching windows More concise and relevant results via identification of library functions using FLIRT and the release of accompanying open-source FLIRT signatures Hundreds of new rules describing additional malware capabilities, bringing the collection up to 579 total rules, with more than half associated with ATT&CK techniques Migration to Python 3, to make it easier to integrate capa with other projects capa explorer and Rule Generator capa explorer is an IDAPython plugin that shows capa results directly within IDA Pro.
+The version 2.0 release includes many additions and improvements to the plugin, but we'd like to highlight the most exciting addition: capa explorer now helps you write new capa rules directly in IDA Pro!

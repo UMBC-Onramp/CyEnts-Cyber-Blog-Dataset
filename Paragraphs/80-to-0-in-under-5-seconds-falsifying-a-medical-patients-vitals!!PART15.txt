@@ -1,0 +1,8 @@
+
+(This is only an analogy; the device is not actually performing a TCP three-way handshake.)
+The central monitoring station first sends a packet to port 2000 to the patient monitor.
+This can be considered the “SYN” packet.
+The patient monitor responds to the central station; notice it responds to the source port of the initial request.
+This can be considered the “SYN,ACK.”
+The central station sends the final “ACK,” essentially completing a three-way (or three-step) handshake.
+Directly following this step, the patient monitor sends another packet to the initial port of the “SYN” packet.

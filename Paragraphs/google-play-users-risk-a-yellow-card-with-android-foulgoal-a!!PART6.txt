@@ -1,0 +1,7 @@
+
+Variants We have also discovered two other variants of this threat created by the same authors and published to Google Play as dating apps.
+Although all the apps have been removed from Google Play, we still see indications of infections from our telemetry data, so we know these apps are active on some users’ devices.
+Our telemetry data indicates that although users around the world have downloaded the app, the majority of downloads took place in the Middle East, most likely as a result of a World Cup–themed Twitter post in Hebrew directing people to download the app for a breakdown of the latest events.
+McAfee Mobile Security users are protected against all the variants of this threat, detected as   Android/FoulGoal.
+A.
+

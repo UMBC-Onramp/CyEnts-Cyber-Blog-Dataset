@@ -1,0 +1,6 @@
+
+So, what is the best of both worlds, you may ask?
+Some people, including myself, have several phones — one where iMessage is disabled, and a “honeypot” iPhone where iMessage is enabled.
+Both are nicely associated with the same Apple ID and phone number.
+If someone decides to target me this way, there’s a good chance they will end up in the honeypot phone.
+How to detect Pegasus and other advanced mobile malware Detecting infection traces from Pegasus and other advanced mobile malware is very tricky, and complicated by the security features of modern operating systems such as iOS and Android.

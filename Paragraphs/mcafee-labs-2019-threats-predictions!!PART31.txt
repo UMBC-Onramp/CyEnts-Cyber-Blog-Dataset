@@ -1,0 +1,6 @@
+
+An infected smartphone could cause the next example of hijacking the DNS settings on a router .
+Vulnerabilities in mobile and cloud apps are also ripe for exploitation, with smartphones at the core of the criminals’ strategy.
+Infected IoT devices will supply botnets, which can launch DDoS attacks, as well as steal personal data.
+The more sophisticated IoT malware will exploit voice-controlled digital assistants to hide its suspicious activities from users and home-network security software.
+Malicious activities such as opening doors and connecting to control servers could be triggered by user voice commands (“Play music” and “What is today’s weather?”).

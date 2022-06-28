@@ -1,0 +1,6 @@
+
+Open-source tools such as Hidden Tear allowed low-skilled players to enter the market and acquire cryptocurrencies through ransomware with only limited coding knowledge.
+The thriving model ransomware as a service emerged with TOX, sold via a TOR hidden service in 2015.
+The use of cryptocurrencies by malicious actors has grown substantially since their inception in 2009.
+Cryptocurrencies meet a need and have been exploited in ever-evolving ways since their introduction.
+The influence of cryptocurrencies on underground markets, malware development, and attackers behavior cannot be understated.

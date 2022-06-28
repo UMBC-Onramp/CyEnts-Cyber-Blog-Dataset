@@ -1,0 +1,8 @@
+
+(If you plan to watch Apple TV, you’ll also need an Apple ID.)
+Unsurprisingly, cybercriminals have created fake sign-up pages to net all of those goodies in one go.
+Armed with your info, they can withdraw or spend your money right away; your e-mail address should come in handy for future attacks.
+In the example below, the fake site is not very convincing.
+Can you spot the phishing signs ?
+Fake Netflix sign-up page “Refresh data”
+If you already have a paid subscription, then attackers will threaten to block it, assuming, logically, that you value it.

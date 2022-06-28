@@ -1,0 +1,4 @@
+Everyone likes something for free.
+And there is no better place to go to get free analysis, intelligence and tools than The Armory on M-Unition.
+During the past year, we've offered intelligence and analysis on new threat activity, sponsored open source projects and offered insight on free tools like Redline™ , all of which has been highlighted on our blog.
+In case you've missed it, here are some of our most popular posts: Challenges in Malware and Intelligence Analysis: Similar Network Protocols, Different Backdoors and Threat Groups

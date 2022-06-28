@@ -1,0 +1,4 @@
+
+Victim IP address being uploaded to Pastebin The backdoor is implemented by a UPX-packed binary “ss”, also written in Go, with variations compiled for Windows and multiple Linux architectures.
+This program first determines the hijacked computer’s external IP address from myexternalip.com, uploads that address as the name of a private Pastebin paste, then starts TCP listeners on ports 30004 and 30006.
+In addition to the known vulnerabilities above, X10-unix attempts to connect to Android Debug Bridge connections on port 5555.

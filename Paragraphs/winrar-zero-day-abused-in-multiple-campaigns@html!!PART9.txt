@@ -1,0 +1,9 @@
+
+Figure 14:
+Retrieving processes and modules using Process32First and Module32First A fragment of the HTTP request that is built with the information gathered is shown in Figure 15.
+Figure 15: HTTP request fragment If any of the aforementioned methods is successful, the malware tries to execute the decrypted payload.
+During our analysis, the C2 server did not respond with a next-level payload.
+Indicators File Name/Type Hash/URL SysAid-Documentation.rar
+062801f6fdbda4dd67b77834c62e82a4 SysAid-Documentation.rar 49419d84076b13e96540fdd911f1c2f0 ekrnview.exe 96986B18A8470F4020EA78DF0B3DB7D4 Thumbs.db.lnk 31718d7b9b3261688688bdc4e026db99 URL1 www.alahbabgroup[.]com/bakala/verify.php
+URL2 103.225.168[.]159/admin/verify.php
+URL3 www.khuyay[.]org/odin_backup/public/loggoff.php URL4 47.91.56[.]21/verify.php

@@ -1,0 +1,6 @@
+
+Next the mobile operator sends the device a PIN via SMS; the malware intercepts the PIN and returns it via web request to confirm the subscription.
+Once the user is fraudulently subscribed to a premium-rate service to download a copy of a free app on official app stores, the malware shows the dialog “Downloading game…” and proceeds with the download of another APK stored on a third-party server.
+Although the APK file that we downloaded from the remote server is a copy of the legitimate popular app, the file can be changed at any point to deliver additional malware.
+Unlike in previous campaigns, we did not find evidence that these fake-installer apps were distributed via Google Play.
+We believe that they were distributed via fake third-party markets from which users looking for popular apps are tricked into downloading APK files from unknown sources.

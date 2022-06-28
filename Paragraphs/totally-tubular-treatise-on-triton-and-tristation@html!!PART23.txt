@@ -1,0 +1,5 @@
+
+We also have to acknowledge the research performed by the TRITON attackers.
+We borrowed a lot of your knowledge about TriStation from the TRITON framework itself.
+Finally, remember that we're here to collaborate.
+We think most of our research is right, but if you notice any errors or omissions, or have ideas for improvements, please spear phish contact: smiller@fireeye.com.

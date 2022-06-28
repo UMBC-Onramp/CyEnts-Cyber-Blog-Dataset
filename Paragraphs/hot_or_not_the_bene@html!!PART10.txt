@@ -1,0 +1,6 @@
+
+The App Store has a strict policy prohibiting third party apps from using any private frameworks.
+However, it is worth pointing out that the operating system does not differentiate Apple apps’ private framework usage and a third party app’s private framework usage.
+It is simply the App Store policy that bans third party use.
+With JSPatch, this restriction has no effect because the JavaScript file is not subject to the App Store’s vetting.
+Figure 11 shows the code for loading the BluetoothManager.framework and utilizing APIs to read and change the states of Bluetooth of the host device.

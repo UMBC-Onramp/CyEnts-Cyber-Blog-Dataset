@@ -1,0 +1,6 @@
+
+In January 2020 a new version of the malware appeared with a special text dedicated to some researchers in the security field.
+The malware developers appear to have chosen those individuals to be provocative and make fun of them.
+The sample was discovered by malwrhunterteam [9] on the 28th of January 2020.
+The sample has some differences when compared with the previous one that was analyzed in this report.
+Those differences will be covered later via another sample that was found by Luca Nagy [10] on the 30th of January 2020.

@@ -1,0 +1,9 @@
+
+All of that happens contactlessly, over the radio interface.
+The researchers stuffed their remote with modified firmware that queried for updates not every 24 hours, but every minute; then, on receiving certain response, turned on the built-in microphone and broadcast the sound to the attackers.
+Their tests succeeded at relatively long range and through a wall, simulating a wiretap van outside a house.
+How to stay protected In our opinion, there is little point worrying about your remote being hacked and turned into a listening device.
+Although proven feasible, the attack isn’t really practical.
+It might be suitable for a targeted attack on some kind of special person, but it’s too complex and time-consuming for large-scale use.
+That said, here are some tips for those of a you-can-never-be-too-cautious frame of mind:
+If you own an Xfinity TV box, check the remote’s firmware version.

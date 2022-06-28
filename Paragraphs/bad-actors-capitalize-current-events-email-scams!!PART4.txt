@@ -1,0 +1,4 @@
+
+The XLM file contains the following obfuscated Excel 4.0 macro: The document contains five hidden sheets: \"Vfrbuk1\", \"Sheet\", \"Lefasbor1\", \"EFALGV\", “Je1” and “Je2”.
+Sheet EFALGV contains the main code, which uses the other sheets to compile commands.
+It does this without user interaction, performing its behind-the-scenes magic to download a copy of Emotet from multiple remote locations: Another variation observed was sent to a State Attorney General’s office in the United States.

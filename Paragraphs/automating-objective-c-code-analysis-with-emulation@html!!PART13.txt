@@ -1,0 +1,6 @@
+
+Now, with emulation support, this is no longer the case.
+objc2_analyzer uses the iterate API from flare-emu along with instruction and call hooks that perform Objective-C disassembly analysis in order to determine the id and selector being passed for every call to objc_msgSend variants in a binary.
+As an added bonus, it can also catch calls made to objc_msgSend variants when the function pointer is stored in a register, which is a very common pattern in Clang (the compiler used by modern versions of Xcode).
+IDA Pro tries to catch these itself and does a pretty good job, but it doesn’t catch them all.
+In addition to x86_64, support was also added for the ARM and ARM64 architectures in order to support reverse engineering iOS applications.

@@ -1,0 +1,9 @@
+
+The JSPatch technology potentially allows an individual to effectively circumvent the protection imposed by the App Store review process and perform arbitrary and powerful actions on the device without consent from the users.
+The dynamic nature of the code makes it extremely difficult to catch a malicious actor in action.
+We are not providing any meaningful exploit in this blog post, but instead only pointing out the possibilities to avoid low-skilled attackers taking advantage of off-the-shelf exploits.
+Example 2: Load arbitrary private frameworks into app process a. Example private framework: /System
+/Library/PrivateFrameworks/BluetoothManager.framework b. Private APIs used by example framework: [ BluetoothManager connectedDevices] , [BluetoothDevice name]
+Similar to the previous example, a malicious JSPatch JavaScript could instruct an app to load an arbitrary private framework, such as the BluetoothManager.framework , and further invoke private APIs to change the state of the device.
+iOS private frameworks are intended to be used solely by Apple-provided apps.
+While there is no official public documentation regarding the usage of private frameworks, it is common knowledge that many of them provide private access to low-level system functionalities that may allow an app to circumvent security controls put in place by the OS.

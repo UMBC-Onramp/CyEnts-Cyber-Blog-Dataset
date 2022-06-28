@@ -1,0 +1,8 @@
+
+The email is sent to the target, and a password is provided within the body of the email for convenient extraction.
+The zipped attachment contains a file, “W-9 form.
+XLM.”
+The XLM extension is simply an Excel file that contains Excel 4.0 macros: For those not familiar with Form W-9 (Request for Taxpayer Identification Number and Certification), it is used by U.S. individuals to provide a correct taxpayer identification number (TIN) to payers (or brokers) who are required to file information returns with the IRS.
+Red flags that this is a phishing scam include the non-capitalization of “assistant” and the incorrect usage of “Treasure” instead of “Treasury” in the signature body.
+It should also be noted that the IRS does not communicate with U.S. taxpayers via email and instead uses the traditional postal service for all communications.
+Analysis Upon observation, and in a similar fashion to our recent Emotet blog , the XLM file asks the user to enable macros upon opening the file.

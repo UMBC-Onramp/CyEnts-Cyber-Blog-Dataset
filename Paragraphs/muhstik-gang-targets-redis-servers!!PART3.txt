@@ -1,0 +1,6 @@
+
+The Lua engine is expected to be sandboxed , i.e., clients can interact with the Redis APIs from Lua, but should not be able to execute arbitrary code on the machine where Redis is running.
+“ – Reginaldo Silva In January 2022, Reginaldo Silva discovered a vulnerability in Redis (Debian-specific) that allows Lua sandbox escape.
+A remote attacker with the ability to execute arbitrary Lua scripts could escape the Lua sandbox and execute arbitrary code on the host.
+This vulnerability existed because the Lua library in some Debian/Ubuntu packages is provided as a dynamic library (Ubuntu Bionic and Trusty are not affected).
+When the Lua interpreter initializes, the “ package ” variable is automatically populated, and that in turn permitted access to arbitrary Lua functionality.

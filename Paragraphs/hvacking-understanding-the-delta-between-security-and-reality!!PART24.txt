@@ -1,0 +1,11 @@
+
+Figure 16 An error message gave us a clue on why the crash occurred, indicating a watchdog timer failure.
+Watchdog timers are common in critical embedded devices that if the system hangs for a predetermined amount of time, it takes action to try and correct the problem.
+In this case, the action chosen by the developers is to reboot the system.
+Searching the system binaries for this error message revealed the section of code shown in Figure 17.
+  
+The actual error messages have been redacted at the request of the vendor.
+Figure 17 The function is decrementing three counters.
+If any of the counters ever get to zero, then an error is thrown and later the system is rebooted.
+Examining the code further shows that multiple processes call this function to check the counters very frequently.
+This means we are not going to be able to dynamically debug the system without figuring out how to disable this software watchdog.

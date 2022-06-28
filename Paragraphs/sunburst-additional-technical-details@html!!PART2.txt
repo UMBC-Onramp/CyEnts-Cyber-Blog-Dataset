@@ -1,0 +1,8 @@
+
+The malware's network traffic attempts to blend in with legitimate SolarWinds activity by imitating the Orion Improvement Program (OIP) protocol and persistent state data is stored within legitimate plugin configuration files.
+The backdoor uses multiple obfuscated blocklists to identify processes, services, and drivers associated with forensic and anti-virus tools.
+In this post, the following topics are covered in greater detail: Anti-Analysis Environment Checks and Blocklists Domain Generation Algorithm and Variations Command and Control (C2) behaviors for DNS A and CNAME records Malware modes of operation
+Anti-Analysis Environment Checks
+Before reaching out to its C2 server, SUNBURST performs numerous checks to ensure no analysis tools are present.
+It checks process names, file write timestamps, and Active Directory (AD) domains before proceeding.
+We believe that these checks helped SUNBURST evade detection by anti-virus software and forensic investigators for seven months after its introduction to the SolarWinds Orion supply chain.

@@ -1,0 +1,27 @@
+
+0003b50: ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee  ................
+0003b60:
+ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee  ................
+Files of the FLV file format contain a sequence of Tag structures.
+In Flash, these objects are created when parsing FLV
+Tags: .text:1018ACE9
+sub_1018ACE9    proc near               ; CODE XREF: sub_1018BBAC+2Bp .text:1018ACE9                                         ; sub_10192797+1A1p ...
+.text:1018ACE9 .text:1018ACE9
+arg_0           = dword ptr  4 .text:1018ACE9 .text:1018ACE9                 mov     eax, ecx .text:1018ACEB
+                 mov     ecx, [esp+arg_0] .text:1018ACEF
+                 mov     dword ptr [eax], offset off_10BA771C .text:1018ACF5
+                 mov     dword ptr [eax+24h], 1 .text:1018ACFC                 and     dword ptr [eax+14h], 0 .text:1018AD00
+                 mov     [eax+28h], ecx .text:1018AD03
+                 mov     byte ptr [eax+20h], 0 .text:1018AD07
+                 retn    4 .text:1018AD07 sub_1018ACE9    endp In the case of this exploit, a Tag structure begins at offset 0x3b2f into the FLV stream that, when parsed, populates the Tag structure as follows:
+Tag 2: UINT_8 type: 8 UINT_24 datasize: 1089 UINT_24 timestamp: 15 UINT_8 timestamphi: 0 UINT_24 streamid: 0 UINT_4 fmt: 6 UINT_2 sr: 2 UINT_1 bits: 0
+UINT_1 channels: 0 UBYTE data[1088]: \\xee\\xee\\xee\\xee… UINT_32 lastsize: 0xeeeeeeee
+Beginning within the data field, all contents of the FLV stream become 0xEE.
+Consequently, the data and lastsize fields are mangled, and one final tag technically exists consisting exclusively of 0xEE:
+Tag 3: UINT_8 type: 0xEE UINT_24 datasize: 0xEEEEEE … One can see the datasize field of Tag2 populated from the attacker's FLV stream below: .text:10192943
+                 mov     eax, [ebx+24h] .text:10192946
+                 mov     [esi+14h], eax .text:10192949
+                 movzx   eax, byte ptr [ebx+19h] ; 00 .text:1019294D
+                 movzx   ecx, byte ptr [ebx+1Ah] ; 04 .text:10192951
+                 shl     eax, 8 .text:10192954                 or      eax, ecx .text:10192956
+                 movzx   ecx, byte ptr [ebx+1Bh] ; 41 .text:1019295A

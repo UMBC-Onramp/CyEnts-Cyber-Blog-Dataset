@@ -1,0 +1,9 @@
+
+HermeticRansom peculiarities HermeticRansom is written in Golang.
+It does not use any obfuscation mechanisms, and the encryption method itself is rather cumbersome and inefficient.
+Judging by these and some other signs, our experts think that this malware was created in a hurry.
+You can find a more detailed technical analysis of the malware along with indicators of compromise on our Securelist blog.
+How to stay safe Kaspersky Lab security solutions successfully detect HermeticRansom malware and similar threats.
+We have a range of tools to protect both home computers and corporate infrastructure, including: Kaspersky Internet Security : our multi-platform security solution for home users; Kaspersky Endpoint Security Cloud : our solution for business protection; Kaspersky Anti-Ransomware Tool : our free corporate solution that can work as an additional layer of protection in parallel with products from other vendors.
+
+

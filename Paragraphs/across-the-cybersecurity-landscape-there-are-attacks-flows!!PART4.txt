@@ -1,0 +1,5 @@
+
+Jon Baker, the Center’s director of research, defines an attack flow as: “…a machine-readable representation of a sequence of actions and assets along with knowledge properties about those actions and assets.
+This representation is composed of five main objects: the flow itself, a list of actions, a list of assets, a list of knowledge properties, and a list of causal relationships between the actions and assets.
+Each of these five objects includes a set of required and optional fields.
+For example, an action must have a description and a name, whereas an asset may—but not must!—have an associated state.\" This Attack Flow Project boils down to two things: 1) mapping the flow of actions and 2) identifying what is the ultimate goal of that flow so cyber defenders know what their next step should be.

@@ -1,0 +1,5 @@
+
+Does observing one DGA encoding over another provide any information during incident response?
+Short answer: it provides a hint for where to look but isn’t a be-all tell-all alone.
+Noticing the DGA encoding change in network logs is a hint that the malware may have moved from New to Append or Append to New.
+This puts the malware in a mode where if a CNAME record is seen soon after, then HTTP C2 can begin.

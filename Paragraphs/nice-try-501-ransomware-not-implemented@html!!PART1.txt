@@ -1,0 +1,3 @@
+An Ever-Evolving Threat Since January 10, 2020, FireEye has tracked extensive global exploitation of CVE-2019-19781, which continues to impact Citrix ADC and Gateway instances that are unpatched or do not have mitigations applied .
+We previously reported on attackers’ swift attempts to exploit this vulnerability and the post-compromise deployment of the previously unseen NOTROBIN malware family by one threat actor.
+FireEye continues to actively track multiple clusters of activity associated with exploitation of this vulnerability, primarily based on how attackers interact with vulnerable Citrix ADC and Gateway instances after identification.

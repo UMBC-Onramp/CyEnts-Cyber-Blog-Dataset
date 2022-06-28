@@ -1,0 +1,13 @@
+
+This decrypted value is a filename which the sample then opens, reads, RC4 encrypts with the same key, base64 encodes, then writes to stdout.
+The appliance redirects stdout as the response to HTTP requests.
+This serves as an encrypted file download for the attacker.
+Integrity Checker Tool and Other Validation Checks
+In our public report, we noted two code families that manipulate check_integrity.sh, a legitimate script used during a normal system upgrade.
+This validation script was modified by the actor to exit early so that it would not perform the intended checks.
+Per Ivanti, the validation provided by check_integrity.sh is a separate validation feature and not the same as the Integrity Checker Tool (ICT) available on their website.
+They recommend that organizations use the online ICT to confirm that hashes of files on their Pulse Secure devices match Ivanti’s list of known good hashes.
+Please note that the ICT does not scan the rollback partition.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

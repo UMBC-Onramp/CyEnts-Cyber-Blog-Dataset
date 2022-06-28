@@ -1,0 +1,7 @@
+
+The scammer can spend the gold in the game, although exchanging it for real money is more typical.
+It is with good reason that Blizzard support strongly recommends players refrain from buying gold at reduced rates on third-party websites.
+Why the WoW Auction House scam works World of Warcraft is known for showing zero tolerance to cheaters.
+Blizzard’s licensing agreement prohibits changes to the game’s source code and the use of tools that give some players advantages over others, as well as any interference with game-play.
+So, how did the auction fraud go unnoticed?
+It was because the scripts affect the interface only through WeakAuras tools, which are allowed.

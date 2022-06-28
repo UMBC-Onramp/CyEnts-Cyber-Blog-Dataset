@@ -1,0 +1,5 @@
+
+We first demonstrated this attack in the Jailbreak Security Summit [7] in April 2015.
+Here we categorize this attack as Plugin Masque Attack.
+We will discuss the technical details and demonstrate these three kinds of Masque Attacks.
+Manifest Masque: Putting On the New, Taking Off the Old To distribute an in-house iOS app with enterprise provisioning wirelessly, one has to publish a web page containing a hyperlink that redirects to a XML manifest file hosted on an https server [1].

@@ -1,0 +1,5 @@
+
+The second blocking method is to inundate tech support with messages alleging that the victim’s profile contains images of suicide or self-mutilation.
+In many cases, Instagram takes the easier path, blocking accounts on the basis of such complaints without first checking their actual content.
+Unlike phishing and other similar schemes that still require action from the victim — clicking a dangerous link, for example — a ban attack works with no victim participation whatsoever.
+The target, who might never even dream of violating the terms of use, simply finds their account blocked.

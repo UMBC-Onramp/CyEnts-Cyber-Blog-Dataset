@@ -1,0 +1,5 @@
+
+Instructions for compiling a kernel with these options enabled are listed in this Integrity Measurement Architecture documentation .
+Documentation for auditd can be found here .
+The reason we need the auditd daemon is because it is the userspace component for Linux’s auditing platform and it is responsible for writing all the resulting audit records to disk.
+Without auditd, the logs for the events we will be generating would never get written out to disk.

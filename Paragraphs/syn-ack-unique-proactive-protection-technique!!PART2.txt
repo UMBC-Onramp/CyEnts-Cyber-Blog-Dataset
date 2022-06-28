@@ -1,0 +1,10 @@
+
+  
+If found, the malicious code will terminate, effectively resulting in an extremely simple “patch” of sorts.
+We have tested the following steps to be effective on several versions of Windows 7 and theoretically on Windows 10 – preventing the malware from encryption and ransom.
+  These steps can be taken proactively.
+  Due to limited scope of testing at this time, this technique may not work on all systems, release versions, and configurations.
+Windows 7 – Adding Keyboard Layout: Control Panel > Clock, Language, and Region > Region and Language > Keyboards and Languages Click the “Change Keyboards” tab In the Installed Services section click “add” Select Keyboard – For example: Russian (Russia) >
+Keyboard >
+Russian Click “Ok” Click “Apply”
+Click “Ok” Here is the list of keyboards layouts you can add – any will suffice: Armenian Azeri, (Cyrillic, Azerbaijan) Belarusian Georgian Kazakh Ukrainian Uzbek (Cryillic, Uzbekistan)

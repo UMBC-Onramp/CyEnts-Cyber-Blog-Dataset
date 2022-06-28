@@ -1,0 +1,8 @@
+
+The vulnerability allows the attacker to modify one byte of memory at an arbitrary address.
+The attacker uses the vulnerability to do the following: Gain access to memory from Flash ActionScript, bypassing address space layout randomization (ASLR) Pivot to a return-oriented programing (ROP) exploit technique to bypass data execution prevention (DEP) EMET detection The attacker uses the Microsoft.
+XMLDOM ActiveX control to load a one-line XML string containing a file path to the EMET DLL.
+Then the exploit code parses the error resulting from the XML load order to determine whether the load failed because the EMET DLL is not present.
+  
+The exploit proceeds only if this check determines that the EMET DLL is not present.
+ASLR bypass Because the vulnerability allows attackers to modify memory to an arbitrary address, the attacker can use it to bypass ASLR.

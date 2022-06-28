@@ -1,0 +1,5 @@
+
+Check for SSE2 instructions in the CPU After finishing this process, the malware will try to delete itself with the next command using “ShellExecuteExW”:
+Image 18.
+Auto-deletion of the malware The Ransom Note The ransom note is rather compact because the author hardcoded the content right in the code without using any obfuscation or encryption.
+The text file containing the ransom note is created in every directory after encryption and called Restore-My-Files.txt .

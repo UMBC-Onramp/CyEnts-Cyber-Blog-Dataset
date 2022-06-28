@@ -1,0 +1,14 @@
+
+Platform Detection Name FireEye Network Security FireEye Email Security FireEye Detection On Demand FireEye Malware Analysis FireEye Malware File Protect Backdoor.
+BEACON FE_Loader_Win32_BLUESPINE_1 Trojan.
+Win32.CobaltStrike Backdoor.
+MSIL.SMOKEDHAM Malware.
+Binary.ps1 FEC_Backdoor_CS_SMOKEDHAM_1 Suspicious Process PowerShell Activity FireEye Endpoint Security Real-Time Detection (IOC) WDIGEST CREDENTIAL EXPOSURE (METHODOLOGY) WDIGEST CREDENTIAL EXPOSURE VIA REGISTRY (METHODOLOGY) SUSPICIOUS CONHOST.EXE
+A (METHODOLOGY)
+TASKMGR PROCESS DUMP OF LSASS.EXE A (METHODOLOGY)
+Malware Protection (AV/MG) Trojan.
+GenericFCA.Script.533 Trojan.
+GenericFCA.Agent.7732 Dropped:Trojan.
+VBS.VGU Trojan.
+CobaltStrike.
+FM NGRok Ultra VNC SVN Station Generic.mg.a9fa3eba3f644ba3 Generic.mg.1626373508569884 Modules Process Guard

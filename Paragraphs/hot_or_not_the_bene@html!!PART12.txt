@@ -1,0 +1,10 @@
+
+It exposes several public APIs to developers to achieve this, but [CTTelephonyNetworkInfo updateRadioAccessTechnology:] is not one of them.
+However, as shown in Figure 13 and Figure 14, we can successfully use this private API to update the device cellular service status by changing the radio technology from CTRadioAccessTechnologyHSDPA to CTRadioAccessTechnologyLTE without Apple’s consent.
+Figure 13.
+JavaScript code that changes the Radio Access Technology of the test device Figure 14.
+Corresponding execution output of the above JavaScript code via Private API Example 4: Access to Photo Album (sensitive data) via public APIs a .
+     Example loaded framework: /System/Library/Frameworks/Photos.framework b .
+     Public APIs : [PHAsset fetchAssetsWithMediaType:options:]
+Privacy violations are a major concern for mobile users.
+Any actions performed on a device that involve accessing and using sensitive user data (including contacts, text messages, photos, videos, notes, call logs, and so on) should be justified within the context of the service provided by the app.

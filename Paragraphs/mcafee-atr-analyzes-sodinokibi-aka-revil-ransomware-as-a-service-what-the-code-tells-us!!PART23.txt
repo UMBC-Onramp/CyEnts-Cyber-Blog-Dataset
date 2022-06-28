@@ -1,0 +1,5 @@
+
+If the malware destroys the files , it will start enumerating all logic units and finally the network shares in the folders with the name that appear in the config field “wfld”.
+FIGURE 15.
+WIPE FILES IN THE TARGET FOLDERS
+In the case where an affiliate creates a sample that has defined a lot of folders in this field, the ransomware can be a solid wiper of the full machine.

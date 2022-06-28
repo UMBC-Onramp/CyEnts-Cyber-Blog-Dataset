@@ -1,0 +1,13 @@
+
+Incident response should focus on trying to identify CNAME records being successfully resolved instead of focusing on DGA encodings entirely.
+Identifying CNAME records is easier than tracking the malware mode through logs and a stronger signal.
+What is the \"killswitch\"?
+FireEye discovered that certain DNS responses cause the malware to disable itself and stop further network activity.
+With the support and help of GoDaddy’s Abuse Team and the Microsoft Threat Intelligence Center, the domain used for resolving DGA domains was reconfigured to point to a sinkhole server under Microsoft’s control.
+The IP of this sinkhole server was specially chosen to fall into the range used by the malware to transition from its current mode (New or Append) into Truncate mode where it will be permanently inactive.
+In other words, SUNBURST infections should now be inoculated due to the killswitch.
+When C2 communication occurs, is a CNAME record required?
+CNAME records are required for HTTP C2 beaconing to occur and are provided by the C2 coordinator to specify the final C2 server.
+C2 activity must occur over a domain name provided via a CNAME record.
+It cannot occur directly via a raw IP.
+To initialize C2 beaconing, the backdoor first looks for an A record response from one of its special NetBios subnets and subsequently expects to receive a CNAME record.

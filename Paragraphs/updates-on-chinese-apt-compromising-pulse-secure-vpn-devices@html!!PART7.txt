@@ -1,0 +1,7 @@
+
+It was found in close proximity to an ATRIUM webshell.
+UNC2630 RAPIDPULSE RAPIDPULSE is a webshell capable of arbitrary file read.
+As is common with other webshells, RAPIDPULSE exists as a modification to a legitimate Pulse Secure file.
+RAPIDPULSE can serve as an encrypted file downloader for the attacker.
+UNC2630 Table 1: New malware families identified Initial Compromise The actors leveraged several vulnerabilities in Pulse Secure VPN appliances.
+Mandiant observed the use of the recently patched vulnerability CVE-2021-22893 to compromise fully patched Pulse Secure appliances as well as previously disclosed vulnerabilities from 2019 and 2020.

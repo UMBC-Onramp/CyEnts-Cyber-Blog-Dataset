@@ -1,0 +1,5 @@
+
+A step FireEye Mandiant often performs during investigations is to take all unique IP addresses and query threat intelligence sources for each IP address for reputation, WHOIS information, connections to known threat actor activity, etc.
+This grants more information about each IP address that we can take into consideration in our analysis.
+While FireEye Mandiant is privy to historical engagement data and Mandiant Threat Intelligence , if security teams or organizations do not have access to commercial threat intelligence feeds, there are numerous open source intelligence services that can be leveraged.
+We can also use IP address geolocation services to obtain latitude and longitude related to each source IP address.

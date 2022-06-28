@@ -1,0 +1,6 @@
+
+FireEye iSIGHT Intelligence has identified nearly 1,600 publicly disclosed ICS vulnerabilities since 2000.
+We go more in depth on these issues in our latest report, Overload: Critical Lessons from 15 Years of ICS Vulnerabilities , which highlights trends in total ICS vulnerability disclosures, patch availability, vulnerable device type and vulnerabilities exploited in the wild.
+FireEye’s acquisition of iSIGHT provided tremendous visibility into the depth and breadth of vulnerabilities in the ICS landscape and how threat actors try to exploit them.
+To make matters worse, many of these vulnerabilities are left unpatched and some are simply unpatchable due to outdated technology, thus increasing the attack surface for potential adversaries.
+In fact, nation-state cyber threat actors have exploited five of these vulnerabilities in attacks since 2009.

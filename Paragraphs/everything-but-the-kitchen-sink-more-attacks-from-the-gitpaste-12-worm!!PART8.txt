@@ -1,0 +1,5 @@
+
+ADB infection code On successful connection, X10-unix runs a script that uploads a native binary (“blu”) and an Android APK (“weixin.apk”), both base64-encoded.
+Blu probes the device’s bluetooth hardware and installs the APK.
+The APK uploads the device’s IP address to Pastebin as above and then downloads and installs an ARM CPU port of X10-unix.
+A similar attempt is made to install payloads on existing reverse-shell backdoors listening on port 1337.

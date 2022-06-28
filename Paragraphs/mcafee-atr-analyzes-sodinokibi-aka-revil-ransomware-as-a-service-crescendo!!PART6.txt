@@ -1,0 +1,4 @@
+
+The actor deployed a variant of the Mimikatz credential harvester during the intrusion, with the following custom BAT file: We have seen a consistent usage of various custom files used to interact with hacking tools that are shared among the underground communities.
+Another tool, known as Everything.exe, was also executed during the same period.
+This tool was used to index the entire file system and what was on the target system.

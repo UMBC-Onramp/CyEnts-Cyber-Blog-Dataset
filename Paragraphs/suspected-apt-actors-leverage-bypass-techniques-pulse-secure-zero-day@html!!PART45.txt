@@ -1,0 +1,10 @@
+
+QUIETPULSE Utility Script The file dshelper (SHA256: c774eca633136de35c9d2cd339a3b5d29f00f761657ea2aa438de4f33e4bbba4 ) is a shell script invoked by a malicious version of dsserver that primarily functions as a utility script responsible for copying files and executing commands.
+Like the ATRIUM patcher, this script accesses /tmp/data, a path which is used during a system upgrade.
+This file is therefore, like the ATRIUM patcher, used by the attacker to maintain persistence.
+The script is set to execute in a loop where four main checks are executed every two minutes.
+The checks are as follows:
+Check 1 If /tmp/data/root/home/webserver/htdocs/dana-na/auth/compcheckjava.cgi exists and is non-empty then execute: grep -c -s 'system($depara)' /tmp/data/root/home/webserver/htdocs/dana-na/auth/compcheckjava.cgi
+It checks if the file has the contents system($depara) .
+If the file does not contain this content, then retrieve the first line of the file by executing: sed -n 1p /tmp/data/root/home/webserver/htdocs/dana-na/auth/compcheckjava.cgi Then copy a file via: cp /home/webserver/htdocs/dana-na/auth/compcheckjava.cgi /tmp/data/root/home/webserver/htdocs/dana-na/auth/compcheckjava.cgi Then replace the copy’s first line with the one retrieved from the sed above via: sed -i 1c\"<varies>\" /tmp/data/root/home/webserver/htdocs/dana-na/auth/compcheckjava.cgi Check 2 If /tmp/data/root/home/
+bin/ exists as a directory, then check if the file /tmp/data/root/home/bin/dshelper does not exist.

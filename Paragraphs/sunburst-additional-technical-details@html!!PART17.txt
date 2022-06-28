@@ -1,0 +1,4 @@
+
+Instead, the DGA subdomains encode a timestamp or the list of stopped/running services.
+To transition back to “passive” mode, the malware operator may set the DNS server to resolve A records within the following IP ranges: 41.84.159.0/24 74.114.24.0/21 154.118.140.0/24 217.163.7.0/24 If the malware is transitioned from the “active” mode back to “passive”, the C2 coordinator must repeat the activation process if the operator wants to re-activate the sample.
+HTTP(S) C2 After receiving a CNAME DNS response with a new host to communicate with, SUNBURST starts a new thread to execute the method HttpHelper.

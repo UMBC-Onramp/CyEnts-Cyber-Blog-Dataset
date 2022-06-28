@@ -1,0 +1,7 @@
+In December 2020, Mandiant observed a widespread, global phishing campaign targeting numerous organizations across an array of industries.
+Mandiant tracks this threat actor as UNC2529 .
+Based on the considerable infrastructure employed, tailored phishing lures and the professionally coded sophistication of the malware, this threat actor appears experienced and well resourced.
+This blog post will discuss the phishing campaign, identification of three new malware families, DOUBLEDRAG, DOUBLEDROP and DOUBLEBACK, provide a deep dive into their functionality, present an overview of the actor’s modus operandi and our conclusions.
+A future blog post will focus on the backdoor communications and the differences between DOUBLEBACK samples to highlight the malware evolution.
+UNC2529 Phishing Overview Mandiant observed the first wave of the phishing campaign occur on Dec. 2, 2020, and a second wave between Dec. 11 and Dec. 18, 2020.
+During the initial flurry, Mandiant observed evidence that 28 organizations were sent phishing emails, though targeting was likely broader than directly observed.

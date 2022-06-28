@@ -1,0 +1,4 @@
+
+The four magic bytes DB DC CC AB are appended to the end of the encrypted file.
+FIVEHANDS includes additional code not found in DEATHRANSOM and HELLOKITTY to use the Windows Restart Manager to close a file currently in use so that it can be unlocked and successfully encrypted.
+The encrypted file extension is changed to .crypt  extension FIVEHANDS's encryption flow and sequence is very different from the other two, partially because it incorporates asynchronous I/O requests and uses different embedded encryption libraries.

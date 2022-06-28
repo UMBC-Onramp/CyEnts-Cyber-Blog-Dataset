@@ -1,0 +1,6 @@
+
+Of the 72% iOS 8 devices, some are also vulnerable given that iOS 8.1.3 came out in late January 2015.
+We encourage users to upgrade their iOS devices to the latest version as soon as possible.
+URL Scheme Hijacking
+According to iOS Developer Library, “If more than one third-party\napp registers to handle the same URL scheme, there is currently no\nprocess for determining which app will be given that scheme”
+[1].\nHowever, when two apps register the same URL scheme, iOS always\nlaunches the same one to handle it in our experiments using multiple\niOS versions and device models.

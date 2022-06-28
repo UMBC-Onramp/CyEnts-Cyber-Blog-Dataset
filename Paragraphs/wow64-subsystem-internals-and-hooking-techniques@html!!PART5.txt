@@ -1,0 +1,12 @@
+
+WinDbg differentiates between these two by placing the address of the module after the 32-bit variant.
+The 64-bit ntdll can be found in %WINDIR%\\System32 and the 32-bit in %WINDIR%\\SysWOW64.
+In the PDBs, the 64bit and 32bit ntdlls are referred to as ntdll.pdb and wntdll.pdb respectively, try loading them in a disassembler!
+Continuing with the call trace, if we look at what the Wow64Transition pointer holds we can see its destination is wow64cpu!KiFastSystemCall .
+As an aside, note that the address of wow64cpu!KiFastSystemCall is held in the 32-bit TEB (Thread Environment Block) via member WOW32Reserved, this isn’t relevant for this trace but is useful to know.
+In Figure 4 we see the body of KiFastSystemCall .
+Figure 4: KiFastSystemCall transitions to x64 mode via segment selector
+0x33 The KiFastSystemCall performs a jmp using the 0x33 segment selector to a memory location just after the instruction.
+This 0x33 segment transitions the CPU into 64-bit mode via a GDT entry as described by (MalwareTech).
+Let's recap the trace we've performed to this point.
+We started from a call in ntdll, NtResumeThread.

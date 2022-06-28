@@ -1,0 +1,89 @@
+By Christiaan Beek on Jun 18, 2018
+
+Every week we read about adversaries attacking their targets as part of online criminal campaigns.
+
+Information gathering, strategic advantage, and theft of intellectual property are some of the motivations.
+
+Besides these, we have seen during the past two years an increase in attacks in which adversaries are not shy of leaving a trail of destruction.
+
+One might wonder how to deal with these kinds of threats and where to start.
+
+Sun Tzu’s The Art of War contains some great wisdom regarding the strategy of warfare.
+
+One of the most popular is the advice “If you know the enemy and know yourself, you need not fear the result of a hundred battles.
+
+If you know yourself but not the enemy, for every victory gained you will also suffer a defeat.
+
+If you know neither the enemy nor yourself, you will succumb in every battle.”
+
+Applying this advice to information security, let’s focus first on knowing yourself.
+
+Knowing yourself can roughly be divided into two parts: What do I have that can be of value to an attacker?
+
+How do I detect, protect, and correct any threats to my identified value?
+
+Every company has a value, it takes only one criminal mind to see that and to attempt to exploit it.
+
+Ask yourself what the core of your business is, the secret sauce that people might be after, what will take you out of business, whom you are doing business with, who are your clients, etc.
+
+Once you have identified your organization’s value, the second part of knowing yourself comes into play.
+
+You must understand where you to focus your defenses and invest in technology to detect and protect against threats.
+
+After wrapping up the knowing yourself part, what can we learn from the enemy?
+
+Ask yourself “Who would likely be interested in attacking me?”
+
+By going through the list of known adversaries and cybercriminal groups, you can create a list based on which geographies and vectors they target and classify them by risk.
+
+Here is a simplified example: Once you have your list and risk classification ready, you must next study the tactics, techniques, and procedures used by these adversaries.
+
+For mapping their techniques and associated campaigns, we use the MITRE Adversarial Tactics, Techniques, and Common Knowledge model (ATT&CK).
+
+The matrix covers hundreds of techniques, and can be applied for different purposes.
+
+In this case, we will focus on the risk versus mapping the defensive architecture.
+
+In Q1 of 2018, we mapped the targeted attacks discovered by ourselves and our peers in the industry.
+
+The following example comes from one adversary we tracked, showing the techniques they used: With MITRE’s Navigator tool you can select an actor or malware family.
+
+After making the selection, the boxes in the matrix show which techniques the actor or malware has used.
+
+From these techniques we can learn how our environments protect against these techniques and where we have gaps.
+
+The goal is not to create coverage or signatures for each technique; the matrix helps organizations understand how attackers behave.
+
+Having more visibility into their methods leads us to the right responses, and helps us contain and eradicate attacks in a coordinated way.
+
+By comparing the multiple actors from your initial risk assessment, you can build the matrix from the perspective of high/medium/low risk and map it against your defenses.
+
+Although some adversaries might not have a history of attacking you and your sector, it is still good to ask yourself “What if we were a target?”
+
+Would your environment create enough visibility to detect and deal with these techniques?
+
+Statistics When we looked at the first quarter, we noticed that the three techniques were the most popular in the category of Privilege Escalation: Exploitation of vulnerability Process injection Valid accounts To determine your coverage and detection capacity, you should ask if the exploits used completely new vulnerabilities (no patches available) or if they had existed for a while.
+
+Would your environment have the right patches installed or are you missing them and have to take action?
+
+When we looked at the categories of Exfiltration and Command and Control, most campaigns exfiltrated their data over a control server channel using a common port.
+
+That translates to either TCP port 80 (HTTP) or TCP port 443 (HTTPS).
+
+We all use these ports from inside the network to communicate to the internet.
+
+What if all my other defenses would fail to discover the suspicious activity?
+
+Which defensive components in my network would be able to inspect the outgoing traffic and block or flag the exfiltration attempts?
+
+Conclusion In this post, we highlighted one approach and application of the ATT&CK model.
+
+There are many ways to apply it for red teaming, threat hunting, and other tasks.
+
+At McAfee we embrace the model and are applying it to different levels and purposes in our organization.
+
+We are not only using it but also contribute to the model by describing newly discovered techniques used by adversaries.
+
+
+
+

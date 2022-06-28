@@ -1,0 +1,12 @@
+
+Monero has several advantages over Bitcoin in terms of privacy and anonymity; this makes it a favorite among bad actors.
+Beyond anonymity concerns, resources required to mine Monero are significantly lower, enabling more users to participate and increasing the profitability of botnets.
+The act of generating the coin is called mining, which is using system resources to solve a complex mathematical problem.
+Most major coins employ a “proof of work” that uses CPU resources to solve.
+Large groups of miners, including botnets, can amass their resources, called pool mining, on a single problem.
+The mining operations result in a solved mathematical equation that returns newly minted coins to the system and validates new transactions.
+The State of Illicit Cryptocurrency Mining Current incidents of illicit cryptomining occur through compiled executables.
+This practice is called binary-based mining.
+In the context of the browser, the practice is called browser-based mining.
+Binary-based cryptomining malware is delivered as a payload, often using spam or exploit kits.
+Open-source tools often facilitate mining.

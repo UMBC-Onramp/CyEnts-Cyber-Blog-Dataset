@@ -1,0 +1,11 @@
+
+This is how we originally derived that offset 0x220 in the ST_DATA_MGR structure corresponded to the compression format of the store page in Windows 10 1703 (x86).
+Figure 1: Call to RtlDecompressBuferEx, note that the compression format originates from ST_DATA_MGR
+To leverage flare-emu in automating the extraction of the value 0x220, we have a few options.
+For example, from analysis of other kernels, we know that the access to ST_DATA_MGR immediately before decompression is likely to be the compression format.
+In this case, a stronger extraction algorithm can be leveraged by prepopulating ST_DATA_MGR with a known pattern (see Figure 2).
+Figure 2: Known pattern copied into ST_DATA_MGR buffer Using flare-emu, we emulate the function in which this call is located and examine the stack post-emulation.
+0x20101000 0x1163 0x31001200
+0x1423 0x20001400 “Km” Figure 3:
+Post-emulation stack layout Knowing that the wCompressionFormat argument originated from the ST_DATA_MGR structure, we see that it is now “Km”.
+If we were to search for that value in the known pattern, we would find that it begins at offset 0x220.

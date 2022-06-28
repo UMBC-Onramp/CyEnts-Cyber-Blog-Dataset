@@ -1,0 +1,7 @@
+
+Win32_Shadowcopy | ForEach-Object {$_.Delete();}.\
+" If the malware is not running under WOW64, it uses COM objects and WMI commands to delete volume shadow copies.
+The decrypted strings in Figure 9 are used to facilitate this process.
+root/cimv2 SELECT * FROM Win32_ShadowCopy Win32_ShadowCopy.
+ID='%s' Figure 9: Decrypted strings related to shadow copy deletion System Manipulation
+Any service the name of which contains one of the strings listed in Figure 10 is stopped and deleted.

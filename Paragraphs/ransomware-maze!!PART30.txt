@@ -1,0 +1,9 @@
+
+Of course, as with many types of ransomware, there is an offer to decrypt three images for free and that service has been verified as working: FIGURE 30.
+FREE DECRYPTION WORKS
+SO
+THE MALWARE SAMPLE IS CORRECT SWITCHES
+The malware has some switches that can be used in the command line to launch.
+These switches can either disable some elements or enable logging.
+The switches are: –nomutex ->
+This switch prevents checking the mutex so that it can run more than one instance on the same machine.

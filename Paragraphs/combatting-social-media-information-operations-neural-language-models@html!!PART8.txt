@@ -1,0 +1,3 @@
+
+Since the pre-trained GPT-2 model's dataset consisted of 40+ GB of Internet text data extracted from 8+ million reputable web pages, its generations display relatively formal grammar, punctuation, and structure that corresponds to the text present within that original dataset (e.g. Figure 1).
+To make it appear like social media posts with their shorter length, informal grammar, erratic punctuation, and syntactic quirks including @mentions, #hashtags, emojis, acronyms, and abbreviations, we fine-tuned the pre-trained GPT-2 model on a new language modeling task using additional training data.

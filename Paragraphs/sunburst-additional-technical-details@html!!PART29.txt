@@ -1,0 +1,16 @@
+
+Malware Flow Diagram
+The following diagram provides a full picture of the malware's execution.
+Internally, SUNBURST uses a set of modes and transitions as described earlier.
+The names of these modes and transitions have no meaning.
+The malware authors purposely chose them as a form of obfuscation.
+When diagraming the malware's execution, these names were reused for clarity.
+Figure 4:
+Malware logic and decision states Q&A Is a system running blocklisted processes, services, or drivers safe from compromise?
+Sometimes, but not always.
+SUNBURST unconditionally exits if blocklisted processes or drivers are found and will not run until they are no longer detected.
+On the other hand, services are disabled by setting a registry value that controls startup initialization and are not explicitly stopped.
+As a result, a blocklisted service may still be running when the malware performs its service checks later.
+For this reason, it is possible for a victim system to be infected while a blocklisted service is running.
+Additionally, SUNBURST only attempts to disable a service once and updates its configuration to mark the service as disabled.
+Once the configuration is updated, the service is not treated as a blocklisted entry during subsequent execution.

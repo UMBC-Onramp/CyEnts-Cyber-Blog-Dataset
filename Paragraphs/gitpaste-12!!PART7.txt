@@ -1,0 +1,10 @@
+
+Asus routers EDB-ID: 48225
+Netlink GPON Router EDB-ID: 40500 AVTECH IP Camera CVE-2019-10758 Mongo db CVE-2017-17215 (Huawei router)
+Conclusion No malware is good to have, but worms are particularly annoying.
+Their ability to spread in an automated fashion can lead to lateral spread within an organization or to your hosts attempting to infect other networks across the internet, resulting in poor reputation for your organization.
+Juniper Connected Security customers using SRX IDP and Juniper ATP Cloud are protected against Gitpaste-12.
+IOCs Some compromised systems have TCP ports 30004 and 30005 open for shell commands.
+Miner: e67f78c479857ed8c562e576dcc9a8471c5f1ab4c00bb557b1b9c2d9284b8af9 hide.so: ed4868ba445469abfa3cfc6c70e8fdd36a4345c21a3f451c7b65d6041fb8492b
+Miner config: bd5e9fd8215f80ca49c142383ba7dbf7e24aaf895ae25af96bdab89c0bdcc3f1 Shell script: 5d1705f02cde12c27b85a0104cd76a39994733a75fa6e1e5b014565ad63e7bc3
+

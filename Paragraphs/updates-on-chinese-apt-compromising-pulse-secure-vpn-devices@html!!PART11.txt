@@ -1,0 +1,5 @@
+
+ While connected to the Pulse VPN appliance, the actor’s system was assigned an IP address from the Pulse VPN DHCP pool and they moved laterally throughout the environments by leveraging the Remote Desktop Protocol (RDP), the Secure Shell Protocol (SSH), and browser-based communication to HTTPS hosted resources.
+The actors also accessed other resources such as Microsoft M365 cloud environments using stolen credentials they had previously acquired.
+Mandiant also observed the actors targeting ESXi host servers.
+The actor enabled SSH on ESXi hosts that were previously disabled via the web interface.

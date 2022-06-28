@@ -1,0 +1,163 @@
+Operational Technology Threats in 2021:
+
+Ransomware, Remote Access Trojans and Targeted Threat Groups Organizations with operational technology (OT) networks face many unique — and often complicated — considerations when it comes to cybersecurity threats.
+
+One of the main challenges facing the community is the convergence of an increasingly OT-aware and capable threat landscape with the digital transformation of the industrial community.
+
+This comes at a time when organizations have historically prioritized preventive-based controls (segmentation, patching, authentication, anti-malware, etc.)
+
+well beyond the ability to get visibility into their OT networks as well as the ability to detect and respond to issues.
+
+This creates significant risk and is made more complicated when many industries also face aging infrastructure and consequences that can manifest in the physical world with impacts on safety and environmental damage.
+
+To delve deep on the threat landscape for organizations connected to OT and industrial control system (ICS) environments, IBM Security X-Force threat intelligence analysts worked jointly with Dragos , a firm that specializes in OT and ICS cybersecurity, to investigate some of the major intrusion trends that may impact OT and ICS environments.
+
+The research shows that ransomware and remote access Trojans are the most common attack types against enterprise networks connected to OT networks.
+
+Ransomware specifically has direct impacts as it moves from enterprise networks into OT networks and causes costly operational outages.
+
+The remote access Trojans highlighted in this analysis are those utilized by OT-specific threat groups as they leverage this capability to gain access to enterprise networks and then move from Stage 1 to Stage 2 operations as defined by the ICS Cyber Kill Chain .
+
+While the data does highlight the most common attack types and vectors, it is important to note that the most frequent events are not always the most consequential.
+
+As an example, OT-specific threat groups, while active much more than people realize, are not nearly as active as the broader enterprise IT threats.
+
+However, OT threat groups cause significant impact that ranges from the theft of intellectual property to the direct targeting of human life (e.g. the TRITON/TRISIS attack in Saudi Arabia in 2017).
+
+The data further reveals that adversaries most frequently use stolen credentials to gain initial access to enterprise networks with connected ICS environments.
+
+Many defenders may think that by protecting their enterprise networks they are protecting their ICS networks, but it is important to note that many original equipment manufacturers, integrators and vendors have their enterprise and production networks directly connected to others’ OT networks.
+
+That is to say that, while adversaries often begin their operations in the enterprise, it is not always your enterprise that leads to compromises in your ICS.
+
+Looking ahead, ransomware threats will continue to impact both IT and OT networks directly while threat groups become more adept and intent on targeting OT networks directly.
+
+From ICS Kill Chain Stage 1 to Stage 2: Implications for ICS and OT The majority of the data, by the very nature of these operations, examined in this analysis primarily involves Stage 1 operations that initially affect enterprise and non-OT environments.
+
+Several examples demonstrate the ease with which adversaries can expand from ICS Kill Chain Stage 1 to Stage 2 operations — with the latter having direct impact on and implications for ICS and OT networks.
+
+For example, the EKANS malware is a ransomware variant that includes the ability to stop ICS-related Windows processes.
+
+Although this is a primitive technique, it indicates criminal enterprises are expanding ransomware targets to include industrial environments.
+
+Ransomware developers increase the odds of victims paying ransoms by crippling as much of the business operation as possible, demonstrating a jump from ICS Kill Chain Stage 1 to Stage 2 operations.
+
+Threat groups that Dragos tracks such as KAMACITE and ELECTRUM — with links to Hive0103 or Sandworm, a group multiple organizations have attributed to Russian government actors — work as an access-effects team and show how a Stage 1 intrusion can quickly become a Stage 2 intrusion.
+
+KAMACITE deploys malware with ICS-specific capabilities.
+
+This includes various modules linked to BLACKENERGY2 malware, infecting asset owners in Europe and North America.
+
+After compromising the IT environment, KAMACITE hands off ICS network access to other activity groups, like ELECTRUM, which was suspected in the 2016 Ukraine power event .
+
+Another example of an access-effects team, which Dragos also tracks, is PARISITE , which enables operations for MAGNALLIUM — a group with links to Hive0016 or APT33 and has been attributed to Iranian state actors.
+
+PARISITE’s initial access activity is associated with a focus on ICS-related entities and serves as an initial access vector for future disruptive operations associated with MAGNALLIUM.
+
+PARISITE represents the first actions against ICS asset owners and operators to breach victim IT networks and establish persistence.
+
+PARISITE and MAGNALLIUM incorporate vulnerabilities into exploited items and weaponize disclosed vulnerabilities in critical products, showing the capability to move from Stage 1 to Stage 2.
+
+This access can be utilized to gather additional information for further penetration of the environment and possible ICS attacks.
+
+Ransomware and Remote Access Trojans: The Top Attack Types Further analysis of X-Force incident response data reveals that ransomware was the top attack type against organizations with connected OT networks in 2020 and 2021.
+
+Ransomware attacks made up nearly one-third of all attacks on OT-connected organizations last year, underscoring the interest ransomware adversaries are taking in industrial victims.
+
+Joint research by IBM X-Force and Dragos revealed that of all the ransomware attacks impacting industrial organizations, such as those found in the electric, oil and gas, manufacturing, rail and mining industries, between 2018 and 2020, 56% had an impact on operations.
+
+Even for ransomware strains that are not specifically designed to affect ICS systems, these intrusions end up impacting operations across the organization, often by necessitating a shutdown of the operational environment.
+
+Figure 1: Attack types against organizations connected to OT networks, January 2020 – June 2021 (Source: X-Force Incident Response Data)
+
+After ransomware, which made up 30% of attacks, remote access trojans (RATs) were the second-most common attack vector against organizations with connected OT networks in 2020 and 2021, making up 16% of intrusions on these organizations.
+
+Malware like Adwind, jRAT, Trickbot and Emotet were some of the most common malware types associated with these RAT operations.
+
+A group Dragos tracks as STIBNITE uses spearphishing to drop PoetRAT to gather information, take screenshots, transfer files and execute commands on victim systems for the purpose of identifying access points into ICS networks.
+
+Another group, TALONITE, uses spearphishing, masquerading as legitimate engineering and energy entities, to entice victims to download executables containing RATs.
+
+This enables the group to establish persistence and move laterally within a network, attempting to achieve access into ICS while also stealing information related to operations that may be stored in enterprise networks.
+
+Vulnerability Exploitation and Stolen Credentials Provide a Way
+
+In In terms of initial infection vectors, X-Force incident response data indicates that vulnerability exploitation and stolen credentials are the most common entry points for adversaries, leading to 40 and 32% of incidents remediated, respectively.
+
+Figure 2:
+
+Initial infection vectors used in attacks on organizations connected to OT Networks, January 2020-June 2021 (Source: X-Force) Credential theft as an initial infection vector across all industries decreased in 2020, encompassing only 18% of X-Force attacks.
+
+This may be due to organizations doing a better job of implementing multifactor authentication (MFA) and making it more difficult for adversaries to make use of stolen credentials.
+
+A high percentage of attacks caused by credential theft at industrial companies suggests that a more robust implementation of MFA has the potential to hinder some incidents in the future.
+
+However, in Dragos’s incident response cases 100% of incident response cases in OT still leveraged credential theft and lateral movement.
+
+A common issue was shared systems such as Active Directory connecting IT and OT networks directly, allowing adversaries to easily pivot into industrial networks.
+
+Adversaries frequently used a combination of scanning for vulnerabilities and then exploiting those vulnerabilities, especially on internet-facing devices such as firewalls and VPN infrastructure.
+
+The combination of vulnerability exploitation as an infection vector for enterprises with a connected OT environment is concerning in light of the increasing number of OT and ICS-related vulnerabilities identified each year.
+
+In 2020, researchers identified 468 new vulnerabilities related to ICS, a 49% increase year-over-year from 2019, and a significant jump compared to increases in previous years.
+
+Figure 3:
+
+New ICS-related vulnerabilities identified per year, 2011-2020 (Source: X-Force Red)
+
+Remote Desktop Protocol (RDP) targeting came in third place at 12% of intrusions.
+
+Across all sectors, RDP makes up a much smaller percentage of overall infection vectors (7% overall in 2020), suggesting that adversaries capitalize on RDP more when targeting OT-connected organizations.
+
+Phishing accounted for the initial infection vector in only 8% of intrusions remediated by X-Force in 2020 and 2021.
+
+Across all sectors, phishing typically makes up one-third of infection vectors, suggesting that phishing is not an infection vector of choice for actors targeting industrial companies.
+
+Even so, the group Dragos tracks as KAMACITE breached multiple industrial networks by utilizing spearphishing with malicious attachments and external access via legitimate services to gain access to victim organizations.
+
+Looking Ahead: What Does This Data Mean for 2021?
+
+X-Force threat intelligence anticipates that ransomware will continue to be a top attack type for industrial organizations into 2021.
+
+Ransomware groups continue to attempt to exploit the sensitive nature of OT networks and increasingly blend data theft and leaks with traditional ransomware.
+
+  The battle with ransomware is likely to continue into the foreseeable future.
+
+To better prepare for potential attacks, encrypting company data so it is less valuable to adversaries and safely storing backups are two protective measures organizations can take to insulate networks from double ransomware attacks that are becoming increasingly common.
+
+It is also necessary to validate and potentially re-architect systems that bridge IT and OT networks and potentially re-architect the OT network itself.
+
+Over the years many changes have occurred that are not tracked in OT networks, leading to system and network weaknesses and attack paths that significantly increase the impact of these attacks.
+
+A key effort should be to get visibility in the OT networks, looking for weak segmentation, remote connections and interconnections with vendors and integrators.
+
+Network segmentation should also be monitored to ensure it is not bypassed.
+
+Further, do not over-rely on preventive measures alone.
+
+Once the organization has a defensible architecture in place it is important to actively defend that architecture with appropriately skilled personnel who understand OT and can detect key threat behaviors such as the tactics, techniques and procedures of OT threat groups and ransomware operators.
+
+With the number of reported vulnerabilities rising quickly, X-Force also sees vulnerability exploitation as an initial infection vector that is likely to continue over time for industrial companies with a connected OT environment.
+
+Border devices on the OT networks that bridge them to IT networks including firewalls, VPNs and data historians are at high risk.
+
+Vulnerability management programs can assist organizations in identifying which vulnerabilities deserve the most attention and should be prioritized in a patch management program.
+
+For example, adversaries frequently exploited CVE-2019-19781 — a Citrix server path traversal flaw — in 2020, providing adversaries access to critical servers and sensitive data.
+
+Adversaries all but ignored many other vulnerabilities, as exploitation is too complicated or would not provide the access necessary to fulfill objectives.
+
+X-Force data from 2020 also indicates that organizations’ widespread and successful implementation of MFA may be positively impacting the threat landscape — forcing adversaries to abandon credential theft and brute force attacks as initial infection vectors.
+
+These trends suggest that aggressive implementation of MFA has the potential to alter the threat landscape over time, shoring up RDP access points as a common initial infection vector, and decreasing the use of credential theft to gain access to OT organizations’ networks.
+
+Dragos tracks multiple ICS-targeting threat groups that target remote access technologies like RDP, including PARISITE, MAGNALLIUM, ALLANITE (associated with ITG15 or Dragonfly) and XENOTIME (the activity behind TRISIS).
+
+Identifying and prioritizing crown jewels , or the assets that exercise control over the safety of an industrial process, can prevent adversaries from gaining RDP access and modifying existing configurations to assets that could cause major impact to an organization.
+
+To learn more about our findings, check out the 2021 IBM Security X-Force Threat Intelligence Index and Dragos 2020 ICS Cybersecurity Year in Review .
+
+
+
+

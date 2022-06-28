@@ -1,0 +1,12 @@
+
+In 2019, we predict attackers will more frequently combine these tactics to create multifaced, or synergistic, threats.
+What could be worse?
+Attacks are usually centered on the use of one threat.
+Bad actors concentrate their efforts on iterating and evolving one threat at a time for effectiveness and evasion.
+When an attack is successful, it is classified as ransomware, cryptojacking, data exfiltration, etc., and defenses are put in place.
+At this point, the attack’s success rate is significantly reduced.
+However, if a sophisticated attack involves not one but five top-notch threats synergistically working together, the defense panorama could become very blurry.
+The challenge arises when an attempt is made to identify and mitigate the attack.
+Because the ultimate attack goals are unknown, one might get lost in the details of each threat as it plays a role in the chain.
+One of the reasons synergic threats are becoming a reality is because bad actors are improving their skills by developing foundations, kits, and reusable threat components .
+As attackers organize their efforts into a black-market business model, they can focus on adding value to previous building blocks.

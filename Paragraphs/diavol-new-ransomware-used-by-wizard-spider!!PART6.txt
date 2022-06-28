@@ -1,0 +1,6 @@
+
+It is composed of the following: <NetBIOS_computer_name> + <username> + “_W” + <OS major version in hex> + <OS minor version in hex> + <OS build number in hex> + “.”
++ <random_GUID_bytes in hex> ·
+ Initialize configuration:
+The SHAPELISTS routine copy the hardcoded configuration from the PE’s .data section.
+The configuration begins with the “ STATIC_DATA ” string and holds many unicode strings: - Base64 encoded RSA public key.

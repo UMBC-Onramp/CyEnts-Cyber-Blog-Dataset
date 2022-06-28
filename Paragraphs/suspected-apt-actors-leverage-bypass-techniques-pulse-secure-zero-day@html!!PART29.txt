@@ -1,0 +1,4 @@
+
+At this point in execution the username and password are easily extracted from memory with mid-function hooking techniques, which the sample copies to a code cave in memory between two functions as a temporary storage location.
+The malicious logic then invokes DSLdapServer::bind as the normal logic would, which sets the return register EAX to 0 or 1 for failure or success.
+A check is then executed where the temporary password copy made earlier is checked against a hardcoded backdoor password.

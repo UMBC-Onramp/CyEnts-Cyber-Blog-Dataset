@@ -1,0 +1,4 @@
+
+SetTime 2 Sets the delay time between main event loop executions Delay is in seconds, and varies random between [.9 * <delay>, 1.1 * <delay>]
+If the delay is < 300 it is doubled on the next execution through the loop, this means it should settle onto an interval of around [5, 10] minutes
+o There is a second, unrelated delay routine that delays for a random interval between [16hrs, 83hrs] CollectSystemDescription 3 Profile the local system including hostname, username, OS version, MAC addresses, IP address, DHCP configuration, and domain information.

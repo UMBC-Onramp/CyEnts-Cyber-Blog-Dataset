@@ -1,0 +1,3 @@
+
+Now the names are for the tape: “” and the atom “”.
+The second change is the name of the resources crypted in the binary, the first resource that is a second batch file to delete the shadow volumes and remove the protections in the boot of the machine as the previous one has another name: “RC_HTML1”.

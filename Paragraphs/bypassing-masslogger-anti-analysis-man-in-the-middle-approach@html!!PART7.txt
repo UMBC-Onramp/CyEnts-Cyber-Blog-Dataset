@@ -1,0 +1,6 @@
+
+Figure 3: dnSpy IL view showing the method's details Method 0x0600049D control flow has been obfuscated into a series of switch statements.
+We can still somewhat follow the method’s high-level logic with the help of dnSpy as a debugger.
+However, fully analyzing the method would be very time consuming.
+Instead, when first analyzing this payload, I chose to quickly scan over the entire module to look for hints.
+Luckily, I spot a few interesting strings I missed during basic static analysis: clrjit.dll , VirtualAlloc , VirtualProtect and WriteProcessMemory as seen in Figure 4.

@@ -1,0 +1,4 @@
+
+Where we do see some similar structure is in the parts for the to-be-generated URL in both malware codes.
+We created a visual to explain the comparison better: FIGURE 21.
+URL GENERATION COMPARISON We observe how even though the way both ransomware families generate the URL might differ, the URL directories and file extensions used have a similarity that seems to be more than coincidence.

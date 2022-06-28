@@ -1,0 +1,9 @@
+
+Anyone who doesn’t update their software regularly is at particular risk.
+Turn on automatic updates wherever possible, and regularly check for updates for apps that don’t update automatically.
+5.
+Install a security solution Modern security solutions can identify and block malware in real time.
+For example, Kaspersky Internet Security includes a range of tools to protect users against ransomware.
+Even in the unlikely event that a particularly cunning piece of malware makes it past file antivirus protection, it won’t be able to do much: Kaspersky Internet Security analyzes the actions of running apps and blocks attempts to encrypt files or rolls back the actions of malicious programs if they manage to damage any data.
+
+

@@ -1,0 +1,3 @@
+
+In addition, the Windows version of FinSpy can eavesdrop on VoIP calls, intercept certificates and encryption keys for certain protocols, and download and run forensic data collection tools.
+On top of all that, the Windows version of FinSpy can infect BlackBerry smartphones, so even that now-exotic platform is not overlooked.

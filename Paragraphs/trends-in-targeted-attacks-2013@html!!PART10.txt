@@ -1,0 +1,9 @@
+
+Others, such as IceFog , engage in “hit and run” attacks, including the propagation of malware in a seemingly random fashion.
+Another group, known as Winnti , tries to profit by targeting gaming companies with malware (PlugX) that is normally associated with APT activity.
+In one of the weirdest cases I have seen, malware known as “ MiniDuke ”, which is reminiscent of some “old school” malware developed by 29A, was used in multiple attacks around the world.
+My colleagues at FireEye have put forward some interesting stealthy techniques in the near future.
+In any case, 2014 will no doubt be another busy year for those of us who research targeted malware attacks.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

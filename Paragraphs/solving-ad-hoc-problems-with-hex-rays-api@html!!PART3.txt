@@ -1,0 +1,4 @@
+
+Items, Expressions and Statements Now we know that Hex-Rays’s ctree is a tree-like data structure.
+The nodes of this tree are either of type cinsn_t or cexpr_t .
+We will define these in a moment, but for now it is important to know that both derive from a very basic type, namely the citem_t type, as seen in the following code snippet:

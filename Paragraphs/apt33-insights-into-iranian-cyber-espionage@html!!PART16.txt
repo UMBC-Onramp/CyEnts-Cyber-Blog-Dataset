@@ -1,0 +1,5 @@
+
+Many other Middle East countries have elected to have a Friday and Saturday weekend.
+Iran is one of few countries that subscribes to a Saturday to Wednesday workweek.
+APT33 leverages popular Iranian hacker tools and DNS servers used by other suspected Iranian threat groups.
+The publicly available backdoors and tools utilized by APT33 – including NANOCORE, NETWIRE, and ALFA Shell – are all available on Iranian hacking websites, associated with Iranian hackers, and used by other suspected Iranian threat groups.

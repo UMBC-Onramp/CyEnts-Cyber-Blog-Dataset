@@ -1,0 +1,2 @@
+
+BEACON 87dc37e0edb39c077c4d4d8f1451402c ICEDID 1efababd1d6bd869f005f92799113f42 ICEDID a64e7dd557e7eab3513c9a5f31003e68 ICEDID 9760913fb7948f2983831d71a533a650 ICEDID 14467102f8aa0a0d95d0f3c0ce5f0b59 ICEDID colombosuede.club ICEDID colosssueded.top ICEDID golddisco.top ICEDID june85.cyou ICEDID Appendix: Mandiant Security Validation Actions Organizations can validate their security controls against more than 60 actions with Mandiant Security Validation .

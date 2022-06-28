@@ -1,0 +1,5 @@
+
+This feature was introduced in July 2021.
+For more details, please visit Microsoft’s tech community page - “ Restrict usage of Excel 4.0 (XLM) macros with new macro settings control ”.
+It’s important to note that these potential victims were not targeted.
+Emotet utilizes what is colloquially known in the industry as a “spray and pray” tactic to spread via malicious email campaigns.

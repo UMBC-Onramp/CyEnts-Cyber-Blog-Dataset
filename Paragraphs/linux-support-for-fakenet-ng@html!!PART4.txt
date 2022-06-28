@@ -1,0 +1,11 @@
+
+First, FakeNet-NG does not yet support conditional redirection of specific processes, hosts, or ports on Linux.
+This means that settings like ProcessWhiteList will not work as expected.
+We plan to add support for these settings in a later release.
+In the meantime, SingleHost mode supports redirecting all Internet-bound traffic to local listeners, which is the main use case for malware analysts.
+Second, the python-netfilterqueue library is hard-coded to handle datagrams of no more than 4,012 octets in length.
+Loopback interfaces are commonly configured with high maximum transmittal unit (MTU) settings that allow certain applications to exceed this hard-coded limit, resulting in unanticipated network behavior.
+An example of a network application that may exhibit issues due to this would be a large file transfer via FTP.
+A workaround is to recompile python-netfilterqueue with a larger buffer size or to decrease the MTU for the loopback interface (i.e. lo) to 4,012 or less.
+Configuring FakeNet-NG on Linux In addition to the new NetworkMode setting, Linux support for FakeNet-NG introduces the following Linux-specific configuration items:
+LinuxRedirectNonlocal : For MultiHost mode, this setting specifies a comma-delimited list of network interfaces for which to redirect all traffic to the local host so that FakeNet-NG can reply to it.

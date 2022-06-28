@@ -1,0 +1,6 @@
+FireEye Labs recently detected a limited APT campaign exploiting zero-day vulnerabilities in Adobe Flash and a brand-new one in Microsoft Windows.
+Using the Dynamic Threat Intelligence Cloud (DTI) , FireEye researchers detected a pattern of attacks beginning on April 13 th , 2015.
+Adobe independently patched the vulnerability (CVE-2015-3043) in APSB15-06 .
+Through correlation of technical indicators and command and control infrastructure, FireEye assess that APT28 is probably responsible for this activity.
+Microsoft is aware of the outstanding local privilege escalation vulnerability in Windows (CVE-2015-1701).
+While there is not yet a patch available for the Windows vulnerability, updating Adobe Flash to the latest version will render this in-the-wild exploit innocuous.

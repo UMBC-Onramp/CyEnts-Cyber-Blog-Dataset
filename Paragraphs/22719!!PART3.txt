@@ -1,0 +1,5 @@
+
+Desktop Window Manager does that job, and as such it is a key service in Windows that has existed in every version of Windows since Vista — and cannot be deactivated in Windows 8 or later versions.
+Desktop Window Manager’s vulnerability The vulnerability our advanced exploit prevention technology discovered is an elevation of privilege vulnerability.
+That means a program can trick Desktop Window Manager into giving it access that it shouldn’t have.
+In this case, the vulnerability allowed the attackers to execute arbitrary code on victims’ machines — it essentially gave them full control over the computers.

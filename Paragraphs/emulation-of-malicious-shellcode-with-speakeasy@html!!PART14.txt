@@ -1,0 +1,9 @@
+
+Figure 2 shows an example of a file read event logged in a Speakeasy JSON report.
+Figure 2:
+File read event in a Speakeasy report Speed Because the framework is written in Python, speed is an obvious concern.
+Unicorn and QEMU are written in C, which provides very fast emulation speeds; however, the API and event handlers we write are in Python.
+Transitioning between native code and Python is extremely expensive and should be done as little as possible.
+Therefore, the goal is to only execute Python code when it is absolutely necessary.
+By default, the only events we handle in Python are memory access exceptions or Windows API calls.
+In order to catch Windows API calls and emulate them in Python, import tables are doped with invalid memory addresses so that we only switch into Python when import tables are accessed.

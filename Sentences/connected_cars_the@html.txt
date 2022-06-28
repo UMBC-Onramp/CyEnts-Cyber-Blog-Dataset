@@ -1,0 +1,77 @@
+As vehicles become both increasingly complex and better connected to the Internet, their newfound versatility may be manipulated for malicious purposes.
+
+Three of the most concerning potential threats looking ahead to the next few years are those posed by manipulating vehicle operation , ransomware and using vehicular systems as command and control (C2) infrastructure for illicit cyber activity.
+
+Car Hacking?
+
+Vehicles have come a long way in terms of the high-tech features and connectivity that come standard in most new models.
+
+Modern cars are controlled almost entirely by software, and many drivers don’t realize the most complex digital device they own may be in their driveway .
+
+Of the growing number of devices in the “Internet of Things” (IoT), vehicles are among the most significant additions to the global Internet.
+
+An ever-growing list of features—including web browsing, Wi-Fi access points, and remote-start mobile phone apps—enhance user enjoyment, but also greatly expand vehicles’ attack surface, rendering them potentially vulnerable to advanced attacks.
+
+During the past year especially, numerous proof-of-concept demonstrations have revealed connected-car vulnerabilities that malicious actors can exploit, ranging from unauthorized entry to commandeering the vehicle’s operation .
+
+Unfortunately, as consumer demand drives ever more features, the opportunities for compromise will increase as well.
+
+Ransomware The scourge of ransomware has so far affected thousands of systems belonging to ordinary individuals, hospitals, and police stations.
+
+A vehicle’s increased connectivity, ever-expanding attack surface, and high upfront cost make them attractive ransomware targets.
+
+In contrast to ransomware that infects ordinary computer systems, vehicles are more likely susceptible to ransomware attacks when their disablement causes knock-on effects.
+
+For example, where a single driver might be able to reinstall his car’s software with the help of a mechanic to remedy a ransomware infection, a group of vehicles disabled on a busy highway could cause far more serious disruption.
+
+Victims or municipal authorities may have little choice but to pay the ransom to reopen a busy commuting route.
+
+Alternatively, a logistics company might suddenly find a large portion of its truck fleet rendered useless by ransomware.
+
+The potential for lost revenue due to downtime might pressure the company to pay the ransom rather than risk more significant financial losses.
+
+Malicious C2 and Final Hop Points One effective law enforcement tactic in countering cyber espionage and criminal campaigns is identifying, locating and seizing the systems threat actors use to route malicious traffic through the Internet.
+
+Since many modern vehicles can be better described as a computer attached to four wheels and an engine, their mobility and power present challenges to this means of countering threat activity.
+
+We have already witnessed malware designed to hijack IoT devices for malicious purposes; vehicular systems’ greater computing power, compared to connected home thermostats, can significantly enhance their value as a C2 node .
+
+Locating vehicles used to route malicious traffic would present a major challenge to law enforcement investigation, largely due to their mobility.
+
+We have not yet observed threat actors using connected vehicle systems to route malicious traffic, but it is most likely that a vehicle would be used as a final hop point to the intended target network.
+
+The perpetrators may use the vehicle only once, choosing to hijack the connectivity of a different vehicle on their next operation, and so on.
+
+This ever-changing roster of potential last-hop nodes situated on highly mobile platforms may allow threat actors to elude law enforcement for extended periods of time.
+
+Understanding the Risk Landscape The impact of cyber threats is most often considered in financial terms—the cost of a breach, whether direct financial losses or indirect costs of investigation, remediation, and improved security.
+
+As computers increasingly control vehicles, among other critical devices and systems, the potential for malfunction or manipulation that causes human harm rises dramatically.
+
+Automobile manufacturers may face greater liability, not only for the car’s physical components, but its software as well.
+
+How long before vehicles need a “cyber security rating,” similar to that awarded for crash testing and fuel economy?
+
+These new risks point to the need for automotive manufacturers and suppliers to not only ensure the traditional operational safety of their vehicles, but to also secure both the vehicle's operations and occupant privacy.
+
+This requires an ongoing understanding about the nature of threats and vulnerabilities in a rapidly evolving landscape, and building in strong proactive security measures to protect against these risks.
+
+FireEye explores these risks to automotive safety in our latest FireEye iSIGHT Intelligence and Mandiant Consulting report: Connected Cars: The Open Road for Hackers .
+
+The report is available for download here.
+
+FireEye Capabilities FireEye combines our industry leading threat intelligence , incident response and red team capabilities with our ICS domain expertise to help the automotive industry improve their prevention, detection and response capabilities.
+
+FireEye’s Red Team Operations and Penetration Tests can provide firms in the automotive industry experience responding to real-world attacks without the risk of negative headlines.
+
+A one-time risk assessment is not enough, because threat attackers are consistently evolving.
+
+For more information, contact FireEye .
+
+FireEye iSIGHT Intelligence’s Horizons Team conducts strategic forecasting to anticipate risks posed by emerging technologies and geopolitical developments, helping clients and the public better assess their exposure to a dynamic cyber threat landscape.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

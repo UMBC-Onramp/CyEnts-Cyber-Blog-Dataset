@@ -1,0 +1,4 @@
+
+Secondary targets (used to facilitate access to their primary targets) include network appliance manufacturers and software companies usually located in the U.S. Recommendations All Pulse Secure Connect customers should assess the impact of the Pulse Secure mitigations and apply it if possible.
+Organizations should utilize the most recent version of Pulse Secure’s Integrity Assurance utility released on March 31, 2021.
+If a device fails this Integrity Assurance utility, network administrators should follow the instructions here and contact their Pulse CSR for additional guidance.

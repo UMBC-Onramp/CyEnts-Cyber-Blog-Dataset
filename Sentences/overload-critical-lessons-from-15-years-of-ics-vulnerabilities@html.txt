@@ -1,0 +1,25 @@
+In the past several years, a flood of vulnerabilities has hit industrial control systems (ICS) – the technological backbone of electric grids, water supplies, and production lines.
+
+These vulnerabilities affect the reliable operation of sensors, programmable controllers, software and networking equipment used to automate and monitor the physical processes that keep our modern world running.
+
+FireEye iSIGHT Intelligence has identified nearly 1,600 publicly disclosed ICS vulnerabilities since 2000.
+
+We go more in depth on these issues in our latest report, Overload: Critical Lessons from 15 Years of ICS Vulnerabilities , which highlights trends in total ICS vulnerability disclosures, patch availability, vulnerable device type and vulnerabilities exploited in the wild.
+
+FireEye’s acquisition of iSIGHT provided tremendous visibility into the depth and breadth of vulnerabilities in the ICS landscape and how threat actors try to exploit them.
+
+To make matters worse, many of these vulnerabilities are left unpatched and some are simply unpatchable due to outdated technology, thus increasing the attack surface for potential adversaries.
+
+In fact, nation-state cyber threat actors have exploited five of these vulnerabilities in attacks since 2009.
+
+Unfortunately, security personnel from manufacturing, energy, water and other industries are often unaware of their own control system assets, not to mention the vulnerabilities that affect them.
+
+As a result, organizations operating these systems are missing the warnings and leaving their industrial environments exposed to potential threats.
+
+Click here to download the report and learn more.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

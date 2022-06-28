@@ -1,0 +1,6 @@
+
+While these operations have traditionally been aimed at credential theft (particularly of banking credentials), adding mining modules or downloading secondary mining payloads provides the operators another avenue to generate additional revenue with little effort.
+This is especially true in cases where the victims were deemed unprofitable or have already been exploited in the original scheme.
+The following are some real-world examples of cryptojacking being incorporated into existing botnets:
+In early February 2018, FireEye iSIGHT Intelligence observed Dridex botnet ID 2040 download a Monero cryptocurrency miner based on the open-source XMRig miner.
+On Feb. 12, 2018, FireEye iSIGHT Intelligence observed the banking malware IcedID injecting Monero-mining JavaScript into webpages for specific, targeted URLs.

@@ -1,0 +1,7 @@
+
+Recently we predicted a spike in stimulus related social engineering , for example.
+Additionally, the FBI has recently released a press release anticipating a rise in COVID-19 related Business Email Compromise (BEC) scams.
+State Actors Likely Very Busy Given that COVID-19 is the undoubtedly the overwhelming concern of governments worldwide for the time being, we anticipated targeting of government, healthcare, biotech, and other sectors by cyber espionage actors.
+We have not yet observed an incident of cyber espionage targeting COVID-19 related information; however, it is often difficult to determine what information these actors are targeting.
+There has been at least one case reported publicly which we have not independently confirmed.
+We have seen state actors, such as those from Russia, China and North Korea, leverage COVID-19 related social engineering, but given wide interest in that subject, that does not necessarily indicate targeting of COVID-19 related information.

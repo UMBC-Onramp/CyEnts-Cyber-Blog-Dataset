@@ -1,0 +1,5 @@
+
+The rest of the registers and EFlags are then saved.
+Once the 32-bit context is saved, the WOW64 layer then calculates the appropriate TurboThunk to invoke by grabbing the upper 16 bits of the syscall number and dispatches to that thunk.
+Note that at the beginning of this array is the function TurboDispatchJumpAddressEnd , shown in Figure 9, which is invoked for functions that do not support TurboThunks.
+Figure 9: TurboThunk table's first function pointer entry is an entry routine TurboThunks are described by (wbenny)—read his blog post at this point if you have not.

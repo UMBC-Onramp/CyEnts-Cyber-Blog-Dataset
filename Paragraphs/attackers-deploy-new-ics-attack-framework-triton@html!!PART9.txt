@@ -1,0 +1,7 @@
+
+In other words, trigger a false positive.
+Implication: Financial losses due to process downtime and complex plant start up procedure after the shutdown.
+Attack Option 2: Reprogram the SIS to allow an unsafe state The attacker can reprogram the SIS logic to allow unsafe conditions to persist.
+Implication: Increased risk that a hazardous situation will cause physical consequences (e.g. impact to equipment, product, environment and human safety) due to a loss of SIS functionality.
+Attack Option 3: Reprogram the SIS to allow an unsafe state – while using the DCS to create an unsafe state or hazard The attacker can manipulate the process into an unsafe state from the DCS while preventing the SIS from functioning appropriately.
+Implication: Impact to human safety, the environment, or damage to equipment, the extent of which depends on the physical constraints of the process and the plant design.

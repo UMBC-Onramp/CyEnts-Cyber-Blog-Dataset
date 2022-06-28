@@ -1,0 +1,14 @@
+
+Unfortunately, the server was unreachable during analysis.
+Network Infrastructure Linked to Attackers The passive DNS records of the C&C domain \"sinoptik[.]website\" included the following IPs: Host/Domain Name First Seen IP sinoptik[.]website 2018-09-17 78.140.167.89 sinoptik[.]website 2018-06-08 78.140.164.221 sinoptik[.]website 2018-03-16 185.125.46.158 www.sinoptik[.]website 2019-01-17 78.140.167.89 Table 2:
+Network infrastructure linked to attackers Domains previously connected to RATVERMIN (aka VERMIN) and QUASARRAT (aka QUASAR) also resolved to IP \"185.125.46.158\" and include the following: Malware MD5 C&C Malware Family 47161360b84388d1c254eb68ad3d6dfa akamainet022[.]info QUASARRAT 242f0ab53ac5d194af091296517ec10a notifymail[.]ru RATVERMIN 07633a79d28bb8b4ef8a6283b881be0e
+akamainet066[.]info QUASARRAT 5feae6cb9915c6378c4bb68740557d0a akamainet024[.]info RATVERMIN dc0ab74129a4be18d823b71a54b0cab0 akamaicdn[.]ru QUASARRAT bbcce9c91489eef00b48841015bb36c1 cdnakamai[.]ru QUASARRAT Table 3:
+Additional malware linked to the attackers RATVERMIN is a .NET backdoor that FireEye Threat Intelligence started tracking in March 2018.
+It has also been reported in public reports and blog posts .
+Operators Highly Aggressive, Proactive The actor is highly interactive with its tools and has responded within a couple of hours of receiving a new victim, demonstrating its ability to react quickly.
+An example of this hands-on style of operation occurred during live malware analysis.
+RATVERMIN operators observed that the malware was running from an unintended target at approximately 1700 GMT (12:00 PM Eastern Standard Time on a weekday) and promptly executed the publicly available Hidden Tear ransomware (saved to disk as hell0.exe, MD5: 8ff9bf73e23ce2c31e65874b34c54eac).
+The ransomware process was killed before it could execute successfully.
+If the Hidden Tear continued execution, a file would have been left on the desktop with the following message: \"Files have been encrypted with hidden tear.
+Send me some bitcoins or kebab.
+And I also hate night clubs, desserts, being drunk.\" When live analysis resumed, the threat group behind the attack started deleting all the analysis tools on the machine.

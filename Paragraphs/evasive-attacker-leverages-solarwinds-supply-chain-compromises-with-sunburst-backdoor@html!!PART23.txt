@@ -1,0 +1,6 @@
+
+Commands are then dispatched to a JobExecutionEngine based upon the command value as described next.
+Supported Commands Command Value Operation Idle 0
+No operation Exit 1 Terminate the current thread.
+SetTime 2 Sets the delay time between main event loop executions Delay is in seconds, and varies random between [.9 * <delay>, 1.1 * <delay>].
+         If the delay is < 300 it is doubled on the next execution through the loop, this means it should settle onto an interval of around [5, 10] minutes.

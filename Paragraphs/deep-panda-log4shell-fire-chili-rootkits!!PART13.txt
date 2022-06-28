@@ -1,0 +1,6 @@
+
+If so, the process is removed from the ActiveProcessLinks list of the EPROCESS structure, which is a circular doubly-linked list of all running processes on the system.
+The driver removes the process’s list entry from ActiveProcessLinks ​​​​​​​by linking its Flink (the next entry) to its Blink (the previous entry).
+As a result, the process is hidden from utilities such as Task Manager.
+Since the EPROCESS structure changes between Windows builds, the rootkit resolves the ActiveProcessLinks offset dynamically during runtime.
+It traverses the process’s EPROCESS ​​​​​​​structure, comparing each member to its PID, to locate the offset of the UniqueProcessId field.

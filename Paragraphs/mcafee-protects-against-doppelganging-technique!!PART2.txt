@@ -1,0 +1,4 @@
+
+Indeed, adversary adoption is often faster than the InfoSec industry can implement and test effective countermeasures.
+For example, in December 2017, a tool was released to hide PowerShell in a graphic file.
+Within 7 days of the release, McAfee Advanced Threat Research started to see the technique being exploited by a Nation State actor.

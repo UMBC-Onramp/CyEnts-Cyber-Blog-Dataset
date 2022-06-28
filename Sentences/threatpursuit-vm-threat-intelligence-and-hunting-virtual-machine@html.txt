@@ -1,0 +1,259 @@
+Skilled adversaries can deceive detection and often employ new measures in their tradecraft.
+
+Keeping a stringent focus on the lifecycle and evolution of adversaries allows analysts to devise new detection mechanisms and response processes.
+
+Access to the appropriate tooling and resources is critical to discover these threats within a timely and accurate manner.
+
+Therefore, we are actively compiling the most essential software packages into a Windows-based distribution: ThreatPursuit VM .
+
+ThreatPursuit Virtual Machine (VM) is a fully customizable, open-sourced Windows-based distribution focused on threat intelligence analysis and hunting designed for intel and malware analysts as well as threat hunters to get up and running quickly.
+
+The threat intelligence analyst role is a subset and specialized member of the blue team.
+
+Individuals in this role generally have a strong impetus for knowing the threat environment.
+
+Often their traits, skills and experiences will vary depending on training and subject matter expertise.
+
+Their expertise may not be technical and may include experiences and tradecraft earned by operating within a different domain (e.g., geospatial, criminal, signals intelligence, etc.).
+
+A key aspect of the role may include the requirement to hunt, study and triage previously undiscovered or recently emerging threats by discerning data for evil.
+
+Threat analysts apply a variety of structured analytical methods in order to develop meaningful and relevant products for their customers.
+
+With this distribution we aim to enable users to: Conduct hunting activities or missions Create adversarial playbooks using evidence-based knowledge Develop and apply a range of analytical products amongst datasets Perform analytical pivoting across forensic artifacts and elements Emulate advanced offensive security tradecraft Enable situational awareness through intelligence sharing and reporting Applied data science techniques & visualize clusters of symbolic data Leverage open intelligence sources to provide unique insights for defense and offense Akin to both FLARE-VM and Commando VM , ThreatPursuit VM uses Boxstarter , Chocolatey and MyGet packages to install software that facilitates the many aspects related to roles performed by analysts.
+
+The tools installed provide easy access to a broad range of tooling, including, but not limited to, threat analytics, statistics, visualisation, threat hunting, malware triage, adversarial emulation, and threat modelling.
+
+Here are some of the tools, but there are many more:
+
+MISP OpenCTI
+
+Elasticsearch, Kibana, Logstash Splunk Threat Hunter Playbook CSIRO Data61 Constellation Maltego RStudio MITRE CALDERA Jupyter Notebook Python SilkETW
+
+For a full list of tools, please visit our GitHub repository .
+
+Installation Similar to FLARE-VM and Commando VM , it's recommended to install ThreatPursuit VM in a virtual machine.
+
+The following is an overview of the minimal and recommended installation requirements.
+
+Requirements Windows 10 1903 or greater 60 GB Hard Drive 4 GB RAM Recommended Windows 10 1903 80+ GB Hard Drive 6+ GB RAM 1 network adapter OpenGL Graphics Card 1024mb Enable Virtualization support for VM Required for Docker (MISP, OpenCTI)
+
+Standard Install The easiest way to install ThreatPursuit VM is to use the following steps.
+
+This will install all the default tools and get you finding evil in no time!
+
+Create and configure a new Windows 10 VM with the aforementioned requirements.
+
+Ensure VM is updated completely.
+
+You may need to check for updates, reboot and check again until no more remain.
+
+Install your specific VM guest tools (e.g., VMware Tools) to allow additional features such as copy/paste and screen resizing.
+
+Take a snapshot of your machine!
+
+This allows you to always have a clean state.
+
+Download and copy install.ps1 to your newly configured VM.
+
+Open PowerShell as an administrator.
+
+Next, unblock the install file by running: Unblock-File .\\install.ps1 , as seen in Figure 1.
+
+Figure 1: Unblock-File installation script Enable script execution by running:
+
+Set-ExecutionPolicy Unrestricted -f , as seen in Figure 2.
+
+Figure 2: Set-ExecutionPolicy Unrestricted -f script Finally, execute the installer script as follows: .\\install.ps1
+
+After executing install.ps1 , you’ll be prompted for the administrator password in order to automate host restarts during installation as several reboots occur.
+
+Optionally, you may pass your password as a command-line argument via \" .\\install.ps1
+
+-password <password>\" .
+
+If you do not have a password set, hitting enter when prompted will also work.
+
+This will be the last thing you will need to do before the installation is unattended.
+
+The script will set up the Boxstarter environment and proceed to download and install the ThreatPursuit VM environment, as seen in Figure 3.
+
+Figure 3: Installation script execution
+
+The installation process may take upwards of several hours depending on your internet connection speed and the web servers hosting the various files.
+
+ Figure 4 shows the post-installation desktop environment, featuring the logo and a desktop shortcut.
+
+You will know when the install is finished with the VM's logo placed on the background.
+
+Figure 4: ThreatPursuit VM desktop installed Custom Install Is the standard installation too much for you?
+
+We provide a custom installation method that allows you to choose which chocolatey packages get installed.
+
+For additional details, see the Custom Install steps at our GitHub repository.
+
+Installing Additional Packages Since ThreatPursuit VM uses the Chocolatey Windows package manager, it's easy to install additional packages not included by default.
+
+For example, entering the command cinst github as administrator installs GitHub Desktop on your system.
+
+To update all currently installed packages to their most recent versions, run the command cup all as administrator.
+
+Getting Started: A Use Case As threat analysts, what we choose to pursue will depend on the priorities and requirements of our current role.
+
+Often, they vary with each threat or adversary encountered such as financial crime, espionage, issue-motivated groups or individuals.
+
+The role broadly encompasses the collection and analysis of threat data (e.g., malware, indicators of attack/compromise) with the goal of triaging the data and developing actionable intelligence.
+
+For example, one may want to produce detection signatures based on malware network communications to classify, share or disseminate indicators of compromise (IOCs) in standardized ways.
+
+We may also use these IOCs in order to develop and apply analytical products that establish clusters of analogous nodes such as MITRE ATT&CK tactics and techniques, or APT groups.
+
+On the other hand, our goal can be as simple as triaging a malware sample behavior, hunting for indicators, or proving or disproving a hypothesis.
+
+Let's look at how we might start.
+
+Open Hunting To start our use case, let’s say we are interested in reviewing latest threat actor activity reported for the quarter.
+
+We sign in to the Mandiant Advantage portal (Figure 5) using our public subscription to get a snapshot view of any highlighted activity (Figure 6).
+
+Figure 5:
+
+Mandiant Advantage portal Figure 6: Actor activity for Q3 2020 Based on Mandiant Advantage report, we notice a number of highly active APT and FIN actors.
+
+We choose to drill in to one of these actors by hovering our mouse and selecting the actor tag FIN11.
+
+We receive a high-level snapshot summary view of the threat actor, their targeted industry verticals, associated reports and much more, as seen in Figure 7.
+
+We also may choose to select the most recent report associated with FIN11 for review.
+
+Figure 7: FIN11 actor summary By selecting the “View Full Page” button as seen at the top right corner of Figure 6, we can use the feature to download indicators, as seen in the top right corner of Figure 8.
+
+Figure 8:
+
+Full FIN11 page Within the FIN11 report, we review the associated threat intelligence tags that contain finished intelligence products.
+
+However, we are interested in the collection of raw IOCs (Figure 9) that we could leverage to pivot off or enrich our own datasets.
+
+Figure 9: Downloaded FIN11 indicators Using the Malware Information Sharing Platform (MISP )as our collection point, we are going to upload and triage our indicators using our local MISP instance running on ThreatPursuit VM.
+
+Please note you will need to ensure your local MISP instance is running correctly with the configuration of your choosing.
+
+We select the “Add Event” button, begin populating all needed fields to prepare our import, and then click “Submit”, as shown in Figure 10.
+
+Figure 10: MISP triage of events Under the tags section of our newly created FIN11 event, we apply relevant tags to begin associating aspects of contextual information related to our target, as seen in Figure 11.
+
+Figure 11: MISP Event setup for FIN11
+
+We then select “Add Attribute” into our event, which will allow us to import our MD5 hashes into the MISP galaxy, as seen in Figure 12.
+
+Using both the category and type, we select the appropriate values that best represent our dataset and prepare to submit that data into our event.
+
+Figure 12:
+
+MISP import events into FIN11 event MISP allows for a streamlined way to drill and tag indicators as well as enrich and pivot with threat intelligence.
+
+We can also choose to perform this enrichment process within MISP using a variety of open intelligence sources and their modules, such as Mandiant Advantage , PassiveTotal , Shodan and VirusTotal .
+
+We can also achieve the same result using similar tools already packaged in ThreatPursuit VM.
+
+Using Maltego CE, installed as part of the VM, we can automate aspects of targeted collection and analysis of our FIN11 malware families and associated infrastructure.
+
+The following are just some of the Maltego plugins that can be configured post installation to help with the enrichment and collection process: VirusTotal Public API ThreatCrowd Shodan API Targeting the suspected payload, we attempt to pivot using its MD5 hash value (113dd1e3caa47b5a6438069b15127707) to discover additional artifacts, such as infrastructure, domain record history, previously triaged reports, similar malware samples, timestamps, and the rich headers.
+
+Importing our hash into Maltego CE, we can proceed to perform a range of queries to hunt and retrieve interesting information related to our FIN11 malware, as seen in Figure 13.
+
+Figure 13:
+
+Maltego CE querying MD5 hash Quite quickly we pull back indicators; in this case, generic named detection signatures from a range of anti-malware vendors.
+
+Using VirusTotalAPI Public, we perform a series of collection and triage queries across a variety of configured open sources, as shown in Figure 14.
+
+Figure 14:
+
+Automating enrichment and analysis of targeted infrastructure A visual link has been made public for quick reference.
+
+With our newly identified information obtained by passively scraping those IOCs from a variety of data providers, we can identify additional hashes, delivery URLs and web command and control locations, as shown in Figure 15.
+
+Figure 15: Maltego visualization of FIN11 dropper Pivoting on the suspected FIN11 delivery domain near-fast[.]com, we have found several more samples that were uploaded to an online malware sandbox website AppAnyRun .
+
+Within the ThreatPursuit VM Google Chrome browser and in the Tools directory, there are shortcuts and bookmarks to a range of sandboxes to help with accessing and searching them quickly.
+
+We can use AppAnyRun to further analyze the heterogenous networks and execution behaviors of these acquired samples.
+
+We have identified another similar sample, which is an XLS document named “MONITIORING REPORT.xls” with the MD5 hash 5d7d2371668ad4a6484f76b0b6511961
+
+(Figure 16).
+
+Let’s attempt to triage this newly discovered sample and qualify the relationship back to FIN11.
+
+Figure 16:
+
+VirusTotal execution report of 5d7d2371668ad4a6484f76b0b6511961 Extracting interesting strings and indicators from this sample allows us to compare these artifacts against our own dynamic analysis.
+
+If we can’t access the original malware sample, but we have other indicators to hunt with, we could also pivot on various unique characteristics and attributes (e.g., imphash, vthash, pdb string, etc...) to discover related samples.
+
+Even without access to the sample, we can also use YARA to mine for similar malware samples.
+
+One such source to mine is using the mquery tool and their datasets offered via CERT.PL.
+
+To fast track the creation of a YARA rule, we leverage the FIN11 YARA rule provided within the FIN11 Mandiant Advantage report .
+
+Simply copy and paste the YARA rule into mquery page and select “Query” to perform the search (Figure 17).
+
+It may take some time, so be sure to check back later (here are the results ).
+
+Figure 17: mquery YARA rule hunting search for FIN11 malware Within our mquery search, we find a generic signature hit on Win32_Spoonbeard_1_beta for the MD5 hash 3c43d080b5badfdde7aff732c066d1b2.
+
+We associate this MD5 hash with another sandbox, app.any.run, at the following URL: https://app.any.run/tasks/19ac204b-9381-4127-a5ac-d6b68e0ee92c/ As seen in Figure 18, this sample was first uploaded on May 2, 2019, with an associated infection chain intact.
+
+Figure 18:
+
+AppAnyRun Execution Report on 3c43d080b5badfdde7aff732c066d1b2 We now have a confident signature hit, but with different named detections on the malware family.
+
+This is a common challenge for threat analysts and researchers.
+
+However we have gained interesting information about the malware itself such as its execution behavior, encryption methods, dropped files, timelines and command and control server and beacon information.
+
+This is more than enough for us to pivot across our own datasets to hunt for previously seen activities and prepare to finalize our report.
+
+Once we are confident in our analysis, we can start to model and attribute the malware characteristics.
+
+We can leverage other threat exchange communities and intelligence sources to further enrich the information we collected on the sample.
+
+Enrichment allows the analysts to greater extrapolate context such as timings, malware similarity, associated infrastructures, and prior targeting information.
+
+We will briefly add our content into our MISP instance and apply tags to finalize our review.
+
+We may wish to add MITRE ATT&CK tags (Figure 19) relevant across the malware infection chain for our sample as they could be useful from a modelling standpoint.
+
+Figure 19:
+
+MITRE ATT&CK tags for the malware sample Final Thoughts
+
+We hope you enjoyed this basic malware triage workflow use-case using ThreatPursuit VM.
+
+There are so many more tools and capabilities within the included toolset such as Machine learning (ML) and ML algorithms, that also assist threat hunters by analyzing large volumes of data quickly.
+
+Check out some of FireEye’s ML blog posts here.
+
+For a complete list of tools please see the ThreatPursuit VM GitHub repository .
+
+We look forward to releasing more blog posts, content and playbooks as our user base grows.
+
+And finally, here are some related articles that might be of interest.
+
+Malware Analysis Open Sourcing StringSifter capa:
+
+Automatically Identify Malware Capabilities Learning to Rank Strings Output for Speedier Malware Analysis Analyzing Dark Crystal RAT, a C# Backdoor Navigating the Maze: Tactics, Techniques and Procedures Associated With MAZE Ransomware Incidents Digital Forensics Using Real-Time Events in Investigations A \"DFUR-ent\" Perspective on Threat Modeling and Application Log Forensic Analysis SCANdalous!
+
+(External Detection Using Network Scan Data and Automation) Intelligence Analysis and Assessments Managed Defense:
+
+The Analytical Mindset How Strategic Intelligence Helps Organizations Make Sense of the Threat Landscape Limited Shifts in the Cyber Threat Landscape Driven by COVID-19
+
+They Come in the Night:
+
+Ransomware Deployment Trends Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

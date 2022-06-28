@@ -1,0 +1,5 @@
+
+The random model would predicted 59, while our model predicted 78 of the top 100 and all ten of the most severe vulnerabilities.
+Table 2:
+Comparison of random simulated predictions, a model based just on quantitative features like “likes”, and the results of our model Exploit Forecasting Results
+We also measured the practical ability of our model to identify the exploitability of a CVE in the wild, since this is one of the motivating factors for tracking.

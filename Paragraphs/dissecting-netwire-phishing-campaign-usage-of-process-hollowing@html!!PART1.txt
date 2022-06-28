@@ -1,0 +1,7 @@
+Introduction Malware authors attempt to evade detection by executing their payload without having to write the executable file on the disk.
+One of the most commonly seen techniques of this \"fileless\" execution is code injection.
+Rather than executing the malware directly, attackers inject the malware code into the memory of another process that is already running.
+Due to its presence on all Windows 7 and later machines and the sheer number of supported features, PowerShell has been a favorite tool of attackers for some time.
+FireEye has published multiple reports where PowerShell was used during initial malware delivery or during post-exploitation activities.
+Attackers have abused PowerShell to easily interact with other Windows components to perform their activities with stealth and speed.
+This blog post explores a recent phishing campaign observed in February 2019, where an attacker targeted multiple customers and successfully executed their payload without having to write the executable dropper or the payload to the disk.

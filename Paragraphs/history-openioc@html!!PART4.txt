@@ -1,0 +1,4 @@
+
+Mandiant's new strategy for IR enabled investigators, who previously could only get to a few hosts in an engagement, to now query entire enterprises in only slightly more time.
+Using OpenIOC as a standardized format, the Indicators of Compromise (IOCs) were recorded once, and then used to help gather the same information and conduct the same testing on every host across the enterprise via the automated solution.
+Incident Responders could now spend only a little more time, but cover an exponentially larger number of hosts during the course of an investigation.

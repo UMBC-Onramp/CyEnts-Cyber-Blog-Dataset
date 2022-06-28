@@ -1,0 +1,4 @@
+
+To verify the account, the scammers prompt their victim to follow a link in the e-mail.
+This, too, does not inspire confidence: the incorrect domain with extra words and the names of foreign brands clearly suggest something is wrong with the message.
+Enter the seed If the victim fails to spot these tell-tale signs and still follows the link, they are taken to a fake login page that resembles the official MetaMask website.

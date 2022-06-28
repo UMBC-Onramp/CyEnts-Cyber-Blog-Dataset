@@ -1,0 +1,5 @@
+
+GimmeRAT is another startling example of malicious actors venturing into the Android ecosystem.
+Attacks Employing WinSpy While the WinSpy tool is being sold as a spying and monitoring tool for home users, its remote administration capabilities fits the bill for an adversary looking to infiltrate a target or organization.
+This tool also adds another layer of anonymity for the attacker by using the default command-and-control server provided as part of the WinSpy package.
+Figure 1 - Mechanism of attack on financial institution employing WinSpy The attack targeting a U.S. financial institution arrives via a spear-phishing email.

@@ -1,0 +1,2 @@
+
+Location – Country Date IP address User agent (simplified) Organization – associated with IP address (as identified by O365) Figure 1: O365 data set LOOKUP for Data Enrichment It may be useful to add more information to the data that could help us in analysis that isn’t provided by the original log source.

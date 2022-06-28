@@ -1,0 +1,4 @@
+
+But once these strings are decrypted, they are nearly the same with some minor differences, such as the randomized string for the extension name of the encrypted files.
+Lastly, it is important to remind individuals and teams tasked with identifying and responding to threats that there are many evasion techniques that threat actors can use to circumvent security controls, and they continue to evolve.
+Organizations are advised to likewise evolve their security controls to ensure they can effectively fend off the latest threats.

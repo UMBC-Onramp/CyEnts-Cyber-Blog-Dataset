@@ -1,0 +1,4 @@
+
+Keywords that yielded significant volumes include miner, cryptonight, stratum, xmrig, and cpuminer.
+While searches for certain keywords fail to provide context, the frequency of these cryptocurrency mining-related keywords shows a sharp increase in conversations beginning in 2017 (Figure 2).
+It is probable that at least a subset of actors prefer cryptojacking over other types of financially motivated operations due to the perception that it does not attract as much attention from law enforcement.

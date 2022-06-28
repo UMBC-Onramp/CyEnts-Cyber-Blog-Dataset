@@ -1,0 +1,4 @@
+
+These comprise of logging, TLS certificates, authentication to the end device without actually exposing it to the Internet, authorization to internal host and user restrictions, etc.
+Microsoft provides detailed instructions for configuration of remote desktop gateway server, for Windows Server 2008 R2 as an example, over here .
+Lock out users and block or timeout IPs that have too many failed logon attempts A high number of failed logon attempts is a strong indication of a brute force attack.

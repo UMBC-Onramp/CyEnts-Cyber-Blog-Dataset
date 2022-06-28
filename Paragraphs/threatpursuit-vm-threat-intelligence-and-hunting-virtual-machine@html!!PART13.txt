@@ -1,0 +1,6 @@
+
+Figure 12:
+MISP import events into FIN11 event MISP allows for a streamlined way to drill and tag indicators as well as enrich and pivot with threat intelligence.
+We can also choose to perform this enrichment process within MISP using a variety of open intelligence sources and their modules, such as Mandiant Advantage , PassiveTotal , Shodan and VirusTotal .
+We can also achieve the same result using similar tools already packaged in ThreatPursuit VM.
+Using Maltego CE, installed as part of the VM, we can automate aspects of targeted collection and analysis of our FIN11 malware families and associated infrastructure.

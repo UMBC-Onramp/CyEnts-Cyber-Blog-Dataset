@@ -1,0 +1,5 @@
+
+While there are some guesses as to the number of variants of Mirai, no one can be certain of how many different developers have taken the code and made it their own.
+We also see daily brute force attacks against numerous different software packages.
+One of the most common is MSSQL database.
+The attack shown below is one of the thousands of different brute force attacks we see on a daily basis.

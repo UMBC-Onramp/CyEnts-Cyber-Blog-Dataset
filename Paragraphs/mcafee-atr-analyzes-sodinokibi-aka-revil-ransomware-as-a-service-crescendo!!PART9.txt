@@ -1,0 +1,4 @@
+
+DISCUSSION OF SCANNING IN FARSI, ON PRIVATE CHANNEL Other tools were found to have been executed the same day as the activity documented include: Mimikatz Was executed manually from the command line with the following parameters: mimikatz.exe “privilege::debug” “sekurlsa::logonPasswords full” “exit” Slayer Leecher MinerGate Group 3 – Affiliate ID 19 We observed the following Sodinokibi ransom variants attributed to this affiliate appearing in the honey pot in the Middle East.
+The attacker downloaded a file, ابزار کرک.zip, which can be mostly found in Farsi language private channels.
+The tool is basically a VPS Checker (really an RDP cracker) as discussed on the channels in the underground.

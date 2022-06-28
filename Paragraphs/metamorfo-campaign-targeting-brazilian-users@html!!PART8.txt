@@ -1,0 +1,8 @@
+
+The value of AT is “<host_name+OS&MD>=<list of folders found>”.
+Figure 11:
+Network Traffic for Host Enumeration The sample iterates through the running processes, kills the following, and prevents them from launching: msconfig.exe TASKMGR.exe regedit.exe ccleaner64.exe taskmgr.exe itauaplicativo.exe Next, it uses GetForegroundWindow to get a handle to the window the user is viewing and GetWindowText
+ to extract the title of the window.
+The title is compared against a hardcoded list of Brazilian banking and digital coin sites.
+ The list is extensive and includes major organizations and smaller entities alike.
+If any of those names are found and the browser is one of the following, the Trojan will terminate that browser.

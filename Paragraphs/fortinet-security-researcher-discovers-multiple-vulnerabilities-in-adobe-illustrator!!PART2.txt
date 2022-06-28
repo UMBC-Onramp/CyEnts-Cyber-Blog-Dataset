@@ -1,0 +1,6 @@
+
+Following are some details on these vulnerabilities.
+More information can be found on the related Fortinet Zero Day Advisory pages by clicking on the CVE links, below: CVE-2021-40718:
+This is a Memory Leak vulnerability that exists in the decoding of AutoCAD Drawing ‘DWG’ files in Adobe Illustrator.
+Specifically, the vulnerability is caused by a malformed DWG file, which causes an Out of Bounds Read memory access due to an improper bounds check.
+Attackers can exploit this vulnerability for unintended memory reads, potentially leading to a memory data leak.

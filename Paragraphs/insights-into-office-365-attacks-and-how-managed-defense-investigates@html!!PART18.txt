@@ -1,0 +1,5 @@
+
+Many of the steps in our investigation rely on querying for logs with PowerShell.
+To do this, first establish a remote PowerShell session to Exchange Online.
+The following Microsoft documentation provides guidance on two methods to do this: Connect to Exchange Online PowerShell with Basic authentication Use the Exchange Online PowerShell with modern authentication using V2 module Broad Scoping
+We start our investigations off by running broad queries against the Unified Audit Log (UAL) for suspicious activity.

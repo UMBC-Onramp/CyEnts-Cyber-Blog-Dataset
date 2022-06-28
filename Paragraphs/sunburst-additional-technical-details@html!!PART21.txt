@@ -1,0 +1,12 @@
+
+UploadSystemDescription 4 Perform an HTTP request to the specified URL, parse the results and send the response to the C2 server.
+RunTask 5 Starts a new process with the given file path and arguments GetProcessByDescription 6 Returns a process listing.
+ If no arguments are provided, returns just the PID and process name.
+  
+If an argument is provided, it also returns the parent PID and username and domain for the process owner.
+KillTask 7 Terminate the given process, by PID.
+GetFileSystemEntries 8 Given a path, and a match pattern recursively list files and directories.
+WriteFile 9 Given a file path and a Base64-encoded string write the contents of the Base64 string to the given file path.
+Write using append mode.
+Delay for [1s, 2s] after writing is done.
+FileExists 10 Tests whether the given file path exists.

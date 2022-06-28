@@ -1,0 +1,14 @@
+
+Filesystem Artifacts Created Files %CD%\\LOG<ransom_ext>.TXT README<ransom_ext>.TXT <original_filename_plus_ext><ransom_ext>
+May version: %PROGRAMDATA%\\<ransom_ext>.ico
+Registry Artifacts
+The DARKSIDE version observed in May sets the following registry key:
+HKCR\\<ransom_ext>\\DefaultIcon\\<ransom_ext>\\DefaultIcon=%PROGRAMDATA%\\<ransom_ext>.ico Details Configuration
+The malware initializes a 0x100-byte keystream used to decrypt strings and configuration data.
+Strings are decrypted as needed and overwritten with NULL bytes after use.
+The malware's configuration size is 0xBE9 bytes.
+A portion of the decrypted configuration is shown in Figure 5.
+00000000  01 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+00000010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+00000020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+00000030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................

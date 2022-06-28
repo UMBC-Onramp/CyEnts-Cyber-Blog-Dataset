@@ -1,0 +1,5 @@
+
+In at least some cases there is evidence to suggest this actor has employed Mimikatz for credential theft and privilege escalation.
+The threat actor appeared to have used built-in commands such as ‘net’ and ‘ping’ to perform basic reconnaissance of the internal network, though it is likely that additional reconnaissance was performed via BEACON and not represented in available log sources.
+UNC2628 has moved laterally in environments almost exclusively via RDP using legitimate credentials and Cobalt Strike BEACON payloads.
+This threat cluster uses both HTTPS BEACON payloads and SMB BEACON, the latter almost exclusively using named pipes beginning with “\\\\.\\pipe\\UIA_PIPE_” Intrusions attributed to this threat cluster have progressed swiftly from intrusion to data theft and ransomware deployment, and have thus not focused heavily on maintaining a persistent foothold in impacted environments.

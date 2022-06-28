@@ -1,0 +1,5 @@
+
+Upon decoding the value of the Authorization field, it can be seen that the malware is sending the Victim ID and the computer name to the C2 server.
+The C2 server responds with the commands in the value of the Authorization HTTP header, as shown in Figure 6.
+Figure 6: C2 commands in Authorization field
+Upon decoding, the commands are found to be “ok ok”, which we believe is the default C2 command.

@@ -1,0 +1,4 @@
+
+FireEye discovered a likely cyber arms dealer that is connected to no fewer than 11 APT campaigns – however, the relationship between the supplier and those who use the malware remains unclear.
+Another similar cluster, known as the Maudi Operation , was also documented this year.
+Hitmen — Although this analysis is still highly speculative, some threat actors, such as Hidden Lynx , may be “hackers for hire”, tasked with breaking into targets and acquiring specific information.

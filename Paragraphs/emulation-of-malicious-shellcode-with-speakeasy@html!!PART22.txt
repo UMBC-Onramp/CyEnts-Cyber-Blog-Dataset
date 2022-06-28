@@ -1,0 +1,5 @@
+
+For information on how to use Speakeasy as a library, see the project’s README .
+The included script is meant to emulate a single sample and generate a JSON report with the logged events.
+The command line arguments for run_speakeasy.py are shown in Figure 5.
+Figure 5: Command line arguments for run_speakeasy.py Speakeasy also offers a rich development and hooking interface for writing custom plugins.

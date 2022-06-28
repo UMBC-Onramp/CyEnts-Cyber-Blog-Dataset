@@ -1,0 +1,6 @@
+When Daniel Bohannon released his excellent DOSfuscation paper, I was fascinated to see how tricks I used as a systems engineer could help attackers evade detection.
+I didn’t have much to contribute to this conversation until I had to analyze a hideously obfuscated batch file as part of my job on the FLARE malware queue.
+Previously, I released flare-qdb , which is a command-line and Python-scriptable debugger based on Vivisect.
+I previously wrote about how to use flare-qdb to instrument and modify malware behavior.
+Flare-qdb also made a guest appearance in Austin Baker and Jacob Christie’s SANS DFIR Summit 2017 briefing , inducing the Windows event log service to exclude process creation events.
+In this blog post, I will show how I used flare-qdb to bring “script block logging” to the Windows command interpreter.

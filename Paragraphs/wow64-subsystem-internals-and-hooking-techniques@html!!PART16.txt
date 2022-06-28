@@ -1,0 +1,9 @@
+
+A little bit into the Wow64SystemServiceEx routine, Figure 13 shows some interesting logic that we will use later.
+Figure 13:
+Logging routines invoked before and after dispatching the syscalls The routine starts by indexing into service tables which hold pointers to routines that convert the passed argument array into the wider 64-bit types expected by the regular 64-bit system modules.
+This argument array is exactly the stack slot that was stored earlier in r14.
+Two calls to the LogService function exist, however these are only called if the DLL %WINDIR%\\system32\\wow64log.dll is loaded and has the exports Wow64LogInitialize, Wow64LogSystemService, Wow64LogMessageArgList, and Wow64LogTerminate.
+This DLL is not present on Windows by default, but it can be placed there with administrator privileges.
+The next section will detail how this logging DLL can be used to hook syscalls that transition through this wow64layer.
+Because the logging routine LogService is invoked before and after the syscall is serviced we can achieve a standard looking inline hook style callback function capable of inspecting arguments and return values.

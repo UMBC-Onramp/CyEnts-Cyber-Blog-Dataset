@@ -1,0 +1,6 @@
+
+Figure 8: TurboThunk table's last function pointer entry is an exit routine
+This routine is responsible for saving the state of the 32-bit registers into the WOW64_CONTEXT structure we mentioned before as well as retrieving the arguments for the syscall.
+There is some trickiness going on here, so let’s examine this in detail.
+First a pointer to the stack is moved into r14 via xchg, the value at this location will be the return address from the syscall stub where Wow64SystemServiceCall was called.
+The stack pointer r14 is then incremented by 4 to get a pointer to where the stack should be reset when it’s time to restore all these context values.

@@ -1,0 +1,7 @@
+
+Figure 2: Example GeoLogonalyzer output Analysis In the example output from Figure 2, GeoLogonalyzer helps identify the following anomalies in the Harry account’s logon patterns: FAST - For Harry to physically log on from New York and subsequently from Australia in the recorded timeframe, Harry needed to travel at a speed of 4,297 miles per hour.
+DISTANCE – Harry’s 8,990 mile trip from New York to Australia might not be expected travel.
+DCH – Harry’s logon from Australia originated from an IP address associated with a datacenter hosting provider.
+HOSTNAME and CLIENT – Harry logged on from different systems using different VPN client software, which may be against policy.
+ASN – Harry’s source IP addresses did not belong to the same ASN.
+Using ASN analysis helps cut down on reviewing logons with different source IP addresses that belong to the same provider.

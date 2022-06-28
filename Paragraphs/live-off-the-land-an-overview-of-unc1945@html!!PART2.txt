@@ -1,0 +1,7 @@
+
+Mandiant discovered and reported to Oracle CVE-2020-14871 , which was addressed in Oracle's October 2020 Critical Patch Update .
+Mandiant recommends staying current on all current patch updates to ensure a high security posture.
+We will discuss this vulnerability in greater detail in a follow up blog post.
+UNC1945 Attack Lifecycle
+The threat actor demonstrated experience and comfort by utilizing unique tactics, techniques and procedures (TTPs) within Unix environments, demonstrating a high level of acumen in conjunction with ease of operability in Microsoft Windows operating systems.
+They were successful navigating multiple segmented networks and leveraging third-party access to extend operations well beyond the initial victim.

@@ -1,0 +1,8 @@
+
+SUNSHUTTLE first issues a beacon to retrieve a command.
+After, SUNSHUTTLE will enter the routine “resolve_command”, which parses the response content to determine which command should be run.
+Available commands include remotely updating its configuration, file upload and download, and arbitrary command execution.
+Figure 2:
+Resolve command graph The content returned from the C2 after the “main_beaconing” routine is Base64 decoded and AES decrypted.
+A check is performed to ensure the decrypted content doesn’t contain the following string: Cp5RTQ31R1 As noted, it is likely these strings are unique per sample and randomly generated at compilation.
+The decrypted content is parsed for certain unique strings.﻿ Unique string in decrypted response Meaning zSsP2TSJJm3a Update sleep range — save config ﻿aQJmWJzXdYK721mGBI3U Update “false requesting” value – save config ﻿W5VYP9Iu2uyHK Update C2 URL and User-agent – save config ﻿3487wD9t2OZkvqdwRpqPeE Send current timestamp to C2 ﻿ubFxROBRwfswVRWNjLC Update \"activation\" timestamp in the config — save config ﻿TMuhGdA9EHY Upload file to C2 if the file exists 1kG4NaRX83BCMgLo38Bjq Execute command – return “EXECED” if successful hB0upT6CUmdRaR2KVBvxrJ Execute command – return results/output N/A (other string criteria met) Provides terminal command execution N/A (other string criteria met) Download file from C2 Files Dropped After successful execution of the malware, it drops the following files to the victim’s system: <current_directory>\\config.dat.tmp (MD5: Dynamic)

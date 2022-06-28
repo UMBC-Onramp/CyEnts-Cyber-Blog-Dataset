@@ -1,0 +1,7 @@
+
+One of the key benefits of Enhanced RDP Security is that it enables the use of Network Level Authentication (NLA) when using CredSSP as the external security protocol.
+Certificate management is always a complexity, but Microsoft does provide this through the use of Active Directory Certificate Services (ADCS) .
+Certificates can be pushed using Group Policy Objects (GPO) where this is available.
+Incompatible operating system environments must import certificates via the web interface exposed at https://<server>/Certsrv.
+Enable Network Level Authentication (NLA)
+To reduce the amount of initially required server resources, and thereby mitigate against denial of service attacks, network level authentication (NLA) can be used.

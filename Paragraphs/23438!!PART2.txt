@@ -1,0 +1,10 @@
+
+Why these vulnerabilities in Google Chrome are dangerous CVE-2021-37974 and CVE-2021-37975 are use-after-free (UAF) class vulnerabilities — they exploit incorrect use of heap memory and, as a result, can lead to arbitrary code execution on the targeted computer.
+The first one, CVE-2021-37974, is related to the Safe Browsing component, a Google Chrome subsystem that warns users about unsafe websites and downloads.
+The CVSS v3.1 severity rating for this vulnerability is 7.7 out of 10.
+The second vulnerability, CVE-2021-37975, was found in Crome’s V8 JavaScript engine.
+This one is considered the most dangerous of all three — 8.4 on CVSS v3.1 scale, which makes it a ‘critical’ risk vulnerability.
+Unknown malefactors are already using this vulnerability in their attacks on Chrome users.
+The cause of the third vulnerability, CVE-2021-37976, is data overexposure caused by the core of Google Chrome.
+It’s slightly less dangerous — 7.2 on the CVSS v3.1 scale, however it is also already being used by cybercriminals.
+How cybercriminals can exploit these vulnerabilities Exploitation of all three vulnerabilities requires the creation of a malicious web page.

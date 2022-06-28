@@ -1,0 +1,8 @@
+
+However, it can also be safely surmised that this might not be the scammers only wallet.
+As with the IRS, it is also important to mention is that the U.N. will never send unsolicited emails for donations.
+  For further details, please reference the U.N. Fraud Alert page.
+Conclusion Emotet and the War in Ukraine With the current tragic situation in Ukraine unfolding, internal chatter within ransomware groups have surfaced.
+Some ransomware groups side with Russia and other groups side with the West.
+A well-known RaaS group (which used Emotet)—that we will not publicize for obvious reasons—has made a very strong statement that any attacks directed towards Russia will be met with a retaliatory act towards the West.
+As the situation is fluid, and with potentially compromised government sectors likely being infected or targeted with ransomware at this very moment either for monetary or political reasons, this threat is not out of the question.

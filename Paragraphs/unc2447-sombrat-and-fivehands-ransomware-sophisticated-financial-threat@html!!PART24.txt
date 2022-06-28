@@ -1,0 +1,59 @@
+
+Backdoor.
+Win.
+SOMBRAT
+Malware.Binary.exe Backdoor.
+Win.
+SOMBRAT.MVX FEC_Trojan_PS1_Generic_7 FEC_Trojan_PS1_Generic_8 FEC_Trojan_BAT_Generic_5 HELLOKITTY Ransomware.
+Win.
+Generic.
+MVX Malware.Binary.exe Ransomware.
+Win.
+HELLOKITTY.MVX FE_Ransomware_Win_HELLOKITTY_1 FE_Ransomware_Win32_HELLOKITTY_1 DEATHRANSOM
+FE_Loader_Win32_Generic_92 Ransomware.
+Win.
+Generic.
+MVX Malware.Binary.exe BEACON FE_Loader_Win32_BLUESPINE_1 Backdoor.
+BEACON Malware.Binary.exe WARPRISM FE_Loader_PS1_WARPRISM_1 FEC_Loader_PS1_WARPRISM_1
+Backdoor.
+BEACON Trojan.
+Generic Trojan.
+Win.
+SYSTEMBC Backdoor.
+Meterpreter Loader.
+PS1.WARPRISM.MVX Malware.Binary.exe Malware.
+Binary.ps1 FOXGRABBER FE_Tool_MSIL_FOXGRABBER_1 FE_Trojan_MSIL_Generic_109 FireEye EndPoint Security Real-Time (IOC) SOMBRAT (BACKDOOR) SUSPICIOUS POWERSHELL READ BASE64 DATA (METHODOLOGY)
+FIVEHANDS RANSOMWARE (FAMILY)
+DEATHRANSOM RANSOMWARE (FAMILY) HELLOKITTY RANSOMWARE (FAMILY) BEACON (FAMILY)
+Malware Protection (AV/MG)
+SOMBRAT Generic.mg.
+ 87c78d62fd35bb25 Generic.mg.6382d48fae675084 Trojan.
+GenericKD.45750384 Trojan.
+GenericKD.36367848 Generic.
+PwShell.
+RefA.CB5E962A FIVEHANDS
+Generic.mg.39ea2394a6e6c39c Generic.mg.f568229e696c0e82 Generic.mg.6c849920155f48d4 Generic.mg.22d35005e926fe29
+Generic.mg.57824214710bc0cd
+Generic.mg.87c0b190e3b4ab92
+Generic.mg.1b0b9e4cddcbcb02 Generic.mg.46ecc24ef6d20f3e Generic.mg.1a79b6d169aac719
+Generic.mg.a64d79eba40229ae Gen:Variant.
+Zusy.375932 Gen:Variant.
+Zusy.366866 Trojan.
+GenericKD.46059492 Trojan.
+GenericKD.46059131 Trojan.
+GenericKD.45996121 Trojan.
+GenericKD.45702783 WARPRISM Generic.mg.a01a2ba3ae9f50a5 Trojan.
+PowerShell.
+Agent.
+IJ Trojan.
+Agent.
+EXDR Trojan.
+PowerShell.
+Ransom.
+E Trojan.
+Agent.
+EUKPTrojan.
+GenericKD.45856129 Heur.
+BZC.PZQ.Boxter.829.B5AEB7A6 Heur.
+BZC.PZQ.Boxter.829.B84D01A7 Heur.
+BZC.PZQ.Boxter.829.AE76D25C Trojan.

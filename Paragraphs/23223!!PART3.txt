@@ -1,0 +1,7 @@
+
+Ransomware can get onto your computer in a variety of ways.
+For example, you might plug in an infected flash drive or download something from a shady website.
+E-mails with dangerous attachments or links to malicious sites are the most common sources of infection.
+Perhaps the most unpleasant aspect of many ransomware programs is their ability to spread across devices on the same network.
+That means if your home desktop picks up malware, you can expect an attack on your laptop as well.
+And one piece of ransomware on a work device can bring all corporate communications to a standstill.

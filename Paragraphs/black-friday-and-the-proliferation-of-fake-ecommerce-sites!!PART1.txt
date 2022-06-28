@@ -1,0 +1,4 @@
+FortiGuard Labs Threat Research Report Black Friday and Cyber Monday kick off the holiday shopping season.
+In fact, 30% of all retail sales occur between Black Friday and Christmas Day.
+And since the advent of Cyber Monday, brick and mortar and ecommerce stores alike stand to generate a significant portion of their annual revenue over this shopping “holiday” weekend, often allowing retailers to catch up on revenue and meet goals and sales numbers for the year.
+In the lead-up to this event, FortiGuard Labs has observed more and more scams involving counterfeit websites that appear to be legitimate ecommerce sites.

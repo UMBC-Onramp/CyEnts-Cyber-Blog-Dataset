@@ -1,0 +1,12 @@
+
+version – The internal version number of the malware.
+Version 4 had significant changes overall and we believe that these changes were partly done by the authors to improve administration and make GandCrab more scalable to cope with its increased popularity.
+Based on the hardcoded values it was possible for us, to a certain extent, to extract the administration information and create our own overview.
+We hunted for as many different GandCrab samples as we could find, using Yara rules, industry contacts and customer submissions.
+The sample list we gathered is quite extensive but not exhaustive.
+From the collected samples we extracted the hardcoded values and compile times automatically, using a custom build tool.
+We aggregated all these values together in one giant timeline from GandCrab version 4, all the way up to version 5.2.
+FIGURE 2.
+SMALL PORTION OF THE TIMELINE OF COLLECTED SAMPLES (NOTE THE FIRST FOUR POSSIBLY TIME STOMPED)
+ID and SUB_ID Characteristics Observed Parent-Child Relationship
+The extracted ID’s and Sub_IDs showed a parent-child relationship, meaning every ID could have more than one SUB_ID (child) but every SUB_ID only had one ID (parent).

@@ -1,0 +1,9 @@
+
+The Ranison ransomware family appears to have been around since at least early 2017, giving it more than four years of longevity.
+In February of that year, Daniel Smith at Radware Security shed the first light on the Ranion ransomware, describing it as Ransomware-as-a-service.
+Surprisingly, its website on the Dark Web has remained relatively unchanged: the Ranion developer still maintains its claim that Ranion was created for educational purposes and asks users not to use the ransomware for illegal activities.
+The latest version of Ranion, version 1.21, was released in July 2021.
+Amazingly, the Ranion developer has updated the ransomware every month in 2021 (except for May), including updates for detection evasion, which casts doubt on the claim that the ransomware is for educational purposes.
+Another interesting data point is that version 1.08 was released in at least January 2018 and was only updated seven times over a 35-month period (January 2018 – December 2020).
+However, it has seen rapid acceleration in its development in 2021, with six updates over a seven-month period for unknown reasons.
+Each update made in 2021 contains additional code using an open-source program named ConfuserEx to evade detection and protect the security vendors’ identities.

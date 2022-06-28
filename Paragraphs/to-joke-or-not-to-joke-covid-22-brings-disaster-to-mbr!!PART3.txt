@@ -1,0 +1,8 @@
+
+Dropped files have file names that are simple and self-described for their actions.
+They are listed below in sequence of execution.
+Covid22Server.exe executes the commands in the dropped script.txt lol.vbs creates an endless loop of a MessageBox with \"Your PC has been infected by Covid-22 Corona Virus!
+Enjoy the death of your pc!\" speakwh.vbs uses the computer's speaker to say \"coronavirus\" in a loop CoronaPopup.exe displays a pop-up with the title \"Covid-22 has infected your pc!\" and an image of the actual coronavirus ClutterScreen.exe clutters the screen by constantly moving blocks of pixels x.vbs displays the pop-up message, \"Corona Virus!\" 50 times noescapes.vbs displays the pop-up message \"THERE IS NO ESCAPE\"
+10 times icons.exe fills the screen with red Xs final.vbs displays a pop-up message \"Bye!\" These are the classic actions of joke programs usually intended to annoy or make fun of users.
+But the next activity is not laughable at all.
+The malware drops and executes the malicious WipeMBR.exe wiper malware that destroys the Master Boot Record (MBR) by overwriting its first 512 bytes with zeros.

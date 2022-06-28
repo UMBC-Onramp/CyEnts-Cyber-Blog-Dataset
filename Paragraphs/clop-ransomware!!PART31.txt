@@ -1,0 +1,8 @@
+
+As a curiosity, this ransom note has a line that another does not have: “Every day of delay will cost you additional +0.5 BTC” (about 1500-1700 $).
+The 3ea56f82b66b26dc66ee5382d2b6f05d sample has the following points of difference: The name of the file created is “popup.txt”.
+The DefineDosDeviceA name is “1234567890”
+The mutex is “CLOP#666”.
+The date of compiled this sample is 7 of February.
+The name of the bat file is “resort0-0-0-1-1-0-bat”.
+This sample does not have support for Windows XP because a API that does not exist in Windows XP.

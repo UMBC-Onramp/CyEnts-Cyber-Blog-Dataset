@@ -1,0 +1,8 @@
+
+APIs are an essential tool in today’s app ecosystem including cloud environments, IoT, microservices, mobile, and Web-based customer-client communications.
+Dependence on APIs will further accelerate with a growing ecosystem of cloud applications built as reusable components for back-office automation (such as with Robotic Process Automation) and growth in the ecosystem of applications that leverage APIs of cloud services such as Office 365 and Salesforce.
+Threat actors are following the growing number of organizations using API-enabled apps because APIs continue to be an easy – and vulnerable – means to access a treasure trove of sensitive data.
+Despite the fallout of large-scale breaches and ongoing threats, APIs often still reside outside of the application security infrastructure and are ignored by security processes and teams.
+Vulnerabilities will continue to include broken authorization and authentication functions, excessive data exposure, and a failure to focus on rate limiting and resource limiting attacks.
+Insecure consumption-based APIs without strict rate limits are among the most vulnerable.
+Headlines reporting API-based breaches will continue into 2020, affecting high-profile apps in social media, peer-to-peer, messaging, financial processes, and others, adding to the hundreds of millions of transactions and user profiles that have been scraped in the past two years.

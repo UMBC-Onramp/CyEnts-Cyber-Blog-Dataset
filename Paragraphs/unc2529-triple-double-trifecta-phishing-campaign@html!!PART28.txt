@@ -1,0 +1,10 @@
+
+By design, the core of the backdoor functionality is intended to be executed after injected into a newly spawned msiexec.exe process.
+In contrast with other backdoors DOUBLEBACK does not have its services hardcoded and the functionality is expected to be implemented as plugins that are expected to be serialized in the registry database under a host-specific registry path.
+That way, the backdoor can be configured to implement a flexible set of services depending on the target.
+With all the common functionality implemented as plugins, the backdoor’s main goal is to establish a communication framework ensuring data integrity between the C2 server and the appropriate plugins.
+Details The backdoor starts by retrieving its process name and ensures that it is either powershell.exe or msiexec.exe.
+In all other cases, the malware will immediately terminate itself.
+Normally, when first started on the system, the backdoor will be injected into the same PowerShell process that executes both the bootstrap code and the launcher.
+In that mode the malware may spawn (depending on certain conditions) a msiexec process and injects itself into it.
+More details about the logic implemented in the PowerShell and the msiexec branches are provided in the following sections.

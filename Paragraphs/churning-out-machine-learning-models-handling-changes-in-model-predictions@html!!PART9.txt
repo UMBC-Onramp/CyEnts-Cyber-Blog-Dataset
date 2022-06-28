@@ -1,0 +1,10 @@
+
+We’ll refer to this model as the standard retrain.
+This is a reasonably realistic simulation of actual production data collection and model retraining.
+Finally, both the baseline model and the standard retrain are evaluated on test 2.
+The standard retrain has a higher accuracy than the baseline on test 2, 99.33% vs 99.10% respectively.
+However, there are 246 misclassifications made by the retrain model that were not made by the baseline or 0.12% bad churn.
+Incremental Learning Since our rationale for retraining is that cyber security threats change over time, e.g. concept drift, it’s a natural suggestion to use techniques like incremental learning to handle retraining.
+In incremental learning we take new data to learn new concepts without forgetting (all) previously learned concepts.
+That also suggests that an incrementally trained model may not have as much churn, as the concepts learned in the baseline model still exist in the new model.
+Not all ML models support incremental learning, but linear and logistic regression, neural networks, and some decision trees do.

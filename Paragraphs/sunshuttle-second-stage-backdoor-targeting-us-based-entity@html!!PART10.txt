@@ -1,0 +1,9 @@
+
+After the configuration is created or read from, SUNSHUTTLE enters a routine named “﻿main_request_session_key”.
+The malware will iterate over this routine until it’s successful, sleeping a period of time after each iteration.
+Inside the “﻿main_request_session_key” routine, SUNSHUTTLE constructs an HTTPS request to its configured C2.
+Upon an HTTP 200 response from the request, the response data from the C2 is expected to not contain the following string for the sample analyzed: ywQdjLuHHC The request_session_key routine returns a 1 if the string is not in the response and a -1 if it is in the response.
+If the result of the request_session_key is 1, SUNSHUTTLE will execute the retrieve_session_key routine.
+The retrieve_session_key routine again contacts the C2 and downloads content that is expected to be decrypted by the aforementioned embedded private key.
+The decrypted content is likely a session key used to encrypt content once SUNSHUTTLE transitions to its command-and-control routines.
+Commanding Once a session key is retrieved from the C2, SUNSHUTTLE begins the beaconing and “resolve_command” routines in a loop.

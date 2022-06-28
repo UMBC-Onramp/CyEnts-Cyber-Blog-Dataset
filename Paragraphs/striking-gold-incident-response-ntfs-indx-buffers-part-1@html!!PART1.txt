@@ -1,0 +1,6 @@
+By William Ballenthin & Jeff Hamm On August 30, 2012, we presented a webinar on how to use INDX buffers to assist in an incident response investigation.
+During the Q&A portion of the webinar we received many questions; however, we were not able to answer all of them.
+We're going to attempt to answer the remaining questions by posting a four part series on this blog.
+This series will address:
+Part 1: Extracting an INDX Attribute Part 2:
+The Internal Structures of a File Name Attribute Part 3: A Step by Step Guide to Parse INDX

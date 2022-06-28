@@ -1,0 +1,5 @@
+
+Creator Process Name:    C:\\Windows\\System32\\cmd.exe Process Command Line: Table 4:
+Example Windows event log process creation event If we combine the evidence available in AmCache with a fully detailed Windows Event Log process creation event, we could match the evidence available in the real-time event except for a small difference in file hash types.
+File Write Events An attacker may choose to modify or delete important evidence.
+If an attacker uses a file shredding tool like Sysinternal’s SDelete, it is unlikely the analyst will recover the original contents of the file.

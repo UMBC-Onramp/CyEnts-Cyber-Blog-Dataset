@@ -1,0 +1,24 @@
+
+Conclusion Part of threat intelligence requires understanding all parts of a particular threat.
+This is why we took a closer look at the OPC functionality of this particular Havex variant.
+  
+We don’t have any case study showcasing why the OPC modules were included, and this is the first “in the wild” sample using OPC scanning.
+It is possible that these attackers could have used this malware as a testing ground for future utilization, however.
+Since ICS networks typically don’t have a high-level of visibility into the environment, there are several ways to help minimize some of the risks associated with a threat like Havex.
+First, ICS environments need to have the ability to perform full packet capture ability.
+This gives incident responders and engineers better visibility should an incident occur.
+Also, having mature incident processes for your ICS environment is important.
+Being able to have security engineers that also understand ICS environments during an incident is paramount.
+Finally, having trained professionals consistently perform security checks on ICS environments is helpful.
+This ensures standard sets of security protocols and best practices are followed within a highly secure environment.
+We hope that this information will further educate industrial control systems owners and the security community about how the OPC functionality of this threat works and serves as the foundation for more investigation.
+Still, lots of questions remain about this component of Havex.
+What is the attack path?
+Who is behind it?
+What is their intention?
+We’re continuing to track this specific threat and will provide further updates as this new tactic unfolds.
+Acknowledgements We would like to thank Josh Homan for his help and support.
+Related MD5s ba8da708b8784afd36c44bb5f1f436bc 6bfc42f7cb1364ef0bfd749776ac6d38 4102f370aaf46629575daffbd5a0b3c9 References http://www.matrikonopc.com/products/opc-desktop-tools/opc-explorer.aspx http://arduino.cc/en/Main/arduinoBoardUno http://www.f-secure.com/weblog/archives/00002718.html
+http://www.opcdatahub.com/WhatIsOPC.html Subscribe to Blogs Get email updates as new blog posts are added.
+
+

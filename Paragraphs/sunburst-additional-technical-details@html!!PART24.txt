@@ -1,0 +1,7 @@
+
+Messages larger than 10,000 bytes are sent as-is in the HTTP request body.
+The fake OIP document contains the following fields: userId – a unique identifier for the victim machine sessionID – stores a new random GUID for each HTTP thread steps – an array of objects that contain the following keys: Timestamp , Index , EventType , EventName , DurationMs , Succeeded , and Message .
+The JSON key EventType is hard-coded to the value Orion and the EventName is hard-coded to EventManager .
+The encoded message to send to the C2 server is split up into random ranges, Base64-encoded, and stored in the Message field of the objects in the steps array.
+Not all objects in the steps array contribute to the malware response.
+The integer in the Timestamp field must have the 0x2 bit set to indicate the contents of the Message field are used in the malware response.

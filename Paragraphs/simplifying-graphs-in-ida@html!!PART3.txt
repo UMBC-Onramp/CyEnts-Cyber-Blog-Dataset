@@ -1,0 +1,6 @@
+
+Figure 2:
+Manual group creation The SimplifyGraph IDA Pro plug-in we’re releasing is built to automate IDA’s node grouping capability.
+The plug-in is source-compatible with the legacy IDA SDK in 6.95, and has been ported to the new SDK for IDA 7.0.
+Pre-built binaries for both are available on the Releases tab for the project repository .
+The plug-in has several parts, which are introduced below.

@@ -1,0 +1,8 @@
+
+The attacker likely utilizes the DGA subdomain to vary the DNS response to victims as a means to control the targeting of the malware.
+These subdomains are concatenated with one of the following to create the hostname to resolve: .appsync-api.eu-west-1[.]avsvmcloud[.]com .appsync-api.us-west-2[.]avsvmcloud[.]com .appsync-api.us-east-1[.]avsvmcloud[.]com .appsync-api.us-east-2[.]avsvmcloud[.]com Process name, service name, and driver path listings are obtained, and each value is hashed via the FNV-1a + XOR algorithm as described previously and checked against hardcoded blocklists.
+Some of these hashes have been brute force reversed as part of this analysis, showing that these routines are scanning for analysis tools and antivirus engine components.
+If a blocklisted process is found the Update routine exits and the sample will continue to try executing the routine until the blocklist passes.
+Blocklisted services are stopped by setting their HKLM\\SYSTEM\\CurrentControlSet\\services\\<service_name>\\Start registry entries to value 4 for disabled.
+Some entries in the service list if found on the system may affect the DGA algorithms behavior in terms of the values generated.
+The list of stopped services is then bit-packed into the ReportWatcherPostpone key of the appSettings entry for the samples’ config file.

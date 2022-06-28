@@ -1,0 +1,35 @@
+Every day at Mandiant we respond to some of the largest cyber security incidents around the world.
+
+This gives us a front-row seat to witness what works (and what doesn't) when it comes to finding attackers and preventing them from stealing our clients' data.
+
+Attackers' tactics and motives are evolving and as a result our security strategies also need to adapt.
+
+Today, we announced two new service offerings that will further help our clients improve their protective, detective, and responsive security controls and leverage Mandiant's extensive experience responding to some of the most serious cyber security incidents.
+
+Our first new service offering addresses attackers' expanding motives.
+
+We are starting to see attackers with destructive motives and what could be more damaging than attacking a nation's critical infrastructure.
+
+Security incidents at critical infrastructure such as electric power grids, utilities and manufacturing companies can affect the lives of hundreds of thousands of people.
+
+Our new Industrial Control Systems (ICS) Security Gap Assessment is specifically focused on helping these industries - and others that use SCADA systems - to assess their existing security processes for industrial control systems.
+
+The service helps identify security GAPs and provides specific recommendations to close those GAPs and safeguard critical infrastructure.
+
+Our second new service offering is designed to help organizations address the challenges they face as they build out their own internal security operations program and incident response teams.
+
+Many organizations want to enhance their internal capabilities beyond the traditional security operations centers (SOCs).
+
+Our new Cyber Defense Center Development service helps organizations evolve their internal SOC by improving the visibility (monitoring and detection) and response capabilities (incident response) necessary to defend against advanced threats.
+
+This service looks at existing people, process, and technologies and identifies areas for improvement.
+
+It helps companies to identify and prioritize the alerts that require the most immediate action with the goal to reduce the mean time to remediation.
+
+If either of these new services sound like something that could help your organization let us know .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

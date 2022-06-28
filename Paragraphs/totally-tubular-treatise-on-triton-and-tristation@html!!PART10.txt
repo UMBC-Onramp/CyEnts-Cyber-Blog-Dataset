@@ -1,0 +1,9 @@
+
+We suspect it is a constant, but this value is still unknown to us.
+Figure 6: Excerpt TS_cnames.pyc TS_names array, which contain TRITON actor’s notes for execution command function codes TriStation Protocol Packet Structure The TRITON threat actor’s knowledge and reverse engineering effort provides us a better understanding of the protocol.
+From here we can start to form a more complete picture and document the basic functionality of TriStation.
+We are primarily interested in message type 5, Execution Command, which best illustrates the overall structure of the protocol.
+Other, smaller message types will have varying structure.
+Figure 7: Sample TriStation \"Allocate Program\" Execution Command, with color annotation and protocol legend Corroborating the TriStation Analysis Minute discrepancies aside, the TriStation structure detailed in Figure 7 is supported by other public analyses.
+Foremost, researchers from the Coordinated Science Laboratory (CSL) at University of Illinois at Urbana-Champaign published a 2017 paper titled \" Attack Induced Common-Mode Failures on PLC-based Safety System in a Nuclear Power Plant\".
+The CSL team mentions that they used the Triconex System Access Application (TSAA) protocol to reverse engineer elements of the TriStation protocol.

@@ -1,0 +1,5 @@
+
+IMPORT OF THE RSA PUBLIC BLOB FOR THE MALWARE DEVELOPERS
+This key is protected with a crypto using a key of 32 bits and iv of 8 bytes using the function “CryptGenRandom” to avoid memory dumps but, later, it will need to be decrypted before use.
+After this, the malware starts the procedure of crypting the files, searching in units, before importing the RSA public BLOB key generated in runtime.
+After this, it creates the ransom note prepared for this infected machine in the root folder and then starts looking for folders and files to crypt.

@@ -1,0 +1,5 @@
+
+How the Executable Works Once the executable file is opened, the malware searches for files smaller than 2,117,152 bytes  on the compromised machine and encrypts them.
+It then appends those files with four random characters chosen from “abcdefghijklmnopqrstuvwxyz1234567890” as a file extension.
+But files larger than 2,117,152 bytes with specified file extensions are filled with random bytes so the victim will not be able to get those files back even if the ransom is paid.
+Having this destructive element changes this attack from a typical ransomware attack, and is a very troubling component.

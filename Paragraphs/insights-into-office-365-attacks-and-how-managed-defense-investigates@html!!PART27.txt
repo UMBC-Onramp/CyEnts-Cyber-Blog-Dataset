@@ -1,0 +1,8 @@
+
+Acquire Emails of Interest With our list of suspicious emails identified from message traces, we’ll use the Content Search tool available in the Office 365 Security and Compliance Center acquire the email body and learn what domains were used in phishing lures (if phishing was present).
+Content Searches are performed by using a straightforward GUI, and the results can either be previewed in the browser, downloaded individually as EML files, or downloaded in bulk as PST files.
+Final Scoping At this point of our investigation, the BEC should be sufficiently scoped within the tenant.
+To ensure any follow-on activity hasn’t occurred, we’ll take all of the attack indicators and perform our final queries across the UAL.
+With that said, there are still edge cases in which attacker activity wouldn’t appear in O365 logs.
+For example, perhaps an additional user has submitted their credentials to a phishing page, but the attackers haven’t used them to log in yet.
+To ensure we don’t miss this activity, we’ll perform additional scoping across available network logs, specifically for IP addresses and domains related to the attacker’s phishing infrastructure.

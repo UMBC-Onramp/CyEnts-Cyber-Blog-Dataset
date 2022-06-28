@@ -1,0 +1,5 @@
+
+Since we spend most of our time in reverse engineering tools such as IDA Pro analyzing malware, we decided to add a capa rule generator.
+Figure 1 shows the rule generator interface.
+Figure 1: capa explorer rule generator interface Once you’ve installed capa explorer using the Getting Started guide, open the plugin by navigating to Edit > Plugins > FLARE capa explorer .
+You can start using the rule generator by selecting the Rule Generator tab at the top of the capa explorer pane.

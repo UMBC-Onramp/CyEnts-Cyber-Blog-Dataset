@@ -1,0 +1,9 @@
+
+User Name Field:
+The control name type into the user name field • Password Field:
+The string entered in the password field •
+Created Time: When it was saved •
+Modified Time: Time when credentials were updated •
+Filename: What file it has stolen the credentials from All the credentials are saved in a temporary file.
+Module2 - Stealing Email Contact Information
+This module steals its victim’s email contacts from their email folders inside Microsoft Outlook by going through the victim’s emails one by one.

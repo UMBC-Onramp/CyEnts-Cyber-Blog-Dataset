@@ -1,0 +1,67 @@
+We recently discovered that a version of popular WhatsApp mod FMWhatsApp includes an embedded Trojan.
+
+The Trojan, called Triada, downloads other malware to users’ devices.
+
+Here’s how it happened and why using modified versions of WhatsApp is dangerous.
+
+Why use WhatsApp mods?
+
+Not all users are happy with the official WhatsApp app.
+
+Some may feel a need for self-destructing messages or, conversely, the ability to view messages another user deleted.
+
+Others are after dynamic themes, and still others want to hide certain chats from the general list or automatically translate messages.
+
+Naturally, they want these features right away, not when WhatsApp’s developers finally get around to implementing them.
+
+As a result, some users turn to the modified WhatsApp clients available online, which are fairly numerous and not hard to find.
+
+Fans of mods are not deterred even by WhatsApp’s occasional crackdown on such modifications or the threat of account bans.
+
+The creators of WhatsApp mods often embed ads in them — understandably — along with the features users are looking for.
+
+Problems arise, however, from their use of third-party ad modules through which malicious code can sneak in under developers’ radar.
+
+Triada et al.
+
+in the FMWhatsApp mod
+
+That’s precisely what happened with FMWhatsApp, a popular WhatsApp mod.
+
+In version 16.80.0 the developers use third-party ad module that includes a Trojan.
+
+Our mobile antivirus solution detects this malware as Trojan.AndroidOS.Triada.ef.
+
+We saw a similar situation in the spring of 2021 with the APKPure unofficial app store, whose developers also used an ad module from an unverified source, thereby infecting their creation , and consequently users, with the Triada Trojan (albeit a slightly different version).
+
+As in the case of the infected APKPure, the Triada Trojan in the dangerous version of the FMWhatsApp mod performs an intermediary function.
+
+First, it collects data about the user’s device, and then, depending on the information, it downloads another Trojan.
+
+Triada’s “extras” come in a variety of flavors — the infected version of FMWhatsApp downloads several types of malware to devices: Trojan-Downloader.AndroidOS.Agent.ic, a Trojan that downloads and runs other malicious modules; Trojan-Downloader.
+
+AndroidOS.Gapac.e, which downloads and runs other malicious modules and can also display full-screen ads at unexpected moments; Trojan-Downloader.
+
+AndroidOS.Helper.a, which downloads and runs the installer module of the xHelper Trojan and runs invisible ads in the background; Trojan.
+
+AndroidOS.MobOk.i, a Trojan that signs up for paid subscriptions; Trojan.
+
+AndroidOS.Subscriber.l, another Trojan that signs up for paid subscriptions; Trojan.
+
+AndroidOS.Whatreg.b, the most complex Trojan in the list, signs in to the WhatsApp account on the victim’s phone, intercepting the login confirmation text.
+
+The device can then become a site for various types of illegal activity such as spam distribution or illegal trading.
+
+Our Securelist post delves more into the FMWhatsapp mod’s Triada Trojan.
+
+How to defend against such attacks Practicing caution and using your device safely is key to keeping malware and other mobile nasties off your phone.
+
+Generally speaking, follow these tips to avoid trouble:
+
+Avoid installing apps from unofficial sources and use your device’s settings to deny permission to install them.
+
+(If you need to install an app not from an official store, temporarily enable that permission and then disable it again); Use only official messaging apps, and download them only from official app stores — they may lack some features, but will not flood your phone with viruses; Check what permissions you’ve granted to installed apps — some might pose a real threat ; Install a reliable mobile antivirus app on your phone, and heed its warnings.
+
+
+
+

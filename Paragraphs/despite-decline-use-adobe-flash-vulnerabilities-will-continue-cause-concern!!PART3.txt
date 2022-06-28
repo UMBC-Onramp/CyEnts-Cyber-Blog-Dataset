@@ -1,0 +1,6 @@
+
+This post will examine the history of Flash’s issues since the first Common Vulnerabilities and Exposures (CVE) list for Flash was published in 2006.
+By examining some of the data, both users and owners of sites that employ Flash can better understand Flash flaws and why Flash will continue to interest attackers, even though Adobe will discontinue development of Flash in 2020.
+We examined historical Flash data regarding vulnerabilities.
+We also accounted for the current distribution and uses of Flash.
+Through this analysis, we believe that despite Adobe announcing Flash’s end of life, a number of sites will continue to use and depend upon Flash for at least the immediate future, even as sites convert to alternative technologies.

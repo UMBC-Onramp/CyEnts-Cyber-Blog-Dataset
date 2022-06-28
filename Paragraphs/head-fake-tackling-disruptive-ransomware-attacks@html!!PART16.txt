@@ -1,0 +1,6 @@
+
+Managed Defense also identified the FakeUpdates to Dridex infection chain resulting in the download and execution of PoshC2, another publicly available tool.
+While it could be coincidental, it is worth noting that the use of PoshC2 was first observed in early September 2019 following the announcement that Empire would no longer be maintained and could represent a shift in attacker TTPs.
+These additional tools were often executed between 30 minutes and 2 hours after initial Dridex download.
+The pace of the initial phases of related attacks possibly suggests that automated post-compromise techniques are used in part before interactive operator activity occurs.
+We identified extensive usage of Empire and C2 communication to various servers during these investigations.

@@ -1,0 +1,5 @@
+
+This\ndata consisted of open source social media posts from accounts\noperated by Russia’s famed Internet Research Agency or IRA “troll\nfactory.”
+We fine-tuned GPT-2 on a single GPU for a few hours by processing\nthese social media posts through the pre-trained model , whose\nactivations were then fed through adjustable weights into a linear\noutput layer.
+The resulting fake posts are short yet biting, express\noutrage regarding political issues, and contain idiosyncrasies like\nhashtags and emojis that positionally manifest at the end of the\ngenerated text.
+Synthetic Media in the Wild IO actors use various tactics that would be readily conducive to\nsynthetic media augmentation.

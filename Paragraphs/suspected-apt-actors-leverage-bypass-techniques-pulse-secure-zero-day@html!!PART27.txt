@@ -1,0 +1,5 @@
+
+If the backdoor password is not used, authentication will fail as normal.
+In multiple locations assembly is written into the padding regions between legitimate functions.
+As these regions are very small, around 20 bytes, the malicious logic stitches itself together by unconditionally jumping between multiple padding regions.
+The assembly is written in a way very similar to mid-function hooks, where it is common to push and then pop all flags and registers before and after the injected logic.

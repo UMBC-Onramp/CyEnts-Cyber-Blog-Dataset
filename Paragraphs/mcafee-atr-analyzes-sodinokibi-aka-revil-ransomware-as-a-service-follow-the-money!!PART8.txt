@@ -1,0 +1,4 @@
+
+Tracing down the route of splits, we started to search for the 30 or 40 percent cuts of the ransom payments of 0.27359811 BTC or, if the price was doubled, 0.54719622 BTC.
+Using the list of amounts and querying the transactions and transfers discovered, we observed a wallet that was receiving a lot of these smaller payments.
+Due to ongoing research we will not publish the wallet but here is a graph representation of a subset of transactions: It seems like a spider, but many incoming ‘split’ transfers, and only a few outgoing ones with larger amounts of bitcoins, were observed.

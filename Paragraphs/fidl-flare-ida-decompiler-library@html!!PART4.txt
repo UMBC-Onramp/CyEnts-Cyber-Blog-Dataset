@@ -1,0 +1,2 @@
+
+When constructing this object FIDL will parse the AST for us and provides a high-level summary of a function using information extracted via the decompiler including APIs called, their parameters, and a summary of local variables and parameters for the function.

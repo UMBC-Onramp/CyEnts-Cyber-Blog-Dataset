@@ -1,0 +1,5 @@
+
+Truncated > During one intrusion, UNC2198 used the SOURBITS privilege escalation utility to execute files on a target system.
+SOURBITS is a packaged exploit utility for CVE-2020-0787 , which is a vulnerability that was disclosed in 2020 for Windows Background Intelligent Transfer Service (BITS) .
+SOURBITS consists of code derived from a GitHub Repository that is implemented as a command-line utility, which can execute arbitrary files with elevated privileges.
+UNC2198 used SOURBITS with the following components: C:\\Users\\<User>\\Downloads\\runsysO.cr C:\\Users\\<User>\\Downloads\\starterO.exe

@@ -1,0 +1,15 @@
+
+Table 3.
+List of unique registrant emails.
+Unique Registrants Table 4 shows the registrant names, which have no similarity with the previous registrant name information.
+Table 4.
+List of registrant names used by the phishing domains.
+How to Avoid Being a Victim Apple provides information on phishing here and here , and on iCloud security here .
+There are simple ways for a user to be more secure against this and similar attacks.
+The following are a few tips: Enable two-factor authentication for Apple ID .
+Always check the address bar for the correct web address.
+Avoid clicking links in emails and SMS messages that supposedly direct to iCloud pages.
+Use our FireEye EX appliance , which provides effective detection for the Zycode phishing campaign.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

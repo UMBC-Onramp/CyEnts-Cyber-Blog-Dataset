@@ -1,0 +1,5 @@
+
+The post included a walkthrough of a memory dump designed for analysts to be able to recreate in their own Windows 10 environments.
+The structures referenced in the walkthrough were all previously analyzed in a disassembler, a manual effort which came in at around eight hours.
+As you’d expect, this task quickly became a candidate for automation.
+Our analysis time is now under two minutes!

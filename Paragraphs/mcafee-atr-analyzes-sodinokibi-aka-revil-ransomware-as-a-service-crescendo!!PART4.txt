@@ -1,0 +1,10 @@
+
+In this blog we will highlight a few of the intrusions we observed.
+Group 1 – Unknown Affiliate ID McAfee ATR observed initial activity against our South American honey pot begin in late May 2019.
+We had full visibility as the actor loaded a number of tools, including Sodinokibi, during the initial intrusion period.
+The following ransom note (uax291-readme.txt) was dropped onto the system on June 10 th , 2019.
+The actor utilized Masscan and NLBrute to scan and target other assets over RDP which fits with the behavior we have seen in all other Sodinokibi intrusions tracked by McAfee ATR.
+The actor then created a user account ‘backup’ and proceeded to consistently connect from an IP address range in Belgrade, Serbia.
+Group 2 – Affiliate ID 34 Campaign 295 (based on sub-ID in the malware configuration)
+The following Sodinokibi variant appeared in our South American honey pot with the original file name of H.a.n.n.a.exe.
+8d7d333574708c2fe5c37fad1bdfbc5a9664b33d (June 8 th , 2019) Extracting the configuration from the ransomware sample as we conducted during our affiliate research , the affiliate-id is nr 34.

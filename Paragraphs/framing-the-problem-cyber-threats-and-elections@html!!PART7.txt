@@ -1,0 +1,6 @@
+
+Cyber Espionage : Nation state actors like Russia-nexus APT28 and Sandworm Team, and China-nexus APT40, have carried out cyber espionage operations against multiple types of targets in the election ecosystem.
+This has ranged from intrusions into everything from political campaigns to election commissions, likely for a variety of reasons.
+In some cases, these actors are possibly seeking to obtain information on policy stances of candidates and political parties.
+In other situations—particularly against election administrators or system vendors—it is possible that these intrusions are reconnaissance for further operations, seeking to understand network layouts that may allow them to move into more critical infrastructure.
+“Hack and Leak” Campaigns : Some threat actors that FireEye has observed have utilized the data they’ve gained from espionage intrusions to then leak that information with the intent of influencing public perception.

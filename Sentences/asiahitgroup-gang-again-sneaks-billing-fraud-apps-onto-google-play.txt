@@ -1,0 +1,215 @@
+By Carlos Castillo on Jun 27, 2018 The McAfee Mobile Research team has found a new billing-fraud campaign of at least 15 apps published in 2018 on Google Play.
+
+Toll fraud (which includes WAP billing fraud) is a leading category of potentially harmful apps on Google Play, according to the report Android Security 2017 Year in Review.
+
+This new campaign demonstrates that cybercriminals keep finding new ways to steal money from victims using apps on official stores such as Google Play.
+
+The AsiaHitGroup Gang has been active since at least late 2016 with the distribution of the fake-installer applications Sonvpay.
+
+A, which attempted to charge at least 20,000 victims from primarily Thailand and Malaysia for the download of copies of popular applications.
+
+One year later, in November 2017, a new campaign was discovered on Google Play , Sonvpay.
+
+B, used IP address geolocation to confirm the country of the victim and added Russian victims to the WAP billing fraud to increase its potential to steal money from unsuspected users.
+
+In January 2018, the AsiaHitGroup Gang returned to Google Play with the repackaged app, Sonvpay.
+
+C, which uses silent background push notifications to trigger a fake update dialog.
+
+When victims start the “update” they instead subscribe to a premium-rate service.
+
+The subscription operates primarily via WAP billing, which does not require sending SMS messages to premium-rate numbers.
+
+Instead it requires only that users employ the mobile network to access a specific website and automatically click on a button to initiate the subscription process.
+
+ Based on the approximate number of installations from Google Play, the cost of the premium-service subscription, and the days that these apps were available, we estimate that the AsiaHitGroup Gang could have potentially earned between $60,500–$145,000 since January.
+
+Sonvpay on Google Play The McAfee Mobile Research team initially found the following applications repackaged with Sonvpay on Google Play, all of them published this year: Figure 1.
+
+Sonvpay apps found on Google Play.
+
+We notified Google about these apps on April 10 and they were promptly removed.
+
+A couple of days later the app “Despacito for Ringtone” was found again on the store and was quickly removed.
+
+In total we found 15 apps that were installed at least 50,000 times since the first one, Cut Ringtones 2018, was released on Google Play in January 2018.
+
+The following table lists the 15 malicious apps: At the time of download, the only red flag that a user could notice is that the app needs access to SMS messages.
+
+Once installed and executed, the app behaves as expected (QR code reader, ring tones, etc.).
+
+However, in the background and without the user’s knowledge, Sonvpay listens for incoming push notifications that contain the data to perform mobile billing fraud.
+
+Background Push Notification and Fake Update Screen Sonvpay employs the onesignal push notification service to get the information to subscribe users to premium-rate services.
+
+To receive the data in the background without displaying a notification, Sonvpay implements the method “onNotificationProcessing” and returns “true” to make the notification silent: Figure 2.
+
+Silent background notification.
+
+The received data can perform WAP and SMS fraud along with information necessary to display a fake update notification to the user after some time of using the repackaged application.
+
+This fake notification has only one bogus button.
+
+If the user scrolls until the end, the misleading phrase “Click Skip is to agree” appears: Figure 3.
+
+Fake update notification.
+
+If the user clicks the only button, Sonvpay will do its job.
+
+However, even if there is no interaction with this window and the data in the push notification has the value “price” as empty, Sonvpay will proceed to subscribe to a premium-rate service: Figure 4.
+
+Starting mobile billing fraud if “price” value is empty.
+
+Downloading the Dynamic Payload from a Remote Server One of the parameters obtained from the silent push notification is a URL to request the location of functionality to perform mobile billing fraud.
+
+Once the fake update notification is displayed, Sonvpay requests the download of the library from another remote server: Figure 5.
+
+Sonvpay requesting library with additional functionality.
+
+The new APK file is downloaded and stored in the path /sdcard/
+
+Android/<package_name>/cache/ so that it can be dynamically loaded and executed at runtime.
+
+The library we obtained for performing mobile billing fraud targeted only Kazakhstan and Malaysia
+
+but, because the library is present in a remote server and can be dynamically loaded, it can likely be updated at any time to target more countries or mobile operators.
+
+WAP Billing and SMS Fraud
+
+In the case of Kazakhstan, Sonvpay loads a specific URL delivered through the silent push notification and uses JavaScript to click on a button and on the element “activate” to fraudulently subscribe the user to a premium-rate service: Figure 6.
+
+WAP billing fraud in Kazakhstan.
+
+For Malaysia, the malware creates a new WebView to send the “Shortcode” and “Keyword” parameters to a specific URL to subscribe the user to a WAP billing service: Figure 7.
+
+WAP billing fraud in Malaysia.
+
+However, for Malaysia the app needs to intercept a confirmation code (PIN) sent by the mobile operator via SMS.
+
+Sonvpay has this SMS interception functionality implemented in the original repackaged application: Figure 8.
+
+Processing an intercepted SMS message to get the confirmation PIN.
+
+Once the PIN is obtained, it is sent to the mobile operator via a web request to automatically confirm the subscription.
+
+If the parameters for Kazakhstan or Malaysia do not match, Sonvpay still tries to perform mobile billing fraud by attempting to send an SMS message to a premium-rate number provided via the silent push notification: Figure 9.
+
+Functionality to send an SMS message to a premium-rate number.
+
+Closer Look to Previous Campaigns While looking for patterns in the 2018 campaign, we found the app DJ Mixer–Music Mixer.
+
+As soon as this application executes, it checks if the device has an Internet connection.
+
+If the device is offline, the app shows the error message “You connect to internet to continue” and ends its execution.
+
+If the device is online, the app executes a web request to a specific URL: Figure 10.
+
+Web request to the AsiaHitGroup Gang URL.
+
+We learned the apps created by the developer SHINY Team 2017 were available on Google Play in September 2017; earlier Sonvpay variants were discovered in November 2017.
+
+The primary behavior of the two variants is almost the same—including the changing of the main icon and the app’s name to Download Manager to hide its presence from the user.
+
+However, with DJ Mixer, the geolocation of the IP address identifies the country of the infected device and aids the execution of the mobile billing fraud: Figure 11.
+
+Using IP geolocation to target specific countries.
+
+In this case only three countries are targeted via the geolocation service: Russia (RU), Thailand (TH), and Malaysia (MY).
+
+If the IP address of the infected devices is not from any of these countries, a dialog will claim the app is not active and that the user needs to uninstall and update to the latest version.
+
+If the country is Thailand or Malaysia, the malicious app randomly selects a keyword to select an image to offer users premium-rate services.
+
+With Malaysia the image includes English text with terms of service and the button “Subscribe” to accept the randomly selected premium-rate service: Figure 12.
+
+Screens displayed when the country of the IP address is Malaysia.
+
+In the case of Thailand, the text is in Thai and includes a small version of terms of service along with instructions to unsubscribe and stop the charges: Figure 13.
+
+Screens shown when the country of the IP address is Thailand.
+
+Finally, with Russia no image is shown to the user.
+
+The app fraudulently charges the user via WAP billing while enabling 3G and disabling Wi-Fi: Figure 14.
+
+Forcing the use of 3G to start WAP billing fraud.
+
+We also found similar apps from late 2016 that performed SMS fraud by pretending to be legitimate popular applications and asking the user to pay for them.
+
+These are similar to text seen in the 2018 campaign as an update but labeled as Term of user: Figure 15.
+
+Fake-installer behavior asking the user to pay for a popular legitimate app.
+
+If the user clicks “No,” the app executes as expected.
+
+However, if the user clicks “Yes,” the app subscribes the user to a premium-rate service by sending an SMS message with a specific keyword to a short number.
+
+Next the mobile operator sends the device a PIN via SMS; the malware intercepts the PIN and returns it via web request to confirm the subscription.
+
+Once the user is fraudulently subscribed to a premium-rate service to download a copy of a free app on official app stores, the malware shows the dialog “Downloading game…” and proceeds with the download of another APK stored on a third-party server.
+
+Although the APK file that we downloaded from the remote server is a copy of the legitimate popular app, the file can be changed at any point to deliver additional malware.
+
+Unlike in previous campaigns, we did not find evidence that these fake-installer apps were distributed via Google Play.
+
+We believe that they were distributed via fake third-party markets from which users looking for popular apps are tricked into downloading APK files from unknown sources.
+
+  In June 2018 ESET and Sophos found a new version of this variant pretending to be the popular game Fortnite.
+
+The fake game was distributed via a YouTube video by asking the user to download the fake app from a specific URL.
+
+This recent campaign shows that the cybercriminals behind this threat are still active tricking users into installing these fake applications.
+
+Connections Among Campaigns All of these campaigns rely on billing-fraud apps targeting users in Southeast and Central Asia and offer some similarities in behavior such as the use of almost the same text and images to trick users into subscribing to premium-rate services.
+
+Other potential connections among the three campaigns suggest that all the apps are likely from the same actor group.
+
+For example, apps from all campaigns use the same string as debug log tag: Figure 16.
+
+The “SonLv” string used as a log tag occurs in all campaigns.
+
+There is also a notable similarity in package and classes names and in the use of a common framework (telpoo.frame) to perform typical tasks such as database, networking, and interface support: Figure 17.
+
+Common package and classes names in all campaigns.
+
+Finally, apps from the Google Play campaigns use the domain vilandsoft[.]com to check for updates.
+
+The same domain is also used by apps from the fake-installer campaign to deliver remote-execution commands, for example, action_sendsms: Figure 18.
+
+A fake-installer app checking for the command action_sendsms.
+
+The following timeline identifies the campaigns we have found from this group, strategies to trick users into installing the apps, distribution methods, main payload, and targeted countries: Figure 19.
+
+A timeline of Sonvpay campaigns.
+
+Conclusion Sonvpay campaigns are one example of how cybercriminals like the AsiaHitGroup Gang constantly adapt their tactics to trick users into subscribing to premium-rate services and boosting their profits.
+
+The campaigns started in late 2016 with very simple fake installers that charged users for copies of popular apps.
+
+In late 2017, Google Play apps abused WAP-billing services and used IP address geolocation to target specific countries.
+
+In 2018, Google Play apps used silent background push notifications to trigger the display of a fake update message and to gather data for mobile billing fraud.
+
+We expect that cybercriminals will continue to develop and distribute new billing fraud campaigns to target more countries and affect more users around the world.
+
+Cybercriminals always follow the money, and one of the most effective ways to steal money from users is via billing fraud.
+
+A victim will likely not notice a fraudulent charge, for example, until it appears on the mobile bill at the end of the month.
+
+Even when the payment is detected early, most of the time the charge is for a subscription rather than a one-time payment.
+
+Thus victims will need to find a way to unsubscribe from the premium-rate service, which may not be easy if the subscription occurred silently or if the app does not provide that information.
+
+Also, the fact that WAP-billing fraud does not require sending an SMS message to a premium-rate number makes it easier to commit.
+
+Cybercriminals need to only silently subscribe users by forcing them to load the WAP-billing service page and click on buttons.
+
+For these reasons we expect that mobile billing fraud will continue to target Android users.
+
+McAfee Mobile Security detects this threat as Android/Sonvpay.
+
+To protect yourselves from this and similar threats, employ security software on your mobile devices, check user reviews for apps on Google Play, and do not accept or trust apps that ask for payment functionality via SMS messages as soon as the app is opened or without any interaction.
+
+
+
+

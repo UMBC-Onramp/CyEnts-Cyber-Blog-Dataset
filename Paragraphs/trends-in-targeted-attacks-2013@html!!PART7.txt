@@ -1,0 +1,7 @@
+
+For example, there were changes to Aumlib and Ixeshe , which are malware families associated with APT12, the group behind attacks on the New York Times .
+When APT1 (aka Comment Crew) returned after their activities were exposed, they also used modified malware.
+In addition, Terminator (aka FakeM ), and Sykipot were modified.
+Threat Actors Attribution is a tough problem, and the term itself has multiple meanings .
+Some use it to refer to an ultimate benefactor, such as a nation-state.
+Others use the term to refer to malware authors, or command-and-control (CnC) operators.

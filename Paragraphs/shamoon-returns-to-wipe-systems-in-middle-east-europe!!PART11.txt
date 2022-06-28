@@ -1,0 +1,10 @@
+
+Conclusion Aside from the major destruction this malware can cause, the wiper component can be used independently from the dropper.
+The wiper does not have to rely on the main stub process.
+The 2018 Shamoon variant’s functionality indicates modular development.
+This enables the wiper to be used by malware droppers other than Shamoon.
+Shamoon is showing signs of evolution; however, these advancements did not escape detection by McAfee DATs.
+We expect to see additional attacks in the Middle East (and beyond) by these adversaries.
+We will continue to monitor our telemetry and will update this analysis as we learn more.
+MITRE ATT&CK™ matrix Indicators of compromise df177772518a8fcedbbc805ceed8daecc0f42fed                    Original dropper x86 ceb7876c01c75673699c74ff7fac64a5ca0e67a1                    Wiper 10411f07640edcaa6104f078af09e2543aa0ca07                   Worm module 43ed9c1309d8bb14bd62b016a5c34a2adbe45943               key8854321.pub bf3e0bc893859563811e9a481fde84fe7ecd0684                  RawDisk driver McAfee detection Trojan-Wiper!DE07C4AC94A5 RDN/Generic.dx Trojan-Wiper
+

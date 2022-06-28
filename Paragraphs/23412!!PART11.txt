@@ -1,0 +1,8 @@
+
+In all cases, the attack was accomplished in Google Chrome.
+In principle, several unique features of the browser make Spook.js possible.
+Other Chromium-based browsers, such as Microsoft Edge, are also vulnerable to this attack.
+However, there are certain limitations.
+First is the low speed of data theft (400–600 bytes per second, depending on the CPU), which is why the target file in the last demo is very small.
+Second is the large number of errors when stealing data from the CPU cache.
+Up to 4% of the data is erroneous; hence the artifacts in the stolen copy of the image.

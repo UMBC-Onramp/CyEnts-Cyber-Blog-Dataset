@@ -1,0 +1,9 @@
+
+or .exe.
+As with other fileless attack techniques, DotNetToJScript does not write any part of the malicious .NET assembly on a computer’s hard drive; hence traditional file scanners fail to detect these attacks.
+In 2018 we have seen rapid growth in the use of CactusTorch, which can execute custom shellcode on Windows systems.
+The following chart shows the rise of CactusTorch variants in the wild.
+Source: McAfee Labs.
+The DotNetToJScript tool kit Compiling the DotNetToJScript tool gives us the .NET executable DotNetToJScript.exe, which accepts the path of a .NET assembly and outputs a JavaScript file.
+Figure 1: Using DotNetToJScript.exe to create a malicious JavaScript file.
+The DotNetToJScript tool kit is never shipped with malware.

@@ -1,0 +1,7 @@
+
+In both cases, the attackers’ aim was to persuade the recipient to open the malicious Excel file and run the macro in it, thus downloading either IcedID or (less commonly)
+Qbot to the victim’s machine.
+IcedID and Qbot The IcedID and Qbot banking Trojans have been around for years, with IcedID first coming to researchers’ attention back in 2017 and Qbot in service since 2008 .
+Moreover, attackers are constantly honing their techniques.
+For example, at one point they hid the main component of IcedID in a PNG image using a trick called steganography that is pretty hard to detect.
+Today, both malware programs are available on the shadow market; in addition to their creators, numerous clients distribute the Trojans.

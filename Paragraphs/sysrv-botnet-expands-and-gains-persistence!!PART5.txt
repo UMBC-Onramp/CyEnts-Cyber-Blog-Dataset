@@ -1,0 +1,9 @@
+
+“This CVE affects any users running the Salt API.
+An unauthenticated user with network access to the Salt API can use shell injections to run code on the Salt-API using the SSH client.”
+-https://saltproject.io/on-november-3-2020-saltstack-publicly-disclosed-three-new-cves/ ThinkPHP RCE ThinkPHP is another PHP framework that is widely exploited by Sysrv.
+A quick search on Shodan shows there are more than 35,000 public IPs deploying this service.
+Most of them are in China.
+Drupal Ajax RCE (CVE-2018-7600)
+This vulnerability, aka “Drupalgeddon”, affects Drupal, a widely used CMS similar to WordPress.
+This vulnerability is relatively old but we still see many threat actors using this vulnerability.

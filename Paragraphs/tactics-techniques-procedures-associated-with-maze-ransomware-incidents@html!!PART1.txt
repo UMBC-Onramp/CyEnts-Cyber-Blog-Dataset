@@ -1,0 +1,6 @@
+Targeted ransomware incidents have brought a threat of disruptive and destructive attacks to organizations across industries and geographies.
+FireEye
+Mandiant Threat Intelligence has previously documented this threat in our investigations of trends across ransomware incidents , FIN6 activity , implications for OT networks , and other aspects of post-compromise ransomware deployment.
+Since November 2019, we’ve seen the MAZE ransomware being used in attacks that combine targeted ransomware use, public exposure of victim data, and an affiliate model.
+Malicious actors have been actively deploying MAZE ransomware since at least May 2019.
+The ransomware was initially distributed via spam emails and exploit kits before later shifting to being deployed post-compromise.

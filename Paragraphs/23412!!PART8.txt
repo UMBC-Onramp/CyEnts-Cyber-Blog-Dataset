@@ -1,0 +1,11 @@
+
+Second, they stole data from Lastpass.
+Third, they intercepted a user-uploaded image from private storage on a Google server.
+A feature of the Google Chrome browser made it all possible.
+Since the release of information about Spectre, Chrome’s developers have taken measures to ward off potential attacks by forcing websites to load in isolation.
+Because each website creates its own process, malicious code on one page cannot be used to steal data from another resource.
+But there is one exception: Multiple pages from the same site or domain are grouped together in a common browser process.
+If the malicious code (written in JavaScript, hence the .js in the name of the attack) is run on one of them, data on other pages can be stolen.
+Spectre.js attack on Tumblr As a collective blog, Tumblr can host malicious code, at least in theory.
+That way, with a malicious page open in one tab, if a user tries to log in to their account on the service in another tab, the browser saves and automatically fills in the username and password — which the malicious code can then steal.
+By exploiting the Spectre vulnerability, an attack can interact tangentially with another tab from the same site and steal data by indirect means.

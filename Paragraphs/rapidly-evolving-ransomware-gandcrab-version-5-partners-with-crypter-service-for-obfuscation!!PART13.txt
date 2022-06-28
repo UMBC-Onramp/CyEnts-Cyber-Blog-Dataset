@@ -1,0 +1,6 @@
+
+The dynamic call to IsWoW64Process with obfuscated strings.
+Depending on the result, the malware has two embedded DLLs, encrypted with a simple operation XOR 0x18.
+Decrypting the DLL to load with the exploit and fix the header.
+The malware authors use a clever trick with fuzzing to avoid detection: The first two bytes of the DLL are trash, something that is later fixed, as we see in the preceding image.
+After decryption and loading the exploit, this DLL creates a mutex in the system and some pipes to communicate with the main malware.

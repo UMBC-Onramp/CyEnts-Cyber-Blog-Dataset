@@ -1,0 +1,4 @@
+
+Pulse Secure’s parent company, Ivanti, has released patches to proactively address software vulnerabilities and issued updated Security Advisories and Knowledge Articles to assist customers.
+(Please see the Forensics, Remediation, and Hardening Guidelines section for additional details.)
+UNC2630 and UNC2717 Tradecraft and Response to Disclosure Mandiant is tracking 16 malware families exclusively designed to infect Pulse Secure VPN appliances and used by several cyber espionage groups which we believe are affiliated with the Chinese government.

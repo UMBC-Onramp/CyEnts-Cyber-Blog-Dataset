@@ -1,0 +1,4 @@
+
+Now we know that attackers, like the SamSam group, can indeed use an RDP shop to gain access to a potential high-value ransomware victim.
+We found that access to a system associated with a major international airport can be bought for only $10—with no zero-day exploit, elaborate phishing campaign, or watering hole attack.
+Anonymization To publish our findings, we have anonymized the data to prevent any disclosure of sensitive security information.

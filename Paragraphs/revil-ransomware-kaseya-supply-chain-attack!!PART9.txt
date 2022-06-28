@@ -1,0 +1,9 @@
+
+Some victims resorted to attempting a private negotiation with REvil, where ransom demands varied and were, in some cases, as low as $50,000.
+What is Being Done to Respond to This Attack?
+On July 5, Kaseya released a patch to address the vulnerability exploited in this incident: www.kaseya.com/potential-attack-on-kaseya-vsa .
+Further guidance and advisories may be updated by Kaseya.
+A compromise detection tool was also made available and rolled out to Kaseya customers.
+CISA and the Federal Bureau of Investigation (FBI) continue to respond to the attack.
+CISA warns businesses to enable and enforce multi-factor authentication for all accounts – not just privileged accounts.
+CISA and FBI strongly urge affected MSPs and their customers to follow guidance published by CISA .

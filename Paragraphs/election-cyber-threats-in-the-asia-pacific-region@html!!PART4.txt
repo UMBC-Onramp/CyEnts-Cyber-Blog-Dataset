@@ -1,0 +1,4 @@
+
+For example, in the November 2019 activity targeting Hong Kong (previously referenced), Mandiant Threat Intelligence believes that candidates or related staff associated with the Hong Kong District Council elections were targeted with a malicious macro document just prior to the elections based on geolocation information, the spear-phishing lure, and other data.
+Figure 1: Decoy content from phishing email Elections Ecosystem
+As our readers will know, Mandiant takes a specific approach to deconstructing attacks against elections, which we detailed in a previous blog post .

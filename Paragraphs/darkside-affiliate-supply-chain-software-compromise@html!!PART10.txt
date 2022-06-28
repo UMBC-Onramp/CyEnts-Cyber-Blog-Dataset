@@ -1,0 +1,8 @@
+
+Figure 6: SMOKEDHAM downloader Within seconds, a file named qnxfhfim.cmdline was written to disk and executed using the Command-Line Compiler.
+csc.exe /noconfig /fullpaths @'C:\\Users\\
+[username]\\AppData\\Local\\Temp\\qnxfhfim\\qnxfhfim.cmdline' Mandiant was not able to recover this file at the time of writing; however, Mandiant was able to recover partial contents of the file. ...
+/t:
+library /utf8output /R:'System.dll' /R:'C:\\windows\\Microso
+After the execution of qnxfhfim.cmdline, PowerShell initiated the first connection to the fronted domain lumiahelptipsmscdnqa[.]microsoft[.]com used by SMOKEDHAM.
+Phase 4: SMOKEDHAM Dropper The SMOKEDHAM dropper (f075c2894ac84df4805e8ccf6491a4f4) is written in PowerShell and decrypts and executes in memory the SMOKEDHAM backdoor.

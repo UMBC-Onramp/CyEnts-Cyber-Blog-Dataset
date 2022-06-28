@@ -1,0 +1,6 @@
+
+Platform=Win32
+``` Conclusion I hope this blog has shown the power of automatically grouping nodes within a disassembly graph view, and viewing these groups in isolation to help with your analysis.
+This plug-in has become a staple of my workflow, and we’re releasing it to the community with the hope that others find it useful as well.
+Appendix:
+Isolated Subgraphs Finding isolated subgraphs relies on calculating the immediate dominator and immediate post-dominator trees for a given function graph.

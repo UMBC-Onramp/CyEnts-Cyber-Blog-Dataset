@@ -1,0 +1,21 @@
+Windows Management Instrumentation (WMI) is a remote management framework that enables the collection of host information, execution of code, and provides an eventing system that can respond to operating system events in real time.
+
+FireEye has recently seen a surge in attacker use of WMI to carry out objectives such as system reconnaissance, remote code execution, persistence, lateral movement, covert data storage, and VM detection.
+
+Defenders and forensic analysts have largely remained unaware of the value of WMI due to its relative obscurity and completely undocumented file format.
+
+After extensive reverse engineering, the FireEye FLARE team has documented the WMI repository file format in detail, developed libraries to parse it, and formed a methodology for finding evil in the repository.
+
+The FLARE team is now publishing a whitepaper that takes a deep dive into the architecture of WMI, reveals case studies in attacker use of WMI in the wild, describes WMI attack mitigation strategies, and shows how to mine its repository for forensic artifacts.
+
+The document also demonstrates how to detect attacker activity in real-time by tapping into the WMI eventing system.
+
+WMI is a valuable asset not just for system administrators and attackers, but equally so for defenders and forensic analysts.
+
+Download a copy of the whitepaper today!
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

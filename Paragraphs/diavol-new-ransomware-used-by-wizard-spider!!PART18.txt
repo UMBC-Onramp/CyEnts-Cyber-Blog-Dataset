@@ -1,0 +1,6 @@
+
+If the file size is equal or greater than 2,000,000 bytes, then just the first 1,170,000 bytes will be encrypted.
+Each block of 11,700 bytes is split into ten chunks of 117 bytes each, and each chunk is encrypted using CryptEncrypt API.
+117 plaintext bytes then become 128 bytes of ciphertext.
+Therefore, 11,700 bytes become 12,800 bytes following the encryption.
+Diavol overwrites the file and writes 11,700 encrypted bytes at the chunk’s original offset and appends the 1,100 remaining bytes to the end of the file.

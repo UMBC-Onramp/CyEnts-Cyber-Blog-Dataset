@@ -1,0 +1,5 @@
+
+Figure 1.
+Launch sequence of Cerber – the macro is responsible for invoking PowerShell and PowerShell downloads and runs the malware
+It has been increasingly common for threat actors to use malicious macros to infect users because the majority of organizations permit macros to run from Internet-sourced office documents.
+In this case we observed the macrocode calling PowerShell to bypass execution policies – and run in hidden as well as encrypted mode – with the intention that PowerShell would download the ransomware and execute it without the knowledge of the victim.

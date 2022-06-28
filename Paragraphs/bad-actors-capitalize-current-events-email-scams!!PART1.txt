@@ -1,0 +1,13 @@
+Many thanks to Fred Gutierrez and Geri Revay for their contributions to this blog.
+FortiGuard Labs Research Affected Platforms: Windows Impacted Users: Windows users Impact:
+Compromised machines are under the control of the threat actor.
+Stolen personally identifiable information (PII), credential theft, monetary loss, etc.
+Severity Level: Medium Malicious email and phishing scams are usually topical and follow a pattern of current events.
+They are usually crafted around calendar and/or trending issues as attackers realize that victims are interested in all things relevant to the moment.
+Threat actors are aware that not all recipients will bite, but some will, hence the origination of the term “phishing.”
+Threat actors often put in the least amount of work possible for a maximum return, sending out phishing emails to thousands of targets.
+Even if less than one percent of victims respond, the return on investment is still significant due to the gain of personally identifiable information (PII) and/or establishing a foothold within an organization using stolen credentials, malware, or other means.
+This blog highlights some examples we’ve encountered that may help users better spot suspicious emails.
+Recent examples observed by FortiGuard Labs include emails related to tax season and the Ukrainian conflict, which reflect the timeliness of current and newsworthy events at the time of writing.
+Tax Season Scams Tax season comes around annually, like other seasonal events or holidays.
+Targeting calendar-based events enables threat actors to prepare ahead of time and have a new selection of targets on rotation.

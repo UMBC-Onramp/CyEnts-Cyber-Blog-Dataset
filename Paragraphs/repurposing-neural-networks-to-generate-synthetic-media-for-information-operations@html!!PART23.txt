@@ -1,0 +1,5 @@
+
+However, detection accuracy dipped to around 78% for fine-tuned\ngenerations as the distribution of scores output by the classifier\nshifts closer to chance, as shown in red.
+So if threat actors were to\nfine-tune on a custom dataset they themselves collated, this could\npresent a problematic asymmetry between the data used to create the\nsynthetic generations and the data blue teams would have access to—or\neven knowledge of—with which to build a commensurate detection model.
+Text with shorter length\nwas previously shown to be more difficult for detection models to\nclassify , and while our tweet-inspired experiments corroborate\nthis finding, further research is required to disentangle how\ndifferent datasets, model complexities, input lengths, and\nhyperparameters will contribute to this effect in the cat-and-mouse\nfuture of generators versus detectors.
+Conclusion Synthetic media generation continues to become cheaper, both\nmonetarily and in terms of the computing power required, easier, more\npervasive, and their outputs ever more credible.

@@ -1,0 +1,5 @@
+
+Sample delivery with different protections: In this version we found LockBit samples packed in UPX and other custom packers, adding certain protections to the samples: Extensive usage of PEB during the execution The use of IsDebuggerPresent, OutputDebugString and GetLastError All these protections are enabled by the use of packers in the delivery.
+Mutex change:
+The prior version of LockBit used a static mutex in all the encryptions but, in this release, it changed to be a dynamic value for every infection.
+Samples digitally signed: For all the versions we found for LockBit, only this version had a sample digitally signed: Figure 33:

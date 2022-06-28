@@ -1,0 +1,14 @@
+
+Somewhere, O=cobaltstrike, OU=
+AdvancedPenTesting, CN=
+Major Cobalt Strike Figure 5: Default Cobalt Strike TLS Certificate used by UNC1878 Similar to the certificate on port 80 and 443, the earliest validity date was again within 24 hours of the intrusion identified by Managed Defense.
+Continuing analysis on the server, we acquired the BEACON stager and subsequent BEACON payload, which was configured to use the Amazon malleable C2 profile .
+While these indicators may not hold significant weight on their own, together they create a recognizable pattern to fuel proactive discovery of related infrastructure.
+We began hunting for servers that exhibited the same characteristics as those used by UNC1878.
+Using third-party scan data, we quickly identified additional servers that matched a preponderance of UNC1878 tradecraft: Domains typically comprised of generic IT or security related terms such as “update”, “system”, and “service”.
+Domains registered with “Hosting Concepts B.V. d/b/a Openprovider\" as early as December 19, 2019.
+Self-hosted name servers.
+Let’s Encrypt certificates on port 80.
+Virtual private servers hosted predominantly by Choopa.
+BEACON payloads configured with the Amazon malleable C2 profile.
+Cobalt Strike Teams Servers on non-standard ports.

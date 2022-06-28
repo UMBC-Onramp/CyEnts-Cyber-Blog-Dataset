@@ -1,0 +1,6 @@
+
+The ATR describes attacks on 20+ industry verticals.
+Education, Finance, and High-Tech were the top overall targets, while Government, Services/Consulting, and High-Tech were targeted by the highest number of unique malware families.
+In 2013, FireEye discovered eleven zero-day attacks.
+In the first half of the year, Java was the most common target for zero-days; in the second half, FireEye observed a surge in Internet Explorer (IE) zero-days that were used in watering hole attacks, including against U.S. government websites.
+Last year, FireEye analyzed five times more Web-based security alerts than email-based alerts – possibly stemming from an increased awareness of spear phishing as well as a more widespread use of social media.

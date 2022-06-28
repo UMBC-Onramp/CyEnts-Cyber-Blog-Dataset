@@ -1,0 +1,4 @@
+
+In this post, I would like to highlight some of the outstanding research from 2013.
+Trends in Targeting Targeted malware attack reports tend to focus on intellectual property theft within specific industry verticals.
+But this year, there were many attacks that appeared to be related to nation-state disputes, including diplomatic espionage and military conflicts.

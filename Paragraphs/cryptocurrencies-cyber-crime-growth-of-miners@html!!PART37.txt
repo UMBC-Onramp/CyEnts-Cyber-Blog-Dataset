@@ -1,0 +1,4 @@
+
+Avoiding the use of common cryptojacking services such as Coinhive, Cryptloot, and Deepminer, and instead hosting cryptojacking scripts on actor-controlled infrastructure, can circumvent many of the common strategies taken to block this activity via domain or file name blacklisting.
+In March 2018, Bleeping Computer reported on the use of cryptojacking proxy servers and determined that as the use of cryptojacking proxy services increases, the effectiveness of ad blockers and browser extensions that rely on blacklists decreases significantly.
+Several mining proxy tools can be found on GitHub, such as the XMRig Proxy tool, which greatly reduces the number of active pool connections, and the CoinHive Stratum Mining Proxy , which uses Coinhive’s JavaScript mining library to provide an alternative to using official Coinhive scripts and infrastructure.

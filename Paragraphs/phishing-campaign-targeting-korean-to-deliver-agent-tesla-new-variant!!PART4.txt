@@ -1,0 +1,8 @@
+
+Leverage Malicious Macro in PowerPoint As you probably guessed, the attached file is fake.
+There is no slide in the PowerPoint file, but a macro containing an auto-run function method called “Auto_Open()”.
+This function is called once the file is opened in MS PowerPoint.
+Here is the VBA code of this method: “soraj” is the name of a UserForm, “bear” is the name of CheckBox control inside “soraj” form.
+It calls “Shell” to execute a command read from the “GroupName” property of “bear” CheckBox control.
+In this code, “soraj” is the name of a UserForm and “bear” is the name of the CheckBox control inside the “soraj” form.
+It calls “Shell” to execute a command read from the “GroupName” property of the “bear” CheckBox control.

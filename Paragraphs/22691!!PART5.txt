@@ -1,0 +1,5 @@
+
+How can you guard against M1 malware?
+Probably the most important advice for Mac users is not to become complacent just because Apple devices are supposedly safer than others, and to adhere to all the usual rules of digital hygiene: Do not follow suspicious links; Do not download suspicious files or apps; Do not install apps from untrusted sources; Use reliable security solutions that detect and neutralize this new breed of malware pests.
+
+

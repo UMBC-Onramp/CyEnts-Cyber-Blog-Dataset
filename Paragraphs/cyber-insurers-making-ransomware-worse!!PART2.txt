@@ -1,0 +1,6 @@
+
+Cyber Insurers’ Straight and Narrow View of Ransomware The attack discussed above stands out for a couple of reasons.
+First, it’s worth noting that $40 million is the largest ransom paid by any ransomware victim anywhere to date.
+Second, it’s important to point out that the victim was a company that offers cyber insurance itself.
+Why is the second point relevant?
+Well, there’s a paradox when it comes to cyber insurance companies and ransomware attackers.

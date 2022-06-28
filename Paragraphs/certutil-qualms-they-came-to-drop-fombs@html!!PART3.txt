@@ -1,0 +1,5 @@
+
+The following is a snippet of the commands that we observed successfully executed on the host: ipconfig.exe ipconfig /all whoami.exe whoami The associated parent process that handled execution of the aforementioned listed processes was: \"\\Weaver\\jdk_new\\bin\\javaw.exe\".
+FOMBs AWAY!
+Once the attackers gained access to the web server by exploiting an unknown vulnerability, they attempted to further pivot control within the system through the use of Windows Management Instrumentation (WMI).
+ They leveraged WMI's execution process, which takes Managed Object Format (MOF) files as input and compiles them into the WMI buffer, resulting in a compiled “.bmf”

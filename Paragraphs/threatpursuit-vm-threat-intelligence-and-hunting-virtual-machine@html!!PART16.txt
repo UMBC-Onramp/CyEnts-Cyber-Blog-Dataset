@@ -1,0 +1,4 @@
+
+It may take some time, so be sure to check back later (here are the results ).
+Figure 17: mquery YARA rule hunting search for FIN11 malware Within our mquery search, we find a generic signature hit on Win32_Spoonbeard_1_beta for the MD5 hash 3c43d080b5badfdde7aff732c066d1b2.
+We associate this MD5 hash with another sandbox, app.any.run, at the following URL: https://app.any.run/tasks/19ac204b-9381-4127-a5ac-d6b68e0ee92c/ As seen in Figure 18, this sample was first uploaded on May 2, 2019, with an associated infection chain intact.

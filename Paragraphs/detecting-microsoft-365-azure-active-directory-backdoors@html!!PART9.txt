@@ -1,0 +1,5 @@
+
+Once a trust is established, when a user logs into M365 using a federated domain, their request is redirected to the external identify provider (ADFS) where their authentication is validated (Figure 4).
+Once validated, the ADFS server provides the user a security token.
+This token is then trusted by M365 and grants the access to the platform.
+Figure 4: Microsoft 365 Federation Sign-in workflow AADInternals has a PowerShell function to craft security tokens, which mimics the ADFS authentication process.

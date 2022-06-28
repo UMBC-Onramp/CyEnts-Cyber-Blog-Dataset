@@ -1,0 +1,4 @@
+
+We also examine some of the different types of critical information often found in IT networks that an attacker can leverage during later stages of the Targeted Attack Lifecycle.
+The goal of this engagement was to access an endpoint meter control infrastructure for a state-wide smart grid environment from the Internet and turn it off.
+To hear our experts relay more on this and other OT Red Team lessons learned, join our FireEye Mandiant Virtual Summit session .

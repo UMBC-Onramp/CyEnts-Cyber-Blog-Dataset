@@ -1,0 +1,6 @@
+
+Hardening Strategies The actions taken by the actors to escalate privileges and move laterally in an environment use well-documented techniques that search the network and Active Directory for common misconfigurations that expose credentials and systems for abuse.
+Organizations can take steps to limit the impact and effectiveness of these techniques.
+For more in-depth recommendations see our ransomware protection white paper .
+Harden service accounts against brute force and password guessing attacks.
+Most organizations have at least a few service accounts with passwords set to never expire.

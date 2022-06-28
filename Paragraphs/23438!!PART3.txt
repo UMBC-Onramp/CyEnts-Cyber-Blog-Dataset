@@ -1,0 +1,5 @@
+
+All attackers need is to create a website with an embedded exploit and a way to lure victims to it.
+As a result, exploits for two use-after-free vulnerabilities allows the attackers to execute arbitrary code on the computers of unpatched Chrome users who have accessed the page.
+That can lead to the compromise of their system.
+An exploit for the third vulnerability, CVE-2021-37976, makes it possible for the attackers to gain access to the victim’s confidential information.

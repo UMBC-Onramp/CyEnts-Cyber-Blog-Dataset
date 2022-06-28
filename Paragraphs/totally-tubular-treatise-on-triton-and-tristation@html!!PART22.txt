@@ -1,0 +1,10 @@
+
+We want to foster more conversations like this and generally share good techniques for finding evil.
+Since most of all ICS attacks involve standard IT intrusions, we should probably come together to invent and improve any guidelines for how to monitor PCs and engineering workstations that bridge the IT and OT networks.
+We envision a world where attacking or disrupting ICS operations costs the threat actor their cover, their toolkits, their time, and their freedom.
+It's an ideal world, but something nice to shoot for.
+Thanks and Future Work There is still much to do for TRITON and TriStation.
+There are many more sub-message types and nuances for parsing out the nitty gritty details, which is hard to do without a controller of our own.
+And although we’ve published much of what we learned about the TriStation here on the blog, our work will continue as we continue our study of the protocol.
+Thanks to everyone who did so much public research on TRITON and TriStation.
+We have cited a few individuals in this blog post, but there is a lot more community-sourced information that gave us clues and leads for our research and testing of the framework and protocol.

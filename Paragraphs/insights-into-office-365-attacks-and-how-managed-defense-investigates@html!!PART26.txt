@@ -1,0 +1,9 @@
+
+victim@client.com
+| Select-Object Received, SenderAddress, RecipientAddress, Subject, Status, FromIP, Size, MessageID | Export-CSV \\path\\to\\file.csv –NoTypeInformation -Encoding utf8 Querying for older emails (up to 90 days) in PowerShell: Start-HistoricalSearch -ReportTitle
+\"Mandiant O365 investigation\" -StartDate mm/dd/yyyy -EndDate mm/dd/yyyy
+-ReportType
+MessageTraceDetail -SenderAddress
+victim@client.com
+As Message Trace results are reviewed, attention should be given to IP addresses to determine which emails were sent by attackers.
+If phishing was the suspected initial compromise vector, it’s a good idea to also query for incoming mail received within a few days prior to the first compromise date and look for suspicious sender addresses and/or subject lines.

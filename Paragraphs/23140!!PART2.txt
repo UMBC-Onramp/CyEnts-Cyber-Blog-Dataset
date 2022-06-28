@@ -1,0 +1,10 @@
+
+But like all forms of cold calling, phone scams are resource-intensive and highly inefficient.
+Therefore, some scammers try to optimize the process by getting potential victims to call them.
+One tool they use is good old-fashioned spam.
+“If you didn’t make this purchase, please call us” We recently detected several waves of spam e-mails, seemingly from reputable companies, notifying recipients of substantial purchases.
+The item in question is usually a high-end device such as the latest Apple Watch or a gaming laptop purchased from Amazon or paid for through PayPal.
+Fake PayPal/Amazon purchase confirmations with vishing phone numbers Other, more exotic variants crop up from time to time.
+For example, we detected an e-mail about the purchase of $1,999 worth of “Cryptocurrency (Bitcoin)”:
+Fake PayPal notification, including the scammers’ phone number, of a “Cryptocurrency (Bitcoin)”
+purchase Other, similar notifications mention the purchase of security software licenses — we’ve seen some referring to Norton and even Kaspersky (although our product lineup has never included a “Kaspersky Total Protection.”)

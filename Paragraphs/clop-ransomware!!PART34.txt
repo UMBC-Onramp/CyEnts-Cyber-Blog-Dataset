@@ -1,0 +1,3 @@
+
+If this happens with a folder, all the files inside that folder will be skipped as well.
+As the algorithm and the hash is based on 32bits and only in upper case characters, it is very easy to create a collision as we know the target hashes and the algorithm It cannot be used as vaccine on itself, but it can be useful to protect against the malware if the most critical files are inside of a collision folder name.

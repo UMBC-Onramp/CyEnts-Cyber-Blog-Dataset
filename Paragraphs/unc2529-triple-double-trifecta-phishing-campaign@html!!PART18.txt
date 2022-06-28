@@ -1,0 +1,5 @@
+
+<relative_offset> = buffer[32] buffer[32 + <relative_offset> + 1] = <reversed_rc4_key> Figure 6:
+Encoding of the RC4 key
+Finally, the dropper encrypts the payload using the generated RC4 key and saves it in the respective value under the VersionIndependentProgId registry key (see Figure 5).
+At this point all the necessary steps that ensure the payload's persistence on the system are complete and the dropper proceeds by directly executing the launcher script, so the backdoor receives the execution control immediately.

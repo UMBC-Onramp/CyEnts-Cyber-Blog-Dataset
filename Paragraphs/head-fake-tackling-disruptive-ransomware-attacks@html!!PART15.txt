@@ -1,0 +1,9 @@
+
+Figure 11 provides an example of a HTTP POST request, again with the custom Age and User-Agent headers.
+Figure 11:
+Screenshots of the infected system are sent to an attacker-controlled C2
+Interestingly, the screenshot file transfers were neither encoded nor obfuscated, as with other data elements transferred by the FakeUpdates malware.
+As soon as the screenshots are transferred, nircmdc.exe is deleted.
+All Hands on Deck In certain investigations, the incident was far from over.
+Following the distribution of Dridex v4 binaries (botnet IDs 199 and 501), new tools and frameworks began to appear.
+FireEye identified the threat actors leveraged their Dridex backdoor(s) to execute the publicly-available PowerShell Empire and/or Koadic post-exploitation frameworks.

@@ -1,0 +1,9 @@
+
+A victim’s machine may experience slower performance and higher electricity usage.
+W32/Agent.
+DRI!tr.dldr is a type of trojan malware designed to download and execute remote files.
+Just like Switzzor, a machine infected with this malware may exhibit malicious behaviors.
+W32/RanumBot.
+X!tr is a type of Trojan that opens a backdoor and awaits commands from its Command & Control server.
+Its behavior is dependent on the remote commands it receives.
+Conclusion - Education Sectors As with any other industry sector, educational institutions are not exempt from cyberattacks.

@@ -1,0 +1,9 @@
+
+Figure 2:
+Initial infection vectors used in attacks on organizations connected to OT Networks, January 2020-June 2021 (Source: X-Force) Credential theft as an initial infection vector across all industries decreased in 2020, encompassing only 18% of X-Force attacks.
+This may be due to organizations doing a better job of implementing multifactor authentication (MFA) and making it more difficult for adversaries to make use of stolen credentials.
+A high percentage of attacks caused by credential theft at industrial companies suggests that a more robust implementation of MFA has the potential to hinder some incidents in the future.
+However, in Dragos’s incident response cases 100% of incident response cases in OT still leveraged credential theft and lateral movement.
+A common issue was shared systems such as Active Directory connecting IT and OT networks directly, allowing adversaries to easily pivot into industrial networks.
+Adversaries frequently used a combination of scanning for vulnerabilities and then exploiting those vulnerabilities, especially on internet-facing devices such as firewalls and VPN infrastructure.
+The combination of vulnerability exploitation as an infection vector for enterprises with a connected OT environment is concerning in light of the increasing number of OT and ICS-related vulnerabilities identified each year.

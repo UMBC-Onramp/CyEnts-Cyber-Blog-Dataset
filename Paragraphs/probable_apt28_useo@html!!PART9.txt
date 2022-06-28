@@ -1,0 +1,35 @@
+
+0x2000 { this._ok47[_local_2] = new Vector.<uint>(this._lb60); // _lb60 ==
+0x07FE _local_3 = 0x00; while (_local_3 < this._lb60) { this._ok47[_local_2][_local_3]
+= 0x41414141; _local_3++; }; _local_2 = (_local_2 + 0x01); }; _local_2 = 0x00; while (_local_2 < this._bp35) { this._ok47[_local_2] = null; _local_2 = (_local_2 + 0x02); }; As the previous picture demonstrated, the followed Vector object’s length field being overflowed as 0x80007fff, which enables the attacker to read/write arbitrary data within user space.
+Shellcode Shellcode is passed to the exploit from HTML in flashvars.
+The shellcode downloads the next stage payload, which is an executable passed in plaintext, to the temp directory with UrlDownloadToFileA, which it then runs with WinExec.
+Payload & C2
+This exploit delivers a malware variant that shares characteristics with the APT28 backdoors CHOPSTICK and CORESHELL malware families, both described in our APT28 whitepaper .
+  
+The malware uses an RC4 encryption key that was previously used by the CHOPSTICK backdoor.
+  
+And the C2 messages include a checksum algorithm that resembles those used in CHOPSTICK backdoor communications.
+  
+In addition, the network beacon traffic for the new malware resembles those used by the CORESHELL backdoor.
+  Like CORESHELL, one of the beacons includes a process listing from the victim host.
+  
+And like CORESHELL, the new malware attempts to download a second-stage executable.
+One of the C2 locations for the new payload, 87.236.215[.]246 , also hosts a suspected APT28 domain ssl-icloud[.]com .
+  
+The same subnet ( 87.236.215.0/24 ) also hosts several known or suspected APT28 domains, as seen in Table 1.
+The target firm is an international government entity in an industry vertical that aligns with known APT28 targeting.
+CVE-2015-1701 Exploit The payload contains an exploit for the unpatched local privilege escalation vulnerability CVE-2015-1701 in Microsoft Windows.
+The exploit uses CVE-2015-1701 to execute a callback in userspace.
+The callback gets the EPROCESS structures of the current process and the System process, and copies data from the System token into the token of the current process.
+Upon completion, the payload continues execution in usermode with the privileges of the System process.
+Because CVE-2015-3043 is already patched, this remote exploit will not succeed on a fully patched system.
+If an attacker wanted to exploit CVE-2015-1701, they would first have to be executing code on the victim’s machine.
+Barring authorized access to the victim’s machine, the attacker would have to find some other means, such as crafting a new Flash exploit, to deliver a CVE-2015-1701 payload.
+Microsoft is aware of CVE-2015-1701 and is working on a fix.
+CVE-2015-1701 does not affect Windows 8 and later.
+Acknowledgements Thank you to all of the contributors to this blog!
+The following people in FireEye:
+Dan Caselden, Yasir Khalid, James “Tom” Bennett, GenWei Jiang, Corbin Souffrant, Joshua Homan, Jonathan Wrolstad, Chris Phillips, Darien Kindlund Microsoft & Adobe security teams Subscribe to Blogs Get email updates as new blog posts are added.
+
+

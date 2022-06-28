@@ -1,0 +1,7 @@
+
+Next, the malware manually copies the in-memory DLL into the services.exe process address space.
+These memory write events are captured and shown in Figure 6.
+Figure 6:
+Memory write events captured while copying the user mode implant into services.exe A common technique that rootkits use to execute user mode code involves a Windows feature known as Asynchronous Procedure Calls (APC).
+APCs are functions that execute asynchronously within the context of a supplied thread.
+Using APCs allows kernel mode applications to queue code to run within a thread’s user mode context.

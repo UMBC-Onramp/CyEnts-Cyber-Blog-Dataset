@@ -1,0 +1,77 @@
+We always recommend downloading apps from official stores only , to reduce the likelihood of installing malware.
+
+However, unofficial stores not only host malicious apps, but they might not be safe at all.
+
+Following a recent investigation, we are sorry to report that APKPure, a popular alternative source of Android apps, was Trojanized and has been distributing other Trojans.
+
+What is APKPure for?
+
+The most official of all Android app stores is, of course, Google Play.
+
+But it is available only on devices that use Google Mobile Services (GMS) and are firmly tied to Google’s infrastructure.
+
+Some vendors avoid GMS libraries to stay independent, and because Android is an open operating system, they can.
+
+For users, there are both advantages and disadvantages.
+
+One prominent disadvantage is a loss of access to Google’s app store, where Android users can download the usual apps.
+
+That’s where alternative stores come in, and APKPure is one of them.
+
+Distinctively, it hosts only free or shareware apps.
+
+Also, the owners stress that the apps in their store have all been scanned by Google and are completely safe; they say their apps are exactly the same as the ones on Google Play.
+
+What happened with APKPure?
+
+The apps in the store may have passed all tests, but the APKPure app hasn’t.
+
+This incident smacks strongly of the CamScanner episode , in which the app’s developers implemented an advertisement SDK from an unverified source and it turned out to be malicious.
+
+That’s also how malware got into APKPure.
+
+Looks like APKPure version 3.17.18 was likewise fitted with an advertisement SDK, one with an embedded Trojan dropper , which Kaspersky solutions detect as HEUR:Trojan-Dropper.
+
+AndroidOS.Triada.ap.
+
+When launched, it unpacks and runs its payload , which is the dangerous part.
+
+This component can do several things: show ads on the lock screen; open browser tabs; collect information about the device; and, most unpleasant of all, download other malware.
+
+What can happen to a device with APKPure installed?
+
+Which Trojan gets downloaded (in addition to APKPure’s built-in one) depends on the Android version, as well as on how regularly the smartphone vendor released — and the user installed — security updates.
+
+If the user has a relatively recent version of the operating system, meaning Android 8 or higher, which doesn’t hand out root permissions willy-nilly, then it loads additional modules for the Triada Trojan .
+
+These modules, among other things, can buy premium subscriptions and download other malware.
+
+If the device is older, running Android 6 or 7, and without security updates installed (or in some cases not even released by the vendor), and thus more easily rootable, it could be the xHelper Trojan .
+
+Removing this beast is a real challenge; even a factory reset won’t do it.
+
+Armed with root access, xHelper lets attackers do almost anything they want on the device.
+
+Is APKPure safe now?
+
+On April 8, we informed APKPure about the issue.
+
+On April 9, APKPure representatives replied that they saw the problem and were working on the fix.
+
+Shortly after that, a new version (3.17.19) appeared on the APKPure website.
+
+According to its description , the update “Fixed a potential security problem, making APKPure safer to use.”
+
+We can confirm that the problem has indeed been fixed: APKPure 3.17.19 doesn’t contain the malicious component.
+
+It is safe to use.
+
+How to guard against Trojanized APKPure If you don’t use APKPure, then don’t worry — today’s problem does not concern you.
+
+But to avoid similar issues in the future: Never download apps from unofficial sources, and block the installation of apps from third-party sources in Android’s settings; Use a reliable security solution that automatically scans all new files; Regularly update all apps and the operating system.
+
+If you do use APKPure, we additionally recommend that you: Update the APKPure app to the version in which the issue is fixed (that is, 3.17.19 or newer); Run a full antivirus scan of the device.
+
+
+
+

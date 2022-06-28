@@ -1,0 +1,13 @@
+
+Other processor types have not been tried.
+One important caveat for this is that Vivisect’s emulation used by argtracker is only run at the function\nlevel.
+Vivisect returns fake stub data for data that is non-constant\nwithin the function, such as uninitialized global data or function\nparameters, to allow analysis to complete.
+You should sanity-check the\nresults of argtracker to make sure that\nthese stub values aren’t affecting the results.
+Installation As with our other IDA Pro plug-ins, clone the git repository at https://github.com/fireeye/flare-ida .
+The python directory can either be copied to the %IDADIR%\\python directory, or it can be in any\ndirectory found in your PYTHONPATH environment variable.
+Clone the Vivisect repository from https://github.com/vivisect/vivisect and add the package to your PYTHONPATH environment variable if you\ndon’t already have it installed.
+Test the installation by running the following Python commands\nwithin IDA Pro and ensure no error messages are produced: import vivisect import flare.argtracker Conclusion We hope you find argtracker as useful as\nwe do and that it speeds up your analysis.
+Stay tuned for more helpful\nreverse engineering code and blog posts from the FLARE Team.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

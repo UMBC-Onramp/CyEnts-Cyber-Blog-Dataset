@@ -1,0 +1,10 @@
+
+This will uncover any single system authenticating to multiple systems with multiple accounts, a relatively uncommon occurrence during normal business operations.
+Temporary File Replacement and Temporary Task Modification
+The attacker used a temporary file replacement technique to remotely execute utilities: they replaced a legitimate utility with theirs, executed their payload, and then restored the legitimate original file.
+They similarly manipulated scheduled tasks by updating an existing legitimate task to execute their tools and then returning the scheduled task to its original configuration.
+They routinely removed their tools, including removing backdoors once legitimate remote access was achieved.
+Detection Opportunity Defenders can examine logs for SMB sessions that show access to legitimate directories and follow a delete-create-execute-delete-create pattern in a short amount of time.
+Additionally, defenders can monitor existing scheduled tasks for temporary updates, using frequency analysis to identify anomalous modification of tasks.
+Tasks can also be monitored to watch for legitimate Windows tasks executing new or unknown binaries.
+This campaign’s post compromise activity was conducted with a high regard for operational security, in many cases leveraging dedicated infrastructure per intrusion.

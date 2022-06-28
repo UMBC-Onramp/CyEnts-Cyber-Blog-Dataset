@@ -1,0 +1,2 @@
+
+The researchers responsibly disclosed the vulnerabilities to Comcast, and the company has issued an update that fixes the problem; The remote controls of some other manufacturer’s TV boxes and TVs with voice support likely operate on the same principle and may have similar vulnerabilities.

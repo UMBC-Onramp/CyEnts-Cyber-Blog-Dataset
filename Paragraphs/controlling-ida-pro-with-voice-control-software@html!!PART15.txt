@@ -1,0 +1,13 @@
+
+To avoid the inadvertent triggering of such commands during the regular operation of IDA Pro, these commands are only active when the “input mode” is enabled.
+This mode is enabled automatically when certain commands are activated such as “rename” or “find”, and automatically disabled when dialog commands such as “OK” or “cancel” are activated.
+The input mode can also be manually manipulated with the “input mode on” and “input mode off” commands.
+Conclusion Today, the FLARE team is releasing a profile for VoiceAttack and a companion IDAPython plugin that enables full voice control of IDA Pro along with many added convenience features.
+The profile contains over 1000 defined commands and growing.
+It is easy to view, edit, and add commands to this profile to customize it to suit your needs or to improve it for the community at large.
+The VoiceAttack software is highly affordable and enables you to create profiles for any applications or games that you use.
+For installation instructions and usage information, see the project’s Github page .
+Give it a try today!
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

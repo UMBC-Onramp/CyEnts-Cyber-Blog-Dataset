@@ -1,0 +1,5 @@
+
+Mail, Yahoo!
+Messenger, Hotmail, Google Desktop, and Google Talk.
+It collects the settings and credentials from both the system registry and the local configuration files of these email clients.
+Figure 5.2 is a segment of the ASM code from a common function that has predefined many value names.

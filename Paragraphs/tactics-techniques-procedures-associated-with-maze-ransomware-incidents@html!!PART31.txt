@@ -1,0 +1,25 @@
+
+Data Compressed T1048:
+Exfiltration Over Alternative Protocol Impact T1486: Data Encrypted for Impact MAZE Group 3 MITRE ATT&CK Mapping (FIN6) ATT&CK Tactic Category Techniques Initial Access T1133: External Remote Services T1078: Valid Accounts Execution T1059: Command-Line Interface T1086: PowerShell T1064:
+Scripting T1035: Service Execution Persistence T1078:
+Valid Accounts T1031: Modify Existing Service Privilege Escalation T1055: Process Injection T1078: Valid Accounts Defense Evasion T1055: Process Injection T1078: Valid Accounts T1116: Code Signing T1089: Disabling Security Tools
+T1202: Indirect Command Execution T1112: Modify Registry T1027: Obfuscated Files or Information T1108: Redundant Access T1064:
+Scripting Credential Access T1003: Credential Dumping Discovery T1087:
+Account Discovery T1482: Domain Trust Discovery T1083:
+File and Directory Discovery T1069:
+Permission Groups Discovery T1018:
+Remote System Discovery Lateral Movement T1097:
+Pass the Ticket T1076:
+Remote Desktop Protocol T1105:
+Remote File Copy T1077:
+Windows Admin Shares Collection T1074:
+Data Staged T1039:
+Data from Network Shared Drive Command and Control T1043:
+Commonly Used Port T1219:
+Remote Access Tools T1105:
+Remote File Copy T1071: Standard Application Layer Protocol T1032: Standard Cryptographic Protocol Exfiltration T1002:
+Data Compressed Impact T1486:
+Data Encrypted for Impact T1490: Inhibit System Recovery T1489:
+Service Stop Example Commands Observed in MAZE Ransomware Incidents function Enum-UsersFolders($PathEnum) { $foldersArr = 'Desktop','Downloads','Documents','AppData/Roaming','AppData/Local' Get-ChildItem -Path $PathEnum'/c$' -ErrorAction
+SilentlyContinue Get-ChildItem -Path $PathEnum'/c$/Program Files' -ErrorAction
+SilentlyContinue Get-ChildItem -Path $PathEnum'/c$/Program Files (x86)' -ErrorAction

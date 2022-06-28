@@ -1,0 +1,5 @@
+O n February 1 st , Juniper Threat Labs observed an attack that attempt ed to i nject malicious code in to Secure Shell (SSH) servers on Linux.
+The attack begins with an exploit against the C ontrol Web Panel (CWP, formerly known as Centos Web Panel) server administration web application, injects code via LD_PRELOAD , and uses a custom, encrypted binary command-and-co ntrol protocol to exfiltrate credentials and machine capabilities.
+As of this writing, the malware command-and-control server is still active.
+Figure 1.
+Attack chain Exploit Th e attack starts with a command injection against Control Web Panel: Figure 2.

@@ -1,0 +1,9 @@
+
+LEMONSTICK is a Linux executable command line utility with backdoor capabilities.
+The backdoor can execute files, transfer files, and tunnel connections.
+LEMONSTICK can be started in two different ways: passing the `-c` command line argument (with an optional file) and setting the ‘OCB’ environment variable.
+When started with the `-c` command line argument, LEMONSTICK spawns an interactive shell.
+When started in OCB mode, LEMONSTICK expects to read from STDIN.
+The STDIN data is expected to be encrypted with the blowfish algorithm.
+After decrypting, it dispatches commands based on the name—for example: ‘executes terminal command’, ‘connect to remote system’, ‘send & retrieve file’, ‘create socket connection’.
+LOGBLEACH is an ELF utility that has a primary functionality of deleting log entries from a specified log file(s) based on a filter provided via command line.

@@ -1,0 +1,99 @@
+Working as security consultants is highly rewarding.
+
+Companies depend on us to view their environment from the perspective of an attacker and find vulnerabilities that could enable threats to succeed.
+
+One of the most impactful parts of our role is when we’re the first to find a major vulnerability that could lead to a widespread compromise beyond just our client.
+
+That’s what happened this year with the Cisco Unified Communications Manager (CUCM) IM & Presence appliance.
+
+We performed an application penetration test against it for one of our clients.
+
+While doing so, we discovered an opening that could effect anyone who uses this appliance.
+
+Read on to find out how we explored the product, how we broke it and how to put it back together.
+
+What Is the CUCM Product?
+
+The CUCM solution is a middleware component that allows enterprises to integrate their various communication devices and manage them using one platform.
+
+In short, it unifies voice, video, data and mobile applications on fixed and mobile networks.
+
+Starting with the Cisco Unified Communications 9.0, the Cisco Unified Presence technology is integrated within the CUCM.
+
+Nowadays, most people refer to this solution as the CUCM IM & Presence Service.
+
+Almost every customer that uses the Cisco Jabber instant messaging application has the CUCM IM & Presence deployment.
+
+The Findings During the pen test, we first tried to use the least possible privilege to pinpoint the vulnerabilities that the least trusted users can reach.
+
+Then, we created a replica of the appliance in a lab environment.
+
+Using several reverse engineering techniques, we extracted the source code of the web application used to manage the appliance.
+
+Through both dynamic testing and analysis of the source code, we found the following vulnerabilities: 3 x Structured Query Language (SQL) injection (CVE-2021-1355, CVE-2021-1364, CVE-2021-1282) SQL injection leads to arbitrary code execution (CVE-2021-1363, CVE-2021-1365)
+
+Path traversal (CVE-2021-1357)
+
+Cross-site scripting (CVE-2021-1407, CVE-2021-1408)
+
+The main objective was to find vulnerabilities that attackers could exploit to elevate their privilege on the appliance.
+
+At first, our team managed to identify several SQL injection vulnerabilities , but the application had a protection module that filtered the user input.
+
+By inspecting this module, we found a weakness in the module logic that we used to bypass it.
+
+This allowed one to exploit three SQL injection vulnerabilities.
+
+An attacker could use this to extract sensitive information from the application database, including the administrator password hash.
+
+Other Vulnerabilities One of the SQL injections was chained with another vulnerability — an operating system command injection vulnerability — to achieve arbitrary code execution on the appliance.
+
+The chained attack could enable an attacker with low privileges on the appliance to escalate their privilege to root shell access.
+
+At that point, the attacker could have full control of the appliance, and the access could be used to move laterally inside the internal network and attack internal assets and other users.
+
+We also discovered a local file read vulnerability in one of the application’s endpoints.
+
+This could allow an attacker to read any locally accessible file on the web server through the vulnerable endpoint.
+
+Finally, we discovered a way to bypass and evade application security controls to exploit multiple reflected cross-site scripting issues on multiple endpoints.
+
+An attacker could exploit this vulnerability by constructing a request with an injected malicious payload in the vulnerable parameters and deceive the logged-in users to visit it.
+
+The malicious payload injected by the attacker is executed within the victim’s browser, in the context of that victim’s session.
+
+The malicious application allows the attacker to hijack the user session and redirect the victim to an attacker-controlled domain or another client-side attack.
+
+That might be in-browser keylogging or performing arbitrary actions within the context of the application.
+
+We also discovered sensitive information disclosure in one of the application endpoints.
+
+This could allow an authenticated attacker to disclose users’ hashed passwords, which could then be recovered using a dictionary attack.
+
+Moving Laterally Through the Enterprise As a result of these vulnerabilities, a low-privileged user could elevate their privileges to the highest level on the CUCM appliance.
+
+From there, they could access sensitive data, manipulate sensitive configurations and install malicious software on the appliance that monitors and records the communication between Cisco Jabber users.
+
+An attacker could hijack logged-in user sessions or deceive users to steal their credentials.
+
+Furthermore, since the application allows for code execution, an attacker could use it as a foothold within the network from which to move laterally.
+
+The Next Steps: Reducing the Risk of Compromise So, what should you do about it?
+
+We recommend you install the latest patch for the Cisco Unified Communications Products from the Cisco security advisories.
+
+The patches for both the CUCM and the CUCM IM & Presence are shown in the charts below.
+
+Links to the advisories are located in the References section.
+
+A continuous penetration testing program can also help discover and fix these types of vulnerabilities.
+
+Learn more about X-Force Red’s penetration testing services here .
+
+On July 21, 2021, X-Force Red will be hosting a virtual panel session about threats against and vulnerabilities exposing Internet of Things (IoT) devices.
+
+The presenters will include IoT industry leaders such as the ioXt Alliance and Silicon Labs.
+
+Register here References CUCM IM & Presence SQL injection vulnerability leads to arbitrary code execution: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-imp-inj-ereCOKjR CUCM IM & Presence SQL injection vulnerability leads to local file disclosure and path traversal vulnerabilities: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-imp-trav-inj-dM687ZD6 CUCM cross-site scripting vulnerability leads to attack on other appliance users: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-xss-Q4PZcNzJ https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-inf-disc-wCxZNjL2
+
+

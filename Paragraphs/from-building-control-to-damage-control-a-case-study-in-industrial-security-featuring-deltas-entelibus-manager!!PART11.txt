@@ -1,0 +1,8 @@
+
+Whatever the precise implementation may be, a good security policy often begins by adopting the principle of least privilege , or the idea that all access should be restricted by default unless there is a compelling reason for it.
+For example, before approaching the challenge of keeping a device like the eBMGR secure on the internet, it’s important to first ask if having it connected to internet is necessary in the first place.
+While companies and consumers should certainly take the proper steps to keep their networks secure, manufacturers must also take a proactive approach towards addressing vulnerabilities that impact their end users.
+Delta Controls’ willingness to collaborate and timely response to our disclosure certainly seems like a step in the right direction.
+Please refer to the following statement from Delta Controls which provides insight into the collaboration with McAfee and the power of responsible disclosure.
+
+

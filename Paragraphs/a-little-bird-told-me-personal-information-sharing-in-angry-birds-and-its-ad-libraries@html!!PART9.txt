@@ -1,0 +1,10 @@
+
+XXX1 The id \"1XXXX8\" labels the personal information when uploaded by the ad mediation platform.
+Then the information is passed to ad clouds.
+1.
+The initial traffic captures in the PCap shows what kind of information Angry Birds uploads to Burstly: HTTP/1.1 200 OK Cache-Control:
+private Date: Thu, 06 Mar 2014 XX:
+XX:
+XX GMT Server: Microsoft-IIS/7.5 ServerName: P-ADS-OR-WEBC #22 X-AspNet-Version: 4.0.30319 X-Powered-
+By: ASP.NET X-ReqTime: 0 Content-Length: 0
+Connection: keep-alive POST /Services/PubAd.svc/GetSingleAdPlacement HTTP/1.1 Content-type: text/json; charset=utf-8 User-Agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; Ascend Y300

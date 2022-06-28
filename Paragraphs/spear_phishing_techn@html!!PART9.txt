@@ -1,0 +1,11 @@
+
+ Correlating these bytes to the standard configuration of Poison Ivy, we can observe the following: Active setup – StubPath Encryption/Decryption key - version2013 Mutex name - 20160509 The Poison Ivy configuration dump is shown in Figure 15.
+Figure 15: Poison Ivy configuration dump Conclusion Although Poison Ivy has been a proven threat for some time, the delivery mechanism for this backdoor uses recent publicly available techniques that differ from previously observed campaigns.
+Through the use of PowerShell and publicly available security control bypasses and scripts, most steps in the attack are performed exclusively in memory and leave few forensic artifacts on a compromised host.
+FireEye
+HX Exploit Guard is a behavior-based solution that is not affected by the tricks used here.
+It detects and blocks this threat at the initial level of the attack cycle when the malicious macro attempts to invoke the first stage PowerShell payload.
+HX also contains generic detections for the registry persistence, AppLocker bypasses and subsequent stages of PowerShell abuse used in this attack.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

@@ -1,0 +1,9 @@
+
+Reporting on DARKSIDE has been available in advance of this blog post to users of Mandiant Advantage Free , a no-cost version of our threat intelligence platform.
+Targeting Mandiant has identified multiple DARKSIDE victims through our incident response engagements and from reports on the DARKSIDE blog.
+Most of the victim organizations were based in the United States and span across multiple sectors, including financial services, legal, manufacturing, professional services, retail, and technology.
+The number of publicly named victims on the DARKSIDE blog has increased overall since August 2020, with the exception of a significant dip in the number of victims named during January 2021 (Figure 1).
+It is plausible that the decline in January was due to threat actors using DARKSIDE taking a break during the holiday season.
+The overall growth in the number of victims demonstrates the increasing use of the DARKSIDE ransomware by multiple affiliates.
+Figure 1: Known DARKSIDE victims (August 2020 to April 2021)
+DARKSIDE Ransomware Service Beginning in November 2020, the Russian-speaking actor \"darksupp\" advertised DARKSIDE RaaS on the Russian-language forums exploit.in and xss.is.

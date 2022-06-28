@@ -1,0 +1,7 @@
+
+In this incident we discovered a miner gate configuration file with a Gmail address.
+Using Open-Source Intelligence (OSINT) investigation techniques, we identified an individual that is most likely tied to the discovered Gmail address.
+Based on our analysis, this individual is likely part of some Persian-speaking credential cracking crew harvesting RDP credentials and other types of data.
+The individual is sharing information related to Masscan and Kport scan results for specific countries that can be used for brute force operations.
+ACTOR PROFILE Further, we observed this actor on a Telegram channel discussing operations which align to the behavior we observed during intrusions on our honey pot.
+The data shared appears to be results from tools such as Masscan or Kport-scan that would be used to compromise further assets.

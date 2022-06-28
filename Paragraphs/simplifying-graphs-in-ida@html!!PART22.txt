@@ -1,0 +1,9 @@
+
+The plug-in calculates the immediate dominator tree and immediate post-dominator tree of the function control flow graph and looks for the situations where the (idom[i] =
+= j) and (ipdom[j] ==
+i).
+This means all paths from the function start to node i must go through node j, and all paths from j to the function terminal must go through i. A candidate isolated subgraph thus starts at node j and ends at node i.
+For each candidate isolated subgraph, the plug-in further verifies only the entry node has predecessor nodes not in the candidate subgraph.
+The plug-in also filters out candidate subgraphs by making sure they have a minimum node count and cover a maximum percentage of nodes (see MINIMUM_SUBGRAPH_NODE_COUNT and MAXIMUM_SUBGRAPH_NODE_PERCENTAGE in the config section).
+One complication is that functions often have more than one terminal node – programmers can arbitrarily return from the current function at any point.
+The immediate post-dominator tree is calculated for every terminal node, and any inconsistencies are marked as indeterminate and are not possible candidates for use.

@@ -1,0 +1,9 @@
+
+Service tickets are used to authenticate a user to a specific service hosted on a system.
+A valid TGT can be used to request service tickets from the Key Distribution Center (KDC).
+In Active Directory environments, the KDC is hosted on a Domain Controller.
+The diagram in Figure 1 shows the authentication flow.
+Figure 1:
+Example Kerberos authentication flow In summary:
+The user requests a Ticket Granting Ticket (TGT) from the Domain Controller.
+Once granted, the user passes the TGT back to the Domain Controller and requests a service ticket for cifs/SQLSERVER.ACMENET.CORP.

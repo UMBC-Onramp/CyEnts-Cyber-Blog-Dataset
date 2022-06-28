@@ -1,0 +1,137 @@
+On July 2, 2021, Kaseya customers were notified of a compromise affecting the company’s VSA product in a way that poisoned the product’s update mechanism with malicious code.
+
+VSA is a remote monitoring and management tool for networks and endpoints intended for use by enterprise customers and managed service providers (MSPs).
+
+According to Kaseya, it urged customers to shut down the VSA to prevent attackers from gaining remote access to further assets.
+
+Kaseya also shut down the cloud version of VSA and all SaaS servers as a precautionary measure.
+
+Although it was initially believed that only 50 companies using VSA on-premises were targeted, the evolving situation reveals more potential victims as numbers climb to the tune of 1,500-2,000 companies likely exposed to downstream impact by this major attack.
+
+The number of potential victims can be so much larger because Kaseya’s customers themselves are MSPs who serve a customer base of their own.
+
+Consequently, those who rely on VSA to deliver remote-monitoring services can also be impacted by the attack.
+
+It has not been long since the world had to reckon with major supply chain attacks that call to mind the devastating SolarWinds’ Orion breach and the Accelion attacks in which one poisoned software update infected a fleet of customers.
+
+Right ahead of the United States’ Independence Day holiday weekend, REvil ransomware gang affiliates managed to launch what appears to be a premeditated attack that took a page out of the same playbook, wreaking havoc across the globe.
+
+This time, the software update was Kaseya’s VSA remote management tool, which was poisoned with malicious code that launched a chain of events ending with an infection by the group’s ransomware.
+
+Some portion of REvil actors are believed to be based in Russia and other parts of Eastern Europe.
+
+The gang opened with a $70M ransom demand and later lowered it to $50M for the release of a decryptor that would apply to all the affected victims.
+
+How Did Attackers Get in?
+
+Threat actors affiliated with REvil ransomware were able to leverage a zero-day file upload and code injection vulnerability in Kaseya VSA’s on-prem solution.
+
+What’s been reported as CVE-2021-30116 was the security vulnerability the attackers exploited for their initial foothold.
+
+This flaw allowed for an authentication bypass and for executing arbitrary commands, which later helped attackers download and distribute a malicious loader masquerading as a VSA update to victim systems with VSA agents installed.
+
+It is suspected that more than one security flaw enabled the attack to reach its objectives.
+
+IBM X-Force’s Threat Intelligence Index shows that the most common entry point to organizations has been exploitation tactics, surpassing phishing and the use of stolen credentials.
+
+In cases where a VSA server is exposed to internet, any known vulnerability could be weaponized and leveraged by attackers to potentially breach it from a remote location.
+
+The compromised VSA agents then launched a PowerShell command that disabled anti-malware protections, then installed and executed the REvil ransomware payload.
+
+The ransomware encrypted data across devices it infected, rendering it impossible to access .
+
+The supply chain attack currently unfolding was most probably planned well ahead of the time it was actively launched over the long holiday weekend.
+
+Many major attacks, especially those that rely on ransomware or destructive malware, are carefully planned ahead of time and unleashed when security teams are not working in full capacity.
+
+Who Has Been Impacted?
+
+Researchers say that the number of victims is rising over time.
+
+At the time of this writing, at least 1,000 organizations have seen some impact by the attack and its consequences to their business continuity.
+
+One of the victims notably impacted by this attack has been a Swedish supermarket chain, “Coop”.
+
+With over 800 physical grocery stores, many of which were shut down after the attack, it is not yet clear when recovery could allow for Coop to fully resume operations.
+
+Organizations in several industries have reported issues, with victims identified in government, professional services, retail, and wholesale, to name a few.
+
+Companies are hailing from across the globe, including the U.K., South Africa, Canada, Argentina, Mexico, Indonesia, New Zealand, and Kenya.
+
+Since the situation continues to evolve, these details may change over time.
+
+What Are the Criminals Demanding?
+
+REvil initially published a ransom demand on their “Happy Blog” accessible through a TOR browser asking for $70M in Bitcoin to release a decryptor that would help all related victims unlock files encrypted in the attack.
+
+Figure 1:
+
+REvil’s post to their “Happy Blog” Dark Web page Unlike the case in singular attacks, REvil members do not appear to have exfiltrated data from their victims prior to the data encryption phase.
+
+A plausible reason could be rushing to set up the attack and worrying that data exfiltration would take very long and be an operation that could expose the gang prematurely.
+
+Also, the amounts of data to collect post exploitation could be overwhelming.
+
+Since data was not exfiltrated, REvil has less leverage to pressure victims to pay if they are able to recover from backups using incident response and disaster recovery plans.
+
+The REvil gang lowered the ransom demand, going from $70M to $50M in hopes of getting paid sooner.
+
+They allegedly also allow victims to use Monero instead of Bitcoin to pay the ransom and are willing to negotiate the price for a more specific decryptor that will unlock certain file extensions.
+
+Some victims resorted to attempting a private negotiation with REvil, where ransom demands varied and were, in some cases, as low as $50,000.
+
+What is Being Done to Respond to This Attack?
+
+On July 5, Kaseya released a patch to address the vulnerability exploited in this incident: www.kaseya.com/potential-attack-on-kaseya-vsa .
+
+Further guidance and advisories may be updated by Kaseya.
+
+A compromise detection tool was also made available and rolled out to Kaseya customers.
+
+CISA and the Federal Bureau of Investigation (FBI) continue to respond to the attack.
+
+CISA warns businesses to enable and enforce multi-factor authentication for all accounts – not just privileged accounts.
+
+CISA and FBI strongly urge affected MSPs and their customers to follow guidance published by CISA .
+
+Guidance from the FBI was also made available on their website .
+
+Deputy National Security Advisor for Cyber and Emerging Technology, Anne Neuberger, released a statement about the attack, urging anyone who believes their systems have been compromised in the Kaseya ransomware incident to immediately report to the Internet Crime Complaint Center at www.IC3.gov .
+
+What is REvil, Sodinokibi?
+
+REvil, also known as Sodin or Sodinokibi , is a ransomware-as-a-service (RaaS) malware family active since early 2019.
+
+Third party reporting suggests REvil was developed by GandCrab authors, another RaaS malware family that claimed to retire in May 2019.
+
+REvil has code built into the malware that prevents it from being installed on Russian language machines, which may suggest the developers reside within a Russian-speaking country and/or operate with impunity in one of these countries.
+
+Since its debut two years ago, REvil/Sodinokibi has gained considerable momentum, locking up and even auctioning off data that belonged to companies like Travelex, Gunnebo, Brown-Forman, and the pan-Asian retail giant “The Dairy Farm Group”, to name a few.
+
+The demand in each case is often exorbitant, asking victims for multi-million-dollar ransoms for their data: Leading cosmetics group Pierre Fabre: $25,000,000 The Dairy Farm Group: $30,000,000 New York-based law firm Grubman Shire Meiselas & Sacks: $42,000,000 Apple MacBook supplier: $50,000,000 With pressure tactics going beyond data encryption, Sodinokibi operators often steal data in advance, exfiltrate it, and then resort to extortion tactics.
+
+Those who refuse to pay up, hoping to rely on their ability to recover data will receive threats to have sensitive, confidential data exposed publicly on the group’s Dark Web site dubbed “The Happy Blog”.
+
+That’s also where it names and shames its victims, offering their data up for sale to the highest bidder.
+
+The ‘double extortion’ strategy has become a common practice among organized cybercrime groups that deploy ransomware targeting organizational networks.
+
+IOCs Analysis provided by Kaseya also provides relevant IOCs.
+
+Those can be accessed here .
+
+Remaining Vigilant X-Force is advising organizations to be on alert of the growing risk of ransomware attacks and to be prepared with incident response plans and a team that can escalate issues.
+
+It is also recommended to be mindful of having offline backups, segmenting networks to limit the reach of attackers, encrypting data , and applying critical patches in a timely manner to reduce the overall risk of attacks.
+
+Companies can benefit from testing their detection capabilities with adversary simulation and red teaming, as well as rehearse and test incident response plans to identify gaps, so they can limit the spread of an attack if and when one happens.
+
+For ongoing updates on this situation visit the X-Force Exchange Collection .
+
+Visit these resources with additional questions or to schedule a one-on-one consultation with an IBM subject matter expert or download the IBM Ransomware response guide .
+
+If your organization requires immediate assistance with incident response, please contact IBM Security X-Force’s US hotline 1-888-241-9812 | Global hotline (+001) 312-212-8034.
+
+
+
+

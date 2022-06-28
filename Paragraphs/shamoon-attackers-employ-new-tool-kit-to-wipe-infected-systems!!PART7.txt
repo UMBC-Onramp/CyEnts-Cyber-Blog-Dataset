@@ -1,0 +1,16 @@
+
+The new wave of Shamoon is accompanied by a .Net tool kit that spreads Shamoon Version 3 and the wiper Filerase.
+This first component (OCLC.exe) reads two text files stored in two local directories.
+Directories “shutter” and “light” contain a list of targeted machines.
+OCLC.exe starts a new hidden command window process to run the second component, spreader.exe, which spreads the Shamoon variant and Filerase with the concatenated text file as parameter.
+The spreader component takes as a parameter the text file that contains the list of targeted machines and the Windows version.
+It first checks the Windows version of the targeted computers.
+The spreader places the executable files (Shamoon and Filerase) into the folder Net2.
+It creates a folder on remote computers: C:\\\\Windows\\System32\\Program Files\\Internet Explorer\\Signing.
+The spreader copies the executables into that directory.
+It runs the executables on the remote machine by creating a batch file in the administrative share \\\\RemoteMachine\\admin$\\\\process.bat.
+This file contains the path of the executables.
+The spreader then sets up the privileges to run the batch file.
+If anything fails, the malware creates the text file NotFound.txt, which contains the name of the machine and the OS version.
+This can be used by the attackers to track any issues in the spreading process.
+The following screenshot shows the “execute” function: If the executable files are not present in the folder Net2, it checks the folders “all” and Net4.

@@ -1,0 +1,5 @@
+
+Hyphens are added for readability and not produced by the model.
+How does the model produce such credible generations?
+Besides the weights that were adjusted during LM fine-tuning, some of the heavy lifting is also done by the underlying attention scores that were learned by GPT-2’s Transformer.
+Attention scores are computed between all words in a text sequence, and represent how important one word is when determining how important its nearby words will be in the next learning iteration.

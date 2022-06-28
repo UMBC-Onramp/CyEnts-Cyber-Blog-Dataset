@@ -1,0 +1,8 @@
+
+The TYU resource is BZip2 compressed and XORed with the string “1312312”.
+  A decoded configuration for 6BFC42F7CB1364EF0BFD749776AC6D38 is included in the figure below: Figure 7:
+Sample decoded TYU resource The 4409de445240923e05c5fa6fb4204 value is believed to be an RSA key identifier.
+The AASp1… value is the Base64 encoded RSA key.
+A sample encrypted log file (%TEMP%\\[random].tmp.yls) is below.
+00000000  32 39 0a 66 00 66 00 30  00 30 00 66 00 66 00 30
+29.f.f.0.0.f.f.000000010  00 30 00 66 00 66 00 30  00 30 00 66 00 66 00 30 .0.f.f.0.0.f.f.000000020  00 30 00 66 00 66 00 30  00 30 00 66 00 66 00 30 .0.f.f.0.0.f.f.000000030

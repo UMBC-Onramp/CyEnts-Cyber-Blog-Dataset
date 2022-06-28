@@ -1,0 +1,4 @@
+
+Figure 4:
+Tweet showing strong adjective use Table 1: Log-odds ratios for words correlated with highly-severe CVEs Finally, the processed features are evaluated with two different classifiers to output scores to predict relevancy and severity.
+When a named entity is identified all words comprising it are replaced with a single token to prevent the model from biasing toward that entity.

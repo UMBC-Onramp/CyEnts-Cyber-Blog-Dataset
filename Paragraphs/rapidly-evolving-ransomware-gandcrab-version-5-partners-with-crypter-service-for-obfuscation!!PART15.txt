@@ -1,0 +1,4 @@
+
+Opening the new mutex to check if there is a need to run the exploits.
+As with GandCrab Version 4.x and later, the malware later checks the version.
+If it is Vista or later, it tries to get the “TokenIntegrityLevel” class and relaunch the binary to elevate its privilege with a call to “ShellExecuteExW” with the “runas” application.

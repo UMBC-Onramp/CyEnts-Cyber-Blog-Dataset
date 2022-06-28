@@ -1,0 +1,12 @@
+
+Example Malware Distribution Campaign On March 18, individuals at corporations across a broad set of industries and geographies received emails with the subject line “COVID-19 Payment” intended to distribute the SILENTNIGHT banking malware (also referred to by others as Zloader).
+Despite the campaign’s broad distribution, a plurality of associated messages were sent to organizations based in Canada.
+Interestingly, although the content of these emails was somewhat generic, they were sometimes customized to reference a payment made in currency relevant to the recipient’s geography and contextually relevant government officials (Figure 1 and Figure 2).
+These emails were sent from a large pool of different @gmx.com email addresses and had password protected Microsoft Word document attachments using the file name “COVID 19 Relief.doc” (Figure 3).
+The emails appear to be auto generated and follow the format <name>.<name><SevenNumberString>@gmx.com.
+When these documents were opened and macros enabled, they would drop and execute a .JSE script crafted to download and execute an instance of SILENTNIGHT from http://209.141.54[.]161/crypt18.dll.
+An analyzed sample of SILENTNIGHT downloaded from this URL had an MD5 hash of 9e616a1757cf1d40689f34d867dd742e, employed the RC4 key 'q23Cud3xsNf3', and was associated with the SILENTNIGHT botnet 'PLSPAM'.
+This botnet has been seen loading configuration files containing primarily U.S.- and Canada financial institution webinject targets.
+Furthermore, this sample was configured to connect to the following controller infrastructure: http://marchadvertisingnetwork4[.]com/post.php http://marchadvertisingnetwork5[.]com/post.php http://marchadvertisingnetwork6[.]com/post.php http://marchadvertisingnetwork7[.]com/post.php http://marchadvertisingnetwork8[.]com/post.php http://marchadvertisingnetwork9[.]com/post.php http://marchadvertisingnetwork10[.]com/post.php Figure 1: Example lure using CAD Figure 2:
+Example lure using AUD Figure 3:
+Malicious Word document Example Phishing Campaign Individuals at financial services organizations in the United States were sent emails with the subject line “Internal Guidance for Businesses Grant and loans in response to respond to COVID-19” (Figure 4).

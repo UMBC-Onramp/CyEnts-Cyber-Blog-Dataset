@@ -1,0 +1,5 @@
+
+These emails were sent using 26 unique email addresses associated with the domain tigertigerbeads<.>com, and in only a small number of cases did we see the same address used across multiple recipient organizations.
+These phishing emails contained inline links to malicious URLs such as, hxxp://totallyhealth-wealth[.]com/downld-id_mw<redacted>Gdczs, engineered to entice the victim to download a file.
+UNC2529 employed at least 24 different domains to support this first, of a three-stage process.
+The structure of URLs embedded in these phishing emails had the following patterns, where the string was an alphabetic variable of unknown function.

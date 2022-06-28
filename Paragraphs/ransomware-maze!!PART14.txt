@@ -1,0 +1,4 @@
+
+The checks are done in an obfuscated way within the jumble of the code that the malware has (in the virtual machine used here the Spanish language of Spain (es-ES) was used; it is the code 0xC0A that appears in the stack in the screenshot): FIGURE 15.
+CHECKING THE LANGUAGE AGAINST THE RUSSIAN LANGUAGE FROM THE RUSSIAN FEDERATION If the language matches any of those in the list below, the malware will clean the memory and exit the main thread without wasting any resources or making any files.
+0x419 -> ru-RU (Russian from Russian Federation) 0x422 -> uk-UA (Ukranian from Ukraine) 0x423 -> be-BY (Belarusian from Belarus) 0x428 -> tg-Cyrl-TJ (Tajik (Cyrilic from Tajikistan) 0x42B -> hy-AM (Armenian from Armenia)

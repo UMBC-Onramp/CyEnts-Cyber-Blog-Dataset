@@ -1,0 +1,23 @@
+
+If the string is not present, the malware exits.
+If the string is present, the malware executes the command RunDll32.exe < C:\\Users\\ADMINI~1\\AppData\\Roaming\\Microsoft\\Word\\STARTUP\\hh14980443.wll, DllEntry> using the WinExec() function.
+DllEntry is the payload’s only export function.
+The malware creates a log file in %TEMP% with the name c3E57B.tmp.
+The malware writes the current local time plus two hardcoded values every time in the following format: <Month int>/<Date int>
+<
+Hours>:<Minutes>:<Seconds>\\t
+<
+Hardcoded Digit>\\t<Hardcoded Digit>\\n Example: 05/22 07:29:17 4          0
+This log file is written to every 15 seconds.
+The last two digits are hard coded and passed as parameters to the function (Figure 4).
+Figure 4: String format for log file
+The encrypted file contains a config file of 0x78 bytes.
+The data is decrypted with an 0xD9 XOR operation.
+The decrypted data contains command and control (C2) information as well as a mutex string used during malware initialization.
+Figure 5 shows the decryption routine and decrypted config file.
+Figure 5:
+Config decryption routine The IP address from the config file is written to %TEMP%/3E57B.tmp with the current local time.
+For example: 05/22 07:49:48 149.28.182.78.
+Mutex Creation
+The malware creates a mutex to prevent multiple instances of execution.
+Before naming the mutex, the malware determines whether it is running as a system profile (Figure 6).

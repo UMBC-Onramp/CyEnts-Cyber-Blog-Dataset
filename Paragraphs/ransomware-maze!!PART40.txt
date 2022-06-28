@@ -1,0 +1,5 @@
+
+CONCLUSION Maze is a ransomware created by skilled developers.
+It uses a lot of tricks to make analysis very complex by disabling disassemblers and using pseudocode plugins.
+It poses a big problem to individuals and enterprises that do not pay as the developers threaten to release the information if they do not receive payment and they do indeed keep their word on that.
+More and more ransomwares are exhibiting the same behavior and we expect to see more of it this year and perhaps further into the future too.

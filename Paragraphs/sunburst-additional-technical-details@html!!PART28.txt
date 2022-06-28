@@ -1,0 +1,3 @@
+
+In cases such as the ImpLink IP blocks that activate the killswitch, it’s likely that the ranges were specifically chosen by the attacker to avoid being discovered by security researchers.
+In other cases, such as the NetBios and \"special\" NetBios IP blocks, the companies these blocks resolve to is likely irrelevant or at least beyond what can be definitively said without speculation.

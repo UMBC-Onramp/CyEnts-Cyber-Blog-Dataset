@@ -1,0 +1,5 @@
+
+This script supersedes the older objc2_xrefs_helper script, which has been removed from our repo.
+And, since the script can perform such data tracking in Objective-C code by using emulation, it can also determine whether an id is a class instance or a class object itself.
+Additional support has been added to track ivars being passed as ids as well.
+With all this information, Objective-C-style pseudocode comments are added to each call to objc_msgSend variants that represent the method call being made at each location.

@@ -1,0 +1,45 @@
+Malware analysts routinely use the Strings program during static analysis in order to inspect a binary's printable characters.
+
+However, identifying relevant strings by hand is time consuming and prone to human error.
+
+Larger binaries produce upwards of thousands of strings that can quickly evoke analyst fatigue, relevant strings occur less often than irrelevant ones, and the definition of \"relevant\" can vary significantly among analysts.
+
+Mistakes can lead to missed clues that would have reduced overall time spent performing malware analysis, or even worse, incomplete or incorrect investigatory conclusions.
+
+Earlier this year, the FireEye Data Science (FDS) and FireEye Labs Reverse Engineering (FLARE) teams published a blog post describing a machine learning model that automatically ranked strings to address these concerns.
+
+Today, we publicly release this model as part of StringSifter , a utility that identifies and prioritizes strings according to their relevance for malware analysis.
+
+Goals StringSifter is built to sit downstream from the Strings program; it takes a list of strings as input and returns those same strings ranked according to their relevance for malware analysis as output.
+
+It is intended to make an analyst's life easier, allowing them to focus their attention on only the most relevant strings located towards the top of its predicted output.
+
+StringSifter is designed to be seamlessly plugged into a user’s existing malware analysis stack.
+
+Once its GitHub repository is cloned and installed locally, it can be conveniently invoked from the command line with its default arguments according to: strings <sample_of_interest
+
+> | rank_strings
+
+We are also providing Docker command line tools for additional portability and usability.
+
+For a more detailed overview of how to use StringSifter, including how to specify optional arguments for customizable functionality, please view its README file on GitHub .
+
+We have received great initial internal feedback about StringSifter from FireEye’s reverse engineers, SOC analysts, red teamers, and incident responders.
+
+Encouragingly, we have also observed users at the opposite ends of the experience spectrum find the tool to be useful – from beginners detonating their first piece of malware as part of a FireEye training course – to expert malware researchers triaging incoming samples on the front lines.
+
+By making StringSifter publicly available, we hope to enable a broad set of personas, use cases, and creative downstream applications.
+
+We will also welcome external contributions to help improve the tool’s accuracy and utility in future releases.
+
+Conclusion We are releasing StringSifter to coincide with our presentation at DerbyCon 2019 on Sept. 7, and we will also be doing a technical dive into the model at the Conference on Applied Machine Learning for Information Security this October.
+
+With its release, StringSifter will join FLARE VM , FakeNet , and CommandoVM as one of many recent malware analysis tools that FireEye has chosen to make publicly available.
+
+If you are interested in developing data-driven tools that make it easier to find evil and help benefit the security community, please consider joining the FDS or FLARE teams by applying to one of our job openings .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

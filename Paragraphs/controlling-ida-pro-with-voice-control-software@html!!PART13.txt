@@ -1,0 +1,5 @@
+
+When in Dictation Mode, any recognized words are added to a buffer of text until Dictation Mode is disabled.
+Then this text can be used elsewhere in the macro.
+Unfortunately, this feature is not designed to recognize the kinds of technical terms one would be using in the context of reverse engineering programs.
+Even if it were, there is still the issue of having to format the text to be a valid function or variable name.

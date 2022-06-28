@@ -1,0 +1,5 @@
+
+Therefore, infosec officers who detect it might view it as a random home-user threat that accidentally slipped into the corporate network.
+In fact, its presence there could indicate something far more serious — a ransomware injection attempt or even part of a targeted cyberespionage operation.
+Our experts were able to download modules of the Trojan from one of its C&C servers and analyze them thoroughly.
+What Trickbot can do now The modern Trickbot’s main objective is to penetrate and spread on local networks.

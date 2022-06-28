@@ -1,0 +1,7 @@
+
+Figure 2: Unicode desktop folders from malicious samples Various Tokenizing Schemes
+In recording the directories of a file path, there are several ways you can represent the path.
+Let’s use this path to illustrate these different approaches: c:\\Leave\\smell\\Long\\ruleThis.pdb ( file ) Bag of Words One very simple way is the “ bag-of-words ” approach, which simply treats the path as the distinct set of directory names it contains.
+Therefore, the aforementioned path would be represented as: [‘c:’,’leave’,’smell’,’long’,’rulethis’]
+Positional Analysis Another approach we considered was recording the position of each directory name, as a distance from the drive.
+This retained more information about depth, such that a ‘build’ directory on the desktop would be treated differently than a ‘build’ directory nine directories further down.

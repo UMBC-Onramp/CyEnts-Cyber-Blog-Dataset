@@ -1,0 +1,4 @@
+
+Logon Tracker’s graphical display along with the raw logon events allowed Mandiant Managed Defense to quickly identify 10 potentially compromised hosts and begin to create a timeline of adversary activity.
+Managed Defense also leveraged Logon Tracker to monitor for additional suspicious logons and adversary activity throughout the incident response.
+Searching for logons (both failed and successful) from known compromised accounts and activity originating from compromised systems allowed our investigators to quickly determine which systems should be prioritized for analysis.

@@ -1,0 +1,10 @@
+
+Outlook Mandiant's OT red teaming supports organizations by combining both the hands-on analysis of vulnerabilities and weaknesses in IT and OT networks with the conceptual modeling of attacker goals and possible avenues to reach specific outcomes.
+It also enables security practitioners to adopt the attacker's perspective and explore attack vectors that may otherwise have not been conceived regardless of their value as low-hanging fruit for OT intrusions.
+Our approach presents realistic scenarios based upon technical evidence of intrusion activity upon OT intermediary systems in the tested network.
+In this way, it is tailored to support consequence-driven analysis of threats to specific critical systems and processes.
+This enables organizations to identify attack scenarios involving digital assets and determine safeguards that can best help to protect the process and ensure the safety of their facilities.
+Head over to our website for more information or to request Mandiant services or threat intelligence .
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

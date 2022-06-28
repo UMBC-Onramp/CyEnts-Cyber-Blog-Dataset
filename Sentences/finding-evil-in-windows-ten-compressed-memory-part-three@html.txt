@@ -1,0 +1,129 @@
+This is the final post in the three-part series: Finding Evil in Windows 10 Compressed Memory .
+
+In the first post ( Volatility and Rekall Tools ), the FLARE team introduced updates to both memory forensic toolkits.
+
+These updates enabled these open source tools to analyze previously inaccessible compressed data in memory.
+
+This research was shared with the community at the 2019 SANS
+
+DFIR Austin conference and is available on GitHub ( Volatility and Rekall ).
+
+In the second post ( Virtual Store Deep Dive ), we looked at the structures and algorithms involved in locating and extracting compressed pages from the Store Manager.
+
+The post included a walkthrough of a memory dump designed for analysts to be able to recreate in their own Windows 10 environments.
+
+The structures referenced in the walkthrough were all previously analyzed in a disassembler, a manual effort which came in at around eight hours.
+
+As you’d expect, this task quickly became a candidate for automation.
+
+Our analysis time is now under two minutes!
+
+This final post accompanies my and Dimiter Andonov's BlackHat USA 2019 talk with the series title and seeks to describe the challenges faced in maintaining software that ultimately relies on undocumented structures.
+
+Here we introduce a solution to reduce the level of effort of analyzing undocumented structures.
+
+Overview Undocumented structures within the Windows kernel are always subject to change.
+
+The flexibility granted by not publicizing a structure’s composition can be invaluable to a development team.
+
+It can allow for the system to grow unencumbered by the need to update helper functions and public documentation.
+
+In many cases, even when a publicly available API designed to access the undocumented structures can be leveraged on a live system, incident responders and memory forensic analysts don’t have the luxury of utilizing them.
+
+DFIR analysts operating on memory extractions or snapshots ultimately using tools which must recreate the job of an API by manually parsing and traversing structures and reimplementing algorithms used.
+
+Unfortunately, these structures and algorithms are not always up to date in the analysts’ toolkit, leading to incomplete extractions or completely broken investigations.
+
+These tools may cease to work after any given update.
+
+This is the case with the Windows kernel’s Store Manager component.
+
+Structures relied on to locate compressed data in RAM are constantly evolving.
+
+This requires some flexibility built into the plugins and a means of reducing the analysis time required to reconstruct these structures.
+
+Leveraging flare-emu To ease my Store Manager analysis efforts, I looked into Tom Bennett’s flare-emu utility .
+
+flare-emu can be viewed as the marriage of IDA Pro with the Unicorn emulation engine.
+
+The original use of the framework was to clean up Objective-C function call names due to ambiguity stemming from the unknown id argument for calls to objc_msgSend .
+
+Tom was able to use emulation to resolve the ambiguity and clean up his analysis environment.
+
+The value I saw in the framework was that the barrier to entry for using Unicorn was now lowered to a point where it could be used to rapidly prototype ideas.
+
+flare-emu handles PE loading, memory faults, and function calls while guaranteeing traversal over code you would like to reach.
+
+After analyzing a dozen Windows 10 kernels, I had become familiar enough with the process to begin automating the effort.
+
+The automation of undocumented structures and algorithms requires one or more of the following properties to remain constant across builds.
+
+Structure locations Function prototypes Order of structure memory access Structure field usage
+
+Callstacks Let’s explore the example of locating the offset of ST_DATA_MGR.wCompressionFormat .
+
+As shown in Figure 1, this field is the first argument to RtlDecompressBufferEx .
+
+This function is publicly available and documented.
+
+This is how we originally derived that offset 0x220 in the ST_DATA_MGR structure corresponded to the compression format of the store page in Windows 10 1703 (x86).
+
+Figure 1: Call to RtlDecompressBuferEx, note that the compression format originates from ST_DATA_MGR
+
+To leverage flare-emu in automating the extraction of the value 0x220, we have a few options.
+
+For example, from analysis of other kernels, we know that the access to ST_DATA_MGR immediately before decompression is likely to be the compression format.
+
+In this case, a stronger extraction algorithm can be leveraged by prepopulating ST_DATA_MGR with a known pattern (see Figure 2).
+
+Figure 2: Known pattern copied into ST_DATA_MGR buffer Using flare-emu, we emulate the function in which this call is located and examine the stack post-emulation.
+
+0x20101000 0x1163 0x31001200
+
+0x1423 0x20001400 “Km” Figure 3:
+
+Post-emulation stack layout Knowing that the wCompressionFormat argument originated from the ST_DATA_MGR structure, we see that it is now “Km”.
+
+If we were to search for that value in the known pattern, we would find that it begins at offset 0x220.
+
+Check out Figure 4 to see how we can leverage flare-emu to solve this challenge.
+
+Figure 4: Code snippet from w10deflate_auto project demonstrating the automation of wCompressionFormat The decorators preceding the function signify that the extraction algorithm will work on both 32-bit and 64-bit architectures.
+
+After generating a known pattern using a helper function within my project, flare-emu is used to allocate a buffer, storing a pointer to it in lp_stdatamgr .
+
+The pointer is written into the ECX register because I know that the first argument to the parent function, StDmSinglePageCopy is the pointer to the ST_DATA_MGR structure.
+
+The pHook function populates ECX prior to the emulation run.
+
+The helper function locate_call_in_fn is usedto perform a relaxed search for RtlDecompressBufferEx within StDmSinglePageCopy .
+
+Using flare-emu’s iterate function, I force emulation to reach decompression, at which point I read the first item on the stack and then search for it within my known pattern.
+
+Techniques like the one described above are ultimately used to retrieve all structure fields involved in the page decompression and can be leveraged in other situations in which an undocumented structure may need tracking across Windows builds.
+
+Figure 5 shows the automation utility extracting the fields of the undocumented structures used by the Volatility and Rekall plugins.
+
+Figure 5:
+
+Output of automation from within IDA Pro Keeping Volatility and Rekall Updated The data generated by the automation script is primarily useful when implemented in Volatility and Rekall.
+
+In both Volatility and Rekall, the win10_memcompression.py overlay contains all structure definitions needed for page location and decompression.
+
+Figure 6 shows a snippet from the file in which the Windows 10 1903 x86 profile is created.
+
+Figure 6: Structure definition found within w10_memcompression.py overlay Create a new profile dictionary (ex. win10_mem_comp_x86_1903 ) corresponding to the Windows build that you are targeting and populate the structure entries accordingly.
+
+Conclusion Undocumented structures pose a challenge to those who rely on them.
+
+This blog post covered how flare-emu can be leveraged to reduce the level of effort needed to analyze new files.
+
+We analyzed the extraction of an ST_DATA_MGR field used in page decompression by presenting the problem and then the code involved with automating the effort.
+
+The automation code is available on the FireEye GitHub with usage information and documentation available in both the README and code.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

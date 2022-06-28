@@ -1,0 +1,2 @@
+
+Thread 2: MailSlot monitoring waiting for payment card data A mailslot is basically a shared range of memory that can be used to store data; the process creating the mailslot acts as the server and the clients can be other hosts on the same network, local processes on the machine, or local threads in the same process.

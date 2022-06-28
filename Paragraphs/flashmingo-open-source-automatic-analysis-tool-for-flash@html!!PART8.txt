@@ -1,0 +1,15 @@
+
+Since FLASHMINGO is written in Python, using this plug-in requires Jython to interoperate between these two languages.
+Extending FLASHMINGO With Your Own Plug-ins FLASHMINGO is very easy to extend.
+Every plug-in is located in its own directory under the plug-ins directory.
+At start-up FLASHMINGO searches all plug-in directories for a manifest file (explained later in the post) and registers the plug-in if it is marked as active.
+To accelerate development a template plug-in is provided.
+To add your own plug-in, copy the template directory, rename it, and edit its manifest and code.
+The template plug-in’s manifest, written in YAML, is shown below: ``` # This is a template for easy development name : Template active : no description : copy this to kickstart development returns : nothing ``` The most important parameters in this file are: name and active .
+The name parameter is used internally by FLASHMINGO to refer to it.
+The active parameter is a Boolean value (yes or no) indicating whether this plug-in should be active or not.
+By default, all plug-ins (except the template) are active, but there may be cases where a user would want to deactivate a plug-in.
+The parameters description and returns are simple strings to display documentation to the user.
+Finally, plug-in manifests are parsed once at program start.
+Adding new plug-ins or enabling/disabling plug-ins requires restarting FLASHMINGO.
+Now for the actual code implementing the business logic.

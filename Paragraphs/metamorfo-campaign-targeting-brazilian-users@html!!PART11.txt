@@ -1,0 +1,5 @@
+
+Inside each directory we could find statistics with the number of victims reporting to the C2.
+As of 3/27/2018, the numbers were: al – 843 ap – 879 gr – 397 kk – 2,153 mn – 296 pz – 536 tm – 187 A diagram summarizing Campaign #1 is shown in Figure 14.
+Figure 14: Infection Chain of Campaign #1 Campaign #2
+In the second campaign, FireEye Labs observed emails with links to legitimate domains (such as hxxps://s3-ap-northeast-1.amazonaws[.]com/<redacted>/Boleto_Protesto_Mes_Marco_2018.html) or compromised domains (such as hxxps://curetusu.<redacted>-industria[.]site/) that use a refresh tag with a URL shortener as the target.

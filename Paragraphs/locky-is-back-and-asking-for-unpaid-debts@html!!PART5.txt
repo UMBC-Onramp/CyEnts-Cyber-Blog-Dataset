@@ -1,0 +1,8 @@
+
+However in the case of this Locky ransomware, the program does not exit (Figure 6) and the value received as a command line parameter is added to a constant value defined in the binary.
+The sum of the constant and the parameter value is used in the decryption routine (Figure 7).
+If no command line parameter is passed, it adds zero to the constant.
+Figure 6.
+Command line parameter check Figure 7.
+Decryption routine
+If no command line parameter is passed, then the constant for the decryption routine is incorrect.

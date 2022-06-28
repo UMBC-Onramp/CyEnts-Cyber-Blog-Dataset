@@ -1,0 +1,5 @@
+
+From this server, an attacker can potentially leverage the AADInternals PowerShell module and invoke the Install-AADIntPTASpy function.
+Method 2: Cloud Compromise If an attacker has successfully compromised an Azure AD global admin account , an attack can be conducted from an attacker’s own infrastructure.
+An attacker can install a PTA Agent on a server they manage and register the agent using the compromised global administrator account (Figure 3).
+Figure 3: Azure AD Portal—registered Pass-through Authentication agents Once registered with Azure AD, the rogue server will begin to intercept and authorize all login attempts.

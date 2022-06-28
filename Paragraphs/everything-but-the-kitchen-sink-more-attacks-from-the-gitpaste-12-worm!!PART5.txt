@@ -1,0 +1,5 @@
+
+We can see that X10-unix is cross-platform, with versions for MIPS and ARM Linux machines, as well as Windows.
+The worm then commences a wide-ranging series of attacks comprising at least 31 known vulnerabilities — seven of which were also seen in the previous Gitpaste-12 sample — as well as attempts to compromise open Android Debug Bridge connections and existing malware backdoors.
+The attacks target web applications, IP cameras, routers and more.
+FuelCMS attack The exploits include: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1871 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3313 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8361 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-17215 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-17562

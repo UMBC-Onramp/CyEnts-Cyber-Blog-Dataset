@@ -1,0 +1,7 @@
+FortiGuard Labs Threat Research Report Affected Platforms: Linux Impacted Users: Any organization Impact: Remote attackers gain control of the vulnerable systems Severity Level:
+Critical It has been almost five years since the source code of the notorious MIRAI IoT malware was released to the public by its author in late 2016.
+This event led to the emergence of numerous copycats, creating their own flavors of IoT botnet armies.
+Although improvements have been constantly added since then by various threat actors, the structure and goal of the campaigns have remained the same.
+IoT malware scans the Internet for IoT devices that use default or weak usernames and passwords.
+They also seek to exploit known—and sometimes even zero-day —vulnerabilities to increase their chances of gaining access.
+And once they do, malicious binaries are downloaded and executed that make the device part of a zombie network that could then be instructed to participate in a Distributed Denial-of-Service (DDOS) attack that could cause a service outage to an unfortunate target.

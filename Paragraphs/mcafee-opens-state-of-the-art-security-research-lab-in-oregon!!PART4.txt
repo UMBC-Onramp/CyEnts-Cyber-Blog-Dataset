@@ -1,0 +1,5 @@
+
+Much of the research highlighted in the lab has been disclosed by McAfee.
+Links to recent disclosures from the Advanced Threat Research team: Articles 80 to 0 in Under 5 Seconds: Falsifying a Medical Patient’s Vitals Examining Code Reuse Reveals Undiscovered Links Among North Korea’s Malware Families Want to Break Into a Locked Windows 10 Device?
+Ask Cortana (CVE-2018-8140)
+Microsoft Cortana Allows Browser Navigation Without Login: CVE-2018-8253 Organizations Leave Backdoors Open to Cheap Remote Desktop Protocol Attacks ‘Insight’ into Home Automation Reveals Vulnerability in Simple IoT Product Podcasts McAfee’s Steve Povolny Leads Threat Research Cortana voice assistant lets you in.

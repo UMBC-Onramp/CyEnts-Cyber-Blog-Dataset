@@ -1,0 +1,5 @@
+
+The use of IP addresses instead of domain names is to avoid DNS resolutions that can be altered or redirected to a loopback, for example using the “host” file in Windows.
+This makes the trace of IPs more complicated and avoids having the connection blocked.
+The malware uses this agent to make the connection, but it can change between samples: FIGURE 25.
+AGENT USED TO MAKE CONNECTIONS TO THE C2C IP ADDRESSES From a memory dump we can extract the IPs used by these connections, as well as a curious string that talks about Lawrence Abrams, the admin of the web site “bleepingcomputer” who was contacted directly by the developers.

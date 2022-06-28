@@ -1,0 +1,6 @@
+
+A few minutes later, Austin’s account logs into the HR application and adds a new bank account.
+After this, we see the same email sent to Jake.
+Soon after this, Jake’s account logs into the HR application and adds the same bank account information as Austin’s.
+Converting all our data sources to the same time zone with Excel allowed us to quickly link these events together and easily identify what the attacker did.
+Additionally, it provided us with more indicators, such as the known-bad bank account number to search for in the rest of the logs.

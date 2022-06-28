@@ -1,0 +1,7 @@
+
+Next the user was presented with an ask3.asp webpage shown in Figure 5.
+Figure 5: Phishing form asking for more details from victim s Translation: “Please verify your security question” As shown in Figure 5, the page asks the user to answer three security questions, followed by redirection to an ok.asp page (Figure 6) on the same domain: Figure 6: Successful submission phishing pag e
+The final link points back to Apple[.]com.
+The complete trail using Burp suite tool is shown in Figure 7.
+Figure 7: Burp ses sion
+We noticed that if the user tried to supply the same Apple ID twice, they got redirected to the page save[.]asp shown in Figure 8.

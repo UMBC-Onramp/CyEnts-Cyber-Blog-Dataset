@@ -1,0 +1,6 @@
+
+In hospitals, nurses and other personal generally make periodic checks even of stable patients.
+So any deception might not last long, but it might not need to.
+What if someone were trying to kidnap a patient?
+A kidnapper would alert fewer people than would be expected.
+Switching from a real patient monitor to an emulator would cause a short loss in communication from the patient’s room to the central monitoring station.

@@ -1,0 +1,4 @@
+
+After some digging, we found “canioInit”, a function responsible for initializing the CAN bus.
+Since the CAN bus is required to make any modifications to the operation of the device, it made sense to wait for this function to be called before starting our backdoor.
+Unlike some of the previous hooks mentioned, we don’t make any changes to this call or its return data; we only use it as a method to ensure our backdoor is started at the proper time.

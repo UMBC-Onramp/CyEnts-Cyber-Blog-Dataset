@@ -1,0 +1,7 @@
+
+Synthetic\nmedia has real potential to exacerbate the use and effectiveness
+of\nsuch tactics.
+Indeed, we already frequently uncover false personas and networks of\ninauthentic social media accounts using artificially generated profile\nphotos, and this use is widespread.
+For example, we’ve uncovered large\nnetworks of inauthentic social media accounts pushing pro-China\nnarratives surrounding the Hong Kong democracy protests and the\nCOVID-19 pandemic making significant use of artificially generated\nphotos.
+We identified inauthentic accounts using synthetic profile\nphotos in a recent operation that appeared designed to support\ngovernment officials in a region of Argentina.
+And in a social\nmedia-driven influence operation that promoted pro-Cuban government\nand anti-US narratives, the operators behind one network of\ninauthentic accounts didn’t even bother to fully crop out the text box\nplaced by the “thispersondoesnotexist” image generation tool stating\nthat the images were generated with StyleGAN2, prior to use.

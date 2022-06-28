@@ -1,0 +1,13 @@
+
+Consider the SolarWinds attack in February.
+Threat actors managed to infiltrate a software update package with malicious code.
+They then pushed it out to more than 18,000 businesses, along with government agencies such as the U.S. Department of Homeland Security and the Department of the Treasury.
+The most frightening part of this third-party problem?
+Trust.
+Companies remain vigilant for ransomware attacks on their networks.
+Meanwhile, trusted third-party providers often get a free pass into corporate systems because they’ve never been the source of problems in the past.
+The result is an infosec complacency that can lead to serious security risk.
+On average, it now takes 280 days for companies to detect security risks, even when they’re actively looking.
+The solution starts with zero trust security .
+By setting up protective frameworks that use authentication rather than assumption, enterprises can reduce the risk of third-party compromise.
+It’s worth taking the time to look at all third-party interactions, even those deemed safe in the past.

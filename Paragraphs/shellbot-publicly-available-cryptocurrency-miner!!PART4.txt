@@ -1,0 +1,5 @@
+
+ShellBot has also been evolving its features to better spread through networks and disable competing infections to ensure all the computing power is used for its own goals.
+ShellBot’s objective, in most cases, is mining for Monero coin.
+Brute-Forcing a Way In ShellBot infections typically use brute-force attacks to guess the passwords of targeted servers and devices.
+In the botnets IBM X-Force examined, the most frequently used credential types helped identify the targets as misconfigured databases, FTP-servers, monitoring servers and other Linux machines.

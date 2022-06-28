@@ -1,0 +1,5 @@
+
+This blog will detail the infection process and subsequent malware deployment.
+Examining the phishing e-mail Like so many computer-based attacks, this one began as a phishing e-mail sent to an organization in Ukraine.
+Spelling and grammar issues aside, like most good phishing campaigns this one provides a time sensitive statement urging the recipient to urgently review the attached order.
+Looking deeper at the e-mail and where it came from, we can see some additional information in the headers.

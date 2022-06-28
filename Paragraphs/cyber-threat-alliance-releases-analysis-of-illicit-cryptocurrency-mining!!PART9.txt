@@ -1,0 +1,6 @@
+
+However, business operations may be impacted by a loss of productivity or additional costs.
+Many businesses prohibit installing these types of computing projects to protect against unexpected costs and disruptions.
+Recommended Best Practices Fortunately, the defense against cryptomining is very similar to that against other threats.
+Cryptomining malware uses the same tools and methods; thus maintaining good security practices goes a long way.
+These include analysis of non-typical network traffic, and properly configuring and patching systems.

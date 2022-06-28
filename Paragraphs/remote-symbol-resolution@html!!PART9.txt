@@ -1,0 +1,5 @@
+
+Figure 5 shows a screenshot of a remote lookup tool we developed for such occasions.
+Figure 5: Open source remote lookup application In order to maximize the benefits of this type of tool, the tool must be efficient.
+What is the best way to interface with this data?
+There are several factors to consider here, including how the data is submitted, what input formats are accepted, and how well the tool can be integrated with the flow of the analysis process.

@@ -1,0 +1,281 @@
+At FireEye Labs we have an automated system designed to proactively detect newly registered malicious domains.
+
+This system observed some phishing domains registered in the first quarter of 2016 that were designed to appear as legitimate Apple domains.
+
+These phony Apple domains were involved in phishing attacks against Apple iCloud users in China and UK.
+
+In the past we have observed several phishing domains targeting Apple, Google and Yahoo users; however, these campaigns are unique as they are serving the same malicious phishing content from different domains to target Apple users.
+
+Since January 2016 we have observed several phishing campaigns targeting the Apple IDs and passwords of Apple users.
+
+Apple provides all of its customers with an Apple ID, a centralized personal account that gives access to iCloud and other Apple features and services such as the iTunes Store and App Store.
+
+Users will provide their Apple ID to sign in to iCloud[.]com, and use the same Apple ID to set up iCloud on their iPhone, iPad, iPod Touch, Mac, or Windows computer.
+
+iCloud ensures that users always have the latest versions of their important information –  including documents, photos, notes, and contacts – on all of their Apple devices.
+
+iCloud provides an easy interface to share photos, calendars, locations and more with friends and family, and even helps users find their device if they lose it.
+
+Perhaps most importantly, its iCloud Keychain feature allows user to store passwords and credit card information and have it entered automatically on their iOS devices and Mac computers.
+
+Anyone with access to an Apple ID, password and some additional information, such as date of birth and device screen lock code, can completely take over the device and use the credit card information to impersonate the user and make purchases via the Apple Store.
+
+This blog highlights some highly organized and sophisticated phishing attack campaigns we observed targeting Apple customers.
+
+Campaign 1: Zycode phishing campaign targeting Apple's Chinese Customers
+
+This phishing kit is named “zycode” after the value of a password variable embedded in the JavaScript code which all these domains serve in their HTTP responses.
+
+The following is a list of phishing domains targeting Apple users detected by our automated system in March 2016.
+
+None of these domains are registered by Apple, nor are they pointing to Apple infrastructure: The list shows that the attackers are attempting to mimic websites related to iTunes, iCloud and Apple ID, which are designed to lure and trick victims into submitting their Apple IDs.
+
+Most of these domains appeared as an Apple login interface for Apple ID, iTunes and iCloud.
+
+The domains were serving highly sophisticated, obfuscated and suspicious JavaScripts, which was creating the phishing HTML content on the web page.
+
+This technique is effective against anti-phishing systems that rely on the HTML content and analyze the forms.
+
+From March 7 to March 12, the following domains used for Apple ID phishing were observed, all of which were registered by a few entities in China using a qq[.]com email address: iCloud-Apple-apleid[.]com, Appleid-xyw[.]com, itnues-appid[.]com, AppleidApplecwy[.]com, appie-itnues[.]com, AppleidApplecwy[.]com, Appleid-xyw[.]com, Appleid-yun-iCloud[.]com, iCloud-Apple-apleid[.]com, iphone-ioslock[.]com, iphone-appdw[.]com.
+
+From March 13 to March 20, we observed these new domains using the exact same phishing content, and having similar registrants: iCloud-Appleid-yun[.]win, iClouddd[.]top, iCloudee[.]top, iCloud-findip[.]com, iCloudhh[.]top, ioslock-Apple[.]com, ioslock-iphone[.]com, iphone-iosl0ck[.]com, lcloudmid[.]com
+
+On March 30, we observed the following newly registered domains serving this same content: iCloud-mail-Apple[.]com, Apple-web-icluod[.]com, Apple-web-icluodid[.]com, AppleidAppleiph[.]com , icluod-web-ios[.]com and ios-web-Apple[.]com Phishing Content and Analysis Phishing content is usually available in the form of simple HTML, referring to images that mimic a target brand and a form to collect user credentials.
+
+Phishing detection systems look for special features within the HTML content of the page, which are used to develop detection heuristics.
+
+This campaign is unique as a simple GET request to any of these domains results in an encoded JavaScript content in the response, which does not reveal its true intention unless executed inside a web browser or a JavaScript emulator.
+
+For example, the following is a brief portion of the encoded string taken from the code.
+
+This encoded string strHTML goes through a complex sequence of around 23 decrypting/decoding functions that include number system conversions, pseudo-random pattern modifiers followed by XOR decoding using a fixed key or password “zycode” for the actual HTML phishing content to be finally created (refer to Figure 15 and Figure 16 in Appendix 1 for complete code).
+
+Phishing detection systems that rely solely on the HTML in the response section will completely fail to detect the code generated using this technique.
+
+Once loaded into the web browser, this obfuscated JavaScript creates an iCloud phishing page.
+
+This page is shown in Figure 1.
+
+Figure 1:
+
+The page created by the obfuscated JavaScript as displayed in the browse r The page is created by the de-obfuscated content seen in Figure 2.
+
+Figure 2: Deobfuscated conten t Burp Suite is a tool to secure and penetrate web applications: https://portswigger[.]net/burp/.  
+
+The Burp session of a user supplying login and password to the HTML form is shown in Figure 3.
+
+Here we can see 5 variables (u,p,x,y and cc) and a cookie being sent via HTTP POST method to the page save.php.
+
+Figure 3: Burp sessio n
+
+After the user enters a login and password, they are redirected and presented with the following Chinese Apple page, seen in Figure 4: http://iClouddd[.]top/ask2.asp?MNWTK=25077126670584.html Figure 4:
+
+Phishing pag e On this page, all the links correctly point towards Apple[.]com, as can be seen in the HTML:
+
+* Apple <http://www.Apple[.]com/
+
+cn/> *
+
+<http://www.Apple[.]com/cn/shop/goto/bag
+
+>
+
+* Apple <http://www.
+
+Apple[.]com/
+
+cn/
+
+>
+
+* Mac <http://www.Apple[.]com/cn/mac/> * iPad <http://www.
+
+Apple[.]com/cn/ipad/
+
+>
+
+* iPhone <http://www.Apple[.]com/
+
+cn/iphone/>
+
+* Watch <http://www.Apple[.]com/
+
+cn/watch/>
+
+* Music <http://www.
+
+Apple[.]com/cn/music/> * <http://www.
+
+Apple[.]com/
+
+cn/
+
+support/> * Apple[.]com <
+
+http://www.
+
+Apple[.]com/cn/search> * <http://www.Apple[.]com/cn/shop/goto/bag>
+
+Apple ID <https://Appleid.
+
+Apple[.]com/
+
+account/home> * <https://Appleid.
+
+Apple[.]com/zh_CN/signin>
+
+* Apple ID <https://Appleid.
+
+Apple[.]com/zh_CN/account> * <https://Appleid.
+
+Apple[.]com/
+
+zh_CN/#!faq>
+
+When translated using Google Translate, the Chinese text written in the middle of the page (Figure 4) reads: “Verify your birth date or your device screen lock to continue”.
+
+Next the user was presented with an ask3.asp webpage shown in Figure 5.
+
+Figure 5: Phishing form asking for more details from victim s Translation: “Please verify your security question” As shown in Figure 5, the page asks the user to answer three security questions, followed by redirection to an ok.asp page (Figure 6) on the same domain: Figure 6: Successful submission phishing pag e
+
+The final link points back to Apple[.]com.
+
+The complete trail using Burp suite tool is shown in Figure 7.
+
+Figure 7: Burp ses sion
+
+We noticed that if the user tried to supply the same Apple ID twice, they got redirected to the page save[.]asp shown in Figure 8.
+
+Clicking OK on the popup redirected the user back to the main page.
+
+Figure 8: Error prompt generated by phishing page Domain Registration Information We found that the registrant names for all of these phony Apple domains were these Chinese names: “ Yu Hu” and “Wu Yan”, “Yu Fei” and “Yu Zhe”.
+
+Moreover, all these domains were registered with qq[.].com email addresses.
+
+Details are available in Table 1 below.
+
+Table 1: Domain registration information Looking closer at our malicious domain detection system, we observed that the system had been seeing similar domains at an increasing frequency.
+
+Analyzing the registration information, we found some interesting patterns.
+
+Since January 2016 to the time of writing, the system marked around 240 unique domains that have something to do with Apple ID, iCloud or iTunes.
+
+From these 240 domains , we identified 154 unique email registrants with 64 unique emails pointing to qq[.]com, 36 unique Gmail email accounts, and 18 unique email addresses each belonging to 163[.]com and 126[.]com, and a couple more registered with 139[.]com.
+
+This information is vital, as it could be used in following different ways: The domain list provided here could be used by Apple customers as a blacklist; they can avoid browsing to such domains and providing credentials to any of the listed domains, whether they receive them via SMS, email or via any instant messaging service.
+
+The Apple credential phishing detection teams could use this information, as it highlights that all domains registered with these email addresses, registrant names and addresses, as well as their combinations, are potentially malicious and serving phishing content.
+
+This information could be used to block all future domains registered by the same entities.
+
+Patterns emerging from this data reveal that for such campaigns, attackers prefer to use email addresses from Chinese services such as qq.com, 126.com and 138.com.
+
+It has also been observed that instead of names, the attackers have used numbers (such as 545454@qq[.]com and 891495200@qq[.]com) in their email addresses.
+
+Geo-location: As seen in Figure 9, we observed all of these domains pointing to 13 unique IP addresses distributed across the U.S. and China, suggesting that these attacks were perhaps targeting users from these regions .
+
+Figure 9: Geo-location plot of the IPs for this camp aign Campaign 2: British Apples Gone
+
+Bad
+
+Our email attacks research team unearthed another targeted phishing campaign against Apple users in the UK.
+
+Table 2 is a list of 86 Apple phishing domains that we observed since January 2016.
+
+Figure 9: Geo-location plot of the IPs for this campaign Phishing Content and Analysis All of these domains have been serving the same phishing content.
+
+A simple HTTP GET (via the wget utility) to the domain’s main page reveals HTML code containing a meta-refresh redirection to the signin.php page.
+
+A wget session is shown here: $ wget http://manageAppleid84913[.]net --2016-04-05 16:47:44--  http://manageAppleid84913[.]net/ Resolving manageAppleid84913[.]net (manageAppleid84913[.]net)...
+
+109.123.121.10 Connecting to manageAppleid84913[.]net (manageAppleid84913[.]net)|109.123.121.10|:80... connected.
+
+HTTP request sent, awaiting response...
+
+200 OK Length: 203 [text/html]
+
+Saving to: ‘index.html.1’ 100%[============================================================================================================>] 203         --.-K/s   in 0s 2016-04-05 16:47:44 (37.8 MB/s) - ‘index.html.1’ saved [203/203] Content of the page is displayed here: <meta http-equiv=\"refresh\" content=\"0;URL=signin.php?c=
+
+ODcyNTA5MTJGUjU0OTYwNTQ5NDc3MTk3NTAxODE2ODYzNDgxODg2NzU3NA==&log=1&sFR
+
+=ODIxNjMzMzMxODA0NTE4MTMxNTQ5c2RmZ3M1ZjRzNjQyMDQzNjgzODcyOTU2MjU5&email=\" />
+
+This code redirects the browser to this URL/page: http://manageAppleid84913[.]net/signin.php?c=OTYwNzUyNjlGUjU0OTYwNTQ5NDY0MDgxMjQ4OTQ5OTk0MTQ3MDc1NjYyOA==&log=1&sFR=
+
+ODc0MjQyNTEyNzMyODE1NTMxNTQ5c2RmZ3M1ZjRzNjQzMDU5MjUzMzg4NDMzNzE1&email=
+
+# This loads a highly obfuscated JavaScript in the web browser that, on execution, generates the phishing HTML code at runtime to evade signature-based phishing detection systems.
+
+This is seen in Figure 17 in Appendix 2, with a deobfuscated version of the HTML code being shown in Figure 18.
+
+This code renders in the browser to create the fake Apple ID phishing webpage seen in Figure 10, which resembles the authentic Apple page https://Appleid.
+
+Apple[.]com/ .
+
+Figure 10:
+
+Screenshot of the phishing page as seen by the victims in the bro wser On submitting a fake username and password, the form gets submitted to signin-box-disabled.php and the JavaScript and jQuery creates the page seen in Figure 11, informing the user that the Apple ID provided has been locked and the user must unlock it: Figure 11:
+
+Phishing page suggesting victims to unlock their Apple IDs , which requests personal information such as name, date of birth, telephone numbers, addresses, credit card details and security questions, as shown in Figure 12.
+
+While filling out this form, we observed that the country part of the address drop-down menu only allowed address options from England, Scotland and Wales, suggesting that this attack is targeting these regions onlyClicking on unlock leads the user to the page profile.php .
+
+Figure 12:
+
+User information requested by phishing page On submitting false information on this form, the user would get a page asking to wait while the entered information is confirmed or verified.
+
+After a couple of seconds of processing, the page congratulates the user that their Apple ID was successfully unlocked (Figure 13).
+
+As seen in Figure 14, the user is then redirected to the authentic Apple page at https://Appleid.
+
+Apple[.]com/ .
+
+Figure 13:
+
+Account verification page displayed by the phishing site Figure 14:
+
+After a successful attack, victims are redirected to the real apple login page Domain Registration Information It was observed that all of these domains used the whois privacy protection feature offered by many registrars.
+
+This feature enables the registrants to hide their personal and contact information which otherwise is available via the whois service.
+
+These domains were registered with the email “ contact@privacyprotect[.]org ” Geo-location All these domains (Table 2) were pointing to IPs in the UK, suggesting that they were hosted in the UK.
+
+Conclusion Cybercriminals are targeting Apple users by launching phishing campaigns focused on stealing Apple IDs, as well as personal, financial and other information.
+
+We witnessed a high frequency of these targeted phishing attacks in the first quarter of 2016.
+
+A few phishing campaigns were particularly interesting because of their sophisticated evasion techniques (using code encoding and obfuscation), geographical targets, and because the same content was being served across multiple domains, which indicates the same phishing kits were being used.
+
+One campaign we detected in March used sophisticated encoding/encryption techniques to evade phishing detection systems and provided a realistic looking Apple/iCloud interface.
+
+The majority of these domains were registered by individuals having email addresses pointing to Chinese services – registrant email, contact and address information points to China.
+
+Additionally, the domains were serving phony Apple webpages in Chinese, indicating that they were targeting Chinese users.
+
+The second campaign we detected was launched against Apple users in the UK.
+
+This campaign used sophisticated evasion techniques (such as code obfuscation) to evade phishing detection systems and, whenever successful, was able to collect Apple IDs and personal and credit card information from its victims.
+
+Organizations could use the information provided in this blog to protect their users from such sophisticated phishing campaigns by writing signatures for their phishing detection and prevention systems.
+
+Credits and Acknowledgements Special thanks to Yichong Lin, Jimmy Su, Mary Grace and Gaurav Dalal for their support.
+
+Appendix 1 Figure 15: Obfuscated JavaScript served by the phishing site.
+
+In Green we have highlighted functions with: number system converters, pseudo-random pattern decoders, bit level binary operas Figure 16: Obfuscated JS served by the phishing site.
+
+In Green we have highlighted functions with: number system converters, pseudo-random pattern decoders, bit level binary operaters.
+
+While in Red we have: XOR deco ders.
+
+Appendix 2 Figure 17: Obfuscated JavaScript content served by the site Figure 18:
+
+Deobfuscated HTML content For more information on phishing, please visit:
+
+https://support.apple.com/HT203126 http://www.apple.com/legal/more-resources/phishing/ https://support.apple.com/HT204759
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

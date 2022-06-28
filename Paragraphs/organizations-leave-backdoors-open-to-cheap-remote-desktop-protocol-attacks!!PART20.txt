@@ -1,0 +1,12 @@
+
+We have summarized some basic RDP security measures: Using complex passwords and two-factor authentication will make brute-force RDP attacks harder to succeed Do not allow RDP connections over the open Internet Lock out users and block or timeout IPs that have too many failed login attempts Regularly check event logs for unusual login attempts Consider using an account-naming convention that does not reveal organizational information Enumerate all systems on the network and list how they are connected and through which protocols.
+This also applies for Internet of Things and POS systems.
+Conclusion Remotely accessing systems is essential for system administrators to perform their duties.
+Yet they must take the time to set up remote access in a way that is secure and not easily exploitable.
+RPD shops are stockpiling addresses of vulnerable machines and have reduced the effort of selecting victims by hackers to a simple online purchase.
+Governments and organizations spend billions of dollars every year to secure the computer systems we trust.
+But even a state-of-the-art solution cannot provide security when the backdoor is left open or carries only a simple padlock.
+Just as we check the doors and windows when we leave our homes, organizations must regularly check which services are accessible from the outside and how they are secured.
+Protecting systems requires an integrated approach of defense in depth and proactive attitudes from every employee.
+
+

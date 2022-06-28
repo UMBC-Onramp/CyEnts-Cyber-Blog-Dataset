@@ -1,0 +1,3 @@
+
+Within hours of a user opening a malicious attachment sent by APT41, the group had regained a foothold within the organization's servers across multiple geographic regions.
+Looking Ahead APT41 is a creative, skilled, and well-resourced adversary, as highlighted by the operation’s distinct use of supply chain compromises to target select individuals, consistent signing of malware using compromised digital certificates, and deployment of bootkits (which is rare among Chinese APT groups).

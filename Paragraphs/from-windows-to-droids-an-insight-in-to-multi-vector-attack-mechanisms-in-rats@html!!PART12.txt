@@ -1,0 +1,13 @@
+
+Any required data transfer is done over Port 444.
+It supports various commands, the significant ones are shown below.
+The initial connection commands shows that the author plans to implement authentication at some point in time but as it stands now anyone can connect to an infected instance using this command.
+Command Description /CLUserName.
+Password. /CLUserName.
+Password.
+Initialize connection from controller Initialize connection from controller /CK /CK
+Acknowledge Acknowledge /CB{OptionalPath} /CB{OptionalPath} Enumerates all files in root dir or specified path Enumerates all files in root dir or specified path /CU{FilePath} /CU{FilePath} Uploads specified File Uploads specified File /CD{FilePath} /CD{FilePath}
+Downloads file from specified path Downloads file from specified path /CD
+\\\\\\KEYLOGS /CD
+\\\\\\KEYLOGS Download keylogs Download keylogs /CD \\\\\\WEBSITED /CD \\\\\\WEBSITED Download websites visited detail report Download websites visited detail report /CD \\\\\\WEBSITES /CD
+\\\\\\WEBSITES Download websites visited summary report Download websites visited summary report /CD \\\\\\ONLINETIME /CD \\\\\\ONLINETIME Download online time report Download online time report /CD \\\\\\CHATROOM /CD

@@ -1,0 +1,6 @@
+
+A quick search into the domain Tailoredtaboo showed that it had several subdomains, including a control panel on a subdomain named cpanel.tailoredtaboo.com.
+The cPanel subdomain had the following login screen in the Dutch language.
+The domain tailoredtaboo.com has been linked to malicious content in the past.
+On Twitter the researcher @nullcookies reported in April 2018 that he found some malicious files hosted on the specific domain.
+In the directory listing of the main domain there were several files also mentioning the name Rubella.

@@ -1,0 +1,5 @@
+
+From its code, I learned it could collect the credentials from a variety of web browsers: Microsoft IE, Microsoft Edge, Google Chrome, Mozilla Firefox, Opera, Apple Safari, SeaMonkey, Yandex, Vivaldi, Waterfox, and all other Chromium-based browsers.
+The stolen credentials contain the following information: • URL: The URLs that credentials are saved for •
+Web Browser:
+The browser name that holds the credentials • User Name, Password: The credentials • Password Strength: Strong or weak •

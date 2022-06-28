@@ -1,0 +1,12 @@
+
+What’s worse, an attacker can also exploit this vulnerability to demolish all system apps (e.g. Apple Watch, Apple Pay UIService, App Store, Safari, Health, InCallService, Settings, etc.).
+Once demolished, these system apps will no longer be available to the victim, even if the victim restarts the device.
+Here we demonstrate this DoS attack on iOS 8.3 to demolish all the system apps and one App Store app (i.e. Gmail) when the victim clicks only once to install an in-house app wirelessly.
+Note that after rebooting the device, all the system apps still remain demolished while the App Store app would disappear since it has already been uninstalled.
+Extension Masque: Breaking The Data Container Apple introduces the app extension feature [2] on iOS 8.
+Different\ntypes of the app extension provide various new ways for the developer\nto extend the app’s functionality on iOS 8.
+For example, the app can\nappear as a widget on the Today screen, add new buttons in the Action\nsheet, offer photo filters within the iOS
+Photos app, or display a new\nsystem-wide custom keyboard [3].
+In addition, the watch extension [4]\non iPhone delegates all logic of a watch app on iOS 8.2/8.3 after the\nrelease of Apple Watch.
+An app extension can execute code and is\nrestricted to access data within its data container.
+Extensions are\ndistributed as a part of the iOS app, which can be leveraged as\npotential new attack vectors by attackers.

@@ -1,0 +1,5 @@
+
+The large malformed packet contains “where” we want to “write” to and puts our shellcode into memory yet does not contain “what” we want to write.
+The “what”, in this case, is the address of our shellcode, so our last packet needs to contain this address.
+The final challenge is deciding where in the last packet the address belongs.
+Recall from the core dump shown previously that the crash happens on memcpy attempting to write the value 0x81 to the bad address.

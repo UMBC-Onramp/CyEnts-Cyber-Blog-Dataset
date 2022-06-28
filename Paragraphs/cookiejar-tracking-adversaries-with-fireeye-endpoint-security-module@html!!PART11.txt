@@ -1,0 +1,14 @@
+
+The server will connect to the remote host and act as a proxy for the command and control (C2).
+Data to and from the C2 is encoded using Base58 and AES-256-ECB.
+Data to and from the remote host is not encoded.
+Figure 5:
+Hardcoded configuration data within COOKIEJAR Detecting the Techniques Product Signature Network Security/MVX APT.Backdoor.
+Linux64_COOKIEJAR_1 APT.Backdoor.
+Linux_COOKIEJAR_1 APT.Backdoor.
+Linux.
+COOKIEJAR Acknowledgements Chris Gardner, Malware Analyst Fred House, Director, Engineering More information on FireEye Endpoint Security's Logon Tracker Module including the module download and user manual are available in the FireEye Marketplace .
+ Learn more about Mandiant Managed Defense , and catch an on-demand recap on this and the Top 5 Managed Defense attacks this year.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

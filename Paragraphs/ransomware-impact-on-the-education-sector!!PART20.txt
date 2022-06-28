@@ -1,0 +1,6 @@
+
+Similarly, botnets are an indirect threat to those organizations that become a part of the attacker’s infrastructure.
+The attacker can exploit their bandwidth to launch DDoS attacks against other parties, move laterally to other institutions, or leverage the compute power for crypto mining or other illicit purposes.
+This will eventually result in a loss of productivity and revenue for those victims.
+We cannot emphasize more emphatically the following statement from a blog posted by Fortinet earlier this year, entitled, “ Threats Impacting Education Cybersecurity ”: “It’s common knowledge that the cost and effort associated with attack prevention tend to be significantly less than the cost associated with the fallout of a successful attack.
+Therefore, in education cybersecurity and beyond, investing in comprehensive cybersecurity strategies not only protects sensitive data and infrastructure but can also help reduce costs down the line.”

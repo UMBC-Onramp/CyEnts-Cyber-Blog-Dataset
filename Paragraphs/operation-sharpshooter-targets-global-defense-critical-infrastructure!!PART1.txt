@@ -1,0 +1,2 @@
+By Ryan Sherstobitoff and Asheer Malhotra on Dec 12, 2018 This post was written with contributions from the McAfee Advanced Threat Research team.
+The McAfee Advanced Threat Research team and McAfee Labs Malware Operations Group have discovered a new global campaign targeting nuclear, defense, energy, and financial companies, based on McAfee® Global Threat Intelligence.

@@ -1,0 +1,7 @@
+
+The developer requires payment in cryptocurrency, primarily DASH, because it complex to track, or Bitcoin.
+The malware is usually but not always packed.
+We have seen variants in .exe format (the primary form) along with DLLs.
+GandCrab is effectively ransomware as a service; its operators can choose which version they want.
+Version 4.0 The most important change in Version 4.0 is in the algorithm used to encrypt files.
+Earlier versions used RSA and AES; the latest versions use Salsa20.

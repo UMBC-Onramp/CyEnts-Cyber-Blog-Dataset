@@ -1,0 +1,8 @@
+
+The services list appears to include items that have nothing to do with services, like \"winword.exe\".
+In the processes list, only the last three items look like actual process names, while even one of them is wrong (\" QBCFMonitorServicechrome.exe \" looks like a concatenation of “ QBCFMonitorService ” and “ chrome.exe ”).
+·
+ Initialize encryption key: RSAINIT initializes the RSA public key used for encryption with the standard WinCrypt API.
+· Find all drives to encrypt: ENMDSKS gets all the local drives in the system using GetLogicalDriveStrings API and checks to ensure they are not in the exclusions list.
+This routine will be skipped if the mode command-line parameter (“ -m ”) is set to “net”.
+The default list of the excluded file extensions, file names and paths is: *.exe , *.sys ,

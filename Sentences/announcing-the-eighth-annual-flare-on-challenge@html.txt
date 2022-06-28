@@ -1,0 +1,29 @@
+The FLARE team is once again hosting its annual Flare-On challenge, now in its eighth year.
+
+Take this opportunity to enjoy some extreme social distancing by solving fun puzzles to test your mettle and learn new tricks on your path to reverse engineering excellence.
+
+The contest will begin at 8:00 p.m. ET on Sept. 10, 2021.
+
+This is a CTF-style challenge for all active and aspiring reverse engineers, malware analysts, and security professionals.
+
+The contest runs for six full weeks and ends at 8:00 p.m. ET on Oct. 22, 2021.
+
+This year’s contest will consist of 10 challenges and feature a variety of formats, including Windows, Linux, and JavaScript.
+
+This is one of the only Windows-centric CTF contests out there and we have crafted it to represent the skills and challenges our FLARE team faces.
+
+If you smash your way through all 10 challenges, you will receive a prize and permanent recognition on the Flare-On website to honor your greatness.
+
+Prize details will be revealed later, but as always, it will be worthwhile swag to earn the envy of your peers.
+
+Prior year’s prizes were belt buckles, a replica police badge, a challenge coin, a medal, a massive pin, and a cyber-styled skeleton key.
+
+Check the Flare-On website for a live countdown timer, to view the previous year’s winners, and to download past challenges and solutions for practice.
+
+For official news and information, we will be using the Twitter hashtag: #flareon8.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

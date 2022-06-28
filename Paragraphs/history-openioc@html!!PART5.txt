@@ -1,0 +1,7 @@
+
+Recording the IOCs in OpenIOC had other benefits as well.
+Indicators from one investigation could be shared with other investigations or organizations, and allow investigators to look for the exact same IOCs wherever they were, without having to worry about translation problems associated with ambiguous formats, such as lists or text documents.
+One investigator could create an IOC, and then share it with others, who could put that same IOC into their investigative system and look for the same evil as the first person, with little to no additional work.
+The format grew organically over time.
+We always intended that the format be expandable and improvable.
+Instead of trying to map out every possible use case, Mandiant has updated the format and expanded the dictionaries of IOC Terms as new needs have arisen over time.

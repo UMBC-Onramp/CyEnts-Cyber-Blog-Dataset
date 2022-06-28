@@ -1,0 +1,5 @@
+
+Process all remaining carved file records that could not be correlated to active or deleted jobs.
+Historic records can also be found in transaction log files.
+Although we do not parse the transaction log structures, the same algorithm can be used to find job and file records within the logs by searching for appropriate GUIDs.
+While the same records may be present in multiple files, duplicates can be suppressed to prevent output of redundant information.

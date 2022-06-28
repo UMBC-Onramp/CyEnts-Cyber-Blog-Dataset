@@ -1,0 +1,5 @@
+
+With additional information, such as a timestamp and username, analysts can identify a change in source location over time to determine if that user could have possibly traveled between those two physical locations to legitimately perform the logons.
+For example, if a user account, Meghan, logged on from New York City, New York on 2017-11-24 at 10:00:00 UTC and then logged on from Los Angeles, California 10 hours later on 2017-11-24 at 20:00:00 UTC, that is roughly a 2,450 mile change over 10 hours.
+Meghan’s logon source change can be normalized to 245 miles per hour which is reasonable through commercial airline travel.
+If a second user account, Harry, logged on from Dallas, Texas on 2017-11-25 at 17:00:00 UTC and then logged on from Sydney, Australia two hours later on 2017-11-25 at 19:00:00 UTC, that is roughly an 8,500 mile change over two hours.

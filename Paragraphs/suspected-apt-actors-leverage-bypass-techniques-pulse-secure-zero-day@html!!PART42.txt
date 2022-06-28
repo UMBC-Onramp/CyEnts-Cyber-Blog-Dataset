@@ -1,0 +1,10 @@
+
+It also adds a function to parse parameters of received command data.
+The script enclosed in the tags ##cgistart2 and ##cgiend2 is responsible for checking web requests designed to be executed by the webshell, if present.
+If no webshell request is found, the script passes execution to the legitimate Perl script for the webpage.
+The webshell portion of the script is invoked when it receives a form submission name=value pair of serverid matching a secret key.
+This causes the webshell to extract the string passed to it via the QUERY_STRING CGI environment variable.
+Individual key/value pairs delimited by the & character and are URL decoded.
+Although the script parses out all key/value pairs it receives, it specifically looks for and extracts data associated with the cmd parameter.
+If found, it will generate a form containing the extracted cmd to be executed and the previous serverid value along with a form submission button named Run .
+Upon submission, the webshell will execute the passed command on the victim host's command line and display the results to the attacker before exiting.

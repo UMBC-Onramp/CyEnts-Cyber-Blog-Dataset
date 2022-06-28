@@ -1,0 +1,6 @@
+
+st'; … var filename = 'download.hta'; var browser = '
+Chrome'; var special = '1'; var filePlain = window.atob(file64); var a = document.getElementById('buttonDownload'); Figure 3: Excerpts of JavaScript code identified from the FakeUpdates landing pages When the user opens the initial FakeUpdates downloader, the Windows Scripting Host ( wscript.exe) is executed and the following actions are performed: A script is executed in memory and used to fingerprint the affected system.
+A subsequent backdoor or banking trojan is downloaded if the system is successfully fingerprinted.
+A script is executed in memory which: Downloads and launches a third party screenshot utility.
+Sends the captured screenshots to an attacker.

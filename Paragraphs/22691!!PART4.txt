@@ -1,0 +1,5 @@
+
+The first, known as XCSSET, infects Xcode projects and allows attackers to do all kinds of nasty stuff on the victim’s Mac.
+The second is Silver Sparrow, which recently made a media splash and is spreading far faster than the first.
+The third and fourth known M1-malware varieties are adware from the Pirrit and Bnodlero families.
+Hardcore techies can check out our technical breakdown of all four families.

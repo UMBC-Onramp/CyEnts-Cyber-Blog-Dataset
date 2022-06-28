@@ -1,0 +1,10 @@
+
+If an attacker can hijack enough systems, mining in high volume can be profitable.
+Not only individuals struggle with protecting against these attacks; companies suffer from them as well.
+Securing cloud environments can be a challenge.
+Building applications in the cloud with container technology is effective and fast, but we also need to create the right amount of security controls.
+We have seen breaches in which bad actors uploaded their own containers and added them to a company’s cloud environment—which started to mine cryptocurrency.
+New technologies and improvements to current ones are great, but we need to find the balance of securing them appropriately.
+Who would guess to use an embedded voice assistant to hack a computer?
+Who looks for potential attack vectors in new technologies and starts a dialog with the industry?
+One of those is the McAfee Advanced Threat Research team, which provides most of the analysis behind our threats reports.

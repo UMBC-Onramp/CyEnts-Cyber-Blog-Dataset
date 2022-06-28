@@ -1,0 +1,7 @@
+On February 11, FireEye identified a zero-day exploit (CVE-2014-0322)
+  being served up from the U.S. Veterans of Foreign Wars’ website (vfw[.]org).
+We believe the attack is a strategic Web compromise targeting American military personnel amid a paralyzing snowstorm at the U.S. Capitol in the days leading up to the Presidents Day holiday weekend.
+Based on infrastructure overlaps and tradecraft similarities, we believe the actors behind this campaign are associated with two previously identified campaigns ( Operation DeputyDog and Operation Ephemeral Hydra ).
+This blog post examines the vulnerability and associated attacks, which we have dubbed “Operation SnowMan.\" Exploit/Delivery analysis After compromising the VFW website, the attackers added an iframe into the beginning of the website’s HTML code that loads the attacker’s page in the background.
+The attacker’s HTML/JavaScript page runs a Flash object, which orchestrates the remainder of the exploit.
+The exploit includes calling back to the IE 10 vulnerability trigger, which is embedded in the JavaScript.

@@ -1,0 +1,6 @@
+
+To make matters worse, if the attacker knows the IP address of the device ahead of time, this exploit can be performed over the Internet, increasing its impact exponentially.
+At the time of this writing, a Shodan scan revealed that over 1600 such devices are internet connected, meaning the danger is far from hypothetical.
+For those craving the nitty-gritty technical details of how we went about accomplishing this, we also published what is arguably a novella here that delves into the vulnerability discovery and exploitation process from start to finish.
+In keeping with our responsible disclosure program , we reached out to Delta Controls as soon as we confirmed that the initial vulnerability we discovered was exploitable.
+Shortly thereafter, they provided us with a beta version of a patch meant to fix the vulnerability and we confirmed that it did just that – our attack no longer worked.

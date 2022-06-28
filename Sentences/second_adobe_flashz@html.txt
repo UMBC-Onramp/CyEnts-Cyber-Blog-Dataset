@@ -1,0 +1,141 @@
+On July 14, FireEye researchers discovered attacks exploiting the Adobe Flash vulnerability CVE-2015-5122, just four days after Adobe released a patch.
+
+CVE-2015-5122 was the second Adobe Flash zero-day revealed in the leak of HackingTeam’s internal data.
+
+The campaign targeted Japanese organizations by using at least two legitimate Japanese websites to host a strategic web compromise (SWC), where victims ultimately downloaded a variant of the SOGU malware.
+
+Strategic Web Compromise At least two different Japanese websites were compromised to host the exploit framework and malicious downloads: Japan’s International Hospitality and Conference Service Association (IHCSA) website (hxxp://www.ihcsa[.]or[.]jp) in Figure 1 Figure 1: IHCSA website Japan’s Cosmetech Inc. website (hxxp://cosmetech[.]co[.]jp)
+
+The main landing page for the attacks is a specific URL seeded on the IHCSA website (hxxp://www.ihcsa[.]or[.]jp/zaigaikoukan/zaigaikoukansencho-1/), where users are redirected to the HackingTeam Adobe Flash framework hosted on the second compromised Japanese website.
+
+We observed in the past week this same basic framework across several different SWCs exploiting the “older” CVE-2015-5119 Adobe Flash vulnerability in Figure 2.
+
+Figure 2:
+
+First portion of exploit chain The webpage (hxxp://cosmetech[.]co[.]jp/css/movie.html) is built with the open source framework Adobe Flex and checks if the user has at least Adobe Flash Player version 11.4.0 installed.
+
+If the victim has the correct version of Flash, the user is directed to run a different, more in-depth profiling script (hxxp://cosmetech.co.jp/css/swfobject.js), which checks for several more conditions in addition to their version of Flash.
+
+If the conditions are not met then the script will not attempt to load the Adobe Flash (SWF) file into the user’s browser.
+
+In at least two of the incidents we observed, the victims were running Internet Explorer 11 on Windows 7 machines.
+
+The final component is delivering a malicious SWF file, which we confirmed exploits CVE-2015-5122 on Adobe Version 18.0.0.203 for Windows in Figure 3.
+
+Figure 3:
+
+Malicious SWF download SOGU Malware, Possible New Variant After successful exploitation, the SWF file dropped a SOGU variant—a backdoor widely used by Chinese threat groups and also known as “Kaba”—in a temporary directory under “AppData\\Local\\”.
+
+The directory contains the properties and configuration in Figure 4.
+
+Filename: Rdws.exe Size: 413696 bytes MD5: 5a22e5aee4da2fe363b77f1351265a00 Compile Time: 2015-07-13 08:11:01 SHA256: df5f1b802d553cddd3b99d1901a87d0d1f42431b366cfb0ed25f465285e38d27 SSDeep: 6144:
+
+Na/PSOE9OPXCQpA3abFUntBrDP3FVPsCE2NiYfFei78GlGeYO:IPSOE9OPXCQ pAK5YBvPPPrZVkiY2Y Import Hash : ae984e4ab41d192d631d4f923d9210e4 PEHash: 57e6b26eac0f34714252957d26287bc93ef07db2 .text : e683e1f9fb674f97cf4420d15dc09a2b .rdata : 3a92b98a74d7ffb095fe70cf8acacc75 .data : b5d4f68badfd6e3454f8ad29da54481f .rsrc :
+
+474f9723420a3f2d0512b99932a50ca7 C2 Password: gogogod< Memo: 201507122359 Process Inject Targets: %windir%\\system32\\svchost.exe
+
+Sogu Config Encoder: sogu_20140307 Mutex Name: ZucFCoeHa8KvZcj1FO838HN&*wz4xSdmm1 Figure 4:
+
+SOGU Binary ‘Rdws.exe’ The compile timestamp indicates the malware was assembled on July 13, less than a day before we observed the SWC.
+
+We believe the time stamp in this case is likely genuine, based on the time line of the incident.
+
+The SOGU binary also appears to masquerade as a legitimate Trend Micro file named “VizorHtmlDialog.exe” in Figure 5.
+
+LegalCopyright:
+
+Copyright (C) 2009-2010 Trend Micro Incorporated.
+
+All rights reserved.
+
+InternalName: VizorHtmlDialog FileVersion:
+
+3.0.0.1303 CompanyName: Trend Micro Inc.
+
+PrivateBuild:
+
+Build 1303 - 8/8/2010 LegalTrademarks:
+
+Trend Micro Titanium is a registered trademark of Trend Micro Incorporated.
+
+Comments: ProductName:
+
+Trend Micro Titanium SpecialBuild: 1303 ProductVersion: 3.0 FileDescription:
+
+Trend Titanium OriginalFilename: VizorHtmlDialog.exe Figure 5:
+
+Rdws.exe version information The threat group likely used Trend Micro, a security software company headquartered in Japan, as the basis for the fake file version information deliberately, given the focus of this campaign on Japanese organizations.
+
+SOGU Command and Control The SOGU variant calls out to a previously unobserved command and control (CnC) domain, “amxil[.]opmuert[.]org” over port 443 in Figure 6.
+
+It uses modified DNS TXT record beaconing with an encoding we have not previously observed with SOGU malware, along with a non-standard header, indicating that this is possibly a new variant.
+
+Figure 6:
+
+SOGU C2 beaconing The WHOIS registrant email address for the domain did not indicate any prior malicious activity, and the current IP resolution (54.169.89.240) is for an Amazon Web Services IP address.
+
+Another Quick Turnaround on Leveraging HackingTeam Zero-Days Similar to the short turnaround time highlighted in our blog on the recent APT3/APT18 phishing attacks , the threat actor quickly employed the leaked zero-day vulnerability into a SWC campaign.
+
+The threat group appears to have used procured and compromised infrastructure to target Japanese organizations.
+
+In two days we have observed at least two victims related to this attack.
+
+We cannot confirm how the organizations were targeted, though similar incidents involving SWC and exploitation of the Flash vulnerability CVE-2015-5119 lured victims with phishing emails.
+
+Additionally, the limited popularity of the niche site also contributes to our suspicion that phishing emails may have been the lure, and not incidental web browsing.
+
+Malware Overlap with Other Chinese Threat Groups We believe that this is a concerted campaign against Japanese companies given the nature of the SWC.
+
+The use of SOGU malware and dissemination method is consistent with the tactics of Chinese APT groups that we track.
+
+Chinese APT groups have previously targeted the affected Japanese organizations, but we have yet to confirm which group is responsible for this campaign.
+
+Why Japan?
+
+In this case, we do not have enough information to discern specifically what the threat actors may have been pursuing.
+
+The Japanese economy’s technological innovation and strengths in high-tech and precision goods have attracted the interest of multiple Chinese APT groups, who almost certainly view Japanese companies as a rich source of intellectual property and competitive intelligence.
+
+The Japanese government and military organizations are also frequent targets of cyber espionage.[1]  Japan’s economic influence, alliance with the United States, regional disputes, and evolving defense policies make the Japanese government a dedicated target of foreign intelligence.
+
+Recommendations FireEye maintains endpoint and network detection for CVE-2015-5122 and the backdoor used in this campaign.
+
+FireEye products and services identify this activity as SOGU/Kaba within the user interface.
+
+Additionally, we highly recommend:
+
+Applying Adobe’s newest patch for Flash immediately; Querying for additional activity by the indicators from the compromised Japanese websites and the SOGU malware callbacks; Blocking CnC addresses via outbound communications; and Scope the environment to prepare for incident response.
+
+[1] Humber, Yuriy and Gearoid Reidy.
+
+“Yahoo Hacks Highlight Cyber Flaws Japan Rushing to Twart.”
+
+BloombergBusiness.
+
+8 July 2014.
+
+http://www.bloomberg.com/news/articles/2014-07-08/yahoo-hacks-highlight-cyber-flaws-japan-rushing-to-thwart Japanese Ministry of Defense.
+
+“Trends Concerning Cyber Space.”
+
+Defense of Japan 2014.
+
+  http://www.mod.go.jp/e/publ/w_paper/pdf/2014/DOJ2014_1-2-5_web_1031.pdf LAC Corporation.
+
+“Cyber Grid View, Vol.
+
+1.”
+
+http://www.lac.co.jp/security/report/pdf/apt_report_vol1_en.pdf Otake, Tomoko.
+
+“Japan Pension Service hack used classic attack method.”
+
+Japan Times.
+
+2 June 2015.
+
+http://www.japantimes.co.jp/news/2015/06/02/national/social-issues/japan-pension-service-hack-used-classic-attack-method/ Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

@@ -1,0 +1,8 @@
+By Douglas McKee on Aug 11, 2018
+The author thanks Shaun Nordeck, MD, for his assistance with this report.
+With the explosion of growth in technology and its influence on our lives, we have become increasingly dependent on it.
+ The medical field is no exception: Medical professionals trust technology to provide them with accurate information and base life-changing decisions on this data.
+McAfee’s Advanced Threat Research team is exploring these devices to increase awareness about their security.
+Some medical devices, such as pacemakers and insulin pumps, have already been examined for security concerns.
+To help select an appropriate target for our research, we spoke with a doctor.
+In our conversations we learned just how important the accuracy of a patient’s vital signs is to medical professionals.

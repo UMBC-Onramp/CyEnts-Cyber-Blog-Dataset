@@ -1,0 +1,7 @@
+
+Our intel team is back again, this time with an eye on the utilities industry.
+As part of our incident response and managed defense work, Mandiant has observed Chinese APT groups exploiting the computer networks of U.S. utilities enterprises servicing or providing electric power to U.S. consumers, industry, and government.
+The most likely targets for data theft in this industry include smart grid technologies, water and waste management expertise, and negotiations information related to existing or pending deals involving Western utilities companies operating in China.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

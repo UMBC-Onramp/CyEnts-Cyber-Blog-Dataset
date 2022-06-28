@@ -1,0 +1,5 @@
+
+This can be done alongside baselining and normalization of ASN’s used for legitimate remote access to help identify suspicious activity.
+Lateral Movement Using Different Credentials Once the attacker gained access to the network with compromised credentials, they moved laterally using multiple different credentials.
+The credentials used for lateral movement were always different from those used for remote access.
+Detection Opportunity Organizations can use HX’s LogonTracker module to graph all logon activity and analyze systems displaying a one-to-many relationship between source systems and accounts.

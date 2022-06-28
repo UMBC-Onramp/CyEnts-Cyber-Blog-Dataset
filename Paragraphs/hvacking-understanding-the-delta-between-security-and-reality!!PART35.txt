@@ -1,0 +1,5 @@
+
+Figure 24 The code producing the overwrite in memory is only taken if the value in R0, when bitwise ANDed with the immediate value 3, is not equal to 0.
+From our crash dump, we knew that the value in R0 is the address of the destination we want to copy to.
+This potentially posed a problem.
+If the address we wanted to write to was 4-byte aligned, which was highly likely, the code path for our vulnerability would not be taken.

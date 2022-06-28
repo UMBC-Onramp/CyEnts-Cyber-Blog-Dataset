@@ -1,0 +1,4 @@
+
+Several examples demonstrate the ease with which adversaries can expand from ICS Kill Chain Stage 1 to Stage 2 operations — with the latter having direct impact on and implications for ICS and OT networks.
+For example, the EKANS malware is a ransomware variant that includes the ability to stop ICS-related Windows processes.
+Although this is a primitive technique, it indicates criminal enterprises are expanding ransomware targets to include industrial environments.

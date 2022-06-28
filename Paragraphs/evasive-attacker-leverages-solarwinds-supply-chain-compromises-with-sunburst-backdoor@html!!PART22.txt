@@ -1,0 +1,8 @@
+
+Steganography In observed traffic these HTTP response bodies attempt to appear like benign XML related to .NET assemblies, but command data is actually spread across the many GUID and HEX strings present.
+Commands are extracted from HTTP response bodies by searching for HEX strings using the following regular expression: \"\\{[0-9a-f-]{36}\\}\"|\"[0-9a-f]{32}\"|\"[0-9a-f]{16}\".
+Command data is spread across multiple strings that are disguised as GUID and HEX strings.
+All matched substrings in the response are filtered for non HEX characters, joined together, and HEX-decoded.
+The first DWORD value shows the actual size of the message, followed immediately with the message, with optional additional junk bytes following.
+The extracted message is single-byte XOR decoded using the first byte of the message, and this is then DEFLATE decompressed.
+The first character is an ASCII integer that maps to the JobEngine enum, with optional additional command arguments delimited by space characters.

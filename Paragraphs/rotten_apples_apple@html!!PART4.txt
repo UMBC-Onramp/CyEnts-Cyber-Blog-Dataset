@@ -1,0 +1,9 @@
+
+The following is a list of phishing domains targeting Apple users detected by our automated system in March 2016.
+None of these domains are registered by Apple, nor are they pointing to Apple infrastructure: The list shows that the attackers are attempting to mimic websites related to iTunes, iCloud and Apple ID, which are designed to lure and trick victims into submitting their Apple IDs.
+Most of these domains appeared as an Apple login interface for Apple ID, iTunes and iCloud.
+The domains were serving highly sophisticated, obfuscated and suspicious JavaScripts, which was creating the phishing HTML content on the web page.
+This technique is effective against anti-phishing systems that rely on the HTML content and analyze the forms.
+From March 7 to March 12, the following domains used for Apple ID phishing were observed, all of which were registered by a few entities in China using a qq[.]com email address: iCloud-Apple-apleid[.]com, Appleid-xyw[.]com, itnues-appid[.]com, AppleidApplecwy[.]com, appie-itnues[.]com, AppleidApplecwy[.]com, Appleid-xyw[.]com, Appleid-yun-iCloud[.]com, iCloud-Apple-apleid[.]com, iphone-ioslock[.]com, iphone-appdw[.]com.
+From March 13 to March 20, we observed these new domains using the exact same phishing content, and having similar registrants: iCloud-Appleid-yun[.]win, iClouddd[.]top, iCloudee[.]top, iCloud-findip[.]com, iCloudhh[.]top, ioslock-Apple[.]com, ioslock-iphone[.]com, iphone-iosl0ck[.]com, lcloudmid[.]com
+On March 30, we observed the following newly registered domains serving this same content: iCloud-mail-Apple[.]com, Apple-web-icluod[.]com, Apple-web-icluodid[.]com, AppleidAppleiph[.]com , icluod-web-ios[.]com and ios-web-Apple[.]com Phishing Content and Analysis Phishing content is usually available in the form of simple HTML, referring to images that mimic a target brand and a form to collect user credentials.

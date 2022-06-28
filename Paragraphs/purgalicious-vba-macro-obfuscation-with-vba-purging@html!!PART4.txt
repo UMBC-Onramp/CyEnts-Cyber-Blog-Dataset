@@ -1,0 +1,3 @@
+
+VBA stomping takes advantage of how module streams are interpreted\nand exchanges malicious CompressedSourceCode with non-malicious VBA source code, leaving the PerformanceCache untouched.
+However, the success\nof this technique is Office-version dependent, implying that an\nattacker would have to do additional recon on their target and be\naware of their victims’ deployed Office versions.

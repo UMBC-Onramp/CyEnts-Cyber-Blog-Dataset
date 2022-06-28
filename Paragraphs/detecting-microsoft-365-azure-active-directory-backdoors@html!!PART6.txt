@@ -1,0 +1,3 @@
+
+This could allow an attacker to pivot their attack to other areas of the network—or use these credentials against other internet accessible portals that may leverage single-factor authentication (e.g., VPN gateway).
+An attacker can use this module in one of two ways: Method 1: On-Premises Compromise An attacker has gained access to an on-premises domain and is able to laterally move to the AADConnect / PTA Agent Server.

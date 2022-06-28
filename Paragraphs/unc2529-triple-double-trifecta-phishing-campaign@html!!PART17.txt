@@ -1,0 +1,8 @@
+
+* value: <default> * data: <rnd_guid_1>
+* key:
+TreatAs * value: <default> * data: <rnd_guid_0>
+Figure 5:
+Registry keys and values created by the dropper Once the registry keys and values are created, the dropper dynamically generates the bootstrap and the launcher PowerShell scripts and saves them under the {<rnd_guid_0>} registry key as shown in Figure 5.
+Additionally, at this point the dropper generates a random RC4 key and encodes it inside a larger buffer which is then saved under the VersionIndependentProgID key.
+The actual RC4 key within the buffer is given by the following calculations, shown in Figure 6 (note that the key is reversed!).

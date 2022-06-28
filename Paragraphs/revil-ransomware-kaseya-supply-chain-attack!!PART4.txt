@@ -1,0 +1,4 @@
+
+It is suspected that more than one security flaw enabled the attack to reach its objectives.
+IBM X-Force’s Threat Intelligence Index shows that the most common entry point to organizations has been exploitation tactics, surpassing phishing and the use of stolen credentials.
+In cases where a VSA server is exposed to internet, any known vulnerability could be weaponized and leveraged by attackers to potentially breach it from a remote location.

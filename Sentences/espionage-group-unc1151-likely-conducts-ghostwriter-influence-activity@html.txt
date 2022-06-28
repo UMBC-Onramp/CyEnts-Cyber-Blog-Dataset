@@ -1,0 +1,35 @@
+In July 2020, Mandiant Threat Intelligence released a public report detailing an ongoing influence campaign we named “Ghostwriter.”
+
+Ghostwriter is a cyber-enabled influence campaign which primarily targets audiences in Lithuania, Latvia and Poland and promotes narratives critical of the North Atlantic Treaty Organization’s (NATO) presence in Eastern Europe.
+
+Since releasing our public report, we have continued to investigate and report on Ghostwriter activity to Mandiant Intelligence customers.
+
+We tracked new incidents as they happened and identified activity extending back years before we formally identified the campaign in 2020.
+
+A new report by our Information Operations analysis, Cyber Espionage analysis, and Mandiant Research teams provides an update on Ghostwriter , highlighting two significant developments.
+
+We have observed an expansion of narratives, targeting and TTPs associated with Ghostwriter activity since we released our July 2020 report.
+
+For example, several recent operations have heavily leveraged the compromised social media accounts of Polish officials on the political right to publish content seemingly intended to create domestic political disruption in Poland rather than foment distrust of NATO.
+
+These operations, conducted in Polish and English, appear to have largely not relied on the dissemination vectors we have typically observed with previous Ghostwriter activity, such as website compromises, spoofed emails or posts from inauthentic personas.
+
+We have observed no evidence that these social media platforms were themselves in any way compromised, and instead believe account credentials were obtained using the compromised email accounts of targeted individuals.
+
+Recently obtained technical evidence now allows us to assess with high confidence that UNC1151, a suspected state-sponsored cyber espionage actor that engages in credential harvesting and malware campaigns, conducts at least some components of Ghostwriter influence activity; current intelligence gaps, including gaps pertaining to website compromises and the operation of false personas, do not allow us to conclusively attribute all aspects of the Ghostwriter campaign to UNC1151 at this time.
+
+We do not associate UNC1151 with any other previously tracked threat groups.
+
+Since the start of 2021, UNC1151 has expanded its credential theft activity to target German politicians.
+
+This targeting has been publicly reported in the German Tagesschau .
+
+The appendices of the report include an exhaustive table of incidents and operations we currently associate with Ghostwriter activity, a detailed case study of a recent Ghostwriter operation, and indicators of compromise (IOCs) related to UNC1151.
+
+Read the report today to learn more.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

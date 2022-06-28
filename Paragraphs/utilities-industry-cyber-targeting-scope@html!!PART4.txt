@@ -1,0 +1,4 @@
+
+[i] The impacts from this transition are intensifying pressures on an already fragile and outdated utilities infrastructure in China that currently struggles to provide sufficient electric power, water, and waste treatment.
+We believe APT groups are stealing data that will allow them to improve historic PRC urbanization efforts and the modernization of infrastructure, which is receiving billions of government investment dollars for development.
+While we have tracked multiple attributed Chinese APT groups active in the utilities industries, we certainly don't discount that other, non-Chinese state-sponsored (or independent) actors could be engaged in data theft related to utilities.

@@ -1,0 +1,7 @@
+In early 2019, FireEye Threat Intelligence identified a spear phishing email targeting government entities in Ukraine.
+ 
+The spear phishing email included a malicious LNK file with PowerShell script to download the second-stage payload from the command and control (C&C) server.
+The email was received by military departments in Ukraine and included lure content related to the sale of demining machines.
+This latest activity is a continuation of spear phishing that targeted the Ukrainian Government as early as 2014.
+The email is linked to activity that previously targeted the Ukrainian Government with RATVERMIN.
+ Infrastructure analysis indicates the actors behind the intrusion activity may be associated with the so-called Luhansk People's Republic (LPR).

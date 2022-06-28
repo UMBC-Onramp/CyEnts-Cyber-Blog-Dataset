@@ -1,0 +1,4 @@
+
+This reinforces that during the post-exploitation phase of ransomware incidents, threat actors can engage in internal reconnaissance and obtain data to increase their negotiating power.
+ We expect that the extortion tactics that threat actors use to pressure victims will continue to evolve throughout 2021.
+Based on the evidence that DARKSIDE ransomware is distributed by multiple actors, we anticipate that the TTPs used throughout incidents associated with this ransomware will continue to vary somewhat.

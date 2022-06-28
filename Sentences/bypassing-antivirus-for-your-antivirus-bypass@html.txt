@@ -1,0 +1,73 @@
+Chances are you have heard about how easy it can be to evade antivirus.
+
+Often, this is because the signatures used by vendors are too simplistic and can be successfully duped without changing the functionality of the malware.
+
+Have you ever attempted to evade AV?
+
+Is it really that easy?
+
+In this blog post, I’ll show you how I adapted “malicious” (not really)
+
+PowerShell script to slip by Windows Defender.
+
+One of my favorite PowerShell commands is iex (new-objectnet.webclient).downloadstring, which can be used to load a remotely hosted script directly into memory.
+
+This command is often behind reports of “fileless” malware and is regularly abused by red teams and criminals alike.
+
+AV detection of this method has improved somewhat recently but plenty of options exist to evade, such as invoke-obfuscation by @danielhbohannon .
+
+The MITRE ATT&CK framework includes a technique called “Indicator Removal from Tools” ( T1066 ), which describes how an adversary may alter a tool after it is detected in an attempt to evade defenses.
+
+T1066 is one reason why alerts for a tool being blocked should not be ignored.
+
+In researching this technique, I found that using my favorite command with PowerSploit’s Find-AVSignature.ps1 somewhat ironically resulted in a Windows Defender block… not-so-ironically, it was released in 2012.
+
+There have been many excellent posts on how to evade AV but, as the saying goes, “there is more than one way to skin a cat.”
+
+ To highlight how ridiculous AV can be, I decided to bypass AV detection of Find-AVSignature.ps1 while maintaining the spirit of “there is an easier way,” outlined in @obscuresec ’s blog post introducing Find-AvSignature.
+
+The key to my method is PowerShell’s built-in Invoke-Webrequest command (also known by the aliases \"iwr,\" \"wget,\" and \"curl\").
+
+While Windows Defender will block calling Find-AvSignature.ps1 when attempting to use iex (new-object net.webclient).downloadstring… ...
+
+it will NOT block you from performing a wget on the page and then viewing the page’s content.
+
+Now we’re getting somewhere, but we can’t simply write the contents to disk.
+
+From here, we are going to find out where Defender is catching the file by writing the file to the disk one line at a time.
+
+After we find the line, we are going to break it into words and then reverse any variables found in the line.
+
+This will require a fairly simple script: From the output of the script, we can see that detection takes place on line 166 (167 for non-programmer types), which reads: $BytesLeft = $BytesLeft - $count ‍ Surely, we can't change the variable names!
+
+‍ ‍ We could simply do a $page.content.replace twice to replace the two variables but why would we when we can over-complicate this?
+
+Let’s add logic to change the variable names for us by simply reversing the characters.
+
+Now the output reads: Detection at line 166 (counting from 0 ^,^) Replaced $BytesLeft with $tfeLsetyB Replaced $count with $tnuoc ‍ But does Find-AvSignature.ps1 still work?
+
+Yes, yes it does….
+
+So, is this only Windows Defender sucking?
+
+No, no it is not… As you can see, it’s not only Windows Defender that is using a poorly chosen detection string – our small change detection went across several AV products.
+
+This begs some questions: How well does AV hold up to other techniques?
+
+Is that ok because you are covered elsewhere?
+
+More expansively, how well does your firewall, IDS/IPS, and Sandbox hold up?
+
+Could you adjust your defense strategy to compensate?
+
+Before you invest in another security tool to layer over the tons that you probably already have, ask yourself if it’s really the product or a change in configuration that is needed.
+
+Verodin SIP prescriptively shows you exactly what change you should make to optimize your security, so you can find solutions with what you already have in your network.
+
+To learn more, request a demo .
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

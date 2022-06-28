@@ -1,0 +1,4 @@
+
+The domains were also reported as a separate phishing campaign in 2019 using ‘SWIFT monetary transfer’ themed lures to deliver LokiBot, in addition to Neshta and Fuerboos.
+All four C2 domains were used again in October 2020, as part of a different Lokibot spam campaign .
+Of note, these C2 domains were present in 95 of the RoboSki-packed LokiBot samples, accounting for 41 unique LokiBot payloads.

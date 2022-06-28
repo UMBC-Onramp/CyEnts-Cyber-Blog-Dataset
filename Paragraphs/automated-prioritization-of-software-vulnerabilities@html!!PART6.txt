@@ -1,0 +1,5 @@
+
+Specifically, we link a CVE to a tweet if it contains a CVE number in the message body, or if the URL content contains a CVE.
+Each tweet must be associated with a single CVE and must be classified as relevant to security-related topics to be scored.
+The first forecasting task considers how well our model can predict the CVSS rankings ahead of time.
+The second task is predicting future exploitation of the vulnerability for a CVE based on Symantec Antivirus Signatures and Exploit DB.

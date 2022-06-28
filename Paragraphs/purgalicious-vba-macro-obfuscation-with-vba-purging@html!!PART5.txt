@@ -1,0 +1,5 @@
+
+VBA purging modifies the module streams in the opposite way.
+Instead\nof changing the CompressedSourceCode , VBA\npurging completely removes the PerformanceCache data from the module stream and\nthe _VBA_PROJECT stream , changes the value\nof the MODULEOFFSET to 0, and removes all\nSRP streams (this is necessary because the _VBA_PROJECT and SRP streams contain version-dependent PerformanceCache data that will result in a\nruntime error when there is no PerformanceCache in the module stream).
+ This\nremoves strings usually found in PerformanceCache that many AV engines and YARA\nrules depend on for detection.
+Once removed, attackers are able to use\nmore standard methodologies and execute suspicious functions (i.e. CreateObject ) without being detected.

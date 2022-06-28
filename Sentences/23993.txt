@@ -1,0 +1,131 @@
+On February 13, 2022, EuroGamer published a post reporting the spread of malicious code among users of the Cities: Skylines game.
+
+Two days later, the article was updated: nobody was adversely affected, but one of the game mod creators tried to sneak a backdoor into the official store.
+
+We looked into this interesting case of a potentially serious attack on gamers.
+
+About Cities: Skylines in brief We apologize in advance to fans of the game, but for everyone else, we think it is necessary to provide a brief description — it’s important for the story.
+
+Cities: Skylines is a city simulator, and it looks something like this: Screenshot from Cities: Skylines.
+
+Source Cities: Skylines is a competitor and in some ways a successor to the famous SimCity series from the 1990s and 2000s, whose history (so far) ended with a failed release in 2013.
+
+Cities: Skylines was released in 2015 — quite a long time ago by standards of the ever-changing online world, but fans are unlikely to be scared by this.
+
+Instead of releasing a new series, the creators of Cities: Skylines preferred an approach with gradual modification of the original game, releasing official expansion packs about every six months.
+
+The 13th release came out just recently.
+
+Each of these expansions adds new elements to the virtual world.
+
+It may be buildings (you can now build an airport of your own design), natural phenomena, development scenarios (“green” city), and so on.
+
+Unofficial modifications expand the game even more.
+
+In fact, any player who seriously enjoys Cities: Skylines , will eventually start experimenting with mods.
+
+The game was originally designed to make it easy for users to develop and share modifications.
+
+Anybody can upload them to the public Steam Workshop directory .
+
+With our without mods and addons, Cities: Skylines allows you to build your own city.
+
+Divide the land between housing, industry, and commerce.
+
+Plan roads and fight traffic jams.
+
+The game is so good and so realistic that people even used it to plan the transportation system of a real city!
+
+An example of a good mod for Cities: Skylines is Traffic Manager: President Edition .
+
+It adds fine-tuning to the game’s basic road construction features: you can fine-tune traffic lights, set lane direction and speed limits, prohibit parking, and so on.
+
+Basically, the mod enables you to do things that are essential for traffic improvement, both in real life and in the game.
+
+To summarize, you can play Cities: Skylines without extensions, but few fans do it, because a properly chosen set of mods both seriously improves game play and makes it more convenient.
+
+To make a long story short, if you want the full Cities: Skylines experience, use mods.
+
+Vengeance mods Now let’s go directly to events.
+
+On February 10, 2022, the creators of the aforementioned Traffic Manager:
+
+President Edition mod published a warning about malicious extensions for the game: The creators of Traffic Manager: President Edition accuse the author of other mods of distributing malware.
+
+Source The malicious functionality was relatively harmless: the extension randomly changed the speed limits on roads in the game.
+
+And not for all users, but only for those who were “lucky” enough to be in the mod creator’s list.
+
+This list includes the developers of Traffic Manager, the creators of the game, and other people that the list creator had real or imaginary complaints about.
+
+But that’s not all.
+
+In the same post, the creator of the mod known as Chaos or Holy Water intentionally broke compatibility with other mods.
+
+As Cities: Skylines has a huge number of modifications, it needs a mechanism that prevents mod-related bugs in the game.
+
+The game creators settled for very simple compatibility check: they expect the mod developer to check everything themselves, and add incompatible extensions to a special list.
+
+Chaos/Holy Water took advantage of this feature, and started adding other popular extensions to the incompatibility list of their own mods.
+
+When users asked the creator why the mod was incompatible with other extensions, and what to do, they referred to the poor quality of code from other developers, and offered their own version of another extension, slightly modifying the original.
+
+That is how Chaos tried to popularize their modifications and increase the number of their own add-ons for each user.
+
+If the developer was criticized, Chaos/Holy Water retaliated by adding the Steam platform’s IDs of critics to their personal “enemies list,” which introduced arbitrary bugs in the game’s performance.
+
+There was some interesting internal drama among active fan players, but nothing serious enough to call it a real malicious attack.
+
+But wait — that’s not all!
+
+Hundred percent backdoor On February 14, 2022, the developers of Cities: Skylines published their description of the incident.
+
+It reports that the author’s extensions have been removed from the Steam Workshop site.
+
+The creators of the game insist that there was no malicious code in them.
+
+Clarifying, “No keyloggers, viruses, cryptocurrency mining software, or similar” was found.
+
+But further down in the text, there is a brief mention of the “Update from GitHub” extension by the same author.
+
+And what did this mod do? — it switched the add-on update mechanism from standard (via Steam Workshop) to an alternative one, updating mods directly from the creator’s repository on GitHub.
+
+And this is a real backdoor: users who installed this modification along with a couple of other modifications by the same creator could’ve ended up downloading and running arbitrary code at any time.
+
+In a situation like this you can only rely on the conscience of the extension creator (although given the “enemies list,” this is clearly a bad idea).
+
+Even if the backdoor creator does not plan to hack users of their mods, access to their GitHub account can be stolen or they can sell their account themselves (as often happens, for example, with browser extensions).
+
+Finally, if a mod is already installed, user will most likely need to remove it manually, but not everyone may get round to that.
+
+Fortunately, according to Cities: Skylines developers, only 50 people have been affected this time.
+
+How to protect yourself from dangerous game mods There are plenty of ways to get a user to download malware under the guise of an “official” program or game.
+
+But with custom extensions, things are more complicated: by definition, they are created in a “home-made” manner, and the developer of the game cannot control all the modifications.
+
+Therefore, as you expand the capabilities of your favorite game, be vigilant.
+
+Try to install mods from official sources, if possible.
+
+And if the mod creator advises you “in case of problems, disable your anti-virus,” think twice before doing so.
+
+The incident with the mods for Cities: Skylines ended, thankfully, without too much drama.
+
+The malicious developer was banned, and it seems they had no intention of causing serious damage to players.
+
+But they created a rather complex mechanism of penetration users’ computers that exploited peculiarities of the community.
+
+And most importantly, they tried to bring users out from the control of the official platform for distributing mods.
+
+In a worst-case scenario such a backdoor could be used to deliver malicious code that, for example, would steal passwords from the game service or mine cryptocurrency on player’s computer.
+
+Tracking the activity of such “shapeshifter programs” is standard functionality of any reliable security solution.
+
+On top of that our Kaspersky Security Cloud also features a special gaming mode that provides protection with a minimal impact to computer’s performance.
+
+So when experimenting with your favorite game, don’t forget about taking precautions.
+
+
+
+

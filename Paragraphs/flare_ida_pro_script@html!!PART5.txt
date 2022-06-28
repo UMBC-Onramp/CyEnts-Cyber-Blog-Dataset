@@ -1,0 +1,6 @@
+
+The third optional argument is\nexplained in the next example.
+The return from getPushArgs() is a list of\nresult dictionaries.
+Each dictionary contains numbered keys ranging\nfrom 1,2,..n where n is the number of stack arguments requested.
+In\nthe sample code in Figure 2 we obtain the lpStartAddress values by retrieving the tuple with\nkey 3, since lpStartAddress is the third\nparameter to the function we analyzed.
+The values in the tuple are\n( va, value) , where va is the effective address that argtracker observed the data value being passed as a parameter.

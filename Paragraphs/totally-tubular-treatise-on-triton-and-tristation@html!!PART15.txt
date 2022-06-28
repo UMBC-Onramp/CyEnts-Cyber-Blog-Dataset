@@ -1,0 +1,11 @@
+
+It is a library that helps support the communications for a Triconex controller.
+If you've pored over TRITON as much as we have, the moment you look at strings you can see the obvious overlaps between the legitimate DLL and TRITON's own TS_cnames.pyc.
+Figure 8:
+Strings excerpt from tr1com40.DLL Each of the execution command \"error codes\" from TS_cnames.pyc are in the strings of tr1com40.DLL (Figure 8).
+We see \"An MP has re-educated\" and \"Invalid Tristation I command\".
+Even misspelled command strings verbatim such as \"Non-existant data item\" and \"Alocate network accepted\".
+We also see many of the same unknown values.
+What is obvious from this discovery is that some of the strings in TRITON are likely based on code used in communications libraries for Trident and Tricon controllers.
+In our brief survey of the legitimate Triconex Corporation binaries, we observed a few samples with related string tables.
+Pe:dllname Compile Date Reference CPP Strings Code Lagcom40.dll 2004/11/19 $Workfile:   LAGSTRS.CPP  $ $Modtime:   Jul 21 1999 17:17:26  $ $Revision:   1.0 Tr1com40.dll 2006/08/23 $Workfile:   TR1STRS.CPP  $ $Modtime:   May 16 2006 09:55:20  $ $Revision:   1.4 Tridcom.dll 2008/07/23 $

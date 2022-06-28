@@ -1,0 +1,5 @@
+
+These arrive in the form of a message, sometimes by SMS, but can also be via other messengers or even e-mail.
+If you receive an interesting SMS (or by any other messenger) with a link, open it on a desktop computer, preferably using TOR Browser, or better yet using a secure non-persistent OS such as Tails.
+SMS with a malicious link used to target a political activist.
+Source: Citizen Lab Browse the Internet with an alternate browser such as Firefox Focus instead of Safari or Chrome.

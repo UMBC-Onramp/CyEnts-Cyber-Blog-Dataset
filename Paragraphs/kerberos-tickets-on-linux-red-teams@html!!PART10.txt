@@ -1,0 +1,4 @@
+
+Although it is still common to find these tickets in the /tmp directory, it is now possible to also scrape these tickets from modern Linux systems that utilize the SSSD KCM.
+With the right Kerberos tickets, it is possible to move laterally to the rest of the Active Directory domain.
+If a privileged user authenticates to a compromised Linux system (such as a Domain Admin) and leaves a ticket behind, it would be possible to steal that user's ticket and obtain privileged rights in the Active Directory domain.

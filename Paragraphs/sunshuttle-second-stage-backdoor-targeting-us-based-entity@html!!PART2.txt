@@ -1,0 +1,4 @@
+
+Threat Detail
+Mandiant Threat Intelligence discovered a new backdoor uploaded by a U.S.-based entity to a public malware repository in August 2020 that we have named SUNSHUTTLE.
+SUNSHUTTLE is written in GO, and reads an embedded or local configuration file, communicates with a hard-coded command and control (C2) server over HTTPS, and supports commands including remotely uploading its configuration, file upload and download, and arbitrary command execution.

@@ -1,0 +1,11 @@
+
+Figure 4:
+Operators probing for GPU info and sorting bots into #nvidia channel After sorting machines based on their mining capabilities, the operators would go on to download and execute a new ShellBot Perl script on those machines.
+The ‘pola’ version contained new IRC parameters, forcing the bots to join a different IRC server, which appeared like the operators were migrating active bots to a different network.
+Figure 5:
+Operators deploying secondary malware with different IRC parameters to move bots to Pola server Graduating to the Pola Server
+The operation X-Force tracked was probably rather fresh.
+When the researchers followed the migrated bots to the Pola server, they noticed that it was created that very same day.
+It already contained 143 bots, which were most likely migrated from other channels.
+Within the next day, the number of bots doubled, suggesting that there must have been additional servers like Blackcat moving higher value bots to the Pola server.
+Once on the Pola server, the filtering for higher value bots continued and a third payload — miner3.tgz — was deployed to the selected bots in a series of commands launched by the botnet’s operators.

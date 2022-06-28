@@ -1,0 +1,7 @@
+
+We simply processed social media posts from the above datasets through the pre-trained model, whose activations were then fed through adjustable weights into a linear output layer.
+The fine-tuning objective here was the same that GPT-2 was originally trained on (i.e. the language modeling task of predicting the next word, see Figure 1), except now its training dataset included text from social media posts.
+We also added the <|endoftext|> string as a suffix to each post to adapt the model to the shorter length of social media text, meaning posts were fed into the model according to: “#Fukushima2015 Zaporozhia NPP can explode at any time and that's awful!
+OMG!
+No way!
+#Nukraine<|endoftext|>” Figure 2 depicts a few example generations made after fine-tuning GPT-2 on the IRA datasets.

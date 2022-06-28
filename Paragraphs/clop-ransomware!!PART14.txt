@@ -1,0 +1,5 @@
+
+For each network share that the malware discovers, it will prepare to enumerate more shares and crypt files.
+For each folder discovered, it will enter it and search for more subfolders and files.
+The first step is to check the name of the folder/file found against a hardcoded list of hashes with the same algorithm used to detect the processes to close.
+Below are the results of 12 of the 27 hashes with the correct names: If it passes, it will check that the file is not a folder, and in this case compare the name with a list of hardcoded names and extensions that are in plain text rather than in hash format: ClopReadMe.txt ntldr NTDLR boot.ini BOOT.INI ntuser.ini NTUSER.INI AUTOEXEC.BAT autoexec.bat .Clop NTDETECT.COM ntdetect.com .dll

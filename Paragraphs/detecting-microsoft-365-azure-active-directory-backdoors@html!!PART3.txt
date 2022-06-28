@@ -1,0 +1,5 @@
+
+To see this module in action and understand how it works, Dr. Nestori Syynimaa’s PSCONFEU 2020 presentation, Abusing Azure Active Directory:
+Who would you like to be today? , provides an in-depth overview of the module.
+To detect the use of AADInternals, it is important to understand how some of these attacks work.
+Once an understanding is established, abnormal usage can be detected through a combination of log analysis and host-based indicators.

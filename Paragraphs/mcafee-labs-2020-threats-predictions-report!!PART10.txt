@@ -1,0 +1,6 @@
+
+In fact,  Europol’s Internet Organised Crime Threat Assessment (IOCTA),  named ransomware the top threat that companies, consumers, and the public sector faced in 2019.
+Based on what McAfee Advanced Threat Research (ATR) is seeing in the underground, we expect criminals to exploit their extortion victims even more moving forward.
+The rise of targeted ransomware created a growing demand for compromised corporate networks.
+This demand is met by criminals who specialize in penetrating corporate networks and sell complete network access in one-go.
+Here are examples of underground ads offering access to businesses: Figure 1 RDP access to a Canadian factory is being offered Figure 2 Access to an Asian Food, Consumer and Industrial company being offered For 2020, we predict the targeted penetration of corporate networks will continue to grow and ultimately give way to two-stage extortion attacks.

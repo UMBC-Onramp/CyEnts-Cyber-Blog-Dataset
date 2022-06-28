@@ -1,0 +1,11 @@
+
+When their operations on the system were finished, the actors disabled SSH on the ESXi host again and cleared or preemptively disabled all relevant logging associated with the performed activities.
+This includes authentication, command history, and message logging on the system.
+Maintain Presence Mandiant observed the threat actor maintain persistence by compromising the upgrade process on the Pulse Secure Appliance.
+  Persistence was primarily achieved by modifying the legitimate DSUpgrade.pm file to install the ATRIUM webshell across each upgrade performed by an administrator.
+  
+The actor likely chose DSUpgade.pm to host their patch logic as it is a core file in the system upgrade procedure, ensuring the patch is applied during updates.
+The patcher modifies content in /tmp/data as this directory holds the extracted upgrade image the newly upgraded system will boot into.
+This results in a persistence mechanism which allows the actor to maintain access to the system across updates.
+The actors also achieved persistence in other cases by prepending a bash script to the file /bin/
+umount normally used to unmount a Linux filesystem.

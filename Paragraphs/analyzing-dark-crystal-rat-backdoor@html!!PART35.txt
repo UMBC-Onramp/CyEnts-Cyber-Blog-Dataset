@@ -1,0 +1,25 @@
+
+Indicators of Compromise Dark Crystal RAT (dfsds.exe) Handle artifacts Mutex name bc2dc004028c4f0303f5e49984983352 Registry artifacts Registry value HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\scrss
+Registry value HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Wininit File system artifacts File C:\\Sysdll32.lnk File %APPDATA%\\dotNET.lnk File Start Menu\\Programs\\Startup\\Sysdll32.lnk File Start Menu\\Programs\\Startup\\dotNET.lnk File %APPDATA%\\<random process name>.exe
+File C:\\<random process name>.exe Network artifacts HTTP request hxxp://domalo[.]online/ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91due u3qa54/46kqbjvyklunp1z56txzkhen7gjci3cyx8ggkptx25i74mo6myqpx9kl vv3/212bad81b4208a2b412dfca05f1d9fa7.php?data=active HTTP request hxxp://domalo[.]online/ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91due u3qa54/46kqbjvyklunp1z56txzkhen7gjci3cyx8ggkptx25i74mo6myqpx9kl vv3/akcii239myzon0xwjlxqnn3b34w212bad81b4208a2b412dfca05f1d9f a7.php?
+type=__ds_getdata&__ds_getdata_user=<user_hash>&__ds_getdata_ex t=<message_hash>&__ds_getdata_key=<key> HTTP request hxxp://domalo[.]online /ksezblxlvou3kcmbq8l7hf3f4cy5xgeo4udla91dueu3qa54/46kqbjvyklunp 1z56txzkhen7gjci3cyx8ggkptx25i74mo6myqpx9klvv3/
+akcii239myzon0xw jlxqnn3b34w/<user_hash>.<message_hash>
+TCP connection domalo[.]online:80 TCP connection ipinfo[.]ip DNS lookup domalo[.]online DNS lookup ipinfo[.]ip Strings Static string DCRatBuild Table 4:
+IoCs for this instance of DCRat FireEye Product Support for Dark Crystal RAT Table 5 describes how FireEye products react to the initial sample (MD5: b478d340a787b85e086cc951d0696cb1) and its Dark Crystal RAT payload, or in the case of Mandiant Security Validation, allow a stakeholder to validate their own capability to detect Dark Crystal RAT.
+FireEye Product Support for Dark Crystal RAT FireEye Network Security (NX) Backdoor.
+Plurox detection FireEye Email Security (EX & ETP) Backdoor.
+MSIL.DarkCrystal, Backdoor.
+Plurox, Malware.Binary.exe, Trojan.
+Vasal.
+FEC3, Win.
+Ransomware.
+Cerber-6267996-1, fe_ml_heuristic detections FireEye Endpoint Security (HX) Trojan.
+GenericKD.32546165, Backdoor.
+MSIL.DarkCrystal detections FireEye Malware Analysis (AX) Backdoor.
+Plurox.
+FEC2 detection FireEye Detection on Demand (DoD) Backdoor.
+Plurox.
+FEC2, FireEye.
+Malware detections Mandiant Security Validation Built-in Action coming soon Table 5: Support in FireEye products to detect Dark Crystal RAT or validate detection capability Subscribe to Blogs Get email updates as new blog posts are added.
+
+

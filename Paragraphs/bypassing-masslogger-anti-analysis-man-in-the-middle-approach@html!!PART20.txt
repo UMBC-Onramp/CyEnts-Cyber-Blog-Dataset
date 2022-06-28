@@ -1,0 +1,5 @@
+
+In addition to the hook, JITM also includes a .NET loader.
+This loader first loads the native hook DLL ( jitmhook.dll ) and installs the hook.
+The loader then loads the MassLogger payload and executes its entry point.
+This causes MassLogger’s module initialization code to execute and install its own hook, but hooking jitmhook.dll code instead of the original compileMethod() .

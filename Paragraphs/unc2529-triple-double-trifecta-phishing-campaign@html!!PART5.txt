@@ -1,0 +1,10 @@
+
+Mandiant tracks this third-stage backdoor as DOUBLEBACK.
+DOUBLEBACK samples observed during the phishing campaign beaconed to hxxps://klikbets[.]net/admin/client.php and hxxps://lasartoria[.]net/admin/client.php.
+Prior to the second wave, observed between Dec. 11 and Dec. 18, 2020, UNC2529 hijacked a legitimate domain owned by a U.S. heating and cooling services company, modified DNS entries and leveraged that infrastructure to phish at least 22 organizations, five of which were also targeted in the first wave.
+It is not currently known how the legitimate domain was compromised.
+The threat actor used 20 newly observed domains to host the second-stage payload.
+The threat actor made slight modifications to the URL pattern during the second wave.
+http://<fqdn>/<string> http://<fqdn>/dowld_<string> http://<fqdn>/download_<string> http://<fqdn>/files_<string> http://<fqdn>/id_<string> http://<fqdn>/upld_<string>
+Of note, the DOUBLEDRAG downloader observed in the first wave was replaced with a Microsoft Excel document containing an embedded legacy Excel 4.0 (XLM) macro in Excel 97-Excel 2003 Binary file format (BIFF8).
+When the file was opened and the macro executed successfully, it would attempt to download a second-stage payload from hxxps://towncentrehotels[.]com/ps1.dat.

@@ -1,0 +1,6 @@
+
+To mitigate encrypted mining traffic on a network, organizations may blacklist the IP addresses and domains of popular mining pools.
+However, the downside to this is identifying and updating the blacklist, as locating a reliable and continually updated list of popular mining pools can prove difficult and time consuming.
+Browser-Based Sessions Identifying and detecting websites that have embedded coin mining code can be difficult since not all coin mining scripts are authorized by website publishers (as in the case of a compromised website).
+Further, in cases where coin mining scripts were authorized by a website owner, they are not always clearly communicated to site visitors.
+As defenses evolve to prevent unauthorized coin mining activities, so will the techniques used by actors; however, blocking some of the most common indicators that we have observed to date may be effective in combatting a significant amount of the CPU-draining mining activities that customers have reported.

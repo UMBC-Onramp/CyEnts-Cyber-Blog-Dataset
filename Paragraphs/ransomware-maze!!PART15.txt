@@ -1,0 +1,8 @@
+
+0x42C -> az-Latn-AZ (Azerbaijani (Latin from Azerbaijan))
+0x437 -> ka-GE (Georgian from Georgia)
+0x43F -> kk-KZ (Kazakh from Kazakhastan)
+0x440 -> ky-KG (Kyrgyz from Kyrgyzstan) 0x442 -> tk-TM (Turkmen from Turkmenistan) 0x443 -> uz-Latn-UZ (Uzbek (Latin from Uzbekistan))
+0x444 -> tt-RU (Tatar from Russia Federation) 0x818 -> ro-MD (Romanian from Moldova, NOT Romanian from Romania! )
+0x819 -> ru-MD (Russian from Moldova)
+0x82C -> az-Cyrl-AZ (Azerbaijani (Cyrilic from Azerbaijan))

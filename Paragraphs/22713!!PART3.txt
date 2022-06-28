@@ -1,0 +1,10 @@
+
+The process can even be automated.
+A simple script for brute-forcing URLs and downloading content from them takes just a few minutes to write.
+Such openness is not a bug; the service warns users that every uploaded image is public .
+However, given that leaks of valuable information through Lightshot regularly make the news , clearly not everyone reads the fine print.
+How to leak data in Lightshot
+So what if screenshots enter the public domain?
+Who cares about sharing gaming records or jokes from work messages?
+Think creatively: Lightshot users can dox themselves in any of at least three very plausible ways.
+Take, for example, an employee who snaps a screenshot of an interface to get help with setting up a new program.

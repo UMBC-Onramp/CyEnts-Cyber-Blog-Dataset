@@ -1,0 +1,6 @@
+
+CountIf for Log Baselining When reviewing logs that record authentication in the form of a user account and timestamp, we can use COUNTIF to establish simple baselines to identify those user accounts with inconsistent activity.
+In the example of user logons that follows, we'll use the formula \"=COUNTIF($B$2:$B$25,B2)\" to establish a historical baseline.
+Here is a breakdown of the parameters for this COUNTIF formula located in C2 in our example: COUNTIF
+This Excel formula counts how many times a value exists in a range of cells.
+$B$2:$B$25 This is the entire range of all cells, B2 through B25, that we want to use as a range to search for a specific value.

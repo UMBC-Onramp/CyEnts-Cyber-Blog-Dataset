@@ -1,0 +1,10 @@
+
+We performed an application penetration test against it for one of our clients.
+While doing so, we discovered an opening that could effect anyone who uses this appliance.
+Read on to find out how we explored the product, how we broke it and how to put it back together.
+What Is the CUCM Product?
+The CUCM solution is a middleware component that allows enterprises to integrate their various communication devices and manage them using one platform.
+In short, it unifies voice, video, data and mobile applications on fixed and mobile networks.
+Starting with the Cisco Unified Communications 9.0, the Cisco Unified Presence technology is integrated within the CUCM.
+Nowadays, most people refer to this solution as the CUCM IM & Presence Service.
+Almost every customer that uses the Cisco Jabber instant messaging application has the CUCM IM & Presence deployment.

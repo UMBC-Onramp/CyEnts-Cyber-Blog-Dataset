@@ -1,0 +1,6 @@
+
+For example, the member n to obtain the numeric value only makes sense when dealing with constants.
+On the other side, we have statements .
+These correlate roughly to language keywords (if, for, do, while, return, etc.)
+Most of them are related to control flow and can be thought as “the big picture elements” of your code.
+Recapitulating, we have seen how the decompiler exposes this tree-like structure (the ctree ), which consists of two types of nodes: expressions and statements.

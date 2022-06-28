@@ -1,0 +1,9 @@
+
+Figure 6:
+Traversing the global B+tree Now that we have the store index (obtained from the SMKM_FRONTEND_ENTRY structure) we calculate both indices to select the correct SMKM_STORE_METADATA structure for our SM_PAGE_KEY .
+The index in to the pointer array is the result of dividing the retrieved store index by 32, while the second one is the remainder of the division operation.
+In our case both indices are 0 and they select the first of the 1024 stores on the system, which is reserved for legacy applications.
+Universal Windows Platform (UWP) applications, on the other hand, will be placed in stores from 1 to 1023.
+Now, with the SMKM_STORE_METADATA known, we examine the store’s SMKM_STORE structure, as shown in Figure 7.
+Figure 7: Dumping the SMKM_STORE structure Once we have our SMKM_STORE structure we traverse another B+tree that associates our SM_PAGE_KEY ( 0x201a3061 ) with a chunk key.
+The chunk key is a compound value and once decoded points to a specific page record inside SMHP_CHUNK_METADATA 's two-dimensional aChunkPointer array.

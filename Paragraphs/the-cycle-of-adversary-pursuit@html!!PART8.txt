@@ -1,0 +1,5 @@
+
+Along with certificates matching UNC1878 tradecraft, we also found self-signed Armitage certificates, indicating this group may use multiple offensive security tools.
+Pivoting on limited indicators extracted from a single Managed Defense intrusion, a small cluster of activity was expanded into a more diverse set of indicators cardinal to UNC1878.
+While the objective and goal of this threat actor had not yet manifested, the correlation of infrastructure allowed our team to recognize this threat actor’s operations against other customers.
+Discovery With an established modus operandi for UNC1878, our team quickly identified several related intrusions in support of FireEye Mandiant investigations over the next week.

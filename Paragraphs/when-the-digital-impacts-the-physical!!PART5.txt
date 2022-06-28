@@ -1,0 +1,4 @@
+
+Specifically, it was discovered that even if a user disables Location History, Google still tracks users in particular instances — whenever they open up the Maps app, scan the internet for certain things, or receive automatic weather notifications.
+Even smartwatches have been used recently to record and track kids’ physical location .
+Ramifications such as these have changed the nature of privacy, as well as digital and physical safety as we know it.

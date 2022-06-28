@@ -1,0 +1,9 @@
+
+It’s also a good idea to outsource DDoS protection where possible.
+Using a trusted provider with cloud experience and a reputation for reliable work and real-time detection can give you more lead time to mitigate DDoS impacts and other problems.
+Social Engineering Efforts Despite how simple it is, social engineering efforts, such as phishing, remain popular.
+Why?
+Because they continue to see success.
+By collecting both publicly available and private corporate data, attackers can build social profiles that appear real, compromise corporate accounts and gain access to high-level systems and services.
+Consider the Colonial Pipeline attack.
+While the initial effort was ransomware, cyber criminals have leveraged the desire for improved enterprise defenses to craft a targeted phishing campaign.

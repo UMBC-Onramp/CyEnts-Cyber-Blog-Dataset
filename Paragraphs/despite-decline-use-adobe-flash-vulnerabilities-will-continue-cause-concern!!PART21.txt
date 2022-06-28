@@ -1,0 +1,5 @@
+
+(“Software Engineering Techniques, ” NATO Science Committee, page 16.)
+In other words, even software that has passed a battery of security tests before release may still contain exploitable conditions.
+From our analysis of the relationship between Flash CVEs and Flash’s ongoing use, especially on high-traffic sites, McAfee’s Advanced Threat Research team believes that Flash vulnerabilities will continue to offer attackers a means toward malicious ends.
+However, Adobe’s shift in security strategy is an excellent step in reducing the number of newly discovered issues, which should maintain their decline.

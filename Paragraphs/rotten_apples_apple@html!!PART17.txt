@@ -1,0 +1,7 @@
+
+After a couple of seconds of processing, the page congratulates the user that their Apple ID was successfully unlocked (Figure 13).
+As seen in Figure 14, the user is then redirected to the authentic Apple page at https://Appleid.
+Apple[.]com/ .
+Figure 13:
+Account verification page displayed by the phishing site Figure 14:
+After a successful attack, victims are redirected to the real apple login page Domain Registration Information It was observed that all of these domains used the whois privacy protection feature offered by many registrars.

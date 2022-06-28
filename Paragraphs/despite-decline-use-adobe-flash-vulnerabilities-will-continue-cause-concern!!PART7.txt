@@ -1,0 +1,7 @@
+
+Many issues from 2015–2017 earned scores above 9, which is considered severe.
+2015: 294 vulnerabilities ≥ 9 2016: 224 vulnerabilities ≥ 9 2017: 60 vulnerabilities ≥ 9 These severe scores further highlight why attackers remain interested in exploiting Flash weaknesses; they offer significant “attacker value” for the effort required to exploit them.
+  
+Looking at the historical distribution of issues, we see a spike in 2015.
+Then the spike drops off.
+It was in the latter part of 2014 that Adobe adopted a change in their software security strategy.

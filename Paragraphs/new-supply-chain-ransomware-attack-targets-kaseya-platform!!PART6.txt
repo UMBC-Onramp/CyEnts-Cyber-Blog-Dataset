@@ -1,0 +1,3 @@
+
+Recommendations Fortinet strongly recommends organizations using the Kaseya VSA platform to implement the current guidance in Kaseya's official recommendation : \"IMMEDIATELY shutdown your VSA server until you receive further notice from [Kaseya].”
+Fortinet Protections While the Kaseya VSA supply chain attack is how the threat actors got into the different networks, the ransomware used in those attacks is blocked by FortiGuard Labs through its AV coverage against known publicly available samples as: W32/Sodinokibi.

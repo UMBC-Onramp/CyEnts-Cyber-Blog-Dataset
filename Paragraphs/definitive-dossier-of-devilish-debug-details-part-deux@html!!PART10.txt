@@ -1,0 +1,5 @@
+
+ Our main goal of this analysis was to see if there were any directory terms that highly corresponded to maliciousness, or see if there were any simple combinations, such as pairs or triplets, that exhibited similar behavior.
+We did not find any single directory name that easily separated the classes.
+That would be too easy.
+However, we did find some general correlations with directories such as “Desktop” being somewhat more likely to be malicious, and use of shared drives such as Z: to be more indicative of a benign file.

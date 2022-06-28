@@ -1,0 +1,10 @@
+
+Phishing LinkedIn login page
+But the URL is far removed from LinkedIn’s, and the domain is the Turkish .tr
+, not .com.
+If the victim enters their credentials on this site, the account will soon be in the hands of the scammers.
+“Please send me a qoute” A similar case is this message seemingly from an importer in Beijing, asking for a quote for the delivery of goods.
+The notification looks convincing; the message footer includes links to view help and unsubscribe from notifications, a copyright notice, and even the actual postal address of LinkedIn’s China office.
+Even the sender’s address looks like the real deal.
+Nevertheless, we see some red flags.
+E-mail purportedly from LinkedIn in which a Chinese buyer requests a quote.

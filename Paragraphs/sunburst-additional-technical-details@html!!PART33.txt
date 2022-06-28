@@ -1,0 +1,14 @@
+
+Specifically, it’s only an indicator that the backdoor code was present and capable of being activated.
+Public Contributions We have seen substantial community contributions to our public SUNBURST GitHub repository .
+We would like to publicly thank all contributors to this repository.
+Specifically, all FNV hashes embedded within SUNBURST have been brute-forced.
+This is a huge amount of compute power that members of the community provided free-of-charge to help others.
+We want to thank everyone who contributed hashes and specifically callout the Hashcat community, which organized to systematically break each hash.
+This was essential for breaking the final few hashes whose preimage were of considerable length.
+Acknowledgements Matthew Williams, Michael Sikorski, Alex Berry and Robert Wallace.
+For additional information on UNC2452, register for our webinar, UNC2452: What We Know So Far , on Tuesday, Jan. 12, at 8 a.m. PT/11 a.m.
+ET.
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+

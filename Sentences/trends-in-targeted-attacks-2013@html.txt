@@ -1,0 +1,99 @@
+FireEye has been busy over the last year.
+
+We have tracked malware-based espionage campaigns and published research papers on numerous advanced threat actors.
+
+We chopped through Poison Ivy , documented a cyber arms dealer , and revealed that Operation Ke3chang had targeted Ministries of Foreign Affairs in Europe.
+
+Worldwide, security experts made many breakthroughs in cyber defense research in 2013.
+
+I believe the two biggest stories were Mandiant’s APT1 report and the ongoing Edward Snowden revelations, including the revelation that the U.S. National Security Agency (NSA) compromised 50,000 computers around the world as part of a global espionage campaign.
+
+In this post, I would like to highlight some of the outstanding research from 2013.
+
+Trends in Targeting Targeted malware attack reports tend to focus on intellectual property theft within specific industry verticals.
+
+But this year, there were many attacks that appeared to be related to nation-state disputes, including diplomatic espionage and military conflicts.
+
+Conflict Where kinetic conflict and nation-state disputes arise, malware is sure to be found.
+
+Here are some of the more interesting cases documented this year: Middle East: continued attacks targeting the Syrian opposition; further activity by Operation Molerats related to Israel and Palestinian territories.
+
+India and Pakistan: tenuous relations in physical world equate to tenuous relations in cyberspace.
+
+Exemplifying this trend was the Indian malware group Hangover , the ByeBye attacks against Pakistan, and Pakistan-based attacks against India.
+
+Korean peninsula: perhaps foreshadowing future conflict, North Korea was likely behind the Operation Troy (also known as DarkSeoul ) attacks on South Korea that included defacements, distributed denial-of-service (DDoS) attacks, and malware that wiped hard disks.
+
+Another campaign, Kimsuky , may also have a North Korean connection.
+
+China: this was the source of numerous attacks, including the ongoing Surtr campaign, against the Tibetan and Uygur communities, which targeted MacOS and Android.
+
+Diplomacy Malware continues to play a key role in espionage in the Internet era.
+
+Here are some examples that stood out this year: The Snowden documents revealed that NSA and GCHQ deployed key logging malware during the G20 meeting in 2009.
+
+In fact, G20 meetings have long been targets for foreign intelligence services, including this year’s G20 meeting in Russia.
+
+The Asia-Pacific Economic Cooperation ( APEC ) and The Association of Southeast Asian Nations ( ASEAN ) are also frequent targets.
+
+FireEye announced that Operation Ke3chang compromised at least five Ministries of Foreign Affairs in Europe.
+
+Red October , EvilGrab , and Nettraveler (aka RedStar) targeted both diplomatic missions and commercial industries.
+
+Technical Trends Estimations of “sophistication” often dominate the coverage of targeted malware attacks.
+
+But what I find interesting is that simple changes made to existing malware are often more than enough to evade detection.
+
+Even more surprising is that technically “unsophisticated” malware is often found in the payload of “sophisticated” zero-day exploits.
+
+And this year quite a number of zero-days were used in targeted attacks.
+
+Exploits Quite a few zero-day exploits appeared in the wild this year, including eleven discovered by FireEye.
+
+These exploits included techniques to bypass ASLR and application sandboxes.
+
+The exploits that I consider the most significant are the following: CVE-2013-0640 , which was used in the MiniDuke attacks, CVE-2013-1347 , which was used in a watering hole attack on the Department of Labor website, CVE-2013-3893 , which was deployed by the same group, DeputyDog, which compromised Bit9 earlier in the year, CVE-2013-3906 , which was used in both targeted attacks and in cybercrime campaigns DeputyDog in a watering hole attack.
+
+Evasion
+
+The malware samples used by several advanced persistent threat (APT) actors were slightly modified this year, possibly as an evasive response to increased scrutiny, in order to avoid detection.
+
+For example, there were changes to Aumlib and Ixeshe , which are malware families associated with APT12, the group behind attacks on the New York Times .
+
+When APT1 (aka Comment Crew) returned after their activities were exposed, they also used modified malware.
+
+In addition, Terminator (aka FakeM ), and Sykipot were modified.
+
+Threat Actors Attribution is a tough problem, and the term itself has multiple meanings .
+
+Some use it to refer to an ultimate benefactor, such as a nation-state.
+
+Others use the term to refer to malware authors, or command-and-control (CnC) operators.
+
+This year, I was fascinated by published research about exploit and malware dealers and targeted attack contractors (also known as cyber “hitmen”), because it further complicates the traditional “state-sponsored” analysis that we’ve become accustomed to.
+
+Dealers — The malware and exploits used in targeted attacks are not always exclusively available to one threat actor.
+
+Some are supplied by commercial entities such as FinFisher , which has been reportedly used against activists around the world, and HackingTeam , which sells spyware to governments and law enforcement agencies.
+
+FireEye discovered a likely cyber arms dealer that is connected to no fewer than 11 APT campaigns – however, the relationship between the supplier and those who use the malware remains unclear.
+
+Another similar cluster, known as the Maudi Operation , was also documented this year.
+
+Hitmen — Although this analysis is still highly speculative, some threat actors, such as Hidden Lynx , may be “hackers for hire”, tasked with breaking into targets and acquiring specific information.
+
+Others, such as IceFog , engage in “hit and run” attacks, including the propagation of malware in a seemingly random fashion.
+
+Another group, known as Winnti , tries to profit by targeting gaming companies with malware (PlugX) that is normally associated with APT activity.
+
+In one of the weirdest cases I have seen, malware known as “ MiniDuke ”, which is reminiscent of some “old school” malware developed by 29A, was used in multiple attacks around the world.
+
+My colleagues at FireEye have put forward some interesting stealthy techniques in the near future.
+
+In any case, 2014 will no doubt be another busy year for those of us who research targeted malware attacks.
+
+Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

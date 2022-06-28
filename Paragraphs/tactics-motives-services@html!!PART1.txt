@@ -1,0 +1,2 @@
+Every day at Mandiant we respond to some of the largest cyber security incidents around the world.
+This gives us a front-row seat to witness what works (and what doesn't) when it comes to finding attackers and preventing them from stealing our clients' data.

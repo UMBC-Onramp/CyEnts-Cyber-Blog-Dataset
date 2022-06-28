@@ -1,0 +1,13 @@
+
+Querying UAL for SMTP forwarding in Helix: class=ms_office365 action=
+Set-Mailbox rawmsg:
+ForwardingSmtpAddress | table [createdtime, action, username, srcipv4, srcregion, parameters, rawmsg] Querying UAL for SMTP forwarding in PowerShell: Search-UnifiedAuditLog -StartDate (Get-Date).AddDays(-90) -EndDate (Get-Date) -ResultSize 5000
+-FreeText \"ForwardingSmtpAddress\" | Export-CSV \\path\\to\\file.csv –
+NoTypeInformation -Encoding utf8 Analyze Compromised Users Logs
+After we’ve finished scoping the tenant, we’ll turn our attention to the individual users believed to be involved in the compromise.
+We’ll acquire all relevant O365 logs for the identified compromised user(s) - this includes the user's UAL, Mailbox Audit Log (MAL), and Admin audit log (if the user is an administrator).
+We’ll review these logs for anomalous account activity and assemble a list of attacker IP addresses and User-Agents strings.
+We’ll use this list to further scope the tenant.
+O365 investigations rely heavily on anomaly detection.
+Many times, the BEC actor may even be active at the same time as the user.
+In order to accurately differentiate between legitimate user activity and attacker activity within a compromised account, it's recommended to pull back as much data as possible to use as a reference for legitimate activity.

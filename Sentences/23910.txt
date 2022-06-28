@@ -1,0 +1,143 @@
+Apple’s AirTags have only been on the market since last spring, but they have already earned a bad reputation for being a way to facilitate criminal activity and track people without their permission.
+
+In this article we look closely at how AirTags work and why they can be dangerous.
+
+We also tell you how to protect yourself from being tracked with AirTags and from other types of cyberstalking.
+
+How AirTags work Apple unveiled AirTags in April 2021 as devices that help search for easy-to-lose objects.
+
+Inside an AirTag there is a board with a wireless module, along with a replaceable battery and a speaker which is actually rather large, and that’s really the bulk of the device.
+
+Here’s how AirTags work in the simplest scenario: you stick the little fob on your keys, and if one day you’re running late for work and your keys are lost somewhere in your apartment, you activate search mode on your iPhone.
+
+Using ultra-wideband (UWB) technology, the phone points you toward the AirTag, giving you helpful prompts like “hot” or “cold.”
+
+In a more complicated scenario, suppose you’ve attached the AirTag to your backpack and one day you rush off the subway so fast you accidentally leave it behind.
+
+Since you and your iPhone are already far away from your backpack when you realize you lost it, UWB won’t help you.
+
+Now anyone who has a relatively modern Apple device — iPhone 7 and newer — can get involved.
+
+Using Bluetooth, they detect the AirTag nearby and transmit approximate or specific coordinates to your Apple account.
+
+Now you can use Apple’s Find My service to see where your backpack has ended up — such as in the lost-and-found office or with a new owner.
+
+What’s key is that all of this happens automatically; you don’t even need to install anything.
+
+Everything the AirTag search system needs to work is already built into the iOS of hundreds of millions of users.
+
+But considering that Bluetooth has a maximum distance range of just a few dozen meters, this works only in large cities, where there are a lot of people with iPhones.
+
+If your backpack ends up in a small town where all the residents use Android smartphones (or even the latest push-button phones that barely connect to the Internet ), it will be challenging to pin down the location of the AirTag.
+
+In this case a third detection mechanism kicks in: if a few hours go by and the AirTag hasn’t had a connection with any iPhone, the built-in speaker starts playing a sound.
+
+If the person who finds the item figures out how to connect their smartphone with NFC to the AirTag, the AirTag tells them the phone number of the item’s owner.
+
+AirTags and shady business In theory, AirTags are a useful and, at $29 for one or $99 for a pack of four, a relatively inexpensive accessory for everyday tracking of easy-to-lose objects.
+
+The technology can help you find your hidden keys or a bag you’ve left behind.
+
+One example of a useful application that has been widely discussed over the last year is sticking an AirTag on a suitcase before getting on a plane.
+
+On a number of occasions, travelers have been able to locate their lost baggage faster than the airline employees could.
+
+But in practice, right after the device went on sale, reports started cropping up about how people used it in ways that were not completely legal, and there were even reports of overt criminal activity.
+
+Here are the major examples.
+
+An activist from Germany uncovered the location of a top-secret state agency after mailing it an envelope containing an AirTag.
+
+A lot of people use such a tactic — which is more or less legal depending on the laws of a country — to track actual mail delivery routes, for example.
+
+But it’s also possible to use an AirTag like the German activist did: if someone uses a PO Box to receive mail so they can keep their real address private, a piece of mail that has an AirTag inside it will reveal the actual place of residence.
+
+On a more serious note, in December 2021 the Canadian police investigated several incidents in which criminals used AirTags to steal cars.
+
+They stuck an AirTag on a car in a public parking lot, used it to figure out where the owner lived, and then at night stole the car while it was parked in a suburb, a little further from potential witnesses.
+
+Finally, there are many testimonials involving the use of AirTags to stalk women .
+
+In this case, the perpetrators stick an AirTag on a woman’s car or slip it into her bag, and then they ascertain where she lives and see the routes she travels regularly.
+
+AirTags contain protection against this kind of stalking: if the tag is constantly moving around while being far away from the iPhone it’s tied to, the built-in speaker starts beeping.
+
+However, it didn’t take long for tinkerers to figure out that there’s a workaround: modified AirTags with the beeper disabled have recently started showing up on the market.
+
+But this isn’t even the most frightful scenario.
+
+In theory one can hack the AirTag and modify its behavior in the software.
+
+Clear steps in this direction have already been made: For instance, last May a researcher successfully gained access to the device’s protected firmware.
+
+This will be most dangerous for Apple and users if someone manages to exploit the network of hundreds of millions of iPhones to track people illegally without the knowledge of the manufacturer, the owners of the smartphones that are taking part in a search operation, and the victims themselves.
+
+How dangerous AirTags are The most frightful scenario has not yet come to pass, and it is unlikely to — after all, Apple cares about the security of its own infrastructure.
+
+You also need to keep in mind that there are other devices similar to AirTags.
+
+Various legal and illegal tracking devices have existed for over a decade.
+
+Moreover, even consumer tags with similar functionality to AirTags have been on the market for a long time.
+
+Tile released its tags in 2013, and they also offer ways to search for lost objects over a large distance by applying the same principle as AirTags.
+
+Of course, this company probably won’t be able to achieve “coverage” from hundreds of millions of iPhones.
+
+In addition, devices like these cost money — sometimes a lot of money — and they are relatively easy to detect.
+
+In the case of AirTags, they need to be connected to an Apple account, which is hard to create anonymously without providing a real name and usually a credit card number.
+
+If the police report a case of illegal tracking, Apple turns over this data — admittedly, you need to convince the police to request such data, and according to testimonials by victims in different countries, this doesn’t always happen.
+
+Ultimately, it’s the same story we always see: AirTags are a handy piece of technology that criminals can also use for malicious purposes.
+
+Apple didn’t invent cyberstalking, but it did come up with a convenient technology that enables people to engage in illegal stalking.
+
+That means that it’s the company’s responsibility to make it harder for people to use the device for objectionable purposes.
+
+Once again, the closed ecosystem of Apple’s software and devices has come under criticism.
+
+If you have an iPhone and someone has snuck an AirTag into your bag, your phone will notify you.
+
+But what if you don’t have an iPhone?
+
+For the time being, Apple has developed a band-aid solution by releasing an app for Android smartphones that you need to install to detect tracking.
+
+The upshot is that Apple created a problem for everyone but offered a simple solution only to its own customers.
+
+Everyone else needs to adjust somehow.
+
+This month Apple tried to respond to the avalanche of criticism by issuing a long statement .
+
+It acknowledged that before releasing AirTag it hadn’t envisioned all the ways of using it — whether legal or illegal.
+
+It pledged to tell AirTag buyers more explicitly that AirTags are not to be used for tracking people.
+
+It also plans to raise the volume of the beep that helps you find an AirTag someone has planted on your belongings.
+
+This is laudable, but it doesn’t solve all the problems.
+
+We hope that over time Apple will be able to clearly separate legal and illegal ways of using AirTags.
+
+Stalkerware In conclusion, we need to mention that using software for surveillance is much more dangerous and commonplace in real life than AirTags.
+
+Apple’s AirTags cost a fair amount of money, a person doing the tracking needs to pair an AirTag with their real account, and the manufacturer is actually trying to make it harder to hide the tags.
+
+In contrast, developers of spyware and stalkerware apps are doing their best to make them as undetectable as possible.
+
+In addition to tracking location, tracking apps give the spy a heap of other options.
+
+In particular, they open access to the victim’s documents, photos and messages, which can be even more dangerous than geolocation.
+
+So if you’re worried about being tracked, the first thing you need to do is protect your smartphone — it’s the most obvious target .
+
+Then you can look around for unknown AirTags.
+
+If you use an iPhone, it will notify you pretty quickly that there’s a tag.
+
+If you have an Android and you want to protect yourself from being tracked with an AirTag, install the Apple Tracker Detect app.
+
+
+
+

@@ -1,0 +1,5 @@
+
+Ransomware Attacks to Morph into Two-Stage Extortion Campaigns By John Fokker In McAfee’s 2019 threat predictions report , we predicted cyber criminals would partner more closely to boost threats; over the course of the year, we observed exactly that.
+Ransomware groups used pre-infected machines from other malware campaigns , or used remote desktop protocol (RDP) as an initial launch point for their campaign.
+These types of attacks required collaboration between groups.
+This partnership drove efficient, targeted attacks which increased profitability and caused more economic damage.

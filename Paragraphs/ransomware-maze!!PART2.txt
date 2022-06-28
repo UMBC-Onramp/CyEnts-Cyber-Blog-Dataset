@@ -1,0 +1,6 @@
+
+It was highlighted last year [4] how ransomware would head in this direction to obtain money from victims who may be reluctant to pay for decryption.
+TELEMETRY MAP FIGURE 1.
+MAP OF MAZE INFECTIONS INTRODUCTION
+On the 29th of October a campaign distributing the Maze malware to Italian users was detected.
+Historically, the malware has used different techniques to gain entry, mainly using exploits kits, remote desktop connections with weak passwords or via email impersonation or, as in the Italian case, via different agencies or companies [5] , i.e. the Italian Revenue Agency.

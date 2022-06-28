@@ -1,0 +1,9 @@
+
+Find suspicious loops.
+Malicious activity often happens within loops.
+This includes encoding, decoding, and heap spraying.
+This plug-in flags methods containing loops with interesting operations such as XOR or bitwise AND.
+It is a simple heuristic that effectively detects most encoding and decoding operations, and otherwise interesting code to further analyse.
+Retrieve all embedded binary data.
+A decompiler plug-in that uses the FFDEC Flash Decompiler .
+This decompiler engine, written in Java, can be used as a stand-alone library.

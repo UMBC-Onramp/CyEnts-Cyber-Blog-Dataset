@@ -1,0 +1,6 @@
+
+In order to be stealthier, LockBit ransomware loads its modules dynamically instead of having them hardcoded in the IAT and uses LoadLibraryA. This method is employed to avoid detection by static engines.
+Figure 9.
+Name of the modules in the code
+In execution, the malware accesses the Service Manager using the function “OpenSCManagerA” and saves the handle.
+It checks if it fails the last error with the “GetLastError” function, against the error ERROR_ACCESS_DENIED.

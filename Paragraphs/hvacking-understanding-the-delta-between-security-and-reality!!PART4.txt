@@ -1,0 +1,6 @@
+
+PORT STATE SERVICE 47808/udp open bacnet | bacnet-info: | Vendor ID:
+Delta Controls (8) | Vendor Name: Delta Controls | Object-identifier: 29000 | Firmware: 571848 | Application Software: V3.40 | Model Name: eBMGR-TCH
+The next question is, what can we learn from the hardware?
+To answer this question, the device was first carefully disassembled, as shown in Figure 1.
+Figure 1 The controller has one board to manage the display and a main baseboard which holds a System on a Module (SOM) chip containing both the processor and flash modules.

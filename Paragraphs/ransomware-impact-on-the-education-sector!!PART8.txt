@@ -1,0 +1,5 @@
+
+That may be partially explained by the policy mentioned above that some ransomware groups have imposed on affiliates, banning them from attacking specific sectors such as health and education.
+Harvested Email Addresses Associated with Education Sectors FortiGuard Labs also analyzed lists pulled from a OSINT source for email addresses with “.edu”
+in the domain name.
+138,088 email addresses belonging to US educational institutions across all 50 States and territories were harvested between May and August 2021.

@@ -1,0 +1,8 @@
+
+More recently, we have observed more low sophistication threat activity leveraging broadly known tactics, techniques, and procedures (TTPs), and commodity tools to access, interact with, or gather information from internet exposed assets—something we had seen very little of in the past.
+This low sophistication threat activity has impacted a variety of targets across different industries, ranging from solar energy panels and water control systems, to building automation systems (BAS) and home security systems in academic and private residences.
+While some critical infrastructure targets are very sensitive in nature, other targets present very little risk.
+The following timeline presents a selection of some public and previously undisclosed OT compromises Mandiant observed between 2020 and early 2021.
+We note that, although it is possible many of these incidents involved process interaction, high confidence validation is not feasible as most often the evidence is provided by the actor itself.
+Figure 1:
+Selection of notable low sophistication OT compromises: January 2020 to April 2021 Low Sophistication OT Threat Activity Can Take Many Forms A consistent characteristic we observe among low sophisticated compromises is that actors most often exploit unsecure remote access services, such as virtual network computing (VNC) connections, to remotely access the compromised control systems.

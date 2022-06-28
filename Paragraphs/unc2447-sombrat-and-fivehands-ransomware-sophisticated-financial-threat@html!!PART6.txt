@@ -1,0 +1,5 @@
+
+It contains the PDB path: C:\\Users\\kolobko\\Source\\Repos\\grabff\\obj\\Debug\\grabff.pdb.
+FOXGRABBER has also been observed in DARKSIDE ransomware intrusions.
+BEACON Malleable Profiles In the initial stages of an intrusion, UNC2447 uses the Cobalt Strike BEACON HTTPSSTAGER implant for persistence to communicate with command-and-control (C2) servers over HTTPS and has been observed using ‘chches_APT10’ and ‘Havex’ Malleable profiles.
+UNC2447 Toolbox During the recon and exfiltration stage of intrusions, UNC2447 has been observed using the following tools: ADFIND, BLOODHOUND, MIMIKATZ, PCHUNTER, RCLONE, ROUTERSCAN, S3BROWSER, ZAP and 7ZIP.

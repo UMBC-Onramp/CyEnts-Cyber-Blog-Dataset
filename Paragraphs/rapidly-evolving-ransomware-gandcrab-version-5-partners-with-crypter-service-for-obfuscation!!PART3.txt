@@ -1,0 +1,15 @@
+
+The prospect of making money not only attracts new affiliates, but also leads to the formation of new alliances between GandCrab and other criminal services that strengthen the malware’s supply and distribution networks.
+One of these alliances became obvious during Version 4, in which the ransomware started being distributed through the new Fallout exploit kit.
+This alliance was again emphasized in the GandCrab Version 5 announcement, as the GandCrab crew openly endorsed FalloutEK.
+The GandCrab Version 5 announcement.
+With Version 5, yet another alliance with a criminal service has been formed.
+The malware crypter service NTCrypt announced that it is partnering with the GandCrab crew.
+A crypter service provides malware obfuscation to evade antimalware security products.
+The NTCrypt-GandCrab partnership announcement offering a special price for GandCrab users.
+The partnership between GandCrab and NTCrypt was established in a novel way.
+At the end of September, the GandCrab crew started a “crypt competition” on a popular underground forum to find a new crypter service they could partner with.
+NTCrypt applied and eventually won the competition.
+The “crypt competition” announcement.
+This novel approach emphasizes once more the cult status GandCrab has in the underground community.
+For a criminal business such as GandCrab, building these alliances makes perfect sense: They increase the ease of operation and a trusted affiliate network minimizes their risk exposure by allowing them to avoid less-trusted suppliers and distributors.

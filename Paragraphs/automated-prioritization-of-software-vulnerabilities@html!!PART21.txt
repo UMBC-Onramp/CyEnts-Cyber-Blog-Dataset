@@ -1,0 +1,7 @@
+
+To do this, we collected severe vulnerabilities that have known exploits by their presence in the following data sources: Symantec Antivirus signatures Symantec Intrusion Prevention System signatures ExploitDB catalog The dataset for exploit forecasting was comprised of 377,468 tweets gathered from January 2016 to November 2017.
+Of the 1,409 CVEs used in our forecasting evaluation, 134 publicly weaponized vulnerabilities were found across all three data sources.
+Using CVEs from the aforementioned sources as ground truth, we find our CVE classification model is more predictive of detecting operationalized exploits from the vulnerabilities than CVSS.
+Table 3 shows precision scores illustrating seven of the top ten most severe CVEs and 21 of the top 100 vulnerabilities were found to have been exploited in the wild.
+Compare that to one of the top ten and 16 of the top 100 from using the CVSS score itself.
+The recall scores show the percentage of our 134 weaponized vulnerabilities found in our K examples.

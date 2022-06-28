@@ -1,0 +1,5 @@
+
+In December 2017, researchers with Kaspersky Labs reported on a new multi-faceted Android malware capable of a variety of actions including mining cryptocurrencies and launching DDoS attacks.
+The resource load created by the malware has reportedly been high enough that it can cause the battery to bulge and physically destroy the device.
+The malware, dubbed Loapi, is unique in the breadth of its potential actions.
+It has a modular framework that includes modules for malicious advertising, texting, web crawling, Monero mining, and other activities.

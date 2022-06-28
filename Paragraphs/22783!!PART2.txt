@@ -1,0 +1,10 @@
+
+SMS + phishing.
+Some classifications include phishing over messaging apps as part of smishing, but we consider that a separate category and won’t be discussing it here.
+The goal, as with any other phishing attempt, is to trick recipients into divulging sensitive information, typically their online banking password or bank card information.
+To do that, scammers send text messages, generally about an invented problem — a delivery issue, unpaid bill, or blocked account, for example — that the recipient has to resolve by clicking on a link.
+After that, things can go one of two ways: Scenario 1 infects the victim with malware disguised as a legitimate application but whose actual purpose is to request important information; Scenario 2 takes the victim to a Web page disguised as a legitimate website but whose actual purpose is to request important information.
+The choice of scenario really depends on the scammer’s comfort zone — malware or fake websites.
+The victim’s outcome is the same either way.
+Similar scams have resulted in the theft of thousands of dollars , euros , and pounds .
+Why has SMS phishing become so popular recently, and what makes it more dangerous than typical phishing?

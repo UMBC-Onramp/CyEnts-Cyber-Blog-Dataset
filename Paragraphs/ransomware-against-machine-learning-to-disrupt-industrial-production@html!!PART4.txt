@@ -1,0 +1,4 @@
+
+In post-compromise ransomware incidents, a threat actor may still often rely on broadly distributed malware to obtain their initial access to a victim environment, but once on a network they will focus on gaining privileged access so they can explore the target networks and identify critical systems before deploying the ransomware.
+This approach also makes it possible for the attacker to disable security processes that would normally be enough to detect known ransomware indicators or behaviors.
+Actors cast wider nets that may impact critical systems, which  expand the scale and effectiveness of their end-stage operations by inflicting maximum pain on the victim.

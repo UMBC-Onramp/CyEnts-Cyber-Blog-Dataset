@@ -1,0 +1,8 @@
+
+Licensing function To use the program, it requires a license, that the user has to enter from the login form.
+The following function shows the login form.
+To validate the license the program will perform some check and combine a Hardware ID, a username and a password.
+The following function generates the hardware id.
+It gets information from ‘Win32_Processor class’ to generate the ID.
+It collects information from: UniqueId: Globally unique identifier for the processor.
+This identifier may only be unique within a processor family.

@@ -1,0 +1,4 @@
+
+Our second new service offering is designed to help organizations address the challenges they face as they build out their own internal security operations program and incident response teams.
+Many organizations want to enhance their internal capabilities beyond the traditional security operations centers (SOCs).
+Our new Cyber Defense Center Development service helps organizations evolve their internal SOC by improving the visibility (monitoring and detection) and response capabilities (incident response) necessary to defend against advanced threats.

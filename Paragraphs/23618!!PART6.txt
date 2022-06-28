@@ -1,0 +1,2 @@
+
+For example, this message saying that the recipient’s profile has been viewed twice — common information for LinkedIn users to see — obviously uses bad English, but even if you miss that, a few other details should catch your attention: Unknown sender address and link to a site in a Brazilian domain With this kind of deception, if the victim misses the strange set of letters in the sender’s address or the Brazilian domain, they may well click the button and get to an unexpected site — in our case, a “how to become a millionaire” online survey.

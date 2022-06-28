@@ -1,0 +1,4 @@
+
+This is exactly what happened to visitors of one of the top five news sites of China.
+Any users running Internet Explorer (IE) who navigated to the website may have been exposed to an old, yet persistent VBScript worm that has the ability to self-replicate recursively from infected machines.
+Incidentally, the major actors involved with this old campaign have been taken down, yet traces of their injected recursive malware have still managed to sneak on to one of the highest browsed sites in China.

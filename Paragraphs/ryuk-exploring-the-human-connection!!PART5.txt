@@ -1,0 +1,8 @@
+
+In order to construct a hypothesis with the least falsifying evidence we welcome research published by our industry peers to dissimilate insights that challenge our hypotheses.
+When we combined all the evidence with links on the diamond model, we discovered that one essential link wasn’t made, the link between adversary and victim.
+Seeking New Insights Between Adversary and Victim Despite published research, the direct link between adversary and victim remained relatively unexplored.
+Unlike most cybercrime, ransomware and digital extortion frequently creates a strong social connection between adversary and victim.
+The adversary has certain needs and views the victim as the means to fulfill those needs.
+The connection between an adversary and victim often generates valuable insights, especially in cases where (extensive) negotiation take place.
+Luckily, one of our NoMoreRansom partners, Coveware, is specialized in ransomware negotiations and has gained valuable insights help us link adversary and victim.

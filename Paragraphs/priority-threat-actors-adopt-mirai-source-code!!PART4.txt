@@ -1,0 +1,8 @@
+
+In contrast, we see the majority of attackers using Mirai variants running three to seven different vulnerabilities against multiple protocols or devices.
+This attacker has limited their attacks to a single exploit and, while spread over a few ports, the primary objective is attacking port 60001.
+The other ports appear more like a diversion, leading us to believe that the attacker has a specific objective in mind.
+All the attacks originated from an IP address (128(.)199.15.87) owned by Digital Ocean, out of their Santa Clara data center.
+Digital Ocean is a well-known VPS provider that allows for quick setup and destruction of Virtual Private Servers.
+These servers are a mainstay for hackers to pop-up launch their attacks and then destroy their servers at low cost.
+That attacker progressed to a new server at 64(.)227.97.145, a different server also based out of the Digital Ocean Santa Clara data center.

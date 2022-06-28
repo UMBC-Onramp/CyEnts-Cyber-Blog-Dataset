@@ -1,0 +1,5 @@
+
+This means—for the first time in M-Trends history—the median dwell time has dropped to under one month.
+Although this drop in dwell time is promising, it is critical for organizations to remember that cyber adversaries typically only need a few days to achieve their objective, such as identifying and stealing the crown jewels of a victim organization or launching a crippling ransomware attack.
+Organizations across the globe must remain vigilant, to prepare for the next incident.
+There is much more to unpack in the M-Trends 2021 report.

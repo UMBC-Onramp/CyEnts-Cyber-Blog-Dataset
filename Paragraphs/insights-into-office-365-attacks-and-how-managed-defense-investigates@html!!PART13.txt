@@ -1,0 +1,7 @@
+
+Access to credential dump : Valid credentials used from a previous compromise of the user.
+MFA bypasses : Use of mail clients leveraging legacy authentication protocols (e.g. IMAP/POP), which bypass MFA policies.
+Attackers may also spam push notifications to the victim by repeatedly attempting to log in, eventually leading to the victim mistakenly accepting the prompt.
+Phase 2:
+Establish Foothold More phishing :
+Additional phishing lures sent to internal/external contacts from Outlook’s global address list.

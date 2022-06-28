@@ -1,0 +1,4 @@
+
+New Orders and Requests for Quotations Most emails in the sample were sent to a Romania-based company characterized as a global supplier of electrotechnical power products, including power transformers and rotary electric machines.
+Several of the emails were crafted to appear to originate from real company email domains, indicating the senders are trying to increase the likelihood that the phishing email appears legitimate.
+Apart from a single instance, the emails pose as an inquiry for purchase orders and requests for quotations.

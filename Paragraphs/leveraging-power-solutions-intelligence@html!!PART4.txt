@@ -1,0 +1,12 @@
+
+Mandiant customers have access to more intelligence through our software and services.
+As a security software company, FireEye deploys powerful appliances into customer environments to inspect and (if so desired) quarantine malicious content.
+Most customers choose to benefit from the cloud features of the FireEye product suite .
+This decision enables community self-defense and exposes a rich collection of the world's worst malware.
+As millions more instances of FireEye's MVX technology expand to mobile, cloud and data center environments, all of us benefit in terms of protection and visibility.
+Furthermore, FireEye's own threat intelligence and services components generate knowledge based on their visibility into adversary software and activity.
+Recent examples include breaking news on Android malware, identifying Yahoo!
+systems serving malware, and exploring \"cyber arms\" dealers.
+Like Mandiant, FireEye's customers benefit from intelligence embedded into the MVX platforms.
+Many have looked at the Mandiant and FireEye combination from the perspective of software and services.
+While these are important, both ultimately depend on access to the best threat intelligence available.

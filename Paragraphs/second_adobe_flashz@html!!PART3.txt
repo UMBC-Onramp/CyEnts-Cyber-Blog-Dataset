@@ -1,0 +1,4 @@
+
+If the victim has the correct version of Flash, the user is directed to run a different, more in-depth profiling script (hxxp://cosmetech.co.jp/css/swfobject.js), which checks for several more conditions in addition to their version of Flash.
+If the conditions are not met then the script will not attempt to load the Adobe Flash (SWF) file into the user’s browser.
+In at least two of the incidents we observed, the victims were running Internet Explorer 11 on Windows 7 machines.

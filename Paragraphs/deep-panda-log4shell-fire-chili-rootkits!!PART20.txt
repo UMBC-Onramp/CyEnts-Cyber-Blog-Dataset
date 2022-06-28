@@ -1,0 +1,3 @@
+
+Conclusion In this blog, we have attributed a series of opportunistic Log4Shell infections from the past month to Deep Panda.
+Though previous technical publications on Deep Panda were published more than half a decade ago, this blog also relates to a more recent report about the Milestone backdoor, which shows that their operations have continued throughout all these years.

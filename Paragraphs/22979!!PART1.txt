@@ -1,0 +1,3 @@
+In almost every post about Android, we recommend installing apps from official sources only, and that won’t change anytime soon.
+A recent example illustrates why: Scammers were spreading a banking Trojan disguised as popular media players, a fitness app, a book reader, and one that hit close to home, Kaspersky Internet Security for Android.
+Why it is dangerous to install applications from alternative sources Nothing is wrong with third-party app marketplaces per se, but no one can know for sure whether any given store is trustworthy.

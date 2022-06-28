@@ -1,0 +1,4 @@
+
+We learned the apps created by the developer SHINY Team 2017 were available on Google Play in September 2017; earlier Sonvpay variants were discovered in November 2017.
+The primary behavior of the two variants is almost the same—including the changing of the main icon and the app’s name to Download Manager to hide its presence from the user.
+However, with DJ Mixer, the geolocation of the IP address identifies the country of the infected device and aids the execution of the mobile billing fraud: Figure 11.

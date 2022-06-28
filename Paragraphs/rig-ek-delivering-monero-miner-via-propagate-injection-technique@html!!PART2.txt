@@ -1,0 +1,5 @@
+
+The RIG EK uses various techniques to deliver the NSIS (Nullsoft Scriptable Install System) loader, which leverages the PROPagate injection technique to inject shellcode into explorer.exe.
+This shellcode executes the next payload, which downloads and executes the Monero miner.
+The flow chart for the attack chain is shown in Figure 1.
+Figure 1: Attack chain flow chart Exploit Kit Analysis When the user visits a compromised site that is injected with an iframe, the iframe loads the landing page.

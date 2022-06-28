@@ -1,0 +1,8 @@
+
+  
+Specifically, visitors to the VFW website were silently redirected through an iframe to the exploit at www.[REDACTED].com/
+Data/img/img.html.
+Mitigation The exploit targets IE 10 with Adobe Flash.
+It aborts exploitation if the user is browsing with a different version of IE or has installed Microsoft’s Experience Mitigation Toolkit (EMET).
+So installing EMET or updating to IE 11 prevents this exploit from functioning.
+Vulnerability analysis The vulnerability is a previously unknown use-after-free bug in Microsoft Internet Explorer 10.

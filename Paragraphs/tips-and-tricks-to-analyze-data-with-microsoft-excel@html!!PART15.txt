@@ -1,0 +1,5 @@
+
+The COUNTIF formula can help track accounts through time to identify their first log on which can help identify rarely used credentials that were abused for a limited time frame.
+We'll start with the formula \"=COUNTIF($B$2:$B2,B2)\" in cell D3.
+Here is a breakdown of the parameters  for this COUNTIF formula.
+Note that the use of \"$\" for absolute referencing is slightly different for the range used, and that is an importance nuance: COUNTIF

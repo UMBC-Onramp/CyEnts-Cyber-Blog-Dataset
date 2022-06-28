@@ -1,0 +1,6 @@
+
+totalSizeToRead + 0x51 <= element size? { currPtr = outBuff + 0x54;            // wrong offset of 0x54 is used ... ...
+do { SwapShortOffset((currPtr + 0x20), 0, 6u); ... --count; }while(count)
+Listing 4: InitNamedColorProfileData decompiled Here the code tries to read the ‘ncl2’ tag/element and get the size of the stream from file.
+A buffer is allocated and the same call is made once again to read the complete content of the element ‘ncl2’.
+This buffer is parsed to find the count and number of device coordinates, and the values are verified by making sure read/write ends up with in the buffer size.

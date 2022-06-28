@@ -1,0 +1,5 @@
+
+The number of potential use cases is quite large, and we've listed some of the most common use cases below: Find malware/utility : This is the most common use case.
+Essentially, this is an IOC written to find some type of known malware or utility, either by looking for attributes of the binary, itself, or for some artifact created upon execution, such as a prefetch file or registry key.
+Methodology : Unlike an IOC written to identify malware or utilities, these IOCs find things you don't necessarily know about, in order to generate investigative leads.
+For example, if you wanted to identify any service DLL that wasn't signed and which was loaded from any directory that did not include the path \"windowssystem32\", you could write an IOC to describe that condition.

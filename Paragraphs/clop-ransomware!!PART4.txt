@@ -1,0 +1,6 @@
+
+The malware checks that the layout is bigger than the value 0x0437 (Georgian), makes some calculations with the Russian language (0x0419) and with the Azerbaijan language (0x082C).
+This function will return 1 or 0, 1 if it belongs to Russia or another CIS country, or 0 in every other case.
+FIGURE 3.
+Checking the keyboard layout If the function returns 0, it will go to the normal flow of the malware, otherwise it will get the device context of the entire screen with the function “GetDC”.
+Another condition will come from the function “GetTextCharset” that returns the font used in the system if it does not have the value 0xCC (RUSSIAN_CHARSET).

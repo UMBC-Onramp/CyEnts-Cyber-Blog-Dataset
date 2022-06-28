@@ -1,0 +1,9 @@
+
+It calls other local functions to write data to two files: \"uidpjewl.bat\" and \"tjspowj.vbs\" in the “C:\\ProgramData\\” folder.
+The written data is read out from multiple cells of this Excel file.
+In the end, the Macro executes the \"tjspowj.vbs\" file with “wscript.exe.”
+Refer to Figure 1.2 for more information.
+VBS and PowerShell The code in “tjspowj.vbs” is obfuscated.
+See Figure 2.1.
+The top part is the original code and the bottom part is the normalized code.
+It tries to download Emotet (into a local file, \"c:\\programdata\\puihoud.dll\", that is hardcoded in the PowerShell) from a group of websites until any download is successfully completed.

@@ -1,0 +1,5 @@
+
+With no centralized validation mechanism, stuffing auras with malicious surprises is easy, and unless you know Lua, you cannot check the code.
+In addition, a deceptive aura may behave like a bona fide script until it is triggered by certain conditions.
+Scammers take advantage of that in Azeroth.
+A cunning auction The malicious script lies in wait, behaving normally until a player who has installed it stocks up on certain consumables (say, elixirs, ore, or herbs) at the Auction House.

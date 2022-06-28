@@ -1,0 +1,179 @@
+Over the past five years, ransomware has evolved from being a threat to individual computers to posing a serious danger to corporate networks.
+
+Cybercriminals have stopped simply trying to infect as many computers as possible and are now targeting big victims instead.
+
+Attacks on commercial organizations and government agencies require careful planning but can potentially lead to rewards in the tens of millions of dollars.
+
+Ransomware gangs exploit companies’ financial clout, which tends to be far greater than that of ordinary users.
+
+What’s more, many modern ransomware groups steal data prior to encryption, adding the threat of publication as further leverage.
+
+For the affected company, that adds all kinds of risks, from reputational damage to problems with shareholders to fines from regulators, which often add up to more than the ransom.
+
+According to our data, 2016 was a watershed year.
+
+In just a few months, the number of ransomware cyberattacks on organizations tripled :
+
+Whereas in January 2016 we recorded one incident every 2 minutes on average, by late September the interval had shrunk to 40 seconds.
+
+Since 2019, experts have regularly observed targeted campaigns from a series of so-called big-game-hunting ransomware.
+
+The malware operators’ own sites show attack statistics.
+
+We used this data to compile a ranking of the most active cybercriminal groups.
+
+1.
+
+Maze (aka ChaCha ransomware)
+
+Maze ransomware, first spotted in 2019 , quickly rose to the top of its malware class.
+
+Of the total number of victims, this ransomware accounted for more than a third of attacks.
+
+The group behind Maze was one of the first to steal data before encryption .
+
+If the victim refused to pay the ransom, the cybercriminals threatened to publish the stolen files.
+
+The technique proved effective and was later adopted by many other ransomware operations, including REvil and DoppelPaymer, which we discuss below.
+
+In another innovation, the cybercriminals began reporting their attacks to the media.
+
+In late 2019, the Maze group told Bleeping Computer about its hack of the company Allied Universal , attaching a few of the stolen files as evidence.
+
+In its e-mail conversations with the website’s editors, the group threatened to send spam from Allied Universal’s servers, and it later published the hacked company’s confidential data on the Bleeping Computer forum.
+
+The Maze attacks continued until September 2020, when the group began winding down its operations , although not before several international corporations, a state bank in Latin America, and a US city’s information system had already suffered from its activities.
+
+In each of those cases, Maze operators demanded several million dollars from the victims.
+
+2.
+
+Conti (aka IOCP ransomware) Conti appeared in late 2019 and was very active throughout 2020, accounting for more than 13% of all ransomware victims during this period.
+
+Its creators remain active.
+
+An interesting detail about Conti attacks is that the cybercriminals offer the target company help with security in exchange for agreeing to pay, saying “You will get instructions how to close the hole in security and how to avoid such problems in the future + we will recommend you special software that makes the most problems to hackers.”
+
+As with Maze, the ransomware not only encrypts, but also sends copies of files from hacked systems to ransomware operators.
+
+The cybercriminals then threaten to publish the information online if the victim fails to comply with their demands.
+
+Among the most high-profile Conti attacks was the hack of a school in the United States , followed by a $40 million ransom demand.
+
+(The administration said it had been ready to pay $500,000 but would not negotiate 80 times that amount.)
+
+3.
+
+REvil (aka Sodin, Sodinokibi ransomware)
+
+The first attacks by REvil ransomware were detected in early 2019 in Asia.
+
+The malware quickly attracted the attention of experts for its technical prowess, such as its use of legitimate CPU functions to bypass security systems.
+
+In addition, its code contained characteristic signs of having been created for lease.
+
+In the total statistics, REvil victims make up 11%.
+
+The malware affected almost 20 business sectors.
+
+The largest share of victims falls to Engineering & Manufacturing (30%), followed by Finance (14%), Professional & Consumer Services (9%), Legal (7%), and IT & Telecommunications (7%).
+
+The latter category accounted for one of the most high-profile ransomware attacks of 2019, when cybercriminals hacked several MSPs and distributed Sodinokibi among their customers.
+
+The group currently holds the record for the largest ever known ransom demand : $50 million from Acer in March 2021.
+
+4.
+
+Netwalker (aka Mailto ransomware)
+
+Of the total number of victims, Netwalker accounted for more than 10%.
+
+Among its targets are logistics giants, industrial groups, energy corporations, and other large organizations.
+
+In the space of just a few months in 2020, the cybercriminals hauled in more than $25 million .
+
+Its creators seem determined to bring ransomware to the masses .
+
+They offered to lease Netwalker to lone scammers in exchange for a slice of attack profits.
+
+According to Bleeping Computer, the malware distributor’s share could reach 70% of the ransom, although such schemes typically pay affiliates much less.
+
+As evidence of their intent, the cybercriminals published screenshots of large money transfers.
+
+To make the leasing process as easy as possible, they set up a website to automatically publish the stolen data after the ransom deadline.
+
+In January 2021, police seized Netwalker dark web resources and charged Canadian citizen Sebastien Vachon-Desjardins with obtaining more than $27.6 million from the extortion activity.
+
+Vachon-Desjardins was in charge of finding victims, breaching them, and deploying Netwalker on their systems.
+
+The law-enforcement operation effectively killed off Netwalker. 5.
+
+DoppelPaymer ransomware
+
+The last villain of our roundup is DoppelPaymer, ransomware whose victims make up about 9% in the total statistics.
+
+Its creators made a mark with other malware too, including the Dridex banking Trojan and the now-defunct BitPaymer (aka FriedEx) ransomware, which is considered an earlier version of DopplePaymer .
+
+So the total number of victims of this group is in fact much higher.
+
+Commercial organizations hit by DoppelPaymer include electronics and automobile manufacturers, as well as a large Latin American oil company.
+
+DoppelPaymer frequently targets government organizations worldwide , including healthcare, emergency, and education services.
+
+The group also made headlines after publishing voter information stolen from Hall County, Georgia, and receiving $500,000 from Delaware County, Pennsylvania, both in the United States.
+
+DoppelPaymer attacks continue to this day:
+
+In February of this year, a European research body announced that it had been hacked.
+
+Targeted attack methods Every targeted attack on a large company is the result of a long process of finding vulnerabilities in the infrastructure, devising a scenario, and selecting tools.
+
+Then the penetration occurs, spreading malware throughout the corporate infrastructure.
+
+Cybercriminals sometimes remain inside a corporate network for several months before encrypting files and issuing a demand.
+
+The main paths into the infrastructure are through: Poorly secured remote access connections.
+
+Vulnerable RDP (Remote Desktop Protocol) connections are such a common means of delivering malware that groups on the black market offer services to exploit them.
+
+When much of the world switched to remote work, the number of such attacks skyrocketed.
+
+This is the modus operandi of the Ryuk, REvil, and other ransomware campaigns; Server application vulnerabilities.
+
+Attacks on server-side software give cybercriminals access to the most sensitive of data.
+
+A recent example came in March, when ransomware DearCry attacked through a zero-day vulnerability in Microsoft Exchange.
+
+Insufficiently protected server-side software can serve as an entry point for a targeted attack.
+
+Security issues also crop up in enterprise VPN servers, some examples of which we saw last year; Botnet-based delivery.
+
+To ensnare even more victims and increase profits, ransomware operators use botnets .
+
+Zombie network operators provide other cybercriminals with access to thousands of compromised devices, which automatically look for vulnerable systems and download ransomware onto them.
+
+That is how, for example, the Conti and DoppelPaymer ransomware spread; Supply-chain attacks.
+
+The REvil campaign best highlights this threat vector: the group compromised an MSP provider and then distributed ransomware to its customers’ networks; Malicious attachments.
+
+E-mails containing malicious macros in attached Word documents are still a popular option for malware delivery.
+
+One of our Top 5 villains, NetWalker, used malicious attachments to ensnare victims — its operators sent out mailings with “COVID-19” in the subject line.
+
+How business can stay protected Train employees in digital hygiene .
+
+Employees should know what phishing is, never to follow links in suspicious e-mails or download files from dubious sites, and how to create, remember, and safeguard strong passwords.
+
+Conduct regular training in information security not only to minimize incident risk, but also to mitigate damage in the event that attackers still manage to penetrate the network; Regularly update all operating systems and applications to ensure maximum protection against attacks through known software vulnerabilities.
+
+Take care of updating both client-side and server-side software; Perform security audits, check equipment security , and keep track of which ports are open and accessible from the Internet.
+
+Use a secure connection for remote work, but remember that even VPNs can be vulnerable; Create backups of corporate data.
+
+Having backups helps not only to reduce downtime and restore business processes faster in the event of a ransomware attack, but also to recover from more humdrum events such as hardware malfunctions; Use a professional security solution that employs behavioral analysis and antiransomware technologies; Deploy information security system that is able to recognize anomalies in the network infrastructure, such as attempts to probe ports or requests to access non-standard systems.
+
+Engage outside expertise if you don’t have in-house specialists capable of monitoring the network.
+
+
+
+

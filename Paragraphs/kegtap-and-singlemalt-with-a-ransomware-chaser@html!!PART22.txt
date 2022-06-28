@@ -1,0 +1,6 @@
+
+Check out this episode of State of the Hack for additional information on this threat.
+Campaign Indicators Sample Email Subjects / Patterns <(first|last)-name>:
+Important Information <Company Name> <
+Company Name> complaint <(first|last)-name> <(first|last)-name> Agreement cancellation message Agreement cancellation notice Agreement cancellation notification Agreement cancellation reminder Agreement suspension message Agreement suspension notice Agreement suspension notification Agreement suspension reminder Arrangement cancellation message Arrangement cancellation notice Arrangement cancellation notification Arrangement cancellation reminder Arrangement suspension message Arrangement suspension notice Arrangement suspension notification Arrangement suspension reminder Contract cancellation message Contract cancellation notice Contract cancellation notification Contract cancellation reminder Contract suspension message Contract suspension notice Contract suspension notification Contract suspension reminder debit confirmation FW: <Name> Annual Bonus Report is Ready FW:
+Urgent: <Company Name>: A Customer Complaint Request – Prompt Action Required RE: <(first|last)-name> RE: <(first|last)-name>:

@@ -1,0 +1,6 @@
+
+The following objects are supported: - /key - base64 encoded RSA public key. - /services - list of services to stop.
+- /priority - list of paths to scan for files for the first time.
+- /ignore - list of file extensions, filenames and paths to exclude. - /ext - list of file extensions to include.
+- /wipe - list of filenames to delete if they are found while enumerating the filesystem.
+- /landing - ransomware note.

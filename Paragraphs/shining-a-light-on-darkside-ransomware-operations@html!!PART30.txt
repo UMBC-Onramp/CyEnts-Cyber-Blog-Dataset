@@ -1,0 +1,7 @@
+
+Yes Feature not used; related to these strings: \"backup\" and \"here_backups\" 0x10
+Yes Feature not used: related to these strings: \"sql\" and \"sqlite\" 0x11 Yes Terminate processes
+0x12 Yes Stop services
+0x13
+Yes Feature not used; related to a buffer that contains the repeated string \"blah\" 0x14 Yes Drop ransom note 0x15
+Yes Create a mutex Table 2: Configuration bits UAC Bypass If the malware does not have elevated privileges, it attempts to perform one of two User Account Control (UAC) bypasses based on the operating system (OS) version.

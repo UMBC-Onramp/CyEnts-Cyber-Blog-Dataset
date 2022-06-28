@@ -1,0 +1,2 @@
+Recent large-scale DDoS attacks using a new botnet called Mēris peaked at almost 22 million requests per second.
+According to Qrator research , MikroTik’s network devices generated a fair share of the botnet’s traffic.

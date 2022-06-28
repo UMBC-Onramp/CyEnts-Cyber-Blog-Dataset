@@ -1,0 +1,4 @@
+
+So, in this blog post, we discuss threat modeling concepts that can help prioritize logging decisions and unleash the ability to identify and investigate attacks against an application.
+To help us demonstrate, we'll describe situations for a fictitious organization called Dog and Feline Urgent Response, or DFUR, that we presented at the 2020 SANS Digital Forensics & Incident Response (DFIR) Summit .
+We selected Splunk Enterprise Security (ES) as DFUR’s SIEM and logging analysis platform, but this is just one option and there are multiple technologies that can facilitate application log analysis.

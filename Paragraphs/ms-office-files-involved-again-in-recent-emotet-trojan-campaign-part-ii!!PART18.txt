@@ -1,0 +1,4 @@
+
+Next, I showed how the module (thread-module) is executed in a newly created thread.
+We then walked through how the thread-module performs process hollowing to execute the functional modules.
+In discussing the three received modules, I elaborated on what kind of data Emotet can steal from the victim’s device, such as email contact information from the victim’s email account, the email account’s settings, credentials from the victim’s email client, and credentials saved in a wide range of web browsers.

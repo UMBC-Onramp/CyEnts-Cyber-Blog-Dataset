@@ -1,0 +1,7 @@
+
+We use the PageFile structure’s newly introduced VirtualStorePagefile field to confirm if the PageFile represents a virtual store.
+Figure 4:
+Locating nt!MmPagingFile in WinDbg and dumping system’s nt!_MMPAGING_FILE structures Having confirmed that the marker page is in the virtual store, the next step is to calculate the Store Manager Page Key ( SM_PAGE_KEY ), as it serves as a pseudo-handle to locate the decompressed page.
+Our white paper details the process used to calculate the SM_PAGE_KEY , which turns out to be 0x201a3061 for this example.
+Note, that we will not use the PTE’s swizzle bit in the page key calculations, since the OS build is below 1803.
+To begin page retrieval, the pointer to the Store Manager’s global structure or nt!SmGlobals needs to be located.

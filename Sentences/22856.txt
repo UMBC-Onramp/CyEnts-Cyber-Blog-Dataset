@@ -1,0 +1,49 @@
+Updated on May 17, 2021.
+
+Media outlets are reporting an attack by ransomware on the Health Service Executive (HSE), Ireland’s healthcare system.
+
+The HSE decided to shut down key information systems for thorough investigation and protection against further threat spread.
+
+A number of clinics have reported temporary shutdowns or at least disruptions in their operations, although they continue to provide emergency care services.
+
+The COVID-19 vaccination program was not interrupted, although some institutions have had to revert to outdated workflow systems.
+
+The Irish healthcare system attack in brief
+
+According to HSE representatives, a “very sophisticated,” human-operated ransomware attack caused “significant disruption” to their services.
+
+Such incidents are particularly difficult to counter because the cybercriminals adjust their tactics and specific targets during the attack.
+
+External experts and law enforcement cyberspecialists are contributing to the investigation, which is still in early stages.
+
+However, HSE representatives presume the main target was data stored on the organization’s servers.
+
+Representatives of Rotunda Hospital, a medical institution affected by the attack, say the unified HSE patient registering system may have been a spreading vector.
+
+Fortunately, the attack did not affect life-saving equipment; only healthcare records are unavailable.
+
+Who is behind the attack, and what do they want?
+
+According to Bleeping Computer , the operators of Conti ransomware contacted HSE representatives and demanded almost $20 million in ransom.
+
+The crooks claimed that they had been present in HSE’s network for more than two weeks before encrypting any data, that they’d downloaded approximately 700GB of unencrypted files — including personal data, contracts, and financial documents — and that they’d publish the information if their terms weren’t met.
+
+Conti ransom demand.
+
+Source: Bleeping Computer.
+
+Ireland’s prime minister refused to pay that ransom, a decision we fully support .
+
+How to protect healthcare from ransomware Ransomware threats to healthcare institutions around the world are on the rise .
+
+To minimize infection risk, we recommend prioritizing the protection of remote access tools and e-mail systems, the two most common entry points for ransomware .
+
+In addition, security awareness is more than just important.
+
+In particular, we recommend: Raising employee awareness about modern cyberthreats and the role all staff play in cybersecurity; Avoiding remote connections to internal networks to the extent possible; Maintaining a strict password policy requiring all passwords be unique, complex, and secure; Installing security patches and updates promptly; Using robust security solutions on all devices with access to the Internet, including medical equipment and information kiosks and panels ; Protecting corporate mail servers , through which a fair number of threats enter company infrastructure.
+
+Additionally, Endpoint Detection and Response –class solutions can help detect ransomware threats in their early stages, simplifying response actions and investigation.
+
+
+
+

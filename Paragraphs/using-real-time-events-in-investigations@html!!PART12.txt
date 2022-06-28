@@ -1,0 +1,7 @@
+
+Table 8 provides an example of a real-time registry key event recorded by our solution.
+Field Example Timestamp (UTC) 2020-03-10 16:46:56.409
+Sequence Number 2898196 PID 9392 Process + Path C:\\Windows\\Temp\\legitservice.exe Username TEST-DOMAIN\\BackupAdmin Event Type 3 Path HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\ LegitWindowsService\\ImagePath
+Key Path CurrentControlSet\\Services\\LegitWindowsService Original Path HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Services\\LegitWindowsService Value Name ImagePath
+Value Type REG_EXPAND_SZ Base64 Encoded Value QwA6AFwAVwBpAG4AZABvAHcAcwBcAFQAZQBtAHAAXABsAG
+UAZwBpAHQAcwBlAHIAdgBpAGMAZQAuAGUAeABlAAAAAA== Text C:\\Windows\\Temp\\legitservice.exe Table 8: Example real-time registry key event For our solution's real-time registry events, we can map the event type to the operation performed using Table 9.

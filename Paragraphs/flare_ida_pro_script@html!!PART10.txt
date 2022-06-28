@@ -1,0 +1,5 @@
+
+A separate Vivisect\nworkspace (.viv file) is created to store the analysis, so you may be\nasked to specify the path to the original malware file if the script\ncannot find the file based on information stored in the IDB.
+Each\nfunction that contains a function call whose arguments are desired is\nemulated by Vivisect and all memory reads,  memory writes, and\nregister modifications are tracked.
+The script then traces backwards\nfrom the call instruction under observation, queuing separate branch\nsources as they are encountered, until either all conditions specified\nby the user are met, or the function start is reached.
+The Python script has been used successfully on both 32-bit x86 and\n64-bit x64 disassembly, but the 32-bit analysis has been tested much\nmore extensively.

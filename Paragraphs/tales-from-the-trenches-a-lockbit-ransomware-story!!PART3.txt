@@ -1,0 +1,5 @@
+
+The global spread is currently limited as this ransomware is relatively new and heavily targeted.
+Figure 1: Telemetry map Initial Access As in all ransomware cases, the attacker has to gain initial access to the network somehow.
+In this particular case the attacker performed a brute force attack on a web server containing an outdated VPN service.
+Based on our research it took several days for the brute force to crack the password of the ‘Administrator’ account.

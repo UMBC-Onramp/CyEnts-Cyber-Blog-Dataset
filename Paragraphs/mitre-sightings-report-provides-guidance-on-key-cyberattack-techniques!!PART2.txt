@@ -1,0 +1,4 @@
+
+Keeping track of attack techniques and launching appropriate and timely countermeasures can overwhelm most defense systems and security professionals.
+Narrowing down the scope and scale of potential attacks is a critical first line of defense.
+Fortunately, help is on the way in the form of a just-published research paper titled 2021 ATT&CK Sightings Report that addresses the question: “Which of these techniques do we need to prioritize and prepare to fight?”

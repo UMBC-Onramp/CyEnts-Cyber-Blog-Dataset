@@ -1,0 +1,153 @@
+Introduction This blog post is the second in a three-part series covering our Windows 10 memory forensics research and it coincides with our BlackHat USA 2019 presentation.
+
+In Part One of the series , we covered the integration of the research in both Volatily and Rekall memory forensics tools.
+
+We demonstrated that forensic artifacts (including reflectively loaded malware) could remain undiscovered without the FLARE research integration on Windows 10 (available on GitHub at win10_volatility and win10_rekall ).
+
+In this post, we demonstrate how to retrieve a compressed page using the structures and algorithms described in our white paper .
+
+We track down a compressed page in memory, beginning at its virtual address within a known process.
+
+A WinDbg kernel debugger setup is used in this walkthrough, but a similar process could be followed from within a memory snapshot or extraction using Volatility or Rekall .
+
+Finding a Compressed Page The operating system used in this demo is Windows 10.0.15063.0 (x64) and the structure definitions shown will be applicable across any 1703 build.
+
+Note that the two global offsets nt!SmGlobals and nt!MmPagingFile will need to be located for each revision.
+
+The process of retrieving these global offsets is described further in our white paper .
+
+To begin analysis, we create a marker page and flush it to the Virtual Store.
+
+This can be done in several ways, the easiest of which is allocating memory in a memory constrained virtual machine.
+
+ A simple utility ( ram_eater.exe ) was created to perform this task.
+
+The ram_eater utility allocates and writes a marker page, and then repeatedly allocates more memory in user-specified page amounts.
+
+In a memory constrained virtual machine (1 GB RAM), the marker page will become stale shortly and be evicted to the virtual store.
+
+In Figure 1, ram_eater reports that it has allocated the marker page at address 0x2a368480000 .
+
+The marker page we used (see Figure 2) was a string beginning with “ CC WAS HERE! ”.
+
+Figure 1: Allocating a marker page using ram_eater_x64.exe We can verify the contents of our marker page by locating it in the kernel debugger, viewing its Page Table Entry (PTE) and dumping its corresponding physical memory (see Figure 2).
+
+We use the !process extension to locate ram_eater ’s EPROCESS structure and switch into the context of the ram_eater process.
+
+This ensures that we traverse the correct process-specific page tables for the ram_eater process.
+
+Using the page frame number ( pfn ) described by the hardware PTE, we dump the physical memory to validate the contents of our marker page.
+
+Page frame numbers do not include the low-order bits used to specify an offset into a page, therefore they must be multiplied by PAGE_SIZE ( 0x1000 ) to identify the actual address of the data.
+
+Figure 2:
+
+Locating and viewing the marker page from the kernel debugger After allocating additional memory using ram_eater , we check to see if the marker page has been sent to the virtual store.
+
+Each entry in the output of the !vm extension can be treated as an index in to nt!MmPagingFile (see Figure 3).
+
+Figure 3: PTE of a compressed page in the virtual store an confirmation of virtual store’s PageFile index In the PTE displayed in Figure 3, the PageFile index ( MMPTE_SOFTWARE.PageFileLow ) is 2 and corresponds to the “No Name for Paging File” entry in the !
+
+vm extension’s output.
+
+From general observation, we know that on a default Windows configuration, the last entry corresponds to the virtual store.
+
+It is possible to configure systems with more than a single PageFile on disk, so do not assume that PageFile index 2 will always correlate to the virtual store.
+
+A more thorough option to validate page file indices is to disassemble nt!MmStoreCheckPagefiles .
+
+This function contains references to two global variables, the number of active PageFiles, as well as an array of pointers to each nt!_MMPAGING_FILE structure (see Figure 4).
+
+We use the PageFile structure’s newly introduced VirtualStorePagefile field to confirm if the PageFile represents a virtual store.
+
+Figure 4:
+
+Locating nt!MmPagingFile in WinDbg and dumping system’s nt!_MMPAGING_FILE structures Having confirmed that the marker page is in the virtual store, the next step is to calculate the Store Manager Page Key ( SM_PAGE_KEY ), as it serves as a pseudo-handle to locate the decompressed page.
+
+Our white paper details the process used to calculate the SM_PAGE_KEY , which turns out to be 0x201a3061 for this example.
+
+Note, that we will not use the PTE’s swizzle bit in the page key calculations, since the OS build is below 1803.
+
+To begin page retrieval, the pointer to the Store Manager’s global structure or nt!SmGlobals needs to be located.
+
+This is a straightforward process if symbols are available (see Figure 5).
+
+Figure 5:
+
+Dumping nt!SmGlobals The first thing to observe is that both SMKM_STORE_MGR and SMKM are located at offset 0x0 , or directly at nt!SmGlobals .
+
+Viewed as a memory dump, nt!SmGlobals appears as an array of pointers.
+
+Viewed as a two-dimensional array (32x32) of SMKM_STORE_METADATA elements, each element in the array of pointers points to an array of 32 SMKM_STORE_METADATA structures.
+
+Each SMKM_STORE_METADATA structure represents a store.
+
+To locate our SM_PAGE_KEY ’s corresponding store, we need to find the store index associated with the page key inside the SMKM_STORE_MGR.sGlobalTree B+tree container.
+
+The store index is a compound value that yields both indices needed to select the particular SMKM_STORE_METADATA element.
+
+Let’s traverse the SMKM_STORE_MGR ’s global B+tree (Figure 6).
+
+Recall that we are interested in a store manager page key value of 0x201a3061 .
+
+Figure 6:
+
+Traversing the global B+tree Now that we have the store index (obtained from the SMKM_FRONTEND_ENTRY structure) we calculate both indices to select the correct SMKM_STORE_METADATA structure for our SM_PAGE_KEY .
+
+The index in to the pointer array is the result of dividing the retrieved store index by 32, while the second one is the remainder of the division operation.
+
+In our case both indices are 0 and they select the first of the 1024 stores on the system, which is reserved for legacy applications.
+
+Universal Windows Platform (UWP) applications, on the other hand, will be placed in stores from 1 to 1023.
+
+Now, with the SMKM_STORE_METADATA known, we examine the store’s SMKM_STORE structure, as shown in Figure 7.
+
+Figure 7: Dumping the SMKM_STORE structure Once we have our SMKM_STORE structure we traverse another B+tree that associates our SM_PAGE_KEY ( 0x201a3061 ) with a chunk key.
+
+The chunk key is a compound value and once decoded points to a specific page record inside SMHP_CHUNK_METADATA 's two-dimensional aChunkPointer array.
+
+The B+tree traversal is shown in Figure 8.
+
+Figure 8: Traversing the local B+tree to find the chunk key associated with the SM_PAGE_KEY After the B+tree traversal is complete we found that our chunk key is 4b02d .
+
+Since it’s a compound value we need to decode it in order to retrieve the two indices into SMHP_CHUNK_METADATA ’s chunk pointer array, and the offset within the located chunk.
+
+The decoding involves four additional SHMP_CHUNK_METADATA fields – dwVectorSize , dwPageRecordsPerChunk , dwPageRecordSize , and dwChunkPageHeaderSize .
+
+The process is shown in Figure 9.
+
+Figure 9: Retrieving the page record associated with the chunk key
+
+The decoding of the chunk key in Figure 9 allowed us to find all the information to derive the virtual address of our compressed page.
+
+The retrieved REGION_KEY ( 0xf72397 , in our case) is also a compound value that encodes the index within the SMKM_STORE ’s region pointer array, as well as the offset within the region of pages.
+
+To calculate this data, we parse the region key with the help of two fields inside the ST_DATA_MGR structure – dwRegionIndexMask and dwRegionSizeMask .
+
+The calculations are shown in Figure 10.
+
+Figure 10: Calculating the compressed page’s virtual address The virtual address 0x12f3970 calculated in Figure 10 contains the compressed page of interest.
+
+We can retrieve it from the MemCompression process space, as shown in Figure 11.
+
+To confirm that the compressed memory is located within MemCompression , check the SMKM_STORE structure’s StoreOwnerProcess field.
+
+Figure 11:
+
+Retrieving the compressed page from within MemCompression process space
+
+The compressed page can be decompressed with a call to the RtlDecompressBufferEx API or any other implementation that supports the XPRESS compression algorithm.
+
+Conclusion In this blog post, we shared a walkthrough in which we forced a known marker page into the compression store and manually retrieved it by walking through memory dumps using known structure offsets from Windows 10 1709 x64.
+
+The same techniques used here can be applied to Windows 10 1607 and onwards assuming correct structure offsets are known.
+
+In Part 3 of the series, Automating Undocumented Structure Extraction , we will look at how the FLARE team leveraged emulation via flare-emu to automate the extraction of the structures used in this walkthrough.
+
+Resources White paper Finding Evil in Windows 10 Compressed Memory, Part One: Volatility and Rekall Tools Finding Evil in Windows 10 Compressed Memory, Part Three: Automating Undocumented Structure Extraction FLARE Windows 10 Volatility Plugin FLARE
+
+Windows 10 Rekall Plugin Subscribe to Blogs Get email updates as new blog posts are added.
+
+
+
+

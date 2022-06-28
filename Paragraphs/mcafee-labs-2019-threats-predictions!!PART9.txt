@@ -1,0 +1,4 @@
+
+We predict that criminals will sometimes take a day or only hours to implement attacks against the latest weaknesses in software and hardware.
+We expect to see an increase in underground discussions on mobile malware, mostly focused on Android, regarding botnets, banking fraud, ransomware, and bypassing two-factor authentication security.
+The value of exploiting the mobile platform is currently underestimated as phones offer a lot to cybercriminals given the amount of access they have to sensitive information such as bank accounts.

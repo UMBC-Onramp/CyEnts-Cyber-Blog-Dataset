@@ -1,0 +1,11 @@
+
+The combination of both tools is powered by flare-emu .
+Fe , short for flare-emu , is the chemical symbol for iron and hence the script is named ironstrings .
+To recover stackstrings, ironstrings enumerates all disassembled functions in a program except for library and thunk functions as identified by IDA Pro.
+For each function, the script emulates various code paths through the function and searches for stackstrings based on two heuristics:
+Before all call instructions in the function.
+As stackstrings are often constructed and then passed to other functions, i.e. Windows APIs like CreateFile or InternetOpenUrl .
+At the end of a basic block containing more than five memory writes.
+The number of memory writes is configurable.
+This heuristic is helpful if the same memory buffer is used multiple times in a function and if the string construction spans multiple basic blocks.
+If any of these conditions apply, the script searches the function’s current stack frame for printable ASCII and UTF-16 strings.

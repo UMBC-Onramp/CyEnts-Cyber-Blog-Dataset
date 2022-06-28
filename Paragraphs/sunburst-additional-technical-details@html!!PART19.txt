@@ -1,0 +1,7 @@
+
+This value is followed immediately by the message with optional junk bytes added.
+The extracted message is single-byte XOR decoded using the first byte of the message.
+The result is then DEFLATE decompressed.
+The first character of the decompressed data is an ASCII integer that maps to a command ID, with optional additional command arguments delimited by space characters.
+The supported commands are shown in the following table.
+Command ID Operation Idle 0 No operation Exit 1 Terminate the current thread.

@@ -1,0 +1,3 @@
+Newspapers have the ability to do more than simply keep us current with worldly affairs; we can use them to squash bugs!
+Yet, as we move from waiting on the newspaper delivery boy to reading breaking news on e Papers, we lose the subtle art of bug squashing.
+Instead, we end up exposing ourselves to dangerous digital bugs that can affect our virtual worlds.

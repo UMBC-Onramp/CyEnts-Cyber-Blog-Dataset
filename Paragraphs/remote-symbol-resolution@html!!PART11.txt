@@ -1,0 +1,5 @@
+
+With the base tool capabilities in place, we still need an efficient streamlined way to use it during our analysis.
+The individual lookups are nice for offhand queries and testing, but not in bulk.
+The bulk file lookup is nice on occasion, but it still requires data export/import to integrate results with your IDA database.
+What is really needed is a way to run a script in IDA, calculate the API address, and then resolve that address inline while running an IDA script.

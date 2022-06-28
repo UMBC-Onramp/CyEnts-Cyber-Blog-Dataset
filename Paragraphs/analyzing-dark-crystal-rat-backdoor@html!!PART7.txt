@@ -1,0 +1,9 @@
+
+This code structure, combined with the fact that the code refers to the CipherMode.
+CBC constant, led us to believe that ExporterServerManager.
+InstantiateIndexer may be a decryption or deobfuscation routine.
+Therefore, dfsds.exe is likely obfuscated.
+Luckily, .NET developers often use obfuscation tools that are somewhat reversible through automated means.
+Figure 6: SchemaServerManager.
+Main makes many calls to ExporterServerManager.
+InstantiateIndexer Figure 7: ExporterServerManager.

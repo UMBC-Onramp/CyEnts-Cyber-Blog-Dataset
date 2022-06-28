@@ -1,0 +1,5 @@
+
+SLOWPULSE Variant 1
+This variant is responsible for bypassing LDAP and RADIUS-2FA authentication routines if a secret backdoor password is provided by the attacker.
+The sample inspects login credentials used at the start of each protocol’s associated routine and strategically forces execution down the successful authentication patch if the provided password matches the attacker's chosen backdoor password.
+LDAP Auth Bypass The routine DSAuth::LDAPAuthServer::authenticate begins the LDAP authentication procedure.

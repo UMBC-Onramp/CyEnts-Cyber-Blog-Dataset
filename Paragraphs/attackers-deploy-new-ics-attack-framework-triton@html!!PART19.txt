@@ -1,0 +1,7 @@
+
+Mandiant confirmed that, after correcting patching the attack script to remove this check, the payload binary would persist in controller memory, and the controller would continue to run.
+TRITON implements the TriStation protocol, which is the protocol used by the legitimate TriStation application, to configure controllers.
+TsHi is the high-level interface created by the malware’s authors that allows the threat actor’s operators to implement attack scripts using the TRITON framework.
+It exposes functions for both reconnaissance and attack.
+The functions generally accept binary data from the user, and handle the code ‘signing’ and check sums prior to passing the data to lower level libraries for serialization on to the network.
+TsBase , another attacker-written module, contains the functions called by TsHi , which translate the attacker’s intended action to the appropriate TriStation protocol function code.

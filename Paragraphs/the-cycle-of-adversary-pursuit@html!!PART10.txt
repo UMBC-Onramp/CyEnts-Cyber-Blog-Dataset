@@ -1,0 +1,8 @@
+
+While services data offers us a depth of understanding into these intrusions, we turn to our product telemetry to understand the breadth of activity, getting a better worldview and perspective on the global prevalence of this threat actor.
+This led to the discovery of an UNC1878 intrusion at a technology company, resulting in Mandiant immediately notifying the affected customer.
+By correlating multiple UNC1878 intrusions across our services and product customers, it became evident that the targeting was indiscriminate, a common characteristic of opportunistic ransomware campaigns.
+Although initially there were unanswered questions surrounding UNC1878’s intent, we were able to provide valuable insights into their capabilities to our consultants and analysts.
+In turn, the intrusion data gathered during these engagements continued the cycle of building our understanding of UNC1878’s tradecraft, enabling our responders to handle these incidents swiftly in the face of imminent ransomware deployment.
+Conclusion Threat actors continue to use mass malware campaigns to establish footholds into target environments, followed by interactive operations focused on deploying ransomware such as RYUK, DOPPLEPAYMER and MAZE.
+Looking at the overall trend of intrusions FireEye responds to, the growing shift from traditional PCI theft to ransomware has allowed threat actors such as UNC1878 to widen their scope and increase their tempo, costing organizations millions of dollars due to business disruption and ransom payments.

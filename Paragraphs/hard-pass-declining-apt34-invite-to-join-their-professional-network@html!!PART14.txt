@@ -1,0 +1,6 @@
+
+Supported commands include system information collection, file upload, file download, and arbitrary shell command execution.
+Although this backdoor was coded to be able to communicate with DNS requests to the hard-coded Command and Control server, c[.]cdn-edge-akamai[.]com, it was not configured to use this functionality.
+Figure 5 provides a snippet of the assembly CALL instruction of dns_exfil.
+The creator likely made this as a means for future DNS exfiltration as a plan B. Figure 5: Snippet of code from TONEDEAF binary
+Aside from not being enabled in this sample, the DNS tunneling functionality also contains missing values and bugs that prevent it from executing properly.

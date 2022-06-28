@@ -1,0 +1,9 @@
+
+This is an example for the first version of LockBit, where file marker was using: C8 41 D0 BE AB 3F 0D 59
+7B BF CF 40 C8 81 63 CD If we compare two encrypted files, we can spot how the file marker matches in both encrypted files: Figure 22:
+File marker used by LockBit SMB Spreading Analyzing LockBit in our environment, we identified the possibility to spread locally in the same local network.
+Analyzing the network traffic, we spotted the use of multiple ARP requests to find other hosts in the same network segment.
+Figure 23:
+LockBit ARP traffic captured in the analysis If these ARP requests finally find a host alive, LockBit will start a legitimate SMB connection to be able to deploy the ransomware in other machines.
+Figure 24:
+LockBit SMB traffic captured in the analysis If the SMB connection is successful, LockBit will execute the following PowerShell command to download the .NET launcher that will decompress and execute LockBit in a new system: LockBit Ransomware Evolution: LockBit is new on the scene, but we noticed the authors added several new features and improved the ransomware several times.

@@ -1,0 +1,6 @@
+
+This is a common technique malware uses to hide its capabilities from static analysis tools.
+An example of dynamically resolving global variables using GetProcAddress is shown in Figure 1.
+Figure 1: Dynamic API resolution using GetProcAddress There are several ways to rename the global variables, with the simplest being manual copy and paste.
+However, this task is very repetitive and can be scripted using the Hex-Rays API.
+In order to write any Hex-Rays script, it is important to first visualize the ctree.

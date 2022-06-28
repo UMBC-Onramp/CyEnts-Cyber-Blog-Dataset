@@ -1,0 +1,4 @@
+
+The FireEye Dynamic Threat Intelligence (DTI) first discovered that the site was compromised and used to host VBS/Ramnit on Jan. 28, 2016.
+We can confirm that the infection is still live as of the time of this writing.
+IE users who visit the site may be compromised if they browse to a specific page (paperindex[.]htm) and click ‘Yes’ to run ActiveX, which may appear to be safe since the website is familiar and popular.

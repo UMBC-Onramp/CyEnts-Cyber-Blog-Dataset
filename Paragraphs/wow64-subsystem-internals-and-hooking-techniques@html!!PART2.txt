@@ -1,0 +1,7 @@
+
+To do this, we trace a call from 32-bit userspace and follow the steps it takes to finally transition to the kernel.
+The second part of the post assesses two hooking techniques and their effectiveness.
+I will cover how this system works, the ways malware abuses it, and detail a mechanism by which all WoW syscalls can be hooked from userspace.
+Note that all information here is true as of Windows 10, version 2004 and in some cases has changed from how previous Windows versions were implemented.
+Recognition First and foremost, this is a topic which has existing research by multiple authors.
+This work was critical in efficient exploration of the internals and research would have taken much longer had these authors not publicly posted their awesome work.

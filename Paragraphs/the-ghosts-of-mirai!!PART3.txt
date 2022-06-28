@@ -1,0 +1,5 @@
+
+This honeypot was designed to be vulnerable to telnet credential brute force attacks.
+The statistics in this article were taken from a three-week period.
+On average, this honeypot system received around 200 attacks per day, ultimately recording nearly 4700 telnet connections in just three weeks.
+We were then able to identify nearly 4000 of those attacks and connect them to a Mirai-related malware family.

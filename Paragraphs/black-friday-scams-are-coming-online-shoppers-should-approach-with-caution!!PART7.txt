@@ -1,0 +1,10 @@
+
+Consumers are eager to shop as much as they can on Black Friday as a lot of goods go on sale.
+Free Amazon gift cards are very attractive to those who want to spend less for the holiday season.
+However, be careful with what you wish for and don’t fall a victim to scams like this one.
+Gaming Console Phishing Another scam FortiGuard Labs recently observed is related to gaming consoles.
+With the ongoing global chip shortages, consumers are still having a hard time getting their hands on the next generation of gaming consoles, such as the PlayStation 5 and Xbox Series X and S systems that debuted late last year.
+FortiGuard Labs researchers recently identified a series of malicious PDFs online, with titles like, “how_much_do_xbox_one_cost_on_black_Friday.pdf” and “Walmart_black_Friday_ps5_pickup.pdf”.
+The first page of each PDF uses CAPTCHA to prove the user is a human.
+The Continue button on the same page does not work as expected because the user gets redirected to a web site as soon as they click the CAPTCHA checkbox.
+Unfortunately for us (and fortunately for the readers), the sites the user is redirected to were no longer available at the time of the investigation.

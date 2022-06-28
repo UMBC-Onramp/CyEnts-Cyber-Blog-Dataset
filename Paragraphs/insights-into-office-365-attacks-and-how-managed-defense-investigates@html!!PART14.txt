@@ -1,0 +1,8 @@
+
+More credible lures : New phishing lures uploaded to the compromised user's OneDrive or SharePoint account and shared with the victim’s coworkers.
+SMTP forwarding : SMTP forwarding enabled in the victim’s mailbox to forward all email to an external address.
+Forwarding mailbox rules : Mailbox rules created to forward all or certain mail to an external address.
+Mail client usage : Outlook or third-party mail clients used by attackers.
+Mail will continue to sync for a short while after a password reset occurs.
+Phase 3:
+Evasion Evasive mailbox rules : Mailbox rules created to delete mail or move some or all incoming mail to uncommonly used folders in Outlook, such as “RSS Subscriptions”.

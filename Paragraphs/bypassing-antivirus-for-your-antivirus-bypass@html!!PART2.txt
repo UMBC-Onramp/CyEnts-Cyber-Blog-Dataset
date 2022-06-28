@@ -1,0 +1,11 @@
+
+PowerShell script to slip by Windows Defender.
+One of my favorite PowerShell commands is iex (new-objectnet.webclient).downloadstring, which can be used to load a remotely hosted script directly into memory.
+This command is often behind reports of “fileless” malware and is regularly abused by red teams and criminals alike.
+AV detection of this method has improved somewhat recently but plenty of options exist to evade, such as invoke-obfuscation by @danielhbohannon .
+The MITRE ATT&CK framework includes a technique called “Indicator Removal from Tools” ( T1066 ), which describes how an adversary may alter a tool after it is detected in an attempt to evade defenses.
+T1066 is one reason why alerts for a tool being blocked should not be ignored.
+In researching this technique, I found that using my favorite command with PowerSploit’s Find-AVSignature.ps1 somewhat ironically resulted in a Windows Defender block… not-so-ironically, it was released in 2012.
+There have been many excellent posts on how to evade AV but, as the saying goes, “there is more than one way to skin a cat.”
+ To highlight how ridiculous AV can be, I decided to bypass AV detection of Find-AVSignature.ps1 while maintaining the spirit of “there is an easier way,” outlined in @obscuresec ’s blog post introducing Find-AvSignature.
+The key to my method is PowerShell’s built-in Invoke-Webrequest command (also known by the aliases \"iwr,\" \"wget,\" and \"curl\").

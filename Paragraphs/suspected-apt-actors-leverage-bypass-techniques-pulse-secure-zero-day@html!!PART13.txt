@@ -1,0 +1,9 @@
+
+We suspect UNC2630 operates on behalf of the Chinese government and may have ties to APT5 UNC2717 targeted global government agencies between October 2020 and March 2021 using HARDPULSE, QUIETPULSE, AND PULSEJUMP.
+We do not have enough evidence about UNC2717 to determine government sponsorship or suspected affiliation with any known APT group.
+We do not have enough information about the use of LOCKPICK to make an attribution statement.
+UNC2630 UNC2630’s combination of infrastructure, tools, and on-network behavior appear to be unique, and we have not observed them during any other campaigns or at any other engagement.
+Despite these new tools and infrastructure, Mandiant analysts noted strong similarities to historic intrusions dating back to 2014 and 2015 and conducted by Chinese espionage actor APT5.
+We have also uncovered limited evidence to suggest that UNC2630 operates on behalf of the Chinese government.
+Analysis is still ongoing to determine the full scope of the activity that maybe related to the group.
+Although we are not able to definitively connect UNC2630 to APT5, or any other existing APT group, a trusted third party has uncovered evidence connecting this activity to historic campaigns which Mandiant tracks as Chinese espionage actor APT5.

@@ -1,0 +1,6 @@
+
+The malware initiates communication with the control server by sending it an HTTP POST request with additional optional HTTP data, such as: ------FormBoundary<randomly_generated_characters>\r\nContent-Disposition: form-data; name=\"board_id\" 8306 ------FormBoundary<randomly_generated_characters>\r\nContent-Disposition: form-data; name=\"user_id\" *dJU!*JE&!M@UNQ@ ------FormBoundary<randomly_generated_characters>\r\nContent-Disposition: form-data; name=\"file1\"; filename=\"king.jpg\"\r\nContent-Type: application/octet-stream board_id is a four-digit number that may be an identifier for a campaign ID.
+Based on analysis of previous samples, this is a unique identifier.
+user_id is a hardcoded value in the malware binary that is sent to the control server.
+The username appears to be attacker specified and has occurred in 2017 Bankshot samples.
+This links the previous samples with this unique username.

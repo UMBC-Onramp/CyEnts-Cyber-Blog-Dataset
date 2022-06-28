@@ -1,0 +1,13 @@
+
+The file extension consists of eight lowercase hexadecimal characters (e.g., \".e98fc8f7\") and is referred to as <ransom_ext> .
+The file extension generation algorithm has been recreated in Python .
+If logging is enabled, the malware creates the log file LOG<ransom_ext>.TXT in its current directory.
+The malware supports the command line argument \"-path,\" which allows an attacker to specify a directory to target for encryption.
+The sample analyzed for this report is not configured to perform a system language check.
+If this functionality were enabled and the check succeeded, the string \"This is a Russian-Speaking System, Exit\" would be written to the log file and the malware would exit.
+Anti-Recovery Techniques
+The malware locates and empties Recycle Bins on the system.
+If the process is running under WOW64, it executes the PowerShell command in Figure 8 using CreateProcess to delete volume shadow copies.
+powershell -ep bypass -c \"(0..
+61)|%{$s+=[char][byte]('0x'+'4765742D576D694F626A6563742057696E33325F536861646F7763 6F7079207C20466F72456163682D4F626A656374207B245F2E44656C65746528293B7D20'.
+Substring(2*$_,2))};iex $s\" Figure 8: Encoded PowerShell command The decoded command from Figure 4 is \"Get-WmiObject
